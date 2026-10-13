@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "lot": { "titre": "EXEMPLE FICTIF — jeu de test, ne pas importer", "date": "2026-10-13" },
+  "sources": [
+    { "id": "src-exemple", "type": "autre", "level": "perso", "title": "Source fictive de test", "content_version": 1 }
+  ],
+  "notions": [
+    {
+      "id": "test-0001",
+      "theme": "Viticulture",
+      "sous": ["Cycle de la vigne"],
+      "niveau": "Fondamental",
+      "geo": null,
+      "titre": "Notion de test",
+      "synth": "Notion fictive servant à tester chaque type d'exercice.",
+      "mnemo": null,
+      "refs": [{ "source_id": "src-exemple", "page": null }],
+      "status": "draft",
+      "cours": null,
+      "content_version": 1
+    }
+  ],
+  "exercises": [
+    { "id": "test-0001-01", "type": "flashcard", "notion_ids": ["test-0001"], "prompt": "Que se passe-t-il à la véraison ?", "payload": { "answer": "Le raisin change de couleur et commence à mûrir." }, "content_version": 1 },
+    { "id": "test-0001-02", "type": "flashcard_reverse", "notion_ids": ["test-0001"], "prompt": "Le raisin change de couleur et commence à mûrir : comment s'appelle cette étape ?", "payload": { "answer": "La véraison." }, "content_version": 1 },
+    { "id": "test-0001-03", "type": "mcq_single", "notion_ids": ["test-0001"], "prompt": "Quelle étape suit la floraison ?", "payload": { "options": ["La nouaison", "Le débourrement", "La taille"], "answer": 0 }, "content_version": 1 },
+    { "id": "test-0001-04", "type": "mcq_multi", "notion_ids": ["test-0001"], "prompt": "Lesquels sont des stades du cycle végétatif ?", "payload": { "options": ["Débourrement", "Floraison", "Soutirage", "Véraison"], "answers": [0, 1, 3] }, "explanation": "Le soutirage est une opération de cave.", "content_version": 1 },
+    { "id": "test-0001-05", "type": "true_false", "notion_ids": ["test-0001"], "prompt": "Vrai ou faux ?", "payload": { "statement": "À la véraison, l'acidité du raisin augmente.", "answer": false }, "explanation": "Elle diminue pendant que le sucre augmente.", "content_version": 1 },
+    { "id": "test-0001-06", "type": "cloze", "notion_ids": ["test-0001"], "prompt": "Complète.", "payload": { "text": "À la véraison, le {{sucre|sucres}} augmente et l'{{acidité}} diminue." }, "content_version": 1 },
+    { "id": "test-0001-07", "type": "short_answer", "notion_ids": ["test-0001"], "prompt": "Nom de l'étape où le raisin change de couleur ?", "payload": { "accepted": ["véraison"] }, "content_version": 1 },
+    { "id": "test-0001-08", "type": "matching", "notion_ids": ["test-0001"], "prompt": "Associe chaque saison à son stade.", "payload": { "pairs": [["Printemps", "Débourrement"], ["Été", "Véraison"]] }, "content_version": 1 },
+    { "id": "test-0001-09", "type": "ordering", "notion_ids": ["test-0001"], "prompt": "Remets dans l'ordre.", "payload": { "items": ["Débourrement", "Floraison", "Véraison", "Vendanges"] }, "content_version": 1 },
+    { "id": "test-0001-10", "type": "odd_one_out", "notion_ids": ["test-0001"], "prompt": "Trouve l'intrus.", "payload": { "options": ["Débourrement", "Floraison", "Ouillage", "Véraison"], "answer": 2 }, "explanation": "L'ouillage se fait en cave.", "content_version": 1 }
+  ]
+}

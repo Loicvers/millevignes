@@ -153,6 +153,8 @@
 
 <footer class="wrap">
   L'Atelier des Mille Vignes — chaque fiche reformulée et créditée à sa source<br><br>
+  <button class="reset-all" id="exportProg">Sauvegarder ma progression</button> ·
+  <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden> ·
   <button class="reset-all" id="resetAll">Réinitialiser toute ma progression</button>
 </footer>
 
@@ -278,8 +280,10 @@ function card(f){
     <div class="src">— ${f.src}${f.page?', p.\u00a0'+f.page:''}</div>`;
   const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');
   const opts=c.querySelector('.opts'),srs=c.querySelector('.srs');
-  f.qcm.opts.forEach((o,i)=>{const b=document.createElement('button');b.className='opt';b.textContent=o;
-    b.onclick=()=>{[...opts.children].forEach(x=>x.disabled=true);if(i===f.qcm.good)b.classList.add('good');else{b.classList.add('bad');opts.children[f.qcm.good].classList.add('good');}srs.classList.add('show');};
+  // Options mélangées à chaque affichage : la position de la bonne réponse ne se devine plus.
+  const order=f.qcm.opts.map((_,i)=>i).sort(()=>Math.random()-.5);
+  order.forEach(i=>{const o=f.qcm.opts[i];const b=document.createElement('button');b.className='opt';b.textContent=o;b.dataset.i=i;
+    b.onclick=()=>{[...opts.children].forEach(x=>x.disabled=true);if(i===f.qcm.good)b.classList.add('good');else{b.classList.add('bad');opts.querySelector(`[data-i="${f.qcm.good}"]`).classList.add('good');}srs.classList.add('show');};
     opts.appendChild(b);});
   srs.querySelector('.srs-hard').onclick=()=>finishRate(f.id,'hard',srs,c);
   srs.querySelector('.srs-ok').onclick=()=>finishRate(f.id,'ok',srs,c);
@@ -295,6 +299,22 @@ function finishRate(id,q,srs,c){
 function updateBadges(){document.getElementById('dueBadge').textContent=dueList().length;}
 
 updateBadges();render();
+/* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
+document.getElementById('exportProg').onclick=()=>{
+  const blob=new Blob([JSON.stringify({app:'millevignes',key:PKEY,saved_at:new Date().toISOString(),progress:prog},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
+};
+document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
+document.getElementById('importProg').onchange=async e=>{
+  const file=e.target.files[0];e.target.value='';if(!file)return;
+  let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
+  const p=data&&data.app==='millevignes'&&data.progress;
+  const ok=p&&typeof p==='object'&&Object.values(p).every(v=>v&&typeof v.due==='number'&&typeof v.interval==='number'&&typeof v.ease==='number');
+  if(!ok){alert('Ce fichier n\'est pas une sauvegarde de progression Mille Vignes.');return;}
+  const n=Object.keys(p).length,cur=Object.keys(prog).length;
+  if(!confirm(`Restaurer ${n} fiche(s) suivie(s), sauvegardées le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} fiche(s)) sera remplacée.`))return;
+  prog=p;save();updateBadges();render();
+};
 document.getElementById('resetAll').onclick=()=>{if(confirm('Effacer toute ta progression de mémorisation ?')){prog={};save();updateBadges();render();}};
 </script>
 </body>
