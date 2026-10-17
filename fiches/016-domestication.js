@@ -663,5 +663,342 @@ FICHES.push(
     to_check: ["Champ de Rozier (1779) et catalogue du Luxembourg (1 300 cépages, 1848) : une seule source (Lepeltier)"],
     src: "Mille Vignes, P. Lepeltier ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal)",
     page: 33
+  },
+  {
+    id: 38,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Fondamental",
+    geo: null,
+    titre: "Hybridation, croisement et introgression",
+    synth: "Un croisement unit deux individus de la même espèce (par exemple deux Vitis vinifera) ; une hybridation interspécifique unit deux espèces différentes, et la descendance reçoit à parts égales le patrimoine des deux parents. Le phénomène est naturel et ancien : il fait partie de l’évolution des plantes et des animaux. Si l’hybride est ensuite recroisé sur plusieurs générations avec l’un des parents (rétrocroisements), on obtient un individu très proche de ce parent qui garde quelques gènes de l’autre espèce : c’est l’introgression, un raccourci pour acquérir une résistance ou une adaptation sans attendre une mutation.",
+    mnemo: "Croisement = mariage dans la famille ; hybridation = mariage entre deux familles ; introgression = on revient chez soi en ramenant juste un cadeau (un gène) de la belle-famille.",
+    flash: { q: "Qu’est-ce que l’introgression ?", a: "Des rétrocroisements répétés d’un hybride avec l’un de ses parents : on obtient un individu presque identique à ce parent, mais porteur de quelques gènes de l’autre espèce." },
+    qcm: { q: "Pinot noir × gouais blanc, c’est :", opts: ["Une hybridation interspécifique", "Un croisement intraspécifique", "Une introgression", "Une mutation somatique"], good: 1 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque terme à sa définition.", payload: { pairs: [["Croisement", "Deux individus de la même espèce"], ["Hybridation interspécifique", "Deux espèces différentes"], ["Rétrocroisement", "Hybride recroisé avec l’un de ses parents"], ["Introgression", "Quelques gènes d’une espèce fixés dans une autre"]] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’hybridation entre espèces est un phénomène exclusivement provoqué par l’humain.", answer: false }, explanation: "Elle se produit spontanément dans la nature ; l’humain ne fait que la diriger." },
+      { type: "short_answer", prompt: "Comment appelle-t-on le recroisement d’un hybride avec l’un de ses parents d’origine ?", payload: { accepted: ["rétrocroisement", "retrocroisement", "backcross", "un rétrocroisement"] } }
+    ],
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; Oxford Companion to Wine (hybrid, crossing) ; INRAE, Science et élus n° 1 (vignes résistantes)",
+    page: 34
+  },
+  {
+    id: 39,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Hybrider une vigne à la main",
+    synth: "La technique tient en quelques outils : pince, ciseaux, pinceau. Juste avant la floraison, on retire le capuchon floral et les étamines de la fleur choisie comme mère (castration), on y dépose au pinceau le pollen du père, puis on ensache la grappe pour éviter tout pollen étranger. Une baie de vigne ne contient au plus que quatre pépins ; seuls ceux qui ont un embryon germent, et il faut plusieurs années de culture avant de pouvoir juger les semis. Le procédé renouvelle la diversité génétique, mais il est long et le résultat de chaque pépin est imprévisible.",
+    mnemo: "Les 3 C : Castrer, Coller le pollen, Coiffer d’un sac. Puis patienter : 4 pépins au mieux, des années avant de goûter.",
+    flash: { q: "Pourquoi castre-t-on la fleur mère avant de la polliniser ?", a: "Pour empêcher son autofécondation (la vigne cultivée est hermaphrodite) et garantir que le pollen vient bien du père choisi." },
+    qcm: { q: "Combien de pépins une baie de vigne contient-elle au maximum ?", opts: ["2", "4", "8", "Une vingtaine"], good: 1 },
+    exos: [
+      { type: "ordering", prompt: "Remets les étapes d’une hybridation manuelle dans l’ordre.", payload: { items: ["Retirer capuchon floral et étamines avant floraison", "Déposer au pinceau le pollen du père", "Ensacher l’inflorescence", "Récolter les pépins à maturité", "Mettre à germer les pépins qui ont un embryon", "Évaluer les plants après plusieurs années"] } },
+      { type: "odd_one_out", prompt: "Quel outil ne fait pas partie de la trousse de l’hybrideur ?", payload: { options: ["Pince", "Ciseaux", "Pinceau", "Greffoir"], answer: 3 }, explanation: "Le greffoir sert au greffage, pas à la pollinisation dirigée." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Chaque pépin issu d’un même croisement donne une plante différente.", answer: true }, explanation: "La reproduction sexuée rebat les gènes : chaque pépin est un nouveau génotype, d’où des années de tri." }
+    ],
+    status: "needs_review",
+    to_check: ["Déroulé de la technique : décrit par Lepeltier, non recoupé dans une source de niveau 1"],
+    src: "Mille Vignes, P. Lepeltier ; Oxford Companion to Wine (seeds, breeding)",
+    page: 34
+  },
+  {
+    id: 40,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: { pays: "États-Unis", region: "Massachusetts", appel: null },
+    titre: "Les premiers hybrides américains : concord et delaware",
+    synth: "Aux États-Unis, au début du XIXe siècle, les vinifera européennes plantées dépérissent alors que les vignes locales survivent : les premiers hybrides interspécifiques y naissent. Le plus célèbre, le concord, a été sélectionné par Ephraim Wales Bull à Concord (Massachusetts) parmi plus de 20 000 semis ; on l’a longtemps cru labrusca pur, mais la génétique y trouve environ un quart à un tiers de vinifera. Le delaware, lui aussi pris pour une vigne indigène, a une ascendance en partie vinifera. Côté européen, l’Anglais William Speechly publie en 1790 un traité sur la culture de la vigne, où Lepeltier situe la première méthode d’hybridation décrite.",
+    mnemo: "Concord porte le nom de son village : le raisin du jus de raisin américain, labrusca en façade, vinifera dans les gènes.",
+    flash: { q: "Le concord est-il un pur Vitis labrusca ?", a: "Non : les analyses génétiques y trouvent environ 25 à 33 % de vinifera ; c’est un hybride." },
+    qcm: { q: "D’où vient le nom du concord ?", opts: ["D’un traité de paix", "Du village de Concord (Massachusetts), où vivait son obtenteur", "D’un fleuve de Virginie", "De la ville de Concord en Californie"], good: 1 },
+    exos: [
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le delaware est une vigne 100 % indigène d’Amérique du Nord.", answer: false }, explanation: "Longtemps cru indigène, il a une part de vinifera dans son ascendance." },
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le concord a été sélectionné par Ephraim Wales {{Bull}} parmi plus de {{20 000|22 000}} semis." } },
+      { type: "mcq_single", prompt: "Pourquoi les premières hybridations interspécifiques ont-elles lieu aux États-Unis ?", payload: { options: ["Les vinifera importées y dépérissaient, contrairement aux vignes locales", "Les lois européennes interdisaient l’hybridation", "Les vignes américaines ne produisaient aucun raisin", "Pour obtenir des raisins sans pépins"], answer: 0 } }
+    ],
+    status: "needs_review",
+    to_check: ["Speechly, premier à décrire une méthode d’hybridation (1790) : son traité est attesté, son contenu sur l’hybridation non vérifié", "Date du concord : 1843 (semis, selon Lepeltier) ; 1849 souvent citée pour la sélection", "Part de vinifera du delaware : non chiffrée, études non lues"],
+    src: "Mille Vignes, P. Lepeltier ; Wen et al., Frontiers in Plant Science, 2020 ; Oxford Companion to Wine (Concord)",
+    page: 34
+  },
+  {
+    id: 41,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: "Languedoc", appel: null },
+    titre: "Les Bouschet et les teinturiers",
+    synth: "En France, au XIXe siècle, l’amélioration reste intraspécifique (vinifera × vinifera). Au domaine de la Calmette, à Mauguio (Hérault), Louis Bouschet crée le petit bouschet en 1824 en croisant l’aramon noir et le teinturier du Cher, pour donner de la couleur aux vins pâles d’aramon. Son fils Henri croise ensuite le petit bouschet avec le grenache noir et obtient l’alicante bouschet (1855), un teinturier à pulpe rouge devenu mondial. Ce sont parmi les premières créations variétales ciblées réussies.",
+    mnemo: "Le père colore l’aramon (petit bouschet), le fils colore le grenache (alicante) : chez les Bouschet, la couleur se transmet de père en fils.",
+    flash: { q: "Quels sont les parents de l’alicante bouschet ?", a: "Petit bouschet × grenache noir (Henri Bouschet, 1855) ; le petit bouschet étant lui-même aramon noir × teinturier du Cher." },
+    qcm: { q: "Quel caractère les Bouschet cherchaient-ils à apporter ?", opts: ["La résistance au phylloxéra", "La couleur (pulpe rouge des teinturiers)", "La précocité", "L’arôme muscaté"], good: 1 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque cépage à ses parents.", payload: { pairs: [["Petit bouschet", "Aramon noir × teinturier du Cher"], ["Alicante bouschet", "Petit bouschet × grenache noir"]] } },
+      { type: "ordering", prompt: "Range du plus ancien au plus récent.", payload: { items: ["Teinturier du Cher", "Petit bouschet (1824)", "Alicante bouschet (1855)"] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’alicante bouschet est un hybride franco-américain.", answer: false }, explanation: "Ses deux parents sont des vinifera : c’est un croisement intraspécifique." }
+    ],
+    status: "needs_review",
+    to_check: ["Année du petit bouschet : 1824 (Lepeltier) ou 1829 selon une source"],
+    src: "Mille Vignes, P. Lepeltier ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; Falstaff, fiche Alicante Bouschet ; Wikipédia (Henri Bouschet)",
+    page: 35
+  },
+  {
+    id: 42,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Phylloxéra : greffer ou planter des hybrides ?",
+    synth: "Le phylloxéra apparaît en France en 1863 (Gard) et est identifié en 1868 ; les vinifera franches de pied n’y survivent pas, tandis que les vignes américaines lui résistent mais supportent mal les sols calcaires français. Deux voies s’affrontent : greffer les vinifera sur des porte-greffes américains ou hybrides, ou planter sans greffe des hybrides producteurs directs (HPD). Les HPD produisent beaucoup partout, mais leurs vins ont souvent le goût « foxé », surtout dû à l’anthranilate de méthyle, typique des V. labrusca. La greffe domine dès le début du XXe siècle ; vers 1950, l’État pousse en outre à éliminer les HPD.",
+    mnemo: "Deux remèdes : les pieds américains sous une tête française (greffe), ou le sang mêlé jusque dans la grappe (HPD) — avec l’arôme de renard en prime.",
+    flash: { q: "Quelle molécule est la principale responsable du goût « foxé » des V. labrusca ?", a: "L’anthranilate de méthyle (d’autres composés y contribuent, comme l’o-aminoacétophénone)." },
+    qcm: { q: "Qu’est-ce qu’un HPD ?", opts: ["Un porte-greffe hybride", "Un hybride planté sans greffe qui produit lui-même les raisins", "Un clone de vinifera résistant", "Une vigne sauvage européenne"], good: 1 },
+    exos: [
+      { type: "mcq_multi", prompt: "Quelles affirmations sur les vignes américaines sont exactes ?", payload: { options: ["Elles résistent au phylloxéra", "Beaucoup tolèrent mal les sols calcaires", "Elles servent de porte-greffes", "Elles donnent toutes des vins neutres"], answers: [0, 1, 2] } },
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le phylloxéra apparaît en France en {{1863}} ; il est identifié en {{1868}}." } },
+      { type: "short_answer", prompt: "Que signifie le sigle HPD ?", payload: { accepted: ["hybride producteur direct", "hybrides producteurs directs"] } }
+    ],
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; Oxford Companion to Wine (phylloxera, foxy) ; Horticulture Research, 2020 (gène de l’arôme foxé)",
+    page: 35
+  },
+  {
+    id: 43,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Les six cépages interdits",
+    synth: "Clinton, herbemont, isabelle, jacquez, noah et othello sont des hybrides américains d’avant le phylloxéra, très plantés en France pour leur vigueur. La loi du 24 décembre 1934 les interdit en invoquant leur toxicité (méthanol), alors que le vrai motif est la surproduction. Repris par le droit européen depuis 1987, l’interdiction de les classer comme cépages à vin tient toujours en 2026, malgré une campagne pour leur retour ; quelques producteurs les vendent sous l’étiquette « boisson à base de jus de raisin fermenté ». Lepeltier date l’interdiction de 1935 : la loi est du 24 décembre 1934, un décret d’application suit en 1935.",
+    mnemo: "Six noms à retenir en phrase : « Noah, Jacques et Isabelle, Clint, Herb et Othello » — la bande des hors-la-loi.",
+    flash: { q: "Quels sont les six cépages interdits en France depuis 1934 ?", a: "Clinton, herbemont, isabelle, jacquez, noah, othello." },
+    qcm: { q: "Quel motif officiel a été invoqué pour les interdire ?", opts: ["Leur sensibilité au phylloxéra", "Leur prétendue toxicité (méthanol)", "Leur faible rendement", "Leur origine étrangère"], good: 1 },
+    exos: [
+      { type: "odd_one_out", prompt: "Lequel ne fait pas partie des six cépages interdits ?", payload: { options: ["Noah", "Jacquez", "Baco blanc", "Othello"], answer: 2 }, explanation: "Le baco blanc est un HPD encore autorisé, notamment en AOC Armagnac." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "En 2026, on peut produire et vendre du vin de noah en France.", answer: false }, explanation: "L’interdiction européenne tient toujours ; seule la dénomination « boisson à base de jus de raisin fermenté » est tolérée." },
+      { type: "mcq_single", prompt: "Quelle est la véritable raison de leur interdiction ?", payload: { options: ["La surproduction de vin", "Leur goût foxé", "Une épidémie de mildiou", "Une demande des États-Unis"], answer: 0 } }
+    ],
+    status: "needs_review",
+    to_check: ["Usage « boisson à base de jus de raisin fermenté » : une seule source presse (2026)"],
+    src: "Mille Vignes, P. Lepeltier ; Assemblée nationale, QE n° 41311 (2013) et n° 10664 ; règlement (CE) n° 1234/2007 ; Que Choisir ; Vinetur (mai 2026)",
+    page: 35
+  },
+  {
+    id: 44,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "L’âge d’or des hybrideurs français",
+    synth: "De la fin du XIXe siècle au milieu du XXe, des hybrideurs privés français créent des dizaines de milliers d’HPD. Albert Seibel en obtient plus de 16 000 (chancellor, rayon d’or) ; François Baco crée le baco blanc (baco 22 A, folle blanche × noah) ; Eugène Kuhlmann, à Colmar, le maréchal foch et le léon millot ; les Seyve et Villard le seyval et le chambourcin. Le baco blanc figure toujours dans l’encépagement de l’AOC Armagnac, cas unique d’hybride ancien en AOC.",
+    mnemo: "Baco reste au bar de l’Armagnac : le seul vieux hybride à avoir gardé sa place en AOC.",
+    flash: { q: "Quel hybride ancien reste autorisé en AOC, et laquelle ?", a: "Le baco blanc (baco 22 A), dans l’AOC Armagnac." },
+    qcm: { q: "Qui a créé le maréchal foch et le léon millot ?", opts: ["Albert Seibel", "Eugène Kuhlmann", "François Baco", "Joannès Seyve"], good: 1 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque obtenteur à un de ses hybrides.", payload: { pairs: [["Albert Seibel", "Chancellor"], ["François Baco", "Baco blanc"], ["Eugène Kuhlmann", "Maréchal foch"], ["Joannès Seyve", "Chambourcin"]] } },
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le baco blanc, ou baco {{22 A|22A}}, est issu de la folle blanche et du {{noah}}." } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Albert Seibel a obtenu plus de 16 000 hybrides.", answer: true }, explanation: "Dont quelques centaines seulement ont été diffusées." }
+    ],
+    status: "needs_review",
+    to_check: ["Périodisation 1878-1950 des HPD : découpage de Lepeltier", "Attribution du seyval (Bertille Seyve ou Victor Villard) : sources divergentes"],
+    src: "Mille Vignes, P. Lepeltier ; INAO, cahier des charges AOC Armagnac (arrêté du 27/03/2025) ; Wine Grapes (2012) ; Wikipédia (Albert Seibel, Baco blanc)",
+    page: 35
+  },
+  {
+    id: 45,
+    theme: "Viticulture",
+    sous: ["Conduite"],
+    niveau: "Pointu",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Couderc et Millardet, pères des porte-greffes",
+    synth: "Les hybrideurs de l’époque phylloxérique ont souvent mieux réussi avec leurs porte-greffes qu’avec leurs producteurs directs. Georges Couderc laisse le 3309 C (riparia × rupestris), toujours très planté ; Alexis Millardet, avec de Grasset, le 101-14 Mgt (riparia × rupestris) et le 41 B (chasselas × berlandieri), adapté aux sols calcaires. Un porte-greffe ne porte pas la récolte : il fournit les racines, et le raisin vient du greffon vinifera.",
+    mnemo: "C pour Couderc, Mgt pour Millardet et de Grasset. Piège : le B du 41 B (de son nom complet 41 B Mgt) renvoie au berlandieri, pas à un obtenteur.",
+    flash: { q: "Que signifient les lettres de « 3309 C » et « 101-14 Mgt » ?", a: "L’obtenteur : C = Couderc ; Mgt = Millardet et de Grasset." },
+    qcm: { q: "Quel porte-greffe est issu de chasselas × V. berlandieri ?", opts: ["3309 C", "101-14 Mgt", "41 B", "SO4"], good: 2 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque porte-greffe à ses parents.", payload: { pairs: [["3309 C", "V. riparia × V. rupestris"], ["41 B", "Chasselas × V. berlandieri"]] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le raisin d’une vigne greffée vient du porte-greffe.", answer: false }, explanation: "Le porte-greffe fournit les racines ; les grappes viennent du greffon." },
+      { type: "short_answer", prompt: "Quel obtenteur se cache derrière la lettre C du 3309 C ?", payload: { accepted: ["Couderc", "Georges Couderc"] } }
+    ],
+    status: "needs_review",
+    to_check: ["Parenté du 41 B (chasselas × berlandieri) : une seule source vérifiée dans cette recherche"],
+    src: "Mille Vignes, P. Lepeltier ; CBN Franche-Comté, Les Vitis post-culturales du nord-est de la France (2020) ; Oxford Companion to Wine (rootstock)",
+    page: 35
+  },
+  {
+    id: 46,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Le déclin des hybrides en France, l’essor du froid ailleurs",
+    synth: "Après 1950, les produits phytosanitaires, la montée des AOC et la qualité médiocre des hybrides rouges changent la donne : l’État restreint la plantation des HPD et les déclasse progressivement, alors qu’ils couvraient encore près de 400 000 ha à la fin des années 1950. L’hybridation recule en France mais continue en Europe de l’Est et dans les pays froids. Le rondo, obtenu en Tchécoslovaquie puis développé à Geisenheim (Allemagne), et le cayuga blanc, diffusé par l’université Cornell (État de New York) en 1972, sont autorisés en vinification dans leur pays. Lepeltier avance 402 000 ha et 32 % du vignoble au milieu des années 1950, chiffres non retrouvés tels quels.",
+    mnemo: "Quand la France arrache ses hybrides, le froid les adopte : Geisenheim, Cornell, Minnesota.",
+    flash: { q: "Pourquoi les hybrides déclinent-ils en France après 1950 ?", a: "Fongicides efficaces pour protéger les vinifera, essor des AOC, qualité médiocre des hybrides rouges : l’État en restreint la plantation et les déclasse peu à peu." },
+    qcm: { q: "Quel cépage a été diffusé par l’université Cornell ?", opts: ["Rondo", "Cayuga", "Seyval", "Regent"], good: 1 },
+    exos: [
+      { type: "mcq_multi", prompt: "Quels facteurs expliquent le recul des HPD en France ?", payload: { options: ["Les produits phytosanitaires", "La mise en place des AOC", "La qualité des hybrides rouges", "La disparition du phylloxéra"], answers: [0, 1, 2] }, explanation: "Le phylloxéra n’a pas disparu : on continue de greffer." },
+      { type: "matching", prompt: "Associe chaque hybride à son origine.", payload: { pairs: [["Rondo", "Tchécoslovaquie puis Geisenheim"], ["Cayuga", "Université Cornell (New York)"]] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Après 1950, l’hybridation s’arrête partout en Europe.", answer: false }, explanation: "Elle se poursuit en Europe de l’Est, en Allemagne et en Amérique du Nord." }
+    ],
+    status: "needs_review",
+    to_check: ["Étapes de l’encadrement des HPD après 1950 (décrets successifs) : non vérifiées dans les textes officiels", "Surface des HPD : « près de 400 000 ha en 1958 » (presse) ; année et part du vignoble à confirmer", "Rôle de l’université du Minnesota cité par Lepeltier : non vérifié"],
+    src: "Mille Vignes, P. Lepeltier ; Réussir Vigne (un vignoble en perpétuelle évolution) ; JancisRobinson.com (Cayuga White) ; Wine Grapes (Rondo)",
+    page: 35
+  },
+  {
+    id: 47,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Pointu",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Run1 et Rpv1 : les gènes de Muscadinia",
+    synth: "À partir de 1974, Alain Bouquet (INRA Montpellier) croise V. vinifera avec Muscadinia rotundifolia, une vitacée américaine très résistante, puis rétrocroise la descendance avec des vinifera sur plusieurs générations. Il fixe ainsi deux gènes : Run1, qui protège de l’oïdium, et Rpv1, qui protège du mildiou. Une résistance portée par un seul gène (monogénique) peut être contournée par le champignon ; c’est déjà arrivé pour Run1. D’où le pyramidage, mené ensuite par Christophe Schneider (INRA Colmar) : cumuler plusieurs gènes venus de Muscadinia, de Vitis américaines et asiatiques. Attention : le texte de Lepeltier (p. 36) attribue Run1 au mildiou et Rpv1 à l’oïdium ; c’est l’inverse, comme l’indique la légende de son schéma (p. 37).",
+    mnemo: "RUN pour l’oïdium (« Resistance to UNcinula », l’ancien nom du champignon), RPV pour le mildiou (« Resistance to Plasmopara Viticola »).",
+    flash: { q: "Run1 protège de quoi ? Et Rpv1 ?", a: "Run1 : l’oïdium. Rpv1 : le mildiou. Tous deux viennent de Muscadinia rotundifolia." },
+    qcm: { q: "Pourquoi pyramider plusieurs gènes de résistance ?", opts: ["Pour améliorer l’arôme", "Pour éviter que le champignon ne contourne une résistance unique", "Pour augmenter le rendement", "Pour supprimer le greffage"], good: 1 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque gène à la maladie qu’il combat.", payload: { pairs: [["Run1", "Oïdium"], ["Rpv1", "Mildiou"]] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une résistance monogénique est définitive.", answer: false }, explanation: "Le pathogène peut la contourner : un isolat d’oïdium capable de vaincre Run1 a été décrit." },
+      { type: "ordering", prompt: "Remets dans l’ordre la démarche d’introgression de Bouquet.", payload: { items: ["Croiser M. rotundifolia et V. vinifera (F1)", "Rétrocroiser la F1 avec une vinifera (RC1)", "Répéter les rétrocroisements (RC2, RC3…)", "Retenir les descendants résistants les plus proches de vinifera"] } }
+    ],
+    schema: { svg: "<svg viewBox=\"0 0 320 150\" fill=\"currentColor\" font-family=\"sans-serif\" font-size=\"9\"><text x=\"0\" y=\"10\">Part de Muscadinia dans le génome (moyenne théorique)</text><g><text x=\"0\" y=\"30\">F1</text><rect x=\"34\" y=\"21\" width=\"100\" height=\"12\" opacity=\"0.85\"/><rect x=\"134\" y=\"21\" width=\"100\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"30\">50 %</text><text x=\"0\" y=\"50\">RC1</text><rect x=\"34\" y=\"41\" width=\"50\" height=\"12\" opacity=\"0.85\"/><rect x=\"84\" y=\"41\" width=\"150\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"50\">25 %</text><text x=\"0\" y=\"70\">RC2</text><rect x=\"34\" y=\"61\" width=\"25\" height=\"12\" opacity=\"0.85\"/><rect x=\"59\" y=\"61\" width=\"175\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"70\">12,5 %</text><text x=\"0\" y=\"90\">RC3</text><rect x=\"34\" y=\"81\" width=\"12.5\" height=\"12\" opacity=\"0.85\"/><rect x=\"46.5\" y=\"81\" width=\"187.5\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"90\">6,25 %</text><text x=\"0\" y=\"110\">RC4</text><rect x=\"34\" y=\"101\" width=\"6.25\" height=\"12\" opacity=\"0.85\"/><rect x=\"40.25\" y=\"101\" width=\"193.75\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"110\">3,1 %</text><text x=\"0\" y=\"130\">RC5</text><rect x=\"34\" y=\"121\" width=\"3.1\" height=\"12\" opacity=\"0.85\"/><rect x=\"37.1\" y=\"121\" width=\"196.9\" height=\"12\" opacity=\"0.25\"/><text x=\"240\" y=\"130\">1,6 %</text></g><text x=\"0\" y=\"148\">Foncé : Muscadinia — clair : vinifera. Les gènes Run1 et Rpv1 sont gardés par tri.</text></svg>", legende: "Introgression : chaque rétrocroisement divise par deux la part du parent sauvage", src: "D’après Lepeltier, Mille Vignes, p. 37 (schéma original)" },
+    status: "needs_review",
+    to_check: ["Fin des travaux de Bouquet (1995, selon Lepeltier) : non confirmée", "Séries ResDur 1, 2 et 3 : non recoupées hors Lepeltier"],
+    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; OENO One (programme Bouquet) ; INRAE, Science et élus n° 1",
+    page: 36
+  },
+  {
+    id: 48,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Les variétés ResDur : artaban, vidoc, floreal, voltis",
+    synth: "Le programme INRA-ResDur (« résistance durable ») a produit les premières variétés françaises à résistance polygénique : artaban et vidoc en rouge, floreal et voltis en blanc, inscrites au catalogue officiel en janvier 2018. Elles cumulent deux gènes contre le mildiou (Rpv1 + Rpv3) et deux contre l’oïdium (Run1 + Ren3). Leur génome est presque entièrement vinifera. L’observatoire OSCAR (INRAE-IFV, lancé en 2017) mesure sur ces cépages une baisse des traitements fongicides de l’ordre de 80 à 90 %. Lepeltier parle de vins produits depuis 2017 et de 80 % de traitements en moins : l’inscription date de 2018 et OSCAR a mesuré 86 % dès 2017.",
+    mnemo: "AV rouge, FV blanc : Artaban-Vidoc pour le rouge, Floreal-Voltis pour le blanc.",
+    flash: { q: "Quelles sont les quatre premières variétés ResDur, et leur couleur ?", a: "Artaban et vidoc (rouges), floreal et voltis (blancs), inscrites en janvier 2018." },
+    qcm: { q: "Quelle baisse des traitements fongicides OSCAR observe-t-il sur ces variétés ?", opts: ["Environ 20 %", "Environ 50 %", "Environ 80 à 90 %", "100 % : aucun traitement"], good: 2 },
+    exos: [
+      { type: "mcq_multi", prompt: "Lesquelles sont des variétés ResDur blanches ?", payload: { options: ["Floreal", "Voltis", "Artaban", "Vidoc", "Solaris"], answers: [0, 1] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les variétés ResDur se cultivent sans aucun traitement.", answer: false }, explanation: "Un ou deux traitements restent conseillés, notamment contre le black-rot et pour protéger la durabilité des gènes." },
+      { type: "short_answer", prompt: "Quel observatoire suit le déploiement des cépages résistants en France ?", payload: { accepted: ["OSCAR", "observatoire OSCAR"] } }
+    ],
+    status: "needs_review",
+    to_check: ["Classement comme V. vinifera par l’Office communautaire des variétés végétales : non sourcé", "« Moins de 2 % de gènes américains » (Lepeltier) : chiffre non retrouvé, cohérent avec la théorie des rétrocroisements"],
+    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; INRAE, Science et élus n° 1 ; Vitisphere ; Réussir Vigne",
+    page: 36
+  },
+  {
+    id: 49,
+    theme: "Classifications",
+    sous: ["AOC / IGP"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: null, appel: null },
+    titre: "Les VIFA : cépages d’adaptation en AOC",
+    synth: "Depuis la directive INAO de 2018 (révisée en 2021), une AOC peut accueillir à titre expérimental des « variétés d’intérêt à fin d’adaptation » (VIFA), résistantes ou adaptées au climat. Limites : 5 % de l’encépagement de l’exploitation et 10 % de l’assemblage, pas de nom de VIFA sur l’étiquette, convention de dix ans. Bordeaux a ainsi intégré en 2021 six cépages climatiques (dont arinarnoa, marselan, touriga nacional), et la Champagne a retenu le voltis, cépage résistant.",
+    mnemo: "VIFA = 5-10-10 : 5 % des vignes, 10 % du vin, 10 ans d’essai.",
+    flash: { q: "Quelles limites encadrent une VIFA en AOC ?", a: "5 % de l’encépagement de l’exploitation, 10 % de l’assemblage, non mentionnée sur l’étiquette, convention de dix ans." },
+    qcm: { q: "Quel cépage résistant la Champagne a-t-elle retenu en VIFA ?", opts: ["Artaban", "Voltis", "Regent", "Baco blanc"], good: 1 },
+    exos: [
+      { type: "cloze", prompt: "Complète.", payload: { text: "Une VIFA est limitée à {{5}} % de l’encépagement et {{10}} % de l’assemblage." } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les six VIFA admises à Bordeaux en 2021 sont toutes des cépages résistants aux maladies.", answer: false }, explanation: "Elles ont été choisies pour l’adaptation au climat (arinarnoa, castets, marselan, touriga nacional, alvarinho, liliorila)." },
+      { type: "odd_one_out", prompt: "Lequel n’est pas une VIFA de Bordeaux (2021) ?", payload: { options: ["Marselan", "Touriga nacional", "Arinarnoa", "Floreal"], answer: 3 }, explanation: "Le floreal est une variété ResDur, pas l’une des six VIFA bordelaises de 2021." }
+    ],
+    status: "needs_review",
+    to_check: ["Champagne : voltis approuvé fin 2022, plantations depuis 2023 ; état en 2026 à confirmer"],
+    src: "INAO, directive INAO-DIR-CNAOV-2018-01 rév. 2 (2021) ; Réussir Vigne (VIFA) ; Wine Spectator (Champagne, voltis) ; Winetitles (Bordeaux 2021). Complète Mille Vignes, p. 36",
+    page: 36
+  },
+  {
+    id: 50,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "PiWi : les cépages résistants en Europe",
+    synth: "« Hybride » ayant mauvaise presse, on parle aujourd’hui de « variétés résistantes » ou de PiWi, abréviation allemande de Pilzwiderstandsfähig (« résistant aux champignons »). L’association PIWI International promeut ces cépages ; ils sont surtout plantés en Allemagne, en Suisse, en Autriche et dans le nord et l’est de l’Europe. Parmi les plus connus : regent et rondo en rouge, solaris, muscaris et souvignier gris en blanc ; ces deux derniers sont classés en France depuis 2016-2017. Lepeltier annonce plus de 130 variétés autorisées en Europe ; une revue de 2023 en compte 66 inscrites dans au moins un catalogue européen.",
+    mnemo: "PiWi = Pilz (champignon) + widerstandsfähig (qui résiste).",
+    flash: { q: "Que signifie PiWi ?", a: "Pilzwiderstandsfähig : « résistant aux champignons » (mildiou, oïdium)." },
+    qcm: { q: "Lequel de ces cépages est un PiWi blanc ?", opts: ["Regent", "Rondo", "Souvignier gris", "Gamay"], good: 2 },
+    exos: [
+      { type: "mcq_multi", prompt: "Lesquels de ces PiWi sont blancs ?", payload: { options: ["Regent", "Rondo", "Solaris", "Muscaris"], answers: [2, 3] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Plus de 130 variétés résistantes sont inscrites dans un catalogue européen.", answer: false }, explanation: "Chiffre de Lepeltier non confirmé : une revue de 2023 en compte 66 inscrites dans au moins un catalogue européen." },
+      { type: "short_answer", prompt: "Dans quelle langue est formé le mot PiWi ?", payload: { accepted: ["allemand", "l’allemand", "en allemand"] } }
+    ],
+    status: "needs_review",
+    to_check: ["Classement en France du muscaris et du souvignier gris : 2016 ou avril 2017 selon les sources", "Date de fondation de PIWI International : 1999 selon une seule source", "Adoption par l’OIV du terme « variété résistante » en 1994 : non retrouvée"],
+    src: "Mille Vignes, P. Lepeltier ; IVES Technical Reviews (2023) ; Vitisphere ; Wein.plus",
+    page: 36
+  },
+  {
+    id: 51,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Pointu",
+    geo: null,
+    titre: "Vigne OGM, CRISPR et NGT",
+    synth: "La transgenèse introduit dans la vigne un gène venu d’un autre organisme : des chercheurs (INRA Colmar, CNRS Strasbourg, 2017) ont ainsi fait produire à un porte-greffe un anticorps de camélidé contre le virus du court-noué, à titre de recherche. L’édition du génome (CRISPR) modifie, elle, un gène précis sans rien ajouter d’étranger, et a été appliquée à la vigne dès 2016. En France, l’essai de plein champ de porte-greffes transgéniques de Colmar a été arraché en 2010 et la culture du maïs OGM est interdite depuis 2014. L’UE a adopté en 2026 un règlement sur les « nouvelles techniques génomiques » (NGT) qui allège les règles pour les plantes éditées équivalentes aux variétés classiques, tout en les excluant du bio. Lepeltier écrit que la France interdit toute culture d’OGM : la loi de 2014 vise le maïs ; et l’essai de Colmar (2003-2010) testait une protéine du virus, pas l’anticorps de camélidé.",
+    mnemo: "Transgenèse = on greffe une phrase d’un autre livre ; CRISPR = on corrige une faute dans le même livre.",
+    flash: { q: "Différence entre transgenèse et édition du génome (CRISPR) ?", a: "La transgenèse ajoute un gène d’un autre organisme ; l’édition modifie un gène déjà présent, de façon ciblée." },
+    qcm: { q: "Contre quelle maladie visait l’anticorps de camélidé introduit dans un porte-greffe ?", opts: ["Le mildiou", "Le court-noué (virus)", "Le phylloxéra", "La flavescence dorée"], good: 1 },
+    exos: [
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La vigne transgénique au nanocorps de camélidé est commercialisée en Europe.", answer: false }, explanation: "C’est un travail de recherche, sans visée commerciale." },
+      { type: "matching", prompt: "Associe chaque technique à sa définition.", payload: { pairs: [["Sélection classique", "Croiser puis trier des pépins"], ["Transgenèse", "Ajouter un gène d’un autre organisme"], ["Édition du génome", "Modifier précisément un gène existant"]] } },
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le court-noué est causé par un {{virus}} transmis par des {{nématodes}}." }, explanation: "Le GFLV est transmis par le nématode Xiphinema index." }
+    ],
+    status: "needs_review",
+    to_check: ["Dates d’entrée en application du règlement NGT (UE) 2026/1388 : à vérifier sur EUR-Lex", "Périmètre exact de l’interdiction française de culture d’OGM"],
+    src: "Mille Vignes, P. Lepeltier ; Hemmer et al., Plant Biotechnology Journal, 2017 ; Ren et al., 2016 ; Commission européenne, DG SANTE (NGT) ; Gazette du Palais (loi de 2014)",
+    page: 36
+  },
+  {
+    id: 52,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Régénérer la vigne par le pépin",
+    synth: "Des vignerons attribuent une part des maladies actuelles à l’appauvrissement génétique dû à la multiplication par bouture et prônent le retour au semis. Le plus connu, Randall Grahm, a lancé le projet Popelouchum en Californie : semer des milliers de pépins (autofécondation de syrah, croisements variés) pour obtenir une population diverse plutôt qu’un clone champion. Une étude italienne de 2015 sur des semis autofécondés de cépages de Cirò (Calabre) rapporte de meilleures qualités et une meilleure adaptation. Pour Lepeltier, quatre voies se croisent : préserver, améliorer, régénérer, retourner aux vignes sauvages (lambrusques). Lepeltier situe Popelouchum à Santa Barbara avec 10 000 pépins de serine ; les sources le placent à San Juan Bautista (comté de San Benito), 10 000 étant l’objectif de nouvelles variétés.",
+    mnemo: "Bouture = photocopie ; pépin = nouvel original.",
+    flash: { q: "Pourquoi certains vignerons reviennent-ils au semis de pépins ?", a: "Pour recréer de la diversité génétique, face à l’uniformité des clones multipliés par bouture." },
+    qcm: { q: "Quel vigneron a lancé le projet Popelouchum ?", opts: ["Elisabetta Foradori", "Randall Grahm", "Alain Bouquet", "Albert Seibel"], good: 1 },
+    exos: [
+      { type: "ordering", prompt: "Les quatre voies de Lepeltier, telles qu’elle les énonce.", payload: { items: ["Préserver", "Améliorer", "Régénérer", "Retourner aux lambrusques"] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une vigne née d’un pépin est génétiquement identique à sa mère.", answer: false }, explanation: "Seule la bouture (ou le greffon) reproduit la mère à l’identique." },
+      { type: "short_answer", prompt: "Comment s’appelle la vigne sauvage européenne ?", payload: { accepted: ["lambrusque", "lambrusques", "Vitis vinifera subsp. sylvestris", "sylvestris"] } }
+    ],
+    status: "needs_review",
+    to_check: ["Elisabetta Foradori : semis de teroldego selon Lepeltier, les sources trouvées parlent de sélection massale", "Étude de 2015 (Molecular Biotechnology, cépages de Cirò) : auteur et durée de 14 ans non vérifiés"],
+    src: "Mille Vignes, P. Lepeltier ; Decanter ; Grape Collective ; Molecular Biotechnology, 2015",
+    page: 36
+  },
+  {
+    id: 53,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Pointu",
+    geo: { pays: "Italie", region: "Piémont", appel: null },
+    titre: "La généalogie des cépages du nord-ouest italien",
+    synth: "En 2020, une équipe de l’Institut pour la protection durable des plantes (CNR, Turin) publie dans Scientific Reports la reconstruction génétique des liens entre 227 cépages anciens du Piémont, de la Vallée d’Aoste, de Ligurie et de Lombardie, dont le nebbiolo et la barbera. Elle montre l’isolement relatif de ce vignoble et révèle des parents disparus, reconstitués à partir de leurs descendants. Retracer l’origine d’un cépage aide à valoriser le couple variété-terroir et justifie la conservation de la diversité ampélographique. Le schéma de Lepeltier (p. 38-39) parle du « nord-est » de l’Italie : l’étude porte bien sur le nord-ouest.",
+    mnemo: "Le nebbiolo a un arbre de famille : le Piémont est une vallée où les cépages se sont mariés entre cousins.",
+    flash: { q: "Qu’a montré l’étude de Turin (2020) sur les cépages piémontais ?", a: "Un réseau de parentés entre 227 cépages anciens du nord-ouest italien, relativement isolés, avec des parents disparus reconstitués génétiquement." },
+    qcm: { q: "Où se situent le Piémont, la Ligurie et la Vallée d’Aoste ?", opts: ["Nord-est de l’Italie", "Nord-ouest de l’Italie", "Centre de l’Italie", "Sud de l’Italie"], good: 1 },
+    exos: [
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une analyse ADN peut reconstituer le profil d’un cépage disparu à partir de ses descendants.", answer: true }, explanation: "L’étude de 2020 propose ainsi des « génotypes reconstruits »." },
+      { type: "mcq_multi", prompt: "Quelles régions étaient couvertes par l’étude ?", payload: { options: ["Piémont", "Ligurie", "Vallée d’Aoste", "Vénétie", "Sicile"], answers: [0, 1, 2] } },
+      { type: "short_answer", prompt: "Quel grand cépage rouge piémontais est au cœur de cette généalogie, avec la barbera ?", payload: { accepted: ["nebbiolo", "le nebbiolo"] } }
+    ],
+    status: "needs_review",
+    to_check: ["Place de chaque cépage dans l’arbre (moscato bianco, coccalona nera, bottagera…) : texte intégral de l’étude non lu"],
+    src: "Mille Vignes, P. Lepeltier ; Raimondi et al., DNA-based genealogy reconstruction of Nebbiolo, Barbera and other ancient grapevine cultivars from northwestern Italy, Scientific Reports, 2020",
+    page: 38
   }
 );
