@@ -1356,13 +1356,13 @@
         "appel": null
       },
       "titre": "La magdeleine noire des Charentes, mère du merlot",
-      "synth": "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; quatre pieds identiques sont ensuite repérés en Charente, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur de près de 120 cépages européens (Lacombe, 2013), elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies.",
+      "synth": "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; quatre pieds identiques sont ensuite repérés en Charente, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur de près de 120 cépages européens (Lacombe, 2013), elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies. Elle intéresse aussi la recherche sanitaire : le merlot est peu sensible à la flavescence dorée, et des croisements menés par l’INRAE de Bordeaux suggèrent que sa mère transmet une moindre sensibilité à la maladie, sans qu’aucune vigne n’en soit réellement indemne.",
       "mnemo": "Merlot = Cab franc + Magdeleine : le « M » du merlot vient de sa mère Magdeleine. Le côt est son demi-frère.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 27,
-          "note": "Mille Vignes, P. Lepeltier ; Boursiquot et al., Australian Journal of Grape and Wine Research 15, 2009 ; Bécédia ; JancisRobinson.com (2008)",
+          "note": "Mille Vignes, P. Lepeltier ; Boursiquot et al., Australian Journal of Grape and Wine Research 15, 2009 ; Bécédia ; JancisRobinson.com (2008) ; Malembic-Maher et al., INRAE Bordeaux, poster SFP 2025",
           "partie": "Lire la vigne",
           "section": "Domestication",
           "chapitre": "La classification des cépages"
@@ -1370,7 +1370,8 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "Année de découverte de la souche de Saint-Suliac : 1992, 1996 ou 2004 selon les sources"
+        "Année de découverte de la souche de Saint-Suliac : 1992, 1996 ou 2004 selon les sources",
+        "Faible sensibilité à la flavescence dorée transmise par la magdeleine : résultat préliminaire (poster INRAE, 2025)"
       ],
       "cours": null,
       "schema": null,
@@ -3709,6 +3710,20 @@
     },
     {
       "id": "mv-0033-06",
+      "notion_ids": [
+        "mv-0033"
+      ],
+      "type": "true_false",
+      "prompt": "Vrai ou faux ?",
+      "payload": {
+        "statement": "La magdeleine noire des Charentes est totalement résistante à la flavescence dorée.",
+        "answer": false
+      },
+      "explanation": "Aucune vigne résistante n’est connue. Le merlot est peu sensible, et une étude INRAE (2025) suggère que la magdeleine transmet cette faible sensibilité : c’est une piste, pas une immunité.",
+      "content_version": 1
+    },
+    {
+      "id": "mv-0033-07",
       "notion_ids": [
         "mv-0033"
       ],
