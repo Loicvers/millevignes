@@ -33,7 +33,7 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
       titre: f.titre, synth: f.synth, mnemo: f.mnemo ?? null, refs: [ref],
       // Les pastilles ✅/⚠️ de la recherche d'origine ne sont pas dans fiches.js : statut prudent.
       status: "needs_review", to_check: ["Pastilles de vérification d'origine non conservées : revérifier les sources."],
-      cours: f.cours ?? null, content_version: 1,
+      cours: f.cours ?? null, schema: f.schema ?? null, content_version: 1,
     });
     exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a }, content_version: 1 });
     exercises.push({ id: `${id}-02`, type: "mcq_single", notion_ids: [id], prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, content_version: 1 });

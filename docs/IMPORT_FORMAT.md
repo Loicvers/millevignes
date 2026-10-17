@@ -74,6 +74,20 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 - `divergences` (facultatif) : désaccords entre sources ou avec l'autrice, non tranchés.
 - `cours` : page de cours, même structure que dans `STRUCTURE-FICHE-v2.md` (`lede`, `frise`, `essentiel`, `sections`, `synthese`, `src`), ou `null`. `imp` vaut `essentiel` · `important` · `utile` · `culture`.
 
+### Schéma (facultatif)
+
+Champ `schema` de la notion (et de la fiche dans `fiches.js`), affiché dans la carte sous la synthèse :
+
+```json
+"schema": { "svg": "<svg viewBox=\"0 0 300 160\">…</svg>",
+            "legende": "Les stades du cycle végétatif",
+            "src": "D'après Lepeltier, Mille Vignes, p. 45" }
+```
+
+- Dessin **original** redessiné, jamais une copie ou un scan du livre (le site est public). Réservé aux notions phares ; les autres schémas deviennent des exercices (`ordering`, `matching`) ou un tableau de cours.
+- `svg` : un seul `<svg>…</svg>` inerte. Refusé s'il contient un script, un attribut d'événement (`onload`…), un `foreignObject` ou un lien externe. Couleurs via `currentColor` pour suivre le thème.
+- `legende` et `src` (crédit) obligatoires.
+
 ## Exercices — 10 types
 
 Champs communs :

@@ -76,3 +76,20 @@ test("sommaire : chapitre déduit de la page et écart signalé", () => {
   l.notions[0].refs[0].chapitre = "La vigne : des fleurs aux baies";
   assert.deepEqual(validate(l, base), []);
 });
+
+test("schéma : SVG inerte et crédité seulement", () => {
+  const ok = { svg: '<svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="currentColor"/></svg>', legende: "Coupe d'une baie", src: "D'après Lepeltier, Mille Vignes, p. 45" };
+  const l = lot();
+  l.notions[0].schema = ok;
+  assert.deepEqual(validate(l, base), []);
+  for (const [bad, m] of [
+    [{ ...ok, svg: "<img src=x>" }, /<svg>/],
+    [{ ...ok, svg: '<svg onload="alert(1)"></svg>' }, /ni script/],
+    [{ ...ok, svg: "<svg><script>alert(1)</script></svg>" }, /ni script/],
+    [{ ...ok, svg: '<svg><image href="https://x.org/a.png"/></svg>' }, /lien externe/],
+    [{ ...ok, src: "" }, /crédit/],
+  ]) {
+    l.notions[0].schema = bad;
+    assert.match(validate(l, base).join("\n"), m);
+  }
+});

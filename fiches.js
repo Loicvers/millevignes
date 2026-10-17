@@ -17,6 +17,8 @@
    - qcm     : { q, opts:[...], good } (good = index de la bonne réponse, base 0)
    - src     : source courte
    - page    : page précise dans Mille Vignes (nombre) — facultatif mais recommandé
+   - schema  : { svg, legende, src } — schéma ORIGINAL redessiné (jamais une copie du livre),
+               src = crédit « D'après Lepeltier, Mille Vignes, p. X » — facultatif
    - exos    : exercices supplémentaires { type, prompt, payload, explanation } — voir docs/IMPORT_FORMAT.md
    Après modification : node tools/migrate-fiches.mjs && node --test
    =================================================================== */

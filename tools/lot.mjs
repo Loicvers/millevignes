@@ -37,6 +37,14 @@ function checkNotion(n, tax, err) {
   if (n.geo != null && !isStr(n.geo.pays)) err(`${at} : geo.pays manquant (ou geo: null)`);
   if (!Array.isArray(n.refs) || !n.refs.length) err(`${at} : refs doit citer au moins une source`);
   if (n.status === "needs_review" && !isStrArr(n.to_check ?? [])) err(`${at} : status needs_review exige to_check (les faits ⚠️)`);
+  // Le SVG est injecté tel quel dans la page : on n'accepte qu'un dessin inerte et crédité.
+  if (n.schema != null) {
+    const svg = n.schema.svg;
+    if (!(isStr(svg) && /^\s*<svg[\s>]/.test(svg) && /<\/svg>\s*$/.test(svg))) err(`${at} : schema.svg doit être un <svg>…</svg>`);
+    else if (/<script|<foreignObject|\son\w+\s*=|(href|src)\s*=\s*["']?\s*(https?:|javascript:|data:)/i.test(svg)) err(`${at} : schema.svg ne doit contenir ni script, ni événement, ni lien externe`);
+    if (!isStr(n.schema.legende)) err(`${at} : schema.legende manquante`);
+    if (!isStr(n.schema.src)) err(`${at} : schema.src (crédit) manquant`);
+  }
   const imps = [];
   JSON.stringify(n.cours ?? null, (k, v) => (k === "imp" && v != null && imps.push(v), v));
   for (const i of imps) if (!IMP.includes(i)) err(`${at} : imp « ${i} » invalide (${IMP.join(" | ")})`);
