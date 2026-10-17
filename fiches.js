@@ -18,7 +18,7 @@
    - src     : source courte
    - page    : page précise dans Mille Vignes (nombre) — facultatif mais recommandé
    - exos    : exercices supplémentaires { type, prompt, payload, explanation } — voir docs/IMPORT_FORMAT.md
-               (pas encore affichés par le site : ils le seront en phase 2)
+   Après modification : node tools/migrate-fiches.mjs && node --test
    =================================================================== */
 
 const FICHES = [

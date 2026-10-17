@@ -3,7 +3,9 @@
 *Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md`.*
 *Contrôle : `node tools/validate.mjs mon-lot.json` (affiche les erreurs, ou l'aperçu de l'import).*
 
-Un lot = **un fichier `.json`** livré en entier. On n'édite rien à la main.
+**Circuit actuel** : la source unique est `fiches.js`. Claude y ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier à la main : il sert à la validation.
+
+Le format « lot JSON » ci-dessous sert aux imports futurs dans l'application. On n'édite rien à la main.
 Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 
 ```json
