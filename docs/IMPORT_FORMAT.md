@@ -1,11 +1,32 @@
 # FORMAT D'UN LOT — schema_version 1
 
-*Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md`.*
+*Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md` et `fiche-modele-complete.js`.*
 *Contrôle : `node tools/validate.mjs mon-lot.json` (affiche les erreurs, ou l'aperçu de l'import).*
 
-**Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches dans le fichier de la section (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier à la main : il sert à la validation.
+**Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier, ajout par `FICHES.push(...)` ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, pose les pastilles (`status`, `to_check`), puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier ni lire : il sert à la validation.
 
-**Pastilles dans `fiches/*.js`** : chaque fiche porte `status` (`"verified"` si tous les faits importants sont ✅, sinon `"needs_review"`) et `to_check` (liste des faits ⚠️, vide si `verified`). La migration les reprend telles quelles ; le site affiche « ✓ vérifiée » ou « ⚠ à vérifier » avec la liste dépliable. Fiche sans `status` = « à revoir » par défaut. Divergences avec le livre : dans la synthèse et/ou un exercice vrai/faux.
+## Fiche du site (fiches/*.js)
+
+```js
+{
+  id: 38,                       // suite du dernier id, jamais réutilisé
+  theme: "Viticulture", sous: ["Maladies"], niveau: "Pointu",   // Fondamental | Intermédiaire | Pointu
+  geo: { pays: "France", region: "Bourgogne", appel: null },    // ou null
+  titre: "…", synth: "2 à 4 phrases reformulées.", mnemo: "Image concrète.",
+  flash: { q: "…", a: "…" },
+  qcm: { q: "…", opts: ["a", "b", "c", "d"], good: 1 },          // index base 0
+  exos: [ { type: "true_false", prompt: "Vrai ou faux ?", payload: { … }, explanation: "…" } ],  // 2 à 4, types ci-dessous
+  schema: null,                 // ou { svg, legende, src } (voir Schéma)
+  cours: null,                  // ou page de cours (voir Notion)
+  status: "needs_review",       // "verified" si tous les faits importants sont ✅
+  to_check: ["Fait ⚠️ : pourquoi"],  // vide si verified
+  src: "Mille Vignes, P. Lepeltier ; autres sources",
+  page: 18
+}
+```
+Apostrophes typographiques (’) dans les textes. Catalogue des sous-thèmes : `SOUS` dans `fiches.js`.
+
+**Pastilles** : la migration reprend `status` et `to_check` tels quels ; le site affiche « ✓ vérifiée » ou « ⚠ à vérifier » avec la liste dépliable. Une fiche sans `status` est marquée « à revoir » par défaut. Les divergences avec le livre vont dans la synthèse et/ou un exercice vrai/faux.
 
 Le format « lot JSON » ci-dessous sert aux imports futurs dans l'application. On n'édite rien à la main.
 Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
@@ -23,7 +44,7 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 ## Règles communes
 
 - **id** : minuscules, chiffres, tirets. Jamais réutilisé, jamais renommé.
-  - notion Mille Vignes : `mv-0013`, `mv-0014`… (suite du dernier id de `data/base.json`, aujourd'hui **mv-0012**) ;
+  - notion Mille Vignes : `mv-0013`, `mv-0014`… (dérivé de l'id de la fiche : fiche 22 → `mv-0022`) ;
   - exercice : id de la notion + numéro, `mv-0013-01`, `mv-0013-02`… ;
   - source : nom court, `src-wine-grapes-2012`, `src-inao-cdc-margaux`.
 - **content_version** : `1` à la création. Pour corriger un élément déjà importé, renvoyer le même id avec `content_version` + 1. Même id + même version + contenu différent = **conflit**, la base n'est pas modifiée.
@@ -66,7 +87,7 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 ```
 
 - `refs` vers `mille-vignes` : donner la **page** suffit. Partie, section et chapitre se déduisent du sommaire (`data/mille-vignes-sommaire.json`). Si `chapitre` est indiqué et ne correspond pas à la page, le lot est refusé.
-- `theme`, `sous` : catalogue de `data/base.json` (11 thèmes). Un sous-thème hors catalogue est refusé.
+- `theme`, `sous` : catalogue de `fiches.js` (11 thèmes). Un sous-thème hors catalogue est refusé.
 - `niveau` : `Fondamental` · `Intermédiaire` · `Pointu`. `geo` : objet ou `null`.
 - **`status` et pastilles** :
   - tous les faits importants ✅ → `"verified"` ;
@@ -74,7 +95,21 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
   - les faits ❌ ne figurent pas dans la notion ;
   - `"draft"` pour un brouillon, `"needs_update"` pour une donnée susceptible d'être périmée.
 - `divergences` (facultatif) : désaccords entre sources ou avec l'autrice, non tranchés.
-- `cours` : page de cours, même structure que dans `STRUCTURE-FICHE-v2.md` (`lede`, `frise`, `essentiel`, `sections`, `synthese`, `src`), ou `null`. `imp` vaut `essentiel` · `important` · `utile` · `culture`.
+
+### Page de cours (`cours`, facultatif, réservé aux notions phares)
+
+```js
+cours: {
+  lede: "Accroche qui donne l'angle.",
+  frise: [ { date: "1999", txt: "…" } ],          // ou null
+  essentiel: "Le point central, 1-2 phrases.",
+  sections: [ { h: "Titre", blocs: [ { imp: "essentiel", txt: "…" } ],
+                table: { caption: "…", head: ["…"], rows: [ { imp: "important", cells: ["…"] } ] } } ],  // table ou null
+  synthese: [ { imp: "essentiel", txt: "…" } ],
+  src: "Sources complètes. Cf. Mille Vignes, p. X."
+}
+```
+`imp` vaut `essentiel` (à savoir absolument) · `important` · `utile` · `culture` (anecdote).
 
 ### Schéma (facultatif)
 
