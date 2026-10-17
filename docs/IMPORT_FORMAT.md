@@ -3,7 +3,7 @@
 *Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md`.*
 *Contrôle : `node tools/validate.mjs mon-lot.json` (affiche les erreurs, ou l'aperçu de l'import).*
 
-**Circuit actuel** : la source unique est `fiches.js`. Claude y ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier à la main : il sert à la validation.
+**Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches dans le fichier de la section (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier à la main : il sert à la validation.
 
 Le format « lot JSON » ci-dessous sert aux imports futurs dans l'application. On n'édite rien à la main.
 Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
@@ -76,7 +76,7 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 
 ### Schéma (facultatif)
 
-Champ `schema` de la notion (et de la fiche dans `fiches.js`), affiché dans la carte sous la synthèse :
+Champ `schema` de la notion (et de la fiche dans `fiches/*.js`), affiché dans la carte sous la synthèse :
 
 ```json
 "schema": { "svg": "<svg viewBox=\"0 0 300 160\">…</svg>",

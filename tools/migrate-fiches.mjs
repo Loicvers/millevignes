@@ -1,15 +1,21 @@
 // Convertit fiches.js (format v1 du site) en data/base.json (schema_version 1). Ne modifie pas fiches.js.
 // Usage : node tools/migrate-fiches.mjs [fiches.js] [data/base.json]
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
-import { dirname } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { SCHEMA_VERSION, validate, chapterAt } from "./lot.mjs";
 
 const TOC = JSON.parse(readFileSync(new URL("../data/mille-vignes-sommaire.json", import.meta.url), "utf8"));
 
+// fiches.js (catalogues, FICHES vide) puis fiches/*.js dans l'ordre du nom, comme les <script> d'index.html.
+export const fichesFiles = (path = "fiches.js") => {
+  const dir = join(dirname(path), "fiches");
+  return [path, ...readdirSync(dir).filter(f => f.endsWith(".js")).sort().map(f => join(dir, f))];
+};
+
 export function loadFichesJs(path) {
   const ctx = {};
-  vm.runInNewContext(readFileSync(path, "utf8") + ";this.out={FICHES,SOUS,THEME_ORDER};", ctx);
+  vm.runInNewContext(fichesFiles(path).map(f => readFileSync(f, "utf8")).join("\n;\n") + ";this.out={FICHES,SOUS,THEME_ORDER};", ctx);
   return ctx.out;
 }
 

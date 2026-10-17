@@ -503,104 +503,6 @@
       "content_version": 1
     },
     {
-      "id": "mv-0003",
-      "legacy_id": 3,
-      "theme": "Classifications",
-      "sous": [
-        "Histoire des crus"
-      ],
-      "niveau": "Intermédiaire",
-      "geo": {
-        "pays": "France",
-        "region": "Bordeaux",
-        "appel": "Margaux"
-      },
-      "titre": "Le classement de 1855",
-      "synth": "Établi pour l'Exposition universelle de Paris, ce classement hiérarchise les crus du Médoc (et Sauternes) selon le prix de vente de l'époque, en cinq niveaux. Quasi figé depuis : une seule modification majeure en plus d'un siècle et demi.",
-      "mnemo": "« 1855, gravé dans le marbre. » Né d'une expo, classé par le prix, presque jamais retouché. 18-55, deux paires.",
-      "refs": [
-        {
-          "source_id": "mille-vignes",
-          "page": 183,
-          "note": "Lepeltier, Mille Vignes — Terroir",
-          "partie": "Lire les paysages",
-          "section": "Terroir",
-          "chapitre": "L’invention des appellations d’origine"
-        }
-      ],
-      "status": "needs_review",
-      "to_check": [
-        "Pastilles de vérification d'origine non conservées : revérifier les sources."
-      ],
-      "cours": null,
-      "schema": null,
-      "content_version": 1
-    },
-    {
-      "id": "mv-0004",
-      "legacy_id": 4,
-      "theme": "Viticulture",
-      "sous": [
-        "Cycle de la vigne"
-      ],
-      "niveau": "Fondamental",
-      "geo": null,
-      "titre": "La véraison",
-      "synth": "Étape clé du cycle : le raisin change de couleur et entame sa maturation. Le grain se gorge de sucre, l'acidité chute, les arômes se forment. Compte à rebours avant les vendanges.",
-      "mnemo": "« Vér-aison → vert-à-raisin. » Le vert vire au raisin mûr. À partir de là, ~45 jours avant récolte.",
-      "refs": [
-        {
-          "source_id": "mille-vignes",
-          "page": 45,
-          "note": "Lepeltier, Mille Vignes — Nature",
-          "partie": "Lire la vigne",
-          "section": "Nature",
-          "chapitre": "La vigne : des fleurs aux baies"
-        }
-      ],
-      "status": "needs_review",
-      "to_check": [
-        "Pastilles de vérification d'origine non conservées : revérifier les sources."
-      ],
-      "cours": null,
-      "schema": null,
-      "content_version": 1
-    },
-    {
-      "id": "mv-0005",
-      "legacy_id": 5,
-      "theme": "Géographie viticole",
-      "sous": [
-        "Notion de terroir"
-      ],
-      "niveau": "Fondamental",
-      "geo": {
-        "pays": "France",
-        "region": "Bourgogne",
-        "appel": null
-      },
-      "titre": "Le climat bourguignon",
-      "synth": "En Bourgogne, un « climat » n'est pas la météo : c'est une parcelle précise, délimitée et nommée, avec sa géologie et son exposition. Classés à l'UNESCO, ils incarnent l'idée française de terroir.",
-      "mnemo": "« En Bourgogne, le climat est un lieu, pas un temps. » Un climat = une parcelle à nom propre (ex. Montrachet).",
-      "refs": [
-        {
-          "source_id": "mille-vignes",
-          "page": 158,
-          "note": "Lepeltier, Mille Vignes — Terroir",
-          "partie": "Lire les paysages",
-          "section": "Terroir",
-          "chapitre": "Construire le terroir"
-        }
-      ],
-      "status": "needs_review",
-      "to_check": [
-        "Pastilles de vérification d'origine non conservées : revérifier les sources."
-      ],
-      "cours": null,
-      "schema": null,
-      "content_version": 1
-    },
-    {
       "id": "mv-0006",
       "legacy_id": 6,
       "theme": "Cépages",
@@ -1095,6 +997,104 @@
       "cours": null,
       "schema": null,
       "content_version": 1
+    },
+    {
+      "id": "mv-0004",
+      "legacy_id": 4,
+      "theme": "Viticulture",
+      "sous": [
+        "Cycle de la vigne"
+      ],
+      "niveau": "Fondamental",
+      "geo": null,
+      "titre": "La véraison",
+      "synth": "Étape clé du cycle : le raisin change de couleur et entame sa maturation. Le grain se gorge de sucre, l'acidité chute, les arômes se forment. Compte à rebours avant les vendanges.",
+      "mnemo": "« Vér-aison → vert-à-raisin. » Le vert vire au raisin mûr. À partir de là, ~45 jours avant récolte.",
+      "refs": [
+        {
+          "source_id": "mille-vignes",
+          "page": 45,
+          "note": "Lepeltier, Mille Vignes — Nature",
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "La vigne : des fleurs aux baies"
+        }
+      ],
+      "status": "needs_review",
+      "to_check": [
+        "Pastilles de vérification d'origine non conservées : revérifier les sources."
+      ],
+      "cours": null,
+      "schema": null,
+      "content_version": 1
+    },
+    {
+      "id": "mv-0003",
+      "legacy_id": 3,
+      "theme": "Classifications",
+      "sous": [
+        "Histoire des crus"
+      ],
+      "niveau": "Intermédiaire",
+      "geo": {
+        "pays": "France",
+        "region": "Bordeaux",
+        "appel": "Margaux"
+      },
+      "titre": "Le classement de 1855",
+      "synth": "Établi pour l'Exposition universelle de Paris, ce classement hiérarchise les crus du Médoc (et Sauternes) selon le prix de vente de l'époque, en cinq niveaux. Quasi figé depuis : une seule modification majeure en plus d'un siècle et demi.",
+      "mnemo": "« 1855, gravé dans le marbre. » Né d'une expo, classé par le prix, presque jamais retouché. 18-55, deux paires.",
+      "refs": [
+        {
+          "source_id": "mille-vignes",
+          "page": 183,
+          "note": "Lepeltier, Mille Vignes — Terroir",
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "L’invention des appellations d’origine"
+        }
+      ],
+      "status": "needs_review",
+      "to_check": [
+        "Pastilles de vérification d'origine non conservées : revérifier les sources."
+      ],
+      "cours": null,
+      "schema": null,
+      "content_version": 1
+    },
+    {
+      "id": "mv-0005",
+      "legacy_id": 5,
+      "theme": "Géographie viticole",
+      "sous": [
+        "Notion de terroir"
+      ],
+      "niveau": "Fondamental",
+      "geo": {
+        "pays": "France",
+        "region": "Bourgogne",
+        "appel": null
+      },
+      "titre": "Le climat bourguignon",
+      "synth": "En Bourgogne, un « climat » n'est pas la météo : c'est une parcelle précise, délimitée et nommée, avec sa géologie et son exposition. Classés à l'UNESCO, ils incarnent l'idée française de terroir.",
+      "mnemo": "« En Bourgogne, le climat est un lieu, pas un temps. » Un climat = une parcelle à nom propre (ex. Montrachet).",
+      "refs": [
+        {
+          "source_id": "mille-vignes",
+          "page": 158,
+          "note": "Lepeltier, Mille Vignes — Terroir",
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Construire le terroir"
+        }
+      ],
+      "status": "needs_review",
+      "to_check": [
+        "Pastilles de vérification d'origine non conservées : revérifier les sources."
+      ],
+      "cours": null,
+      "schema": null,
+      "content_version": 1
     }
   ],
   "exercises": [
@@ -1153,96 +1153,6 @@
           "Des mutations de couleur d'un même cépage",
           "Trois régions d'origine",
           "Trois modes de taille"
-        ],
-        "answer": 1
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0003-01",
-      "type": "flashcard",
-      "notion_ids": [
-        "mv-0003"
-      ],
-      "prompt": "Sur quel critère reposait le classement de 1855 ?",
-      "payload": {
-        "answer": "Le prix de vente des vins à l'époque."
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0003-02",
-      "type": "mcq_single",
-      "notion_ids": [
-        "mv-0003"
-      ],
-      "prompt": "À quelle occasion fut créé le classement de 1855 ?",
-      "payload": {
-        "options": [
-          "La Révolution française",
-          "L'Exposition universelle de Paris",
-          "La création des AOC",
-          "Le phylloxéra"
-        ],
-        "answer": 1
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0004-01",
-      "type": "flashcard",
-      "notion_ids": [
-        "mv-0004"
-      ],
-      "prompt": "Sucre et acidité à la véraison ?",
-      "payload": {
-        "answer": "Le sucre monte, l'acidité chute."
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0004-02",
-      "type": "mcq_single",
-      "notion_ids": [
-        "mv-0004"
-      ],
-      "prompt": "La véraison correspond à…",
-      "payload": {
-        "options": [
-          "La floraison",
-          "Le changement de couleur + début de maturation",
-          "La taille d'hiver",
-          "La chute des feuilles"
-        ],
-        "answer": 1
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0005-01",
-      "type": "flashcard",
-      "notion_ids": [
-        "mv-0005"
-      ],
-      "prompt": "Que désigne un « climat » en Bourgogne ?",
-      "payload": {
-        "answer": "Une parcelle de vigne délimitée et nommée."
-      },
-      "content_version": 1
-    },
-    {
-      "id": "mv-0005-02",
-      "type": "mcq_single",
-      "notion_ids": [
-        "mv-0005"
-      ],
-      "prompt": "Les climats de Bourgogne sont…",
-      "payload": {
-        "options": [
-          "Des prévisions météo",
-          "Des parcelles délimitées classées UNESCO",
-          "Des cépages locaux",
-          "Des techniques de taille"
         ],
         "answer": 1
       },
@@ -2055,6 +1965,96 @@
       "prompt": "Complète.",
       "payload": {
         "text": "Muscadinia compte {{40}} chromosomes, Vitis en compte {{38}}."
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0004-01",
+      "type": "flashcard",
+      "notion_ids": [
+        "mv-0004"
+      ],
+      "prompt": "Sucre et acidité à la véraison ?",
+      "payload": {
+        "answer": "Le sucre monte, l'acidité chute."
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0004-02",
+      "type": "mcq_single",
+      "notion_ids": [
+        "mv-0004"
+      ],
+      "prompt": "La véraison correspond à…",
+      "payload": {
+        "options": [
+          "La floraison",
+          "Le changement de couleur + début de maturation",
+          "La taille d'hiver",
+          "La chute des feuilles"
+        ],
+        "answer": 1
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0003-01",
+      "type": "flashcard",
+      "notion_ids": [
+        "mv-0003"
+      ],
+      "prompt": "Sur quel critère reposait le classement de 1855 ?",
+      "payload": {
+        "answer": "Le prix de vente des vins à l'époque."
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0003-02",
+      "type": "mcq_single",
+      "notion_ids": [
+        "mv-0003"
+      ],
+      "prompt": "À quelle occasion fut créé le classement de 1855 ?",
+      "payload": {
+        "options": [
+          "La Révolution française",
+          "L'Exposition universelle de Paris",
+          "La création des AOC",
+          "Le phylloxéra"
+        ],
+        "answer": 1
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0005-01",
+      "type": "flashcard",
+      "notion_ids": [
+        "mv-0005"
+      ],
+      "prompt": "Que désigne un « climat » en Bourgogne ?",
+      "payload": {
+        "answer": "Une parcelle de vigne délimitée et nommée."
+      },
+      "content_version": 1
+    },
+    {
+      "id": "mv-0005-02",
+      "type": "mcq_single",
+      "notion_ids": [
+        "mv-0005"
+      ],
+      "prompt": "Les climats de Bourgogne sont…",
+      "payload": {
+        "options": [
+          "Des prévisions météo",
+          "Des parcelles délimitées classées UNESCO",
+          "Des cépages locaux",
+          "Des techniques de taille"
+        ],
+        "answer": 1
       },
       "content_version": 1
     }

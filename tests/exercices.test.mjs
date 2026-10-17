@@ -3,10 +3,12 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
 import { normalize as nodeNormalize } from "../tools/lot.mjs";
+import { fichesFiles } from "../tools/migrate-fiches.mjs";
 
-// Charge fiches.js + exercices.js comme le navigateur (scripts classiques).
+// Charge fiches.js, fiches/*.js et exercices.js comme le navigateur (scripts classiques).
 const ctx = {};
-for (const f of ["../fiches.js", "../exercices.js"]) vm.runInNewContext(readFileSync(new URL(f, import.meta.url), "utf8"), ctx, { filename: f });
+const scripts = [...fichesFiles(new URL("../fiches.js", import.meta.url).pathname), new URL("../exercices.js", import.meta.url).pathname];
+for (const f of scripts) vm.runInNewContext(readFileSync(f, "utf8"), ctx, { filename: f });
 vm.runInNewContext("this.api={FICHES,toExercises,grade,normalize,clozeParts,shuffle}", ctx);
 const { FICHES, toExercises, grade, normalize, clozeParts, shuffle } = ctx.api;
 const read = p => JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
@@ -15,6 +17,18 @@ test("le site produit les mêmes exercices que data/base.json", () => {
   const site = JSON.parse(JSON.stringify(FICHES.flatMap(toExercises).map(({ fiche, ...e }) => e)));
   const base = read("../data/base.json").exercises.map(({ notion_ids, content_version, ...e }) => e);
   assert.deepEqual(site, base);
+});
+
+test("index.html charge chaque fichier de fiches/, dans l'ordre", () => {
+  const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const tags = [...html.matchAll(/<script src="(fiches\/[^"]+)"><\/script>/g)].map(m => m[1]);
+  const files = fichesFiles(new URL("../fiches.js", import.meta.url).pathname).slice(1).map(f => "fiches/" + f.split("/").pop());
+  assert.deepEqual(tags, files);
+});
+
+test("ids de fiches uniques", () => {
+  const ids = FICHES.map(f => f.id);
+  assert.equal(new Set(ids).size, ids.length);
 });
 
 test("correction de chaque type", () => {
