@@ -3,29 +3,44 @@ FICHES.push(
   {
     id: 1,
     theme: "Cépages",
-    sous: ["Origine & parenté", "Ampélographie"],
-    niveau: "Intermédiaire",
+    sous: ["Origine & parenté", "Profil & usage"],
+    niveau: "Fondamental",
     geo: { pays: "France", region: "Bordeaux", appel: null },
-    titre: "Le Cabernet-Sauvignon",
-    synth: "Né d'un croisement spontané entre le Cabernet franc et le Sauvignon blanc, identifié par l'analyse ADN dans les années 1990. Cépage tardif à petites baies épaisses, riche en tanins — colonne vertébrale des grands rouges du Médoc.",
-    mnemo: "« Cab-Sauv = Cabernet franc × Sauvignon blanc. » Son nom contient ses deux parents. Un croisement caché dans le nom.",
-    flash: { q: "De quel croisement est issu le Cabernet-Sauvignon ?", a: "Cabernet franc × Sauvignon blanc (croisement spontané)." },
-    qcm: { q: "Comment a-t-on prouvé la parenté du Cabernet-Sauvignon ?", opts: ["Par les archives monastiques", "Par analyse ADN dans les années 1990", "Par la forme des feuilles", "Par la dégustation comparée"], good: 1 },
-    src: "Lepeltier, Mille Vignes — Domestication",
+    titre: "Le cabernet sauvignon",
+    synth: "Croisement spontané du cabernet franc et du sauvignon blanc, révélé par l’ADN en 1997 (Bowers et Meredith, UC Davis) ; il est présent dans le Bordelais au plus tard au XVIIe siècle. Il débourre tard et mûrit en fin de saison, environ trois semaines après le chasselas. Ses petites baies, riches en pépins et en peau par rapport au jus, donnent une couleur intense et des tanins fermes ; récolté trop tôt, il marque des notes végétales (poivron vert) qui s’effacent à bonne maturité. C’est le premier cépage de cuve au monde (environ 341 000 ha en 2015 selon l’OIV) et le sixième en France.",
+    mnemo: "Cab-Sauv = Cabernet franc + Sauvignon blanc : ses deux parents sont dans son nom. Petite baie, grande peau : de la couleur et du tanin.",
+    flash: { q: "De quel croisement est issu le cabernet sauvignon, et comment l’a-t-on su ?", a: "Cabernet franc × sauvignon blanc, croisement spontané établi par analyse ADN (Bowers et Meredith, 1997)." },
+    qcm: { q: "Quel rang le cabernet sauvignon occupe-t-il dans le vignoble mondial (OIV, 2015) ?", opts: ["1er toutes catégories, devant les raisins de table", "1er cépage de cuve, 2e toutes catégories derrière le kyoho", "5e cépage de cuve", "10e cépage mondial"], good: 1 },
+    exos: [
+      { type: "matching", prompt: "Associe chaque cépage à ses parents.", payload: { pairs: [["Cabernet sauvignon", "Cabernet franc × sauvignon blanc"], ["Merlot", "Cabernet franc × magdeleine noire des Charentes"], ["Chardonnay", "Pinot × gouais blanc"]] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Un cabernet sauvignon récolté sous-mûr peut sentir le poivron vert.", answer: true }, explanation: "Les méthoxypyrazines, abondantes avant maturité, se dégradent au soleil et à la maturation." },
+      { type: "mcq_single", prompt: "Quand le cabernet sauvignon débourre-t-il ?", payload: { options: ["Très tôt, avant le chasselas", "En même temps que le chasselas", "Tardivement, environ deux semaines après le chasselas", "Après la floraison"], answer: 2 } },
+      { type: "cloze", prompt: "Complète.", payload: { text: "La parenté du cabernet sauvignon a été prouvée en {{1997}} par analyse {{ADN}}." } }
+    ],
+    status: "needs_review",
+    to_check: ["Siècle du croisement : au plus tard le XVIIe siècle, date exacte inconnue", "Clones agréés : 18 selon Plantgrape, 19 selon Lepeltier", "Rang mondial : une seule source (OIV, données 2015)"],
+    src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; OIV, Focus 2017",
     page: 27
   },
   {
     id: 2,
     theme: "Cépages",
-    sous: ["Mutations", "Profil & usage"],
+    sous: ["Mutations", "Origine & parenté"],
     niveau: "Fondamental",
     geo: { pays: "France", region: "Bourgogne", appel: null },
-    titre: "Le Pinot et ses mutations",
-    synth: "Le Pinot est génétiquement instable : Pinot noir, gris et blanc sont le même cépage ayant muté en couleur. Cette plasticité explique une grande diversité née d'une souche unique, surtout en Bourgogne et en Alsace.",
-    mnemo: "« Un seul Pinot, trois habits. » Noir, gris, blanc = même plante qui change de manteau (mutation de couleur).",
-    flash: { q: "Pinot noir, gris et blanc sont-ils trois cépages distincts ?", a: "Non : un même cépage ayant muté en couleur." },
-    qcm: { q: "Qu'est-ce qui distingue Pinot noir, gris et blanc ?", opts: ["Trois espèces différentes", "Des mutations de couleur d'un même cépage", "Trois régions d'origine", "Trois modes de taille"], good: 1 },
-    src: "Lepeltier, Mille Vignes — Domestication",
+    titre: "Le pinot et ses mutations",
+    synth: "Pinot noir, gris et blanc ont le même profil ADN : ce sont des variétés d’un seul cépage, nées de mutations somatiques de la couleur (le gris et le blanc seraient deux mutations indépendantes du noir). Le meunier est un cas à part : une chimère dont seule la couche cellulaire externe a muté, d’où ses feuilles duveteuses. Croisé avec le gouais blanc, le pinot a donné chardonnay, gamay, aligoté, melon, auxerrois… En France, 47 clones de pinot noir sont agréés.",
+    mnemo: "Un seul pinot, plusieurs habits : noir, gris, blanc changent de manteau ; le meunier, lui, a juste enfilé une veste farineuse par-dessus.",
+    flash: { q: "Pinot noir, gris et blanc sont-ils trois cépages distincts ?", a: "Non : un même cépage (même ADN), dont la couleur a muté. Ce sont des variétés du pinot." },
+    qcm: { q: "Qu’est-ce que le pinot meunier, génétiquement ?", opts: ["Un croisement de pinot et de gouais", "Une chimère : seule la couche externe des cellules a muté", "Un hybride franco-américain", "Un clone de pinot gris"], good: 1 },
+    exos: [
+      { type: "mcq_multi", prompt: "Lesquels sont nés du pinot et du gouais blanc ?", payload: { options: ["Chardonnay", "Gamay", "Aligoté", "Merlot", "Syrah"], answers: [0, 1, 2] } },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une analyse ADN classique distingue le pinot noir du pinot gris.", answer: false }, explanation: "Leurs profils microsatellites sont identiques : seule une mutation de couleur les sépare." },
+      { type: "short_answer", prompt: "Comment appelle-t-on une plante dont les couches de cellules n’ont pas le même génotype, comme le meunier ?", payload: { accepted: ["chimère", "une chimère", "chimère périclinale"] } }
+    ],
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; JancisRobinson.com, Pinot’s extraordinary pedigree ; Franks et al., Theor. Appl. Genet. 2002 ; Bowers et al., Science 1999 ; IFV, sélection clonale",
     page: 31
   },
   {
@@ -322,6 +337,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’auxerrois de Cahors tire son nom de son origine dans l’Yonne.", answer: false }, explanation: "C’est le côt (malbec), un cépage du Sud-Ouest : un nom de lieu n’est pas une preuve d’origine." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tous les historiens s’accordent pour dire que « cépage » désigne une variété précise dès le XVIe siècle.", answer: false }, explanation: "Selon une étude historique (revue Crescentis), le mot reste rare et flou jusqu’au XIXe siècle ; son sens précis s’installe avec Vivien (1839) et Odart (1845)." }
     ],
+    status: "needs_review",
+    to_check: ["Attribution du mot à Baïf en 1573 : seul le XVIe siècle est confirmé (Académie française, Boursiquot)"],
     src: "Mille Vignes, P. Lepeltier ; J.-M. Boursiquot (Réussir Vigne, 2016) ; revue Crescentis (UBE), noms des vignes 1400-1850 ; BnF, Le fruit de la vigne",
     page: 22
   },
@@ -342,6 +359,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Semer un pépin de pinot noir donne un nouveau pied de pinot noir.", answer: false }, explanation: "La reproduction sexuée brasse les gènes : le semis donne un individu nouveau, donc un nouveau cépage. Seule la bouture conserve le pinot." },
       { type: "mcq_single", prompt: "Pour les croisements entre V. vinifera et d’autres espèces, J.-M. Boursiquot préfère parler de…", payload: { options: ["Cépages résistants", "Variétés résistantes", "Clones résistants", "Sortotypes résistants"], answer: 1 } }
     ],
+    status: "needs_review",
+    to_check: ["Clone 141 du grenache blanc : une seule source (Lepeltier)"],
     src: "Mille Vignes, P. Lepeltier ; J.-M. Boursiquot (Réussir Vigne, 2016) ; Vouillamoz et Galet cités par La Passion du vin",
     page: 23
   },
@@ -362,6 +381,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le zierfandler, cépage blanc autrichien, est le même cépage que le zinfandel.", answer: false }, explanation: "Seul le nom se ressemble ; il a pu entretenir la confusion lors de l’importation aux États-Unis." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Toutes les sources attribuent l’identification du tribidrag à José Vouillamoz en 2012.", answer: false }, explanation: "Lepeltier cite Vouillamoz (2012) ; d’autres sources datent l’analyse de l’herbier de 2011 et la créditent aux chercheurs croates. Wine Grapes (2012) a popularisé le nom." }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; UC Davis (2002) ; Wine Business International, I am Tribidrag ; OUP blog (2015)",
     page: 23
   },
@@ -381,6 +402,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’ouvrage décrit 24 000 cépages distincts.", answer: false }, explanation: "24 000 est le nombre de noms (synonymes compris) pour environ 5 200 cépages." },
       { type: "mcq_single", prompt: "Qu’est-ce qui rend ce travail urgent au tournant du XXe siècle ?", payload: { options: ["L’invention de l’AOC", "La crise du phylloxéra et l’afflux d’hybrides et de porte-greffes", "L’oïdium de 1851", "La création de l’OIV"], answer: 1 } }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; Wikipédia, Pierre Viala ; BnF, Le fruit de la vigne ; glossaire Wein.plus",
     page: 24
   },
@@ -401,6 +424,9 @@ FICHES.push(
       { type: "short_answer", prompt: "Comment s’appelle la méthode qui mesure les nervures et les angles de la feuille ?", payload: { accepted: ["ampélométrie", "l’ampélométrie"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La liste OIV des descripteurs de 2009 est toujours l’édition en vigueur.", answer: false }, explanation: "Une 3e édition a été adoptée en 2023 (résolution OIV-VITI 702-2023). Lepeltier cite celle de 2009." }
     ],
+    schema: { svg: "<svg viewBox=\"0 0 330 92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" font-family=\"sans-serif\" font-size=\"9\" text-anchor=\"middle\"><path d=\"M33,36L37,18L39,19L40,19L42,20L43,20L45,21L46,22L47,23L49,24L50,25L51,26L52,27L53,28L54,30L54,31L55,33L56,34L56,36L56,37L57,39L57,40L57,42L57,43L57,45L57,47L56,48L56,50L55,51L55,52L54,54L53,55L52,57L51,58L50,59L49,60L48,61L46,62L45,63L44,63L42,64L41,65L39,65L38,66L36,66L35,66L33,66L31,66L30,66L28,66L27,65L25,65L24,64L22,63L21,63L20,62L18,61L17,60L16,59L15,58L14,57L13,55L12,54L11,52L11,51L10,50L10,48L9,47L9,45L9,43L9,42L9,40L9,39L10,37L10,36L10,34L11,33L12,31L12,30L13,28L14,27L15,26L16,25L17,24L19,23L20,22L21,21L23,20L24,20L26,19L27,19L29,18Z\"/><line x1=\"33\" y1=\"36\" x2=\"33\" y2=\"16\"/><text x=\"33\" y=\"86\" fill=\"currentColor\" stroke=\"none\">Entière</text><path d=\"M99,36L102,27L103,26L104,26L105,26L107,25L108,25L110,25L112,25L113,25L115,26L116,27L118,27L119,28L120,30L120,31L121,33L121,34L121,36L121,37L120,39L119,40L119,42L118,43L117,44L116,45L115,46L114,47L113,48L112,49L112,49L111,50L111,51L111,52L110,53L110,55L110,56L109,57L109,59L108,60L107,62L106,63L105,64L104,65L102,65L101,66L99,66L97,66L96,65L94,65L93,64L92,63L91,62L90,60L89,59L89,57L88,56L88,55L88,53L87,52L87,51L87,50L86,49L86,49L85,48L84,47L83,46L82,45L81,44L80,43L79,42L79,40L78,39L77,37L77,36L77,34L77,33L78,31L78,30L79,28L80,27L82,27L83,26L85,25L86,25L88,25L90,25L91,25L93,26L94,26L95,26L96,27Z\"/><line x1=\"99\" y1=\"36\" x2=\"99\" y2=\"16\"/><text x=\"99\" y=\"86\" fill=\"currentColor\" stroke=\"none\">3 lobes</text><path d=\"M165,36L168,26L169,25L171,24L173,23L175,22L176,22L178,22L179,23L180,24L181,26L181,27L181,29L181,31L180,33L179,35L179,36L179,37L179,38L180,39L181,40L183,41L184,42L186,43L187,45L188,46L188,48L188,50L187,51L186,52L184,53L182,53L180,53L178,53L177,53L175,54L174,54L173,54L173,55L172,57L172,58L171,60L170,62L169,64L168,65L167,66L165,66L163,66L162,65L161,64L160,62L159,60L158,58L158,57L157,55L157,54L156,54L155,54L153,53L152,53L150,53L148,53L146,53L144,52L143,51L142,50L142,48L142,46L143,45L144,43L146,42L147,41L149,40L150,39L151,38L151,37L151,36L151,35L150,33L149,31L149,29L149,27L149,26L150,24L151,23L152,22L154,22L155,22L157,23L159,24L161,25L162,26Z\"/><line x1=\"165\" y1=\"36\" x2=\"165\" y2=\"16\"/><text x=\"165\" y=\"86\" fill=\"currentColor\" stroke=\"none\">5 lobes</text><path d=\"M231,36L234,24L236,22L238,21L240,20L241,20L243,21L243,23L243,26L243,28L243,30L242,32L243,33L244,33L245,33L248,34L250,34L252,34L254,36L254,37L254,39L253,40L251,42L249,43L247,44L246,45L245,46L246,47L247,49L249,51L250,53L250,55L250,56L249,58L247,58L245,58L243,57L240,56L239,55L238,55L237,56L236,58L236,60L235,62L234,64L233,65L231,66L229,65L228,64L227,62L226,60L226,58L225,56L224,55L223,55L222,56L219,57L217,58L215,58L213,58L212,56L212,55L212,53L213,51L215,49L216,47L217,46L216,45L215,44L213,43L211,42L209,40L208,39L208,37L208,36L210,34L212,34L214,34L217,33L218,33L219,33L220,32L219,30L219,28L219,26L219,23L219,21L221,20L222,20L224,21L226,22L228,24Z\"/><line x1=\"231\" y1=\"36\" x2=\"231\" y2=\"16\"/><text x=\"231\" y=\"86\" fill=\"currentColor\" stroke=\"none\">7 lobes</text><path d=\"M297,36L301,23L302,20L304,19L306,20L307,22L307,25L306,27L306,30L307,31L308,31L310,30L313,29L316,29L318,30L318,31L317,34L315,36L313,38L312,39L312,40L314,41L316,42L319,43L320,45L321,46L319,48L317,48L314,49L311,49L310,49L310,51L311,53L312,55L313,58L313,60L312,61L309,60L307,59L305,57L303,56L302,56L301,58L301,60L300,63L299,65L297,66L295,65L294,63L293,60L293,58L292,56L291,56L289,57L287,59L285,60L282,61L281,60L281,58L282,55L283,53L284,51L284,49L283,49L280,49L277,48L275,48L273,46L274,45L275,43L278,42L280,41L282,40L282,39L281,38L279,36L277,34L276,31L276,30L278,29L281,29L284,30L286,31L287,31L288,30L288,27L287,25L287,22L288,20L290,19L292,20L293,23Z\"/><line x1=\"297\" y1=\"36\" x2=\"297\" y2=\"16\"/><text x=\"297\" y=\"86\" fill=\"currentColor\" stroke=\"none\">Plus de 7</text></svg>", legende: "Classement des feuilles selon le nombre de lobes (grille OIV)", src: "D’après Lepeltier, Mille Vignes, p. 25" },
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; Wikipédia, Pierre Galet ; OIV, Liste des descripteurs (éd. 1983, 2009, 2023)",
     page: 25
   },
@@ -421,6 +447,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le phénotype (l’aspect de la plante) est plus fiable que le génotype pour identifier un cépage.", answer: false }, explanation: "Le phénotype varie avec le milieu ; le génotype, lu par les marqueurs ADN, reste stable." },
       { type: "cloze", prompt: "Complète.", payload: { text: "En {{2007}}, V. vinifera devient la {{quatrième|4e}} plante à fleurs dont le génome est séquencé." } }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; UC Davis (1997, 1999) ; Wine Spectator (1999) ; Jaillon et al., Nature 449, 2007",
     page: 26
   },
@@ -436,10 +464,12 @@ FICHES.push(
     flash: { q: "Qu’est-ce que le « prime name » proposé par Wine Grapes ?", a: "Le nom le plus utilisé dans la région ou le pays d’origine du cépage, retenu comme nom de référence." },
     qcm: { q: "Combien de cépages commerciaux l’ouvrage Wine Grapes (2012) présente-t-il ?", opts: ["368", "1 368", "5 200", "12 250"], good: 1 },
     exos: [
-      { type: "matching", prompt: "Associe chaque ouvrage à son auteur.", payload: { pairs: [["Wine Grapes (2012)", "Robinson, Harding, Vouillamoz"], ["Dictionnaire encyclopédique des cépages (2000)", "Pierre Galet"], ["Ampélographie, traité en 7 volumes", "Viala et Vermorel"], ["Ampélographie universelle", "Odart"]] } },
+      { type: "matching", prompt: "Associe chaque ouvrage à son auteur.", payload: { pairs: [["Wine Grapes (2012)", "Robinson, Harding, Vouillamoz"], ["Dictionnaire encyclopédique des cépages (2000)", "Pierre Galet"], ["Ampélographie, traité en 7 volumes", "Viala et Vermorel"], ["Ampélographie, ou Traité des cépages (1845)", "Odart"]] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La liste de l’OIV impose un nom officiel unique pour chaque cépage.", answer: false }, explanation: "Elle recense les synonymes sans en privilégier un ; la France utilise sa « dénomination principale »." },
       { type: "short_answer", prompt: "Quel est le prime name du zinfandel dans Wine Grapes ?", payload: { accepted: ["tribidrag"] } }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; revue Crescentis (UBE)",
     page: 24
   },
@@ -459,6 +489,8 @@ FICHES.push(
       { type: "mcq_single", prompt: "Que désigne ENTAV-INRA aujourd’hui ?", payload: { options: ["Un institut indépendant de l’IFV", "La marque sous laquelle l’IFV diffuse les clones sélectionnés", "Un label d’appellation", "Une collection ampélographique"], answer: 1 } },
       { type: "cloze", prompt: "Complète.", payload: { text: "Après avis du {{CTPS}}, c’est {{FranceAgriMer}} qui attribue le numéro d’agrément d’un clone." } }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; IFV (vignevin.com), Qu’est-ce que la sélection clonale ?",
     page: 26
   },
@@ -478,6 +510,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque cépage à son époque.", payload: { pairs: [["Melon", "1re époque"], ["Chenin", "2e époque"], ["Carignan", "3e époque"], ["Mourvèdre", "4e époque"]] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La classification de Pulliat révèle les liens de parenté entre cépages.", answer: false }, explanation: "Elle est descriptive et sert l’usage (adapter le cépage au climat), pas la génétique." }
     ],
+    status: "needs_review",
+    to_check: ["Année 1879 : Lepeltier et Wikipédia seulement", "Époque de maturité de chaque cépage cité : une seule source (Lepeltier)"],
     src: "Mille Vignes, P. Lepeltier ; glossaire Wein.plus (cépages de première époque) ; BnF, Le fruit de la vigne",
     page: 29
   },
@@ -497,6 +531,8 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Lequel n’appartient pas au proles occidentalis ?", payload: { options: ["Pinot", "Cabernet franc", "Aligoté", "Sultanine"], answer: 3 }, explanation: "La sultanine, raisin de table à grosses baies, relève du proles orientalis." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les cépages d’occidentalis descendent en partie de cépages orientaux et pontiques croisés avec des vignes locales.", answer: true }, explanation: "Selon Lepeltier, ils naissent des cépages importés lors des migrations antiques, croisés avec les V. vinifera locales." }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; Torres, The origins of grape varieties ; J. Bisson, OENO One ; glossaire Wein.plus (Proles)",
     page: 29
   },
@@ -507,7 +543,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les éco-géogroupes des cépages français (Levadoux, Bisson)",
-    synth: "En 1948, Louis Levadoux prolonge Negrul pour l’Europe de l’Ouest avec les « sortotypes » : des familles de cépages nées et évoluées dans un même milieu. Son élève Jean Bisson poursuit ce travail, appuyé ensuite sur l’ADN, et propose environ 16 groupes pour la France, chacun nommé d’après son cépage le plus représentatif : noiriens (pinot), carmenets (cabernet franc), salvaniens (savagnin), sérines (syrah), mansiens (petit manseng), messiles, folles, cots… Certains restent très localisés (mansiens, noiriens), d’autres se sont dispersés avec les hommes (carmenets).",
+    synth: "En 1948, Louis Levadoux prolonge Negrul pour l’Europe de l’Ouest avec les « sortotypes » : des familles de cépages nées et évoluées dans un même milieu. Son élève Jean Bisson poursuit ce travail (article de 1999), appuyé ensuite sur l’ADN, et propose, selon Lepeltier, 16 groupes pour la France, chacun nommé d’après son cépage le plus représentatif : noiriens (pinot), carmenets (cabernet franc), salvaniens (savagnin), sérines (syrah), mansiens (petit manseng), messiles, folles, cots… Certains restent très localisés (mansiens, noiriens), d’autres se sont dispersés avec les hommes (carmenets).",
     mnemo: "Chaque famille porte le nom de son chef : Noiriens = pinot noir, Salvaniens = savagnin, Sérines = syrah (sérine, son vieux nom).",
     flash: { q: "Qu’est-ce qu’un éco-géogroupe (sortotype) ?", a: "Une famille de cépages apparentés, nés et évolués dans un même milieu, nommée d’après son cépage le plus représentatif (ex. noiriens autour du pinot)." },
     qcm: { q: "Autour de quel cépage s’organise le groupe des carmenets ?", opts: ["Le pinot noir", "Le cabernet franc", "Le petit manseng", "La syrah"], good: 1 },
@@ -516,6 +552,8 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Selon le schéma de Lepeltier, lequel n’est pas un noirien ?", payload: { options: ["Chardonnay", "Gamay", "Pinot", "Cabernet franc"], answer: 3 }, explanation: "Le cabernet franc est le chef de file des carmenets." },
       { type: "short_answer", prompt: "Quel élève de Levadoux a publié et poursuivi ses travaux sur les éco-géogroupes ?", payload: { accepted: ["Jean Bisson", "Bisson"] } }
     ],
+    status: "needs_review",
+    to_check: ["Nombre de groupes (16) : chiffre de Lepeltier, absent du résumé de l’article de Bisson (1999)"],
     src: "Mille Vignes, P. Lepeltier ; J. Bisson, Essai de classement des cépages français en écogéogroupes phénotypiques (OENO One / JISVV)",
     page: 29
   },
@@ -526,15 +564,18 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Sud-Ouest", appel: null },
     titre: "La magdeleine noire des Charentes, mère du merlot",
-    synth: "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; quatre pieds identiques sont ensuite repérés en Charente, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur d’une foule de cépages européens, elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies.",
+    synth: "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; quatre pieds identiques sont ensuite repérés en Charente, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur de près de 120 cépages européens (Lacombe, 2013), elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies.",
     mnemo: "Merlot = Cab franc + Magdeleine : le « M » du merlot vient de sa mère Magdeleine. Le côt est son demi-frère.",
     flash: { q: "Qui sont les parents du merlot ?", a: "Le cabernet franc et la magdeleine noire des Charentes (identifiée en 2009 par Boursiquot et al.)." },
     qcm: { q: "Avec quel cépage la magdeleine noire a-t-elle donné le côt (malbec) ?", opts: ["Le cabernet franc", "Le prunelard", "Le gouais blanc", "Le tannat"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque cépage à ses parents.", payload: { pairs: [["Merlot", "Cabernet franc × magdeleine noire"], ["Côt", "Prunelard × magdeleine noire"], ["Chardonnay", "Pinot × gouais blanc"], ["Cabernet sauvignon", "Cabernet franc × sauvignon blanc"]] } },
       { type: "mcq_single", prompt: "Où la souche qui a mené à la magdeleine noire a-t-elle été trouvée ?", payload: { options: ["À Saint-Émilion", "À Saint-Suliac, en Bretagne", "À Cognac", "À Cahors"], answer: 1 } },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les sources s’accordent sur l’année de découverte de la souche de Saint-Suliac.", answer: false }, explanation: "Lepeltier écrit 1992, Bécédia 1996, le glossaire Wein.plus 2004 : date à vérifier." }
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les sources s’accordent sur l’année de découverte de la souche de Saint-Suliac.", answer: false }, explanation: "Lepeltier écrit 1992, Bécédia 1996, le glossaire Wein.plus 2004 : date à vérifier." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "On connaît 63 descendants du gouais blanc, et pas un de plus.", answer: false }, explanation: "Lacombe (2013) lui attribue près de 120 descendants, dont 63 dont les deux parents sont identifiés : c’est sans doute l’origine du chiffre de Lepeltier." }
     ],
+    status: "needs_review",
+    to_check: ["Année de découverte de la souche de Saint-Suliac : 1992, 1996 ou 2004 selon les sources"],
     src: "Mille Vignes, P. Lepeltier ; Boursiquot et al., Australian Journal of Grape and Wine Research 15, 2009 ; Bécédia ; JancisRobinson.com (2008)",
     page: 27
   },
@@ -554,6 +595,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "La vigne compte {{19}} paires de chromosomes ; la multiplication végétative produit des {{clones}}." } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La vigne sauvage est dioïque : ses pieds sont mâles ou femelles.", answer: true }, explanation: "L’apparition de l’hermaphrodisme a été décisive pour la domestication." }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; La Passion du vin (Vouillamoz, Galet : définition du clone)",
     page: 31
   },
@@ -573,6 +616,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une marcotte a le même génome que le pied mère.", answer: true }, explanation: "C’est une multiplication végétative : on obtient un clone." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tous les glossaires distinguent marcottage et provignage de la même façon.", answer: false }, explanation: "Certains emploient les deux mots comme synonymes ; Lepeltier réserve le provignage à la souche entière." }
     ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier ; glossaire Wein-Plus (Marcottage, provignage)",
     page: 32
   },
@@ -592,6 +637,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le nombre de noms de vinifera recensés correspond au nombre de cépages distincts.", answer: false }, explanation: "Beaucoup de noms sont des synonymes ou homonymes : plus de 12 000 noms pour environ 6 000 cépages selon Lepeltier." },
       { type: "cloze", prompt: "Complète.", payload: { text: "En France, les {{10|dix}} premières variétés couvrent environ {{70}} % du vignoble." } }
     ],
+    status: "needs_review",
+    to_check: ["71,9 % en 2017 et 337 variétés autorisées : chiffres de Lepeltier non retrouvés (l’OIV donne 70,2 % en 2015)", "Environ 6 000 cépages distincts : estimation de Lepeltier"],
     src: "Mille Vignes, P. Lepeltier ; OIV, Focus 2017, Distribution variétale du vignoble dans le monde",
     page: 33
   },
@@ -611,6 +658,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Dans quelle commune de l’Aude la collection de Vassal est-elle transférée ?", payload: { accepted: ["Gruissan", "Pech Rouge", "Gruissan (Pech Rouge)"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Sur les sables de Vassal, les vignes pouvaient être cultivées sans greffe.", answer: true }, explanation: "Le phylloxéra ne prospère pas dans le sable ; à Pech Rouge, sol non sableux, il faudra greffer." }
     ],
+    status: "needs_review",
+    to_check: ["Champ de Rozier (1779) et catalogue du Luxembourg (1 300 cépages, 1848) : une seule source (Lepeltier)"],
     src: "Mille Vignes, P. Lepeltier ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal)",
     page: 33
   }

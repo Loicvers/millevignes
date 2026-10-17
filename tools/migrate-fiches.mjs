@@ -37,8 +37,9 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
     notions.push({
       id, legacy_id: f.id, theme: f.theme, sous: f.sous ?? [], niveau: f.niveau, geo: f.geo ?? null,
       titre: f.titre, synth: f.synth, mnemo: f.mnemo ?? null, refs: [ref],
-      // Les pastilles ✅/⚠️ de la recherche d'origine ne sont pas dans fiches.js : statut prudent.
-      status: "needs_review", to_check: ["Pastilles de vérification d'origine non conservées : revérifier les sources."],
+      // Pastilles de la fiche (status, to_check) ; à défaut, statut prudent.
+      status: f.status ?? "needs_review",
+      to_check: f.to_check ?? (f.status ? [] : ["Pastilles de vérification d'origine non conservées : revérifier les sources."]),
       cours: f.cours ?? null, schema: f.schema ?? null, content_version: 1,
     });
     exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a }, content_version: 1 });

@@ -55,3 +55,12 @@ test("outils", () => {
   for (const s of ["Œnologie Véraison", "  Gouais  blanc!", "ÉLEVAGE"]) assert.equal(normalize(s), nodeNormalize(s));
   assert.deepEqual([...shuffle([1, 2, 3, 4])].sort(), [1, 2, 3, 4]);
 });
+
+test("les pastilles d'une fiche (status, to_check) passent dans data/base.json", () => {
+  const notions = read("../data/base.json").notions;
+  for (const f of FICHES.filter(f => f.status)) {
+    const n = notions.find(n => n.legacy_id === f.id);
+    assert.equal(n.status, f.status);
+    assert.deepEqual(n.to_check, JSON.parse(JSON.stringify(f.to_check ?? [])));
+  }
+});
