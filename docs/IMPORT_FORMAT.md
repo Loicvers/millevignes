@@ -61,6 +61,7 @@ Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
 }
 ```
 
+- `refs` vers `mille-vignes` : donner la **page** suffit. Partie, section et chapitre se déduisent du sommaire (`data/mille-vignes-sommaire.json`). Si `chapitre` est indiqué et ne correspond pas à la page, le lot est refusé.
 - `theme`, `sous` : catalogue de `data/base.json` (11 thèmes). Un sous-thème hors catalogue est refusé.
 - `niveau` : `Fondamental` · `Intermédiaire` · `Pointu`. `geo` : objet ou `null`.
 - **`status` et pastilles** :
@@ -101,5 +102,5 @@ Bonnes pratiques :
 
 ## Contrôles automatiques (`tools/lot.mjs`)
 
-Refus si : `schema_version` ≠ 1 · id mal formé ou en double · thème, sous-thème, niveau ou status hors liste · source ou notion référencée inconnue · `needs_review` sans `to_check` · type d'exercice inconnu · payload non conforme à son type · `imp` invalide.
+Refus si : `schema_version` ≠ 1 · id mal formé ou en double · thème, sous-thème, niveau ou status hors liste · source ou notion référencée inconnue · page hors du livre ou chapitre incohérent avec la page · `needs_review` sans `to_check` · type d'exercice inconnu · payload non conforme à son type · `imp` invalide.
 Tests : `node --test`.

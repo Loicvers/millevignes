@@ -42,6 +42,13 @@ function checkNotion(n, tax, err) {
   for (const i of imps) if (!IMP.includes(i)) err(`${at} : imp « ${i} » invalide (${IMP.join(" | ")})`);
 }
 
+// Chapitre du livre qui contient une page (sommaire trié par page de début).
+export function chapterAt(toc, page) {
+  let hit = null;
+  for (const t of toc) if (t.page <= page) hit = t;
+  return hit;
+}
+
 // Valide un lot. `base` (optionnelle) fournit la taxonomie et les ids déjà connus pour les références croisées.
 export function validate(lot, base = lot) {
   const errors = [];
@@ -71,7 +78,14 @@ export function validate(lot, base = lot) {
   }
   for (const n of lot.notions ?? []) {
     checkNotion(n, tax, err);
-    for (const r of n.refs ?? []) if (!srcIds.has(r.source_id)) err(`notion ${n.id} : source inconnue ${r.source_id}`);
+    for (const r of n.refs ?? []) {
+      if (!srcIds.has(r.source_id)) { err(`notion ${n.id} : source inconnue ${r.source_id}`); continue; }
+      const toc = [...(base.sources ?? []), ...(lot.sources ?? [])].find(s => s.id === r.source_id).toc;
+      if (!toc || r.page == null) continue;
+      const ch = chapterAt(toc, r.page);
+      if (!Number.isInteger(r.page) || !ch) err(`notion ${n.id} : page ${r.page} hors du livre`);
+      else if (r.chapitre && normalize(r.chapitre) !== normalize(ch.chapitre)) err(`notion ${n.id} : la p. ${r.page} est dans « ${ch.chapitre} », pas dans « ${r.chapitre} »`);
+    }
   }
   for (const e of lot.exercises ?? []) {
     const at = `exercice ${e.id}`;

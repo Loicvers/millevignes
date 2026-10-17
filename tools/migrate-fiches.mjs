@@ -3,7 +3,9 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 import vm from "node:vm";
-import { SCHEMA_VERSION, validate } from "./lot.mjs";
+import { SCHEMA_VERSION, validate, chapterAt } from "./lot.mjs";
+
+const TOC = JSON.parse(readFileSync(new URL("../data/mille-vignes-sommaire.json", import.meta.url), "utf8"));
 
 export function loadFichesJs(path) {
   const ctx = {};
@@ -17,14 +19,15 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
   const sources = [{
     id: "mille-vignes", type: "livre", level: "2a", title: "Mille Vignes", author: "Pascaline Lepeltier",
     // Éditeur, année et ISBN non renseignés dans fiches.js : à compléter, ne pas inventer.
-    content_version: 1,
+    toc: TOC, content_version: 1,
   }];
   const notions = [], exercises = [];
   for (const f of FICHES) {
     const id = notionId(f.id);
-    const ref = { source_id: "mille-vignes", page: f.page ?? null, note: f.src };
-    if (f.partie) ref.partie = f.partie;
-    if (f.chapitre) ref.chapitre = f.chapitre;
+    // Partie, section et chapitre déduits de la page ; un chapitre saisi à la main est gardé pour que validate() signale un écart.
+    const ch = f.page ? chapterAt(TOC, f.page) : null;
+    const ref = { source_id: "mille-vignes", page: f.page ?? null, note: f.src,
+      partie: ch?.partie ?? f.partie ?? null, section: ch?.section ?? null, chapitre: f.chapitre ?? ch?.chapitre ?? null };
     notions.push({
       id, legacy_id: f.id, theme: f.theme, sous: f.sous ?? [], niveau: f.niveau, geo: f.geo ?? null,
       titre: f.titre, synth: f.synth, mnemo: f.mnemo ?? null, refs: [ref],

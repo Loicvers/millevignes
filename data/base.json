@@ -84,6 +84,350 @@
       "level": "2a",
       "title": "Mille Vignes",
       "author": "Pascaline Lepeltier",
+      "toc": [
+        {
+          "page": 6,
+          "partie": "Préfaces et introduction",
+          "section": null,
+          "chapitre": "Préface de Marc-André Selosse"
+        },
+        {
+          "page": 7,
+          "partie": "Préfaces et introduction",
+          "section": null,
+          "chapitre": "Préface de François-Régis Gaudry"
+        },
+        {
+          "page": 9,
+          "partie": "Préfaces et introduction",
+          "section": null,
+          "chapitre": "On ne naît pas sommelière : on le devient"
+        },
+        {
+          "page": 12,
+          "partie": "Préfaces et introduction",
+          "section": null,
+          "chapitre": "Lire Mille Vignes"
+        },
+        {
+          "page": 16,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "L’origine de la vigne"
+        },
+        {
+          "page": 19,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "Homo sapiens domestique Vitis vinifera"
+        },
+        {
+          "page": 22,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "Le cépage, un concept"
+        },
+        {
+          "page": 27,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "La classification des cépages"
+        },
+        {
+          "page": 31,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "Des cépages à foison"
+        },
+        {
+          "page": 34,
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "L’hybridation : passé, présent et futur de la vigne"
+        },
+        {
+          "page": 40,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "La vigne : des racines aux feuilles"
+        },
+        {
+          "page": 45,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "La vigne : des fleurs aux baies"
+        },
+        {
+          "page": 49,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "La vigne greffée, une « plante artificielle » ?"
+        },
+        {
+          "page": 55,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "Porte-greffes et nouveaux paysages viticoles"
+        },
+        {
+          "page": 64,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "Quelle Vitis planter ?"
+        },
+        {
+          "page": 70,
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "Penser la vigne autrement"
+        },
+        {
+          "page": 76,
+          "partie": "Lire la vigne",
+          "section": "Écologie",
+          "chapitre": "La vigne et son monde souterrain"
+        },
+        {
+          "page": 85,
+          "partie": "Lire la vigne",
+          "section": "Écologie",
+          "chapitre": "La vigne et son monde aérien"
+        },
+        {
+          "page": 92,
+          "partie": "Lire la vigne",
+          "section": "Écologie",
+          "chapitre": "Penser la viticulture de demain"
+        },
+        {
+          "page": 96,
+          "partie": "Lire la vigne",
+          "section": "Écologie",
+          "chapitre": "Cohabiter avec la vigne"
+        },
+        {
+          "page": 104,
+          "partie": "Lire les paysages",
+          "section": "Climat",
+          "chapitre": "Les éléments météorologiques et la vigne"
+        },
+        {
+          "page": 113,
+          "partie": "Lire les paysages",
+          "section": "Climat",
+          "chapitre": "La géographie du climat"
+        },
+        {
+          "page": 117,
+          "partie": "Lire les paysages",
+          "section": "Climat",
+          "chapitre": "Existe-t-il un climat idéal pour la viticulture ?"
+        },
+        {
+          "page": 124,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Pourquoi lire la géologie des vignobles ?"
+        },
+        {
+          "page": 130,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Comprendre les roches magmatiques"
+        },
+        {
+          "page": 133,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Comprendre les roches sédimentaires"
+        },
+        {
+          "page": 136,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Comprendre les roches métamorphiques"
+        },
+        {
+          "page": 139,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Existe-t-il un sol idéal pour la viticulture ?"
+        },
+        {
+          "page": 146,
+          "partie": "Lire les paysages",
+          "section": "Géologie",
+          "chapitre": "Climat, sol et terroir"
+        },
+        {
+          "page": 150,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Une lecture révolutionnaire des terroirs et des paysages viticoles"
+        },
+        {
+          "page": 158,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Construire le terroir"
+        },
+        {
+          "page": 164,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Patrimoine architectural des vignobles"
+        },
+        {
+          "page": 172,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Les routes du vignoble"
+        },
+        {
+          "page": 178,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "La ville dessine le vignoble, et vice versa"
+        },
+        {
+          "page": 183,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "L’invention des appellations d’origine"
+        },
+        {
+          "page": 192,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Vieille Europe contre Nouveau Monde, une dichotomie à dépasser"
+        },
+        {
+          "page": 198,
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Préserver les paysages viticoles"
+        },
+        {
+          "page": 204,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "Les composants du raisin"
+        },
+        {
+          "page": 208,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "Du raisin au vin, une écologie microbienne"
+        },
+        {
+          "page": 217,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "La vinification, artisanat, art et science"
+        },
+        {
+          "page": 225,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "L’alchimie de l’élevage"
+        },
+        {
+          "page": 234,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "Le siècle des œnologues"
+        },
+        {
+          "page": 239,
+          "partie": "Lire le vin",
+          "section": "Vinification",
+          "chapitre": "Défaut ou caractère du vin ?"
+        },
+        {
+          "page": 244,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "La dégustation, une histoire de l’expertise et de la qualité"
+        },
+        {
+          "page": 252,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "La dégustation, des sens au cerveau"
+        },
+        {
+          "page": 258,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "Voir le vin"
+        },
+        {
+          "page": 263,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "Sentir le vin"
+        },
+        {
+          "page": 271,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "Goûter le vin"
+        },
+        {
+          "page": 278,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "Les langages du vin"
+        },
+        {
+          "page": 284,
+          "partie": "Lire le vin",
+          "section": "Dégustation",
+          "chapitre": "Goûter la minéralité, mythe ou réalité ?"
+        },
+        {
+          "page": 288,
+          "partie": "Lire le vin",
+          "section": "Service",
+          "chapitre": "Les contenants du vin"
+        },
+        {
+          "page": 295,
+          "partie": "Lire le vin",
+          "section": "Service",
+          "chapitre": "Comment fermer le vin ?"
+        },
+        {
+          "page": 300,
+          "partie": "Lire le vin",
+          "section": "Service",
+          "chapitre": "Les mythologies de l’étiquette"
+        },
+        {
+          "page": 305,
+          "partie": "Lire le vin",
+          "section": "Service",
+          "chapitre": "Boire le vin"
+        },
+        {
+          "page": 317,
+          "partie": "Lire le vin",
+          "section": "Service",
+          "chapitre": "L’art de servir le vin : accords et sommellerie"
+        },
+        {
+          "page": 331,
+          "partie": "Conclusion",
+          "section": null,
+          "chapitre": "Quel vin pour demain ?"
+        },
+        {
+          "page": 334,
+          "partie": "Conclusion",
+          "section": null,
+          "chapitre": "Annexes"
+        }
+      ],
       "content_version": 1
     }
   ],
@@ -109,7 +453,10 @@
         {
           "source_id": "mille-vignes",
           "page": 27,
-          "note": "Lepeltier, Mille Vignes — Domestication"
+          "note": "Lepeltier, Mille Vignes — Domestication",
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "La classification des cépages"
         }
       ],
       "status": "needs_review",
@@ -140,7 +487,10 @@
         {
           "source_id": "mille-vignes",
           "page": 31,
-          "note": "Lepeltier, Mille Vignes — Domestication"
+          "note": "Lepeltier, Mille Vignes — Domestication",
+          "partie": "Lire la vigne",
+          "section": "Domestication",
+          "chapitre": "Des cépages à foison"
         }
       ],
       "status": "needs_review",
@@ -170,7 +520,10 @@
         {
           "source_id": "mille-vignes",
           "page": 183,
-          "note": "Lepeltier, Mille Vignes — Terroir"
+          "note": "Lepeltier, Mille Vignes — Terroir",
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "L’invention des appellations d’origine"
         }
       ],
       "status": "needs_review",
@@ -196,7 +549,10 @@
         {
           "source_id": "mille-vignes",
           "page": 45,
-          "note": "Lepeltier, Mille Vignes — Nature"
+          "note": "Lepeltier, Mille Vignes — Nature",
+          "partie": "Lire la vigne",
+          "section": "Nature",
+          "chapitre": "La vigne : des fleurs aux baies"
         }
       ],
       "status": "needs_review",
@@ -226,7 +582,10 @@
         {
           "source_id": "mille-vignes",
           "page": 158,
-          "note": "Lepeltier, Mille Vignes — Terroir"
+          "note": "Lepeltier, Mille Vignes — Terroir",
+          "partie": "Lire les paysages",
+          "section": "Terroir",
+          "chapitre": "Construire le terroir"
         }
       ],
       "status": "needs_review",
@@ -254,6 +613,7 @@
           "page": 16,
           "note": "Mille Vignes, P. Lepeltier ; VIVC ; APG IV",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -283,6 +643,7 @@
           "page": 17,
           "note": "Mille Vignes, P. Lepeltier ; INRAE ; arrêté de protection 1995",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -311,6 +672,7 @@
           "page": 18,
           "note": "Mille Vignes, P. Lepeltier ; P. McGovern ; Zohary & Hopf",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -339,6 +701,7 @@
           "page": 16,
           "note": "Mille Vignes, P. Lepeltier",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -367,6 +730,7 @@
           "page": 16,
           "note": "Mille Vignes, P. Lepeltier ; Jaillon et al., Nature 449, 2007",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -396,6 +760,7 @@
           "page": 17,
           "note": "Mille Vignes, P. Lepeltier ; Wine Grapes (Robinson/Harding/Vouillamoz) ; OIV",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],
@@ -428,6 +793,7 @@
           "page": 17,
           "note": "Mille Vignes, P. Lepeltier ; Saporta 1868 ; MNHN",
           "partie": "Lire la vigne",
+          "section": "Domestication",
           "chapitre": "L’origine de la vigne"
         }
       ],

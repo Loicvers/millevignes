@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { validate, merge, normalize, EXERCISE_TYPES } from "../tools/lot.mjs";
+import { validate, merge, normalize, chapterAt, EXERCISE_TYPES } from "../tools/lot.mjs";
 import { loadFichesJs, migrate } from "../tools/migrate-fiches.mjs";
 
 const read = p => JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
@@ -62,4 +62,17 @@ test("migration de fiches.js sans perte", () => {
 test("normalisation des réponses saisies", () => {
   assert.equal(normalize("  Véraison "), normalize("veraison"));
   assert.equal(normalize("ŒNOLOGIE"), "oenologie");
+});
+
+test("sommaire : chapitre déduit de la page et écart signalé", () => {
+  const toc = base.sources.find(s => s.id === "mille-vignes").toc;
+  assert.equal(chapterAt(toc, 27).chapitre, "La classification des cépages");
+  assert.equal(chapterAt(toc, 30).chapitre, "La classification des cépages");
+  assert.equal(chapterAt(toc, 183).section, "Terroir");
+  assert.equal(chapterAt(toc, 3), null);
+  const l = lot();
+  l.notions[0].refs = [{ source_id: "mille-vignes", page: 45, chapitre: "Le cépage, un concept" }];
+  assert.match(validate(l, base).join(), /p\. 45 est dans « La vigne : des fleurs aux baies »/);
+  l.notions[0].refs[0].chapitre = "La vigne : des fleurs aux baies";
+  assert.deepEqual(validate(l, base), []);
 });
