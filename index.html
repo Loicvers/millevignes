@@ -260,7 +260,7 @@ function render(){
 }
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
-  const geoTag=f.geo?`<span class="tag geo">${f.geo.appel||f.geo.region}</span>`:'';
+  const geoTag=f.geo?`<span class="tag geo">${f.geo.appel||f.geo.region||f.geo.pays}</span>`:'';
   const dueTag=isDue(f.id)&&prog[f.id]?'<span class="tag due">à revoir</span>':'';
   const subTags=(f.sous||[]).map(s=>`<span class="sub-tag">${s}</span>`).join('');
   c.innerHTML=`

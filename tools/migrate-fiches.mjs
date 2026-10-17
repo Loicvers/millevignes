@@ -37,6 +37,8 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
     });
     exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a }, content_version: 1 });
     exercises.push({ id: `${id}-02`, type: "mcq_single", notion_ids: [id], prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, content_version: 1 });
+    // Exercices supplémentaires (champ exos de fiches.js) : déjà au format du lot, numérotés à partir de -03.
+    (f.exos ?? []).forEach((x, i) => exercises.push({ id: `${id}-${String(i + 3).padStart(2, "0")}`, notion_ids: [id], ...x, content_version: 1 }));
   }
   return { schema_version: SCHEMA_VERSION, taxonomy: { themes: THEME_ORDER, sous: SOUS }, sources, notions, exercises };
 }
