@@ -660,7 +660,7 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Sur les sables de Vassal, les vignes pouvaient être cultivées sans greffe.", answer: true }, explanation: "Le phylloxéra ne prospère pas dans le sable ; à Pech Rouge, sol non sableux, il faudra greffer." }
     ],
     status: "needs_review",
-    to_check: ["Effectif du Luxembourg : environ 1 300 (Lepeltier) contre 1 498 en 1842 et 1 924 en 1848 (Sénat, jardin du Luxembourg) ; le Sénat signale aussi un catalogue Hardy non daté de 797 variétés"],
+    to_check: ["Effectif du Luxembourg : environ 1 300 (Lepeltier) contre 1 498 en 1842 et 1 924 en 1848 (Sénat, jardin du Luxembourg) ; le Sénat signale aussi un catalogue Hardy non daté de 797 variétés ; Galinié et Yerre (2018, lu) ne donnent aucun effectif pour 1848 : 615 entrées valent de 1809 jusqu’avant ce second catalogue"],
     src: "Mille Vignes, P. Lepeltier ; H. Galinié et J. Yerre, Le catalogue des vignes de la collection du Luxembourg à Paris en 1809 (HAL, 2018) ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal) ; Sénat, The Luxembourg Fruit Garden",
     page: 33
   },
