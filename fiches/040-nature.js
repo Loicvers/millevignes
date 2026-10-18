@@ -551,7 +551,7 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896.", "Période de création « entre 1869 et 1902 » : l’analyse ADN de 36 porte-greffes (HAL INRAE hal-02627917) situe les plus importants entre les années 1890 et 1930."],
+    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896.", "Période de création « entre 1869 et 1902 » : l’analyse ADN de 36 porte-greffes (Riaz et al., 2019) situe les plus importants entre les années 1890 et 1930."],
     src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
     page: 55
   },
@@ -562,7 +562,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Un pool génétique trop étroit : la leçon de l’AxR1",
-    synth: "Presque tous les porte-greffes reposent sur trois espèces, et souvent sur quelques individus seulement : une analyse ADN de 36 porte-greffes montre que 39 % de leur fonds génétique vient de trois pieds, le berlandieri Rességuier 2, le rupestris du Lot et le riparia Gloire de Montpellier (Lepeltier, citant Andrew Walker, avance 99 %). Une base aussi étroite expose tout le vignoble aux mêmes parasites. L’AxR1 (aramon × rupestris, de Ganzin) l’illustre : planté en masse en Californie, il est attaqué par un biotype de phylloxéra repéré à Napa en 1982, ce qui impose de replanter des dizaines de milliers d’acres. La recherche cherche donc de nouveaux porte-greffes tolérants à la sécheresse, aux nématodes ou au sel.",
+    synth: "Presque tous les porte-greffes reposent sur trois espèces, et souvent sur quelques individus seulement : une analyse ADN de 36 porte-greffes montre que 39 % de leur fonds génétique vient de trois pieds, le berlandieri Rességuier 2, le rupestris du Lot et le riparia Gloire de Montpellier (Lepeltier, citant Andrew Walker, avance 99 % ; Walker cosigne pourtant cette étude). Une base aussi étroite expose tout le vignoble aux mêmes parasites. L’AxR1 (aramon × rupestris, de Ganzin) l’illustre : planté en masse en Californie, il est attaqué par un biotype de phylloxéra repéré à Napa en 1982, ce qui impose de replanter des dizaines de milliers d’acres. La recherche cherche donc de nouveaux porte-greffes tolérants à la sécheresse, aux nématodes ou au sel.",
     mnemo: "AxR1 : un porte-greffe à moitié vinifera n’est qu’à moitié protégé.",
     flash: { q: "Pourquoi l’AxR1 a-t-il échoué en Californie ?", a: "En partie vinifera (aramon), il n’était pas assez résistant : un biotype de phylloxéra l’a attaqué dans les années 1980." },
     qcm: { q: "L’AxR1 est un croisement…", opts: ["Riparia × berlandieri", "Aramon × rupestris", "Chasselas × berlandieri", "Rupestris × cordifolia"], good: 1 },
@@ -573,7 +573,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["AxR1 obtenu par Ganzin en 1879 : une seule source (Wein.plus).", "Échec de l’AxR1 en Californie (biotype B détecté à Napa en 1982, recommandation retirée en 1989) : sources de presse seulement, cause débattue."],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Genetic diversity and parentage analysis of grape rootstocks (HAL INRAE hal-02627917) ; Wine with Seth, Phylloxera and Napa Valley replanting ; Decanter, Vine rootstocks",
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Riaz, Pap, Uretsky, Laucou, Boursiquot, Kocsis et Walker, Genetic diversity and parentage analysis of grape rootstocks, Theoretical and Applied Genetics, 2019 (doi 10.1007/s00122-019-03320-5) ; Wine with Seth, Phylloxera and Napa Valley replanting ; Decanter, Vine rootstocks",
     page: 55
   },
   {
