@@ -2848,13 +2848,13 @@
         "appel": null
       },
       "titre": "Les principaux porte-greffes et leurs parents",
-      "synth": "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
+      "synth": "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). Le catalogue officiel compte 31 porte-greffes inscrits (liste A, 2026), comme l’indique Lepeltier. En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
       "mnemo": "Trois mères américaines : Riparia la riveraine, Rupestris la rocheuse, Berlandieri la calcaire.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 55,
-          "note": "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025",
+          "note": "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
           "partie": "Lire la vigne",
           "section": "Nature",
           "chapitre": "Porte-greffes et nouveaux paysages viticoles"
@@ -2862,7 +2862,6 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "31 porte-greffes autorisés en France (Lepeltier) : non vérifié ; FranceAgriMer détaille 14 porte-greffes en vignes mères en 2025.",
         "Dates de création des porte-greffes anciens : non vérifiées une à une."
       ],
       "cours": null,
@@ -3146,13 +3145,13 @@
         "appel": null
       },
       "titre": "La sélection clonale en France",
-      "synth": "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée (indexage, test ELISA), assainie si besoin, suivie et vinifiée plusieurs années, puis agréée après avis de la section vigne du CTPS : il faut une quinzaine d’années. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 compte par exemple 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
+      "synth": "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée par indexage (greffée sur une variété indicatrice qui révèle les virus), complété par des tests ELISA ou PCR, et son identité est vérifiée par marqueurs ADN. Elle est ensuite suivie au vignoble au moins cinq ans, avec au moins trois années de vinifications, puis agréée après avis de la section vigne du CTPS : une quinzaine d’années en tout. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 recense environ 1 240 clones de 392 variétés (Lepeltier : 1 350 clones de 380 variétés en 2022), dont 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
       "mnemo": "Un clone, c’est quinze ans d’examens avant d’avoir son diplôme (l’agrément).",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 64,
-          "note": "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
+          "note": "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016)",
           "partie": "Lire la vigne",
           "section": "Nature",
           "chapitre": "Quelle Vitis planter ?"
@@ -3160,7 +3159,6 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "« 1 350 clones de 380 variétés en 2022 » (Lepeltier) : non concordant avec les chiffres IFV (1 947 clones agréés depuis l’origine), retiré.",
         "Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé.",
         "Rôle personnel de Jean Branas dans la création de la section de 1944 : non vérifié."
       ],
@@ -3284,13 +3282,13 @@
         "appel": "Sancerre"
       },
       "titre": "Des pépinières remises en question",
-      "synth": "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014) : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
+      "synth": "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
       "mnemo": "« On plante pour ses petits-enfants » : le plant de qualité est un placement à cinquante ans.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 67,
-          "note": "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon",
+          "note": "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026)",
           "partie": "Lire la vigne",
           "section": "Nature",
           "chapitre": "Quelle Vitis planter ?"
@@ -9865,6 +9863,25 @@
         "mv-0088"
       ],
       "type": "mcq_single",
+      "prompt": "Pendant combien d’années minimum un clone candidat est-il vinifié avant agrément ?",
+      "payload": {
+        "options": [
+          "Une",
+          "Trois",
+          "Dix",
+          "Aucune : seule la santé compte"
+        ],
+        "answer": 1
+      },
+      "explanation": "Règlement technique : vinifications au moins 3 ans, contrôles au vignoble au moins 5 ans.",
+      "content_version": 1
+    },
+    {
+      "id": "mv-0088-05",
+      "notion_ids": [
+        "mv-0088"
+      ],
+      "type": "mcq_single",
       "prompt": "Combien de temps faut-il, environ, pour agréer un clone ?",
       "payload": {
         "options": [
@@ -9878,7 +9895,7 @@
       "content_version": 1
     },
     {
-      "id": "mv-0088-05",
+      "id": "mv-0088-06",
       "notion_ids": [
         "mv-0088"
       ],
@@ -9907,7 +9924,7 @@
       "content_version": 1
     },
     {
-      "id": "mv-0088-06",
+      "id": "mv-0088-07",
       "notion_ids": [
         "mv-0088"
       ],

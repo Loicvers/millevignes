@@ -539,7 +539,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les principaux porte-greffes et leurs parents",
-    synth: "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
+    synth: "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). Le catalogue officiel compte 31 porte-greffes inscrits (liste A, 2026), comme l’indique Lepeltier. En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
     mnemo: "Trois mères américaines : Riparia la riveraine, Rupestris la rocheuse, Berlandieri la calcaire.",
     flash: { q: "Quelles trois espèces américaines sont à l’origine de la plupart des porte-greffes ?", a: "V. riparia, V. rupestris et V. berlandieri." },
     qcm: { q: "Lequel de ces porte-greffes est une création de l’INRA des années 1950-1960 ?", opts: ["3309 C", "Fercal", "41 B", "1103 P"], good: 1 },
@@ -550,8 +550,8 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["31 porte-greffes autorisés en France (Lepeltier) : non vérifié ; FranceAgriMer détaille 14 porte-greffes en vignes mères en 2025.", "Dates de création des porte-greffes anciens : non vérifiées une à une."],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025",
+    to_check: ["Dates de création des porte-greffes anciens : non vérifiées une à une."],
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
     page: 55
   },
   {
@@ -728,19 +728,20 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "La sélection clonale en France",
-    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée (indexage, test ELISA), assainie si besoin, suivie et vinifiée plusieurs années, puis agréée après avis de la section vigne du CTPS : il faut une quinzaine d’années. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 compte par exemple 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
+    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée par indexage (greffée sur une variété indicatrice qui révèle les virus), complété par des tests ELISA ou PCR, et son identité est vérifiée par marqueurs ADN. Elle est ensuite suivie au vignoble au moins cinq ans, avec au moins trois années de vinifications, puis agréée après avis de la section vigne du CTPS : une quinzaine d’années en tout. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 recense environ 1 240 clones de 392 variétés (Lepeltier : 1 350 clones de 380 variétés en 2022), dont 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
     mnemo: "Un clone, c’est quinze ans d’examens avant d’avoir son diplôme (l’agrément).",
     flash: { q: "En quelle année la sélection clonale démarre-t-elle en France ?", a: "En 1962 (ANTAV, aujourd’hui IFV)." },
     qcm: { q: "Quel virus a motivé la sélection sanitaire des plants ?", opts: ["Le court-noué (GFLV)", "La flavescence dorée", "Le mildiou", "L’oïdium"], good: 0 },
     exos: [
       { type: "ordering", prompt: "Remets le parcours d’un clone dans l’ordre.", payload: { items: ["Prospection dans les vieilles vignes", "Tests virologiques (ELISA, indexage)", "Suivi agronomique et vinifications", "Agrément après avis du CTPS", "Multiplication et diffusion"] } },
+      { type: "mcq_single", prompt: "Pendant combien d’années minimum un clone candidat est-il vinifié avant agrément ?", payload: { options: ["Une", "Trois", "Dix", "Aucune : seule la santé compte"], answer: 1 }, explanation: "Règlement technique : vinifications au moins 3 ans, contrôles au vignoble au moins 5 ans." },
       { type: "mcq_single", prompt: "Combien de temps faut-il, environ, pour agréer un clone ?", payload: { options: ["Un an", "Cinq ans", "Une quinzaine d’années", "Cinquante ans"], answer: 2 } },
       { type: "matching", prompt: "Associe chaque cépage à son nombre de clones agréés (liste de mars 2026).", payload: { pairs: [["Pinot noir", "48"], ["Chardonnay", "31"], ["Riesling", "8"], ["Gringet", "1"]] } },
       { type: "short_answer", prompt: "Sur quel domaine se trouve le conservatoire national de l’IFV ?", payload: { accepted: ["Espiguette", "l’Espiguette", "domaine de l’Espiguette", "l'Espiguette"] } }
     ],
     status: "needs_review",
-    to_check: ["« 1 350 clones de 380 variétés en 2022 » (Lepeltier) : non concordant avec les chiffres IFV (1 947 clones agréés depuis l’origine), retiré.", "Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé.", "Rôle personnel de Jean Branas dans la création de la section de 1944 : non vérifié."],
-    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
+    to_check: ["Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé.", "Rôle personnel de Jean Branas dans la création de la section de 1944 : non vérifié."],
+    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016)",
     page: 64
   },
   {
@@ -810,7 +811,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Loire", appel: "Sancerre" },
     titre: "Des pépinières remises en question",
-    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014) : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
+    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
     mnemo: "« On plante pour ses petits-enfants » : le plant de qualité est un placement à cinquante ans.",
     flash: { q: "Quelle démarche Centre-Loire a lancée pour des plants de sauvignon de qualité ?", a: "La marque Ceps Sicavac, appuyée sur une sélection massale du sauvignon." },
     qcm: { q: "Où se trouve la pépinière de Lilian Bérillon ?", opts: ["Jonquières (Vaucluse)", "Montlouis (Indre-et-Loire)", "Pérignac (Charente)", "Le Grau-du-Roi (Gard)"], good: 0 },
@@ -820,7 +821,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Situation actuelle de la pépinière Bérillon (procédure collective signalée) : à vérifier.", "Détail du cahier des charges Ceps Sicavac : repris de Lepeltier, non recoupé."],
-    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon",
+    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026)",
     page: 67
   },
   {
