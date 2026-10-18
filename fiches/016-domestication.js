@@ -650,18 +650,18 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Languedoc", appel: null },
     titre: "Vassal, la grande collection de vignes",
-    synth: "Les collections ont précédé la science des cépages : François Rozier plante la sienne près de Béziers en 1779, et la pépinière du Luxembourg, à Paris, réunit environ 1 300 cépages au milieu du XIXe siècle. En 1876, face au phylloxéra, l’école d’agriculture de Montpellier lance une collection installée en 1949 au domaine de Vassal, à Marseillan, sur des sables où la vigne peut vivre sans greffe. Géré par l’INRAE, ce conservatoire compte plus de 8 500 accessions venues de plus de 50 pays. Menacé par la montée de la mer et le sel, il est transféré entre 2022 et 2032 à Pech Rouge, à Gruissan (Aude).",
+    synth: "Les collections ont précédé la science des cépages : François Rozier plante la sienne près de Béziers en 1779, et la pépinière du Luxembourg, à Paris, constitue la sienne au début du XIXe siècle (un premier catalogue en 1809, 615 entrées en tout dans les années suivantes) ; selon Lepeltier, elle réunit environ 1 300 cépages au milieu du siècle, date d’un second catalogue (Hardy, 1848). En 1876, face au phylloxéra, l’école d’agriculture de Montpellier lance une collection installée en 1949 au domaine de Vassal, à Marseillan, sur des sables où la vigne peut vivre sans greffe. Géré par l’INRAE, ce conservatoire compte plus de 8 500 accessions venues de plus de 50 pays. Menacé par la montée de la mer et le sel, il est transféré entre 2022 et 2032 à Pech Rouge, à Gruissan (Aude).",
     mnemo: "Vassal, le Louvre de la vigne, déménage : du sable de Marseillan aux collines de la Clape.",
     flash: { q: "Pourquoi la collection de Vassal est-elle en cours de transfert ?", a: "La montée de la mer et la salinisation des sols menacent Marseillan : elle part pour Pech Rouge (Gruissan, Aude) entre 2022 et 2032." },
     qcm: { q: "Où se trouve historiquement la collection de vignes de Vassal ?", opts: ["À Saumur", "À Marseillan, entre mer et étang de Thau", "À Davis, en Californie", "Au jardin du Luxembourg"], good: 1 },
     exos: [
-      { type: "ordering", prompt: "Range ces collections dans l’ordre chronologique.", payload: { items: ["Champ de François Rozier près de Béziers (1779)", "Catalogue de la pépinière du Luxembourg (1848)", "Collection de Montpellier (1876)", "Installation au domaine de Vassal (1949)", "Transfert vers Pech Rouge (2022-2032)"] } },
+      { type: "ordering", prompt: "Range ces collections dans l’ordre chronologique.", payload: { items: ["Champ de François Rozier près de Béziers (1779)", "Premier catalogue de la collection du Luxembourg (1809)", "Collection de Montpellier (1876)", "Installation au domaine de Vassal (1949)", "Transfert vers Pech Rouge (2022-2032)"] } },
       { type: "short_answer", prompt: "Dans quelle commune de l’Aude la collection de Vassal est-elle transférée ?", payload: { accepted: ["Gruissan", "Pech Rouge", "Gruissan (Pech Rouge)"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Sur les sables de Vassal, les vignes pouvaient être cultivées sans greffe.", answer: true }, explanation: "Le phylloxéra ne prospère pas dans le sable ; à Pech Rouge, sol non sableux, il faudra greffer." }
     ],
     status: "needs_review",
-    to_check: ["Champ de Rozier (1779) et catalogue du Luxembourg (1 300 cépages, 1848) : une seule source (Lepeltier)"],
-    src: "Mille Vignes, P. Lepeltier ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal)",
+    to_check: ["Environ 1 300 cépages au Luxembourg au milieu du XIXe siècle : une seule source (Lepeltier) ; Galinié et Yerre confirment le second catalogue de Hardy (1848) sans donner son effectif"],
+    src: "Mille Vignes, P. Lepeltier ; H. Galinié et J. Yerre, Le catalogue des vignes de la collection du Luxembourg à Paris en 1809 (HAL, 2018) ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal)",
     page: 33
   },
   {
