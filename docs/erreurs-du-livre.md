@@ -42,8 +42,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 41 : un semis forme une racine pivotante, une bouture des racines traçantes (non retrouvé ; UC Davis lie l'angle des racines au porte-greffe).
 - p. 45-48 : millerandage des millésimes 1978 et 1995 chez Jayer, sucres « de 1 à 20 % en quarante jours », grappes de 5 à 50 cm et 100 à 500 g, liste des pinots de Galet.
 - p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
-- p. 51 : Hill of Grace planté en 1868 (vers 1860 selon le domaine Henschke) ; Chypre parmi les vignobles épargnés (rien trouvé ; Washington confirmé, Canaries et Moselle une seule source).
-- p. 52 : rôle de Pulliat dans la greffe : une seule source (Delmotte et Jacquet, 2025, hal-05304637 : Laliman et Pulliat prônent la greffe dès 1869).
+- p. 51 : Hill of Grace planté en 1868 (vers 1860 selon le domaine Henschke) ; Chypre parmi les vignobles épargnés (Foëx, Cours complet de viticulture, 3e éd. : l'île interdit les importations à risque par le règlement de 1879 et l'ordonnance du 5 août 1889 pour empêcher l'introduction du phylloxéra, qui en est donc absent ; une seule source ; Washington confirmé, Canaries et Moselle une seule source).
+- p. 52 : rôle de Pulliat dans la greffe : une seule source (Delmotte et Jacquet, 2025, hal-05304637 : Laliman et Pulliat prônent la greffe dès 1869) ; Foëx (Cours complet de viticulture, 3e éd.) attribue l'idée à Gaston Bazille, après le congrès de Beaune de 1869, et ne cite pas Pulliat.
 - p. 55 : porte-greffes créés « entre 1869 et 1902 » : Riaz et al. (2019) situent les plus importants entre les années 1890 et 1930 (divergence de périmètre plus que contradiction).
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
