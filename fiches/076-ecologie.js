@@ -203,12 +203,11 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: [
-      "Foyer initial : Londres (carte du livre) contre Margate, Kent (Académie d’agriculture, Wein.plus)",
       "Dates régionales divergentes : Bordeaux 1851 (livre) contre 1850 (Académie) ; Suisse 1852 contre 1851 ; Rioja 1853 contre 1854-1862 ; Requena 1854 contre 1855 (Geocrítica)",
       "Dates espagnoles de 1852 : une seule source (Geocrítica, Université de Barcelone)",
       "Voies terrestres et maritimes : non vérifiées dans les sources lues", "Arrivée en France (serres près de Paris en 1847, tout le pays vers 1850) : Académie d’agriculture seule (deux textes du même colloque)"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 80 ; Académie d’agriculture de France, histoire de l’oïdium (2007) ; Wein.plus, William Tucker ; Geocrítica (Université de Barcelone), l’oïdium en Catalogne",
+    src: "Mille Vignes, P. Lepeltier, p. 80 ; Académie d’agriculture de France, histoire de l’oïdium (2007) ; Wein.plus, William Tucker ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064) ; Geocrítica (Université de Barcelone), l’oïdium en Catalogne",
     page: 80
   },
   {
@@ -242,21 +241,21 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "La vigne holobionte : une plante habitée de microbes",
-    synth: "Lepeltier replace la vigne dans la lecture symbiotique du vivant : la feuille héberge une phyllosphère de micro-organismes, et ses chloroplastes descendraient de cyanobactéries intégrées à la cellule. L’idée remonte à Andreas Schimper, qui note dès 1883 que les chloroplastes se divisent comme des cyanobactéries libres ; Lynn Margulis l’a ensuite consacrée avec la théorie endosymbiotique (article de 1967, ouvrage de 1970). Le terme holobionte, forgé par Adolf Meyer-Abich en 1943 et repris par Margulis au début des années 1990, désigne l’hôte avec les espèces qui l’accompagnent : la vigne est donc un supraorganisme, ce qui pose la question de fongicides peu sélectifs.",
+    synth: "Lepeltier replace la vigne dans la lecture symbiotique du vivant : la feuille héberge une phyllosphère de micro-organismes, et ses chloroplastes descendraient de cyanobactéries intégrées à la cellule. L’idée remonte à Andreas Schimper, qui note dès 1883 que les chloroplastes se divisent comme des cyanobactéries libres ; Lynn Margulis l’a ensuite consacrée avec la théorie endosymbiotique (article de 1967, ouvrage de 1970). Le terme holobionte, que Selosse et ses coauteurs attribuent à Margulis (1991) mais que d’autres sources font remonter à Adolf Meyer-Abich (1943), désigne un hôte et son microbiote, des mutualistes aux parasites : la vigne est donc un supraorganisme, ce qui pose la question de fongicides peu sélectifs.",
     mnemo: "La feuille est un immeuble en copropriété : le propriétaire, la vigne, ne vit jamais seul sous son toit.",
     flash: { q: "Que veut dire « la vigne est un holobionte » ?", a: "Que la vigne forme une unité écologique avec les micro-organismes qu’elle héberge (phyllosphère, racines…), et non un organisme isolé." },
     qcm: { q: "Qui note en 1883 que les chloroplastes se divisent comme des cyanobactéries libres ?", opts: ["Lynn Margulis", "Andreas Schimper", "Francis Hallé", "Rudolf Steiner"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Andreas Schimper a suggéré, dès 1883, que les plantes vertes résultent de l’union symbiotique de deux organismes.", answer: true }, explanation: "Schimper (1856-1901) le propose en note en 1883, bien avant Margulis. Le livre ne donne pas cette date." },
-      { type: "cloze", prompt: "Complète.", payload: { text: "Le terme {{holobionte}} désigne un hôte et l’ensemble des micro-organismes qu’il héberge." }, explanation: "Terme forgé par Meyer-Abich (1943) et popularisé par Margulis ; le livre l’applique à la vigne (p. 85)." }
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le terme {{holobionte}} désigne un hôte et l’ensemble des micro-organismes qu’il héberge." }, explanation: "Terme attribué à Margulis (1991) par Simon, Marchesi, Mougel et Selosse (2019), à Meyer-Abich (1943) par d’autres ; le livre l’applique à la vigne (p. 85)." }
     ],
     status: "needs_review",
     to_check: [
       "Date de Margulis : le livre dit « années 1970 » ; l’article fondateur (signé Lynn Sagan) paraît en 1967 et le livre de synthèse date de 1970 ; dates de vie de Margulis non revérifiées",
-      "Holobionte : Meyer-Abich (1943), repris par Margulis (1990-1991), une seule source lue (Wikipedia) ; définition de Selosse citée par le livre non vérifiée",
+      "Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur), Meyer-Abich 1943 selon Wikipedia ; non tranché",
       "« 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 85 ; Wikipedia, Andreas Franz Wilhelm Schimper ; Wikipedia, Symbiogenesis ; Encyclopédie de l’environnement, pionniers de la théorie endosymbiotique ; Embryo Project, On the Origin of Mitosing Cells (1967) ; Wikipedia, Holobiont ; BioNumbers, bactéries par cm² de feuille",
+    src: "Mille Vignes, P. Lepeltier, p. 85 ; Wikipedia, Andreas Franz Wilhelm Schimper ; Wikipedia, Symbiogenesis ; Encyclopédie de l’environnement, pionniers de la théorie endosymbiotique ; Embryo Project, On the Origin of Mitosing Cells (1967) ; Wikipedia, Holobiont ; Simon, Marchesi, Mougel et Selosse, Host-microbiota interactions: from holobiont theory to analysis (Microbiome, 2019) ; BioNumbers, bactéries par cm² de feuille",
     page: 85
   },
   {
@@ -266,7 +265,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Le biocontrôle microbien et les agents des maladies de la vigne",
-    synth: "Face aux maladies, le livre cite des alliés microbiens : le champignon Trichoderma contre les maladies du bois (esca, black dead arm, eutypiose), la bactérie Bacillus pumilus contre l’oïdium, la levure Metschnikowia fructicola et l’amibe Willaertia magna, dont le lysat a été approuvé comme substance active dans l’UE en 2025. Côté pathogènes, la maladie de Pierce est due à une bactérie (Xylella fastidiosa) et la flavescence dorée à un phytoplasme, transmis par la cicadelle Scaphoideus titanus. Pour l’arrivée du mildiou, l’Académie d’agriculture donne 1878, Lepeltier 1879.",
+    synth: "Face aux maladies, le livre cite des alliés microbiens : le champignon Trichoderma contre les maladies du bois (esca, black dead arm, eutypiose), la bactérie Bacillus pumilus contre l’oïdium, la levure Metschnikowia fructicola et l’amibe Willaertia magna, dont le lysat a été approuvé comme substance active dans l’UE en 2025. Côté pathogènes, la maladie de Pierce est due à une bactérie (Xylella fastidiosa) et la flavescence dorée à un phytoplasme, transmis par la cicadelle Scaphoideus titanus. Le mildiou est signalé en France en 1878 (Académie d’agriculture ; INRAE), et non en 1879 comme l’écrit Lepeltier.",
     mnemo: "Une équipe de secours microscopique : un champignon pour panser les plaies de taille, une bactérie préventive pour l’oïdium.",
     flash: { q: "Quel agent de biocontrôle colonise les plaies de taille contre esca et black dead arm ?", a: "Le champignon Trichoderma (par exemple Trichoderma atroviride I-1237)." },
     qcm: { q: "Quel est l’agent de la flavescence dorée ?", opts: ["Un phytoplasme", "Une bactérie du xylème (Xylella)", "Un virus transmis par un nématode", "Un champignon du bois"], good: 0 },
@@ -278,10 +277,9 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Metschnikowia fructicola : une seule source (souche commercialisée, efficacité modérée sur raisin de table) ; homologation pour la vigne de cuve en France non vérifiée",
-      "Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée",
-      "Mildiou : 1879 (livre) contre 1878 (Académie d’agriculture, source unique) ; HAL/INRAE inaccessible, divergence non tranchée"
+      "Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 85-86 ; Communiqué Bayer/Agrauxine, Esquive WP (2014) ; Réussir Vigne, Sonata ; Réussir Vigne, La Xylella fastidiosa ; Wikipedia, Flavescence dorée ; PMC10528312, Metschnikowia en vignobles bio ; Règlement (UE) 2025/1177 ; Réussir Vigne, essais Willaertia ; Académie d’agriculture de France, histoire oïdium/mildiou",
+    src: "Mille Vignes, P. Lepeltier, p. 85-86 ; Communiqué Bayer/Agrauxine, Esquive WP (2014) ; Réussir Vigne, Sonata ; Réussir Vigne, La Xylella fastidiosa ; Wikipedia, Flavescence dorée ; PMC10528312, Metschnikowia en vignobles bio ; Règlement (UE) 2025/1177 ; Réussir Vigne, essais Willaertia ; Académie d’agriculture de France, histoire oïdium/mildiou ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)",
     page: 85
   },
   {
@@ -291,7 +289,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Terroirs microbiens : une piste débattue",
-    synth: "Des études de séquençage montrent que les communautés de levures et de bactéries ne se répartissent pas au hasard : elles varient selon les lieux, d’où l’idée d’un terroir microbien. L’étude de Bokulich et de ses collègues sur des moûts californiens (PNAS, 2014) en est un exemple (le livre ne la nomme pas) : les communautés dépendent de la région, mais aussi du cépage, du millésime et du climat. Lepeltier signale que ces résultats sont contestés par d’autres recherches ; l’étude elle-même établit des corrélations, sans démontrer de causalité.",
+    synth: "Des études de séquençage montrent que les communautés de levures et de bactéries ne se répartissent pas au hasard : elles varient selon les lieux, d’où l’idée d’un terroir microbien. L’étude de Bokulich et de ses collègues sur des moûts californiens (PNAS, 2014) en est un exemple (le livre ne la nomme pas) : sur 273 moûts de chardonnay, zinfandel et cabernet-sauvignon, les communautés diffèrent nettement mais faiblement d’une région à l’autre, et dépendent aussi du cépage et du millésime. Leur effet sur le goût du vin reste à démontrer. Lepeltier signale que ces résultats sont contestés par d’autres recherches ; l’étude elle-même établit des corrélations, sans démontrer de causalité.",
     mnemo: "Le terroir a-t-il une empreinte digitale microbienne ? La piste existe, mais l’empreinte reste floue.",
     flash: { q: "Que désigne l’idée de « terroir microbien » ?", a: "L’hypothèse que des communautés de levures et de bactéries propres à un lieu contribuent à la signature d’un vin ; thèse débattue." },
     qcm: { q: "Que désigne l’expression « terroir microbien » ?", opts: ["Des communautés de micro-organismes caractéristiques d’un lieu", "Un sol calcaire riche en bactéries", "Une levure commerciale sélectionnée", "Un traitement microbiologique du vin"], good: 0 },
@@ -302,10 +300,10 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: [
-      "Bokulich et al. : 273 moûts californiens sur deux millésimes ; corrélation et non causalité, étude limitée à la Californie ; résumé PNAS non lu directement (PMC bloqué)",
+      "Bokulich et al. : article original non lu (PMC bloqué) ; contenu recoupé par le commentaire de Gilbert, van der Lelie et Zarraonaindia (PNAS, 2014) ; étude limitée à la Californie",
       "Date : mise en ligne en novembre 2013, volume 2014 ; le livre retient 2014"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 86 ; Infowine, Mapping the microbial terroir of wine ; UC Davis Mills lab, page de l’étude Bokulich et al.",
+    src: "Mille Vignes, P. Lepeltier, p. 86 ; Infowine, Mapping the microbial terroir of wine ; UC Davis Mills lab, page de l’étude Bokulich et al. ; Gilbert, van der Lelie et Zarraonaindia, Microbial terroir for wine grapes (PNAS, 2014)",
     page: 86
   },
   {

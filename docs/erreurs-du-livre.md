@@ -36,7 +36,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 77 : ectomycorhizes chez « 10 % des plantes » → environ 2 % des espèces (le 10 % concerne les familles).
 - p. 78 : glomaline sécrétée par les vers de terre → produite par les champignons mycorhiziens à arbuscules, décrite par Sara Wright (USDA) en 1996 ; son identité biochimique reste discutée.
 - p. 79 : biomasse terrestre « à 90 % » microbienne → plantes ≈ 80 %, bactéries ≈ 15 % (Bar-On, Phillips et Milo, PNAS, 2018).
-- p. 85 : holobionte rattaché à Margulis → terme forgé par Meyer-Abich (1943), popularisé par Margulis (1991).
+- p. 80 : foyer de l’oïdium à Londres → serre de Margate (Kent), 1845 (Académie d’agriculture ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)).
+- p. 85 : arrivée du mildiou « en 1879 » → 1878 (Académie d’agriculture ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)).
 - p. 91 : « Non solus » attribué à Érasme « au XVIIe siècle » → devise des imprimeurs Elzevier (XVIIe s.) ; Érasme est mort en 1536.
 - p. 94 : James Lovelock « climatologue » → chimiste et inventeur.
 - p. 100 : cuivre à 600 g/an « dix fois moins que la limite bio » → environ sept fois moins (limite : 28 kg/ha sur 7 ans, soit 4 kg/ha/an en moyenne, d’après une chambre d’agriculture ; texte du règlement non lu).
@@ -60,9 +61,9 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 76 : sol = 6,5 % de la surface terrestre, terres non cultivables 22,5 % (non retrouvés).
 - p. 78 : origine biologique des argiles (thèse de C. et L. Bourguignon, non reprise par la pédologie consultée).
 - p. 79 : MO moyenne des sols viticoles français « à peine 2 % », Trentin au double (Trentin 2,4-3,2 % selon les études lues) ; taille des micro-organismes « 10⁻⁹ m » (ordre de grandeur douteux) ; étymologie d’« anécique » (deux sources secondaires).
-- p. 80 : carte de l’oïdium : foyer à Margate (Tucker) plutôt que Londres ; Bordeaux 1850 (Académie d’agriculture) contre 1851 ; Rioja 1854-1862 contre 1853 ; Requena 1855 contre 1854.
+- p. 80 : carte de l’oïdium : Bordeaux 1850 (Académie d’agriculture) contre 1851 ; Rioja 1854-1862 contre 1853 ; Requena 1855 contre 1854.
 - p. 81 : court-noué « parmi les premières causes de mortalité » (les sources parlent de baisse de rendement et de longévité) ; réseau mycélien « mille fois » le volume racinaire (« centuplé » p. 84 ; au moins 40 fois selon Mycoagra).
-- p. 85 : « 100 millions de bactéries par gramme de feuille » (non retrouvé ; 10⁶-10⁷ par cm²) ; Margulis « années 1970 » (article fondateur de 1967) ; mildiou « 1879 » (1878 selon la source lue).
+- p. 85 : « 100 millions de bactéries par gramme de feuille » (non retrouvé ; 10⁶-10⁷ par cm²) ; Margulis « années 1970 » (article fondateur de 1967) ; origine du terme holobionte : Margulis 1991 (Simon, Marchesi, Mougel et Selosse, Microbiome, 2019) ou Meyer-Abich 1943 (Wikipedia), non tranché.
 - p. 88 : Darricau, La Vigne et ses plantes compagnes (2019), Diego Tomasi et le roncier, « baragane » ; jachère luzerne-vesce-avoine contre le court-noué (non retrouvés).
 - p. 90 : échelle de permaculture en dix niveaux d’Alain Malard (non retrouvée).
 - p. 91 : Restinclières « 53 ha », INRA « depuis 1990 » (≈ 50 ha ; 1990 = achat par le Département, INRA vers 1995).
