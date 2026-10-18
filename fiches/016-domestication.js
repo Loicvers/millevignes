@@ -892,8 +892,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel observatoire suit le déploiement des cépages résistants en France ?", payload: { accepted: ["OSCAR", "observatoire OSCAR"] } }
     ],
     status: "needs_review",
-    to_check: ["ResDur 3 (arrêté du 14 février 2026, 6 variétés) : une seule source presse", "« Moins de 2 % de gènes américains » (Lepeltier) : moyenne théorique après cinq rétrocroisements (IFV), pas un chiffre mesuré sur les ResDur"],
-    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; INRAE, Science et élus n° 1 ; IFV Occitanie, Les variétés résistantes ; IVES Technical Reviews ; Vitisphere ; Réussir Vigne ; IFV (vignevin.com), onze nouvelles variétés résistantes",
+    to_check: ["« Moins de 2 % de gènes américains » (Lepeltier) : moyenne théorique après cinq rétrocroisements (IFV), pas un chiffre mesuré sur les ResDur"],
+    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; INRAE, Science et élus n° 1 ; IFV Occitanie, Les variétés résistantes ; IVES Technical Reviews ; Vitisphere ; Réussir Vigne ; IFV (vignevin.com), onze nouvelles variétés résistantes ; Vitisphere, arrêté du 14 février (14 inscriptions)",
     page: 36
   },
   {
