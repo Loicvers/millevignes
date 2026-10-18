@@ -551,8 +551,8 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896.", "Période de création « entre 1869 et 1902 » : l’analyse ADN de 36 porte-greffes (Riaz et al., 2019) situe les plus importants entre les années 1890 et 1930."],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
+    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896 (parenté berlandieri × riparia et origine Teleki confirmées par le CRB Vigne de Vassal, INRAE ; date de sélection : une seule source).", "Période de création « entre 1869 et 1902 » : l’analyse ADN de 36 porte-greffes (Riaz et al., 2019) situe les plus importants entre les années 1890 et 1930."],
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
     page: 55
   },
   {
