@@ -163,6 +163,24 @@
   .prog .ex-input{margin-bottom:12px}.prog .hint{font-size:14px;color:var(--muted)}
   .prog-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
   .btn.add{margin-top:12px}.btn.add.in{border-color:var(--wine);color:var(--wine);background:var(--paper2)}
+  .prog-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.prog-bar select{flex:1;min-width:200px;width:auto}
+  .prog-list{list-style:none;padding:0}.prog-item{margin-bottom:10px}.prog-item .order-item{margin-bottom:0;border-radius:3px 3px 0 0}
+  .prog-opts{display:grid;grid-template-columns:2fr 90px 1.2fr;gap:8px;border:1px solid var(--line);border-top:none;padding:8px;border-radius:0 0 3px 3px;background:var(--paper2)}
+  .prog-field{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted)}.prog-field .ex-input{margin:0}
+  .prog-check{display:flex;gap:8px;align-items:center;font-size:14px;margin-top:10px}.prog-check input{width:20px;height:20px}
+  .proj{position:fixed;inset:0;z-index:100;background:var(--ink);color:var(--paper);display:flex;flex-direction:column;padding:4vh 6vw;overflow:auto}
+  .proj[hidden]{display:none}
+  .proj-slide{flex:1;max-width:1100px;width:100%;margin:0 auto}
+  .proj-kicker{color:#cbb48a;font-size:clamp(14px,1.6vw,20px);margin-bottom:2vh}
+  .proj h2{font-family:'Cormorant',serif;font-weight:600;font-size:clamp(30px,5vw,64px);line-height:1.1;margin-bottom:3vh}
+  .proj-vin{font-size:clamp(17px,2vw,26px);color:#cbb48a;margin-bottom:2vh}
+  .proj-synth{font-size:clamp(17px,2.1vw,28px);line-height:1.5;max-width:60ch}
+  .proj .schema{background:var(--paper);max-width:640px;margin-top:3vh}
+  .proj-ans{font-size:clamp(20px,2.6vw,34px);line-height:1.4;border-left:4px solid #cbb48a;padding-left:20px;margin-top:3vh}
+  .proj .btn.primary{margin-top:2vh;font-size:16px}
+  .proj-nav{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:3vh}
+  .proj-nav .btn{background:transparent;color:var(--paper);border-color:#6b6357}.proj-count{min-width:70px;text-align:center}
+  @media(max-width:560px){.prog-opts{grid-template-columns:1fr 1fr}.prog-opts .prog-field:first-child{grid-column:1/-1}}
   #support{display:none}
   @media print{
     body>*:not(#support){display:none!important}
@@ -173,6 +191,11 @@
     .sup-fiche h2{font-family:'Cormorant',serif;font-size:16pt;margin-bottom:4pt}
     .sup-fiche p{margin-bottom:5pt}.sup-src{font-style:italic;color:#555;font-size:9pt}
     .sup-fiche .schema{max-width:12cm}
+    .sup-vin{font-weight:600}.sup-ess{margin:0 0 5pt 14pt}
+    .sup-grille{width:100%;border-collapse:collapse;margin:6pt 0}.sup-grille th{width:2.6cm;text-align:left;font-weight:600}
+    .sup-grille th,.sup-grille td{border:1px solid #999;padding:4pt;height:1.3cm;vertical-align:top}
+    .sup-quiz{break-before:page}.sup-quiz h2{font-family:'Cormorant',serif;font-size:18pt;margin-bottom:8pt}
+    .sup-quiz>ol>li{margin:0 0 10pt 14pt;break-inside:avoid}.sup-opts{list-style:lower-alpha;margin-left:16pt}.sup-line{margin-top:6pt}
   }
   @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}}
   .tab{white-space:nowrap}
@@ -227,11 +250,12 @@
 
 <footer class="wrap">
   L'Atelier des Mille Vignes — chaque fiche reformulée et créditée à sa source<br><br>
-  <button class="reset-all" id="exportProg">Sauvegarder ma progression</button> ·
+  <button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button> ·
   <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden> ·
   <button class="reset-all" id="resetAll">Réinitialiser toute ma progression</button>
 </footer>
 <section id="support"></section>
+<div id="proj" class="proj" role="dialog" aria-label="Projection de la masterclass" tabindex="-1" hidden></div>
 
 <script src="fiches.js"></script>
 <script src="fiches/016-domestication.js"></script>
@@ -358,7 +382,7 @@ function render(){
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
   document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
-  document.getElementById('introLine').textContent= mode==='atelier'?'Filtre, ajoute les fiches à ton programme, ordonne-les, puis imprime le support des participants.':'';
+  document.getElementById('introLine').textContent= mode==='atelier'?'Compose ton programme : ajoute des fiches, note le vin servi et la durée, puis projette ou imprime le support.':'';
   renderProg();
   document.getElementById('shown').textContent=list.length;
   document.getElementById('acq').textContent=EXOS.filter(e=>prog[e.id]).length;
@@ -408,47 +432,171 @@ function card(f){
     <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div></div>`;
   const tg=c.querySelector('.card-toggle');tg.onclick=()=>tg.setAttribute('aria-expanded',c.classList.toggle('open'));
   if(mode==='atelier'){ // bouton visible même carte repliée
-    const add=el('button','btn add');const sync=()=>{const inP=programme.ids.includes(f.id);add.textContent=inP?'✓ Dans le programme':'Ajouter au programme';add.classList.toggle('in',inP);add.setAttribute('aria-pressed',inP);};
-    add.onclick=()=>{const i=programme.ids.indexOf(f.id);i<0?programme.ids.push(f.id):programme.ids.splice(i,1);saveProg();sync();renderProg();};
+    const add=el('button','btn add');const sync=()=>{const inP=inProg(f.id);add.textContent=inP?'✓ Dans le programme':'Ajouter au programme';add.classList.toggle('in',inP);add.setAttribute('aria-pressed',inP);};
+    add.onclick=()=>{toggleInProg(f.id);sync();renderProg();};
     sync();c.querySelector('.synth').after(add);}
   const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
   c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre);
   return c;
 }
 
-/* ============ MASTERCLASS : PROGRAMME + SUPPORT ============ */
-const PRKEY='mv_programme';
-let programme=(()=>{try{return JSON.parse(localStorage.getItem(PRKEY))||{titre:'',ids:[]};}catch{return {titre:'',ids:[]};}})();
-function saveProg(){try{localStorage.setItem(PRKEY,JSON.stringify(programme));}catch{}}
-const FICHE_BY_ID=Object.fromEntries(FICHES.map(f=>[f.id,f]));
+/* ============ MASTERCLASS : PROGRAMMES, SUPPORT, QUIZ, PROJECTION ============ */
+// store = {cur, progs:{<clé>:{titre, quiz, items:[{id, vin, duree, contenu}]}}} ; contenu : synth | astuce | essentiel
+const PRKEY='mv_programmes',FICHE_BY_ID=Object.fromEntries(FICHES.map(f=>[f.id,f]));
+const newKey=()=>'p'+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+const blankProg=titre=>({titre:titre||'',quiz:true,items:[]});
+// Tout programme venu de l'extérieur (sauvegarde, lien) passe par ici : on ne garde que des champs connus et des fiches existantes.
+function cleanProg(p){
+  if(!p||typeof p!=='object'||!Array.isArray(p.items))return null;
+  return {titre:String(p.titre||'').slice(0,120),quiz:p.quiz!==false,
+    items:p.items.filter(x=>x&&FICHE_BY_ID[x.id]).map(x=>({id:x.id,vin:String(x.vin||'').slice(0,160),duree:Math.min(240,Math.max(0,parseInt(x.duree)||0)),contenu:['synth','astuce','essentiel'].includes(x.contenu)?x.contenu:'astuce'}))};
+}
+let store=(()=>{
+  try{const s=JSON.parse(localStorage.getItem(PRKEY));if(s&&s.progs&&s.progs[s.cur]){for(const k in s.progs)s.progs[k]=cleanProg(s.progs[k])||blankProg();return s;}}catch{}
+  const k=newKey(),s={cur:k,progs:{[k]:blankProg()}};
+  try{const old=JSON.parse(localStorage.getItem('mv_programme')); // version précédente : un seul programme {titre, ids}
+    if(old&&Array.isArray(old.ids))s.progs[k]=cleanProg({titre:old.titre,items:old.ids.map(id=>({id,duree:10}))});}catch{}
+  return s;
+})();
+const P=()=>store.progs[store.cur];
+function saveProg(){try{localStorage.setItem(PRKEY,JSON.stringify(store));}catch{alert('Impossible d\'enregistrer le programme dans ce navigateur.');}}
+const inProg=id=>P().items.some(x=>x.id===id);
+function toggleInProg(id){const it=P().items,i=it.findIndex(x=>x.id===id);i<0?it.push({id,vin:'',duree:10,contenu:'astuce'}):it.splice(i,1);saveProg();}
+const fmtDuree=m=>m>=60?`${Math.floor(m/60)} h ${String(m%60).padStart(2,'0')}`:`${m} min`;
+function essentiels(f){const c=f.cours;if(!c)return [];
+  return [c.essentiel,...(c.sections||[]).flatMap(s=>(s.blocs||[]).filter(b=>b.imp==='essentiel').map(b=>b.txt)),...(c.synthese||[]).filter(b=>b.imp==='essentiel').map(b=>b.txt)].filter(Boolean);}
+
 function renderProg(){
   const box=document.getElementById('progPanel');box.hidden=mode!=='atelier';if(box.hidden)return;
-  programme.ids=programme.ids.filter(id=>FICHE_BY_ID[id]); // fiche supprimée du dépôt : on l'oublie
-  box.innerHTML='';box.append(el('h2',null,'Programme de la masterclass'));
-  const t=el('input','ex-input');t.placeholder='Titre de la masterclass';t.setAttribute('aria-label','Titre de la masterclass');t.value=programme.titre;t.oninput=()=>{programme.titre=t.value;saveProg();};box.append(t);
-  const ids=programme.ids;
-  if(!ids.length){box.append(el('p','hint','Aucune fiche pour l\'instant : touche « Ajouter au programme » sur les fiches ci-dessous.'));return;}
-  const list=el('ol','order');
-  ids.forEach((id,i)=>{const li=el('li','order-item');li.append(el('span',null,FICHE_BY_ID[id].titre));
+  const pr=P();box.innerHTML='';
+  // choix du programme
+  const bar=el('div','prog-bar'),sel=el('select','ex-input');sel.setAttribute('aria-label','Programme');
+  Object.entries(store.progs).forEach(([k,p])=>sel.append(new Option((p.titre||'Sans titre')+` (${p.items.length})`,k,false,k===store.cur)));
+  sel.onchange=()=>{store.cur=sel.value;saveProg();render();};
+  const bNew=el('button','btn','Nouveau'),bDup=el('button','btn','Dupliquer'),bDel=el('button','btn','Supprimer');
+  bNew.onclick=()=>{const k=newKey();store.progs[k]=blankProg();store.cur=k;saveProg();render();};
+  bDup.onclick=()=>{const k=newKey();store.progs[k]=JSON.parse(JSON.stringify(pr));store.progs[k].titre=(pr.titre||'Sans titre')+' (copie)';store.cur=k;saveProg();render();};
+  bDel.onclick=()=>{if(!confirm(`Supprimer le programme « ${pr.titre||'Sans titre'} » ?`))return;delete store.progs[store.cur];
+    store.cur=Object.keys(store.progs)[0]||(k=>(store.progs[k]=blankProg(),k))(newKey());saveProg();render();};
+  bar.append(sel,bNew,bDup,bDel);box.append(bar);
+  const t=el('input','ex-input');t.placeholder='Titre de la masterclass';t.setAttribute('aria-label','Titre de la masterclass');t.value=pr.titre;
+  t.oninput=()=>{pr.titre=t.value;saveProg();sel.selectedOptions[0].text=(t.value||'Sans titre')+` (${pr.items.length})`;};box.append(t);
+  if(!pr.items.length){box.append(el('p','hint','Aucune fiche pour l\'instant : touche « Ajouter au programme » sur les fiches ci-dessous.'));return;}
+  const total=el('p','hint');const upTotal=()=>total.textContent=`${pr.items.length} fiche(s) · durée prévue ${fmtDuree(pr.items.reduce((s,x)=>s+x.duree,0))}`;upTotal();
+  const list=el('ol','prog-list');
+  pr.items.forEach((it,i)=>{const f=FICHE_BY_ID[it.id],li=el('li','prog-item'),head=el('div','order-item');
+    head.append(el('span',null,`${i+1}. ${f.titre}`));
     const up=el('button','mini','↑'),dn=el('button','mini','↓'),rm=el('button','mini','×');
-    up.setAttribute('aria-label','Monter '+FICHE_BY_ID[id].titre);dn.setAttribute('aria-label','Descendre '+FICHE_BY_ID[id].titre);rm.setAttribute('aria-label','Retirer '+FICHE_BY_ID[id].titre);
-    up.disabled=!i;dn.disabled=i===ids.length-1;
-    const mv=j=>{[ids[i],ids[j]]=[ids[j],ids[i]];saveProg();renderProg();};
-    up.onclick=()=>mv(i-1);dn.onclick=()=>mv(i+1);rm.onclick=()=>{ids.splice(i,1);saveProg();render();};
-    li.append(up,dn,rm);list.append(li);});
-  box.append(list);
-  const acts=el('div','prog-actions'),pr=el('button','btn primary','Imprimer le support (PDF)'),clr=el('button','btn','Vider le programme');
-  pr.onclick=printSupport;clr.onclick=()=>{if(confirm('Retirer toutes les fiches du programme ?')){programme.ids=[];saveProg();render();}};
-  acts.append(pr,clr);box.append(acts);
+    up.setAttribute('aria-label','Monter '+f.titre);dn.setAttribute('aria-label','Descendre '+f.titre);rm.setAttribute('aria-label','Retirer '+f.titre);
+    up.disabled=!i;dn.disabled=i===pr.items.length-1;
+    const mv=j=>{[pr.items[i],pr.items[j]]=[pr.items[j],pr.items[i]];saveProg();renderProg();};
+    up.onclick=()=>mv(i-1);dn.onclick=()=>mv(i+1);rm.onclick=()=>{pr.items.splice(i,1);saveProg();render();};
+    head.append(up,dn,rm);
+    const opts=el('div','prog-opts');
+    const vin=el('input','ex-input');vin.placeholder='Vin servi (cuvée, domaine, millésime)';vin.setAttribute('aria-label','Vin servi pour '+f.titre);vin.value=it.vin;vin.oninput=()=>{it.vin=vin.value;saveProg();};
+    const du=el('input','ex-input');du.type='number';du.min=0;du.max=240;du.step=5;du.value=it.duree;du.setAttribute('aria-label','Durée en minutes pour '+f.titre);
+    du.oninput=()=>{it.duree=Math.min(240,Math.max(0,parseInt(du.value)||0));saveProg();upTotal();};
+    const ct=el('select','ex-input');ct.setAttribute('aria-label','Contenu imprimé pour '+f.titre);
+    [['synth','Synthèse seule'],['astuce','+ astuce'],...(essentiels(f).length?[['essentiel','+ astuce + essentiels']]:[])].forEach(([v,l])=>ct.append(new Option(l,v,false,v===it.contenu)));
+    ct.onchange=()=>{it.contenu=ct.value;saveProg();};
+    const lab=(txt,inp)=>{const l=el('label','prog-field');l.append(el('span',null,txt),inp);return l;};
+    opts.append(lab('Vin servi',vin),lab('Minutes',du),lab('Support',ct));
+    li.append(head,opts);list.append(li);});
+  box.append(list,total);
+  const q=el('label','prog-check'),qc=el('input');qc.type='checkbox';qc.checked=pr.quiz;qc.onchange=()=>{pr.quiz=qc.checked;saveProg();};
+  q.append(qc,' Ajouter un quiz et son corrigé (page séparée) au support');box.append(q);
+  const acts=el('div','prog-actions'),bP=el('button','btn primary','Projeter'),bI=el('button','btn primary','Imprimer le support (PDF)'),bL=el('button','btn','Copier le lien'),bV=el('button','btn','Vider');
+  bP.onclick=startProjection;bI.onclick=printSupport;bL.onclick=copyLink;
+  bV.onclick=()=>{if(confirm('Retirer toutes les fiches de ce programme ?')){pr.items=[];saveProg();render();}};
+  acts.append(bP,bI,bL,bV);box.append(acts);
+}
+
+/* ----- lien de partage : le programme voyage dans l'adresse (#prog=…) ----- */
+const b64=s=>btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const unb64=s=>new TextDecoder().decode(Uint8Array.from(atob(s.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0)));
+function copyLink(){
+  const url=location.href.split('#')[0]+'#prog='+b64(JSON.stringify(P()));
+  (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>alert('Lien copié : ouvre-le sur un autre appareil pour y retrouver ce programme.'),()=>prompt('Copie ce lien :',url));
+}
+function importFromHash(){
+  if(!location.hash.startsWith('#prog='))return;
+  let p=null;try{p=cleanProg(JSON.parse(unb64(location.hash.slice(6))));}catch{}
+  history.replaceState(null,'',location.pathname+location.search);
+  if(!p){alert('Ce lien de programme est illisible.');return;}
+  if(!confirm(`Ajouter le programme « ${p.titre||'Sans titre'} » (${p.items.length} fiche(s)) ?`))return;
+  const k=newKey();store.progs[k]=p;store.cur=k;saveProg();setMode('atelier');
+}
+
+/* ----- support imprimé : fiches, vin et grille de dégustation, quiz, corrigé ----- */
+const PRINTABLE=['mcq_single','odd_one_out','mcq_multi','true_false','short_answer'];
+function quizFor(fs){ // une question par fiche à tour de rôle, 10 au plus
+  const pools=fs.map(f=>shuffle(EXOS.filter(e=>e.fiche===f&&PRINTABLE.includes(e.type)))),out=[];
+  for(let r=0;out.length<10&&pools.some(p=>p[r]);r++)pools.forEach(p=>{if(p[r]&&out.length<10)out.push(p[r]);});
+  return out;
 }
 function printSupport(){
-  const s=document.getElementById('support'),fs=programme.ids.map(id=>FICHE_BY_ID[id]);s.innerHTML='';
-  s.append(el('h1',null,programme.titre||'Masterclass'),el('p','sup-sub',`L'Atelier des Mille Vignes — ${fs.length} fiche(s)`));
-  fs.forEach(f=>{const a=el('article','sup-fiche');
-    a.innerHTML=`<h2>${f.titre}</h2><p>${f.synth}</p>${schemaHTML(f)}<p><b>Astuce mémo : </b>${f.mnemo}</p><p class="sup-src">${f.src}${f.page?', p. '+f.page:''}</p>`;s.append(a);});
+  const pr=P(),s=document.getElementById('support');s.innerHTML='';
+  s.append(el('h1',null,pr.titre||'Masterclass'),el('p','sup-sub',`L'Atelier des Mille Vignes — ${pr.items.length} fiche(s) · ${fmtDuree(pr.items.reduce((a,x)=>a+x.duree,0))}`));
+  pr.items.forEach((it,i)=>{const f=FICHE_BY_ID[it.id],a=el('article','sup-fiche');
+    a.append(el('h2',null,`${i+1}. ${f.titre}`));
+    if(it.vin)a.append(el('p','sup-vin','Vin servi : '+it.vin));
+    a.insertAdjacentHTML('beforeend',`<p>${f.synth}</p>${schemaHTML(f)}`+
+      (it.contenu!=='synth'?`<p><b>Astuce mémo : </b>${f.mnemo}</p>`:'')+
+      (it.contenu==='essentiel'?`<ul class="sup-ess">${essentiels(f).map(x=>`<li>${x}</li>`).join('')}</ul>`:'')+
+      (it.vin?`<table class="sup-grille">${['Œil','Nez','Bouche','Mes notes'].map(x=>`<tr><th>${x}</th><td></td></tr>`).join('')}</table>`:'')+
+      `<p class="sup-src">${f.src}${f.page?', p. '+f.page:''}</p>`);
+    s.append(a);});
+  if(pr.quiz){const qs=quizFor(pr.items.map(x=>FICHE_BY_ID[x.id]));
+    if(qs.length){
+      const qz=el('section','sup-quiz');qz.append(el('h2',null,'Quiz'));const ol=el('ol');
+      qs.forEach(ex=>{const li=el('li');const p=ex.payload;
+        li.append(el('p','sup-q',ex.type==='true_false'?'Vrai ou faux : '+p.statement:ex.prompt+(ex.type==='mcq_multi'?' (plusieurs réponses)':'')));
+        if(p.options){const o=el('ol','sup-opts');p.options.forEach(x=>o.append(el('li',null,x)));li.append(o);}
+        else if(ex.type==='short_answer')li.append(el('p','sup-line','Réponse : ______________________________'));
+        ol.append(li);});
+      qz.append(ol);s.append(qz);
+      const cg=el('section','sup-quiz');cg.append(el('h2',null,'Corrigé'));const ol2=el('ol');
+      qs.forEach(ex=>ol2.append(el('li',null,correctText(ex))));cg.append(ol2);s.append(cg);
+    }}
   s.append(el('p','sup-src','Contenus reformulés et crédités à leur source.'));
   window.print();
 }
+
+/* ----- projection : une fiche puis sa question au public, plein écran ----- */
+let slides=[],slideAt=0;
+function startProjection(){
+  slides=P().items.flatMap(it=>[{k:'fiche',it},{k:'q',it}]);slideAt=0;
+  const o=document.getElementById('proj');o.hidden=false;document.body.style.overflow='hidden';
+  try{o.requestFullscreen&&o.requestFullscreen().catch(()=>{});}catch{}
+  drawSlide();o.focus();
+}
+function stopProjection(){const o=document.getElementById('proj');o.hidden=true;document.body.style.overflow='';if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});}
+function drawSlide(){
+  const o=document.getElementById('proj'),s=slides[slideAt],f=FICHE_BY_ID[s.it.id],n=P().items.indexOf(s.it)+1;o.innerHTML='';
+  const box=el('div','proj-slide');
+  if(s.k==='fiche'){
+    box.append(el('p','proj-kicker',`Fiche ${n} sur ${P().items.length}${s.it.duree?' · '+s.it.duree+' min':''}`),el('h2',null,f.titre));
+    if(s.it.vin)box.append(el('p','proj-vin','Dans le verre : '+s.it.vin));
+    box.insertAdjacentHTML('beforeend',`<p class="proj-synth">${f.synth}</p>${schemaHTML(f)}`);
+  }else{
+    box.append(el('p','proj-kicker','Question au public'));box.insertAdjacentHTML('beforeend',`<h2>${f.flash.q}</h2>`);
+    const ans=el('div','proj-ans');ans.innerHTML=f.flash.a;ans.hidden=true;
+    const rv=el('button','btn primary','Révéler la réponse');rv.onclick=()=>{ans.hidden=false;rv.remove();};box.append(rv,ans);
+  }
+  const nav=el('div','proj-nav'),pv=el('button','btn','‹ Précédent'),nx=el('button','btn','Suivant ›'),qt=el('button','btn','Quitter (Échap)');
+  pv.disabled=!slideAt;nx.disabled=slideAt===slides.length-1;
+  pv.onclick=()=>{slideAt--;drawSlide();};nx.onclick=()=>{slideAt++;drawSlide();};qt.onclick=stopProjection;
+  nav.append(pv,el('span','proj-count',`${slideAt+1} / ${slides.length}`),nx,qt);
+  o.append(box,nav);
+}
+document.addEventListener('keydown',e=>{
+  if(document.getElementById('proj').hidden)return;
+  if(e.key==='Escape')stopProjection();
+  else if(e.key==='ArrowRight'&&slideAt<slides.length-1){slideAt++;drawSlide();}
+  else if(e.key==='ArrowLeft'&&slideAt>0){slideAt--;drawSlide();}
+  else if(e.key===' '&&!(e.target instanceof HTMLButtonElement)){e.preventDefault();const r=document.querySelector('#proj .proj-slide .btn');r&&r.click();}
+});
+document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
 let queue=[],pos=0,score={ok:0,total:0},sessionTitle='';
@@ -544,10 +692,10 @@ function finish(ex,ok,fb,actions,body){
 function updateBadges(){document.getElementById('dueBadge').textContent=EXOS.filter(isDue).length+Math.min(NEW_MAX,EXOS.filter(isNew).length);}
 
 if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
-updateBadges();render();
+updateBadges();render();importFromHash();
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 document.getElementById('exportProg').onclick=()=>{
-  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,programmes:store},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
 };
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
@@ -560,7 +708,10 @@ document.getElementById('importProg').onchange=async e=>{
   if(data.version!==2)p=fromV1(p); // sauvegarde de l'ancien site (par fiche)
   const n=Object.keys(p).length,cur=Object.keys(prog).length;
   if(!confirm(`Restaurer ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} exercice(s)) sera remplacée.`))return;
-  prog=p;save();updateBadges();render();
+  prog=p;save();
+  const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
+  if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
+  saveProg();updateBadges();render();
 };
 document.getElementById('resetAll').onclick=()=>{if(confirm('Effacer toute ta progression de mémorisation ?')){prog={};save();updateBadges();render();}};
 </script>
