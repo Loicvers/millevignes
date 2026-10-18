@@ -464,7 +464,7 @@ FICHES.push(
     qcm: { q: "Selon le livre, quelle période voit la révolution agricole qui généralise les produits de synthèse ?", opts: ["1900 – 1930", "1950 – début des années 1990", "1995 – 2010", "Depuis 2005"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Printemps silencieux (Silent Spring) de Rachel Carson paraît dans les années 1970.", answer: false }, explanation: "Il paraît le 27 septembre 1962 (traduction française en 1963). Lepeltier place dans les années 1970 la prise de conscience qu’il a nourrie ; l’interdiction du DDT aux États-Unis date de 1972." },
-      { type: "cloze", prompt: "Complète.", payload: { text: "Rachel Carson est née en {{1907}} et morte en {{1964}}." } },
+      { type: "cloze", prompt: "Complète.", payload: { text: "Après 1945, l’{{exode rural}} et le manque de main-d’œuvre poussent au remembrement et à la {{mécanisation}} du vignoble." }, explanation: "Ce sont les deux déclencheurs de la restructuration ; les produits de synthèse arrivent ensuite, de 1950 au début des années 1990." },
       { type: "odd_one_out", prompt: "Selon le livre, quel changement n’appartient PAS à la restructuration du vignoble après 1945 ?", payload: { options: ["Remembrement", "Mécanisation", "Passage de la polyculture à la monoculture", "Retour à la polyculture"], answer: 3 }, explanation: "Le livre décrit l’inverse : la polyculture recule au profit de la monoculture." }
     ],
     schema: null,
