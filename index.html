@@ -18,7 +18,8 @@
   .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 
   header{border-bottom:1px solid var(--line)}
-  .head-inner{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:22px 0 18px;flex-wrap:wrap}
+  .head-inner{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:18px;flex-wrap:wrap}
+  :focus-visible{outline:2px solid var(--wine);outline-offset:2px}
   .brand{font-family:'Cormorant',serif;font-weight:600;font-size:30px;letter-spacing:.5px;line-height:1}
   .brand .sub{display:block;font-family:'Inter';font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:7px}
 
@@ -45,20 +46,28 @@
   .chip.sub.on{background:var(--gold);border-color:var(--gold);color:#fff}
 
   .geo-tree{font-size:13px}
-  .geo-node{cursor:pointer;padding:2px 0;user-select:none}
+  .geo-node{display:block;width:100%;text-align:left;background:none;border:none;font:inherit;color:inherit;cursor:pointer;padding:2px 0;user-select:none}
   .geo-node .tw{display:inline-block;width:14px;color:var(--muted)}
   .geo-pays{font-weight:600}.geo-region{padding-left:16px}.geo-appel{padding-left:34px;color:var(--wine-soft)}
   .geo-appel.on,.geo-region.on{color:var(--wine);font-weight:600}
   .geo-appel:hover,.geo-region:hover,.geo-pays:hover{color:var(--wine)}
   .geo-hidden{display:none}
 
-  .filt-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;flex-wrap:wrap;gap:10px}
+  .filt-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  .filt-panel>summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--wine);margin-top:12px;min-height:32px;display:flex;align-items:center}
+  .filt-panel[open]>summary{margin-bottom:12px}
+  .filt-panel>summary::before{content:"▸";margin-right:6px}.filt-panel[open]>summary::before{content:"▾"}
   .count{font-size:13px;color:var(--muted)}.count b{color:var(--ink)}
   .clear{font-size:12px;color:var(--wine);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   main{padding:26px 0 80px}
   .intro{font-family:'Cormorant',serif;font-size:18px;color:var(--muted);margin-bottom:20px;font-style:italic}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;align-items:start}
+  .card-toggle{all:unset;cursor:pointer;display:block}
+  .card-toggle h3::after{content:" +";color:var(--gold);font-weight:400}
+  .card.open .card-toggle h3::after{content:" −"}
+  .card:not(.open) .card-body{display:none}
+  .card:not(.open) .synth{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:0}
   .card{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:20px 20px 18px;display:flex;flex-direction:column;position:relative;overflow:hidden}
   .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold)}
   .card.t-geo::before{background:var(--wine)}
@@ -121,7 +130,7 @@
   .empty{text-align:center;padding:70px 20px;color:var(--muted)}
   .empty h3{font-family:'Cormorant',serif;font-size:26px;color:var(--ink);margin-bottom:8px}
 
-  footer{border-top:1px solid var(--line);padding:24px 0;font-size:12px;color:var(--muted);text-align:center}
+  footer.wrap{border-top:1px solid var(--line);padding-top:24px;padding-bottom:24px;font-size:12px;color:var(--muted);text-align:center}
   .reset-all{font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   .btn{font-family:inherit;font-size:13px;font-weight:600;padding:10px 14px;min-height:44px;border-radius:3px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink)}
@@ -166,6 +175,11 @@
 
 <div class="filters" id="filterBar">
   <div class="wrap">
+    <div class="filt-foot">
+      <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
+      <button class="btn primary" id="sessionBtn">S'entraîner</button>
+    </div>
+    <details class="filt-panel" id="filtPanel"><summary id="filtSum">Filtrer</summary>
     <div class="filt-row">
       <div class="filt-group">
         <div class="filt-label"><span class="dot" style="background:var(--ink)"></span>Le quoi — Thèmes</div>
@@ -181,11 +195,8 @@
         <div class="chips" id="nivChips"></div>
       </div>
     </div>
-    <div class="filt-foot">
-      <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
-      <button class="btn primary" id="sessionBtn">S'entraîner</button>
-      <button class="clear" id="clearBtn">Réinitialiser les filtres</button>
-    </div>
+    <button class="clear" id="clearBtn" style="margin-top:14px">Réinitialiser les filtres</button>
+    </details>
   </div>
 </div>
 
@@ -284,17 +295,19 @@ function buildSub(){
 
 const geoTree=document.getElementById('geoTree');
 Object.keys(GEO).forEach(pays=>{
-  const pn=document.createElement('div');pn.className='geo-node geo-pays';pn.innerHTML='<span class="tw">▾</span>'+pays;geoTree.appendChild(pn);
-  const rw=document.createElement('div');
+  const hasReg=Object.keys(GEO[pays]).length;
+  const pn=document.createElement('button');pn.className='geo-node geo-pays';pn.innerHTML=`<span class="tw">${hasReg?'▸':''}</span>`+pays;geoTree.appendChild(pn);
+  const rw=document.createElement('div');rw.className='geo-hidden'; // pays repliés par défaut
+  if(hasReg)pn.setAttribute('aria-expanded','false');
   Object.keys(GEO[pays]).forEach(region=>{
-    const rn=document.createElement('div');rn.className='geo-node geo-region';rn.innerHTML='<span class="tw">›</span>'+region;
+    const rn=document.createElement('button');rn.className='geo-node geo-region';rn.innerHTML='<span class="tw">›</span>'+region;
     rn.onclick=e=>{e.stopPropagation();selGeo({region});};rw.appendChild(rn);
-    [...GEO[pays][region]].forEach(appel=>{const an=document.createElement('div');an.className='geo-node geo-appel';an.textContent=appel;an.onclick=e=>{e.stopPropagation();selGeo({region,appel});};rw.appendChild(an);});
+    [...GEO[pays][region]].forEach(appel=>{const an=document.createElement('button');an.className='geo-node geo-appel';an.textContent=appel;an.onclick=e=>{e.stopPropagation();selGeo({region,appel});};rw.appendChild(an);});
   });
   geoTree.appendChild(rw);
   pn.onclick=()=>{
-    if(!Object.keys(GEO[pays]).length){selGeo({pays});return;} // pays sans région (ex. Chypre) : on filtre directement
-    rw.classList.toggle('geo-hidden');pn.querySelector('.tw').textContent=rw.classList.contains('geo-hidden')?'▸':'▾';};
+    if(!hasReg){selGeo({pays});return;} // pays sans région (ex. Chypre) : on filtre directement
+    const open=rw.classList.toggle('geo-hidden')===false;pn.setAttribute('aria-expanded',open);pn.querySelector('.tw').textContent=open?'▾':'▸';};
 });
 function selGeo(sel){
   const same=activeGeo&&activeGeo.pays===sel.pays&&activeGeo.region===sel.region&&activeGeo.appel===sel.appel;
@@ -321,6 +334,8 @@ function matches(f){
 }
 function render(){
   if(mode==='due')return;
+  const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
+  document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
   document.getElementById('introLine').textContent= mode==='atelier'?'Filtre par thème ou région pour rassembler la matière d\'une masterclass.':'';
   document.getElementById('shown').textContent=list.length;
@@ -356,9 +371,10 @@ function card(f){
   const subTags=(f.sous||[]).map(s=>`<span class="sub-tag">${s}</span>`).join('');
   c.innerHTML=`
     <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${statTag}${dueTag}</div>
-    <div class="sub-tags">${subTags}</div>
-    <h3>${f.titre}</h3>
+    <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3></button>
     <p class="synth">${f.synth}</p>
+    <div class="card-body">
+    <div class="sub-tags">${subTags}</div>
     ${schemaHTML(f)}
     ${coursHTML(f.cours)}
     ${chkList}
@@ -366,7 +382,8 @@ function card(f){
     <div class="flash-hint">Flashcard — touche pour retourner</div>
     <div class="flash" tabindex="0" role="button" aria-label="Retourner la flashcard"><div class="flash-in"><div class="flash-face flash-front">${f.flash.q}</div><div class="flash-face flash-back">${f.flash.a}</div></div></div>
     <button class="btn train">S'entraîner — ${mine.length} exercice(s)</button>
-    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
+    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div></div>`;
+  const tg=c.querySelector('.card-toggle');tg.onclick=()=>tg.setAttribute('aria-expanded',c.classList.toggle('open'));
   const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
   c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre);
   return c;
@@ -465,6 +482,7 @@ function finish(ex,ok,fb,actions,body){
 }
 function updateBadges(){document.getElementById('dueBadge').textContent=EXOS.filter(isDue).length+Math.min(NEW_MAX,EXOS.filter(isNew).length);}
 
+if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
 updateBadges();render();
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 document.getElementById('exportProg').onclick=()=>{
