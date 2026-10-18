@@ -33,6 +33,14 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 67 : Ceps Sicavac « depuis 2010 » → sélection 2005-2012, structure créée en 2014.
 - p. 68 : anthracnose rangée parmi les maladies venues d'Amérique → d'origine européenne (IFV Occitanie, ePhytia INRAE).
 - p. 70 : Éloge de la plante (Hallé) « 2014 » → 1re édition 1999.
+- p. 77 : ectomycorhizes chez « 10 % des plantes » → environ 2 % des espèces (le 10 % concerne les familles).
+- p. 78 : glomaline sécrétée par les vers de terre → produite par les champignons mycorhiziens à arbuscules, décrite par Sara Wright (USDA) en 1996 ; son identité biochimique reste discutée.
+- p. 79 : biomasse terrestre « à 90 % » microbienne → plantes ≈ 80 %, bactéries ≈ 15 % (Bar-On, Phillips et Milo, PNAS, 2018).
+- p. 85 : holobionte rattaché à Margulis → terme forgé par Meyer-Abich (1943), popularisé par Margulis (1991).
+- p. 91 : « Non solus » attribué à Érasme « au XVIIe siècle » → devise des imprimeurs Elzevier (XVIIe s.) ; Érasme est mort en 1536.
+- p. 94 : James Lovelock « climatologue » → chimiste et inventeur.
+- p. 100 : cuivre à 600 g/an « dix fois moins que la limite bio » → environ sept fois moins (limite : 28 kg/ha sur 7 ans, soit 4 kg/ha/an en moyenne, d’après une chambre d’agriculture ; texte du règlement non lu).
+- p. 101 : 59 % des 37 000 ha néo-zélandais pâturés par des moutons → le 59 % est une part de viticulteurs (Sustainable Winegrowing NZ) ; vignoble de 42 519 ha en 2024 ; 23,6 millions de moutons au 30 juin 2024 (27 millions dans le livre).
 
 ## Non confirmés
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
@@ -49,6 +57,22 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
 - p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
 - p. 64-66 : droits de la massale limités au propre vignoble (l’arrêté du 17 juin 2020 prévoit seulement des pépinières privées réservées à l’exploitation) ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
+- p. 76 : sol = 6,5 % de la surface terrestre, terres non cultivables 22,5 % (non retrouvés).
+- p. 78 : origine biologique des argiles (thèse de C. et L. Bourguignon, non reprise par la pédologie consultée).
+- p. 79 : MO moyenne des sols viticoles français « à peine 2 % », Trentin au double (Trentin 2,4-3,2 % selon les études lues) ; taille des micro-organismes « 10⁻⁹ m » (ordre de grandeur douteux) ; étymologie d’« anécique » (deux sources secondaires).
+- p. 80 : carte de l’oïdium : foyer à Margate (Tucker) plutôt que Londres ; Bordeaux 1850 (Académie d’agriculture) contre 1851 ; Rioja 1854-1862 contre 1853 ; Requena 1855 contre 1854.
+- p. 81 : court-noué « parmi les premières causes de mortalité » (les sources parlent de baisse de rendement et de longévité) ; réseau mycélien « mille fois » le volume racinaire (« centuplé » p. 84 ; au moins 40 fois selon Mycoagra).
+- p. 85 : « 100 millions de bactéries par gramme de feuille » (non retrouvé ; 10⁶-10⁷ par cm²) ; Margulis « années 1970 » (article fondateur de 1967) ; mildiou « 1879 » (1878 selon la source lue).
+- p. 88 : Darricau, La Vigne et ses plantes compagnes (2019), Diego Tomasi et le roncier, « baragane » ; jachère luzerne-vesce-avoine contre le court-noué (non retrouvés).
+- p. 90 : échelle de permaculture en dix niveaux d’Alain Malard (non retrouvée).
+- p. 91 : Restinclières « 53 ha », INRA « depuis 1990 » (≈ 50 ha ; 1990 = achat par le Département, INRA vers 1995).
+- p. 92 : viticulture = 15,6 % des pesticides pour 3,2 % de la SAU (source de 2002 introuvable ; Sénat, 2012 : 14,4 % et 3,3 %).
+- p. 94 : Larrère, Du bon usage de la nature « 1998 » (Aubier, 1997, une source) ; « Grand Partage » datant du début des années 1980.
+- p. 95 : carte bio 2020 : Provence 43,89 % (≈ 30 % pour PACA ailleurs), Champagne 6,15 % non recoupé ; France ≈ 137 400 ha, 17 %.
+- p. 96-97 : Pineau, La Corne de vache et le Microscope (2019 ; 2020 selon La Vie des idées) ; date de l’AVN ; S.A.I.N.S. (une source) ; définition du vin naturel chez Jullien (non lue).
+- p. 98 : Jason Lett « arrête le labour » (le domaine Eyrie dit n’avoir jamais labouré).
+- p. 99-101 : Fosse-Sèche : 15 + 30 ha (p. 99) contre 15 + 18 ha (p. 101) ; Vignenvie (aucune source lue) ; Léon Barral présenté comme pionnier de l’intégration animale (rôle non attesté ; les sources citent des vaches).
+- p. 101 : agroécologie : Bensin 1928 (Friederichs 1930 selon d’autres) ; Altieri 1983 ou 1987.
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
