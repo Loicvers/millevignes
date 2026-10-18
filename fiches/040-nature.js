@@ -416,7 +416,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Provence", appel: null },
     titre: "La découverte du phylloxéra (1868)",
-    synth: "Les premiers dépérissements apparaissent en France vers 1863 (Gard). Le 15 juillet 1868, Jules-Émile Planchon, Gaston Bazille et Félix Sahut découvrent un puceron sur les racines de vignes mourantes près de Saint-Rémy-de-Provence, où le maire les avait appelés ; Planchon le nomme Rhizaphis vastatrix, puis Phylloxera vastatrix quand il voit éclore la forme ailée, le 28 août 1868. L’Américain Riley confirme qu’il s’agit de l’insecte décrit en 1855 par Asa Fitch (Pemphigus vitifoliae). Son nom valide est aujourd’hui Daktulosphaira vitifoliae. Lepeltier attribue le nom vastatrix à Victor Signoret : celui-ci a surtout rattaché l’insecte au genre Phylloxera.",
+    synth: "Les premiers dépérissements apparaissent en France vers 1863 (Gard). Le 15 juillet 1868, Jules-Émile Planchon, Gaston Bazille et Félix Sahut découvrent un puceron sur les racines de vignes mourantes au domaine de Lagoy, à Saint-Martin-de-Crau, près de Saint-Rémy-de-Provence, où le maire les avait appelés ; Planchon le nomme Rhizaphis vastatrix, puis Phylloxera vastatrix quand il voit éclore la forme ailée, le 28 août 1868. L’Américain Riley confirme qu’il s’agit de l’insecte décrit en 1855 par Asa Fitch (Pemphigus vitifoliae). Son nom valide est aujourd’hui Daktulosphaira vitifoliae. Lepeltier attribue le nom vastatrix à Victor Signoret : celui-ci a surtout rattaché l’insecte au genre Phylloxera.",
     mnemo: "1868, l’année où trois Montpelliérains ont regardé sous la vigne.",
     flash: { q: "Qui identifie le phylloxéra sur des racines en 1868 ?", a: "Planchon, Bazille et Sahut (15 juillet 1868)." },
     qcm: { q: "Quel est le nom scientifique valide du phylloxéra aujourd’hui ?", opts: ["Phylloxera vastatrix", "Daktulosphaira vitifoliae", "Plasmopara viticola", "Rhizaphis vastatrix"], good: 1 },
@@ -426,8 +426,8 @@ FICHES.push(
       { type: "short_answer", prompt: "En quelle année le phylloxéra est-il identifié en France ?", payload: { accepted: ["1868"] } }
     ],
     status: "needs_review",
-    to_check: ["Domaine précis : château de Lagoy selon Ollat (OIV, 2024), une seule source ; Legros (2005) écrit Saint-Martin-de-Crau","Daktulosphaira vitifoliae : nom correct établi par Russell (1974), sans décision officielle trouvée"],
-    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; G. Foëx, J.-É. Planchon, 1888 (Gallica), citant Planchon, Revue des Deux Mondes, 1874 ; IRD, Histoire de l’installation de quelques ravageurs ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; Ollat, OIV 2024 (Pujaut, 1863)",
+    to_check: ["Daktulosphaira vitifoliae : nom correct établi par Russell (1974), sans décision officielle trouvée"],
+    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; G. Foëx, J.-É. Planchon, 1888 (Gallica), citant Planchon, Revue des Deux Mondes, 1874 ; IRD, Histoire de l’installation de quelques ravageurs ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; Delmotte et Jacquet, Histoire des maladies de la vigne, Vendanges du Savoir, 2025 (hal-05304637 : domaine de Lagoy, Saint-Martin-de-Crau) ; Ollat, OIV 2024 (Pujaut, 1863)",
     page: 50
   },
   {
@@ -478,17 +478,18 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Lutter contre le phylloxéra : chimistes contre américanistes",
-    synth: "Face au puceron, plusieurs remèdes sont testés : submersion hivernale des vignes, plantation dans les sables, injection de sulfure de carbone au pal ou de sulfocarbonate de potassium. Efficaces localement mais coûteux, ils sont supplantés par la greffe sur porte-greffes américains, défendue par l’école de Montpellier (les « américanistes ») contre les « sulfuristes », attachés aux vignes franches de pied. En 1908, le botaniste rennais Lucien Daniel publie un rapport critique : selon lui, la greffe modifie la physiologie et la qualité du vin. La greffe l’emporte néanmoins.",
+    synth: "Face au puceron, plusieurs remèdes sont testés : submersion hivernale des vignes, plantation dans les sables, injection de sulfure de carbone au pal ou de sulfocarbonate de potassium. Efficaces localement mais coûteux, ils sont supplantés par la greffe sur porte-greffes américains, défendue par l’école de Montpellier (les « américanistes ») contre les « sulfuristes », attachés aux vignes franches de pied. Léo Laliman la prône dès 1869 ; en mai 1874, Millardet et Laliman réussissent à greffer plusieurs cépages sur souches américaines, et la commission supérieure du phylloxéra se range à la greffe en 1888. En 1908, le botaniste rennais Lucien Daniel publie un rapport critique : selon lui, la greffe modifie la physiologie et la qualité du vin. La greffe l’emporte néanmoins.",
     mnemo: "Eau, sable, poison ou greffe : seule la greffe passe à l’échelle.",
     flash: { q: "Comment s’appelaient les partisans de la greffe sur plants américains ?", a: "Les américanistes (face aux sulfuristes, ou chimistes)." },
     qcm: { q: "Quel produit était injecté au pied des ceps contre le phylloxéra ?", opts: ["Bouillie bordelaise", "Sulfure de carbone", "Arsénite de sodium", "Soufre mouillable"], good: 1 },
     exos: [
       { type: "mcq_multi", prompt: "Quels remèdes ont été tentés avant la généralisation de la greffe ?", payload: { options: ["Submersion des vignes", "Plantation dans les sables", "Sulfure de carbone", "Vaccination des ceps"], answers: [0, 1, 2] } },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Lucien Daniel jugeait que la greffe conservait intégralement les caractères des vignes françaises.", answer: false }, explanation: "Il contestait cette thèse des américanistes et demandait plus d’expérimentation." }
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Lucien Daniel jugeait que la greffe conservait intégralement les caractères des vignes françaises.", answer: false }, explanation: "Il contestait cette thèse des américanistes et demandait plus d’expérimentation." },
+      { type: "ordering", prompt: "Remets dans l’ordre chronologique.", payload: { items: ["Laliman prône la greffe sur plants américains (1869)", "Millardet et Laliman réussissent les premiers greffages (mai 1874)", "La commission supérieure du phylloxéra se range à la greffe (1888)", "Rapport critique de Lucien Daniel (1908)"] } }
     ],
     status: "needs_review",
-    to_check: ["Laliman : vignes américaines résistantes reconnues en 1869 (Wein.plus) ; récit de Planchon cité par Foëx non relu","Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF"],
-    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel ; BnF, notice Lucien Daniel",
+    to_check: ["Pulliat parmi les premiers partisans de la greffe dès 1869 (Lepeltier p. 52) : une seule source (Delmotte et Jacquet, 2025)","Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF"],
+    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel ; BnF, notice Lucien Daniel ; Wein.plus (Laliman) ; Delmotte et Jacquet, Histoire des maladies de la vigne, Vendanges du Savoir, 2025 (hal-05304637)",
     page: 51
   },
   {

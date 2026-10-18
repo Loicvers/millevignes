@@ -42,7 +42,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 45-48 : millerandage des millésimes 1978 et 1995 chez Jayer, sucres « de 1 à 20 % en quarante jours », grappes de 5 à 50 cm et 100 à 500 g, liste des pinots de Galet.
 - p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
 - p. 51 : Hill of Grace planté en 1868 (vers 1860 selon le domaine Henschke) ; Chypre parmi les vignobles épargnés (rien trouvé ; Washington confirmé, Canaries et Moselle une seule source).
-- p. 52 : rôle de Pulliat dans la greffe (absent des sources lues).
+- p. 52 : rôle de Pulliat dans la greffe : une seule source (Delmotte et Jacquet, 2025, hal-05304637 : Laliman et Pulliat prônent la greffe dès 1869).
 - p. 55 : porte-greffes créés « entre 1869 et 1902 » : Riaz et al. (2019) situent les plus importants entre les années 1890 et 1930 (divergence de périmètre plus que contradiction).
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
@@ -61,7 +61,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 33 : champ de Rozier près de Béziers en 1779 ; second catalogue du Luxembourg par Hardy en 1848 (Galinié et Yerre, 2018).
 - p. 36 : ResDur 3, arrêté du 14 février 2026, six variétés (IFV, Réussir Vigne, Vitisphere).
 - p. 44 : Santorin, environ 1 200 ha de vignes franches de pied (document unique de l'AOP, 2021).
-- p. 50 : découverte du phylloxéra en juillet 1868 près de Saint-Rémy-de-Provence (récit de Planchon, 1874, repris par Foëx, 1888).
+- p. 50 : découverte du phylloxéra en juillet 1868 près de Saint-Rémy-de-Provence (récit de Planchon, 1874, repris par Foëx, 1888) ; lieu précis : domaine de Lagoy, Saint-Martin-de-Crau, le 15 juillet (Ollat, OIV 2024 ; Delmotte et Jacquet, 2025).
 - p. 55 : 41 B créé en 1882 par Millardet et de Grasset ; plus de 80 % du vignoble champenois (Comité Champagne).
 - p. 34 : hybridation : castration, pollinisation au pinceau, ensachage (IFV, Frontiers 2025) ; quatre pépins au plus, la fleur ayant quatre ovules (UC ANR, Frontiers 2019).
 - p. 46 : dix formes de baies dans la liste OIV (descripteur 223).
