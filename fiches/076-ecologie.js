@@ -289,7 +289,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Terroirs microbiens : une piste débattue",
-    synth: "Des études de séquençage montrent que les communautés de levures et de bactéries ne se répartissent pas au hasard : elles varient selon les lieux, d’où l’idée d’un terroir microbien. L’étude de Bokulich et de ses collègues sur des moûts californiens (PNAS, 2014) en est un exemple (le livre ne la nomme pas) : sur 273 moûts de chardonnay, zinfandel et cabernet-sauvignon, les communautés diffèrent nettement mais faiblement d’une région à l’autre, et dépendent aussi du cépage et du millésime. Leur effet sur le goût du vin reste à démontrer. Lepeltier signale que ces résultats sont contestés par d’autres recherches ; l’étude elle-même établit des corrélations, sans démontrer de causalité.",
+    synth: "Des études de séquençage montrent que les communautés de levures et de bactéries ne se répartissent pas au hasard : elles varient selon les lieux, d’où l’idée d’un terroir microbien. L’étude de Bokulich et de ses collègues sur des moûts californiens (PNAS, mis en ligne en novembre 2013) en est un exemple (le livre ne la nomme pas) : sur 273 moûts de chardonnay, zinfandel et cabernet-sauvignon, les communautés diffèrent nettement mais faiblement d’une région à l’autre, dépendent aussi du cépage et du millésime, et sont corrélées à certains traits du climat. Leur effet sur le goût du vin reste à démontrer. Lepeltier signale que ces résultats sont contestés par d’autres recherches ; l’étude elle-même établit des corrélations, sans démontrer de causalité.",
     mnemo: "Le terroir a-t-il une empreinte digitale microbienne ? La piste existe, mais l’empreinte reste floue.",
     flash: { q: "Que désigne l’idée de « terroir microbien » ?", a: "L’hypothèse que des communautés de levures et de bactéries propres à un lieu contribuent à la signature d’un vin ; thèse débattue." },
     qcm: { q: "Que désigne l’expression « terroir microbien » ?", opts: ["Des communautés de micro-organismes caractéristiques d’un lieu", "Un sol calcaire riche en bactéries", "Une levure commerciale sélectionnée", "Un traitement microbiologique du vin"], good: 0 },
@@ -300,10 +300,9 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: [
-      "Bokulich et al. : article original non lu (PMC bloqué) ; contenu recoupé par le commentaire de Gilbert, van der Lelie et Zarraonaindia (PNAS, 2014) ; étude limitée à la Californie",
-      "Date : mise en ligne en novembre 2013, volume 2014 ; le livre retient 2014"
+      "Contestation par d’autres études : affirmée par le livre ; Setati et al. (cités par Gilbert et al.) trouvent plus de variation à l’intérieur d’une parcelle qu’entre parcelles ; autres études non lues"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 86 ; Infowine, Mapping the microbial terroir of wine ; UC Davis Mills lab, page de l’étude Bokulich et al. ; Gilbert, van der Lelie et Zarraonaindia, Microbial terroir for wine grapes (PNAS, 2014)",
+    src: "Mille Vignes, P. Lepeltier, p. 86 ; Infowine, Mapping the microbial terroir of wine ; UC Davis Mills lab, page de l’étude Bokulich et al. ; Bokulich, Thorngate, Richardson et Mills, Microbial biogeography of wine grapes is conditioned by cultivar, vintage, and climate (PNAS 111(1), E139-E148, en ligne le 25 novembre 2013) ; Gilbert, van der Lelie et Zarraonaindia, Microbial terroir for wine grapes (PNAS, 2014)",
     page: 86
   },
   {
@@ -313,7 +312,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "La vigne mariée à l’arbre (vite maritata)",
-    synth: "Sur le modèle de la liane forestière, la vigne a longtemps grimpé sur des arbres vivants : c’est la vite maritata ou vigne arborescente, qui, selon Lepeltier, vient des Étrusques, tandis que le gobelet bas est un héritage gréco-oriental. Virgile, dans les Géorgiques, évoque déjà l’union des vignes et des ormes. Le livre oppose les riches, qui plantent sur échalas, aux pauvres, qui utilisent des arbres et la complantation (joala, joualle). Condamnée par les agronomes puis par le remembrement du XXe siècle, cette pratique a presque disparu ; le schéma du livre en liste les formes (Bigorre et Béarn, Savoie et comté de Foix, Gascogne, Latium, Vénétie, Abruzzes, Toscane, Campanie).",
+    synth: "Sur le modèle de la liane forestière, la vigne a longtemps grimpé sur des arbres vivants : c’est la vite maritata ou vigne arborescente, qui, selon Lepeltier, vient des Étrusques, tandis que le gobelet bas est un héritage gréco-oriental. Virgile, dans les Géorgiques, évoque déjà l’union des vignes et des ormes. Le livre oppose les riches, qui plantent sur échalas, aux pauvres, qui utilisent des arbres et la complantation (joala, joualle : rangs de vigne séparés par des bandes d’autres cultures). Condamnée par les agronomes puis par le remembrement du XXe siècle, cette pratique a presque disparu, même si des domaines la font renaître (à Saint-Émilion, Les Joualles de Cormeil-Figeac associent depuis 2020 vigne, arbres fruitiers et maraîchage) ; le schéma du livre en liste les formes (Bigorre et Béarn, Savoie et comté de Foix, Gascogne, Latium, Vénétie, Abruzzes, Toscane, Campanie).",
     mnemo: "Un orme-tuteur : l’arbre donne le bras, la vigne s’y accroche, et le couple dure des siècles.",
     flash: { q: "Que signifie vite maritata ?", a: "La vigne « mariée » à un arbre vivant qui lui sert de tuteur (vigne arborescente)." },
     qcm: { q: "Que signifie vite maritata ?", opts: ["Vigne mariée à un arbre", "Vigne taillée en gobelet", "Vigne palissée sur fil de fer", "Vigne greffée sur porte-greffe américain"], good: 0 },
@@ -325,10 +324,9 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Étrusques (conduite haute) et héritage gréco-oriental du gobelet : une seule source (Guado al Melo, vulgarisation) ; à doubler par un ouvrage académique",
-      "Joala/joualle : définition et lien avec le Sud-Ouest tirés d’une seule source grand public (Consoglobe) ; article Réussir sur les joualles non ouvert",
       "Virgile : identification du « poète » par inférence ; le terme vite maritata ne figure pas dans son texte"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 82-83 (schéma), 86-88 ; Virgile, Georgics I (Sacred Texts) ; Guado al Melo, Wine and the Etruscans II: the married vine ; Consoglobe, Tentez la joualle",
+    src: "Mille Vignes, P. Lepeltier, p. 82-83 (schéma), 86-88 ; Virgile, Georgics I (Sacred Texts) ; Guado al Melo, Wine and the Etruscans II: the married vine ; Consoglobe, Tentez la joualle ; Réussir Vigne, Viticulture en Gironde : la mixité de plantes permise par les joualles (définition du CNRTL)",
     page: 86
   },
   {
