@@ -254,7 +254,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Le millerandage, défaut ou atout ?",
-    synth: "Une grappe millerandée mêle de grosses baies et de petites baies sans pépins, mal fécondées : les Anglo-Saxons parlent de « hen and chicks ». Ces petites baies à peau épaisse, peu juteuses, concentrent couleur et sucre, ce qui peut aider la qualité. Henri Jayer (1922-2006) y voyait un atout pour le pinot noir. En Margaret River (Australie), le clone de chardonnay Gingin, sujet au millerandage, est réputé pour ses vins de qualité.",
+    synth: "Une grappe millerandée mêle de grosses baies et de petites baies sans pépins, mal fécondées : les Anglo-Saxons parlent de « hen and chicks ». Ces petites baies à peau épaisse, peu juteuses, concentrent couleur et sucre, ce qui peut aider la qualité. Henri Jayer (1922-2006) y voyait un atout pour le pinot noir. Lepeltier cite le clone de chardonnay 1066, agréé en France, comme recherché en Bourgogne pour ce caractère. En Margaret River (Australie), le clone Gingin, sujet au millerandage, est réputé pour ses vins de qualité.",
     mnemo: "Poule et poussins dans la même grappe : les poussins apportent la concentration.",
     flash: { q: "Quel surnom anglais désigne une grappe millerandée ?", a: "« Hen and chicks » (poule et poussins)." },
     qcm: { q: "Quel clone de chardonnay, sujet au millerandage, est emblématique de Margaret River ?", opts: ["Gingin", "Dijon 76", "Dijon 95", "Wente"], good: 0 },
@@ -263,8 +263,8 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Lequel n’est pas un effet attribué au millerandage ?", payload: { options: ["Concentration de la couleur", "Grappes plus aérées", "Rendement plus faible", "Baies plus juteuses"], answer: 3 }, explanation: "Les baies millerandées sont au contraire peu juteuses." }
     ],
     status: "needs_review",
-    to_check: ["« Clone 1066 » de chardonnay en Bourgogne (Lepeltier) : non retrouvé.", "Millerandage des millésimes 1978 et 1995 chez Jayer : non confirmé."],
-    src: "Mille Vignes, P. Lepeltier, p. 47 ; Wine Anorak, Gingin and Mendoza (2024) ; Margaret River Wine, Clone Wars ; Christie’s, Henri Jayer",
+    to_check: ["Clone 1066 : bien agréé en France (liste FranceAgriMer, mars 2026), mais sa réputation de clone millerandé ne repose que sur Lepeltier.", "Millerandage des millésimes 1978 et 1995 chez Jayer : non confirmé."],
+    src: "Mille Vignes, P. Lepeltier, p. 47 ; Wine Anorak, Gingin and Mendoza (2024) ; Margaret River Wine, Clone Wars ; Christie’s, Henri Jayer ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
     page: 47
   },
   {
@@ -727,18 +727,19 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "La sélection clonale en France",
-    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée (indexage, test ELISA), assainie si besoin, suivie et vinifiée plusieurs années, puis agréée après avis de la section vigne du CTPS : il faut une quinzaine d’années. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). Exemples : 47 clones agréés de pinot noir, 31 de chardonnay.",
+    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée (indexage, test ELISA), assainie si besoin, suivie et vinifiée plusieurs années, puis agréée après avis de la section vigne du CTPS : il faut une quinzaine d’années. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 compte par exemple 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
     mnemo: "Un clone, c’est quinze ans d’examens avant d’avoir son diplôme (l’agrément).",
     flash: { q: "En quelle année la sélection clonale démarre-t-elle en France ?", a: "En 1962 (ANTAV, aujourd’hui IFV)." },
     qcm: { q: "Quel virus a motivé la sélection sanitaire des plants ?", opts: ["Le court-noué (GFLV)", "La flavescence dorée", "Le mildiou", "L’oïdium"], good: 0 },
     exos: [
       { type: "ordering", prompt: "Remets le parcours d’un clone dans l’ordre.", payload: { items: ["Prospection dans les vieilles vignes", "Tests virologiques (ELISA, indexage)", "Suivi agronomique et vinifications", "Agrément après avis du CTPS", "Multiplication et diffusion"] } },
       { type: "mcq_single", prompt: "Combien de temps faut-il, environ, pour agréer un clone ?", payload: { options: ["Un an", "Cinq ans", "Une quinzaine d’années", "Cinquante ans"], answer: 2 } },
+      { type: "matching", prompt: "Associe chaque cépage à son nombre de clones agréés (liste de mars 2026).", payload: { pairs: [["Pinot noir", "48"], ["Chardonnay", "31"], ["Riesling", "8"], ["Gringet", "1"]] } },
       { type: "short_answer", prompt: "Sur quel domaine se trouve le conservatoire national de l’IFV ?", payload: { accepted: ["Espiguette", "l’Espiguette", "domaine de l’Espiguette", "l'Espiguette"] } }
     ],
     status: "needs_review",
     to_check: ["« 1 350 clones de 380 variétés en 2022 » (Lepeltier) : non concordant avec les chiffres IFV (1 947 clones agréés depuis l’origine), retiré.", "Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé.", "Rôle personnel de Jean Branas dans la création de la section de 1944 : non vérifié."],
-    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne",
+    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
     page: 64
   },
   {
@@ -788,7 +789,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Fabriquer un greffé-soudé en pépinière",
-    synth: "Le pépiniériste cultive sur parcelles agréées des vignes mères de porte-greffes (environ 2 000 à 2 500 ha en France selon les années) et de greffons (environ 1 500 à 1 600 ha). Les bois prélevés en hiver sont greffés, paraffinés, puis placés en stratification, au chaud et à l’humidité (vers 28 °C, 10 à 25 jours selon l’IFV), jusqu’à formation d’un cal. Les plants passent ensuite une saison en pépinière de plein champ, sont arrachés à l’automne et triés : la soudure doit résister à la pression du pouce.",
+    synth: "Le pépiniériste cultive sur parcelles agréées des vignes mères de porte-greffes (2 045 ha en France en 2025, en net recul) et de greffons (1 592 ha en 2025). Les bois prélevés en hiver sont greffés, paraffinés, puis placés en stratification, au chaud et à l’humidité (vers 28 °C, 10 à 25 jours selon l’IFV), jusqu’à formation d’un cal. Les plants passent ensuite une saison en pépinière de plein champ, sont arrachés à l’automne et triés : la soudure doit résister à la pression du pouce.",
     mnemo: "Greffer, cirer, couver, planter, trier : le plant passe un an en nursery.",
     flash: { q: "Qu’est-ce que la stratification d’un greffé-soudé ?", a: "Un séjour au chaud et à l’humidité (vers 28 °C) jusqu’à la formation du cal de soudure." },
     qcm: { q: "Combien de temps dure la stratification selon l’IFV ?", opts: ["Une heure", "10 à 25 jours", "Six mois", "Deux ans"], good: 1 },
