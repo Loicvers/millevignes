@@ -813,7 +813,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Loire", appel: "Sancerre" },
     titre: "Des pépinières remises en question",
-    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes ; sa société est en redressement judiciaire depuis juillet 2026 (BODACC). En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
+    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes ; sa société a été placée en redressement judiciaire le 8 juillet 2026 par le tribunal des activités économiques d’Avignon, la poursuite de l’activité étant jugée possible. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
     mnemo: "« On plante pour ses petits-enfants » : le plant de qualité est un placement à cinquante ans.",
     flash: { q: "Quelle démarche Centre-Loire a lancée pour des plants de sauvignon de qualité ?", a: "La marque Ceps Sicavac, appuyée sur une sélection massale du sauvignon." },
     qcm: { q: "Où se trouve la pépinière de Lilian Bérillon ?", opts: ["Jonquières (Vaucluse)", "Montlouis (Indre-et-Loire)", "Pérignac (Charente)", "Le Grau-du-Roi (Gard)"], good: 0 },
@@ -822,8 +822,8 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Quelles exigences porte le cahier des charges Ceps Sicavac selon Lepeltier ?", payload: { options: ["Vignes mères palissées", "Pas d’herbicide", "Plants récoltés après la chute des feuilles", "Greffe oméga obligatoire"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Situation actuelle de la pépinière Bérillon (procédure collective signalée) : à vérifier.", "Détail du cahier des charges Ceps Sicavac : repris de Lepeltier, non recoupé."],
-    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026) ; BODACC (via Pappers), Pépinières Lilian Bérillon",
+    to_check: ["Détail du cahier des charges Ceps Sicavac : repris de Lepeltier, non recoupé."],
+    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026) ; TAE d’Avignon, jugement du 8 juillet 2026 (n° 2026007192) ; BODACC (via Pappers), Pépinières Lilian Bérillon",
     page: 67
   },
   {
