@@ -8,6 +8,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 21 : Bataille des vins « 1224 par Philippe Auguste » → le roi meurt en 1223.
 - p. 23 : tribidrag identifié « par Vouillamoz en 2012 » → herbier de Split analysé en 2011 par des chercheurs croates ; Wine Grapes (2012) popularise le nom.
 - p. 26 : liste OIV des descripteurs de 2009 présentée comme la référence → 3e édition adoptée en 2023.
+- p. 27 : souche de Saint-Suliac (magdeleine noire des Charentes) découverte « en 1992 » → entrée dans la collection de Vassal en 1996 (Boursiquot et al., 2009, texte intégral ; Bécédia).
 - p. 27 : gouais blanc « 63 descendants » → près de 120 selon Lacombe (2013), dont 63 aux deux parents connus.
 - p. 29 : époques de maturité de Pulliat → dans Mille variétés de vignes (3e éd., 1888), le savagnin est en 2e époque (livre : 1re), le grenache en 2e tardive (livre : 3e, mais Le Vignoble, t. III, 1878-1879, le met bien en 3e), le mourvèdre en 3e (livre : 4e).
 - p. 29 : classement de Pulliat « de 1879 » → la méthode des époques est exposée dès le tome I du Vignoble (Mas et Pulliat, 1874-1875) ; 1879 est l'année où s'achève l'ouvrage.
