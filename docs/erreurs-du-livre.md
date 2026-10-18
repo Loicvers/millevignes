@@ -43,6 +43,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
 - p. 51 : Hill of Grace planté en 1868 (vers 1860 selon le domaine Henschke) ; Chypre parmi les vignobles épargnés (rien trouvé ; Washington confirmé, Canaries et Moselle une seule source).
 - p. 52 : rôle de Pulliat dans la greffe (absent des sources lues).
+- p. 55 : porte-greffes créés « entre 1869 et 1902 » : Riaz et al. (2019) situent les plus importants entre les années 1890 et 1930 (divergence de périmètre plus que contradiction).
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
 - p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
