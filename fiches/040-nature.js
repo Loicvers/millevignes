@@ -16,8 +16,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Chez un cépage blanc, la véraison se repère au passage de la baie du vert opaque au translucide.", answer: true }, explanation: "Les blancs ne se colorent pas : la baie « traluit »." },
       { type: "mcq_multi", prompt: "Qu’est-ce qui se passe à partir de la véraison ?", payload: { options: ["Les sucres s’accumulent", "L’acidité diminue", "La baie s’assouplit", "La baie redevient chlorophyllienne"], answers: [0, 1, 2] } }
     ],
-    status: "needs_review",
-    to_check: ["Durée véraison → vendange (environ 40 à 50 jours selon les sources usuelles) : non recoupée lors de la recherche, donc retirée de la fiche."],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 46 et 62",
     page: 45
   },
@@ -79,8 +79,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe l’origine du pied à son enracinement (selon Lepeltier).", payload: { pairs: [["Semis (pépin)", "Racine pivotante et plongeante"], ["Bouture", "Racines traçantes, latérales"]] } }
     ],
     status: "needs_review",
-    to_check: ["Semis = racine pivotante : non sourcé ; les boutures forment des racines adventives près des nœuds (Cornell), sans preuve qu’elles soient plus traçantes.", "Profondeur maximale : « plusieurs dizaines de mètres » (Lepeltier) non documenté ; 6 m et plus assez courant, plus de 10 m rare (UC Davis, eXtension)."],
-    src: "Mille Vignes, P. Lepeltier, p. 41 ; Lodi Winegrape Commission, Grapevine roots and rootstocks ; PMC12197271",
+    to_check: ["Semis = racine pivotante, bouture = racines traçantes : non retrouvé hors Lepeltier ; UC Davis lie surtout l’angle des racines au porte-greffe (riparia superficiel, rupestris profond)"],
+    src: "Mille Vignes, P. Lepeltier, p. 41 ; Lodi Winegrape Commission, Grapevine roots and rootstocks ; PMC12197271 ; UC Davis, Review of grapevine rooting patterns ; eXtension, How deep do grapevine roots grow",
     page: 41
   },
   {
@@ -119,9 +119,9 @@ FICHES.push(
       { type: "flashcard", prompt: "Quel organe contrôle la croissance du rameau par signaux hormonaux ?", payload: { answer: "L’apex (le bourgeon terminal)." } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Rogner l’apex en été n’a aucun effet sur la répartition des ressources de la vigne.", answer: false }, explanation: "Supprimer l’apex modifie la distribution des sucres et peut relancer les entre-cœurs." }
     ],
-    status: "needs_review",
-    to_check: ["Morphologie du rameau : non recoupée par deux sources lors de la recherche du lot."],
-    src: "Mille Vignes, P. Lepeltier, p. 42-43",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 42-43 ; eXtension, Parts of the grape vine: shoots ; UC ANR (Lodi Growers)",
     page: 42
   },
   {
@@ -160,9 +160,9 @@ FICHES.push(
       { type: "ordering", prompt: "De la face supérieure à la face inférieure, remets les couches de la feuille dans l’ordre.", payload: { items: ["Épiderme supérieur épaissi", "Parenchyme palissadique", "Parenchyme lacuneux", "Épiderme inférieur à stomates"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La couleur des feuilles peut signaler une carence ou une maladie.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: ["Anatomie foliaire (stomates, parenchymes) : non recoupée par deux sources lors de la recherche du lot."],
-    src: "Mille Vignes, P. Lepeltier, p. 42-44",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 42-44 ; UC Davis (Rost lab), Virtual Grape ; Beato de Nunes (ISA Lisbonne, 2009)",
     page: 42
   },
   {
@@ -201,8 +201,8 @@ FICHES.push(
       { type: "mcq_multi", prompt: "À quoi sert la conduite en kouloura ?", payload: { options: ["Protéger les grappes du vent", "Les abriter du soleil", "Capter l’humidité nocturne", "Faciliter la vendange mécanique"], answers: [0, 1, 2] } },
       { type: "short_answer", prompt: "Comment s’appelle la conduite en corbeille au ras du sol de Santorin ?", payload: { accepted: ["kouloura", "koulouri", "kouloures", "koulouras"] } }
     ],
-    status: "needs_review",
-    to_check: ["Subventions de l’UE à la conduite traditionnelle : non trouvé."],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 44 ; Document unique de l’AOP Santorini (ministère grec du Développement rural, 2021) ; Decanter (2025) ; Robert Parker Wine Advocate, Santorini ; Around the World in 80 Harvests (2021) ; Friedrich et al., Science, 2006 ; Cherubini et al., Antiquity, 2014",
     page: 44
   },
@@ -213,7 +213,7 @@ FICHES.push(
     niveau: "Fondamental",
     geo: null,
     titre: "La fleur de vigne",
-    synth: "Discrète et verdâtre, la fleur de vigne n’a pas besoin d’attirer les pollinisateurs. Chez V. vinifera cultivée, elle est presque toujours hermaphrodite : calice réduit, pétales soudés en capuchon, étamines porteuses du pollen, pistil dont l’ovaire contient quatre ovules, nectaires. Quelques cépages sont fonctionnellement femelles. Les inflorescences, déjà ébauchées dans le bourgeon, fleurissent quelques semaines après le débourrement (6 à 8 selon UC Davis ; Lepeltier dit 8 à 10) ; la floraison d’une parcelle s’étale sur une quinzaine de jours.",
+    synth: "Discrète et verdâtre, la fleur de vigne n’a pas besoin d’attirer les pollinisateurs. Chez V. vinifera cultivée, elle est presque toujours hermaphrodite : calice à cinq sépales, pétales soudés en capuchon, étamines porteuses du pollen, pistil dont l’ovaire contient quatre ovules, nectaires. Quelques cépages sont fonctionnellement femelles. Les inflorescences, déjà ébauchées dans le bourgeon, fleurissent quelques semaines après le débourrement (6 à 8 selon UC Davis ; Lepeltier dit 8 à 10) ; la floraison d’une parcelle s’étale sur une quinzaine de jours.",
     mnemo: "La fleur de vigne garde son chapeau : le capuchon tombe, et seulement alors la fête commence.",
     flash: { q: "Combien d’ovules l’ovaire de la fleur de vigne contient-il ?", a: "Quatre, d’où au maximum quatre pépins par baie." },
     qcm: { q: "Le capuchon floral est formé…", opts: ["Des sépales", "Des pétales soudés", "Des étamines", "Du stigmate"], good: 1 },
@@ -222,9 +222,9 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "Une baie complète contient au plus {{quatre|4}} pépins." } },
       { type: "mcq_single", prompt: "Combien de temps dure la floraison d’une même parcelle, environ ?", payload: { options: ["Une journée", "Une quinzaine de jours", "Deux mois", "Tout l’été"], answer: 1 } }
     ],
-    status: "needs_review",
-    to_check: ["Structure florale : calyptre, 5 étamines et ovaire à 2 loges de 2 ovules (eXtension, NMSU) ; « calice réduit » non confirmé.", "Riesling ~125 fleurs, tannat >440 par inflorescence (Lepeltier) : non confirmé, retiré."],
-    src: "Mille Vignes, P. Lepeltier, p. 45 ; UC Davis, Flowering and fruiting of grapevine",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 45 ; UC Davis, Flowering and fruiting of grapevine ; UC ANR (Lodi Growers), flowers & fruit ; Frontiers in Plant Science (2019)",
     page: 45
   },
   {
@@ -234,17 +234,17 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Floraison, nouaison et coulure",
-    synth: "Pour fleurir, le capuchon doit tomber, ce qui demande chaleur, soleil et poussée des étamines ; pluie, vent et froid à ce moment compromettent la récolte. La nouaison est le passage de la fleur fécondée au jeune fruit. Toutes les fleurs ne nouent pas : une étude sur 120 cépages trouve environ 35 % de nouaison en moyenne. La coulure est la chute des fleurs ou des jeunes baies non fécondées ; Lepeltier cite le grenache et le merlot parmi les cépages sensibles, et un porte-greffe trop vigoureux peut l’aggraver.",
+    synth: "Pour fleurir, le capuchon doit tomber, ce qui demande chaleur, soleil et poussée des étamines ; pluie, vent et froid à ce moment compromettent la récolte. La nouaison est le passage de la fleur fécondée au jeune fruit. Toutes les fleurs ne nouent pas : en moyenne, 30 à 50 % des fleurs d’une grappe nouent (NMSU, eXtension). La coulure est la chute des fleurs ou des jeunes baies non fécondées ; Lepeltier cite le grenache et le merlot parmi les cépages sensibles, et un porte-greffe trop vigoureux peut l’aggraver.",
     mnemo: "Coulure = la fleur « coule » de la grappe et tombe ; il reste des trous dans la grappe.",
     flash: { q: "Qu’est-ce que la coulure ?", a: "La chute des fleurs ou jeunes baies non fécondées, d’où des grappes clairsemées." },
-    qcm: { q: "Quel taux moyen de nouaison une étude sur 120 cépages a-t-elle mesuré ?", opts: ["Environ 5 %", "Environ 35 %", "Environ 80 %", "100 %"], good: 1 },
+    qcm: { q: "Quelle part des fleurs d’une grappe noue en moyenne ?", opts: ["Moins de 5 %", "30 à 50 %", "Environ 80 %", "Toutes"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets les étapes du cycle reproducteur dans l’ordre.", payload: { items: ["Floraison", "Pollinisation", "Fécondation", "Nouaison"] } },
       { type: "mcq_multi", prompt: "Quels facteurs favorisent la coulure ?", payload: { options: ["Pluie et froid à la floraison", "Porte-greffe trop vigoureux", "Sensibilité du cépage", "Un soleil chaud et sec à la floraison"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Taux moyen de nouaison d’environ 35 % (Tello et al.) : non retrouvé ; autres sources : 30-50 % (NMSU), 42-48 % sur 114 cépages (thèse, Université de Saragosse).", "Sensibilité du grenache et du merlot à la coulure : une seule source (NMSU).", "« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : plausible, non confirmé explicitement."],
-    src: "Mille Vignes, P. Lepeltier, p. 45-46 ; Tello et al., étude de 120 cépages (CBGG)",
+    to_check: ["Sensibilité du grenache et du merlot à la coulure : une seule source (NMSU, qui cite aussi le malbec)","« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : cohérent avec NMSU et eXtension, sans formulation explicite"],
+    src: "Mille Vignes, P. Lepeltier, p. 45-46 ; Tello et al., étude de 120 cépages (CBGG) ; NMSU, H-188 ; eXtension, Causes of poor fruit set",
     page: 45
   },
   {
@@ -263,7 +263,7 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Lequel n’est pas un effet attribué au millerandage ?", payload: { options: ["Concentration de la couleur", "Grappes plus aérées", "Rendement plus faible", "Baies plus juteuses"], answer: 3 }, explanation: "Les baies millerandées sont au contraire peu juteuses." }
     ],
     status: "needs_review",
-    to_check: ["Clone 1066 : bien agréé en France (liste FranceAgriMer, mars 2026) ; petites baies et faible rendement confirmés (AWRI, essai EIT Hawke’s Bay), le terme « millerandé » ne figure que chez AWRI.", "Millerandage des millésimes 1978 et 1995 chez Jayer : non confirmé."],
+    to_check: ["Clone 1066 : agréé en France, petites baies et faible rendement confirmés (AWRI, essai EIT Hawke’s Bay) ; le terme « millerandé » ne figure que chez l’AWRI"],
     src: "Mille Vignes, P. Lepeltier, p. 47 ; Wine Anorak, Gingin and Mendoza (2024) ; Margaret River Wine, Clone Wars ; Christie’s, Henri Jayer ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
     page: 47
   },
@@ -302,8 +302,8 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces étapes de la vie de la baie dans l’ordre.", payload: { items: ["Croissance herbacée", "Véraison", "Maturation", "Maturité", "Surmaturité"] } },
       { type: "mcq_single", prompt: "Pendant la croissance herbacée, la baie se comporte comme…", payload: { options: ["Un organe chlorophyllien", "Un organe de réserve", "Une racine", "Un bourgeon dormant"], answer: 0 } }
     ],
-    status: "needs_review",
-    to_check: ["Teneur en sucre « de 1 à 20 % en quarante jours » (Lepeltier) : non recoupée, retirée de la synthèse."],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 46",
     page: 46
   },
@@ -323,9 +323,9 @@ FICHES.push(
       { type: "short_answer", prompt: "Quelle famille de pigments donne la couleur rouge de la pellicule ?", payload: { accepted: ["anthocyanes", "les anthocyanes", "anthocyane"] } },
       { type: "matching", prompt: "Associe chaque descripteur OIV à son objet.", payload: { pairs: [["OIV 223", "Forme de la baie"], ["OIV 208", "Forme de la grappe"]] } }
     ],
-    status: "needs_review",
-    to_check: ["Nombre de formes de baies reconnues par l’OIV (10 selon Lepeltier) : non confirmé.", "Liste des pinots de Pierre Galet : non vérifiée."],
-    src: "Mille Vignes, P. Lepeltier, p. 46-47 ; OIV, Liste des descripteurs, 3e éd. ; PMC6902604 ; Genes 11(8):891 (2020)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 46-47 ; OIV, Liste des descripteurs, 3e éd. ; PMC6902604 ; Genes 11(8):891 (2020) ; Vitis (analyse de forme des baies) ; thèse Somogyi (MATE) : 10 états pour la forme de la baie (OIV 223)",
     page: 46
   },
   {
@@ -344,9 +344,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "On évite d’écraser les pépins car leur huile et leurs tanins peuvent altérer le vin.", answer: true } },
       { type: "odd_one_out", prompt: "Lequel ne fait pas partie du pépin ?", payload: { options: ["Embryon", "Albumen", "Téguments", "Pruine"], answer: 3 }, explanation: "La pruine recouvre la pellicule." }
     ],
-    status: "needs_review",
-    to_check: ["Anatomie de la baie et du pépin : non recoupée par deux sources lors de la recherche du lot."],
-    src: "Mille Vignes, P. Lepeltier, p. 47-48",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 47-48 ; eXtension, Basic grape berry structure ; Battista et al., Italian Journal of Food Science (2015)",
     page: 47
   },
   {
@@ -364,8 +364,8 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Quels critères l’ampélographe note-t-il sur une grappe ?", payload: { options: ["Sa forme", "Sa compacité", "Sa longueur", "Le nom du vigneron"], answers: [0, 1, 2] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une grappe compacte est plus exposée à la pourriture qu’une grappe lâche.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: ["Poids et longueur de grappes cités par Lepeltier (de 5 à 50 cm, 100 à 500 g, plus d’1 kg pour muscat d’Alexandrie ou ugni blanc) : non vérifiés, retirés."],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 48 ; OIV, descripteur 208",
     page: 48
   },
@@ -385,8 +385,8 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces auteurs dans l’ordre chronologique.", payload: { items: ["Théophraste", "Columelle", "Palladius", "Ibn al-’Awwâm"] } }
     ],
     status: "needs_review",
-    to_check: ["Ibn al-’Awwâm fin XIIe s. : une seule source (filaha.org).", "Théophraste, Columelle, Pline, Palladius sur la greffe : non recoupé."],
-    src: "Mille Vignes, P. Lepeltier, p. 49 ; filaha.org, Ibn al-Awwam",
+    to_check: ["Théophraste, Columelle, Pline, Palladius : ils traitent de la greffe (Thayer, TAPA, 1933), sans recette précise pour la vigne dans les sources lues"],
+    src: "Mille Vignes, P. Lepeltier, p. 49 ; filaha.org, Ibn al-Awwam ; Britannica, Ibn al-’Awwâm",
     page: 49
   },
   {
@@ -396,7 +396,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Le point de greffe et l’affinité porte-greffe / greffon",
-    synth: "Greffer, c’est mettre en contact les tissus conducteurs (cambium) du porte-greffe et du greffon pour qu’ils se soudent : au point de greffe se forme un cal, le bourrelet de soudure, où xylème et phloème se reconnectent. Toutes les combinaisons ne prennent pas : plus les plantes sont éloignées, plus c’est difficile (Vitis sur Muscadinia réussit mal). Le bourrelet freine et filtre les flux de sève ; la vigne greffée est un être nouveau, qualifié de « chimère » par Jean Branas et de « plante artificielle » (Nathalie Ollat, citée par Lepeltier). Le porte-greffe peut faire varier fortement la vigueur d’un même greffon.",
+    synth: "Greffer, c’est mettre en contact les tissus conducteurs (cambium) du porte-greffe et du greffon pour qu’ils se soudent : au point de greffe se forme un cal, le bourrelet de soudure, où xylème et phloème se reconnectent. Toutes les combinaisons ne prennent pas : plus les plantes sont éloignées, plus c’est difficile (Vitis sur Muscadinia réussit mal). Le bourrelet freine et filtre les flux de sève ; la vigne greffée est un être nouveau, que Lepeltier qualifie de « chimère » et de « plante artificielle », en citant Jean Branas et Nathalie Ollat. Le porte-greffe peut faire varier fortement la vigueur d’un même greffon.",
     mnemo: "Le bourrelet est une douane : il laisse passer la sève, mais contrôle et ralentit.",
     flash: { q: "Comment s’appelle la zone de soudure entre porte-greffe et greffon ?", a: "Le bourrelet de soudure (point de greffe), où se forme un cal." },
     qcm: { q: "Qu’est-ce qui détermine le mieux la réussite d’une greffe ?", opts: ["La couleur des raisins", "La proximité botanique et le contact des tissus conducteurs", "La date de vendange", "Le type de bouchon"], good: 1 },
@@ -405,7 +405,7 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Sur quoi le porte-greffe influe-t-il ?", payload: { options: ["La vigueur", "L’absorption de l’eau et des minéraux", "La résistance au phylloxéra des racines", "La couleur génétique du raisin"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Expressions « chimère » (Branas) et « plante artificielle » (Ollat) : attribution non retrouvée dans les sources consultées."],
+    to_check: ["Expressions « chimère » (Branas) et « plante artificielle » (Ollat) : attribution non retrouvée hors Lepeltier"],
     src: "Mille Vignes, P. Lepeltier, p. 49-50 et 54 ; INRAE, Nathalie Ollat, Tomorrow’s inventive vines",
     page: 49
   },
@@ -426,8 +426,8 @@ FICHES.push(
       { type: "short_answer", prompt: "En quelle année le phylloxéra est-il identifié en France ?", payload: { accepted: ["1868"] } }
     ],
     status: "needs_review",
-    to_check: ["Lieu : environs de Saint-Rémy-de-Provence confirmés (récit de Planchon, 1874, repris par Foëx, 1888 ; IRD) ; le domaine précis (château de Lagoy selon certaines sources) n’est pas nommé.", "Premiers symptômes dans le Gard en 1863 : confirmé par INRAE ; localité de Pujaut : une seule source.", "Daktulosphaira vitifoliae « nom officiel depuis 1974 » : correspond à Russell (1974/1975), une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; G. Foëx, J.-É. Planchon, 1888 (Gallica), citant Planchon, Revue des Deux Mondes, 1874 ; IRD, Histoire de l’installation de quelques ravageurs ; INRAE, Delmotte et al., Invasions et vigne (HAL)",
+    to_check: ["Domaine précis : château de Lagoy selon Ollat (OIV, 2024), une seule source ; Legros (2005) écrit Saint-Martin-de-Crau","Daktulosphaira vitifoliae : nom correct établi par Russell (1974), sans décision officielle trouvée"],
+    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; G. Foëx, J.-É. Planchon, 1888 (Gallica), citant Planchon, Revue des Deux Mondes, 1874 ; IRD, Histoire de l’installation de quelques ravageurs ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; Ollat, OIV 2024 (Pujaut, 1863)",
     page: 50
   },
   {
@@ -466,9 +466,9 @@ FICHES.push(
       { type: "ordering", prompt: "Range les catégories de Barossa de la plus jeune à la plus ancienne.", payload: { items: ["Old vine (35 ans)", "Survivor (70 ans)", "Centenarian (100 ans)", "Ancestor (125 ans)"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le Chili a une grande partie de son vignoble franc de pied.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: ["Autres zones citées par Lepeltier (Washington, Chypre, Canaries, Moselle) : non vérifiées.", "Plantation de Hill of Grace vers 1860 (Lepeltier : 1868) : une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 51 et 54 ; Barossa Old Vine Charter (barossa.com) ; Wikipédia, Great French Wine Blight",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 51 et 54 ; Barossa Old Vine Charter (barossa.com) ; Wikipédia, Great French Wine Blight ; Frontiers in Plant Science (2022), État de Washington",
     page: 51
   },
   {
@@ -487,8 +487,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Lucien Daniel jugeait que la greffe conservait intégralement les caractères des vignes françaises.", answer: false }, explanation: "Il contestait cette thèse des américanistes et demandait plus d’expérimentation." }
     ],
     status: "needs_review",
-    to_check: ["Laliman : retrouve en juillet 1869, à Bordeaux, les galles sur des vignes américaines (récit de Planchon, cité par Foëx, 1888) ; sa greffe dès 1869 et le rôle de Pulliat restent non vérifiés.", "Lucien Daniel (1856-1940), rapport de 1908 : une seule source (Wikipédia).", "« Greffe sur 0,5 % des surfaces en 1863 » (Lepeltier) : aucune source, retiré."],
-    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel",
+    to_check: ["Laliman : vignes américaines résistantes reconnues en 1869 (Wein.plus) ; récit de Planchon cité par Foëx non relu","Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF"],
+    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel ; BnF, notice Lucien Daniel",
     page: 51
   },
   {
@@ -507,9 +507,9 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quelle part des Bournais (3,99 ha) est plantée en franc de pied ?", payload: { options: ["Environ un demi-hectare", "La moitié de la parcelle", "La totalité", "Aucune : la parcelle est entièrement greffée"], answer: 0 }, explanation: "Un demi-hectare, vinifié à part depuis 2007 (La RVF)." },
       { type: "short_answer", prompt: "Quel cépage est planté franc de pied aux Bournais ?", payload: { accepted: ["chenin", "chenin blanc", "le chenin"] } }
     ],
-    status: "needs_review",
-    to_check: ["Porte-greffe riparia gloire et rendements de 10-15 hl/ha : non confirmés.", "Année de fondation de l’association (2021 selon Lepeltier) : non confirmée."],
-    src: "Mille Vignes, P. Lepeltier, p. 52 ; La Revue du vin de France, Verticale du montlouis Les Bournais ; Wine Berserkers (extrait du site du domaine Chidaine) ; Vert de Vin, association Francs de Pied",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 52 ; La Revue du vin de France, Verticale du montlouis Les Bournais ; Wine Berserkers (extrait du site du domaine Chidaine) ; Vert de Vin, association Francs de Pied ; Decanter ; Réussir Vigne (association constituée en juin 2021 à Monaco)",
     page: 52
   },
   {
@@ -551,8 +551,8 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896 (parenté berlandieri × riparia et origine Teleki confirmées par le CRB Vigne de Vassal, INRAE ; date de sélection : une seule source).", "Période de création « entre 1869 et 1902 » : l’analyse ADN de 36 porte-greffes (Riaz et al., 2019) situe les plus importants entre les années 1890 et 1930."],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
+    to_check: ["Dates : 3309 C (1881), 101-14 et 41 B (1882), 110 R (1902) confirmées par le VIVC ; 140 Ru : 1894 (Plantgrape) contre 1896 (VIVC) ; SO4 sélectionné en 1919 : une seule source","Période « entre 1869 et 1902 » : Riaz et al. (2019) situerait les plus importants entre les années 1890 et 1930 (texte non relu)"],
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026) ; VIVC, fiches passeport des porte-greffes",
     page: 55
   },
   {
@@ -591,9 +591,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque opération à son but.", payload: { pairs: [["Greffage", "Créer un nouveau plant"], ["Surgreffage", "Changer de cépage sans arracher"], ["Regreffage", "Sauver un cep dont le greffon dépérit"]] } },
       { type: "mcq_single", prompt: "Qu’appelle-t-on un greffé-soudé ?", payload: { options: ["Une vigne greffée en place au vignoble", "Un plant greffé sur table en pépinière, prêt à planter", "Une vigne franche de pied", "Un porte-greffe sans greffon"], answer: 1 } }
     ],
-    status: "needs_review",
-    to_check: ["Invention du greffage sur table en 1878 (Lepeltier) : non sourcée.", "Regreffage sous le point de soudure : une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 57 ; Triple Performance, Le surgreffage de la vigne ; Vitigreffe",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 57 ; Triple Performance, Le surgreffage de la vigne ; Vitigreffe ; Syndicat des Côtes du Rhône, regreffage en fente ; Réussir Vigne (IFV), régénérer les ceps",
     page: 57
   },
   {
@@ -612,8 +612,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "On reproche à la greffe oméga de couper les vaisseaux en travers des fibres.", answer: true } }
     ],
     status: "needs_review",
-    to_check: ["Machine oméga « inventée en 1975 par le pépiniériste allemand Wagner » (Lepeltier) : non sourcé.", "Chip-bud et T-bud en viticulture : non recoupés."],
-    src: "Mille Vignes, P. Lepeltier, p. 57-59 ; IFV, La production de plants de vigne en pépinières ; Groupe Velletaz",
+    to_check: ["Machine oméga : brevet US 3 969 843 déposé en 1975 par Eugen et Hans Wahler (Weinstadt) ; Lepeltier écrit « Wagner » ; une seule source","T-bud en vigne : divergence (UC le réserve aux arbres fruitiers ; Chambre d’agriculture de Vaucluse et Decanter le citent pour surgreffer)"],
+    src: "Mille Vignes, P. Lepeltier, p. 57-59 ; IFV, La production de plants de vigne en pépinières ; Groupe Velletaz ; Brevet US 3 969 843 ; Chambre d’agriculture de Vaucluse, surgreffage à l’œil",
     page: 58
   },
   {
@@ -644,17 +644,17 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Charentes", appel: null },
     titre: "Tailler pour limiter les maladies du bois : Poussard et curetage",
-    synth: "Chaque plaie de taille dessèche une partie du bois (cône de dessiccation) et ouvre une porte aux spores. D’où l’intérêt de tailles qui respectent les flux de sève, avec des plaies petites, éloignées du tronc et toujours du même côté. Eugène Poussard, vigneron de Pérignac (Charente), adapte dès 1911 la taille Guyot en ce sens : c’est la taille Guyot-Poussard, remise à l’honneur par François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch. Sur un cep atteint, le curetage retire à la scie ou au couteau le bois nécrosé pour prolonger sa vie.",
+    synth: "Chaque plaie de taille dessèche une partie du bois (cône de dessiccation) et ouvre une porte aux spores. D’où l’intérêt de tailles qui respectent les flux de sève, avec des plaies petites, éloignées du tronc et toujours du même côté. Eugène Poussard, vigneron de Pérignac (Charente), adapte au début du XXe siècle la taille Guyot en ce sens (méthode décrite par René Lafon en 1921) : c’est la taille Guyot-Poussard, remise à l’honneur par François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch. Sur un cep atteint, le curetage retire à la scie ou au couteau le bois nécrosé pour prolonger sa vie.",
     mnemo: "Poussard : « ne coupe pas l’autoroute de la sève ».",
-    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente), dès 1911." },
+    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente), au début du XXe siècle." },
     qcm: { q: "Qu’est-ce qu’un cône de dessiccation ?", opts: ["Un outil de taille", "La zone de bois mort qui se forme sous une plaie de taille", "Un bourgeon dormant", "Une galle de phylloxéra"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Des plaies de taille petites et éloignées du tronc limitent le bois mort dans la charpente.", answer: true } },
       { type: "short_answer", prompt: "Comment s’appelle l’opération qui retire le bois nécrosé d’un cep atteint d’esca ?", payload: { accepted: ["curetage", "le curetage"] } }
     ],
     status: "needs_review",
-    to_check: ["Efficacité du curetage contre l’esca : non vérifiée lors de la recherche.", "Date de 1911 pour la taille de Poussard : une seule source (LBV France ; ailleurs « début du XXe siècle »)."],
-    src: "Mille Vignes, P. Lepeltier, p. 58 et 60 ; LBV France, Un siècle d’évolution de la taille ; Anima Vinum (2022) ; Vitisphere, taille Poussard et taille douce",
+    to_check: ["Date de la taille Poussard : 1911 non retrouvé ; le Sicavac cite sa description par Lafon (1921)","Curetage : 88 à 92 % de ceps asymptomatiques par an dans des essais 2018-2024 (OENO One) ; 85 % de ceps sains contre 38 % sans curetage (Sicavac, dépérissement en général) ; efficacité à long terme incertaine"],
+    src: "Mille Vignes, P. Lepeltier, p. 58 et 60 ; LBV France, Un siècle d’évolution de la taille ; Anima Vinum (2022) ; Vitisphere, taille Poussard et taille douce ; OENO One (curetage, 2018-2024) ; Sicavac, 20 ans de travail sur les maladies du bois (2022)",
     page: 58
   },
   {
@@ -693,7 +693,7 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel agronome est à l’origine de cette hypothèse, selon Lepeltier ?", payload: { accepted: ["Alain Carbonneau", "Carbonneau"] } }
     ],
     status: "needs_review",
-    to_check: ["Hypothèse d’Alain Carbonneau sur la greffe et l’expansion du merlot : aucune source trouvée hors Lepeltier."],
+    to_check: ["Hypothèse attribuée à Carbonneau : introuvable hors Lepeltier (Delas, 1979, lie la coulure du merlot à certains porte-greffes sans le citer)"],
     src: "Mille Vignes, P. Lepeltier, p. 61",
     page: 61
   },
@@ -741,8 +741,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque cépage à son nombre de clones agréés (liste de mars 2026).", payload: { pairs: [["Pinot noir", "48"], ["Chardonnay", "31"], ["Riesling", "8"], ["Gringet", "1"]] } },
       { type: "short_answer", prompt: "Sur quel domaine se trouve le conservatoire national de l’IFV ?", payload: { accepted: ["Espiguette", "l’Espiguette", "domaine de l’Espiguette", "l'Espiguette"] } }
     ],
-    status: "needs_review",
-    to_check: ["Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé (il faudrait les statistiques de plants par clone de FranceAgriMer)."],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016) ; IVES/OIV 2024 (Audeguin)",
     page: 64
   },
@@ -773,7 +773,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Sélection massale contre sélection clonale",
-    synth: "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; le vigneron n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
+    synth: "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; selon Lepeltier, le vigneron n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
     mnemo: "Clonale = un champion photocopié ; massale = une équipe entière.",
     flash: { q: "Quel est le but principal d’une sélection massale ?", a: "Préserver la diversité génétique de vieilles vignes adaptées à leur lieu." },
     qcm: { q: "Une vigne issue de sélection massale est-elle génétiquement un clone ?", opts: ["Non, elle vient de semis", "Oui, chaque plant est multiplié par voie végétative", "Seulement si elle est greffée sur riparia", "Seulement en bio"], good: 1 },
@@ -782,7 +782,7 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque sélection à sa logique.", payload: { pairs: [["Clonale", "Un individu sélectionné, assaini, diffusé largement"], ["Massale", "Une population de ceps, diversité conservée"]] } }
     ],
     status: "needs_review",
-    to_check: ["Règle de propriété de la massale (droits limités au vignoble du vigneron) : non vérifiée.", "Interdiction de la sélection massale de porte-greffes depuis 1960 (Lepeltier) : non vérifiée, retirée."],
+    to_check: ["Règle de propriété de la massale : aucun texte officiel trouvé (arrêté du 17 juin 2020 et son annexe non lus)"],
     src: "Mille Vignes, P. Lepeltier, p. 64-66",
     page: 65
   },
@@ -801,9 +801,9 @@ FICHES.push(
       { type: "ordering", prompt: "Remets les étapes de production dans l’ordre.", payload: { items: ["Prélèvement des bois en hiver", "Greffage et paraffinage", "Stratification au chaud", "Culture en pépinière de plein champ", "Arrachage et tri à l’automne"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les surfaces de vignes mères de porte-greffes varient sensiblement d’une année à l’autre.", answer: true }, explanation: "Environ 2 131 ha en 2016, 2 300 ha en 2024, 2 045 ha en 2025." }
     ],
-    status: "needs_review",
-    to_check: ["Pertes au tri de 40 à 50 % (Lepeltier) : contredit, 20 à 30 % selon la Chambre d’agriculture de Champagne (2024).", "Prix du plant : 1,00 à 1,20 € HT selon l’IFV (1,30 € chez Lepeltier) ; 99 % de greffés-soudés et 25 000-30 000 €/ha : non confirmés."],
-    src: "Mille Vignes, P. Lepeltier, p. 66-67 ; IFV, La production de plants de vigne en pépinières ; FranceAgriMer, chiffres clés FFPV 2025 ; Vitisphere (2024)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 66-67 ; IFV, La production de plants de vigne en pépinières ; FranceAgriMer, chiffres clés FFPV 2025 ; Vitisphere (2024) ; Vitisphere (taux de reprise au greffage)",
     page: 66
   },
   {
@@ -842,9 +842,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque maladie à son agent.", payload: { pairs: [["Oïdium", "Erysiphe necator"], ["Mildiou", "Plasmopara viticola"], ["Black rot", "Guignardia bidwellii"]] } },
       { type: "matching", prompt: "Associe chaque maladie à son remède historique.", payload: { pairs: [["Oïdium", "Soufre"], ["Mildiou", "Bouillie bordelaise (cuivre)"], ["Phylloxéra", "Greffe sur porte-greffe américain"]] } }
     ],
-    status: "needs_review",
-    to_check: ["Origine européenne de l’anthracnose : une seule source (IFV Occitanie)."],
-    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola ; ePhytia (INRAE), anthracnose ; Ohio State University, Ohioline",
     page: 68
   },
   {
@@ -862,9 +862,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Éloge de la plante de Francis Hallé est paru pour la première fois en 2014.", answer: false }, explanation: "Première édition au Seuil en 1999 ; 2014 est une date de réédition probable." },
       { type: "short_answer", prompt: "Comment s’appelle la croissance par répétition de l’architecture d’origine ?", payload: { accepted: ["réitération", "la réitération", "reiteration"] } }
     ],
-    status: "needs_review",
-    to_check: ["Concept de réitération attribué à Oldeman (1972) : date non vérifiée.", "« Plante = colonie » : une seule source au-delà de Lepeltier."],
-    src: "Mille Vignes, P. Lepeltier, p. 70-72 ; Actes Sud, Francis Hallé ; Association Francis Hallé ; Hallé & Oldeman, Essai sur l’architecture des arbres tropicaux (1970)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 70-72 ; Actes Sud, Francis Hallé ; Association Francis Hallé ; Hallé & Oldeman, Essai sur l’architecture des arbres tropicaux (1970) ; Hallé, Des données récentes sur les arbres ; Oldeman, L’Architecture de la forêt guyanaise (ORSTOM, thèse 1972, publiée en 1974)",
     page: 70
   },
   {
@@ -883,8 +883,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "Goethe appelle l’organe de base de la plante le {{Blatt}}, la feuille." } }
     ],
     status: "needs_review",
-    to_check: ["Urpflanze et Blatt : concepts connus, non sourcés lors de la recherche."],
-    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Wikipédia, Metamorphosis of Plants ; Morgan Library, notice de l’édition originale (Gotha, Ettinger, 1790)",
+    to_check: ["Urpflanze : absent de l’Essai de 1790 (Projekt Gutenberg) ; évoqué dans le Voyage en Italie (1787), non relu"],
+    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Wikipédia, Metamorphosis of Plants ; Morgan Library, notice de l’édition originale (Gotha, Ettinger, 1790) ; Goethe, Versuch die Metamorphose der Pflanzen zu erklären (Projekt Gutenberg)",
     page: 73
   },
   {

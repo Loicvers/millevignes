@@ -14,6 +14,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 35 : PiWi créée « en 1995 » → PIWI International fondée en 1999 (site officiel).
 - p. 36 : texte « mildiou (Run1), oïdium (Rpv1) » → inversé : Run1 = oïdium, Rpv1 = mildiou (légende p. 37 juste).
 - p. 36 : Popelouchum « à Santa Barbara » → San Juan Bautista (comté de San Benito).
+- p. 36 : l'OIV aurait adopté le terme « variété résistante » en 1994 → la résolution VITI 2/94 (10 juin 1994) porte sur les nouvelles variétés et n'emploie pas ce terme (texte lu sur oiv.int).
+- p. 36 : « 10 000 pépins » semés à Popelouchum → 10 000 est l'objectif de nouvelles variétés de Randall Grahm (Vinepair, Grape Collective, Boston Apothecary).
 - p. 36 : travaux de Bouquet achevés « en 1995 » → encore en cours en 2000 (Bouquet et al., Le Progrès agricole et viticole 117, 2000).
 - p. 38-39 : arbre des cépages « du nord-est de l'Italie » → nord-ouest (Raimondi et al., 2020).
 - p. 41 : racines plongeant à « plusieurs dizaines de mètres » → environ 6 m documentés.
@@ -26,16 +28,26 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 55 : mission Viala « 1888 » → 1887.
 - p. 55 : six porte-greffes dominants avec le gravesac → en surfaces de vignes mères 2025, c'est le 41 B qui est 6e (110 R, SO4, fercal, 3309 C, 140 Ru, 41 B ≈ 70 %) ; le gravesac est 8e.
 - p. 55 : « 99 % » des porte-greffes issus de trois clones (Walker) → 39 % du fonds génétique de 36 porte-greffes vient de trois pieds (Riaz et al., Theoretical and Applied Genetics, 2019, cosigné par Walker).
+- p. 58 : machine à greffer oméga « du pépiniériste allemand Wagner » → brevet US 3 969 843 déposé en 1975 par Eugen et Hans Wahler (Weinstadt).
 - p. 67 : Ceps Sicavac « depuis 2010 » → sélection 2005-2012, structure créée en 2014.
-- p. 68 : anthracnose rangée parmi les maladies venues d'Amérique → d'origine européenne.
+- p. 68 : anthracnose rangée parmi les maladies venues d'Amérique → d'origine européenne (IFV Occitanie, ePhytia INRAE).
 - p. 70 : Éloge de la plante (Hallé) « 2014 » → 1re édition 1999.
 
 ## Non confirmés
-- p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), OIV « 1994 » (la résolution VITI 2/94 existe mais n'emploie pas le terme « variété résistante »), « plus de 130 variétés » (66 en 2023), 10 000 pépins semés à Popelouchum en 2017.
+- p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
 - p. 41-67 : riesling 125 / tannat 440 fleurs, greffe sur 0,5 % des surfaces en 1863, hypothèse Carbonneau sur le merlot, porte-greffe riparia gloire et 10-15 hl/ha aux Bournais.
 - p. 29 : classement de Pulliat daté de 1879 (seule l'édition de 1888 a été lue).
-- p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848.
+- p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
 - p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024).
+- p. 41 : un semis forme une racine pivotante, une bouture des racines traçantes (non retrouvé ; UC Davis lie l'angle des racines au porte-greffe).
+- p. 45-48 : millerandage des millésimes 1978 et 1995 chez Jayer, sucres « de 1 à 20 % en quarante jours », grappes de 5 à 50 cm et 100 à 500 g, liste des pinots de Galet.
+- p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
+- p. 51 : Hill of Grace planté en 1868 (vers 1860 selon le domaine Henschke) ; Chypre parmi les vignobles épargnés (rien trouvé ; Washington confirmé, Canaries et Moselle une seule source).
+- p. 52 : rôle de Pulliat dans la greffe (absent des sources lues).
+- p. 57 : greffage sur table inventé en 1878 (aucune source).
+- p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
+- p. 61 : hypothèse d'Alain Carbonneau sur la greffe et le merlot (introuvable hors du livre).
+- p. 64-66 : clones 76, 95, 96 = 50 % du chardonnay ; droits de la massale limités au propre vignoble ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -51,4 +63,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 44 : Santorin, environ 1 200 ha de vignes franches de pied (document unique de l'AOP, 2021).
 - p. 50 : découverte du phylloxéra en juillet 1868 près de Saint-Rémy-de-Provence (récit de Planchon, 1874, repris par Foëx, 1888).
 - p. 55 : 41 B créé en 1882 par Millardet et de Grasset ; plus de 80 % du vignoble champenois (Comité Champagne).
+- p. 34 : hybridation : castration, pollinisation au pinceau, ensachage (IFV, Frontiers 2025) ; quatre pépins au plus, la fleur ayant quatre ovules (UC ANR, Frontiers 2019).
+- p. 46 : dix formes de baies dans la liste OIV (descripteur 223).
+- p. 52 : association des vignerons francs de pied constituée en juin 2021 (Decanter, Réussir Vigne), lancée publiquement fin 2022.
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).

@@ -7,7 +7,7 @@ FICHES.push(
     niveau: "Fondamental",
     geo: { pays: "France", region: "Bordeaux", appel: null },
     titre: "Le cabernet sauvignon",
-    synth: "Croisement spontané du cabernet franc et du sauvignon blanc, révélé par l’ADN en 1997 (Bowers et Meredith, UC Davis) ; il est présent dans le Bordelais au plus tard au XVIIe siècle. Il débourre tard et mûrit en fin de saison, environ trois semaines après le chasselas. Ses petites baies, riches en pépins et en peau par rapport au jus, donnent une couleur intense et des tanins fermes ; récolté trop tôt, il marque des notes végétales (poivron vert) qui s’effacent à bonne maturité. C’est le premier cépage de cuve au monde (environ 341 000 ha en 2015 selon l’OIV) et le sixième en France. La liste officielle des clones agréés en compte 16 en mars 2026 (19 chez Lepeltier, d’après le catalogue de 2020).",
+    synth: "Croisement spontané du cabernet franc et du sauvignon blanc, révélé par l’ADN en 1997 (Bowers et Meredith, UC Davis) ; la date du croisement reste inconnue (UC Davis le dit présent dans le Bordelais au XVIIe siècle). Il débourre tard et mûrit en fin de saison, environ trois semaines après le chasselas. Ses petites baies, riches en pépins et en peau par rapport au jus, donnent une couleur intense et des tanins fermes ; récolté trop tôt, il marque des notes végétales (poivron vert) qui s’effacent à bonne maturité. C’est le premier cépage de cuve au monde (environ 341 000 ha en 2015 selon l’OIV) et le sixième en France. La liste officielle des clones agréés en compte 16 en mars 2026 (19 chez Lepeltier, d’après le catalogue de 2020).",
     mnemo: "Cab-Sauv = Cabernet franc + Sauvignon blanc : ses deux parents sont dans son nom. Petite baie, grande peau : de la couleur et du tanin.",
     flash: { q: "De quel croisement est issu le cabernet sauvignon, et comment l’a-t-on su ?", a: "Cabernet franc × sauvignon blanc, croisement spontané établi par analyse ADN (Bowers et Meredith, 1997)." },
     qcm: { q: "Quel rang le cabernet sauvignon occupe-t-il dans le vignoble mondial (OIV, 2015) ?", opts: ["1er toutes catégories, devant les raisins de table", "1er cépage de cuve, 2e toutes catégories derrière le kyoho", "5e cépage de cuve", "10e cépage mondial"], good: 1 },
@@ -18,8 +18,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "La parenté du cabernet sauvignon a été prouvée en {{1997}} par analyse {{ADN}}." } }
     ],
     status: "needs_review",
-    to_check: ["Rang mondial (2e en surface derrière le kyoho, raisin de table ; 1er cépage de cuve) : une seule source primaire (OIV, données 2015)", "Siècle du croisement : au plus tard le XVIIe siècle selon UC Davis, date exacte inconnue"],
-    src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; FranceAgriMer, liste des clones agréés (mars 2026) ; OIV, Focus 2017",
+    to_check: ["Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base","Présence au XVIIe siècle : UC Davis seul ; une autre source situe la première mention écrite vers 1775 (« Petit Cabernet », Libourne)"],
+    src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; FranceAgriMer, liste des clones agréés (mars 2026) ; OIV, Focus 2017 ; JancisRobinson, The world’s favourite grapes",
     page: 27
   },
   {
@@ -511,7 +511,7 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La classification de Pulliat révèle les liens de parenté entre cépages.", answer: false }, explanation: "Elle est descriptive et sert l’usage (adapter le cépage au climat), pas la génétique." }
     ],
     status: "needs_review",
-    to_check: ["Année 1879 : Lepeltier et Wikipédia seulement", "Melon, carignan et ugni blanc : époque non retrouvée dans l’édition de 1888 (texte numérisé de mauvaise qualité)"],
+    to_check: ["Année 1879 : aucune source trouvée hors Lepeltier ; la fiche ne la reprend pas","Melon, carignan et ugni blanc : époque non retrouvée dans l’édition de 1888 ; seul le classement de Lepeltier est rapporté"],
     src: "Mille Vignes, P. Lepeltier ; V. Pulliat, Mille variétés de vignes, 3e éd., Coulet, 1888 (Gallica) ; BnF, Le fruit de la vigne",
     page: 29
   },
@@ -639,7 +639,7 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "En France, les {{10|dix}} premières variétés couvrent environ {{70}} % du vignoble." } }
     ],
     status: "needs_review",
-    to_check: ["71,9 % en 2017 et 337 variétés autorisées : chiffres de Lepeltier non retrouvés (l’OIV donne 70,2 % en 2015)", "Environ 6 000 cépages distincts : estimation de Lepeltier"],
+    to_check: ["71,9 % en 2017 et 337 variétés autorisées (Lepeltier) : non retrouvés ; repères officiels : 377 variétés au catalogue (2015), 279 variétés de cuve éligibles au classement (arrêté du 7 juillet 2015)","70,2 % en 2015 : non retrouvé lors de la relecture du Focus OIV 2017, à relocaliser","Environ 6 000 : même estimation à l’OIV (Focus 2017), mais pour les seuls cépages de cuve de V. vinifera ; une seule source au-delà de Lepeltier"],
     src: "Mille Vignes, P. Lepeltier ; OIV, Focus 2017, Distribution variétale du vignoble dans le monde",
     page: 33
   },
@@ -650,7 +650,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Languedoc", appel: null },
     titre: "Vassal, la grande collection de vignes",
-    synth: "Les collections ont précédé la science des cépages : François Rozier plante la sienne près de Béziers en 1779, et la pépinière du Luxembourg, à Paris, constitue la sienne au début du XIXe siècle (un premier catalogue en 1809, 615 entrées en tout dans les années suivantes) ; selon Lepeltier, elle réunit environ 1 300 cépages au milieu du siècle, date d’un second catalogue (Hardy, 1848). En 1876, face au phylloxéra, l’école d’agriculture de Montpellier lance une collection installée en 1949 au domaine de Vassal, à Marseillan, sur des sables où la vigne peut vivre sans greffe. Géré par l’INRAE, ce conservatoire compte plus de 8 500 accessions venues de plus de 50 pays. Menacé par la montée de la mer et le sel, il est transféré entre 2022 et 2032 à Pech Rouge, à Gruissan (Aude).",
+    synth: "Les collections ont précédé la science des cépages : François Rozier plante la sienne près de Béziers en 1779, et la pépinière du Luxembourg, à Paris, constitue la sienne au début du XIXe siècle (un premier catalogue en 1809, 615 entrées en tout dans les années suivantes) ; Lepeltier lui prête environ 1 300 cépages au milieu du siècle, le Sénat 1 498 variétés en 1842 et 1 924 en 1848, année d’un second catalogue (Hardy). En 1876, face au phylloxéra, l’école d’agriculture de Montpellier lance une collection installée en 1949 au domaine de Vassal, à Marseillan, sur des sables où la vigne peut vivre sans greffe. Géré par l’INRAE, ce conservatoire compte plus de 8 500 accessions venues de plus de 50 pays. Menacé par la montée de la mer et le sel, il est transféré entre 2022 et 2032 à Pech Rouge, à Gruissan (Aude).",
     mnemo: "Vassal, le Louvre de la vigne, déménage : du sable de Marseillan aux collines de la Clape.",
     flash: { q: "Pourquoi la collection de Vassal est-elle en cours de transfert ?", a: "La montée de la mer et la salinisation des sols menacent Marseillan : elle part pour Pech Rouge (Gruissan, Aude) entre 2022 et 2032." },
     qcm: { q: "Où se trouve historiquement la collection de vignes de Vassal ?", opts: ["À Saumur", "À Marseillan, entre mer et étang de Thau", "À Davis, en Californie", "Au jardin du Luxembourg"], good: 1 },
@@ -660,8 +660,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Sur les sables de Vassal, les vignes pouvaient être cultivées sans greffe.", answer: true }, explanation: "Le phylloxéra ne prospère pas dans le sable ; à Pech Rouge, sol non sableux, il faudra greffer." }
     ],
     status: "needs_review",
-    to_check: ["Environ 1 300 cépages au Luxembourg au milieu du XIXe siècle : une seule source (Lepeltier) ; Galinié et Yerre confirment le second catalogue de Hardy (1848) sans donner son effectif"],
-    src: "Mille Vignes, P. Lepeltier ; H. Galinié et J. Yerre, Le catalogue des vignes de la collection du Luxembourg à Paris en 1809 (HAL, 2018) ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal)",
+    to_check: ["Effectif du Luxembourg : environ 1 300 (Lepeltier) contre 1 498 en 1842 et 1 924 en 1848 (Sénat, jardin du Luxembourg) ; le Sénat signale aussi un catalogue Hardy non daté de 797 variétés"],
+    src: "Mille Vignes, P. Lepeltier ; H. Galinié et J. Yerre, Le catalogue des vignes de la collection du Luxembourg à Paris en 1809 (HAL, 2018) ; INRAE, communiqué du 31/08/2022 ; CIRAD-AGAP, CRB vigne ; Reporterre ; glossaire Wein.plus (Domaine de Vassal) ; Sénat, The Luxembourg Fruit Garden",
     page: 33
   },
   {
@@ -701,9 +701,9 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Quel outil ne fait pas partie de la trousse de l’hybrideur ?", payload: { options: ["Pince", "Ciseaux", "Pinceau", "Greffoir"], answer: 3 }, explanation: "Le greffoir sert au greffage, pas à la pollinisation dirigée." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Chaque pépin issu d’un même croisement donne une plante différente.", answer: true }, explanation: "La reproduction sexuée rebat les gènes : chaque pépin est un nouveau génotype, d’où des années de tri." }
     ],
-    status: "needs_review",
-    to_check: ["Déroulé complet (castration, ensachage, quatre pépins au plus) : aucune source institutionnelle ne le décrit en entier ; l’ensachage avant floraison est décrit par Olmo (Université de Californie, 1980)"],
-    src: "Mille Vignes, P. Lepeltier ; Oxford Companion to Wine (seeds, breeding)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; Oxford Companion to Wine (seeds, breeding) ; IFV (Vignevin), From clonal selection to variety creation ; Frontiers in Plant Science (2025) ; UC ANR, parts of the grape vine (quatre ovules par fleur)",
     page: 34
   },
   {
@@ -924,18 +924,18 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "PiWi : les cépages résistants en Europe",
-    synth: "« Hybride » ayant mauvaise presse, on parle aujourd’hui de « variétés résistantes » ou de PiWi, abréviation allemande de Pilzwiderstandsfähig (« résistant aux champignons »). L’association PIWI International promeut ces cépages ; ils sont surtout plantés en Allemagne, en Suisse, en Autriche et dans le nord et l’est de l’Europe. Parmi les plus connus : regent et rondo en rouge, solaris, muscaris et souvignier gris en blanc ; ces deux derniers sont classés en France depuis l’arrêté du 19 avril 2017. PIWI International a été fondée en 1999 (Lepeltier écrit 1995). Lepeltier annonce plus de 130 variétés autorisées en Europe ; une revue de 2023 en compte 66 inscrites dans au moins un catalogue européen.",
+    synth: "« Hybride » ayant mauvaise presse, on parle aujourd’hui de « variétés résistantes » ou de PiWi, abréviation allemande de Pilzwiderstandsfähig (« résistant aux champignons »). L’association PIWI International promeut ces cépages ; ils sont surtout plantés en Allemagne, en Suisse, en Autriche et dans le nord et l’est de l’Europe. Parmi les plus connus : regent et rondo en rouge, solaris, muscaris et souvignier gris en blanc ; ces deux derniers sont classés en France depuis l’arrêté du 19 avril 2017. PIWI International a été fondée en 1999 (Lepeltier écrit 1995). Lepeltier annonce plus de 130 variétés autorisées en Europe ; une revue de 2024 (IVES Technical Reviews) en compte 66 inscrites dans au moins un catalogue européen.",
     mnemo: "PiWi = Pilz (champignon) + widerstandsfähig (qui résiste).",
     flash: { q: "Que signifie PiWi ?", a: "Pilzwiderstandsfähig : « résistant aux champignons » (mildiou, oïdium)." },
     qcm: { q: "Lequel de ces cépages est un PiWi blanc ?", opts: ["Regent", "Rondo", "Souvignier gris", "Gamay"], good: 2 },
     exos: [
       { type: "mcq_multi", prompt: "Lesquels de ces PiWi sont blancs ?", payload: { options: ["Regent", "Rondo", "Solaris", "Muscaris"], answers: [2, 3] } },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Plus de 130 variétés résistantes sont inscrites dans un catalogue européen.", answer: false }, explanation: "Chiffre de Lepeltier non confirmé : une revue de 2023 en compte 66 inscrites dans au moins un catalogue européen." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Plus de 130 variétés résistantes sont inscrites dans un catalogue européen.", answer: false }, explanation: "Chiffre de Lepeltier non confirmé : une revue de 2024 (IVES Technical Reviews) en compte 66 inscrites dans au moins un catalogue européen." },
       { type: "short_answer", prompt: "Dans quelle langue est formé le mot PiWi ?", payload: { accepted: ["allemand", "l’allemand", "en allemand"] } }
     ],
     status: "needs_review",
-    to_check: ["Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon une revue de 2023, 130 selon Lepeltier)", "Adoption par l’OIV du terme « variété résistante » en 1994 (Lepeltier) : la résolution VITI 2/94 (10 juin 1994) porte sur les nouvelles variétés sans employer ce terme"],
-    src: "Mille Vignes, P. Lepeltier ; PIWI International (FAQ) ; arrêté du 19 avril 2017 (variétés classées) ; IVES Technical Reviews (2023) ; Vitisphere ; Wein.plus",
+    to_check: ["Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon IVES Technical Reviews, 2024 ; 130 selon Lepeltier)"],
+    src: "Mille Vignes, P. Lepeltier ; PIWI International (FAQ) ; arrêté du 19 avril 2017 (variétés classées) ; IVES Technical Reviews (2023) ; Vitisphere ; Wein.plus ; IVES Technical Reviews (2024) ; OIV, résolution VITI 2/94",
     page: 36
   },
   {
@@ -976,8 +976,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Comment s’appelle la vigne sauvage européenne ?", payload: { accepted: ["lambrusque", "lambrusques", "Vitis vinifera subsp. sylvestris", "sylvestris"] } }
     ],
     status: "needs_review",
-    to_check: ["Popelouchum : année et nombre de pépins semés non établis (800 à 1 200 plants selon la presse, 2017 et 10 000 pépins selon Lepeltier)"],
-    src: "Mille Vignes, P. Lepeltier ; Popelouchum (blog du domaine, 2025) ; World of Fine Wine (janvier 2025) ; Agricola Foradori, La genetica del Teroldego ; Decanter ; Grape Collective ; Meneghetti et al., Molecular Biotechnology, 2015",
+    to_check: ["Premiers semis à Popelouchum : après 2015 (encore quelques plants en août 2015, Wine Spectator) ; « environ un millier de plants vers 2020 » : presse seulement"],
+    src: "Mille Vignes, P. Lepeltier ; Popelouchum (blog du domaine, 2025) ; World of Fine Wine (janvier 2025) ; Agricola Foradori, La genetica del Teroldego ; Decanter ; Grape Collective ; Meneghetti et al., Molecular Biotechnology, 2015 ; Vinepair ; Grape Collective (2023) ; Wine Spectator (2015)",
     page: 36
   },
   {
