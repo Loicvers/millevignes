@@ -501,18 +501,18 @@ FICHES.push(
     niveau: "Fondamental",
     geo: null,
     titre: "Les époques de maturité de Victor Pulliat",
-    synth: "L’ampélographe beaujolais Victor Pulliat (1827-1896) classe les cépages selon leur date de maturité, avec pour repère le chasselas doré. Lepeltier en donne cinq groupes : précoces (avant le chasselas, surtout raisins de table), 1re époque (avec lui : pinot, melon, savagnin), 2e époque (riesling, syrah, chenin, cabernets), 3e époque (grenache, carignan, ugni blanc) et 4e époque (mourvèdre). Très pratique pour choisir un cépage selon le climat, ce classement reste artificiel : il ne dit rien des parentés.",
+    synth: "L’ampélographe beaujolais Victor Pulliat (1827-1896) classe les cépages selon leur date de maturité, avec pour repère le chasselas doré. Il forme cinq séries : les précoces (avant le chasselas, surtout raisins de table), puis une 1re époque (à cinq ou six jours du chasselas) et trois époques suivantes, chacune décalée de dix à quinze jours. Lepeltier range pinot, melon et savagnin en 1re époque, riesling, syrah, chenin et cabernets en 2e, grenache, carignan et ugni blanc en 3e, mourvèdre en 4e. Dans la 3e édition de Mille variétés de vignes (1888), Pulliat place bien le pinot noir en 1re et riesling, syrah, chenin et cabernets en 2e, mais le savagnin jaune en 2e, le grenache en 2e tardive et le mourvèdre en 3e. Très pratique pour choisir un cépage selon le climat, ce classement reste artificiel : il ne dit rien des parentés.",
     mnemo: "Le chasselas est le chef de gare : chaque cépage arrive avant, avec lui, ou 1, 2, 3 trains plus tard. Le mourvèdre prend toujours le dernier.",
     flash: { q: "Quel cépage sert de repère à la classification de Pulliat ?", a: "Le chasselas doré, cépage précoce : les autres sont classés selon leur avance ou leur retard de maturité sur lui." },
-    qcm: { q: "Dans quelle époque Pulliat range-t-il le mourvèdre ?", opts: ["1re époque", "2e époque", "3e époque", "4e époque"], good: 3 },
+    qcm: { q: "Dans Mille variétés de vignes (1888), en quelle époque Pulliat range-t-il le mourvèdre ?", opts: ["1re époque", "2e époque", "3e époque", "4e époque"], good: 2 },
     exos: [
       { type: "ordering", prompt: "Range ces cépages du plus précoce au plus tardif.", payload: { items: ["Pinot", "Syrah", "Grenache", "Mourvèdre"] } },
-      { type: "matching", prompt: "Associe chaque cépage à son époque.", payload: { pairs: [["Melon", "1re époque"], ["Chenin", "2e époque"], ["Carignan", "3e époque"], ["Mourvèdre", "4e époque"]] } },
+      { type: "matching", prompt: "Associe chaque cépage à son époque.", payload: { pairs: [["Pinot noir", "1re époque"], ["Chenin", "2e époque"], ["Mourvèdre", "3e époque"], ["Raisins de table hâtifs", "Précoces"]] }, explanation: "D’après Pulliat, Mille variétés de vignes, 1888 ; Lepeltier place le mourvèdre en 4e époque." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La classification de Pulliat révèle les liens de parenté entre cépages.", answer: false }, explanation: "Elle est descriptive et sert l’usage (adapter le cépage au climat), pas la génétique." }
     ],
     status: "needs_review",
-    to_check: ["Année 1879 : Lepeltier et Wikipédia seulement", "Époque de maturité de chaque cépage cité : une seule source (Lepeltier)"],
-    src: "Mille Vignes, P. Lepeltier ; glossaire Wein.plus (cépages de première époque) ; BnF, Le fruit de la vigne",
+    to_check: ["Année 1879 : Lepeltier et Wikipédia seulement", "Melon, carignan et ugni blanc : époque non retrouvée dans l’édition de 1888 (texte numérisé de mauvaise qualité)"],
+    src: "Mille Vignes, P. Lepeltier ; V. Pulliat, Mille variétés de vignes, 3e éd., Coulet, 1888 (Gallica) ; BnF, Le fruit de la vigne",
     page: 29
   },
   {
