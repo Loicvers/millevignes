@@ -7,7 +7,7 @@ FICHES.push(
     niveau: "Fondamental",
     geo: { pays: "France", region: "Bordeaux", appel: null },
     titre: "Le cabernet sauvignon",
-    synth: "Croisement spontané du cabernet franc et du sauvignon blanc, révélé par l’ADN en 1997 (Bowers et Meredith, UC Davis) ; il est présent dans le Bordelais au plus tard au XVIIe siècle. Il débourre tard et mûrit en fin de saison, environ trois semaines après le chasselas. Ses petites baies, riches en pépins et en peau par rapport au jus, donnent une couleur intense et des tanins fermes ; récolté trop tôt, il marque des notes végétales (poivron vert) qui s’effacent à bonne maturité. C’est le premier cépage de cuve au monde (environ 341 000 ha en 2015 selon l’OIV) et le sixième en France.",
+    synth: "Croisement spontané du cabernet franc et du sauvignon blanc, révélé par l’ADN en 1997 (Bowers et Meredith, UC Davis) ; il est présent dans le Bordelais au plus tard au XVIIe siècle. Il débourre tard et mûrit en fin de saison, environ trois semaines après le chasselas. Ses petites baies, riches en pépins et en peau par rapport au jus, donnent une couleur intense et des tanins fermes ; récolté trop tôt, il marque des notes végétales (poivron vert) qui s’effacent à bonne maturité. C’est le premier cépage de cuve au monde (environ 341 000 ha en 2015 selon l’OIV) et le sixième en France. La liste officielle des clones agréés en compte 16 en mars 2026 (19 chez Lepeltier, d’après le catalogue de 2020).",
     mnemo: "Cab-Sauv = Cabernet franc + Sauvignon blanc : ses deux parents sont dans son nom. Petite baie, grande peau : de la couleur et du tanin.",
     flash: { q: "De quel croisement est issu le cabernet sauvignon, et comment l’a-t-on su ?", a: "Cabernet franc × sauvignon blanc, croisement spontané établi par analyse ADN (Bowers et Meredith, 1997)." },
     qcm: { q: "Quel rang le cabernet sauvignon occupe-t-il dans le vignoble mondial (OIV, 2015) ?", opts: ["1er toutes catégories, devant les raisins de table", "1er cépage de cuve, 2e toutes catégories derrière le kyoho", "5e cépage de cuve", "10e cépage mondial"], good: 1 },
@@ -18,8 +18,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "La parenté du cabernet sauvignon a été prouvée en {{1997}} par analyse {{ADN}}." } }
     ],
     status: "needs_review",
-    to_check: ["Clones agréés : 18 aujourd’hui (Plantgrape) ; 19 dans le catalogue de 2020, chiffre probablement repris par Lepeltier ; 20 en 2012 (FranceAgriMer)", "Rang mondial (2e en surface derrière le kyoho, raisin de table ; 1er cépage de cuve) : une seule source primaire (OIV, données 2015)", "Siècle du croisement : au plus tard le XVIIe siècle selon UC Davis, date exacte inconnue"],
-    src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; OIV, Focus 2017",
+    to_check: ["Rang mondial (2e en surface derrière le kyoho, raisin de table ; 1er cépage de cuve) : une seule source primaire (OIV, données 2015)", "Siècle du croisement : au plus tard le XVIIe siècle selon UC Davis, date exacte inconnue"],
+    src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; FranceAgriMer, liste des clones agréés (mars 2026) ; OIV, Focus 2017",
     page: 27
   },
   {
