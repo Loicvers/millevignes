@@ -80,6 +80,13 @@
   .to-check summary{cursor:pointer;color:#9a6a12}
   .schema{margin:0 0 14px;border:1px solid var(--line);border-radius:3px;padding:10px;background:var(--paper)}
   .schema svg{display:block;width:100%;height:auto;color:var(--ink)}
+  .cours{margin:0 0 14px;font-size:13.5px}
+  .cours summary{cursor:pointer;color:var(--wine);font-weight:600}
+  .cours .lede{font-style:italic}.cours .ess{border-left:3px solid var(--wine);padding:6px 10px;background:var(--paper2)}
+  .cours h4{margin:12px 0 4px;font-size:14px}.cours table{border-collapse:collapse;width:100%;font-size:12.5px}
+  .cours td,.cours th{border:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}
+  .cours .imp-essentiel{font-weight:600}.cours .imp-culture{color:var(--muted)}
+  .ex-mine{color:var(--muted);font-size:14px;margin-bottom:8px}
   .schema figcaption{font-size:12px;color:var(--muted);margin-top:6px}
   .src{font-size:14px;color:var(--muted);margin-top:auto;padding-top:10px;border-top:1px dotted var(--line);font-style:italic;font-family:'Cormorant',serif}
 
@@ -216,6 +223,7 @@ function load(){
   catch{return {};}
 }
 let prog=load();
+try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist();}catch{}
 // prog[exId] = {ease, interval(jours), due(timestamp), acquired:bool}
 function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
 function now(){return Date.now();}
@@ -323,6 +331,18 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   list.forEach(f=>grid.appendChild(card(f)));
 }
+function coursHTML(c){
+  if(!c)return '';
+  const b=x=>`<p class="imp-${x.imp}">${x.txt}</p>`;
+  const tab=t=>t?`<table>${t.caption?`<caption>${t.caption}</caption>`:''}<tr>${t.head.map(h=>`<th>${h}</th>`).join('')}</tr>${t.rows.map(r=>`<tr class="imp-${r.imp}">${r.cells.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table>`:'';
+  return `<details class="cours"><summary>Approfondir</summary>
+    ${c.lede?`<p class="lede">${c.lede}</p>`:''}${c.essentiel?`<p class="ess">${c.essentiel}</p>`:''}
+    ${c.frise?`<ul>${c.frise.map(x=>`<li><b>${x.date}</b> — ${x.txt}</li>`).join('')}</ul>`:''}
+    ${(c.sections||[]).map(x=>`<h4>${x.h}</h4>${(x.blocs||[]).map(b).join('')}${tab(x.table)}`).join('')}
+    ${c.synthese?`<h4>À retenir</h4>${c.synthese.map(b).join('')}`:''}
+    ${c.src?`<p class="imp-culture">${c.src}</p>`:''}</details>`;
+}
+const schemaHTML=f=>f.schema?`<figure class="schema">${f.schema.svg}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
   const mine=EXOS.filter(e=>e.fiche===f);
@@ -338,7 +358,8 @@ function card(f){
     <div class="sub-tags">${subTags}</div>
     <h3>${f.titre}</h3>
     <p class="synth">${f.synth}</p>
-    ${f.schema?`<figure class="schema">${f.schema.svg}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:''}
+    ${schemaHTML(f)}
+    ${coursHTML(f.cours)}
     ${chkList}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>
     <div class="flash-hint">Flashcard — touche pour retourner</div>
@@ -379,7 +400,8 @@ function showExercise(){
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
   switch(ex.type){
     case 'flashcard':case 'flashcard_reverse':{
-      const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();body.append(el('div','ex-answer',p.answer));finish(ex,null,fb,actions,body);};actions.append(show);break;}
+      const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse (facultatif), puis compare';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
+      const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));finish(ex,null,fb,actions,body);};actions.append(show);break;}
     case 'mcq_single':case 'odd_one_out':
       choice(p.options,(i,b)=>{finish(ex,grade(ex,i),fb,actions,body);b.classList.add(i===p.answer?'good':'bad');body.querySelector(`[data-i="${p.answer}"]`).classList.add('good');});break;
     case 'true_false':
@@ -430,9 +452,11 @@ function finish(ex,ok,fb,actions,body){
   else fb.className='fb';
   fb.append(el('p','fb-expl',ex.explanation||ex.fiche.synth));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
+  fb.insertAdjacentHTML('beforeend',schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
-  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{rate(ex.id,q);next();};btns.append(b);};
+  const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
+  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
   if(ok===null)add('hard','Difficile','revoir demain');
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
