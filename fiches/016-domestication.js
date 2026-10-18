@@ -18,7 +18,7 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "La parenté du cabernet sauvignon a été prouvée en {{1997}} par analyse {{ADN}}." } }
     ],
     status: "needs_review",
-    to_check: ["Siècle du croisement : au plus tard le XVIIe siècle, date exacte inconnue", "Clones agréés : 18 selon Plantgrape, 19 selon Lepeltier", "Rang mondial : une seule source (OIV, données 2015)"],
+    to_check: ["Clones agréés : 18 aujourd’hui (Plantgrape) ; 19 dans le catalogue de 2020, chiffre probablement repris par Lepeltier ; 20 en 2012 (FranceAgriMer)", "Rang mondial (2e en surface derrière le kyoho, raisin de table ; 1er cépage de cuve) : une seule source primaire (OIV, données 2015)", "Siècle du croisement : au plus tard le XVIIe siècle selon UC Davis, date exacte inconnue"],
     src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; OIV, Focus 2017",
     page: 27
   },
@@ -327,7 +327,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Le mot « cépage », d’un mot de vigneron à un terme savant",
-    synth: "Les agronomes antiques distinguaient déjà les vignes : Pline l’Ancien en cite une cinquantaine, sans les décrire précisément. Le mot « cépage » (cep + suffixe -age, « un ensemble de ceps ») naît au XVIe siècle ; Lepeltier l’attribue au poète Jean-Antoine de Baïf (1573). Longtemps vague et vigneron, il entre dans la langue savante avec le comte Odart, dont l’Ampélographie (1845) passe en revue des centaines de cépages. Entre-temps, Sachs a baptisé l’ampélographie (1661) et Linné a nommé V. vinifera (1753).",
+    synth: "Les agronomes antiques distinguaient déjà les vignes : Pline l’Ancien en cite une cinquantaine, sans les décrire précisément. Le mot « cépage » (cep + suffixe -age, « un ensemble de ceps ») apparaît chez le poète Jean-Antoine de Baïf (1573), au sens de « branchage de vigne » ; les dictionnaires n’enregistrent le sens de « variété de ceps » qu’en 1867 (Larousse du XIXe siècle). Longtemps vague et vigneron, il entre dans la langue savante avec le comte Odart, dont l’Ampélographie (1845) passe en revue des centaines de cépages. Entre-temps, Sachs a baptisé l’ampélographie (1661) et Linné a nommé V. vinifera (1753).",
     mnemo: "Cep + -age = un paquet de ceps, comme feuill-age = un paquet de feuilles. Le poète le dit (1573), le comte l’écrit dans la science (1845).",
     flash: { q: "D’où vient le mot « cépage » et qui l’impose dans la langue scientifique ?", a: "De « cep » + suffixe collectif « -age » (un ensemble de ceps), au XVIe siècle ; le comte Odart l’impose avec son Ampélographie (1845)." },
     qcm: { q: "Qui fait entrer « cépage » dans la langue scientifique française ?", opts: ["Olivier de Serres", "Le comte Alexandre-Pierre Odart", "Carl von Linné", "Pierre Galet"], good: 1 },
@@ -337,9 +337,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’auxerrois de Cahors tire son nom de son origine dans l’Yonne.", answer: false }, explanation: "C’est le côt (malbec), un cépage du Sud-Ouest : un nom de lieu n’est pas une preuve d’origine." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tous les historiens s’accordent pour dire que « cépage » désigne une variété précise dès le XVIe siècle.", answer: false }, explanation: "Selon une étude historique (revue Crescentis), le mot reste rare et flou jusqu’au XIXe siècle ; son sens précis s’installe avec Vivien (1839) et Odart (1845)." }
     ],
-    status: "needs_review",
-    to_check: ["Attribution du mot à Baïf en 1573 : seul le XVIe siècle est confirmé (Académie française, Boursiquot)"],
-    src: "Mille Vignes, P. Lepeltier ; J.-M. Boursiquot (Réussir Vigne, 2016) ; revue Crescentis (UBE), noms des vignes 1400-1850 ; BnF, Le fruit de la vigne",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; TLFi (CNRTL), étymologie de cépage ; J.-M. Boursiquot (Réussir Vigne, 2016) ; revue Crescentis (UBE), noms des vignes 1400-1850 ; BnF, Le fruit de la vigne",
     page: 22
   },
   {
@@ -359,9 +359,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Semer un pépin de pinot noir donne un nouveau pied de pinot noir.", answer: false }, explanation: "La reproduction sexuée brasse les gènes : le semis donne un individu nouveau, donc un nouveau cépage. Seule la bouture conserve le pinot." },
       { type: "mcq_single", prompt: "Pour les croisements entre V. vinifera et d’autres espèces, J.-M. Boursiquot préfère parler de…", payload: { options: ["Cépages résistants", "Variétés résistantes", "Clones résistants", "Sortotypes résistants"], answer: 1 } }
     ],
-    status: "needs_review",
-    to_check: ["Clone 141 du grenache blanc : une seule source (Lepeltier)"],
-    src: "Mille Vignes, P. Lepeltier ; J.-M. Boursiquot (Réussir Vigne, 2016) ; Vouillamoz et Galet cités par La Passion du vin",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; J.-M. Boursiquot (Réussir Vigne, 2016) ; Vouillamoz et Galet cités par La Passion du vin ; Plantgrape, fiche Grenache blanc ; FranceAgriMer, registre des clones (2012)",
     page: 23
   },
   {
@@ -723,7 +723,7 @@ FICHES.push(
       { type: "mcq_single", prompt: "Pourquoi les premières hybridations interspécifiques ont-elles lieu aux États-Unis ?", payload: { options: ["Les vinifera importées y dépérissaient, contrairement aux vignes locales", "Les lois européennes interdisaient l’hybridation", "Les vignes américaines ne produisaient aucun raisin", "Pour obtenir des raisins sans pépins"], answer: 0 } }
     ],
     status: "needs_review",
-    to_check: ["Dates de vie de Speechly : 1723 (ODNB) ou 1735 (baptême) – 1819", "Part de vinifera du delaware : non chiffrée ; parenté (aestivalis × labrusca) × vinifera selon une seule source"],
+    to_check: ["Dates de vie de Speechly : trois dates de naissance selon les sources (1723 ODNB, 1733, 1735 baptême) – 1819", "Part de vinifera du delaware : non chiffrée ; parenté (aestivalis × labrusca) × vinifera selon une seule source"],
     src: "Mille Vignes, P. Lepeltier ; W. Speechly, A Treatise on the Culture of the Vine, 1790, p. 50-60 ; Wen et al., Frontiers in Plant Science, 2020 ; Journal of the American Pomological Society (Concord) ; Oxford Companion to Wine (Concord)",
     page: 34
   },
@@ -882,7 +882,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les variétés ResDur : artaban, vidoc, floreal, voltis",
-    synth: "Le programme INRA-ResDur (« résistance durable ») a produit les premières variétés françaises à résistance polygénique : artaban et vidoc en rouge, floreal et voltis en blanc, inscrites au catalogue officiel en janvier 2018. Elles cumulent deux gènes contre le mildiou (Rpv1 + Rpv3) et deux contre l’oïdium (Run1 + Ren3). Comme les autres variétés résistantes modernes, leur génome est à plus de 95 % vinifera, et l’Office communautaire des variétés végétales les a rattachées en 2021 à l’espèce V. vinifera. Suivent ResDur 2 (coliris, lilaro, sirano, selenor, opalor, fin 2021-début 2022) et ResDur 3 (six variétés, arrêté du 14 février 2026). L’observatoire OSCAR (INRAE-IFV, lancé en 2017) mesure sur ces cépages une baisse des traitements fongicides de l’ordre de 80 à 90 %. Lepeltier parle de vins produits depuis 2017 et de 80 % de traitements en moins : l’inscription date de 2018 et OSCAR a mesuré 86 % dès 2017.",
+    synth: "Le programme INRA-ResDur (« résistance durable ») a produit les premières variétés françaises à résistance polygénique : artaban et vidoc en rouge, floreal et voltis en blanc, inscrites au catalogue officiel en janvier 2018. Elles cumulent deux gènes contre le mildiou (Rpv1 + Rpv3) et deux contre l’oïdium (Run1 + Ren3). Comme les autres variétés résistantes modernes, leur génome est à plus de 95 % vinifera, et l’Office communautaire des variétés végétales les a rattachées en 2021 à l’espèce V. vinifera. Suivent ResDur 2 (coliris, lilaro, sirano, selenor, opalor, fin 2021-début 2022) et ResDur 3 (elaris, florisia, orellis, serelis en blanc ; taranis, valpesia en rouge ; arrêté du 14 février 2026). L’observatoire OSCAR (INRAE-IFV, lancé en 2017) mesure sur ces cépages une baisse des traitements fongicides de l’ordre de 80 à 90 %. Lepeltier parle de vins produits depuis 2017 et de 80 % de traitements en moins : l’inscription date de 2018 et OSCAR a mesuré 86 % dès 2017.",
     mnemo: "AV rouge, FV blanc : Artaban-Vidoc pour le rouge, Floreal-Voltis pour le blanc.",
     flash: { q: "Quelles sont les quatre premières variétés ResDur, et leur couleur ?", a: "Artaban et vidoc (rouges), floreal et voltis (blancs), inscrites en janvier 2018." },
     qcm: { q: "Quelle baisse des traitements fongicides OSCAR observe-t-il sur ces variétés ?", opts: ["Environ 20 %", "Environ 50 %", "Environ 80 à 90 %", "100 % : aucun traitement"], good: 2 },
@@ -893,7 +893,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["ResDur 3 (arrêté du 14 février 2026, 6 variétés) : une seule source presse", "« Moins de 2 % de gènes américains » (Lepeltier) : moyenne théorique après cinq rétrocroisements (IFV), pas un chiffre mesuré sur les ResDur"],
-    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; INRAE, Science et élus n° 1 ; IFV Occitanie, Les variétés résistantes ; IVES Technical Reviews ; Vitisphere ; Réussir Vigne",
+    src: "Mille Vignes, P. Lepeltier ; INRAE Colmar, fiches variétales 2020 ; INRAE, Science et élus n° 1 ; IFV Occitanie, Les variétés résistantes ; IVES Technical Reviews ; Vitisphere ; Réussir Vigne ; IFV (vignevin.com), onze nouvelles variétés résistantes",
     page: 36
   },
   {
@@ -934,7 +934,7 @@ FICHES.push(
       { type: "short_answer", prompt: "Dans quelle langue est formé le mot PiWi ?", payload: { accepted: ["allemand", "l’allemand", "en allemand"] } }
     ],
     status: "needs_review",
-    to_check: ["Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon une revue de 2023, 130 selon Lepeltier)", "Adoption par l’OIV du terme « variété résistante » en 1994 (Lepeltier) : introuvable dans les résolutions et la littérature consultées"],
+    to_check: ["Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon une revue de 2023, 130 selon Lepeltier)", "Adoption par l’OIV du terme « variété résistante » en 1994 (Lepeltier) : la résolution VITI 2/94 (10 juin 1994) porte sur les nouvelles variétés sans employer ce terme"],
     src: "Mille Vignes, P. Lepeltier ; PIWI International (FAQ) ; arrêté du 19 avril 2017 (variétés classées) ; IVES Technical Reviews (2023) ; Vitisphere ; Wein.plus",
     page: 36
   },
@@ -954,9 +954,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque technique à sa définition.", payload: { pairs: [["Sélection classique", "Croiser puis trier des pépins"], ["Transgenèse", "Ajouter un gène d’un autre organisme"], ["Édition du génome", "Modifier précisément un gène existant"]] } },
       { type: "cloze", prompt: "Complète.", payload: { text: "Le court-noué est causé par un {{virus}} transmis par des {{nématodes}}." }, explanation: "Le GFLV est transmis par le nématode Xiphinema index." }
     ],
-    status: "needs_review",
-    to_check: ["Première édition du génome de la vigne par CRISPR en 2016 : une seule étude citée"],
-    src: "Mille Vignes, P. Lepeltier ; Hemmer et al., Plant Biotechnology Journal, 2017 ; Ren et al., 2016 ; règlement (UE) 2026/1388 (EUR-Lex) ; Commission européenne, DG SANTE (NGT) ; Sénat, rapport n° 485 (2014) ; ministère de l’Agriculture (2016)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier ; Hemmer et al., Plant Biotechnology Journal, 2017 ; Ren et al., 2016 ; règlement (UE) 2026/1388 (EUR-Lex) ; Commission européenne, DG SANTE (NGT) ; Sénat, rapport n° 485 (2014) ; ministère de l’Agriculture (2016) ; Malnoy et al., Frontiers in Plant Science, 2016",
     page: 36
   },
   {

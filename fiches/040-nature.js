@@ -37,9 +37,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque tissu à la sève qu’il transporte.", payload: { pairs: [["Xylème", "Sève brute (eau, minéraux), vers le haut"], ["Phloème", "Sève élaborée (sucres), vers les racines"]] } },
       { type: "cloze", prompt: "Complète.", payload: { text: "L’ensemble des radicelles s’appelle le {{chevelu}} racinaire." } }
     ],
-    status: "needs_review",
-    to_check: ["Anatomie classique de la racine : non recoupée par deux sources lors de la recherche du lot."],
-    src: "Mille Vignes, P. Lepeltier, p. 40",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 40 ; Cornell, Grapes 101 : grapevine roots ; Université de Patras, cours Vine biology",
     page: 40
   },
   {
@@ -79,7 +79,7 @@ FICHES.push(
       { type: "matching", prompt: "Associe l’origine du pied à son enracinement (selon Lepeltier).", payload: { pairs: [["Semis (pépin)", "Racine pivotante et plongeante"], ["Bouture", "Racines traçantes, latérales"]] } }
     ],
     status: "needs_review",
-    to_check: ["Semis = racine pivotante / bouture = racines traçantes : non recoupé.", "Profondeur maximale : « plusieurs dizaines de mètres » (Lepeltier) non documenté ; ~6 m selon Lodi Growers."],
+    to_check: ["Semis = racine pivotante : non sourcé ; les boutures forment des racines adventives près des nœuds (Cornell), sans preuve qu’elles soient plus traçantes.", "Profondeur maximale : « plusieurs dizaines de mètres » (Lepeltier) non documenté ; 6 m et plus assez courant, plus de 10 m rare (UC Davis, eXtension)."],
     src: "Mille Vignes, P. Lepeltier, p. 41 ; Lodi Winegrape Commission, Grapevine roots and rootstocks ; PMC12197271",
     page: 41
   },
@@ -99,9 +99,9 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Lequel ne fait pas partie de la charpente permanente du cep ?", payload: { options: ["Tronc", "Bras", "Rameau de l’année", "Vieux bois"], answer: 2 }, explanation: "Le rameau est une pousse de l’année, renouvelée à chaque cycle." },
       { type: "cloze", prompt: "Complète.", payload: { text: "Le rameau vert devient {{sarment}} quand il s’aoûte." } }
     ],
-    status: "needs_review",
-    to_check: ["Vocabulaire de la souche : non recoupé par deux sources lors de la recherche du lot."],
-    src: "Mille Vignes, P. Lepeltier, p. 41-42",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 41-42 ; University of Nevada Extension ; UC Master Gardeners",
     page: 41
   },
   {
@@ -202,8 +202,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Comment s’appelle la conduite en corbeille au ras du sol de Santorin ?", payload: { accepted: ["kouloura", "koulouri", "kouloures", "koulouras"] } }
     ],
     status: "needs_review",
-    to_check: ["Superficie du vignoble (1 200 ha selon Lepeltier ; ~750 ha ailleurs) : divergence, chiffre retiré.", "Subventions de l’UE à la conduite traditionnelle : non trouvé.", "Date de l’éruption (~1600 av. J.-C.) : une seule source lue."],
-    src: "Mille Vignes, P. Lepeltier, p. 44 ; Robert Parker Wine Advocate, Santorini ; Around the World in 80 Harvests (2021)",
+    to_check: ["Superficie du vignoble : 1 000 à 1 200 ha selon les sources (presse, Karakasis MW), aucune donnée officielle ; chiffre retiré.", "Subventions de l’UE à la conduite traditionnelle : non trouvé."],
+    src: "Mille Vignes, P. Lepeltier, p. 44 ; Robert Parker Wine Advocate, Santorini ; Around the World in 80 Harvests (2021) ; Friedrich et al., Science, 2006 ; Cherubini et al., Antiquity, 2014",
     page: 44
   },
   {
@@ -223,7 +223,7 @@ FICHES.push(
       { type: "mcq_single", prompt: "Combien de temps dure la floraison d’une même parcelle, environ ?", payload: { options: ["Une journée", "Une quinzaine de jours", "Deux mois", "Tout l’été"], answer: 1 } }
     ],
     status: "needs_review",
-    to_check: ["Délai débourrement → floraison : 6-8 semaines (UC Davis) contre 8-10 (Lepeltier).", "Structure florale détaillée : non recoupée par deux sources.", "Riesling ~125 fleurs, tannat >440 par inflorescence (Lepeltier) : non confirmé, retiré."],
+    to_check: ["Structure florale : calyptre, 5 étamines et ovaire à 2 loges de 2 ovules (eXtension, NMSU) ; « calice réduit » non confirmé.", "Riesling ~125 fleurs, tannat >440 par inflorescence (Lepeltier) : non confirmé, retiré."],
     src: "Mille Vignes, P. Lepeltier, p. 45 ; UC Davis, Flowering and fruiting of grapevine",
     page: 45
   },
@@ -243,7 +243,7 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Quels facteurs favorisent la coulure ?", payload: { options: ["Pluie et froid à la floraison", "Porte-greffe trop vigoureux", "Sensibilité du cépage", "Un soleil chaud et sec à la floraison"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Taux moyen de nouaison d’environ 35 % (Tello et al., 120 cépages) : une seule source.", "Sensibilité particulière du grenache et du merlot à la coulure : non recoupée.", "« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : plausible, non confirmé explicitement."],
+    to_check: ["Taux moyen de nouaison d’environ 35 % (Tello et al.) : non retrouvé ; autres sources : 30-50 % (NMSU), 42-48 % sur 114 cépages (thèse, Université de Saragosse).", "Sensibilité du grenache et du merlot à la coulure : une seule source (NMSU).", "« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : plausible, non confirmé explicitement."],
     src: "Mille Vignes, P. Lepeltier, p. 45-46 ; Tello et al., étude de 120 cépages (CBGG)",
     page: 45
   },
@@ -263,7 +263,7 @@ FICHES.push(
       { type: "odd_one_out", prompt: "Lequel n’est pas un effet attribué au millerandage ?", payload: { options: ["Concentration de la couleur", "Grappes plus aérées", "Rendement plus faible", "Baies plus juteuses"], answer: 3 }, explanation: "Les baies millerandées sont au contraire peu juteuses." }
     ],
     status: "needs_review",
-    to_check: ["Clone 1066 : bien agréé en France (liste FranceAgriMer, mars 2026), mais sa réputation de clone millerandé ne repose que sur Lepeltier.", "Millerandage des millésimes 1978 et 1995 chez Jayer : non confirmé."],
+    to_check: ["Clone 1066 : bien agréé en France (liste FranceAgriMer, mars 2026) ; petites baies et faible rendement confirmés (AWRI, essai EIT Hawke’s Bay), le terme « millerandé » ne figure que chez AWRI.", "Millerandage des millésimes 1978 et 1995 chez Jayer : non confirmé."],
     src: "Mille Vignes, P. Lepeltier, p. 47 ; Wine Anorak, Gingin and Mendoza (2024) ; Margaret River Wine, Clone Wars ; Christie’s, Henri Jayer ; FranceAgriMer, liste des clones de vigne agréés (mars 2026)",
     page: 47
   },
@@ -282,9 +282,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque type de baie à son exemple.", payload: { pairs: [["Apyrène sténospermocarpique", "Sultanine"], ["Apyrène parthénocarpique", "Corinthe noir"], ["Pyrène", "Raisin de cuve classique"]] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Dans la parthénocarpie, le fruit se développe sans fécondation.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: ["Attribution sultanine = sténospermocarpie, corinthe noir = parthénocarpie : non lue en toutes lettres dans les sources consultées."],
-    src: "Mille Vignes, P. Lepeltier, p. 45 ; Seedlessness in Grapes (ResearchGate)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 45 ; Seedlessness in Grapes (ResearchGate) ; Costantini et al., BMC Plant Biology, 2021 ; Journal of Experimental Botany, 2016",
     page: 45
   },
   {
@@ -405,7 +405,7 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Sur quoi le porte-greffe influe-t-il ?", payload: { options: ["La vigueur", "L’absorption de l’eau et des minéraux", "La résistance au phylloxéra des racines", "La couleur génétique du raisin"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Expressions « chimère » (Branas) et « plante artificielle » (Ollat) : attribution non retrouvée dans les sources consultées.", "Difficulté du greffage Vitis / Muscadinia : non recoupée."],
+    to_check: ["Expressions « chimère » (Branas) et « plante artificielle » (Ollat) : attribution non retrouvée dans les sources consultées."],
     src: "Mille Vignes, P. Lepeltier, p. 49-50 et 54 ; INRAE, Nathalie Ollat, Tomorrow’s inventive vines",
     page: 49
   },
@@ -519,7 +519,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Le calcaire, la chlorose et la quête de V. berlandieri",
-    synth: "Les premiers porte-greffes, V. riparia et V. rupestris purs, venaient de sols nord-américains plutôt acides ; plantés sur les sols calcaires de Champagne, Bourgogne ou Charentes, ils provoquent une chlorose ferrique (jaunissement des feuilles par mauvaise absorption du fer). V. berlandieri, vigne texane des sols calcaires, est déjà à l’essai à Montpellier quand, en 1887, Pierre Viala part en mission aux États-Unis chercher des vignes tolérantes au calcaire. Elle supporte le calcaire mais se greffe et s’enracine mal : croisée avec le chasselas par Millardet et de Grasset (vers 1882 selon Lepeltier), elle donne le 41 B, porte-greffe qui sauve Cognac et la Champagne, où il reste majoritaire.",
+    synth: "Les premiers porte-greffes, V. riparia et V. rupestris purs, venaient de sols nord-américains plutôt acides ; plantés sur les sols calcaires de Champagne, Bourgogne ou Charentes, ils provoquent une chlorose ferrique (jaunissement des feuilles par mauvaise absorption du fer). V. berlandieri, vigne texane des sols calcaires, est déjà à l’essai à Montpellier quand, en 1887, Pierre Viala part en mission aux États-Unis chercher des vignes tolérantes au calcaire. Elle supporte le calcaire mais se greffe et s’enracine mal : croisée avec le chasselas par Millardet et de Grasset (en 1882), elle donne le 41 B, porte-greffe qui sauve Cognac et la Champagne, où il couvre encore plus de 80 % du vignoble.",
     mnemo: "Berlandieri, la Texane du calcaire : têtue à la greffe, mais elle a sauvé la Champagne avec le 41 B.",
     flash: { q: "Quel porte-greffe, issu de chasselas × berlandieri, domine en Champagne ?", a: "Le 41 B (Millardet et de Grasset)." },
     qcm: { q: "Quelle mission part en Amérique chercher des vignes tolérantes au calcaire, et quand ?", opts: ["Planchon, 1868", "Pierre Viala, 1887", "Millardet, 1885", "Ganzin, 1879"], good: 1 },
@@ -528,9 +528,9 @@ FICHES.push(
       { type: "short_answer", prompt: "Comment s’appelle le jaunissement des feuilles lié au calcaire actif ?", payload: { accepted: ["chlorose", "chlorose ferrique", "la chlorose ferrique"] } },
       { type: "matching", prompt: "Associe chaque espèce à son point faible.", payload: { pairs: [["V. riparia", "Craint le calcaire, aime les sols riches et frais"], ["V. berlandieri", "Supporte le calcaire mais se greffe mal"]] } }
     ],
-    status: "needs_review",
-    to_check: ["Date de création du 41 B (1882) : non vérifiée.", "Part du 41 B en Champagne (« plus de 80 % », Decanter) : une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 55 ; INRAE Agate, 1887 viticultural mission to America ; Legros, Étude et Gestion des Sols 12(2) ; Decanter, Vine rootstocks",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 55 ; INRAE Agate, 1887 viticultural mission to America ; Legros, Étude et Gestion des Sols 12(2) ; Decanter, Vine rootstocks ; Plantgrape, fiche 41 B ; Comité Champagne, Viticulture et biodiversité ; UMC, La multiplication de la vigne",
     page: 55
   },
   {
@@ -551,7 +551,7 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["Dates de création des porte-greffes anciens : non vérifiées une à une."],
+    to_check: ["Dates de création des porte-greffes : une seule source par porte-greffe (Plantgrape) : 3309 C 1881, 101-14 et 41 B 1882, 140 Ru 1894, 110 R 1902, SO4 sélectionné en 1919 dans des croisements de Teleki de 1896."],
     src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026)",
     page: 55
   },
@@ -571,7 +571,7 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Sur quelles contraintes travaillent les nouveaux porte-greffes ?", payload: { options: ["Sécheresse", "Nématodes", "Salinité", "Couleur des baies"], answers: [0, 1, 2] } }
     ],
     status: "needs_review",
-    to_check: ["Origine de 99 % des porte-greffes dans trois clones (Andrew Walker, UC Davis) : non vérifiée.", "Ganzin, 1879 : non confirmé.", "Échec de l’AxR1 à Napa : une seule source lue."],
+    to_check: ["Origine de 99 % des porte-greffes dans trois clones (Andrew Walker, UC Davis) : introuvable dans les publications UC Davis et CDFA consultées.", "AxR1 obtenu par Ganzin en 1879 : une seule source (Wein.plus).", "Échec de l’AxR1 en Californie (biotype B détecté à Napa en 1982, recommandation retirée en 1989) : sources de presse seulement, cause débattue."],
     src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Wine with Seth, Phylloxera and Napa Valley replanting ; Decanter, Vine rootstocks",
     page: 55
   },
@@ -741,8 +741,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Sur quel domaine se trouve le conservatoire national de l’IFV ?", payload: { accepted: ["Espiguette", "l’Espiguette", "domaine de l’Espiguette", "l'Espiguette"] } }
     ],
     status: "needs_review",
-    to_check: ["Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé.", "Rôle personnel de Jean Branas dans la création de la section de 1944 : non vérifié."],
-    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016)",
+    to_check: ["Clones 76, 95, 96 = 50 % du chardonnay produit : non confirmé (il faudrait les statistiques de plants par clone de FranceAgriMer)."],
+    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016) ; IVES/OIV 2024 (Audeguin)",
     page: 64
   },
   {
@@ -801,7 +801,7 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les surfaces de vignes mères de porte-greffes varient sensiblement d’une année à l’autre.", answer: true }, explanation: "Environ 2 131 ha en 2016, 2 300 ha en 2024, 2 045 ha en 2025." }
     ],
     status: "needs_review",
-    to_check: ["Pertes au tri de 40 à 50 % (Lepeltier) : aucun chiffre trouvé.", "99 % des plantations en greffés-soudés, plant à 1,30 €, 25 000-30 000 €/ha : non confirmés."],
+    to_check: ["Pertes au tri de 40 à 50 % (Lepeltier) : contredit, 20 à 30 % selon la Chambre d’agriculture de Champagne (2024).", "Prix du plant : 1,00 à 1,20 € HT selon l’IFV (1,30 € chez Lepeltier) ; 99 % de greffés-soudés et 25 000-30 000 €/ha : non confirmés."],
     src: "Mille Vignes, P. Lepeltier, p. 66-67 ; IFV, La production de plants de vigne en pépinières ; FranceAgriMer, chiffres clés FFPV 2025 ; Vitisphere (2024)",
     page: 66
   },
@@ -812,7 +812,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Loire", appel: "Sancerre" },
     titre: "Des pépinières remises en question",
-    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
+    synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes ; sa société est en redressement judiciaire depuis juillet 2026 (BODACC). En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
     mnemo: "« On plante pour ses petits-enfants » : le plant de qualité est un placement à cinquante ans.",
     flash: { q: "Quelle démarche Centre-Loire a lancée pour des plants de sauvignon de qualité ?", a: "La marque Ceps Sicavac, appuyée sur une sélection massale du sauvignon." },
     qcm: { q: "Où se trouve la pépinière de Lilian Bérillon ?", opts: ["Jonquières (Vaucluse)", "Montlouis (Indre-et-Loire)", "Pérignac (Charente)", "Le Grau-du-Roi (Gard)"], good: 0 },
@@ -822,7 +822,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Situation actuelle de la pépinière Bérillon (procédure collective signalée) : à vérifier.", "Détail du cahier des charges Ceps Sicavac : repris de Lepeltier, non recoupé."],
-    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026)",
+    src: "Mille Vignes, P. Lepeltier, p. 67 ; Vins du Centre-Loire, sélection massale du sauvignon ; Plan national dépérissement, fiche Ceps Sicavac ; Terre de Vins, Lilian Bérillon ; FranceAgriMer, liste des clones agréés (mars 2026) ; BODACC (via Pappers), Pépinières Lilian Bérillon",
     page: 67
   },
   {
@@ -882,8 +882,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "Goethe appelle l’organe de base de la plante le {{Blatt}}, la feuille." } }
     ],
     status: "needs_review",
-    to_check: ["Date 1790 : une seule source lue (Wikipédia).", "Urpflanze et Blatt : concepts connus, non sourcés lors de la recherche."],
-    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Wikipédia, Metamorphosis of Plants",
+    to_check: ["Urpflanze et Blatt : concepts connus, non sourcés lors de la recherche."],
+    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Wikipédia, Metamorphosis of Plants ; Morgan Library, notice de l’édition originale (Gotha, Ettinger, 1790)",
     page: 73
   },
   {
@@ -901,9 +901,9 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces jalons dans l’ordre chronologique.", payload: { items: ["Goethe publie l’Essai sur la métamorphose des plantes", "Steiner édite les écrits scientifiques de Goethe", "Cours aux agriculteurs de Koberwitz"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Pour la lecture biodynamique, la vigne est dominée par une force de croissance végétative que le vigneron doit canaliser.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: ["Ouvrage de Florin « Viticulture biodynamique » (2018) : titre et date français non confirmés (édition anglaise Biodynamic Wine Growing)."],
-    src: "Mille Vignes, P. Lepeltier, p. 73-75 ; Section d’agriculture du Goetheanum, Cours aux agriculteurs ; Orgprints ; Wikipédia, Rudolf Steiner",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 73-75 ; Section d’agriculture du Goetheanum, Cours aux agriculteurs ; Orgprints ; Wikipédia, Rudolf Steiner ; J.-M. Florin (dir.), Viticulture biodynamique, MABD, 2017 (éd. anglaise Floris Books, 2021)",
     page: 73
   }
 );
