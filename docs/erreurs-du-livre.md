@@ -10,6 +10,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 26 : liste OIV des descripteurs de 2009 présentée comme la référence → 3e édition adoptée en 2023.
 - p. 27 : gouais blanc « 63 descendants » → près de 120 selon Lacombe (2013), dont 63 aux deux parents connus.
 - p. 29 : époques de maturité de Pulliat → dans Mille variétés de vignes (3e éd., 1888), le savagnin est en 2e époque (livre : 1re), le grenache en 2e tardive (livre : 3e, mais Le Vignoble, t. III, 1878-1879, le met bien en 3e), le mourvèdre en 3e (livre : 4e).
+- p. 29 : classement de Pulliat « de 1879 » → la méthode des époques est exposée dès le tome I du Vignoble (Mas et Pulliat, 1874-1875) ; 1879 est l'année où s'achève l'ouvrage.
 - p. 35 : six cépages interdits « par une loi de 1935 » → loi du 24 décembre 1934 (décret d'application en 1935).
 - p. 35 : PiWi créée « en 1995 » → PIWI International fondée en 1999 (site officiel).
 - p. 36 : texte « mildiou (Run1), oïdium (Rpv1) » → inversé : Run1 = oïdium, Rpv1 = mildiou (légende p. 37 juste).
@@ -35,7 +36,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 ## Non confirmés
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
 - p. 41-67 : riesling 125 / tannat 440 fleurs, greffe sur 0,5 % des surfaces en 1863, hypothèse Carbonneau sur le merlot, porte-greffe riparia gloire et 10-15 hl/ha aux Bournais.
-- p. 29 : classement de Pulliat daté de 1879 (Le Vignoble, 1874-1879, classe déjà par époques ; exposé de la méthode non lu).
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
 - p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024 ; taux de reprise de 65 % en 2016 et 69 % en 2017 selon FranceAgriMer, 60 à 65 % en année normale selon Vitisphere, soit environ un tiers de pertes).
 - p. 41 : un semis forme une racine pivotante, une bouture des racines traçantes (non retrouvé ; UC Davis lie l'angle des racines au porte-greffe).
