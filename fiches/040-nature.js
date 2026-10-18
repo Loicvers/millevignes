@@ -551,7 +551,7 @@ FICHES.push(
       { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["Dates : 3309 C (1881), 101-14 et 41 B (1882), 110 R (1902) confirmées par le VIVC ; 140 Ru : 1894 (Plantgrape) contre 1896 (VIVC) ; SO4 sélectionné en 1919 : une seule source","Période de création : Lepeltier (1869-1902) et Riaz et al. 2019 (années 1890 à 1930 pour les plus importants) divergent ; résumé de l’article lu, texte intégral non lu"],
+    to_check: ["Dates : 3309 C (1881), 101-14 et 41 B (1882), 110 R (1902) confirmées par le VIVC ; 140 Ru : 1894 (Plantgrape) contre 1896 (VIVC), Riaz et al. ne le datent pas ; SO4 : programme de Teleki lancé en 1896 (Riaz et al. 2019, VIVC), sélection par Fuhr à Oppenheim (Riaz et al.), année 1919 : une seule source","Période de création : Lepeltier (1869-1902) et Riaz et al. 2019 (années 1890 à 1930 pour les plus importants) divergent ; texte intégral lu"],
     src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026) ; VIVC, fiches passeport des porte-greffes ; FAIDARE (CRB Vigne de Vassal), SO4 (Teleki), berlandieri × riparia",
     page: 55
   },
@@ -572,7 +572,7 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon l’analyse ADN de 36 porte-greffes, 99 % de leur fonds génétique vient de trois pieds américains.", answer: false }, explanation: "L’étude trouve 39 % (Rességuier 2, rupestris du Lot, riparia Gloire de Montpellier) ; le chiffre de 99 % vient de Lepeltier." }
     ],
     status: "needs_review",
-    to_check: ["AxR1 obtenu par Ganzin en 1879 : une seule source (Wein.plus).", "Échec de l’AxR1 en Californie (biotype B détecté à Napa en 1982, recommandation retirée en 1989) : sources de presse seulement, cause débattue."],
+    to_check: ["AxR1 obtenu par Ganzin en 1879 : une seule source (Wein.plus).", "Échec de l’AxR1 face au phylloxéra dans les années 1980 en Californie : confirmé par Riaz et al. (2019), qui rappellent les mêmes échecs en France, en Italie et en Afrique du Sud ; dates 1982 (biotype B à Napa) et 1989 (recommandation retirée) : presse seulement ; cause débattue."],
     src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Riaz, Pap, Uretsky, Laucou, Boursiquot, Kocsis et Walker, Genetic diversity and parentage analysis of grape rootstocks, Theoretical and Applied Genetics, 2019 (doi 10.1007/s00122-019-03320-5) ; Wine with Seth, Phylloxera and Napa Valley replanting ; Decanter, Vine rootstocks",
     page: 55
   },
