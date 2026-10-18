@@ -16,8 +16,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Chez un cépage blanc, la véraison se repère au passage de la baie du vert opaque au translucide.", answer: true }, explanation: "Les blancs ne se colorent pas : la baie « traluit »." },
       { type: "mcq_multi", prompt: "Qu’est-ce qui se passe à partir de la véraison ?", payload: { options: ["Les sucres s’accumulent", "L’acidité diminue", "La baie s’assouplit", "La baie redevient chlorophyllienne"], answers: [0, 1, 2] } }
     ],
-    status: "verified",
-    to_check: [],
+    status: "needs_review",
+    to_check: ["Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe"],
     src: "Mille Vignes, P. Lepeltier, p. 46 et 62",
     page: 45
   },
@@ -244,7 +244,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Sensibilité du grenache et du merlot à la coulure : une seule source (NMSU, qui cite aussi le malbec)","« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : cohérent avec NMSU et eXtension, sans formulation explicite"],
-    src: "Mille Vignes, P. Lepeltier, p. 45-46 ; Tello et al., étude de 120 cépages (CBGG) ; NMSU, H-188 ; eXtension, Causes of poor fruit set",
+    src: "Mille Vignes, P. Lepeltier, p. 45-46 ; NMSU, H-188 ; eXtension, Causes of poor fruit set",
     page: 45
   },
   {
@@ -302,8 +302,8 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces étapes de la vie de la baie dans l’ordre.", payload: { items: ["Croissance herbacée", "Véraison", "Maturation", "Maturité", "Surmaturité"] } },
       { type: "mcq_single", prompt: "Pendant la croissance herbacée, la baie se comporte comme…", payload: { options: ["Un organe chlorophyllien", "Un organe de réserve", "Une racine", "Un bourgeon dormant"], answer: 0 } }
     ],
-    status: "verified",
-    to_check: [],
+    status: "needs_review",
+    to_check: ["Trois phases de la baie, acides et stade de Baggiolini : sourcés par Lepeltier seule ; eXtension et une étude PMC confirment seulement l’accumulation des sucres après la véraison"],
     src: "Mille Vignes, P. Lepeltier, p. 46",
     page: 46
   },
@@ -364,8 +364,8 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Quels critères l’ampélographe note-t-il sur une grappe ?", payload: { options: ["Sa forme", "Sa compacité", "Sa longueur", "Le nom du vigneron"], answers: [0, 1, 2] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une grappe compacte est plus exposée à la pourriture qu’une grappe lâche.", answer: true } }
     ],
-    status: "verified",
-    to_check: [],
+    status: "needs_review",
+    to_check: ["Rafle (port de la grappe, lignification, retour de la vendange entière) : sourcée par Lepeltier et l’OIV seulement"],
     src: "Mille Vignes, P. Lepeltier, p. 48 ; OIV, descripteur 208",
     page: 48
   },
@@ -376,7 +376,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Une très vieille pratique : l’histoire de la greffe",
-    synth: "La greffe n’est pas née avec le phylloxéra : les Grecs (Théophraste) notaient déjà qu’elle réussit entre plantes botaniquement proches, et les agronomes romains (Columelle, Pline l’Ancien, puis Palladius) en décrivent le choix du bourgeon, le sol et le climat. Au Moyen Âge, l’agronome andalou Ibn al-’Awwâm, à Séville, compile ce savoir dans son Livre de l’agriculture, vers la fin du XIIe siècle (Lepeltier le place au XIe). Avant 1863, on greffait surtout pour rajeunir une vigne ou changer de cépage.",
+    synth: "La greffe n’est pas née avec le phylloxéra : les Grecs (Théophraste) notaient déjà qu’elle réussit entre plantes botaniquement proches, et les agronomes romains (Columelle, Pline l’Ancien, puis Palladius) en traitent à leur tour. Au Moyen Âge, l’agronome andalou Ibn al-’Awwâm, à Séville, compile ce savoir dans son Livre de l’agriculture, vers la fin du XIIe siècle (Lepeltier le place au XIe). Avant 1863, on greffait surtout pour rajeunir une vigne ou changer de cépage.",
     mnemo: "Grecs, Romains, Andalous : la greffe a 2 000 ans d’avance sur le phylloxéra.",
     flash: { q: "Quel agronome andalou a compilé le savoir médiéval sur la greffe ?", a: "Ibn al-’Awwâm (Séville, fin du XIIe siècle), dans son Livre de l’agriculture." },
     qcm: { q: "Selon les sources consultées, Ibn al-’Awwâm a écrit vers…", opts: ["Le IVe siècle av. J.-C.", "La fin du XIIe siècle", "Le XVIe siècle", "1868"], good: 1 },
@@ -501,7 +501,7 @@ FICHES.push(
     synth: "À Montlouis-sur-Loire, François Chidaine plante à partir de 1998, avec des sélections massales du domaine, sa parcelle des Bournais (3,99 ha, exposée au nord, argilo-calcaire sur tuffeau) : un demi-hectare y est en franc de pied, à côté du chenin greffé, ce qui permet de comparer les deux. D’après Lepeltier, les francs de pied y sont moins vigoureux, moins sensibles aux maladies, produisent moins avec de petites baies et donnent des vins plus tendus, moins alcooleux ; le porte-greffe lisse l’effet millésime et augmente le rendement. Le franc de pied est vinifié à part depuis 2007 et mis en bouteille séparément certains millésimes. Une association européenne de vignerons francs de pied réunit, autour de Loïc Pasquet (Liber Pater ; Lepeltier écrit « Paquet »), des domaines comme Egon Müller ou Chartogne-Taillet.",
     mnemo: "Même âge, même bois, deux destins : le franc de pied, c’est la vigne au régime.",
     flash: { q: "Quel vigneron (Liber Pater) est au cœur de l’association européenne des vignerons francs de pied ?", a: "Loïc Pasquet (Lepeltier écrit « Paquet »)." },
-    qcm: { q: "Dans la comparaison de Chidaine, les francs de pied…", opts: ["Sont plus vigoureux", "Produisent moins, avec de plus petites baies", "Sont plus sensibles aux maladies", "Donnent des vins plus alcooleux"], good: 1 },
+    qcm: { q: "Selon Lepeltier, dans la comparaison de Chidaine, les francs de pied…", opts: ["Sont plus vigoureux", "Produisent moins, avec de plus petites baies", "Sont plus sensibles aux maladies", "Donnent des vins plus alcooleux"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, le porte-greffe tend à lisser l’effet millésime.", answer: true } },
       { type: "mcq_single", prompt: "Quelle part des Bournais (3,99 ha) est plantée en franc de pied ?", payload: { options: ["Environ un demi-hectare", "La moitié de la parcelle", "La totalité", "Aucune : la parcelle est entièrement greffée"], answer: 0 }, explanation: "Un demi-hectare, vinifié à part depuis 2007 (La RVF)." },
@@ -644,9 +644,9 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Charentes", appel: null },
     titre: "Tailler pour limiter les maladies du bois : Poussard et curetage",
-    synth: "Chaque plaie de taille dessèche une partie du bois (cône de dessiccation) et ouvre une porte aux spores. D’où l’intérêt de tailles qui respectent les flux de sève, avec des plaies petites, éloignées du tronc et toujours du même côté. Eugène Poussard, vigneron de Pérignac (Charente), adapte au début du XXe siècle la taille Guyot en ce sens (méthode décrite par René Lafon en 1921) : c’est la taille Guyot-Poussard, remise à l’honneur par François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch. Sur un cep atteint, le curetage retire à la scie ou au couteau le bois nécrosé pour prolonger sa vie.",
+    synth: "Chaque plaie de taille dessèche une partie du bois (cône de dessiccation) et ouvre une porte aux spores. D’où l’intérêt de tailles qui respectent les flux de sève, avec des plaies petites, éloignées du tronc et toujours du même côté. Eugène Poussard, vigneron de Pérignac (Charente), adapte la taille Guyot en ce sens (méthode décrite en 1921 par René Lafon) : c’est la taille Guyot-Poussard, remise à l’honneur par François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch. Sur un cep atteint, le curetage retire à la scie ou au couteau le bois nécrosé pour prolonger sa vie.",
     mnemo: "Poussard : « ne coupe pas l’autoroute de la sève ».",
-    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente), au début du XXe siècle." },
+    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente) ; sa méthode est décrite en 1921 par René Lafon." },
     qcm: { q: "Qu’est-ce qu’un cône de dessiccation ?", opts: ["Un outil de taille", "La zone de bois mort qui se forme sous une plaie de taille", "Un bourgeon dormant", "Une galle de phylloxéra"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Des plaies de taille petites et éloignées du tronc limitent le bois mort dans la charpente.", answer: true } },
@@ -854,12 +854,12 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Francis Hallé : la plante est une colonie",
-    synth: "Le botaniste Francis Hallé, spécialiste des forêts tropicales et cofondateur du Radeau des cimes (1986), critique une botanique pensée sur le modèle animal. Dans Éloge de la plante (1999 ; Lepeltier cite 2014), il montre que la plante, fixe et autotrophe, n’a pas d’organes vitaux centralisés : coupée, elle se multiplie au lieu de mourir, et ses cellules peuvent régénérer une plante entière (totipotence). Elle croît par réitération de son architecture, ce qui en fait moins un individu qu’une colonie : un cep atteint d’esca peut porter des fruits malgré son bois mort.",
+    synth: "Le botaniste Francis Hallé, spécialiste des forêts tropicales et cofondateur du Radeau des cimes (1986), critique une botanique pensée sur le modèle animal. Dans Éloge de la plante (1999 ; Lepeltier cite 2014), il montre que la plante, fixe et autotrophe, n’a pas d’organes vitaux centralisés : coupée, elle se multiplie au lieu de mourir, et ses cellules peuvent régénérer une plante entière (totipotence). Elle croît par réitération de son architecture, ce qui en fait moins un individu qu’une colonie ; Lepeltier en donne pour exemple le cep atteint d’esca qui porte encore des fruits malgré son bois mort.",
     mnemo: "Coupez un chien, il meurt ; coupez une vigne, vous avez une bouture.",
     flash: { q: "Pourquoi Hallé dit-il que la plante est une colonie plutôt qu’un individu ?", a: "Elle croît en répétant son architecture, se multiplie quand on la coupe et n’a pas d’organe vital centralisé." },
     qcm: { q: "La capacité d’une cellule végétale à régénérer une plante entière s’appelle…", opts: ["La totipotence", "La parthénogenèse", "L’endosymbiose", "La photosynthèse"], good: 0 },
     exos: [
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Éloge de la plante de Francis Hallé est paru pour la première fois en 2014.", answer: false }, explanation: "Première édition au Seuil en 1999 ; 2014 est une date de réédition probable." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Éloge de la plante de Francis Hallé est paru pour la première fois en 2014.", answer: false }, explanation: "Première édition au Seuil en 1999 ; l’origine de la date de 2014 n’a pas été retrouvée." },
       { type: "short_answer", prompt: "Comment s’appelle la croissance par répétition de l’architecture d’origine ?", payload: { accepted: ["réitération", "la réitération", "reiteration"] } }
     ],
     status: "verified",
@@ -874,7 +874,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Goethe et la métamorphose des plantes",
-    synth: "Dans son Essai sur la métamorphose des plantes (1790), Goethe propose de comprendre la plante comme un tout en mouvement plutôt que de la décomposer en catégories, à la manière de Linné. Cotylédons, feuilles, sépales, pétales, étamines et fruits seraient les variations d’un même organe de base (la feuille, Blatt), qui alterne expansion et contraction. Il nomme Urpflanze la « plante archétypale », principe commun à toutes les plantes. Sa méthode valorise l’observation sensible et l’imagination, à côté de l’analyse.",
+    synth: "Dans son Essai sur la métamorphose des plantes (1790), Goethe propose de comprendre la plante comme un tout en mouvement plutôt que de la décomposer en catégories, à la manière de Linné. Cotylédons, feuilles, sépales, pétales, étamines et fruits seraient les variations d’un même organe de base (la feuille, Blatt), qui alterne expansion et contraction. Ailleurs, dès son voyage en Italie (1787), il évoque une Urpflanze, « plante archétypale » commune à toutes les plantes. Sa méthode valorise l’observation sensible et l’imagination, à côté de l’analyse.",
     mnemo: "Pour Goethe, une fleur n’est qu’une feuille qui s’est mise en habits de fête.",
     flash: { q: "Comment Goethe nomme-t-il la « plante archétypale » ?", a: "L’Urpflanze." },
     qcm: { q: "En quelle année paraît l’Essai sur la métamorphose des plantes ?", opts: ["1650", "1790", "1868", "1924"], good: 1 },

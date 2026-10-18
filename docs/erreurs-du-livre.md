@@ -28,7 +28,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 55 : mission Viala « 1888 » → 1887.
 - p. 55 : six porte-greffes dominants avec le gravesac → en surfaces de vignes mères 2025, c'est le 41 B qui est 6e (110 R, SO4, fercal, 3309 C, 140 Ru, 41 B ≈ 70 %) ; le gravesac est 8e.
 - p. 55 : « 99 % » des porte-greffes issus de trois clones (Walker) → 39 % du fonds génétique de 36 porte-greffes vient de trois pieds (Riaz et al., Theoretical and Applied Genetics, 2019, cosigné par Walker).
-- p. 58 : machine à greffer oméga « du pépiniériste allemand Wagner » → brevet US 3 969 843 déposé en 1975 par Eugen et Hans Wahler (Weinstadt).
 - p. 67 : Ceps Sicavac « depuis 2010 » → sélection 2005-2012, structure créée en 2014.
 - p. 68 : anthracnose rangée parmi les maladies venues d'Amérique → d'origine européenne (IFV Occitanie, ePhytia INRAE).
 - p. 70 : Éloge de la plante (Hallé) « 2014 » → 1re édition 1999.
@@ -46,7 +45,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 52 : rôle de Pulliat dans la greffe (absent des sources lues).
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
-- p. 61 : hypothèse d'Alain Carbonneau sur la greffe et le merlot (introuvable hors du livre).
+- p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
 - p. 64-66 : clones 76, 95, 96 = 50 % du chardonnay ; droits de la massale limités au propre vignoble ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
 
 ## Confirmés après vérification (le livre avait raison)

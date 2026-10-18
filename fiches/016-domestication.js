@@ -18,7 +18,7 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "La parenté du cabernet sauvignon a été prouvée en {{1997}} par analyse {{ADN}}." } }
     ],
     status: "needs_review",
-    to_check: ["Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base","Présence au XVIIe siècle : UC Davis seul ; une autre source situe la première mention écrite vers 1775 (« Petit Cabernet », Libourne)"],
+    to_check: ["Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base","Présence au XVIIe siècle : UC Davis seul ; une autre source situe la première mention écrite vers 1775 (« Petit Cabernet », Libourne)","Débourrement : « trois semaines après le chasselas » dans la synthèse, « deux semaines » dans l’exercice ; écart à trancher"],
     src: "Mille Vignes, P. Lepeltier ; UC Davis (1997) ; Plantgrape (IFV-INRAE), fiche Cabernet-Sauvignon ; FranceAgriMer, liste des clones agréés (mars 2026) ; OIV, Focus 2017 ; JancisRobinson, The world’s favourite grapes",
     page: 27
   },
@@ -935,7 +935,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon IVES Technical Reviews, 2024 ; 130 selon Lepeltier)"],
-    src: "Mille Vignes, P. Lepeltier ; PIWI International (FAQ) ; arrêté du 19 avril 2017 (variétés classées) ; IVES Technical Reviews (2023) ; Vitisphere ; Wein.plus ; IVES Technical Reviews (2024) ; OIV, résolution VITI 2/94",
+    src: "Mille Vignes, P. Lepeltier ; PIWI International (FAQ) ; arrêté du 19 avril 2017 (variétés classées) ; Vitisphere ; Wein.plus ; IVES Technical Reviews (2024)",
     page: 36
   },
   {
