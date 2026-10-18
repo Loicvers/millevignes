@@ -47,7 +47,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
 - p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
-- p. 64-66 : droits de la massale limités au propre vignoble ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
+- p. 64-66 : droits de la massale limités au propre vignoble (l’arrêté du 17 juin 2020 prévoit seulement des pépinières privées réservées à l’exploitation) ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).

@@ -773,7 +773,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Sélection massale contre sélection clonale",
-    synth: "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; selon Lepeltier, le vigneron n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
+    synth: "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; le vigneron peut multiplier ses plants dans une « pépinière privée » réservée à sa propre exploitation et déclarée à FranceAgriMer, à partir de vignes-mères inscrites (arrêté du 17 juin 2020) ; Lepeltier en conclut qu’il n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
     mnemo: "Clonale = un champion photocopié ; massale = une équipe entière.",
     flash: { q: "Quel est le but principal d’une sélection massale ?", a: "Préserver la diversité génétique de vieilles vignes adaptées à leur lieu." },
     qcm: { q: "Une vigne issue de sélection massale est-elle génétiquement un clone ?", opts: ["Non, elle vient de semis", "Oui, chaque plant est multiplié par voie végétative", "Seulement si elle est greffée sur riparia", "Seulement en bio"], good: 1 },
@@ -782,8 +782,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque sélection à sa logique.", payload: { pairs: [["Clonale", "Un individu sélectionné, assaini, diffusé largement"], ["Massale", "Une population de ceps, diversité conservée"]] } }
     ],
     status: "needs_review",
-    to_check: ["Règle de propriété de la massale : aucun texte officiel trouvé (arrêté du 17 juin 2020 et son annexe non lus)"],
-    src: "Mille Vignes, P. Lepeltier, p. 64-66",
+    to_check: ["Droits limités au propre vignoble (Lepeltier) : l’arrêté du 17 juin 2020 (art. 4, lu) prévoit la pépinière privée réservée à l’exploitation, sans interdire qu’une sélection massale soit multipliée par un pépiniériste en catégorie standard"],
+    src: "Arrêté du 17 juin 2020 relatif aux matériels de multiplication végétative de la vigne (JO du 21 juin 2020), art. 4 ; Mille Vignes, P. Lepeltier, p. 64-66",
     page: 65
   },
   {
