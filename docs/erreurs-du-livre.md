@@ -66,6 +66,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 34 : hybridation : castration, pollinisation au pinceau, ensachage (IFV, Frontiers 2025) ; quatre pépins au plus, la fleur ayant quatre ovules (UC ANR, Frontiers 2019).
 - p. 46 : dix formes de baies dans la liste OIV (descripteur 223).
 - p. 52 : association des vignerons francs de pied constituée en juin 2021 (Decanter, Réussir Vigne), lancée publiquement fin 2022.
+- p. 29 : ugni blanc en 3e époque (Le Vignoble, t. II, 1876-1877 : « troisième époque un peu tardive ») ; grenache noir en 3e époque (t. III, 1878-1879).
 - p. 29 : 16 écogéogroupes de Bisson (J. Int. Sci. Vigne Vin, 1999) : douze groupes numérotés et quatre groupes rattachés.
 - p. 64 : clones 76, 95 et 96 ≈ la moitié du chardonnay : 47 ha sur 95 de vignes-mères de greffons certifiées en 2017 (FranceAgriMer ; une seule source).
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).
