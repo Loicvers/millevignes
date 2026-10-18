@@ -543,7 +543,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les éco-géogroupes des cépages français (Levadoux, Bisson)",
-    synth: "En 1948, Louis Levadoux prolonge Negrul pour l’Europe de l’Ouest avec les « sortotypes » : des familles de cépages nées et évoluées dans un même milieu. Son élève Jean Bisson poursuit ce travail (article de 1999), appuyé ensuite sur l’ADN, et propose, selon Lepeltier, 16 groupes pour la France, chacun nommé d’après son cépage le plus représentatif : noiriens (pinot), carmenets (cabernet franc), salvaniens (savagnin), sérines (syrah), mansiens (petit manseng), messiles, folles, cots… Certains restent très localisés (mansiens, noiriens), d’autres se sont dispersés avec les hommes (carmenets).",
+    synth: "En 1948, Louis Levadoux prolonge Negrul pour l’Europe de l’Ouest avec les « sortotypes » : des familles de cépages nées et évoluées dans un même milieu. Son élève Jean Bisson poursuit ce travail (article de 1999), appuyé ensuite sur l’ADN, et propose 16 groupes pour la France (douze groupes numérotés et quatre groupes rattachés : tressots, calitors, pelorsiens, courbuts), chacun nommé d’après son cépage le plus représentatif : noiriens (pinot), carmenets (cabernet franc), salvaniens (savagnin), sérines (syrah), mansiens (petit manseng), messiles, folles, cots… Certains restent très localisés (mansiens, noiriens), d’autres se sont dispersés avec les hommes (carmenets).",
     mnemo: "Chaque famille porte le nom de son chef : Noiriens = pinot noir, Salvaniens = savagnin, Sérines = syrah (sérine, son vieux nom).",
     flash: { q: "Qu’est-ce qu’un éco-géogroupe (sortotype) ?", a: "Une famille de cépages apparentés, nés et évolués dans un même milieu, nommée d’après son cépage le plus représentatif (ex. noiriens autour du pinot)." },
     qcm: { q: "Autour de quel cépage s’organise le groupe des carmenets ?", opts: ["Le pinot noir", "Le cabernet franc", "Le petit manseng", "La syrah"], good: 1 },
@@ -553,8 +553,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel élève de Levadoux a publié et poursuivi ses travaux sur les éco-géogroupes ?", payload: { accepted: ["Jean Bisson", "Bisson"] } }
     ],
     status: "needs_review",
-    to_check: ["Nombre de groupes (16) : chiffre de Lepeltier, absent du résumé de l’article de Bisson (1999)"],
-    src: "Mille Vignes, P. Lepeltier ; J. Bisson, Essai de classement des cépages français en écogéogroupes phénotypiques (OENO One / JISVV)",
+    to_check: ["Bisson élève de Levadoux et prolongement par l’ADN : non vérifiés (l’article de 1999 est morphologique et se présente comme une base de comparaison pour les analyses génétiques)"],
+    src: "Mille Vignes, P. Lepeltier ; J. Bisson, Essai de classement des cépages français en écogéogroupes phénotypiques (OENO One / JISVV) ; article lu : J. Int. Sci. Vigne Vin, 1999, 33, n° 3, p. 105-110",
     page: 29
   },
   {
@@ -564,7 +564,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Sud-Ouest", appel: null },
     titre: "La magdeleine noire des Charentes, mère du merlot",
-    synth: "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; quatre pieds identiques sont ensuite repérés en Charente, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur de près de 120 cépages européens (Lacombe, 2013), elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies. Elle intéresse aussi la recherche sanitaire : le merlot est peu sensible à la flavescence dorée, et des croisements menés par l’INRAE de Bordeaux suggèrent que sa mère transmet une moindre sensibilité à la maladie, sans qu’aucune vigne n’en soit réellement indemne.",
+    synth: "On savait le merlot fils du cabernet franc, mais sa mère restait inconnue. Une très vieille souche trouvée à Saint-Suliac (Bretagne) se révèle être une V. vinifera inconnue ; le même génotype est ensuite identifié en quatre lieux des Charentes, d’où son nom. En 2009, l’équipe de Jean-Michel Boursiquot montre qu’elle est la mère du merlot (avec le cabernet franc) et du côt (avec le prunelard). Comme le gouais blanc, géniteur de près de 120 cépages européens (Lacombe, 2013), elle illustre ces cépages « patrimoniaux » disparus des vignes mais clés dans les généalogies. Elle intéresse aussi la recherche sanitaire : le merlot est peu sensible à la flavescence dorée, et des croisements menés par l’INRAE de Bordeaux suggèrent que sa mère transmet une moindre sensibilité à la maladie, sans qu’aucune vigne n’en soit réellement indemne.",
     mnemo: "Merlot = Cab franc + Magdeleine : le « M » du merlot vient de sa mère Magdeleine. Le côt est son demi-frère.",
     flash: { q: "Qui sont les parents du merlot ?", a: "Le cabernet franc et la magdeleine noire des Charentes (identifiée en 2009 par Boursiquot et al.)." },
     qcm: { q: "Avec quel cépage la magdeleine noire a-t-elle donné le côt (malbec) ?", opts: ["Le cabernet franc", "Le prunelard", "Le gouais blanc", "Le tannat"], good: 1 },
@@ -577,7 +577,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Année de découverte de la souche de Saint-Suliac : 1992, 1996 ou 2004 selon les sources", "Faible sensibilité à la flavescence dorée transmise par la magdeleine : résultat préliminaire (poster INRAE, 2025)"],
-    src: "Mille Vignes, P. Lepeltier ; Boursiquot et al., Australian Journal of Grape and Wine Research 15, 2009 ; Bécédia ; JancisRobinson.com (2008) ; Malembic-Maher et al., INRAE Bordeaux, poster SFP 2025",
+    src: "Mille Vignes, P. Lepeltier ; Boursiquot et al., Australian Journal of Grape and Wine Research 15, 2009 ; Bécédia ; JancisRobinson.com (2008) ; Malembic-Maher et al., INRAE Bordeaux, poster SFP 2025 ; résumé de Boursiquot et al. (2009) lu : premier prélèvement dans le nord de la Bretagne, quatre lieux en Charentes",
     page: 27
   },
   {

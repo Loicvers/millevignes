@@ -37,7 +37,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 41-67 : riesling 125 / tannat 440 fleurs, greffe sur 0,5 % des surfaces en 1863, hypothèse Carbonneau sur le merlot, porte-greffe riparia gloire et 10-15 hl/ha aux Bournais.
 - p. 29 : classement de Pulliat daté de 1879 (seule l'édition de 1888 a été lue).
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
-- p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024).
+- p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024 ; taux de reprise de 65 % en 2016 et 69 % en 2017 selon FranceAgriMer, 60 à 65 % en année normale selon Vitisphere, soit environ un tiers de pertes).
 - p. 41 : un semis forme une racine pivotante, une bouture des racines traçantes (non retrouvé ; UC Davis lie l'angle des racines au porte-greffe).
 - p. 45-48 : millerandage des millésimes 1978 et 1995 chez Jayer, sucres « de 1 à 20 % en quarante jours », grappes de 5 à 50 cm et 100 à 500 g, liste des pinots de Galet.
 - p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
@@ -47,7 +47,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 57 : greffage sur table inventé en 1878 (aucune source).
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
 - p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
-- p. 64-66 : clones 76, 95, 96 = 50 % du chardonnay ; droits de la massale limités au propre vignoble ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
+- p. 64-66 : droits de la massale limités au propre vignoble ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -66,4 +66,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 34 : hybridation : castration, pollinisation au pinceau, ensachage (IFV, Frontiers 2025) ; quatre pépins au plus, la fleur ayant quatre ovules (UC ANR, Frontiers 2019).
 - p. 46 : dix formes de baies dans la liste OIV (descripteur 223).
 - p. 52 : association des vignerons francs de pied constituée en juin 2021 (Decanter, Réussir Vigne), lancée publiquement fin 2022.
+- p. 29 : 16 écogéogroupes de Bisson (J. Int. Sci. Vigne Vin, 1999) : douze groupes numérotés et quatre groupes rattachés.
+- p. 64 : clones 76, 95 et 96 ≈ la moitié du chardonnay : 47 ha sur 95 de vignes-mères de greffons certifiées en 2017 (FranceAgriMer ; une seule source).
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).

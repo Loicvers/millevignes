@@ -552,7 +552,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Dates : 3309 C (1881), 101-14 et 41 B (1882), 110 R (1902) confirmées par le VIVC ; 140 Ru : 1894 (Plantgrape) contre 1896 (VIVC) ; SO4 sélectionné en 1919 : une seule source","Période de création : Lepeltier (1869-1902) et Riaz et al. 2019 (années 1890 à 1930 pour les plus importants) divergent ; résumé de l’article lu, texte intégral non lu"],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026) ; VIVC, fiches passeport des porte-greffes",
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; INRAE, CRB Vigne de Vassal (FAIDARE), fiche SO 4 ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025 ; FranceAgriMer, Catalogue officiel, liste A (sept. 2026) ; VIVC, fiches passeport des porte-greffes ; FAIDARE (CRB Vigne de Vassal), SO4 (Teleki), berlandieri × riparia",
     page: 55
   },
   {
@@ -730,7 +730,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "La sélection clonale en France",
-    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée par indexage (greffée sur une variété indicatrice qui révèle les virus), complété par des tests ELISA ou PCR, et son identité est vérifiée par marqueurs ADN. Elle est ensuite suivie au vignoble au moins cinq ans, avec au moins trois années de vinifications, puis agréée après avis de la section vigne du CTPS : une quinzaine d’années en tout. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 recense environ 1 240 clones de 392 variétés (Lepeltier : 1 350 clones de 380 variétés en 2022), dont 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet.",
+    synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée par indexage (greffée sur une variété indicatrice qui révèle les virus), complété par des tests ELISA ou PCR, et son identité est vérifiée par marqueurs ADN. Elle est ensuite suivie au vignoble au moins cinq ans, avec au moins trois années de vinifications, puis agréée après avis de la section vigne du CTPS : une quinzaine d’années en tout. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 recense environ 1 240 clones de 392 variétés (Lepeltier : 1 350 clones de 380 variétés en 2022), dont 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet. En 2017, trois clones de chardonnay (76, 95 et 96) occupaient à eux seuls environ la moitié des vignes-mères de greffons certifiées de ce cépage (47 ha sur 95).",
     mnemo: "Un clone, c’est quinze ans d’examens avant d’avoir son diplôme (l’agrément).",
     flash: { q: "En quelle année la sélection clonale démarre-t-elle en France ?", a: "En 1962 (ANTAV, aujourd’hui IFV)." },
     qcm: { q: "Quel virus a motivé la sélection sanitaire des plants ?", opts: ["Le court-noué (GFLV)", "La flavescence dorée", "Le mildiou", "L’oïdium"], good: 0 },
@@ -741,9 +741,9 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque cépage à son nombre de clones agréés (liste de mars 2026).", payload: { pairs: [["Pinot noir", "48"], ["Chardonnay", "31"], ["Riesling", "8"], ["Gringet", "1"]] } },
       { type: "short_answer", prompt: "Sur quel domaine se trouve le conservatoire national de l’IFV ?", payload: { accepted: ["Espiguette", "l’Espiguette", "domaine de l’Espiguette", "l'Espiguette"] } }
     ],
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016) ; IVES/OIV 2024 (Audeguin)",
+    status: "needs_review",
+    to_check: ["Clones 76, 95, 96 ≈ moitié du chardonnay : une seule source (FranceAgriMer, chiffres de la pépinière 2017, tableau 17) et mesuré en surfaces de vignes-mères de greffons, pas en plants vendus"],
+    src: "Mille Vignes, P. Lepeltier, p. 64-65 ; IFV, What is clonal selection ; IFV, plaquette sélection clonale ; IFV, Court-noué ; GEVES, inscription des variétés de vigne ; FranceAgriMer, liste des clones de vigne agréés (mars 2026) ; FranceAgriMer, Règlement technique de sélection clonale (2016) ; IVES/OIV 2024 (Audeguin) ; FranceAgriMer, Les chiffres de la pépinière viticole (2017)",
     page: 64
   },
   {
@@ -793,7 +793,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Fabriquer un greffé-soudé en pépinière",
-    synth: "Le pépiniériste cultive sur parcelles agréées des vignes mères de porte-greffes (2 045 ha en France en 2025, en net recul) et de greffons (1 592 ha en 2025). Les bois prélevés en hiver sont greffés, paraffinés, puis placés en stratification, au chaud et à l’humidité (vers 28 °C, 10 à 25 jours selon l’IFV), jusqu’à formation d’un cal. Les plants passent ensuite une saison en pépinière de plein champ, sont arrachés à l’automne et triés : la soudure doit résister à la pression du pouce.",
+    synth: "Le pépiniériste cultive sur parcelles agréées des vignes mères de porte-greffes (2 045 ha en France en 2025, en net recul) et de greffons (1 592 ha en 2025). Les bois prélevés en hiver sont greffés, paraffinés, puis placés en stratification, au chaud et à l’humidité (vers 28 °C, 10 à 25 jours selon l’IFV), jusqu’à formation d’un cal. Les plants passent ensuite une saison en pépinière de plein champ, sont arrachés à l’automne et triés : la soudure doit résister à la pression du pouce. Tous ne passent pas le tri : FranceAgriMer estime le taux de reprise moyen en pépinière traditionnelle à 65 % en 2016 et 69 % en 2017, et Vitisphere situe une année normale entre 60 et 65 %.",
     mnemo: "Greffer, cirer, couver, planter, trier : le plant passe un an en nursery.",
     flash: { q: "Qu’est-ce que la stratification d’un greffé-soudé ?", a: "Un séjour au chaud et à l’humidité (vers 28 °C) jusqu’à la formation du cal de soudure." },
     qcm: { q: "Combien de temps dure la stratification selon l’IFV ?", opts: ["Une heure", "10 à 25 jours", "Six mois", "Deux ans"], good: 1 },
@@ -803,7 +803,7 @@ FICHES.push(
     ],
     status: "verified",
     to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 66-67 ; IFV, La production de plants de vigne en pépinières ; FranceAgriMer, chiffres clés FFPV 2025 ; Vitisphere (2024) ; Vitisphere (taux de reprise au greffage)",
+    src: "Mille Vignes, P. Lepeltier, p. 66-67 ; IFV, La production de plants de vigne en pépinières ; FranceAgriMer, chiffres clés FFPV 2025 ; Vitisphere (2024) ; Vitisphere (taux de reprise au greffage) ; FranceAgriMer, Les chiffres de la pépinière viticole (2017), tableau 24",
     page: 66
   },
   {
@@ -844,7 +844,7 @@ FICHES.push(
     ],
     status: "verified",
     to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola ; ePhytia (INRAE), anthracnose ; Ohio State University, Ohioline",
+    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola ; ePhytia (INRAE), anthracnose ; Ohio State University, Ohioline ; Li et al., Molecular Plant Pathology 22 (2021) : maladie originaire d’Europe",
     page: 68
   },
   {
