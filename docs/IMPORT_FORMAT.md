@@ -3,7 +3,7 @@
 *Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md` et `fiche-modele-complete.js`.*
 *Contrôle : `node tools/validate.mjs mon-lot.json` (affiche les erreurs, ou l'aperçu de l'import).*
 
-**Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier, ajout par `FICHES.push(...)` ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, pose les pastilles (`status`, `to_check`), puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé, à ne jamais modifier ni lire : il sert à la validation.
+**Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier, ajout par `FICHES.push(...)` ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, pose les pastilles (`status`, `to_check`), puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé et non versionné, à ne jamais modifier ni lire : il sert à la validation (GitHub relance les contrôles à chaque push).
 
 ## Fiche du site (fiches/*.js)
 
