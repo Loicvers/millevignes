@@ -416,7 +416,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Provence", appel: null },
     titre: "La découverte du phylloxéra (1868)",
-    synth: "Les premiers dépérissements apparaissent en France vers 1863 (Gard). Le 15 juillet 1868, Jules-Émile Planchon, Gaston Bazille et Félix Sahut découvrent un puceron sur les racines de vignes mourantes en Provence ; Planchon le nomme Rhizaphis vastatrix, puis Phylloxera vastatrix. L’Américain Riley confirme qu’il s’agit de l’insecte décrit en 1855 par Asa Fitch (Pemphigus vitifoliae). Son nom valide est aujourd’hui Daktulosphaira vitifoliae. Lepeltier attribue le nom vastatrix à Victor Signoret : celui-ci a surtout rattaché l’insecte au genre Phylloxera.",
+    synth: "Les premiers dépérissements apparaissent en France vers 1863 (Gard). Le 15 juillet 1868, Jules-Émile Planchon, Gaston Bazille et Félix Sahut découvrent un puceron sur les racines de vignes mourantes près de Saint-Rémy-de-Provence, où le maire les avait appelés ; Planchon le nomme Rhizaphis vastatrix, puis Phylloxera vastatrix quand il voit éclore la forme ailée, le 28 août 1868. L’Américain Riley confirme qu’il s’agit de l’insecte décrit en 1855 par Asa Fitch (Pemphigus vitifoliae). Son nom valide est aujourd’hui Daktulosphaira vitifoliae. Lepeltier attribue le nom vastatrix à Victor Signoret : celui-ci a surtout rattaché l’insecte au genre Phylloxera.",
     mnemo: "1868, l’année où trois Montpelliérains ont regardé sous la vigne.",
     flash: { q: "Qui identifie le phylloxéra sur des racines en 1868 ?", a: "Planchon, Bazille et Sahut (15 juillet 1868)." },
     qcm: { q: "Quel est le nom scientifique valide du phylloxéra aujourd’hui ?", opts: ["Phylloxera vastatrix", "Daktulosphaira vitifoliae", "Plasmopara viticola", "Rhizaphis vastatrix"], good: 1 },
@@ -426,8 +426,8 @@ FICHES.push(
       { type: "short_answer", prompt: "En quelle année le phylloxéra est-il identifié en France ?", payload: { accepted: ["1868"] } }
     ],
     status: "needs_review",
-    to_check: ["Lieu de la découverte : Saint-Rémy-de-Provence (château de Lagoy) ou Saint-Martin-de-Crau selon les sources.", "Premiers symptômes dans le Gard en 1863 : confirmé par INRAE ; localité de Pujaut : une seule source.", "Daktulosphaira vitifoliae « nom officiel depuis 1974 » : correspond à Russell (1974/1975), une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; INRAE, Delmotte et al., Invasions et vigne (HAL)",
+    to_check: ["Lieu : environs de Saint-Rémy-de-Provence confirmés (récit de Planchon, 1874, repris par Foëx, 1888 ; IRD) ; le domaine précis (château de Lagoy selon certaines sources) n’est pas nommé.", "Premiers symptômes dans le Gard en 1863 : confirmé par INRAE ; localité de Pujaut : une seule source.", "Daktulosphaira vitifoliae « nom officiel depuis 1974 » : correspond à Russell (1974/1975), une seule source."],
+    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; G. Foëx, J.-É. Planchon, 1888 (Gallica), citant Planchon, Revue des Deux Mondes, 1874 ; IRD, Histoire de l’installation de quelques ravageurs ; INRAE, Delmotte et al., Invasions et vigne (HAL)",
     page: 50
   },
   {
@@ -487,7 +487,7 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Lucien Daniel jugeait que la greffe conservait intégralement les caractères des vignes françaises.", answer: false }, explanation: "Il contestait cette thèse des américanistes et demandait plus d’expérimentation." }
     ],
     status: "needs_review",
-    to_check: ["Rôle de Laliman (greffe dès 1869, forme gallicole) et de Pulliat : non vérifié.", "Lucien Daniel (1856-1940), rapport de 1908 : une seule source (Wikipédia).", "« Greffe sur 0,5 % des surfaces en 1863 » (Lepeltier) : aucune source, retiré."],
+    to_check: ["Laliman : retrouve en juillet 1869, à Bordeaux, les galles sur des vignes américaines (récit de Planchon, cité par Foëx, 1888) ; sa greffe dès 1869 et le rôle de Pulliat restent non vérifiés.", "Lucien Daniel (1856-1940), rapport de 1908 : une seule source (Wikipédia).", "« Greffe sur 0,5 % des surfaces en 1863 » (Lepeltier) : aucune source, retiré."],
     src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel",
     page: 51
   },
