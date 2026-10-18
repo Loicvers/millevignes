@@ -1708,13 +1708,13 @@
         "appel": null
       },
       "titre": "L’âge d’or des hybrideurs français",
-      "synth": "De la fin du XIXe siècle au milieu du XXe, des hybrideurs privés français créent des dizaines de milliers d’HPD. Albert Seibel en obtient plus de 16 000 (chancellor, rayon d’or) ; François Baco crée le baco blanc (baco 22 A, folle blanche × noah) ; Eugène Kuhlmann, à Colmar, le maréchal foch et le léon millot ; les Seyve et Villard le seyval et le chambourcin. Le baco blanc figure toujours dans l’encépagement de l’AOC Armagnac, cas unique d’hybride ancien en AOC.",
+      "synth": "De la fin du XIXe siècle au milieu du XXe, des hybrideurs privés français créent des dizaines de milliers d’HPD. Albert Seibel en obtient plus de 16 000 (chancellor, rayon d’or) ; François Baco crée le baco blanc (baco 22 A, folle blanche × noah) ; Eugène Kuhlmann, à Colmar, le maréchal foch et le léon millot ; Bertille Seyve, aux établissements Seyve-Villard (Drôme), le seyval dans les années 1920, et Joannès Seyve le chambourcin. Le baco blanc figure toujours dans l’encépagement de l’AOC Armagnac, cas unique d’hybride ancien en AOC.",
       "mnemo": "Baco reste au bar de l’Armagnac : le seul vieux hybride à avoir gardé sa place en AOC.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 35,
-          "note": "Mille Vignes, P. Lepeltier ; INAO, cahier des charges AOC Armagnac (arrêté du 27/03/2025) ; Wine Grapes (2012) ; Wikipédia (Albert Seibel, Baco blanc)",
+          "note": "Mille Vignes, P. Lepeltier ; INAO, cahier des charges AOC Armagnac (arrêté du 27/03/2025) ; Wine Grapes (2012) ; VIVC n° 11558 (Seyval blanc) ; Crescentis n° 8, 2025 (Moureu) ; Wikipédia (Albert Seibel, Baco blanc)",
           "partie": "Lire la vigne",
           "section": "Domestication",
           "chapitre": "L’hybridation : passé, présent et futur de la vigne"
@@ -1722,8 +1722,7 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "Périodisation 1878-1950 des HPD : découpage de Lepeltier",
-        "Attribution du seyval (Bertille Seyve ou Victor Villard) : sources divergentes"
+        "Périodisation 1878-1950 : convention d’auteur (1878 = arrivée du mildiou ; Millardet et de Grasset croisent dès 1879)"
       ],
       "cours": null,
       "schema": null,
@@ -1771,13 +1770,13 @@
       "niveau": "Intermédiaire",
       "geo": null,
       "titre": "Le déclin des hybrides en France, l’essor du froid ailleurs",
-      "synth": "Après 1950, les produits phytosanitaires, la montée des AOC et la qualité médiocre des hybrides rouges changent la donne : l’État restreint la plantation des HPD et les déclasse progressivement, alors qu’ils avaient dépassé 400 000 ha à leur apogée. L’hybridation recule en France mais continue en Europe de l’Est et dans les pays froids. Le rondo, obtenu en Tchécoslovaquie puis développé à Geisenheim (Allemagne), et le cayuga blanc, diffusé par l’université Cornell (État de New York) en 1972, sont autorisés en vinification dans leur pays. Lepeltier avance 402 000 ha et 32 % du vignoble au milieu des années 1950 : chiffres non retrouvés tels quels, les estimations publiées allant d’environ 30 % du vignoble (1938) à la moitié (années 1950).",
+      "synth": "Après 1950, les produits phytosanitaires, la montée des AOC et la qualité médiocre des hybrides rouges changent la donne : le décret du 30 septembre 1953 (code du vin) distingue cépages recommandés, autorisés et provisoirement tolérés, interdit de planter ces derniers et organise l’arrachage des six cépages prohibés ; les hybrides sont ensuite déclassés peu à peu, alors qu’ils couvraient encore environ 400 000 ha en 1958. L’hybridation recule en France mais continue en Europe de l’Est et dans les pays froids. Le rondo, obtenu en Tchécoslovaquie puis développé à Geisenheim (Allemagne), et le cayuga blanc, diffusé par l’université Cornell (État de New York) en 1972, sont autorisés en vinification dans leur pays. Lepeltier avance 402 000 ha et 32 % du vignoble au milieu des années 1950 : chiffres non retrouvés tels quels, le cadastre viticole de 1958 comptant 1,38 million d’hectares, 402 000 ha en représenteraient 29 %.",
       "mnemo": "Quand la France arrache ses hybrides, le froid les adopte : Geisenheim, Cornell, Minnesota.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 35,
-          "note": "Mille Vignes, P. Lepeltier ; Réussir Vigne (un vignoble en perpétuelle évolution) ; JancisRobinson.com (Cayuga White) ; Wine Grapes (Rondo)",
+          "note": "Mille Vignes, P. Lepeltier ; Légifrance, décret n° 53-977 du 30 septembre 1953 ; Geographia Polonica n° 29, 1974 (cadastre viticole 1958) ; ICV (2013) ; Réussir Vigne (un vignoble en perpétuelle évolution) ; JancisRobinson.com (Cayuga White) ; Wine Grapes (Rondo)",
           "partie": "Lire la vigne",
           "section": "Domestication",
           "chapitre": "L’hybridation : passé, présent et futur de la vigne"
@@ -1785,8 +1784,8 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "Étapes de l’encadrement des HPD après 1950 (décrets successifs) : non vérifiées dans les textes officiels",
-        "Surface des HPD : plus de 400 000 ha au plus fort ; année et part du vignoble non établies (statistiques officielles non consultées)",
+        "Classement régional des cépages de 1955 et déclassement progressif des hybrides : textes non identifiés",
+        "Surface des HPD en 1958 (environ 400 000 ha, près de 30 %) : chiffre repris par l’ICV et la presse sans source officielle ; publications de l’IVCC et Bulletin de l’OIV non consultés",
         "Rôle de l’université du Minnesota cité par Lepeltier : non vérifié"
       ],
       "cours": null,
