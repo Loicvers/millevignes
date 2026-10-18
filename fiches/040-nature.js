@@ -193,7 +193,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "Grèce", region: "Santorin", appel: null },
     titre: "Santorin et la conduite en kouloura",
-    synth: "Sur l’île volcanique de Santorin, née de l’éruption minoenne il y a environ 3 600 ans, la vigne est traditionnellement enroulée en couronne au ras du sol (kouloura), ce qui protège les grappes du vent et du soleil et capte l’humidité nocturne sur une île presque sans pluie. Le phylloxéra ne prospère pas dans ces sols volcaniques : les ceps, francs de pied, sont très vieux ; quand un pied faiblit, on recrée la souche sur les mêmes racines. L’assyrtiko domine l’encépagement.",
+    synth: "Sur l’île volcanique de Santorin, née de l’éruption minoenne il y a environ 3 600 ans, la vigne est traditionnellement enroulée en couronne au ras du sol (kouloura), ce qui protège les grappes du vent et du soleil et capte l’humidité nocturne sur une île presque sans pluie. Le phylloxéra ne prospère pas dans ces sols volcaniques : les ceps, francs de pied, sont très vieux ; quand un pied faiblit, on recrée la souche sur les mêmes racines. L’assyrtiko domine l’encépagement. Le document unique de l’AOP (2021) compte environ 1 200 ha de vignes, francs de pied, avec un rendement plafonné à 50 hl/ha ; la presse récente parle plutôt d’environ 1 000 ha (2025).",
     mnemo: "Une couronne de Noël posée sur la cendre : la kouloura garde la grappe à l’ombre.",
     flash: { q: "Pourquoi les vignes de Santorin sont-elles franches de pied ?", a: "Le phylloxéra ne prospère pas dans les sols volcaniques de l’île." },
     qcm: { q: "Quel cépage blanc domine à Santorin ?", opts: ["Assyrtiko", "Xinomavro", "Agiorgitiko", "Moschofilero"], good: 0 },
@@ -202,8 +202,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Comment s’appelle la conduite en corbeille au ras du sol de Santorin ?", payload: { accepted: ["kouloura", "koulouri", "kouloures", "koulouras"] } }
     ],
     status: "needs_review",
-    to_check: ["Superficie du vignoble : 1 000 à 1 200 ha selon les sources (presse, Karakasis MW), aucune donnée officielle ; chiffre retiré.", "Subventions de l’UE à la conduite traditionnelle : non trouvé."],
-    src: "Mille Vignes, P. Lepeltier, p. 44 ; Robert Parker Wine Advocate, Santorini ; Around the World in 80 Harvests (2021) ; Friedrich et al., Science, 2006 ; Cherubini et al., Antiquity, 2014",
+    to_check: ["Subventions de l’UE à la conduite traditionnelle : non trouvé."],
+    src: "Mille Vignes, P. Lepeltier, p. 44 ; Document unique de l’AOP Santorini (ministère grec du Développement rural, 2021) ; Decanter (2025) ; Robert Parker Wine Advocate, Santorini ; Around the World in 80 Harvests (2021) ; Friedrich et al., Science, 2006 ; Cherubini et al., Antiquity, 2014",
     page: 44
   },
   {
