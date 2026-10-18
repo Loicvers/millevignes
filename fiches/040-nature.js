@@ -498,17 +498,18 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Loire", appel: "Montlouis-sur-Loire" },
     titre: "Franc de pied ou greffé : l’expérience Chidaine",
-    synth: "À Montlouis-sur-Loire, François Chidaine a planté sur sa parcelle des Bournais du chenin franc de pied à côté de chenin greffé, ce qui permet de comparer les deux. D’après Lepeltier, les francs de pied y sont moins vigoureux, moins sensibles aux maladies, produisent moins avec de petites baies et donnent des vins plus tendus, moins alcooleux ; le porte-greffe lisse l’effet millésime et augmente le rendement. Le domaine embouteille une cuvée Franc de Pied séparée depuis 2007. Une association européenne de vignerons francs de pied réunit, autour de Loïc Pasquet (Liber Pater ; Lepeltier écrit « Paquet »), des domaines comme Egon Müller ou Chartogne-Taillet.",
+    synth: "À Montlouis-sur-Loire, François Chidaine plante à partir de 1998, avec des sélections massales du domaine, sa parcelle des Bournais (3,99 ha, exposée au nord, argilo-calcaire sur tuffeau) : un demi-hectare y est en franc de pied, à côté du chenin greffé, ce qui permet de comparer les deux. D’après Lepeltier, les francs de pied y sont moins vigoureux, moins sensibles aux maladies, produisent moins avec de petites baies et donnent des vins plus tendus, moins alcooleux ; le porte-greffe lisse l’effet millésime et augmente le rendement. Le franc de pied est vinifié à part depuis 2007 et mis en bouteille séparément certains millésimes. Une association européenne de vignerons francs de pied réunit, autour de Loïc Pasquet (Liber Pater ; Lepeltier écrit « Paquet »), des domaines comme Egon Müller ou Chartogne-Taillet.",
     mnemo: "Même âge, même bois, deux destins : le franc de pied, c’est la vigne au régime.",
     flash: { q: "Quel vigneron (Liber Pater) est au cœur de l’association européenne des vignerons francs de pied ?", a: "Loïc Pasquet (Lepeltier écrit « Paquet »)." },
     qcm: { q: "Dans la comparaison de Chidaine, les francs de pied…", opts: ["Sont plus vigoureux", "Produisent moins, avec de plus petites baies", "Sont plus sensibles aux maladies", "Donnent des vins plus alcooleux"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, le porte-greffe tend à lisser l’effet millésime.", answer: true } },
+      { type: "mcq_single", prompt: "Quelle part des Bournais (3,99 ha) est plantée en franc de pied ?", payload: { options: ["Environ un demi-hectare", "La moitié de la parcelle", "La totalité", "Aucune : la parcelle est entièrement greffée"], answer: 0 }, explanation: "Un demi-hectare, vinifié à part depuis 2007 (La RVF)." },
       { type: "short_answer", prompt: "Quel cépage est planté franc de pied aux Bournais ?", payload: { accepted: ["chenin", "chenin blanc", "le chenin"] } }
     ],
     status: "needs_review",
-    to_check: ["Année de plantation des Bournais : 1998 (Lepeltier) ou 1999 (site du domaine cité).", "Porte-greffe riparia gloire et rendements de 10-15 hl/ha : non confirmés.", "Année de fondation de l’association (2021 selon Lepeltier) : non confirmée.", "Cuvée Franc de Pied embouteillée à part depuis 2007 : une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 52 ; Wine Berserkers (extrait du site du domaine Chidaine) ; Vert de Vin, association Francs de Pied",
+    to_check: ["Porte-greffe riparia gloire et rendements de 10-15 hl/ha : non confirmés.", "Année de fondation de l’association (2021 selon Lepeltier) : non confirmée."],
+    src: "Mille Vignes, P. Lepeltier, p. 52 ; La Revue du vin de France, Verticale du montlouis Les Bournais ; Wine Berserkers (extrait du site du domaine Chidaine) ; Vert de Vin, association Francs de Pied",
     page: 52
   },
   {
