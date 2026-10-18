@@ -10,7 +10,7 @@
 <style>
   :root{
     --ink:#16130f;--paper:#faf8f3;--paper2:#f1ede4;--line:#d9d2c4;
-    --wine:#5b1a24;--wine-soft:#7a2c38;--gold:#8a6d3b;--muted:#6b6357;
+    --wine:#5b1a24;--wine-soft:#7a2c38;--gold:#7d6233;--muted:#6b6357;
     --green:#5c7a4f;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -36,7 +36,7 @@
   .filt-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:7px}
   .filt-label .dot{width:6px;height:6px;border-radius:50%}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
-  .chip{font-size:12.5px;border:1px solid var(--line);background:var(--paper);padding:5px 11px;border-radius:40px;cursor:pointer;color:var(--ink);transition:all .15s;font-family:inherit}
+  .chip{font-size:12.5px;border:1px solid #8f8676;background:var(--paper);padding:5px 11px;border-radius:40px;cursor:pointer;color:var(--ink);transition:all .15s;font-family:inherit}
   .chip:hover{border-color:var(--gold)}
   .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   .sub-panel{margin-top:10px;padding-top:10px;border-top:1px dotted var(--line);display:none}
@@ -157,7 +157,26 @@
   .fb{margin-top:14px;font-size:14px}.fb:empty{display:none}
   .fb.good strong{color:var(--green)}.fb.bad strong{color:#8e3b3b}
   .fb-expl{margin-top:6px;color:#3a342c}.fb-src{margin-top:6px;font-family:'Cormorant',serif;font-style:italic;color:var(--muted);font-size:15px}
-  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:11.5px;padding:11px 4px}}
+  /* masterclass : programme + support imprimable */
+  .prog{border:1px solid var(--line);border-left:3px solid var(--wine);border-radius:3px;padding:18px;margin-bottom:22px}
+  .prog h2{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.15;margin-bottom:12px}
+  .prog .ex-input{margin-bottom:12px}.prog .hint{font-size:14px;color:var(--muted)}
+  .prog-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .btn.add{margin-top:12px}.btn.add.in{border-color:var(--wine);color:var(--wine);background:var(--paper2)}
+  #support{display:none}
+  @media print{
+    body>*:not(#support){display:none!important}
+    body{background:#fff;font-size:11pt}#support{display:block}
+    #support h1{font-family:'Cormorant',serif;font-size:26pt;margin-bottom:4pt}
+    .sup-sub{color:#555;margin-bottom:18pt}
+    .sup-fiche{break-inside:avoid;padding:10pt 0;border-top:1px solid #bbb}
+    .sup-fiche h2{font-family:'Cormorant',serif;font-size:16pt;margin-bottom:4pt}
+    .sup-fiche p{margin-bottom:5pt}.sup-src{font-style:italic;color:#555;font-size:9pt}
+    .sup-fiche .schema{max-width:12cm}
+  }
+  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}}
+  .tab{white-space:nowrap}
+  .stat-line{margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -168,8 +187,8 @@
   </div>
   <div class="tabs">
     <button class="tab on" data-mode="revision">Fiches</button>
-    <button class="tab" data-mode="due">Session du jour <span class="badge" id="dueBadge">0</span></button>
-    <button class="tab" data-mode="atelier">Atelier masterclass</button>
+    <button class="tab" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
+    <button class="tab" data-mode="atelier">Masterclass</button>
   </div>
 </header>
 
@@ -202,6 +221,7 @@
 
 <main><div class="wrap">
   <p class="intro" id="introLine"></p>
+  <section class="prog" id="progPanel" hidden></section>
   <div class="grid" id="grid"></div>
 </div></main>
 
@@ -211,6 +231,7 @@
   <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden> ·
   <button class="reset-all" id="resetAll">Réinitialiser toute ma progression</button>
 </footer>
+<section id="support"></section>
 
 <script src="fiches.js"></script>
 <script src="fiches/016-domestication.js"></script>
@@ -337,7 +358,8 @@ function render(){
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
   document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
-  document.getElementById('introLine').textContent= mode==='atelier'?'Filtre par thème ou région pour rassembler la matière d\'une masterclass.':'';
+  document.getElementById('introLine').textContent= mode==='atelier'?'Filtre, ajoute les fiches à ton programme, ordonne-les, puis imprime le support des participants.':'';
+  renderProg();
   document.getElementById('shown').textContent=list.length;
   document.getElementById('acq').textContent=EXOS.filter(e=>prog[e.id]).length;
   const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
@@ -370,10 +392,11 @@ function card(f){
   const chkList=chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
   const subTags=(f.sous||[]).map(s=>`<span class="sub-tag">${s}</span>`).join('');
   c.innerHTML=`
-    <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${statTag}${dueTag}</div>
+    <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${dueTag}</div>
     <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3></button>
     <p class="synth">${f.synth}</p>
     <div class="card-body">
+    ${statTag?`<div class="stat-line">${statTag}</div>`:''}
     <div class="sub-tags">${subTags}</div>
     ${schemaHTML(f)}
     ${coursHTML(f.cours)}
@@ -384,9 +407,47 @@ function card(f){
     <button class="btn train">S'entraîner — ${mine.length} exercice(s)</button>
     <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div></div>`;
   const tg=c.querySelector('.card-toggle');tg.onclick=()=>tg.setAttribute('aria-expanded',c.classList.toggle('open'));
+  if(mode==='atelier'){ // bouton visible même carte repliée
+    const add=el('button','btn add');const sync=()=>{const inP=programme.ids.includes(f.id);add.textContent=inP?'✓ Dans le programme':'Ajouter au programme';add.classList.toggle('in',inP);add.setAttribute('aria-pressed',inP);};
+    add.onclick=()=>{const i=programme.ids.indexOf(f.id);i<0?programme.ids.push(f.id):programme.ids.splice(i,1);saveProg();sync();renderProg();};
+    sync();c.querySelector('.synth').after(add);}
   const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
   c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre);
   return c;
+}
+
+/* ============ MASTERCLASS : PROGRAMME + SUPPORT ============ */
+const PRKEY='mv_programme';
+let programme=(()=>{try{return JSON.parse(localStorage.getItem(PRKEY))||{titre:'',ids:[]};}catch{return {titre:'',ids:[]};}})();
+function saveProg(){try{localStorage.setItem(PRKEY,JSON.stringify(programme));}catch{}}
+const FICHE_BY_ID=Object.fromEntries(FICHES.map(f=>[f.id,f]));
+function renderProg(){
+  const box=document.getElementById('progPanel');box.hidden=mode!=='atelier';if(box.hidden)return;
+  programme.ids=programme.ids.filter(id=>FICHE_BY_ID[id]); // fiche supprimée du dépôt : on l'oublie
+  box.innerHTML='';box.append(el('h2',null,'Programme de la masterclass'));
+  const t=el('input','ex-input');t.placeholder='Titre de la masterclass';t.setAttribute('aria-label','Titre de la masterclass');t.value=programme.titre;t.oninput=()=>{programme.titre=t.value;saveProg();};box.append(t);
+  const ids=programme.ids;
+  if(!ids.length){box.append(el('p','hint','Aucune fiche pour l\'instant : touche « Ajouter au programme » sur les fiches ci-dessous.'));return;}
+  const list=el('ol','order');
+  ids.forEach((id,i)=>{const li=el('li','order-item');li.append(el('span',null,FICHE_BY_ID[id].titre));
+    const up=el('button','mini','↑'),dn=el('button','mini','↓'),rm=el('button','mini','×');
+    up.setAttribute('aria-label','Monter '+FICHE_BY_ID[id].titre);dn.setAttribute('aria-label','Descendre '+FICHE_BY_ID[id].titre);rm.setAttribute('aria-label','Retirer '+FICHE_BY_ID[id].titre);
+    up.disabled=!i;dn.disabled=i===ids.length-1;
+    const mv=j=>{[ids[i],ids[j]]=[ids[j],ids[i]];saveProg();renderProg();};
+    up.onclick=()=>mv(i-1);dn.onclick=()=>mv(i+1);rm.onclick=()=>{ids.splice(i,1);saveProg();render();};
+    li.append(up,dn,rm);list.append(li);});
+  box.append(list);
+  const acts=el('div','prog-actions'),pr=el('button','btn primary','Imprimer le support (PDF)'),clr=el('button','btn','Vider le programme');
+  pr.onclick=printSupport;clr.onclick=()=>{if(confirm('Retirer toutes les fiches du programme ?')){programme.ids=[];saveProg();render();}};
+  acts.append(pr,clr);box.append(acts);
+}
+function printSupport(){
+  const s=document.getElementById('support'),fs=programme.ids.map(id=>FICHE_BY_ID[id]);s.innerHTML='';
+  s.append(el('h1',null,programme.titre||'Masterclass'),el('p','sup-sub',`L'Atelier des Mille Vignes — ${fs.length} fiche(s)`));
+  fs.forEach(f=>{const a=el('article','sup-fiche');
+    a.innerHTML=`<h2>${f.titre}</h2><p>${f.synth}</p>${schemaHTML(f)}<p><b>Astuce mémo : </b>${f.mnemo}</p><p class="sup-src">${f.src}${f.page?', p. '+f.page:''}</p>`;s.append(a);});
+  s.append(el('p','sup-src','Contenus reformulés et crédités à leur source.'));
+  window.print();
 }
 
 /* ============ SESSION D'EXERCICES ============ */
@@ -396,7 +457,7 @@ function startSession(q,title){
   queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
-  document.getElementById('introLine').textContent='';
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   showExercise();window.scrollTo(0,0);
 }
 function showExercise(){
