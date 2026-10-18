@@ -2090,7 +2090,7 @@
       "niveau": "Pointu",
       "geo": null,
       "titre": "Pourquoi les racines américaines survivent au phylloxéra",
-      "synth": "En vieillissant, la racine s’épaissit grâce au cambium et au phellogène, qui produit du liège. Chez les Vitis américaines résistantes, une piqûre de phylloxéra déclenche la formation d’un périderme de cicatrisation qui isole la zone attaquée ; chez V. vinifera, les lésions nécrosent et s’infectent jusqu’aux tissus conducteurs, et la racine finit par pourrir. Le degré de résistance se juge justement à la présence ou non de ce périderme.",
+      "synth": "En vieillissant, la racine s’épaissit grâce au cambium et au phellogène, qui produit du liège. Chez les Vitis américaines résistantes, une piqûre de phylloxéra déclenche la formation d’un périderme de cicatrisation qui isole la zone attaquée ; chez V. vinifera, les lésions nécrosent et s’infectent jusqu’aux tissus conducteurs, et la racine finit par pourrir. La présence de ce périderme est l’un des critères qui servent à évaluer la résistance.",
       "mnemo": "L’américaine pose un pansement de liège ; la vinifera laisse la plaie s’infecter.",
       "refs": [
         {
@@ -2119,7 +2119,7 @@
       "geo": null,
       "titre": "Architecture et profondeur des racines",
       "synth": "Matériel végétal, sol, roche mère, climat et pratiques façonnent l’enracinement : selon Lepeltier, un pied issu de semis forme une racine pivotante, une bouture des racines plus traçantes. L’essentiel des racines se loge entre environ 15 et 60 cm, dans un sol aéré ; en surface, elles subissent sécheresse, gel, labour et herbicides ; en profondeur, elles manquent d’oxygène. Lepeltier évoque une plongée possible de « plusieurs dizaines de mètres » ; les sources consultées documentent plutôt 6 m environ, parfois davantage. Les racines ancrent, nourrissent, stockent et façonnent le sol avec leurs exsudats et les mycorhizes.",
-      "mnemo": "Le gros des racines tient dans « une bêche et demie » (15 à 60 cm).",
+      "mnemo": "Le gros des racines vit entre une demi-bêche et deux bêches de profondeur.",
       "refs": [
         {
           "source_id": "mille-vignes",
@@ -2209,7 +2209,7 @@
       "niveau": "Intermédiaire",
       "geo": null,
       "titre": "L’œil composé et la fertilité des bourgeons",
-      "synth": "À l’aisselle de chaque feuille se forme un œil composé : un bourgeon principal, qui débourre le premier et porte les plus grosses grappes, flanqué de bourgeons secondaires de secours (après un gel, par exemple), moins fertiles. À côté, le prompt-bourgeon se développe dès l’année et donne l’entre-cœur, souvent stérile. Les ébauches de grappes de l’an N+1 se forment dans les yeux pendant l’an N : une récolte se joue donc sur trois ans. La fertilité selon le rang de l’œil guide la taille ; Lepeltier cite le gamay, fertile dès la base (taille courte), et le poulsard, qui exige une taille longue.",
+      "synth": "À l’aisselle de chaque feuille se forme un œil composé : un bourgeon principal, qui débourre le premier et porte les plus grosses grappes, flanqué de bourgeons secondaires de secours (après un gel, par exemple), moins fertiles. À côté, le prompt-bourgeon se développe dès l’année et donne l’entre-cœur, souvent stérile. Les ébauches de grappes de l’an N+1 se forment dans les yeux pendant l’an N : une récolte se prépare dès l’année précédente (Lepeltier parle de N−1, N et N+1). La fertilité selon le rang de l’œil guide la taille ; Lepeltier cite le gamay, fertile dès la base (taille courte), et le poulsard, qui exige une taille longue.",
       "mnemo": "Un œil = une équipe : un titulaire (principal), des remplaçants (secondaires), et un pressé qui joue tout de suite (prompt-bourgeon).",
       "refs": [
         {
@@ -2379,6 +2379,7 @@
       ],
       "status": "needs_review",
       "to_check": [
+        "Taux moyen de nouaison d’environ 35 % (Tello et al., 120 cépages) : une seule source.",
         "Sensibilité particulière du grenache et du merlot à la coulure : non recoupée.",
         "« Le taux de nouaison dépasse rarement 50 % » (Lepeltier) : plausible, non confirmé explicitement."
       ],
@@ -2791,7 +2792,8 @@
       "to_check": [
         "Année de plantation des Bournais : 1998 (Lepeltier) ou 1999 (site du domaine cité).",
         "Porte-greffe riparia gloire et rendements de 10-15 hl/ha : non confirmés.",
-        "Année de fondation de l’association (2021 selon Lepeltier) : non confirmée."
+        "Année de fondation de l’association (2021 selon Lepeltier) : non confirmée.",
+        "Cuvée Franc de Pied embouteillée à part depuis 2007 : une seule source."
       ],
       "cours": null,
       "schema": null,
@@ -2811,7 +2813,7 @@
         "appel": null
       },
       "titre": "Le calcaire, la chlorose et la quête de V. berlandieri",
-      "synth": "Les premiers porte-greffes, V. riparia et V. rupestris purs, venaient de sols nord-américains plutôt acides ; plantés sur les sols calcaires de Champagne, Bourgogne ou Charentes, ils provoquent une chlorose ferrique (jaunissement des feuilles par mauvaise absorption du fer). En 1887, Pierre Viala part en mission aux États-Unis et rapporte du Texas V. berlandieri, qui supporte le calcaire mais se greffe et s’enracine mal. Croisée avec le chasselas par Millardet et de Grasset, elle donne le 41 B, porte-greffe qui sauve Cognac et la Champagne, où il reste majoritaire.",
+      "synth": "Les premiers porte-greffes, V. riparia et V. rupestris purs, venaient de sols nord-américains plutôt acides ; plantés sur les sols calcaires de Champagne, Bourgogne ou Charentes, ils provoquent une chlorose ferrique (jaunissement des feuilles par mauvaise absorption du fer). V. berlandieri, vigne texane des sols calcaires, est déjà à l’essai à Montpellier quand, en 1887, Pierre Viala part en mission aux États-Unis chercher des vignes tolérantes au calcaire. Elle supporte le calcaire mais se greffe et s’enracine mal : croisée avec le chasselas par Millardet et de Grasset (vers 1882 selon Lepeltier), elle donne le 41 B, porte-greffe qui sauve Cognac et la Champagne, où il reste majoritaire.",
       "mnemo": "Berlandieri, la Texane du calcaire : têtue à la greffe, mais elle a sauvé la Champagne avec le 41 B.",
       "refs": [
         {
@@ -2847,7 +2849,7 @@
       },
       "titre": "Les principaux porte-greffes et leurs parents",
       "synth": "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
-      "mnemo": "Trois mères américaines : Riparia la frileuse, Rupestris la rocheuse, Berlandieri la calcaire.",
+      "mnemo": "Trois mères américaines : Riparia la riveraine, Rupestris la rocheuse, Berlandieri la calcaire.",
       "refs": [
         {
           "source_id": "mille-vignes",
@@ -2909,7 +2911,7 @@
       "niveau": "Intermédiaire",
       "geo": null,
       "titre": "Greffage, surgreffage, regreffage ; sur place ou sur table",
-      "synth": "Le greffage est la greffe initiale d’un greffon sur un porte-greffe. Le surgreffage change de cépage sur une vigne en place, sans arracher. Le regreffage repart sous le point de greffe, sur le porte-greffe, pour sauver un cep dépérissant. La greffe se fait soit en place, au vignoble, sur un porte-greffe déjà enraciné (reprise plus sûre, mais main-d’œuvre qualifiée), soit sur table en pépinière, qui produit des greffés-soudés prêts à planter : c’est l’écrasante majorité des plantations actuelles.",
+      "synth": "Le greffage est la greffe initiale d’un greffon sur un porte-greffe. Le surgreffage change de cépage sur une vigne en place, sans arracher. Le regreffage repart sous le point de greffe, sur le porte-greffe, pour sauver un cep dépérissant. La greffe se fait soit en place, au vignoble, sur un porte-greffe déjà enraciné (main-d’œuvre qualifiée, peu mécanisable), soit sur table en pépinière, qui produit des greffés-soudés prêts à planter : c’est l’écrasante majorité des plantations actuelles.",
       "mnemo": "Greffer = naître ; surgreffer = changer de tête ; regreffer = repartir des racines.",
       "refs": [
         {
@@ -2944,7 +2946,7 @@
         "appel": null
       },
       "titre": "Les techniques de greffe : fente, anglaise, oméga, écusson",
-      "synth": "La greffe en fente insère un greffon taillé en biseau dans le porte-greffe fendu ; manuelle, elle se pratique en place ou sur table. L’anglaise assemble deux coupes biseautées de même diamètre. La greffe oméga, mécanique, emboîte un porte-greffe découpé en Ω et un greffon en Ω inversé : selon l’IFV, elle représente environ 95 % des greffés-soudés en France. Ses critiques lui reprochent de couper les vaisseaux en travers des fibres, d’où des nécroses. La greffe en écusson (chip-bud ou T-bud) insère un œil prélevé sous l’écorce ; peu nécrosante, elle sert au surgreffage.",
+      "synth": "La greffe en fente insère un greffon taillé en biseau dans le porte-greffe fendu ; manuelle, elle se pratique en place ou sur table. L’anglaise assemble deux coupes biseautées de même diamètre. La greffe oméga, mécanique, emboîte un porte-greffe découpé en Ω et un greffon en Ω inversé : selon l’IFV, elle représente environ 95 % des greffés-soudés en France. Ses critiques lui reprochent de couper les vaisseaux en travers des fibres, d’où des nécroses. La greffe en écusson insère un seul œil : en chip-bud, un copeau portant l’œil est plaqué dans une entaille du sujet ; en T-bud, l’écusson est glissé sous l’écorce incisée en T. Peu nécrosante, elle sert au surgreffage.",
       "mnemo": "Oméga = Ω = la machine ; fente et écusson = la main.",
       "refs": [
         {
@@ -2980,7 +2982,7 @@
       },
       "titre": "L’esca, maladie du bois",
       "synth": "Les maladies fongiques du bois sont devenues une cause majeure de mortalité des vignes en France, l’esca en tête. Elle prend une forme lente (feuilles tigrées, dessèchement progressif sur plusieurs années) et une forme apoplectique (le cep se dessèche brutalement en pleine chaleur). Dans le tronc, des champignons pionniers (Phaeomoniella chlamydospora, Phaeoacremonium) causent des nécroses brunes, puis Fomitiporia mediterranea transforme le bois en amadou, une pourriture blanche. Le seul traitement efficace, l’arsénite de sodium, est interdit depuis novembre 2001 pour sa toxicité.",
-      "mnemo": "Esca = « amadou » en latin : le bois du cep devient de l’éponge à allumer le feu.",
+      "mnemo": "Esca, c’est aussi le nom italien de l’amadou : le bois du cep devient de l’éponge à allumer le feu.",
       "refs": [
         {
           "source_id": "mille-vignes",
@@ -3025,7 +3027,8 @@
       ],
       "status": "needs_review",
       "to_check": [
-        "Efficacité du curetage contre l’esca : non vérifiée lors de la recherche."
+        "Efficacité du curetage contre l’esca : non vérifiée lors de la recherche.",
+        "Date de 1911 pour la taille de Poussard : une seule source (LBV France ; ailleurs « début du XXe siècle »)."
       ],
       "cours": null,
       "schema": null,
@@ -3045,13 +3048,13 @@
         "appel": null
       },
       "titre": "Type de greffe et esca : l’étude de 2017",
-      "synth": "Une étude publiée dans OENO One en 2017 (Roby, Birebent et coll.) a comparé, sur cabernet-sauvignon et mourvèdre, des parcelles greffées en fente, en anglaise et en oméga : les greffes en fente montraient nettement moins de symptômes d’esca que les oméga mécaniques. Les auteurs signalent toutefois que les parcelles en oméga étaient plus jeunes, ce qui peut biaiser la comparaison. Pistes avancées : meilleure cicatrisation de la greffe manuelle, contamination en pépinière.",
+      "synth": "Une étude publiée dans OENO One en 2017 (équipe de l’ISVV de Bordeaux, avec le greffeur Marc Birebent) a comparé, sur cabernet-sauvignon et mourvèdre, des parcelles greffées en fente, en anglaise et en oméga : les greffes en fente montraient nettement moins de symptômes foliaires d’esca que l’anglaise et l’oméga. Les auteurs signalent toutefois que les parcelles en oméga étaient plus jeunes, ce qui peut biaiser la comparaison.",
       "mnemo": "Moins de machine, moins d’esca… à âge égal, reste à confirmer.",
       "refs": [
         {
           "source_id": "mille-vignes",
           "page": 61,
-          "note": "Mille Vignes, P. Lepeltier, p. 61 ; Roby et al., OENO One 51(2-3), 2017 ; Réussir Vigne, La greffe au cœur des enjeux",
+          "note": "Mille Vignes, P. Lepeltier, p. 61 ; Mary et al., Impact of grafting type on Esca foliar symptoms, OENO One 51(2-3), 2017 ; Réussir Vigne, La greffe au cœur des enjeux",
           "partie": "Lire la vigne",
           "section": "Nature",
           "chapitre": "Porte-greffes et nouveaux paysages viticoles"
@@ -3211,7 +3214,7 @@
         "appel": null
       },
       "titre": "Sélection massale contre sélection clonale",
-      "synth": "Les deux sélections multiplient par greffe des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; le vigneron n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
+      "synth": "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; le vigneron n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
       "mnemo": "Clonale = un champion photocopié ; massale = une équipe entière.",
       "refs": [
         {
@@ -7474,10 +7477,10 @@
       "type": "true_false",
       "prompt": "Vrai ou faux ?",
       "payload": {
-        "statement": "La résistance des porte-greffes américains tient surtout à leur capacité à cicatriser rapidement les piqûres racinaires.",
+        "statement": "La capacité à cicatriser les piqûres racinaires contribue à la résistance des porte-greffes américains.",
         "answer": true
       },
-      "explanation": "Un périderme de cicatrisation isole la zone piquée ; c’est un critère d’évaluation de la résistance.",
+      "explanation": "Un périderme de cicatrisation isole la zone piquée ; c’est l’un des mécanismes de résistance, parmi d’autres.",
       "content_version": 1
     },
     {
@@ -8175,8 +8178,8 @@
         "options": [
           "Gingin",
           "Dijon 76",
-          "Wente",
-          "Mendoza"
+          "Dijon 95",
+          "Wente"
         ],
         "answer": 0
       },
@@ -8318,7 +8321,7 @@
         "mv-0067"
       ],
       "type": "ordering",
-      "prompt": "Remets les phases de la baie dans l’ordre.",
+      "prompt": "Remets ces étapes de la vie de la baie dans l’ordre.",
       "payload": {
         "items": [
           "Croissance herbacée",
@@ -8539,7 +8542,7 @@
         "options": [
           "Vendange entière",
           "Saignée",
-          "Macération carbonique pure",
+          "Thermovinification",
           "Pressurage direct"
         ],
         "answer": 0
@@ -8744,7 +8747,7 @@
         "mv-0073"
       ],
       "type": "ordering",
-      "prompt": "Remets ces noms dans l’ordre où ils ont été donnés.",
+      "prompt": "Remets ces noms dans l’ordre où ils ont servi de nom de référence pour l’insecte.",
       "payload": {
         "items": [
           "Pemphigus vitifoliae (Fitch)",
@@ -9004,9 +9007,9 @@
       "notion_ids": [
         "mv-0077"
       ],
-      "prompt": "Qui préside l’association européenne des vignerons francs de pied ?",
+      "prompt": "Quel vigneron (Liber Pater) est au cœur de l’association européenne des vignerons francs de pied ?",
       "payload": {
-        "answer": "Loïc Pasquet (Liber Pater)."
+        "answer": "Loïc Pasquet (Lepeltier écrit « Paquet »)."
       },
       "content_version": 1
     },
@@ -9036,7 +9039,7 @@
       "type": "true_false",
       "prompt": "Vrai ou faux ?",
       "payload": {
-        "statement": "Selon Chidaine, le porte-greffe tend à lisser l’effet millésime.",
+        "statement": "Selon Lepeltier, le porte-greffe tend à lisser l’effet millésime.",
         "answer": true
       },
       "content_version": 1
@@ -9075,7 +9078,7 @@
       "notion_ids": [
         "mv-0078"
       ],
-      "prompt": "Quelle mission rapporte V. berlandieri du Texas, et quand ?",
+      "prompt": "Quelle mission part en Amérique chercher des vignes tolérantes au calcaire, et quand ?",
       "payload": {
         "options": [
           "Planchon, 1868",
@@ -9977,7 +9980,7 @@
       "type": "true_false",
       "prompt": "Vrai ou faux ?",
       "payload": {
-        "statement": "Une sélection massale ne peut légalement provenir que du vignoble du vigneron qui la fait.",
+        "statement": "Selon Lepeltier, une sélection massale ne peut légalement provenir que du vignoble du vigneron qui la fait.",
         "answer": true
       },
       "content_version": 1
