@@ -426,8 +426,8 @@ FICHES.push(
       { type: "short_answer", prompt: "En quelle année le phylloxéra est-il identifié en France ?", payload: { accepted: ["1868"] } }
     ],
     status: "needs_review",
-    to_check: ["Lieu de la découverte : Saint-Rémy-de-Provence (château de Lagoy) ou Saint-Martin-de-Crau selon les sources.", "Premiers symptômes à Pujaut (Gard) vers 1863 : une seule source.", "Daktulosphaira vitifoliae « nom officiel depuis 1974 » : correspond à Russell (1974/1975), une seule source."],
-    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae)",
+    to_check: ["Lieu de la découverte : Saint-Rémy-de-Provence (château de Lagoy) ou Saint-Martin-de-Crau selon les sources.", "Premiers symptômes dans le Gard en 1863 : confirmé par INRAE ; localité de Pujaut : une seule source.", "Daktulosphaira vitifoliae « nom officiel depuis 1974 » : correspond à Russell (1974/1975), une seule source."],
+    src: "Mille Vignes, P. Lepeltier, p. 50 ; Legros, Étude et Gestion des Sols 12(2) ; PMC5126539 (catalogue des Phylloxeridae) ; INRAE, Delmotte et al., Invasions et vigne (HAL)",
     page: 50
   },
   {
@@ -539,18 +539,19 @@ FICHES.push(
     niveau: "Pointu",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les principaux porte-greffes et leurs parents",
-    synth: "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
+    synth: "La plupart des porte-greffes actuels ont été créés entre 1869 et 1902, en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
     mnemo: "Trois mères américaines : Riparia la riveraine, Rupestris la rocheuse, Berlandieri la calcaire.",
     flash: { q: "Quelles trois espèces américaines sont à l’origine de la plupart des porte-greffes ?", a: "V. riparia, V. rupestris et V. berlandieri." },
     qcm: { q: "Lequel de ces porte-greffes est une création de l’INRA des années 1950-1960 ?", opts: ["3309 C", "Fercal", "41 B", "1103 P"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque porte-greffe à ses parents.", payload: { pairs: [["3309 C", "Riparia × rupestris"], ["SO4", "Berlandieri × riparia"], ["110 R", "Berlandieri × rupestris"], ["41 B", "Chasselas × berlandieri"]] } },
       { type: "odd_one_out", prompt: "Lequel n’est pas une espèce parente des porte-greffes classiques ?", payload: { options: ["V. riparia", "V. rupestris", "V. berlandieri", "V. sylvestris"], answer: 3 }, explanation: "V. sylvestris est la vigne sauvage européenne, sensible au phylloxéra." },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le gravesac (1962) est issu du croisement 161-49 C × 3309 C.", answer: true } }
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le gravesac (1962) est issu du croisement 161-49 C × 3309 C.", answer: true } },
+      { type: "mcq_single", prompt: "Quel porte-greffe occupe la plus grande surface de vignes mères en France en 2025 ?", payload: { options: ["110 Richter", "41 B", "Gravesac", "101-14 MGt"], answer: 0 }, explanation: "110 R : 359,6 ha, devant le SO4 (335,4 ha) (FranceAgriMer, 2025)." }
     ],
     status: "needs_review",
-    to_check: ["31 porte-greffes autorisés en France et six dominants (SO4, 110 R, 3309 C, 140 Ru, gravesac, fercal) : non vérifiés.", "Dates de création des porte-greffes anciens : non vérifiées une à une."],
-    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks",
+    to_check: ["31 porte-greffes autorisés en France (Lepeltier) : non vérifié ; FranceAgriMer détaille 14 porte-greffes en vignes mères en 2025.", "Dates de création des porte-greffes anciens : non vérifiées une à une."],
+    src: "Mille Vignes, P. Lepeltier, p. 55-56 ; Plantgrape (Pl@ntNet/IFV), fiches Gravesac et Fercal ; Decanter, Vine rootstocks ; FranceAgriMer, Les chiffres de la pépinière viticole 2025",
     page: 55
   },
   {
@@ -829,7 +830,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: null, appel: null },
     titre: "Les fléaux venus d’Amérique au XIXe siècle",
-    synth: "V. vinifera n’avait aucune défense contre les parasites américains introduits au XIXe siècle. L’oïdium (Erysiphe necator) apparaît en Angleterre en 1845 puis en France en 1847 ; on le combat au soufre. Le phylloxéra suit dans les années 1860. Le mildiou (Plasmopara viticola) arrive en 1878 ; la bouillie bordelaise (cuivre) contre lui est mise au point en 1885. Le black rot (Guignardia bidwellii) est signalé vers 1885-1886. L’anthracnose, souvent rangée avec eux, est en fait d’origine européenne.",
+    synth: "V. vinifera n’avait aucune défense contre les parasites américains introduits au XIXe siècle. L’oïdium (Erysiphe necator) apparaît en Angleterre en 1845 puis en France en 1847 ; on le combat au soufre. Le phylloxéra suit dans les années 1860. Le mildiou (Plasmopara viticola) arrive en 1878 ; la bouillie bordelaise (cuivre) contre lui est mise au point en 1885. Le black rot (Guignardia bidwellii) suit en 1885-1886 (1886 à Montpellier selon INRAE). L’anthracnose, souvent rangée avec eux, est en fait d’origine européenne.",
     mnemo: "O-P-M-B : Oïdium, Phylloxéra, Mildiou, Black rot, dans l’ordre d’arrivée.",
     flash: { q: "Quel remède historique contre le mildiou est mis au point en 1885 ?", a: "La bouillie bordelaise (sulfate de cuivre et chaux)." },
     qcm: { q: "Laquelle de ces maladies n’est pas d’origine américaine ?", opts: ["Oïdium", "Mildiou", "Black rot", "Anthracnose"], good: 3 },
@@ -839,8 +840,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque maladie à son remède historique.", payload: { pairs: [["Oïdium", "Soufre"], ["Mildiou", "Bouillie bordelaise (cuivre)"], ["Phylloxéra", "Greffe sur porte-greffe américain"]] } }
     ],
     status: "needs_review",
-    to_check: ["Date d’apparition du black rot : 1885 (Viala et Ravaz) ou 1886 (INRAE)."],
-    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Invasions et vigne ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola",
+    to_check: ["Origine européenne de l’anthracnose : une seule source (IFV Occitanie)."],
+    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola",
     page: 68
   },
   {
