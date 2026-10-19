@@ -219,6 +219,7 @@
   <div class="wrap">
     <div class="filt-foot">
       <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
+      <select class="btn" id="lireSel" aria-label="Lire un chapitre" hidden><option value="">Lire un chapitre…</option></select>
       <button class="btn primary" id="sessionBtn">S'entraîner</button>
     </div>
     <details class="filt-panel" id="filtPanel"><summary id="filtSum">Filtrer</summary>
@@ -678,16 +679,40 @@ function correctText(ex){
   }
   return '';
 }
-function showDecouverte(f){
+function showDecouverte(f,head=sessionTitle+' · Découverte',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise()){
   const box=el('div','ex decouverte');
-  box.innerHTML=`<div class="ex-head">${sessionTitle} · Découverte</div>
+  box.innerHTML=`<div class="ex-head">${head}</div>
     <h3>${f.titre}</h3><p class="synth">${f.synth}</p>${schemaHTML(f)}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
     <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
-  const actions=el('div','ex-actions'),go=el('button','btn primary','J\'ai lu, aux exercices');
-  go.onclick=()=>{showExercise();window.scrollTo(0,0);};actions.append(go);box.append(actions);
+  const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl);
+  go.onclick=()=>{onGo();window.scrollTo(0,0);};actions.append(go);box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);setTimeout(()=>go.focus({preventScroll:true}));
 }
+/* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
+function lireChapitre(titre,fiches){
+  mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.getElementById('filterBar').style.display='none';
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  const page=i=>{
+    if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
+      box.append(el('h3',null,'Chapitre lu'),el('p',null,`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`));
+      const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
+    showDecouverte(fiches[i],`${titre} · ${i+1}/${fiches.length}`,i+1<fiches.length?'Fiche suivante':'Terminer',()=>page(i+1));
+  };
+  page(0);window.scrollTo(0,0);
+}
+// Le chapitre se déduit de la page (sommaire du livre) ; sans le sommaire (fichier ouvert hors serveur), le menu reste caché.
+fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
+  toc.sort((a,b)=>a.page-b.page);
+  const chap=f=>toc.filter(c=>c.page<=f.page).pop();
+  const par=new Map();
+  FICHES.filter(f=>f.page).sort((a,b)=>a.page-b.page||a.id-b.id).forEach(f=>{const c=chap(f);if(c){if(!par.has(c))par.set(c,[]);par.get(c).push(f);}});
+  const sel=document.getElementById('lireSel');
+  par.forEach((fs,c)=>{const o=el('option',null,`${c.section||c.partie} — ${c.chapitre} (p. ${c.page}, ${fs.length})`);o.value=c.page;sel.append(o);});
+  sel.onchange=()=>{const c=[...par.keys()].find(c=>c.page==sel.value);sel.value='';if(c)lireChapitre(c.chapitre,par.get(c));};
+  sel.hidden=!par.size;
+}).catch(()=>{});
 function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
   if(ok!==null){score.total++;if(ok)score.ok++;
