@@ -71,7 +71,7 @@ FICHES.push(
     geo: null,
     titre: "Architecture et profondeur des racines",
     synth: "Matériel végétal, sol, roche mère, climat et pratiques façonnent l’enracinement : selon Lepeltier, un pied issu de semis forme une racine pivotante, une bouture des racines plus traçantes. L’essentiel des racines se loge entre environ 15 et 60 cm, dans un sol aéré ; en surface, elles subissent sécheresse, gel, labour et herbicides ; en profondeur, elles manquent d’oxygène. Lepeltier évoque une plongée possible de « plusieurs dizaines de mètres » ; les sources consultées documentent plutôt 6 m environ, parfois davantage. Les racines ancrent, nourrissent, stockent et façonnent le sol avec leurs exsudats et les mycorhizes.",
-    mnemo: "Le gros des racines vit entre une demi-bêche et deux bêches de profondeur.",
+    mnemo: "Zone de confort des racines : de la largeur d’une main (15 cm) à la longueur d’un bras (60 cm). Plus haut, gel et labour ; plus bas, plus d’air.",
     flash: { q: "Dans quelle tranche de sol se trouve l’essentiel des racines de vigne ?", a: "Environ 15 à 50-60 cm de profondeur." },
     qcm: { q: "Quelle profondeur maximale de racines est couramment documentée ?", opts: ["50 cm", "Environ 6 m, parfois plus", "100 m", "Les racines ne dépassent jamais 1 m"], good: 1 },
     exos: [
@@ -684,7 +684,7 @@ FICHES.push(
     geo: { pays: "France", region: null, appel: null },
     titre: "Type de greffe et esca : l’étude de 2017",
     synth: "Une étude publiée dans OENO One en 2017 (équipe de l’ISVV de Bordeaux, avec le greffeur Marc Birebent) a comparé, sur cabernet-sauvignon et mourvèdre, des parcelles greffées en fente, en anglaise et en oméga : les greffes en fente montraient nettement moins de symptômes foliaires d’esca que l’anglaise et l’oméga. Les auteurs signalent toutefois que les parcelles en oméga étaient plus jeunes, ce qui peut biaiser la comparaison.",
-    mnemo: "Moins de machine, moins d’esca… à âge égal, reste à confirmer.",
+    mnemo: "Fente contre oméga : la main bat la machine sur l’esca… mais les vignes de la machine étaient plus jeunes. Match à rejouer.",
     flash: { q: "Quelle greffe présentait le moins d’esca dans l’étude OENO One 2017 ?", a: "La greffe en fente (manuelle), face à l’anglaise et à l’oméga." },
     qcm: { q: "Quel biais l’étude elle-même signale-t-elle ?", opts: ["Les cépages étaient différents", "Les parcelles en oméga étaient plus jeunes", "Il n’y avait qu’une parcelle", "Les vignes n’étaient pas greffées"], good: 1 },
     exos: [

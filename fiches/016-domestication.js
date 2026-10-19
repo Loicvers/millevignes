@@ -397,7 +397,7 @@ FICHES.push(
     geo: { pays: "France", region: null, appel: null },
     titre: "L’Ampélographie de Viala et Vermorel (1901-1910)",
     synth: "Après le phylloxéra, hybrides et porte-greffes se multiplient et il devient urgent de reconnaître les plants. Le scientifique Pierre Viala et l’industriel Victor Vermorel publient, avec plusieurs dizaines de collaborateurs, un traité en sept volumes paru entre 1901 et 1910. Il décrit environ 5 200 cépages, rangés sous quelque 24 000 noms, avec des centaines de planches en couleurs. Sa limite : il manque de critères décisifs pour identifier un plant sur le terrain.",
-    mnemo: "7 volumes, 10 ans, 5 200 cépages pour 24 000 noms : presque cinq noms par cépage, d’où la confusion.",
+    mnemo: "Un annuaire géant où chaque cépage a presque cinq surnoms : 24 000 noms pour 5 200 cépages, en 7 tomes. Deux V pour signer : Viala et Vermorel.",
     flash: { q: "Que contient l’Ampélographie de Viala et Vermorel ?", a: "Un traité en 7 volumes (1901-1910) décrivant environ 5 200 cépages sous quelque 24 000 noms, avec des planches en couleurs." },
     qcm: { q: "Combien de cépages l’Ampélographie de Viala et Vermorel décrit-elle environ ?", opts: ["700", "5 200", "12 250", "24 000"], good: 1, expl: "Les 24 000 correspondent aux noms : un même cépage en porte souvent plusieurs, d’où l’écart entre le nombre de cépages et celui des appellations recensées." },
     exos: [
@@ -640,7 +640,7 @@ FICHES.push(
     geo: { pays: "France", region: null, appel: null },
     titre: "Des milliers de cépages, une poignée plantée",
     synth: "La vigne a donné des milliers de cépages : Lepeltier estime à environ 6 000 les V. vinifera distinctes une fois les doublons de noms écartés. Pourtant, en France, une dizaine de variétés couvre environ 70 % du vignoble (70,2 % en 2015 selon l’OIV ; 71,9 % en 2017 selon Lepeltier). En cause : qualité et régularité de ces cépages, mais aussi industrialisation, uniformisation des goûts et standardisation des AOC à partir de 1935. En réaction, cépages autochtones et « modestes » reviennent, portés par l’association Rencontres des cépages modestes et par les conservatoires régionaux.",
-    mnemo: "10 cépages, 7 rangs sur 10 : dans le vignoble français, presque trois pieds sur quatre portent l’un des dix mêmes noms.",
+    mnemo: "Une bibliothèque de 6 000 livres dont on ne lit qu’une dizaine : ces dix-là occupent 7 rangs de vigne sur 10 en France.",
     flash: { q: "Quelle part du vignoble français occupent les dix premières variétés ?", a: "Environ 70 % (70,2 % en 2015 selon l’OIV)." },
     qcm: { q: "Lequel de ces facteurs Lepeltier ne cite-t-il pas pour expliquer cette concentration ?", opts: ["L’industrialisation de la production", "La standardisation des AOC", "L’uniformisation des goûts", "Une interdiction européenne de planter des cépages rares"], good: 3, expl: "Lepeltier invoque des causes économiques et culturelles : industrialisation, goûts uniformisés, AOC standardisées à partir de 1935. Aucune interdiction européenne de ce type n’est en cause." },
     exos: [

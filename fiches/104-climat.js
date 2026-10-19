@@ -895,7 +895,7 @@ FICHES.push(
     geo: null,
     titre: "Nouveaux ravageurs : flavescence dorée et Drosophila suzukii",
     synth: "La flavescence dorée est une maladie à phytoplasme transmise par une cicadelle, Scaphoideus titanus, originaire de l’État de New York et introduite en Armagnac dans les années 1950. Le livre voit dans sa remontée vers le nord un effet du réchauffement, mais l’entomologiste Thiéry la juge plutôt normale et l’effet du climat incertain. Drosophila suzukii, mouche dont les larves abîment les baies, a été signalée dans le vignoble français vers 2011 selon une source, en 2014 selon le livre, et semble préférer les cépages rouges.",
-    mnemo: "Un insecte venu de New York, un autre de passage : la cicadelle transporte, la mouche pique.",
+    mnemo: "La cicadelle est le taxi du phytoplasme (venue de New York) ; la drosophile, elle, n’a besoin de personne : elle pique la baie elle-même.",
     flash: { q: "Quel insecte transmet le phytoplasme de la flavescence dorée ?", a: "Scaphoideus titanus, une cicadelle." },
     qcm: { q: "D’où est originaire Scaphoideus titanus ?", opts: ["De l’État de New York", "Du Japon", "De l’Afrique du Sud", "De l’Armagnac"], good: 0 },
     exos: [

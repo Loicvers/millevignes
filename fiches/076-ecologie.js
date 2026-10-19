@@ -197,7 +197,7 @@ FICHES.push(
     geo: null,
     titre: "La marche de l’oïdium en Europe (carte)",
     synth: "La carte du livre suit la propagation de l’oïdium de 1845 à 1854, par voies terrestres et maritimes, depuis un foyer anglais jusqu’à la péninsule ibérique, aux îles et aux Canaries. Les sources situent la première observation chez le jardinier William Tucker, à Margate (Kent), en 1845, alors que la carte place le foyer à Londres. En France, l’oïdium apparaît vers 1847 dans des serres près de Paris et touche tout le pays vers 1850. Les dates régionales de la carte (Bordeaux, Rioja, Requena) divergent parfois d’un an ou plus des sources.",
-    mnemo: "Une tache d’huile qui s’étale : Angleterre, France, puis l’Espagne et les îles, en neuf ans.",
+    mnemo: "Une tache d’huile partie d’un jardin du Kent (Margate, 1845) : neuf ans pour gagner la France, l’Espagne et les îles.",
     flash: { q: "Sur quelle période la carte du livre suit-elle la propagation de l’oïdium ?", a: "De 1845 à 1854." },
     qcm: { q: "Quelle période couvre la carte de propagation de l’oïdium en Europe du livre ?", opts: ["1815-1824", "1845-1854", "1878-1887", "1905-1914"], good: 1 },
     exos: [
