@@ -28,6 +28,21 @@ function maskSchema(svg, labels, pick = shuffle(labels)) {
   return { svg: svg.replace(new RegExp(`(<text[^>]*font-weight="bold"[^>]*>)${esc}(</text>)`), "$1<tspan font-size=\"15\">?</tspan>$2"), options, answer: options.indexOf(target) };
 }
 
+// Lexique : fiches où le terme apparaît (titre, synthèse, astuce), pluriel compris. « ban (de vendanges) » → « ban ».
+function lexFiches(t, fiches) {
+  const variants = t.terme.replace(/\(.*?\)/g, "").split("/").map(normalize).filter(Boolean);
+  const res = variants.map(v => new RegExp(`(^| )${v}(s|x)?( |$)`));
+  return fiches.filter(f => { const txt = normalize(f.titre + " " + f.synth + " " + f.mnemo); return res.some(r => r.test(txt)); });
+}
+// Un QCM par terme (définition → terme), rattaché à la première fiche qui l'emploie ; l'étymologie sert de correction.
+function lexiqueExercises(lex, fiches) {
+  return lex.map(t => ({ t, f: lexFiches(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
+    const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t)).slice(0, 3).map(o => o.terme)]);
+    return { id: "lx-" + normalize(t.terme).replace(/ /g, "-"), type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + t.def + " » ?",
+      payload: { options, answer: options.indexOf(t.terme) }, explanation: `Étymologie : ${t.etym} ${t.declic}`, fiche: f };
+  });
+}
+
 // Identique à normalize() de tools/lot.mjs (vérifié par les tests).
 function normalize(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[^a-z0-9]+/g, " ").trim(); }
 

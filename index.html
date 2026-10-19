@@ -156,6 +156,7 @@
   .srs-done{font-size:12px;color:var(--green);text-align:center;font-weight:600}
 
   .empty{text-align:center;padding:70px 20px;color:var(--muted)}
+  .lexique{max-width:760px;margin:0 auto}.lexique>input{width:100%;margin-bottom:14px}.card.lex{margin-bottom:10px}.card.lex h3{margin:0 0 6px}.lex-f{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
   .empty h3{font-family:'Cormorant',serif;font-size:26px;color:var(--ink);margin-bottom:8px}
 
   footer.wrap{border-top:1px solid var(--line);padding-top:24px;padding-bottom:24px;font-size:12px;color:var(--muted);text-align:center}
@@ -247,6 +248,7 @@
   <div class="tabs">
     <button class="tab on" data-mode="revision">Fiches</button>
     <button class="tab" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
+    <button class="tab" data-mode="lexique">Lexique</button>
     <button class="tab" data-mode="atelier">Masterclass</button>
   </div>
 </header>
@@ -302,10 +304,11 @@
 <script src="fiches/076-ecologie.js"></script>
 <script src="fiches/104-climat.js"></script>
 <script src="fiches/150-terroir.js"></script>
+<script src="data/lexique.js"></script>
 <script src="exercices.js"></script>
 <script>
 /* ============ DONNÉES ============ */
-const EXOS=FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]);
+const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]),...lexiqueExercises(LEXIQUE,FICHES)];
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
 const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
@@ -421,7 +424,7 @@ function selGeo(sel){
 document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function setMode(m){mode=m;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode===m));document.getElementById('filterBar').style.display=m==='due'?'none':'block';render();}
+function setMode(m){mode=m;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode===m));document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -435,6 +438,7 @@ function matches(f){
 }
 function render(){
   if(mode==='due')return;
+  if(mode==='lexique')return renderLexique();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
   document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
@@ -453,6 +457,28 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
   renderToc(list,nf>0);
+}
+/* ============ LEXIQUE ============ */
+let lexQuery='';
+function renderLexique(){
+  document.getElementById('introLine').textContent='Les mots du métier, avec leur origine : retenir le sens d’un mot, c’est souvent retenir son étymologie.';
+  document.getElementById('progPanel').hidden=true;
+  grid.className='lexique';grid.innerHTML='';
+  const q=el('input','ex-input');q.type='search';q.placeholder='Chercher un terme';q.setAttribute('aria-label','Chercher un terme');q.value=lexQuery;
+  const list=el('div');
+  const draw=()=>{list.innerHTML='';const n=normalize(lexQuery);
+    [...LEXIQUE].sort((a,b)=>a.terme.localeCompare(b.terme,'fr')).filter(t=>!n||normalize(t.terme+' '+t.def).includes(n)).forEach(t=>{
+      const d=el('div','card lex');
+      d.append(el('h3',null,t.terme),el('p','synth',t.def));
+      const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);
+      const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
+      const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
+      const fs=lexFiches(t,FICHES);
+      if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre('Lexique : '+t.terme,[f]);w.append(b);});d.append(w);}
+      list.append(d);});
+    if(!list.children.length)list.append(el('p','empty',LEXIQUE.length?'Aucun terme ne correspond.':'Lexique en préparation.'));};
+  q.oninput=()=>{lexQuery=q.value;draw();};
+  grid.append(q,list);draw();
 }
 let CHAPS=null;const chapOuverts=new Set();
 function renderToc(list,filtre){
