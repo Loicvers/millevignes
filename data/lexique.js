@@ -100,5 +100,19 @@ const LEXIQUE = [
   ],
   "status": "needs_review",
   "note": ""
+ },
+ {
+  "terme": "terpène / terpénique",
+  "def": "Famille de composés aromatiques de la vigne, logés surtout dans la pellicule : linalol, géraniol, nérol (rose, muguet, agrumes). Les muscats en sont les plus riches, puis gewurztraminer, riesling ou albariño. Dans la baie, ils sont surtout liés à des sucres, donc inodores ; la vinification (enzymes, acidité) les libère.",
+  "etym": "de l’allemand Terpen, tiré de Terpentin, la térébenthine (résine de pin).",
+  "declic": "Terpène = térébenthine : une famille d’odeurs de plantes. Cépage terpénique = cépage qui sent la fleur, le muscat en tête.",
+  "src": [
+   "La langue française (dictionnaire)",
+   "Wikipédia (miroir areq.net)",
+   "IFV, fiche Monoterpènes",
+   "UC Davis, Waterhouse Lab, Terpenes"
+  ],
+  "status": "verified",
+  "note": ""
  }
 ];
