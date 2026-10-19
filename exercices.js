@@ -44,6 +44,17 @@ function lexiqueExercises(lex, fiches) {
   });
 }
 
+// Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
+// Comparaison sur les 5 premières lettres, pour accepter pluriels et accords. null si la réponse attendue a trop peu de mots-clés.
+const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon apres avant alors ainsi encore meme autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux".split(" "));
+function flashKeys(answer, mine) {
+  const words = s => normalize(s).split(" ").filter(w => (/^\d+$/.test(w) || w.length >= 4) && !MOTS_VIDES.has(w));
+  const keys = [...new Set(words(answer))], mineW = words(mine);
+  const stem = w => /^\d+$/.test(w) ? w : w.slice(0, 5);
+  const found = keys.filter(k => mineW.some(m => stem(m) === stem(k)));
+  return { keys, found, missing: keys.filter(k => !found.includes(k)), ok: keys.length >= 2 ? found.length / keys.length >= 0.5 : null };
+}
+
 // Identique à normalize() de tools/lot.mjs (vérifié par les tests).
 function normalize(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[^a-z0-9]+/g, " ").trim(); }
 

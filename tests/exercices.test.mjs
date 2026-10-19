@@ -78,3 +78,12 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
     assert.equal(grade({ type: "label_schema", payload: m }, m.answer), true);
   }
 });
+
+test("flashcard écrite : correction par mots-clés", () => {
+  vm.runInNewContext("this.fk=flashKeys", ctx);
+  const a = "Le baco blanc (baco 22 A), dans l’AOC Armagnac.";
+  assert.equal(ctx.fk(a, "baco blanc en armagnac").ok, true);
+  assert.equal(ctx.fk(a, "le folle blanche à Cognac").ok, false);
+  assert.equal(ctx.fk("Run1 : l’oïdium. Rpv1 : le mildiou.", "run1 oidium, rpv1 mildiou").ok, true);
+  assert.equal(ctx.fk("Oui.", "oui").ok, null); // trop court pour juger : auto-évaluation
+});

@@ -745,8 +745,12 @@ function showExercise(){
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
   switch(ex.type){
     case 'flashcard':case 'flashcard_reverse':{
-      const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse (facultatif), puis compare';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
-      const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));finish(ex,null,fb,actions,body);};actions.append(show);break;}
+      const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse : elle sera corrigée par mots-clés (facultatif)';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
+      const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();
+        const k=mine?flashKeys(p.answer,mine):null;
+        if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));
+        if(k&&k.ok!==null){const m=el('p','ex-keys');m.append(el('b',null,`Mots-clés retrouvés : ${k.found.length} sur ${k.keys.length}`));if(k.missing.length)m.append(' — manquants : '+k.missing.join(', '));body.append(m);}
+        finish(ex,k?k.ok:null,fb,actions,body);};actions.append(show);break;}
     case 'label_schema':Object.assign(p,maskSchema(f.schema.svg,p.labels));body.insertAdjacentHTML('beforeend',`<figure class="schema">${p.svg}</figure>`); // puis comme un QCM
     case 'mcq_single':case 'odd_one_out':
       choice(p.options,(i,b)=>{finish(ex,grade(ex,i),fb,actions,body);b.classList.add(i===p.answer?'good':'bad');body.querySelector(`[data-i="${p.answer}"]`).classList.add('good');});break;
@@ -780,6 +784,7 @@ function showExercise(){
 function correctText(ex){
   const p=ex.payload;
   switch(ex.type){
+    case 'flashcard':case 'flashcard_reverse':return '';
     case 'mcq_single':case 'odd_one_out':case 'label_schema':return p.options[p.answer];
     case 'mcq_multi':return p.answers.map(i=>p.options[i]).join(' ; ');
     case 'true_false':return p.answer?'Vrai':'Faux';
@@ -829,7 +834,7 @@ function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
   if(ok!==null){score.total++;if(ok)score.ok++;
     fb.className='fb '+(ok?'good':'bad');fb.append(el('strong',null,ok?'Bonne réponse.':'Pas tout à fait.'));
-    if(!ok)fb.append(el('p',null,'Réponse attendue : '+correctText(ex)));}
+    if(!ok&&correctText(ex))fb.append(el('p',null,'Réponse attendue : '+correctText(ex)));}
   else fb.className='fb';
   // Sans explication propre, la synthèse ne s'affiche qu'une fois par fiche et par séance (sinon elle se répète sous chaque exercice).
   const expl=ex.explanation||(!synthVue.has(ex.fiche.id)&&ex.fiche.synth);
@@ -841,7 +846,9 @@ function finish(ex,ok,fb,actions,body){
   const btns=el('div','srs-btns');
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
   const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);next();};btns.append(b);};
-  if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
+  if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);
+    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
+    setTimeout(()=>b.focus());return;}
   if(ok===null)add('hard','Difficile','revoir demain');
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
