@@ -9,7 +9,7 @@ FICHES.push(
     titre: "La véraison",
     synth: "Étape clé du cycle : la baie change de couleur (ou devient translucide chez les blancs), s’assouplit et entame sa maturation. Elle cesse de se comporter en organe vert : elle stocke des sucres, son acidité baisse, pigments, tanins et arômes s’élaborent. Commence alors le compte à rebours avant les vendanges.",
     mnemo: "« Vér-aison → vert-à-raisin. » Le vert vire au raisin mûr : départ du compte à rebours vers la vendange.",
-    flash: { q: "Sucre et acidité à la véraison ?", a: "Le sucre monte, l’acidité baisse." },
+    flash: { q: "Sucre et acidité à la véraison ?", a: "Le sucre monte, l’acidité baisse.", keys: [["sucre monte","sucre augmente","sucre hausse","sucre accumule"],["acidité baisse","acidité diminue","acide baisse","acide diminue"]] },
     qcm: { q: "La véraison correspond à…", opts: ["La floraison", "Le changement de couleur et le début de la maturation", "La taille d’hiver", "La chute des feuilles"], good: 1 },
     exos: [
       { type: "flashcard_reverse", prompt: "Stade où la baie change de couleur et commence à stocker du sucre.", payload: { answer: "La véraison (stade M de Baggiolini)." } },
@@ -30,7 +30,7 @@ FICHES.push(
     titre: "La racine de vigne : anatomie et circulation des sèves",
     synth: "Le système racinaire associe racines principales et radicelles (le « chevelu »). À la pointe, une coiffe protège les cellules méristématiques qui font pousser la racine ; au-dessus viennent la zone d’élongation puis la zone pilifère, dont les poils absorbent l’eau et les minéraux et multiplient la surface d’échange. Au centre, le xylème monte la sève brute (eau + minéraux) vers les rameaux, le phloème descend la sève élaborée (sucres de la photosynthèse) vers les racines.",
     mnemo: "Xylème = ascenseur de l’eau (« X » comme eXtraite du sol) ; Phloème = livreur de sucre (« P » comme Photosynthèse).",
-    flash: { q: "Quel tissu conduit la sève élaborée vers les racines ?", a: "Le phloème (le xylème monte la sève brute)." },
+    flash: { q: "Quel tissu conduit la sève élaborée vers les racines ?", a: "Le phloème (le xylème monte la sève brute).", keys: [["phloème","liber"]] },
     qcm: { q: "Quelle zone de la racine absorbe l’essentiel de l’eau et des minéraux ?", opts: ["La coiffe", "La zone pilifère (poils absorbants)", "La zone d’élongation", "Le cylindre central"], good: 1 },
     exos: [
       { type: "ordering", prompt: "De la pointe vers le haut, remets les zones de la racine dans l’ordre.", payload: { items: ["Coiffe", "Zone méristématique", "Zone d’élongation", "Zone pilifère"] } },
@@ -52,7 +52,7 @@ FICHES.push(
     titre: "Pourquoi les racines américaines survivent au phylloxéra",
     synth: "En vieillissant, la racine s’épaissit grâce au cambium et au phellogène, qui produit du liège. Chez les Vitis américaines résistantes, une piqûre de phylloxéra déclenche la formation d’un périderme de cicatrisation qui isole la zone attaquée ; chez V. vinifera, les lésions nécrosent et s’infectent jusqu’aux tissus conducteurs, et la racine finit par pourrir. La présence de ce périderme est l’un des critères qui servent à évaluer la résistance.",
     mnemo: "L’américaine pose un pansement de liège ; la vinifera laisse la plaie s’infecter.",
-    flash: { q: "Quel mécanisme protège les racines des Vitis américaines du phylloxéra ?", a: "Un périderme de cicatrisation (liège produit par le phellogène) qui isole les piqûres et évite la nécrose." },
+    flash: { q: "Quel mécanisme protège les racines des Vitis américaines du phylloxéra ?", a: "Un périderme de cicatrisation (liège produit par le phellogène) qui isole les piqûres et évite la nécrose.", keys: [["périderme","liège","phellogène","cicatrisation"]] },
     qcm: { q: "Que se passe-t-il sur une racine de V. vinifera piquée par le phylloxéra ?", opts: ["Elle forme vite du liège et guérit", "Les lésions nécrosent et s’infectent", "Elle produit des vrilles", "Rien : le puceron ne vit que sur les feuilles"], good: 1 },
     exos: [
       { type: "short_answer", prompt: "Quel tissu de la racine produit le liège ?", payload: { accepted: ["phellogène", "le phellogène"] } },
@@ -72,7 +72,7 @@ FICHES.push(
     titre: "Architecture et profondeur des racines",
     synth: "Matériel végétal, sol, roche mère, climat et pratiques façonnent l’enracinement : selon Lepeltier, un pied issu de semis forme une racine pivotante, une bouture des racines plus traçantes. L’essentiel des racines se loge entre environ 15 et 60 cm, dans un sol aéré ; en surface, elles subissent sécheresse, gel, labour et herbicides ; en profondeur, elles manquent d’oxygène. Lepeltier évoque une plongée possible de « plusieurs dizaines de mètres » ; les sources consultées documentent plutôt 6 m environ, parfois davantage. Les racines ancrent, nourrissent, stockent et façonnent le sol avec leurs exsudats et les mycorhizes.",
     mnemo: "Zone de confort des racines : de la largeur d’une main (15 cm) à la longueur d’un bras (60 cm). Plus haut, gel et labour ; plus bas, plus d’air.",
-    flash: { q: "Dans quelle tranche de sol se trouve l’essentiel des racines de vigne ?", a: "Environ 15 à 50-60 cm de profondeur." },
+    flash: { q: "Dans quelle tranche de sol se trouve l’essentiel des racines de vigne ?", a: "Environ 15 à 50-60 cm de profondeur.", keys: [["15"],["50","60"]] },
     qcm: { q: "Quelle profondeur maximale de racines est couramment documentée ?", opts: ["50 cm", "Environ 6 m, parfois plus", "100 m", "Les racines ne dépassent jamais 1 m"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les sources consultées confirment que les racines de vigne descendent couramment à plusieurs dizaines de mètres.", answer: false }, explanation: "Divergence avec Lepeltier (p. 41) : les sources parlent d’environ 6 m, parfois un peu plus." },
@@ -93,7 +93,7 @@ FICHES.push(
     titre: "Le vocabulaire du cep : tronc, bras, courson, baguette",
     synth: "Le vieux bois (tronc et bras) forme la charpente du cep. Il porte le bois de taille, né l’année précédente : taillé court, c’est un courson (ou côt) ; taillé long, une baguette. Au printemps, ses yeux donnent des rameaux herbacés qui, en s’aoûtant (ils brunissent et se lignifient), deviennent des sarments. Les pousses nées du vieux bois sont des gourmands, celles du porte-greffe des drageons : on les supprime.",
     mnemo: "Courson = court ; Baguette = longue comme une baguette de pain. Rameau vert → sarment brun.",
-    flash: { q: "Comment appelle-t-on une pousse issue du porte-greffe ?", a: "Un drageon (un gourmand, lui, pousse sur le vieux bois du greffon)." },
+    flash: { q: "Comment appelle-t-on une pousse issue du porte-greffe ?", a: "Un drageon (un gourmand, lui, pousse sur le vieux bois du greffon).", keys: [["drageon"]] },
     qcm: { q: "Un rameau devient un sarment quand…", opts: ["Il porte des fleurs", "Il s’aoûte : il brunit et se lignifie", "Il est taillé", "Il touche le sol"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque terme à sa définition.", payload: { pairs: [["Courson (côt)", "Bois de taille coupé court"], ["Baguette", "Bois de taille coupé long"], ["Gourmand", "Pousse née du vieux bois"], ["Drageon", "Pousse née du porte-greffe"]] } },
@@ -116,7 +116,7 @@ FICHES.push(
     titre: "Le rameau : nœuds, entre-nœuds, vrilles et apex",
     synth: "Le rameau alterne des renflements, les nœuds, et des segments, les entre-nœuds (ou mérithalles). Chaque nœud porte, d’un côté, une vrille ou une inflorescence (rameau modifié qui accroche la plante à son support) et, de l’autre, une feuille avec ses bourgeons à l’aisselle du pétiole. L’apex, bourgeon terminal, pilote la croissance par signaux hormonaux : l’écimer ou le rogner trop tôt redistribue les ressources de la vigne.",
     mnemo: "Vrille et grappe sont cousines : toutes deux sont des rameaux transformés, nés en face de la feuille.",
-    flash: { q: "Quel autre nom porte l’entre-nœud ?", a: "Le mérithalle." },
+    flash: { q: "Quel autre nom porte l’entre-nœud ?", a: "Le mérithalle.", keys: [["mérithalle"]] },
     qcm: { q: "La vrille est…", opts: ["Une racine aérienne", "Un rameau transformé qui accroche la vigne", "Une feuille modifiée", "Un bourgeon dormant"], good: 1 },
     exos: [
       { type: "flashcard", prompt: "Quel organe contrôle la croissance du rameau par signaux hormonaux ?", payload: { answer: "L’apex (le bourgeon terminal)." } },
@@ -137,7 +137,7 @@ FICHES.push(
     titre: "L’œil composé et la fertilité des bourgeons",
     synth: "À l’aisselle de chaque feuille se forme un œil composé : un bourgeon principal, qui débourre le premier et porte les plus grosses grappes, flanqué de bourgeons secondaires de secours (après un gel, par exemple), moins fertiles. À côté, le prompt-bourgeon se développe dès l’année et donne l’entre-cœur, souvent stérile. Les ébauches de grappes de l’an N+1 se forment dans les yeux pendant l’an N : une récolte se prépare dès l’année précédente (Lepeltier parle de N−1, N et N+1). La fertilité selon le rang de l’œil guide la taille ; Lepeltier cite le gamay, fertile dès la base (taille courte), et le poulsard, qui exige une taille longue.",
     mnemo: "Un œil = une équipe : un titulaire (principal), des remplaçants (secondaires), et un pressé qui joue tout de suite (prompt-bourgeon).",
-    flash: { q: "Quand se forment les ébauches de grappes récoltées l’année N+1 ?", a: "Pendant l’année N, dans les yeux qui passeront l’hiver." },
+    flash: { q: "Quand se forment les ébauches de grappes récoltées l’année N+1 ?", a: "Pendant l’année N, dans les yeux qui passeront l’hiver.", keys: [["année N","année précédente","an précédent","avant"],["yeux","bourgeons","bourgeon","oeil"]] },
     qcm: { q: "Que donne le prompt-bourgeon ?", opts: ["La grappe principale", "Un entre-cœur la même année", "La racine principale", "Rien avant deux ans"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Après un gel de printemps, les bourgeons secondaires peuvent prendre le relais, avec des grappes plus petites.", answer: true } },
@@ -159,7 +159,7 @@ FICHES.push(
     titre: "La feuille de vigne : structure et couleur",
     synth: "Une fois formée, la feuille garde sa découpe (lobes, dents, pilosité), qui sert à l’ampélographe. Sa face supérieure, à épiderme épaissi, limite l’évaporation ; la face inférieure porte les stomates, par où passent les échanges gazeux de la photosynthèse, de la respiration et de la transpiration. Entre les deux, un parenchyme palissadique dense riche en chlorophylle, puis un parenchyme lacuneux aéré. Sa couleur évolue du vert tendre à l’automne flamboyant et renseigne sur l’état de la plante (carence, maladie).",
     mnemo: "Le dessus est le toit (épais, imperméable), le dessous les fenêtres (stomates).",
-    flash: { q: "Où se trouvent principalement les stomates de la feuille de vigne ?", a: "Sur la face inférieure." },
+    flash: { q: "Où se trouvent principalement les stomates de la feuille de vigne ?", a: "Sur la face inférieure.", keys: [["inférieure","dessous","revers"]] },
     qcm: { q: "Quel tissu, juste sous l’épiderme supérieur, concentre la chlorophylle ?", opts: ["Le parenchyme palissadique", "Le parenchyme lacuneux", "Le phellogène", "La cuticule"], good: 0 },
     exos: [
       { type: "ordering", prompt: "De la face supérieure à la face inférieure, remets les couches de la feuille dans l’ordre.", payload: { items: ["Épiderme supérieur épaissi", "Parenchyme palissadique", "Parenchyme lacuneux", "Épiderme inférieur à stomates"] } },
@@ -179,7 +179,7 @@ FICHES.push(
     titre: "Photosynthèse, respiration, transpiration",
     synth: "Par la photosynthèse, la feuille fabrique sucres, acides aminés, lipides, puis composés secondaires (polyphénols, anthocyanes, arômes) ; la sève élaborée les distribue d’abord aux organes en croissance, puis, après la véraison, aux grappes et aux réserves. La respiration brûle des sucres pour fournir l’énergie ; les jeunes feuilles respirent le plus. La transpiration dépend de la lumière, de l’humidité de l’air et de l’eau disponible. Correction : Lepeltier écrit que des cyanobactéries vivent dans les chloroplastes ; en réalité les chloroplastes sont eux-mêmes les descendants d’une cyanobactérie ancestrale (endosymbiose).",
     mnemo: "Le chloroplaste est une ancienne cyanobactérie « adoptée » : un locataire devenu une pièce de la maison.",
-    flash: { q: "Quelle est l’origine évolutive du chloroplaste ?", a: "Une cyanobactérie ancestrale intégrée par endosymbiose." },
+    flash: { q: "Quelle est l’origine évolutive du chloroplaste ?", a: "Une cyanobactérie ancestrale intégrée par endosymbiose.", keys: [["cyanobactérie","cyanobactéries","bactérie"],["endosymbiose","symbiose"]] },
     qcm: { q: "Après la véraison, la sève élaborée va en priorité…", opts: ["Aux racines uniquement", "Aux grappes et aux organes de réserve", "Aux vrilles", "Aux nouveaux rameaux"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les chloroplastes de la feuille de vigne contiennent des cyanobactéries vivantes.", answer: false }, explanation: "Erreur du livre (p. 44) : le chloroplaste descend d’une cyanobactérie, il n’en abrite pas." },
@@ -200,7 +200,7 @@ FICHES.push(
     titre: "Santorin et la conduite en kouloura",
     synth: "Sur l’île volcanique de Santorin, née de l’éruption minoenne il y a environ 3 600 ans, la vigne est traditionnellement enroulée en couronne au ras du sol (kouloura), ce qui protège les grappes du vent et du soleil et capte l’humidité nocturne sur une île presque sans pluie. Le phylloxéra ne prospère pas dans ces sols volcaniques : les ceps, francs de pied, sont très vieux ; quand un pied faiblit, on recrée la souche sur les mêmes racines. L’assyrtiko domine l’encépagement. Le document unique de l’AOP (2021) compte environ 1 200 ha de vignes, francs de pied, avec un rendement plafonné à 50 hl/ha ; la presse récente parle plutôt d’environ 1 000 ha (2025).",
     mnemo: "Une couronne de Noël posée sur la cendre : la kouloura garde la grappe à l’ombre.",
-    flash: { q: "Pourquoi les vignes de Santorin sont-elles franches de pied ?", a: "Le phylloxéra ne prospère pas dans les sols volcaniques de l’île." },
+    flash: { q: "Pourquoi les vignes de Santorin sont-elles franches de pied ?", a: "Le phylloxéra ne prospère pas dans les sols volcaniques de l’île.", keys: [["phylloxéra"],["volcaniques","volcanique","sable","sableux"]] },
     qcm: { q: "Quel cépage blanc domine à Santorin ?", opts: ["Assyrtiko", "Xinomavro", "Agiorgitiko", "Moschofilero"], good: 0 },
     exos: [
       { type: "mcq_multi", prompt: "À quoi sert la conduite en kouloura ?", payload: { options: ["Protéger les grappes du vent", "Les abriter du soleil", "Capter l’humidité nocturne", "Faciliter la vendange mécanique"], answers: [0, 1, 2] } },
@@ -220,7 +220,7 @@ FICHES.push(
     titre: "La fleur de vigne",
     synth: "Discrète et verdâtre, la fleur de vigne n’a pas besoin d’attirer les pollinisateurs. Chez V. vinifera cultivée, elle est presque toujours hermaphrodite : calice à cinq sépales, pétales soudés en capuchon, étamines porteuses du pollen, pistil dont l’ovaire contient quatre ovules, nectaires. Quelques cépages sont fonctionnellement femelles. Les inflorescences, déjà ébauchées dans le bourgeon, fleurissent quelques semaines après le débourrement (6 à 8 selon UC Davis ; Lepeltier dit 8 à 10) ; la floraison d’une parcelle s’étale sur une quinzaine de jours.",
     mnemo: "La fleur de vigne garde son chapeau : le capuchon tombe, et seulement alors la fête commence.",
-    flash: { q: "Combien d’ovules l’ovaire de la fleur de vigne contient-il ?", a: "Quatre, d’où au maximum quatre pépins par baie." },
+    flash: { q: "Combien d’ovules l’ovaire de la fleur de vigne contient-il ?", a: "Quatre, d’où au maximum quatre pépins par baie.", keys: [["4","quatre"]] },
     qcm: { q: "Le capuchon floral est formé…", opts: ["Des sépales", "Des pétales soudés", "Des étamines", "Du stigmate"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La fleur de V. vinifera cultivée a besoin des abeilles pour être fécondée.", answer: false }, explanation: "Hermaphrodite, elle s’autoféconde ou reçoit le pollen d’une fleur voisine." },
@@ -242,7 +242,7 @@ FICHES.push(
     titre: "Floraison, nouaison et coulure",
     synth: "Pour fleurir, le capuchon doit tomber, ce qui demande chaleur, soleil et poussée des étamines ; pluie, vent et froid à ce moment compromettent la récolte. La nouaison est le passage de la fleur fécondée au jeune fruit. Toutes les fleurs ne nouent pas : en moyenne, 30 à 50 % des fleurs d’une grappe nouent (NMSU, eXtension). La coulure est la chute des fleurs ou des jeunes baies non fécondées ; Lepeltier cite le grenache et le merlot parmi les cépages sensibles, et un porte-greffe trop vigoureux peut l’aggraver.",
     mnemo: "Coulure = la fleur « coule » de la grappe et tombe ; il reste des trous dans la grappe.",
-    flash: { q: "Qu’est-ce que la coulure ?", a: "La chute des fleurs ou jeunes baies non fécondées, d’où des grappes clairsemées." },
+    flash: { q: "Qu’est-ce que la coulure ?", a: "La chute des fleurs ou jeunes baies non fécondées, d’où des grappes clairsemées.", keys: [["chute","chutent","tombent"],["fleurs","fleur","baies"],["fécondées","fécondation","fécondé"]] },
     qcm: { q: "Quelle part des fleurs d’une grappe noue en moyenne ?", opts: ["Moins de 5 %", "30 à 50 %", "Environ 80 %", "Toutes"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets les étapes du cycle reproducteur dans l’ordre.", payload: { items: ["Floraison", "Pollinisation", "Fécondation", "Nouaison"] } },
@@ -263,7 +263,7 @@ FICHES.push(
     titre: "Le millerandage, défaut ou atout ?",
     synth: "Une grappe millerandée mêle de grosses baies et de petites baies sans pépins, mal fécondées : les Anglo-Saxons parlent de « hen and chicks ». Ces petites baies à peau épaisse, peu juteuses, concentrent couleur et sucre, ce qui peut aider la qualité. Henri Jayer (1922-2006) y voyait un atout pour le pinot noir. Lepeltier cite le clone de chardonnay 1066, agréé en France, comme recherché en Bourgogne pour ce caractère. En Margaret River (Australie), le clone Gingin, sujet au millerandage, est réputé pour ses vins de qualité.",
     mnemo: "Poule et poussins dans la même grappe : les poussins apportent la concentration.",
-    flash: { q: "Quel surnom anglais désigne une grappe millerandée ?", a: "« Hen and chicks » (poule et poussins)." },
+    flash: { q: "Quel surnom anglais désigne une grappe millerandée ?", a: "« Hen and chicks » (poule et poussins).", keys: [["hen and chicks","hen","chicks","poule"]] },
     qcm: { q: "Quel clone de chardonnay, sujet au millerandage, est emblématique de Margaret River ?", opts: ["Gingin", "Dijon 76", "Dijon 95", "Wente"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les baies millerandées sont de petites baies mal fécondées, souvent sans pépins.", answer: true } },
@@ -284,7 +284,7 @@ FICHES.push(
     titre: "Raisins sans pépins : deux mécanismes",
     synth: "Une baie complète, dite pyrène, porte deux à quatre pépins. L’apyrénie a deux origines. Dans la sténospermocarpie (type sultanine, ou Thompson seedless), la fécondation a lieu mais les graines avortent : il reste des traces de pépins. Dans la parthénocarpie (type corinthe noir), le fruit se forme sans fécondation et sans pépins ; les baies sont petites. Les baies millerandées sont, elles, un accident de fécondation.",
     mnemo: "Sultanine = Sténo (« s » + « s ») : des pépins avortés ; Corinthe = Pas de père (parthénocarpie).",
-    flash: { q: "Quel mécanisme explique l’apyrénie de la sultanine ?", a: "La sténospermocarpie : fécondation, puis avortement des graines (traces de pépins)." },
+    flash: { q: "Quel mécanisme explique l’apyrénie de la sultanine ?", a: "La sténospermocarpie : fécondation, puis avortement des graines (traces de pépins).", keys: [["sténospermocarpie"]] },
     qcm: { q: "Une baie pyrène est une baie…", opts: ["Sans pépins", "Avec deux à quatre pépins", "Millerandée", "Teinturière"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque type de baie à son exemple.", payload: { pairs: [["Apyrène sténospermocarpique", "Sultanine"], ["Apyrène parthénocarpique", "Corinthe noir"], ["Pyrène", "Raisin de cuve classique"]] } },
@@ -305,7 +305,7 @@ FICHES.push(
     titre: "Les trois phases de la baie",
     synth: "La baie se développe en trois temps. 1) Croissance herbacée, de la nouaison à la véraison : baies dures et vertes, qui font de la photosynthèse et accumulent les acides (malique, tartrique). 2) Maturation, de la véraison à la maturité : elles grossissent, s’assouplissent, se colorent et stockent ; sucres, pigments et tanins s’élaborent. 3) Maturité puis surmaturité : la baie porte ses caractères variétaux ; laissée sur pied, elle se concentre (passerillage, pourriture noble par Botrytis cinerea).",
     mnemo: "Vert-acide → coloré-sucré → concentré : le raisin passe de citron à confiture.",
-    flash: { q: "Quand la baie accumule-t-elle surtout ses acides ?", a: "Pendant la croissance herbacée, avant la véraison." },
+    flash: { q: "Quand la baie accumule-t-elle surtout ses acides ?", a: "Pendant la croissance herbacée, avant la véraison.", keys: [["herbacée","croissance","verte"],["avant véraison","avant la véraison","avant"]] },
     qcm: { q: "Quel champignon provoque la pourriture noble ?", opts: ["Botrytis cinerea", "Plasmopara viticola", "Erysiphe necator", "Guignardia bidwellii"], good: 0 },
     exos: [
       { type: "ordering", prompt: "Remets ces étapes de la vie de la baie dans l’ordre.", payload: { items: ["Croissance herbacée", "Véraison", "Maturation", "Maturité", "Surmaturité"] } },
@@ -327,7 +327,7 @@ FICHES.push(
     titre: "Forme et couleur des baies",
     synth: "La forme et la grosseur des baies sont des repères ampélographiques codés par l’OIV (descripteur 223 pour la forme de la baie, 208 pour la forme de la grappe). La couleur dépend de deux gènes voisins, VvMybA1 et VvMybA2, qui commandent la synthèse des anthocyanes dans la pellicule : les cépages blancs portent les deux gènes inactivés (un rétrotransposon, Gret1, bloque VvMybA1). Gris et roses résultent de mutations partielles. Les teinturiers, rares, ont aussi la pulpe colorée ; le pinot, très instable, existe en blanc, gris, noir ou teinturier.",
     mnemo: "Deux interrupteurs de couleur : les deux éteints = raisin blanc.",
-    flash: { q: "Pourquoi un cépage est-il blanc ?", a: "Ses gènes de couleur VvMybA1 et VvMybA2 sont inactifs : pas d’anthocyanes dans la pellicule." },
+    flash: { q: "Pourquoi un cépage est-il blanc ?", a: "Ses gènes de couleur VvMybA1 et VvMybA2 sont inactifs : pas d’anthocyanes dans la pellicule.", keys: [["VvMybA1","MybA","gènes","gène"],["anthocyanes","anthocyane","pigments"]] },
     qcm: { q: "Qu’a de particulier un cépage teinturier ?", opts: ["Une pellicule blanche", "Une pulpe colorée", "Pas de pépins", "Des feuilles rouges toute l’année"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Chez la plupart des cépages noirs, le jus de la pulpe est incolore.", answer: true }, explanation: "La couleur vient de la pellicule, d’où les blancs de noirs." },
@@ -348,7 +348,7 @@ FICHES.push(
     titre: "Ce que la baie donne au vin : pellicule, pulpe, pépins",
     synth: "La baie compte trois couches : la pellicule (épicarpe), la pulpe (mésocarpe) et une fine paroi interne contre les pépins (endocarpe). La pellicule, couverte de pruine cireuse qui porte levures et bactéries, renferme arômes, précurseurs, tanins et pigments : d’où l’importance de la macération. La pulpe apporte eau, sucres et acides ; chez le raisin de cuve, elle est surtout du jus. Le pépin (embryon, albumen huileux, téguments durs) libère des tanins parfois astringents : on le goûte à la vendange pour juger la maturité.",
     mnemo: "Peau = parfum et couleur ; pulpe = sucre et acide ; pépin = tanin (et huile à ne pas extraire).",
-    flash: { q: "Comment s’appelle la couche cireuse qui recouvre la pellicule ?", a: "La pruine." },
+    flash: { q: "Comment s’appelle la couche cireuse qui recouvre la pellicule ?", a: "La pruine.", keys: [["pruine"]] },
     qcm: { q: "Où se concentrent surtout les arômes et les pigments de la baie ?", opts: ["Dans la pulpe", "Dans la pellicule", "Dans le pépin", "Dans la rafle"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque couche à son nom savant.", payload: { pairs: [["Pellicule", "Épicarpe"], ["Pulpe", "Mésocarpe"], ["Paroi autour des pépins", "Endocarpe"]] } },
@@ -369,7 +369,7 @@ FICHES.push(
     titre: "La grappe et sa rafle",
     synth: "La grappe est l’inflorescence fécondée. Ses baies sont nourries par la rafle, charpente de fibres et de tanins qui reste verte ou se lignifie à maturité ; longtemps écartée, elle est aujourd’hui réutilisée en vinification (vendange entière). Forme (cylindrique, conique, ailée…) et compacité de la grappe servent à l’ampélographe. Dressée en fleur, la grappe pend une fois nouée, protégée du soleil par le feuillage ; serrée, elle est plus exposée à la pourriture.",
     mnemo: "La rafle est l’arbre de la grappe : tronc, branches, et les baies au bout.",
-    flash: { q: "Qu’est-ce que la rafle ?", a: "La charpente ligneuse ou herbacée de la grappe, qui porte et nourrit les baies." },
+    flash: { q: "Qu’est-ce que la rafle ?", a: "La charpente ligneuse ou herbacée de la grappe, qui porte et nourrit les baies.", keys: [["charpente","squelette","structure","tige"],["grappe"]] },
     qcm: { q: "Garder les rafles en cuve s’appelle travailler en…", opts: ["Vendange entière", "Saignée", "Thermovinification", "Pressurage direct"], good: 0 },
     exos: [
       { type: "mcq_multi", prompt: "Quels critères l’ampélographe note-t-il sur une grappe ?", payload: { options: ["Sa forme", "Sa compacité", "Sa longueur", "Le nom du vigneron"], answers: [0, 1, 2] } },
@@ -389,7 +389,7 @@ FICHES.push(
     titre: "Une très vieille pratique : l’histoire de la greffe",
     synth: "La greffe n’est pas née avec le phylloxéra : les Grecs (Théophraste) notaient déjà qu’elle réussit entre plantes botaniquement proches, et les agronomes romains (Columelle, Pline l’Ancien, puis Palladius) en traitent à leur tour. Au Moyen Âge, l’agronome andalou Ibn al-’Awwâm, à Séville, compile ce savoir dans son Livre de l’agriculture, vers la fin du XIIe siècle (Lepeltier le place au XIe). Avant 1863, on greffait surtout pour rajeunir une vigne ou changer de cépage.",
     mnemo: "Grecs, Romains, Andalous : la greffe a 2 000 ans d’avance sur le phylloxéra.",
-    flash: { q: "Quel agronome andalou a compilé le savoir médiéval sur la greffe ?", a: "Ibn al-’Awwâm (Séville, fin du XIIe siècle), dans son Livre de l’agriculture." },
+    flash: { q: "Quel agronome andalou a compilé le savoir médiéval sur la greffe ?", a: "Ibn al-’Awwâm (Séville, fin du XIIe siècle), dans son Livre de l’agriculture.", keys: [["Ibn al Awwam","Awwam"]] },
     qcm: { q: "Selon les sources consultées, Ibn al-’Awwâm a écrit vers…", opts: ["Le IVe siècle av. J.-C.", "La fin du XIIe siècle", "Le XVIe siècle", "1868"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Ibn al-’Awwâm a écrit au XIe siècle, comme l’indique Lepeltier.", answer: false }, explanation: "Les sources le situent plutôt à la fin du XIIe siècle." },
@@ -409,7 +409,7 @@ FICHES.push(
     titre: "Le point de greffe et l’affinité porte-greffe / greffon",
     synth: "Greffer, c’est mettre en contact les tissus conducteurs (cambium) du porte-greffe et du greffon pour qu’ils se soudent : au point de greffe se forme un cal, le bourrelet de soudure, où xylème et phloème se reconnectent. Toutes les combinaisons ne prennent pas : plus les plantes sont éloignées, plus c’est difficile (Vitis sur Muscadinia réussit mal). Le bourrelet freine et filtre les flux de sève ; la vigne greffée est un être nouveau, que Lepeltier qualifie de « chimère » et de « plante artificielle », en citant Jean Branas et Nathalie Ollat. Le porte-greffe peut faire varier fortement la vigueur d’un même greffon.",
     mnemo: "Le bourrelet est une douane : il laisse passer la sève, mais contrôle et ralentit.",
-    flash: { q: "Comment s’appelle la zone de soudure entre porte-greffe et greffon ?", a: "Le bourrelet de soudure (point de greffe), où se forme un cal." },
+    flash: { q: "Comment s’appelle la zone de soudure entre porte-greffe et greffon ?", a: "Le bourrelet de soudure (point de greffe), où se forme un cal.", keys: [["bourrelet","point de greffe"],["cal"]] },
     qcm: { q: "Qu’est-ce qui détermine le mieux la réussite d’une greffe ?", opts: ["La couleur des raisins", "La proximité botanique et le contact des tissus conducteurs", "La date de vendange", "Le type de bouchon"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Un chardonnay greffé sur une vigne américaine prend son goût foxé.", answer: false }, explanation: "La greffe ne transmet pas les caractères variétaux du porte-greffe au greffon." },
@@ -429,7 +429,7 @@ FICHES.push(
     titre: "La découverte du phylloxéra (1868)",
     synth: "Les premiers dépérissements apparaissent en France vers 1863 (Gard). Le 15 juillet 1868, Jules-Émile Planchon, Gaston Bazille et Félix Sahut découvrent un puceron sur les racines de vignes mourantes au domaine de Lagoy, à Saint-Martin-de-Crau, près de Saint-Rémy-de-Provence, où le maire les avait appelés ; Planchon le nomme Rhizaphis vastatrix, puis Phylloxera vastatrix quand il voit éclore la forme ailée, le 28 août 1868. L’Américain Riley confirme qu’il s’agit de l’insecte décrit en 1855 par Asa Fitch (Pemphigus vitifoliae). Son nom valide est aujourd’hui Daktulosphaira vitifoliae. Lepeltier attribue le nom vastatrix à Victor Signoret : celui-ci a surtout rattaché l’insecte au genre Phylloxera.",
     mnemo: "1868, l’année où trois Montpelliérains ont regardé sous la vigne.",
-    flash: { q: "Qui identifie le phylloxéra sur des racines en 1868 ?", a: "Planchon, Bazille et Sahut (15 juillet 1868)." },
+    flash: { q: "Qui identifie le phylloxéra sur des racines en 1868 ?", a: "Planchon, Bazille et Sahut (15 juillet 1868).", keys: [["Planchon"],["Bazille"],["Sahut"]] },
     qcm: { q: "Quel est le nom scientifique valide du phylloxéra aujourd’hui ?", opts: ["Phylloxera vastatrix", "Daktulosphaira vitifoliae", "Plasmopara viticola", "Rhizaphis vastatrix"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets ces noms dans l’ordre où ils ont servi de nom de référence pour l’insecte.", payload: { items: ["Pemphigus vitifoliae (Fitch)", "Rhizaphis vastatrix (Planchon)", "Phylloxera vastatrix", "Daktulosphaira vitifoliae (nom valide actuel)"] } },
@@ -450,7 +450,7 @@ FICHES.push(
     titre: "Le cycle du phylloxéra",
     synth: "Le phylloxéra alterne reproduction sexuée et parthénogenèse (femelles pondant sans fécondation). Un œuf d’hiver éclot au printemps en femelle qui pique les jeunes feuilles et forme des galles (forme gallicole) ; ses descendantes gagnent les racines (forme radicicole). Sur les radicelles, les piqûres causent des nodosités ; sur les racines plus âgées, des tubérosités, mortelles pour V. vinifera car elles nécrosent et s’infectent. Des femelles ailées dispersent l’insecte. Les vignes américaines souffrent surtout des galles foliaires, V. vinifera de la forme racinaire ; les sols sableux, qui empêchent le puceron de circuler, le freinent.",
     mnemo: "Galles en haut chez l’Américaine, tubérosités en bas chez l’Européenne.",
-    flash: { q: "Quelle forme du phylloxéra tue V. vinifera ?", a: "La forme radicicole (sur les racines), qui cause des tubérosités nécrosées." },
+    flash: { q: "Quelle forme du phylloxéra tue V. vinifera ?", a: "La forme radicicole (sur les racines), qui cause des tubérosités nécrosées.", keys: [["radicicole","racines","racine"]] },
     qcm: { q: "Pourquoi les sols sableux protègent-ils du phylloxéra ?", opts: ["Ils sont trop acides", "Le puceron ne peut pas circuler entre les grains jusqu’aux racines", "Ils contiennent du soufre", "Les vignes y sont toujours greffées"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque lésion à son organe.", payload: { pairs: [["Galles", "Feuilles"], ["Nodosités", "Radicelles"], ["Tubérosités", "Racines âgées"]] } },
@@ -473,7 +473,7 @@ FICHES.push(
     titre: "Les vignobles épargnés et les vieilles vignes franches de pied",
     synth: "Quelques vignobles isolés ou aux sols défavorables au puceron ont gardé des vignes non greffées : une grande partie du Chili, l’Australie-Méridionale (Barossa), des îles (Santorin…). En Barossa, la charte des vieilles vignes (2009) classe les ceps en old vines (35 ans et plus), survivors (70 ans et plus ; Lepeltier écrit 60), centenarians (100 ans et plus) et ancestors (125 ans et plus). On y désinfecte les semelles des visiteurs : le phylloxéra voyage aussi par la terre collée aux chaussures.",
     mnemo: "Barossa compte en 35, 70, 100, 125 : vieille, survivante, centenaire, ancêtre.",
-    flash: { q: "À partir de quel âge un cep est-il « survivor » dans la charte de Barossa ?", a: "70 ans (et non 60 comme l’écrit Lepeltier)." },
+    flash: { q: "À partir de quel âge un cep est-il « survivor » dans la charte de Barossa ?", a: "70 ans (et non 60 comme l’écrit Lepeltier).", keys: [["70"]] },
     qcm: { q: "Quelle catégorie de la charte de Barossa désigne les ceps de 125 ans et plus ?", opts: ["Old vine", "Survivor", "Centenarian", "Ancestor"], good: 3 },
     exos: [
       { type: "ordering", prompt: "Range les catégories de Barossa de la plus jeune à la plus ancienne.", payload: { items: ["Old vine (35 ans)", "Survivor (70 ans)", "Centenarian (100 ans)", "Ancestor (125 ans)"] } },
@@ -493,7 +493,7 @@ FICHES.push(
     titre: "Lutter contre le phylloxéra : chimistes contre américanistes",
     synth: "Face au puceron, plusieurs remèdes sont testés : submersion hivernale des vignes, plantation dans les sables, injection de sulfure de carbone au pal ou de sulfocarbonate de potassium. Efficaces localement mais coûteux, ils sont supplantés par la greffe sur porte-greffes américains, défendue par l’école de Montpellier (les « américanistes ») contre les « sulfuristes », attachés aux vignes franches de pied. Léo Laliman, qui cultive des vignes américaines à la Tourrate, près de Bordeaux, depuis 1866, signale leur résistance au congrès de Beaune en 1869 ; selon Foëx, c’est alors Gaston Bazille qui propose d’y greffer les vignes françaises (Delmotte et Jacquet citent plutôt Laliman et Pulliat) ; en mai 1874, Millardet et Laliman réussissent à greffer plusieurs cépages sur souches américaines, et la commission supérieure du phylloxéra se range à la greffe en 1888. En 1908, le botaniste rennais Lucien Daniel publie un rapport critique : selon lui, la greffe modifie la physiologie et la qualité du vin. La greffe l’emporte néanmoins.",
     mnemo: "Eau, sable, poison ou greffe : seule la greffe passe à l’échelle.",
-    flash: { q: "Comment s’appelaient les partisans de la greffe sur plants américains ?", a: "Les américanistes (face aux sulfuristes, ou chimistes)." },
+    flash: { q: "Comment s’appelaient les partisans de la greffe sur plants américains ?", a: "Les américanistes (face aux sulfuristes, ou chimistes).", keys: [["américanistes","américaniste"]] },
     qcm: { q: "Quel produit était injecté au pied des ceps contre le phylloxéra ?", opts: ["Bouillie bordelaise", "Sulfure de carbone", "Arsénite de sodium", "Soufre mouillable"], good: 1 },
     exos: [
       { type: "mcq_multi", prompt: "Quels remèdes ont été tentés avant la généralisation de la greffe ?", payload: { options: ["Submersion des vignes", "Plantation dans les sables", "Sulfure de carbone", "Vaccination des ceps"], answers: [0, 1, 2] } },
@@ -514,7 +514,7 @@ FICHES.push(
     titre: "Franc de pied ou greffé : l’expérience Chidaine",
     synth: "À Montlouis-sur-Loire, François Chidaine plante à partir de 1998, avec des sélections massales du domaine, sa parcelle des Bournais (3,99 ha, exposée au nord, argilo-calcaire sur tuffeau) : un demi-hectare y est en franc de pied, à côté du chenin greffé, ce qui permet de comparer les deux. D’après Lepeltier, les francs de pied y sont moins vigoureux, moins sensibles aux maladies, produisent moins avec de petites baies et donnent des vins plus tendus, moins alcooleux ; le porte-greffe lisse l’effet millésime et augmente le rendement. Le franc de pied est vinifié à part depuis 2007 et mis en bouteille séparément certains millésimes. Une association européenne de vignerons francs de pied réunit, autour de Loïc Pasquet (Liber Pater ; Lepeltier écrit « Paquet »), des domaines comme Egon Müller ou Chartogne-Taillet.",
     mnemo: "Même âge, même bois, deux destins : le franc de pied, c’est la vigne au régime.",
-    flash: { q: "Quel vigneron (Liber Pater) est au cœur de l’association européenne des vignerons francs de pied ?", a: "Loïc Pasquet (Lepeltier écrit « Paquet »)." },
+    flash: { q: "Quel vigneron (Liber Pater) est au cœur de l’association européenne des vignerons francs de pied ?", a: "Loïc Pasquet (Lepeltier écrit « Paquet »).", keys: [["Pasquet"]] },
     qcm: { q: "Selon Lepeltier, dans la comparaison de Chidaine, les francs de pied…", opts: ["Sont plus vigoureux", "Produisent moins, avec de plus petites baies", "Sont plus sensibles aux maladies", "Donnent des vins plus alcooleux"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, le porte-greffe tend à lisser l’effet millésime.", answer: true } },
@@ -535,7 +535,7 @@ FICHES.push(
     titre: "Le calcaire, la chlorose et la quête de V. berlandieri",
     synth: "Les premiers porte-greffes, V. riparia et V. rupestris purs, venaient de sols nord-américains plutôt acides ; plantés sur les sols calcaires de Champagne, Bourgogne ou Charentes, ils provoquent une chlorose ferrique (jaunissement des feuilles par mauvaise absorption du fer). V. berlandieri, vigne texane des sols calcaires, est déjà à l’essai à Montpellier quand, en 1887, Pierre Viala part en mission aux États-Unis chercher des vignes tolérantes au calcaire. Elle supporte le calcaire mais se greffe et s’enracine mal : croisée avec le chasselas par Millardet et de Grasset (en 1882), elle donne le 41 B, porte-greffe qui sauve Cognac et la Champagne, où il couvre encore plus de 80 % du vignoble.",
     mnemo: "Berlandieri, la Texane du calcaire : têtue à la greffe, mais elle a sauvé la Champagne avec le 41 B.",
-    flash: { q: "Quel porte-greffe, issu de chasselas × berlandieri, domine en Champagne ?", a: "Le 41 B (Millardet et de Grasset)." },
+    flash: { q: "Quel porte-greffe, issu de chasselas × berlandieri, domine en Champagne ?", a: "Le 41 B (Millardet et de Grasset).", keys: [["41 B","41B"]] },
     qcm: { q: "Quelle mission part en Amérique chercher des vignes tolérantes au calcaire, et quand ?", opts: ["Planchon, 1868", "Pierre Viala, 1887", "Millardet, 1885", "Ganzin, 1879"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La mission de Pierre Viala aux États-Unis date de 1888, comme l’écrit Lepeltier.", answer: false }, explanation: "Arrêté du 16 mars 1887, arrivée à New York le 5 juin 1887 (INRAE)." },
@@ -556,7 +556,7 @@ FICHES.push(
     titre: "Les principaux porte-greffes et leurs parents",
     synth: "Selon Lepeltier, la plupart des porte-greffes actuels ont été créés entre 1869 et 1902 ; l’analyse ADN de Riaz et al. (2019) situe plutôt les plus importants entre les années 1890 et 1930. Ils ont été obtenus en croisant trois espèces américaines : V. riparia, V. rupestris et V. berlandieri (parfois avec V. vinifera). Exemples : 3309 C et 101-14 (riparia × rupestris), SO4 et 161-49 (berlandieri × riparia), 110 R, 140 Ru et 1103 P (berlandieri × rupestris), 41 B (berlandieri × chasselas). Deux exceptions récentes, de l’INRA : le fercal (1959) et le gravesac (1962). Le catalogue officiel compte 31 porte-greffes inscrits (liste A, 2026), comme l’indique Lepeltier. En 2025, six porte-greffes couvrent environ 70 % des 2 045 ha de vignes mères françaises : 110 R, SO4, fercal, 3309 C, 140 Ru et 41 B (FranceAgriMer) ; Lepeltier cite le gravesac à la place du 41 B parmi les six dominants. Pour Lepeltier, le porte-greffe a permis de descendre des coteaux vers les plaines et de produire davantage.",
     mnemo: "Trois mères américaines : Riparia la riveraine, Rupestris la rocheuse, Berlandieri la calcaire.",
-    flash: { q: "Quelles trois espèces américaines sont à l’origine de la plupart des porte-greffes ?", a: "V. riparia, V. rupestris et V. berlandieri." },
+    flash: { q: "Quelles trois espèces américaines sont à l’origine de la plupart des porte-greffes ?", a: "V. riparia, V. rupestris et V. berlandieri.", keys: [["riparia"],["rupestris"],["berlandieri"]] },
     qcm: { q: "Lequel de ces porte-greffes est une création de l’INRA des années 1950-1960 ?", opts: ["3309 C", "Fercal", "41 B", "1103 P"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque porte-greffe à ses parents.", payload: { pairs: [["3309 C", "Riparia × rupestris"], ["SO4", "Berlandieri × riparia"], ["110 R", "Berlandieri × rupestris"], ["41 B", "Chasselas × berlandieri"]] } },
@@ -580,7 +580,7 @@ FICHES.push(
     titre: "Un pool génétique trop étroit : la leçon de l’AxR1",
     synth: "Presque tous les porte-greffes reposent sur trois espèces, et souvent sur quelques individus seulement : une analyse ADN de 36 porte-greffes montre que 39 % de leur fonds génétique vient de trois pieds, le berlandieri Rességuier 2, le rupestris du Lot et le riparia Gloire de Montpellier (Lepeltier, citant Andrew Walker, avance 99 % ; Walker cosigne pourtant cette étude). Rességuier 2 est la mère de 14 porte-greffes commerciaux, dont 9 ont Gloire de Montpellier pour père ; du Lot est le père de 9 porte-greffes. Une base aussi étroite expose tout le vignoble aux mêmes parasites. L’AxR1 (aramon × rupestris, ou Ganzin 1) l’illustre. Il avait déjà perdu sa résistance en Europe et en Afrique du Sud quand l’Université de Californie le juge suffisamment résistant (Lider, 1958) ; à la fin des années 1970, il domine les plantations du nord de la Californie et porte environ 70 % des vignes de Napa et Sonoma. En 1983, un nouveau biotype de phylloxéra, dit B, l’attaque sur deux sites ; il en touche plus de 70 en 1991. L’Université recommande d’abandonner l’AxR1 en décembre 1989, et des dizaines de milliers d’acres doivent être replantés. La recherche cherche donc de nouveaux porte-greffes tolérants à la sécheresse, aux nématodes ou au sel.",
     mnemo: "AxR1 : un porte-greffe à moitié vinifera n’est qu’à moitié protégé.",
-    flash: { q: "Pourquoi l’AxR1 a-t-il échoué en Californie ?", a: "En partie vinifera (aramon), il n’était pas assez résistant : un biotype de phylloxéra l’a attaqué dans les années 1980." },
+    flash: { q: "Pourquoi l’AxR1 a-t-il échoué en Californie ?", a: "En partie vinifera (aramon), il n’était pas assez résistant : un biotype de phylloxéra l’a attaqué dans les années 1980.", keys: [["vinifera","aramon"],["phylloxéra","biotype"],["résistant","résistance"]] },
     qcm: { q: "L’AxR1 est un croisement…", opts: ["Riparia × berlandieri", "Aramon × rupestris", "Chasselas × berlandieri", "Rupestris × cordifolia"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Un porte-greffe en partie issu de V. vinifera peut rester sensible au phylloxéra.", answer: true } },
@@ -602,7 +602,7 @@ FICHES.push(
     titre: "Greffage, surgreffage, regreffage ; sur place ou sur table",
     synth: "Le greffage est la greffe initiale d’un greffon sur un porte-greffe. Le surgreffage change de cépage sur une vigne en place, sans arracher. Le regreffage repart sous le point de greffe, sur le porte-greffe, pour sauver un cep dépérissant. La greffe se fait soit en place, au vignoble, sur un porte-greffe déjà enraciné (main-d’œuvre qualifiée, peu mécanisable), soit sur table en pépinière, qui produit des greffés-soudés prêts à planter : c’est l’écrasante majorité des plantations actuelles.",
     mnemo: "Greffer = naître ; surgreffer = changer de tête ; regreffer = repartir des racines.",
-    flash: { q: "Qu’est-ce que le surgreffage ?", a: "Greffer un nouveau cépage sur une vigne en place, sans l’arracher." },
+    flash: { q: "Qu’est-ce que le surgreffage ?", a: "Greffer un nouveau cépage sur une vigne en place, sans l’arracher.", keys: [["greffer","greffe"],["nouveau cépage","autre cépage","cépage"],["arracher","arrachage","en place","existante","adulte"]] },
     qcm: { q: "Le regreffage consiste à…", opts: ["Greffer au-dessus du greffon", "Greffer de nouveau sous le point de greffe, sur le porte-greffe", "Bouturer le greffon", "Greffer deux cépages sur le même bras"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque opération à son but.", payload: { pairs: [["Greffage", "Créer un nouveau plant"], ["Surgreffage", "Changer de cépage sans arracher"], ["Regreffage", "Sauver un cep dont le greffon dépérit"]] } },
@@ -622,7 +622,7 @@ FICHES.push(
     titre: "Les techniques de greffe : fente, anglaise, oméga, écusson",
     synth: "La greffe en fente insère un greffon taillé en biseau dans le porte-greffe fendu ; manuelle, elle se pratique en place ou sur table. L’anglaise assemble deux coupes biseautées de même diamètre. La greffe oméga, mécanique, emboîte un porte-greffe découpé en Ω et un greffon en Ω inversé : selon l’IFV, elle représente environ 95 % des greffés-soudés en France. Ses critiques lui reprochent de couper les vaisseaux en travers des fibres, d’où des nécroses. La greffe en écusson insère un seul œil : en chip-bud, un copeau portant l’œil est plaqué dans une entaille du sujet ; en T-bud, l’écusson est glissé sous l’écorce incisée en T. Peu nécrosante, elle sert au surgreffage.",
     mnemo: "Oméga = Ω = la machine ; fente et écusson = la main.",
-    flash: { q: "Quelle technique représente environ 95 % des greffés-soudés en France ?", a: "La greffe oméga (mécanique)." },
+    flash: { q: "Quelle technique représente environ 95 % des greffés-soudés en France ?", a: "La greffe oméga (mécanique).", keys: [["oméga"]] },
     qcm: { q: "Quelle greffe insère un œil dans une incision en T de l’écorce ?", opts: ["Fente", "Oméga", "T-bud (écusson)", "Anglaise"], good: 2 },
     exos: [
       { type: "matching", prompt: "Associe chaque greffe à sa description.", payload: { pairs: [["Fente", "Greffon en biseau dans un porte-greffe fendu"], ["Oméga", "Emboîtement mécanique en Ω"], ["Chip-bud", "Copeau portant un œil, plaqué sur l’écorce"]] } },
@@ -644,7 +644,7 @@ FICHES.push(
     titre: "L’esca, maladie du bois",
     synth: "Les maladies fongiques du bois sont devenues une cause majeure de mortalité des vignes en France, l’esca en tête. Elle prend une forme lente (feuilles tigrées, dessèchement progressif sur plusieurs années) et une forme apoplectique (le cep se dessèche brutalement en pleine chaleur). Dans le tronc, des champignons pionniers (Phaeomoniella chlamydospora, Phaeoacremonium) causent des nécroses brunes, puis Fomitiporia mediterranea transforme le bois en amadou, une pourriture blanche. Le seul traitement efficace, l’arsénite de sodium, est interdit depuis novembre 2001 pour sa toxicité.",
     mnemo: "Esca, c’est aussi le nom italien de l’amadou : le bois du cep devient de l’éponge à allumer le feu.",
-    flash: { q: "Depuis quand l’arsénite de sodium est-il interdit en France ?", a: "Novembre 2001." },
+    flash: { q: "Depuis quand l’arsénite de sodium est-il interdit en France ?", a: "Novembre 2001.", keys: [["2001"]] },
     qcm: { q: "Comment appelle-t-on la forme brutale de l’esca, où le cep se dessèche en quelques jours ?", opts: ["Forme lente", "Forme apoplectique", "Forme gallicole", "Forme chlorotique"], good: 1 },
     exos: [
       { type: "short_answer", prompt: "Quel nom donne-t-on au bois dégradé en pourriture blanche par l’esca ?", payload: { accepted: ["amadou", "l’amadou", "l'amadou"] } },
@@ -665,7 +665,7 @@ FICHES.push(
     titre: "Tailler pour limiter les maladies du bois : Poussard et curetage",
     synth: "Chaque plaie de taille dessèche une partie du bois (cône de dessiccation) et ouvre une porte aux spores. D’où l’intérêt de tailles qui respectent les flux de sève, avec des plaies petites, éloignées du tronc et toujours du même côté. Eugène Poussard, vigneron de Pérignac (Charente), adapte la taille Guyot en ce sens (méthode décrite en 1921 par René Lafon) : c’est la taille Guyot-Poussard, remise à l’honneur par François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch. Sur un cep atteint, le curetage retire à la scie ou au couteau le bois nécrosé pour prolonger sa vie.",
     mnemo: "Poussard : « ne coupe pas l’autoroute de la sève ».",
-    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente) ; sa méthode est décrite en 1921 par René Lafon." },
+    flash: { q: "Qui est à l’origine de la taille Guyot-Poussard ?", a: "Eugène Poussard, vigneron de Pérignac (Charente) ; sa méthode est décrite en 1921 par René Lafon.", keys: [["Poussard"],["Lafon","1921","Charente","Pérignac"]] },
     qcm: { q: "Qu’est-ce qu’un cône de dessiccation ?", opts: ["Un outil de taille", "La zone de bois mort qui se forme sous une plaie de taille", "Un bourgeon dormant", "Une galle de phylloxéra"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Des plaies de taille petites et éloignées du tronc limitent le bois mort dans la charpente.", answer: true } },
@@ -685,7 +685,7 @@ FICHES.push(
     titre: "Type de greffe et esca : l’étude de 2017",
     synth: "Une étude publiée dans OENO One en 2017 (équipe de l’ISVV de Bordeaux, avec le greffeur Marc Birebent) a comparé, sur cabernet-sauvignon et mourvèdre, des parcelles greffées en fente, en anglaise et en oméga : les greffes en fente montraient nettement moins de symptômes foliaires d’esca que l’anglaise et l’oméga. Les auteurs signalent toutefois que les parcelles en oméga étaient plus jeunes, ce qui peut biaiser la comparaison.",
     mnemo: "Fente contre oméga : la main bat la machine sur l’esca… mais les vignes de la machine étaient plus jeunes. Match à rejouer.",
-    flash: { q: "Quelle greffe présentait le moins d’esca dans l’étude OENO One 2017 ?", a: "La greffe en fente (manuelle), face à l’anglaise et à l’oméga." },
+    flash: { q: "Quelle greffe présentait le moins d’esca dans l’étude OENO One 2017 ?", a: "La greffe en fente (manuelle), face à l’anglaise et à l’oméga.", keys: [["fente"]] },
     qcm: { q: "Quel biais l’étude elle-même signale-t-elle ?", opts: ["Les cépages étaient différents", "Les parcelles en oméga étaient plus jeunes", "Il n’y avait qu’une parcelle", "Les vignes n’étaient pas greffées"], good: 1 },
     exos: [
       { type: "mcq_multi", prompt: "Quels cépages ont été suivis ?", payload: { options: ["Cabernet-sauvignon", "Mourvèdre", "Merlot", "Chardonnay"], answers: [0, 1] } },
@@ -705,7 +705,7 @@ FICHES.push(
     titre: "La greffe a-t-elle fait la fortune du merlot ?",
     synth: "Lepeltier rapporte une hypothèse d’Alain Carbonneau : le bourrelet de greffe retient dans la partie aérienne une plus grande part des sucres de la sève élaborée. Le merlot, peu répandu avant le phylloxéra car il nouait mal, en aurait profité pour mieux fructifier et s’étendre dans le Bordelais, tandis que le malbec, sujet à la coulure par excès de vigueur, y aurait reculé. Hypothèse à présenter comme telle : aucune source indépendante n’a été trouvée.",
     mnemo: "Le bourrelet garde le sucre en haut : le merlot en aurait mangé sa part.",
-    flash: { q: "Selon l’hypothèse rapportée par Lepeltier, quel cépage aurait profité de la greffe à Bordeaux ?", a: "Le merlot, au détriment du malbec." },
+    flash: { q: "Selon l’hypothèse rapportée par Lepeltier, quel cépage aurait profité de la greffe à Bordeaux ?", a: "Le merlot, au détriment du malbec.", keys: [["merlot"],["malbec","côt","cot"]] },
     qcm: { q: "Pourquoi le malbec aurait-il reculé dans le Bordelais ?", opts: ["Il gelait toujours", "Coulure liée à une vigueur excessive", "Interdiction légale", "Il ne se greffait pas"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le rôle de la greffe dans l’essor du merlot est un fait établi par plusieurs études.", answer: false }, explanation: "C’est une hypothèse rapportée par Lepeltier, non confirmée par une source indépendante." },
@@ -725,7 +725,7 @@ FICHES.push(
     titre: "Les stades-repères de Baggiolini (A à P)",
     synth: "Le cycle annuel se repère en stades notés par lettres depuis Baggiolini (1952) : A bourgeon d’hiver, B bourgeon dans le coton, C pointe verte, D sortie des feuilles, E feuilles étalées, F grappes visibles, G grappes séparées, H boutons floraux séparés, I floraison, J nouaison, K petit pois, L fermeture de la grappe, M véraison, N maturité, puis O et P en fin de cycle (Lepeltier : aoûtement et chute des feuilles ; INRAE : début de chute et chute des feuilles). L’échelle internationale BBCH, adoptée dans les années 1990, les traduit en codes chiffrés (C = 07, I = 65, M = 85).",
     mnemo: "A-B-C : le bourgeon s’éveille ; I = « Ici fleurit » ; M = « Mûrir commence » (véraison).",
-    flash: { q: "À quel stade Baggiolini correspond la floraison ?", a: "Stade I (BBCH 65)." },
+    flash: { q: "À quel stade Baggiolini correspond la floraison ?", a: "Stade I (BBCH 65).", keys: [["I"],["65"]] },
     qcm: { q: "Le stade C, « pointe verte », correspond à…", opts: ["La floraison", "Le débourrement proprement dit", "La véraison", "L’aoûtement"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets ces stades dans l’ordre du cycle.", payload: { items: ["Bourgeon dans le coton (B)", "Pointe verte (C)", "Feuilles étalées (E)", "Boutons floraux séparés (H)", "Floraison (I)", "Nouaison (J)", "Fermeture de la grappe (L)", "Véraison (M)"] } },
@@ -752,7 +752,7 @@ FICHES.push(
     titre: "La sélection clonale en France",
     synth: "Pour enrayer les viroses comme le court-noué (virus GFLV transmis par le nématode Xiphinema index), l’État crée en 1944 une section de sélection et de contrôle des bois et plants ; la sélection clonale démarre en 1962 avec l’ANTAV, devenue ENTAV puis IFV. Une souche repérée est testée par indexage (greffée sur une variété indicatrice qui révèle les virus), complété par des tests ELISA ou PCR, et son identité est vérifiée par marqueurs ADN. Elle est ensuite suivie au vignoble au moins cinq ans, avec au moins trois années de vinifications, puis agréée après avis de la section vigne du CTPS : une quinzaine d’années en tout. Le conservatoire national est au domaine de l’Espiguette (Le Grau-du-Roi). La liste officielle de mars 2026 recense environ 1 240 clones de 392 variétés (Lepeltier : 1 350 clones de 380 variétés en 2022), dont 48 clones agréés de pinot noir (47 selon Lepeltier), 31 de chardonnay, 8 de riesling et un seul de gringet. En 2017, trois clones de chardonnay (76, 95 et 96) occupaient à eux seuls environ la moitié des vignes-mères de greffons certifiées de ce cépage (47 ha sur 95).",
     mnemo: "Un clone, c’est quinze ans d’examens avant d’avoir son diplôme (l’agrément).",
-    flash: { q: "En quelle année la sélection clonale démarre-t-elle en France ?", a: "En 1962 (ANTAV, aujourd’hui IFV)." },
+    flash: { q: "En quelle année la sélection clonale démarre-t-elle en France ?", a: "En 1962 (ANTAV, aujourd’hui IFV).", keys: [["1962"]] },
     qcm: { q: "Quel virus a motivé la sélection sanitaire des plants ?", opts: ["Le court-noué (GFLV)", "La flavescence dorée", "Le mildiou", "L’oïdium"], good: 0 },
     exos: [
       { type: "ordering", prompt: "Remets le parcours d’un clone dans l’ordre.", payload: { items: ["Prospection dans les vieilles vignes", "Tests virologiques (ELISA, indexage)", "Suivi agronomique et vinifications", "Agrément après avis du CTPS", "Multiplication et diffusion"] } },
@@ -777,7 +777,7 @@ FICHES.push(
     titre: "Les catégories de plants et le passeport phytosanitaire",
     synth: "La filière distingue le matériel initial (la tête de clone conservée), le matériel de base (prémultiplication) et le matériel certifié, vendu aux viticulteurs sous étiquette bleue ; existe aussi une catégorie standard, à étiquette jaune. Cette étiquette vaut passeport phytosanitaire européen, contrôlé par FranceAgriMer. Pour éliminer le phytoplasme de la flavescence dorée, les bois et plants peuvent passer à l’eau chaude, 45 minutes à 50 °C.",
     mnemo: "Initial → base → certifié : le grand-père, le père, le fils. Bleu = certifié.",
-    flash: { q: "Quelle couleur d’étiquette porte un plant certifié ?", a: "Bleue (standard : jaune)." },
+    flash: { q: "Quelle couleur d’étiquette porte un plant certifié ?", a: "Bleue (standard : jaune).", keys: [["bleue","bleu"]] },
     qcm: { q: "Quel traitement élimine la flavescence dorée des bois et plants ?", opts: ["Eau chaude, 45 min à 50 °C", "Soufre", "Bouillie bordelaise", "Froid, −20 °C"], good: 0 },
     exos: [
       { type: "ordering", prompt: "Remets les catégories de matériel dans l’ordre de multiplication.", payload: { items: ["Matériel initial", "Matériel de base", "Matériel certifié"] } },
@@ -797,7 +797,7 @@ FICHES.push(
     titre: "Sélection massale contre sélection clonale",
     synth: "Les deux sélections multiplient par voie végétative (bouture, greffe) des souches choisies : toute vigne plantée est donc un clone. La sélection clonale part d’un individu unique, assaini et évalué, diffusé à grande échelle. La sélection massale prélève de nombreux ceps dans de vieilles vignes, pour conserver leur diversité génétique et leur adaptation au lieu ; le vigneron peut multiplier ses plants dans une « pépinière privée » réservée à sa propre exploitation et déclarée à FranceAgriMer, à partir de vignes-mères inscrites (arrêté du 17 juin 2020) ; Lepeltier en conclut qu’il n’en a les droits que pour son propre vignoble, afin de limiter la propagation des maladies. Mais la diversité finale dépend de la variabilité réelle du cépage : peu répandu, il reste génétiquement pauvre.",
     mnemo: "Clonale = un champion photocopié ; massale = une équipe entière.",
-    flash: { q: "Quel est le but principal d’une sélection massale ?", a: "Préserver la diversité génétique de vieilles vignes adaptées à leur lieu." },
+    flash: { q: "Quel est le but principal d’une sélection massale ?", a: "Préserver la diversité génétique de vieilles vignes adaptées à leur lieu.", keys: [["diversité"],["vieilles vignes","vieilles","anciennes","lieu","terroir","adaptées"]] },
     qcm: { q: "Une vigne issue de sélection massale est-elle génétiquement un clone ?", opts: ["Non, elle vient de semis", "Oui, chaque plant est multiplié par voie végétative", "Seulement si elle est greffée sur riparia", "Seulement en bio"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, une sélection massale ne peut légalement provenir que du vignoble du vigneron qui la fait.", answer: true } },
@@ -817,7 +817,7 @@ FICHES.push(
     titre: "Fabriquer un greffé-soudé en pépinière",
     synth: "Le pépiniériste cultive sur parcelles agréées des vignes mères de porte-greffes (2 045 ha en France en 2025, en net recul) et de greffons (1 592 ha en 2025). Les bois prélevés en hiver sont greffés, paraffinés, puis placés en stratification, au chaud et à l’humidité (vers 28 °C, 10 à 25 jours selon l’IFV), jusqu’à formation d’un cal. Les plants passent ensuite une saison en pépinière de plein champ, sont arrachés à l’automne et triés : la soudure doit résister à la pression du pouce. Tous ne passent pas le tri : FranceAgriMer estime le taux de reprise moyen en pépinière traditionnelle à 65 % en 2016 et 69 % en 2017, et Vitisphere situe une année normale entre 60 et 65 %.",
     mnemo: "Greffer, cirer, couver, planter, trier : le plant passe un an en nursery.",
-    flash: { q: "Qu’est-ce que la stratification d’un greffé-soudé ?", a: "Un séjour au chaud et à l’humidité (vers 28 °C) jusqu’à la formation du cal de soudure." },
+    flash: { q: "Qu’est-ce que la stratification d’un greffé-soudé ?", a: "Un séjour au chaud et à l’humidité (vers 28 °C) jusqu’à la formation du cal de soudure.", keys: [["chaud","chaleur","28"],["humidité","humide"],["cal","soudure"]] },
     qcm: { q: "Combien de temps dure la stratification selon l’IFV ?", opts: ["Une heure", "10 à 25 jours", "Six mois", "Deux ans"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets les étapes de production dans l’ordre.", payload: { items: ["Prélèvement des bois en hiver", "Greffage et paraffinage", "Stratification au chaud", "Culture en pépinière de plein champ", "Arrachage et tri à l’automne"] } },
@@ -837,7 +837,7 @@ FICHES.push(
     titre: "Des pépinières remises en question",
     synth: "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement : Lepeltier y voit l’effet d’une production de plants pensée en « matériel végétal », au moindre coût. Des alternatives émergent. Lilian Bérillon, pépiniériste à Jonquières (Vaucluse), mise sur la sélection massale et la diversité des porte-greffes ; sa société a été placée en redressement judiciaire le 8 juillet 2026 par le tribunal des activités économiques d’Avignon, la poursuite de l’activité étant jugée possible. En Centre-Loire, le Sicavac a mené une sélection massale du sauvignon (2005-2012) et lancé la marque Ceps Sicavac (structure créée en 2014), qui associe des clones agréés (108, 159, 376, 906) à des sélections massales : vignes mères palissées, plants sans herbicide, récoltés après la chute des feuilles.",
     mnemo: "« On plante pour ses petits-enfants » : le plant de qualité est un placement à cinquante ans.",
-    flash: { q: "Quelle démarche Centre-Loire a lancée pour des plants de sauvignon de qualité ?", a: "La marque Ceps Sicavac, appuyée sur une sélection massale du sauvignon." },
+    flash: { q: "Quelle démarche Centre-Loire a lancée pour des plants de sauvignon de qualité ?", a: "La marque Ceps Sicavac, appuyée sur une sélection massale du sauvignon.", keys: [["Sicavac","Ceps"],["massale"]] },
     qcm: { q: "Où se trouve la pépinière de Lilian Bérillon ?", opts: ["Jonquières (Vaucluse)", "Montlouis (Indre-et-Loire)", "Pérignac (Charente)", "Le Grau-du-Roi (Gard)"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La structure Ceps Sicavac existe depuis 2010, comme l’écrit Lepeltier.", answer: false }, explanation: "La sélection date de 2005-2012 et la structure de 2014." },
@@ -857,7 +857,7 @@ FICHES.push(
     titre: "Les fléaux venus d’Amérique au XIXe siècle",
     synth: "V. vinifera n’avait aucune défense contre les parasites américains introduits au XIXe siècle. L’oïdium (Erysiphe necator) apparaît en Angleterre en 1845 puis en France en 1847 ; on le combat au soufre. Le phylloxéra suit dans les années 1860. Le mildiou (Plasmopara viticola) arrive en 1878 ; la bouillie bordelaise (cuivre) contre lui est mise au point en 1885. Le black rot (Guignardia bidwellii) suit en 1885-1886 (1886 à Montpellier selon INRAE). L’anthracnose, souvent rangée avec eux, est en fait d’origine européenne.",
     mnemo: "O-P-M-B : Oïdium, Phylloxéra, Mildiou, Black rot, dans l’ordre d’arrivée.",
-    flash: { q: "Quel remède historique contre le mildiou est mis au point en 1885 ?", a: "La bouillie bordelaise (sulfate de cuivre et chaux)." },
+    flash: { q: "Quel remède historique contre le mildiou est mis au point en 1885 ?", a: "La bouillie bordelaise (sulfate de cuivre et chaux).", keys: [["bouillie bordelaise","bordelaise"],["cuivre"],["chaux"]] },
     qcm: { q: "Laquelle de ces maladies n’est pas d’origine américaine ?", opts: ["Oïdium", "Mildiou", "Black rot", "Anthracnose"], good: 3 },
     exos: [
       { type: "ordering", prompt: "Remets ces fléaux dans l’ordre de leur arrivée en France.", payload: { items: ["Oïdium (1847)", "Phylloxéra (années 1860)", "Mildiou (1878)", "Black rot (vers 1885)"] } },
@@ -879,7 +879,7 @@ FICHES.push(
     titre: "Francis Hallé : la plante est une colonie",
     synth: "Le botaniste Francis Hallé, spécialiste des forêts tropicales et cofondateur du Radeau des cimes (1986), critique une botanique pensée sur le modèle animal. Dans Éloge de la plante (1999 ; Lepeltier cite 2014), il montre que la plante, fixe et autotrophe, n’a pas d’organes vitaux centralisés : coupée, elle se multiplie au lieu de mourir, et ses cellules peuvent régénérer une plante entière (totipotence). Elle croît par réitération de son architecture, ce qui en fait moins un individu qu’une colonie ; Lepeltier en donne pour exemple le cep atteint d’esca qui porte encore des fruits malgré son bois mort.",
     mnemo: "Coupez un chien, il meurt ; coupez une vigne, vous avez une bouture.",
-    flash: { q: "Pourquoi Hallé dit-il que la plante est une colonie plutôt qu’un individu ?", a: "Elle croît en répétant son architecture, se multiplie quand on la coupe et n’a pas d’organe vital centralisé." },
+    flash: { q: "Pourquoi Hallé dit-il que la plante est une colonie plutôt qu’un individu ?", a: "Elle croît en répétant son architecture, se multiplie quand on la coupe et n’a pas d’organe vital centralisé.", keys: [["répète","répétant","répétition","modules","architecture"],["coupe","bouture","multiplie"],["organe","centre","centralisé","vital"]] },
     qcm: { q: "La capacité d’une cellule végétale à régénérer une plante entière s’appelle…", opts: ["La totipotence", "La parthénogenèse", "L’endosymbiose", "La photosynthèse"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Éloge de la plante de Francis Hallé est paru pour la première fois en 2014.", answer: false }, explanation: "Première édition au Seuil en 1999 ; l’origine de la date de 2014 n’a pas été retrouvée." },
@@ -899,7 +899,7 @@ FICHES.push(
     titre: "Goethe et la métamorphose des plantes",
     synth: "Dans son Essai sur la métamorphose des plantes (1790), Goethe propose de comprendre la plante comme un tout en mouvement plutôt que de la décomposer en catégories, à la manière de Linné. Cotylédons, feuilles, sépales, pétales, étamines et fruits seraient les variations d’un même organe de base (la feuille, Blatt), qui alterne expansion et contraction. Ailleurs, dès son voyage en Italie (1787), il évoque une Urpflanze, « plante archétypale » commune à toutes les plantes. Sa méthode valorise l’observation sensible et l’imagination, à côté de l’analyse.",
     mnemo: "Pour Goethe, une fleur n’est qu’une feuille qui s’est mise en habits de fête.",
-    flash: { q: "Comment Goethe nomme-t-il la « plante archétypale » ?", a: "L’Urpflanze." },
+    flash: { q: "Comment Goethe nomme-t-il la « plante archétypale » ?", a: "L’Urpflanze.", keys: [["Urpflanze"]] },
     qcm: { q: "En quelle année paraît l’Essai sur la métamorphose des plantes ?", opts: ["1650", "1790", "1868", "1924"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Pour Goethe, les organes floraux sont des feuilles transformées.", answer: true } },
@@ -919,7 +919,7 @@ FICHES.push(
     titre: "Steiner, la biodynamie et le « geste de la vigne »",
     synth: "Éditeur des écrits scientifiques de Goethe à partir des années 1880, Rudolf Steiner en tire sa propre théorie de la connaissance. En juin 1924, à Koberwitz (Silésie), il donne huit conférences, le Cours aux agriculteurs, fondement de la biodynamie. Jean-Michel Florin, coordinateur du Mouvement de l’agriculture bio-dynamique (MABD) et responsable de la section d’agriculture du Goetheanum, applique cette lecture à la vigne : une plante très végétative, qui pousse dans toutes les directions et que le vigneron canalise par la taille et le rognage. Lepeltier souligne que cette approche, polémique, invite à observer la plante dans son milieu.",
     mnemo: "Goethe a observé, Steiner a cultivé : de la métamorphose à la biodynamie.",
-    flash: { q: "Où et quand Steiner donne-t-il le Cours aux agriculteurs ?", a: "À Koberwitz (Silésie), en juin 1924 : huit conférences." },
+    flash: { q: "Où et quand Steiner donne-t-il le Cours aux agriculteurs ?", a: "À Koberwitz (Silésie), en juin 1924 : huit conférences.", keys: [["Koberwitz","Silésie"],["1924"]] },
     qcm: { q: "Quel organisme Jean-Michel Florin coordonne-t-il en France ?", opts: ["L’IFV", "Le MABD (Mouvement de l’agriculture bio-dynamique)", "L’INAO", "Demeter International"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Remets ces jalons dans l’ordre chronologique.", payload: { items: ["Goethe publie l’Essai sur la métamorphose des plantes", "Steiner édite les écrits scientifiques de Goethe", "Cours aux agriculteurs de Koberwitz"] } },

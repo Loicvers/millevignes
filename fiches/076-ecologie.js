@@ -9,7 +9,7 @@ FICHES.push(
     titre: "Le sol, interface vivante",
     synth: "Le sol est l’interface entre l’atmosphère et la roche (lithosphère) : roche mère, terre et sol ne sont pas synonymes, et Lepeltier insiste sur cette confusion fréquente. Longtemps traité en simple support de la plante, il fait l’objet d’études sur sa fraction organique depuis la fin des années 1970. Cette fraction se lit de haut en bas : la litière (matière organique libre et grossière, en surface), la matière organique fraîche et fine en dessous, puis l’humus, matière transformée, stable et liée aux minéraux. Selosse le résume par trois défauts : trop petit, trop sale, trop opaque.",
     mnemo: "Le sol est un mille-feuille : la litière en croûte, la matière fraîche en crème, l’humus collé au biscuit minéral.",
-    flash: { q: "Comment appelle-t-on la matière organique transformée, stable et liée aux minéraux du sol ?", a: "L’humus." },
+    flash: { q: "Comment appelle-t-on la matière organique transformée, stable et liée aux minéraux du sol ?", a: "L’humus.", keys: [["humus"]] },
     qcm: { q: "D’après le livre, quelle est la couche de matière organique libre et grossière, en surface ?", opts: ["L’humus", "La litière", "La roche mère", "Le complexe argilo-humique"], good: 1 },
     exos: [
       { type: "matching", prompt: "D’après le livre, associe chaque fraction organique à sa description.", payload: { pairs: [["Litière", "Matière organique grossière, libre, en surface"], ["Matière organique fraîche", "Matière fine, libre, sous la litière"], ["Humus", "Matière transformée, stable, liée aux minéraux"]] } },
@@ -34,7 +34,7 @@ FICHES.push(
     titre: "De la litière à l’humus",
     synth: "La matière organique qui tombe au sol est d’abord fragmentée par la faune détritivore (insectes, acariens), puis attaquée par les champignons et les bactéries, qui s’en prennent à la lignine et à la cellulose. Une partie est minéralisée vite (minéralisation primaire) : eau, CO2 et sels minéraux sont libérés, et ces sels sont lessivables. L’autre partie suit une humification lente qui donne l’humus (humine, acides humiques et fulviques), sorte de garde-manger d’azote et de phosphore ; sa minéralisation secondaire relâche ensuite ces éléments peu à peu.",
     mnemo: "La litière passe à la cuisine : on hache (faune), on cuit (champignons, bactéries), on mange tout de suite (primaire) ou on met en bocal (humus) pour plus tard (secondaire).",
-    flash: { q: "Quelle différence de rythme entre minéralisation primaire et humification ?", a: "La minéralisation primaire est rapide ; l’humification est lente et produit l’humus." },
+    flash: { q: "Quelle différence de rythme entre minéralisation primaire et humification ?", a: "La minéralisation primaire est rapide ; l’humification est lente et produit l’humus.", keys: [["minéralisation rapide","primaire rapide","rapide"],["humification lente","lente"]] },
     qcm: { q: "Quels organismes fragmentent d’abord la matière organique fraîche ?", opts: ["La faune détritivore", "Les mycorhizes", "Les nématodes du court-noué", "Les racines de vigne"], good: 0 },
     exos: [
       { type: "ordering", prompt: "D’après le livre, remets dans l’ordre les étapes de la voie lente, qui mène à l’humus.", payload: { items: ["Fragmentation par la faune détritivore", "Attaque par champignons et bactéries", "Humification (lente) en humus", "Minéralisation secondaire de l’humus"] } },
@@ -55,7 +55,7 @@ FICHES.push(
     titre: "Complexe argilo-humique, CEC et glomaline",
     synth: "Argiles et humus sont des colloïdes chargés négativement : ils se repoussent et risquent d’être lessivés, sauf si des colles biologiques ou des ponts cationiques (Ca2+, Mg2+, hydroxydes de fer) les relient en complexe argilo-humique. Ce complexe retient des cations (K+, NH4+) : c’est la capacité d’échange cationique (CEC), et il donne une texture grumeleuse. Lepeltier attribue la colle glomaline aux vers de terre ; or elle a été décrite en 1996 par Sara Wright (USDA) chez les champignons mycorhiziens à arbuscules, et son identité exacte reste discutée. Les turricules sont des agrégats d’argile et d’humus.",
     mnemo: "Deux aimants de même pôle se repoussent : il faut un pont de calcium ou de magnésium, comme un scotch, pour les coller.",
-    flash: { q: "Qui produit la glomaline, d’après les sources scientifiques lues ?", a: "Les champignons mycorhiziens à arbuscules (et non les vers de terre) ; décrite par Sara Wright en 1996." },
+    flash: { q: "Qui produit la glomaline, d’après les sources scientifiques lues ?", a: "Les champignons mycorhiziens à arbuscules (et non les vers de terre) ; décrite par Sara Wright en 1996.", keys: [["champignons","champignon","mycorhiziens","mycorhizes","mycorhizien"]] },
     qcm: { q: "Qui a décrit la glomaline en 1996 ?", opts: ["Marc-André Selosse", "Sara F. Wright (USDA-ARS)", "Albert Frank", "Lionel Ranjard"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La glomaline est une protéine sécrétée par le tube digestif des vers de terre.", answer: false }, explanation: "C’est l’affirmation du livre, mais la glomaline est attribuée aux champignons mycorhiziens à arbuscules (Wright, 1996). Son identité moléculaire reste discutée." },
@@ -81,7 +81,7 @@ FICHES.push(
     titre: "La vie d’un gramme de sol",
     synth: "Un gramme de sol abrite environ un milliard de bactéries pour un million d’espèces, d’après Lionel Ranjard (INRA Dijon) ; les champignons y sont environ dix fois moins nombreux. L’Atlas français des bactéries du sol, publié en décembre 2018 par le Muséum et Biotope, s’appuie sur 2 200 sites du RMQS (un point tous les 16 km). Pour la faune, le livre reprend trois catégories de vers de terre : épigés (en surface), endogés (en profondeur) et anéciques (qui montent et descendent). Il juge les sols viticoles français appauvris, sans que sa valeur moyenne de matière organique soit retrouvée.",
     mnemo: "Un gramme de sol, c’est une mégapole : un milliard d’habitants, un million de métiers.",
-    flash: { q: "Combien de bactéries et d’espèces dans un gramme de sol selon Ranjard ?", a: "Environ 1 milliard de bactéries pour 1 million d’espèces." },
+    flash: { q: "Combien de bactéries et d’espèces dans un gramme de sol selon Ranjard ?", a: "Environ 1 milliard de bactéries pour 1 million d’espèces.", keys: [["milliard"],["million"]] },
     qcm: { q: "Combien de sites du RMQS l’Atlas français des bactéries du sol exploite-t-il ?", opts: ["Environ 220", "Environ 2 200", "Environ 22 000", "Environ 220 000"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque catégorie de vers de terre à sa position.", payload: { pairs: [["Épigé", "Vit en surface"], ["Endogé", "Vit en profondeur"], ["Anécique", "Monte et descend dans le sol"]] } },
@@ -107,7 +107,7 @@ FICHES.push(
     titre: "Selosse : les microbes, jamais seuls",
     synth: "Dans Jamais seul (Actes Sud, 2017), Marc-André Selosse défend l’idée que les microbes construisent plantes, animaux et civilisations, en contrepoint d’un héritage pasteurien centré sur le microbe pathogène. Le livre en tire que la biomasse terrestre serait composée à 90 % de microbes : les estimations de Bar-On, Phillips et Milo (PNAS, 2018) donnent plutôt environ 80 % pour les plantes et 15 % pour les bactéries. Le nombre d’espèces microbiennes (de l’ordre de 10^12) n’est qu’une extrapolation par modèle (Locey et Lennon, 2016).",
     mnemo: "Une forêt, vue d’avion, est verte : ce sont les plantes qui pèsent le plus, les microbes sont les ouvriers invisibles.",
-    flash: { q: "Quel groupe domine la biomasse terrestre d’après Bar-On et al. (2018) ?", a: "Les plantes (environ 80 %), loin devant les bactéries (environ 15 %)." },
+    flash: { q: "Quel groupe domine la biomasse terrestre d’après Bar-On et al. (2018) ?", a: "Les plantes (environ 80 %), loin devant les bactéries (environ 15 %).", keys: [["plantes","végétaux"]] },
     qcm: { q: "Quel groupe domine la biomasse mondiale d’après Bar-On, Phillips et Milo (2018) ?", opts: ["Les bactéries", "Les champignons", "Les plantes", "Les animaux"], good: 2 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Bar-On et al. (2018), les microbes représentent 90 % de la biomasse terrestre.", answer: false }, explanation: "Ils pèsent environ 16 % (bactéries ~15 %, archées, champignons) ; les plantes font environ 80 %. Environ 90 % de la biomasse bactérienne se trouve en sous-sol profond, d’où peut-être la confusion." },
@@ -131,7 +131,7 @@ FICHES.push(
     titre: "Les mycorhizes : une alliance racine-champignon",
     synth: "Albert Bernhard Frank décrit et nomme la mycorhize en 1885, et cette symbiose existe depuis plus de 450 millions d’années. La plante fournit des sucres, le champignon apporte eau et sels minéraux (azote, phosphore). La vigne forme des endomycorhizes à arbuscules, où le champignon pénètre dans les cellules racinaires, comme la grande majorité des plantes (environ 70 à 80 %). L’ectomycorhize, avec son manteau fongique et ses hyphes entre les cellules, est rare : environ 2 % des espèces de plantes (surtout des arbres forestiers, dont les chênes truffiers) ; le « 10 % » du livre correspond aux familles.",
     mnemo: "Endo = dedans, comme des arbres miniatures (arbuscules) plantés dans la cellule ; ecto = dehors, un manteau posé sur la racine.",
-    flash: { q: "Quel type de mycorhize forme la vigne ?", a: "Une endomycorhize à arbuscules." },
+    flash: { q: "Quel type de mycorhize forme la vigne ?", a: "Une endomycorhize à arbuscules.", keys: [["endomycorhize","endomycorhizes","arbuscules","arbusculaire"]] },
     qcm: { q: "Qui a décrit et nommé la mycorhize en 1885 ?", opts: ["Albert Frank", "Peter Wohlleben", "Marc-André Selosse", "Lorenz Hiltner"], good: 0 },
     exos: [
       { type: "matching", prompt: "Associe chaque type de mycorhize à sa description.", payload: { pairs: [["Endomycorhize", "Arbuscules dans les cellules racinaires (cas de la vigne)"], ["Ectomycorhize", "Manteau fongique et hyphes entre les cellules (chênes truffiers)"]] } },
@@ -153,7 +153,7 @@ FICHES.push(
     titre: "Quatre services des mycorhizes, et le piège des engrais",
     synth: "Les mycorhizes rendent quatre services : nutrition (sucres contre eau, azote, phosphore), protection contre les pathogènes (compétition, antibiotiques, défenses induites), atténuation des stress (hydrique, polluants, métaux lourds) et agrégation du complexe argilo-humique. La résistance induite par la mycorhize (RIM) est documentée chez la vigne surtout pour les maladies racinaires ; contre le mildiou ou le botrytis, l’effet n’est pas démontré au champ. Piège : une vigne fertilisée en N, P et K nourrit moins ses champignons et perd leurs fonctions. Le livre évoque aussi, d’après Selosse, une « double spirale de dépendance ».",
     mnemo: "Gâter la vigne d’engrais, c’est lui servir un buffet à domicile : elle licencie ses livreurs (les champignons).",
-    flash: { q: "Pourquoi une vigne très fertilisée profite-t-elle moins de ses mycorhizes ?", a: "Elle nourrit moins ses champignons, et perd donc leurs fonctions." },
+    flash: { q: "Pourquoi une vigne très fertilisée profite-t-elle moins de ses mycorhizes ?", a: "Elle nourrit moins ses champignons, et perd donc leurs fonctions.", keys: [["nourrit moins","moins de sucres","moins de carbone","dépendante","besoin"],["champignons","champignon","mycorhizes"]] },
     qcm: { q: "Que signifie RIM dans le livre ?", opts: ["Réseau d’interactions microbiennes", "Résistance induite par la mycorhize", "Rhizosphère intégrée au milieu", "Réserve indispensable en minéraux"], good: 1 },
     exos: [
       { type: "mcq_multi", prompt: "Quels sont les services rendus par les mycorhizes d’après le livre ?", payload: { options: ["Nutrition de la plante", "Protection contre les pathogènes", "Atténuation des stress", "Agrégation du complexe argilo-humique", "Fixation directe de la lumière"], answers: [0, 1, 2, 3] } },
@@ -177,7 +177,7 @@ FICHES.push(
     titre: "Nématodes et court-noué",
     synth: "Les nématodes du sol sont pour la plupart non pathogènes : beaucoup sont prédateurs ou décomposeurs. Un seul cas pèse lourd en vigne : Xiphinema index transmet le GFLV (grapevine fanleaf virus), agent du court-noué ; Thorne et Allen l’ont décrit en 1950, et son rôle de vecteur a été établi en 1958 par Hewitt, Raski et Goheen en Californie. Xiphinema italiae est un vecteur secondaire (signalé en 1970). La maladie réduit le rendement et la longévité des ceps.",
     mnemo: "Le nématode est le facteur : il livre le virus (GFLV) directement à la racine.",
-    flash: { q: "Quel nématode est le principal vecteur du virus du court-noué ?", a: "Xiphinema index." },
+    flash: { q: "Quel nématode est le principal vecteur du virus du court-noué ?", a: "Xiphinema index.", keys: [["Xiphinema"]] },
     qcm: { q: "Qui a identifié en 1958 le rôle de Xiphinema index comme vecteur du court-noué ?", opts: ["Hewitt, Raski et Goheen", "Thorne et Allen", "Bar-On, Phillips et Milo", "Locey et Lennon"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ? (d’après le livre)", payload: { statement: "La plupart des nématodes du sol sont des parasites de la vigne.", answer: false }, explanation: "La majorité est non pathogène (prédateurs, décomposeurs) ; seuls certains vecteurs, comme Xiphinema index, posent problème." },
@@ -198,7 +198,7 @@ FICHES.push(
     titre: "La marche de l’oïdium en Europe (carte)",
     synth: "La carte du livre suit la propagation de l’oïdium de 1845 à 1854, par voies terrestres et maritimes, depuis un foyer anglais jusqu’à la péninsule ibérique, aux îles et aux Canaries. Les sources situent la première observation chez le jardinier William Tucker, à Margate (Kent), en 1845, alors que la carte place le foyer à Londres. En France, l’oïdium apparaît vers 1847 dans des serres près de Paris et touche tout le pays vers 1850. Les dates régionales de la carte (Bordeaux, Rioja, Requena) divergent parfois d’un an ou plus des sources.",
     mnemo: "Une tache d’huile partie d’un jardin du Kent (Margate, 1845) : neuf ans pour gagner la France, l’Espagne et les îles.",
-    flash: { q: "Sur quelle période la carte du livre suit-elle la propagation de l’oïdium ?", a: "De 1845 à 1854." },
+    flash: { q: "Sur quelle période la carte du livre suit-elle la propagation de l’oïdium ?", a: "De 1845 à 1854.", keys: [["1845"],["1854"]] },
     qcm: { q: "Quelle période couvre la carte de propagation de l’oïdium en Europe du livre ?", opts: ["1815-1824", "1845-1854", "1878-1887", "1905-1914"], good: 1 },
     exos: [
       { type: "ordering", prompt: "Selon la carte du livre (p. 80), remets ces vagues de propagation dans l’ordre, de la plus ancienne à la plus récente.", payload: { items: ["Foyer anglais (1845)", "Vinho Verde, Rosselló, Gandie (1851)", "Maresme, Málaga, Banyalbufar (1852)", "La Palma, Lanzarote (1854)"] } },
@@ -222,7 +222,7 @@ FICHES.push(
     titre: "Truffes et plants de vigne mycorhizés",
     synth: "La truffe est la partie visible d’un champignon ectomycorhizien associé aux chênes. Le livre cite Tuber melanosporum (noire du Périgord), T. uncinatum (de Bourgogne), T. aestivum (d’été) et T. magnatum (blanche) : or des analyses moléculaires (Paolocci et al., 2004) montrent que T. uncinatum et T. aestivum ne forment qu’une espèce, distinguée surtout par la saison de récolte. Des pépinières proposent des plants de vigne mycorhizés (essais Sicavac de 2009 à 2015), mais les gains de croissance initiaux s’estompent après trois à quatre ans. Le livre pose la question des souches importées contre indigènes.",
     mnemo: "Même truffe, deux étiquettes : « d’été » en juin, « de Bourgogne » à l’automne.",
-    flash: { q: "Que disent les analyses moléculaires de T. uncinatum et T. aestivum ?", a: "Ce sont une seule et même espèce, T. uncinatum étant un synonyme de T. aestivum." },
+    flash: { q: "Que disent les analyses moléculaires de T. uncinatum et T. aestivum ?", a: "Ce sont une seule et même espèce, T. uncinatum étant un synonyme de T. aestivum.", keys: [["même espèce","une seule espèce","synonyme","synonymes","identiques"]] },
     qcm: { q: "Quelle espèce de truffe désigne la truffe noire du Périgord ?", opts: ["Tuber magnatum", "Tuber melanosporum", "Tuber aestivum", "Tuber uncinatum"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tuber uncinatum et Tuber aestivum sont deux espèces distinctes selon les analyses moléculaires.", answer: false }, explanation: "Paolocci et al. (2004) : ce sont deux morphotypes d’une même espèce ; la distinction repose surtout sur la saison de récolte." },
@@ -246,7 +246,7 @@ FICHES.push(
     titre: "La vigne holobionte : une plante habitée de microbes",
     synth: "Lepeltier replace la vigne dans la lecture symbiotique du vivant : la feuille héberge une phyllosphère de micro-organismes, et ses chloroplastes descendraient de cyanobactéries intégrées à la cellule. L’idée remonte à Andreas Schimper, qui note dès 1883 que les chloroplastes se divisent comme des cyanobactéries libres ; Lynn Margulis l’a ensuite consacrée avec la théorie endosymbiotique (article de 1967, ouvrage de 1970). Le terme holobionte, que Selosse et ses coauteurs attribuent à Margulis (1991) mais que d’autres sources font remonter à Adolf Meyer-Abich (1943), désigne un hôte et son microbiote, des mutualistes aux parasites : la vigne est donc un supraorganisme, ce qui pose la question de fongicides peu sélectifs.",
     mnemo: "La feuille est un immeuble en copropriété : le propriétaire, la vigne, ne vit jamais seul sous son toit.",
-    flash: { q: "Que veut dire « la vigne est un holobionte » ?", a: "Que la vigne forme une unité écologique avec les micro-organismes qu’elle héberge (phyllosphère, racines…), et non un organisme isolé." },
+    flash: { q: "Que veut dire « la vigne est un holobionte » ?", a: "Que la vigne forme une unité écologique avec les micro-organismes qu’elle héberge (phyllosphère, racines…), et non un organisme isolé.", keys: [["micro-organismes","microorganismes","microbes","microbiote","bactéries","levures","champignons"],["unité","ensemble","communauté","isolé","système"]] },
     qcm: { q: "Qui note en 1883 que les chloroplastes se divisent comme des cyanobactéries libres ?", opts: ["Lynn Margulis", "Andreas Schimper", "Francis Hallé", "Rudolf Steiner"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Andreas Schimper a suggéré, dès 1883, que les plantes vertes résultent de l’union symbiotique de deux organismes.", answer: true }, explanation: "Schimper (1856-1901) le propose en note en 1883, bien avant Margulis. Le livre ne donne pas cette date." },
@@ -270,7 +270,7 @@ FICHES.push(
     titre: "Le biocontrôle microbien et les agents des maladies de la vigne",
     synth: "Face aux maladies, le livre cite des alliés microbiens : le champignon Trichoderma contre les maladies du bois (esca, black dead arm, eutypiose), la bactérie Bacillus pumilus contre l’oïdium, la levure Metschnikowia fructicola et l’amibe Willaertia magna, dont le lysat a été approuvé comme substance active dans l’UE en 2025. Côté pathogènes, la maladie de Pierce est due à une bactérie (Xylella fastidiosa) et la flavescence dorée à un phytoplasme, transmis par la cicadelle Scaphoideus titanus. Le mildiou est signalé en France en 1878 (Académie d’agriculture ; INRAE), et non en 1879 comme l’écrit Lepeltier.",
     mnemo: "Une équipe de secours microscopique : un champignon pour panser les plaies de taille, une bactérie préventive pour l’oïdium.",
-    flash: { q: "Quel agent de biocontrôle colonise les plaies de taille contre esca et black dead arm ?", a: "Le champignon Trichoderma (par exemple Trichoderma atroviride I-1237)." },
+    flash: { q: "Quel agent de biocontrôle colonise les plaies de taille contre esca et black dead arm ?", a: "Le champignon Trichoderma (par exemple Trichoderma atroviride I-1237).", keys: [["Trichoderma"]] },
     qcm: { q: "Quel est l’agent de la flavescence dorée ?", opts: ["Un phytoplasme", "Une bactérie du xylème (Xylella)", "Un virus transmis par un nématode", "Un champignon du bois"], good: 0 },
     exos: [
       { type: "matching", prompt: "Associe chaque agent à son rôle.", payload: { pairs: [["Trichoderma", "Biocontrôle des maladies du bois"], ["Bacillus pumilus", "Biocontrôle préventif de l’oïdium"], ["Xylella fastidiosa", "Bactérie de la maladie de Pierce"], ["Phytoplasme", "Agent de la flavescence dorée"]] } },
@@ -294,7 +294,7 @@ FICHES.push(
     titre: "Terroirs microbiens : une piste débattue",
     synth: "Des études de séquençage montrent que les communautés de levures et de bactéries ne se répartissent pas au hasard : elles varient selon les lieux, d’où l’idée d’un terroir microbien. L’étude de Bokulich et de ses collègues sur des moûts californiens (PNAS, mis en ligne en novembre 2013) en est un exemple (le livre ne la nomme pas) : sur 273 moûts de chardonnay, zinfandel et cabernet-sauvignon, les communautés diffèrent nettement mais faiblement d’une région à l’autre, dépendent aussi du cépage et du millésime, et sont corrélées à certains traits du climat. Leur effet sur le goût du vin reste à démontrer. Lepeltier signale que ces résultats sont contestés par d’autres recherches ; l’étude elle-même établit des corrélations, sans démontrer de causalité.",
     mnemo: "Le terroir a-t-il une empreinte digitale microbienne ? La piste existe, mais l’empreinte reste floue.",
-    flash: { q: "Que désigne l’idée de « terroir microbien » ?", a: "L’hypothèse que des communautés de levures et de bactéries propres à un lieu contribuent à la signature d’un vin ; thèse débattue." },
+    flash: { q: "Que désigne l’idée de « terroir microbien » ?", a: "L’hypothèse que des communautés de levures et de bactéries propres à un lieu contribuent à la signature d’un vin ; thèse débattue.", keys: [["levures","bactéries","micro-organismes","microbes","microbiote"],["lieu","terroir","local","signature","propres"]] },
     qcm: { q: "Que désigne l’expression « terroir microbien » ?", opts: ["Des communautés de micro-organismes caractéristiques d’un lieu", "Un sol calcaire riche en bactéries", "Une levure commerciale sélectionnée", "Un traitement microbiologique du vin"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, l’existence de terroirs microbiens fait l’objet de contestations.", answer: true }, explanation: "Le livre présente ces études de séquençage comme contestées." },
@@ -317,7 +317,7 @@ FICHES.push(
     titre: "La vigne mariée à l’arbre (vite maritata)",
     synth: "Sur le modèle de la liane forestière, la vigne a longtemps grimpé sur des arbres vivants : c’est la vite maritata ou vigne arborescente, qui, selon Lepeltier, vient des Étrusques, tandis que le gobelet bas est un héritage gréco-oriental. Virgile, dans les Géorgiques, évoque déjà l’union des vignes et des ormes. Le livre oppose les riches, qui plantent sur échalas, aux pauvres, qui utilisent des arbres et la complantation (joala, joualle : rangs de vigne séparés par des bandes d’autres cultures). Condamnée par les agronomes puis par le remembrement du XXe siècle, cette pratique a presque disparu, même si des domaines la font renaître (à Saint-Émilion, Les Joualles de Cormeil-Figeac associent depuis 2020 vigne, arbres fruitiers et maraîchage) ; le schéma du livre en liste les formes (Bigorre et Béarn, Savoie et comté de Foix, Gascogne, Latium, Vénétie, Abruzzes, Toscane, Campanie).",
     mnemo: "Un orme-tuteur : l’arbre donne le bras, la vigne s’y accroche, et le couple dure des siècles.",
-    flash: { q: "Que signifie vite maritata ?", a: "La vigne « mariée » à un arbre vivant qui lui sert de tuteur (vigne arborescente)." },
+    flash: { q: "Que signifie vite maritata ?", a: "La vigne « mariée » à un arbre vivant qui lui sert de tuteur (vigne arborescente).", keys: [["mariée","mariage","marier"],["arbre","arbres"]] },
     qcm: { q: "Que signifie vite maritata ?", opts: ["Vigne mariée à un arbre", "Vigne taillée en gobelet", "Vigne palissée sur fil de fer", "Vigne greffée sur porte-greffe américain"], good: 0 },
     exos: [
       { type: "matching", prompt: "Associe chaque région à la forme de vigne haute du schéma des vignes arborescentes.", payload: { pairs: [["Vénétie", "Système original des frères Belussi"], ["Campanie", "Vigne haute en support mixte"], ["Latium", "Feston simple"]] }, explanation: "Formes citées dans le schéma du livre (p. 82-83) : le feston simple est situé dans le Latium (Lazio), le système des frères Belussi en Vénétie (Veneto), la vigne haute en support mixte en Campanie." },
@@ -341,7 +341,7 @@ FICHES.push(
     titre: "Plantes compagnes et arômes du vin",
     synth: "Le livre avance que des plantes voisines marquent les arômes du vin : l’eucalyptus pour la note mentholée du cabernet de Martha’s Vineyard (Heitz Cellar), mais Joe Heitz doutait lui-même de cette explication, qu’il attribuait au clone. L’Australian Wine Research Institute relie le 1,8-cinéole (eucalyptol) surtout aux débris d’eucalyptus récoltés avec le raisin plutôt qu’à un dépôt aérien. À Bordeaux, l’équipe de l’ISVV (Poitou et al., 2017) relie l’armoise de Verlot à des teneurs plus élevées en 1,8-cinéole dans certains rouges, qui renforcent la nuance mentholée.",
     mnemo: "Un voisin qui parfume : l’eucalyptus à Napa, l’armoise à Bordeaux, la menthe dans le verre.",
-    flash: { q: "Quelle plante de certains vignobles bordelais a été reliée à plus de 1,8-cinéole dans des vins rouges ?", a: "L’armoise de Verlot (Artemisia verlotiorum), selon Poitou et al. (ISVV, 2017)." },
+    flash: { q: "Quelle plante de certains vignobles bordelais a été reliée à plus de 1,8-cinéole dans des vins rouges ?", a: "L’armoise de Verlot (Artemisia verlotiorum), selon Poitou et al. (ISVV, 2017).", keys: [["armoise","Artemisia"]] },
     qcm: { q: "Quelle plante a été reliée, à Bordeaux, à des teneurs plus élevées en 1,8-cinéole dans certains rouges ?", opts: ["L’armoise de Verlot", "La lavande", "Le thym", "Le romarin"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Des chercheurs de l’ISVV (Bordeaux) ont relié la présence d’armoise de Verlot à une teneur plus élevée en 1,8-cinéole dans certains vins rouges français.", answer: true }, explanation: "Poitou, Thibon et Darriet (2017), Journal of Agricultural and Food Chemistry ; jusqu’à 2,61 µg/L dans certains vins." },
@@ -366,7 +366,7 @@ FICHES.push(
     titre: "Couverts, adventices et engrais verts",
     synth: "Certains cahiers des charges d’appellation imposent un couvert végétal : celui de Saumur-Champigny exige un couvert des tournières et un couvert maîtrisé de l’inter-rang (version 2015 lue), alors que Lussac-Saint-Émilion ou Pessac-Léognan n’en imposent pas explicitement. L’herbe concurrence la vigne pour l’eau et l’azote et peut accroître l’humidité (gel, pourriture). Lepeltier présente aussi les adventices comme bio-indicatrices (Gérard Ducerf) et les engrais verts : brassicacées et poacées décompactantes, fabacées fixatrices d’azote.",
     mnemo: "Le tapis vert de la cave à ciel ouvert : il nourrit le sol, mais boit aussi à la table de la vigne.",
-    flash: { q: "Quelles familles d’engrais verts le livre cite-t-il ?", a: "Brassicacées (crucifères) et poacées (graminées) pour décompacter, fabacées pour fixer l’azote." },
+    flash: { q: "Quelles familles d’engrais verts le livre cite-t-il ?", a: "Brassicacées (crucifères) et poacées (graminées) pour décompacter, fabacées pour fixer l’azote.", keys: [["brassicacées","crucifères"],["poacées","graminées"],["fabacées","légumineuses"]] },
     qcm: { q: "Quel inconvénient le livre attribue-t-il à l’herbe dans les rangs ?", opts: ["Elle concurrence la vigne pour l’eau et l’azote", "Elle acidifie le raisin", "Elle empêche la photosynthèse", "Elle fait fuir les auxiliaires"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tous les cahiers des charges d’AOC français imposent un couvert végétal dans les vignes.", answer: false }, explanation: "Saumur-Champigny l’impose (tournières, inter-rang maîtrisé) ; Irouléguy impose seulement l’enherbement du contour des parcelles ; Lussac-Saint-Émilion et Pessac-Léognan n’ont pas d’obligation explicite." },
@@ -391,7 +391,7 @@ FICHES.push(
     titre: "Ravageurs de la vigne et auxiliaires",
     synth: "En monoculture, la vigne forme un agrosystème fragile. Le livre cite parmi les ravageurs les tordeuses de la grappe : l’eudémis (Lobesia botrana), la cochylis (Eupoecilia ambiguella), l’eulia (Argyrotaenia pulchellana) et la pyrale de la vigne. S’y ajoutent cicadelles, acariens et cochenilles. Le projet Agrolife, mené à Lánia (Chypre) de 2014 à 2017, associe confusion sexuelle, haies et fleurs indigènes pour attirer les auxiliaires.",
     mnemo: "Le trio de la grappe : Eudémis la première, Cochylis la deuxième, Eulia la petite dernière.",
-    flash: { q: "Quel est le nom latin de l’eudémis ?", a: "Lobesia botrana." },
+    flash: { q: "Quel est le nom latin de l’eudémis ?", a: "Lobesia botrana.", keys: [["Lobesia botrana","Lobesia"]] },
     qcm: { q: "Quel est le nom latin de l’eudémis de la vigne ?", opts: ["Lobesia botrana", "Eupoecilia ambiguella", "Scaphoideus titanus", "Xylella fastidiosa"], good: 0 },
     exos: [
       { type: "matching", prompt: "Associe chaque tordeuse de la grappe à son nom latin.", payload: { pairs: [["Eudémis", "Lobesia botrana"], ["Cochylis", "Eupoecilia ambiguella"]] } },
@@ -415,7 +415,7 @@ FICHES.push(
     titre: "Restinclières, laboratoire de l’agroforesterie",
     synth: "Dans l’Hérault, au nord de Montpellier, le domaine de Restinclières sert de laboratoire à ciel ouvert pour associer arbres et cultures, vigne comprise. Il couvre environ 50 ha selon les sources (53 ha selon le livre) et compte environ 80 essences. Le Département de l’Hérault en est propriétaire depuis 1990 ; l’INRA y mène des essais à partir de 1995-1996 selon les sources. Le livre prête aux arbres en général un rôle d’abri pour les auxiliaires, de maintien du sol, de brise-vent, d’ombrage et de pare-feu.",
     mnemo: "Restinclières : la vigne et l’arbre, en ménage dans l’Hérault depuis les années 1990.",
-    flash: { q: "Qu’étudie-t-on à Restinclières (Hérault) ?", a: "L’agroforesterie : l’association d’arbres et de cultures, dont la vigne." },
+    flash: { q: "Qu’étudie-t-on à Restinclières (Hérault) ?", a: "L’agroforesterie : l’association d’arbres et de cultures, dont la vigne.", keys: [["agroforesterie"]] },
     qcm: { q: "Dans quel département se trouve le domaine de Restinclières ?", opts: ["Hérault", "Gironde", "Marne", "Vaucluse"], good: 0 },
     exos: [
       { type: "mcq_single", prompt: "Environ combien d’essences d’arbres compte le domaine ?", payload: { options: ["Environ 8", "Environ 80", "Environ 200", "Environ 800"], answer: 1 }, explanation: "« Quelque 80 essences » selon L’Info Durable (le livre dit plus de 80)." },
@@ -439,7 +439,7 @@ FICHES.push(
     titre: "Permaculture, animaux au vignoble et « Non solus »",
     synth: "Lepeltier présente une échelle de permaculture en dix niveaux attribuée à Alain Malard, de la monoculture à l’énergie, en passant par le sol couvert, les paillages, les haies, les arbres, puis vaches, poules et cochons. Elle évoque aussi moutons, chèvres, poules et labour à cheval au vignoble. La devise « Non solus » (orme et vigne) est celle des Elzevier, imprimeurs de Leyde au XVIIe siècle, et non d’Érasme (mort en 1536) comme l’écrit le livre.",
     mnemo: "L’orme dit à la vigne : « Non solus », tu n’es pas seule ; le mouton, la poule et la haie aussi.",
-    flash: { q: "À qui appartient la devise « Non solus » (orme et vigne) ?", a: "À la marque des imprimeurs Elzevier de Leyde, et non à Érasme." },
+    flash: { q: "À qui appartient la devise « Non solus » (orme et vigne) ?", a: "À la marque des imprimeurs Elzevier de Leyde, et non à Érasme.", keys: [["Elzevier"]] },
     qcm: { q: "Quelle devise accompagne l’orme et la vigne dans l’emblème des Elzevier ?", opts: ["Non solus", "In vino veritas", "Labor omnia vincit", "Vitis amica ulmo"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La devise « Non solus » est celle de l’humaniste Érasme.", answer: false }, explanation: "Le livre l’attribue à Érasme « au XVIIe siècle », mais elle figure sur la marque des imprimeurs Elzevier (XVIIe siècle) ; Érasme est mort en 1536." },
@@ -463,7 +463,7 @@ FICHES.push(
     titre: "Après 1945 : la viticulture conventionnelle",
     synth: "Après 1945, l’exode rural et le manque de main-d’œuvre poussent à restructurer le vignoble : remembrement, passage de la polyculture à la monoculture, mécanisation. De 1950 au début des années 1990, la révolution agricole généralise les produits de synthèse (herbicides, pesticides, fongicides, engrais) : c’est la viticulture « conventionnelle ». Rachel Carson (1907-1964) en alerte les effets dans Printemps silencieux, paru en 1962 (traduction française en 1963) ; Lepeltier situe dans les années 1970 la prise de conscience du public et des politiques que ce livre a nourrie. Lepeltier chiffre le poids de la vigne dans les pesticides (15,6 % pour 3,2 % de la SAU) ; l’ordre de grandeur est cohérent, mais ce chiffre exact n’est pas confirmé (Sénat 2012 : 14,4 % pour 3,3 %).",
     mnemo: "Le tracteur enjambeur remplace les mains : on arrache les haies, on aligne les rangs, on pulvérise.",
-    flash: { q: "Quels bouleversements du vignoble français après 1945 ?", a: "Remembrement, monoculture à la place de la polyculture, mécanisation, puis produits de synthèse (1950 – début des années 1990)." },
+    flash: { q: "Quels bouleversements du vignoble français après 1945 ?", a: "Remembrement, monoculture à la place de la polyculture, mécanisation, puis produits de synthèse (1950 – début des années 1990).", keys: [["remembrement"],["monoculture"],["mécanisation","tracteurs","machines"],["synthèse","chimie","chimiques","pesticides","désherbants"]] },
     qcm: { q: "Selon le livre, quelle période voit la révolution agricole qui généralise les produits de synthèse ?", opts: ["1900 – 1930", "1950 – début des années 1990", "1995 – 2010", "Depuis 2005"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Printemps silencieux (Silent Spring) de Rachel Carson paraît dans les années 1970.", answer: false }, explanation: "Il paraît le 27 septembre 1962 (traduction française en 1963). Lepeltier place dans les années 1970 la prise de conscience qu’il a nourrie ; l’interdiction du DDT aux États-Unis date de 1972." },
@@ -489,7 +489,7 @@ FICHES.push(
     titre: "Raisonnée, intégrée, durable : les demi-mesures",
     synth: "Face aux excès de la viticulture conventionnelle, la viticulture raisonnée (traitements informés et contrôlés) puis les approches intégrée et durable (management environnemental et social) se développent. En France, le décret n° 2002-631 du 25 avril 2002 organise la qualification des exploitations en agriculture raisonnée, valable cinq ans et délivrée via des organismes certificateurs agréés. La HVE (Haute Valeur Environnementale), issue du Grenelle de l’environnement, repose sur quatre thèmes : biodiversité, stratégie phytosanitaire, fertilisation et irrigation. Lepeltier cite aussi la norme ISO 14001 et, avec la géographe Sylvaine Boulanger-Fassier, voit dans les mentalités un frein : le temps d’observation passe pour du temps perdu.",
     mnemo: "Trois étiquettes sur la bouteille, un même carnet de traitements : on réduit la dose, on ne change pas la logique.",
-    flash: { q: "Quels sont les quatre thèmes de la certification HVE ?", a: "Biodiversité, stratégie phytosanitaire, fertilisation, irrigation (gestion de l’eau)." },
+    flash: { q: "Quels sont les quatre thèmes de la certification HVE ?", a: "Biodiversité, stratégie phytosanitaire, fertilisation, irrigation (gestion de l’eau).", keys: [["biodiversité"],["phytosanitaire","phytosanitaires","traitements","pesticides"],["fertilisation","engrais"],["irrigation","eau"]] },
     qcm: { q: "Quel texte officiel encadre en 2002 la qualification des exploitations en agriculture raisonnée ?", opts: ["Le décret n° 2002-631", "La loi Grenelle II", "Le règlement européen sur le bio", "Le décret-loi de 1935 sur les AOC"], good: 0 },
     exos: [
       { type: "mcq_multi", prompt: "Quels thèmes entrent dans la certification HVE ?", payload: { options: ["Biodiversité", "Stratégie phytosanitaire", "Fertilisation", "Irrigation (gestion de l’eau)", "Choix du cépage", "Date des vendanges"], answers: [0, 1, 2, 3] }, explanation: "Quatre thèmes : biodiversité, stratégie phytosanitaire, fertilisation, irrigation." },
@@ -517,7 +517,7 @@ FICHES.push(
     titre: "Descola, Latour et la fin du Grand Partage",
     synth: "Pour Philippe Descola (Par-delà nature et culture, Gallimard, 2005), la séparation entre nature et culture est propre au « naturalisme », l’une de quatre ontologies avec le totémisme, l’animisme et l’analogisme ; il a tenu la chaire d’Anthropologie de la nature au Collège de France (2000-2019). Bruno Latour, dans Nous n’avons jamais été modernes (1991), remet en cause cette séparation moderne et s’appuie sur l’hypothèse Gaïa, qui voit la Terre comme un système autorégulé (Lovelock et Margulis, vers 1972). Le livre présente James Lovelock comme climatologue : c’était un chimiste et inventeur.",
     mnemo: "Quatre manières de regarder un arbre : le naturaliste le mesure, l’animiste lui parle, le totémiste s’en réclame, l’analogiste y lit le cosmos.",
-    flash: { q: "Quelles sont les quatre ontologies de Descola ?", a: "Naturalisme, animisme, totémisme, analogisme." },
+    flash: { q: "Quelles sont les quatre ontologies de Descola ?", a: "Naturalisme, animisme, totémisme, analogisme.", keys: [["naturalisme"],["animisme"],["totémisme"],["analogisme"]] },
     qcm: { q: "Combien d’ontologies Descola distingue-t-il dans Par-delà nature et culture ?", opts: ["Deux", "Trois", "Quatre", "Cinq"], good: 2 },
     exos: [
       { type: "matching", prompt: "Associe chaque ontologie de Descola à sa caractéristique.", payload: { pairs: [["Naturalisme", "Continuité physique, discontinuité intérieure : dominant aujourd’hui"], ["Animisme", "Exemple : les Achuar"], ["Totémisme", "Exemple : l’Australie"], ["Analogisme", "Dominant en Europe jusqu’à la Renaissance"]] } },
@@ -542,7 +542,7 @@ FICHES.push(
     titre: "Une diplomatie avec le vivant : Larrère, Morizot, Calvo",
     synth: "Baptiste Morizot (Manières d’être vivant, Actes Sud, 2020) plaide pour une cohabitation « diplomatique » avec le vivant, et Catherine et Raphaël Larrère (Du bon usage de la nature) pour un usage écocentré de la nature ; la date de ce dernier ouvrage est 1997 selon Wikipédia, 1998 selon Lepeltier. Un encadré évoque Raw Wine Alive!, rendez-vous en ligne de décembre 2021 organisé par Isabelle Legeron MW, où intervient Paco Calvo. Celui-ci dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et travaille sur l’intelligence des plantes.",
     mnemo: "Pour parler au vivant, envoyer un diplomate plutôt qu’un huissier : Morizot à la table, Calvo qui filme les plantes en accéléré.",
-    flash: { q: "Qui est Paco Calvo ?", a: "Le chercheur qui dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et étudie l’intelligence des plantes." },
+    flash: { q: "Qui est Paco Calvo ?", a: "Le chercheur qui dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et étudie l’intelligence des plantes.", keys: [["plantes","végétale","végétal"],["intelligence"],["Murcie","MINT","Minimal Intelligence"]] },
     qcm: { q: "Qui dirige le Minimal Intelligence Lab de l’université de Murcie ?", opts: ["Paco Calvo", "Baptiste Morizot", "Philippe Descola", "Francis Hallé"], good: 0 },
     exos: [
       { type: "cloze", prompt: "Complète.", payload: { text: "Manières d’être vivant de Baptiste Morizot paraît en {{2020}} chez {{Actes Sud}}." } },
@@ -569,7 +569,7 @@ FICHES.push(
     titre: "La carte du bio viticole français en 2020",
     synth: "En 2020, la France compte environ 137 400 ha de vignes bio (certifiées ou en conversion), soit près de 17 % du vignoble (Agence Bio, via Réussir). La carte du livre classe les régions par part de bio : Provence (43,9 %), Jura (32,8 %), Alsace (32,6 %) et Corse (30,6 %) en tête, Champagne (6,2 %) en dernière position. La biodynamie reste marginale au niveau national (environ 1,4 % fin 2019) mais atteint 8,2 % dans le Jura et 5,8 % en Alsace selon la carte.",
     mnemo: "Podium bio du livre : Provence, Jura, Alsace ; la Champagne ferme la marche.",
-    flash: { q: "Quelles régions dépassent 30 % de vignes bio sur la carte du livre (2020) ?", a: "Provence, Jura, Alsace et Corse." },
+    flash: { q: "Quelles régions dépassent 30 % de vignes bio sur la carte du livre (2020) ?", a: "Provence, Jura, Alsace et Corse.", keys: [["Provence"],["Jura"],["Alsace"],["Corse"]] },
     qcm: { q: "Selon la carte du livre, laquelle de ces régions a la plus forte part de vigne bio en 2020 ?", opts: ["Champagne", "Bordeaux", "Jura", "Bourgogne-Beaujolais"], good: 2 },
     exos: [
       { type: "ordering", prompt: "Classe ces régions de la plus forte à la plus faible part de vigne bio en 2020, selon la carte du livre (p. 95).", payload: { items: ["Jura", "Alsace", "Loire", "Bordeaux", "Champagne"] }, explanation: "Selon la carte du livre : Jura 32,81 %, Alsace 32,62 %, Loire 20,02 %, Bordeaux 16,88 %, Champagne 6,15 %." },
@@ -599,7 +599,7 @@ FICHES.push(
     titre: "Une histoire du vin nature",
     synth: "Il n’existe pas de définition légale du vin nature, mais l’expression a une longue histoire. Lepeltier cite André Jullien (Topographie de tous les vignobles connus, 1816) pour un vin « naturel » sans substance étrangère, puis la révolte des vignerons du Midi contre les vins de sucre et trafiqués (1907) et le groupement allemand de 1910, ancêtre du VDP. L’expression revient dans les années 1980 contre les vins technologiques, dans le sillage de Jules Chauvet (1907-1989), négociant du Beaujolais dont s’inspireraient Marcel Lapierre et Pierre Overnoy. L’anthropologue Christelle Pineau a consacré un livre à ce mouvement (2019 selon Lepeltier, 2020 selon La Vie des idées).",
     mnemo: "1907 le Midi crie contre le sucre, 1910 l’Allemagne pose son label : le « naturel » naît d’une méfiance envers le sac de sucre.",
-    flash: { q: "Que devient le groupement fondé en 1910 par des producteurs allemands, le Verband Deutscher Naturweinversteigerer ?", a: "Il est l’ancêtre de l’actuel VDP ; « Naturwein » désignait un vin non chaptalisé." },
+    flash: { q: "Que devient le groupement fondé en 1910 par des producteurs allemands, le Verband Deutscher Naturweinversteigerer ?", a: "Il est l’ancêtre de l’actuel VDP ; « Naturwein » désignait un vin non chaptalisé.", keys: [["VDP"],["chaptalisé","chaptalisation"]] },
     qcm: { q: "Quelle année marque la révolte des vignerons du Languedoc-Roussillon contre les vins de sucre et trafiqués ?", opts: ["1816", "1907", "1962", "1985"], good: 1 },
     exos: [
       { type: "matching", prompt: "Associe chaque nom à ce qui le caractérise.", payload: { pairs: [["André Jullien", "Topographie de tous les vignobles connus (1816)"], ["Jules Chauvet", "Négociant du Beaujolais (1907-1989)"], ["Verband Deutscher Naturweinversteigerer", "Fondé en 1910, devenu le VDP"]] } },
@@ -626,7 +626,7 @@ FICHES.push(
     titre: "Les chartes du vin nature",
     synth: "Faute de définition légale, le vin nature se définit par des chartes privées. Lepeltier cite l’AVN (Association des vins naturels), présentée comme la première, les vins S.A.I.N.S. (Sans Aucun Intrant Ni Sulfite) et, la plus récente, Vin Méthode Nature. Celle-ci naît d’un syndicat de défense créé à l’automne 2019 ; son label est présenté en mars 2020 : SO2 total inférieur à 30 mg/L, ajouté seulement avant la mise en bouteille, avec un contrôle par un tiers (audits aléatoires d’un organisme certificateur). La charte a été validée par la DGCCRF, mais reste un label privé : le rôle de l’INAO est contesté.",
     mnemo: "Trois chartes, trois étiquettes : AVN = l’aînée, SAINS = le zéro sulfite, Méthode Nature = le 30 mg sous contrôle.",
-    flash: { q: "Quel seuil de SO2 total impose la charte Vin Méthode Nature ?", a: "Moins de 30 mg/L, avec un contrôle par un organisme tiers." },
+    flash: { q: "Quel seuil de SO2 total impose la charte Vin Méthode Nature ?", a: "Moins de 30 mg/L, avec un contrôle par un organisme tiers.", keys: [["30"],["tiers","contrôle","externe","indépendant"]] },
     qcm: { q: "Que signifie S.A.I.N.S. ?", opts: ["Sans Aucun Intrant Ni Sulfite", "Sélection Agricole Issue de Nos Sols", "Soufre Autorisé Inférieur à Nos Seuils", "Syndicat des Artisans Indépendants du Nature"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le syndicat de défense des vins nature’l, à l’origine de Vin Méthode Nature, a été fondé à l’automne 2019.", answer: true }, explanation: "Le label a été présenté en mars 2020." },
@@ -652,7 +652,7 @@ FICHES.push(
     titre: "Agir indirectement : Haudricourt et Fukuoka",
     synth: "Lepeltier oppose le réflexe « à un problème une molécule » à une conduite multifactorielle qui accompagne la vigne. Elle s’appuie sur André-Georges Haudricourt (1911-1996), dont l’article de 1962 sur la domestication des plantes et animaux distinguerait une action directe positive, occidentale et interventionniste, d’une action indirecte négative, associée à l’Asie. Elle évoque aussi Masanobu Fukuoka (1913-2008), microbiologiste et phytopathologiste revenu sur la ferme familiale de Shikoku, qui y cultive sans machine, pesticide, engrais ni labour, et raconte sa démarche dans La Révolution d’un brin de paille (1975).",
     mnemo: "Haudricourt : le jardinier qui pousse contre celui qui laisse faire ; Fukuoka : un brin de paille suffit à lancer la révolution.",
-    flash: { q: "Quel livre de Fukuoka (1975) expose son agriculture sans labour ni intrants ?", a: "La Révolution d’un brin de paille (traduit en français sous le titre La Révolution d’un seul brin de paille)." },
+    flash: { q: "Quel livre de Fukuoka (1975) expose son agriculture sans labour ni intrants ?", a: "La Révolution d’un brin de paille (traduit en français sous le titre La Révolution d’un seul brin de paille).", keys: [["révolution"],["brin de paille","paille"]] },
     qcm: { q: "Sur quelle île du Japon se trouve la ferme de Fukuoka ?", opts: ["Hokkaido", "Okinawa", "Shikoku", "Sado"], good: 2 },
     exos: [
       { type: "matching", prompt: "Associe chaque personnage à ses dates.", payload: { pairs: [["André-Georges Haudricourt", "1911-1996"], ["Masanobu Fukuoka", "1913-2008"]] } },
@@ -676,7 +676,7 @@ FICHES.push(
     titre: "Permaculture, régénératif et vigne non labourée",
     synth: "En 1978, Bill Mollison et David Holmgren publient Permaculture One ; Robert Rodale (1930-1990) popularise ensuite l’agriculture régénérative. Pour Lepeltier, le labour est une bioturbation humaine, intensifiée par la mécanisation du début du XXe siècle. Elle cite Eyrie Vineyards, en Oregon, où David Lett plante du pinot noir en 1965 dans la Willamette Valley ; le domaine affirme n’y avoir jamais labouré, alors que le livre évoque un arrêt du labour par Jason Lett. La Regenerative Viticulture Foundation, ONG britannique lancée en 2022, promeut cette transition.",
     mnemo: "Mollison et Holmgren plantent la graine en 1978 ; Rodale la cultive ; Eyrie la laisse enfin tranquille sous terre.",
-    flash: { q: "Quel ouvrage publié en 1978 fonde la permaculture ?", a: "Permaculture One, de Bill Mollison et David Holmgren." },
+    flash: { q: "Quel ouvrage publié en 1978 fonde la permaculture ?", a: "Permaculture One, de Bill Mollison et David Holmgren.", keys: [["Permaculture One"],["Mollison"],["Holmgren"]] },
     qcm: { q: "Où se situe le domaine Eyrie Vineyards ?", opts: ["Willamette Valley (Oregon)", "Napa Valley (Californie)", "Finger Lakes (New York)", "Marlborough (Nouvelle-Zélande)"], good: 0 },
     exos: [
       { type: "cloze", prompt: "Complète.", payload: { text: "{{Permaculture One}} est publié en {{1978}} par Mollison et Holmgren." } },
@@ -702,7 +702,7 @@ FICHES.push(
     titre: "La vitiforesterie aujourd’hui",
     synth: "Lepeltier rappelle que la vigne associée aux arbres est connue depuis l’Antiquité : l’asprinio d’Aversa grimpe sur des peupliers au-delà de 10 m, et la pratique est restée répandue en Italie centrale jusqu’aux années 1960 et reste visible en Géorgie, en Bolivie (vallée de Cinti) et au Chili (Colchagua). La vitiforesterie moderne, vieille d’une trentaine d’années, interplante ou borde la vigne d’arbres (sol, biomasse, microclimat, gel). Deux exemples français : Vignenvie à Charnay (Éric Texier, 3 ha, sans labour) et le Château de Fosse-Sèche (Saumurois), dont la carte et le texte du livre donnent des surfaces différentes.",
     mnemo: "L’asprinio monte au peuplier comme au mât : la vigne cherche l’arbre depuis l’Antiquité.",
-    flash: { q: "Quel cépage italien du livre est conduit sur de hauts peupliers ?", a: "L’asprinio d’Aversa." },
+    flash: { q: "Quel cépage italien du livre est conduit sur de hauts peupliers ?", a: "L’asprinio d’Aversa.", keys: [["asprinio"]] },
     qcm: { q: "Selon Lepeltier, depuis quand la vitiforesterie est-elle connue ?", opts: ["Depuis l’Antiquité", "Depuis la Renaissance", "Depuis le phylloxéra", "Depuis les années 1980 seulement"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le livre donne la même surface d’aménagement pour Fosse-Sèche en p. 99 et en p. 101.", answer: false }, explanation: "La légende de la carte (p. 99) indique 30 ha dédiés à l’écosystème, le texte (p. 101) 18 ha d’aménagement agroforestier." },
@@ -729,7 +729,7 @@ FICHES.push(
     titre: "Le vitipastoralisme : des moutons dans les vignes",
     synth: "Le vitipastoralisme consiste à faire pâturer des animaux dans la vigne, à demeure ou de passage (souvent l’hiver). Lepeltier cite le domaine Léon Barral (Faugères) comme pionnier de l’intégration animale ; les sources lues y décrivent un troupeau d’environ 60 vaches, sans attester ce rôle de pionnier. Elle s’appuie surtout sur la Nouvelle-Zélande, où une étude de Meredith Niles, Garrett et Walsh (2018, Marlborough, 15 viticulteurs) conclut que les avantages dépassent les inconvénients : tonte, herbicides, azote, fioul et effeuillage d’un côté, dégâts sur fils et tuyaux de l’autre. Attention aux chiffres : le 59 % de l’étude concerne la part des viticulteurs, non des hectares.",
     mnemo: "Le mouton est le tracteur qui broute : il tond, désherbe et fume en une seule passe.",
-    flash: { q: "À quoi correspond le 59 % cité par l’étude de Niles et al. ?", a: "À la part de viticulteurs néo-zélandais qui font pâturer leurs vignes, et non à une part des hectares." },
+    flash: { q: "À quoi correspond le 59 % cité par l’étude de Niles et al. ?", a: "À la part de viticulteurs néo-zélandais qui font pâturer leurs vignes, et non à une part des hectares.", keys: [["viticulteurs","vignerons","producteurs","domaines","exploitations"],["pâturer","pâturage","moutons","animaux","brebis"]] },
     qcm: { q: "Dans quelle région néo-zélandaise l’étude de Niles et al. (2018) a-t-elle été menée ?", opts: ["Marlborough", "Hawke’s Bay", "Central Otago", "Gisborne"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Lepeltier, 59 % des 37 000 ha de vignes néo-zélandaises accueillent des moutons l’hiver.", answer: true }, explanation: "C’est ce que dit le livre, mais l’étude source parle de 59 % des viticulteurs, et les surfaces actuelles avoisinent 42 000 ha." },
@@ -755,7 +755,7 @@ FICHES.push(
     titre: "L’agroécologie : un mot né en 1928",
     synth: "Lepeltier fait apparaître le mot agroécologie en 1928 sous la plume de Basil Bensin ; d’autres auteurs l’attribuent à Friederichs en 1930. Le courant prend son essor dans les années 1970. Elle cite Miguel Altieri pour un ouvrage de base scientifique sur une agriculture alternative (1983 selon elle, 1987 pour l’édition de catalogue). En Amérique latine, la dimension sociale domine, avec la souveraineté alimentaire.",
     mnemo: "Agro + écologie : le champ lu comme un écosystème, et pas seulement comme une usine à grains.",
-    flash: { q: "Quel terme désigne l’étude du champ cultivé comme écosystème, apparu en 1928 selon Lepeltier ?", a: "L’agroécologie (Basil Bensin, 1928 ; Friederichs, 1930, selon d’autres auteurs)." },
+    flash: { q: "Quel terme désigne l’étude du champ cultivé comme écosystème, apparu en 1928 selon Lepeltier ?", a: "L’agroécologie (Basil Bensin, 1928 ; Friederichs, 1930, selon d’autres auteurs).", keys: [["agroécologie"]] },
     qcm: { q: "Quel chercheur Lepeltier cite-t-elle pour les bases scientifiques de l’agroécologie ?", opts: ["Miguel Altieri", "Masanobu Fukuoka", "Jules Chauvet", "Francis Hallé"], good: 0 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Lepeltier attribue l’apparition du mot agroécologie à Basil Bensin en 1928.", answer: true }, explanation: "D’autres auteurs retiennent Friederichs en 1930 : l’origine du mot est débattue." },
