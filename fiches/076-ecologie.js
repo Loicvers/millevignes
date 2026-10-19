@@ -677,8 +677,8 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "États-Unis", region: "Oregon", appel: "Willamette Valley" },
     titre: "Permaculture, régénératif et vigne non labourée",
-    synth: "En 1978, Bill Mollison et David Holmgren publient Permaculture One ; Robert Rodale (1930-1990) popularise ensuite l’agriculture régénérative. Pour Lepeltier, le labour est une bioturbation humaine, intensifiée par la mécanisation du début du XXe siècle. Elle cite Eyrie Vineyards, en Oregon, où David Lett plante du pinot noir en 1965 dans la Willamette Valley ; le domaine affirme n’y avoir jamais labouré, alors que le livre évoque un arrêt du labour par Jason Lett. La Regenerative Viticulture Foundation, ONG britannique lancée en 2022, promeut cette transition.",
-    mnemo: "Mollison et Holmgren plantent la graine en 1978 ; Rodale la cultive ; Eyrie la laisse enfin tranquille sous terre.",
+    synth: "En 1978, Bill Mollison et David Holmgren publient Permaculture One ; Robert Rodale (1930-1990) popularise ensuite l’agriculture régénérative. Pour Lepeltier, le labour est une bioturbation humaine, intensifiée par la mécanisation du début du XXe siècle. Elle cite Eyrie Vineyards, en Oregon, où David Lett plante du pinot noir en 1965 dans la Willamette Valley ; le domaine n’y a jamais labouré depuis sa création (le livre parle à tort d’un arrêt du labour par Jason Lett). La Regenerative Viticulture Foundation, ONG britannique lancée en 2022, promeut cette transition.",
+    mnemo: "Mollison et Holmgren plantent la graine en 1978 ; Rodale la cultive ; Eyrie n’a jamais retourné la sienne.",
     flash: { q: "Quel ouvrage publié en 1978 fonde la permaculture ?", a: "Permaculture One, de Bill Mollison et David Holmgren.", keys: [["Permaculture One"],["Mollison"],["Holmgren"]] },
     qcm: { q: "Où se situe le domaine Eyrie Vineyards ?", opts: ["Willamette Valley (Oregon)", "Napa Valley (Californie)", "Finger Lakes (New York)", "Marlborough (Nouvelle-Zélande)"], good: 0 },
     exos: [
@@ -691,10 +691,10 @@ FICHES.push(
     to_check: [
       "Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)",
       "Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965",
-      "Eyrie dit n’avoir « jamais labouré » ; arrêt du labour par Jason Lett sur 24 ha et études sur les mycorhizes non retrouvés",
+      "Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés",
       "Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 96-98 ; Wikipedia, Permaculture et Bill Mollison ; Wikipedia, Robert Rodale ; Regenerative Viticulture Foundation, About us ; The Drinks Business ; Wikipedia, The Eyrie Vineyards ; Eyrie Vineyards, grape growing ; Oregon Business",
+    src: "Mille Vignes, P. Lepeltier, p. 96-98 ; Wikipedia, Permaculture et Bill Mollison ; Wikipedia, Robert Rodale ; Regenerative Viticulture Foundation, About us ; The Drinks Business ; Wikipedia, The Eyrie Vineyards ; Eyrie Vineyards, grape growing ; International Fine Wines, The Eyrie Vineyards ; Oregon Business",
     page: 98
   },
   {

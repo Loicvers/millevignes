@@ -324,7 +324,7 @@ const RECITS = [
  "client": "« Le « vin nature » n’a pas de définition légale ; en France, la charte « Vin méthode nature », avec cahier des charges et contrôle, est la seule autorisée à figurer sur l’étiquette. »",
  "filRouge": "Quel point commun relie vin nature, permaculture, viticulture régénératrice et vitiforesterie ?",
  "prudence": [
-  "Eyrie Vineyards : le domaine dit n’avoir jamais labouré (le livre dit que Jason Lett a arrêté le labour).",
+  "Eyrie Vineyards n’a jamais labouré depuis 1965 : le livre dit à tort que Jason Lett a « arrêté » le labour.",
   "Fosse-Sèche : 15 + 30 ha p. 99, 15 + 18 ha p. 101 dans le livre.",
   "Vignenvie : 600 g de cuivre par an, environ sept fois moins que la limite bio (le livre dit dix).",
   "Nouvelle-Zélande : 59 % est une part de viticulteurs ; vignoble de 42 519 ha et 23,6 millions de moutons en 2024 (le livre : 37 000 ha et 27 millions).",

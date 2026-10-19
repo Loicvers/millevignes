@@ -47,6 +47,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 115 : courant froid de Humboldt associé à la côte ouest nord-américaine → il longe le Chili et le Pérou ; la Californie est rafraîchie par le courant de Californie.
 - p. 119 : Tambora situé à « Sumbawa, Java » → Sumbawa est une île distincte de Java.
 - p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
+- p. 98 : Jason Lett « arrête le labour » à Eyrie Vineyards → le domaine n’a jamais labouré depuis sa plantation en 1965 (site du domaine ; International Fine Wines).
 - p. 120 : Groenland « couvert alors de vignes » → aucune source ne l’atteste ; les raisins des sagas sont au Vinland (Amérique du Nord).
 
 ## Non confirmés
@@ -77,7 +78,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 94 : Larrère, Du bon usage de la nature « 1998 » (Aubier, 1997, une source) ; « Grand Partage » datant du début des années 1980.
 - p. 95 : carte bio 2020 : Provence 43,89 % (≈ 30 % pour PACA ailleurs), Champagne 6,15 % non recoupé ; France ≈ 137 400 ha, 17 %.
 - p. 96-97 : Pineau, La Corne de vache et le Microscope (2019 ; 2020 selon La Vie des idées) ; date de l’AVN ; S.A.I.N.S. (une source) ; définition du vin naturel chez Jullien (non lue).
-- p. 98 : Jason Lett « arrête le labour » (le domaine Eyrie dit n’avoir jamais labouré).
 - p. 99-101 : Fosse-Sèche : 15 + 30 ha (p. 99) contre 15 + 18 ha (p. 101) ; Vignenvie (aucune source lue) ; Léon Barral présenté comme pionnier de l’intégration animale (rôle non attesté ; les sources citent des vaches).
 - p. 101 : agroécologie : Bensin 1928 (Friederichs 1930 selon d’autres) ; Altieri 1983 ou 1987.
 - p. 105 : « moins de 25 % de la photosynthèse sous 10 °C » (non retrouvé) ; gels majeurs 2019 et 2022 (les sources retiennent 1991, 2017, 2021).

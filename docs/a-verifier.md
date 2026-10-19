@@ -248,7 +248,7 @@
 **Fiche 124** (p.98) — Permaculture, régénératif et vigne non labourée
 - [ ] Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)
 - [ ] Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965
-- [ ] Eyrie dit n’avoir « jamais labouré » ; arrêt du labour par Jason Lett sur 24 ha et études sur les mycorhizes non retrouvés
+- [ ] Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés
 - [ ] Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières
 
 **Fiche 125** (p.100) — La vitiforesterie aujourd’hui
