@@ -93,3 +93,37 @@ function grade(ex, answer) {
   }
   throw new Error("Type d'exercice inconnu : " + ex.type);
 }
+
+// Séance : une notion (fiche) au plus par séance ; révisions échues d'abord, puis la suite des fiches commencées
+// (un exercice de plus, pas le même jour), puis de nouvelles fiches (quota par jour, 2 exercices chacune).
+// lues[ficheId] = horodatage de la lecture (1 pour les lectures d'avant le quota : jamais « aujourd'hui »).
+const RESTITUER = ["flashcard", "cloze", "short_answer", "flashcard_reverse", "ordering"];
+function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 } = {}) {
+  const DAY = 86400000, dayStart = new Date(t).setHours(0, 0, 0, 0);
+  const last = p => p.due - p.interval * DAY; // rate() pose due = réponse + intervalle
+  const key = e => /^mv-/.test(e.id) ? e.fiche.id : e.id; // le lexique compte à part
+  const groups = new Map();
+  for (const e of pool) { const k = key(e); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); }
+  const due = [], suite = [], fresh = [];
+  let started = 0;
+  for (const [k, exos] of groups) {
+    const seen = exos.filter(e => prog[e.id]);
+    if (seen.length && lues[k] >= dayStart) started++;
+    const d = seen.filter(e => prog[e.id].due <= t).sort((a, b) => prog[a.id].due - prog[b.id].due);
+    if (d.length) due.push(d[0]);
+    else if (seen.length) {
+      const next = exos.find(e => !prog[e.id]);
+      if (next && t - Math.max(...seen.map(e => last(prog[e.id]))) > DAY / 2) suite.push(next);
+    } else fresh.push(exos);
+  }
+  const q = shuffle(due).slice(0, max);
+  for (const e of suite) if (q.length < max) q.push(e);
+  fresh.sort((a, b) => (a[0].fiche.page || 0) - (b[0].fiche.page || 0) || a[0].fiche.id - b[0].fiche.id);
+  for (const exos of fresh.slice(0, Math.max(0, newFiches - started))) {
+    const first = exos.find(e => e.type === "flashcard") || exos[0];
+    const pick = [first, ...exos.filter(e => e !== first && RESTITUER.includes(e.type)), ...exos.filter(e => e !== first)].slice(0, perNew);
+    if (q.length + pick.length > max) break;
+    q.push(...new Set(pick));
+  }
+  return q;
+}

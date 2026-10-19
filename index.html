@@ -312,7 +312,7 @@ const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]),...le
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
 const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
-const SESSION_MAX=20,NEW_MAX=10;
+const SESSION_MAX=20,NEW_FICHES=5; // nouvelles fiches par jour
 
 /* ============ PERSISTANCE (localStorage) ============ */
 // v2 : progression par exercice. La v1 (par fiche) est reprise une fois, puis laissée intacte.
@@ -327,6 +327,9 @@ const LKEY='mv_lues';let lues={};try{lues=JSON.parse(localStorage.getItem(LKEY))
 function saveLues(){try{localStorage.setItem(LKEY,JSON.stringify(lues));}catch{}}
 try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist();}catch{}
 // prog[exId] = {ease, interval(jours), due(timestamp), acquired:bool}
+// Journal des réponses (mesure du rappel différé) : {e: exercice, t: date, ok: 1|0|null, ms: durée, r: note choisie}.
+const JKEY='mv_journal';let journal=[];try{journal=JSON.parse(localStorage.getItem(JKEY))||[];}catch{}
+function logAnswer(ex,ok){const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}return j;}
 function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
 function now(){return Date.now();}
 const DAY=86400000;
@@ -353,16 +356,8 @@ function etat(f){ // où en est la fiche, pour le sommaire
   if(mine.some(e=>prog[e.id]))return['part','Commencée'];
   return lues[f.id]?['lue','Lue']:['new','À découvrir'];
 }
-function buildQueue(pool){
-  const due=shuffle(pool.filter(isDue).sort((a,b)=>prog[a.id].due-prog[b.id].due).slice(0,SESSION_MAX));
-  const limit=Math.min(NEW_MAX,SESSION_MAX-due.length),fresh=[];
-  const flash=e=>e.type==='flashcard'?0:1;
-  for(const e of pool.filter(isNew).sort((a,b)=>(a.fiche.page||0)-(b.fiche.page||0)||a.fiche.id-b.fiche.id||flash(a)-flash(b))){
-    if(fresh.length>=limit&&e.fiche!==fresh[fresh.length-1].fiche)break; // on ne coupe pas une fiche en deux
-    if(limit>0)fresh.push(e);
-  }
-  return [...due,...fresh];
-}
+// Règles de séance : voir planSession() dans exercices.js.
+function buildQueue(pool){return planSession(pool,prog,lues,now(),{max:SESSION_MAX,newFiches:NEW_FICHES});}
 
 /* ============ ÉTAT FILTRES ============ */
 let mode="revision";
@@ -714,7 +709,7 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
-let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
+let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title,dejaLues=[]){
   queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();decouvertes=new Set(dejaLues);
@@ -733,7 +728,7 @@ function showExercise(){
       const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);}
     grid.append(box);return;
   }
-  const ex=queue[pos],p=ex.payload,f=ex.fiche;
+  const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
   if(!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
     showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`});return;} // apprendre avant d'être interrogé
   const box=el('div','ex');
@@ -802,7 +797,7 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
     <div class="src">— ${f.src}</div>${lead?`<p class="lead">${lead}</p>`:''}`;
   const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl),nav=(lbl,fn,cls='btn')=>{const b=el('button',cls,lbl);b.onclick=()=>{fn();window.scrollTo(0,0);};actions.append(b);};
-  go.onclick=()=>{lues[f.id]=1;saveLues();onGo();window.scrollTo(0,0);};
+  go.onclick=()=>{if(!(lues[f.id]>1))lues[f.id]=now();saveLues();onGo();window.scrollTo(0,0);};
   if(onPrev)nav('Fiche précédente',onPrev);
   actions.append(go);
   if(onQuit)nav('Quitter la lecture',onQuit,'btn later');
@@ -844,22 +839,25 @@ function finish(ex,ok,fb,actions,body){
   fb.insertAdjacentHTML('beforeend',schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
+  const entry=logAnswer(ex,ok);
+  if(ex.retry){const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;} // seconde chance : déjà reprogrammé
+  if(ok===false)queue.push({...ex,retry:true}); // revient une fois en fin de séance, après la correction
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
-  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);next();};btns.append(b);};
+  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);
     if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
     setTimeout(()=>b.focus());return;}
-  if(ok===null)add('hard','Difficile','revoir demain');
+  if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
 }
-function updateBadges(){document.getElementById('dueBadge').textContent=EXOS.filter(isDue).length+Math.min(NEW_MAX,EXOS.filter(isNew).length);}
+function updateBadges(){document.getElementById('dueBadge').textContent=buildQueue(EXOS).length;}
 
 if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
 updateBadges();render();importFromHash();
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 document.getElementById('exportProg').onclick=()=>{
-  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,programmes:store},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,programmes:store},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
 };
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
@@ -874,6 +872,7 @@ document.getElementById('importProg').onchange=async e=>{
   if(!confirm(`Restaurer ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} exercice(s)) sera remplacée.`))return;
   prog=p;save();
   if(data.lues&&typeof data.lues==='object'){lues=data.lues;saveLues();}
+  if(Array.isArray(data.journal)){journal=data.journal;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
   saveProg();updateBadges();render();

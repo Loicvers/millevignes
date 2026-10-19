@@ -102,3 +102,29 @@ test("flash.keys : chaque point a des variantes réelles, et la réponse attendu
     assert.equal(r.missing.length, 0, `fiche ${f.id} : la réponse attendue ne contient pas ${r.missing.join(", ")}`);
   }
 });
+
+test("séance : une fiche au plus, échues d'abord, quota de nouvelles fiches, 2 exercices pour une nouvelle", () => {
+  vm.runInNewContext("this.ps=planSession", ctx);
+  const DAY = 86400000, t = new Date(2026, 9, 20, 12).getTime();
+  const fiches = FICHES.slice(0, 12), pool = fiches.flatMap(toExercises);
+  const [a, b] = fiches, ea = pool.filter(e => e.fiche === a), eb = pool.filter(e => e.fiche === b);
+  const prog = {
+    [ea[0].id]: { ease: 2.3, interval: 1, due: t - DAY, acquired: true },     // échus : un seul de la fiche a
+    [ea[1].id]: { ease: 2.3, interval: 1, due: t - 2 * DAY, acquired: true },
+    [eb[0].id]: { ease: 2.3, interval: 2, due: t + DAY, acquired: true },      // fiche b : vue il y a un jour → suite
+  };
+  const q = ctx.ps(pool, prog, {}, t, { max: 20, newFiches: 3 });
+  const per = id => q.filter(e => e.fiche.id === id).length;
+  assert.equal(q[0].id, ea[1].id, "l'échue la plus en retard d'abord");
+  assert.equal(per(a.id), 1);
+  assert.equal(per(b.id), 1); assert.ok(!prog[q.find(e => e.fiche === b).id], "suite : un exercice neuf");
+  const neuves = [...new Set(q.map(e => e.fiche))].filter(f => f !== a && f !== b);
+  assert.equal(neuves.length, 3);
+  for (const f of neuves) { const mine = q.filter(e => e.fiche === f); assert.equal(mine.length, 2); assert.equal(mine[0].type, "flashcard"); }
+  // fiche b répondue il y a une heure : pas de suite le même jour ; quota déjà pris par les fiches commencées aujourd'hui
+  prog[eb[0].id] = { ease: 2.3, interval: 1, due: t - 3600000 + DAY, acquired: true };
+  const q2 = ctx.ps(pool, prog, { [a.id]: t - 3600000, [b.id]: t - 3600000 }, t, { max: 20, newFiches: 3 });
+  assert.equal(q2.filter(e => e.fiche === b).length, 0);
+  assert.equal(new Set(q2.filter(e => e.fiche !== a && e.fiche !== b).map(e => e.fiche)).size, 1);
+  assert.ok(ctx.ps(pool, prog, {}, t, { max: 3, newFiches: 5 }).length <= 3, "plafond de séance");
+});
