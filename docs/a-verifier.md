@@ -265,7 +265,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 116** (p.92) — Après 1945 : la viticulture conventionnelle
 - [ ] Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié
-- [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Sénat 2012 : 14,4 % / 3,3 % ; Agreste et Ecophyto R&D 2010 non lus (HAL bloqué)
+- [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D 2010 non lu (HAL bloqué)
 
 **Fiche 117** (p.93) — Raisonnée, intégrée, durable : les demi-mesures
 - [ ] Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé

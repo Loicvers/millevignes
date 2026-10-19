@@ -478,7 +478,7 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié",
-      "15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Sénat 2012 : 14,4 % / 3,3 % ; Agreste et Ecophyto R&D 2010 non lus (HAL bloqué)"
+      "15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D 2010 non lu (HAL bloqué)"
     ],
     src: "Mille Vignes, P. Lepeltier, p. 92 ; Universalis, Rachel Carson ; Britannica, Rachel Carson ; L’Info Durable, Vigne et pesticides (mission sénatoriale 2012) ; Assemblée nationale, QE n° 100076",
     page: 92
