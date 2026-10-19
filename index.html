@@ -305,6 +305,7 @@
 <script src="fiches/104-climat.js"></script>
 <script src="fiches/150-terroir.js"></script>
 <script src="data/lexique.js"></script>
+<script src="data/recits.js"></script>
 <script src="exercices.js"></script>
 <script>
 /* ============ DONNÉES ============ */
@@ -419,7 +420,7 @@ function selGeo(sel){
 document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function setMode(m){mode=m;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode===m));document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
+function setMode(m){taire();mode=m;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode===m));document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -815,7 +816,31 @@ function lireChapitre(titre,fiches,depart=0){
       const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
     showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
   };
-  page(depart);window.scrollTo(0,0);
+  const r=depart===0&&typeof RECITS!=='undefined'&&RECITS.find(x=>x.chapitre===titre);
+  r?showRecit(r,()=>page(0)):page(depart);window.scrollTo(0,0);
+}
+/* Récit du chapitre : le fil de l'argument avant les fiches, avec lecture à voix haute (synthèse vocale du navigateur) */
+function taire(){try{speechSynthesis.cancel();}catch(e){}}
+function showRecit(r,onGo){
+  const box=el('div','ex decouverte recit');
+  box.innerHTML=`<div class="ex-head"><span>Récit du chapitre</span><span class="folio">Mille Vignes, p. ${r.pages}</span></div>
+    <h3>${r.chapitre}</h3><p class="lead"><b>La question.</b> ${r.question}</p>${r.fil.map(t=>`<p class="synth">${t}</p>`).join('')}
+    <p class="synth"><b>Ce qu’elle défend.</b> ${r.defend}</p>
+    <div class="mnemo"><span class="m-lbl">À dire à un client</span>${r.client}</div>
+    <p class="synth"><b>Question fil rouge.</b> ${r.filRouge}</p>
+    ${r.prudence?.length?`<details class="cours"><summary>Points de prudence (le livre corrigé)</summary>${r.prudence.map(t=>`<p>${t}</p>`).join('')}</details>`:''}
+    <div class="src">— D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}. Texte reformulé.</div>`;
+  const actions=el('div','ex-actions'),go=el('button','btn primary','Aux fiches du chapitre'),quit=el('button','btn later','Quitter la lecture');
+  go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode('revision');};
+  if('speechSynthesis' in window){
+    const ecoute=el('button','btn','Écouter');
+    ecoute.onclick=()=>{if(speechSynthesis.speaking){taire();ecoute.textContent='Écouter';return;}
+      const u=new SpeechSynthesisUtterance([r.chapitre,r.question,...r.fil,r.defend,r.filRouge].join('\n').replace(/<[^>]+>/g,''));
+      u.lang='fr-FR';u.onend=()=>ecoute.textContent='Écouter';speechSynthesis.speak(u);ecoute.textContent='Arrêter';};
+    actions.append(ecoute);
+  }
+  actions.append(go,quit);box.append(actions);
+  grid.className='session';grid.innerHTML='';grid.append(box);
 }
 // Le chapitre se déduit de la page (sommaire du livre) ; sans lui (fichier ouvert hors serveur), la liste reste simple.
 fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
