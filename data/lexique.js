@@ -128,5 +128,18 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "À ne pas confondre avec un hybride, qui mélange deux génomes dans chaque cellule."
+ },
+ {
+  "terme": "ligneux, ligneuse",
+  "def": "Qui a la nature ou la consistance du bois, grâce à la lignine qui rigidifie les tissus ; s’oppose à herbacé. Une plante ligneuse (arbre, arbuste, vigne) fabrique du bois et s’épaissit d’année en année. Chez la vigne, le rameau vert de l’année se lignifie en s’aoûtant et devient un sarment ; la rafle peut, elle aussi, rester verte ou devenir ligneuse.",
+  "etym": "emprunté au latin lignosus, de même sens, dérivé de lignum, bois (attesté en français au XVIe siècle).",
+  "declic": "Lignum = bois : ligneux, lignine, lignifier… tout ce qui contient « ligne » parle de bois.",
+  "src": [
+   "Académie française, 9e éd. (ligneux)",
+   "Wiktionnaire (ligneux)",
+   "fiches 9, 57 et 70"
+  ],
+  "status": "verified",
+  "note": "À ne pas confondre avec « ligneuse », féminin du nom désignant un kayakiste de course en ligne."
  }
 ];
