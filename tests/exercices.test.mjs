@@ -64,3 +64,17 @@ test("les pastilles d'une fiche (status, to_check) passent dans data/base.json",
     assert.deepEqual(n.to_check, JSON.parse(JSON.stringify(f.to_check ?? [])));
   }
 });
+
+test("légender le schéma : étiquettes uniques, une seule masquée, corrigé juste", () => {
+  vm.runInNewContext("this.sx={schemaExercise,maskSchema}", ctx);
+  const { schemaExercise, maskSchema } = ctx.sx;
+  const exos = FICHES.flatMap(schemaExercise);
+  assert.ok(exos.length >= 10);
+  for (const ex of exos) {
+    const m = maskSchema(ex.fiche.schema.svg, ex.payload.labels);
+    const target = m.options[m.answer];
+    assert.equal((m.svg.match(/font-weight="bold"[^>]*><tspan font-size="15">\?<\/tspan><\/text>/g) || []).length, 1, ex.id);
+    assert.ok(!m.svg.includes(`>${target}</text>`), ex.id + " : l'étiquette masquée reste visible");
+    assert.equal(grade({ type: "label_schema", payload: m }, m.answer), true);
+  }
+});

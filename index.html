@@ -256,6 +256,7 @@
     <div class="filt-foot">
       <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
       <div class="filt-act">
+      <button class="btn" id="hardBtn" hidden>Mes points durs</button>
       <button class="btn primary" id="sessionBtn">S'entraîner</button>
       </div>
     </div>
@@ -304,9 +305,9 @@
 <script src="exercices.js"></script>
 <script>
 /* ============ DONNÉES ============ */
-const EXOS=FICHES.flatMap(toExercises);
+const EXOS=FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]);
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
-const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus'};
+const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
 const SESSION_MAX=20,NEW_MAX=10;
 
@@ -444,6 +445,10 @@ function render(){
   const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
   const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
+  // Points durs : exercices plus souvent ratés (« Difficile ») que réussis facilement, le plus fragile en tête.
+  const durs=pool.filter(e=>prog[e.id]&&prog[e.id].ease<2.3).sort((a,b)=>prog[a.id].ease-prog[b.id].ease);
+  const hb=document.getElementById('hardBtn');hb.hidden=!durs.length;hb.textContent=`Mes points durs (${durs.length})`;
+  hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
@@ -716,6 +721,7 @@ function showExercise(){
     case 'flashcard':case 'flashcard_reverse':{
       const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse (facultatif), puis compare';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));finish(ex,null,fb,actions,body);};actions.append(show);break;}
+    case 'label_schema':Object.assign(p,maskSchema(f.schema.svg,p.labels));body.insertAdjacentHTML('beforeend',`<figure class="schema">${p.svg}</figure>`); // puis comme un QCM
     case 'mcq_single':case 'odd_one_out':
       choice(p.options,(i,b)=>{finish(ex,grade(ex,i),fb,actions,body);b.classList.add(i===p.answer?'good':'bad');body.querySelector(`[data-i="${p.answer}"]`).classList.add('good');});break;
     case 'true_false':
@@ -748,7 +754,7 @@ function showExercise(){
 function correctText(ex){
   const p=ex.payload;
   switch(ex.type){
-    case 'mcq_single':case 'odd_one_out':return p.options[p.answer];
+    case 'mcq_single':case 'odd_one_out':case 'label_schema':return p.options[p.answer];
     case 'mcq_multi':return p.answers.map(i=>p.options[i]).join(' ; ');
     case 'true_false':return p.answer?'Vrai':'Faux';
     case 'short_answer':return p.accepted[0];

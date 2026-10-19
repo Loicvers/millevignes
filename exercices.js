@@ -12,6 +12,22 @@ function toExercises(f) {
   ].map(e => ({ ...e, fiche: f }));
 }
 
+// « Légender le schéma » : produit à la volée depuis les étiquettes en gras (1 à 3 mots, présentes une seule fois).
+// Hors de data/base.json : il dépend du dessin, pas d'un contenu rédigé.
+function schemaExercise(f) {
+  if (!f.schema) return [];
+  const all = [...f.schema.svg.matchAll(/<text[^>]*font-weight="bold"[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
+  const labels = [...new Set(all)].filter(t => all.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 3);
+  if (labels.length < 3) return [];
+  return [{ id: notionId(f.id) + "-sc", type: "label_schema", prompt: "Quel terme a été effacé du schéma (le « ? ») ?", payload: { labels }, fiche: f }];
+}
+// Tire une étiquette à masquer : renvoie le SVG masqué, les options et l'index de la bonne réponse.
+function maskSchema(svg, labels, pick = shuffle(labels)) {
+  const target = pick[0], options = shuffle(pick.slice(0, 4));
+  const esc = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return { svg: svg.replace(new RegExp(`(<text[^>]*font-weight="bold"[^>]*>)${esc}(</text>)`), "$1<tspan font-size=\"15\">?</tspan>$2"), options, answer: options.indexOf(target) };
+}
+
 // Identique à normalize() de tools/lot.mjs (vérifié par les tests).
 function normalize(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[^a-z0-9]+/g, " ").trim(); }
 
@@ -28,7 +44,7 @@ function grade(ex, answer) {
   const p = ex.payload;
   switch (ex.type) {
     case "flashcard": case "flashcard_reverse": return null;
-    case "mcq_single": case "odd_one_out": case "true_false": return answer === p.answer;
+    case "mcq_single": case "odd_one_out": case "true_false": case "label_schema": return answer === p.answer;
     case "mcq_multi": return same([...answer].sort(), [...p.answers].sort());
     case "short_answer": return p.accepted.some(a => normalize(a) === normalize(answer));
     case "cloze": return clozeParts(p.text).filter((_, i) => i % 2).every((v, k) => v.some(a => normalize(a) === normalize(answer[k] || "")));
