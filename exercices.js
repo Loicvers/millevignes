@@ -48,14 +48,16 @@ function lexiqueExercises(lex, fiches) {
 // Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.
 // flash.keys (facultatif) : points attendus, chacun avec ses variantes acceptées, ex. [["Asie","asiatique"],["40"]] ;
 // seuls ces points comptent, ce qui évite d'exiger des détails que la question ne demande pas.
-const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon apres avant alors ainsi encore meme autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois".split(" "));
+const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon apres avant alors ainsi encore meme autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois le la de du et en un au a l d".split(" "));
 function flashKeys(answer, mine, groups) {
-  const words = s => normalize(s).split(" ").filter(w => (/^\d+$/.test(w) || w.length >= 4) && !MOTS_VIDES.has(w));
-  const stem = w => /^\d+$/.test(w) ? w : w.slice(0, Math.min(5, w.length - 1));
-  const mineS = words(mine).map(stem);
-  const has = k => mineS.some(m => /^\d+$/.test(k) ? m === k : m.startsWith(stem(k)) || stem(k).startsWith(m));
+  const toks = s => normalize(s).split(" ").filter(w => w && !MOTS_VIDES.has(w));
+  const words = s => toks(s).filter(w => /^\d+$/.test(w) || w.length >= 4);
+  const stem = w => w.slice(0, Math.min(5, w.length - 1));
+  const mineT = toks(mine);
+  // Nombres et mots courts (ADN, non, cep) : égalité stricte ; sinon racines comparées par préfixe.
+  const has = k => mineT.some(m => /^\d+$/.test(k) || k.length <= 3 ? m === k : m.length >= 4 && (stem(m).startsWith(stem(k)) || stem(k).startsWith(stem(m))));
   if (groups) {
-    const ok = g => g.some(alt => words(alt).every(has));
+    const ok = g => g.some(alt => toks(alt).length > 0 && toks(alt).every(has));
     const keys = groups.map(g => g[0]), found = groups.filter(ok).map(g => g[0]);
     return { keys, found, missing: keys.filter(k => !found.includes(k)), ok: found.length / keys.length >= 2 / 3 };
   }

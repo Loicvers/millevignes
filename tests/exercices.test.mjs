@@ -92,3 +92,12 @@ test("flashcard écrite : correction par mots-clés", () => {
   assert.equal(r.found.length, 7); assert.equal(r.ok, true);
   assert.equal(ctx.fk("", "muscadinia 38 et euvitis 40", g).ok, false); // nombres exacts
 });
+
+test("flash.keys : chaque point a des variantes réelles, et la réponse attendue les remplit tous", () => {
+  vm.runInNewContext("this.fk=flashKeys", ctx);
+  for (const f of FICHES.filter(f => f.flash.keys)) {
+    assert.ok(f.flash.keys.every(g => g.length && g.every(alt => normalize(alt).length)), `fiche ${f.id} : variante vide`);
+    const r = ctx.fk(f.flash.a, f.flash.a, f.flash.keys);
+    assert.equal(r.missing.length, 0, `fiche ${f.id} : la réponse attendue ne contient pas ${r.missing.join(", ")}`);
+  }
+});
