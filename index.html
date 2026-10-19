@@ -59,13 +59,39 @@
   .filt-panel>summary::before{content:"▸";margin-right:6px}.filt-panel[open]>summary::before{content:"▾"}
   .count{font-size:13px;color:var(--muted)}.count b{color:var(--ink)}
   .filt-act{display:flex;gap:8px;flex-wrap:wrap}
-  #lireSel{width:13em;color:var(--wine);border-color:var(--wine-soft)} /* sinon le select prend la largeur du plus long chapitre */
+
   .clear{font-size:12px;color:var(--wine);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   main{padding:26px 0 80px}
   .intro{font-family:'Cormorant',serif;font-size:18px;color:var(--muted);margin-bottom:20px;font-style:italic}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;align-items:start}
   .card-toggle{all:unset;cursor:pointer;display:block}
+  /* Sommaire : les fiches rangées comme dans le livre, section > chapitre, avec la progression */
+  .grid.toc{display:block;max-width:760px;margin:0 auto}
+  .resume{border:1px solid var(--line);background:var(--paper2);border-radius:3px;padding:16px 18px;margin-bottom:26px}
+  .resume p{font-size:14px;color:var(--muted);margin-bottom:4px}
+  .resume b{font-family:'Cormorant',serif;font-size:21px;font-weight:600;color:var(--ink);display:block;line-height:1.2;margin-bottom:12px}
+  .toc-sec{font-family:'Cormorant',serif;font-weight:600;font-size:27px;margin:30px 0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .toc-sec:first-of-type{margin-top:0}
+  .toc-sec small{font-family:'Inter';font-size:13px;font-weight:400;color:var(--muted)}
+  .chap{border-bottom:1px solid var(--line)}
+  .chap>summary{list-style:none;cursor:pointer;padding:14px 2px 12px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:baseline}
+  .chap>summary::-webkit-details-marker{display:none}
+  .chap-t{font-family:'Cormorant',serif;font-weight:600;font-size:20px;line-height:1.2}
+  .chap-t::before{content:"▸";display:inline-block;width:1.1em;color:var(--gold);font-family:'Inter';font-size:13px;vertical-align:2px}
+  .chap[open] .chap-t::before{content:"▾"}
+  .chap-m{font-size:13px;color:var(--muted);white-space:nowrap}
+  .chap-bar{grid-column:1/-1;height:3px;background:var(--paper2);border-radius:2px;margin-top:8px;overflow:hidden}
+  .chap-bar i{display:block;height:100%;background:var(--wine)}
+  .chap-in{padding:2px 0 18px}
+  .chap-act{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 12px}
+  .chap .card{padding:12px 14px;margin-bottom:6px}
+  .chap .card:not(.open) .card-tags,.chap .card:not(.open) .synth{display:none}
+  .chap .card h3{font-size:19px;margin-bottom:0}
+  .chap .card.open h3{margin-bottom:9px}
+  .fstat{display:block;font-family:'Inter';font-size:12px;color:var(--muted);margin-top:3px}
+  .fstat.s-due{color:var(--wine);font-weight:600}.fstat.s-done{color:var(--green)}
+  .grid:not(.toc) .fstat{display:none}
   .card-toggle h3::after{content:" +";color:var(--gold);font-weight:400}
   .card.open .card-toggle h3::after{content:" −"}
   .card:not(.open) .card-body{display:none}
@@ -207,7 +233,7 @@
     .sup-quiz{break-before:page}.sup-quiz h2{font-family:'Cormorant',serif;font-size:18pt;margin-bottom:8pt}
     .sup-quiz>ol>li{margin:0 0 10pt 14pt;break-inside:avoid}.sup-opts{list-style:lower-alpha;margin-left:16pt}.sup-line{margin-top:6pt}
   }
-  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*,#lireSel{width:100%}.ex-actions .later{margin-left:0}}
+  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*{width:100%}.ex-actions .later{margin-left:0}}
   .tab{white-space:nowrap}
   .stat-line{margin-bottom:10px}
 </style>
@@ -230,7 +256,6 @@
     <div class="filt-foot">
       <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
       <div class="filt-act">
-      <select class="btn" id="lireSel" aria-label="Lire un chapitre" hidden><option value="">Lire un chapitre…</option></select>
       <button class="btn primary" id="sessionBtn">S'entraîner</button>
       </div>
     </div>
@@ -294,6 +319,8 @@ function load(){
   catch{return {};}
 }
 let prog=load();
+const LKEY='mv_lues';let lues={};try{lues=JSON.parse(localStorage.getItem(LKEY))||{};}catch{}
+function saveLues(){try{localStorage.setItem(LKEY,JSON.stringify(lues));}catch{}}
 try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist();}catch{}
 // prog[exId] = {ease, interval(jours), due(timestamp), acquired:bool}
 function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
@@ -314,6 +341,14 @@ const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
 const isNew=e=>!prog[e.id];
 // Révisions dues mélangées, puis les nouveautés dans l'ordre du livre, groupées par fiche, flashcard en tête.
 const ficheNeuve=f=>EXOS.every(e=>e.fiche!==f||isNew(e));
+const aDecouvrir=f=>ficheNeuve(f)&&!lues[f.id]; // déjà lue (séance ou lecture de chapitre) : on passe directement aux exercices
+function etat(f){ // où en est la fiche, pour le sommaire
+  const mine=EXOS.filter(e=>e.fiche===f),due=mine.filter(isDue).length;
+  if(due)return['due',`${due} à revoir`];
+  if(mine.length&&mine.every(e=>prog[e.id]))return['done','Travaillée'];
+  if(mine.some(e=>prog[e.id]))return['part','Commencée'];
+  return lues[f.id]?['lue','Lue']:['new','À découvrir'];
+}
 function buildQueue(pool){
   const due=shuffle(pool.filter(isDue).sort((a,b)=>prog[a.id].due-prog[b.id].due).slice(0,SESSION_MAX));
   const limit=Math.min(NEW_MAX,SESSION_MAX-due.length),fresh=[];
@@ -411,7 +446,36 @@ function render(){
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   grid.className='grid';grid.innerHTML='';
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
-  list.forEach(f=>grid.appendChild(card(f)));
+  if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
+  renderToc(list,nf>0);
+}
+let CHAPS=null;const chapOuverts=new Set();
+function renderToc(list,filtre){
+  grid.className='grid toc';
+  const vue=f=>etat(f)[0]!=='new';
+  // Reprendre : première fiche pas encore vue, dans l'ordre du livre
+  const suite=CHAPS.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>!vue(x.f));
+  if(!filtre&&suite&&mode!=='atelier'){
+    const r=el('div','resume');
+    r.append(el('p',null,`Reprendre — ${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre));
+    const b=el('button','btn primary','Continuer la lecture');b.onclick=()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i);r.append(b);grid.append(r);
+  }
+  let sec=null;
+  CHAPS.forEach(c=>{
+    const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length)return;
+    const nom=c.section||c.partie;
+    if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
+      const h=el('h2','toc-sec',nom);h.append(el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));grid.append(h);}
+    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>d.open?chapOuverts.add(c.page):chapOuverts.delete(c.page);
+    const sm=el('summary'),nv=fs.filter(vue).length;
+    sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',`p. ${c.page} · ${nv}/${fs.length}`));
+    const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(100*nv/fs.length)+'%';sm.append(bar);
+    const inn=el('div','chap-in'),act=el('div','chap-act'),pool=fs.flatMap(f=>EXOS.filter(e=>e.fiche===f));
+    const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
+    const tr=el('button','btn','S\'entraîner sur ce chapitre');tr.disabled=!pool.length;
+    tr.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Chapitre : '+c.chapitre);
+    act.append(lire,tr);inn.append(act);fs.forEach(f=>inn.append(card(f)));d.append(sm,inn);grid.append(d);
+  });
 }
 function coursHTML(c){
   if(!c)return '';
@@ -437,7 +501,7 @@ function card(f){
   const subTags=(f.sous||[]).map(s=>`<span class="sub-tag">${s}</span>`).join('');
   c.innerHTML=`
     <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${dueTag}</div>
-    <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3></button>
+    <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3><span class="fstat s-${etat(f)[0]}">${etat(f)[1]}</span></button>
     <p class="synth">${f.synth}</p>
     <div class="card-body">
     ${statTag?`<div class="stat-line">${statTag}</div>`:''}
@@ -623,7 +687,7 @@ let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decou
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title,dejaLues=[]){
   queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();decouvertes=new Set(dejaLues);
-  nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&ficheNeuve(f)))];
+  nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -639,7 +703,7 @@ function showExercise(){
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;
-  if(!decouvertes.has(f.id)&&ficheNeuve(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
+  if(!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
     showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`});return;} // apprendre avant d'être interrogé
   const box=el('div','ex');
   box.append(el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`));
@@ -701,7 +765,7 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
     <div class="src">— ${f.src}</div>${lead?`<p class="lead">${lead}</p>`:''}`;
   const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl),nav=(lbl,fn,cls='btn')=>{const b=el('button',cls,lbl);b.onclick=()=>{fn();window.scrollTo(0,0);};actions.append(b);};
-  go.onclick=()=>{onGo();window.scrollTo(0,0);};
+  go.onclick=()=>{lues[f.id]=1;saveLues();onGo();window.scrollTo(0,0);};
   if(onPrev)nav('Fiche précédente',onPrev);
   actions.append(go);
   if(onQuit)nav('Quitter la lecture',onQuit,'btn later');
@@ -709,7 +773,7 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
   grid.className='session';grid.innerHTML='';grid.append(box);setTimeout(()=>go.focus({preventScroll:true}));
 }
 /* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
-function lireChapitre(titre,fiches){
+function lireChapitre(titre,fiches,depart=0){
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -719,18 +783,15 @@ function lireChapitre(titre,fiches){
       const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
     showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
   };
-  page(0);window.scrollTo(0,0);
+  page(depart);window.scrollTo(0,0);
 }
-// Le chapitre se déduit de la page (sommaire du livre) ; sans le sommaire (fichier ouvert hors serveur), le menu reste caché.
+// Le chapitre se déduit de la page (sommaire du livre) ; sans lui (fichier ouvert hors serveur), la liste reste simple.
 fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
   toc.sort((a,b)=>a.page-b.page);
   const chap=f=>toc.filter(c=>c.page<=f.page).pop();
   const par=new Map();
   FICHES.filter(f=>f.page).sort((a,b)=>a.page-b.page||a.id-b.id).forEach(f=>{const c=chap(f);if(c){if(!par.has(c))par.set(c,[]);par.get(c).push(f);}});
-  const sel=document.getElementById('lireSel');
-  par.forEach((fs,c)=>{const o=el('option',null,`${c.section||c.partie} — ${c.chapitre} (p. ${c.page}, ${fs.length})`);o.value=c.page;sel.append(o);});
-  sel.onchange=()=>{const c=[...par.keys()].find(c=>c.page==sel.value);sel.value='';if(c)lireChapitre(c.chapitre,par.get(c));};
-  sel.hidden=!par.size;
+  CHAPS=[...par].map(([c,fiches])=>({...c,fiches}));render();
 }).catch(()=>{});
 function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
@@ -759,7 +820,7 @@ if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').
 updateBadges();render();importFromHash();
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 document.getElementById('exportProg').onclick=()=>{
-  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,programmes:store},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,programmes:store},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
 };
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
@@ -773,11 +834,12 @@ document.getElementById('importProg').onchange=async e=>{
   const n=Object.keys(p).length,cur=Object.keys(prog).length;
   if(!confirm(`Restaurer ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} exercice(s)) sera remplacée.`))return;
   prog=p;save();
+  if(data.lues&&typeof data.lues==='object'){lues=data.lues;saveLues();}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
   saveProg();updateBadges();render();
 };
-document.getElementById('resetAll').onclick=()=>{if(confirm('Effacer toute ta progression de mémorisation ?')){prog={};save();updateBadges();render();}};
+document.getElementById('resetAll').onclick=()=>{if(confirm('Effacer toute ta progression de mémorisation ?')){prog={};save();lues={};saveLues();updateBadges();render();}};
 </script>
 </body>
 </html>
