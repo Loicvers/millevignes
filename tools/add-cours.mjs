@@ -16,11 +16,13 @@ for (const e of entries) {
   const end = nextId < 0 ? s.length : nextId;
   let block = s.slice(start, end);
   if (e.cours && /\n    cours: /.test(block)) throw new Error("Fiche déjà dotée d'un cours : " + e.fiche);
+  if (e.schema && /\n    schema: null,\n/.test(block)) block = block.replace("\n    schema: null,\n", "\n"); // remplacé ci-dessous
   if (e.schema && /\n    schema: /.test(block)) throw new Error("Fiche déjà dotée d'un schéma : " + e.fiche);
   let add = e.cours ? `    cours: ${JSON.stringify(e.cours)},\n` : ""; // schéma seul : cours omis
   if (e.schema) add = `    schema: ${JSON.stringify(e.schema)},\n` + add;
-  if (!block.includes("\n    status: ")) throw new Error("Pas de status : " + e.fiche);
-  block = block.replace("\n    status: ", "\n" + add + "    status: ");
+  const anchor = ["status", "src"].find(k => block.includes(`\n    ${k}: `)); // fiches anciennes sans pastille
+  if (!anchor) throw new Error("Ni status ni src : " + e.fiche);
+  block = block.replace(`\n    ${anchor}: `, "\n" + add + `    ${anchor}: `);
   if (e.to_check_add?.length) {
     const m = block.match(/\n    to_check: (\[.*\]),\n/);
     if (!m) throw new Error("to_check introuvable : " + e.fiche);
