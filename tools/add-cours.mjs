@@ -1,6 +1,6 @@
 // Ajoute des pages de cours (et schémas) à des fiches existantes, sans réécrire le reste du fichier.
 // Usage : node tools/add-cours.mjs lot1.json [lot2.json…]
-// Entrée : [{ fiche, cours, schema|null, to_check_add:[] }]. Un ajout à to_check repasse la fiche en needs_review.
+// Entrée : [{ fiche, cours|null, schema|null, to_check_add:[] }] (cours null = schéma seul). Un ajout à to_check repasse la fiche en needs_review.
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 
 const files = readdirSync("fiches").filter(f => f.endsWith(".js")).map(f => "fiches/" + f);
@@ -15,9 +15,9 @@ for (const e of entries) {
   const start = s.indexOf(head), nextId = s.indexOf("\n    id: ", start + head.length);
   const end = nextId < 0 ? s.length : nextId;
   let block = s.slice(start, end);
-  if (/\n    cours: /.test(block)) throw new Error("Fiche déjà dotée d'un cours : " + e.fiche);
+  if (e.cours && /\n    cours: /.test(block)) throw new Error("Fiche déjà dotée d'un cours : " + e.fiche);
   if (e.schema && /\n    schema: /.test(block)) throw new Error("Fiche déjà dotée d'un schéma : " + e.fiche);
-  let add = `    cours: ${JSON.stringify(e.cours)},\n`;
+  let add = e.cours ? `    cours: ${JSON.stringify(e.cours)},\n` : ""; // schéma seul : cours omis
   if (e.schema) add = `    schema: ${JSON.stringify(e.schema)},\n` + add;
   if (!block.includes("\n    status: ")) throw new Error("Pas de status : " + e.fiche);
   block = block.replace("\n    status: ", "\n" + add + "    status: ");
