@@ -40,21 +40,20 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 85 : arrivée du mildiou « en 1879 » → 1878 (Académie d’agriculture ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)).
 - p. 91 : « Non solus » attribué à Érasme « au XVIIe siècle » → devise des imprimeurs Elzevier (XVIIe s.) ; Érasme est mort en 1536.
 - p. 94 : James Lovelock « climatologue » → chimiste et inventeur.
+- p. 98 : Jason Lett « arrête le labour » à Eyrie Vineyards → le domaine n’a jamais labouré depuis sa plantation en 1965 (site du domaine ; International Fine Wines).
 - p. 100 : cuivre à 600 g/an « dix fois moins que la limite bio » → environ sept fois moins (limite : 28 kg/ha sur 7 ans, soit 4 kg/ha/an en moyenne, d’après une chambre d’agriculture ; texte du règlement non lu).
 - p. 101 : 59 % des 37 000 ha néo-zélandais pâturés par des moutons → le 59 % est une part de viticulteurs (Sustainable Winegrowing NZ) ; vignoble de 42 519 ha en 2024 ; 23,6 millions de moutons au 30 juin 2024 (27 millions dans le livre).
 - p. 108 : indice de Winkler défini en « nombre d’heures » du 1er avril au « 30 octobre » → somme de degrés-jours au-dessus de 10 °C, du 1er avril au 31 octobre (Amerine et Winkler, Hilgardia, 1944).
 - p. 110 : indice de sécheresse « basé sur l’hygrométrie » → bilan hydrique potentiel du sol (Riou ; Tonietto et Carbonneau, 2004).
 - p. 115 : courant froid de Humboldt associé à la côte ouest nord-américaine → il longe le Chili et le Pérou ; la Californie est rafraîchie par le courant de Californie.
 - p. 119 : Tambora situé à « Sumbawa, Java » → Sumbawa est une île distincte de Java.
-- p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
-- p. 98 : Jason Lett « arrête le labour » à Eyrie Vineyards → le domaine n’a jamais labouré depuis sa plantation en 1965 (site du domaine ; International Fine Wines).
 - p. 120 : Groenland « couvert alors de vignes » → aucune source ne l’atteste ; les raisins des sagas sont au Vinland (Amérique du Nord).
+- p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
 
 ## Non confirmés
+- p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
 - p. 41-67 : riesling 125 / tannat 440 fleurs, greffe sur 0,5 % des surfaces en 1863, hypothèse Carbonneau sur le merlot, porte-greffe riparia gloire et 10-15 hl/ha aux Bournais.
-- p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
-- p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024 ; taux de reprise de 65 % en 2016 et 69 % en 2017 selon FranceAgriMer, 60 à 65 % en année normale selon Vitisphere, soit environ un tiers de pertes).
 - p. 41 : un semis forme une racine pivotante, une bouture des racines traçantes (non retrouvé ; UC Davis lie l'angle des racines au porte-greffe).
 - p. 45-48 : millerandage des millésimes 1978 et 1995 chez Jayer, sucres « de 1 à 20 % en quarante jours », grappes de 5 à 50 cm et 100 à 500 g, liste des pinots de Galet.
 - p. 49 : « chimère » attribué à Branas et « plante artificielle » à Ollat (attributions non retrouvées).
@@ -65,6 +64,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 58 : taille Poussard « dès 1911 » (le Sicavac cite sa description par Lafon en 1921).
 - p. 58 : machine oméga inventée par « Wagner » : le brevet US 3 969 843 (1975) est déposé par Eugen et Hans Wahler (Weinstadt) ; une seule source.
 - p. 64-66 : droits de la massale limités au propre vignoble (l’arrêté du 17 juin 2020 prévoit seulement des pépinières privées réservées à l’exploitation) ; massale de porte-greffes interdite depuis 1960 ; plant à 1,30 € et 25 000-30 000 €/ha.
+- p. 66 : pertes au tri de 40 à 50 % en pépinière (20 à 30 % selon la Chambre d'agriculture de Champagne, 2024 ; taux de reprise de 65 % en 2016 et 69 % en 2017 selon FranceAgriMer, 60 à 65 % en année normale selon Vitisphere, soit environ un tiers de pertes).
 - p. 76 : sol = 6,5 % de la surface terrestre, terres non cultivables 22,5 % (non retrouvés).
 - p. 78 : origine biologique des argiles (thèse de C. et L. Bourguignon, non reprise par la pédologie consultée).
 - p. 79 : MO moyenne des sols viticoles français « à peine 2 % », Trentin au double (Trentin 2,4-3,2 % selon les études lues) ; taille des micro-organismes « 10⁻⁹ m » (ordre de grandeur douteux) ; étymologie d’« anécique » (deux sources secondaires).
@@ -112,3 +112,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).
 - p. 105 : gelée noire rattachée au gel d’advection (Le Cap et al., INRAE, SICTAG Mag’ 2021) ; Pleinchamp la range dans le gel d’évaporation.
 - p. 110 : système CCM de Tonietto et Carbonneau (2004) : 97 régions de 29 pays, IF = minimales de septembre (texte intégral lu).
+- p. 33 : « environ 70 % » du vignoble français pour une dizaine de cépages : somme des dix premiers du tableau France du Focus OIV 2017 (p. 22) = 70,2 % ; le 71,9 % du livre reste introuvable.
+- p. 100 : DOC Aversa (asprinio) reconnue le 31 juillet 1993 ; vigne mariée sur tuteurs vivants, généralement des peupliers (disciplinare, art. 8).
+- p. 121 : règles VIFA (directive INAO du 3 juin 2021) : 5 % de l'encépagement, 10 % de l'assemblage, 10 variétés par couleur, convention de 10 ans.

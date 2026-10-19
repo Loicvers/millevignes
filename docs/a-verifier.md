@@ -1,8 +1,69 @@
+# Faits à vérifier (⚠️)
+
+Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
+156 fiches : 46 vérifiées, 110 à vérifier (247 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
 - [ ] Présence au XVIIe siècle : UC Davis seul ; une autre source situe la première mention écrite vers 1775 (« Petit Cabernet », Libourne)
 - [ ] Débourrement : « trois semaines après le chasselas » dans la synthèse, « deux semaines » dans l’exercice ; écart à trancher
+
+**Fiche 3** (p.183) — Le classement de 1855
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 4** (p.45) — La véraison
+- [ ] Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe
+
+**Fiche 5** (p.158) — Le climat bourguignon
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 6** (p.16) — Classification botanique de Vitis vinifera
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 7** (p.17) — Sylvestris et sativa : les deux visages de V. vinifera
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 8** (p.18) — Domestication de la vigne : le foyer caucasien
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 9** (p.16) — La vigne, liane arbustive et pérenne
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 10** (p.16) — Génome de la vigne : un ‘fossile vivant’ des plantes à fleurs
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 11** (p.17) — Vitacées, sous-genres et trois bassins de Vitis
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 12** (p.17) — Vitis sezannensis : le plus vieux fossile de feuille de vigne
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 13** (p.19) — Le plus ancien vin connu : la Géorgie vers 6000 av. J.-C.
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 14** (p.19) — L’hypothèse paléolithique : avant le vigneron, le cueilleur
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 15** (p.20) — L’hypothèse hermaphrodite : la clé de la domestication
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 16** (p.20) — Du Caucase à la Méditerranée : centres primaires et secondaires
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 17** (p.21) — L’Égypte ancienne et la couleur des premiers raisins
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 18** (p.21) — Cépages primitifs, anciens et récents
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 19** (p.21) — Le maratheftiko, une vinifera à fleurs femelles
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 20** (p.18) — Vitis amurensis, la vigne du grand froid
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+
+**Fiche 21** (p.18) — Muscadinia rotundifolia contre le court-noué
+- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
 
 **Fiche 30** (p.29) — Les époques de maturité de Victor Pulliat
 - [ ] Melon et carignan : époque non retrouvée (Mille variétés de vignes, 1888 ; les trois tomes du Vignoble ne leur consacrent pas de fiche) ; seul le classement de Lepeltier est rapporté
@@ -15,7 +76,7 @@
 
 **Fiche 36** (p.33) — Des milliers de cépages, une poignée plantée
 - [ ] 71,9 % en 2017 et 337 variétés autorisées (Lepeltier) : non retrouvés ; repères officiels : 377 variétés au catalogue (2015), 279 variétés de cuve éligibles au classement (arrêté du 7 juillet 2015)
-- [ ] 70,2 % en 2015 : non retrouvé lors de la relecture du Focus OIV 2017, à relocaliser
+- [ ] 70,2 % : relocalisé dans le Focus OIV 2017 (p. 22, tableau France, 806 000 ha) : somme des dix premières variétés, non énoncée dans le texte, année des données non précisée (2015 probable) ; une seule source
 - [ ] Environ 6 000 : même estimation à l’OIV (Focus 2017), mais pour les seuls cépages de cuve de V. vinifera ; une seule source au-delà de Lepeltier
 
 **Fiche 37** (p.33) — Vassal, la grande collection de vignes
@@ -44,9 +105,6 @@
 
 **Fiche 52** (p.36) — Régénérer la vigne par le pépin
 - [ ] Premiers semis à Popelouchum : après 2015 (encore quelques plants en août 2015, Wine Spectator) ; « environ un millier de plants vers 2020 » : presse seulement
-
-**Fiche 4** (p.45) — La véraison
-- [ ] Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe
 
 **Fiche 56** (p.41) — Architecture et profondeur des racines
 - [ ] Semis = racine pivotante, bouture = racines traçantes : non retrouvé hors Lepeltier ; UC Davis lie surtout l’angle des racines au porte-greffe (riparia superficiel, rupestris profond)
@@ -210,7 +268,7 @@
 - [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Sénat 2012 : 14,4 % / 3,3 % ; Agreste et Ecophyto R&D 2010 non lus (HAL bloqué)
 
 **Fiche 117** (p.93) — Raisonnée, intégrée, durable : les demi-mesures
-- [ ] Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est de 2002 (décret n° 2002-631), « 2000 » non retrouvé
+- [ ] Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé
 - [ ] Origine de la HVE : Grenelle (2007+), Grenelle II (2010), décret de juin 2011 ; Pleinchamp date la certification de 2012 ; numéro du décret non confirmé
 - [ ] ISO 14001 : aucune source lue ne la relie à la viticulture durable française
 - [ ] Sylvaine Boulanger-Fassier, La Viticulture durable… (2008) : référence non retrouvée
@@ -252,7 +310,7 @@
 - [ ] Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières
 
 **Fiche 125** (p.100) — La vitiforesterie aujourd’hui
-- [ ] Asprinio d’Aversa : vignes sur peupliers ou ormes, souvent 10 à 15 m (une seule source) ; DOC 1993 non vérifiée sur le disciplinare
+- [ ] Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source
 - [ ] Vallée de Cinti : arbres-tuteurs confirmés par une seule source
 - [ ] Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue
 - [ ] Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser
@@ -390,7 +448,6 @@
 
 **Fiche 152** (p.121) — S’adapter en France : leviers et nouveaux cépages
 - [ ] Six cépages approuvés en 2021 : presse seule (The Drinks Business) ; la liste actuelle (dix variétés, sans petit manseng) et les plafonds de 5 % et 10 % sont confirmés par les cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026)
-- [ ] Règles générales des VIFA (10 variétés par AOP et par couleur, 10 ans d’observation) : LACCAVE/INRAE et Syndicat des vins de Bordeaux ; convention cadre INAO (2-3 juin 2021) non lue
 - [ ] Leviers d’adaptation : LACCAVE/INRAE ne traite ni les porte-greffes ni l’altitude ; lien porte-greffes / sécheresse non vérifié ici
 - [ ] Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices
 
@@ -412,5 +469,3 @@
 **Fiche 156** (p.123) — Mas de Daumas Gassac et Henri Enjalbert
 - [ ] Source unique et non indépendante (histoire du domaine sur son site) : comparaison avec la Côte d’Or, dates 1970-1972, eau froide du Gassac
 - [ ] Les grèzes et les dates d’Enjalbert (1910-1983) figurent dans le livre mais pas sur la page du domaine : non reprises
-
-**Fiches sans pastille, à auditer** : 3, 5, 6 à 21.

@@ -652,7 +652,7 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "En France, les {{10|dix}} premières variétés couvrent environ {{70}} % du vignoble." }, explanation: "Cette concentration contraste avec la diversité disponible : environ 6 000 V. vinifera distinctes selon Lepeltier, une fois les doublons de noms écartés." }
     ],
     status: "needs_review",
-    to_check: ["71,9 % en 2017 et 337 variétés autorisées (Lepeltier) : non retrouvés ; repères officiels : 377 variétés au catalogue (2015), 279 variétés de cuve éligibles au classement (arrêté du 7 juillet 2015)","70,2 % en 2015 : non retrouvé lors de la relecture du Focus OIV 2017, à relocaliser","Environ 6 000 : même estimation à l’OIV (Focus 2017), mais pour les seuls cépages de cuve de V. vinifera ; une seule source au-delà de Lepeltier"],
+    to_check: ["71,9 % en 2017 et 337 variétés autorisées (Lepeltier) : non retrouvés ; repères officiels : 377 variétés au catalogue (2015), 279 variétés de cuve éligibles au classement (arrêté du 7 juillet 2015)","70,2 % : relocalisé dans le Focus OIV 2017 (p. 22, tableau France, 806 000 ha) : somme des dix premières variétés, non énoncée dans le texte, année des données non précisée (2015 probable) ; une seule source","Environ 6 000 : même estimation à l’OIV (Focus 2017), mais pour les seuls cépages de cuve de V. vinifera ; une seule source au-delà de Lepeltier"],
     src: "Mille Vignes, P. Lepeltier ; OIV, Focus 2017, Distribution variétale du vignoble dans le monde",
     page: 33
   },

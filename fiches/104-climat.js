@@ -856,11 +856,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Six cépages approuvés en 2021 : presse seule (The Drinks Business) ; la liste actuelle (dix variétés, sans petit manseng) et les plafonds de 5 % et 10 % sont confirmés par les cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026)",
-      "Règles générales des VIFA (10 variétés par AOP et par couleur, 10 ans d’observation) : LACCAVE/INRAE et Syndicat des vins de Bordeaux ; convention cadre INAO (2-3 juin 2021) non lue",
       "Leviers d’adaptation : LACCAVE/INRAE ne traite ni les porte-greffes ni l’altitude ; lien porte-greffes / sécheresse non vérifié ici",
       "Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 121-122 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Syndicat des vins de Bordeaux, Nouveaux cépages dans les cahiers des charges Bordeaux ; INAO, cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026) ; The Drinks Business, INAO approves six new grapes in Bordeaux (27 janv. 2021) ; Decanter, Bordeaux winemakers allow new grapes (2 juillet 2019)",
+    src: "Mille Vignes, P. Lepeltier, p. 121-122 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Syndicat des vins de Bordeaux, Nouveaux cépages dans les cahiers des charges Bordeaux ; INAO, cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026) ; The Drinks Business, INAO approves six new grapes in Bordeaux (27 janv. 2021) ; Decanter, Bordeaux winemakers allow new grapes (2 juillet 2019) ; INAO, directive VIFA du 3 juin 2021",
     page: 121
   },
   {

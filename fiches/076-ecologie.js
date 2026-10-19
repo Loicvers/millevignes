@@ -503,7 +503,7 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est de 2002 (décret n° 2002-631), « 2000 » non retrouvé",
+      "Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé",
       "Origine de la HVE : Grenelle (2007+), Grenelle II (2010), décret de juin 2011 ; Pleinchamp date la certification de 2012 ; numéro du décret non confirmé",
       "ISO 14001 : aucune source lue ne la relie à la viticulture durable française",
       "Sylvaine Boulanger-Fassier, La Viticulture durable… (2008) : référence non retrouvée"
@@ -715,7 +715,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: [
-      "Asprinio d’Aversa : vignes sur peupliers ou ormes, souvent 10 à 15 m (une seule source) ; DOC 1993 non vérifiée sur le disciplinare",
+      "Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source",
       "Vallée de Cinti : arbres-tuteurs confirmés par une seule source",
       "Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue",
       "Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser",
