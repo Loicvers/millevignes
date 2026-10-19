@@ -85,14 +85,14 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Les types de gel",
-    synth: "Le gel d’advection vient d’une masse d’air froid poussée par un vent (au-delà d’environ 15 km/h), sans inversion thermique ; le gel de radiation survient par nuit calme et ciel dégagé : le sol se refroidit et l’air froid s’accumule en bas sous de l’air plus chaud (inversion). La gelée blanche est un dépôt de glace visible (air humide, calme) ; la gelée noire brunit les organes sans givre (air sec), et le livre la rattache à l’advection là où Pleinchamp la range dans le gel d’évaporation. Le gel d’évaporation refroidit une surface par l’eau qui s’évapore et lui prend de la chaleur. En France, 2021 (gel d’avril, récolte nationale estimée en septembre à 33,3 Mhl, chiffre révisé depuis) et 2017 sont les grands gels de printemps récents.",
+    synth: "Le gel d’advection vient d’une masse d’air froid poussée par un vent (au-delà d’environ 15 km/h), sans inversion thermique ; le gel de radiation survient par nuit calme et ciel dégagé : le sol se refroidit et l’air froid s’accumule en bas sous de l’air plus chaud (inversion). La gelée blanche, ou gelée radiative, dépose une fine pellicule de givre ; la gelée noire noircit les organes sans givre : comme le livre, Le Cap et al. (INRAE, 2021) l’associent au gel d’advection, alors que Pleinchamp la range dans le gel d’évaporation. Le gel d’évaporation refroidit une surface par l’eau qui s’évapore et lui prend de la chaleur. En France, 2021 (gel d’avril, récolte nationale estimée en septembre à 33,3 Mhl, chiffre révisé depuis) et 2017 sont les grands gels de printemps récents.",
     mnemo: "Advection : le froid arrive en voiture (le vent). Radiation : le froid tombe du ciel clair et se pose en bas, comme l’eau au fond d’un bol.",
     flash: { q: "Pourquoi les éoliennes antigel ne marchent-elles que contre le gel de radiation ?", a: "Elles ramènent vers le sol l’air plus chaud d’en haut, ce qui suppose une inversion thermique ; en advection, toute la masse d’air est froide." },
     qcm: { q: "Par quel type de nuit un gel de radiation est-il le plus probable ?", opts: ["Nuit venteuse, ciel couvert", "Nuit calme, ciel dégagé", "Journée pluvieuse, vent d’ouest", "Nuit de tempête avec air polaire"], good: 1, expl: "Sans nuages ni vent, le sol perd sa chaleur et l’air froid reste collé au sol." },
     exos: [
-      { type: "matching", prompt: "Associe chaque gel à son mécanisme.", payload: { pairs: [["Advection", "Masse d’air froid apportée par le vent, sans inversion"], ["Radiation", "Nuit calme et claire : le sol se refroidit, inversion thermique"], ["Gelée blanche", "Dépôt de glace visible, par air humide"], ["Évaporation", "Surface refroidie par l’eau qui s’évapore"]] }, explanation: "Le critère à retenir est l’origine du froid : importé par le vent, produit sur place par le sol, ou prélevé par l’évaporation." },
+      { type: "matching", prompt: "Associe chaque gel à son mécanisme.", payload: { pairs: [["Advection", "Masse d’air froid apportée par le vent, sans inversion"], ["Radiation", "Nuit calme et claire : le sol se refroidit, inversion thermique"], ["Évaporation", "Surface refroidie par l’eau qui s’évapore"]] }, explanation: "Le critère à retenir est l’origine du froid : importé par le vent, produit sur place par le sol, ou prélevé par l’évaporation." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les éoliennes antigel sont efficaces contre tous les types de gel.", answer: false }, explanation: "Elles exploitent l’air plus chaud en hauteur, qui n’existe qu’avec une inversion ; face à une masse d’air froid advectée, il n’y a rien de plus chaud à ramener." },
-      { type: "mcq_single", prompt: "Quel gel de printemps a ramené la récolte française à environ 33 Mhl (-29 %), minimum historique selon le ministère ?", payload: { options: ["2017", "2018", "2020", "2021"], answer: 3 }, explanation: "2017 avait déjà fait chuter la récolte (environ 37 Mhl), mais c’est le gel d’avril 2021 qui a creusé l’écart, avec des parcelles provençales ayant perdu tous leurs bourgeons." }
+      { type: "mcq_single", prompt: "Quel gel d’avril a fait annoncer, en septembre 2021, une récolte française d’environ 33 Mhl (-29 %) ?", payload: { options: ["2017", "2018", "2020", "2021"], answer: 3 }, explanation: "2017 avait déjà fait chuter la récolte (environ 37 Mhl), mais c’est le gel d’avril 2021 qui a creusé l’écart, avec des parcelles provençales ayant perdu tous leurs bourgeons." }
     ],
     schema: { svg: "<svg viewBox='0 0 320 190' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' fill='currentColor'><text x='4' y='13' font-size='10' font-weight='bold'>Gel de radiation : l’inversion de température</text><rect x='4' y='30' width='170' height='62' fill-opacity='0.06' stroke='currentColor' stroke-opacity='0.4'/><text x='10' y='48' font-size='9'>Air plus chaud</text><text x='10' y='60' font-size='9'>(couche d’inversion)</text><rect x='4' y='92' width='170' height='50' fill-opacity='0.22' stroke='currentColor' stroke-opacity='0.4'/><text x='10' y='110' font-size='9' font-weight='bold'>Air froid, sous 0 °C</text><text x='10' y='122' font-size='9'>(stagne près du sol)</text><rect x='4' y='142' width='170' height='10' fill-opacity='0.5'/><path d='M130,140 l0,-14 m-3,4 l3,-4 l3,4 M148,140 l0,-14 m-3,4 l3,-4 l3,4 M166,140 l0,-14 m-3,4 l3,-4 l3,4' fill='none' stroke='currentColor' stroke-width='1.3'/><text x='10' y='168' font-size='9'>Nuit calme, ciel dégagé :</text><text x='10' y='180' font-size='9'>le sol rayonne sa chaleur</text><line x1='215' y1='34' x2='215' y2='150' stroke='currentColor'/><line x1='215' y1='150' x2='312' y2='150' stroke='currentColor'/><text x='210' y='30' font-size='9' text-anchor='end'>hauteur</text><text x='312' y='164' font-size='9' text-anchor='end'>température</text><line x1='250' y1='36' x2='250' y2='150' stroke='currentColor' stroke-dasharray='3 3' stroke-opacity='0.7'/><text x='250' y='28' font-size='9' text-anchor='middle'>0 °C</text><polyline points='226,146 238,122 250,92 274,66 300,44' fill='none' stroke='currentColor' stroke-width='2'/><text x='312' y='176' font-size='9' text-anchor='end'>plus chaud en hauteur</text></svg>", legende: "Gel de radiation : par nuit claire et calme, le sol se refroidit et l’air froid reste au ras du sol, sous une couche plus chaude.", src: "D’après Lepeltier, Mille Vignes, p. 105 ; Pleinchamp, Les différents types de gel." },
     cours: {
@@ -137,16 +137,16 @@ FICHES.push(
         { imp: "important", txt: "Éoliennes antigel : seulement contre le gel de radiation." },
         { imp: "utile", txt: "À un client : un gel de printemps joue sur le millésime avant même qu’il existe ; 2021 en est l’exemple récent." }
       ],
-      src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF). Cf. Mille Vignes, p. 105."
+      src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; Le Cap et al., Gelées du printemps 2020 à Quincy, SICTAG Mag’, février 2021 (hal-03279299) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF). Cf. Mille Vignes, p. 105."
     },
     status: "needs_review",
     to_check: [
       "Récolte 2021 : estimation de septembre (33,3 Mhl) révisée ensuite ; valeur finale Agreste à confirmer",
-      "Gelée blanche et gelée noire (⚠️, une seule source) : le livre rattache la gelée noire au gel d’advection ; Pleinchamp la range, comme la blanche, dans le gel d’évaporation (air sec). Divergence non tranchée.",
+      "Gelée noire : rattachée au gel d’advection par le livre et par Le Cap et al. (2021), au gel d’évaporation par Pleinchamp ; gelée blanche = gelée radiative (Le Cap et al.). Divergence non tranchée.",
       "Gel d’évaporation (⚠️, une seule source) : le livre l’explique par l’équilibre d’un sol humide avec un air à 0 °C ; Pleinchamp par l’évaporation qui prélève de la chaleur.",
       "Gels majeurs : le livre cite 2019, 2021 et 2022 ; les sources consultées confirment 2021, 2017 (et 1991), pas 2019 ni 2022 pour le vignoble national."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF).",
+    src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; Le Cap et al., Gelées du printemps 2020 à Quincy, SICTAG Mag’, février 2021 (hal-03279299) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF).",
     page: 105
   },
   {
@@ -305,11 +305,11 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
+    status: "verified",
     to_check: [
-      "Système CCM (⚠️) : le livre écrit « plus de vingt-neuf pays » et « une centaine de régions » ; l’article de 2004 donne 29 pays et 97 régions. Thèse de 1999 non vérifiée ; adresse du site imprimée tronquée dans le livre (cnpuv.embrapa/ccm au lieu de cnpuv.embrapa.br/ccm) ; notice HAL de l’article bloquée."
+      
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 110 ; Tonietto et Carbonneau 2004, A multicriteria climatic classification system for grape-growing regions worldwide, Agric. For. Meteorol. (copie Embrapa) ; xclim, indices agro-climatiques (Huglin, Cool Night, Dryness) ; Tonietto, Embrapa (étude sur 46 régions, site CCM).",
+    src: "Mille Vignes, P. Lepeltier, p. 110 ; Tonietto et Carbonneau 2004, A multicriteria climatic classification system for grape-growing regions worldwide, Agric. For. Meteorol. 124, 81-97 (texte intégral) ; xclim, indices agro-climatiques (Huglin, Cool Night, Dryness) ; Tonietto, Embrapa (étude sur 46 régions, site CCM).",
     page: 110
   },
   {
@@ -695,7 +695,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Volcans et millésimes",
-    synth: "Une grande éruption projette des gaz soufrés dans la stratosphère : ils y forment des aérosols sulfatés qui renvoient une partie du rayonnement solaire et refroidissent la basse atmosphère pendant environ trois ans. Le Tambora (île de Sumbawa, Indonésie, 1815) a valu à 1816 le surnom d’« année sans été » en Europe ; Krakatau (1883) a teinté les couchers de soleil pendant des années ; Pinatubo (1991) a refroidi certaines régions jusqu’à 0,5 °C pendant environ trois ans (USGS). Le livre situe le Tambora à « Sumbawa, Java », alors que Sumbawa est une île distincte de Java ; il range aussi le Mont Saint Helens (1980) parmi les éruptions à effet global, ce que les sources lues n’étayent pas.",
+    synth: "Une grande éruption projette des gaz soufrés dans la stratosphère : ils y forment des aérosols sulfatés qui renvoient une partie du rayonnement solaire et refroidissent la basse atmosphère pendant environ trois ans. Le Tambora (île de Sumbawa, Indonésie, 1815) a valu à 1816 le surnom d’« année sans été » en Europe ; Krakatau (1883) a teinté les couchers de soleil pendant des années ; Pinatubo (1991) a refroidi la surface terrestre d’environ 0,1 à 0,3 °C pendant près de trois ans (GIEC), jusqu’à 0,5 °C dans certaines régions (USGS). Le livre situe le Tambora à « Sumbawa, Java », alors que Sumbawa est une île distincte de Java ; il range aussi le Mont Saint Helens (1980) parmi les éruptions à effet global, ce que les sources lues n’étayent pas.",
     mnemo: "Un volcan, c’est un parasol : les gouttelettes de soufre dans le ciel font de l’ombre à la vigne pendant trois étés.",
     flash: { q: "Pourquoi une éruption majeure refroidit-elle le climat ?", a: "Ses aérosols sulfatés, injectés dans la stratosphère, réfléchissent le rayonnement solaire." },
     qcm: { q: "Quelle éruption est à l’origine de « l’année sans été » de 1816 en Europe ?", opts: ["Krakatau", "Pinatubo", "Tambora", "Mont Saint Helens"], good: 2 },
@@ -708,13 +708,13 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Pinatubo : jusqu’à 0,5 °C dans certaines régions selon l’USGS ; aucun chiffre global retenu",
+      
       "Krakatau : couchers de soleil rouges environ 3 ans ; le refroidissement chiffré (jusqu’à 1,2 °C) d’une source universitaire n’est pas recoupé et n’est pas repris",
       "Mont Saint Helens : l’USGS le cite pour son CO2, pas comme éruption refroidissante ; classement du livre non confirmé, volontairement absent des exercices",
       "Millésime 1816 en Bourgogne ou ailleurs : date de vendanges non vérifiée, non reprise",
       "Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 119 ; Wikipedia, Year Without a Summer ; Futura-Sciences, L’éruption du Tambora est bien responsable de l’année 1816 sans été ; Oregon State University, Describe the 1883 eruption of Krakatau ; USGS, Volcanoes can affect climate ; NASA Earth Observatory, Volcanoes and climate change",
+    src: "Mille Vignes, P. Lepeltier, p. 119 ; Wikipedia, Year Without a Summer ; Futura-Sciences, L’éruption du Tambora est bien responsable de l’année 1816 sans été ; Oregon State University, Describe the 1883 eruption of Krakatau ; USGS, Volcanoes can affect climate ; GIEC AR5, groupe I, chap. 5 (FAQ 5.1) ; NASA Earth Observatory, Volcanoes and climate change",
     page: 119
   },
   {
@@ -794,7 +794,7 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850), via un résumé Wikipedia ; texte du GIEC non ouvert directement, divergence non tranchée",
+      "Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850, chap. 5, tableau 5.1, lu), qui précise que les durées varient selon les auteurs : divergence de convention, non tranchée",
       "Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon",
       "Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs",
       "Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris"
@@ -839,25 +839,25 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: { pays: "France", region: "Bordeaux", appel: null },
     titre: "S’adapter en France : leviers et nouveaux cépages",
-    synth: "Parmi les leviers d’adaptation, la filière juge le matériel végétal le plus puissant, devant la conduite (canopée, densité, orientation), l’eau et l’œnologie. Pour tester de nouveaux cépages en AOP, la règle des variétés d’intérêt à fin d’adaptation (VIFA) limite ces essais à 5 % de l’encépagement de l’exploitation et 10 % de l’assemblage. Bordeaux et Bordeaux supérieur ont ainsi approuvé en janvier 2021 six cépages, quatre rouges (arinarnoa, castets, marselan, touriga nacional) et deux blancs (alvarinho, liliorila). Le livre parle de sept cépages en 2019 avec le petit manseng : c’est la proposition des producteurs, que l’INAO n’a pas retenue pour cette liste.",
+    synth: "Parmi les leviers d’adaptation, la filière juge le matériel végétal le plus puissant, devant la conduite (canopée, densité, orientation), l’eau et l’œnologie. Pour tester de nouveaux cépages en AOP, la règle des variétés d’intérêt à fin d’adaptation (VIFA) limite ces essais à 5 % de l’encépagement de l’exploitation et 10 % de l’assemblage. Bordeaux et Bordeaux supérieur ont ouvert la voie : six cépages approuvés en 2021, et dix variétés dans le cahier des charges AOC Bordeaux de 2026, cinq rouges (arinarnoa, castets, marselan, touriga nacional, vidoc) et cinq blanches (alvarinho, floréal, liliorila, sauvignac, souvignier gris), l’alvarinho n’étant pas admis en Bordeaux supérieur. Le livre parle de sept cépages avec le petit manseng : c’est la proposition votée par les producteurs en 2019, que l’INAO n’a pas retenue.",
     mnemo: "Bordeaux ouvre sa cave à six invités, pas un de plus : quatre rouges, deux blancs ; le petit manseng frappe à la porte mais attend dehors.",
-    flash: { q: "Combien de cépages d’adaptation l’INAO a-t-il approuvés pour Bordeaux et Bordeaux supérieur en 2021 ?", a: "Six : arinarnoa, castets, marselan, touriga nacional (rouges), alvarinho, liliorila (blancs). Pas de petit manseng." },
+    flash: { q: "Quelles variétés d’adaptation le cahier des charges AOC Bordeaux autorise-t-il pour les rouges ?", a: "Arinarnoa, castets, marselan, touriga nacional et vidoc (cahier des charges de 2026). Pas de petit manseng." },
     qcm: { q: "Quel levier d’adaptation est jugé le plus puissant par la filière (LACCAVE/INRAE) ?", opts: ["Le matériel végétal", "La couleur des bouteilles", "Le choix de la date de mise en bouteille", "La taille des fûts"], good: 0 },
     exos: [
       { type: "cloze", prompt: "Complète les limites des VIFA.", payload: { text: "Une VIFA représente au plus {{5}} % de l’encépagement de l’exploitation et au plus {{10}} % de l’assemblage en AOP." }, explanation: "Ces plafonds gardent l’essai à l’état d’expérimentation : l’identité de l’appellation reste portée par les cépages d’origine." },
-      { type: "mcq_single", prompt: "Lequel de ces cépages ne figure pas parmi les six approuvés pour Bordeaux par l’INAO en 2021 ?", payload: { options: ["Marselan", "Alvarinho", "Petit manseng", "Touriga nacional"], answer: 2 }, explanation: "Le petit manseng faisait partie des sept cépages proposés par les producteurs en 2019, mais il est absent de la liste de six validée ensuite." },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "En 2021, les nouveaux cépages de Bordeaux ont droit à une mention sur l’étiquette.", answer: false }, explanation: "Les VIFA sont vinifiées à part pour l’essai et leur nom n’apparaît pas sur l’étiquette : l’appellation ne change pas d’identité pendant l’observation." }
+      { type: "mcq_single", prompt: "Lequel de ces cépages ne figure pas parmi les variétés d’adaptation du cahier des charges AOC Bordeaux ?", payload: { options: ["Marselan", "Alvarinho", "Petit manseng", "Touriga nacional"], answer: 2 }, explanation: "Le petit manseng faisait partie des sept cépages proposés par les producteurs en 2019, mais l’INAO ne l’a pas retenu ; marselan et touriga nacional sont admis en rouge, l’alvarinho en blanc sec." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’alvarinho est admis comme variété d’adaptation en AOC Bordeaux blanc sec, mais pas en Bordeaux supérieur.", answer: true }, explanation: "Les deux cahiers des charges (2026) partagent les mêmes variétés rouges, mais en blanc le Bordeaux supérieur ne retient que floréal, liliorila, sauvignac et souvignier gris." }
     ],
     schema: null,
     cours: null,
     status: "needs_review",
     to_check: [
-      "Six cépages (INAO, janvier 2021) contre sept en 2019 dans le livre : 2019 correspond au vote des producteurs (sept proposés dont petit manseng), 2021 à l’approbation de six ; fait réglementaire sans source de niveau 1 (texte INAO / Journal officiel non consulté), à confirmer avant mise en ligne",
-      "Règles VIFA (5 % de l’encépagement, 10 % de l’assemblage, 10 variétés par AOP et par couleur, 10 ans d’observation) : LACCAVE/INRAE et Syndicat des vins de Bordeaux, texte réglementaire non consulté",
+      "Six cépages approuvés en 2021 : presse seule (The Drinks Business) ; la liste actuelle (dix variétés, sans petit manseng) et les plafonds de 5 % et 10 % sont confirmés par les cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026)",
+      "Règles générales des VIFA (10 variétés par AOP et par couleur, 10 ans d’observation) : LACCAVE/INRAE et Syndicat des vins de Bordeaux ; convention cadre INAO (2-3 juin 2021) non lue",
       "Leviers d’adaptation : LACCAVE/INRAE ne traite ni les porte-greffes ni l’altitude ; lien porte-greffes / sécheresse non vérifié ici",
       "Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 121-122 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Syndicat des vins de Bordeaux, Nouveaux cépages dans les cahiers des charges Bordeaux ; The Drinks Business, INAO approves six new grapes in Bordeaux (27 janv. 2021) ; Decanter, Bordeaux winemakers allow new grapes (2 juillet 2019)",
+    src: "Mille Vignes, P. Lepeltier, p. 121-122 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Syndicat des vins de Bordeaux, Nouveaux cépages dans les cahiers des charges Bordeaux ; INAO, cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026) ; The Drinks Business, INAO approves six new grapes in Bordeaux (27 janv. 2021) ; Decanter, Bordeaux winemakers allow new grapes (2 juillet 2019)",
     page: 121
   },
   {

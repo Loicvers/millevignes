@@ -46,6 +46,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 110 : indice de sécheresse « basé sur l’hygrométrie » → bilan hydrique potentiel du sol (Riou ; Tonietto et Carbonneau, 2004).
 - p. 115 : courant froid de Humboldt associé à la côte ouest nord-américaine → il longe le Chili et le Pérou ; la Californie est rafraîchie par le courant de Californie.
 - p. 119 : Tambora situé à « Sumbawa, Java » → Sumbawa est une île distincte de Java.
+- p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
 - p. 120 : Groenland « couvert alors de vignes » → aucune source ne l’atteste ; les raisins des sagas sont au Vinland (Amérique du Nord).
 
 ## Non confirmés
@@ -85,9 +86,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 113-115 : latitudes sud 25-45° (30-40° chez Schultz et Jones) ; altitude : acidité +1 % par 100 m ; retard de végétation selon Galet (non lu) ; limites d’altitude du Beaujolais (rien dans le cahier des charges).
 - p. 114 : Etna « 1000 m au sud et à l’est, 800 m au nord » → le disciplinare trace des courbes variables (800-1000 m au nord, 400 m à l’est, 600 m au sud-ouest) ; le livre écrit DOC dans le texte et AOC sur la carte (DOC).
 - p. 119 : Mont Saint Helens (1980) parmi les éruptions refroidissantes (non retenu par l’USGS).
-- p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, non lu).
+- p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, chap. 5, lu : durées variables selon les auteurs).
 - p. 121 : vignoble d’Angleterre et du pays de Galles 2 700 ha (3 758 ha en 2021) ; réchauffement préindustriel de Ruddiman « plus de 1 °C » (0,8 °C) ; salinité 1,28 g/L, « cold units » d’Afrique du Sud, « chaos climatique » attribué à Jamie Goode (non retrouvés).
-- p. 122 : sept nouveaux cépages à Bordeaux dont le petit manseng (l’INAO en a approuvé six, sans petit manseng, en 2021 ; texte officiel non lu).
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -110,3 +110,5 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 29 : 16 écogéogroupes de Bisson (J. Int. Sci. Vigne Vin, 1999) : douze groupes numérotés et quatre groupes rattachés.
 - p. 64 : clones 76, 95 et 96 ≈ la moitié du chardonnay : 47 ha sur 95 de vignes-mères de greffons certifiées en 2017 (FranceAgriMer ; une seule source).
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).
+- p. 105 : gelée noire rattachée au gel d’advection (Le Cap et al., INRAE, SICTAG Mag’ 2021) ; Pleinchamp la range dans le gel d’évaporation.
+- p. 110 : système CCM de Tonietto et Carbonneau (2004) : 97 régions de 29 pays, IF = minimales de septembre (texte intégral lu).
