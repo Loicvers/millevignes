@@ -102,6 +102,9 @@ export function validate(lot, base = lot) {
     for (const id of e.notion_ids ?? []) if (!notionIds.has(id)) err(`${at} : notion inconnue ${id}`);
     if (!isStr(e.prompt)) err(`${at} : prompt (consigne) manquant`);
     if (e.explanation != null && !isStr(e.explanation)) err(`${at} : explanation doit être un texte (ou absente : la synthèse de la notion sert alors de correction)`);
+    // L'explication doit apporter le pourquoi : recopier la synthèse ne fait que la répéter.
+    const synths = [...(base?.notions ?? []), ...(lot.notions ?? [])].filter(n => e.notion_ids?.includes(n.id)).map(n => normalize(n.synth ?? ""));
+    if (isStr(e.explanation) && synths.includes(normalize(e.explanation))) err(`${at} : explanation recopie la synthèse de la notion (expliquer le pourquoi, ou l'omettre)`);
     for (const m of PAYLOADS[e.type](e.payload ?? {})) if (m) err(`${at} (${e.type}) : ${m}`);
   }
   return errors;

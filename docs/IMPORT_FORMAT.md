@@ -151,6 +151,7 @@ Bonnes pratiques :
 - **varier** : viser 4 à 6 exercices par notion, de types différents ;
 - index **base 0** ; écrire les options dans un ordre quelconque (le site les mélange à l'affichage) ;
 - distracteurs **plausibles**, jamais absurdes ;
+- `explanation` : donner le **pourquoi** propre à la question (ce qui rend la bonne réponse juste, le piège du distracteur), sans redire la réponse ni recopier la synthèse (refusé par les contrôles). À défaut d'explication, le site montre la synthèse, mais une seule fois par fiche et par séance ;
 - interroger ce qu'un caviste doit savoir ou expliquer : **pas de question sur une date ou un détail biographique** (naissance, mort d'un auteur…), sauf si la date est elle-même un repère utile (loi, réglementation, millésime, parution qui a changé les pratiques) ;
 - un exercice peut relier plusieurs notions (`notion_ids` à plusieurs ids), surtout `matching` et `ordering`.
 

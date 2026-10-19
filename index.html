@@ -599,10 +599,10 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
-let queue=[],pos=0,score={ok:0,total:0},sessionTitle='';
+let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(); // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title){
-  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;
+  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -677,7 +677,10 @@ function finish(ex,ok,fb,actions,body){
     fb.className='fb '+(ok?'good':'bad');fb.append(el('strong',null,ok?'Bonne réponse.':'Pas tout à fait.'));
     if(!ok)fb.append(el('p',null,'Réponse attendue : '+correctText(ex)));}
   else fb.className='fb';
-  fb.append(el('p','fb-expl',ex.explanation||ex.fiche.synth));
+  // Sans explication propre, la synthèse ne s'affiche qu'une fois par fiche et par séance (sinon elle se répète sous chaque exercice).
+  const expl=ex.explanation||(!synthVue.has(ex.fiche.id)&&ex.fiche.synth);
+  if(!ex.explanation)synthVue.add(ex.fiche.id);
+  if(expl)fb.append(el('p','fb-expl',expl));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   fb.insertAdjacentHTML('beforeend',schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};

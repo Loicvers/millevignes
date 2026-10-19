@@ -24,6 +24,13 @@ test("rejets compréhensibles", () => {
   for (const m of [/answer : index hors/, /au moins un trou/, /thème inconnu/, /id en double/]) assert.match(errs, m);
 });
 
+test("une explication qui recopie la synthèse est refusée", () => {
+  const l = lot();
+  const n = l.notions.find(x => l.exercises[0].notion_ids.includes(x.id));
+  l.exercises[0].explanation = n.synth.toUpperCase();
+  assert.match(validate(l, base).join(), /recopie la synthèse/);
+});
+
 test("needs_review exige les faits à vérifier", () => {
   const l = lot();
   l.notions[0].status = "needs_review";
