@@ -1,2 +1,104 @@
-// Lexique : terme, définition, étymologie, déclic, sources, pastille. Généré depuis la recherche sourcée (CNRTL + seconde source).
-const LEXIQUE = [];
+// Lexique : terme, définition, étymologie, déclic, sources, pastille. Seules les entrées appuyées sur une source consultée sont publiées.
+const LEXIQUE = [
+ {
+  "terme": "cépage",
+  "def": "Variété de vigne cultivée, définie par ses caractères propres.",
+  "etym": "dérivé de cep (latin cippus, pieu) avec le suffixe -age.",
+  "declic": "Le cépage, c’est la famille du cep.",
+  "src": [
+   "Wiktionnaire",
+   "Académie française (cep)",
+   "fiche 22"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "clone",
+  "def": "Ensemble de plants issus d’un même pied-mère par multiplication végétative, donc génétiquement identiques.",
+  "etym": "de l’anglais clone, lui-même du grec klôn, jeune pousse.",
+  "declic": "Klôn = pousse : une bouture, copie du pied-mère.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ },
+ {
+  "terme": "lambrusque",
+  "def": "Vigne sauvage européenne (Vitis vinifera subsp. sylvestris), ancêtre de la vigne cultivée.",
+  "etym": "du latin labrusca, vigne sauvage.",
+  "declic": "Labrusca : la vigne d’avant la culture.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ },
+ {
+  "terme": "hybride",
+  "def": "Individu issu du croisement de deux espèces ou variétés différentes (en viticulture, croisement interspécifique).",
+  "etym": "du latin hibrida, enfant d’un croisement, rapproché ensuite du grec hubris, excès.",
+  "declic": "Hibrida : né d’un mélange, hors norme.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ },
+ {
+  "terme": "teinturier (cépage)",
+  "def": "Cépage à pulpe colorée, qui donne un jus rouge dès le pressurage.",
+  "etym": "dérivé de teinture avec le suffixe -ier (celui qui teint).",
+  "declic": "Teinturier : sa pulpe teint le vin comme un teinturier teint l’étoffe.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": "étymologie du mot général"
+ },
+ {
+  "terme": "sarment",
+  "def": "Rameau de l’année de la vigne, lignifié après l’aoûtement.",
+  "etym": "du latin sarmentum, branchage coupé.",
+  "declic": "Sarmentum : ce qu’on taille.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ },
+ {
+  "terme": "vrille",
+  "def": "Organe filiforme enroulé par lequel la vigne s’accroche à son support.",
+  "etym": "du latin viticula, petite vigne (diminutif de vitis), via l’ancien français veille ; le r s’explique mal.",
+  "declic": "Viticula : la petite vigne qui s’enroule.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": "apparition du r discutée"
+ },
+ {
+  "terme": "coulure",
+  "def": "Chute des fleurs ou très jeunes baies après floraison, par mauvaise fécondation ou stress.",
+  "etym": "dérivé de couler avec le suffixe -ure.",
+  "declic": "Les fleurs coulent au lieu de nouer.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ },
+ {
+  "terme": "greffe",
+  "def": "Union d’un greffon et d’un porte-greffe pour former un seul plant.",
+  "etym": "de l’ancien français graife, du latin graphium, stylet.",
+  "declic": "Graphium, le stylet : imagine le greffon taillé en pointe.",
+  "src": [
+   "Wiktionnaire"
+  ],
+  "status": "needs_review",
+  "note": ""
+ }
+];

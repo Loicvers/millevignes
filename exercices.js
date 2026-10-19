@@ -32,7 +32,8 @@ function maskSchema(svg, labels, pick = shuffle(labels)) {
 function lexFiches(t, fiches) {
   const variants = t.terme.replace(/\(.*?\)/g, "").split("/").map(normalize).filter(Boolean);
   const res = variants.map(v => new RegExp(`(^| )${v}(s|x)?( |$)`));
-  return fiches.filter(f => { const txt = normalize(f.titre + " " + f.synth + " " + f.mnemo); return res.some(r => r.test(txt)); });
+  const hit = s => res.some(r => r.test(normalize(s)));
+  return fiches.filter(f => hit(f.titre + " " + f.synth + " " + f.mnemo)).sort((a, b) => hit(b.titre) - hit(a.titre)); // terme dans le titre d'abord
 }
 // Un QCM par terme (définition → terme), rattaché à la première fiche qui l'emploie ; l'étymologie sert de correction.
 function lexiqueExercises(lex, fiches) {

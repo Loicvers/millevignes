@@ -473,7 +473,7 @@ function renderLexique(){
       const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
-      const fs=lexFiches(t,FICHES);
+      const fs=lexFiches(t,FICHES).slice(0,6);
       if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre('Lexique : '+t.terme,[f]);w.append(b);});d.append(w);}
       list.append(d);});
     if(!list.children.length)list.append(el('p','empty',LEXIQUE.length?'Aucun terme ne correspond.':'Lexique en préparation.'));};
