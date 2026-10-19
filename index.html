@@ -298,11 +298,17 @@ function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
 }
 const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
 const isNew=e=>!prog[e.id];
-// Dus en retard d'abord, puis des nouveaux ; le tout mélangé pour entremêler types et thèmes.
+// Révisions dues mélangées, puis les nouveautés dans l'ordre du livre, groupées par fiche, flashcard en tête.
+const ficheNeuve=f=>EXOS.every(e=>e.fiche!==f||isNew(e));
 function buildQueue(pool){
-  const due=pool.filter(isDue).sort((a,b)=>prog[a.id].due-prog[b.id].due).slice(0,SESSION_MAX);
-  const fresh=shuffle(pool.filter(isNew)).slice(0,Math.min(NEW_MAX,SESSION_MAX-due.length));
-  return shuffle([...due,...fresh]);
+  const due=shuffle(pool.filter(isDue).sort((a,b)=>prog[a.id].due-prog[b.id].due).slice(0,SESSION_MAX));
+  const limit=Math.min(NEW_MAX,SESSION_MAX-due.length),fresh=[];
+  const flash=e=>e.type==='flashcard'?0:1;
+  for(const e of pool.filter(isNew).sort((a,b)=>(a.fiche.page||0)-(b.fiche.page||0)||a.fiche.id-b.fiche.id||flash(a)-flash(b))){
+    if(fresh.length>=limit&&e.fiche!==fresh[fresh.length-1].fiche)break; // on ne coupe pas une fiche en deux
+    if(limit>0)fresh.push(e);
+  }
+  return [...due,...fresh];
 }
 
 /* ============ ÉTAT FILTRES ============ */
@@ -436,7 +442,7 @@ function card(f){
     add.onclick=()=>{toggleInProg(f.id);sync();renderProg();};
     sync();c.querySelector('.synth').after(add);}
   const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
-  c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre);
+  c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre,[f.id]); // fiche déjà sous les yeux
   return c;
 }
 
@@ -599,10 +605,10 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
-let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(); // fiches dont la synthèse a déjà servi de correction dans la séance
+let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(); // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
-function startSession(q,title){
-  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();
+function startSession(q,title,dejaLues=[]){
+  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();decouvertes=new Set(dejaLues);
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -618,6 +624,7 @@ function showExercise(){
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;
+  if(!decouvertes.has(f.id)&&ficheNeuve(f)){decouvertes.add(f.id);showDecouverte(f);return;} // apprendre avant d'être interrogé
   const box=el('div','ex');
   box.append(el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`));
   box.append(el('div','ex-prompt',ex.prompt));
@@ -670,6 +677,16 @@ function correctText(ex){
     case 'ordering':return p.items.join(' → ');
   }
   return '';
+}
+function showDecouverte(f){
+  const box=el('div','ex decouverte');
+  box.innerHTML=`<div class="ex-head">${sessionTitle} · Découverte</div>
+    <h3>${f.titre}</h3><p class="synth">${f.synth}</p>${schemaHTML(f)}
+    <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
+    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
+  const actions=el('div','ex-actions'),go=el('button','btn primary','J\'ai lu, aux exercices');
+  go.onclick=()=>{showExercise();window.scrollTo(0,0);};actions.append(go);box.append(actions);
+  grid.className='session';grid.innerHTML='';grid.append(box);setTimeout(()=>go.focus({preventScroll:true}));
 }
 function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
