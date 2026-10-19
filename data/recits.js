@@ -330,5 +330,365 @@ const RECITS = [
   "Nouvelle-Zélande : 59 % est une part de viticulteurs ; vignoble de 42 519 ha et 23,6 millions de moutons en 2024 (le livre : 37 000 ha et 27 millions).",
   "Le rôle de Léon Barral comme pionnier de l’intégration animale, la date de l’AVN et celle de La Corne de vache et le Microscope (2019 ou 2020) ne sont pas confirmés."
  ]
+},
+{
+ "chapitre": "Pourquoi lire la géologie des vignobles ?",
+ "pages": "124-129",
+ "question": "Pourquoi la géologie est-elle devenue un argument central du vin, et que faut-il vraiment en comprendre ?",
+ "fil": [
+  "La roche mère s’affiche aujourd’hui sur les étiquettes et organise même certaines cartes des vins. Lepeltier rappelle que ce n’est pas nouveau : la pierre se lisait déjà dans les murets, les cabanes et les caves, et les plantes sauvages trahissaient le sous-sol. La Bourgogne, dont les parcelles (les « climats ») auraient été hiérarchisées selon leur sol, a servi de modèle au système français des appellations, qui a fait de plus en plus appel aux géologues.",
+  "Depuis les années 1990 se développe une « œnogéologie », qui cherche les liens entre sol, sous-sol, vigne et vin. Dans l’Antiquité déjà, Virgile et Vitruve pensaient que le goût du vin venait de la terre.",
+  "<b>Le temps long.</b> La croûte terrestre dérive au gré de la tectonique des plaques ; collisions, submersions et érosions façonnent roches et reliefs depuis des milliards d’années. Les noms d’âges géologiques (Jurassique, Carbonifère, Kimméridgien…) viennent de lieux, de peuples ou de roches.",
+  "<b>Pourquoi cet engouement ?</b> Les cépages et les savoir-faire voyagent ; le sol, lui, ne s’exporte pas. Face aux vignobles du Nouveau Monde, il est devenu l’argument d’unicité par excellence, renforcé par la mode de la « minéralité ».",
+  "<b>Des mots à ne pas confondre.</b> Un minéral est un solide cristallisé (quartz, feldspath, argile au sens minéralogique) ; un élément chimique est un type d’atome (calcium, potassium) ; une roche est un assemblage de minéraux (le calcaire, dominé par le carbonate de calcium). Confondre les trois mène à des contresens sur la « minéralité »."
+ ],
+ "defend": "Lire la géologie aide à comprendre un terroir, mais il faut se méfier de l’idée qu’une roche, à elle seule, rendrait un vin meilleur : la question est plus complexe qu’un argument commercial.",
+ "client": "« La roche mère sur l’étiquette, c’est une piste, pas une garantie : le sol agit surtout par l’eau et la vie qu’il apporte à la vigne. »",
+ "filRouge": "Pourquoi la géologie est-elle devenue un argument commercial si fort depuis cinquante ans ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : les faits et les chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Comprendre les roches magmatiques",
+ "pages": "130-132",
+ "question": "Que sont les roches magmatiques, et quels vignobles reposent dessus ?",
+ "fil": [
+  "Il existe trois grandes familles de roches selon leur mode de formation : magmatiques, sédimentaires et métamorphiques. Les magmatiques naissent du refroidissement du magma.",
+  "<b>Lentes ou rapides.</b> Refroidi lentement en profondeur, le magma donne des roches plutoniques aux cristaux visibles (le granit). Refroidi vite en surface, il donne des roches volcaniques au grain fin ou vitreux (le basalte). Chaque roche plutonique a son équivalent volcanique de même composition. On distingue les roches riches en potassium et sodium (felsiques) de celles riches en fer et magnésium (mafiques).",
+  "<b>Sur roches plutoniques.</b> Le granit porte une partie du Rhône nord et du Beaujolais, le Dão portugais. Mais le Beaujolais n’est pas que granitique : Juliénas et Côte-de-Brouilly reposent surtout sur la diorite, la « pierre bleue ». Le gabbro est mis en avant par les nouveaux crus communaux du Muscadet. Le granit, dur, rend les caves difficiles à creuser : les chais y sont souvent en surface.",
+  "<b>Sur roches volcaniques.</b> Le basalte, le plus répandu, porte l’Etna, la Columbia Valley ou une partie de l’Auvergne ; décomposé, il donne des sols fertiles. Rhyolite, andésite et porphyre apparaissent ailleurs (Savennières, Santorin). Les roches projetées par les éruptions explosives (cendres, tuf, ponce, lapilli) forment d’autres terroirs, comme les pouzzolanes de Lanzarote.",
+  "L’encadré sur les vins de volcan pose la question : drainants, pauvres en matière organique, riches en certains minéraux, ces sols laissent-ils une signature commune ? Des recherches sont en cours."
+ ],
+ "defend": "Derrière le mot « granit » ou « volcanique » se cachent des roches très différentes : le langage du vin simplifie souvent à l’excès.",
+ "client": "« Granit et basalte viennent tous deux du magma : l’un a refroidi lentement en profondeur, l’autre vite en surface. »",
+ "filRouge": "Quelle différence entre une roche plutonique et une roche volcanique, et pourquoi cela compte-t-il pour un vignoble ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : les exemples de vignobles sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Comprendre les roches sédimentaires",
+ "pages": "133-135",
+ "question": "Pourquoi les roches sédimentaires, dont le calcaire, portent-elles tant de grands vignobles ?",
+ "fil": [
+  "Les roches sédimentaires couvrent la majeure partie des continents. Elles naissent en surface : des roches existantes sont désagrégées ou altérées, les particules sont transportées par l’eau, la glace, le vent, se déposent en couches puis se compactent et se cimentent (la diagenèse).",
+  "<b>Plusieurs familles.</b> Les roches détritiques sont faites de débris classés par taille (argiles, silts, sables, graviers) : grès, poudingues, safres de Châteauneuf-du-Pape. Les roches chimiques précipitent à partir de l’eau : silex de Sancerre, gypse, travertin. Les roches biochimiques viennent d’êtres vivants : c’est le cas de la plupart des calcaires, de la craie (Champagne) et de la diatomite.",
+  "<b>Le calcaire.</b> Fait d’au moins la moitié de carbonate de calcium, il retient bien l’eau, se dissout facilement et donne des sols au pH élevé. Il en existe de nombreux types, souvent riches en fossiles (calcaires oolithiques de Côte-d’Or). Les marnes mélangent calcaire et argile.",
+  "<b>Galets et graves.</b> Galets de Châteauneuf ou graves bordelaises drainent très bien mais sont chimiquement inertes : leur intérêt vient des argiles en dessous.",
+  "Bourgogne, Champagne et Bordeaux reposent sur des sédiments : d’où la quête de calcaires ailleurs dans le monde, comme celle de Calera en Californie."
+ ],
+ "defend": "Croire à une adéquation unique entre un cépage et une roche supérieure est une simplification qui prive de terroirs encore inexplorés.",
+ "client": "« La craie de Champagne et le calcaire de Bourgogne sont faits de coquilles et de squelettes d’organismes marins accumulés au fond des mers. »",
+ "filRouge": "Pourquoi des galets roulés, chimiquement inertes, peuvent-ils pourtant faire un bon terroir ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes.",
+  "Le fondateur de Calera s’appelle Josh Jensen (le livre écrit Jansen)."
+ ]
+},
+{
+ "chapitre": "Comprendre les roches métamorphiques",
+ "pages": "136-138",
+ "question": "Comment une roche se transforme-t-elle en une autre, et quels vignobles poussent sur ces roches métamorphiques ?",
+ "fil": [
+  "Les roches métamorphiques naissent de roches existantes enfouies : sous la pression et la chaleur, sans fondre, leurs minéraux se réorganisent en minéraux nouveaux, plus stables. La pression des plaques leur donne souvent une structure en feuillets : c’est la schistosité.",
+  "<b>Une gradation.</b> Il n’y a pas de frontière nette entre ces roches, mais des degrés de transformation. Une argile devient ardoise, puis schiste, micaschiste, gneiss, et enfin migmatite juste avant de fondre.",
+  "<b>Dans les vignobles.</b> L’érosion les fait affleurer au pied de vieilles montagnes, comme le Muscadet au bord du massif armoricain. Ardoises et schistes donnent leur identité à l’Anjou noir, Faugères, la Côte Brune en Côte-Rôtie, la Moselle, le Priorat, le Douro. Le gneiss se trouve au Pallet (Muscadet) ou en Wachau. L’amphibolite est devenue emblématique du Muscadet ; la serpentinite, trop riche en magnésium, repousse plutôt la vigne.",
+  "<b>Le cycle des roches.</b> Toutes les roches se transforment sans cesse : elles s’altèrent en surface, s’enfouissent, fondent, renaissent. C’est dans ce recyclage permanent que se forment les sols.",
+  "L’encadré sur les schistes rouges, bleus et gris d’un domaine de Moselle pose la question du goût : des vins si différents d’un schiste à l’autre viennent-ils de la roche elle-même, ou d’effets indirects sur la chaleur, la lumière et la vie du sol ?"
+ ],
+ "defend": "Les roches ne sont ni immobiles ni éternelles ; et « schiste » recouvre des compositions très variées, qu’il est difficile de généraliser.",
+ "client": "« Le schiste est une ancienne argile transformée par la pression et la chaleur sous terre ; c’est elle qui lui donne ses feuillets. »",
+ "filRouge": "Pourquoi est-il hasardeux d’attribuer directement le goût d’un vin à son schiste ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes."
+ ]
+},
+{
+ "chapitre": "Existe-t-il un sol idéal pour la viticulture ?",
+ "pages": "139-145",
+ "question": "Y a-t-il un sol idéal pour la vigne ?",
+ "fil": [
+  "La vigne ne pousse jamais sur la roche nue, mais sur un sol, même très mince. Le sol naît lentement de deux mouvements : la roche s’altère (par le vivant, le gel, l’eau, l’air) et la matière organique se décompose en humus. Des horizons se forment, de la litière en surface à la roche intacte en profondeur. Il faut des milliers d’années pour faire un sol, que l’homme peut détruire bien plus vite.",
+  "<b>Pas de sol idéal.</b> Les grands vins viennent de sols extrêmement variés : les grands crus d’Alsace reposent sur une mosaïque de roches. La vigne, frugale, se plaît dans des sols pauvres, pourvu qu’ils n’aient ni carence ni excès.",
+  "<b>D’où viennent les nutriments ?</b> Les minéraux de la roche ne sont pas directement utilisables : il faut l’altération, le complexe argilo-humique, le pH et les micro-organismes pour les rendre disponibles. Seul l’azote vient surtout de la matière organique.",
+  "<b>L’eau d’abord.</b> Dans le Médoc, Gérard Seguin a montré que la qualité ne suivait pas la fertilité du sol, mais sa capacité à réguler l’eau : un léger manque d’eau après la véraison freine la vigueur et concentre le raisin. Texture, drainage, fissures de la roche, pierrosité et argiles (gonflantes ou non) règlent ce régime hydrique. Des études en Côte-d’Or vont dans le même sens.",
+  "Les encadrés expliquent le pH du sol, l’albédo (la lumière renvoyée par le sol) et les sols de Châteauneuf-du-Pape, où chaque secteur géologique donne un style différent."
+ ],
+ "defend": "Il n’existe pas un sol mais des sols ; leur rôle principal pour la qualité passe par l’alimentation en eau, bien plus que par une « minéralité » transmise directement.",
+ "client": "« Un grand terroir, c’est souvent un sol qui donne juste un peu moins d’eau que la vigne n’en voudrait, au bon moment. »",
+ "filRouge": "Pourquoi la régulation de l’eau compte-t-elle plus que la richesse minérale du sol pour la qualité du vin ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : les chiffres (profondeurs d’enracinement, pH, albédo) sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Climat, sol et terroir",
+ "pages": "146-149",
+ "question": "Le sol et le climat suffisent-ils à définir un terroir ?",
+ "fil": [
+  "Depuis les années 1960, la recherche tente de rationaliser la notion floue de terroir. En France, l’INAO commande dès la fin des années 1930 des études du sol des zones viticoles.",
+  "<b>Les unités de terroir.</b> En Anjou, une équipe de l’INRA d’Angers crée l’Unité terroir de base (UTB) : une zone homogène définie par son climat local, sa roche et son degré d’altération. Croisées avec l’expérience des vignerons et des dégustations, ces études relient le vin à trois variables : précocité, vigueur et alimentation en eau. Un atlas en est tiré pour le Val de Loire. Alain Carbonneau élargit ensuite l’idée à l’Unité terroir viticole, qui intègre cépage et conduite.",
+  "<b>Ailleurs.</b> La Suisse classe ses vignobles d’après les plantes qui y poussent spontanément ; le Nouveau Monde raisonne surtout par le climat, ce qui relativise le sol. En Argentine, Mendoza commence à cartographier ses terroirs.",
+  "<b>Une définition à élargir.</b> L’homme modifie profondément les sols (certains sont classés comme anthroposols) et même le climat (murs, irrigation, lutte contre le gel). L’agronome Emmanuelle Vaudour distingue quatre sens du mot terroir : la matière (sol et climat), l’espace façonné par une société, la conscience d’une identité, et le slogan publicitaire."
+ ],
+ "defend": "Le terroir est construit par l’homme, au sens propre comme au sens figuré : il faut remettre l’humain et l’économie au cœur de sa définition, à côté du sol et du climat.",
+ "client": "« Un terroir, ce n’est pas seulement un sol et un climat : ce sont aussi des générations de vignerons qui l’ont aménagé et fait connaître. »",
+ "filRouge": "Pourquoi une définition du terroir limitée au sol et au climat est-elle insuffisante ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : les chiffres (atlas, prix du foncier champenois) sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Une lecture révolutionnaire des terroirs et des paysages viticoles",
+ "pages": "150-157",
+ "question": "Les grands vignobles sont-ils nés de leur sol, ou de leurs clients ?",
+ "fil": [
+  "Pour le géographe Roger Dion, le terroir est d’abord un fait social. Sol et climat ne suffisent pas : sans marché pour vendre, pas de bon vin. Il reprend une question d’Olivier de Serres : à quoi bon un grand vignoble si l’on n’a pas où vendre son vin ?",
+  "<b>Trois viticultures.</b> Autour de la Méditerranée, la vigne pousse facilement et à peu de frais, mais cette facilité pousse peu à l’excellence. Tout au nord, près de la Manche, la viticulture est trop aléatoire pour durer : ces régions deviennent des pays de bière… et de riches acheteurs de vins importés, qui en dictent le style. Entre les deux, la « limite nord de la viticulture commerciale » (Loire, Champagne, Bourgogne, Alsace) réussit le mieux, précisément parce que les conditions difficiles obligent à l’ingéniosité pour vendre cher.",
+  "<b>La ville et la rivière.</b> Les vignobles de qualité naissent près des villes (évêchés, bourgeois propriétaires) et des voies navigables. À qualité de sol égale, Vertus, plus proche de sa ville, a été reconnu ; Sézanne non. La vigne s’installe souvent là où elle rapporte plus que le blé.",
+  "L’encadré sur le saké montre la même logique au Japon : la qualité suit le pouvoir, l’argent et les ports."
+ ],
+ "defend": "Dion ne nie pas le sol et le climat à l’échelle de la parcelle, mais à l’échelle des régions, c’est la géographie commerciale qui joue le premier rôle. Le vin de qualité est une création humaine, pas une fatalité naturelle.",
+ "client": "« Beaucoup de grands vignobles sont nés près d’une ville riche ou d’une rivière navigable : il fallait des clients et un moyen d’y acheminer le vin. »",
+ "filRouge": "Selon Roger Dion, pourquoi la viticulture la plus réputée s’est-elle développée dans des régions au climat difficile ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes."
+ ]
+},
+{
+ "chapitre": "Construire le terroir",
+ "pages": "158-163",
+ "question": "Les terroirs sont-ils naturels, ou fabriqués par les vignerons ?",
+ "fil": [
+  "Lepeltier montre qu’il n’existe presque pas de terroir que l’homme n’ait transformé. Le système des AOC défend l’idée d’un lien « naturel » au lieu, mais aucun texte n’interdit en général de remanier une parcelle : ce serait nier l’histoire.",
+  "<b>Préparer le sol.</b> On nettoie la parcelle, on retire les pierres (qui deviennent murets, cabanes et pierriers, les murgers de Bourgogne), on laboure plus ou moins profond.",
+  "<b>Maîtriser l’eau.</b> Le Médoc doit ses grands crus au drainage des marais par des ingénieurs hollandais au XVIIe siècle ; à l’inverse, des canaux irriguent Madère, Banyuls, Turpan en Chine ou les vignes andines.",
+  "<b>Tenir la pente.</b> Terrasses du Douro, de Côte-Rôtie ou du Lavaux, rangs en travers de la pente, haies : tout sert à limiter l’érosion. En Bourgogne, on remontait déjà la terre érodée au Moyen Âge.",
+  "<b>Nourrir le sol.</b> Fumiers, composts, et même déchets des villes (les ordures de Paris en Champagne) ont amendé les vignes. Aujourd’hui, on analyse le sol avant d’amender.",
+  "L’encadré sur les filets anti-grêle montre le paradoxe : longtemps interdits en AOC parce qu’ils modifieraient le climat de la parcelle, alors que des pratiques qui détruisent le sol ne sont pas remises en cause."
+ ],
+ "defend": "Reconnaître que l’homme construit les terroirs permet de regarder plus lucidement la viticulture de demain et de reconnaître la légitimité des nouveaux vignobles.",
+ "client": "« Les grands crus du Médoc existent parce qu’on a asséché des marais il y a plus de trois siècles : le terroir a été construit. »",
+ "filRouge": "Cite trois façons dont les vignerons ont transformé physiquement leur terroir.",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : dates et chiffres (Yquem, levadas, karez, érosion) sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Patrimoine architectural des vignobles",
+ "pages": "164-171",
+ "question": "Que racontent les murs, les cabanes et les chais d’un vignoble ?",
+ "fil": [
+  "L’architecture rurale se lit comme un discours sur un milieu et une société. Jusqu’au XXe siècle, le vigneron bâtit avec ce qu’il a sous la main.",
+  "<b>La pierre</b> révèle la roche mère : tuffeau et caves troglodytiques de Loire, schiste en Anjou noir, granit du Minho. <b>Le bois</b> des échalas dit les moyens du propriétaire ; le fil de fer, arrivé au milieu du XIXe siècle, prépare la mécanisation.",
+  "<b>Le petit patrimoine.</b> Les clos signalent la puissance d’un propriétaire, souvent citadin. La cabane de vigne porte mille noms (cabotte, capitelle, loge, mazet…). Bornes, pigeonniers, chemins droits ou sinueux disent une vision du monde.",
+  "<b>Garder le vin.</b> Au nord, le vin fragile se garde en cave enterrée ; au sud, un cellier en rez-de-chaussée suffit ; à l’ouest domine le chai non voûté, dont le château-chai médocain est la forme la plus aboutie.",
+  "<b>Le chai vitrine.</b> Avec Robert Mondavi en Napa Valley, la cave devient un lieu de visite et de marketing ; les grands architectes signent des chais à Bordeaux, en Rioja ou en Californie. Ces bâtiments racontent une histoire : imiter le vin, se fondre dans le paysage, ou disparaître pour suggérer un vin « naturel ».",
+  "La double page sur la taille montre la même standardisation : quelques systèmes internationaux ont remplacé des centaines de tailles régionales."
+ ],
+ "defend": "Le bâti viticole révèle les relations entre le vigneron, son sol, son climat et son marché ; il évolue aujourd’hui avec la mondialisation et le discours sur le terroir.",
+ "client": "« Regardez les murs et les toits d’un village viticole : ils sont souvent faits de la roche qui porte les vignes. »",
+ "filRouge": "Pourquoi trouve-t-on des caves enterrées au nord et des celliers en surface au sud ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes."
+ ]
+},
+{
+ "chapitre": "Les routes du vignoble",
+ "pages": "172-177",
+ "question": "Comment les routes, surtout celles de l’eau, ont-elles dessiné les vignobles ?",
+ "fil": [
+  "Avant le train, le vin voyage surtout par l’eau : moins cher, plus sûr, plus facile à taxer. Les grands vignobles s’alignent sur les fleuves navigables.",
+  "<b>Aménager les rivières.</b> Faire sauter un passage dangereux sur le Douro a permis au vignoble de remonter la vallée ; le canal du Midi ouvre le Languedoc vers Paris, surtout après le grand hiver de 1709 ; les canaux de Briare et du Loing amènent les vins du Beaujolais et du Rhône vers la capitale.",
+  "<b>Les ports.</b> La Rochelle a dominé Bordeaux au Moyen Âge grâce à son accès facile ; puis le cognac et la distillation ont pris le relais. Le mutage (ajout d’alcool) donne naissance aux vins de port : Jerez, Porto, Madère, Marsala.",
+  "<b>Les routes terrestres</b> comptent aussi : voies romaines, route du sel. La route de la soie, en revanche, a été une « impasse du vin » : la vigne y est arrivée sans la culture qui l’accompagnait. Les chemins de Compostelle, eux, ont semé des vignobles pour les pèlerins et fait voyager boutures et savoir-faire.",
+  "L’encadré sur la Loire montre un fleuve difficile, rendu navigable à grands frais, et devenu l’axe de tant de vignobles."
+ ],
+ "defend": "On ne comprend pas la géographie viticole sans la géographie de la circulation d’avant le chemin de fer, comme le disait Roger Dion.",
+ "client": "« Presque tous les grands vignobles français longent un fleuve navigable : c’était la route pour vendre le vin. »",
+ "filRouge": "Pourquoi la plupart des grands vignobles historiques se trouvent-ils le long de fleuves navigables ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "La ville dessine le vignoble, et vice versa",
+ "pages": "178-182",
+ "question": "Pourquoi la ville et le vignoble se façonnent-ils mutuellement ?",
+ "fil": [
+  "Les vignobles de qualité ne sont pas des îlots ruraux idéalisés : ils doivent leur essor à la ville, à la fois lieu de culture, de commerce, de consommation et de normes.",
+  "<b>Des vignes en ville.</b> Vienne en Autriche garde des centaines d’hectares de vignes dans ses limites ; à Bordeaux, Haut-Brion et La Mission Haut-Brion sont enchâssés dans l’agglomération.",
+  "<b>Le vin dessine la ville.</b> Quais, chais, halles aux vins, gares, octrois : des quartiers entiers sont nés du vin (les Chartrons à Bordeaux, Vila Nova de Gaia à Porto, le quartier de la gare à Haro).",
+  "<b>La ville dessine le vignoble.</b> Les propriétaires devaient pouvoir rejoindre leurs vignes dans la journée : leurs investissements se concentrent dans une première couronne, là où se trouvent souvent les crus les plus réputés. Haut-Brion illustre cette alliance d’un terroir, d’une famille influente et d’un marché (Londres).",
+  "<b>La ville comme marque.</b> Longtemps, les vins portent le nom de la ville qui les assemble et les garantit (Beaune, Bordeaux). L’idée d’AOC hérite de cette logique : la qualité décroîtrait avec la distance au centre."
+ ],
+ "defend": "Le terroir viticole n’est pas éternel : ses limites et sa réputation reflètent les intérêts des villes à chaque époque.",
+ "client": "« Haut-Brion pousse aujourd’hui en pleine agglomération bordelaise : la ville a longtemps été la meilleure amie du grand vin. »",
+ "filRouge": "Pourquoi trouve-t-on souvent les crus les plus réputés près des villes historiques ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes."
+ ]
+},
+{
+ "chapitre": "L’invention des appellations d’origine",
+ "pages": "183-191",
+ "question": "Comment sont nées les AOC, et pourquoi sont-elles aujourd’hui contestées ?",
+ "fil": [
+  "<b>Un mythe à corriger.</b> On raconte que les moines de Cluny et Cîteaux auraient goûté la terre pour délimiter les climats de Bourgogne. Les historiens n’en trouvent aucune trace : les moines vendaient surtout du volume. Ce sont les bourgeois de Beaune et Dijon qui, à partir du XVIIe siècle, nomment et hiérarchisent les climats.",
+  "<b>De la fraude à la loi.</b> Au XIXe siècle, le négoce vend des « marques géographiques » assemblées comme il l’entend. Après le phylloxéra, les fraudes explosent. Les lois de 1905, 1908 et 1919 cherchent à protéger l’origine, d’après des « usages locaux, loyaux et constants », au prix de conflits violents (Champagne et Aube). Le décret-loi de 1935 crée les AOC et le futur INAO ; les premières sont reconnues en 1936.",
+  "<b>Le cas de Chablis.</b> Le Kimméridgien, présenté comme la clé de Chablis, ne définit pas l’aire actuelle : ses limites ont varié au gré des luttes syndicales et politiques.",
+  "<b>Le goût du terroir.</b> Au départ, les AOC se vendent mal. L’INAO impose des règles, forme, et invente une dégustation d’agrément qui lie qualité et « typicité » : le goût de terroir, autrefois péjoratif, devient recherché.",
+  "<b>La crise.</b> Multiplication des appellations, typicité vécue comme une standardisation, lourdeur administrative : des vignerons sortent des AOC. L’encadré sur les Super-Toscans montre l’inverse : des vins hors règles finissent par créer leur propre appellation."
+ ],
+ "defend": "Il ne faut pas renoncer aux AOC, mais revenir à leur idée de bien commun, avec une éthique exigeante qui refuse la tentation productiviste.",
+ "client": "« L’histoire des moines qui goûtaient la terre en Bourgogne est une belle légende : les climats ont surtout été nommés par les bourgeois de Beaune et Dijon. »",
+ "filRouge": "Pourquoi Lepeltier dit-elle que l’AOC est autant une construction politique qu’une reconnaissance du sol ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Vieille Europe contre Nouveau Monde, une dichotomie à dépasser",
+ "pages": "192-197",
+ "question": "L’opposition entre vins de terroir européens et vins de cépage du Nouveau Monde tient-elle encore ?",
+ "fil": [
+  "<b>Le modèle américain.</b> Dans les pays colonisés, la terre est découpée en lots réguliers : d’où les damiers de vignes. En Californie, après la Prohibition, scientifiques de Davis, œnologues et entrepreneurs comme Robert Mondavi bâtissent un modèle où le raisin est une matière première et le vin un produit industriel : le cépage s’affiche sur l’étiquette, la marque prime. Le Jugement de Paris de 1976 consacre ces vins.",
+  "<b>Mais tout se mélange.</b> Le Nouveau Monde se « terroirise » : domaines familiaux, régions délimitées (AVA aux États-Unis, GI en Australie), vieux cépages redécouverts. L’Europe, elle, joue la carte du cépage et de la marque : les vins les plus vendus en France sont des vins de marque avec cépage en gros sur l’étiquette.",
+  "<b>Une lecture plus fine.</b> Raphaël Schirmer distingue des vignobles de lieux (Bourgogne), de marques (Champagne, Cognac), mixtes (Porto, Jerez), génériques à cépage, et des cas hétérogènes en reconstruction.",
+  "L’encadré To Kalon montre l’ambiguïté : un même nom de vignoble est à la fois une marque privée et une origine."
+ ],
+ "defend": "Il faut dépasser la dichotomie Europe / Nouveau Monde pour comprendre des marchés et des paysages en mouvement constant.",
+ "client": "« Aujourd’hui, on trouve des vins de terroir en Oregon et des vins de marque à cépage en France : l’opposition Europe / Nouveau Monde ne suffit plus. »",
+ "filRouge": "Pourquoi l’opposition Vieille Europe / Nouveau Monde est-elle devenue trompeuse ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes.",
+  "Le livre date ici le cabernet de Stag’s Leap du Jugement de Paris de 1975 ; il s’agit du millésime 1973 (comme le livre l’écrit p. 110)."
+ ]
+},
+{
+ "chapitre": "Préserver les paysages viticoles",
+ "pages": "198-200",
+ "question": "Comment préserver des paysages viticoles sans les transformer en musée ?",
+ "fil": [
+  "Depuis 1992, l’UNESCO reconnaît des « paysages culturels » : des vignobles comme Saint-Émilion, le Val de Loire, le Haut-Douro, le Lavaux, la Champagne ou les Climats de Bourgogne figurent au patrimoine mondial. Ce sont des paysages vivants, qui doivent pouvoir évoluer.",
+  "<b>L’œnotourisme</b> est devenu un levier économique majeur, inspiré du modèle de la winery de Napa. Mais il peut aussi dénaturer ce qu’il met en valeur : hôtels, restaurants et chais spectaculaires transforment le paysage.",
+  "<b>Un bien commun.</b> Les intérêts d’un petit vigneron, d’un négociant ou d’un groupe financier ne sont pas les mêmes ; sans projet partagé incluant les habitants et les écosystèmes, la préservation échoue. L’encadré du Lavaux montre un site où la fréquentation a augmenté alors que les ventes de vin baissaient."
+ ],
+ "defend": "Comme pour les AOC, il s’agit d’ancrer des terroirs et des paysages uniques sur le long terme, sans muséifier ni artificialiser au nom d’intérêts à court terme.",
+ "client": "« Le Lavaux est classé au patrimoine mondial : les visiteurs viennent pour le paysage, mais ce sont les vignerons qui le font vivre. »",
+ "filRouge": "Pourquoi l’œnotourisme peut-il à la fois protéger et menacer un paysage viticole ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : la liste et les dates d’inscription UNESCO sont celles du livre."
+ ]
+},
+{
+ "chapitre": "Les composants du raisin",
+ "pages": "204-207",
+ "question": "Pourquoi fait-on du vin avec du raisin, et pas avec n’importe quel fruit ?",
+ "fil": [
+  "Presque tous les fruits fermentent, mais très peu donnent une boisson stable sans ajout d’eau, de sucre ou d’acide : en dehors du raisin, surtout la pomme et la poire. Le raisin réunit assez de sucre pour un alcool protecteur, assez d’acidité pour freiner les microbes, des polyphénols antioxydants et assez d’eau.",
+  "<b>Où sont les composés.</b> La pulpe contient l’eau, les sucres et les acides ; la peau, l’essentiel des polyphénols et des arômes ; les pépins, des tanins et des huiles ; la rafle, des polyphénols et du potassium.",
+  "<b>Sucres et acides.</b> Les sucres fermentescibles sont le glucose et le fructose. L’acide tartrique, propre à la vigne, reste stable à la chaleur, alors que l’acide malique diminue en mûrissant : avec le réchauffement, le tartrique devient l’acide clé.",
+  "<b>Polyphénols et arômes.</b> Anthocyanes (couleur rouge), flavonols, tanins : ils donnent couleur, amertume et astringence. Les arômes sont souvent liés à des sucres (précurseurs) et ne se révèlent qu’à la fermentation et au vieillissement.",
+  "<b>Des maturités qui divergent.</b> La maturité des sucres et des acides ne coïncide plus forcément avec celle des tanins et des arômes : on peut avoir beaucoup de sucre et des tanins encore verts."
+ ],
+ "defend": "Le goût du raisin témoigne du lieu où il a poussé ; face au climat, l’avenir passe d’abord par une viticulture capable de produire des raisins équilibrés, pour intervenir le moins possible au chai.",
+ "client": "« Le raisin est presque le seul fruit qui donne naturellement un vin stable, sans ajouter ni sucre, ni acide, ni eau. »",
+ "filRouge": "Qu’est-ce qui rend le raisin si propice à la fabrication du vin ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : proportions et teneurs sont celles du livre."
+ ]
+},
+{
+ "chapitre": "Du raisin au vin, une écologie microbienne",
+ "pages": "208-216",
+ "question": "Qui fait vraiment le vin : le vigneron ou les microbes ?",
+ "fil": [
+  "Pour Marc-André Selosse, vinifier, c’est « élever des microbes ». Lavoisier puis Gay-Lussac expliquent la fermentation en chimistes ; Pasteur montre qu’elle est l’œuvre d’êtres vivants, les levures, et que des bactéries peuvent gâter le vin.",
+  "<b>Une compétition.</b> Sur le raisin vivent de nombreuses levures, surtout peu fermentaires ; Saccharomyces cerevisiae, la grande levure du vin, y est rare. Au fil de la fermentation, l’alcool, le manque d’oxygène et le soufre éliminent la plupart des espèces : une ou deux souches dominent. Les bactéries lactiques réalisent ensuite la fermentation malolactique, qui transforme l’acide malique en acide lactique plus doux.",
+  "<b>Piloter sans tout contrôler.</b> Température, aération, soufre, nutriments : le vigneron oriente la population microbienne ; l’ensemencement par des levures sélectionnées (sèches depuis les années 1960) est le contrôle le plus direct.",
+  "<b>Indigènes ou sélectionnées ?</b> Pour l’IFV, la fermentation spontanée apporte plus de risques que de complexité démontrée ; pour d’autres, comme Nicolas Joly, levurer efface le millésime et le lieu. Le débat est aussi idéologique.",
+  "<b>Un « terroir microbien » ?</b> Des études suggèrent des populations microbiennes propres à certaines régions ; d’autres les contestent. Les chercheurs s’accordent sur quelques points : vignoble et chai s’ensemencent mutuellement, les levures voyagent facilement, et le lien précis entre une souche et le goût reste mal compris."
+ ],
+ "defend": "Le vigneron vit en mutualisme avec ses microbes : il faut préserver la liberté de laisser faire ou non, tout en s’interrogeant sur l’accélération permise par les biotechnologies.",
+ "client": "« La levure qui fait le vin se trouve rarement sur le raisin : elle vit surtout au chai, et parfois dans les insectes qui la transportent. »",
+ "filRouge": "Pourquoi l’idée de « levures de terroir » reste-t-elle controversée ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : chiffres et dates des études sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "La vinification, artisanat, art et science",
+ "pages": "217-224",
+ "question": "Comment les grands styles de vin sont-ils apparus ?",
+ "fil": [
+  "Les premiers vins étaient bus jeunes, souvent peu colorés et aromatisés de plantes, de miel ou d’épices pour les rendre agréables et mieux les conserver ; les meilleurs vins étaient ceux qu’on modifiait le moins.",
+  "<b>Voile et oxydation.</b> Sous un voile de levures qui le protège de l’air, le vin développe des arômes uniques : vin jaune du Jura, fino et manzanilla de Jerez. L’oxydation directe, elle, assouplit les tanins.",
+  "<b>Chaleur et sucre.</b> Le madère est le seul vin volontairement chauffé. Les vins sucrés, longtemps les plus chers, s’obtiennent en concentrant le raisin : passerillage sur pied ou en clayette, pourriture noble (Botrytis), vin de glace ; ou en ajoutant de l’alcool (mutage) pour stopper la fermentation : vins doux naturels comme le porto ou le banyuls.",
+  "<b>La macération</b> extrait couleur et tanins des peaux. Les rouges ne sont devenus prestigieux qu’au XVIIe siècle. La macération carbonique (beaujolais) fait fermenter les baies entières ; les vins blancs macérés, dits orange, renouent avec une tradition géorgienne millénaire.",
+  "<b>Les bulles.</b> Des contenants résistants (verre anglais, bouchons de liège) permettent la méthode traditionnelle à deux fermentations, formalisée en Champagne ; la cuve close accélère et réduit les coûts (prosecco).",
+  "Les blancs et rosés frais que nous connaissons sont enfin le fruit du XXe siècle : maîtrise du froid, de l’oxygène et des extractions."
+ ],
+ "defend": "La vinification permet aujourd’hui de faire presque n’importe quel vin avec n’importe quel raisin ; la plupart des producteurs se situent entre le « rien ajouter, rien enlever » et l’intervention active.",
+ "client": "« Le vin orange, c’est un blanc vinifié comme un rouge, avec ses peaux : une méthode millénaire en Géorgie. »",
+ "filRouge": "Quelles sont les principales façons d’obtenir un vin avec du sucre résiduel ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "L’alchimie de l’élevage",
+ "pages": "225-233",
+ "question": "Que se passe-t-il pendant l’élevage, et pourquoi le chêne ?",
+ "fil": [
+  "Longtemps, le vin vieilli était plutôt un vin abîmé ; la recherche d’un élevage de qualité ne date vraiment que des années 1980.",
+  "<b>Jouer avec l’oxygène.</b> L’élevage réducteur protège le vin de l’air pour garder des arômes fragiles (les thiols du sauvignon) ; mal mené, il donne des odeurs soufrées. L’élevage oxydatif apporte un peu d’oxygène pour assouplir les tanins et stabiliser la couleur ; la micro-oxygénation reproduit ce principe en cuve.",
+  "<b>Le chêne.</b> Le bois a remplacé l’amphore. Parmi les chênes, quelques espèces servent à la tonnellerie ; le chêne sessile français, au grain fin, est le plus prisé pour les vins. Les forêts (Tronçais, Bertranges…) et le savoir-faire des tonneliers comptent comme un terroir. La chauffe du fût (légère, moyenne, forte) oriente les arômes : vanille, épices, torréfaction. Plus le fût est petit et neuf, plus il marque le vin ; un vieux fût n’est jamais tout à fait neutre.",
+  "<b>Les lies fines</b>, levures mortes, nourrissent le vin et lui donnent gras et fraîcheur.",
+  "<b>Les alternatives.</b> Copeaux, béton, inox, et le retour des jarres d’argile, inspiré de la Géorgie."
+ ],
+ "defend": "L’élevage, science, art et artisanat, est devenu l’un des champs d’expérimentation les plus actifs des vignerons, tant il pèse sur la qualité et la capacité de garde.",
+ "client": "« Un fût neuf parfume le vin ; un fût usagé sert surtout à le faire respirer doucement. »",
+ "filRouge": "Quelle différence entre un élevage réducteur et un élevage oxydatif, et quel style donne chacun ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : prix, doses et chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Le siècle des œnologues",
+ "pages": "234-238",
+ "question": "L’œnologie a-t-elle amélioré le vin, ou l’a-t-elle standardisé ?",
+ "fil": [
+  "Un grand vin du début du XXe siècle nous surprendrait : peu d’alcool, acidité volatile, tanins verts. Jusqu’en 1800, faire du vin reste un art empirique ; la chimie puis la microbiologie de Pasteur en font une science.",
+  "<b>L’école de Bordeaux.</b> Jean Ribéreau-Gayon et Émile Peynaud font entrer la science dans les chais et passent de la cure à la prévention : maîtrise de la malolactique, hygiène, vendanges mûres. Le diplôme national d’œnologue naît en 1955.",
+  "<b>Des techniques toujours plus nombreuses.</b> Contrôle des températures, levures sèches, enzymes, micro-oxygénation, filtration par membranes, désalcoolisation… L’OIV encadre ces pratiques par une liste positive : ce qui n’y figure pas est interdit.",
+  "<b>L’étiquette.</b> Longtemps, le vin a échappé à la liste des ingrédients ; l’Europe l’impose pour les vins produits depuis fin 2023, directement ou par code QR.",
+  "<b>Deux visions.</b> D’un côté, un vin défini par son procédé et son innocuité, produit agroalimentaire ; de l’autre, un vin lié au terroir et au savoir-faire. L’encadré sur Peynaud rappelle qu’il prônait lui-même d’intervenir le moins possible : « c’est au vignoble que la qualité se gagne »."
+ ],
+ "defend": "La qualité d’un vin est en partie une convention, négociée entre producteurs, consommateurs, États et industriels ; les œnologues en font partie.",
+ "client": "« Les vins produits depuis fin 2023 et vendus en Europe doivent donner leurs ingrédients, sur l’étiquette ou par un code QR. »",
+ "filRouge": "Pourquoi l’œnologie est-elle à la fois saluée pour la qualité des vins et accusée de les standardiser ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+ ]
+},
+{
+ "chapitre": "Défaut ou caractère du vin ?",
+ "pages": "239-243",
+ "question": "Où s’arrête le caractère d’un vin, et où commence le défaut ?",
+ "fil": [
+  "Des vins mythiques auraient été recalés par les standards actuels : un grand Saint-Émilion de 1947 riche en acidité volatile, un Châteauneuf-du-Pape de 1990 marqué par Brettanomyces. Comme un médicament devient poison, une molécule devient défaut au-delà d’un seuil.",
+  "<b>Défauts de vendange.</b> Raisins pas mûrs, pourriture (goût de moisi terreux), insectes écrasés, résidus de traitement, fumée d’incendie, eucalyptus voisins.",
+  "<b>Défauts de cave.</b> Acidité volatile (vinaigre, vernis), éthanal (pomme verte) hors des vins de voile, Brettanomyces (écurie, cuir), goût de souris (perçu en fin de bouche, selon la salive de chacun), odeurs de réduction soufrées.",
+  "<b>Défauts de garde.</b> Goût de bouchon (molécules comme le TCA, souvent mais pas seulement liées au liège), goût de lumière, chaleur.",
+  "<b>Une question de contexte.</b> Un caractère beurré gêne dans un sancerre et plaît dans certains chardonnays ; nos seuils de perception diffèrent ; les normes évoluent. L’encadré sur l’acidité volatile rappelle le cas d’un vigneron sommé de détruire une cuvée jugée trop volatile, alors que la molécule n’est pas dangereuse."
+ ],
+ "defend": "Un défaut n’existe qu’en contexte : certains rendent un vin plus complexe, comme dans l’esthétique japonaise du wabi-sabi. La qualité ne se résume pas à l’absence de défaut.",
+ "client": "« Un peu d’acidité volatile peut donner du relief à un vin ; beaucoup, et il tourne au vinaigre : tout est affaire de dose et de style. »",
+ "filRouge": "Pourquoi un même composé peut-il être un défaut dans un vin et une qualité dans un autre ?",
+ "prudence": [
+  "Section pas encore vérifiée contre des sources externes : seuils et pourcentages (goût de bouchon, acidité volatile) sont ceux du livre."
+ ]
 }
 ];

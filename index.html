@@ -489,14 +489,14 @@ function renderToc(list,filtre){
   }
   let sec=null;
   CHAPS.forEach(c=>{
-    const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length)return;
+    const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length&&(c.fiches.length||filtre))return;
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
       const h=el('h2','toc-sec',nom);h.append(el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));grid.append(h);}
     const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>d.open?chapOuverts.add(c.page):chapOuverts.delete(c.page);
     const sm=el('summary'),nv=fs.filter(vue).length;
-    sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',`p. ${c.page} · ${nv}/${fs.length}`));
-    const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(100*nv/fs.length)+'%';sm.append(bar);
+    sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',fs.length?`p. ${c.page} · ${nv}/${fs.length}`:`p. ${c.page} · récit seul`));
+    const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
     const inn=el('div','chap-in'),act=el('div','chap-act'),pool=fs.flatMap(f=>EXOS.filter(e=>e.fiche===f));
     const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
     const tr=el('button','btn','S\'entraîner sur ce chapitre');tr.disabled=!pool.length;
@@ -812,7 +812,7 @@ function lireChapitre(titre,fiches,depart=0){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   const page=i=>{
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
-      box.append(el('h3',null,'Chapitre lu'),el('p',null,`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`));
+      box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
       const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
     showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
   };
@@ -848,7 +848,10 @@ fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
   const chap=f=>toc.filter(c=>c.page<=f.page).pop();
   const par=new Map();
   FICHES.filter(f=>f.page).sort((a,b)=>a.page-b.page||a.id-b.id).forEach(f=>{const c=chap(f);if(c){if(!par.has(c))par.set(c,[]);par.get(c).push(f);}});
-  CHAPS=[...par].map(([c,fiches])=>({...c,fiches}));render();
+  CHAPS=[...par].map(([c,fiches])=>({...c,fiches}));
+  // chapitres sans fiches mais avec un récit : lisibles avant le lot
+  if(typeof RECITS!=='undefined')toc.forEach(c=>{if(!par.has(c)&&RECITS.some(r=>r.chapitre===c.chapitre))CHAPS.push({...c,fiches:[]});});
+  CHAPS.sort((a,b)=>a.page-b.page);render();
 }).catch(()=>{});
 function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
