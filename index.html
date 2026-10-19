@@ -798,8 +798,9 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
     <div class="src">— ${f.src}</div>${lead?`<p class="lead">${lead}</p>`:''}`;
   const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl),nav=(lbl,fn,cls='btn')=>{const b=el('button',cls,lbl);b.onclick=()=>{fn();window.scrollTo(0,0);};actions.append(b);};
-  go.onclick=()=>{if(!(lues[f.id]>1))lues[f.id]=now();saveLues();onGo();window.scrollTo(0,0);};
-  if(onPrev)nav('Fiche précédente',onPrev);
+  go.onclick=()=>{taire();if(!(lues[f.id]>1))lues[f.id]=now();saveLues();onGo();window.scrollTo(0,0);};
+  ecouter([f.titre,f.synth,f.mnemo&&'Astuce : '+f.mnemo],box,actions);
+  if(onPrev)nav('Fiche précédente',()=>{taire();onPrev();});
   actions.append(go);
   if(onQuit)nav('Quitter la lecture',onQuit,'btn later');
   box.append(actions);
@@ -821,6 +822,15 @@ function lireChapitre(titre,fiches,depart=0){
 }
 /* Récit du chapitre : le fil de l'argument avant les fiches, avec lecture à voix haute (synthèse vocale du navigateur) */
 function taire(){try{speechSynthesis.cancel();}catch(e){}}
+// Bouton « Écouter » (synthèse vocale du navigateur) ; sans elle, un message à la place
+function ecouter(textes,box,actions){
+  if(!('speechSynthesis' in window)){box.append(el('p','lead','Lecture à voix haute indisponible dans ce navigateur : ouvre le site dans Chrome ou Safari.'));return;}
+  const b=el('button','btn','Écouter');
+  b.onclick=()=>{if(speechSynthesis.speaking){taire();b.textContent='Écouter';return;}
+    const u=new SpeechSynthesisUtterance(textes.filter(Boolean).join('\n').replace(/<[^>]+>/g,''));
+    u.lang='fr-FR';u.onend=()=>b.textContent='Écouter';speechSynthesis.speak(u);b.textContent='Arrêter';};
+  actions.append(b);
+}
 function showRecit(r,onGo){
   const box=el('div','ex decouverte recit');
   box.innerHTML=`<div class="ex-head"><span>Récit du chapitre</span><span class="folio">Mille Vignes, p. ${r.pages}</span></div>
@@ -832,13 +842,7 @@ function showRecit(r,onGo){
     <div class="src">— D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}. Texte reformulé.</div>`;
   const actions=el('div','ex-actions'),go=el('button','btn primary','Aux fiches du chapitre'),quit=el('button','btn later','Quitter la lecture');
   go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode('revision');};
-  if('speechSynthesis' in window){
-    const ecoute=el('button','btn','Écouter');
-    ecoute.onclick=()=>{if(speechSynthesis.speaking){taire();ecoute.textContent='Écouter';return;}
-      const u=new SpeechSynthesisUtterance([r.chapitre,r.question,...r.fil,r.defend,r.filRouge].join('\n').replace(/<[^>]+>/g,''));
-      u.lang='fr-FR';u.onend=()=>ecoute.textContent='Écouter';speechSynthesis.speak(u);ecoute.textContent='Arrêter';};
-    actions.append(ecoute);
-  }else box.append(el('p','lead','Lecture à voix haute indisponible dans ce navigateur : ouvre le site dans Chrome ou Safari.'));
+  ecouter([r.chapitre,r.question,...r.fil,r.defend,r.filRouge],box,actions);
   actions.append(go,quit);box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);
 }
