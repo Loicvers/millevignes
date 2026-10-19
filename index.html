@@ -58,6 +58,8 @@
   .filt-panel[open]>summary{margin-bottom:12px}
   .filt-panel>summary::before{content:"▸";margin-right:6px}.filt-panel[open]>summary::before{content:"▾"}
   .count{font-size:13px;color:var(--muted)}.count b{color:var(--ink)}
+  .filt-act{display:flex;gap:8px;flex-wrap:wrap}
+  #lireSel{width:13em;color:var(--wine);border-color:var(--wine-soft)} /* sinon le select prend la largeur du plus long chapitre */
   .clear{font-size:12px;color:var(--wine);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   main{padding:26px 0 80px}
@@ -153,7 +155,15 @@
   .order-item span{flex:1}
   .mini{min-width:44px;min-height:40px;font-size:16px;border:1px solid var(--line);background:var(--paper2);border-radius:3px;cursor:pointer}
   .mini:disabled{opacity:.35}
-  .ex-actions{margin-top:14px}
+  .ex-actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .ex-actions .later{margin-left:auto}
+  /* Découverte : une page à lire, pas une question (pas de filet or, titre serif, page du livre en folio) */
+  .decouverte{border-left:1px solid var(--line)}
+  .decouverte .ex-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+  .decouverte .folio{font-family:'Cormorant',serif;font-style:italic;font-size:17px;letter-spacing:0;text-transform:none;color:var(--gold);white-space:nowrap}
+  .decouverte h3{font-family:'Cormorant',serif;font-weight:600;font-size:29px;line-height:1.12;margin-bottom:10px}
+  .decouverte .synth{font-size:16px;line-height:1.65}
+  .decouverte .lead{font-size:13.5px;color:var(--muted);margin-top:14px}
   .fb{margin-top:14px;font-size:14px}.fb:empty{display:none}
   .fb.good strong{color:var(--green)}.fb.bad strong{color:#8e3b3b}
   .fb-expl{margin-top:6px;color:#3a342c}.fb-src{margin-top:6px;font-family:'Cormorant',serif;font-style:italic;color:var(--muted);font-size:15px}
@@ -197,7 +207,7 @@
     .sup-quiz{break-before:page}.sup-quiz h2{font-family:'Cormorant',serif;font-size:18pt;margin-bottom:8pt}
     .sup-quiz>ol>li{margin:0 0 10pt 14pt;break-inside:avoid}.sup-opts{list-style:lower-alpha;margin-left:16pt}.sup-line{margin-top:6pt}
   }
-  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}}
+  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*,#lireSel{width:100%}.ex-actions .later{margin-left:0}}
   .tab{white-space:nowrap}
   .stat-line{margin-bottom:10px}
 </style>
@@ -219,8 +229,10 @@
   <div class="wrap">
     <div class="filt-foot">
       <div class="count"><b id="shown">0</b> fiche(s) · <b id="acq">0</b> exercice(s) déjà travaillé(s)</div>
+      <div class="filt-act">
       <select class="btn" id="lireSel" aria-label="Lire un chapitre" hidden><option value="">Lire un chapitre…</option></select>
       <button class="btn primary" id="sessionBtn">S'entraîner</button>
+      </div>
     </div>
     <details class="filt-panel" id="filtPanel"><summary id="filtSum">Filtrer</summary>
     <div class="filt-row">
@@ -606,10 +618,11 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
-let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(); // fiches dont la synthèse a déjà servi de correction dans la séance
+let queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title,dejaLues=[]){
   queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();decouvertes=new Set(dejaLues);
+  nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&ficheNeuve(f)))];
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -625,7 +638,8 @@ function showExercise(){
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;
-  if(!decouvertes.has(f.id)&&ficheNeuve(f)){decouvertes.add(f.id);showDecouverte(f);return;} // apprendre avant d'être interrogé
+  if(!decouvertes.has(f.id)&&ficheNeuve(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
+    showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`});return;} // apprendre avant d'être interrogé
   const box=el('div','ex');
   box.append(el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`));
   box.append(el('div','ex-prompt',ex.prompt));
@@ -679,14 +693,18 @@ function correctText(ex){
   }
   return '';
 }
-function showDecouverte(f,head=sessionTitle+' · Découverte',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise()){
+function showDecouverte(f,{head=sessionTitle+' · Nouvelle notion',lead='',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise(),onPrev=null,onQuit=null}={}){
   const box=el('div','ex decouverte');
-  box.innerHTML=`<div class="ex-head">${head}</div>
+  box.innerHTML=`<div class="ex-head"><span>${head}</span>${f.page?`<span class="folio">Mille Vignes, p. ${f.page}</span>`:''}</div>
     <h3>${f.titre}</h3><p class="synth">${f.synth}</p>${schemaHTML(f)}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
-    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
-  const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl);
-  go.onclick=()=>{onGo();window.scrollTo(0,0);};actions.append(go);box.append(actions);
+    <div class="src">— ${f.src}</div>${lead?`<p class="lead">${lead}</p>`:''}`;
+  const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl),nav=(lbl,fn,cls='btn')=>{const b=el('button',cls,lbl);b.onclick=()=>{fn();window.scrollTo(0,0);};actions.append(b);};
+  go.onclick=()=>{onGo();window.scrollTo(0,0);};
+  if(onPrev)nav('Fiche précédente',onPrev);
+  actions.append(go);
+  if(onQuit)nav('Quitter la lecture',onQuit,'btn later');
+  box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);setTimeout(()=>go.focus({preventScroll:true}));
 }
 /* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
@@ -698,7 +716,7 @@ function lireChapitre(titre,fiches){
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
       box.append(el('h3',null,'Chapitre lu'),el('p',null,`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`));
       const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
-    showDecouverte(fiches[i],`${titre} · ${i+1}/${fiches.length}`,i+1<fiches.length?'Fiche suivante':'Terminer',()=>page(i+1));
+    showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
   };
   page(0);window.scrollTo(0,0);
 }
