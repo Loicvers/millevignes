@@ -42,6 +42,11 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 94 : James Lovelock « climatologue » → chimiste et inventeur.
 - p. 100 : cuivre à 600 g/an « dix fois moins que la limite bio » → environ sept fois moins (limite : 28 kg/ha sur 7 ans, soit 4 kg/ha/an en moyenne, d’après une chambre d’agriculture ; texte du règlement non lu).
 - p. 101 : 59 % des 37 000 ha néo-zélandais pâturés par des moutons → le 59 % est une part de viticulteurs (Sustainable Winegrowing NZ) ; vignoble de 42 519 ha en 2024 ; 23,6 millions de moutons au 30 juin 2024 (27 millions dans le livre).
+- p. 108 : indice de Winkler défini en « nombre d’heures » du 1er avril au « 30 octobre » → somme de degrés-jours au-dessus de 10 °C, du 1er avril au 31 octobre (Amerine et Winkler, Hilgardia, 1944).
+- p. 110 : indice de sécheresse « basé sur l’hygrométrie » → bilan hydrique potentiel du sol (Riou ; Tonietto et Carbonneau, 2004).
+- p. 115 : courant froid de Humboldt associé à la côte ouest nord-américaine → il longe le Chili et le Pérou ; la Californie est rafraîchie par le courant de Californie.
+- p. 119 : Tambora situé à « Sumbawa, Java » → Sumbawa est une île distincte de Java.
+- p. 120 : Groenland « couvert alors de vignes » → aucune source ne l’atteste ; les raisins des sagas sont au Vinland (Amérique du Nord).
 
 ## Non confirmés
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
@@ -74,6 +79,15 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 98 : Jason Lett « arrête le labour » (le domaine Eyrie dit n’avoir jamais labouré).
 - p. 99-101 : Fosse-Sèche : 15 + 30 ha (p. 99) contre 15 + 18 ha (p. 101) ; Vignenvie (aucune source lue) ; Léon Barral présenté comme pionnier de l’intégration animale (rôle non attesté ; les sources citent des vaches).
 - p. 101 : agroécologie : Bensin 1928 (Friederichs 1930 selon d’autres) ; Altieri 1983 ou 1987.
+- p. 105 : « moins de 25 % de la photosynthèse sous 10 °C » (non retrouvé) ; gels majeurs 2019 et 2022 (les sources retiennent 1991, 2017, 2021).
+- p. 108 : optimum de photosynthèse 24-28 °C (25-30 °C chez Kriedemann) ; besoins en eau minimum 250-350 mm (450-550 mm ailleurs).
+- p. 111 : grêle en hausse (pas de tendance nette selon Météo-France).
+- p. 113-115 : latitudes sud 25-45° (30-40° chez Schultz et Jones) ; altitude : acidité +1 % par 100 m ; retard de végétation selon Galet (non lu) ; limites d’altitude du Beaujolais (rien dans le cahier des charges).
+- p. 114 : Etna « 1000 m au sud et à l’est, 800 m au nord » → le disciplinare trace des courbes variables (800-1000 m au nord, 400 m à l’est, 600 m au sud-ouest) ; le livre écrit DOC dans le texte et AOC sur la carte (DOC).
+- p. 119 : Mont Saint Helens (1980) parmi les éruptions refroidissantes (non retenu par l’USGS).
+- p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, non lu).
+- p. 121 : vignoble d’Angleterre et du pays de Galles 2 700 ha (3 758 ha en 2021) ; réchauffement préindustriel de Ruddiman « plus de 1 °C » (0,8 °C) ; salinité 1,28 g/L, « cold units » d’Afrique du Sud, « chaos climatique » attribué à Jamie Goode (non retrouvés).
+- p. 122 : sept nouveaux cépages à Bordeaux dont le petit manseng (l’INAO en a approuvé six, sans petit manseng, en 2021 ; texte officiel non lu).
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
