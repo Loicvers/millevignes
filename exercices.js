@@ -6,7 +6,7 @@ function notionId(n) { return "mv-" + String(n).padStart(4, "0"); }
 function toExercises(f) {
   const id = notionId(f.id);
   return [
-    { id: id + "-01", type: "flashcard", prompt: f.flash.q, payload: { answer: f.flash.a } },
+    { id: id + "-01", type: "flashcard", prompt: f.flash.q, payload: { answer: f.flash.a, ...(f.flash.keys && { keys: f.flash.keys }) } },
     { id: id + "-02", type: "mcq_single", prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, explanation: f.qcm.expl },
     ...(f.exos || []).map((x, i) => ({ id: id + "-" + String(i + 3).padStart(2, "0"), ...x })),
   ].map(e => ({ ...e, fiche: f }));
@@ -45,13 +45,21 @@ function lexiqueExercises(lex, fiches) {
 }
 
 // Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
-// Comparaison sur les 5 premières lettres, pour accepter pluriels et accords. null si la réponse attendue a trop peu de mots-clés.
-const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon apres avant alors ainsi encore meme autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux".split(" "));
-function flashKeys(answer, mine) {
+// Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.
+// flash.keys (facultatif) : points attendus, chacun avec ses variantes acceptées, ex. [["Asie","asiatique"],["40"]] ;
+// seuls ces points comptent, ce qui évite d'exiger des détails que la question ne demande pas.
+const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon apres avant alors ainsi encore meme autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois".split(" "));
+function flashKeys(answer, mine, groups) {
   const words = s => normalize(s).split(" ").filter(w => (/^\d+$/.test(w) || w.length >= 4) && !MOTS_VIDES.has(w));
-  const keys = [...new Set(words(answer))], mineW = words(mine);
-  const stem = w => /^\d+$/.test(w) ? w : w.slice(0, 5);
-  const found = keys.filter(k => mineW.some(m => stem(m) === stem(k)));
+  const stem = w => /^\d+$/.test(w) ? w : w.slice(0, Math.min(5, w.length - 1));
+  const mineS = words(mine).map(stem);
+  const has = k => mineS.some(m => /^\d+$/.test(k) ? m === k : m.startsWith(stem(k)) || stem(k).startsWith(m));
+  if (groups) {
+    const ok = g => g.some(alt => words(alt).every(has));
+    const keys = groups.map(g => g[0]), found = groups.filter(ok).map(g => g[0]);
+    return { keys, found, missing: keys.filter(k => !found.includes(k)), ok: found.length / keys.length >= 2 / 3 };
+  }
+  const keys = [...new Set(words(answer))], found = keys.filter(has);
   return { keys, found, missing: keys.filter(k => !found.includes(k)), ok: keys.length >= 2 ? found.length / keys.length >= 0.5 : null };
 }
 

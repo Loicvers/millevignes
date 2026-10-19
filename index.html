@@ -747,7 +747,7 @@ function showExercise(){
     case 'flashcard':case 'flashcard_reverse':{
       const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse : elle sera corrigée par mots-clés (facultatif)';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();
-        const k=mine?flashKeys(p.answer,mine):null;
+        const k=mine?flashKeys(p.answer,mine,p.keys):null;
         if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));
         if(k&&k.ok!==null){const m=el('p','ex-keys');m.append(el('b',null,`Mots-clés retrouvés : ${k.found.length} sur ${k.keys.length}`));if(k.missing.length)m.append(' — manquants : '+k.missing.join(', '));body.append(m);}
         finish(ex,k?k.ok:null,fb,actions,body);};actions.append(show);break;}

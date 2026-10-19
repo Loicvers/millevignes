@@ -86,4 +86,9 @@ test("flashcard écrite : correction par mots-clés", () => {
   assert.equal(ctx.fk(a, "le folle blanche à Cognac").ok, false);
   assert.equal(ctx.fk("Run1 : l’oïdium. Rpv1 : le mildiou.", "run1 oidium, rpv1 mildiou").ok, true);
   assert.equal(ctx.fk("Oui.", "oui").ok, null); // trop court pour juger : auto-évaluation
+  assert.equal(ctx.fk("En Asie, en Amérique.", "asiatique et américain").missing.length, 0); // asie ~ asiatique
+  const g = [["Muscadinia"], ["40"], ["Euvitis"], ["38"], ["Asie", "asiatique"], ["Amérique", "américain"], ["Eurasie", "Caucase", "vinifera"]];
+  const r = ctx.fk("", "Muscadinia 40 chromosomes et euvitis 38, bassin asiatique américain et caucassien", g);
+  assert.equal(r.found.length, 7); assert.equal(r.ok, true);
+  assert.equal(ctx.fk("", "muscadinia 38 et euvitis 40", g).ok, false); // nombres exacts
 });

@@ -42,7 +42,7 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
       to_check: f.to_check ?? (f.status ? [] : ["Pastilles de vérification d'origine non conservées : revérifier les sources."]),
       cours: f.cours ?? null, schema: f.schema ?? null, content_version: 1,
     });
-    exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a }, content_version: 1 });
+    exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a, ...(f.flash.keys && { keys: f.flash.keys }) }, content_version: 1 });
     exercises.push({ id: `${id}-02`, type: "mcq_single", notion_ids: [id], prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, explanation: f.qcm.expl, content_version: 1 });
     // Exercices supplémentaires (champ exos de fiches.js) : déjà au format du lot, numérotés à partir de -03.
     (f.exos ?? []).forEach((x, i) => exercises.push({ id: `${id}-${String(i + 3).padStart(2, "0")}`, notion_ids: [id], ...x, content_version: 1 }));

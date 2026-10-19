@@ -13,7 +13,7 @@
   theme: "Viticulture", sous: ["Maladies"], niveau: "Pointu",   // Fondamental | Intermédiaire | Pointu
   geo: { pays: "France", region: "Bourgogne", appel: null },    // ou null
   titre: "…", synth: "2 à 4 phrases reformulées.", mnemo: "Image concrète.",
-  flash: { q: "…", a: "…" },
+  flash: { q: "…", a: "…", keys: [["Asie", "asiatique"], ["40"]] }, // keys facultatif : seuls les points demandés, avec leurs variantes ; corrigé juste à 2/3
   qcm: { q: "…", opts: ["a", "b", "c", "d"], good: 1 },          // index base 0
   exos: [ { type: "true_false", prompt: "Vrai ou faux ?", payload: { … }, explanation: "…" } ],  // 2 à 4, types ci-dessous
   schema: null,                 // ou { svg, legende, src } (voir Schéma)
