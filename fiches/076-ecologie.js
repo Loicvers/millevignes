@@ -157,7 +157,8 @@ FICHES.push(
     qcm: { q: "Que signifie RIM dans le livre ?", opts: ["Réseau d’interactions microbiennes", "Résistance induite par la mycorhize", "Rhizosphère intégrée au milieu", "Réserve indispensable en minéraux"], good: 1 },
     exos: [
       { type: "mcq_multi", prompt: "Quels sont les services rendus par les mycorhizes d’après le livre ?", payload: { options: ["Nutrition de la plante", "Protection contre les pathogènes", "Atténuation des stress", "Agrégation du complexe argilo-humique", "Fixation directe de la lumière"], answers: [0, 1, 2, 3] } },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon le livre, une vigne fortement fertilisée en N, P et K nourrit davantage ses champignons mycorhiziens.", answer: false }, explanation: "Elle fait des économies d’énergie : elle nourrit moins ses champignons et perd leurs fonctions." }
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon le livre, une vigne fortement fertilisée en N, P et K nourrit davantage ses champignons mycorhiziens.", answer: false }, explanation: "Elle fait des économies d’énergie : elle nourrit moins ses champignons et perd leurs fonctions." },
+      { type: "flashcard", prompt: "Explique : pourquoi une vigne nourrie aux engrais minéraux peut-elle devenir plus fragile ?", payload: { answer: "Quand l’azote, le phosphore et le potassium arrivent directement par les engrais, la vigne n’a plus besoin de nourrir ses champignons mycorhiziens, qui régressent. Elle perd alors leurs autres services : exploration d’un grand volume de sol, protection contre les pathogènes, résistance aux stress, structure du sol. Elle devient dépendante des engrais et plus sensible aux maladies, ce qui pousse à traiter davantage." }, explanation: "Question fil rouge du chapitre « La vigne et son monde souterrain » (Mille Vignes, p. 81-84). Attendu : mycorhizes délaissées, services perdus, dépendance." }
     ],
     status: "needs_review",
     to_check: [
@@ -250,7 +251,8 @@ FICHES.push(
     qcm: { q: "Qui note en 1883 que les chloroplastes se divisent comme des cyanobactéries libres ?", opts: ["Lynn Margulis", "Andreas Schimper", "Francis Hallé", "Rudolf Steiner"], good: 1 },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Andreas Schimper a suggéré, dès 1883, que les plantes vertes résultent de l’union symbiotique de deux organismes.", answer: true }, explanation: "Schimper (1856-1901) le propose en note en 1883, bien avant Margulis. Le livre ne donne pas cette date." },
-      { type: "cloze", prompt: "Complète.", payload: { text: "Le terme {{holobionte}} désigne un hôte et l’ensemble des micro-organismes qu’il héberge." }, explanation: "Terme attribué à Margulis (1991) par Simon, Marchesi, Mougel et Selosse (2019), à Meyer-Abich (1943) par d’autres ; le livre l’applique à la vigne (p. 85)." }
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le terme {{holobionte}} désigne un hôte et l’ensemble des micro-organismes qu’il héberge." }, explanation: "Terme attribué à Margulis (1991) par Simon, Marchesi, Mougel et Selosse (2019), à Meyer-Abich (1943) par d’autres ; le livre l’applique à la vigne (p. 85)." },
+      { type: "flashcard", prompt: "Explique : qu’est-ce qu’un holobionte, et pourquoi la vigne en est-elle un ?", payload: { answer: "Un holobionte est l’ensemble formé par un organisme et les micro-organismes qu’il héberge. La vigne en est un : ses chloroplastes descendent de bactéries, ses feuilles et ses racines abritent des bactéries et des champignons (dont les mycorhizes) qui la nourrissent et la protègent. Ses maladies et sa santé dépendent de cet équilibre, que les traitements peu sélectifs peuvent rompre." }, explanation: "Question fil rouge du chapitre « La vigne et son monde aérien » (Mille Vignes, p. 85). Attendu : organisme + microbes ; endosymbiose ; équilibre fragile." }
     ],
     status: "needs_review",
     to_check: [
@@ -468,7 +470,8 @@ FICHES.push(
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Printemps silencieux (Silent Spring) de Rachel Carson paraît dans les années 1970.", answer: false }, explanation: "Il paraît le 27 septembre 1962 (traduction française en 1963). Lepeltier place dans les années 1970 la prise de conscience qu’il a nourrie ; l’interdiction du DDT aux États-Unis date de 1972." },
       { type: "cloze", prompt: "Complète.", payload: { text: "Après 1945, l’{{exode rural}} et le manque de main-d’œuvre poussent au remembrement et à la {{mécanisation}} du vignoble." }, explanation: "Ce sont les deux déclencheurs de la restructuration ; les produits de synthèse arrivent ensuite, de 1950 au début des années 1990." },
-      { type: "odd_one_out", prompt: "Selon le livre, quel changement n’appartient PAS à la restructuration du vignoble après 1945 ?", payload: { options: ["Remembrement", "Mécanisation", "Passage de la polyculture à la monoculture", "Retour à la polyculture"], answer: 3 }, explanation: "Le livre décrit l’inverse : la polyculture recule au profit de la monoculture." }
+      { type: "odd_one_out", prompt: "Selon le livre, quel changement n’appartient PAS à la restructuration du vignoble après 1945 ?", payload: { options: ["Remembrement", "Mécanisation", "Passage de la polyculture à la monoculture", "Retour à la polyculture"], answer: 3 }, explanation: "Le livre décrit l’inverse : la polyculture recule au profit de la monoculture." },
+      { type: "flashcard", prompt: "Explique la « double spirale de dépendance » entre engrais, mycorhizes et pesticides.", payload: { answer: "Nourrie aux engrais minéraux, la vigne n’a plus besoin de ses champignons mycorhiziens et perd une partie de la protection qu’ils lui apportent. Plus fragile, elle demande davantage de pesticides, qui tuent aussi les organismes utiles, ce qui l’affaiblit encore : la dépendance aux engrais nourrit la dépendance aux pesticides, et inversement." }, explanation: "Question fil rouge du chapitre « Penser la viticulture de demain » (Mille Vignes, p. 93, d’après Marc-André Selosse). Attendu : engrais → mycorhizes perdues → plus de traitements → moins d’auxiliaires." }
     ],
     schema: null,
     cours: null,
@@ -681,7 +684,8 @@ FICHES.push(
     exos: [
       { type: "cloze", prompt: "Complète.", payload: { text: "{{Permaculture One}} est publié en {{1978}} par Mollison et Holmgren." } },
       { type: "odd_one_out", prompt: "Quel élément n’est pas un fondateur ou auteur de Permaculture One ?", payload: { options: ["Bill Mollison", "David Holmgren", "Robert Rodale"], answer: 2 }, explanation: "Rodale est associé à l’agriculture régénérative, pas à Permaculture One." },
-      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La Regenerative Viticulture Foundation est une ONG britannique lancée en 2022.", answer: true } }
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La Regenerative Viticulture Foundation est une ONG britannique lancée en 2022.", answer: true } },
+      { type: "flashcard", prompt: "Explique : quel point commun relie vin nature, permaculture, viticulture régénératrice et vitiforesterie ?", payload: { answer: "Toutes pensent le vignoble comme un ensemble d’écosystèmes à préserver plutôt que comme une monoculture à contrôler. Elles remplacent « un problème, une molécule » par la prévention et la compréhension des déséquilibres, limitent la chimie de synthèse et la perturbation des sols, et cherchent à accompagner la vigne avec ses partenaires (microbes, plantes, animaux) plutôt qu’à lutter contre eux." }, explanation: "Question fil rouge du chapitre « Cohabiter avec la vigne » (Mille Vignes, p. 96-101). Attendu : écosystème, prévention, moins d’intrants, cohabitation." }
     ],
     status: "needs_review",
     to_check: [
