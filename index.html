@@ -693,7 +693,7 @@ function correctText(ex){
   }
   return '';
 }
-function showDecouverte(f,{head=sessionTitle+' · Nouvelle notion',lead='',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise(),onPrev=null,onQuit=null}={}){
+function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise(),onPrev=null,onQuit=null}={}){
   const box=el('div','ex decouverte');
   box.innerHTML=`<div class="ex-head"><span>${head}</span>${f.page?`<span class="folio">Mille Vignes, p. ${f.page}</span>`:''}</div>
     <h3>${f.titre}</h3><p class="synth">${f.synth}</p>${schemaHTML(f)}
