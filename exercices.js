@@ -7,7 +7,7 @@ function toExercises(f) {
   const id = notionId(f.id);
   return [
     { id: id + "-01", type: "flashcard", prompt: f.flash.q, payload: { answer: f.flash.a } },
-    { id: id + "-02", type: "mcq_single", prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good } },
+    { id: id + "-02", type: "mcq_single", prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, explanation: f.qcm.expl },
     ...(f.exos || []).map((x, i) => ({ id: id + "-" + String(i + 3).padStart(2, "0"), ...x })),
   ].map(e => ({ ...e, fiche: f }));
 }

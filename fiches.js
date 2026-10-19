@@ -13,7 +13,7 @@
    - geo     : { pays, region, appel } ou null
    - titre, synth (synthèse), mnemo (astuce)
    - flash   : { q, a }  (flashcard à retourner)
-   - qcm     : { q, opts:[...], good } (good = index de la bonne réponse, base 0)
+   - qcm     : { q, opts:[...], good, expl } (good = index de la bonne réponse, base 0 ; expl = pourquoi, facultatif)
    - src     : source courte
    - page    : page précise dans Mille Vignes (nombre) — facultatif mais recommandé
    - schema  : { svg, legende, src } — schéma ORIGINAL redessiné (jamais une copie du livre),
