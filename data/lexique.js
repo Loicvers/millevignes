@@ -141,5 +141,32 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "À ne pas confondre avec « ligneuse », féminin du nom désignant un kayakiste de course en ligne."
+ },
+ {
+  "terme": "nématode",
+  "def": "Petit ver rond, non segmenté et souvent microscopique, qui vit dans le sol, dans l’eau ou en parasite d’animaux ou de plantes. En vigne, la plupart sont inoffensifs (prédateurs, décomposeurs), mais Xiphinema index pique les racines et transmet le virus du court-noué.",
+  "etym": "du grec nêmatôdês, filamenteux, de nêma, fil (lui-même de nein, filer).",
+  "declic": "Nêma = fil : le nématode est un fil vivant, un ver fin comme un fil.",
+  "src": [
+   "La langue française (nématode)",
+   "Etymonline (nemato-)",
+   "IFV / AREDVI, Court-noué et repos du sol",
+   "fiches 21 et 104"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "court-noué",
+  "def": "Maladie virale grave de la vigne, due surtout au GFLV (grapevine fanleaf virus), plus rarement à l’ArMV, et transmise par un nématode du sol, Xiphinema index. Symptômes : ceps rabougris, rameaux aux entre-nœuds raccourcis et déformés, feuilles déformées ou décolorées. Conséquences : coulure, millerandage, pertes de rendement (jusqu’à 80 %) et vie du cep écourtée. Aucun traitement curatif : on prévient par l’arrachage, un long repos du sol, des plants sains (sélection clonale) et des porte-greffes résistants au nématode.",
+  "etym": "nom composé descriptif : court + noué, d’après les rameaux aux nœuds rapprochés (entre-nœuds courts).",
+  "declic": "Court-noué : des nœuds trop courts, un cep qui rabougrit ; le coupable, un nématode qui pique les racines.",
+  "src": [
+   "INRAE, plaquette Vaccivine (2021)",
+   "IFV / AREDVI, Court-noué et repos du sol",
+   "fiches 21, 29, 88 et 104"
+  ],
+  "status": "verified",
+  "note": "L’origine du nom n’est pas expliquée par les sources consultées ; elle est déduite de la composition du mot et du symptôme. Plus de 60 % du vignoble français serait touché (INRAE, 2021)."
  }
 ];
