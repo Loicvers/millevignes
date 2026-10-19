@@ -816,8 +816,8 @@ function lireChapitre(titre,fiches,depart=0){
       const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
     showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
   };
-  const r=depart===0&&typeof RECITS!=='undefined'&&RECITS.find(x=>x.chapitre===titre);
-  r?showRecit(r,()=>page(0)):page(depart);window.scrollTo(0,0);
+  const r=typeof RECITS!=='undefined'&&RECITS.find(x=>x.chapitre===titre);
+  r?showRecit(r,()=>page(depart)):page(depart);window.scrollTo(0,0);
 }
 /* Récit du chapitre : le fil de l'argument avant les fiches, avec lecture à voix haute (synthèse vocale du navigateur) */
 function taire(){try{speechSynthesis.cancel();}catch(e){}}
@@ -838,7 +838,7 @@ function showRecit(r,onGo){
       const u=new SpeechSynthesisUtterance([r.chapitre,r.question,...r.fil,r.defend,r.filRouge].join('\n').replace(/<[^>]+>/g,''));
       u.lang='fr-FR';u.onend=()=>ecoute.textContent='Écouter';speechSynthesis.speak(u);ecoute.textContent='Arrêter';};
     actions.append(ecoute);
-  }
+  }else box.append(el('p','lead','Lecture à voix haute indisponible dans ce navigateur : ouvre le site dans Chrome ou Safari.'));
   actions.append(go,quit);box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);
 }
