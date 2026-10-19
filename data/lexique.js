@@ -117,7 +117,7 @@ const LEXIQUE = [
  },
  {
   "terme": "chimère",
-  "def": "Plante faite de tissus qui n’ont pas tous le même patrimoine génétique. Chez la vigne, la pointe des rameaux compte deux couches de cellules, L1 (la peau des organes) et L2 (le reste) : si une mutation ne touche qu’une couche, la vigne devient une chimère. Exemple type : le pinot meunier, pinot noir dont seule la couche externe a muté, d’où ses feuilles duveteuses.",
+  "def": "Plante faite de tissus qui n’ont pas tous le même patrimoine génétique. Chez la vigne, la pointe des rameaux compte deux couches de cellules, L1 (la peau des organes) et L2 (le reste) : si une mutation ne touche qu’une couche, la vigne devient une chimère. Exemple type : le pinot meunier, pinot noir dont seule la couche externe a muté, d’où ses feuilles duveteuses. Au sens large, une vigne greffée est aussi appelée chimère : deux plantes différentes soudées en une seule (racines du porte-greffe, tête du greffon).",
   "etym": "du latin chimaera, du grec khimaira : le monstre mythologique fait de morceaux d’animaux différents (lion, chèvre, serpent) ; le mot grec désignait d’abord une jeune chèvre.",
   "declic": "La Chimère du mythe est un patchwork d’animaux ; la vigne chimère, un patchwork de cellules : un manteau muté sur un pinot noir.",
   "src": [
