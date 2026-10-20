@@ -3,7 +3,7 @@
 // Ajouter ici tout nouveau fichier du site (un test compare cette liste à index.html).
 const CACHE = "mv-v1";
 const FICHIERS = [
-  "./", "index.html", "manifest.webmanifest",
+  "./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
   "fonts/cormorant.woff2", "fonts/cormorant-italic.woff2", "fonts/inter.woff2",
   "fiches.js",

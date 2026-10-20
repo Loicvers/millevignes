@@ -132,9 +132,10 @@ test("séance : une fiche au plus, échues d'abord, quota de nouvelles fiches, 2
 test("le service worker met en cache tous les fichiers locaux de index.html", () => {
   const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
   const sw = readFileSync(new URL("../sw.js", import.meta.url), "utf8");
-  const listed = [...sw.matchAll(/"([^"]+\.(?:js|json|woff2|png|webmanifest|html))"/g)].map(m => m[1]);
+  const listed = [...sw.matchAll(/"([^"]+\.(?:js|json|css|woff2|png|webmanifest|html))"/g)].map(m => m[1]);
   const needed = [...html.matchAll(/<script src="([^"]+)"/g)].map(m => m[1]);
-  needed.push(...[...html.matchAll(/url\(['"]?(fonts\/[^'")]+)/g)].map(m => m[1]), "manifest.webmanifest", "data/mille-vignes-sommaire.json");
+  const css = readFileSync(new URL("../style.css", import.meta.url), "utf8");
+  needed.push(...[...css.matchAll(/url\(['"]?(fonts\/[^'")]+)/g)].map(m => m[1]), "style.css", "manifest.webmanifest", "data/mille-vignes-sommaire.json");
   for (const f of needed) assert.ok(listed.includes(f), `${f} absent de sw.js`);
   for (const f of listed) assert.ok(existsSync(new URL("../" + f, import.meta.url)), `${f} introuvable`);
 });
