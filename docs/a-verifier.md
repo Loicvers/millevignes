@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-222 fiches : 43 vérifiées, 179 à vérifier (513 points).
+252 fiches : 44 vérifiées, 208 à vérifier (608 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -873,3 +873,156 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.
 - [ ] Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 223** (p.204) — Pourquoi le raisin fait du vin
+- [ ] Définition OIV (fermentation de raisins frais ou de moût, 8,5 % vol. minimum) : une seule page OIV lue ; dérogations éventuelles au seuil non vérifiées.
+- [ ] Acidité et pH qui freinent les microbes : cohérent avec les revues lues (pH des raisins de 2,9 à 3,8), mais le lien direct avec la survie microbienne n’y est pas détaillé.
+- [ ] Polyphénols antiseptiques protégeant de la piqûre acétique : affirmation du livre, non retrouvée dans les sources lues.
+- [ ] Vins de fruits corrigés (sucre et eau) : une seule source de niveau 1 (TTB, T.D. ATF-403, règle américaine) ; pomme et poire absentes de cette source, d’où la mention « thèse de l’autrice ».
+
+**Fiche 224** (p.206) — Sucres et alcool : glucose, fructose et 17 g/l par degré
+- [ ] Rapport glucose/fructose : 0,8 à 1,1 à maturité selon le cépage (Amerine et Thoukis, Vitis, 1958) ; glucose plutôt majoritaire avant maturité chez la syrah (Bozovic et al.) ; pas de règle générale.
+- [ ] Saccharose quasi nul après la véraison : même étude unique (Bozovic, Rogiers, Deloire).
+- [ ] 20 g/100 g (cuve) équivalents à environ 200 g/l : une source donne 100 à 300 g/l dans le jus ; ordre de grandeur.
+
+**Fiche 225** (p.206) — Les acides du raisin : tartrique, malique, potassium et pH
+- [ ] Acide citrique « troisième acide » : une seule source lue (Oregon State University) le décrit comme présent en petites quantités, avec un effet minime sur le pH ; « majeur » dans le livre est excessif.
+- [ ] Tartrique et malique « responsables de 90 % de l’acidité » (livre) : chiffre non retrouvé, non repris dans la fiche.
+
+**Fiche 226** (p.206) — Polyphénols, arômes et maturités qui divergent
+- [ ] Précurseurs de thiols du sauvignon blanc réduits d’environ 70 % à +1,5 °C : une seule étude (Wu et al., OENO One, 2019) ; effet du réchauffement sur le découplage seulement implicite dans les sources.
+- [ ] Comparaison du livre « chenin en sous-maturité comme un sauvignon, en surmaturité comme un riesling » : non retrouvée, non reprise.
+
+**Fiche 227** (p.208) — De la chimie à la biologie : comprendre la fermentation
+- [ ] Lavoisier (1789), la matière du sucre se retrouve dans l’alcool et le gaz (⚠️) : une seule source lue (Universalis, Fermentations, repères chronologiques)
+
+**Fiche 228** (p.209) — Une compétition microbienne : la levure du vin est rare sur le raisin
+- [ ] Sélection par le manque d’oxygène (⚠️) : affirmation du livre, non retrouvée dans les sources lues (IFV, Tokaj) qui décrivent la tolérance à l’alcool et le SO2
+- [ ] Date de l’étude sur les guêpes et frelons : 2012 (PNAS 109:13398) selon la notice lue, 2013 selon le livre ; divergence signalée dans la synthèse
+
+**Fiche 229** (p.211) — Trois fermentations : alcoolique, malolactique, acétique
+- [ ] FML « obligatoire pour les rouges en Europe » (⚠️) : le livre le dit ; une revue technique (Réussir Vigne) parle d’exigence de qualité, aucun texte réglementaire trouvé (niveau 1 absent) ; formulé ici comme pratique courante
+- [ ] Fermentation acétique qui exige l’oxygène (⚠️) : une seule source lue (Science History Institute, Pasteur 1866, voile de Mycoderma aceti) ; contradiction interne du livre p. 211 / p. 215
+
+**Fiche 230** (p.212) — Piloter les levures : température, oxygène, soufre, nutriments
+- [ ] Azote et vitamines comme nutriments des levures (⚠️) : affirmation du livre, non vérifiée dans les sources lues (thiamine, phosphates non repris)
+- [ ] Levures sèches actives : années 1960 (livre, compatible avec une synthèse de Vitis 1968 sur la levure séchée) contre 1979 (Agroscope, première levure de vin sèche commercialisée) : divergence signalée, non tranchée
+- [ ] Seuils d’ensemencement (au-dessus de 15 °C) : sources IFV et CRAAQ, valeurs indicatives selon le vin
+
+**Fiche 231** (p.214) — Levures indigènes ou sélectionnées : un débat technique et idéologique
+- [ ] Position de l’IFV (⚠️) : une seule source lue (Itinéraires n°18, 2008) ; chiffre d’environ 30 % de fermentations spontanées difficiles tiré de ce document ; la formule du livre sur « trente ans de recherches » sans lien entre complexité levurienne et complexité du vin n’a pas été retrouvée
+- [ ] Position de Nicolas Joly sur les levures indigènes (⚠️) : rapportée par le livre, source primaire non lue
+- [ ] Spontané jusqu’aux années 1970, ensemencé majoritaire aujourd’hui (⚠️) : affirmation du livre non recoupée
+- [ ] Moût jamais totalement stérile (⚠️) : affirmation du livre non recoupée
+
+**Fiche 232** (p.214) — Terroir microbien : l’habitat pèse plus que la région
+- [ ] Knight et al. (2015), populations régionales de S. cerevisiae et phénotype du vin (⚠️) : une seule notice lue (Univ. Lincoln), texte intégral bloqué ; le livre ne cite pas l’étude sous ce nom
+- [ ] Thèse d’Auckland, habitat plus explicatif que la région (⚠️) : un seul résumé lu (ResearchSpace) ; nature et date de l’étude non recoupées avec le travail de Morrison-Whittle et Goddard cité par le livre
+- [ ] Critiques sur l’échelle et la stabilité des différences, et points de consensus (⚠️) : affirmations du livre non recoupées
+
+**Fiche 233** (p.218) — Les vins sous voile : vin jaune et xérès
+- [ ] Fortification du jeune fino à 15-15,5 % : une source de niveau 2b (Foods and Wines from Spain), concordante avec le schéma du livre (15,5 %) ; le cahier des charges de la manzanilla donne 15-17 % pour le vin fini.
+- [ ] Oloroso comme exemple d’élevage oxydatif : une seule source externe (cahier des charges de la DO Jerez-Xérès-Sherry, Junta de Andalucía).
+- [ ] Savagnin pour le vin jaune : une seule source de presse (RTBF).
+- [ ] Arômes du voile liés à l’acétaldéhyde : sources de presse uniquement.
+
+**Fiche 234** (p.218) — Le soufre dans le chai : de la mèche hollandaise à l’étiquette
+- [ ] 1487 comme première mention du soufre : deux sites de vulgarisation seulement, date débattue (GuildSomm), aucune source de niveau 1 ou 2a.
+- [ ] Mèche hollandaise : le livre donne 1765, les sources lues l’attestent dès le XVIIe siècle (presse spécialisée et Oxford Companion via CKBK) ; 1765 non retrouvé.
+- [ ] Seuil de 10 mg/l : règlement 1169/2011 annexe II lu via legislation.gov.uk, non relu sur EUR-Lex.
+- [ ] Rôles du SO2 (antioxydant, antiseptique) : exposé du livre, non recoupé dans les sources lues.
+
+**Fiche 235** (p.219) — Les vins sucrés : concentrer le raisin ou muter
+- [ ] Alcool ajouté aux VDN : 10 % maximum (fiche INAO Rivesaltes) contre 5 à 25 % dans le livre ; divergence non tranchée, à vérifier cahier des charges par cahier des charges.
+- [ ] Mutage rattaché à Arnaud de Villeneuve : seul le XIIIe siècle est confirmé (INAO, Idealwine) ; l’année 1258 du livre n’est pas établie.
+- [ ] Pourriture noble : mécanisme tiré d’une source de presse (Idealwine) ; perte d’eau du livre (jusqu’à 50 % du poids de la baie) et perte de jus de la source (au moins 65 %) non réconciliées.
+- [ ] Vin de paille et vin de glace : détails de séchage et de température issus de sources de tourisme ou de blog, cahiers des charges non lus.
+- [ ] Mention « doux » à 45 g/l : règlement délégué 2019/33 lu via legislation.gov.uk ; dérogations pour les vins secs non reprises ici.
+
+**Fiche 236** (p.221) — Macération carbonique, vins orange et qvevri
+- [ ] Michel Flanzy, 1934 : une seule source (notice INRAE Prodinra).
+- [ ] Fermentation intracellulaire sans levures : notice INRAE ; pressage du jus écoulé puis fermentation classique : exposé du livre, non recoupé.
+- [ ] Beaujolais comme exemple de macération carbonique : affirmation du livre, non recoupée dans les sources lues.
+- [ ] Gravner et Radikon (Frioul, années 1990) : source de presse unique (Decanter) ; Frioul tiré du livre.
+- [ ] Vin orange comme blanc macéré, couleur ambrée : définition du livre, non recoupée dans une source de niveau 1 ou 2a.
+
+**Fiche 237** (p.222) — Les effervescents : trois façons de faire des bulles
+- [ ] Blanquette de Limoux : 1531 (tradition de Saint-Hilaire, une source de presse) contre 1544 (livre) ; divergence non tranchée, aucune source lue ne donne 1544.
+- [ ] Seuils de pression : annexe VII du règlement 1308/2013 lue via FranceAgriMer, règlement non relu sur EUR-Lex ; le 6 bars et les g/l de CO2 du livre ne sont pas repris.
+- [ ] Martinotti 1895 et Charmat 1907 : une seule source (Glass of Bubbly).
+- [ ] Méthode ancestrale et Clairette de Die : fiche INAO ; lien avec l’aigleucos de Pline non retenu faute de preuve.
+- [ ] Étapes de la méthode traditionnelle : exposé du livre, non recoupé dans les sources lues.
+
+**Fiche 238** (p.225) — Jouer avec l’oxygène : élevage réducteur ou oxydatif
+- [ ] Élevage réducteur, thiols du sauvignon et odeurs soufrées (sulfure d’hydrogène, mercaptans) (⚠️) : affirmations du livre p. 225-226, aucune page IFV ou OENO One lue sur ce point
+- [ ] Élevage oxydatif : tanins assouplis, couleur stabilisée, effets des apports massifs (⚠️) : affirmations du livre, non recoupées
+- [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; date et matériel du livre non repris
+- [ ] Apport d’oxygène d’une barrique neuve, de l’ordre de 10 à 30 mg/l/an (⚠️) : fourchette tirée de Junqua et al. (2021, environ 11 mg/l/an) et de Nevares (2014, 27 à 32 mg/l/an), lus dans un article de synthèse ; les valeurs publiées vont de 8 à 45 mg/l/an selon la méthode, le grain et l’âge du fût. Le chiffre du livre (0,4 mg/l/an, 80 % par la bonde) n’est pas retrouvé
+
+**Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
+- [ ] Grain fin du sessile (1 à 3 mm) et lien grain-ellagitanins (⚠️) : non retrouvé dans Prida et al. (2007), où les cernes sont proches entre les deux espèces ; lien débattu ; présenté dans la fiche comme position du livre
+- [ ] Chêne américain Quercus alba, coco et clou de girofle (⚠️) : affirmation du livre p. 227, non recoupée
+- [ ] Profils aromatiques des forêts françaises (⚠️) : carte de l’IFV reprise par le livre p. 229, document d’origine non consulté
+- [ ] Sessile plus riche en lactones et eugénol : confirmé (Prida, 2007), mais la distribution du sessile est bimodale, certains arbres sont aussi pauvres en lactone que des pédonculés ; d’où « en moyenne »
+
+**Fiche 240** (p.228) — La fabrication du fût : chauffe, taille et âge
+- [ ] Ordre débit, séchage, cintrage, bousinage (⚠️) : ordre du livre p. 228, non recoupé ; durées et taux d’humidité du livre non repris (IFV : 18 à 24 mois de séchage, le livre dit 18 à 36)
+- [ ] Furfural évoquant l’amande et eugénol évoquant le clou (⚠️) : correspondances aromatiques du livre, non recoupées ; l’apparition du furfural et de la vanilline avec la chauffe est confirmée (IFV, Virginia Tech)
+- [ ] Un petit fût marque plus qu’un grand (⚠️) : affirmation du livre p. 230, non chiffrée dans les sources lues ; l’épuisement du bois avec l’usage est confirmé
+
+**Fiche 241** (p.228) — Les lies fines et le bâtonnage
+- [ ] Autolyse des lies, polysaccharides, mannoprotéines, gras et longueur (⚠️) : affirmations du livre p. 228 ; la page Virginia Tech sur les lies n’a pas pu être lue
+- [ ] Glutathion protecteur des thiols, lies mal conduites et goûts herbacés (⚠️) : affirmations du livre, non recoupées
+- [ ] Muscadet sur lie (⚠️) : une seule source, la fiche produit INAO (lies fines au moins jusqu’au 1er mars et jusqu’à l’expédition, sans aération, mise en bouteille dans le chai de vinification avant le 31 décembre)
+
+**Fiche 242** (p.230) — Les alternatives au fût : copeaux, foudres, béton, inox, qvevri
+- [ ] Foudre de plus de 1 000 l et moindre impact d’un grand contenant (⚠️) : affirmations du livre p. 230, non recoupées
+- [ ] Cuve de Byrrh, environ un million de litres (⚠️) : International Oak Society donne environ 1 000 200 l, l’office de tourisme d’Occitanie 1,2 million (probablement la capacité prévue) ; le statut de « plus grand tonneau » n’est pas comparé à d’autres
+- [ ] Béton et inox plus neutres (⚠️) : propos du livre p. 230, non recoupés ; l’effet de brassage des lies dans les œufs en béton, présenté comme hypothèse, n’est pas repris
+- [ ] Gravner et rôle de déclencheur du renouveau des amphores (⚠️) : source unique (Wine Spectator), thèse de l’autrice
+
+**Fiche 243** (p.232) — Les grandes étapes : rouge et blanc
+- [ ] Ordre des étapes : reconstitué du schéma double page 232-233 (mise en page en colonnes abîmée à l’OCR) et de la pratique courante, non recoupé dans un manuel (Ribéreau-Gayon, Jackson).
+- [ ] Vin de presse plus riche en polyphénols : affirmation du livre, non vérifiée.
+- [ ] Rôle du débourbage (goûts désagréables si omis) : pratique courante, non recoupée dans les sources lues.
+
+**Fiche 244** (p.234) — De l’art empirique à la science : l’école de Bordeaux
+- [ ] Institut d’œnologie de Bordeaux fondé en 1949 par Jean Ribéreau-Gayon (⚠️) : une seule source (The Drinks Business) ; Oxford Companion situe la station de Gayon vers 1880, et le livre 1874 (non repris ici).
+- [ ] Pasteur chargé en 1863 d’étudier les maladies du vin (⚠️) : une seule source (Institut Pasteur) ; la parution des Études sur le vin en 1866 n’est pas confirmée, elle n’est donc pas retenue.
+- [ ] Chaptal chimiste (⚠️) : une seule source (Oxford Companion to Wine).
+- [ ] Lien ferrocyanure / création du DNO et décret du 20 mai 1955 (⚠️) : une seule source (IFV) ; le rôle personnel de Jean Ribéreau-Gayon dans la validation du ferrocyanure n’apparaît dans aucune source lue.
+- [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; Peynaud « élève » de Ribéreau-Gayon : les sources parlent plutôt d’une collaboration.
+- [ ] Peynaud partisan de peu d’interventions et d’une qualité gagnée au vignoble (⚠️) : citations rapportées par le livre p. 238, source primaire (Le Vin et les Jours) non lue.
+
+**Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
+- [ ] SO2 bio 100/150 mg/l sous 2 g/l de sucres (⚠️) : deux fiches de certificateurs (Certis, TÜV Nord) citant le règlement (UE) 2021/1165, annexe V D, dont le texte n’a pas pu être lu.
+- [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024 ; Biodyvin serait moins strict (80/105 mg/l selon Réussir, une source de presse), cahier des charges Biodyvin non lu.
+- [ ] Vin méthode nature < 30 mg/l (⚠️) : label privé du Syndicat de défense des vins naturels, décrit par deux sources de presse ; charte non lue.
+- [ ] Seuil de sucres des vins « secs » pour le SO2 conventionnel (⚠️) : 4 g/l pour l’OIV, 5 g/l dans un texte reprenant la réglementation de l’UE ; annexe I partie B du règlement 2019/934 non lue en entier.
+- [ ] Origine historique des limites d’acidité volatile (⚠️) : le décret du 19 août 1921 fixait une limite plus haute (2,5 g/l), abaissée en 1930 puis en 1938 (une seule source, Jacquet, IVES/OIV 2024, qui cite le texte d’origine ; la version consolidée actuelle du décret ne contient plus de chiffre) ; les 18 et 20 meq/l viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
+
+**Fiche 247** (p.237) — Étiqueter ce qu’il y a dans le vin
+- [ ] Mention des allergènes (sulfites, lait, œuf) (⚠️) : reprise du livre, non recoupée dans la recherche (règlement 1308/2013 art. 119 et textes sur les allergènes non lus) ; aucun exercice n’en dépend.
+
+**Fiche 248** (p.239) — Défaut ou caractère ? Le cas de Cheval Blanc 1947
+- [ ] Habitude, culture et désensibilisation à certains composés (⚠️) : affirmation du livre (p. 243), aucune source lue ne la documente ; seule la variabilité génétique des seuils est confirmée.
+- [ ] Environ 3,5 g/l de sucres résiduels et moût refroidi à la glace (⚠️) : une seule source (Decanter).
+
+**Fiche 249** (p.240) — La « volat’ » : vinaigre et vernis
+- [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : thèse du livre ; seul l’exemple de Cheval Blanc 1947 (acidité volatile élevée, aujourd’hui jugée fautive) est confirmé par deux sources, sans chiffre d’acidité volatile.
+- [ ] Décret du 19 août 1921 (⚠️) : une seule source (Jacquet, IVES/OIV 2024, qui cite l’article 1 du texte d’origine) : 2,5 g/l (2 g/l si le vin est nettement piqué), abaissée à 1,8 g/l par le décret du 1er février 1930 puis à 1,2 g/l (1,5 g/l chez les détaillants) par celui du 28 juin 1938 ; unité non précisée ; la version consolidée actuelle ne contient plus de chiffre ; non repris en exercice.
+- [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
+
+**Fiche 250** (p.240) — Brettanomyces, souris et géosmine : trois défauts de nez et de bouche
+- [ ] Goût de souris (⚠️) : libération au pH de la salive et producteurs (bactéries lactiques, certaines Brett) décrits par une seule source (Wine Anorak) ; perception rétronasale et lien avec un SO2 faible confirmés aussi par l’AWRI (OENO IVAS 2019) ; le livre dit « pyridines », alors que l’APY est une pyrroline.
+- [ ] Seuil de la géosmine (⚠️) : 25 ng/l (Virginia Tech), 40 ng/l (La Guerche et al.) et 100 ng/l (glossaire) selon les sources ; seul l’ordre de grandeur est retenu.
+
+**Fiche 251** (p.240) — Réduction, oxydation, lumière : les défauts du soufre et de l’oxygène
+- [ ] Éthanal (acétaldéhyde), pomme verte, recherché dans les vins de voile (⚠️) : affirmation du livre, non recoupée par les sources lues.
+- [ ] Goût de lumière (⚠️) : mécanisme riboflavine, méthionine, méthional, méthanethiol, disulfure de diméthyle et sensibilité du verre clair décrits par une seule source (Fracassetti et al., 2021) ; le brunissement évoqué par le livre n’y est pas confirmé.
+- [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 (pas les effervescents de toute origine) ; causes encore discutées, la qualité des bouchons est contestée.
+
+**Fiche 252** (p.242) — Le goût de bouchon : TCA, TeCA et TBA
+- [ ] Fréquence du goût de bouchon en baisse (⚠️) : estimations anciennes de 0,5 à 6 % des vins tranquilles (Chatonnet et al., 2003) contre environ 1,5 % aujourd’hui (iDealwine, presse) ; chiffre de l’IFV cité par le livre non retrouvé, aucun chiffre repris.
+- [ ] Part du liège dans les contaminations (⚠️) : 80 à 95 % selon les sources, méthodes non précisées ; aucun pourcentage repris.
+- [ ] TBA retrouvé sur des bouchons synthétiques (⚠️) : une seule source (Virginia Tech Enology).

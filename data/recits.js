@@ -589,7 +589,7 @@ const RECITS = [
  "fil": [
   "Presque tous les fruits fermentent, mais très peu donnent une boisson stable sans ajout d’eau, de sucre ou d’acide : en dehors du raisin, surtout la pomme et la poire. Le raisin réunit assez de sucre pour un alcool protecteur, assez d’acidité pour freiner les microbes, des polyphénols antioxydants et assez d’eau.",
   "<b>Où sont les composés.</b> La pulpe contient l’eau, les sucres et les acides ; la peau, l’essentiel des polyphénols et des arômes ; les pépins, des tanins et des huiles ; la rafle, des polyphénols et du potassium.",
-  "<b>Sucres et acides.</b> Les sucres fermentescibles sont le glucose et le fructose. L’acide tartrique, propre à la vigne, reste stable à la chaleur, alors que l’acide malique diminue en mûrissant : avec le réchauffement, le tartrique devient l’acide clé.",
+  "<b>Sucres et acides.</b> Les sucres fermentescibles sont le glucose et le fructose. L’acide tartrique, rare ailleurs mais très abondant chez la vigne, reste stable à la chaleur, alors que l’acide malique diminue en mûrissant : avec le réchauffement, le tartrique devient l’acide clé.",
   "<b>Polyphénols et arômes.</b> Anthocyanes (couleur rouge), flavonols, tanins : ils donnent couleur, amertume et astringence. Les arômes sont souvent liés à des sucres (précurseurs) et ne se révèlent qu’à la fermentation et au vieillissement.",
   "<b>Des maturités qui divergent.</b> La maturité des sucres et des acides ne coïncide plus forcément avec celle des tanins et des arômes : on peut avoir beaucoup de sucre et des tanins encore verts."
  ],
@@ -597,7 +597,7 @@ const RECITS = [
  "client": "« Le raisin est presque le seul fruit qui donne naturellement un vin stable, sans ajouter ni sucre, ni acide, ni eau. »",
  "filRouge": "Qu’est-ce qui rend le raisin si propice à la fabrication du vin ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : proportions et teneurs sont celles du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -607,7 +607,7 @@ const RECITS = [
  "fil": [
   "Pour Marc-André Selosse, vinifier, c’est « élever des microbes ». Lavoisier puis Gay-Lussac expliquent la fermentation en chimistes ; Pasteur montre qu’elle est l’œuvre d’êtres vivants, les levures, et que des bactéries peuvent gâter le vin.",
   "<b>Une compétition.</b> Sur le raisin vivent de nombreuses levures, surtout peu fermentaires ; Saccharomyces cerevisiae, la grande levure du vin, y est rare. Au fil de la fermentation, l’alcool, le manque d’oxygène et le soufre éliminent la plupart des espèces : une ou deux souches dominent. Les bactéries lactiques réalisent ensuite la fermentation malolactique, qui transforme l’acide malique en acide lactique plus doux.",
-  "<b>Piloter sans tout contrôler.</b> Température, aération, soufre, nutriments : le vigneron oriente la population microbienne ; l’ensemencement par des levures sélectionnées (sèches depuis les années 1960) est le contrôle le plus direct.",
+  "<b>Piloter sans tout contrôler.</b> Température, aération, soufre, nutriments : le vigneron oriente la population microbienne ; l’ensemencement par des levures sélectionnées (vendues sèches à partir de la fin du XXe siècle) est le contrôle le plus direct.",
   "<b>Indigènes ou sélectionnées ?</b> Pour l’IFV, la fermentation spontanée apporte plus de risques que de complexité démontrée ; pour d’autres, comme Nicolas Joly, levurer efface le millésime et le lieu. Le débat est aussi idéologique.",
   "<b>Un « terroir microbien » ?</b> Des études suggèrent des populations microbiennes propres à certaines régions ; d’autres les contestent. Les chercheurs s’accordent sur quelques points : vignoble et chai s’ensemencent mutuellement, les levures voyagent facilement, et le lien précis entre une souche et le goût reste mal compris."
  ],
@@ -615,7 +615,7 @@ const RECITS = [
  "client": "« La levure qui fait le vin se trouve rarement sur le raisin : elle vit surtout au chai, et parfois dans les insectes qui la transportent. »",
  "filRouge": "Pourquoi l’idée de « levures de terroir » reste-t-elle controversée ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : chiffres et dates des études sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -634,7 +634,7 @@ const RECITS = [
  "client": "« Le vin orange, c’est un blanc vinifié comme un rouge, avec ses peaux : une méthode millénaire en Géorgie. »",
  "filRouge": "Quelles sont les principales façons d’obtenir un vin avec du sucre résiduel ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -652,7 +652,7 @@ const RECITS = [
  "client": "« Un fût neuf parfume le vin ; un fût usagé sert surtout à le faire respirer doucement. »",
  "filRouge": "Quelle différence entre un élevage réducteur et un élevage oxydatif, et quel style donne chacun ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : prix, doses et chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -670,7 +670,7 @@ const RECITS = [
  "client": "« Les vins produits depuis fin 2023 et vendus en Europe doivent donner leurs ingrédients, sur l’étiquette ou par un code QR. »",
  "filRouge": "Pourquoi l’œnologie est-elle à la fois saluée pour la qualité des vins et accusée de les standardiser ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -688,7 +688,7 @@ const RECITS = [
  "client": "« Un peu d’acidité volatile peut donner du relief à un vin ; beaucoup, et il tourne au vinaigre : tout est affaire de dose et de style. »",
  "filRouge": "Pourquoi un même composé peut-il être un défaut dans un vin et une qualité dans un autre ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : seuils et pourcentages (goût de bouchon, acidité volatile) sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 }
 ];
