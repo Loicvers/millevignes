@@ -58,6 +58,19 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 132 : porphyre présenté comme une forme d’andésite → c’est une texture (phénocristaux dans une pâte fine).
 - p. 345 (bibliographie) : Karbowiak et al. 2019, « Wine aging: a bottleneck story », cité dans « Nature » → *npj Science of Food* (PMC6684617).
 - p. 346 (bibliographie) : « Starkenman, Christian, et al. », guêpes et levures (PNAS 2012) → premier auteur Irene Stefanini (Stefanini et al., PNAS 109(33), 2012).
+- p. 156 : le 18e amendement « interdit la consommation » → il interdisait fabrication, vente et transport, pas la possession ni la consommation (ratifié en 1919, en vigueur en 1920, abrogé en 1933).
+- p. 159 : clos de Parnay « classé » et construit en 1894 → inscrit aux Monuments historiques en 2011, construit en 1896 (Mérimée).
+- p. 160 : karez de Turpan « inscrits » à l’UNESCO, 1 000 puits et 1 600 km → liste indicative seulement (2008) ; plus de 1 100 karez et plus de 5 000 km.
+- p. 162 : 12 t/ha/an d’érosion « des sols européens » → moyenne des vignobles européens (Cerdan et al.).
+- p. 165 : « La Maison vigneronne en France (1955) » présentée comme un ouvrage de Dion et Parain → article de Charles Parain (Arts et traditions populaires, 1955).
+- p. 166 : Robert Mondavi mort « en 2018 » → 2008 ; chai de Pétrus attribué à Herzog & de Meuron → leur projet (2001-2002) est le réfectoire des vendangeurs, le chai est d’Errath et Mazières ; chai de Lafite par Bofill « 1988 » → 1987 selon deux sources.
+- p. 172 : canal du Midi « 1680 » → ouverture officielle en 1681 (1680 : mort de Riquet).
+- p. 175 : carte de Minard « fin du XIXe siècle » → données de 1857, carte de 1860.
+- p. 189 : Tignanello « 1974 » → premiers millésimes 1970-1971 ; « Super Tuscan » au début des années 1980 → milieu des années 1980.
+- p. 192 : Jugement de Paris « 4 juillet 1976 » → 24 mai 1976.
+- p. 194 : délimitation de Coonawarra « 2022 » (légende de carte) → GI enregistrée le 6 janvier 2003 ; marque To Kalon « 1987 » → 1988.
+- p. 195 : seuil européen de 75 % pour cépage et millésime → 85 % (règlement 2019/33) ; réforme des vins sans IG « 2011 » → règlement de 2008, appliqué depuis le 1er août 2009.
+- p. 199 : routes des vins « dans les années 1920 » → Deutsche Weinstraße 1935, route des Grands Crus de Bourgogne 1937, route des vins d’Alsace 1953.
 
 ## Non confirmés
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
@@ -102,6 +115,14 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 134 : travertin à Pouilly-Fumé (absent des descriptions de l’appellation) ; shales « plus de 46 % » des sédimentaires (non retrouvé).
 - p. 139-145 : basalte altéré « dix fois plus vite » que le granite ; pH de la craie champenoise (7,9-8,5) et des schistes de Moselle (< 6) ; albédo basalte 10 %, calcaire 35 % ; calcaires « urgoniens » à Châteauneuf-du-Pape ; étude Bourguignon (53 parcelles, 86 %) inédite ; Wittendal : 2 816 « climats » et non « vignobles » ; Seguin : travaux de 1969-1970, 1986 = synthèse.
 - p. 147-149 : nombre d’UTB de l’atlas du Val de Loire et « plus vaste au monde » ; typologie de Vaudour en quatre sens (non retrouvée) ; foncier champenois 2020 : 1 196 000 €/ha (SAFER : environ 1 041 000) ; classement suisse par la végétation spontanée (contredit pour Vaud et Valais).
+- p. 151-157 : isotherme de 18 °C, carte de 1953 et carte de Chabin (2004) ; 200 vinaigriers à Orléans en 1787 ; dicton médocain sur les vignes qui « voient l’eau » ; papes d’Avignon « 1305-1362 » (papauté d’Avignon : 1309-1377).
+- p. 160-163 : Henri IV et le drainage du Médoc ; gadoues interdites en 1997 ; distance Madère-Maroc (647 km dans le livre, 520-600 km ailleurs).
+- p. 166-169 : Eiffel à Byrrh et chez CVNE ; Carbonneau « 50 architectures et 250 systèmes » ; fil de fer en 1875.
+- p. 174 : vignoble de Cognac 282 000 ha « en 1875 » (282 667 ha en 1877 selon le BNIC) et 78 000 ha en 2019 (76 000 à 84 729 selon la définition) ; « 14 hl de vin » incohérent.
+- p. 178-181 : Vienne « plus de 700 ha » (590-600 ha selon deux sources) ; Pontack’s Head 1660 ou 1666.
+- p. 184-188 : « usages locaux, loyaux et constants » rattachés à 1905 (les sources : 1908 et 1919) ; Chablis : 400 ha en 1920 et seize ans de procès ; mot « climat » en 1584 ; plus de soixante autres AOC en 1936.
+- p. 193-197 : Haraszthy « plus de 500 variétés » (300 à 350 selon les sources) ; Franschhoek « 1650 » (huguenots en 1688) ; dates de Jefferson ; chiffres Castel 2018.
+- p. 199 : Lavaux, ventes en baisse de 10 à 15 % après l’inscription (non retrouvé ; +30 % de fréquentation confirmé) ; candidature de la Rioja « refusée » (différée en 2015).
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -132,3 +153,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 142 : 51 grands crus d’Alsace sur une mosaïque géologique (Taste France ; CIVA non lu).
 - p. 142 : étude de van Leeuwen et al. (2008) : 7 crus bordelais, ~400 ha, 9 types de sols (texte IVES lu).
 - p. 148 : Unité terroir viticole de Carbonneau (cépage et système de culture ajoutés à l’UTB).
+- p. 179 : Bordeaux classée à l’UNESCO (Port de la Lune, 2007) : le livre parle bien de la ville, pas du bâtiment de la Cité du Vin.
+- p. 183-186 : lois du 1er août 1905, du 5 août 1908, du 6 mai 1919 ; loi Capus (1927) ; décret-loi du 30 juillet 1935 ; six AOC du 15 mai 1936 ; INAO en 1947 (sources INAO).
+- p. 195 : AVA créées en 1980 (Augusta, Missouri) ; 85 % des raisins de l’AVA.

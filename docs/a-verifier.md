@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-188 fiches : 38 vérifiées, 150 à vérifier (397 points).
+222 fiches : 44 vérifiées, 178 à vérifier (498 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -699,3 +699,160 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 188** (p.149) — Les quatre sens du mot « terroir »
 - [ ] Typologie en quatre sens (matière, espace, conscience, slogan) attribuée à Vaudour (2003) : non retrouvée dans les textes de Vaudour lus, ni l’année 2003 ; présentée comme « selon Lepeltier, d’après Vaudour ». Ne pas la confondre avec les quatre registres d’un article de 1996-98 (milieu exploité, plante, matière première, vin).
 - [ ] Libellés des quatre sens (« agro-culturale », « terroir-matière », etc.) : reformulés d’après le livre, non recoupés.
+
+**Fiche 190** (p.151) — Les trois viticultures de Dion : Sud facile, marges incertaines, limite nord commerciale
+- [ ] Limite nord de la viticulture commerciale fixée en partie par le climat, surtout par la rentabilité et les débouchés (⚠️) : une seule source lue (iDealwine, qui reprend Dion) ; le schéma en trois ensembles est confirmé, mais pas le détail de chaque zone.
+- [ ] Viticulture méditerranéenne facile, peu coûteuse et peu innovante (⚠️) : description du livre, non recoupée dans une source indépendante.
+- [ ] Carte de 1953 et isotherme de juillet de 18 °C (⚠️) : non retrouvés dans les sources lues, volontairement non repris ici.
+
+**Fiche 192** (p.154) — Orléans et l’ordonnance de 1395 : quand le volume menace la qualité
+- [ ] Orléans grand vignoble commercial au XVIe siècle, ruiné par la quantité (⚠️) : thèse de Lepeltier/Dion non recoupée ; les Archives de Touraine et Garrier avancent la règle des 20 lieues (1577) et la concurrence de vins moins chers.
+- [ ] Règle des 20 lieues de 1577 (⚠️) : citée par des sources de niveau 2b ; texte de l’arrêt non lu.
+- [ ] Chiffre de 200 vinaigriers à Orléans en 1787 (⚠️) : non retrouvé, volontairement non repris.
+
+**Fiche 193** (p.156) — La prohibition américaine : 18e et 21e amendements
+- [ ] Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : sources de niveau 2b (Wikipedia, Wine Business) ; archives fédérales américaines bloquées, non lues.
+- [ ] Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.
+- [ ] Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.
+- [ ] 17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés.
+
+**Fiche 194** (p.158) — Le terroir, une œuvre humaine : de Dion à Roupnel
+- [ ] Citation de Dion (1952) et thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).
+- [ ] Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.
+- [ ] Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).
+- [ ] Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.
+
+**Fiche 195** (p.159) — Le Clos d’Entre-les-Murs de Parnay : un mur pour mûrir
+- [ ] Inscription MH en 2011 et non classement (⚠️) : une seule source de niveau 1 (Mérimée, PA49000082) ; le livre écrit « classé ».
+- [ ] Date de construction, 1894 (livre, Wine Anorak) ou 1896 (Mérimée) (⚠️) : divergence non tranchée, non reprise en exercice.
+- [ ] Hauteur des murs, disposition nord/sud et palissage à travers les trous (⚠️) : une seule source de niveau 2b (Wine Anorak) en plus du livre.
+- [ ] Murs pleins de Thomery pour le chasselas (⚠️) : source unique de niveau 2b (Les Pierres de Montreuil) ; le XVIIIe siècle du livre n’est pas confirmé et n’est pas repris.
+
+**Fiche 196** (p.160) — Domestiquer l’eau : drains, levadas et karez
+- [ ] Drainage du Médoc au XVIIe siècle par des ingénieurs néerlandais (⚠️) : une seule source de niveau 2a (Steimer, RAB 2011) ; le rôle d’Henri IV et de Louis XIV n’y figure pas et n’est pas repris.
+- [ ] Yquem, réseau de drains d’une centaine de km (⚠️) : une seule source (Idealwine), le livre dit « plus de 100 km » ; 113 ha de vigne confirmés par deux sources de niveau 2b (d’autres chiffres existent : environ 100 ha plantés, 102 ha en production).
+- [ ] Karez de Turpan, 1 000 puits et 1 600 km (❌, signalé comme erreur) : la liste indicative UNESCO (n° 5347) et Wikipédia donnent plus de 1 100 karez et plus de 5 000 km (le texte UNESCO se contredit aussi : 4 400 km ailleurs).
+- [ ] Statut UNESCO des karez (⚠️) : liste indicative lue (soumission en 2008), aucune inscription au patrimoine mondial trouvée.
+- [ ] Levadas de Madère comme canaux d’irrigation (⚠️) : source unique de niveau 2b (Wikipédia).
+
+**Fiche 197** (p.161) — Terrasses : tenir la pente, retenir la terre
+- [ ] Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.
+- [ ] Vignobles parmi les cultures les plus érodées d’Europe (⚠️) : une seule source de niveau 2a (Solid Earth 2015).
+- [ ] Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.
+- [ ] Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.
+- [ ] Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.
+- [ ] Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.
+- [ ] Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses attestées depuis le XIe siècle par une source unique de niveau 2b (Wikipédia).
+
+**Fiche 198** (p.163) — Madère : un vin né des terrasses et de la mer
+- [ ] Porto Santo atteinte en 1418, Madère en 1419 (⚠️) : le livre date l’arrivée de la vigne de 1418 ; deux sources de niveau 2a/2b concordent sur Porto Santo 1418 et Madère 1419 (colonisation vers 1420-1425), mais l’arrivée de la vigne elle-même n’est pas datée.
+- [ ] Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Wikipédia, Burton) (⚠️) : divergence non tranchée.
+- [ ] Crises du phylloxéra, de la Prohibition et de la guerre civile russe (⚠️) : sources de niveau 2b (Wikipédia, Burton) ; le livre écrit « révolution russe ».
+- [ ] Levadas et terrasses de Madère (⚠️) : aménagements cités par le livre, levadas seulement attestées par Wikipédia (niveau 2b).
+
+**Fiche 199** (p.164) — L’architecture vigneronne : cabanes, caves et celliers
+- [ ] Noms régionaux des cabanes de vigne (⚠️) : une seule source (La Passion du Vin, niveau 2b) ; « folie » pour la Touraine non retrouvé ; seule la cadole (✅, deux sources) est reprise.
+- [ ] Typologie de Parain et zones de répartition (⚠️) : source unique et indirecte (Études héraultaises) ; les sources placent aussi le cellier non voûté vers les Pyrénées, le Massif central et la vallée Rhône-Saône, le livre à l’Ouest et au Sud-Ouest.
+- [ ] Référence de 1955 (⚠️) : la source lue décrit un article de Parain dans Arts et traditions populaires (1955), non un livre co-signé Dion ; le livre écrit « Roger Dion puis Charles Parain, dans La Maison vigneronne en France (1955) » ; à recouper avec la bibliographie.
+- [ ] Explication par l’alcool, la fragilité du vin et les 10-12 °C (⚠️) : raisonnement du livre, non recoupé par une autre source ; le livre place le Midi à la fois en cellier voûté en hauteur et en cellier de rez-de-chaussée.
+
+**Fiche 200** (p.166) — Châteaux, chais et grandes caves du négoce
+- [ ] Château-chai médocain comme « forme la plus aboutie » du chai de l’Ouest (⚠️) : thèse du livre (d’après Schirmer), non recoupée.
+- [ ] Chai de Bofill à Lafite (⚠️) : attribution confirmée (Comité Colbert, La Libre) ; date 1987 selon deux sources, 1988 dans le livre, à trancher.
+- [ ] Eiffel à Byrrh (Thuir) et à CVNE (Rioja) (⚠️) : attribution non confirmée (la notice du ministère de la Culture sur Byrrh ne cite pas Eiffel) ; signalée dans la synthèse, aucun exercice.
+- [ ] Eiffel et La Concha en 1862 : ✅ (Wikipédia EN, Lonely Planet).
+
+**Fiche 201** (p.166) — L’architecture contemporaine du vin : de Mondavi aux « starchitectes »
+- [ ] Ysios (Calatrava) (⚠️) : source unique (Architravel) ; projet daté 1998-2001, ouverture non confirmée ; façade de lattes de cèdre évoquant des barriques.
+- [ ] López de Heredia (Hadid) (⚠️) : source unique (Zaha Hadid Architects) ; pavillon de 2001-2006, non un chai.
+- [ ] Dominus, Wilmotte, Portzamparc, Foster, Nouvel, Starck (⚠️) : dates et attributions non recoupées ou non vérifiées, non repris.
+- [ ] Mondavi 1966 et Cliff May (Napa County Landmarks, Wikipédia EN) ; mort de Mondavi en 2008 et non 2018 : ✅ ; Riscal, hôtel de 2006 : ✅ ; Pétrus, projet de réfectoire : ✅ (Herzog & de Meuron, iDealwine).
+
+**Fiche 202** (p.169) — Conduire la vigne : la planche des tailles
+- [ ] Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, une source décrit une baguette de 6 à 10 yeux et un courson de renouvellement, non repris dans les exercices.
+- [ ] Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue.
+- [ ] Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.
+- [ ] Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris.
+
+**Fiche 203** (p.172) — Le fleuve, autoroute du vin : canaux et rivières aménagés
+- [ ] Canal du Midi inauguré en 1680 selon le livre, ouverture officielle en 1681 selon la source lue (⚠️) : une seule page lue, divergence signalée dans la synthèse.
+- [ ] Cachão da Valeira : démolition de 1780 à 1791, accélération du vignoble en amont (⚠️) : une seule source (maison Taylor’s).
+
+**Fiche 204** (p.173) — Marchands du Nord et vignobles de l’Atlantique : de La Rochelle au cognac
+- [ ] Vignoble charentais de 282 000 ha vers 1875 (⚠️) : le BNIC donne 282 667 ha en 1877 ; l’année du pic varie selon les sources. Les chiffres actuels divergent (76 000, 78 000 ou 84 729 ha selon la définition) et ne sont pas repris.
+- [ ] Distillation introduite par les Hollandais (⚠️) : XVe siècle selon le BNIC, XVIe siècle selon cognac.com ; non tranché.
+- [ ] Première maison de cognac en 1643 (⚠️) : une seule maison (Augier) selon le BNIC, alors que le livre parle de maisons au pluriel et de vieillissement ; Rochefort non confirmé.
+- [ ] La Rochelle, vin blanc très consommé en Angleterre (⚠️) : une seule source (iDealwine), le XIIe siècle précis n’est pas confirmé ; fondation en 1130 par Guillaume X.
+- [ ] Grand hiver de 1709 (⚠️) : une seule source (Geneawiki) ; le lien avec l’approvisionnement de Paris et l’essor du Languedoc est une thèse de Lepeltier/Dion non vérifiée, non reprise ici.
+
+**Fiche 205** (p.174) — Pèlerins, moines et routes lointaines : Cluny, Compostelle, soie
+- [ ] Cluny fondée en 909 (910 selon l’indiction), réseau de plus de 1 200 monastères en moins de deux siècles (⚠️) : 1 184 selon l’Encyclopædia Universalis, environ 1 200 selon une page de niveau 2b ; le lien avec Compostelle n’est pas vérifié.
+- [ ] Marcillac sous l’égide de l’abbaye de Conques (⚠️) : une seule source (Wikipedia), le lien avec les pèlerins n’y figure pas.
+- [ ] Irache, vin pour les pèlerins depuis le XIIe siècle (⚠️) : ancienneté non confirmée ; vino de pago reconnu fin 2008 (ordre foral) et publié au BOE en 2009. La fontaine à vin n’est pas reprise.
+- [ ] Route de la soie, « impasse du vin » (⚠️) : thèse de J.-R. Pitte (Le Désir du vin, 2009), ouvrage non consulté.
+- [ ] Essor de Compostelle aux XIe-XIIe siècles grâce aux réformes grégoriennes (⚠️) : non vérifié, non repris.
+
+**Fiche 206** (p.175) — La carte de Minard et le chemin de fer : le vin voyage autrement
+- [ ] Carte de Minard : données de 1857 et carte de 1860 (⚠️) : une seule source (Library of Congress) ; le livre dit « fin du XIXe siècle » et légende 1857.
+- [ ] Midi devenu vignoble de masse grâce au rail (⚠️) : non soutenu par les sources lues, volontairement non repris.
+- [ ] Transformation des vignobles par la révolution des transports (⚠️) : affirmation générale de Lepeltier/Dion, non recoupée dans une source indépendante.
+
+**Fiche 207** (p.178) — Vignes et villes : des vignobles aux portes de la cité
+- [ ] Vienne (⚠️), surface : le livre (p. 178) donne plus de 700 ha, deux sources lues (Austria-Forum, Chambre d’agriculture de Vienne) donnent environ 590-600 ha ; divergence non tranchée, aucune source officielle lue
+- [ ] Heurigen (⚠️) : une seule source lue (Austria-Forum) ; la tradition est rattachée à un décret de Joseph II en 1784, non reprise ici
+- [ ] Clos Montmartre (⚠️) : vignoble urbain parisien d’après le livre ; replanté en 1933 selon une seule source (National Geographic), non repris ici
+
+**Fiche 208** (p.178) — La ville façonnée par le vin : Chartrons, Bordeaux, Reims et Épernay
+- [ ] Chartrons : négociants anglais, flamands et irlandais installés hors des murs d’après une seule source (Techno-science) ; la longueur de 2 km, la période d’export XIVe-XIXe et le rôle du phylloxéra dans le déclin (livre) ne sont pas confirmés, un déclin après la Seconde Guerre mondiale est évoqué ailleurs
+- [ ] Cité du Vin : inauguration en 2016 confirmée par Wikipédia seulement ; seconde source non ouverte
+
+**Fiche 209** (p.179) — Haut-Brion : un grand cru dans la ville
+- [ ] Talence : la limite Pessac/Talence vient du livre ; non retrouvée dans les pages consultées (Millésima, iDealwine)
+- [ ] Croupes de graves protégées par la Garonne : sol de graves sur terrasses de quartz confirmé (Millésima), mais le rôle de protection par la Garonne et la hauteur des croupes ne sont pas confirmés
+- [ ] Taverne de Pontac à Londres : 1666 selon le site du domaine, 1660 selon iDealwine ; divergence non tranchée
+- [ ] Classement des Graves : liste des rouges en 1953, liste complète en 1959 ; sources de niveau 2b seulement (Vinatis, Wine with Seth, iDealwine), source INAO non lue
+
+**Fiche 210** (p.183) — Moines, notables et premiers classements des climats
+- [ ] Mythe des moines et hiérarchie fixée par les notables de Beaune et Dijon (⚠️) : thèse de l’autrice appuyée sur Garcia, Labbé et Jacquet ; articles HAL et Atlas des climats bloqués, non lus.
+- [ ] Mot « climat » attesté en 1584 (⚠️) : une seule source de presse (iDealwine), non recoupée ; l’inscription UNESCO de 2015 est confirmée.
+- [ ] Classements de Jullien (1816), Morelot (1831), Lavalle (1855) et du comité de Beaune (1860) (⚠️) : dates reprises du livre, sources académiques bloquées.
+
+**Fiche 211** (p.184) — De la fraude à l’INAO : la chronologie fondatrice des appellations
+- [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : les sources lues la rattachent à 1908 (UMC) et 1919 (INAO) ; texte de 1905 non lu (Légifrance bloqué).
+
+**Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
+- [ ] Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.
+- [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : Vincent et Wikipedia seulement ; les surfaces citées par Vincent sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.
+
+**Fiche 214** (p.189) — De l’AOC à l’AOP : textes européens, seuils et chiffres
+- [ ] Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.
+- [ ] 386 AOC/AOP viticoles et 77 IGP viticoles (⚠️) : chiffres INAO 2023, à réactualiser ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
+
+**Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
+- [ ] Sassicaia 1968 présenté en 1971 (⚠️) : Wikipedia (Tenuta San Guido) et Winewithseth seulement ; plantation de 1944 et premier millésime familial non confirmés.
+- [ ] Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971.
+- [ ] Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour Winewithseth (Belfrage).
+- [ ] IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth, Wikipedia).
+
+**Fiche 216** (p.192) — Lieu contre cépage : deux logiques d’étiquette qui se rapprochent
+- [ ] Seuil de 85 % pour millésime et cépage (règlement délégué (UE) 2019/33, art. 49-50) : lu seulement via la copie legislation.gov.uk, texte EUR-Lex non consulté (page bloquée)
+- [ ] Mention de cépage et millésime pour les vins sans IG en France (agrément FranceAgriMer) : date exacte d’autorisation non précisée dans les pages lues
+
+**Fiche 218** (p.194) — Délimiter dans le Nouveau Monde : Coonawarra et To Kalon
+- [ ] To Kalon : marque déposée en 1988 selon trois pages lues (le livre dit 1987) : dépôt ou obtention, non tranché
+- [ ] Accord de 2003 entre Mondavi et Beckstoffer, seuil de 95 % de fruit To Kalon : seuil donné par une seule source (VinePair), conditions de l’accord non publiques
+- [ ] To Kalon : superficie, dates de Crabb et liste des propriétaires non reprises car divergentes entre sources
+
+**Fiche 221** (p.198) — Pourquoi et comment protéger un paysage viticole
+- [ ] Charte de Fontevraud (colloque de juillet 2003, pilotée par Joël Rochard) : une seule source lue (IVES), date exacte d’adoption non précisée.
+- [ ] Sites classés et inscrits (loi du 2 mai 1930, art. L341-1 s. du Code de l’environnement) : une seule source officielle lue (ministère), Légifrance bloqué.
+- [ ] Zone agricole protégée (loi d’orientation agricole du 9 juillet 1999, art. L112-2 du Code rural) : une seule source officielle lue (Banque des Territoires), Légifrance bloqué.
+- [ ] Liste des menaces (remembrement, arrachage, infrastructures, urbanisation) : reprise du livre, non recoupée avec une source externe.
+
+**Fiche 222** (p.199) — Les effets ambivalents de l’inscription : œnotourisme et Lavaux
+- [ ] Lavaux : +30 % de fréquentation retrouvé dans la presse suisse (article de 2011), source de niveau 2b seulement.
+- [ ] Lavaux : baisse des ventes de 10 à 15 % non retrouvée, thèse du livre ; un vigneron annonce +40 % de ventes en boutique (2017), l’étude UNIL (2019) nuance (bénéfice faible, nuisances).
+- [ ] Terrasses du Lavaux : Xe siècle selon le livre, XIe siècle selon l’UNESCO (non utilisé dans la fiche).
+- [ ] La Rioja : candidature différée en 2015 (une seule source de presse 2019), et lien avec le manque de cohésion de la filière = interprétation du livre.
+- [ ] Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.
+- [ ] Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée.

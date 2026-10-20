@@ -453,7 +453,7 @@ const RECITS = [
  "client": "« Beaucoup de grands vignobles sont nés près d’une ville riche ou d’une rivière navigable : il fallait des clients et un moyen d’y acheminer le vin. »",
  "filRouge": "Selon Roger Dion, pourquoi la viticulture la plus réputée s’est-elle développée dans des régions au climat difficile ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -472,7 +472,7 @@ const RECITS = [
  "client": "« Les grands crus du Médoc existent parce qu’on a asséché des marais il y a plus de trois siècles : le terroir a été construit. »",
  "filRouge": "Cite trois façons dont les vignerons ont transformé physiquement leur terroir.",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : dates et chiffres (Yquem, levadas, karez, érosion) sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -491,7 +491,7 @@ const RECITS = [
  "client": "« Regardez les murs et les toits d’un village viticole : ils sont souvent faits de la roche qui porte les vignes. »",
  "filRouge": "Pourquoi trouve-t-on des caves enterrées au nord et des celliers en surface au sud ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -509,7 +509,7 @@ const RECITS = [
  "client": "« Presque tous les grands vignobles français longent un fleuve navigable : c’était la route pour vendre le vin. »",
  "filRouge": "Pourquoi la plupart des grands vignobles historiques se trouvent-ils le long de fleuves navigables ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -527,7 +527,7 @@ const RECITS = [
  "client": "« Haut-Brion pousse aujourd’hui en pleine agglomération bordelaise : la ville a longtemps été la meilleure amie du grand vin. »",
  "filRouge": "Pourquoi trouve-t-on souvent les crus les plus réputés près des villes historiques ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -545,7 +545,7 @@ const RECITS = [
  "client": "« L’histoire des moines qui goûtaient la terre en Bourgogne est une belle légende : les climats ont surtout été nommés par les bourgeois de Beaune et Dijon. »",
  "filRouge": "Pourquoi Lepeltier dit-elle que l’AOC est autant une construction politique qu’une reconnaissance du sol ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : dates et chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -562,7 +562,7 @@ const RECITS = [
  "client": "« Aujourd’hui, on trouve des vins de terroir en Oregon et des vins de marque à cépage en France : l’opposition Europe / Nouveau Monde ne suffit plus. »",
  "filRouge": "Pourquoi l’opposition Vieille Europe / Nouveau Monde est-elle devenue trompeuse ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes.",
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md.",
   "Le livre date ici le cabernet de Stag’s Leap du Jugement de Paris de 1975 ; il s’agit du millésime 1973 (comme le livre l’écrit p. 110)."
  ]
 },
@@ -579,7 +579,7 @@ const RECITS = [
  "client": "« Le Lavaux est classé au patrimoine mondial : les visiteurs viennent pour le paysage, mais ce sont les vignerons qui le font vivre. »",
  "filRouge": "Pourquoi l’œnotourisme peut-il à la fois protéger et menacer un paysage viticole ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : la liste et les dates d’inscription UNESCO sont celles du livre."
+  "Faits vérifiés avec le lot de fiches 189-222 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
