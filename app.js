@@ -609,8 +609,7 @@ function taire(){try{speechSynthesis.cancel();}catch(e){}}
 function voixFr(){
   const vs=speechSynthesis.getVoices().filter(v=>/^fr/i.test(v.lang));
   const note=v=>(/premium/i.test(v.name)?4:/enhanced|qualit|amélior|natural|neural|online|google/i.test(v.name)?2:0)+(/fr[-_]FR/i.test(v.lang)?1:0);
-  let choix;try{choix=localStorage.getItem('mv_voix');}catch(e){}
-  return vs.find(v=>v.name===choix)||vs.sort((a,b)=>note(b)-note(a))[0];
+  return vs.sort((a,b)=>note(b)-note(a))[0];
 }
 if('speechSynthesis' in window)speechSynthesis.getVoices(); // amorce le chargement des voix (asynchrone sur Chrome)
 // Bouton « Écouter » (synthèse vocale du navigateur) ; sans elle, un message à la place
@@ -624,13 +623,7 @@ function ecouter(textes,box,actions){
     phrases.forEach((x,i)=>{const u=new SpeechSynthesisUtterance(x);u.lang=v?.lang||'fr-FR';if(v)u.voice=v;u.rate=.95;
       if(i===phrases.length-1)u.onend=()=>b.textContent='Écouter';speechSynthesis.speak(u);});
     b.textContent='Arrêter';};
-  // Choix de la voix, retenu : montre aussi quelles voix le téléphone met à disposition du site.
-  const s=el('select');s.setAttribute('aria-label','Voix de lecture');
-  const remplir=()=>{const vs=speechSynthesis.getVoices().filter(v=>/^fr/i.test(v.lang)),v=voixFr();
-    s.innerHTML='';vs.forEach(x=>{const o=el('option',null,x.name);o.value=x.name;o.selected=x===v;s.append(o);});s.hidden=!vs.length;};
-  s.onchange=()=>{taire();b.textContent='Écouter';try{localStorage.setItem('mv_voix',s.value);}catch(e){}};
-  remplir();speechSynthesis.onvoiceschanged=remplir; // une seule écoute : celle de l'écran affiché
-  actions.append(b,s);
+  actions.append(b);
 }
 function showRecit(r,onGo){
   const box=el('div','ex decouverte recit');
