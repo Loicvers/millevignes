@@ -135,7 +135,7 @@ function render(){
   document.getElementById('shown').textContent=list.length;
   document.getElementById('acq').textContent=EXOS.filter(e=>prog[e.id]).length;
   const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
-  const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;
+  const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;sb.hidden=!nf; // le bouton global ne sert que sur une sélection : sinon, la Session du jour fait le même travail
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
@@ -629,7 +629,6 @@ function majBandeau(){
 // Pendant la Session du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
 function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Session du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
 
-if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
 updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
