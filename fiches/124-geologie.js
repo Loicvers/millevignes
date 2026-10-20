@@ -165,12 +165,12 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.",
-      "Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques ; une fiche INAO citée de seconde main parle de granite bleu, le cahier des charges 2022 cité de porphyres et roches métamorphiques. Cahier des charges original non lu (extranet bloqué). Pour Juliénas, la pierre bleue ne couvre qu’environ 42 % des sols, la formule « surtout diorite » est un peu forte.",
-      "Roches des crus communaux du Muscadet (⚠️, sources de niveau 2b seulement) : Clisson granite (sources concordantes), Gorges gabbro (une page ancienne écrit argile et quartz), Le Pallet gneiss ou gabbro-gneiss-grès selon les pages. Cahier des charges INAO des dénominations non lu.",
+      "Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques. Le cahier des charges AOC Juliénas (arrêté du 20 février 2024, lu) ne nomme ni diorite ni pierre bleue : granite rose, arène granitique et, en haut de coteau, schistes volcano-sédimentaires. Reste à lire le cahier des charges Brouilly / Côte de Brouilly.",
+      "Roches des crus communaux du Muscadet (cahier des charges AOC Muscadet Sèvre et Maine, arrêté du 16 octobre 2019, lu) : Clisson granite à gros grains et Gorges gabbro confirmés (✅ avec les sources de presse) ; pour Le Pallet, le texte ne nomme pas la roche (roches peu altérées, très fracturées) ; gneiss à Goulaine et à Monnières-Saint-Fiacre.",
       "Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 130 et 132 ; Inter Beaujolais (Côte de Brouilly, Juliénas) ; The Wine Doctor (Muscadet, Gorges) ; WineWisdom (crus communaux du Muscadet)",
+    src: "Mille Vignes, P. Lepeltier, p. 130 et 132 ; Inter Beaujolais (Côte de Brouilly, Juliénas) ; The Wine Doctor (Muscadet, Gorges) ; WineWisdom (crus communaux du Muscadet) ; cahiers des charges AOC Juliénas (2024) et Muscadet Sèvre et Maine (2019)",
     page: 130
   },
   {
@@ -520,13 +520,13 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges INAO du Muscadet Sèvre-et-Maine n’a pas pu être lu (extranet bloqué).",
-      "Nombre de crus du Muscadet (⚠️) : 7 ou 10 selon les sources (Wine With Seth : 10 zones) ; cahiers des charges INAO non lus ; volontairement non retenu dans la fiche et les exercices.",
+      "Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges AOC Muscadet Sèvre et Maine (2019, lu) ne nomme pas la roche du Pallet (roches peu altérées, très fracturées) et attribue le gneiss à Goulaine et à Monnières-Saint-Fiacre.",
+      "Nombre de crus du Muscadet (⚠️) : le cahier des charges de 2019 en compte 7 en Sèvre-et-Maine (Clisson, Gorges, Goulaine, Mouzillon-Tillières, Château-Thébaud, Monnières-Saint-Fiacre, Le Pallet) ; d’autres zones ont été approuvées depuis selon la presse (10 selon Wine With Seth) ; version en vigueur non lue ; volontairement non retenu dans la fiche et les exercices.",
       "Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.",
       "Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Gneiss ; Encyclopædia Universalis, Métamorphisme ; INAO (Côtes du Roussillon Villages Caramany) ; cahier des charges autrichien DAC Wachau ; Wine With Seth (Muscadet)",
+    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Gneiss ; Encyclopædia Universalis, Métamorphisme ; INAO (Côtes du Roussillon Villages Caramany) ; cahier des charges autrichien DAC Wachau ; Wine With Seth (Muscadet) ; cahier des charges AOC Muscadet Sèvre et Maine (2019)",
     page: 137
   },
   {
@@ -628,10 +628,9 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.",
-      "51 grands crus d’Alsace : une seule source (Atout France) ; le site du CIVA (niveau 1) n’a pas pu être lu.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 142 ; Atout France (Taste France), Alsace vineyard terroirs",
+    src: "Mille Vignes, P. Lepeltier, p. 142 ; Atout France (Taste France), Alsace vineyard terroirs ; CIVA (vinsalsace.com)",
     page: 142
   },
   {
@@ -675,7 +674,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Seguin : la qualité tient à la régulation de l’eau plus qu’à la fertilité (⚠️, sources van Leeuwen OENO One et Goode, secondaires) ; la précision du livre sur des sols carencés en azote et magnésium n’a pas été retrouvée et n’est pas reprise.","Date de Seguin (⚠️) : le livre dit 1986 ; les travaux datent de 1969 et des années 1970, avec une synthèse en 1986 ; les publications HAL INRAE n’ont pu être lues.","« Léger déficit après véraison » : la précision sur la véraison n’apparaît pas dans les résumés lus et n’est pas reprise.","Étude bordelaise (⚠️, source primaire unique) : 7 propriétés, environ 400 ha, 9 types de sols, les chiffres du livre correspondent."],
+    to_check: ["Seguin : la qualité tient à la régulation de l’eau plus qu’à la fertilité (⚠️, sources van Leeuwen OENO One et Goode, secondaires) ; la précision du livre sur des sols carencés en azote et magnésium n’a pas été retrouvée et n’est pas reprise.","Date de Seguin (⚠️) : le livre dit 1986 ; selon van Leeuwen (OENO One, nécrologie de 2019, lue), Seguin publie en 1969 sur l’alimentation en eau de la vigne dans le Haut-Médoc et en 1986 une synthèse en anglais ; la date de 1986 est donc celle de la synthèse, pas des travaux.","« Léger déficit après véraison » : la précision sur la véraison n’apparaît pas dans les résumés lus et n’est pas reprise.","Étude bordelaise (⚠️, source primaire unique) : 7 propriétés, environ 400 ha, 9 types de sols, les chiffres du livre correspondent."],
     src: "Mille Vignes, P. Lepeltier, p. 142-143 ; van Leeuwen, In memoriam : Professor Gérard Seguin, OENO One ; van Leeuwen et al., Vine water status is a key factor in grape ripening and vintage quality for red Bordeaux wine, OENO One ; van Leeuwen et al., Les sols et le matériel végétal dans des crus prestigieux de Bordeaux, Terroir 2008 (IVES) ; Wineanorak (J. Goode), On soils and wines part 6.",
     page: 143
   },
@@ -774,13 +773,13 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Paraje Altamira : reconnue en 2013 (résolution C.44) et zone étendue en 2017 (INV, résolution E 82/2017) ; le livre place la reconnaissance en 2017 : divergence signalée, non tranchée en faveur du livre.",
+      "Paraje Altamira : reconnue comme indication géographique par la résolution INV n° 44/2013 (6 décembre 2013, BO du 13 janvier 2014, lue) ; zone étendue en 2017 (résolution E 82/2017) ; le livre place la reconnaissance en 2017 : erreur reportée dans docs/erreurs-du-livre.md.",
       "Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.",
       "Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.",
       "Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 148-149 ; Carbonneau, Interactions terroir-vigne (IVES) ; INV Argentine, Resolución E 82/2017 ; Wine With Seth, Paraje Altamira",
+    src: "Mille Vignes, P. Lepeltier, p. 148-149 ; Carbonneau, Interactions terroir-vigne (IVES) ; INV Argentine, Resolución E 82/2017 ; INV Argentine, Resolución 44/2013 ; Wine With Seth, Paraje Altamira",
     page: 148
   },
   {
