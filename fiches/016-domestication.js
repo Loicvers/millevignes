@@ -115,13 +115,19 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Génome de la vigne : un ‘fossile vivant’ des plantes à fleurs",
-    synth: "Le génome de Vitis vinifera (souche PN40024 de Pinot noir) a été entièrement séquencé en 2007 par un consortium franco-italien (Génoscope/INRA). Il révèle une structure très ancestrale, proche de celle de l’ancêtre commun des eudicotylédones, ce qui vaut à la vigne le surnom de ‘fossile vivant’ des plantes à fleurs. Il est particulièrement riche en gènes de la voie des terpènes, des stilbènes et des tanins, ce qui éclaire la complexité aromatique et phénolique du vin.",
+    synth: "Le génome de Vitis vinifera a été séquencé en 2007 par un consortium franco-italien (Génoscope, INRA et partenaires italiens), à partir de PN40024 : une lignée quasi homozygote dérivée du pinot noir par autofécondations successives, plus simple à séquencer qu’un cépage. Deux résultats marquent. D’abord, une organisation très ancestrale : sans duplication récente, il laisse encore lire les trois génomes ancestraux communs à beaucoup de dicotylédones, d’où le surnom de ‘fossile vivant’ des plantes à fleurs. Ensuite, des familles de gènes très étoffées pour les terpènes (arômes) et les stilbènes (resvératrol), ce qui éclaire la richesse aromatique et phénolique du vin.",
     mnemo: "2007, l’année du Pinot noir au microscope. La rose a évolué côté pétales, la vigne est restée ‘archaïque’ dans ses chromosomes : un cœlacanthe végétal, mais avec une trousse d’arômes bien remplie.",
-    flash: { q: "En quelle année et sur quel cépage le génome de la vigne a-t-il été décodé ? Qu’a-t-il révélé ?", a: "En 2007, à partir du Pinot noir (souche PN40024). Le génome présente une structure proche de l’ancêtre des eudicotylédones et une richesse marquée en gènes liés aux terpènes et aux polyphénols.", keys: [["2007"],["pinot","PN40024"],["terpènes","polyphénols","eudicotylédones","arômes"]] },
-    qcm: { q: "Le séquençage du génome de la vigne (2007) a notamment mis en évidence :", opts: ["Une duplication récente du génome propre à la vigne", "Une structure proche de l’ancêtre des eudicotylédones et une richesse en gènes terpéniques", "Un nombre de chromosomes inférieur à celui des autres angiospermes", "Une origine nord-américaine de V. vinifera"], good: 1, expl: "Sa structure très ancestrale lui vaut le surnom de « fossile vivant » des plantes à fleurs, et sa richesse en gènes des terpènes et des tanins éclaire la complexité du vin." },
+    flash: { q: "Le séquençage du génome de la vigne (2007) a livré deux grands enseignements : lesquels ?", a: "1) Une organisation très ancestrale : pas de duplication récente, on y lit encore les trois génomes ancestraux communs à beaucoup de dicotylédones (« fossile vivant » des plantes à fleurs). 2) Des familles de gènes très étoffées pour les arômes (terpènes) et les stilbènes (resvératrol).", keys: [["ancestral","ancestrale","ancêtre","fossile","dicotylédones","eudicotylédones","trois génomes"],["arômes","aromatique","terpènes","stilbènes","resvératrol","polyphénols"]] },
+    qcm: { q: "Le séquençage du génome de la vigne (2007) a notamment mis en évidence :", opts: ["Une duplication récente du génome propre à la vigne", "Une structure proche de l’ancêtre des eudicotylédones et une richesse en gènes terpéniques", "Un nombre de chromosomes inférieur à celui des autres angiospermes", "Une origine nord-américaine de V. vinifera"], good: 1, expl: "Sans duplication récente, sa structure très ancestrale lui vaut le surnom de « fossile vivant » des plantes à fleurs ; ses familles de gènes des terpènes (arômes) sont nettement plus fournies que chez les autres plantes séquencées avant elle." },
+    exos: [
+      { type: "short_answer", prompt: "En quelle année le génome de la vigne a-t-il été publié ?", payload: { accepted: ["2007"] }, explanation: "Publié dans Nature en 2007 par un consortium franco-italien : c’était le premier génome d’une plante fruitière." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le génome a été séquencé sur un pied de pinot noir tel qu’on le plante dans les vignes.", answer: false }, explanation: "Il a été séquencé sur PN40024, une lignée quasi homozygote dérivée du pinot noir par autofécondations successives : avec deux copies presque identiques de chaque chromosome, l’assemblage est bien plus simple." }
+    ],
+    status: "verified",
+    to_check: [],
     partie: "Lire la vigne",
     chapitre: "L’origine de la vigne",
-    src: "Mille Vignes, P. Lepeltier ; Jaillon et al., Nature 449, 2007",
+    src: "Mille Vignes, P. Lepeltier ; Jaillon et al., Nature 449, 2007 (doi:10.1038/nature06148)",
     page: 16
   },
   {

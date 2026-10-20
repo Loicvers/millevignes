@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-252 fiches : 44 vérifiées, 208 à vérifier (618 points).
+252 fiches : 45 vérifiées, 207 à vérifier (617 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -27,9 +27,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
 
 **Fiche 9** (p.16) — La vigne, liane arbustive et pérenne
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
-
-**Fiche 10** (p.16) — Génome de la vigne : un ‘fossile vivant’ des plantes à fleurs
 - [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
 
 **Fiche 11** (p.17) — Vitacées, sous-genres et trois bassins de Vitis
