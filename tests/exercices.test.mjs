@@ -193,3 +193,10 @@ test("aucun identifiant d'exercice existant ne disparaît (la progression en dé
   const perdus = avant.filter(id => !now.has(id));
   assert.deepEqual(perdus, [], "ids disparus : " + perdus.join(", "));
 });
+
+test("suivi : « Explique à un client » compte dans le rappel sans aide (réussi à 2 critères sur 3)", () => {
+  vm.runInNewContext("this.sv=suivi", ctx);
+  const J = [{ e: "x", t: 1, ok: null, c: [1, 1, 0], r: "ok" }, { e: "y", t: 2, ok: null, c: [1, 0, 0], r: "hard" }, { e: "z", t: 3, ok: null, c: [1, 1, 1], r: "easy" }];
+  const r = JSON.parse(JSON.stringify(ctx.sv(J, () => "explain_client", {}, 10)));
+  assert.deepEqual(r.libre, [2, 3]);
+});
