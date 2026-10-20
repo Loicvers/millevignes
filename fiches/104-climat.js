@@ -658,7 +658,7 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "7 % du vignoble européen : une seule source (WineWithSeth), à présenter comme estimation ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)",
-      "Exemples français : Banyuls et Côte-Rôtie cités par une seule source ; Collioure et l’Auvergne (livre) non vérifiés ; liste des membres CERVIM à consulter sur cervim.org",
+      "Exemples français : Banyuls et Côte-Rôtie cités par une seule source ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée",
       "Le livre présente les critères comme cumulatifs ; le CERVIM précise qu’une seule condition suffit (divergence signalée en exercice)",
       "Mécanisation presque impossible, exploitations familiales : repris du livre, non recoupé"
     ],
