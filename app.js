@@ -605,13 +605,24 @@ function lireChapitre(titre,fiches,depart=0){
 }
 /* Récit du chapitre : le fil de l'argument avant les fiches, avec lecture à voix haute (synthèse vocale du navigateur) */
 function taire(){try{speechSynthesis.cancel();}catch(e){}}
+// Meilleure voix française installée : les voix « améliorées », « naturelles » ou en ligne sonnent bien moins robotiques.
+function voixFr(){
+  const vs=speechSynthesis.getVoices().filter(v=>/^fr/i.test(v.lang));
+  const note=v=>(/premium|enhanced|amélior|natural|neural|online|google/i.test(v.name)?2:0)+(/fr[-_]FR/i.test(v.lang)?1:0);
+  return vs.sort((a,b)=>note(b)-note(a))[0];
+}
+if('speechSynthesis' in window)speechSynthesis.getVoices(); // amorce le chargement des voix (asynchrone sur Chrome)
 // Bouton « Écouter » (synthèse vocale du navigateur) ; sans elle, un message à la place
 function ecouter(textes,box,actions){
   if(!('speechSynthesis' in window)){box.append(el('p','lead','Lecture à voix haute indisponible dans ce navigateur : ouvre le site dans Chrome ou Safari.'));return;}
   const b=el('button','btn','Écouter');
   b.onclick=()=>{if(speechSynthesis.speaking){taire();b.textContent='Écouter';return;}
-    const u=new SpeechSynthesisUtterance(textes.filter(Boolean).join('\n').replace(/<[^>]+>/g,''));
-    u.lang='fr-FR';u.onend=()=>b.textContent='Écouter';speechSynthesis.speak(u);b.textContent='Arrêter';};
+    // Une phrase par énoncé : pauses naturelles, et Chrome Android coupe les textes longs vers 15 s.
+    const phrases=textes.filter(Boolean).map(x=>x.replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ')).flatMap(x=>x.split(/(?<=[.!?…])\s+(?=[A-ZÀ-Ý«])/)).map(x=>x.trim()).filter(Boolean);
+    const v=voixFr();
+    phrases.forEach((x,i)=>{const u=new SpeechSynthesisUtterance(x);u.lang=v?.lang||'fr-FR';if(v)u.voice=v;u.rate=.95;
+      if(i===phrases.length-1)u.onend=()=>b.textContent='Écouter';speechSynthesis.speak(u);});
+    b.textContent='Arrêter';};
   actions.append(b);
 }
 function showRecit(r,onGo){
