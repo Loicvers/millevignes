@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import vm from "node:vm";
 import { normalize as nodeNormalize } from "../tools/lot.mjs";
 import { fichesFiles } from "../tools/migrate-fiches.mjs";
@@ -127,4 +127,14 @@ test("séance : une fiche au plus, échues d'abord, quota de nouvelles fiches, 2
   assert.equal(q2.filter(e => e.fiche === b).length, 0);
   assert.equal(new Set(q2.filter(e => e.fiche !== a && e.fiche !== b).map(e => e.fiche)).size, 1);
   assert.ok(ctx.ps(pool, prog, {}, t, { max: 3, newFiches: 5 }).length <= 3, "plafond de séance");
+});
+
+test("le service worker met en cache tous les fichiers locaux de index.html", () => {
+  const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const sw = readFileSync(new URL("../sw.js", import.meta.url), "utf8");
+  const listed = [...sw.matchAll(/"([^"]+\.(?:js|json|woff2|png|webmanifest|html))"/g)].map(m => m[1]);
+  const needed = [...html.matchAll(/<script src="([^"]+)"/g)].map(m => m[1]);
+  needed.push(...[...html.matchAll(/url\(['"]?(fonts\/[^'")]+)/g)].map(m => m[1]), "manifest.webmanifest", "data/mille-vignes-sommaire.json");
+  for (const f of needed) assert.ok(listed.includes(f), `${f} absent de sw.js`);
+  for (const f of listed) assert.ok(existsSync(new URL("../" + f, import.meta.url)), `${f} introuvable`);
 });

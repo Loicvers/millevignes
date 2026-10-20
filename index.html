@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>L'Atelier des Mille Vignes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#5b1a24">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <style>
+  @font-face{font-family:'Cormorant';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/cormorant.woff2) format('woff2')}
+  @font-face{font-family:'Cormorant';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/cormorant-italic.woff2) format('woff2')}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/inter.woff2) format('woff2')}
   :root{
     --ink:#16130f;--paper:#faf8f3;--paper2:#f1ede4;--line:#d9d2c4;
     --wine:#5b1a24;--wine-soft:#7a2c38;--gold:#7d6233;--muted:#6b6357;
@@ -60,6 +64,8 @@
   .count{font-size:13px;color:var(--muted)}.count b{color:var(--ink)}
   .filt-act{display:flex;gap:8px;flex-wrap:wrap}
 
+  .save-banner[hidden]{display:none}
+  .save-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border:1px solid var(--gold);background:var(--paper2);border-radius:3px;padding:10px 14px;margin-bottom:18px;font-size:14px;color:var(--muted)}
   .clear{font-size:12px;color:var(--wine);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   main{padding:26px 0 80px}
@@ -285,6 +291,7 @@
 
 <main><div class="wrap">
   <p class="intro" id="introLine"></p>
+  <div class="save-banner" id="saveBanner" hidden><span>Ta progression n'est stockée que dans ce navigateur : sauvegarde-la pour ne rien perdre.</span><button class="btn" id="saveNow">Sauvegarder ma progression</button></div>
   <section class="prog" id="progPanel" hidden></section>
   <div class="grid" id="grid"></div>
 </div></main>
@@ -435,6 +442,7 @@ function matches(f){
   return true;
 }
 function render(){
+  majBandeau();
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
@@ -719,7 +727,7 @@ function startSession(q,title,dejaLues=[]){
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
   document.getElementById('filterBar').style.display='none';
-  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   showExercise();window.scrollTo(0,0);
 }
 function showExercise(){
@@ -812,7 +820,7 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
 function lireChapitre(titre,fiches,depart=0){
   mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
   document.getElementById('filterBar').style.display='none';
-  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   const page=i=>{
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
       box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
@@ -885,15 +893,25 @@ function finish(ex,ok,fb,actions,body){
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
 }
+// Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 7 jours sans export.
+const SAVED_KEY='mv_saved_at';
+function majBandeau(){
+  let t=0;try{t=+localStorage.getItem(SAVED_KEY)||0;}catch{}
+  const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
+  document.getElementById('saveBanner').hidden=!(mode==='revision'&&Object.keys(prog).length&&now()-depuis>7*DAY);
+}
 function updateBadges(){document.getElementById('dueBadge').textContent=buildQueue(EXOS).length;}
 
 if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
 updateBadges();render();importFromHash();
+if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
-document.getElementById('exportProg').onclick=()=>{
+function exportProg(){
   const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,programmes:store},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
-};
+  try{localStorage.setItem(SAVED_KEY,String(now()));}catch{}majBandeau();
+}
+document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
 document.getElementById('importProg').onchange=async e=>{
   const file=e.target.files[0];e.target.value='';if(!file)return;
