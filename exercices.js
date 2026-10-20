@@ -141,7 +141,8 @@ function pointsDurs(pool, prog, journal) {
 
 // « Mon suivi » : indicateurs tirés du journal des réponses (indicatifs : un seul utilisateur).
 // Les seconds essais (retry) ne comptent pas. Réussie / ratée / inconnue (flashcard jamais notée).
-const issue = j => j.ok === 1 ? j.r !== "hard" : j.ok === 0 ? j.r === "ok" : // ok 0 + r « ok » : correction par mots-clés renversée par « En fait, j'avais juste »
+const issue = j => Array.isArray(j.c) ? j.c.reduce((a, x) => a + x, 0) >= 2 : // « Explique à un client » : au moins 2 critères cochés
+  j.ok === 1 ? j.r !== "hard" : j.ok === 0 ? j.r === "ok" : // ok 0 + r « ok » : correction par mots-clés renversée par « En fait, j'avais juste »
    j.r === "ok" || j.r === "easy" ? true : j.r === "hard" ? false : null;
 function suivi(journal, typeOf, prog, t) {
   const DAY = 86400000, tally = (c, s) => { c[1]++; if (s) c[0]++; };
@@ -150,7 +151,7 @@ function suivi(journal, typeOf, prog, t) {
   for (const [id, rs] of par) rs.forEach((j, i) => {
     const s = issue(j); if (s === null) return;
     if (!i) tally(imm, s);
-    if (RESTITUER.includes(typeOf(id))) tally(libre, s);
+    if (RESTITUER.includes(typeOf(id)) || typeOf(id) === "explain_client") tally(libre, s); // production autoévaluée : compte dans le rappel sans aide
     const ecart = i ? (j.t - rs[i - 1].t) / DAY : 0;
     if (ecart >= 5 && ecart <= 10) tally(j7, s); else if (ecart >= 21 && ecart <= 35) tally(j28, s);
   });
