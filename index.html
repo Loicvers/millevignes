@@ -509,7 +509,7 @@ function renderToc(list,filtre){
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
       const h=el('h2','toc-sec',nom);h.append(el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));grid.append(h);}
-    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>d.open?chapOuverts.add(c.page):chapOuverts.delete(c.page);
+    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.page);remplir();}else chapOuverts.delete(c.page);};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',fs.length?`p. ${c.page} · ${nv}/${fs.length}`:`p. ${c.page} · récit seul`));
     const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
@@ -517,7 +517,9 @@ function renderToc(list,filtre){
     const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
     const tr=el('button','btn','S\'entraîner sur ce chapitre');tr.disabled=!pool.length;
     tr.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Chapitre : '+c.chapitre);
-    act.append(lire,tr);inn.append(act);fs.forEach(f=>inn.append(card(f)));d.append(sm,inn);grid.append(d);
+    act.append(lire,tr);inn.append(act);d.append(sm,inn);grid.append(d);
+    let rempli=false;function remplir(){if(rempli)return;rempli=true;fs.forEach(f=>inn.append(card(f)));} // cartes construites à l'ouverture du chapitre
+    if(d.open)remplir();
   });
 }
 function coursHTML(c){
@@ -573,7 +575,10 @@ function card(f){
     <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${dueTag}</div>
     <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3><span class="fstat s-${etat(f)[0]}">${etat(f)[1]}</span></button>
     <p class="synth">${f.synth}</p>
-    <div class="card-body">
+    <div class="card-body"></div>`;
+  // Le corps (schéma, approfondissement, flashcard…) ne se construit qu'à la première ouverture de la carte.
+  const tg=c.querySelector('.card-toggle'),corps=c.querySelector('.card-body');let bati=false;
+  const batir=()=>{bati=true;corps.innerHTML=`
     ${statTag?`<div class="stat-line">${statTag}</div>`:''}
     <div class="sub-tags">${subTags}</div>
     ${schemaHTML(f)}
@@ -583,14 +588,15 @@ function card(f){
     <div class="flash-hint">Flashcard — touche pour retourner</div>
     <div class="flash" tabindex="0" role="button" aria-label="Retourner la flashcard"><div class="flash-in"><div class="flash-face flash-front">${f.flash.q}</div><div class="flash-face flash-back">${f.flash.a}</div></div></div>
     <button class="btn train">S'entraîner — ${mine.length} exercice(s)</button>
-    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div></div>`;
-  const tg=c.querySelector('.card-toggle');tg.onclick=()=>tg.setAttribute('aria-expanded',c.classList.toggle('open'));
+    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
+    const flash=corps.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
+    corps.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre,[f.id]); // fiche déjà sous les yeux
+  };
+  tg.onclick=()=>{if(!bati)batir();tg.setAttribute('aria-expanded',c.classList.toggle('open'));};
   if(mode==='atelier'){ // bouton visible même carte repliée
     const add=el('button','btn add');const sync=()=>{const inP=inProg(f.id);add.textContent=inP?'✓ Dans le programme':'Ajouter au programme';add.classList.toggle('in',inP);add.setAttribute('aria-pressed',inP);};
     add.onclick=()=>{toggleInProg(f.id);sync();renderProg();};
     sync();c.querySelector('.synth').after(add);}
-  const flash=c.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
-  c.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre,[f.id]); // fiche déjà sous les yeux
   return c;
 }
 
