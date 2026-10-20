@@ -138,3 +138,16 @@ test("le service worker met en cache tous les fichiers locaux de index.html", ()
   for (const f of needed) assert.ok(listed.includes(f), `${f} absent de sw.js`);
   for (const f of listed) assert.ok(existsSync(new URL("../" + f, import.meta.url)), `${f} introuvable`);
 });
+
+test("points durs : un exercice fragile sort de la liste après deux réussites d'affilée", () => {
+  vm.runInNewContext("this.pd=pointsDurs", ctx);
+  const e = { id: "x-01" }, prog = { "x-01": { ease: 1.9, interval: 1, due: 0, acquired: true } };
+  const j = (ok, r) => ({ e: "x-01", t: 1, ok, r });
+  const dur = journal => ctx.pd([e], prog, journal).length;
+  assert.equal(dur([j(0, "hard")]), 1);
+  assert.equal(dur([j(0, "hard"), j(1, "ok")]), 1, "une seule réussite ne suffit pas");
+  assert.equal(dur([j(0, "hard"), j(1, "ok"), j(1, "easy")]), 0);
+  assert.equal(dur([j(1, "ok"), j(1, "hard")]), 1, "réussie au hasard : pas une maîtrise");
+  assert.equal(dur([j(1, "ok"), j(1, "ok"), j(0, "hard")]), 1, "une nouvelle erreur le ramène");
+  assert.equal(dur([j(null, "ok"), j(null, "easy")]), 0, "flashcard : la note compte");
+});

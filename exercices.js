@@ -127,3 +127,14 @@ function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 
   }
   return q;
 }
+
+// Points durs : exercices dont la facilité est basse (souvent « Difficile »), le plus fragile en tête.
+// Un exercice en sort après deux réussites d'affilée dans le journal (réussie = pas ratée, et pas notée « Au hasard »/« Difficile »).
+const reussie = j => j.ok === 1 ? j.r !== "hard" : j.ok === null && (j.r === "ok" || j.r === "easy");
+function pointsDurs(pool, prog, journal) {
+  const fin = new Map(); // id → les deux dernières réponses, réussies ou non
+  for (const j of journal) fin.set(j.e, [...(fin.get(j.e) || []), reussie(j)].slice(-2));
+  const sorti = id => { const d = fin.get(id) || []; return d.length === 2 && d.every(Boolean); };
+  return pool.filter(e => prog[e.id] && prog[e.id].ease < 2.3 && !sorti(e.id))
+    .sort((a, b) => prog[a.id].ease - prog[b.id].ease);
+}

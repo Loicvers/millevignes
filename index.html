@@ -461,8 +461,8 @@ function render(){
   const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
   const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
-  // Points durs : exercices plus souvent ratés (« Difficile ») que réussis facilement, le plus fragile en tête.
-  const durs=pool.filter(e=>prog[e.id]&&prog[e.id].ease<2.3).sort((a,b)=>prog[a.id].ease-prog[b.id].ease);
+  // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
+  const durs=pointsDurs(pool,prog,journal);
   const hb=document.getElementById('hardBtn');hb.hidden=!durs.length;hb.textContent=`Mes points durs (${durs.length})`;
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
