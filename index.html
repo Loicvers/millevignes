@@ -448,7 +448,7 @@ document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs
 
 /* ============ TABS ============ */
 function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -963,7 +963,8 @@ function majBandeau(){
   const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
   document.getElementById('saveBanner').hidden=!(mode==='revision'&&Object.keys(prog).length&&now()-depuis>7*DAY);
 }
-function updateBadges(){document.getElementById('dueBadge').textContent=buildQueue(EXOS).length;}
+// Pendant la Session du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
+function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Session du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
 
 if(matchMedia('(min-width:900px)').matches)document.getElementById('filtPanel').open=true; // filtres dépliés seulement sur grand écran
 updateBadges();render();importFromHash();
