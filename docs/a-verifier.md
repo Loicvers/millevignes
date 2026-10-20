@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-252 fiches : 44 vérifiées, 208 à vérifier (608 points).
+252 fiches : 44 vérifiées, 208 à vérifier (618 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -586,6 +586,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 167** (p.133) — Naissance d’une roche sédimentaire
 - [ ] Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Classification chimique / biochimique (⚠️) : elle varie selon les sources ; le livre range le calcaire parmi les biochimiques, Futura-Sciences parmi les chimiques.
 
 **Fiche 168** (p.133) — Roches détritiques : de l’argile au poudingue
 - [ ] Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.
@@ -649,6 +650,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] 34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).
 - [ ] 32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée).
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Lessivage de E vers B (⚠️) : le sens du mouvement est déduit des définitions (E appauvri, B en accumulation) ; non formulé tel quel dans les sources lues.
 
 **Fiche 180** (p.142) — Pas de sol idéal pour la vigne
 - [ ] Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.
@@ -722,6 +724,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).
 - [ ] Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Yquem : environ 100 km de drains (⚠️) : une seule source lue (iDealwine), le « plus de 100 km » du livre n’est pas confirmé.
+- [ ] Murs à chasselas de Thomery et clos de Parnay (⚠️) : sources uniques ; le clos est inscrit MH (2011), non classé ; date du XVIIIe siècle pour Thomery non confirmée, non reprise.
+- [ ] Lavaux, terrasses du XIe siècle selon l’UNESCO contre Xe siècle dans le livre (⚠️).
 
 **Fiche 195** (p.159) — Le Clos d’Entre-les-Murs de Parnay : un mur pour mûrir
 - [ ] Inscription MH en 2011 et non classement (⚠️) : une seule source de niveau 1 (Mérimée, PA49000082) ; le livre écrit « classé ».
@@ -780,6 +785,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.
 - [ ] Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Cordon de Royat : un bras horizontal portant 2 à 5 coursons de 2 yeux (⚠️) : description du livre (p. 170) ; la seule autre source lue ne confirme pas le nombre de coursons.
+- [ ] Silhouettes du schéma (⚠️) : formes simplifiées d’après le livre ; le Guyot simple est dessiné avec une baguette et un courson, forme compatible avec les deux descriptions divergentes.
 
 **Fiche 203** (p.172) — Le fleuve, autoroute du vin : canaux et rivières aménagés
 - [ ] Canal du Midi inauguré en 1680 selon le livre, ouverture officielle en 1681 selon la source lue (⚠️) : une seule page lue, divergence signalée dans la synthèse.
@@ -958,6 +965,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Élevage oxydatif : tanins assouplis, couleur stabilisée, effets des apports massifs (⚠️) : affirmations du livre, non recoupées
 - [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; date et matériel du livre non repris
 - [ ] Apport d’oxygène d’une barrique neuve, de l’ordre de 10 à 30 mg/l/an (⚠️) : fourchette tirée de Junqua et al. (2021, environ 11 mg/l/an) et de Nevares (2014, 27 à 32 mg/l/an), lus dans un article de synthèse ; les valeurs publiées vont de 8 à 45 mg/l/an selon la méthode, le grain et l’âge du fût. Le chiffre du livre (0,4 mg/l/an, 80 % par la bonde) n’est pas retrouvé
+- [ ] Part de l’entrée d’oxygène par les joints et le bois (63 % et 16 %) et grain très fin à 45 mg/l/an (⚠️) : Vivas et Glories (1997), lu via un article de synthèse, non consulté directement.
 
 **Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
 - [ ] Grain fin du sessile (1 à 3 mm) et lien grain-ellagitanins (⚠️) : non retrouvé dans Prida et al. (2007), où les cernes sont proches entre les deux espèces ; lien débattu ; présenté dans la fiche comme position du livre
@@ -969,6 +977,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Ordre débit, séchage, cintrage, bousinage (⚠️) : ordre du livre p. 228, non recoupé ; durées et taux d’humidité du livre non repris (IFV : 18 à 24 mois de séchage, le livre dit 18 à 36)
 - [ ] Furfural évoquant l’amande et eugénol évoquant le clou (⚠️) : correspondances aromatiques du livre, non recoupées ; l’apparition du furfural et de la vanilline avec la chauffe est confirmée (IFV, Virginia Tech)
 - [ ] Un petit fût marque plus qu’un grand (⚠️) : affirmation du livre p. 230, non chiffrée dans les sources lues ; l’épuisement du bois avec l’usage est confirmé
+- [ ] Contenances 225 l (barrique bordelaise) et 228 l (pièce bourguignonne) (⚠️) : tableau du livre p. 227, non recoupé dans les sources lues (228 l n’est retrouvé que pour les fûts du vin de paille jurassien).
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
 - [ ] Autolyse des lies, polysaccharides, mannoprotéines, gras et longueur (⚠️) : affirmations du livre p. 228 ; la page Virginia Tech sur les lies n’a pas pu être lue
@@ -1026,3 +1035,4 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Fréquence du goût de bouchon en baisse (⚠️) : estimations anciennes de 0,5 à 6 % des vins tranquilles (Chatonnet et al., 2003) contre environ 1,5 % aujourd’hui (iDealwine, presse) ; chiffre de l’IFV cité par le livre non retrouvé, aucun chiffre repris.
 - [ ] Part du liège dans les contaminations (⚠️) : 80 à 95 % selon les sources, méthodes non précisées ; aucun pourcentage repris.
 - [ ] TBA retrouvé sur des bouchons synthétiques (⚠️) : une seule source (Virginia Tech Enology).
+- [ ] Seuil du TeCA (~12 ng/l dans un rouge) et du TBA (~4 ng/l) (⚠️) : une source chacune (Chatonnet 2003 ; Virginia Tech) ; seuils variables selon la matrice et le jury.

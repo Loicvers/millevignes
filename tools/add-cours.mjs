@@ -15,6 +15,7 @@ for (const e of entries) {
   const start = s.indexOf(head), nextId = s.indexOf("\n    id: ", start + head.length);
   const end = nextId < 0 ? s.length : nextId;
   let block = s.slice(start, end);
+  if (e.cours && /\n    cours: null,\n/.test(block)) block = block.replace("\n    cours: null,\n", "\n"); // lots récents : cours: null explicite
   if (e.cours && /\n    cours: /.test(block)) throw new Error("Fiche déjà dotée d'un cours : " + e.fiche);
   if (e.schema && /\n    schema: null,\n/.test(block)) block = block.replace("\n    schema: null,\n", "\n"); // remplacé ci-dessous
   if (e.schema && /\n    schema: /.test(block)) throw new Error("Fiche déjà dotée d'un schéma : " + e.fiche);
@@ -24,7 +25,7 @@ for (const e of entries) {
   if (!anchor) throw new Error("Ni status ni src : " + e.fiche);
   block = block.replace(`\n    ${anchor}: `, "\n" + add + `    ${anchor}: `);
   if (e.to_check_add?.length) {
-    const m = block.match(/\n    to_check: (\[.*\]),\n/);
+    const m = block.match(/\n    to_check: (\[[\s\S]*?\]),\n(?=    \w+: )/); // tableau sur une ou plusieurs lignes
     if (!m) throw new Error("to_check introuvable : " + e.fiche);
     const list = [...new Function("return " + m[1])(), ...e.to_check_add];
     block = block.replace(m[0], `\n    to_check: ${JSON.stringify(list)},\n`).replace('\n    status: "verified",', '\n    status: "needs_review",');
