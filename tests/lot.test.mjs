@@ -8,7 +8,7 @@ const read = p => JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
 const base = read("../data/base.json");
 const lot = () => read("./fixtures/lot-exemple.json");
 
-test("le lot d'exemple couvre les 10 types et il est valide", () => {
+test("le lot d'exemple couvre les 11 types et il est valide", () => {
   assert.deepEqual(new Set(lot().exercises.map(e => e.type)), new Set(EXERCISE_TYPES));
   assert.deepEqual(validate(lot(), base), []);
 });
@@ -39,10 +39,10 @@ test("needs_review exige les faits à vérifier", () => {
 
 test("import idempotent et conflits", () => {
   const first = merge(base, lot());
-  assert.equal(first.report.created.length, 12);
+  assert.equal(first.report.created.length, 13);
   const again = merge(first.base, lot());
   assert.equal(again.report.created.length, 0);
-  assert.equal(again.report.unchanged.length, 12);
+  assert.equal(again.report.unchanged.length, 13);
 
   const edited = lot();
   edited.notions[0].synth = "Autre texte";

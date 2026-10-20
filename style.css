@@ -256,3 +256,8 @@
     .cours summary,.to-check summary{padding:12px 0;min-height:44px}
     .tab,.card-toggle{min-height:44px}
   }
+  .ex-crit{border:1px solid var(--line);border-radius:3px;padding:6px 12px 10px;margin-bottom:12px}
+  .ex-crit legend{font-size:13px;color:var(--muted);padding:0 6px}
+  .ex-crit .prog-check{min-height:44px;margin-top:0}
+  textarea.ex-input[readonly]{background:var(--paper2)}
+  .ex-crit input{flex:none}

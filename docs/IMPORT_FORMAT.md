@@ -29,7 +29,7 @@ Apostrophes typographiques (’) dans les textes. Catalogue des sous-thèmes : `
 **Pastilles** : la migration reprend `status` et `to_check` tels quels ; le site affiche « ✓ vérifiée » ou « ⚠ à vérifier » avec la liste dépliable. Une fiche sans `status` est marquée « à revoir » par défaut. Les divergences avec le livre vont dans la synthèse et/ou un exercice vrai/faux.
 
 Le format « lot JSON » ci-dessous sert aux imports futurs dans l'application. On n'édite rien à la main.
-Exemple complet couvrant les 10 types : `tests/fixtures/lot-exemple.json`.
+Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
 
 ```json
 {
@@ -125,7 +125,7 @@ Champ `schema` de la notion (et de la fiche dans `fiches/*.js`), affiché dans l
 - `svg` : un seul `<svg>…</svg>` inerte. Refusé s'il contient un script, un attribut d'événement (`onload`…), un `foreignObject` ou un lien externe. Couleurs via `currentColor` pour suivre le thème.
 - `legende` et `src` (crédit) obligatoires.
 
-## Exercices — 10 types
+## Exercices — 11 types
 
 Champs communs :
 
@@ -146,6 +146,13 @@ Champs communs :
 | `matching` | `{ "pairs": [["gauche","droite"], …] }` | ≥ 2 paires |
 | `ordering` | `{ "items": ["1er","2e","3e", …] }` | ≥ 3 éléments, **dans l'ordre correct** |
 | `odd_one_out` | `{ "options": [≥3], "answer": index }` | l'intrus ; le pourquoi dans `explanation` |
+| `explain_client` | `{ "model": "…", "criteria": ["…", "…", "…"] }` | « Explique à un client » : texte libre, puis réponse modèle et 3 critères cochés en auto-évaluation (voir ci-dessous) |
+
+**`explain_client`** (seulement là où le contenu s'y prête, jamais sur toutes les fiches) :
+- `prompt` : la question posée par un client. `model` : la réponse modèle, dite comme à un client (3 à 5 phrases).
+- `criteria` : **exactement 3**. Les critères 1 et 2 sont **propres à la fiche** : les deux points que la réponse doit contenir. Quand la fiche porte une vraie nuance (« ça dépend de… »), elle devient l'un de ces deux critères ; sinon on n'en invente pas. Le critère 3 est générique : « Mots simples, pas de jargon sans explication ».
+- **Fiabilité** : la réponse modèle et les critères reprennent **uniquement les faits de la fiche**, sans aucun ajout. Si la fiche est « à vérifier », l'avertissement s'affiche aussi sur cet exercice.
+- Pas de correction automatique du texte. Le nombre de critères cochés donne la note : 0-1 Difficile, 2 Correct, 3 Facile. Le texte saisi n'est pas conservé ; le journal garde les critères cochés (`c: [1,0,1]`).
 
 Bonnes pratiques :
 - **varier** : viser 4 à 6 exercices par notion, de types différents ;

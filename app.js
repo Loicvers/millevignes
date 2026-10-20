@@ -1,7 +1,7 @@
 /* ============ DONNÉES ============ */
 const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]),...lexiqueExercises(LEXIQUE,FICHES)];
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
-const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma'};
+const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma',explain_client:'Explique à un client'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
 const SESSION_MAX=20,NEW_FICHES=5; // nouvelles fiches par jour
 
@@ -512,6 +512,16 @@ function showExercise(){
       const picked=new Set();
       choice(p.options,(i,b)=>{picked.has(i)?picked.delete(i):picked.add(i);b.classList.toggle('picked');b.setAttribute('aria-pressed',picked.has(i));});
       submit(()=>[...picked]);break;}
+    case 'explain_client':{
+      const inp=el('textarea','ex-input');inp.rows=5;inp.placeholder='Ta réponse, comme tu la dirais à un client';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
+      const show=el('button','btn primary','Voir la réponse modèle');
+      show.onclick=()=>{show.remove();inp.readOnly=true; // ton texte reste à l'écran, il n'est pas enregistré
+        body.append(el('div','ex-answer',p.model));
+        const fs=el('fieldset','ex-crit');fs.append(el('legend',null,'Auto-évaluation : coche ce que ta réponse contenait'));
+        const boxes=p.criteria.map(t=>{const l=el('label','prog-check'),c=el('input');c.type='checkbox';l.append(c,' '+t);fs.append(l);return c;});
+        body.append(fs);actions.innerHTML='';
+        const v=el('button','btn primary','Valider');v.onclick=()=>finish(ex,null,fb,actions,body,boxes.map(c=>+c.checked));actions.append(v);boxes[0].focus();};
+      actions.append(show);break;}
     case 'short_answer':{
       const inp=el('input','ex-input');inp.placeholder='Ta réponse';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const b=submit(()=>inp.value);inp.onkeydown=e=>{if(e.key==='Enter')b.click();};setTimeout(()=>inp.focus());break;}
@@ -618,7 +628,7 @@ function schemaCorrection(f){
   if(!schemaVu.has(f.id)){schemaVu.add(f.id);return schemaHTML(f);}
   return `<details class="cours"><summary>Voir le schéma</summary>${schemaHTML(f)}</details>`;
 }
-function finish(ex,ok,fb,actions,body){
+function finish(ex,ok,fb,actions,body,crit){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
   if(ok!==null){score.total++;if(ok)score.ok++;
     fb.className='fb '+(ok?'good':'bad');fb.append(el('strong',null,ok?'Bonne réponse.':'Pas tout à fait.'));
@@ -627,6 +637,7 @@ function finish(ex,ok,fb,actions,body){
   // Sans explication propre, la synthèse ne s'affiche qu'une fois par fiche et par séance (sinon elle se répète sous chaque exercice).
   const expl=ex.explanation||(!synthVue.has(ex.fiche.id)&&ex.fiche.synth);
   if(!ex.explanation)synthVue.add(ex.fiche.id);
+  if(crit){const n=crit.reduce((a,x)=>a+x,0);fb.prepend(el('strong',null,`${n} critère${n>1?'s':''} sur 3.`));}
   if(expl)fb.append(el('p','fb-expl',expl));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
@@ -634,6 +645,10 @@ function finish(ex,ok,fb,actions,body){
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
+  if(crit){ // auto-évaluation : le nombre de critères cochés donne la note (0-1 Difficile, 2 Correct, 3 Facile)
+    const n=crit.reduce((a,x)=>a+x,0),q=n<2?'hard':n===2?'ok':'easy';
+    rate(ex.id,q);entry.c=crit;entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}
+    const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
   if(ex.retry){const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;} // seconde chance : déjà reprogrammé
   if(ok===false)queue.push({...ex,retry:true}); // revient une fois en fin de séance, après la correction
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire

@@ -22,6 +22,7 @@ const PAYLOADS = {
   short_answer: p => [!isStrArr(p.accepted) && "accepted : au moins une réponse acceptée"],
   matching: p => [!(Array.isArray(p.pairs) && p.pairs.length >= 2 && p.pairs.every(x => Array.isArray(x) && x.length === 2 && x.every(isStr))) && "pairs : au moins 2 paires [gauche, droite]"],
   ordering: p => [!isStrArr(p.items, 3) && "items : au moins 3 éléments dans l'ordre correct"],
+  explain_client: p => [!isStr(p.model) && "model (réponse modèle) manquant", !isStrArr(p.criteria, 3) || p.criteria.length !== 3 ? "criteria : exactement 3 critères (textes non vides)" : null],
   odd_one_out: p => [!isStrArr(p.options, 3) && "options : au moins 3 textes", isStrArr(p.options, 3) && !isIdx(p.answer, p.options) && "answer : index de l'intrus hors des options"],
 };
 export const EXERCISE_TYPES = Object.keys(PAYLOADS);
