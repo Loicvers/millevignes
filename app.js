@@ -608,7 +608,7 @@ function taire(){try{speechSynthesis.cancel();}catch(e){}}
 // Meilleure voix française installée : les voix « améliorées », « naturelles » ou en ligne sonnent bien moins robotiques.
 function voixFr(){
   const vs=speechSynthesis.getVoices().filter(v=>/^fr/i.test(v.lang));
-  const note=v=>(/premium|enhanced|amélior|natural|neural|online|google/i.test(v.name)?2:0)+(/fr[-_]FR/i.test(v.lang)?1:0);
+  const note=v=>(/premium/i.test(v.name)?4:/enhanced|qualit|amélior|natural|neural|online|google/i.test(v.name)?2:0)+(/fr[-_]FR/i.test(v.lang)?1:0);
   return vs.sort((a,b)=>note(b)-note(a))[0];
 }
 if('speechSynthesis' in window)speechSynthesis.getVoices(); // amorce le chargement des voix (asynchrone sur Chrome)
