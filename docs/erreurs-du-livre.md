@@ -56,6 +56,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 136 : pression « 12 fois » celle de la surface vers 12-24 km → des centaines de MPa, soit des milliers de fois (le diagramme p. 137 donne 500-1000 MPa).
 - p. 138 : plus vieilles roches « plus de 500 millions d’années » → gneiss d’Acasta, environ 4 milliards d’années.
 - p. 132 : porphyre présenté comme une forme d’andésite → c’est une texture (phénocristaux dans une pâte fine).
+- p. 345 (bibliographie) : Karbowiak et al. 2019, « Wine aging: a bottleneck story », cité dans « Nature » → *npj Science of Food* (PMC6684617).
+- p. 346 (bibliographie) : « Starkenman, Christian, et al. », guêpes et levures (PNAS 2012) → premier auteur Irene Stefanini (Stefanini et al., PNAS 109(33), 2012).
 
 ## Non confirmés
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
