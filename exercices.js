@@ -141,7 +141,8 @@ function pointsDurs(pool, prog, journal) {
 
 // « Mon suivi » : indicateurs tirés du journal des réponses (indicatifs : un seul utilisateur).
 // Les seconds essais (retry) ne comptent pas. Réussie / ratée / inconnue (flashcard jamais notée).
-const issue = j => j.ok === 1 ? j.r !== "hard" : j.ok === 0 ? false : j.r === "ok" || j.r === "easy" ? true : j.r === "hard" ? false : null;
+const issue = j => j.ok === 1 ? j.r !== "hard" : j.ok === 0 ? j.r === "ok" : // ok 0 + r « ok » : correction par mots-clés renversée par « En fait, j'avais juste »
+   j.r === "ok" || j.r === "easy" ? true : j.r === "hard" ? false : null;
 function suivi(journal, typeOf, prog, t) {
   const DAY = 86400000, tally = (c, s) => { c[1]++; if (s) c[0]++; };
   const imm = [0, 0], libre = [0, 0], j7 = [0, 0], j28 = [0, 0], par = new Map();

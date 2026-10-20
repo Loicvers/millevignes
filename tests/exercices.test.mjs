@@ -175,3 +175,15 @@ test("suivi : réussite immédiate, rappel différé, seconds essais écartés, 
   assert.equal(r.nSeances, 2); // a+b à 1 min ; a + son second essai à 1 min (le temps passé compte, même en retry)
   assert.equal(r.mediane, M + 5000);
 });
+
+test("suivi : le rappel sans aide lit la note des flashcards non saisies, et laisse les QCM de côté", () => {
+  vm.runInNewContext("this.sv=suivi", ctx);
+  const types = { f: "flashcard", q: "mcq_single", v: "true_false", m: "matching", o: "odd_one_out" };
+  const J = [
+    { e: "f", t: 1, ok: null, r: "easy" }, { e: "f", t: 2, ok: null, r: "ok" }, { e: "f", t: 3, ok: null, r: "hard" }, // texte non saisi
+    { e: "f", t: 4, ok: 0, r: "ok" },                                                                                 // mots-clés ratés, puis « j'avais juste »
+    { e: "q", t: 5, ok: 1, r: "ok" }, { e: "v", t: 6, ok: 1, r: "ok" }, { e: "m", t: 7, ok: 1, r: "ok" }, { e: "o", t: 8, ok: 1, r: "ok" },
+  ];
+  const r = JSON.parse(JSON.stringify(ctx.sv(J, id => types[id], {}, 10)));
+  assert.deepEqual(r.libre, [3, 4]);
+});

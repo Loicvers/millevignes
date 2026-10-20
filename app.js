@@ -479,7 +479,7 @@ function showExercise(){
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
     else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
       box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
-      const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);}
+      const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
@@ -639,7 +639,7 @@ function finish(ex,ok,fb,actions,body){
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
   const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);
-    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
+    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');entry.r='ok';try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
     setTimeout(()=>b.focus());return;}
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
@@ -665,6 +665,7 @@ function exportProg(){
   try{localStorage.setItem(SAVED_KEY,String(now()));}catch{}majBandeau();
 }
 document.querySelector('.zoom-x').onclick=fermerZoom;
+document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scrollTo(0,0);};
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
 document.getElementById('importProg').onchange=async e=>{
