@@ -346,7 +346,7 @@ const RECITS = [
  "client": "« La roche mère sur l’étiquette, c’est une piste, pas une garantie : le sol agit surtout par l’eau et la vie qu’il apporte à la vigne. »",
  "filRouge": "Pourquoi la géologie est-elle devenue un argument commercial si fort depuis cinquante ans ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : les faits et les chiffres sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -356,7 +356,7 @@ const RECITS = [
  "fil": [
   "Il existe trois grandes familles de roches selon leur mode de formation : magmatiques, sédimentaires et métamorphiques. Les magmatiques naissent du refroidissement du magma.",
   "<b>Lentes ou rapides.</b> Refroidi lentement en profondeur, le magma donne des roches plutoniques aux cristaux visibles (le granit). Refroidi vite en surface, il donne des roches volcaniques au grain fin ou vitreux (le basalte). Chaque roche plutonique a son équivalent volcanique de même composition. On distingue les roches riches en potassium et sodium (felsiques) de celles riches en fer et magnésium (mafiques).",
-  "<b>Sur roches plutoniques.</b> Le granit porte une partie du Rhône nord et du Beaujolais, le Dão portugais. Mais le Beaujolais n’est pas que granitique : Juliénas et Côte-de-Brouilly reposent surtout sur la diorite, la « pierre bleue ». Le gabbro est mis en avant par les nouveaux crus communaux du Muscadet. Le granit, dur, rend les caves difficiles à creuser : les chais y sont souvent en surface.",
+  "<b>Sur roches plutoniques.</b> Le granit porte une partie du Rhône nord et du Beaujolais, le Dão portugais. Mais le Beaujolais n’est pas que granitique : Juliénas et Côte-de-Brouilly reposeraient surtout sur une « pierre bleue » que le livre identifie à la diorite (identification non confirmée). Le gabbro est mis en avant par les nouveaux crus communaux du Muscadet. Le granit, dur, rend les caves difficiles à creuser : les chais y sont souvent en surface.",
   "<b>Sur roches volcaniques.</b> Le basalte, le plus répandu, porte l’Etna, la Columbia Valley ou une partie de l’Auvergne ; décomposé, il donne des sols fertiles. Rhyolite, andésite et porphyre apparaissent ailleurs (Savennières, Santorin). Les roches projetées par les éruptions explosives (cendres, tuf, ponce, lapilli) forment d’autres terroirs, comme les pouzzolanes de Lanzarote.",
   "L’encadré sur les vins de volcan pose la question : drainants, pauvres en matière organique, riches en certains minéraux, ces sols laissent-ils une signature commune ? Des recherches sont en cours."
  ],
@@ -364,7 +364,7 @@ const RECITS = [
  "client": "« Granit et basalte viennent tous deux du magma : l’un a refroidi lentement en profondeur, l’autre vite en surface. »",
  "filRouge": "Quelle différence entre une roche plutonique et une roche volcanique, et pourquoi cela compte-t-il pour un vignoble ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : les exemples de vignobles sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -382,7 +382,7 @@ const RECITS = [
  "client": "« La craie de Champagne et le calcaire de Bourgogne sont faits de coquilles et de squelettes d’organismes marins accumulés au fond des mers. »",
  "filRouge": "Pourquoi des galets roulés, chimiquement inertes, peuvent-ils pourtant faire un bon terroir ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes.",
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md.",
   "Le fondateur de Calera s’appelle Josh Jensen (le livre écrit Jansen)."
  ]
 },
@@ -401,7 +401,7 @@ const RECITS = [
  "client": "« Le schiste est une ancienne argile transformée par la pression et la chaleur sous terre ; c’est elle qui lui donne ses feuillets. »",
  "filRouge": "Pourquoi est-il hasardeux d’attribuer directement le goût d’un vin à son schiste ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes."
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -419,7 +419,7 @@ const RECITS = [
  "client": "« Un grand terroir, c’est souvent un sol qui donne juste un peu moins d’eau que la vigne n’en voudrait, au bon moment. »",
  "filRouge": "Pourquoi la régulation de l’eau compte-t-elle plus que la richesse minérale du sol pour la qualité du vin ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : les chiffres (profondeurs d’enracinement, pH, albédo) sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {
@@ -436,7 +436,7 @@ const RECITS = [
  "client": "« Un terroir, ce n’est pas seulement un sol et un climat : ce sont aussi des générations de vignerons qui l’ont aménagé et fait connaître. »",
  "filRouge": "Pourquoi une définition du terroir limitée au sol et au climat est-elle insuffisante ?",
  "prudence": [
-  "Section pas encore vérifiée contre des sources externes : les chiffres (atlas, prix du foncier champenois) sont ceux du livre."
+  "Faits vérifiés avec le lot de fiches 157-188 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
 },
 {

@@ -49,6 +49,13 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 119 : Tambora situé à « Sumbawa, Java » → Sumbawa est une île distincte de Java.
 - p. 120 : Groenland « couvert alors de vignes » → aucune source ne l’atteste ; les raisins des sagas sont au Vinland (Amérique du Nord).
 - p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
+- p. 127 : « environ 4 000 minéraux » connus → plus de 6 200 espèces validées par l’IMA (liste de juillet 2026 : 6 226).
+- p. 126 : tectonique des plaques attribuée à Wegener en 1915 → Wegener présente la dérive des continents en 1912 (livre en 1915) ; la tectonique des plaques date des années 1960. L’échelle des temps « inventée en 1913 » : c’est sa première version chiffrée (Holmes), l’échelle relative date du XIXe siècle.
+- p. 133 : roches sédimentaires « plus de 70 % de la croûte » → ~75 % de la surface des continents, ~8 % du volume de la croûte.
+- p. 135 : fondateur de Calera « Josh Jansen » → Josh Jensen.
+- p. 136 : pression « 12 fois » celle de la surface vers 12-24 km → des centaines de MPa, soit des milliers de fois (le diagramme p. 137 donne 500-1000 MPa).
+- p. 138 : plus vieilles roches « plus de 500 millions d’années » → gneiss d’Acasta, environ 4 milliards d’années.
+- p. 132 : porphyre présenté comme une forme d’andésite → c’est une texture (phénocristaux dans une pâte fine).
 
 ## Non confirmés
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
@@ -88,6 +95,11 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 119 : Mont Saint Helens (1980) parmi les éruptions refroidissantes (non retenu par l’USGS).
 - p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, chap. 5, lu : durées variables selon les auteurs).
 - p. 121 : vignoble d’Angleterre et du pays de Galles 2 700 ha (3 758 ha en 2021) ; réchauffement préindustriel de Ruddiman « plus de 1 °C » (0,8 °C) ; salinité 1,28 g/L, « cold units » d’Afrique du Sud, « chaos climatique » attribué à Jamie Goode (non retrouvés).
+- p. 124-125 : la Bourgogne modèle du système d’appellations (l’INAO cite d’abord Champagne, cognac, Bordeaux) ; recours croissant aux géologues ; œnogéologie de Georges Truc (dates non confirmées).
+- p. 130 : « pierre bleue » de Juliénas et Côte-de-Brouilly = diorite (l’interprofession ne parle pas de diorite) ; roches des crus communaux du Muscadet (Gorges, Le Pallet : sources divergentes).
+- p. 134 : travertin à Pouilly-Fumé (absent des descriptions de l’appellation) ; shales « plus de 46 % » des sédimentaires (non retrouvé).
+- p. 139-145 : basalte altéré « dix fois plus vite » que le granite ; pH de la craie champenoise (7,9-8,5) et des schistes de Moselle (< 6) ; albédo basalte 10 %, calcaire 35 % ; calcaires « urgoniens » à Châteauneuf-du-Pape ; étude Bourguignon (53 parcelles, 86 %) inédite ; Wittendal : 2 816 « climats » et non « vignobles » ; Seguin : travaux de 1969-1970, 1986 = synthèse.
+- p. 147-149 : nombre d’UTB de l’atlas du Val de Loire et « plus vaste au monde » ; typologie de Vaudour en quatre sens (non retrouvée) ; foncier champenois 2020 : 1 196 000 €/ha (SAFER : environ 1 041 000) ; classement suisse par la végétation spontanée (contredit pour Vaud et Valais).
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -115,3 +127,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 33 : « environ 70 % » du vignoble français pour une dizaine de cépages : somme des dix premiers du tableau France du Focus OIV 2017 (p. 22) = 70,2 % ; le 71,9 % du livre reste introuvable.
 - p. 100 : DOC Aversa (asprinio) reconnue le 31 juillet 1993 ; vigne mariée sur tuteurs vivants, généralement des peupliers (disciplinare, art. 8).
 - p. 121 : règles VIFA (directive INAO du 3 juin 2021) : 5 % de l'encépagement, 10 % de l'assemblage, 10 variétés par couleur, convention de 10 ans.
+- p. 142 : 51 grands crus d’Alsace sur une mosaïque géologique (Taste France ; Wikipédia ; CIVA non lu).
+- p. 142 : étude de van Leeuwen et al. (2008) : 7 crus bordelais, ~400 ha, 9 types de sols (texte IVES lu).
+- p. 148 : Unité terroir viticole de Carbonneau (cépage et système de culture ajoutés à l’UTB).

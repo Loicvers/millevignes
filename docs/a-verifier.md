@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-156 fiches : 46 vérifiées, 110 à vérifier (247 points).
+188 fiches : 48 vérifiées, 140 à vérifier (347 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -469,3 +469,163 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 156** (p.123) — Mas de Daumas Gassac et Henri Enjalbert
 - [ ] Source unique et non indépendante (histoire du domaine sur son site) : comparaison avec la Côte d’Or, dates 1970-1972, eau froide du Gassac
 - [ ] Les grèzes et les dates d’Enjalbert (1910-1983) figurent dans le livre mais pas sur la page du domaine : non reprises
+
+**Fiche 157** (p.124) — La géologie, argument du vin
+- [ ] Sol non exportable et remise en cause de la suprématie française depuis les années 1970 (⚠️) : thèse de Lepeltier, aucune source lue ne la quantifie ni ne la date.
+- [ ] Œnogéologie, Georges Truc, années 1990 puis mi-2010 (⚠️) : une seule source lue (Decanter), qui présente Truc comme géologue de terrain du Rhône sans employer le mot ni donner ces dates ; graphies « onogéologie » et « cnogéologie » du texte extrait = OCR.
+- [ ] Lecture ancienne du sous-sol (murets, caves, plantes indicatrices) (⚠️) : affirmation du livre, non recoupée.
+
+**Fiche 158** (p.124) — Bourgogne, climats et appellations : le sol comme critère
+- [ ] Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.
+- [ ] Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.
+- [ ] Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).
+- [ ] Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée.
+- [ ] Chablis réservé aux sols kimméridgiens en 1938 (⚠️, non utilisé en exercice) : une seule source (Fanet, IVES) ; non repris dans la synthèse.
+
+**Fiche 159** (p.126) — Le temps long : échelle des temps géologiques et tectonique
+- [ ] Plus de 4,5 milliards d’années pour la Terre et 3,8 milliards d’années pour les ensembles de roches anciennes (⚠️) : une seule source lue (Universalis) ; ordres de grandeur, des roches et zircons plus anciens existent ; âge de la Terre non énoncé dans la page lue.
+- [ ] Wegener 1912 / 1915 et tectonique des plaques des années 1960 (⚠️) : une seule source lue (Futura-Sciences).
+- [ ] Échelle chiffrée de Holmes en 1913 (⚠️) : une seule source lue (EARTH Magazine) ; l’échelle relative date du XIXe siècle.
+- [ ] Bornes du Paléozoïque (⚠️) : la charte ICS 2023-06 donne 538,8 et 251,9 millions d’années, le livre -541 et -252,2 (anciennes versions) ; une seule source lue, âges révisables.
+- [ ] Hiérarchie éon, ère, période, époque, étage : confirmée par la charte ICS 2023-06 ; la distinction relative / absolue reste énoncée par le livre (⚠️).
+
+**Fiche 160** (p.127) — Les noms des âges géologiques : lieux, peuples et roches
+- [ ] Jurassique, massif du Jura, Brongniart 1829 (⚠️) : l’attribution à Brongniart repose sur une source de niveau 2b (Wikipedia) ; l’étymologie, elle, concorde avec le livre.
+- [ ] Silurien, Silures, Murchison 1835 (⚠️) : une seule source (Geological Society) ; concorde avec le livre.
+- [ ] Carbonifère, « qui porte du charbon », 1822 (⚠️) : source de niveau 2b (Wikipedia) ; concorde avec le livre.
+- [ ] Provenance grecque ou latine de nombreux noms d’âges (⚠️) : affirmation du livre, non recoupée.
+
+**Fiche 161** (p.127) — Minéral, élément chimique, roche : trois mots à ne pas confondre
+- [ ] Élément défini par son nombre de protons (⚠️) : une seule source lue (Inrap) ; le nombre d’isotopes du carbone annoncé par l’extraction (quatre) n’est pas repris, la source en donne trois naturels.
+- [ ] Définition d’une roche et du calcaire, cycle des roches (⚠️) : énoncés par le livre, non recoupés par une source dédiée.
+- [ ] Définition du minéral (✅ pour l’essentiel) : l’IMA parle d’origine géologique et d’homogénéité, « inorganique » et « cristallin » sont des raccourcis pédagogiques.
+
+**Fiche 162** (p.130) — Roches magmatiques : plutoniques ou volcaniques ?
+- [ ] Plutonique = refroidissement lent en profondeur, volcanique = rapide en surface (⚠️, une source de vulgarisation et un cours d’Oxford) : une seconde source explicite est à ajouter pour passer en ✅.
+- [ ] Felsique / mafique (⚠️, un seul manuel) : le critère central est la teneur en silice ; le livre parle de potassium et sodium contre magnésium et fer, attribue le classement à Bowen (son apport réel est la série de réaction et la cristallisation fractionnée) et dit les termes acide/basique abandonnés, point non confirmé.
+
+**Fiche 163** (p.130) — Vignobles sur roches plutoniques en France : granite, pierre bleue, gabbro
+- [ ] Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.
+- [ ] Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques ; une fiche INAO citée de seconde main parle de granite bleu, le cahier des charges 2022 cité de porphyres et roches métamorphiques. Cahier des charges original non lu (extranet bloqué). Pour Juliénas, la pierre bleue ne couvre qu’environ 42 % des sols, la formule « surtout diorite » est un peu forte.
+- [ ] Roches des crus communaux du Muscadet (⚠️, sources de niveau 2b seulement) : Clisson granite (sources concordantes), Gorges gabbro (une page ancienne écrit argile et quartz), Le Pallet gneiss ou gabbro-gneiss-grès selon les pages. Cahier des charges INAO des dénominations non lu.
+- [ ] Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.
+
+**Fiche 164** (p.132) — Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre
+- [ ] Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.
+- [ ] Forst et basalte (⚠️, une seule source) : basalte du volcan Pechstein limité à certains lieux-dits, le reste sur grès bigarré, calcaire, argile, limon.
+- [ ] Columbia Valley (⚠️, une source officielle) : le basalte est le substrat profond, les sols de surface sont surtout du loess et des alluvions de crue.
+- [ ] Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.
+- [ ] Fertilité des sols basaltiques (⚠️, divergence) : sols volcaniques réputés fertiles en agriculture générale, mais pauvres en matière organique et peu productifs en vigne selon un article technique ; la montmorillonite citée par le livre n’est pas retrouvée.
+- [ ] Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford).
+
+**Fiche 165** (p.132) — Les projections volcaniques : cendres, lapilli, ponce, tuf
+- [ ] Tuf et Greco di Tufo (⚠️, une seule source) : le tuf n’est pas le seul sol, calcaire et argile dominent selon la commune.
+- [ ] Tokaj (⚠️, une étude géologique à l’échelle régionale) : tuf rhyolitique dominant, ponce incluse dans les tufs ; Lipari non vérifié.
+- [ ] Santorin (⚠️) : sol aspa décrit par deux pages du même site, pas d’indépendance entre elles.
+- [ ] Ponce = écume de lave solidifiée et classement des téphras (⚠️) : définitions du livre non recoupées par les sources lues.
+
+**Fiche 166** (p.132) — Les « vins de volcan » : une signature commune ?
+- [ ] Analyses de John Szabo (⚠️) : rapportées par un article de presse technique, pas par une publication à comité de lecture ; le second chercheur cité par le livre n’est pas confirmé et n’est pas utilisé ici.
+- [ ] Caractères des sols volcaniques de vigne (⚠️, une source technique) : drainants, pauvres en matière organique, nutriments peu disponibles.
+- [ ] Rangen de Thann et Kaiserstuhl (⚠️, une source chacune) : volcanisme paléozoïque ancien pour le Rangen, loess sur socle volcanique miocène au Kaiserstuhl.
+- [ ] Santorin (⚠️, même site pour toutes les pages) ; statut « endormi » du volcan non confirmé.
+- [ ] Etna (⚠️, sources de niveau 2b) : sols d’origine volcanique, la nature basaltique des laves n’est pas confirmée.
+
+**Fiche 167** (p.133) — Naissance d’une roche sédimentaire
+- [ ] Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche.
+
+**Fiche 168** (p.133) — Roches détritiques : de l’argile au poudingue
+- [ ] Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.
+- [ ] Seuil sable/gravier de 2 mm (⚠️, une seule source, USGS, niveau 1) : norme de Wentworth ; le « > 4 mm » du livre désigne les cailloutis, pas une contradiction.
+
+**Fiche 169** (p.134) — Roches chimiques et biochimiques : craie, diatomite, gypse, tuffeau
+- [ ] Classement du silex (⚠️) : chimique selon le livre, biochimique (chert) selon Wikipedia ; classification non unanime, présentée comme telle.
+- [ ] Diatomite « abrasive » (⚠️) : le BRGM la décrit comme faiblement abrasive (Mohs 4,5-6), non reprise dans la fiche.
+
+**Fiche 170** (p.134) — Le calcaire et ses cousins : dolomie, marne, calcaire oolithique
+- [ ] Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % (Wikimonde).
+- [ ] Propriétés du calcaire (⚠️) : rétention d’eau très variable selon porosité ; pH élevé cohérent mais non chiffré dans les sources lues.
+- [ ] Marne (⚠️) : « parts égales » du livre simplifie un intervalle d’environ 35-65 % d’argile (Universalis, une seule source).
+- [ ] Calcaires oolithiques de Côte-d’Or (⚠️) : confirmés dans le Bajocien par une seule source (WineWithSeth) ; entroques de Pouilly-Fuissé non vérifiées, non reprises.
+
+**Fiche 171** (p.135) — Galets roulés et graves : drainants, inertes, et pourtant précieux
+- [ ] Galets drainants et inertes (⚠️) : propriétés reprises du livre ; seul le cas de Châteauneuf-du-Pape est documenté (WineWithSeth, une seule source), les graves bordelaises n’ont pas été recoupées.
+- [ ] Rôle thermique des galets (⚠️) : débat présenté comme tel (opinion de Ralph Garcin, Château La Nerthe, rapportée par une source), non tranché.
+- [ ] Inertie limitée aux galets et graves : le livre ne l’applique pas aux lœss ni aux sables.
+
+**Fiche 172** (p.135) — Calera : chercher du calcaire hors de France
+- [ ] Date de plantation (⚠️) : le livre dit 1974 ; Wine Spectator situe la découverte du site en 1974, Vinography l’achat du terrain en 1973 et la plantation en 1975 ; seule la décennie est retenue, aucun exercice sur l’année.
+- [ ] Four à chaux sur la propriété (⚠️, une source : Vinography).
+
+**Fiche 173** (p.136) — Le métamorphisme : une roche transformée sans fondre
+- [ ] Ordre de grandeur de la pression (⚠️) : « centaines de MPa » vient d’un calcul de contrôle (environ 27 MPa par km), cohérent avec le diagramme du livre et la fourchette des gneiss, mais non trouvé tel quel dans une source lue ; il corrige l’erreur « 12 fois » du livre (contradiction interne p. 136 / p. 137).
+
+**Fiche 175** (p.136) — Vignobles sur ardoises et schistes : Anjou noir, Faugères, Moselle, Priorat, Douro
+- [ ] Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.
+- [ ] Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.
+- [ ] Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.
+- [ ] Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Wikipédia et Turisme Priorat non lus.
+- [ ] Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.
+- [ ] Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).
+
+**Fiche 176** (p.137) — Gneiss, amphibolite, serpentinite : du Muscadet à la Wachau
+- [ ] Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges INAO du Muscadet Sèvre-et-Maine n’a pas pu être lu (extranet bloqué).
+- [ ] Nombre de crus du Muscadet (⚠️) : 7 selon Wikipédia, 10 zones selon l’introduction du même article et Wine With Seth ; volontairement non retenu dans la fiche et les exercices.
+- [ ] Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.
+- [ ] Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.
+
+**Fiche 178** (p.139) — Naissance d’un sol : la pédogenèse
+- [ ] Durée de formation d’un sol (⚠️, une seule source de niveau 1, AFES) : de quelques décennies à plusieurs millénaires par cm selon la roche et le climat ; le « 1 cm par siècle » est une moyenne, pas une règle.
+- [ ] Altération chimique des roches (⚠️) : le détail (eau acide, hydrolyse) n’est pas doublé par deux sources de niveau 1 ou 2a ; la fiche n’en retient que l’idée générale.
+
+**Fiche 179** (p.140) — Lire un sol : les horizons
+- [ ] Horizons O, A, E, B, C, R (⚠️, une seule source de niveau 2b) : Lepeltier omet l’horizon E ; la lettre est O (organique) et non le chiffre 0 ; le détail R/M/D du Référentiel pédologique n’est pas vérifié.
+- [ ] 34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).
+- [ ] 32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée).
+
+**Fiche 180** (p.142) — Pas de sol idéal pour la vigne
+- [ ] Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.
+- [ ] 51 grands crus d’Alsace : confirmé par Wikipedia et Atout France, mais le site du CIVA (niveau 1) n’a pas pu être lu.
+
+**Fiche 181** (p.142) — Nutrition minérale : ce que le sol donne vraiment
+- [ ] Azote comme facteur chimique clé et primauté des propriétés physiques (⚠️, une seule source, van Leeuwen et al., IVES).
+- [ ] Disponibilité des minéraux par le pH, le microbiote et le complexe argilo-humique (⚠️) : reprise du livre, non revérifiée ici (voir les fiches 97 à 100).
+- [ ] Divergence Lepeltier / van Leeuwen sur le microbiote et la typicité : signalée, non tranchée.
+- [ ] Six macro-éléments N, P, K, Mg, Ca, S (⚠️) : liste du livre, non recoupée dans la recherche (à doubler : IFV, chambre d’agriculture).
+
+**Fiche 182** (p.143) — Seguin, van Leeuwen et l’eau : ce qui fait la qualité
+- [ ] Seguin : la qualité tient à la régulation de l’eau plus qu’à la fertilité (⚠️, sources van Leeuwen OENO One et Goode, secondaires) ; la précision du livre sur des sols carencés en azote et magnésium n’a pas été retrouvée et n’est pas reprise.
+- [ ] Date de Seguin (⚠️) : le livre dit 1986 ; les travaux datent de 1969 et des années 1970, avec une synthèse en 1986 ; les publications HAL INRAE n’ont pu être lues.
+- [ ] « Léger déficit après véraison » : la précision sur la véraison n’apparaît pas dans les résumés lus et n’est pas reprise.
+- [ ] Étude bordelaise (⚠️, source primaire unique) : 7 propriétés, environ 400 ha, 9 types de sols, les chiffres du livre correspondent.
+
+**Fiche 183** (p.143) — Ce qui règle l’eau : texture, fissures, pierrosité et argiles
+- [ ] Smectites contre kaolinite et illite (⚠️, deux sources de niveau 2b seulement : Wikipedia, Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre).
+- [ ] Étude Bourguignon / LAMS (⚠️) : 53 parcelles et environ 86 % confirmés par une fiche de conférence, mais étude inédite, inachevée et critiquée ; date 2002 non confirmée et non reprise ; à présenter comme corrélation de laboratoire.
+- [ ] Wittendal (⚠️, une seule source secondaire, Goode) : 2 816 climats et non « vignobles » ; étude primaire non retrouvée.
+
+**Fiche 184** (p.144) — Châteauneuf-du-Pape : une mosaïque de sols
+- [ ] Secteurs géologiques (⚠️) : sources du syndicat de Châteauneuf, de Wine With Seth, du Département de Vaucluse ; les styles par secteur viennent du livre (Georges Truc), non revérifiés.
+- [ ] « Calcaires urgoniens » (⚠️) : terme du livre absent des sources lues, qui parlent de calcaires crétacés (l’Urgonien est un faciès du Crétacé inférieur) ; orientation ouest/est du livre non confirmée telle quelle.
+- [ ] Lampourdier (⚠️) : attesté comme lieu de carrières de sables et calcaires, pas explicitement comme massif géologique ; non repris.
+
+**Fiche 185** (p.146) — Rationaliser le terroir : l’Unité terroir de base (UTB)
+- [ ] Études de sol commandées par l’INAO dès la fin des années 1930 : l’INAO date de 1935 et les premières délimitations de 1936-1938, mais le caractère géo-pédologique de ces analyses n’est pas confirmé ; fait attribué à Lepeltier.
+- [ ] Précocité, vigueur et alimentation en eau comme trois variables de l’UTB : précocité et eau sont documentées (étude Anjou, Rioux, Guilbault, Morlat), la vigueur n’a pas été retrouvée comme variable de l’UTB elle-même.
+- [ ] Attribution à l’INRA d’Angers et à René Morlat : concordante avec les sources lues (IVES) mais aucune page INRAE directe ; le rôle de Salette et d’Asselin cités par le livre n’est pas établi.
+
+**Fiche 186** (p.148) — De l’UTB à l’UTV : cépage, climat du Nouveau Monde et Mendoza
+- [ ] Paraje Altamira : reconnue en 2013 (résolution C.44) et zone étendue en 2017 (INV, résolution E 82/2017) ; le livre place la reconnaissance en 2017 : divergence signalée, non tranchée en faveur du livre.
+- [ ] Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.
+- [ ] Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.
+- [ ] Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie.
+
+**Fiche 187** (p.149) — L’homme fabrique le terroir
+- [ ] Prix du foncier champenois 2020 : le livre donne 1 196 000 €/ha, le chiffre SAFER relayé pour l’AOC entière est 1 041 000 €/ha ; seul l’ordre de grandeur (environ 1 M€/ha) est repris, divergence signalée.
+- [ ] Hors appellation : « moins de 14 000 €/ha » du livre, cohérent avec les terres et prés de la Marne (10 740 €/ha en 2020) mais mélange peut-être deux séries ; non repris en chiffre.
+- [ ] Seuil « plus de 50 % » d’anthroposols : non retrouvé (Référentiel pédologique AFES à consulter), non repris ; le terme lui-même est bien employé en pédologie viticole.
+- [ ] Murs, irrigation et dispositifs antigel comme leviers sur le climat : énoncé du livre, non recoupé par une source dédiée.
+
+**Fiche 188** (p.149) — Les quatre sens du mot « terroir »
+- [ ] Typologie en quatre sens (matière, espace, conscience, slogan) attribuée à Vaudour (2003) : non retrouvée dans les textes de Vaudour lus, ni l’année 2003 ; présentée comme « selon Lepeltier, d’après Vaudour ». Ne pas la confondre avec les quatre registres d’un article de 1996-98 (milieu exploité, plante, matière première, vin).
+- [ ] Libellés des quatre sens (« agro-culturale », « terroir-matière », etc.) : reformulés d’après le livre, non recoupés.

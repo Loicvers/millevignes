@@ -29,7 +29,7 @@ const FICHES = [];
 const SOUS = {
   "Viticulture":        ["Cycle de la vigne", "Conduite", "Taille", "Maladies", "Sol vivant", "Biodiversité", "Modèles agricoles"],
   "Cépages":            ["Ampélographie", "Origine & parenté", "Mutations", "Profil & usage"],
-  "Géologie-Terroir":   ["Calcaire", "Argile", "Schiste", "Galets", "Volcanique"],
+  "Géologie-Terroir":   ["Roches", "Sols", "Calcaire", "Argile", "Schiste", "Galets", "Volcanique"],
   "Géographie viticole":["Notion de terroir", "Régions", "Appellations", "Climat"],
   "Classifications":    ["Histoire des crus", "AOC / IGP", "Hiérarchies"],
   "Vinification":       ["Macérations", "Fermentations", "Techniques", "Vin nature"],
