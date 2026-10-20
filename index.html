@@ -170,6 +170,9 @@
   .empty h3{font-family:'Cormorant',serif;font-size:26px;color:var(--ink);margin-bottom:8px}
 
   footer.wrap{border-top:1px solid var(--line);padding-top:24px;padding-bottom:24px;font-size:12px;color:var(--muted);text-align:center}
+  .foot-save{display:flex;gap:6px 22px;justify-content:center;flex-wrap:wrap}
+  .foot-reset{margin-top:44px;padding-top:18px;border-top:1px dotted var(--line)}
+  .reset-all.danger{color:var(--wine)}
   .reset-all{font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
 
   .btn{font-family:inherit;font-size:13px;font-weight:600;padding:10px 14px;min-height:44px;border-radius:3px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink)}
@@ -248,19 +251,28 @@
   @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*{width:100%}.ex-actions .later{margin-left:0}}
   .tab{white-space:nowrap}
   .stat-line{margin-bottom:10px}
+  /* cibles tactiles : 44 px de haut sur mobile et écrans tactiles, sans grossir le texte */
+  @media (max-width:560px),(pointer:coarse){
+    .chip,.chip.sub{min-height:44px;display:inline-flex;align-items:center}
+    .geo-node{min-height:44px;display:flex;align-items:center;padding-top:0;padding-bottom:0}
+    .filt-panel>summary,.clear,.reset-all,.srs-btn,.mini{min-height:44px}
+    .reset-all,.clear{padding:0 8px}
+    .cours summary,.to-check summary{padding:12px 0;min-height:44px}
+    .tab,.card-toggle{min-height:44px}
+  }
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap head-inner">
-    <div class="brand">L'Atelier des Mille Vignes<span class="sub">Base de révision œnologique</span></div>
+    <h1 class="brand">L'Atelier des Mille Vignes<span class="sub">Base de révision œnologique</span></h1>
   </div>
-  <div class="tabs">
-    <button class="tab on" data-mode="revision">Fiches</button>
-    <button class="tab" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
-    <button class="tab" data-mode="lexique">Lexique</button>
-    <button class="tab" data-mode="atelier">Masterclass</button>
+  <div class="tabs" role="tablist" aria-label="Sections du site">
+    <button class="tab on" role="tab" aria-selected="true" data-mode="revision">Fiches</button>
+    <button class="tab" role="tab" aria-selected="false" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-mode="lexique">Lexique</button>
+    <button class="tab" role="tab" aria-selected="false" data-mode="atelier">Masterclass</button>
   </div>
 </header>
 
@@ -303,9 +315,9 @@
 
 <footer class="wrap">
   L'Atelier des Mille Vignes — chaque fiche reformulée et créditée à sa source<br><br>
-  <button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button> ·
-  <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden> ·
-  <button class="reset-all" id="resetAll">Réinitialiser toute ma progression</button>
+  <div class="foot-save"><button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button>
+  <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden></div>
+  <div class="foot-reset"><button class="reset-all danger" id="resetAll">Réinitialiser toute ma progression</button></div>
 </footer>
 <section id="support"></section>
 <div id="zoom" class="zoom" role="dialog" aria-label="Schéma agrandi" hidden><button class="btn zoom-x">Fermer ✕</button><div class="zoom-in"></div></div>
@@ -435,7 +447,8 @@ function selGeo(sel){
 document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function setMode(m){taire();mode=m;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode===m));document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
+function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
+function setMode(m){taire();mode=m;marquerOnglet(m);document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -760,12 +773,12 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
-let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
+let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),schemaVu=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title,dejaLues=[]){
-  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();decouvertes=new Set(dejaLues);
+  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
-  mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.mode==='due'));
+  mode='due';marquerOnglet('due');
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   showExercise();window.scrollTo(0,0);
@@ -787,7 +800,7 @@ function showExercise(){
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
   box.append(el('div','ex-prompt',ex.prompt));
-  const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');
+  const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
   box.append(body,fb,actions);grid.append(box);
   const submit=(answer,label='Valider')=>{const b=el('button','btn primary',label);b.onclick=()=>finish(ex,grade(ex,answer()),fb,actions,body);actions.append(b);return b;};
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
@@ -860,7 +873,7 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
 }
 /* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
 function lireChapitre(titre,fiches,depart=0){
-  mode='due';document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  mode='due';marquerOnglet(null);
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   const page=i=>{
@@ -909,6 +922,12 @@ fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
   if(typeof RECITS!=='undefined')toc.forEach(c=>{if(!par.has(c)&&RECITS.some(r=>r.chapitre===c.chapitre))CHAPS.push({...c,fiches:[]});});
   CHAPS.sort((a,b)=>a.page-b.page);render();
 }).catch(()=>{});
+// Le schéma s'affiche en entier la première fois dans la séance, puis derrière « Voir le schéma » (comme la synthèse).
+function schemaCorrection(f){
+  if(!f.schema)return '';
+  if(!schemaVu.has(f.id)){schemaVu.add(f.id);return schemaHTML(f);}
+  return `<details class="cours"><summary>Voir le schéma</summary>${schemaHTML(f)}</details>`;
+}
 function finish(ex,ok,fb,actions,body){
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
   if(ok!==null){score.total++;if(ok)score.ok++;
@@ -921,7 +940,7 @@ function finish(ex,ok,fb,actions,body){
   if(expl)fb.append(el('p','fb-expl',expl));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
-  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
+  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
@@ -935,6 +954,7 @@ function finish(ex,ok,fb,actions,body){
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
+  fb.tabIndex=-1;fb.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction
 }
 // Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 7 jours sans export.
 const SAVED_KEY='mv_saved_at';
@@ -973,7 +993,7 @@ document.getElementById('importProg').onchange=async e=>{
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
   saveProg();updateBadges();render();
 };
-document.getElementById('resetAll').onclick=()=>{if(confirm('Effacer toute ta progression de mémorisation ?')){prog={};save();lues={};saveLues();updateBadges();render();}};
+document.getElementById('resetAll').onclick=()=>{if((prompt('Cela efface toute ta progression de mémorisation, sans retour possible. Pense d\'abord à la sauvegarder.\n\nPour confirmer, tape EFFACER :')||'').trim()==='EFFACER'){prog={};save();lues={};saveLues();updateBadges();render();}};
 </script>
 </body>
 </html>
