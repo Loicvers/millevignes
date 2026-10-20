@@ -49,9 +49,10 @@ FICHES.push(
       "Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25-30 °C, Wine With Seth 20-30 °C ; retenir « autour de 25-30 °C ».",
       "Ralentissement et arrêt (⚠️) : sources de niveau 2b seulement ; elles parlent de forte altération vers 40 °C et non d’arrêt total, et une source évoque une inhibition dès 35 °C.",
       "Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).",
-      "Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche."
+      "Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; Huglin 1978, Nouveau mode d’évaluation des possibilités héliothermiques d’un milieu viticole ; Familia Torres, Budbreak ; Wikipedia, Winkler index ; Kriedemann 1968, Photosynthesis in vine leaves (Vitis) ; Wine With Seth, Photosynthesis in vines ; Wine With Seth, Latitude and the wine belt ; Jones, Climate, grapes and wine (IVES).",
+    src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; Huglin 1978, Nouveau mode d’évaluation des possibilités héliothermiques d’un milieu viticole ; Familia Torres, Budbreak ; Kriedemann 1968, Photosynthesis in vine leaves (Vitis) ; Wine With Seth, Photosynthesis in vines ; Wine With Seth, Latitude and the wine belt ; Jones, Climate, grapes and wine (IVES).",
     page: 105
   },
   {
@@ -186,7 +187,7 @@ FICHES.push(
         {
           h: "Les cinq régions",
           blocs: [
-            { imp: "important", txt: "Les seuils d’origine sont en °F-jours ; les équivalents en °C-jours viennent de Wikipedia, qui scinde la région I en Ia et Ib." }
+            { imp: "important", txt: "Les seuils d’origine sont en °F-jours ; leurs équivalents en °C-jours sont approchés et restent à sourcer." }
           ],
           table: { caption: "Les cinq régions de Winkler, de la plus fraîche à la plus chaude", head: ["Région", "°F-jours", "°C-jours (≈)"], rows: [
             { imp: "essentiel", cells: ["I", "moins de 2500", "environ 1390"] },
@@ -210,14 +211,15 @@ FICHES.push(
         { imp: "important", txt: "Limite : il ignore la longueur du jour." },
         { imp: "utile", txt: "UC Davis le renouvelle (projet Forrestel, 2021)." }
       ],
-      src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Wikipedia, Winkler index ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index. Cf. Mille Vignes, p. 108-110."
+      src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index. Cf. Mille Vignes, p. 108-110."
     },
     status: "needs_review",
     to_check: [
       "Projet UC Davis (⚠️) : le livre parle de 74 parcelles de la Napa Valley et de 60 cépages testés aux canicules ; UC Davis précise que 74 blocs ont fourni des données de chimie 2015 en cabernet-sauvignon et que les 60 cultivars sont répartis dans deux blocs.",
-      "Seuils des régions : donnés en °F-jours à l’origine ; équivalents en °C-jours d’après Wikipedia (le livre ne cite pas les seuils)."
+      "Seuils des régions : donnés en °F-jours à l’origine (Amerine et Winkler 1944) ; équivalents en °C-jours et scission de la région I en Ia et Ib à sourcer (le livre ne cite pas les seuils).",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Wikipedia, Winkler index ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index.",
+    src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index.",
     page: 108
   },
   {
@@ -411,9 +413,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Grêle (⚠️, une seule source journalistique citant Météo-France) : le livre dit qu’elle devient plus courante ; la source conclut à l’absence de tendance claire.",
-      "Mistral (⚠️, une seule source) : l’INAO confirme l’exposition de la vallée du Rhône au mistral, mais pas l’effet du vent sur la vigne."
+      "Mistral (⚠️, une seule source) : l’INAO confirme l’exposition de la vallée du Rhône au mistral, mais pas l’effet du vent sur la vigne.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 111-112 ; INAO, fiche AOC (vallée du Rhône exposée au mistral) ; JancisRobinson.com, Petaluma Gap, Trump’s first new AVA ; Wikipedia, Van Duzer Corridor AVA ; Libération, La grêle, un péril climatique qui grossit en France (Météo-France, CCR, France Assureurs).",
+    src: "Mille Vignes, P. Lepeltier, p. 111-112 ; INAO, fiche AOC (vallée du Rhône exposée au mistral) ; JancisRobinson.com, Petaluma Gap, Trump’s first new AVA ; Libération, La grêle, un péril climatique qui grossit en France (Météo-France, CCR, France Assureurs).",
     page: 111
   },
   {
@@ -571,9 +574,10 @@ FICHES.push(
       "Quota Mille : citée par Gambero Rosso comme limite haute, absente du disciplinare consulté",
       "Limites d’altitude « 1000 m sud et est, 800 m nord » (livre) : non retrouvées ; le disciplinare donne des courbes de niveau variables (800, 900, 1000 m au nord, 400 m à l’est, 600 m au sud-ouest), présentées comme telles",
       "DOC contre AOC : le livre emploie les deux (texte et légende de la carte) ; DOC confirmé par le disciplinare",
-      "Débat de 2024 sur un passage éventuel en DOCG : non acté, non repris dans la fiche"
+      "Débat de 2024 sur un passage éventuel en DOCG : non acté, non repris dans la fiche",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 114 ; Disciplinare Etna DOC (copie AIS), art. 1, 3 et 9 ; Etna DOC (Wikipedia) ; Gambero Rosso, Etna DOC et Quota Mille",
+    src: "Mille Vignes, P. Lepeltier, p. 114 ; Disciplinare Etna DOC (copie AIS), art. 1, 3 et 9 ; Gambero Rosso, Etna DOC et Quota Mille",
     page: 114
   },
   {
@@ -583,7 +587,7 @@ FICHES.push(
     niveau: "Fondamental",
     geo: null,
     titre: "Exposition et pente : où tourner la vigne",
-    synth: "Dans l’hémisphère nord, les versants tournés vers l’équateur (sud, sud-est, sud-ouest) sont les plus chauds ; une pente forte et bien exposée reçoit les rayons plus à la perpendiculaire et accumule plus de chaleur, et l’air froid s’y écoule vers le bas, ce qui limite le gel. Les coteaux de Bourgogne (Nuits-Saint-Georges, Meursault) regardent surtout l’est à sud-est, l’Hermitage plutôt le sud. Le nord reste l’exposition la plus difficile, choisie pour compenser un autre facteur : sur la Montagne de Reims, Verzenay, Verzy et Mailly, grands crus exposés nord, sont abrités des dépressions de sud-ouest. Les pentes extrêmes existent aussi, comme le Calmont en Moselle (plus de 65°).",
+    synth: "Dans l’hémisphère nord, les versants tournés vers l’équateur (sud, sud-est, sud-ouest) sont les plus chauds ; une pente forte et bien exposée reçoit les rayons plus à la perpendiculaire et accumule plus de chaleur, et l’air froid s’y écoule vers le bas, ce qui limite le gel. Les coteaux de Bourgogne (Nuits-Saint-Georges, Meursault) regardent surtout l’est à sud-est, l’Hermitage plutôt le sud. Le nord reste l’exposition la plus difficile, choisie pour compenser un autre facteur : sur la Montagne de Reims, Verzenay, Verzy et Mailly, grands crus exposés nord, sont abrités des dépressions de sud-ouest. Les pentes extrêmes existent aussi, comme en Moselle (Allemagne).",
     mnemo: "Le coteau est un transat : on le tourne vers le soleil ; le nord n’est un bon siège que s’il fait coupe-vent.",
     flash: { q: "Dans l’hémisphère nord, quelles expositions sont les plus chaudes ?", a: "Celles tournées vers l’équateur : sud, sud-est et sud-ouest.", keys: [["sud"]] },
     qcm: { q: "Pourquoi les pentes limitent-elles le risque de gel ?", opts: ["L’air froid s’écoule vers le bas", "Leur sol est toujours plus sombre", "Le vent y est toujours nul", "La neige y protège les bourgeons"], good: 0 },
@@ -599,10 +603,10 @@ FICHES.push(
       "Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris",
       "Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (WineWithSeth) ; moulin de Verzenay et vents d’ouest non vérifiés",
       "Expositions de Nuits-Saint-Georges, Meursault et Hermitage : une seule source (WineWithSeth)",
-      "Calmont (Moselle), plus de 65° : une seule source (Wikipedia) ; le livre parle de plus de 35° pour les vignobles nordiques",
-      "Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée"
+      "Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 115 ; WineWithSeth, Aspect and sun angle at different latitudes ; WineWithSeth, Montagne de Reims ; Calmont (Wikipedia)",
+    src: "Mille Vignes, P. Lepeltier, p. 115 ; WineWithSeth, Aspect and sun angle at different latitudes ; WineWithSeth, Montagne de Reims",
     page: 115
   },
   {
@@ -684,11 +688,12 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Classement du livre par surface plantée (méditerranéen, puis semi-aride, puis tempéré) : non retrouvé dans les sources consultées",
-      "Willamette (Oregon) : le livre la range en climat maritime, Wikipedia lui attribue le type Köppen Csb (méditerranéen à été frais) ; classement non tranché",
+      "Willamette (Oregon) : le livre la range en climat maritime ; un classement Köppen Csb (méditerranéen à été frais) est avancé ailleurs, à sourcer ; non tranché",
       "Descriptions des types de climat (étés, pluies) : reprises du livre, non recoupées par une source indépendante",
-      "Carbonneau et Escudier, De l’œnologie à la viticulture (Quae) : année de parution (2017 selon le livre) non confirmée"
+      "Carbonneau et Escudier, De l’œnologie à la viticulture (Quae) : année de parution (2017 selon le livre) non confirmée",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 117 ; Wikipedia, Climate categories in viticulture ; Puga et al. 2022, A climatic classification of the world’s wine regions (Oeno One) ; Éditions Quae, Alain Carbonneau",
+    src: "Mille Vignes, P. Lepeltier, p. 117 ; Puga et al. 2022, A climatic classification of the world’s wine regions (Oeno One) ; Éditions Quae, Alain Carbonneau",
     page: 117
   },
   {
@@ -711,13 +716,13 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      
       "Krakatau : couchers de soleil rouges environ 3 ans ; le refroidissement chiffré (jusqu’à 1,2 °C) d’une source universitaire n’est pas recoupé et n’est pas repris",
       "Mont Saint Helens : l’USGS le cite pour son CO2, pas comme éruption refroidissante ; classement du livre non confirmé, volontairement absent des exercices",
       "Millésime 1816 en Bourgogne ou ailleurs : date de vendanges non vérifiée, non reprise",
-      "Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA"
+      "Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 119 ; Wikipedia, Year Without a Summer ; Futura-Sciences, L’éruption du Tambora est bien responsable de l’année 1816 sans été ; Oregon State University, Describe the 1883 eruption of Krakatau ; USGS, Volcanoes can affect climate ; GIEC AR5, groupe I, chap. 5 (FAQ 5.1) ; NASA Earth Observatory, Volcanoes and climate change",
+    src: "Mille Vignes, P. Lepeltier, p. 119 ; Futura-Sciences, L’éruption du Tambora est bien responsable de l’année 1816 sans été ; Oregon State University, Describe the 1883 eruption of Krakatau ; USGS, Volcanoes can affect climate ; GIEC AR5, groupe I, chap. 5 (FAQ 5.1) ; NASA Earth Observatory, Volcanoes and climate change",
     page: 119
   },
   {
@@ -800,9 +805,10 @@ FICHES.push(
       "Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850, chap. 5, tableau 5.1, lu), qui précise que les durées varient selon les auteurs : divergence de convention, non tranchée",
       "Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon",
       "Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs",
-      "Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris"
+      "Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 120 ; Wikipedia, Description of the MWP and LIA in IPCC reports (résumé de l’AR5) ; Études héraultaises, L’hiver 1709 (2006) ; Büntgen et al. 2016, Nature Geoscience (Late Antique Little Ice Age)",
+    src: "Mille Vignes, P. Lepeltier, p. 120 ; Études héraultaises, L’hiver 1709 (2006) ; Büntgen et al. 2016, Nature Geoscience (Late Antique Little Ice Age)",
     page: 120
   },
   {

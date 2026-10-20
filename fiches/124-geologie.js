@@ -87,8 +87,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Jurassique, massif du Jura, Brongniart 1829 (⚠️) : l’attribution à Brongniart repose sur une source de niveau 2b (Wikipedia) ; l’étymologie, elle, concorde avec le livre.","Silurien, Silures, Murchison 1835 (⚠️) : une seule source (Geological Society) ; concorde avec le livre.","Carbonifère, « qui porte du charbon », 1822 (⚠️) : source de niveau 2b (Wikipedia) ; concorde avec le livre.","Provenance grecque ou latine de nombreux noms d’âges (⚠️) : affirmation du livre, non recoupée."],
-    src: "Mille Vignes, P. Lepeltier, p. 127 ; Geological Society of London, Silurian ; Wikipedia, Jurassic et Carboniferous ; ICS, International Chronostratigraphic Chart 2023-06.",
+    to_check: [
+      "Jurassique, massif du Jura, Brongniart 1829 (⚠️) : attribution à Brongniart à sourcer ; l’étymologie concorde avec le livre.",
+      "Silurien, Silures, Murchison 1835 (⚠️) : une seule source (Geological Society) ; concorde avec le livre.",
+      "Carbonifère, « qui porte du charbon », 1822 (⚠️) : à sourcer ; concorde avec le livre.",
+      "Provenance grecque ou latine de nombreux noms d’âges (⚠️) : affirmation du livre, non recoupée.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 127 ; Geological Society of London, Silurian ; ICS, International Chronostratigraphic Chart 2023-06.",
     page: 127
   },
   {
@@ -157,8 +163,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.","Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques ; une fiche INAO citée de seconde main parle de granite bleu, le cahier des charges 2022 cité de porphyres et roches métamorphiques. Cahier des charges original non lu (extranet bloqué). Pour Juliénas, la pierre bleue ne couvre qu’environ 42 % des sols, la formule « surtout diorite » est un peu forte.","Roches des crus communaux du Muscadet (⚠️, sources de niveau 2b seulement) : Clisson granite (sources concordantes), Gorges gabbro (une page ancienne écrit argile et quartz), Le Pallet gneiss ou gabbro-gneiss-grès selon les pages. Cahier des charges INAO des dénominations non lu.","Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue."],
-    src: "Mille Vignes, P. Lepeltier, p. 130 et 132 ; Inter Beaujolais (Côte de Brouilly, Juliénas) ; WineWiki (Northern Rhône, Côte de Brouilly, Juliénas, crus communaux du Muscadet) ; The Wine Doctor (Muscadet, Gorges) ; WineWisdom (crus communaux du Muscadet)",
+    to_check: [
+      "Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.",
+      "Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques ; une fiche INAO citée de seconde main parle de granite bleu, le cahier des charges 2022 cité de porphyres et roches métamorphiques. Cahier des charges original non lu (extranet bloqué). Pour Juliénas, la pierre bleue ne couvre qu’environ 42 % des sols, la formule « surtout diorite » est un peu forte.",
+      "Roches des crus communaux du Muscadet (⚠️, sources de niveau 2b seulement) : Clisson granite (sources concordantes), Gorges gabbro (une page ancienne écrit argile et quartz), Le Pallet gneiss ou gabbro-gneiss-grès selon les pages. Cahier des charges INAO des dénominations non lu.",
+      "Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 130 et 132 ; Inter Beaujolais (Côte de Brouilly, Juliénas) ; The Wine Doctor (Muscadet, Gorges) ; WineWisdom (crus communaux du Muscadet)",
     page: 130
   },
   {
@@ -180,8 +192,16 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.","Forst et basalte (⚠️, une seule source) : basalte du volcan Pechstein limité à certains lieux-dits, le reste sur grès bigarré, calcaire, argile, limon.","Columbia Valley (⚠️, une source officielle) : le basalte est le substrat profond, les sols de surface sont surtout du loess et des alluvions de crue.","Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.","Fertilité des sols basaltiques (⚠️, divergence) : sols volcaniques réputés fertiles en agriculture générale, mais pauvres en matière organique et peu productifs en vigne selon un article technique ; la montmorillonite citée par le livre n’est pas retrouvée.","Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford)."],
-    src: "Mille Vignes, P. Lepeltier, p. 132 ; INAO (fiche Côtes d’Auvergne) ; Washington State Wine Commission (Columbia Valley) ; WineWiki (Forst) ; Vins et Millésimes (Savennières) ; Réussir Vigne (vignobles volcaniques) ; WorldAtlas (sols volcaniques) ; Futura-Sciences (porphyrique) ; Université d’Oxford, Earth Sciences (andésite)",
+    to_check: [
+      "Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.",
+      "Forst et basalte (⚠️, une seule source) : basalte du volcan Pechstein limité à certains lieux-dits, le reste sur grès bigarré, calcaire, argile, limon.",
+      "Columbia Valley (⚠️, une source officielle) : le basalte est le substrat profond, les sols de surface sont surtout du loess et des alluvions de crue.",
+      "Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.",
+      "Fertilité des sols basaltiques (⚠️, divergence) : sols volcaniques réputés fertiles en agriculture générale, mais pauvres en matière organique et peu productifs en vigne selon un article technique ; la montmorillonite citée par le livre n’est pas retrouvée.",
+      "Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford).",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 132 ; INAO (fiche Côtes d’Auvergne) ; Washington State Wine Commission (Columbia Valley) ; Vins et Millésimes (Savennières) ; Réussir Vigne (vignobles volcaniques) ; WorldAtlas (sols volcaniques) ; Futura-Sciences (porphyrique) ; Université d’Oxford, Earth Sciences (andésite)",
     page: 132
   },
   {
@@ -203,8 +223,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Tuf et Greco di Tufo (⚠️, une seule source) : le tuf n’est pas le seul sol, calcaire et argile dominent selon la commune.","Tokaj (⚠️, une étude géologique à l’échelle régionale) : tuf rhyolitique dominant, ponce incluse dans les tufs ; Lipari non vérifié.","Santorin (⚠️) : sol aspa décrit par deux pages du même site, pas d’indépendance entre elles.","Ponce = écume de lave solidifiée et classement des téphras (⚠️) : définitions du livre non recoupées par les sources lues."],
-    src: "Mille Vignes, P. Lepeltier, p. 131-132 ; DO Lanzarote (Suelo) ; ICEX, Foods and Wines from Spain (vins de Lanzarote) ; WineWiki (Greco di Tufo, Santorini PDO, Pumice soils) ; article Springer sur la géologie volcanique de Tokaj",
+    to_check: [
+      "Tuf et Greco di Tufo (⚠️, une seule source) : le tuf n’est pas le seul sol, calcaire et argile dominent selon la commune.",
+      "Tokaj (⚠️, une étude géologique à l’échelle régionale) : tuf rhyolitique dominant, ponce incluse dans les tufs ; Lipari non vérifié.",
+      "Santorin (⚠️) : sol aspa décrit par deux pages du même site, pas d’indépendance entre elles.",
+      "Ponce = écume de lave solidifiée et classement des téphras (⚠️) : définitions du livre non recoupées par les sources lues.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 131-132 ; DO Lanzarote (Suelo) ; ICEX, Foods and Wines from Spain (vins de Lanzarote) ; article Springer sur la géologie volcanique de Tokaj",
     page: 132
   },
   {
@@ -226,8 +252,15 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Analyses de John Szabo (⚠️) : rapportées par un article de presse technique, pas par une publication à comité de lecture ; le second chercheur cité par le livre n’est pas confirmé et n’est pas utilisé ici.","Caractères des sols volcaniques de vigne (⚠️, une source technique) : drainants, pauvres en matière organique, nutriments peu disponibles.","Rangen de Thann et Kaiserstuhl (⚠️, une source chacune) : volcanisme paléozoïque ancien pour le Rangen, loess sur socle volcanique miocène au Kaiserstuhl.","Santorin (⚠️, même site pour toutes les pages) ; statut « endormi » du volcan non confirmé.","Etna (⚠️, sources de niveau 2b) : sols d’origine volcanique, la nature basaltique des laves n’est pas confirmée."],
-    src: "Mille Vignes, P. Lepeltier, p. 132 ; Réussir Vigne (trois spécificités des vignobles volcaniques) ; WineWiki (Santorini PDO, Rangen de Thann, Kaiserstuhl, Mount Etna DOC) ; DO Lanzarote (Suelo)",
+    to_check: [
+      "Analyses de John Szabo (⚠️) : rapportées par un article de presse technique, pas par une publication à comité de lecture ; le second chercheur cité par le livre n’est pas confirmé et n’est pas utilisé ici.",
+      "Caractères des sols volcaniques de vigne (⚠️, une source technique) : drainants, pauvres en matière organique, nutriments peu disponibles.",
+      "Rangen de Thann et Kaiserstuhl (⚠️, une source chacune) : volcanisme paléozoïque ancien pour le Rangen, loess sur socle volcanique miocène au Kaiserstuhl.",
+      "Santorin (⚠️, même site pour toutes les pages) ; statut « endormi » du volcan non confirmé.",
+      "Etna (⚠️, sources de niveau 2b) : sols d’origine volcanique, la nature basaltique des laves n’est pas confirmée.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 132 ; Réussir Vigne (trois spécificités des vignobles volcaniques) ; DO Lanzarote (Suelo)",
     page: 132
   },
   {
@@ -249,8 +282,11 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche."],
-    src: "Mille Vignes, P. Lepeltier, p. 133-135 ; LibreTexts Geosciences (SUNY Potsdam), Sedimentary Geology, Introduction ; Wikipedia, Sedimentary rock ; Futura-Sciences, Roche sédimentaire.",
+    to_check: [
+      "Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 133-135 ; LibreTexts Geosciences (SUNY Potsdam), Sedimentary Geology, Introduction ; Futura-Sciences, Roche sédimentaire.",
     page: 133
   },
   {
@@ -272,8 +308,12 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.","Seuil sable/gravier de 2 mm (⚠️, une seule source, USGS, niveau 1) : norme de Wentworth ; le « > 4 mm » du livre désigne les cailloutis, pas une contradiction."],
-    src: "Mille Vignes, P. Lepeltier, p. 133-134 ; USGS, Open-File Report 2006-1195, Sediment nomenclature ; Wikipedia, Sedimentary rock ; Futura-Sciences, Roche sédimentaire ; Decanter, Walls: the joy of sand ; WineWithSeth, Châteauneuf-du-Pape AOC.",
+    to_check: [
+      "Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.",
+      "Seuil sable/gravier de 2 mm (⚠️, une seule source, USGS, niveau 1) : norme de Wentworth ; le « > 4 mm » du livre désigne les cailloutis, pas une contradiction.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 133-134 ; USGS, Open-File Report 2006-1195, Sediment nomenclature ; Futura-Sciences, Roche sédimentaire ; Decanter, Walls: the joy of sand ; WineWithSeth, Châteauneuf-du-Pape AOC.",
     page: 133
   },
   {
@@ -296,8 +336,12 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Classement du silex (⚠️) : chimique selon le livre, biochimique (chert) selon Wikipedia ; classification non unanime, présentée comme telle.","Diatomite « abrasive » (⚠️) : le BRGM la décrit comme faiblement abrasive (Mohs 4,5-6), non reprise dans la fiche."],
-    src: "Mille Vignes, P. Lepeltier, p. 134 ; Wikipedia, Sedimentary rock ; Futura-Sciences, Roche sédimentaire et Tuffeau ; BRGM/MineralInfo, Diatomite ; Champagne Larmandier-Bernier, Géologie, pédologie et dégustation ; Wine Review Online, Bubbling up from the chalk.",
+    to_check: [
+      "Classement du silex (⚠️) : chimique selon le livre ; un classement biochimique (chert) est avancé ailleurs, à sourcer ; classification non unanime, présentée comme telle.",
+      "Diatomite « abrasive » (⚠️) : le BRGM la décrit comme faiblement abrasive (Mohs 4,5-6), non reprise dans la fiche.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 134 ; Futura-Sciences, Roche sédimentaire et Tuffeau ; BRGM/MineralInfo, Diatomite ; Champagne Larmandier-Bernier, Géologie, pédologie et dégustation ; Wine Review Online, Bubbling up from the chalk.",
     page: 134
   },
   {
@@ -319,8 +363,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % (Wikimonde).","Propriétés du calcaire (⚠️) : rétention d’eau très variable selon porosité ; pH élevé cohérent mais non chiffré dans les sources lues.","Marne (⚠️) : « parts égales » du livre simplifie un intervalle d’environ 35-65 % d’argile (Universalis, une seule source).","Calcaires oolithiques de Côte-d’Or (⚠️) : confirmés dans le Bajocien par une seule source (WineWithSeth) ; entroques de Pouilly-Fuissé non vérifiées, non reprises."],
-    src: "Mille Vignes, P. Lepeltier, p. 134 ; Futura-Sciences, Roche carbonatée et Dolomie ; OQLF, Grand dictionnaire terminologique, calcaire ; Wikimonde, Calcaire ; Encyclopædia Universalis, Marnes ; Larmandier-Bernier, Géologie, pédologie et dégustation ; WineWithSeth, Côte d’Or geology.",
+    to_check: [
+      "Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % : à sourcer.",
+      "Propriétés du calcaire (⚠️) : rétention d’eau très variable selon porosité ; pH élevé cohérent mais non chiffré dans les sources lues.",
+      "Marne (⚠️) : « parts égales » du livre simplifie un intervalle d’environ 35-65 % d’argile (Universalis, une seule source).",
+      "Calcaires oolithiques de Côte-d’Or (⚠️) : confirmés dans le Bajocien par une seule source (WineWithSeth) ; entroques de Pouilly-Fuissé non vérifiées, non reprises.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 134 ; Futura-Sciences, Roche carbonatée et Dolomie ; OQLF, Grand dictionnaire terminologique, calcaire ; Encyclopædia Universalis, Marnes ; Larmandier-Bernier, Géologie, pédologie et dégustation ; WineWithSeth, Côte d’Or geology.",
     page: 134
   },
   {
@@ -386,8 +436,11 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Ordre de grandeur de la pression (⚠️) : « centaines de MPa » vient d’un calcul de contrôle (environ 27 MPa par km), cohérent avec le diagramme du livre et la fourchette des gneiss, mais non trouvé tel quel dans une source lue ; il corrige l’erreur « 12 fois » du livre (contradiction interne p. 136 / p. 137)."],
-    src: "Mille Vignes, P. Lepeltier, p. 136-137 ; Futura-Sciences, Métamorphisme ; Encyclopædia Universalis, Métamorphisme et géodynamique ; Wikipédia, Roche métamorphique.",
+    to_check: [
+      "Ordre de grandeur de la pression (⚠️) : « centaines de MPa » vient d’un calcul de contrôle (environ 27 MPa par km), cohérent avec le diagramme du livre et la fourchette des gneiss, mais non trouvé tel quel dans une source lue ; il corrige l’erreur « 12 fois » du livre (contradiction interne p. 136 / p. 137).",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 136-137 ; Futura-Sciences, Métamorphisme ; Encyclopædia Universalis, Métamorphisme et géodynamique",
     page: 136
   },
   {
@@ -408,9 +461,11 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Métamorphisme, Gneiss et Migmatite ; Encyclopædia Universalis, Métamorphisme et géodynamique ; Wikipédia, Roche métamorphique.",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Métamorphisme, Gneiss et Migmatite ; Encyclopædia Universalis, Métamorphisme et géodynamique",
     page: 136
   },
   {
@@ -432,7 +487,15 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.","Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.","Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.","Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Wikipédia et Turisme Priorat non lus.","Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.","Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284)."],
+    to_check: [
+      "Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.",
+      "Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.",
+      "Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.",
+      "Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Turisme Priorat non lu.",
+      "Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.",
+      "Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
     src: "Mille Vignes, P. Lepeltier, p. 136-138 ; INAO / Terroirs de Schiste (Faugères) ; Wine With Seth (Anjou noir, Moselle, Priorat, Douro, Côte-Rôtie) ; Indigo Wine (Clemens Busch).",
     page: 136
   },
@@ -456,8 +519,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges INAO du Muscadet Sèvre-et-Maine n’a pas pu être lu (extranet bloqué).","Nombre de crus du Muscadet (⚠️) : 7 selon Wikipédia, 10 zones selon l’introduction du même article et Wine With Seth ; volontairement non retenu dans la fiche et les exercices.","Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.","Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source."],
-    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Gneiss ; Encyclopædia Universalis, Métamorphisme ; INAO (Côtes du Roussillon Villages Caramany) ; cahier des charges autrichien DAC Wachau ; Wine With Seth (Muscadet) ; Wikipédia, Muscadet.",
+    to_check: [
+      "Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges INAO du Muscadet Sèvre-et-Maine n’a pas pu être lu (extranet bloqué).",
+      "Nombre de crus du Muscadet (⚠️) : 7 ou 10 selon les sources (Wine With Seth : 10 zones) ; cahiers des charges INAO non lus ; volontairement non retenu dans la fiche et les exercices.",
+      "Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.",
+      "Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 136-138 ; Futura-Sciences, Gneiss ; Encyclopædia Universalis, Métamorphisme ; INAO (Côtes du Roussillon Villages Caramany) ; cahier des charges autrichien DAC Wachau ; Wine With Seth (Muscadet)",
     page: 137
   },
   {
@@ -477,9 +546,11 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 138 ; Futura-Sciences, Roche métamorphique et Gneiss d’Acasta ; Wikipédia, Acasta Gneiss et Nuvvuagittuq Greenstone Belt ; Encyclopædia Universalis, Métamorphisme et géodynamique.",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 138 ; Futura-Sciences, Roche métamorphique et Gneiss d’Acasta ; Encyclopædia Universalis, Métamorphisme et géodynamique.",
     page: 138
   },
   {
@@ -501,8 +572,12 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Durée de formation d’un sol (⚠️, une seule source de niveau 1, AFES) : de quelques décennies à plusieurs millénaires par cm selon la roche et le climat ; le « 1 cm par siècle » est une moyenne, pas une règle.","Altération chimique des roches (⚠️) : le détail (eau acide, hydrolyse) n’est pas doublé par deux sources de niveau 1 ou 2a ; la fiche n’en retient que l’idée générale."],
-    src: "Mille Vignes, P. Lepeltier, p. 139-140 ; AFES, Étude et Gestion des Sols (Dokouchaev) ; AFES, Temps (vitesses de formation des sols) ; Wikipedia, Vasily Dokuchaev.",
+    to_check: [
+      "Durée de formation d’un sol (⚠️, une seule source de niveau 1, AFES) : de quelques décennies à plusieurs millénaires par cm selon la roche et le climat ; le « 1 cm par siècle » est une moyenne, pas une règle.",
+      "Altération chimique des roches (⚠️) : le détail (eau acide, hydrolyse) n’est pas doublé par deux sources de niveau 1 ou 2a ; la fiche n’en retient que l’idée générale.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 139-140 ; AFES, Étude et Gestion des Sols (Dokouchaev) ; AFES, Temps (vitesses de formation des sols)",
     page: 139
   },
   {
@@ -524,8 +599,13 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Horizons O, A, E, B, C, R (⚠️, une seule source de niveau 2b) : Lepeltier omet l’horizon E ; la lettre est O (organique) et non le chiffre 0 ; le détail R/M/D du Référentiel pédologique n’est pas vérifié.","34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).","32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée)."],
-    src: "Mille Vignes, P. Lepeltier, p. 140 ; Wikipedia, Soil horizon ; AFES, Référentiel pédologique 2008 ; ISRIC / IUSS, World Reference Base, Soil groups.",
+    to_check: [
+      "Horizons O, A, E, B, C, R (⚠️, une seule source de niveau 2b) : Lepeltier omet l’horizon E ; la lettre est O (organique) et non le chiffre 0 ; le détail R/M/D du Référentiel pédologique n’est pas vérifié.",
+      "34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).",
+      "32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée).",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 140 ; AFES, Référentiel pédologique 2008 ; ISRIC / IUSS, World Reference Base, Soil groups.",
     page: 140
   },
   {
@@ -546,8 +626,12 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.","51 grands crus d’Alsace : confirmé par Wikipedia et Atout France, mais le site du CIVA (niveau 1) n’a pas pu être lu."],
-    src: "Mille Vignes, P. Lepeltier, p. 142 ; Atout France (Taste France), Alsace vineyard terroirs ; Wikipedia, Alsace Grand Cru AOC.",
+    to_check: [
+      "Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.",
+      "51 grands crus d’Alsace : une seule source (Atout France) ; le site du CIVA (niveau 1) n’a pas pu être lu.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 142 ; Atout France (Taste France), Alsace vineyard terroirs",
     page: 142
   },
   {
@@ -615,8 +699,13 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Smectites contre kaolinite et illite (⚠️, deux sources de niveau 2b seulement : Wikipedia, Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre).","Étude Bourguignon / LAMS (⚠️) : 53 parcelles et environ 86 % confirmés par une fiche de conférence, mais étude inédite, inachevée et critiquée ; date 2002 non confirmée et non reprise ; à présenter comme corrélation de laboratoire.","Wittendal (⚠️, une seule source secondaire, Goode) : 2 816 climats et non « vignobles » ; étude primaire non retrouvée."],
-    src: "Mille Vignes, P. Lepeltier, p. 143-145 ; Wikipedia, Smectite ; Wineanorak (J. Goode), On soils and wines part 6 ; Académie du Vin, fiche de conférence (LAMS, Bourguignon) ; La Passion du Vin, fil Terroir : la surface interne des argiles.",
+    to_check: [
+      "Smectites contre kaolinite et illite (⚠️, une seule source de niveau 2b : Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre).",
+      "Étude Bourguignon / LAMS (⚠️) : 53 parcelles et environ 86 % confirmés par une fiche de conférence, mais étude inédite, inachevée et critiquée ; date 2002 non confirmée et non reprise ; à présenter comme corrélation de laboratoire.",
+      "Wittendal (⚠️, une seule source secondaire, Goode) : 2 816 climats et non « vignobles » ; étude primaire non retrouvée.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 143-145 ; Wineanorak (J. Goode), On soils and wines part 6 ; Académie du Vin, fiche de conférence (LAMS, Bourguignon) ; La Passion du Vin, fil Terroir : la surface interne des argiles.",
     page: 143
   },
   {
@@ -684,8 +773,14 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Paraje Altamira : reconnue en 2013 (résolution C.44) et zone étendue en 2017 (INV, résolution E 82/2017) ; le livre place la reconnaissance en 2017 : divergence signalée, non tranchée en faveur du livre.","Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.","Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.","Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie."],
-    src: "Mille Vignes, P. Lepeltier, p. 148-149 ; Carbonneau, Interactions terroir-vigne (IVES) ; INV Argentine, Resolución E 82/2017 ; Wine With Seth, Paraje Altamira ; Winkler index (Wikipédia)",
+    to_check: [
+      "Paraje Altamira : reconnue en 2013 (résolution C.44) et zone étendue en 2017 (INV, résolution E 82/2017) ; le livre place la reconnaissance en 2017 : divergence signalée, non tranchée en faveur du livre.",
+      "Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.",
+      "Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.",
+      "Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie.",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 148-149 ; Carbonneau, Interactions terroir-vigne (IVES) ; INV Argentine, Resolución E 82/2017 ; Wine With Seth, Paraje Altamira",
     page: 148
   },
   {

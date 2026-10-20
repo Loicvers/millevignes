@@ -67,9 +67,10 @@ FICHES.push(
     to_check: [
       "Rôle d’agrégation de la glomaline : identité de la molécule discutée (extrait brut GRSP, mélange possible de matières organiques ; revue 2021)",
       "Thèse de Claude et Lydia Bourguignon sur l’origine des argiles (indirectement via la nutrition des plantes) : non reprise par la pédologie classique, non reprise ici",
-      "Définition de la CEC : une source générale et une citation de l’IFV seulement"
+      "Définition de la CEC : une source générale et une citation de l’IFV seulement",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 78 ; USDA ARS, AR Magazine (2002), glomaline ; Wikipédia, Glomalin ; Crop Science Centre, revue de 25 ans de recherche sur la glomaline (2021) ; IRD, formation des argiles ; Wikipédia, Cation-exchange capacity ; Pleinchamp (IFV)",
+    src: "Mille Vignes, P. Lepeltier, p. 78 ; USDA ARS, AR Magazine (2002), glomaline ; Crop Science Centre, revue de 25 ans de recherche sur la glomaline (2021) ; IRD, formation des argiles ; Pleinchamp (IFV)",
     page: 78
   },
   {
@@ -140,8 +141,11 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<text x=\"68\" y=\"20\" text-anchor=\"middle\" font-weight=\"bold\">Endomycorhize</text><text x=\"68\" y=\"32\" text-anchor=\"middle\">à arbuscules (vigne)</text>\n<rect x=\"8\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"8\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"8\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><path d=\"M0 104 C12 102 26 106 38 104 C44 103 48 104 52 104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><g stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"><path d=\"M52 104 L58 96 L62 92 M58 96 L62 98 M52 104 L60 106 L64 102 M60 106 L63 110 M52 104 L56 112 L52 116 M56 112 L60 115\"/></g><text x=\"96\" y=\"132\" font-size=\"8\">arbuscule</text><line x1=\"94\" y1=\"130\" x2=\"62\" y2=\"108\" stroke=\"currentColor\" stroke-opacity=\"0.5\"/>\n<text x=\"68\" y=\"166\" text-anchor=\"middle\">le champignon entre</text><text x=\"68\" y=\"177\" text-anchor=\"middle\">dans les cellules</text>\n<text x=\"252\" y=\"20\" text-anchor=\"middle\" font-weight=\"bold\">Ectomycorhize</text><text x=\"252\" y=\"32\" text-anchor=\"middle\">(chêne truffier…)</text>\n<rect x=\"192\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"192\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"192\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"188\" y=\"52\" width=\"128\" height=\"8\" fill-opacity=\"0.45\"/><g stroke=\"currentColor\" stroke-width=\"1.4\"><line x1=\"221\" y1=\"60\" x2=\"221\" y2=\"148\"/><line x1=\"251\" y1=\"60\" x2=\"251\" y2=\"148\"/><line x1=\"281\" y1=\"60\" x2=\"281\" y2=\"148\"/></g>\n<text x=\"252\" y=\"166\" text-anchor=\"middle\">manteau autour de la racine,</text><text x=\"252\" y=\"177\" text-anchor=\"middle\">hyphes entre les cellules</text>\n<text x=\"160\" y=\"200\" text-anchor=\"middle\">Échange : la plante donne des sucres,</text><text x=\"160\" y=\"212\" text-anchor=\"middle\">le champignon apporte eau, azote et phosphore.</text>\n</svg>","legende":"Endomycorhize à arbuscules, celle de la vigne, et ectomycorhize, plus rare.","src":"D’après Lepeltier, Mille Vignes, p. 81 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: ["Part des plantes à endomycorhizes à arbuscules : 72 % des espèces à fleurs (Brundrett et Tedersoo), environ 80 % (Mycoagra, livre) : formulé « 70 à 80 % »"],
-    src: "Mille Vignes, P. Lepeltier, p. 77 et 81 ; Brundrett et Tedersoo (2018), New Phytologist ; Projet CASDAR Mycoagra, fiche symbiose mycorhizienne ; Wikipédia, Mycorrhiza et Albert Bernhard Frank ; Frontiers in Plant Science (2021), mycorhization de Vitis vinifera ; Réussir Vigne (2017)",
+    to_check: [
+      "Part des plantes à endomycorhizes à arbuscules : 72 % des espèces à fleurs (Brundrett et Tedersoo), environ 80 % (Mycoagra, livre) : formulé « 70 à 80 % »",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 77 et 81 ; Brundrett et Tedersoo (2018), New Phytologist ; Projet CASDAR Mycoagra, fiche symbiose mycorhizienne ; Frontiers in Plant Science (2021), mycorhization de Vitis vinifera ; Réussir Vigne (2017)",
     page: 81
   },
   {
@@ -232,9 +236,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Plants de vigne mycorhizés en pépinière (« depuis une dizaine d’années » selon le livre) : une seule source lue (Réussir Vigne, 2017) ; date de début d’offre commerciale non établie",
-      "Débat souches importées contre indigènes : question posée par le livre, non vérifiée"
+      "Débat souches importées contre indigènes : question posée par le livre, non vérifiée",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 84 ; Wikipédia, Tuber aestivum ; Paolocci et al. (2004), Tuber aestivum and T. uncinatum ; Réussir Vigne (2017), plants mycorhizés",
+    src: "Mille Vignes, P. Lepeltier, p. 84 ; Paolocci et al. (2004), Tuber aestivum and T. uncinatum ; Réussir Vigne (2017), plants mycorhizés",
     page: 84
   }
 ,
@@ -257,10 +262,11 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Date de Margulis : le livre dit « années 1970 » ; l’article fondateur (signé Lynn Sagan) paraît en 1967 et le livre de synthèse date de 1970 ; dates de vie de Margulis non revérifiées",
-      "Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur), Meyer-Abich 1943 selon Wikipedia ; non tranché",
-      "« 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici"
+      "Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur) ; une antériorité de Meyer-Abich (1943) est avancée ailleurs, à sourcer ; non tranché",
+      "« 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 85 ; Wikipedia, Andreas Franz Wilhelm Schimper ; Wikipedia, Symbiogenesis ; Encyclopédie de l’environnement, pionniers de la théorie endosymbiotique ; Embryo Project, On the Origin of Mitosing Cells (1967) ; Wikipedia, Holobiont ; Simon, Marchesi, Mougel et Selosse, Host-microbiota interactions: from holobiont theory to analysis (Microbiome, 2019) ; BioNumbers, bactéries par cm² de feuille",
+    src: "Mille Vignes, P. Lepeltier, p. 85 ; Encyclopédie de l’environnement, pionniers de la théorie endosymbiotique ; Embryo Project, On the Origin of Mitosing Cells (1967) ; Simon, Marchesi, Mougel et Selosse, Host-microbiota interactions: from holobiont theory to analysis (Microbiome, 2019) ; BioNumbers, bactéries par cm² de feuille",
     page: 85
   },
   {
@@ -282,9 +288,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Metschnikowia fructicola : une seule source (souche commercialisée, efficacité modérée sur raisin de table) ; homologation pour la vigne de cuve en France non vérifiée",
-      "Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée"
+      "Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 85-86 ; Communiqué Bayer/Agrauxine, Esquive WP (2014) ; Réussir Vigne, Sonata ; Réussir Vigne, La Xylella fastidiosa ; Wikipedia, Flavescence dorée ; PMC10528312, Metschnikowia en vignobles bio ; Règlement (UE) 2025/1177 ; Réussir Vigne, essais Willaertia ; Académie d’agriculture de France, histoire oïdium/mildiou ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)",
+    src: "Mille Vignes, P. Lepeltier, p. 85-86 ; Communiqué Bayer/Agrauxine, Esquive WP (2014) ; Réussir Vigne, Sonata ; Réussir Vigne, La Xylella fastidiosa ; PMC10528312, Metschnikowia en vignobles bio ; Règlement (UE) 2025/1177 ; Réussir Vigne, essais Willaertia ; Académie d’agriculture de France, histoire oïdium/mildiou ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064)",
     page: 85
   },
   {
@@ -450,9 +457,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Échelle de permaculture en 10 niveaux : non retrouvée dans les sources lues (Réussir présente Alain Malard comme vigneron et auteur de Vignes, vins et permaculture) ; présentée comme proposition citée par Lepeltier",
-      "Date de l’emblème Elzevier : 1620 selon Elsevier, ou emblème de Corrozet de 1540 adapté à Leyde selon Wikipedia ; non tranché"
+      "Date de l’emblème Elzevier : 1620 selon Elsevier ; une adaptation d’un emblème de Corrozet (1540) est avancée ailleurs, à sourcer ; non tranché",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 90-91 ; Réussir Vigne, Cinq points clés pour structurer une parcelle en permaculture ; Elsevier Connect, What does Non Solus mean ; Britannica, Elzevir family ; Wikipedia, The Elm and the Vine",
+    src: "Mille Vignes, P. Lepeltier, p. 90-91 ; Réussir Vigne, Cinq points clés pour structurer une parcelle en permaculture ; Elsevier Connect, What does Non Solus mean ; Britannica, Elzevir family",
     page: 90
   }
 ,
@@ -531,9 +539,10 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Latour : l’expression « Grand Partage » datée du « début des années 1980 » et les « deux partages » (humains/non-humains ; modernes/non-modernes) ne sont pas confirmés ; l’expression est antérieure (Goody, Lévi-Strauss)"
+      "Latour : l’expression « Grand Partage » datée du « début des années 1980 » et les « deux partages » (humains/non-humains ; modernes/non-modernes) ne sont pas confirmés ; l’expression est antérieure (Goody, Lévi-Strauss)",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 93-94 ; Collège de France, biographie de Philippe Descola ; Lex.dk, Philippe Descola ; Wikipedia, We Have Never Been Modern ; Universalis, Anthropologie et ontologie ; Britannica, Gaia hypothesis ; Green Templeton College, James Lovelock",
+    src: "Mille Vignes, P. Lepeltier, p. 93-94 ; Collège de France, biographie de Philippe Descola ; Lex.dk, Philippe Descola ; Universalis, Anthropologie et ontologie ; Britannica, Gaia hypothesis ; Green Templeton College, James Lovelock",
     page: 93
   },
   {
@@ -543,7 +552,7 @@ FICHES.push(
     niveau: "Pointu",
     geo: null,
     titre: "Une diplomatie avec le vivant : Larrère, Morizot, Calvo",
-    synth: "Baptiste Morizot (Manières d’être vivant, Actes Sud, 2020) plaide pour une cohabitation « diplomatique » avec le vivant, et Catherine et Raphaël Larrère (Du bon usage de la nature) pour un usage écocentré de la nature ; la date de ce dernier ouvrage est 1997 selon Wikipédia, 1998 selon Lepeltier. Un encadré évoque Raw Wine Alive!, rendez-vous en ligne de décembre 2021 organisé par Isabelle Legeron MW, où intervient Paco Calvo. Celui-ci dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et travaille sur l’intelligence des plantes.",
+    synth: "Baptiste Morizot (Manières d’être vivant, Actes Sud, 2020) plaide pour une cohabitation « diplomatique » avec le vivant, et Catherine et Raphaël Larrère (Du bon usage de la nature) pour un usage écocentré de la nature ; Lepeltier le date de 1998, une autre mention donne 1997 (à vérifier). Un encadré évoque Raw Wine Alive!, rendez-vous en ligne de décembre 2021 organisé par Isabelle Legeron MW, où intervient Paco Calvo. Celui-ci dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et travaille sur l’intelligence des plantes.",
     mnemo: "Pour parler au vivant, envoyer un diplomate plutôt qu’un huissier : Morizot à la table, Calvo qui filme les plantes en accéléré.",
     flash: { q: "Qui est Paco Calvo ?", a: "Le chercheur qui dirige le Minimal Intelligence Lab (MINT Lab) de l’université de Murcie et étudie l’intelligence des plantes.", keys: [["plantes","végétale","végétal"],["intelligence"],["Murcie","MINT","Minimal Intelligence"]] },
     qcm: { q: "Qui dirige le Minimal Intelligence Lab de l’université de Murcie ?", opts: ["Paco Calvo", "Baptiste Morizot", "Philippe Descola", "Francis Hallé"], good: 0 },
@@ -558,9 +567,10 @@ FICHES.push(
     to_check: [
       "Larrère, Du bon usage de la nature : 1997 (Aubier, une seule source) contre 1998 dans le livre ; à doubler avec le catalogue BnF",
       "Morizot : « crise de la sensibilité » et « diplomatie » (formules du livre) non retrouvées littéralement dans l’entretien Reporterre lu",
-      "Raw Wine Alive! : événement des 5-6 décembre 2021 confirmé, mais « premier colloque international en ligne » non confirmé"
+      "Raw Wine Alive! : événement des 5-6 décembre 2021 confirmé, mais « premier colloque international en ligne » non confirmé",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 94 ; Critiques Libres, Manières d’être vivant ; Reporterre, entretien avec Baptiste Morizot ; Wikipedia, Catherine Larrère ; MINT Lab, Université de Murcie ; JancisRobinson.com, Alive 2021 ; The Drinks Business, Isabelle Legeron MW et Alive",
+    src: "Mille Vignes, P. Lepeltier, p. 94 ; Critiques Libres, Manières d’être vivant ; Reporterre, entretien avec Baptiste Morizot ; MINT Lab, Université de Murcie ; JancisRobinson.com, Alive 2021 ; The Drinks Business, Isabelle Legeron MW et Alive",
     page: 94
   },
   {
@@ -615,9 +625,10 @@ FICHES.push(
       "Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues, texte de 1816 non consulté",
       "Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum",
       "Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme",
-      "Livre de Pineau : 2019 selon Lepeltier, 2020 selon La Vie des idées (éditeur non consulté) ; sous-titre « radicalités » au pluriel ; « vignerons chercheurs » non retrouvé"
+      "Livre de Pineau : 2019 selon Lepeltier, 2020 selon La Vie des idées (éditeur non consulté) ; sous-titre « radicalités » au pluriel ; « vignerons chercheurs » non retrouvé",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 96-97 ; Wikipedia, André Jullien ; wein.plus, Jullien et association of German natural wine auctioneers ; Wikipedia, VDP ; Wikipedia, Revolt of the Languedoc winegrowers ; Wikipédia FR, Vin naturel ; Wikipedia, Jules Chauvet ; La Passion du Vin (forum) ; La Vie des idées, In Vino Natura",
+    src: "Mille Vignes, P. Lepeltier, p. 96-97 ; wein.plus, Jullien et association of German natural wine auctioneers ; La Passion du Vin (forum) ; La Vie des idées, In Vino Natura",
     page: 97
   },
   {
@@ -641,9 +652,10 @@ FICHES.push(
     to_check: [
       "Année de fondation de l’AVN : 2000 selon une source, aucune année ailleurs ; ne pas dater",
       "S.A.I.N.S. : une seule source donne 2012, les autres citent la charte sans date",
-      "Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)"
+      "Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 97 ; Idealwine, label officiel ; Que Choisir, vins nature ; M. Touton ; Reporterre ; Wikipédia FR, Vin naturel",
+    src: "Mille Vignes, P. Lepeltier, p. 97 ; Idealwine, label officiel ; Que Choisir, vins nature ; M. Touton ; Reporterre",
     page: 97
   },
   {
@@ -665,9 +677,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Distinction de Haudricourt entre action directe positive (Occident) et indirecte négative (Asie) : thèse non confirmée dans les sources lues (analyse HAL bloquée)",
-      "Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés"
+      "Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 97-98 ; Wikipédia FR, André-Georges Haudricourt ; Wikipedia EN, André-Georges Haudricourt ; Wikipedia EN, Masanobu Fukuoka ; Wikipédia FR, Masanobu Fukuoka",
+    src: "Mille Vignes, P. Lepeltier, p. 97-98",
     page: 97
   },
   {
@@ -692,9 +705,10 @@ FICHES.push(
       "Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)",
       "Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965",
       "Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés",
-      "Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières"
+      "Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 96-98 ; Wikipedia, Permaculture et Bill Mollison ; Wikipedia, Robert Rodale ; Regenerative Viticulture Foundation, About us ; The Drinks Business ; Wikipedia, The Eyrie Vineyards ; Eyrie Vineyards, grape growing ; International Fine Wines, The Eyrie Vineyards ; Oregon Business",
+    src: "Mille Vignes, P. Lepeltier, p. 96-98 ; Regenerative Viticulture Foundation, About us ; The Drinks Business ; Eyrie Vineyards, grape growing ; International Fine Wines, The Eyrie Vineyards ; Oregon Business",
     page: 98
   },
   {
@@ -769,9 +783,10 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Origine du mot : Bensin 1928 (Wezel et al.) ou Friederichs 1930 (Dalgaard et al.) ; dates de Bensin (1881-1973) non vérifiées",
-      "Altieri : 1983 selon Lepeltier et Wikipédia FR, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer"
+      "Altieri : 1983 selon Lepeltier, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 101 ; Wikipedia, Agroecology ; Wikipédia FR, Agroécologie ; CiNii, catalogue Altieri",
+    src: "Mille Vignes, P. Lepeltier, p. 101 ; CiNii, catalogue Altieri",
     page: 101
   }
 );

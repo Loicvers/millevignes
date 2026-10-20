@@ -406,9 +406,11 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’ouvrage décrit 24 000 cépages distincts.", answer: false }, explanation: "24 000 est le nombre de noms (synonymes compris) pour environ 5 200 cépages." },
       { type: "mcq_single", prompt: "Qu’est-ce qui rend ce travail urgent au tournant du XXe siècle ?", payload: { options: ["L’invention de l’AOC", "La crise du phylloxéra et l’afflux d’hybrides et de porte-greffes", "L’oïdium de 1851", "La création de l’OIV"], answer: 1 }, explanation: "Après le phylloxéra, hybrides et porte-greffes se multiplient : il devient urgent de reconnaître les plants pour éviter erreurs et fraudes." }
     ],
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier ; Wikipédia, Pierre Viala ; BnF, Le fruit de la vigne ; glossaire Wein.plus",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier ; BnF, Le fruit de la vigne ; glossaire Wein.plus",
     page: 24
   },
   {
@@ -429,9 +431,11 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La liste OIV des descripteurs de 2009 est toujours l’édition en vigueur.", answer: false }, explanation: "Une 3e édition a été adoptée en 2023 (résolution OIV-VITI 702-2023). Lepeltier cite celle de 2009." }
     ],
     schema: { svg: "<svg viewBox=\"0 0 330 92\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" font-family=\"sans-serif\" font-size=\"9\" text-anchor=\"middle\"><path d=\"M33,36L37,18L39,19L40,19L42,20L43,20L45,21L46,22L47,23L49,24L50,25L51,26L52,27L53,28L54,30L54,31L55,33L56,34L56,36L56,37L57,39L57,40L57,42L57,43L57,45L57,47L56,48L56,50L55,51L55,52L54,54L53,55L52,57L51,58L50,59L49,60L48,61L46,62L45,63L44,63L42,64L41,65L39,65L38,66L36,66L35,66L33,66L31,66L30,66L28,66L27,65L25,65L24,64L22,63L21,63L20,62L18,61L17,60L16,59L15,58L14,57L13,55L12,54L11,52L11,51L10,50L10,48L9,47L9,45L9,43L9,42L9,40L9,39L10,37L10,36L10,34L11,33L12,31L12,30L13,28L14,27L15,26L16,25L17,24L19,23L20,22L21,21L23,20L24,20L26,19L27,19L29,18Z\"/><line x1=\"33\" y1=\"36\" x2=\"33\" y2=\"16\"/><text x=\"33\" y=\"86\" fill=\"currentColor\" stroke=\"none\">Entière</text><path d=\"M99,36L102,27L103,26L104,26L105,26L107,25L108,25L110,25L112,25L113,25L115,26L116,27L118,27L119,28L120,30L120,31L121,33L121,34L121,36L121,37L120,39L119,40L119,42L118,43L117,44L116,45L115,46L114,47L113,48L112,49L112,49L111,50L111,51L111,52L110,53L110,55L110,56L109,57L109,59L108,60L107,62L106,63L105,64L104,65L102,65L101,66L99,66L97,66L96,65L94,65L93,64L92,63L91,62L90,60L89,59L89,57L88,56L88,55L88,53L87,52L87,51L87,50L86,49L86,49L85,48L84,47L83,46L82,45L81,44L80,43L79,42L79,40L78,39L77,37L77,36L77,34L77,33L78,31L78,30L79,28L80,27L82,27L83,26L85,25L86,25L88,25L90,25L91,25L93,26L94,26L95,26L96,27Z\"/><line x1=\"99\" y1=\"36\" x2=\"99\" y2=\"16\"/><text x=\"99\" y=\"86\" fill=\"currentColor\" stroke=\"none\">3 lobes</text><path d=\"M165,36L168,26L169,25L171,24L173,23L175,22L176,22L178,22L179,23L180,24L181,26L181,27L181,29L181,31L180,33L179,35L179,36L179,37L179,38L180,39L181,40L183,41L184,42L186,43L187,45L188,46L188,48L188,50L187,51L186,52L184,53L182,53L180,53L178,53L177,53L175,54L174,54L173,54L173,55L172,57L172,58L171,60L170,62L169,64L168,65L167,66L165,66L163,66L162,65L161,64L160,62L159,60L158,58L158,57L157,55L157,54L156,54L155,54L153,53L152,53L150,53L148,53L146,53L144,52L143,51L142,50L142,48L142,46L143,45L144,43L146,42L147,41L149,40L150,39L151,38L151,37L151,36L151,35L150,33L149,31L149,29L149,27L149,26L150,24L151,23L152,22L154,22L155,22L157,23L159,24L161,25L162,26Z\"/><line x1=\"165\" y1=\"36\" x2=\"165\" y2=\"16\"/><text x=\"165\" y=\"86\" fill=\"currentColor\" stroke=\"none\">5 lobes</text><path d=\"M231,36L234,24L236,22L238,21L240,20L241,20L243,21L243,23L243,26L243,28L243,30L242,32L243,33L244,33L245,33L248,34L250,34L252,34L254,36L254,37L254,39L253,40L251,42L249,43L247,44L246,45L245,46L246,47L247,49L249,51L250,53L250,55L250,56L249,58L247,58L245,58L243,57L240,56L239,55L238,55L237,56L236,58L236,60L235,62L234,64L233,65L231,66L229,65L228,64L227,62L226,60L226,58L225,56L224,55L223,55L222,56L219,57L217,58L215,58L213,58L212,56L212,55L212,53L213,51L215,49L216,47L217,46L216,45L215,44L213,43L211,42L209,40L208,39L208,37L208,36L210,34L212,34L214,34L217,33L218,33L219,33L220,32L219,30L219,28L219,26L219,23L219,21L221,20L222,20L224,21L226,22L228,24Z\"/><line x1=\"231\" y1=\"36\" x2=\"231\" y2=\"16\"/><text x=\"231\" y=\"86\" fill=\"currentColor\" stroke=\"none\">7 lobes</text><path d=\"M297,36L301,23L302,20L304,19L306,20L307,22L307,25L306,27L306,30L307,31L308,31L310,30L313,29L316,29L318,30L318,31L317,34L315,36L313,38L312,39L312,40L314,41L316,42L319,43L320,45L321,46L319,48L317,48L314,49L311,49L310,49L310,51L311,53L312,55L313,58L313,60L312,61L309,60L307,59L305,57L303,56L302,56L301,58L301,60L300,63L299,65L297,66L295,65L294,63L293,60L293,58L292,56L291,56L289,57L287,59L285,60L282,61L281,60L281,58L282,55L283,53L284,51L284,49L283,49L280,49L277,48L275,48L273,46L274,45L275,43L278,42L280,41L282,40L282,39L281,38L279,36L277,34L276,31L276,30L278,29L281,29L284,30L286,31L287,31L288,30L288,27L287,25L287,22L288,20L290,19L292,20L293,23Z\"/><line x1=\"297\" y1=\"36\" x2=\"297\" y2=\"16\"/><text x=\"297\" y=\"86\" fill=\"currentColor\" stroke=\"none\">Plus de 7</text></svg>", legende: "Classement des feuilles selon le nombre de lobes (grille OIV)", src: "D’après Lepeltier, Mille Vignes, p. 25" },
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier ; Wikipédia, Pierre Galet ; OIV, Liste des descripteurs (éd. 1983, 2009, 2023)",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier ; OIV, Liste des descripteurs (éd. 1983, 2009, 2023)",
     page: 25
   },
   {
@@ -759,9 +763,11 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’alicante bouschet est un hybride franco-américain.", answer: false }, explanation: "Ses deux parents sont des vinifera : c’est un croisement intraspécifique." }
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 210\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L7 4L0 8z\" fill=\"currentColor\"/></marker></defs>\n<rect x=\"8\" y=\"10\" width=\"120\" height=\"30\" rx=\"5\" fill-opacity=\"0.08\" stroke=\"currentColor\"/><text x=\"68\" y=\"29\" text-anchor=\"middle\" font-weight=\"bold\">aramon noir</text>\n<rect x=\"192\" y=\"10\" width=\"120\" height=\"30\" rx=\"5\" fill-opacity=\"0.08\" stroke=\"currentColor\"/><text x=\"252\" y=\"29\" text-anchor=\"middle\" font-weight=\"bold\">teinturier du Cher</text>\n<line x1=\"68\" y1=\"40\" x2=\"150\" y2=\"76\" stroke=\"currentColor\"/><line x1=\"252\" y1=\"40\" x2=\"170\" y2=\"76\" stroke=\"currentColor\"/>\n<rect x=\"100\" y=\"76\" width=\"120\" height=\"34\" rx=\"5\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"160\" y=\"91\" text-anchor=\"middle\" font-weight=\"bold\">petit bouschet</text><text x=\"160\" y=\"103\" text-anchor=\"middle\">Louis Bouschet, 1824</text>\n<rect x=\"240\" y=\"76\" width=\"72\" height=\"34\" rx=\"5\" fill-opacity=\"0.08\" stroke=\"currentColor\"/><text x=\"276\" y=\"96\" text-anchor=\"middle\" font-weight=\"bold\">grenache noir</text>\n<line x1=\"160\" y1=\"110\" x2=\"190\" y2=\"146\" stroke=\"currentColor\"/><line x1=\"276\" y1=\"110\" x2=\"210\" y2=\"146\" stroke=\"currentColor\"/>\n<rect x=\"130\" y=\"146\" width=\"140\" height=\"34\" rx=\"5\" fill-opacity=\"0.32\" stroke=\"currentColor\"/><text x=\"200\" y=\"161\" text-anchor=\"middle\" font-weight=\"bold\">alicante bouschet</text><text x=\"200\" y=\"173\" text-anchor=\"middle\">Henri Bouschet, 1855</text>\n<text x=\"8\" y=\"200\">Tous V. vinifera : croisements, pas des hybrides. But : colorer les vins pâles.</text>\n</svg>","legende":"Deux générations de Bouschet : le petit bouschet (1824), puis l’alicante bouschet (1855).","src":"D’après Lepeltier, Mille Vignes, p. 35 ; dessin simplifié et original"},
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; Falstaff, fiche Alicante Bouschet ; Wikipédia (Henri Bouschet)",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; Falstaff, fiche Alicante Bouschet",
     page: 35
   },
   {
@@ -823,8 +829,11 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Albert Seibel a obtenu plus de 16 000 hybrides.", answer: true }, explanation: "Dont quelques centaines seulement ont été diffusées." }
     ],
     status: "needs_review",
-    to_check: ["Périodisation 1878-1950 : convention d’auteur (1878 = arrivée du mildiou ; Millardet et de Grasset croisent dès 1879)"],
-    src: "Mille Vignes, P. Lepeltier ; INAO, cahier des charges AOC Armagnac (arrêté du 27/03/2025) ; Wine Grapes (2012) ; VIVC n° 11558 (Seyval blanc) ; Crescentis n° 8, 2025 (Moureu) ; Wikipédia (Albert Seibel, Baco blanc)",
+    to_check: [
+      "Périodisation 1878-1950 : convention d’auteur (1878 = arrivée du mildiou ; Millardet et de Grasset croisent dès 1879)",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier ; INAO, cahier des charges AOC Armagnac (arrêté du 27/03/2025) ; Wine Grapes (2012) ; VIVC n° 11558 (Seyval blanc) ; Crescentis n° 8, 2025 (Moureu)",
     page: 35
   },
   {

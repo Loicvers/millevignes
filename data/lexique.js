@@ -108,12 +108,12 @@ const LEXIQUE = [
   "declic": "Terpène = térébenthine : une famille d’odeurs de plantes. Cépage terpénique = cépage qui sent la fleur, le muscat en tête.",
   "src": [
    "La langue française (dictionnaire)",
-   "Wikipédia (miroir areq.net)",
+   "Online Etymology Dictionary, terpene",
    "IFV, fiche Monoterpènes",
    "UC Davis, Waterhouse Lab, Terpenes"
   ],
-  "status": "verified",
-  "note": ""
+  "status": "needs_review",
+  "note": "Étymologie à trancher : allemand Terpen (de Terpentin) selon La langue française ; l’Online Etymology Dictionary fait venir l’anglais terpene (1902) de terebene, nom tiré de la térébinthe."
  },
  {
   "terme": "chimère",

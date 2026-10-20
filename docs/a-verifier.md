@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-188 fiches : 48 vérifiées, 140 à vérifier (347 points).
+188 fiches : 38 vérifiées, 150 à vérifier (397 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -65,6 +65,12 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 21** (p.18) — Muscadinia rotundifolia contre le court-noué
 - [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
 
+**Fiche 25** (p.24) — L’Ampélographie de Viala et Vermorel (1901-1910)
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 26** (p.25) — Pierre Galet et l’ampélographie par la feuille
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
 **Fiche 30** (p.29) — Les époques de maturité de Victor Pulliat
 - [ ] Melon et carignan : époque non retrouvée (Mille variétés de vignes, 1888 ; les trois tomes du Vignoble ne leur consacrent pas de fiche) ; seul le classement de Lepeltier est rapporté
 
@@ -86,11 +92,15 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Dates de vie de Speechly : trois dates de naissance selon les sources (1723 ODNB, 1733, 1735 baptême) – 1819
 - [ ] Part de vinifera du delaware : non chiffrée ; parenté (aestivalis × labrusca) × vinifera selon une seule source
 
+**Fiche 41** (p.35) — Les Bouschet et les teinturiers
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
 **Fiche 43** (p.35) — Les six cépages interdits
 - [ ] Déclaration comme « boisson à base de jus de raisin fermenté » : rapportée par deux articles de presse (2026) qui citent le même producteur, aucun texte officiel trouvé
 
 **Fiche 44** (p.35) — L’âge d’or des hybrideurs français
 - [ ] Périodisation 1878-1950 : convention d’auteur (1878 = arrivée du mildiou ; Millardet et de Grasset croisent dès 1879)
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 46** (p.35) — Le déclin des hybrides en France, l’essor du froid ailleurs
 - [ ] Textes du déclassement progressif des hybrides après 1957 non identifiés
@@ -111,6 +121,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 59** (p.42) — L’œil composé et la fertilité des bourgeons
 - [ ] Fertilité des yeux de base : gamay fertile, poulsard peu fertile (taille longue) — seule la taille longue du poulsard est confirmée.
+
+**Fiche 61** (p.44) — Photosynthèse, respiration, transpiration
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 64** (p.45) — Floraison, nouaison et coulure
 - [ ] Sensibilité du grenache et du merlot à la coulure : une seule source (NMSU, qui cite aussi le malbec)
@@ -134,9 +147,16 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 73** (p.50) — La découverte du phylloxéra (1868)
 - [ ] Daktulosphaira vitifoliae : nom correct établi par Russell (1974), sans décision officielle trouvée
 
+**Fiche 74** (p.50) — Le cycle du phylloxéra
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 75** (p.51) — Les vignobles épargnés et les vieilles vignes franches de pied
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
 **Fiche 76** (p.51) — Lutter contre le phylloxéra : chimistes contre américanistes
 - [ ] Auteur de l’idée de la greffe en 1869 : Gaston Bazille selon Foëx (Cours complet de viticulture), Laliman et Pulliat selon Delmotte et Jacquet (2025) ; rôle de Pulliat (Lepeltier p. 52) absent chez Foëx
 - [ ] Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 79** (p.55) — Les principaux porte-greffes et leurs parents
 - [ ] Dates : 3309 C (1881), 101-14 et 41 B (1882), 110 R (1902) confirmées par le VIVC ; 140 Ru : 1894 (Plantgrape) contre 1896 (VIVC), Riaz et al. ne le datent pas ; SO4 : programme de Teleki lancé en 1896 (Riaz et al. 2019, VIVC), sélection par Fuhr à Oppenheim (Riaz et al.), année 1919 : une seule source
@@ -172,8 +192,15 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 92** (p.67) — Des pépinières remises en question
 - [ ] Détail du cahier des charges Ceps Sicavac : repris de Lepeltier, non recoupé.
 
+**Fiche 93** (p.68) — Les fléaux venus d’Amérique au XIXe siècle
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
 **Fiche 95** (p.73) — Goethe et la métamorphose des plantes
 - [ ] Urpflanze : absent de l’Essai de 1790 (Projekt Gutenberg) ; évoqué dans le Voyage en Italie (1787), non relu
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 96** (p.73) — Steiner, la biodynamie et le « geste de la vigne »
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 97** (p.76) — Le sol, interface vivante
 - [ ] « Trop petit, trop sale, trop opaque » : une présentation de Selosse parle de cinq termes (opaque, sale, lent, trop petit, dégradant) ; Lepeltier simplifie
@@ -188,6 +215,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Rôle d’agrégation de la glomaline : identité de la molécule discutée (extrait brut GRSP, mélange possible de matières organiques ; revue 2021)
 - [ ] Thèse de Claude et Lydia Bourguignon sur l’origine des argiles (indirectement via la nutrition des plantes) : non reprise par la pédologie classique, non reprise ici
 - [ ] Définition de la CEC : une source générale et une citation de l’IFV seulement
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 100** (p.79) — La vie d’un gramme de sol
 - [ ] Étymologie d’anécique (grec anesis, « élasticité ») et date de la classification de Bouché (1977 selon l’AFES, 1972 selon une autre source) : non tranchés
@@ -202,6 +230,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 102** (p.81) — Les mycorhizes : une alliance racine-champignon
 - [ ] Part des plantes à endomycorhizes à arbuscules : 72 % des espèces à fleurs (Brundrett et Tedersoo), environ 80 % (Mycoagra, livre) : formulé « 70 à 80 % »
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 103** (p.81) — Quatre services des mycorhizes, et le piège des engrais
 - [ ] Volume de sol exploré par le mycélium : le livre dit « jusqu’à mille fois » (p. 81) puis « centuplé » (p. 84) ; Mycoagra : au moins 40 fois (une seule source). Facteur non repris
@@ -220,15 +249,18 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 106** (p.84) — Truffes et plants de vigne mycorhizés
 - [ ] Plants de vigne mycorhizés en pépinière (« depuis une dizaine d’années » selon le livre) : une seule source lue (Réussir Vigne, 2017) ; date de début d’offre commerciale non établie
 - [ ] Débat souches importées contre indigènes : question posée par le livre, non vérifiée
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 107** (p.85) — La vigne holobionte : une plante habitée de microbes
 - [ ] Date de Margulis : le livre dit « années 1970 » ; l’article fondateur (signé Lynn Sagan) paraît en 1967 et le livre de synthèse date de 1970 ; dates de vie de Margulis non revérifiées
-- [ ] Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur), Meyer-Abich 1943 selon Wikipedia ; non tranché
+- [ ] Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur) ; une antériorité de Meyer-Abich (1943) est avancée ailleurs, à sourcer ; non tranché
 - [ ] « 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 108** (p.85) — Le biocontrôle microbien et les agents des maladies de la vigne
 - [ ] Metschnikowia fructicola : une seule source (souche commercialisée, efficacité modérée sur raisin de table) ; homologation pour la vigne de cuve en France non vérifiée
 - [ ] Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 109** (p.86) — Terroirs microbiens : une piste débattue
 - [ ] Contestation par d’autres études : affirmée par le livre ; Setati et al. (cités par Gilbert et al.) trouvent plus de variation à l’intérieur d’une parcelle qu’entre parcelles ; autres études non lues
@@ -261,7 +293,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 115** (p.90) — Permaculture, animaux au vignoble et « Non solus »
 - [ ] Échelle de permaculture en 10 niveaux : non retrouvée dans les sources lues (Réussir présente Alain Malard comme vigneron et auteur de Vignes, vins et permaculture) ; présentée comme proposition citée par Lepeltier
-- [ ] Date de l’emblème Elzevier : 1620 selon Elsevier, ou emblème de Corrozet de 1540 adapté à Leyde selon Wikipedia ; non tranché
+- [ ] Date de l’emblème Elzevier : 1620 selon Elsevier ; une adaptation d’un emblème de Corrozet (1540) est avancée ailleurs, à sourcer ; non tranché
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 116** (p.92) — Après 1945 : la viticulture conventionnelle
 - [ ] Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié
@@ -275,11 +308,13 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 118** (p.93) — Descola, Latour et la fin du Grand Partage
 - [ ] Latour : l’expression « Grand Partage » datée du « début des années 1980 » et les « deux partages » (humains/non-humains ; modernes/non-modernes) ne sont pas confirmés ; l’expression est antérieure (Goody, Lévi-Strauss)
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 119** (p.94) — Une diplomatie avec le vivant : Larrère, Morizot, Calvo
 - [ ] Larrère, Du bon usage de la nature : 1997 (Aubier, une seule source) contre 1998 dans le livre ; à doubler avec le catalogue BnF
 - [ ] Morizot : « crise de la sensibilité » et « diplomatie » (formules du livre) non retrouvées littéralement dans l’entretien Reporterre lu
 - [ ] Raw Wine Alive! : événement des 5-6 décembre 2021 confirmé, mais « premier colloque international en ligne » non confirmé
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 120** (p.95) — La carte du bio viticole français en 2020
 - [ ] Provence : 43,89 % sur la carte contre « proche de 30 % » pour PACA (Réussir/Agence Bio 2020) ; périmètre différent probable
@@ -293,21 +328,25 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum
 - [ ] Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme
 - [ ] Livre de Pineau : 2019 selon Lepeltier, 2020 selon La Vie des idées (éditeur non consulté) ; sous-titre « radicalités » au pluriel ; « vignerons chercheurs » non retrouvé
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 122** (p.97) — Les chartes du vin nature
 - [ ] Année de fondation de l’AVN : 2000 selon une source, aucune année ailleurs ; ne pas dater
 - [ ] S.A.I.N.S. : une seule source donne 2012, les autres citent la charte sans date
 - [ ] Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 123** (p.97) — Agir indirectement : Haudricourt et Fukuoka
 - [ ] Distinction de Haudricourt entre action directe positive (Occident) et indirecte négative (Asie) : thèse non confirmée dans les sources lues (analyse HAL bloquée)
 - [ ] Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 124** (p.98) — Permaculture, régénératif et vigne non labourée
 - [ ] Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)
 - [ ] Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965
 - [ ] Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés
 - [ ] Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 125** (p.100) — La vitiforesterie aujourd’hui
 - [ ] Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source
@@ -324,7 +363,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 127** (p.101) — L’agroécologie : un mot né en 1928
 - [ ] Origine du mot : Bensin 1928 (Wezel et al.) ou Friederichs 1930 (Dalgaard et al.) ; dates de Bensin (1881-1973) non vérifiées
-- [ ] Altieri : 1983 selon Lepeltier et Wikipédia FR, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer
+- [ ] Altieri : 1983 selon Lepeltier, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 128** (p.104) — Climat, météo et millésime
 - [ ] Avancée des vendanges en Bourgogne (⚠️, une seule source) : le livre dit environ deux semaines depuis 1960-1970 ; National Geographic (Labbé et al. 2019) situe le net décrochage à la fin des années 1980.
@@ -335,6 +375,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Ralentissement et arrêt (⚠️) : sources de niveau 2b seulement ; elles parlent de forte altération vers 40 °C et non d’arrêt total, et une source évoque une inhibition dès 35 °C.
 - [ ] Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).
 - [ ] Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 130** (p.105) — Le froid : gel d’hiver et gel de printemps
 - [ ] Gel d’hiver (⚠️, une seule source) : le livre place les dégâts de vinifera vers -15/-20 °C et la résistance des vignes américaines et asiatiques à -30 °C ; WSU donne -22 à -26 °C de résistance maximale pour vinifera, environ -29 °C pour labrusca et hybrides, et ne traite pas des espèces asiatiques.
@@ -347,7 +388,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 132** (p.108) — L’indice de Winkler
 - [ ] Projet UC Davis (⚠️) : le livre parle de 74 parcelles de la Napa Valley et de 60 cépages testés aux canicules ; UC Davis précise que 74 blocs ont fourni des données de chimie 2015 en cabernet-sauvignon et que les 60 cultivars sont répartis dans deux blocs.
-- [ ] Seuils des régions : donnés en °F-jours à l’origine ; équivalents en °C-jours d’après Wikipedia (le livre ne cite pas les seuils).
+- [ ] Seuils des régions : donnés en °F-jours à l’origine (Amerine et Winkler 1944) ; équivalents en °C-jours et scission de la région I en Ia et Ib à sourcer (le livre ne cite pas les seuils).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 135** (p.110) — Autres outils : échelle de Jones et modèles GFV/GSR
 - [ ] Échelle de Jones (⚠️) : le livre la date de 2005 ; la source consultée est une synthèse de 2006, date non confirmée.
@@ -363,6 +405,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 138** (p.111) — Vents et grêle
 - [ ] Grêle (⚠️, une seule source journalistique citant Météo-France) : le livre dit qu’elle devient plus courante ; la source conclut à l’absence de tendance claire.
 - [ ] Mistral (⚠️, une seule source) : l’INAO confirme l’exposition de la vallée du Rhône au mistral, mais pas l’effet du vent sur la vigne.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 139** (p.105) — Le rayonnement UV et la vigne
 - [ ] UV et Nouvelle-Zélande (⚠️) : le livre annonce 30 à 40 % de radiations en plus ; la seule source chiffrée (McKenzie et al. 2006, via le ministère néo-zélandais) donne environ 40 % pour les UV de pointe estivale ; essai NIWA préliminaire.
@@ -388,13 +431,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Limites d’altitude « 1000 m sud et est, 800 m nord » (livre) : non retrouvées ; le disciplinare donne des courbes de niveau variables (800, 900, 1000 m au nord, 400 m à l’est, 600 m au sud-ouest), présentées comme telles
 - [ ] DOC contre AOC : le livre emploie les deux (texte et légende de la carte) ; DOC confirmé par le disciplinare
 - [ ] Débat de 2024 sur un passage éventuel en DOCG : non acté, non repris dans la fiche
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 143** (p.115) — Exposition et pente : où tourner la vigne
 - [ ] Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris
 - [ ] Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (WineWithSeth) ; moulin de Verzenay et vents d’ouest non vérifiés
 - [ ] Expositions de Nuits-Saint-Georges, Meursault et Hermitage : une seule source (WineWithSeth)
-- [ ] Calmont (Moselle), plus de 65° : une seule source (Wikipedia) ; le livre parle de plus de 35° pour les vignobles nordiques
 - [ ] Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 144** (p.115) — Masses d’eau et courants marins
 - [ ] Gulf Stream : le livre dit qu’une eau chaude atténue la latitude ; une source météo nuance (effet surtout hivernal et indirect sur les étés), niveau 2b uniquement, à confirmer avec Météo-France
@@ -410,15 +454,17 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 146** (p.117) — Classer les climats viticoles
 - [ ] Classement du livre par surface plantée (méditerranéen, puis semi-aride, puis tempéré) : non retrouvé dans les sources consultées
-- [ ] Willamette (Oregon) : le livre la range en climat maritime, Wikipedia lui attribue le type Köppen Csb (méditerranéen à été frais) ; classement non tranché
+- [ ] Willamette (Oregon) : le livre la range en climat maritime ; un classement Köppen Csb (méditerranéen à été frais) est avancé ailleurs, à sourcer ; non tranché
 - [ ] Descriptions des types de climat (étés, pluies) : reprises du livre, non recoupées par une source indépendante
 - [ ] Carbonneau et Escudier, De l’œnologie à la viticulture (Quae) : année de parution (2017 selon le livre) non confirmée
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 147** (p.119) — Volcans et millésimes
 - [ ] Krakatau : couchers de soleil rouges environ 3 ans ; le refroidissement chiffré (jusqu’à 1,2 °C) d’une source universitaire n’est pas recoupé et n’est pas repris
 - [ ] Mont Saint Helens : l’USGS le cite pour son CO2, pas comme éruption refroidissante ; classement du livre non confirmé, volontairement absent des exercices
 - [ ] Millésime 1816 en Bourgogne ou ailleurs : date de vendanges non vérifiée, non reprise
 - [ ] Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 148** (p.119) — Les bans de vendanges, archives du climat
 - [ ] Labbé et al. 2019 : une seule étude primaire ; le livre ne la cite pas, chiffres cohérents avec sa tendance
@@ -437,6 +483,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon
 - [ ] Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs
 - [ ] Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 151** (p.120) — Le réchauffement actuel et les vendanges
 - [ ] +1,2 °C en 2020 : une seule source officielle consultée (OMM), chiffre conforme au livre
@@ -490,10 +537,11 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Hiérarchie éon, ère, période, époque, étage : confirmée par la charte ICS 2023-06 ; la distinction relative / absolue reste énoncée par le livre (⚠️).
 
 **Fiche 160** (p.127) — Les noms des âges géologiques : lieux, peuples et roches
-- [ ] Jurassique, massif du Jura, Brongniart 1829 (⚠️) : l’attribution à Brongniart repose sur une source de niveau 2b (Wikipedia) ; l’étymologie, elle, concorde avec le livre.
+- [ ] Jurassique, massif du Jura, Brongniart 1829 (⚠️) : attribution à Brongniart à sourcer ; l’étymologie concorde avec le livre.
 - [ ] Silurien, Silures, Murchison 1835 (⚠️) : une seule source (Geological Society) ; concorde avec le livre.
-- [ ] Carbonifère, « qui porte du charbon », 1822 (⚠️) : source de niveau 2b (Wikipedia) ; concorde avec le livre.
+- [ ] Carbonifère, « qui porte du charbon », 1822 (⚠️) : à sourcer ; concorde avec le livre.
 - [ ] Provenance grecque ou latine de nombreux noms d’âges (⚠️) : affirmation du livre, non recoupée.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 161** (p.127) — Minéral, élément chimique, roche : trois mots à ne pas confondre
 - [ ] Élément défini par son nombre de protons (⚠️) : une seule source lue (Inrap) ; le nombre d’isotopes du carbone annoncé par l’extraction (quatre) n’est pas repris, la source en donne trois naturels.
@@ -509,6 +557,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques ; une fiche INAO citée de seconde main parle de granite bleu, le cahier des charges 2022 cité de porphyres et roches métamorphiques. Cahier des charges original non lu (extranet bloqué). Pour Juliénas, la pierre bleue ne couvre qu’environ 42 % des sols, la formule « surtout diorite » est un peu forte.
 - [ ] Roches des crus communaux du Muscadet (⚠️, sources de niveau 2b seulement) : Clisson granite (sources concordantes), Gorges gabbro (une page ancienne écrit argile et quartz), Le Pallet gneiss ou gabbro-gneiss-grès selon les pages. Cahier des charges INAO des dénominations non lu.
 - [ ] Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 164** (p.132) — Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre
 - [ ] Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.
@@ -517,12 +566,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.
 - [ ] Fertilité des sols basaltiques (⚠️, divergence) : sols volcaniques réputés fertiles en agriculture générale, mais pauvres en matière organique et peu productifs en vigne selon un article technique ; la montmorillonite citée par le livre n’est pas retrouvée.
 - [ ] Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 165** (p.132) — Les projections volcaniques : cendres, lapilli, ponce, tuf
 - [ ] Tuf et Greco di Tufo (⚠️, une seule source) : le tuf n’est pas le seul sol, calcaire et argile dominent selon la commune.
 - [ ] Tokaj (⚠️, une étude géologique à l’échelle régionale) : tuf rhyolitique dominant, ponce incluse dans les tufs ; Lipari non vérifié.
 - [ ] Santorin (⚠️) : sol aspa décrit par deux pages du même site, pas d’indépendance entre elles.
 - [ ] Ponce = écume de lave solidifiée et classement des téphras (⚠️) : définitions du livre non recoupées par les sources lues.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 166** (p.132) — Les « vins de volcan » : une signature commune ?
 - [ ] Analyses de John Szabo (⚠️) : rapportées par un article de presse technique, pas par une publication à comité de lecture ; le second chercheur cité par le livre n’est pas confirmé et n’est pas utilisé ici.
@@ -530,23 +581,28 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Rangen de Thann et Kaiserstuhl (⚠️, une source chacune) : volcanisme paléozoïque ancien pour le Rangen, loess sur socle volcanique miocène au Kaiserstuhl.
 - [ ] Santorin (⚠️, même site pour toutes les pages) ; statut « endormi » du volcan non confirmé.
 - [ ] Etna (⚠️, sources de niveau 2b) : sols d’origine volcanique, la nature basaltique des laves n’est pas confirmée.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 167** (p.133) — Naissance d’une roche sédimentaire
 - [ ] Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 168** (p.133) — Roches détritiques : de l’argile au poudingue
 - [ ] Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.
 - [ ] Seuil sable/gravier de 2 mm (⚠️, une seule source, USGS, niveau 1) : norme de Wentworth ; le « > 4 mm » du livre désigne les cailloutis, pas une contradiction.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 169** (p.134) — Roches chimiques et biochimiques : craie, diatomite, gypse, tuffeau
-- [ ] Classement du silex (⚠️) : chimique selon le livre, biochimique (chert) selon Wikipedia ; classification non unanime, présentée comme telle.
+- [ ] Classement du silex (⚠️) : chimique selon le livre ; un classement biochimique (chert) est avancé ailleurs, à sourcer ; classification non unanime, présentée comme telle.
 - [ ] Diatomite « abrasive » (⚠️) : le BRGM la décrit comme faiblement abrasive (Mohs 4,5-6), non reprise dans la fiche.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 170** (p.134) — Le calcaire et ses cousins : dolomie, marne, calcaire oolithique
-- [ ] Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % (Wikimonde).
+- [ ] Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % : à sourcer.
 - [ ] Propriétés du calcaire (⚠️) : rétention d’eau très variable selon porosité ; pH élevé cohérent mais non chiffré dans les sources lues.
 - [ ] Marne (⚠️) : « parts égales » du livre simplifie un intervalle d’environ 35-65 % d’argile (Universalis, une seule source).
 - [ ] Calcaires oolithiques de Côte-d’Or (⚠️) : confirmés dans le Bajocien par une seule source (WineWithSeth) ; entroques de Pouilly-Fuissé non vérifiées, non reprises.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 171** (p.135) — Galets roulés et graves : drainants, inertes, et pourtant précieux
 - [ ] Galets drainants et inertes (⚠️) : propriétés reprises du livre ; seul le cas de Châteauneuf-du-Pape est documenté (WineWithSeth, une seule source), les graves bordelaises n’ont pas été recoupées.
@@ -559,33 +615,45 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 173** (p.136) — Le métamorphisme : une roche transformée sans fondre
 - [ ] Ordre de grandeur de la pression (⚠️) : « centaines de MPa » vient d’un calcul de contrôle (environ 27 MPa par km), cohérent avec le diagramme du livre et la fourchette des gneiss, mais non trouvé tel quel dans une source lue ; il corrige l’erreur « 12 fois » du livre (contradiction interne p. 136 / p. 137).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 174** (p.136) — De l’argile à la migmatite : une gradation sans frontière nette
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 175** (p.136) — Vignobles sur ardoises et schistes : Anjou noir, Faugères, Moselle, Priorat, Douro
 - [ ] Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.
 - [ ] Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.
 - [ ] Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.
-- [ ] Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Wikipédia et Turisme Priorat non lus.
+- [ ] Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Turisme Priorat non lu.
 - [ ] Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.
 - [ ] Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 176** (p.137) — Gneiss, amphibolite, serpentinite : du Muscadet à la Wachau
 - [ ] Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges INAO du Muscadet Sèvre-et-Maine n’a pas pu être lu (extranet bloqué).
-- [ ] Nombre de crus du Muscadet (⚠️) : 7 selon Wikipédia, 10 zones selon l’introduction du même article et Wine With Seth ; volontairement non retenu dans la fiche et les exercices.
+- [ ] Nombre de crus du Muscadet (⚠️) : 7 ou 10 selon les sources (Wine With Seth : 10 zones) ; cahiers des charges INAO non lus ; volontairement non retenu dans la fiche et les exercices.
 - [ ] Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.
 - [ ] Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+
+**Fiche 177** (p.138) — Le cycle des roches : un recyclage permanent qui fabrique les sols
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 178** (p.139) — Naissance d’un sol : la pédogenèse
 - [ ] Durée de formation d’un sol (⚠️, une seule source de niveau 1, AFES) : de quelques décennies à plusieurs millénaires par cm selon la roche et le climat ; le « 1 cm par siècle » est une moyenne, pas une règle.
 - [ ] Altération chimique des roches (⚠️) : le détail (eau acide, hydrolyse) n’est pas doublé par deux sources de niveau 1 ou 2a ; la fiche n’en retient que l’idée générale.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 179** (p.140) — Lire un sol : les horizons
 - [ ] Horizons O, A, E, B, C, R (⚠️, une seule source de niveau 2b) : Lepeltier omet l’horizon E ; la lettre est O (organique) et non le chiffre 0 ; le détail R/M/D du Référentiel pédologique n’est pas vérifié.
 - [ ] 34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).
 - [ ] 32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 180** (p.142) — Pas de sol idéal pour la vigne
 - [ ] Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.
-- [ ] 51 grands crus d’Alsace : confirmé par Wikipedia et Atout France, mais le site du CIVA (niveau 1) n’a pas pu être lu.
+- [ ] 51 grands crus d’Alsace : une seule source (Atout France) ; le site du CIVA (niveau 1) n’a pas pu être lu.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 181** (p.142) — Nutrition minérale : ce que le sol donne vraiment
 - [ ] Azote comme facteur chimique clé et primauté des propriétés physiques (⚠️, une seule source, van Leeuwen et al., IVES).
@@ -600,9 +668,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Étude bordelaise (⚠️, source primaire unique) : 7 propriétés, environ 400 ha, 9 types de sols, les chiffres du livre correspondent.
 
 **Fiche 183** (p.143) — Ce qui règle l’eau : texture, fissures, pierrosité et argiles
-- [ ] Smectites contre kaolinite et illite (⚠️, deux sources de niveau 2b seulement : Wikipedia, Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre).
+- [ ] Smectites contre kaolinite et illite (⚠️, une seule source de niveau 2b : Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre).
 - [ ] Étude Bourguignon / LAMS (⚠️) : 53 parcelles et environ 86 % confirmés par une fiche de conférence, mais étude inédite, inachevée et critiquée ; date 2002 non confirmée et non reprise ; à présenter comme corrélation de laboratoire.
 - [ ] Wittendal (⚠️, une seule source secondaire, Goode) : 2 816 climats et non « vignobles » ; étude primaire non retrouvée.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 184** (p.144) — Châteauneuf-du-Pape : une mosaïque de sols
 - [ ] Secteurs géologiques (⚠️) : sources du syndicat de Châteauneuf, de Wine With Seth, du Département de Vaucluse ; les styles par secteur viennent du livre (Georges Truc), non revérifiés.
@@ -619,6 +688,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.
 - [ ] Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.
 - [ ] Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 187** (p.149) — L’homme fabrique le terroir
 - [ ] Prix du foncier champenois 2020 : le livre donne 1 196 000 €/ha, le chiffre SAFER relayé pour l’AOC entière est 1 041 000 €/ha ; seul l’ordre de grandeur (environ 1 M€/ha) est repris, divergence signalée.

@@ -187,9 +187,11 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Qu’est-ce qui fait varier l’intensité de la photosynthèse ?", payload: { options: ["L’âge des feuilles", "L’ensoleillement", "La disponibilité en eau", "La couleur de l’étiquette"], answers: [0, 1, 2] } },
       { type: "short_answer", prompt: "Comment nomme-t-on la symbiose où un organisme vit à l’intérieur d’un autre ?", payload: { accepted: ["endosymbiose", "l’endosymbiose"] } }
     ],
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 44 ; manuels de biologie (endosymbiose des plastes) ; Wikipédia, Chloroplast",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 44 ; manuels de biologie (endosymbiose des plastes)",
     page: 44
   },
   {
@@ -462,9 +464,11 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 232\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L7 4L0 8z\" fill=\"currentColor\"/></marker></defs>\n<text x=\"5\" y=\"12\" font-size=\"9\" font-weight=\"bold\" opacity=\"0.7\">AU-DESSUS DU SOL</text>\n<text x=\"205\" y=\"17\" font-size=\"9\" text-anchor=\"middle\">sexués : ponte de l’œuf d’hiver</text>\n<path d=\"M270 40 Q160 8 50 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" marker-end=\"url(#a)\"/>\n<g stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"currentColor\" fill-opacity=\"0.08\">\n<rect x=\"5\" y=\"40\" width=\"90\" height=\"40\" rx=\"6\"/><rect x=\"115\" y=\"40\" width=\"90\" height=\"40\" rx=\"6\"/><rect x=\"225\" y=\"40\" width=\"90\" height=\"40\" rx=\"6\"/>\n<rect x=\"5\" y=\"135\" width=\"140\" height=\"40\" rx=\"6\"/><rect x=\"175\" y=\"135\" width=\"140\" height=\"40\" rx=\"6\"/></g>\n<g font-size=\"9\" text-anchor=\"middle\">\n<text x=\"50\" y=\"57\">Œuf d’hiver</text><text x=\"50\" y=\"69\">(sous l’écorce)</text>\n<text x=\"160\" y=\"57\">Femelle : galles</text><text x=\"160\" y=\"69\">sur les feuilles</text>\n<text x=\"270\" y=\"57\">Femelles ailées</text><text x=\"270\" y=\"69\">(dispersion)</text>\n<text x=\"75\" y=\"152\">Formes radicicoles :</text><text x=\"75\" y=\"164\">nodosités (radicelles)</text>\n<text x=\"245\" y=\"152\">Racines âgées :</text><text x=\"245\" y=\"164\">tubérosités (mortelles)</text></g>\n<g stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\">\n<line x1=\"95\" y1=\"60\" x2=\"113\" y2=\"60\" marker-end=\"url(#a)\"/><line x1=\"205\" y1=\"60\" x2=\"223\" y2=\"60\" marker-end=\"url(#a)\"/>\n<line x1=\"150\" y1=\"80\" x2=\"90\" y2=\"133\" marker-end=\"url(#a)\"/><line x1=\"145\" y1=\"155\" x2=\"173\" y2=\"155\" marker-end=\"url(#a)\"/>\n<line x1=\"250\" y1=\"135\" x2=\"268\" y2=\"82\" marker-end=\"url(#a)\"/>\n<line x1=\"0\" y1=\"105\" x2=\"320\" y2=\"105\" stroke-dasharray=\"4 3\" opacity=\"0.6\"/></g>\n<text x=\"5\" y=\"100\" font-size=\"9\" opacity=\"0.7\">niveau du sol</text>\n<text x=\"5\" y=\"124\" font-size=\"9\" font-weight=\"bold\" opacity=\"0.7\">SOUS LE SOL</text>\n<text x=\"130\" y=\"116\" font-size=\"9\" text-anchor=\"start\">descente</text>\n<text x=\"262\" y=\"118\" font-size=\"9\" text-anchor=\"start\">remontée</text>\n<g font-size=\"10\" text-anchor=\"middle\"><text x=\"160\" y=\"202\">Vignes américaines : surtout les feuilles (galles).</text>\n<text x=\"160\" y=\"217\" font-weight=\"bold\">V. vinifera : les racines, atteinte mortelle.</text></g>\n</svg>","legende":"Cycle simplifié du phylloxéra : un étage aérien (galles) et un étage souterrain (racines).","src":"D’après Lepeltier, Mille Vignes, p. 50-53 ; schéma simplifié et original."},
     cours: {"lede":"Un minuscule puceron a ravagé le vignoble européen. Son cycle à deux étages, feuilles en haut et racines en bas, explique pourquoi les vignes américaines l’ont supporté, pourquoi V. vinifera meurt, pourquoi la greffe l’a emporté et pourquoi certains sols l’arrêtent.","frise":[{"date":"1855","txt":"L’Américain Asa Fitch décrit l’insecte sous le nom de Pemphigus vitifoliae."},{"date":"1863","txt":"Premiers dépérissements en France, dans le Gard (Pujaut selon Ollat, OIV 2024)."},{"date":"1866","txt":"Léo Laliman cultive des vignes américaines à la Tourrate, près de Bordeaux."},{"date":"15 juillet 1868","txt":"Planchon, Bazille et Sahut trouvent le puceron sur des racines au domaine de Lagoy, à Saint-Martin-de-Crau."},{"date":"28 août 1868","txt":"Éclosion de la forme ailée : Rhizaphis vastatrix devient Phylloxera vastatrix."},{"date":"1869","txt":"Congrès de Beaune : la résistance des vignes américaines est signalée."},{"date":"Mai 1874","txt":"Millardet et Laliman réussissent plusieurs greffages sur souches américaines."},{"date":"1888","txt":"La commission supérieure du phylloxéra se range à la greffe."}],"essentiel":"Le phylloxéra vit en haut sur les feuilles (galles) et en bas sur les racines (nodosités, tubérosités). Les vignes américaines supportent ses piqûres ; V. vinifera meurt de celles des racines. D’où la solution : garder le raisin européen, mais sur des racines américaines.","sections":[{"h":"Un puceron à deux étages","blocs":[{"imp":"essentiel","txt":"Il alterne reproduction sexuée et parthénogenèse : des femelles pondent sans fécondation, ce qui enchaîne très vite les générations."},{"imp":"essentiel","txt":"Étage du haut : un œuf d’hiver éclot au printemps en une femelle qui pique les jeunes feuilles et y provoque des galles (forme gallicole)."},{"imp":"essentiel","txt":"Étage du bas : ses descendantes gagnent les racines (forme radicicole). Sur les radicelles, les piqûres donnent des nodosités ; sur les racines plus âgées, des tubérosités."},{"imp":"important","txt":"Des femelles ailées dispersent l’insecte. Il voyage aussi dans la terre collée aux semelles : en Barossa, on désinfecte les chaussures des visiteurs."}],"table":{"caption":"Où et comment le phylloxéra attaque","head":["Forme","Organe","Lésion","Conséquence"],"rows":[{"imp":"important","cells":["Gallicole","Jeunes feuilles","Galles","Gêne surtout les vignes américaines"]},{"imp":"important","cells":["Radicicole","Radicelles","Nodosités","Premières piqûres sur les jeunes racines"]},{"imp":"essentiel","cells":["Radicicole","Racines âgées","Tubérosités","Nécrose et infection : mortel pour V. vinifera"]}]}},{"h":"Pourquoi vinifera meurt, et où le puceron échoue","blocs":[{"imp":"essentiel","txt":"Chez V. vinifera, les tubérosités se nécrosent et s’infectent : la racine est détruite et le cep dépérit. Les vignes américaines souffrent surtout des galles sur les feuilles, bien moins grave."},{"imp":"important","txt":"Les sols sableux freinent le puceron : il ne peut pas circuler entre les grains jusqu’aux racines. D’autres vignobles ont été épargnés par leur isolement ou par des sols qui lui sont défavorables : une grande partie du Chili, la Barossa, des îles comme Santorin (sols volcaniques)."},{"imp":"culture","txt":"À la Barossa, la charte des vieilles vignes (2009) classe les ceps : old vines 35 ans, survivors 70 ans, centenarians 100 ans, ancestors 125 ans. Lepeltier écrit 60 ans pour les survivors."}],"table":null},{"h":"Les remèdes essayés","blocs":[{"imp":"important","txt":"Les « sulfuristes » (chimistes) défendent les vignes françaises franches de pied ; les « américanistes » de l’école de Montpellier misent sur la greffe."},{"imp":"important","txt":"Léo Laliman signale la résistance des vignes américaines à Beaune en 1869. Qui propose alors de greffer ? Gaston Bazille selon Foëx ; Laliman et Pulliat selon Delmotte et Jacquet (2025). Divergence non tranchée."},{"imp":"utile","txt":"En 1908, Lucien Daniel juge que la greffe modifie la physiologie de la vigne et la qualité du vin. La greffe l’emporte néanmoins."},{"imp":"culture","txt":"Les hybrides producteurs directs, autre voie de résistance, sont traités dans les fiches Hybridation (Lepeltier, p. 34-39)."}],"table":{"caption":"Quatre familles de remèdes","head":["Remède","Principe","Bilan"],"rows":[{"imp":"utile","cells":["Submersion","Inonder les vignes en hiver","Efficace localement, coûteux"]},{"imp":"utile","cells":["Sable","Planter dans les sables","Efficace localement, coûteux"]},{"imp":"utile","cells":["Sulfure de carbone","Injection au pal (ou sulfocarbonate de potassium)","Efficace localement, coûteux"]},{"imp":"essentiel","cells":["Greffe","V. vinifera sur racines américaines","Supplante les autres remèdes"]}]}},{"h":"Franc de pied aujourd’hui","blocs":[{"imp":"important","txt":"À Montlouis, François Chidaine cultive depuis 1998 aux Bournais (3,99 ha) un demi-hectare de chenin franc de pied, vinifié à part depuis 2007, à côté de chenin greffé."},{"imp":"important","txt":"Selon Lepeltier, les francs de pied y sont moins vigoureux, produisent moins et donnent des vins plus tendus ; le porte-greffe lisserait l’effet millésime et augmenterait le rendement."},{"imp":"utile","txt":"Une association de vignerons francs de pied a été constituée en juin 2021 autour de Loïc Pasquet (Liber Pater) ; on y trouve Egon Müller et Chartogne-Taillet."}],"table":null}],"synthese":[{"imp":"essentiel","txt":"Galles en haut, tubérosités en bas : seule la forme racinaire tue V. vinifera."},{"imp":"essentiel","txt":"Le puceron a été identifié en 1868 ; la greffe sur racines américaines l’emporte sur l’eau, le sable et le sulfure de carbone."},{"imp":"important","txt":"Les sols sableux freinent le puceron, d’où quelques vieilles vignes franches de pied."},{"imp":"utile","txt":"Pour un client : la plupart des vignes sont greffées ; le franc de pied reste rare et revendiqué."}],"src":"Fiches 73 à 77 (Mille Vignes), 78 pour le calcaire. Legros, Étude et Gestion des Sols 12(2) ; Foëx, Cours complet de viticulture, 3e éd. ; Delmotte et Jacquet, Histoire des maladies de la vigne, Vendanges du Savoir, 2025 (hal-05304637) ; Ollat, OIV 2024 ; Barossa Old Vine Charter ; La Revue du vin de France (Chidaine) ; Decanter, Réussir Vigne (association Francs de Pied). Cf. Mille Vignes, p. 50-53."},
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 50-53 ; Wine with Seth, Phylloxera ; Wikipédia, Great French Wine Blight",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 50-53 ; Wine with Seth, Phylloxera",
     page: 50
   },
   {
@@ -482,9 +486,11 @@ FICHES.push(
       { type: "ordering", prompt: "Range les catégories de Barossa de la plus jeune à la plus ancienne.", payload: { items: ["Old vine (35 ans)", "Survivor (70 ans)", "Centenarian (100 ans)", "Ancestor (125 ans)"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Le Chili a une grande partie de son vignoble franc de pied.", answer: true } }
     ],
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 51 et 54 ; Barossa Old Vine Charter (barossa.com) ; Wikipédia, Great French Wine Blight ; Frontiers in Plant Science (2022), État de Washington",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 51 et 54 ; Barossa Old Vine Charter (barossa.com) ; Frontiers in Plant Science (2022), État de Washington",
     page: 51
   },
   {
@@ -504,8 +510,12 @@ FICHES.push(
       { type: "ordering", prompt: "Remets dans l’ordre chronologique.", payload: { items: ["Laliman signale la résistance des vignes américaines au congrès de Beaune (1869)", "Millardet et Laliman réussissent les premiers greffages (mai 1874)", "La commission supérieure du phylloxéra se range à la greffe (1888)", "Rapport critique de Lucien Daniel (1908)"] } }
     ],
     status: "needs_review",
-    to_check: ["Auteur de l’idée de la greffe en 1869 : Gaston Bazille selon Foëx (Cours complet de viticulture), Laliman et Pulliat selon Delmotte et Jacquet (2025) ; rôle de Pulliat (Lepeltier p. 52) absent chez Foëx","Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF"],
-    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; Wikipédia, Lucien Daniel ; BnF, notice Lucien Daniel ; Wein.plus (Laliman) ; G. Foëx, Cours complet de viticulture, 3e éd., Coulet (Laliman à la Tourrate en 1866, congrès de Beaune en 1869, idée de Bazille) ; Delmotte et Jacquet, Histoire des maladies de la vigne, Vendanges du Savoir, 2025 (hal-05304637)",
+    to_check: [
+      "Auteur de l’idée de la greffe en 1869 : Gaston Bazille selon Foëx (Cours complet de viticulture), Laliman et Pulliat selon Delmotte et Jacquet (2025) ; rôle de Pulliat (Lepeltier p. 52) absent chez Foëx",
+      "Rapport de Lucien Daniel (1908) : titre connu par une seule liste ; dates de vie (1856-1940) confirmées par la BnF",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 51-52 ; Legros, Étude et Gestion des Sols 12(2) ; BnF, notice Lucien Daniel ; Wein.plus (Laliman) ; G. Foëx, Cours complet de viticulture, 3e éd., Coulet (Laliman à la Tourrate en 1866, congrès de Beaune en 1869, idée de Bazille) ; Delmotte et Jacquet, Histoire des maladies de la vigne, Vendanges du Savoir, 2025 (hal-05304637)",
     page: 51
   },
   {
@@ -870,9 +880,11 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque maladie à son remède historique.", payload: { pairs: [["Oïdium", "Soufre"], ["Mildiou", "Bouillie bordelaise (cuivre)"], ["Phylloxéra", "Greffe sur porte-greffe américain"]] } }
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<line x1=\"14\" y1=\"120\" x2=\"306\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"20\" y1=\"116\" x2=\"20\" y2=\"124\" stroke=\"currentColor\"/><text x=\"20\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1840</text><line x1=\"76\" y1=\"116\" x2=\"76\" y2=\"124\" stroke=\"currentColor\"/><text x=\"76\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1850</text><line x1=\"132\" y1=\"116\" x2=\"132\" y2=\"124\" stroke=\"currentColor\"/><text x=\"132\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1860</text><line x1=\"188\" y1=\"116\" x2=\"188\" y2=\"124\" stroke=\"currentColor\"/><text x=\"188\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1870</text><line x1=\"244\" y1=\"116\" x2=\"244\" y2=\"124\" stroke=\"currentColor\"/><text x=\"244\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1880</text><line x1=\"300\" y1=\"116\" x2=\"300\" y2=\"124\" stroke=\"currentColor\"/><text x=\"300\" y=\"136\" text-anchor=\"middle\" opacity=\"0.7\">1890</text>\n<rect x=\"132\" y=\"114\" width=\"56\" height=\"12\" fill-opacity=\"0.25\"/>\n<line x1=\"48\" y1=\"120\" x2=\"48\" y2=\"58\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"48\" cy=\"120\" r=\"3.5\"/><text x=\"48\" y=\"46\" text-anchor=\"middle\" font-weight=\"bold\">Oïdium</text><text x=\"48\" y=\"56\" text-anchor=\"middle\">Angleterre 1845</text><line x1=\"59.199999999999996\" y1=\"120\" x2=\"59.199999999999996\" y2=\"110\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"59.199999999999996\" cy=\"120\" r=\"3.5\"/><text x=\"59.199999999999996\" y=\"98\" text-anchor=\"middle\" font-weight=\"bold\">Oïdium</text><text x=\"59.199999999999996\" y=\"108\" text-anchor=\"middle\">France 1847</text>\n<line x1=\"160\" y1=\"120\" x2=\"160\" y2=\"150\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"160\" cy=\"120\" r=\"3.5\"/><text x=\"160\" y=\"152\" text-anchor=\"middle\" font-weight=\"bold\">Phylloxéra</text><text x=\"160\" y=\"162\" text-anchor=\"middle\">années 1860</text>\n<line x1=\"232.79999999999998\" y1=\"120\" x2=\"232.79999999999998\" y2=\"84\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"232.79999999999998\" cy=\"120\" r=\"3.5\"/><text x=\"232.79999999999998\" y=\"72\" text-anchor=\"middle\" font-weight=\"bold\">Mildiou</text><text x=\"232.79999999999998\" y=\"82\" text-anchor=\"middle\">1878</text><line x1=\"272\" y1=\"120\" x2=\"272\" y2=\"174\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"272\" cy=\"120\" r=\"3.5\"/><text x=\"272\" y=\"176\" text-anchor=\"middle\" font-weight=\"bold\">Bouillie bordelaise</text><text x=\"272\" y=\"186\" text-anchor=\"middle\">1885 (cuivre)</text><line x1=\"277.59999999999997\" y1=\"120\" x2=\"277.59999999999997\" y2=\"110\" stroke=\"currentColor\" stroke-dasharray=\"2 2\"/><circle cx=\"277.59999999999997\" cy=\"120\" r=\"3.5\"/><text x=\"277.59999999999997\" y=\"98\" text-anchor=\"middle\" font-weight=\"bold\">Black rot</text><text x=\"277.59999999999997\" y=\"108\" text-anchor=\"middle\">1885-1886</text>\n<text x=\"160\" y=\"208\" text-anchor=\"middle\" opacity=\"0.75\">Ordre d’arrivée : O-P-M-B. Contre l’oïdium, le soufre.</text>\n</svg>","legende":"Arrivée en France des fléaux américains au XIXe siècle et des premiers remèdes.","src":"D’après Lepeltier, Mille Vignes, p. 68 ; INRAE (Delmotte et al.) ; dessin simplifié et original"},
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; Wikipédia, Erysiphe necator et Plasmopara viticola ; ePhytia (INRAE), anthracnose ; Ohio State University, Ohioline ; Li et al., Molecular Plant Pathology 22 (2021) : maladie originaire d’Europe",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 68-69 ; INRAE, Delmotte et al., Invasions et vigne (HAL) ; IFV Occitanie, Anthracnose ; ePhytia (INRAE), anthracnose ; Ohio State University, Ohioline ; Li et al., Molecular Plant Pathology 22 (2021) : maladie originaire d’Europe",
     page: 68
   },
   {
@@ -912,8 +924,11 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "Goethe appelle l’organe de base de la plante le {{Blatt}}, la feuille." } }
     ],
     status: "needs_review",
-    to_check: ["Urpflanze : absent de l’Essai de 1790 (Projekt Gutenberg) ; évoqué dans le Voyage en Italie (1787), non relu"],
-    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Wikipédia, Metamorphosis of Plants ; Morgan Library, notice de l’édition originale (Gotha, Ettinger, 1790) ; Goethe, Versuch die Metamorphose der Pflanzen zu erklären (Projekt Gutenberg)",
+    to_check: [
+      "Urpflanze : absent de l’Essai de 1790 (Projekt Gutenberg) ; évoqué dans le Voyage en Italie (1787), non relu",
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 72-73 ; Morgan Library, notice de l’édition originale (Gotha, Ettinger, 1790) ; Goethe, Versuch die Metamorphose der Pflanzen zu erklären (Projekt Gutenberg)",
     page: 73
   },
   {
@@ -931,9 +946,11 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces jalons dans l’ordre chronologique.", payload: { items: ["Goethe publie l’Essai sur la métamorphose des plantes", "Steiner édite les écrits scientifiques de Goethe", "Cours aux agriculteurs de Koberwitz"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Pour la lecture biodynamique, la vigne est dominée par une force de croissance végétative que le vigneron doit canaliser.", answer: true } }
     ],
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 73-75 ; Section d’agriculture du Goetheanum, Cours aux agriculteurs ; Orgprints ; Wikipédia, Rudolf Steiner ; J.-M. Florin (dir.), Viticulture biodynamique, MABD, 2017 (éd. anglaise Floris Books, 2021)",
+    status: "needs_review",
+    to_check: [
+      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
+    ],
+    src: "Mille Vignes, P. Lepeltier, p. 73-75 ; Section d’agriculture du Goetheanum, Cours aux agriculteurs ; Orgprints ; J.-M. Florin (dir.), Viticulture biodynamique, MABD, 2017 (éd. anglaise Floris Books, 2021)",
     page: 73
   }
 );
