@@ -187,3 +187,9 @@ test("suivi : le rappel sans aide lit la note des flashcards non saisies, et lai
   const r = JSON.parse(JSON.stringify(ctx.sv(J, id => types[id], {}, 10)));
   assert.deepEqual(r.libre, [3, 4]);
 });
+
+test("aucun identifiant d'exercice existant ne disparaît (la progression en dépend)", () => {
+  const avant = read("./ids-exercices.json"), now = new Set(FICHES.flatMap(toExercises).map(e => e.id));
+  const perdus = avant.filter(id => !now.has(id));
+  assert.deepEqual(perdus, [], "ids disparus : " + perdus.join(", "));
+});
