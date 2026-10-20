@@ -484,7 +484,8 @@ function showExercise(){
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
   if(!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
-    showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`});return;} // apprendre avant d'être interrogé
+    const lire=()=>showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`}); // apprendre avant d'être interrogé
+    pretestOn()&&f.qcm?showPretest(f,lire):lire();return;}
   const box=el('div','ex');
   const head=el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`);
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
@@ -541,6 +542,18 @@ function showExercise(){
         up.onclick=()=>{[items[i-1],items[i]]=[items[i],items[i-1]];draw();};dn.onclick=()=>{[items[i+1],items[i]]=[items[i],items[i+1]];draw();};li.append(up,dn);list.append(li);});};
       draw();body.append(list);submit(()=>items);break;}
   }
+}
+/* Pré-test : une question avant de découvrir une notion neuve. Ni note, ni journal, ni répétition espacée ; réglage dans le pied de page. */
+const PTKEY='mv_pretest';
+const pretestOn=()=>{try{return localStorage.getItem(PTKEY)!=='0';}catch{return true;}};
+function showPretest(f,suite){
+  const box=el('div','ex'),q=f.qcm;
+  const head=el('div','ex-head',`Pré-test · notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`);
+  if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier'));
+  box.append(head,el('div','ex-prompt',q.q),el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
+  const body=el('div','ex-body');shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);b.onclick=suite;body.append(b);});
+  const actions=el('div','ex-actions'),nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=pass.onclick=suite;actions.append(nsp,pass);
+  box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);window.scrollTo(0,0);
 }
 function correctText(ex){
   const p=ex.payload;
@@ -680,6 +693,9 @@ function exportProg(){
   try{localStorage.setItem(SAVED_KEY,String(now()));}catch{}majBandeau();
 }
 document.querySelector('.zoom-x').onclick=fermerZoom;
+const ptBtn=document.getElementById('pretestBtn');
+const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pretestOn()?'activé':'désactivé');
+ptBtn.onclick=()=>{try{localStorage.setItem(PTKEY,pretestOn()?'0':'1');}catch{}majPt();};majPt();
 document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scrollTo(0,0);};
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
