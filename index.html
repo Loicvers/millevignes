@@ -15,7 +15,7 @@
   :root{
     --ink:#16130f;--paper:#faf8f3;--paper2:#f1ede4;--line:#d9d2c4;
     --wine:#5b1a24;--wine-soft:#7a2c38;--gold:#7d6233;--muted:#6b6357;
-    --green:#5c7a4f;
+    --green:#5c7a4f;--warn:#85590c;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.55;font-size:16px}
@@ -118,9 +118,9 @@
   .mnemo{background:var(--paper2);border-left:3px solid var(--gold);padding:10px 12px;font-size:13.5px;border-radius:0 3px 3px 0;margin-bottom:14px}
   .mnemo .m-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-bottom:3px}
   .tag.ok{color:#3d6b3d;border:1px solid #3d6b3d}
-  .tag.warn{color:#9a6a12;border:1px solid #9a6a12}
+  .tag.warn{color:var(--warn);border:1px solid var(--warn)}
   .to-check{font-size:12.5px;color:var(--muted);margin:0 0 14px}
-  .to-check summary{cursor:pointer;color:#9a6a12}
+  .to-check summary{cursor:pointer;color:var(--warn)}
   .schema{margin:0 0 14px;border:1px solid var(--line);border-radius:3px;padding:10px;background:var(--paper)}
   .schema svg{display:block;width:100%;height:auto;color:var(--ink)}
   .cours{margin:0 0 14px;font-size:13.5px}
@@ -175,6 +175,7 @@
   .session{max-width:680px;margin:0 auto}
   .ex{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:3px;padding:22px}
   .ex-head{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .ex-warn{color:var(--warn);font-weight:600;margin-left:8px;white-space:nowrap}
   .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}
   .ex-statement,.ex-cloze{font-size:16px;margin-bottom:12px;line-height:2.2}
   .ex-answer{background:var(--ink);color:var(--paper);padding:14px;border-radius:3px;font-size:15px;margin-bottom:12px}
@@ -743,7 +744,9 @@ function showExercise(){
   if(!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
     showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`});return;} // apprendre avant d'être interrogé
   const box=el('div','ex');
-  box.append(el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`));
+  const head=el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`);
+  if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
+  box.append(head);
   box.append(el('div','ex-prompt',ex.prompt));
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');
   box.append(body,fb,actions);grid.append(box);
@@ -878,7 +881,8 @@ function finish(ex,ok,fb,actions,body){
   if(!ex.explanation)synthVue.add(ex.fiche.id);
   if(expl)fb.append(el('p','fb-expl',expl));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
-  fb.insertAdjacentHTML('beforeend',schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
+  const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
+  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+schemaHTML(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
