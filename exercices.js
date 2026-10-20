@@ -138,3 +138,30 @@ function pointsDurs(pool, prog, journal) {
   return pool.filter(e => prog[e.id] && prog[e.id].ease < 2.3 && !sorti(e.id))
     .sort((a, b) => prog[a.id].ease - prog[b.id].ease);
 }
+
+// « Mon suivi » : indicateurs tirés du journal des réponses (indicatifs : un seul utilisateur).
+// Les seconds essais (retry) ne comptent pas. Réussie / ratée / inconnue (flashcard jamais notée).
+const issue = j => j.ok === 1 ? j.r !== "hard" : j.ok === 0 ? j.r === "ok" : // ok 0 + r « ok » : correction par mots-clés renversée par « En fait, j'avais juste »
+   j.r === "ok" || j.r === "easy" ? true : j.r === "hard" ? false : null;
+function suivi(journal, typeOf, prog, t) {
+  const DAY = 86400000, tally = (c, s) => { c[1]++; if (s) c[0]++; };
+  const imm = [0, 0], libre = [0, 0], j7 = [0, 0], j28 = [0, 0], par = new Map();
+  for (const j of journal) if (!j.retry) par.set(j.e, [...(par.get(j.e) || []), j]);
+  for (const [id, rs] of par) rs.forEach((j, i) => {
+    const s = issue(j); if (s === null) return;
+    if (!i) tally(imm, s);
+    if (RESTITUER.includes(typeOf(id))) tally(libre, s);
+    const ecart = i ? (j.t - rs[i - 1].t) / DAY : 0;
+    if (ecart >= 5 && ecart <= 10) tally(j7, s); else if (ecart >= 21 && ecart <= 35) tally(j28, s);
+  });
+  // séance = réponses séparées de moins de 30 min ; durée = de l'affichage de la 1re question à la dernière réponse (séances de 2 réponses au moins)
+  const seances = [];
+  for (const j of [...journal].sort((a, b) => a.t - b.t)) {
+    const cur = seances[seances.length - 1];
+    if (cur && j.t - cur[cur.length - 1].t <= 30 * 60000) cur.push(j); else seances.push([j]);
+  }
+  const d = seances.filter(x => x.length > 1).map(x => x[x.length - 1].t - x[0].t + (x[0].ms || 0)).sort((a, b) => a - b);
+  const mediane = d.length ? (d[(d.length - 1) >> 1] + d[d.length >> 1]) / 2 : null;
+  return { immediate: imm, libre, j7, j28, mediane, nSeances: d.length,
+    retard: { n: Object.values(prog).filter(p => p.due <= t).length, vieux: Object.values(prog).filter(p => t - p.due > 7 * DAY).length } };
+}
