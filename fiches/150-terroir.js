@@ -138,8 +138,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : sources de niveau 2b (Wikipedia, Wine Business) ; archives fédérales américaines bloquées, non lues.","Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.","Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.","17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés."],
-    src: "Mille Vignes, P. Lepeltier, p. 156-157 ; Wikipedia, Eighteenth Amendment, Twenty-first Amendment et State store ; Wine Business, infographic « Prohibition Repeal » ; Korona POS, alcohol control states",
+    to_check: ["Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : une source de niveau 2b (Wine Business) ; archives fédérales américaines bloquées, non lues.","Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.","Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.","17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 156-157 ; Wine Business, infographic « Prohibition Repeal » ; Korona POS, alcohol control states",
     page: 156
   },
   {
@@ -161,8 +161,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Citation de Dion (1952) et thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).","Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.","Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).","Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues."],
-    src: "Mille Vignes, P. Lepeltier, p. 158-159 ; Wikipédia FR, Gaston Roupnel (identification de l’auteur seulement)",
+    to_check: ["Citation de Dion (1952) et thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).","Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.","Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).","Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 158-159",
     page: 158
   },
   {
@@ -207,8 +207,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Drainage du Médoc au XVIIe siècle par des ingénieurs néerlandais (⚠️) : une seule source de niveau 2a (Steimer, RAB 2011) ; le rôle d’Henri IV et de Louis XIV n’y figure pas et n’est pas repris.","Yquem, réseau de drains d’une centaine de km (⚠️) : une seule source (Idealwine), le livre dit « plus de 100 km » ; 113 ha de vigne confirmés par deux sources de niveau 2b (d’autres chiffres existent : environ 100 ha plantés, 102 ha en production).","Karez de Turpan, 1 000 puits et 1 600 km (❌, signalé comme erreur) : la liste indicative UNESCO (n° 5347) et Wikipédia donnent plus de 1 100 karez et plus de 5 000 km (le texte UNESCO se contredit aussi : 4 400 km ailleurs).","Statut UNESCO des karez (⚠️) : liste indicative lue (soumission en 2008), aucune inscription au patrimoine mondial trouvée.","Levadas de Madère comme canaux d’irrigation (⚠️) : source unique de niveau 2b (Wikipédia)."],
-    src: "Mille Vignes, P. Lepeltier, p. 160-161 ; Société archéologique de Bordeaux, RAB 102 (2011), Steimer ; Idealwine, Château d’Yquem ; UNESCO, liste indicative, Karez Wells (n° 5347) ; Wikipédia, Turpan water system et Levada (Madeira)",
+    to_check: ["Drainage du Médoc au XVIIe siècle par des ingénieurs néerlandais (⚠️) : une seule source de niveau 2a (Steimer, RAB 2011) ; le rôle d’Henri IV et de Louis XIV n’y figure pas et n’est pas repris.","Yquem, réseau de drains d’une centaine de km (⚠️) : une seule source (Idealwine), le livre dit « plus de 100 km » ; 113 ha de vigne confirmés par deux sources de niveau 2b (d’autres chiffres existent : environ 100 ha plantés, 102 ha en production).","Karez de Turpan, 1 000 puits et 1 600 km (❌, signalé comme erreur) : la liste indicative UNESCO (n° 5347) donne plus de 1 100 karez et plus de 5 000 km (le texte UNESCO se contredit aussi : 4 400 km ailleurs).","Statut UNESCO des karez (⚠️) : liste indicative lue (soumission en 2008), aucune inscription au patrimoine mondial trouvée.","Levadas de Madère comme canaux d’irrigation (⚠️) : affirmation du livre, à sourcer.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 160-161 ; Société archéologique de Bordeaux, RAB 102 (2011), Steimer ; Idealwine, Château d’Yquem ; UNESCO, liste indicative, Karez Wells (n° 5347)",
     page: 160
   },
   {
@@ -230,8 +230,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.","Vignobles parmi les cultures les plus érodées d’Europe (⚠️) : une seule source de niveau 2a (Solid Earth 2015).","Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.","Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.","Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.","Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.","Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses attestées depuis le XIe siècle par une source unique de niveau 2b (Wikipédia)."],
-    src: "Mille Vignes, P. Lepeltier, p. 161-162 ; UNESCO, Lavaux, Vineyard Terraces (décision 31COM 8B.46) ; Solid Earth 6 (2015), érosion en vignoble ; Wikipédia, Lavaux",
+    to_check: ["Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.","Vignobles parmi les cultures les plus érodées d’Europe (⚠️) : une seule source de niveau 2a (Solid Earth 2015).","Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.","Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.","Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.","Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.","Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses du XIe siècle selon l’UNESCO, à recouper.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 161-162 ; UNESCO, Lavaux, Vineyard Terraces (décision 31COM 8B.46) ; Solid Earth 6 (2015), érosion en vignoble",
     page: 161
   },
   {
@@ -241,20 +241,20 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: {"pays":"Portugal","region":"Madère","appel":null},
     titre: "Madère : un vin né des terrasses et de la mer",
-    synth: "La vigne arrive avec les Portugais, qui atteignent Porto Santo en 1418 et Madère en 1419 (le livre fait arriver la vigne avec eux en 1418) ; terrasses et canaux d’irrigation, les levadas, permettent de cultiver les pentes. Le style du vin fortifié vient des aléas du commerce : les fûts invendus revenus après un voyage dans la chaleur des navires étaient meilleurs, ce sont les « vinhos da roda ». On a ensuite reproduit cet effet par le canteiro (fûts laissés à la chaleur ambiante des greniers, pendant des années) et l’estufagem (cuves chauffées) ; pour celle-ci le livre cite 45 °C pendant quatre mois, tandis que Wikipédia et Burton donnent 46 à 55 °C pendant au moins trois mois. Le vignoble a failli disparaître avec le phylloxéra et la fermeture de marchés (Prohibition, guerre civile russe plutôt que « révolution » selon Wikipédia).",
+    synth: "La vigne arrive avec les Portugais, qui atteignent Porto Santo en 1418 et Madère en 1419 (le livre fait arriver la vigne avec eux en 1418) ; terrasses et canaux d’irrigation, les levadas, permettent de cultiver les pentes. Le style du vin fortifié vient des aléas du commerce : les fûts invendus revenus après un voyage dans la chaleur des navires étaient meilleurs, ce sont les « vinhos da roda ». On a ensuite reproduit cet effet par le canteiro (fûts laissés à la chaleur ambiante des greniers, pendant des années) et l’estufagem (cuves chauffées) ; pour celle-ci le livre cite 45 °C pendant quatre mois, tandis que Burton donne 46 à 55 °C pendant au moins trois mois. Le vignoble a failli disparaître avec le phylloxéra et la fermeture de marchés (Prohibition, guerre civile russe plutôt que « révolution » selon Burton).",
     mnemo: "Un vin « cuit par la route » : le voyage en bateau a été recopié par le grenier chaud (canteiro) et la cuve chauffée (estufagem).",
     flash: {"q":"Pourquoi certains madères sont-ils appelés « vinhos da roda » ?","a":"Ce sont des vins ayant fait un voyage aller-retour par bateau : la chaleur du trajet les avait améliorés, ce qui a inspiré les méthodes de chauffe du madère.","keys":[["voyage","bateau","aller-retour","navire"],["chaleur"]]},
     qcm: {"q":"Quelle méthode fait vieillir le madère en fûts à la chaleur naturelle ambiante, en imitant le voyage en mer ?","opts":["Le canteiro","L’estufagem","La solera","Le soutirage"],"good":0,"expl":"Le canteiro mise sur la chaleur ambiante des greniers pendant des années ; l’estufagem chauffe artificiellement les cuves, et la solera est un système d’assemblage de millésimes, sans rapport avec la chaleur du voyage."},
     exos: [
-      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Livre et sources concordent sur une estufagem à 45 °C pendant quatre mois.","answer":false},"explanation":"Un producteur (Madeira Wine Company) retient 45 °C sur quatre mois, mais Wikipédia et Burton donnent 46 à 55 °C pendant au moins trois mois : les chiffres varient selon les sources."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Livre et sources concordent sur une estufagem à 45 °C pendant quatre mois.","answer":false},"explanation":"Un producteur (Madeira Wine Company) retient 45 °C sur quatre mois, mais Burton donne 46 à 55 °C pendant au moins trois mois : les chiffres varient selon les sources."},
       {"type":"matching","prompt":"Associe chaque terme à sa définition.","payload":{"pairs":[["Vinhos da roda","Vins ayant voyagé en bateau et ramenés, améliorés par la chaleur"],["Canteiro","Fûts vieillis des années à la chaleur ambiante"],["Estufagem","Chauffage des cuves"]]},"explanation":"Le canteiro et l’estufagem reproduisent à terre l’effet que la chaleur du voyage avait produit sur les vinhos da roda."},
       {"type":"mcq_multi","prompt":"Quelles difficultés ont menacé le madère ?","payload":{"options":["Le phylloxéra","La Prohibition aux États-Unis","La guerre civile russe","Un classement de 1855 défavorable"],"answers":[0,1,2]},"explanation":"Les deux dernières ont fermé des marchés importants ; le classement de 1855 concerne Bordeaux et n’a rien à voir avec Madère."}
     ],
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Porto Santo atteinte en 1418, Madère en 1419 (⚠️) : le livre date l’arrivée de la vigne de 1418 ; deux sources de niveau 2a/2b concordent sur Porto Santo 1418 et Madère 1419 (colonisation vers 1420-1425), mais l’arrivée de la vigne elle-même n’est pas datée.","Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Wikipédia, Burton) (⚠️) : divergence non tranchée.","Crises du phylloxéra, de la Prohibition et de la guerre civile russe (⚠️) : sources de niveau 2b (Wikipédia, Burton) ; le livre écrit « révolution russe ».","Levadas et terrasses de Madère (⚠️) : aménagements cités par le livre, levadas seulement attestées par Wikipédia (niveau 2b)."],
-    src: "Mille Vignes, P. Lepeltier, p. 163 ; Wikipédia, Madeira wine ; Madeira Wine Company ; N. Burton, The wines of Madeira ; Madeira 600 ; World History Encyclopedia, Portuguese colonization of Madeira",
+    to_check: ["Porto Santo atteinte en 1418, Madère en 1419 (⚠️) : le livre date l’arrivée de la vigne de 1418 ; deux sources de niveau 2a/2b concordent sur Porto Santo 1418 et Madère 1419 (colonisation vers 1420-1425), mais l’arrivée de la vigne elle-même n’est pas datée.","Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Burton) (⚠️) : divergence non tranchée.","Crises du phylloxéra, de la Prohibition et de la guerre civile russe (⚠️) : une source (Burton) ; le livre écrit « révolution russe ».","Levadas et terrasses de Madère (⚠️) : aménagements cités par le livre, à sourcer.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 163 ; Madeira Wine Company ; N. Burton, The wines of Madeira ; Madeira 600 ; World History Encyclopedia, Portuguese colonization of Madeira",
     page: 163
   },
   {
@@ -298,8 +298,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Château-chai médocain comme « forme la plus aboutie » du chai de l’Ouest (⚠️) : thèse du livre (d’après Schirmer), non recoupée.","Chai de Bofill à Lafite (⚠️) : attribution confirmée (Comité Colbert, La Libre) ; date 1987 selon deux sources, 1988 dans le livre, à trancher.","Eiffel à Byrrh (Thuir) et à CVNE (Rioja) (⚠️) : attribution non confirmée (la notice du ministère de la Culture sur Byrrh ne cite pas Eiffel) ; signalée dans la synthèse, aucun exercice.","Eiffel et La Concha en 1862 : ✅ (Wikipédia EN, Lonely Planet)."],
-    src: "Mille Vignes, P. Lepeltier, p. 165-166 ; Wikipédia EN, González Byass ; Lonely Planet, Bodegas González-Byass ; Comité Colbert, Château Lafite Rothschild ; La Libre, Les stars de l’architecture au service des grands vins de Bordeaux.",
+    to_check: ["Château-chai médocain comme « forme la plus aboutie » du chai de l’Ouest (⚠️) : thèse du livre (d’après Schirmer), non recoupée.","Chai de Bofill à Lafite (⚠️) : attribution confirmée (Comité Colbert, La Libre) ; date 1987 selon deux sources, 1988 dans le livre, à trancher.","Eiffel à Byrrh (Thuir) et à CVNE (Rioja) (⚠️) : attribution non confirmée (la notice du ministère de la Culture sur Byrrh ne cite pas Eiffel) ; signalée dans la synthèse, aucun exercice.","Eiffel et La Concha en 1862 (⚠️) : une seule source (Lonely Planet).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 165-166 ; Lonely Planet, Bodegas González-Byass ; Comité Colbert, Château Lafite Rothschild ; La Libre, Les stars de l’architecture au service des grands vins de Bordeaux",
     page: 166
   },
   {
@@ -321,8 +321,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Ysios (Calatrava) (⚠️) : source unique (Architravel) ; projet daté 1998-2001, ouverture non confirmée ; façade de lattes de cèdre évoquant des barriques.","López de Heredia (Hadid) (⚠️) : source unique (Zaha Hadid Architects) ; pavillon de 2001-2006, non un chai.","Dominus, Wilmotte, Portzamparc, Foster, Nouvel, Starck (⚠️) : dates et attributions non recoupées ou non vérifiées, non repris.","Mondavi 1966 et Cliff May (Napa County Landmarks, Wikipédia EN) ; mort de Mondavi en 2008 et non 2018 : ✅ ; Riscal, hôtel de 2006 : ✅ ; Pétrus, projet de réfectoire : ✅ (Herzog & de Meuron, iDealwine)."],
-    src: "Mille Vignes, P. Lepeltier, p. 166-167 ; Napa County Landmarks, Robert Mondavi Winery ; Wikipédia EN, Robert Mondavi ; Archilovers et Marriott, Hotel Marqués de Riscal ; Herzog & de Meuron, projet Pétrus ; iDealwine, Pétrus s’offre un nouveau chai ; Architravel, Bodegas Ysios ; Zaha Hadid Architects, R. López de Heredia Wine Pavilion.",
+    to_check: ["Ysios (Calatrava) (⚠️) : source unique (Architravel) ; projet daté 1998-2001, ouverture non confirmée ; façade de lattes de cèdre évoquant des barriques.","López de Heredia (Hadid) (⚠️) : source unique (Zaha Hadid Architects) ; pavillon de 2001-2006, non un chai.","Dominus, Wilmotte, Portzamparc, Foster, Nouvel, Starck (⚠️) : dates et attributions non recoupées ou non vérifiées, non repris.","Mondavi 1966 et Cliff May (⚠️, une source : Napa County Landmarks) ; mort de Mondavi en 2008 et non 2018 (⚠️, à recouper) ; Riscal, hôtel de 2006 : ✅ ; Pétrus, projet de réfectoire : ✅ (Herzog & de Meuron, iDealwine).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 166-167 ; Napa County Landmarks, Robert Mondavi Winery ; Archilovers et Marriott, Hotel Marqués de Riscal ; Herzog & de Meuron, projet Pétrus ; iDealwine, Pétrus s’offre un nouveau chai ; Architravel, Bodegas Ysios ; Zaha Hadid Architects, R. López de Heredia Wine Pavilion",
     page: 166
   },
   {
@@ -344,8 +344,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, une source décrit une baguette de 6 à 10 yeux et un courson de renouvellement, non repris dans les exercices.","Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue.","Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.","Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 169-171 ; Techno-Science et Wikipédia EN, Jules Guyot ; Wine with Seth, Guyot simple et Cordon de Royat.",
+    to_check: ["Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, une source décrit une baguette de 6 à 10 yeux et un courson de renouvellement, non repris dans les exercices.","Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue.","Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.","Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 169-171 ; Techno-Science, Jules Guyot ; Wine with Seth, Guyot simple et Cordon de Royat",
     page: 169
   },
   {
@@ -368,8 +368,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Canal du Midi inauguré en 1680 selon le livre, ouverture officielle en 1681 selon la source lue (⚠️) : une seule page lue, divergence signalée dans la synthèse.","Cachão da Valeira : démolition de 1780 à 1791, accélération du vignoble en amont (⚠️) : une seule source (maison Taylor’s)."],
-    src: "Mille Vignes, P. Lepeltier, p. 172-173 et 176 ; Collège de France, hommage à Roger Dion ; notice de la thèse « Le Val de Loire » (Loughborough) ; Wikipedia, canaux de Briare, d’Orléans et du Loing ; Wikipedia, canal du Midi ; Taylor’s, River Transportation",
+    to_check: ["Canal du Midi inauguré en 1680 selon le livre, ouverture officielle en 1681 selon la source lue (⚠️) : une seule page lue, divergence signalée dans la synthèse.","Cachão da Valeira : démolition de 1780 à 1791, accélération du vignoble en amont (⚠️) : une seule source (maison Taylor’s).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 172-173 et 176 ; Collège de France, hommage à Roger Dion ; notice de la thèse « Le Val de Loire » (Loughborough) ; Taylor’s, River Transportation",
     page: 172
   },
   {
@@ -414,8 +414,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Cluny fondée en 909 (910 selon l’indiction), réseau de plus de 1 200 monastères en moins de deux siècles (⚠️) : 1 184 selon l’Encyclopædia Universalis, environ 1 200 selon une page de niveau 2b ; le lien avec Compostelle n’est pas vérifié.","Marcillac sous l’égide de l’abbaye de Conques (⚠️) : une seule source (Wikipedia), le lien avec les pèlerins n’y figure pas.","Irache, vin pour les pèlerins depuis le XIIe siècle (⚠️) : ancienneté non confirmée ; vino de pago reconnu fin 2008 (ordre foral) et publié au BOE en 2009. La fontaine à vin n’est pas reprise.","Route de la soie, « impasse du vin » (⚠️) : thèse de J.-R. Pitte (Le Désir du vin, 2009), ouvrage non consulté.","Essor de Compostelle aux XIe-XIIe siècles grâce aux réformes grégoriennes (⚠️) : non vérifié, non repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 174 et 176-177 ; Encyclopædia Universalis, Cluny ; Techno-science, abbaye de Cluny ; Wikipedia, Marcillac AOC ; BOE n° 169 (2009) ; Foods and Wines from Spain, Prado de Irache",
+    to_check: ["Cluny fondée en 909 (910 selon l’indiction), réseau de plus de 1 200 monastères en moins de deux siècles (⚠️) : 1 184 selon l’Encyclopædia Universalis, environ 1 200 selon une page de niveau 2b ; le lien avec Compostelle n’est pas vérifié.","Marcillac sous l’égide de l’abbaye de Conques (⚠️) : à sourcer ; le lien avec les pèlerins n’est pas établi.","Irache, vin pour les pèlerins depuis le XIIe siècle (⚠️) : ancienneté non confirmée ; vino de pago reconnu fin 2008 (ordre foral) et publié au BOE en 2009. La fontaine à vin n’est pas reprise.","Route de la soie, « impasse du vin » (⚠️) : thèse de J.-R. Pitte (Le Désir du vin, 2009), ouvrage non consulté.","Essor de Compostelle aux XIe-XIIe siècles grâce aux réformes grégoriennes (⚠️) : non vérifié, non repris.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 174 et 176-177 ; Encyclopædia Universalis, Cluny ; Techno-science, abbaye de Cluny ; BOE n° 169 (2009) ; Foods and Wines from Spain, Prado de Irache",
     page: 174
   },
   {
@@ -482,8 +482,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Chartrons : négociants anglais, flamands et irlandais installés hors des murs d’après une seule source (Techno-science) ; la longueur de 2 km, la période d’export XIVe-XIXe et le rôle du phylloxéra dans le déclin (livre) ne sont pas confirmés, un déclin après la Seconde Guerre mondiale est évoqué ailleurs","Cité du Vin : inauguration en 2016 confirmée par Wikipédia seulement ; seconde source non ouverte"],
-    src: "Mille Vignes, P. Lepeltier, p. 178-182 ; UNESCO, Bordeaux, Port de la Lune ; UNESCO, Coteaux, Maisons et Caves de Champagne ; Ville de Bordeaux, Port de la Lune ; Techno-science, Quartier des Chartrons ; Wikipédia, Cité du Vin.",
+    to_check: ["Chartrons : négociants anglais, flamands et irlandais installés hors des murs d’après une seule source (Techno-science) ; la longueur de 2 km, la période d’export XIVe-XIXe et le rôle du phylloxéra dans le déclin (livre) ne sont pas confirmés, un déclin après la Seconde Guerre mondiale est évoqué ailleurs","Cité du Vin inaugurée en 2016 (⚠️) : à sourcer.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 178-182 ; UNESCO, Bordeaux, Port de la Lune ; UNESCO, Coteaux, Maisons et Caves de Champagne ; Ville de Bordeaux, Port de la Lune ; Techno-science, Quartier des Chartrons",
     page: 178
   },
   {
@@ -595,8 +595,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.","Extensions sur terrains portlandiens et critère agronomique (⚠️) : Vincent et Wikipedia seulement ; les surfaces citées par Vincent sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises."],
-    src: "Mille Vignes, P. Lepeltier, p. 185 et 188 ; Vincent, Terroir 2012 (IVES), chronologie de la délimitation de Chablis ; Wikipedia, Chablis (AOC) et Kimmeridgian.",
+    to_check: ["Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.","Extensions sur terrains portlandiens et critère agronomique (⚠️) : une source (Vincent) ; ses surfaces sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 185 et 188 ; Vincent, Terroir 2012 (IVES), chronologie de la délimitation de Chablis",
     page: 185
   },
   {
@@ -641,8 +641,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Sassicaia 1968 présenté en 1971 (⚠️) : Wikipedia (Tenuta San Guido) et Winewithseth seulement ; plantation de 1944 et premier millésime familial non confirmés.","Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971.","Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour Winewithseth (Belfrage).","IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth, Wikipedia)."],
-    src: "Mille Vignes, P. Lepeltier, p. 189 ; Wikipedia, Tenuta San Guido ; Winewithseth, Super Tuscan tradition ; DoctorWine, What are IGT.",
+    to_check: ["Sassicaia 1968 présenté en 1971 (⚠️) : une source (Winewithseth) ; plantation de 1944 et premier millésime familial non confirmés.","Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971.","Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour Winewithseth (Belfrage).","IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 189 ; Winewithseth, Super Tuscan tradition ; DoctorWine, What are IGT",
     page: 189
   },
   {
@@ -684,9 +684,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "verified",
-    to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 192 ; Smithsonian Magazine, « That revolutionary May day 1976 » ; Wikipedia, Judgment of Paris (wine)",
+    status: "needs_review",
+    to_check: ["Date du 24 mai 1976 (⚠️) : une source (Smithsonian Magazine) ; le livre écrit 4 juillet.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 192 ; Smithsonian Magazine, « That revolutionary May day 1976 »",
     page: 192
   },
   {
@@ -732,7 +732,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 195 ; TTB (liste des AVA) ; eCFR, 27 CFR 4.25 ; Wikipedia, American Viticultural Area",
+    src: "Mille Vignes, P. Lepeltier, p. 195 ; TTB (liste des AVA) ; eCFR, 27 CFR 4.25",
     page: 195
   },
   {
@@ -800,8 +800,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Lavaux : +30 % de fréquentation retrouvé dans la presse suisse (article de 2011), source de niveau 2b seulement.","Lavaux : baisse des ventes de 10 à 15 % non retrouvée, thèse du livre ; un vigneron annonce +40 % de ventes en boutique (2017), l’étude UNIL (2019) nuance (bénéfice faible, nuisances).","Terrasses du Lavaux : Xe siècle selon le livre, XIe siècle selon l’UNESCO (non utilisé dans la fiche).","La Rioja : candidature différée en 2015 (une seule source de presse 2019), et lien avec le manque de cohésion de la filière = interprétation du livre.","Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.","Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée."],
-    src: "Mille Vignes, P. Lepeltier, p. 199 ; UNESCO, Lavaux, Vignoble en terrasses ; Swissinfo (2011, 2017) ; UNIL, Lavaux en tourisme (2019) ; The Napa Wine Project, Robert Mondavi Winery ; Nueve Cuatro Uno (2019) ; German Wine Route, Route des vins d’Alsace, Route des vins (Wikipédia)",
+    to_check: ["Lavaux : +30 % de fréquentation retrouvé dans la presse suisse (article de 2011), source de niveau 2b seulement.","Lavaux : baisse des ventes de 10 à 15 % non retrouvée, thèse du livre ; un vigneron annonce +40 % de ventes en boutique (2017), l’étude UNIL (2019) nuance (bénéfice faible, nuisances).","Terrasses du Lavaux : Xe siècle selon le livre, XIe siècle selon l’UNESCO (non utilisé dans la fiche).","La Rioja : candidature différée en 2015 (une seule source de presse 2019), et lien avec le manque de cohésion de la filière = interprétation du livre.","Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.","Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 199 ; UNESCO, Lavaux, Vignoble en terrasses ; Swissinfo (2011, 2017) ; UNIL, Lavaux en tourisme (2019) ; The Napa Wine Project, Robert Mondavi Winery ; Nueve Cuatro Uno (2019) ; German Wine Route, Route des vins d’Alsace",
     page: 199
   }
 );

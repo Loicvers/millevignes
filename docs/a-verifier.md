@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-222 fiches : 44 vérifiées, 178 à vérifier (497 points).
+222 fiches : 43 vérifiées, 179 à vérifier (513 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -710,16 +710,18 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chiffre de 200 vinaigriers à Orléans en 1787 (⚠️) : non retrouvé, volontairement non repris.
 
 **Fiche 193** (p.156) — La prohibition américaine : 18e et 21e amendements
-- [ ] Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : sources de niveau 2b (Wikipedia, Wine Business) ; archives fédérales américaines bloquées, non lues.
+- [ ] Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : une source de niveau 2b (Wine Business) ; archives fédérales américaines bloquées, non lues.
 - [ ] Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.
 - [ ] Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.
 - [ ] 17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 194** (p.158) — Le terroir, une œuvre humaine : de Dion à Roupnel
 - [ ] Citation de Dion (1952) et thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).
 - [ ] Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.
 - [ ] Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).
 - [ ] Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 195** (p.159) — Le Clos d’Entre-les-Murs de Parnay : un mur pour mûrir
 - [ ] Inscription MH en 2011 et non classement (⚠️) : une seule source de niveau 1 (Mérimée, PA49000082) ; le livre écrit « classé ».
@@ -730,9 +732,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 196** (p.160) — Domestiquer l’eau : drains, levadas et karez
 - [ ] Drainage du Médoc au XVIIe siècle par des ingénieurs néerlandais (⚠️) : une seule source de niveau 2a (Steimer, RAB 2011) ; le rôle d’Henri IV et de Louis XIV n’y figure pas et n’est pas repris.
 - [ ] Yquem, réseau de drains d’une centaine de km (⚠️) : une seule source (Idealwine), le livre dit « plus de 100 km » ; 113 ha de vigne confirmés par deux sources de niveau 2b (d’autres chiffres existent : environ 100 ha plantés, 102 ha en production).
-- [ ] Karez de Turpan, 1 000 puits et 1 600 km (❌, signalé comme erreur) : la liste indicative UNESCO (n° 5347) et Wikipédia donnent plus de 1 100 karez et plus de 5 000 km (le texte UNESCO se contredit aussi : 4 400 km ailleurs).
+- [ ] Karez de Turpan, 1 000 puits et 1 600 km (❌, signalé comme erreur) : la liste indicative UNESCO (n° 5347) donne plus de 1 100 karez et plus de 5 000 km (le texte UNESCO se contredit aussi : 4 400 km ailleurs).
 - [ ] Statut UNESCO des karez (⚠️) : liste indicative lue (soumission en 2008), aucune inscription au patrimoine mondial trouvée.
-- [ ] Levadas de Madère comme canaux d’irrigation (⚠️) : source unique de niveau 2b (Wikipédia).
+- [ ] Levadas de Madère comme canaux d’irrigation (⚠️) : affirmation du livre, à sourcer.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 197** (p.161) — Terrasses : tenir la pente, retenir la terre
 - [ ] Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.
@@ -741,13 +744,15 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.
 - [ ] Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.
 - [ ] Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.
-- [ ] Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses attestées depuis le XIe siècle par une source unique de niveau 2b (Wikipédia).
+- [ ] Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses du XIe siècle selon l’UNESCO, à recouper.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 198** (p.163) — Madère : un vin né des terrasses et de la mer
 - [ ] Porto Santo atteinte en 1418, Madère en 1419 (⚠️) : le livre date l’arrivée de la vigne de 1418 ; deux sources de niveau 2a/2b concordent sur Porto Santo 1418 et Madère 1419 (colonisation vers 1420-1425), mais l’arrivée de la vigne elle-même n’est pas datée.
-- [ ] Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Wikipédia, Burton) (⚠️) : divergence non tranchée.
-- [ ] Crises du phylloxéra, de la Prohibition et de la guerre civile russe (⚠️) : sources de niveau 2b (Wikipédia, Burton) ; le livre écrit « révolution russe ».
-- [ ] Levadas et terrasses de Madère (⚠️) : aménagements cités par le livre, levadas seulement attestées par Wikipédia (niveau 2b).
+- [ ] Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Burton) (⚠️) : divergence non tranchée.
+- [ ] Crises du phylloxéra, de la Prohibition et de la guerre civile russe (⚠️) : une source (Burton) ; le livre écrit « révolution russe ».
+- [ ] Levadas et terrasses de Madère (⚠️) : aménagements cités par le livre, à sourcer.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 199** (p.164) — L’architecture vigneronne : cabanes, caves et celliers
 - [ ] Noms régionaux des cabanes de vigne (⚠️) : une seule source (La Passion du Vin, niveau 2b) ; « folie » pour la Touraine non retrouvé ; seule la cadole (✅, deux sources) est reprise.
@@ -759,23 +764,27 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Château-chai médocain comme « forme la plus aboutie » du chai de l’Ouest (⚠️) : thèse du livre (d’après Schirmer), non recoupée.
 - [ ] Chai de Bofill à Lafite (⚠️) : attribution confirmée (Comité Colbert, La Libre) ; date 1987 selon deux sources, 1988 dans le livre, à trancher.
 - [ ] Eiffel à Byrrh (Thuir) et à CVNE (Rioja) (⚠️) : attribution non confirmée (la notice du ministère de la Culture sur Byrrh ne cite pas Eiffel) ; signalée dans la synthèse, aucun exercice.
-- [ ] Eiffel et La Concha en 1862 : ✅ (Wikipédia EN, Lonely Planet).
+- [ ] Eiffel et La Concha en 1862 (⚠️) : une seule source (Lonely Planet).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 201** (p.166) — L’architecture contemporaine du vin : de Mondavi aux « starchitectes »
 - [ ] Ysios (Calatrava) (⚠️) : source unique (Architravel) ; projet daté 1998-2001, ouverture non confirmée ; façade de lattes de cèdre évoquant des barriques.
 - [ ] López de Heredia (Hadid) (⚠️) : source unique (Zaha Hadid Architects) ; pavillon de 2001-2006, non un chai.
 - [ ] Dominus, Wilmotte, Portzamparc, Foster, Nouvel, Starck (⚠️) : dates et attributions non recoupées ou non vérifiées, non repris.
-- [ ] Mondavi 1966 et Cliff May (Napa County Landmarks, Wikipédia EN) ; mort de Mondavi en 2008 et non 2018 : ✅ ; Riscal, hôtel de 2006 : ✅ ; Pétrus, projet de réfectoire : ✅ (Herzog & de Meuron, iDealwine).
+- [ ] Mondavi 1966 et Cliff May (⚠️, une source : Napa County Landmarks) ; mort de Mondavi en 2008 et non 2018 (⚠️, à recouper) ; Riscal, hôtel de 2006 : ✅ ; Pétrus, projet de réfectoire : ✅ (Herzog & de Meuron, iDealwine).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 202** (p.169) — Conduire la vigne : la planche des tailles
 - [ ] Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, une source décrit une baguette de 6 à 10 yeux et un courson de renouvellement, non repris dans les exercices.
 - [ ] Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue.
 - [ ] Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.
 - [ ] Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 203** (p.172) — Le fleuve, autoroute du vin : canaux et rivières aménagés
 - [ ] Canal du Midi inauguré en 1680 selon le livre, ouverture officielle en 1681 selon la source lue (⚠️) : une seule page lue, divergence signalée dans la synthèse.
 - [ ] Cachão da Valeira : démolition de 1780 à 1791, accélération du vignoble en amont (⚠️) : une seule source (maison Taylor’s).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 204** (p.173) — Marchands du Nord et vignobles de l’Atlantique : de La Rochelle au cognac
 - [ ] Vignoble charentais de 282 000 ha vers 1875 (⚠️) : le BNIC donne 282 667 ha en 1877 ; l’année du pic varie selon les sources. Les chiffres actuels divergent (76 000, 78 000 ou 84 729 ha selon la définition) et ne sont pas repris.
@@ -786,10 +795,11 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 205** (p.174) — Pèlerins, moines et routes lointaines : Cluny, Compostelle, soie
 - [ ] Cluny fondée en 909 (910 selon l’indiction), réseau de plus de 1 200 monastères en moins de deux siècles (⚠️) : 1 184 selon l’Encyclopædia Universalis, environ 1 200 selon une page de niveau 2b ; le lien avec Compostelle n’est pas vérifié.
-- [ ] Marcillac sous l’égide de l’abbaye de Conques (⚠️) : une seule source (Wikipedia), le lien avec les pèlerins n’y figure pas.
+- [ ] Marcillac sous l’égide de l’abbaye de Conques (⚠️) : à sourcer ; le lien avec les pèlerins n’est pas établi.
 - [ ] Irache, vin pour les pèlerins depuis le XIIe siècle (⚠️) : ancienneté non confirmée ; vino de pago reconnu fin 2008 (ordre foral) et publié au BOE en 2009. La fontaine à vin n’est pas reprise.
 - [ ] Route de la soie, « impasse du vin » (⚠️) : thèse de J.-R. Pitte (Le Désir du vin, 2009), ouvrage non consulté.
 - [ ] Essor de Compostelle aux XIe-XIIe siècles grâce aux réformes grégoriennes (⚠️) : non vérifié, non repris.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 206** (p.175) — La carte de Minard et le chemin de fer : le vin voyage autrement
 - [ ] Carte de Minard : données de 1857 et carte de 1860 (⚠️) : une seule source (Library of Congress) ; le livre dit « fin du XIXe siècle » et légende 1857.
@@ -803,7 +813,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 208** (p.178) — La ville façonnée par le vin : Chartrons, Bordeaux, Reims et Épernay
 - [ ] Chartrons : négociants anglais, flamands et irlandais installés hors des murs d’après une seule source (Techno-science) ; la longueur de 2 km, la période d’export XIVe-XIXe et le rôle du phylloxéra dans le déclin (livre) ne sont pas confirmés, un déclin après la Seconde Guerre mondiale est évoqué ailleurs
-- [ ] Cité du Vin : inauguration en 2016 confirmée par Wikipédia seulement ; seconde source non ouverte
+- [ ] Cité du Vin inaugurée en 2016 (⚠️) : à sourcer.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 209** (p.179) — Haut-Brion : un grand cru dans la ville
 - [ ] Talence : la limite Pessac/Talence vient du livre ; non retrouvée dans les pages consultées (Millésima, iDealwine)
@@ -821,21 +832,27 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
 - [ ] Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.
-- [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : Vincent et Wikipedia seulement ; les surfaces citées par Vincent sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.
+- [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : une source (Vincent) ; ses surfaces sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 214** (p.189) — De l’AOC à l’AOP : textes européens, seuils et chiffres
 - [ ] Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.
 - [ ] 386 AOC/AOP viticoles et 77 IGP viticoles (⚠️) : chiffres INAO 2023, à réactualiser ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
 
 **Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
-- [ ] Sassicaia 1968 présenté en 1971 (⚠️) : Wikipedia (Tenuta San Guido) et Winewithseth seulement ; plantation de 1944 et premier millésime familial non confirmés.
+- [ ] Sassicaia 1968 présenté en 1971 (⚠️) : une source (Winewithseth) ; plantation de 1944 et premier millésime familial non confirmés.
 - [ ] Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971.
 - [ ] Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour Winewithseth (Belfrage).
-- [ ] IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth, Wikipedia).
+- [ ] IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth).
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 216** (p.192) — Lieu contre cépage : deux logiques d’étiquette qui se rapprochent
 - [ ] Seuil de 85 % pour millésime et cépage (règlement délégué (UE) 2019/33, art. 49-50) : lu seulement via la copie legislation.gov.uk, texte EUR-Lex non consulté (page bloquée)
 - [ ] Mention de cépage et millésime pour les vins sans IG en France (agrément FranceAgriMer) : date exacte d’autorisation non précisée dans les pages lues
+
+**Fiche 217** (p.192) — Le Jugement de Paris : la Californie entre dans la cour des grands
+- [ ] Date du 24 mai 1976 (⚠️) : une source (Smithsonian Magazine) ; le livre écrit 4 juillet.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 218** (p.194) — Délimiter dans le Nouveau Monde : Coonawarra et To Kalon
 - [ ] To Kalon : marque déposée en 1988 selon trois pages lues (le livre dit 1987) : dépôt ou obtention, non tranché
@@ -855,3 +872,4 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] La Rioja : candidature différée en 2015 (une seule source de presse 2019), et lien avec le manque de cohésion de la filière = interprétation du livre.
 - [ ] Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.
 - [ ] Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée.
+- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
