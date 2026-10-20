@@ -193,7 +193,7 @@ function renderLexique(){
   q.oninput=()=>{lexQuery=q.value;draw();};
   grid.append(q,list);draw();
 }
-let CHAPS=null;const chapOuverts=new Set();
+let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dépliées (au départ : celle où l'on en est)
 function renderToc(list,filtre){
   grid.className='grid toc';
   const vue=f=>etat(f)[0]!=='new';
@@ -204,12 +204,17 @@ function renderToc(list,filtre){
     r.append(el('p',null,`Reprendre — ${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre));
     const b=el('button','btn primary','Continuer la lecture');b.onclick=()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i);r.append(b);grid.append(r);
   }
-  let sec=null;
+  let sec=null,box=grid;
   CHAPS.forEach(c=>{
     const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length&&(c.fiches.length||filtre))return;
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
-      const h=el('h2','toc-sec',nom);h.append(el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));grid.append(h);}
+      if(!secOuverts)secOuverts=new Set([suite?(suite.c.section||suite.c.partie):nom]);
+      const sd=el('details','sec');sd.open=!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else secOuverts.delete(nom);};
+      const h=el('summary','toc-sec');h.append(el('span','sec-t',nom),el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));
+      const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
+      st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
+      const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h,sa);grid.append(sd);box=sd;}
     const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.page);remplir();}else chapOuverts.delete(c.page);};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',fs.length?`p. ${c.page} · ${nv}/${fs.length}`:`p. ${c.page} · récit seul`));
@@ -218,7 +223,7 @@ function renderToc(list,filtre){
     const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
     const tr=el('button','btn','S\'entraîner sur ce chapitre');tr.disabled=!pool.length;
     tr.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Chapitre : '+c.chapitre);
-    act.append(lire,tr);inn.append(act);d.append(sm,inn);grid.append(d);
+    act.append(lire,tr);inn.append(act);d.append(sm,inn);box.append(d);
     let rempli=false;function remplir(){if(rempli)return;rempli=true;fs.forEach(f=>inn.append(card(f)));} // cartes construites à l'ouverture du chapitre
     if(d.open)remplir();
   });

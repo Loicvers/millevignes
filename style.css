@@ -66,8 +66,13 @@
   .resume{border:1px solid var(--line);background:var(--paper2);border-radius:3px;padding:16px 18px;margin-bottom:26px}
   .resume p{font-size:14px;color:var(--muted);margin-bottom:4px}
   .resume b{font-family:'Cormorant',serif;font-size:21px;font-weight:600;color:var(--ink);display:block;line-height:1.2;margin-bottom:12px}
-  .toc-sec{font-family:'Cormorant',serif;font-weight:600;font-size:27px;margin:30px 0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-  .toc-sec:first-of-type{margin-top:0}
+  .sec{margin-top:22px;border-bottom:1px solid var(--line)}
+  .sec:first-of-type{margin-top:0}
+  .toc-sec{font-family:'Cormorant',serif;font-weight:600;font-size:27px;padding:6px 0 8px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;list-style:none;cursor:pointer}
+  .toc-sec::-webkit-details-marker{display:none}
+  .sec-t::before{content:"▸";display:inline-block;width:1em;color:var(--gold);font-family:'Inter';font-size:15px;vertical-align:3px}
+  .sec[open]>.toc-sec .sec-t::before{content:"▾"}
+  .sec-act{margin:0 0 6px}
   .toc-sec small{font-family:'Inter';font-size:13px;font-weight:400;color:var(--muted)}
   .chap{border-bottom:1px solid var(--line)}
   .chap>summary{list-style:none;cursor:pointer;padding:14px 2px 12px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:baseline}
