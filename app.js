@@ -20,7 +20,10 @@ try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist();}c
 // prog[exId] = {ease, interval(jours), due(timestamp), acquired:bool}
 // Journal des réponses (mesure du rappel différé) : {e: exercice, t: date, ok: 1|0|null, ms: durée, r: note choisie}.
 const JKEY='mv_journal';let journal=[];try{journal=JSON.parse(localStorage.getItem(JKEY))||[];}catch{}
-function logAnswer(ex,ok){const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}return j;}
+function logAnswer(ex,ok){const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.r++;saveSeances();}const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}return j;}
+// Séances : {t: début, n: exercices prévus, r: réponses données, fin: 1 si menée à terme} ; sert à compter les séances abandonnées.
+const SEKEY='mv_seances';let seances=[];try{seances=JSON.parse(localStorage.getItem(SEKEY))||[];}catch{}
+function saveSeances(){seances=seances.slice(-200);try{localStorage.setItem(SEKEY,JSON.stringify(seances));}catch{}}
 function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
 function now(){return Date.now();}
 const DAY=86400000;
@@ -111,7 +114,7 @@ document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs
 
 /* ============ TABS ============ */
 function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'?'none':'block';render();}
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'||m==='suivi'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -127,6 +130,7 @@ function render(){
   majBandeau();
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
+  if(mode==='suivi')return renderSuivi();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
   document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
@@ -145,6 +149,27 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
   renderToc(list,nf>0);
+}
+/* ============ MON SUIVI (lit le journal, tout reste dans ce navigateur) ============ */
+function renderSuivi(){
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  grid.className='suivi';grid.innerHTML='';
+  const r=suivi(journal,id=>EX_BY_ID[id]&&EX_BY_ID[id].type,prog,now());
+  const pct=c=>c[1]>=5?Math.round(100*c[0]/c[1])+' %':'—';
+  const n=(c,u='réponse')=>c[1]?`sur ${c[1]} ${u}${c[1]>1?'s':''}`:'pas encore de données';
+  const ab=seances.filter(x=>!x.fin&&x.r>0).length;
+  const min=r.mediane==null?'—':r.mediane<90000?Math.round(r.mediane/1000)+' s':Math.round(r.mediane/60000)+' min';
+  const rows=[
+    ['Réussite immédiate',pct(r.immediate),`À la première réponse à un exercice, ${n(r.immediate)}. Les seconds essais ne comptent pas.`],
+    ['Rappel sans aide',pct(r.libre),`Exercices où il faut produire la réponse (flashcard, texte à trous, réponse courte, ordre), ${n(r.libre)}.`],
+    ['Réussite après ~7 jours',pct(r.j7),`Même exercice, réponse précédente 5 à 10 jours plus tôt, ${n(r.j7)}.`],
+    ['Réussite après 3-4 semaines',pct(r.j28),`Même exercice, réponse précédente 21 à 35 jours plus tôt, ${n(r.j28)}.`],
+    ['Révisions en retard',String(r.retard.n),r.retard.n?`dont ${r.retard.vieux} depuis plus de 7 jours.`:'Rien en retard.'],
+    ['Durée médiane d\'une séance',min,r.nSeances?`Sur ${r.nSeances} séance${r.nSeances>1?'s':''} d'au moins 2 réponses (pause de plus de 30 min = nouvelle séance).`:'Pas encore de séance mesurable.'],
+    ['Séances abandonnées',String(ab),`Commencées, au moins une réponse, jamais terminées — sur ${seances.length} séance${seances.length>1?'s':''} suivie${seances.length>1?'s':''} depuis l'ajout de ce suivi.`],
+  ];
+  const h=el('h2','suivi-t','Mon suivi');grid.append(h,el('p','suivi-note','Chiffres indicatifs : un seul utilisateur, aucune preuve. Ils servent à te repérer, pas à te noter.'));
+  rows.forEach(([l,v,d])=>{const c=el('div','suivi-row');c.append(el('div','suivi-l',l),el('div','suivi-v',v),el('p','suivi-d',d));grid.append(c);});
 }
 /* ============ LEXIQUE ============ */
 let lexQuery='';
@@ -440,6 +465,7 @@ let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new S
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
 function startSession(q,title,dejaLues=[]){
   queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
+  if(q.length){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
   mode='due';marquerOnglet('due');
   document.getElementById('filterBar').style.display='none';
@@ -451,7 +477,8 @@ function showExercise(){
   if(pos>=queue.length){
     const box=el('div','empty');
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
-    else{box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
+    else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
+      box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
       const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);}
     grid.append(box);return;
   }
@@ -633,7 +660,7 @@ updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 function exportProg(){
-  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,programmes:store},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,seances,programmes:store},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
   try{localStorage.setItem(SAVED_KEY,String(now()));}catch{}majBandeau();
 }
@@ -651,6 +678,7 @@ document.getElementById('importProg').onchange=async e=>{
   if(!confirm(`Restaurer ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} exercice(s)) sera remplacée.`))return;
   prog=p;save();
   if(data.lues&&typeof data.lues==='object'){lues=data.lues;saveLues();}
+  if(Array.isArray(data.seances)){seances=data.seances;saveSeances();}
   if(Array.isArray(data.journal)){journal=data.journal;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
