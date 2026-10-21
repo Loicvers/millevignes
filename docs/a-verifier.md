@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 72 vérifiées, 299 à vérifier (851 points).
+371 fiches : 72 vérifiées, 299 à vérifier (850 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -928,7 +928,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 237** (p.222) — Les effervescents : trois façons de faire des bulles
 - [ ] Blanquette de Limoux : 1531 (tradition de Saint-Hilaire, une source de presse) contre 1544 (livre) ; divergence non tranchée, aucune source lue ne donne 1544.
-- [ ] Seuils de pression : annexe VII du règlement 1308/2013 lue via FranceAgriMer, règlement non relu sur EUR-Lex ; le 6 bars et les g/l de CO2 du livre ne sont pas repris.
 - [ ] Martinotti 1895 et Charmat 1907 : une seule source (Glass of Bubbly).
 - [ ] Méthode ancestrale et Clairette de Die : procédé (fermentation arrêtée par le froid puis achevée en bouteille) confirmé par la fiche INAO et le Handbook of Enology (vol. 1, p. 459) ; lien avec l’aigleucos de Pline non retenu faute de preuve.
 
