@@ -88,7 +88,7 @@ Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
 
 - `refs` vers `mille-vignes` : donner la **page** suffit. Partie, section et chapitre se déduisent du sommaire (`data/mille-vignes-sommaire.json`). Si `chapitre` est indiqué et ne correspond pas à la page, le lot est refusé.
 - `theme`, `sous` : catalogue de `fiches.js` (11 thèmes). Un sous-thème hors catalogue est refusé.
-- `niveau` : `Fondamental` · `Intermédiaire` · `Pointu`. `geo` : objet ou `null` ; en France, `region` vient du catalogue `REGIONS_FR` de `fiches.js` (un test refuse tout autre nom) ; une appellation exige sa région.
+- `niveau` : `Fondamental` (ce qu'un client curieux demande au comptoir, ≈ WSET 2) · `Intermédiaire` (ce qu'on explique en masterclass, avec le pourquoi, ≈ WSET 3) · `Pointu` (recherche, chiffres d'expert, histoire fine, diplômes de sommelier). `geo` : objet ou `null` ; en France, `region` vient du catalogue `REGIONS_FR` de `fiches.js` (un test refuse tout autre nom) ; une appellation exige sa région.
 - **`status` et pastilles** :
   - tous les faits importants ✅ → `"verified"` ;
   - au moins un fait ⚠️ → `"needs_review"` **et** `to_check` liste ces faits (obligatoire) ;

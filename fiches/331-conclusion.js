@@ -98,7 +98,7 @@ FICHES.push(
     id: 341,
     theme: "Dégustation",
     sous: ["Méthode"],
-    niveau: "Fondamental",
+    niveau: "Intermédiaire",
     geo: null,
     titre: "Vin de demain, buveur de demain : la révolution du palais",
     synth: "Pour Lepeltier, le vin de demain dépendra surtout du buveur de demain, comme toujours : les vignobles ont connu des hauts, des bas et des mutations au gré de l’histoire humaine, et le vin, en crise dans certains pays, a le vent en poupe dans d’autres. L’homme blanc occidental, buveur historique, laisse la place à des buveurs de tous âges, religions, sexes et horizons, qui donnent chacun un sens à leur bouteille. Elle cite Jonathan Nossiter, réalisateur de Mondovino, pour qui défendre l’individualité du vin face au nivellement est un combat commun, et boire un acte de confiance envers le vigneron. Sans en faire une fatalité historique, elle lie le vin vivant à l’éducation du goût, au respect du vivant et au dialogue des cultures : la révolution à venir sera, dit-elle, une révolution du palais.",
