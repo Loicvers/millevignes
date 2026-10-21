@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 64 vérifiées, 277 à vérifier (826 points).
+356 fiches : 65 vérifiées, 291 à vérifier (860 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1382,3 +1382,65 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 341** (p.333) — Vin de demain, buveur de demain : la révolution du palais
 - [ ] « Homme blanc occidental, buveur historique » et diversité des buveurs (⚠️) : constat de Lepeltier, non sourcé dans le livre ; aucune source indépendante lue.
+
+**Fiche 342** (p.211) — Au-delà de l’alcool : glycérol, succinique, acétaldéhyde, acétique
+- [ ] Part du sucre détournée vers le glycérol (environ 8 %) et glycérol de 5 à 8 g/l (⚠️) : Handbook seul, aucun recoupement trouvé
+- [ ] Acétaldéhyde « pomme blette, xérès » quand il domine (⚠️) : une seule source (AWRI, Wine flavours, faults and taints) ; le Handbook ne donne pas le descripteur
+- [ ] Lien entre carence en thiamine et composés carbonylés (non repris ici) : Handbook seul
+
+**Fiche 344** (p.212) — Fermentation qui traîne ou qui s’arrête : causes et remèdes
+- [ ] Rôle des acides gras à chaîne courte comme inhibiteurs et des écorces de levure comme remède (⚠️) : Handbook ; la source OSU confirme l’usage des écorces mais pas le mécanisme, et les articles de recoupement (AEM) n’ont pas pu être lus
+- [ ] Densité immobile 24 à 48 h pour confirmer l’arrêt (⚠️) : Handbook seul
+
+**Fiche 345** (p.218) — Les formes du SO2 : libre, combiné, moléculaire
+- [ ] Pourcentages de SO2 moléculaire selon le pH (≈ 6 % à pH 3,0 ; ≈ 2 % à pH 3,5) (⚠️) : table du Handbook (solution aqueuse à 20 °C) seule ; l’AWRI et l’OIV confirment le sens de la variation sans reprendre ces valeurs, et le vin réel dépend aussi de l’alcool et de la température. Aucun exercice ne porte sur ces chiffres.
+
+**Fiche 346** (p.219) — Pourriture grise, pourriture noble : ce que Botrytis change au moût
+- [ ] Enchaînement noble (humidité, brunissement, sec, arrêt du champignon par la pression osmotique) (⚠️) : décrit par le Handbook (p. 286) seul ; les autres sources lues (Virginia Tech, OIV) ne détaillent pas les stades.
+
+**Fiche 347** (p.232) — Extraire en rouge : chapeau de marc, remontage, pigeage, délestage
+- [ ] Risque de sur-extraction (tanins durs, astringents), pigeage qui rend rustiques cabernets et merlots (⚠️) : affirmations du Handbook (p. 344, 350), non retrouvées dans les sources de recoupement lues
+- [ ] Oxygène à limiter avec une vendange pourrie (⚠️) : Handbook seul (p. 341), à recouper
+
+**Fiche 348** (p.232) — Durée et température de cuvaison : primeur ou vin de garde
+- [ ] Risque de rusticité des tanins en macération prolongée à chaud sur vendange moyenne (⚠️) : Handbook seul (p. 352)
+- [ ] Couleur qui plafonne puis recule en longue cuvaison (⚠️) : expérience de laboratoire du Handbook (p. 348-349), non recoupée
+- [ ] Macération préfermentaire à froid : températures et durées divergentes entre le Handbook (grappes refroidies vers 5 °C, 5 à 15 jours) et iDealwine (12-13 °C, 2 à 4 jours) ; aucun chiffre repris dans la fiche
+
+**Fiche 349** (p.232) — Thermovinification et flash-détente
+- [ ] Couleur instable du moût thermovinifié, avantage perdu à l’élevage, amertume et manque de fraîcheur possibles (⚠️) : Handbook seul (p. 383-384), non retrouvé dans les sources de recoupement
+- [ ] Températures de chauffage divergentes entre le Handbook (65-75 °C en thermovinification ; 70-90 °C en flash-détente) et l’INRAE (au-dessus de 70 °C, idéalement 90 °C) : aucun chiffre repris dans la fiche
+- [ ] Statut réglementaire en AOC (⚠️) : accord de l’appellation selon l’INRAE (rapport ASIRPA), texte de l’INAO non consulté
+
+**Fiche 350** (p.232) — Le blanc avant la fermentation : pressurage, macération pelliculaire, oxydation
+- [ ] Macération pelliculaire : pH en hausse et acidité en baisse (⚠️) : Handbook seul (p. 415-416, Dubourdieu et al., 1986) pour cette cause ; le recoupement (OENO One, via Vinetur) porte sur le moût foulé, non sur la macération
+- [ ] Étude OENO One (pressurage de raisins foulés ou entiers, Parellada, vendange 2024) : lue seulement via le compte rendu de Vinetur, article original non consulté
+- [ ] Température de fermentation des blancs (⚠️) : le Handbook décrit des fermentations en cave fraîche avec un maximum voisin de 22-23 °C en milieu de fermentation et déconseille les baisses brutales ; iDealwine cite 18-20 °C (ou 12-13 °C pour plus d’esters) ; aucun chiffre repris dans la fiche
+- [ ] Durée de macération pelliculaire divergente (Handbook 12 à 20 h à 10-15 °C ; iDealwine 12 à 48 h) : aucun chiffre repris
+
+**Fiche 351** (p.232) — Faire un rosé : pressurage direct ou saignée
+- [ ] Saignée qui concentre le rouge restant, rosé parfois sous-produit (⚠️) : Handbook seul (p. 448-449), non évoqué par les sources de recoupement lues (iDealwine, Culture Sciences)
+- [ ] Durées de contact (2-20 h en pressoir, 10-36 h en cuve) et proportions de la Provence : issues du Handbook seul, non reprises dans la fiche
+
+**Fiche 352** (p.235) — Enrichir le moût : sucre, moût concentré rectifié, concentration
+- [ ] Plafonds d’enrichissement par zone viticole (⚠️) : le texte d’origine de 2013 du règlement (UE) 1308/2013, annexe VIII, partie I, donne 3 % vol. en zone A, 2 % en zone B et 1,5 % en zone C, plus une concentration limitée à 20 % de volume et à 2 % vol. (la version consolidée en vigueur n’a pas pu être lue, EUR-Lex inaccessible) ; non repris en chiffres dans la synthèse. Les limites de 20 % et 2 % de la concentration sont confirmées par l’OIV (résolution OENO 2/98 et fiche osmose inverse).
+- [ ] Chaptalisation interdite dans le Midi (⚠️) : réponse ministérielle ancienne (Assemblée nationale, 14e législature) citant les cours d’appel du Sud ; aucune version actuelle lue.
+
+**Fiche 353** (p.235) — Corriger l’acidité : acide tartrique, carbonate de calcium, bicarbonate de potassium
+- [ ] Plafonds réglementaires (⚠️) : texte d’origine de 2013, annexe VIII, partie I, section C : acidification jusqu’à 1,5 g/l (en acide tartrique) pour moûts et vins en cours de fermentation, 2,5 g/l pour les vins, désacidification des vins jusqu’à 1 g/l, acidification et désacidification exclusives, acidification et enrichissement exclusifs sauf dérogation. Le Handbook (2006) donne le même cadre. Version consolidée en vigueur non lue (EUR-Lex inaccessible) : aucun chiffre en synthèse ni en exercice.
+- [ ] Acides autorisés pour acidifier (⚠️) : le Handbook et le texte d’origine parlent d’acide tartrique exclusivement ; la liste de 2019/934 (version britannique conservée) mentionne aussi les acides malique et lactique, sans plafond propre. Divergence non tranchée : seule la voie tartrique est décrite ici.
+- [ ] Choix du sel (⚠️) : le Handbook préfère le carbonate de calcium pour les moûts très acides et réserve le bicarbonate aux retouches ; l’AWRI préfère en général le bicarbonate de potassium, le plus doux. Divergence de pratique, signalée seulement par la prudence de la synthèse.
+
+**Fiche 354** (p.236) — Compléments et alternatives au SO2 : ce que chacun ne fait pas
+- [ ] Statuts et plafonds actuels (⚠️) : OIV, sorbate 200 mg/l (en acide sorbique, peu avant la mise), lysozyme 500 mg/l (moût et vin cumulés), acide ascorbique 250 mg/l (vin). Le texte consolidé du règlement 2019/934 n’a pas pu être lu (EUR-Lex inaccessible) : sorbate et lysozyme y figurent au tableau 2 (vu sur la version britannique conservée), le règlement délégué 2024/3085 supprime la condition de 250 mg/l pour l’acide ascorbique au profit du renvoi à l’OIV (jusqu’à 300 mg/l dans le vin) ; date d’application non vérifiée. Aucun chiffre en exercice.
+- [ ] Acide ascorbique sur moût (⚠️) : le Handbook (2006) dit l’usage non autorisé en France et, dans l’UE, limité au vin ; l’OIV l’admet pour les moûts (résolution OENO 11/2001) ; statut actuel dans l’UE non vérifié. Non repris dans la synthèse.
+
+**Fiche 355** (p.240) — Piqûre lactique, tourne, graisse, amertume : les maladies bactériennes du vin
+- [ ] Tourne et amertume par l’acroléine (⚠️) : mécanismes décrits dans le Handbook seul ; l’ITV France confirme seulement les noms des maladies et la dégradation de l’acide tartrique et la production de composés amers
+- [ ] Graisse : apparition quelques mois après la mise et récupération possible du vin après traitement (⚠️) : Handbook seul ; UC Davis confirme viscosité par glucane et diacétyl chez P. damnosus
+
+**Fiche 356** (p.240) — Les amines biogènes : histamine et consorts
+- [ ] Tyramine produite par L. brevis et L. hilgardii (⚠️) : Handbook seul
+- [ ] Histamine qui continue d’augmenter après la malolactique, y compris par des cellules non cultivables (⚠️) : Handbook seul ; l’OIV ne le précise pas
+- [ ] Seuils de toxicité et limites réglementaires : non traités ; le code OIV (CST 369-2011) ne fixe aucun chiffre et certaines limites nationales existent, non vérifiées ici
+- [ ] pH et histamine (⚠️) : l’OIV cite le pH élevé comme facteur de risque (populations bactériennes) ; le Handbook (p. 154) note, en milieu de laboratoire, une production par souche plus forte à pH bas, sans sucre et en présence d’éthanol. Seule la position de l’OIV est reprise.
