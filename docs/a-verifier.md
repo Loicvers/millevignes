@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 71 vérifiées, 300 à vérifier (856 points).
+371 fiches : 72 vérifiées, 299 à vérifier (855 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -842,9 +842,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Classements : Morelot (1831) et Lavalle (1855) confirmés par Garcia 2011 (une source) ; 1re édition de Jullien en 1816 confirmée par l’avant-propos de sa 2e édition (1822) ; comité de Beaune (1860) confirmé par Pérard et Jacquet 2014 (voir fiche 5). Jullien classe les vins à l’échelle de la France par classes et par dégustation, pas par climat.
 - [ ] Rôle des moines (⚠️, divergence) : la déclaration de valeur universelle exceptionnelle de l’UNESCO attribue l’identification du vin à son lieu, depuis le haut Moyen Âge, aux ordres bénédictin et cistercien et aux ducs Valois ; Garcia (2011, 2020) et Lepeltier y voient surtout l’œuvre des notables des XVIIe-XVIIIe siècles : divergence présentée, non tranchée.
 
-**Fiche 211** (p.184) — De la fraude à l’INAO : la chronologie fondatrice des appellations
-- [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : absente de la loi de 1905 dans sa version consolidée (Légifrance, lu ; rédaction d’origine non consultée) ; présente dans la loi du 6 mai 1919 (art. 13, rédaction d’origine, et art. 1 dans sa version de 1966 ; Légifrance, lu) ; les autres sources la rattachent à 1908 (UMC) et à 1919 (INAO ; Garcia 2020).
-
 **Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
 - [ ] Chronologie de Chablis : jugements de 1920 à 1932, jugement d’Auxerre de 1929 « sans la référence géologique », AOC en 1938 (décret du 13 janvier 1938) et aire parcellaire approuvée le 31 janvier 1978 (✅, cahiers des charges Chablis et Chablis grand cru, arrêtés du 11 décembre 2023 et du 24 octobre 2024) ; huit communes en 1920, vingt en 1929 et la date de 1976 restent sur une seule source (Vincent, Terroir 2012) (⚠️) ; l’aire compte aujourd’hui 17 communes de l’Yonne.
 - [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : une seule source (Vincent) ; le cahier des charges AOC Chablis (2023) ne mentionne ni le Portlandien ni de critère agronomique, il décrit des sols toujours calcaires (calcaire du Barrois en corniche, talus marneux) et environ 4 000 ha (2008) ; surfaces de Vincent non reprises.
@@ -976,7 +973,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
 - [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024, une seule source. Biodyvin (cahier des charges lu, non daté) : 80 mg/l pour les rouges et 105 mg/l pour les blancs et rosés jusqu’à 5 g/l de sucres (110 et 135 en élevage de plus de 9 mois), 105 et 130 mg/l au-delà ; moins strict que Demeter.
-- [ ] Origine historique des limites d’acidité volatile (⚠️) : le décret du 19 août 1921 fixait une limite plus haute (2,5 g/l), abaissée en 1930 puis en 1938 (une seule source, Jacquet, IVES/OIV 2024, qui cite le texte d’origine ; la version consolidée actuelle du décret ne contient plus de chiffre) ; les 18 et 20 meq/l viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
+- [ ] Origine historique des limites d’acidité volatile (⚠️ en partie) : décret du 19 août 1921 à 2,5 g/l et décret de 1938 à 1,2 g/l sur une seule source (Jacquet, IVES/OIV 2024) ; décret du 1er février 1930 lu (JO du 2 février 1930, Gallica) : 1,80 g/l en acide sulfurique, 1,50 g/l si le vin est nettement piqué ; les 18 et 20 meq/l actuels viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
 
 **Fiche 247** (p.237) — Étiqueter ce qu’il y a dans le vin
 - [ ] Mention des allergènes : l’article 119 du règlement 1308/2013 (version consolidée du 18 août 2026, lue) impose la liste des ingrédients du règlement 1169/2011 ; « sulfites » obligatoire au-delà de 10 mg/l (annexe II, point 12, lu) ; le lait et l’œuf (protéines de collage) cités par le livre n’ont pas été relus dans l’annexe II (⚠️).
@@ -987,7 +984,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 249** (p.240) — La « volat’ » : vinaigre et vernis
 - [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : avis de dégustatrice de Lepeltier, retenu ; le Handbook of Enology (vol. 2, p. 238) est plus sévère (pas d’effet positif de l’acide acétique ; complexité possible de l’acétate d’éthyle vers 50-80 mg/l, p. 59) ; l’exemple de Cheval Blanc 1947 (acidité volatile élevée) est confirmé par deux sources.
-- [ ] Décret du 19 août 1921 (⚠️) : une seule source (Jacquet, IVES/OIV 2024, qui cite l’article 1 du texte d’origine) : 2,5 g/l (2 g/l si le vin est nettement piqué), abaissée à 1,8 g/l par le décret du 1er février 1930 puis à 1,2 g/l (1,5 g/l chez les détaillants) par celui du 28 juin 1938 ; unité non précisée ; la version consolidée actuelle ne contient plus de chiffre ; non repris en exercice.
+- [ ] Décret du 19 août 1921 (⚠️ en partie) : 2,5 g/l (2 g/l si le vin est nettement piqué) et 1,2 g/l en 1938 restent sur une seule source (Jacquet, IVES/OIV 2024) ; l’étape de 1930 est confirmée par le texte : le décret du 1er février 1930 (JO du 2 février 1930, Gallica, lu) fixe 1,80 g/l exprimés en acide sulfurique, ou 1,50 g/l pour un vin nettement piqué à la dégustation.
 - [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
 
 **Fiche 250** (p.240) — Brettanomyces, souris et géosmine : trois défauts de nez et de bouche
