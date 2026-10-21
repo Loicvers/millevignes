@@ -973,7 +973,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
 - [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024, une seule source. Biodyvin (cahier des charges lu, non daté) : 80 mg/l pour les rouges et 105 mg/l pour les blancs et rosés jusqu’à 5 g/l de sucres (110 et 135 en élevage de plus de 9 mois), 105 et 130 mg/l au-delà ; moins strict que Demeter.
-- [ ] Origine historique des limites d’acidité volatile (⚠️ en partie) : décret du 19 août 1921 à 2,5 g/l et décret de 1938 à 1,2 g/l sur une seule source (Jacquet, IVES/OIV 2024) ; décret du 1er février 1930 lu (JO du 2 février 1930, Gallica) : 1,80 g/l en acide sulfurique, 1,50 g/l si le vin est nettement piqué ; les 18 et 20 meq/l actuels viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
+- [ ] Origine historique des limites d’acidité volatile (⚠️ en partie) : 2,5 g/l en 1921 sur une seule source (Jacquet, IVES/OIV 2024) ; lus sur Gallica : décret du 1er février 1930 (1,80 g/l en acide sulfurique, 1,50 g/l si le vin est nettement piqué) et décret du 28 juin 1938 (seuil producteurs « 1 gramme » + chiffre illisible à l’OCR, 1,2 g/l selon Jacquet ; 1,50 g/l chez les détaillants) ; les 18 et 20 meq/l actuels viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
 
 **Fiche 247** (p.237) — Étiqueter ce qu’il y a dans le vin
 - [ ] Mention des allergènes : l’article 119 du règlement 1308/2013 (version consolidée du 18 août 2026, lue) impose la liste des ingrédients du règlement 1169/2011 ; « sulfites » obligatoire au-delà de 10 mg/l (annexe II, point 12, lu) ; le lait et l’œuf (protéines de collage) cités par le livre n’ont pas été relus dans l’annexe II (⚠️).
@@ -984,7 +984,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 249** (p.240) — La « volat’ » : vinaigre et vernis
 - [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : avis de dégustatrice de Lepeltier, retenu ; le Handbook of Enology (vol. 2, p. 238) est plus sévère (pas d’effet positif de l’acide acétique ; complexité possible de l’acétate d’éthyle vers 50-80 mg/l, p. 59) ; l’exemple de Cheval Blanc 1947 (acidité volatile élevée) est confirmé par deux sources.
-- [ ] Décret du 19 août 1921 (⚠️ en partie) : 2,5 g/l (2 g/l si le vin est nettement piqué) et 1,2 g/l en 1938 restent sur une seule source (Jacquet, IVES/OIV 2024) ; l’étape de 1930 est confirmée par le texte : le décret du 1er février 1930 (JO du 2 février 1930, Gallica, lu) fixe 1,80 g/l exprimés en acide sulfurique, ou 1,50 g/l pour un vin nettement piqué à la dégustation.
+- [ ] Décret du 19 août 1921 (⚠️ en partie) : 2,5 g/l (2 g/l si le vin est nettement piqué) reste sur une seule source (Jacquet, IVES/OIV 2024). Lus sur Gallica : décret du 1er février 1930 (JO du 2 février 1930) à 1,80 g/l en acide sulfurique, 1,50 g/l pour un vin nettement piqué ; décret du 28 juin 1938 (JO du 29 juin 1938) qui fixe pour producteurs et négociants en gros un seuil de « 1 gramme » suivi d’un chiffre illisible à l’OCR (1,2 g/l selon Jacquet), relevable par arrêté jusqu’à 1,50 g/l, et 1,50 g/l chez les détaillants.
 - [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
 
 **Fiche 250** (p.240) — Brettanomyces, souris et géosmine : trois défauts de nez et de bouche
