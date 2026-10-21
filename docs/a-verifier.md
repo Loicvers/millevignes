@@ -390,8 +390,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Avancée des vendanges en France (⚠️, une seule source) : Pleinchamp/INRAE donne environ 24 jours plus tôt depuis les années 1970 ; le livre parle d’un mois à Châteauneuf-du-Pape, chiffre non retrouvé.
 
 **Fiche 129** (p.105) — Températures : zéro de végétation, optimum et excès de chaleur
-- [ ] Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles de vignes exposées ; retenir « autour de 25-30 °C ».
-- [ ] Ralentissement et arrêt (⚠️) : Kriedemann (1968, niveau 2a) ne voit pas de baisse notable avant 35 °C, trouve les feuilles encore actives à 40 °C et une photosynthèse nulle vers 45-50 °C ; un poster de l’Université de Toronto Scarborough (Agarwal et Martin, niveau 2b) relie le déclin à la fermeture des stomates quand la chaleur monte (mesures de 25 à 40 °C) ; le « ralentit au-delà de 30 °C » et le « très altérée vers 40 °C » de la fiche n’ont plus de source solide.
+- [ ] Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Greer et Weedon (sémillon) 25 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles exposées ; retenir « autour de 25-30 °C ».
+- [ ] Arrêt vers 40 °C (⚠️) : thèse du livre. Les travaux récents de Greer et Weedon (ISHS ; Functional Plant Biology 43, 2016) confirment une baisse dès 35 °C et un effet nuisible de 40 °C sur tous les processus de croissance, sans parler d’arrêt ; Kriedemann (1968) trouvait encore une activité à 40 °C et un arrêt vers 45-50 °C. « Très altérée vers 40 °C » est retenu.
 - [ ] Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).
 - [ ] Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -949,7 +949,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
 - [ ] Grain fin du sessile et lien grain-arômes (⚠️) : le Handbook of Enology (vol. 1, p. 437) associe grain fin, sessile et lactones, gros grain (Limousin), pédonculé et tanins ; Prida et al. (2007) trouvent des cernes proches entre les deux espèces : lien débattu.
-- [ ] Chêne américain : richesse en lactones (coco) confirmée (Handbook of Enology, vol. 1, p. 437-438 ; vol. 2, p. 417-418 ; IFV) ; le clou de girofle du livre n’est pas appuyé : l’eugénol du chêne américain est deux fois moindre que celui du sessile (vol. 2, tableau 13.17).
+- [ ] Clou de girofle du chêne américain (⚠️) : perception rapportée par Lepeltier, retenue ; la richesse en lactones (coco) est confirmée (Handbook of Enology, vol. 1, p. 437-438 ; vol. 2, p. 417-418 ; IFV), mais les dosages donnent au chêne américain moins d’eugénol que le sessile (vol. 2, tableau 13.17).
 - [ ] Profils aromatiques des forêts françaises (⚠️) : carte de l’IFV reprise par le livre p. 229, document d’origine non consulté ; le Handbook of Enology (vol. 2, p. 417) donne des moyennes par région (Limousin riche en ellagitanins, Centre en lactones) et juge l’origine géographique seule insuffisante pour classer un bois.
 - [ ] Sessile plus riche en lactones et eugénol : confirmé (Prida, 2007), mais la distribution du sessile est bimodale, certains arbres sont aussi pauvres en lactone que des pédonculés ; d’où « en moyenne »
 
@@ -960,7 +960,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pièce bourguignonne de 228 l (⚠️) : non recoupée (retrouvée seulement pour les fûts du vin de paille jurassien) ; la barrique bordelaise de 225 l est confirmée (Handbook of Enology, vol. 2, p. 394).
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
-- [ ] Gras et longueur dus aux polysaccharides (⚠️) : l’autolyse et la libération de mannoprotéines, qui stabilisent le vin contre la casse protéique et le tartre, sont confirmées (Handbook of Enology, vol. 1, p. 432-435 ; vol. 2, p. 86 et 134-137), mais leur effet direct sur le volume en bouche est jugé négligeable ou non établi (vol. 1, p. 434 ; vol. 2, p. 86).
+- [ ] Gras et longueur dus aux lies (⚠️) : avis de Lepeltier, retenu ; l’autolyse et la libération de mannoprotéines, qui stabilisent le vin contre la casse protéique et le tartre, sont confirmées (Handbook of Enology, vol. 1, p. 432-435 ; vol. 2, p. 86 et 134-137), mais le Handbook juge leur effet direct sur le volume en bouche faible ou non établi (vol. 1, p. 434 ; vol. 2, p. 86).
 - [ ] Glutathion libéré par les lies et protecteur des thiols, goûts herbacés (⚠️) : affirmations du livre, non retrouvées ; seul le lien entre lies mal conduites et réduction est confirmé (Handbook of Enology, vol. 1, p. 436-440).
 - [ ] Muscadet sur lie (⚠️) : une seule source, la fiche produit INAO (lies fines au moins jusqu’au 1er mars et jusqu’à l’expédition, sans aération, mise en bouteille dans le chai de vinification avant le 31 décembre)
 
@@ -992,7 +992,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Environ 3,5 g/l de sucres résiduels et moût refroidi à la glace (⚠️) : une seule source (Decanter).
 
 **Fiche 249** (p.240) — La « volat’ » : vinaigre et vernis
-- [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : thèse du livre, contredite par le Handbook of Enology (vol. 2, p. 238 : jamais d’effet positif ; seul l’acétate d’éthyle vers 50-80 mg/l complexifie, p. 59) ; l’exemple de Cheval Blanc 1947 (acidité volatile élevée, aujourd’hui jugée fautive) est confirmé par deux sources.
+- [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : avis de dégustatrice de Lepeltier, retenu ; le Handbook of Enology (vol. 2, p. 238) est plus sévère (pas d’effet positif de l’acide acétique ; complexité possible de l’acétate d’éthyle vers 50-80 mg/l, p. 59) ; l’exemple de Cheval Blanc 1947 (acidité volatile élevée) est confirmé par deux sources.
 - [ ] Décret du 19 août 1921 (⚠️) : une seule source (Jacquet, IVES/OIV 2024, qui cite l’article 1 du texte d’origine) : 2,5 g/l (2 g/l si le vin est nettement piqué), abaissée à 1,8 g/l par le décret du 1er février 1930 puis à 1,2 g/l (1,5 g/l chez les détaillants) par celui du 28 juin 1938 ; unité non précisée ; la version consolidée actuelle ne contient plus de chiffre ; non repris en exercice.
 - [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
 

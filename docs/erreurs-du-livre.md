@@ -1,6 +1,6 @@
 # Erreurs de Mille Vignes déjà relevées
 
-Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que dit le livre → ce qui est vérifié (source).
+Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables (date, chiffre, molécule, texte) ; un jugement de dégustatrice ou de praticienne de Lepeltier qui diverge d’une autre source va dans « Non confirmés » et reste l’avis de référence dans la fiche. Compléter à chaque lot : page, ce que dit le livre → ce qui est vérifié (source).
 
 ## Erreurs
 - p. 16 : pulpe du raisin présentée comme l’« albumen nourricier » du pépin → la pulpe est le mésocarpe (paroi du fruit) ; l’albumen est dans la graine (eXtension, Basic Grape Berry Structure ; Sorbonne Université, fruits charnus).
@@ -88,7 +88,6 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 228 : furfural à odeur d’« amande » → note grillée, d’impact olfactif négligeable aux doses du vin (Handbook of Enology, vol. 1, p. 437).
 - p. 230 : apport d’oxygène d’une barrique neuve de 0,4 mg/l/an, dont 80 % par la bonde → environ 11 à 45 mg/l/an selon les études ; la bonde pèse environ 21 % ou moins (Junqua et al., OENO One, 2021 ; Handbook of Enology, vol. 2, p. 412) ; 0,4 mg/l est l’oxygène dissous mesuré dans une barrique (tableau 13.4).
 - p. 235 : livre de Pascal Ribéreau-Gayon sur l’histoire de l’œnologie à Bordeaux daté de 2001 → 2011.
-- p. 240 : un peu d’acidité volatile donnerait du « relief » → jamais d’effet positif selon le Handbook of Enology (vol. 2, p. 238), seul l’acétate d’éthyle à très faible dose complexifie (p. 59).
 - p. 240 : limite d’acidité volatile « instaurée depuis 1921 » → le décret du 19 août 1921 fixait 2,5 g/l, abaissé en 1930 (1,8) puis 1938 (1,2) ; les 18 et 20 meq/l actuels viennent du droit européen (Jacquet, IVES/OIV 2024).
 - p. 265-267 : la chauffe du fût « détruit » les composés odorants → elle crée vanilline et phénols volatils et augmente d’abord les lactones, qui ne reculent qu’à forte chauffe (Handbook of Enology, vol. 2, p. 415-422).
 - p. 276 : anthocyanes « sans goût » → amères dans les vins jeunes (Handbook of Enology, vol. 2, p. 182 ; Paissoni et al., 2023).
@@ -201,6 +200,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 227 : clou de girofle comme trait du chêne américain (son eugénol est deux fois moindre que celui du sessile, Handbook of Enology, vol. 2, tableau 13.17).
 - p. 226-231 : grain plus fin du chêne sessile (non confirmé par Prida, 2007) ; Lorentz né en 1775 (Annales des Mines : 1774) ; micro-oxygénation de Ducournau en 1991 à Madiran (une source) ; prix des fûts, copeaux et staves. Séchage des merrains de 18 à 36 mois (IFV : 18 à 24 ; Handbook of Enology, vol. 2, p. 418-419 : 24 à 36 selon l’épaisseur).
 - p. 234-238 : OIV « 48 pays et 16 observateurs » (aujourd’hui 51 États membres et 13 observateurs) ; station agronomique de Bordeaux 1874 (Oxford Companion : 1880) ; « 102 produits » autorisés ; plafonds de SO2 bio et biodynamiques selon les cahiers des charges.
+- p. 240 : un peu d’acidité volatile donnerait du « relief » (avis de dégustatrice, retenu dans la fiche 249 ; le Handbook of Enology, vol. 2, p. 238, est plus sévère et ne l’accorde qu’à l’acétate d’éthyle à très faible dose, p. 59).
 - p. 240-243 : 5 à 8 % de bouteilles bouchonnées (littérature : 0,5 à 6 %, en baisse) ; « 70 % » des cas de TCA dus au liège ; 20 % de la population insensible à la géosmine ; diacétyle et cystéine donnant le pop-corn ; Beaucastel 1990 et son 4-éthylphénol.
 - p. 244-251 : mot « dégustation » en 1519 ; « plus de cinq mille ans » de dégustation ; « moins de 6 % » des ventes en AOC dans les années 1940 ; commissions de dégustation INAO en 1954 ; pondérations de la grille d’Amerine « sur 100 » (la grille UC Davis de 1959 est sur 20) ; cote « diamètre de base 9 mm » du verre INAO ; « 108 000 » formés WSET (= candidats d’une seule année) et « 800 centres » ; Vedel seul auteur de l’Essai de 1972 (avec Charles, Charnay, Tourmeau).
 - p. 252-257 : 15-17 % du cortex pour la vue et 1 % pour l’odorat ; « plusieurs milliards » d’odeurs ; 30-50 % de non-détecteurs de la β-ionone ; écart d’un facteur 1 000 pour le PTC ; novice aussi bon qu’un sommelier « en quelques jours » ; canal de l’acide « identifié en 2019 » (OTOP1 : 2018, confirmé en 2019) ; expérience de Morrot « réalisée en 2000 » (publiée en 2001).
