@@ -3,7 +3,11 @@
 Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que dit le livre → ce qui est vérifié (source).
 
 ## Erreurs
+- p. 16 : pulpe du raisin présentée comme l’« albumen nourricier » du pépin → la pulpe est le mésocarpe (paroi du fruit) ; l’albumen est dans la graine (eXtension, Basic Grape Berry Structure ; Sorbonne Université, fruits charnus).
 - p. 18 : « Mother Vine » de Roanoke « datée de 1500 » → tradition ; historiens : années 1850.
+- p. 18 : refuge de V. vinifera pendant « les dernières glaciations de l’Éocène » → l’Éocène est une période chaude presque sans glace ; le refuge date du dernier maximum glaciaire, vers 20 000 ans (Hutchinson et al., Climate of the Past 2021 ; Eos 2023, d’après Dong et al., Science 2023).
+- p. 19 : hypothèse « corroborée par la présence de résine et de pépins » → l’étude de 2017 n’a trouvé ni résine ni pépins (Sci.News, Smithsonian, National Geographic, d’après McGovern et al., PNAS 2017) ; le livre dit d’ailleurs plus bas « sans résine ».
+- p. 19 : jarre « datée de 5980 » et décorée → la jarre à décor de grappes vient d’un troisième site, Khramis Didi-Gora (Sci.News 2017) ; dates publiées 6000-5800 av. J.-C., 5980 introuvable.
 - p. 20 : pressoir d'Areni « vieux de 9 000 ans » → ~6 000 ans (4100-4000 av. J.-C.).
 - p. 21 : Bataille des vins « 1224 par Philippe Auguste » → le roi meurt en 1223.
 - p. 23 : tribidrag identifié « par Vouillamoz en 2012 » → herbier de Split analysé en 2011 par des chercheurs croates ; Wine Grapes (2012) popularise le nom.
@@ -112,6 +116,14 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 318-319 et 324-325 : le même sommelier prénommé « Philippe » puis « Alain » Bourguignon (incohérence interne).
 
 ## Non confirmés
+- p. 16 : Vitacées apparues quand les continents « ne forment qu’une seule masse » → la Pangée se fragmente dès ~200 Ma, bien avant le Crétacé supérieur (Britannica seule).
+- p. 16 : génome « décodé intégralement en 2007 » → ébauche en 2007 ; référence complète (T2T) en 2023. Nuance.
+- p. 17-18 : nombres d’espèces par bassin (37, 34, 1) et 17 genres de Vitacées → Wan et al. 2013 : jusqu’à 30, 28 et 2 ; Wen et al. 2018 : 16 genres.
+- p. 18 : V. amurensis à −45 °C (PLOS ONE : −40 °C) ; Jilin Changbai Mountains « entreprise japonaise » (nationalité non trouvée) ; recherches russes de 1907 non retrouvées.
+- p. 19 : seulement deux acides cités (tartrique, succinique) → l’étude en relève quatre (avec malique et citrique) ; omission. « Huit jarres de 300 l » : fragments de huit grandes jarres.
+- p. 19 : Jiahu « plus vieille boisson alcoolisée » → une bière natoufienne de Raqefet (~13 000 ans) est avancée par Liu et al. 2018 (communiqué de Stanford seul).
+- p. 20 : hermaphrodites « issus de plants mâles » → la génétique décrit des recombinaisons entre haplotypes mâle et femelle, au moins deux indépendantes (Massonnet et al. 2020 ; Zou et al. 2021).
+- p. 21 : acide syringique « dans la majorité des jarres » égyptiennes → seules des amphores de Toutânkhamon analysées, 3 sur 8 positives (Guasch-Jané et al. 2006).
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
 - p. 41-67 : riesling 125 / tannat 440 fleurs, greffe sur 0,5 % des surfaces en 1863, hypothèse Carbonneau sur le merlot, porte-greffe riparia gloire et 10-15 hl/ha aux Bournais.
@@ -180,8 +192,15 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 300-304 : dates d’Akhénaton de la légende p. 303 ; « 8 + 1 + 1 » mentions obligatoires ; ordre de diffusion de la lithographie (Allemagne, Champagne, Bordelais) ; étiquette « deuxième critère après le prix » ; Leeuwin « 1981 » (millésime 1980) ; exposition du SFMOMA « en 2011 » (20 novembre 2010 - 17 avril 2011).
 - p. 305-316 : Gilgamesh et une « vigne » d’immortalité ; « Code du vin » de Mendès France (1954) ; lois de 1959 sur l’ivresse au volant ; 135 l en 1950 et 162 l en 1880 ; fin du vin à la cantine en 1956 (presse seulement) ; Pitte, Le Désir du vin « 2004 » (2009) ; courbes de refroidissement p. 307 et chiffres des enchères p. 308-309.
 - p. 317-329 : carte du Véry (1790) ; Union des sommeliers de Paris (1907), CAP 1980, BP 1984 ; concours du meilleur sommelier de France en 1961 ; Restaurant de Boulanger en 1765 (tradition, Spang) ; classification et apports de Centelles, Senderens, Veronelli, Vaccarini et Roca (livre seul) ; lien de Chartier avec Hervé This.
+- p. 331 : rencontres de 2022 (35 experts de 17 pays ; 160 intervenants à Green Wine Future) → chiffres non retrouvés (IWSC : plus d’une centaine ; Wine Industry Advisor : 170).
+- p. 332 : séparation nature/culture née à Athènes au IVe siècle av. J.-C. → Lex.dk (d’après Descola) situe l’idée moderne de nature aux Lumières. Divergence.
+- p. 332 : « agriculture biologique, biodynamie puis permaculture » → à ne pas lire comme une chronologie (biodynamie 1924, organic farming 1940).
 
 ## Confirmés après vérification (le livre avait raison)
+- p. 18 : lambrusque protégée en France depuis 1995 (arrêté du 20 janvier 1982 modifié le 31 août 1995, annexe I).
+- p. 19 : sites à ~50 km au sud de Tbilissi, culture de Shulaveri-Shomu, 6000-5800 av. J.-C. (PNAS 2017 ; National Geographic ; Sci.News).
+- p. 20 : « apomixie végétative » est un terme botanique classique (Gustafsson ; Stebbins), pas une erreur.
+- p. 331 : Mythologies de Barthes, 1957 ; Mondovino (2004) et Le Goût et le Pouvoir (2007) de Nossiter.
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
 - Semis de sérine (Grahm) et de teroldego (Foradori) ; étude calabraise de Meneghetti (2015).
 - Clone de chardonnay 1066 bien agréé ; 31 clones de chardonnay, 8 de riesling, 1 de gringet (FranceAgriMer, mars 2026) ; pinot noir : 48 en 2026 contre 47 dans le livre.

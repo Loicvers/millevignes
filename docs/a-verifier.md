@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-336 fiches : 54 vérifiées, 282 à vérifier (834 points).
+341 fiches : 56 vérifiées, 285 à vérifier (867 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -18,49 +18,69 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
 
 **Fiche 6** (p.16) — Classification botanique de Vitis vinifera
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Nom de la sous-espèce cultivée (⚠️) : sativa (livre) contre vinifera. Un glossaire (Wein-Plus, niveau 2b) juge « sativa » obsolète ; la base WFO (instantané 2019) range sativa et sylvestris en synonymes de V. vinifera. VIVC et IPNI n’ont pas pu être consultés.
+- [ ] Nombre d’espèces de Vitis (⚠️) : « environ 60 » (Wan et al., BMC Evol. Biol. 2013) mais « plus de 60 » à environ 100 selon une revue de Frontiers in Plant Science (2022).
+- [ ] Une seule espèce en Europe et au Proche-Orient (⚠️, livre seul) : Wan et al. (2013) en comptent deux pour l’Asie moyenne et l’Europe.
 
-**Fiche 7** (p.17) — Sylvestris et sativa : les deux visages de V. vinifera
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+**Fiche 7** (p.18) — Sylvestris et sativa : les deux visages de V. vinifera
+- [ ] Pépins plutôt arrondis chez la lambrusque (⚠️) : une seule source lue (revue Seeds, MDPI, vol. 3, art. 23), le document ministériel consulté sur le sujet est ambigu ; le livre ne le dit pas.
+- [ ] Nom de la forme cultivée (⚠️) : sativa (livre) contre vinifera, voir fiche 6.
 
-**Fiche 8** (p.18) — Domestication de la vigne : le foyer caucasien
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+**Fiche 8** (p.18) — Domestication de la vigne : un berceau ou deux ?
+- [ ] Date et foyer de la domestication (⚠️ divergence non tranchée) : le livre dit refuge caucasien puis domestication dans une zone allant du Caucase au Proche-Orient (p. 18-19), après les débuts de l’agriculture vers 8000 av. J.-C. ; Science 2023 (résumé PubMed et article Eos) : deux domestications simultanées vers 11 000 ans, Asie occidentale et Caucase ; Nature Communications 2021 (Magris et al.) : un événement unique en Asie occidentale, sans date précise dans le résumé lu.
+- [ ] Refuge glaciaire (⚠️) : le livre parle d’un refuge dans le bassin caucasien ; Eos, à propos de Science 2023, décrit au dernier maximum glaciaire une population orientale scindée en deux, Asie occidentale et Caucase. Correction du livre : il parle des « dernières glaciations de l’Éocène » ; l’Éocène est une période chaude presque sans glace (la première grande glaciation de l’Antarctique date de la transition Éocène-Oligocène, vers 34 millions d’années, Hutchinson et al., Climate of the Past 2021) ; les glaciations en cause sont celles du dernier maximum glaciaire.
 
 **Fiche 9** (p.16) — La vigne, liane arbustive et pérenne
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Racine « pivot » (⚠️) : le livre reprend la règle générale des dicotylédones ; un cours de viticulture (école Muscadelle) et un chapitre Springer sur la vigne décrivent des racines adventives chez les vignes bouturées. Le cas du semis n’a pas été confirmé par une source viticole.
+- [ ] Cambium (⚠️) : confirmé par un chapitre Springer (« Grapevine ») et un article de biologie de la vigne (niveau 2b), à compléter par un manuel de botanique.
+- [ ] Correction du livre : il assimile la pulpe à l’albumen nourricier du pépin ; en botanique, la pulpe est le mésocarpe du fruit et l’albumen est un tissu de la graine.
 
 **Fiche 11** (p.17) — Vitacées, sous-genres et trois bassins de Vitis
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Âge des Vitacées, environ 100 millions d’années (⚠️, livre seul) : le plus ancien fossile connu de la famille est une graine indienne du Crétacé supérieur, vers 66 millions d’années (Florida Museum, American Journal of Botany 2013) ; l’âge moléculaire de 90 millions d’années cité par Wan et al. (2013) sert de calibrage dans leur analyse, ce n’est pas un résultat.
+- [ ] Nombre de genres (⚠️ divergence) : 16 selon Wen et al. (J. Syst. Evol. 2018), 17 selon le livre ; d’autres auteurs en comptent moins.
+- [ ] Nombre d’espèces par bassin (⚠️) : le livre donne 37 (Asie), 34 (Amérique) et 1 (Europe) ; Wan et al. (2013) comptent jusqu’à 30 espèces en Asie orientale, jusqu’à 28 en Amérique du Nord et 2 en Asie moyenne et Europe. Les décomptes dépendent du traitement taxonomique.
+- [ ] Nombre d’espèces de Muscadinia (⚠️) : 3 selon le livre et une revue de Frontiers (2022), 2 selon une revue de MDPI Agriculture (2019), 1 ou 2 selon Wan et al. (2013).
+- [ ] Origine américaine de Vitis (⚠️) : soutenue par Wan et al. (2013), mais une revue de Frontiers (2022) rappelle l’absence de consensus (Asie, Amérique centrale ou du Nord selon les études).
 
-**Fiche 12** (p.17) — Vitis sezannensis : le plus vieux fossile de feuille de vigne
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
-
-**Fiche 13** (p.19) — Le plus ancien vin connu : la Géorgie vers 6000 av. J.-C.
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
-
-**Fiche 14** (p.19) — L’hypothèse paléolithique : avant le vigneron, le cueilleur
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+**Fiche 12** (p.16) — Vitis sezannensis : une feuille fossile de vigne en Champagne
+- [ ] « Plus vieux fossile de feuille de vigne » (⚠️, livre seul) : aucune source lue ne le confirme ; les plus anciennes Vitacées connues sont des graines (Indovitis chitaleyae, Inde, environ 66 Ma ; graines colombiennes d’environ 60 Ma, Nature Plants 2024).
+- [ ] Âge de 56 Ma (⚠️) : l’article de l’Acta Palaeontologica Polonica (2020) et la fiche du Muséum placent Sézanne dans le Thanétien supérieur sans chiffre ; 56 Ma est le chiffre du livre.
+- [ ] Attribution à Vitis et à Saporta (⚠️) : l’extrait du Prodrome de Saporta (1868) lu ne mentionne pas le nom Vitis sezannensis ; un site de vulgarisation (niveau 2b) cite Schimper, selon qui ces feuilles pourraient relever de Cissus, Cissites ou Ampelophyllum.
 
 **Fiche 15** (p.20) — L’hypothèse hermaphrodite : la clé de la domestication
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Thèse de Vouillamoz (⚠️) : citée par le livre seul ; ses publications n’ont pas pu être lues.
+- [ ] Hermaphrodites « issus de plants mâles » (⚠️, livre p. 20) : Massonnet et al. 2020 décrivent une recombinaison entre haplotypes mâle et femelle, sans filiation mâle ; Zou et al. 2021 évoquent au moins deux recombinaisons indépendantes.
+- [ ] Terme « apomixie végétative » du livre : terme botanique classique (Gustafsson, repris par Stebbins, Variation and Evolution in Plants, 1950, chap. 10), mais l’usage actuel réserve souvent « apomixie » à la formation de graines sans fécondation ; la fiche parle donc de multiplication végétative.
 
 **Fiche 16** (p.20) — Du Caucase à la Méditerranée : centres primaires et secondaires
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Trois vagues de diffusion (⚠️) : carte et texte du livre seuls ; Dong et al. (Science 2023) décrivent une diffusion avec les premiers agriculteurs, sans parler de trois vagues.
+- [ ] Échanges plus fréquents vers 3500-3000 av. J.-C. (⚠️) : le livre seul, aucune source lue ne confirme cette fenêtre.
+- [ ] Foyer unique ou deux domestications (⚠️, divergence) : le livre place les centres primaires du Caucase au Proche-Orient ; Dong et al. 2023 décrivent deux domestications simultanées vers 11 000 ans, en Asie occidentale et dans le Caucase ; McGovern et al. 2017 jugent impossible de désigner une région prioritaire.
 
 **Fiche 17** (p.21) — L’Égypte ancienne et la couleur des premiers raisins
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Dates de l’Ancien Empire 2700-2220 av. J.-C. (⚠️) : dates du livre ; aucune source de chronologie n’a pu être lue, les bornes varient selon les auteurs.
+- [ ] Plus anciennes représentations de la couleur du raisin, toutes noires (⚠️) : livre seul ; des sources lues confirment que les tombes égyptiennes montrent du raisin rouge, sans préciser l’Ancien Empire ni la primauté.
+- [ ] Généralisation du livre non retenue : il affirme que la majorité des jarres égyptiennes contiennent de l’acide syringique ; Guasch-Jané et al. n’ont analysé que des amphores de Toutânkhamon (Nouvel Empire), et un seul échantillon sur six était rouge ; la fiche n’en tire aucune conclusion générale.
 
 **Fiche 18** (p.21) — Cépages primitifs, anciens et récents
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Classification de Lacombe en quatre groupes, publiée en 2012 (⚠️) : citée par le livre seul ; la publication n’a pas pu être retrouvée ni lue.
+- [ ] Absence de cépages « primitifs » retrouvés (⚠️) : affirmation du livre, non vérifiée dans une autre source.
 
 **Fiche 19** (p.21) — Le maratheftiko, une vinifera à fleurs femelles
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Mavro comme pollinisateur (⚠️, divergence) : Falstaff le cite comme voisin habituel pour la fécondation ; Jancis Robinson dit seulement qu’il lui est traditionnellement associé en vignoble mixte ; un domaine chypriote cité par wine.com.cy utilise le spourtiko. Le livre ne nomme pas de pollinisateur.
+- [ ] Millerandage et faibles rendements (⚠️) : le livre seul ; les sources lues parlent d’une culture « difficile et imprévisible » sans citer ces termes.
+- [ ] Quasi-disparition liée à la fin de la complantation après le phylloxéra (⚠️) : thèse du livre, non confirmée par une autre source.
 
 **Fiche 20** (p.18) — Vitis amurensis, la vigne du grand froid
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Température limite dans l’air (⚠️ divergence) : −45 °C selon le livre ; un article de PLOS ONE (Rpv12) indique jusqu’à −40 °C dans l’habitat naturel ; une chronique de Decanter China parle de −30 °C dans l’aire de l’espèce.
+- [ ] −16 °C pour les racines : température critique mesurée par Guo et al., Vitis 26 (1987), sur des matériels du nord-est de la Chine ; c’est une valeur d’essai, pas une limite absolue.
+- [ ] Chercheurs russes en 1907 (⚠️, livre seul) : aucune source retrouvée.
+- [ ] Vins de Jilin dès 1936 (⚠️) : Decanter China cite des sociétés fondées en 1936 (Jilin Changbai Mountains) et 1937 (Jilin Tonghua) pour vinifier l’amurensis sauvage, sans parler d’une entreprise japonaise comme le fait le livre ; l’acidité forte est du livre seul.
+- [ ] Cabernet severny et rondo (⚠️) : filiations lues sur le glossaire Wein-Plus (niveau 2b) ; confirmées pour la résistance (Rpv10) par PLOS ONE. Solaris : confirmé aussi par l’Oxford Companion to Wine.
 
 **Fiche 21** (p.18) — Muscadinia rotundifolia contre le court-noué
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+- [ ] Hybrides Muscadinia × Vitis normalement stériles à cause des 39 chromosomes (⚠️) : une seule source lue (revue MDPI Agriculture 2019).
+- [ ] Mother Vine (erreur du livre) : le livre la date d’environ 1500 ; NCpedia rapporte l’estimation de l’historien Clarence Gohdes, vers 1850.
 
 **Fiche 25** (p.24) — L’Ampélographie de Viala et Vermorel (1901-1910)
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -1400,3 +1420,22 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Asian Palate, 2009 (⚠️) : date concordante entre le livre et une page universitaire (Smith College, 2011, niveau 2b) ; la notice PolyU (septembre 2011) concerne le livre suivant, Mastering Wine for the Asian Palate. Nationalité « américano-coréenne » non vérifiée.
 - [ ] Tim Hanni, Why You Like the Wines You Like, 2013, quatre vinotypes (⚠️) : une seule source (The Wine Economist, niveau 2b).
 - [ ] Puisais et le « goût juste » (⚠️) : la notice BnF confirme le personnage, pas la citation ni son rôle auprès des chefs.
+
+**Fiche 337** (p.331) — Un vin de paradoxes : le constat de la conclusion
+- [ ] « Plus de 35 experts de 17 pays » au symposium Act for Change (⚠️) : le communiqué de Vinexposium et The Drinks Business ne donnent aucun chiffre ; seuls le livre et l’idée « du monde entier » sont attestés. Aucune question posée.
+- [ ] « Plus de 160 intervenants » à Green Wine Future (⚠️) : IWSC parle de « plus d’une centaine », Wine Industry Advisor de 170 présentateurs ; chiffre du livre non confirmé. Aucune question posée.
+
+**Fiche 338** (p.331) — Du totem de Barthes au vin « dénormalisé »
+- [ ] Terme « dénormalisé » chez Bucella (⚠️) : le livre de Bucella, Pourquoi boit-on du vin ? (Dunod, 2019), décrit le passage de l’aliment au produit hédonique, mais le mot n’apparaît pas dans la page éditeur lue ; attribution rapportée par Lepeltier.
+- [ ] Vin « archétype » et boit-on moins qu’on n’en parle (⚠️) : thèse de Lepeltier ; la page Dunod en dit autant des seuls grands crus devenus collection.
+
+**Fiche 339** (p.332) — Le vin vivant, nouvelle mythologie née de la joie de boire ensemble
+- [ ] Rôles prêtés aux cinq pionniers (⚠️) : lecture de Lepeltier. Chauvet négociant-chimiste et mentor de Lapierre dès 1981 : concordant (Wine Spectator, World of Fine Wine, Natural’s Will) ; Néauport arrivé plus tard dans le groupe beaujolais ; Morel et Chapel cités seulement par Raisin (niveau 2b).
+- [ ] Datation « années 1980 » (⚠️) : cohérente avec la rencontre Chauvet-Lapierre en 1981 et le « Gang of Four » du début des années 1980, mais les sources lues montrent des racines antérieures au mouvement ; datation de Lepeltier.
+
+**Fiche 340** (p.332) — Nature et culture, vins de terroir : un lien au vivant qui bouscule les règles
+- [ ] Naissance de la division nature/culture dans la cité athénienne au IVe siècle av. J.-C. (⚠️) : thèse du livre ; Lex.dk (Descola) situe plutôt l’émergence de l’idée moderne de nature à l’époque des Lumières ; divergence non tranchée. Aucune question posée sur ce point.
+- [ ] Sociabilité nouvelle « selon Pitte » et « gastro-diplomatie » (⚠️) : propos de Pitte rapportés par Lepeltier, non vérifiés dans l’original ; Pitte est professeur émérite de géographie (Paris-Sorbonne) et auteur d’ouvrages sur le vin (page de conférence PolyU) ; le lien au sens de l’Unesco est traité par la fiche 326.
+
+**Fiche 341** (p.333) — Vin de demain, buveur de demain : la révolution du palais
+- [ ] « Homme blanc occidental, buveur historique » et diversité des buveurs (⚠️) : constat de Lepeltier, non sourcé dans le livre ; aucune source indépendante lue.

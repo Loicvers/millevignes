@@ -979,5 +979,82 @@ const RECITS = [
   "La classification des accords de Centelles, les apports de Roca, Veronelli, Vaccarini et Senderens ne sont pas recoupés hors du livre.",
   "L’infographie des harmonies moléculaires (p. 328) est en partie illisible : seuls des exemples sûrs sont repris."
  ]
+},
+{
+  chapitre: "L’origine de la vigne",
+  pages: "16-18",
+  question: "D’où vient la vigne, et pourquoi une seule de ses espèces fait-elle le vin ?",
+  fil: [
+    "Lepeltier part d’un constat : la vigne cultivée n’est pas apparue toute seule, c’est le produit d’une longue domestication. Pour s’y retrouver dans ses noms, elle commence par sa généalogie, la classification des êtres vivants, qu’elle compare à des poupées russes : la vigne est une Vitis, de la famille des Vitacées, de l’ordre des Vitales, parmi les Rosidés.",
+    "<b>Une plante hors du commun.</b> Liane verte, arbustive et pérenne, la vigne fabrique son bois grâce à son cambium. Son génome, décodé en 2007, est très ancestral et riche en gènes liés aux arômes : de quoi expliquer la complexité du vin. Contrairement à la rose, domestiquée pour ses fleurs, elle a privilégié son appareil végétatif, d’où sa nature protéiforme.",
+    "<b>Une très vieille famille.</b> Selon le livre, les Vitacées naissent il y a environ 100 millions d’années, au Crétacé, et se dispersent à l’Éocène. L’autrice cite comme plus vieille feuille de vigne connue Vitis sezannensis, trouvée en Champagne. Plusieurs genres tropicaux se différencient ; ceux de l’hémisphère nord comprennent les vignes vierges et Vitis, jugé le plus récent.",
+    "<b>Deux sous-genres, trois bassins.</b> Vitis se scinde en Muscadinia (40 chromosomes, sud-est des États-Unis, avec M. rotundifolia) et Euvitis (38 chromosomes), qui prend le nom du genre. Les espèces se répartissent en trois bassins : l’Extrême-Orient asiatique (37 espèces selon le livre), l’Amérique du Nord (34) et l’ensemble Proche-Orient et Europe, qui n’en compte qu’une, V. vinifera. Asie et Amérique sont restées sauvages et sont aujourd’hui étudiées pour leur résistance au froid ou aux maladies : V. amurensis, M. rotundifolia et son lien avec le court-noué.",
+    "<b>Pourquoi une seule espèce en Europe ?</b> Selon Lepeltier, V. vinifera n’aurait pas eu besoin de se différencier, parce qu’elle aurait trouvé un refuge isolé et adapté dans le bassin caucasien pendant les bouleversements climatiques.",
+    "<b>Vitis rencontre Homo sapiens.</b> V. vinifera connaît alors deux évolutions parallèles. La sous-espèce sylvestris, la lambrusque, reste sauvage : dioïque, liane des bords de cours d’eau, menacée et protégée en France depuis 1995. La sous-espèce cultivée, que le livre appelle sativa, naît selon lui de l’essor de la viticulture à la suite des débuts de l’agriculture, vers 8000 av. J.-C. C’est elle qui s’est le plus diversifiée, grâce à sa rencontre avec l’homme."
+  ],
+  defend: "La vigne qui fait notre vin est le fruit d’une très longue généalogie végétale, puis d’une rencontre avec l’homme : une seule espèce eurasiatique, V. vinifera, que ses cousines sauvages d’Asie et d’Amérique éclairent encore pour l’avenir.",
+  client: "« La vigne est une liane très ancienne, de la famille des Vitacées. Elle compte des dizaines d’espèces sauvages en Asie et en Amérique, mais le vin vient d’une seule, V. vinifera, que l’homme a domestiquée à partir de la vigne sauvage, la lambrusque. »",
+  filRouge: "D’où vient la vigne ?",
+  prudence: [
+    "Le livre appelle la sous-espèce cultivée « sativa » ; les ouvrages récents la nomment plutôt subsp. vinifera.",
+    "Domestication : le livre place le refuge de la vigne sauvage dans le bassin caucasien, puis les premiers centres de domestication dans une large zone du Caucase au Proche-Orient, après les débuts de l’agriculture vers 8000 av. J.-C. ; une étude de Science (2023) parle de deux domestications presque simultanées il y a environ 11 000 ans (Asie occidentale et Caucase), une autre (Nature Communications, 2021) d’un événement unique en Asie occidentale. À présenter comme un débat ouvert.",
+    "Le livre assimile la pulpe à l’albumen du pépin : en botanique, la pulpe est la chair de la paroi du fruit (mésocarpe), l’albumen est un tissu de la graine.",
+    "Le livre parle des « dernières glaciations de l’Éocène » : l’Éocène est une période chaude presque sans glace ; les glaciations qui ont isolé les populations de vigne sauvage sont récentes (dernier maximum glaciaire, il y a environ 20 000 ans).",
+    "Les décomptes d’espèces (37, 34, 1) et de genres (17 dans le livre, 16 chez Wen et al. 2018) varient selon les auteurs ; l’âge de 100 millions d’années des Vitacées est celui du livre, le plus ancien fossile connu est une graine indienne d’environ 66 millions d’années.",
+    "Vitis sezannensis : présentée comme le plus vieux fossile de feuille de vigne, mais l’attribution au seul genre Vitis a été discutée et des graines de la famille sont plus anciennes.",
+    "V. amurensis : la limite de −45 °C du livre est donnée ailleurs à −40 °C ; la société de Jilin de 1936, dite « japonaise » par le livre, n’a pas pu être vérifiée.",
+    "Mother Vine de Roanoke : la date de 1500 est une tradition ; les historiens penchent pour les années 1850."
+  ]
+},
+({
+  chapitre: "Homo sapiens domestique Vitis vinifera",
+  pages: "19-21",
+  question: "Comment une liane forestière aux petites baies aigres est-elle devenue la vigne du vin ?",
+  fil: [
+    "La vigne n’avait rien d’une plante évidente à domestiquer : liane de forêt, elle grimpe dans les arbres et porte de petites baies aigrelettes. Pourtant, comme la vanille et le houblon, elle a retenu l’attention de l’homme, qui l’a sélectionnée, propagée et améliorée. Reste à comprendre pourquoi et comment.",
+    "<b>L’hypothèse paléolithique.</b> Pour Patrick McGovern, l’envie de boire serait venue avant la culture : des chasseurs-cueilleurs auraient goûté du jus de raisins sauvages fermenté naturellement et cherché à le reproduire. Notre organisme y était préparé par une mutation de l’enzyme qui dégrade l’alcool. Le problème est que ce jus tourne vite au vinaigre : il fallait donc apprendre à le conserver.",
+    "<b>Un vin vieux de 8 000 ans.</b> Les poteries, poreuses, gardent des traces de liquide que la chimie sait lire. En 2017, une équipe incluant McGovern trouve en Géorgie, à une cinquantaine de kilomètres de Tbilissi, de l’acide tartrique dans des jarres, ce qui prouve qu’on y vinifiait vers 6000-5800 av. J.-C. L’autrice y voit aussi le lien entre vin et poterie, donc une société déjà organisée.",
+    "<b>Les centres primaires.</b> Les premiers grands foyers se situent, selon le livre, du Caucase au Proche-Orient : culture de Shulaveri-Shomu en Géorgie, Arménie avec le site d’Areni, montagnes du Zagros avec Hajji Firuz Tepe vers 5400 av. J.-C. La région compte aussi la plus grande diversité génétique de vignes, et la carte du livre montre une diffusion en trois vagues.",
+    "<b>L’hypothèse hermaphrodite.</b> Domestiquer, c’est maîtriser la reproduction. La vigne sauvage a des pieds mâles et femelles ; de rares pieds hermaphrodites, repérés par l’homme et multipliés par bouture, donnent des clones qui fructifient seuls. C’est la lecture de José Vouillamoz, présentée par le livre comme une hypothèse invérifiable matériellement.",
+    "<b>Du Proche-Orient à la Méditerranée.</b> Au fil des migrations puis des échanges, des centres secondaires naissent autour de la Méditerranée. Les proto-cépages s’y croisent avec les lambrusques locales, et la sélection donne des baies moins acides et tanniques, plus pulpeuses et sucrées, de couleurs et de pépins variés. Les agronomes romains décrivent ensuite une grande diversité de cépages : la domestication est quasi achevée.",
+    "<b>Ce que l’Égypte nous apprend.</b> Les fresques de l’Ancien Empire montrent des grappes noires, ce qui suggère une sélection de la couleur encore débutante ; l’acide syringique, marqueur de vin rouge, permet de lire la couleur du vin dans les jarres.",
+    "<b>Des cépages qui traversent les siècles.</b> Thierry Lacombe distingue quatre groupes : lambrusques, cépages primitifs, anciens et récents. Grâce à la multiplication végétative, des cépages anciens comme le savagnin ou le pinot sont encore parmi nous ; en revanche, aucun cépage primitif n’a été retrouvé.",
+    "<b>Le maratheftiko, survivant à fleurs femelles.</b> À Chypre, ce cépage rouge n’a que des fleurs femelles : il doit être planté avec d’autres variétés qui fleurissent en même temps pour être pollinisé. Il a failli disparaître avec la fin de la complantation, mais la sauvegarde de la diversité ampélographique le remet en valeur."
+  ],
+  defend: "Lepeltier défend l’idée que le vin n’est pas né d’un coup : il vient d’un goût ancien pour le fermenté, d’une plante dont les hermaphrodites multipliés par bouture ont rendu la culture possible, puis de millénaires de croisements et de sélection.",
+  client: "« Le plus vieux vin prouvé chimiquement vient de Géorgie, il y a environ 8 000 ans ; et la vigne que nous cultivons descend de pieds sauvages dont l’homme a fixé les meilleurs par bouture. »",
+  filRouge: "Depuis quand fait-on du vin ?",
+  prudence: [
+    "Le pressoir d’Areni-1 date de 4100-4000 av. J.-C., soit environ 6 000 ans, et non 9 000 ans comme l’écrit le livre p. 20 (sa propre carte donne 4100-4000).",
+    "La jarre décorée de grappes que décrit le livre vient d’un autre site, Khramis Didi-Gora, et la date de 5980 av. J.-C. n’a pas été retrouvée. Sur les deux sites analysés, l’étude n’a trouvé ni résine ni pépins, contrairement à ce que laisse entendre le livre, qui écrit d’ailleurs plus bas que ce vin était sans résine.",
+    "Le plus ancien vin prouvé n’est pas forcément le premier : McGovern lui-même juge impossible de désigner la région pionnière, et Dong et al. (Science, 2023) décrivent deux domestications simultanées vers 11 000 ans, en Asie occidentale et dans le Caucase, là où le livre décrit une large zone de domestication du Caucase au Proche-Orient.",
+    "À Jiahu (Chine, 7000-6600 av. J.-C.), la boisson fermentée mêlait du riz, du miel et des fruits (aubépine et/ou raisin) ; et une étude de 2018 sur la grotte de Raqefet (Israël) fait remonter une bière à environ 13 000 ans, ce qui nuance l’idée de « plus ancienne boisson alcoolisée ».",
+    "Le livre généralise l’acide syringique à la majorité des jarres égyptiennes ; Guasch-Jané et al. n’ont analysé que des amphores de Toutânkhamon : trois sur huit portaient ce marqueur, les autres ont été lues comme du vin blanc. Les dates de l’Ancien Empire, les trois vagues de diffusion, 3500-3000 av. J.-C. et la classification de Lacombe ne reposent que sur le livre.",
+    
+    "Encadré p. 21 : la Bataille des vins est datée vers 1224, mais Philippe Auguste est mort en 1223. L’identification du nama d’Hésiode au commandaria vient de sources de vulgarisation (wein.plus, World of Fine Wine) et reste à prendre avec précaution ; le mavro comme pollinisateur du maratheftiko est cité par une seule source (Falstaff)."
+  ]
+}),
+{
+  chapitre: "Quel vin pour demain ?",
+  pages: "331-333",
+  question: "Quel vin pour demain, et qui le fera ?",
+  fil: [
+    "La conclusion part de deux rencontres de 2022, un symposium à Bordeaux et une conférence en ligne, qui disent la même chose : face aux problèmes environnementaux, il est urgent d’agir. Lepeltier se demande alors pourquoi et comment agir, alors que le vin a, pour beaucoup, perdu son sens.",
+    "<b>Un vin de paradoxes.</b> Autrefois nécessaire et populaire, il est devenu un luxe pour privilégiés ; fleuron du patrimoine français, il est pointé par les lobbys antialcool ; symbole de naturalité, il est « hyperculturel » ; symbole d’enracinement, il est mondialisé. Ces paradoxes sont, pour elle, le reflet de nos propres contradictions.",
+    "<b>Du totem au choix.</b> Barthes voyait dans le vin la boisson-totem de la nation française. Ce n’est plus vrai, car en boire n’est plus une nécessité sociale. Avec Fabrizio Bucella, elle parle d’un vin « dénormalisé » : produit hédonique, choisi plutôt que subi. On le boit alors pour ce qu’il représente, et on en parle plus qu’on n’en boit.",
+    "<b>Une mythologie à inventer.</b> Elle croit que cette mythologie est déjà en train de se faire, avec les vins naturels. Pour elle, ce n’est pas d’abord l’écologie mais la joie de boire ensemble qui a poussé les pionniers à chercher un vin sans chimie, qui se boit. Elle voit l’origine de ce vin vivant, apparu selon elle dans les années 1980, dans la rencontre de cinq regards venus de métiers différents : Chauvet, Lapierre, Néauport, Morel et Chapel. Le vin « d’avant » qu’ils retrouvent est en fait réinventé.",
+    "<b>Nature, culture, territoires.</b> S’appuyant sur Descola, elle rappelle que la séparation entre nature et culture est une manière de voir parmi d’autres, que les vignerons « nature » contestent. Les vins de terroir en offrent une version plus « civilisée » : de l’agriculture biologique à l’agriculture régénérative, la vigne devient un écosystème, et comme beaucoup de ces vins sortent des AOC, ils invitent à redéfinir le territoire en y incluant tous les vivants.",
+    "<b>Le vin de demain.</b> Il dépendra du buveur de demain, plus divers que jamais, qui donne à sa bouteille le sens qu’il veut. Cette liberté est possible, pas inéluctable : il faut y croire et la désirer, comme le dit Jonathan Nossiter. La révolution à venir passera par l’éducation du goût et le respect du vivant : une révolution du palais."
+  ],
+  defend: "Le vin n’a plus de sens imposé : à nous d’inventer, par le goût et le respect du vivant, une mythologie du vin vivant, joyeuse et choisie.",
+  client: "« Aujourd’hui, on ne boit plus du vin par obligation, on le choisit : et pour Lepeltier, le vin de demain sera celui que des buveurs divers voudront bien défendre, un vin vivant. »",
+  filRouge: "Pourquoi le vin nature est-il, selon Lepeltier, un mouvement joyeux et pas seulement écologique ?",
+  prudence: [
+    "Les chiffres des rencontres de 2022 (35 experts, 17 pays ; 160 intervenants) ne sont pas confirmés : les communiqués ne donnent pas de nombre pour le symposium, et les comptes rendus de la conférence en ligne parlent de « plus d’une centaine » et de 170 présentateurs. À présenter comme « selon le livre ».",
+    "Le terme « dénormalisé » est rapporté par Lepeltier d’après Bucella ; la page de son éditeur décrit le passage du vin à un produit hédonique sans employer le mot.",
+    "L’apparition de la division nature/culture dans la cité athénienne au IVe siècle av. J.-C. est la thèse du livre ; une source lue situe plutôt l’idée moderne de nature aux Lumières. Divergence non tranchée.",
+    "Le rôle de Morel et de Chapel dans les débuts du vin vivant n’est attesté que par un site de guide de vins nature ; la rencontre des cinq profils est une lecture de l’autrice.",
+    "Tout ce chapitre est de l’opinion et de la thèse de Lepeltier (paradoxes, mythologie, révolution du palais) : à dire « pour Lepeltier »."
+  ]
 }
 ];
