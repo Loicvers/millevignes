@@ -82,6 +82,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 206 : acide tartrique « propre à la vigne » → rare mais présent ailleurs (avocat, litchi, cerise, myrtille ; Frontiers in Plant Science, 2021) ; très abondant et stable chez la vigne.
 - p. 211 et 215 : le livre se contredit sur la fermentation acétique (oxygène nécessaire p. 211, inutile p. 215) → les bactéries acétiques ont besoin d’oxygène.
 - p. 212 : étude sur les guêpes et frelons réservoirs de levures datée de 2013 → Stefanini et al., PNAS, 2012.
+- p. 228 : furfural à odeur d’« amande » → note grillée, d’impact olfactif négligeable aux doses du vin (Handbook of Enology, vol. 1, p. 437).
 - p. 230 : apport d’oxygène d’une barrique neuve de 0,4 mg/l/an, dont 80 % par la bonde → environ 11 à 45 mg/l/an selon les études ; la bonde pèse environ 21 % ou moins (Junqua et al., OENO One, 2021).
 - p. 235 : livre de Pascal Ribéreau-Gayon sur l’histoire de l’œnologie à Bordeaux daté de 2001 → 2011.
 - p. 240 : limite d’acidité volatile « instaurée depuis 1921 » → le décret du 19 août 1921 fixait 2,5 g/l, abaissé en 1930 (1,8) puis 1938 (1,2) ; les 18 et 20 meq/l actuels viennent du droit européen (Jacquet, IVES/OIV 2024).
@@ -185,8 +186,9 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 193-197 : Haraszthy « plus de 500 variétés » (300 à 350 selon les sources) ; Franschhoek « 1650 » (huguenots en 1688) ; dates de Jefferson ; chiffres Castel 2018.
 - p. 199 : Lavaux, ventes en baisse de 10 à 15 % après l’inscription (non retrouvé ; +30 % de fréquentation confirmé) ; candidature de la Rioja « refusée » (différée en 2015).
 - p. 204 : seules la pomme et la poire fermenteraient sans correction (thèse de l’autrice) ; proportions chiffrées de la baie ; 1 500 composés.
-- p. 209-214 : Müller-Thurgau et les levures sélectionnées « en 1890 » ; Gay-Lussac 1810 ; levures sèches « dans les années 1960 » (Agroscope : première levure de vin sèche en 1979) ; Kumeu River « 380 souches » et « 0,4 % » ; 149 genres de levures.
-- p. 218-224 : Arnaud de Villeneuve et le mutage « en 1258 » (sources : XIIIe siècle, 1285 pour une seule) ; SO2 « codifié en 1487 » (première mention débattue) ; mèche hollandaise « 1765 » (soufrage hollandais attesté dès le XVIIe siècle) ; Blanquette de Limoux 1544 (tradition : 1531) ; VDN avec 5 à 25 % d’alcool ajouté (INAO Rivesaltes : au plus 10 %) ; rouges prestigieux au XVIIe siècle (une source : début XVIIIe).
+- p. 209-214 : Müller-Thurgau et les levures sélectionnées « en 1890 » ; Gay-Lussac 1810 ; levures sèches « dans les années 1960 » (Agroscope : première levure de vin sèche en 1979 ; essor à partir des années 1980 selon le Handbook of Enology, vol. 1, p. 429) ; Kumeu River « 380 souches » et « 0,4 % » ; 149 genres de levures.
+- p. 218-224 : Arnaud de Villeneuve et le mutage « en 1258 » (sources : XIIIe siècle, 1285 pour une seule) ; SO2 « codifié en 1487 » (première mention débattue) ; mèche hollandaise « 1765 » (soufrage hollandais attesté dès le XVIIe siècle) ; Blanquette de Limoux 1544 (tradition : 1531) ; VDN avec 5 à 25 % d’alcool ajouté (INAO Rivesaltes : au plus 10 % ; Handbook of Enology, 2006 : 5 à 10 % du volume du moût) ; rouges prestigieux au XVIIe siècle (une source : début XVIIIe).
+- p. 228 : polysaccharides des lies donnant « gras et longueur » (le Handbook of Enology, vol. 1, p. 434, juge cet effet direct non établi) ; glutathion des lies protecteur des thiols.
 - p. 226-231 : grain plus fin du chêne sessile (non confirmé par Prida, 2007) ; Lorentz né en 1775 (Annales des Mines : 1774) ; micro-oxygénation de Ducournau en 1991 à Madiran (une source) ; prix des fûts, copeaux et staves.
 - p. 234-238 : OIV « 48 pays et 16 observateurs » (aujourd’hui 51 États membres et 13 observateurs) ; station agronomique de Bordeaux 1874 (Oxford Companion : 1880) ; « 102 produits » autorisés ; plafonds de SO2 bio et biodynamiques selon les cahiers des charges.
 - p. 240-243 : 5 à 8 % de bouteilles bouchonnées (littérature : 0,5 à 6 %, en baisse) ; « 70 % » des cas de TCA dus au liège ; 20 % de la population insensible à la géosmine ; diacétyle et cystéine donnant le pop-corn ; Beaucastel 1990 et son 4-éthylphénol.
@@ -249,7 +251,12 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 183-185 : premier « climat » dans les actes viticoles en 1584 à Gevrey-Chambertin ; ordonnance du 31 juillet 1395 contre le gamay ; classements de Morelot (1831) et Lavalle (1855) (Garcia 2011, lu) ; premiers crus de 1943, climats au patrimoine mondial en 2015 (Garcia 2020, lu) ; 1re édition de Jullien en 1816 (avant-propos de la 2e édition, 1822).
 - p. 183-186 : lois du 1er août 1905, du 5 août 1908, du 6 mai 1919 ; loi Capus (1927) ; décret-loi du 30 juillet 1935 ; six AOC du 15 mai 1936 ; INAO en 1947 (sources INAO).
 - p. 195 : AVA créées en 1980 (Augusta, Missouri) ; 85 % des raisins de l’AVA.
-- p. 219 : jeune fino fortifié à 15,5 % vol. (schéma du livre), concordant avec les sources espagnoles.
+- p. 206 : tartrique et malique font en moyenne 90 % des acides du raisin ; citrique, troisième acide (Handbook of Enology, vol. 1, p. 246 et 251).
+- p. 209 : manque d’oxygène parmi les facteurs qui sélectionnent les levures (Handbook of Enology, vol. 1, p. 42).
+- p. 219 : jeune fino fortifié à 15,5 % vol. (schéma du livre), concordant avec les sources espagnoles et le Handbook of Enology (vol. 1, p. 476-478) ; savagnin et éthanal du vin jaune.
+- p. 232 : vin de presse plus riche en polyphénols ; débourbage nécessaire (Handbook of Enology, vol. 1, p. 366 et 422).
+- p. 264 : méthoxypyrazines du cabernet-sauvignon ; terpènes réduits de moitié par Botrytis (Handbook of Enology, vol. 1, p. 257-259 et 402).
+- p. 265 : levure 71B riche en acétate d’isoamyle (banane), production accrue par une fermentation fraîche en blanc (Handbook of Enology, vol. 1, p. 76 et 429).
 - p. 239 et 243 : Cheval Blanc 1947, sucres résiduels et acidité volatile élevés : les deux passages du livre sont compatibles (Decanter, JancisRobinson).
 - p. 236 : diplôme national d’œnologue créé par la loi du 19 mars 1955 ; ferrocyanure autorisé par le décret du 20 mai 1955 (IFV).
 - p. 245-249 : Galien et la dégustation en cinq temps, huit saveurs d’Aristote (Boulay ; OIV) ; Comité national 1935 devenu INAO en 1947 ; dégustation d’agrément obligatoire par le décret du 19 octobre 1974 (aujourd’hui remplacée par des contrôles par prélèvement) ; verre INAO : NF V09-110 (1971), ISO 3591 (1977), environ 215 ml.

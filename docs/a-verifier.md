@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 60 vérifiées, 281 à vérifier (849 points).
+341 fiches : 62 vérifiées, 279 à vérifier (839 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -926,12 +926,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Knight et al. (2015), populations régionales de S. cerevisiae et phénotype du vin (⚠️) : une seule notice lue (Univ. Lincoln), texte intégral bloqué ; le livre ne cite pas l’étude sous ce nom
 - [ ] Thèse d’Auckland, habitat plus explicatif que la région (⚠️) : un seul résumé lu (ResearchSpace) ; nature et date de l’étude non recoupées avec le travail de Morrison-Whittle et Goddard cité par le livre
 
-**Fiche 233** (p.218) — Les vins sous voile : vin jaune et xérès
-- [ ] Fortification du jeune fino à 15-15,5 % : une source de niveau 2b (Foods and Wines from Spain), concordante avec le schéma du livre (15,5 %) ; le cahier des charges de la manzanilla donne 15-17 % pour le vin fini.
-- [ ] Oloroso comme exemple d’élevage oxydatif : une seule source externe (cahier des charges de la DO Jerez-Xérès-Sherry, Junta de Andalucía).
-- [ ] Savagnin pour le vin jaune : une seule source de presse (RTBF).
-- [ ] Arômes du voile liés à l’acétaldéhyde : sources de presse uniquement.
-
 **Fiche 234** (p.218) — Le soufre dans le chai : de la mèche hollandaise à l’étiquette
 - [ ] 1487 comme première mention du soufre : deux sites de vulgarisation seulement, date débattue (GuildSomm), aucune source de niveau 1 ou 2a.
 - [ ] Mèche hollandaise : le livre donne 1765, les sources lues l’attestent dès le XVIIe siècle (presse spécialisée et Oxford Companion via CKBK) ; 1765 non retrouvé.
@@ -939,15 +933,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Histoire : le Handbook of Enology (vol. 1, p. 193 et 211) situe l’usage général du SO2 à la fin du XVIIIe siècle et son emploi en vinification au début du XXe, sans dater les premières mentions ni la mèche.
 
 **Fiche 235** (p.219) — Les vins sucrés : concentrer le raisin ou muter
-- [ ] Alcool ajouté aux VDN : 10 % maximum (fiche INAO Rivesaltes) contre 5 à 25 % dans le livre ; divergence non tranchée, à vérifier cahier des charges par cahier des charges.
+- [ ] Alcool ajouté aux VDN (⚠️) : 5 à 10 % du volume du moût selon la réglementation française décrite par le Handbook of Enology (vol. 1, 2006, p. 471), 10 % au plus selon la fiche INAO Rivesaltes, contre 5 à 25 % dans le livre ; cahiers des charges en vigueur à vérifier un par un.
 - [ ] Mutage rattaché à Arnaud de Villeneuve : seul le XIIIe siècle est confirmé (INAO, Idealwine) ; l’année 1258 du livre n’est pas établie.
-- [ ] Pourriture noble : mécanisme tiré d’une source de presse (Idealwine) ; perte d’eau du livre (jusqu’à 50 % du poids de la baie) et perte de jus de la source (au moins 65 %) non réconciliées.
-- [ ] Vin de paille et vin de glace : détails de séchage et de température issus de sources de tourisme ou de blog, cahiers des charges non lus.
+- [ ] Pourriture noble : mécanisme confirmé (Idealwine ; Handbook of Enology, vol. 1, p. 450-451) ; pertes : environ la moitié du poids de la baie et près des deux tiers du volume de jus (Handbook, p. 287), ce qui réconcilie le livre (jusqu’à 50 % du poids) et la source de presse (au moins 65 % du jus) ; chiffres non repris en exercice.
+- [ ] Vin de paille et vin de glace : principe du séchage et du gel partiel confirmé (Handbook of Enology, vol. 1, p. 449-450 : gel vers −6 à −7 °C) ; détails de séchage issus de sources de tourisme ou de blog, cahiers des charges non lus.
 
 **Fiche 236** (p.221) — Macération carbonique, vins orange et qvevri
-- [ ] Michel Flanzy, 1934 : une seule source (notice INRAE Prodinra).
-- [ ] Fermentation intracellulaire sans levures : notice INRAE ; pressage du jus écoulé puis fermentation classique : exposé du livre, non recoupé.
-- [ ] Beaujolais comme exemple de macération carbonique : affirmation du livre, non recoupée dans les sources lues.
+- [ ] Michel Flanzy : 1934 selon la notice INRAE Prodinra, 1935 selon le Handbook of Enology (vol. 1, p. 385), qui cite Pasteur comme premier observateur de l’effet du CO2 sur les baies entières ; divergence non tranchée.
+- [ ] Beaujolais comme exemple de macération carbonique (⚠️) : le Handbook of Enology (vol. 1, p. 394) cite le gamay et les vins primeurs sans nommer le beaujolais ; l’appellation reste à une source (le livre).
 - [ ] Gravner et Radikon (Frioul, années 1990) : source de presse unique (Decanter) ; Frioul tiré du livre.
 - [ ] Vin orange comme blanc macéré, couleur ambrée : définition du livre, non recoupée dans une source de niveau 1 ou 2a.
 
@@ -955,43 +948,37 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Blanquette de Limoux : 1531 (tradition de Saint-Hilaire, une source de presse) contre 1544 (livre) ; divergence non tranchée, aucune source lue ne donne 1544.
 - [ ] Seuils de pression : annexe VII du règlement 1308/2013 lue via FranceAgriMer, règlement non relu sur EUR-Lex ; le 6 bars et les g/l de CO2 du livre ne sont pas repris.
 - [ ] Martinotti 1895 et Charmat 1907 : une seule source (Glass of Bubbly).
-- [ ] Méthode ancestrale et Clairette de Die : fiche INAO ; lien avec l’aigleucos de Pline non retenu faute de preuve.
-- [ ] Étapes de la méthode traditionnelle : exposé du livre, non recoupé dans les sources lues.
+- [ ] Méthode ancestrale et Clairette de Die : procédé (fermentation arrêtée par le froid puis achevée en bouteille) confirmé par la fiche INAO et le Handbook of Enology (vol. 1, p. 459) ; lien avec l’aigleucos de Pline non retenu faute de preuve.
 
 **Fiche 238** (p.225) — Jouer avec l’oxygène : élevage réducteur ou oxydatif
-- [ ] Élevage réducteur, thiols du sauvignon et odeurs soufrées (sulfure d’hydrogène, mercaptans) (⚠️) : affirmations du livre p. 225-226, aucune page IFV ou OENO One lue sur ce point
+- [ ] Élevage réducteur et thiols (⚠️) : la protection des thiols contre l’oxydation est établie pour le jus et le vin blanc (Handbook of Enology, vol. 1, p. 417-420) ; les odeurs soufrées des lies tassées en grande cuve aussi (p. 439-440) ; le lien direct « élevage réducteur protège les thiols » reste du livre.
 - [ ] Élevage oxydatif : tanins assouplis, couleur stabilisée, effets des apports massifs (⚠️) : affirmations du livre, non recoupées
-- [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; date et matériel du livre non repris
+- [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; le Handbook of Enology (vol. 1, p. 341-342) la décrit aussi pendant la fermentation, sans nom d’inventeur ; date et matériel du livre non repris
 - [ ] Apport d’oxygène d’une barrique neuve, de l’ordre de 10 à 30 mg/l/an (⚠️) : fourchette tirée de Junqua et al. (2021, environ 11 mg/l/an) et de Nevares (2014, 27 à 32 mg/l/an), lus dans un article de synthèse ; les valeurs publiées vont de 8 à 45 mg/l/an selon la méthode, le grain et l’âge du fût. Le chiffre du livre (0,4 mg/l/an, 80 % par la bonde) n’est pas retrouvé
 - [ ] Part de l’entrée d’oxygène par les joints et le bois (63 % et 16 %) et grain très fin à 45 mg/l/an (⚠️) : Vivas et Glories (1997), lu via un article de synthèse, non consulté directement.
 
 **Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
-- [ ] Grain fin du sessile (1 à 3 mm) et lien grain-ellagitanins (⚠️) : non retrouvé dans Prida et al. (2007), où les cernes sont proches entre les deux espèces ; lien débattu ; présenté dans la fiche comme position du livre
-- [ ] Chêne américain Quercus alba, coco et clou de girofle (⚠️) : affirmation du livre p. 227, non recoupée
+- [ ] Grain fin du sessile et lien grain-arômes (⚠️) : le Handbook of Enology (vol. 1, p. 437) associe grain fin, sessile et lactones, gros grain (Limousin), pédonculé et tanins ; Prida et al. (2007) trouvent des cernes proches entre les deux espèces : lien débattu.
+- [ ] Chêne américain : richesse en lactones (coco) confirmée (Handbook of Enology, vol. 1, p. 437-438 ; IFV) ; le clou de girofle (eugénol, « épicé, fumé » pour le Handbook) reste au livre.
 - [ ] Profils aromatiques des forêts françaises (⚠️) : carte de l’IFV reprise par le livre p. 229, document d’origine non consulté
 - [ ] Sessile plus riche en lactones et eugénol : confirmé (Prida, 2007), mais la distribution du sessile est bimodale, certains arbres sont aussi pauvres en lactone que des pédonculés ; d’où « en moyenne »
 
 **Fiche 240** (p.228) — La fabrication du fût : chauffe, taille et âge
 - [ ] Ordre débit, séchage, cintrage, bousinage (⚠️) : ordre du livre p. 228, non recoupé ; durées et taux d’humidité du livre non repris (IFV : 18 à 24 mois de séchage, le livre dit 18 à 36)
-- [ ] Furfural évoquant l’amande et eugénol évoquant le clou (⚠️) : correspondances aromatiques du livre, non recoupées ; l’apparition du furfural et de la vanilline avec la chauffe est confirmée (IFV, Virginia Tech)
+- [ ] Correspondances aromatiques (⚠️) : furfural à note grillée mais d’impact olfactif négligeable, eugénol épicé et fumé, vanilline qui recule à très forte chauffe, gaïacol qui augmente (Handbook of Enology, vol. 1, p. 437-438, tableau 13.19) ; « amande » et « clou » viennent du livre.
 - [ ] Un petit fût marque plus qu’un grand (⚠️) : affirmation du livre p. 230, non chiffrée dans les sources lues ; l’épuisement du bois avec l’usage est confirmé
 - [ ] Contenances 225 l (barrique bordelaise) et 228 l (pièce bourguignonne) (⚠️) : tableau du livre p. 227, non recoupé dans les sources lues (228 l n’est retrouvé que pour les fûts du vin de paille jurassien).
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
-- [ ] Autolyse des lies, polysaccharides, mannoprotéines, gras et longueur (⚠️) : affirmations du livre p. 228 ; la page Virginia Tech sur les lies n’a pas pu être lue
-- [ ] Glutathion protecteur des thiols, lies mal conduites et goûts herbacés (⚠️) : affirmations du livre, non recoupées
+- [ ] Gras et longueur dus aux polysaccharides (⚠️) : l’autolyse et la libération de mannoprotéines, qui stabilisent le vin, sont confirmées (Handbook of Enology, vol. 1, p. 432-435), mais le Handbook juge leur effet direct sur le volume en bouche non établi (p. 434).
+- [ ] Glutathion libéré par les lies et protecteur des thiols, goûts herbacés (⚠️) : affirmations du livre, non retrouvées ; seul le lien entre lies mal conduites et réduction est confirmé (Handbook of Enology, vol. 1, p. 436-440).
 - [ ] Muscadet sur lie (⚠️) : une seule source, la fiche produit INAO (lies fines au moins jusqu’au 1er mars et jusqu’à l’expédition, sans aération, mise en bouteille dans le chai de vinification avant le 31 décembre)
 
 **Fiche 242** (p.230) — Les alternatives au fût : copeaux, foudres, béton, inox, qvevri
 - [ ] Foudre de plus de 1 000 l et moindre impact d’un grand contenant (⚠️) : affirmations du livre p. 230, non recoupées
 - [ ] Cuve de Byrrh, environ un million de litres (⚠️) : International Oak Society donne environ 1 000 200 l, l’office de tourisme d’Occitanie 1,2 million (probablement la capacité prévue) ; le statut de « plus grand tonneau » n’est pas comparé à d’autres
-- [ ] Béton et inox plus neutres (⚠️) : propos du livre p. 230, non recoupés ; l’effet de brassage des lies dans les œufs en béton, présenté comme hypothèse, n’est pas repris
+- [ ] Béton et inox plus neutres : l’inox est inerte et étanche, le béton doit être revêtu car l’acidité du vin l’attaque (Handbook of Enology, vol. 1, p. 336-337) ; l’effet de brassage des lies dans les œufs en béton n’est pas repris.
 - [ ] Gravner et rôle de déclencheur du renouveau des amphores (⚠️) : source unique (Wine Spectator), thèse de l’autrice
-
-**Fiche 243** (p.232) — Les grandes étapes : rouge et blanc
-- [ ] Ordre des étapes : reconstitué du schéma double page 232-233 (mise en page en colonnes abîmée à l’OCR) et de la pratique courante, non recoupé dans un manuel (Ribéreau-Gayon, Jackson).
-- [ ] Vin de presse plus riche en polyphénols : affirmation du livre, non vérifiée.
-- [ ] Rôle du débourbage (goûts désagréables si omis) : pratique courante, non recoupée dans les sources lues.
 
 **Fiche 244** (p.234) — De l’art empirique à la science : l’école de Bordeaux
 - [ ] Institut d’œnologie de Bordeaux fondé en 1949 par Jean Ribéreau-Gayon (⚠️) : une seule source (The Drinks Business) ; 1949 est aussi l’année du Traité d’œnologie de J. Ribéreau-Gayon (préface du Handbook of Enology), confusion possible ; Oxford Companion situe la station de Gayon vers 1880, et le livre 1874 (non repris ici).
@@ -1026,7 +1013,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 251** (p.240) — Réduction, oxydation, lumière : les défauts du soufre et de l’oxygène
 - [ ] Éthanal « pomme verte » (⚠️) : note olfactive non recoupée ; son rôle dans les vins de voile (fino, vin jaune) est confirmé par le Handbook of Enology (vol. 1, p. 477-478).
-- [ ] Goût de lumière (⚠️) : mécanisme riboflavine, méthionine, méthional, méthanethiol, disulfure de diméthyle et sensibilité du verre clair décrits par une seule source (Fracassetti et al., 2021) ; le brunissement évoqué par le livre n’y est pas confirmé.
 - [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 (pas les effervescents de toute origine) ; causes encore discutées, la qualité des bouchons est contestée.
 
 **Fiche 252** (p.242) — Le goût de bouchon : TCA, TeCA et TBA
