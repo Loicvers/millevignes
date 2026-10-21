@@ -1115,5 +1115,257 @@ FICHES.push(
     to_check: [],
     src: "Mille Vignes, P. Lepeltier ; Raimondi et al., DNA-based genealogy reconstruction of Nebbiolo, Barbera and other ancient grapevine cultivars from northwestern Italy, Scientific Reports, 2020",
     page: 38
+  },
+{
+    id: 372,
+    theme: "Cépages", sous: ["Profil & usage"], niveau: "Fondamental",
+    geo: { pays: "France", region: "Bourgogne", appel: null },
+    titre: "Le chardonnay : un cépage qui prend l’empreinte du climat et de la cave",
+    synth: "Le chardonnay est né d’un croisement entre le pinot et le gouais blanc, établi par analyse d’ADN en 1999 ; ses parents étaient répandus dans le nord-est de la France, et Plantgrape le donne originaire de Bourgogne. On l’associe à la Bourgogne, et le village de Chardonnay, dans le Mâconnais, pourrait lui avoir donné son nom. C’est le cépage unique du Chablis et celui de la plupart des blancs de blancs de Champagne, issus de raisins blancs seulement. Peu typé de lui-même, il prend volontiers l’empreinte de son origine et de la cave : en climat frais, il évoque souvent la pomme et le citron avec une acidité vive, en climat chaud les fruits tropicaux, et l’élevage en fût avec fermentation malolactique y ajoute des notes beurrées et toastées.",
+    mnemo: "De la pâte à modeler : le même raisin devient, sous les doigts du vinificateur, un chablis tendu ou un blanc rond et beurré.",
+    flash: {"q":"Quels sont les deux parents génétiques du chardonnay ?","a":"Le pinot et le gouais blanc (analyse de microsatellites, Bowers et al., Science, 1999).","keys":[["pinot"],["gouais"]]},
+    qcm: {"q":"Quelle appellation est élaborée uniquement à partir de chardonnay ?","opts":["Chablis","Pouilly-Fumé","Sancerre","Savennières"],"good":0,"expl":"Les trois autres sont des blancs de la Loire, bâtis sur d’autres cépages : sauvignon blanc pour Pouilly-Fumé et Sancerre, chenin pour Savennières. Le Chablis est le seul à reposer sur le chardonnay, en Bourgogne."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis le cépage unique du Chablis. En climat frais, je rappelle souvent la pomme et le citron ; en climat chaud, plutôt les fruits tropicaux. Je donne aussi la plupart des blancs de blancs de Champagne.","payload":{"accepted":["chardonnay","le chardonnay"]},"explanation":"Un cépage à la fois cépage unique du Chablis et très sensible au climat : c’est le chardonnay, dont le profil varie fortement entre un site frais et un site chaud."},
+      {"type":"matching","prompt":"Associe chaque influence à ce qu’elle apporte typiquement au chardonnay.","payload":{"pairs":[["Climat frais (Chablis)","Pomme, citron, acidité vive"],["Climat chaud","Fruits tropicaux"],["Élevage en fût et malolactique","Notes beurrées et toastées"]]},"explanation":"Le chardonnay joue le rôle de toile : le climat règle la maturité et l’acidité, la cave ajoute la couche boisée et lactique. Ce sont des tendances, pas des règles absolues."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le chardonnay a un profil aromatique fixe, qui reste le même quelle que soit la région ou la vinification.","answer":false},"explanation":"Sa neutralité relative est justement ce qui le rend si malléable : un même cépage donne un chablis vif, un blanc tropical de région chaude ou un blanc boisé et beurré selon le climat et le travail en cave."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Origine : ⚠️ Plantgrape (niveau 1) le dit originaire de Bourgogne ; d’autres sources s’en tiennent au nord-est de la France, d’après la répartition des parents au Moyen Âge (Bowers et al. 1999) et les synonymes locaux (Burgundy Report 2017)",
+      "Village de Chardonnay (Saône-et-Loire) à l’origine du nom du cépage : ⚠️ hypothèse très répandue, formulée avec prudence par l’Oxford Companion (« may have taken its name »), sans preuve directe",
+      "Blanc de blancs de Champagne : ⚠️ issu de raisins blancs seulement, le plus souvent de chardonnay (Guide Hachette des vins) ; les autres cépages blancs autorisés (pinot blanc, arbane, petit meslier, Comité Champagne 2024) peuvent y entrer ; définition réglementaire non lue dans une source de niveau 1",
+      "Descripteurs selon le climat (pomme/citron, fruits tropicaux) et notes beurrées/toastées liées au fût et à la malolactique : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), à présenter comme tendances"
+    ],
+    src: "Bowers et al., Historical Genetics: The Parentage of Chardonnay, Gamay, and Other Wine Grapes of Northeastern France, Science 285 (1999), p. 1562-1565 ; Plantgrape (IFV/INRAE/Institut Agro), fiche Chardonnay B ; INAO, fiches Chablis premier cru Les Épinottes et Côte de Vaubarousse ; Comité Champagne, Fiche Vigne Champagne (2024) ; JancisRobinson.com, Chardonnay ; J. Robinson (dir.), The Oxford Companion to Wine (2006), « Mâcon-Villages » ; Burgundy Report, All about Chardonnay (2017) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 74 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+  {
+    id: 373,
+    theme: "Cépages", sous: ["Profil & usage"], niveau: "Fondamental",
+    geo: { pays: "France", region: "Val de Loire", appel: null },
+    titre: "Le sauvignon blanc : soliste en Centre-Loire, partenaire du sémillon à Bordeaux",
+    synth: "Dans le Centre-Loire, le sauvignon blanc est le cépage des blancs de Sancerre, Pouilly-Fumé, Reuilly, Menetou-Salon et Quincy ; à Pouilly-Fumé, appelé aussi blanc-fumé, il est le seul cépage, sur des sols de silex, de terres blanches (marnes) et de caillottes (calcaires). À Bordeaux, il joue en équipe : il s’assemble souvent au sémillon, et à la muscadelle dans les blancs secs de Graves et de Pessac-Léognan, souvent boisés, et il entre aussi dans les liquoreux de Sauternes. Le nom « Fumé blanc », donné en Californie par Robert Mondavi à un sauvignon élevé en fût, s’inspire de celui de Pouilly-Fumé.",
+    mnemo: "Un soliste en Loire, un duettiste à Bordeaux : seul sur la scène de silex à Pouilly, accompagné du sémillon dans les blancs de Graves et de Sauternes.",
+    flash: {"q":"Quelles sont les deux appellations phares du sauvignon blanc dans le Centre-Loire ?","a":"Sancerre et Pouilly-Fumé (on le trouve aussi à Reuilly, Menetou-Salon et Quincy).","keys":[["sancerre"],["pouilly"]]},
+    qcm: {"q":"À Bordeaux, avec quel cépage le sauvignon blanc est-il couramment assemblé dans les blancs secs et les liquoreux ?","opts":["Le sémillon","Le chenin blanc","Le chardonnay","Le riesling"],"good":0,"expl":"Les blancs bordelais sont des assemblages. Chenin, chardonnay et riesling sont les cépages phares d’autres régions (Loire, Bourgogne, Alsace) et ne forment pas son partenaire traditionnel à Graves ou à Sauternes."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis le cépage de Sancerre et de Pouilly-Fumé. À Bordeaux, je m’assemble au sémillon, dans les blancs secs comme dans les sauternes.","payload":{"accepted":["sauvignon blanc","sauvignon","le sauvignon","le sauvignon blanc"]},"explanation":"Le double ancrage Centre-Loire et assemblage bordelais avec le sémillon est la signature du sauvignon blanc."},
+      {"type":"odd_one_out","prompt":"Quelle appellation n’est pas un blanc de sauvignon blanc ?","payload":{"options":["Sancerre","Pouilly-Fumé","Reuilly","Savennières"],"answer":3},"explanation":"Savennières, en Anjou, est un blanc de chenin. Les trois autres sont des appellations du Centre-Loire dont le blanc est issu du sauvignon blanc."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Dans l’appellation Pouilly-Fumé, le sauvignon blanc est assemblé avec d’autres cépages blancs.","answer":false},"explanation":"Le vignoble de Pouilly-Fumé est planté du seul sauvignon blanc, d’où son autre nom de blanc-fumé ; l’assemblage est plutôt la règle à Bordeaux."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Assemblage bordelais (sémillon, muscadelle ; Sauternes) : ⚠️ le principe est confirmé (INAO Pessac-Léognan, JancisRobinson.com) mais les proportions réglementaires (CIVB) n’ont pas été lues",
+      "Origine du « Fumé blanc » de Mondavi : ⚠️ divergence sur la date (fin des années 1960 selon la presse, début des années 1970 selon l’Oxford Companion), aucune source du domaine lue ; ne pas donner d’année"
+    ],
+    src: "INAO, fiches Pouilly-Fumé ou Blanc Fumé de Pouilly, Reuilly et Pessac-Léognan blanc ; Vins du Centre-Loire, Nos appellations ; JancisRobinson.com, Sauvignon blanc ; J. Robinson (dir.), The Oxford Companion to Wine (2006), « Fumé Blanc » ; VinePair, Robert Mondavi Napa Valley Fumé Blanc ; The Wine Doctor, Pouilly-Fumé ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 76 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+  {
+    id: 374,
+    theme: "Cépages", sous: ["Profil & usage"], niveau: "Intermédiaire",
+    geo: { pays: "France", region: "Val de Loire", appel: null },
+    titre: "Le chenin : un seul cépage, du sec au liquoreux et aux bulles",
+    synth: "Cépage phare d’Anjou-Touraine, appelé aussi pineau de la Loire, le chenin donne des vins secs, demi-secs, moelleux, liquoreux et effervescents. Il est le seul cépage de Vouvray, décliné dans tous ces styles, et de Savennières, plutôt sec ; les liquoreux de Layon, Bonnezeaux ou Quarts de Chaume et les bulles de Saumur ou du crémant de Loire sont aussi à base de chenin. Les moelleux sont réputés très longévifs. Une tradition fait remonter son implantation en Anjou au IXe siècle, sans preuve que les vignes concernées fussent du chenin. En Afrique du Sud, où il est très planté, on le nommait « steen » avant que l’identité ne soit établie. Curnonsky rangeait la Coulée de Serrant, cru de Savennières, parmi les cinq plus grands blancs de France : un avis de critique, non un classement.",
+    mnemo: "Un interrupteur à cinq crans sur le même raisin : sec, demi-sec, moelleux, liquoreux, bulles.",
+    flash: {"q":"Quels styles de vin le chenin donne-t-il en Anjou-Touraine ?","a":"Des vins secs, demi-secs, moelleux, liquoreux et effervescents.","keys":[["secs","sec"],["moelleux","demi"],["liquoreux"],["effervescent","bulles","mousseux","pétillant"]]},
+    qcm: {"q":"Sous quel nom le chenin blanc est-il connu de longue date en Afrique du Sud ?","opts":["Steen","Pinotage","Colombard","Hanepoot"],"good":0,"expl":"On l’a longtemps cru d’origine allemande avant qu’une comparaison des feuilles n’établisse l’identité avec le chenin. Les trois autres noms désignent d’autres cépages sud-africains, sans lien de synonymie avec lui."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis le seul cépage de Vouvray et de Savennières, et on m’appelle aussi pineau de la Loire.","payload":{"accepted":["chenin","chenin blanc","le chenin","le chenin blanc"]},"explanation":"Le chenin, seul cépage de ces deux appellations, est connu localement sous le nom de pineau de la Loire."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"La Coulée de Serrant figure dans un classement officiel des cinq meilleurs blancs du monde.","answer":false},"explanation":"Cette formule vient de l’avis d’un critique, Curnonsky, et elle parlait des blancs de France. Un avis personnel n’est pas un classement officiel."},
+      {"type":"matching","prompt":"Associe chaque vin de chenin au style qu’il illustre.","payload":{"pairs":[["Savennières","Sec"],["Quarts de Chaume","Liquoreux"],["Crémant de Loire","Effervescent"]]},"explanation":"Le chenin change de registre selon l’appellation : Savennières donne un blanc sec, Quarts de Chaume un liquoreux, et le crémant de Loire une version à bulles."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Implantation du chenin en Loire « au IXe siècle » (acte de 845 pour l’abbaye de Glanfeuil) : ⚠️ tradition non prouvée (impossible de savoir si les vignes étaient du chenin) ; première mention attestée plus tardive (1469 selon iDealwine, source 2b) ; aucune source de niveau 1 ne confirme le IXe siècle",
+      "Coulée de Serrant « parmi les plus grands blancs de France » (Curnonsky) : ⚠️ avis de critique rapporté par l’INAO et le Guide Hachette ; le texte original de Curnonsky n’a pas été lu ; le livre écrit « du monde », contre « de France » dans les sources",
+      "Longévité des moelleux : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), repère d’usage"
+    ],
+    src: "INAO, fiches Vouvray, Vouvray pétillant, Savennières, Coulée de Serrant (sec et moelleux/doux) ; JancisRobinson.com, Chenin blanc ; Chenin Blanc Association of South Africa, History of Chenin ; Dictionary of South African English, « steen » ; iDealwine, Saga des cépages, épisode 3 : le chenin ; Guide Hachette des vins, Savennières-coulée-de-serrant ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 80-81 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+  {
+    id: 375,
+    theme: "Cépages", sous: ["Profil & usage"], niveau: "Intermédiaire",
+    geo: { pays: "France", region: "Alsace", appel: null },
+    titre: "Le riesling en Alsace grand cru : la règle des quatre cépages et ses exceptions",
+    synth: "En règle générale, un alsace grand cru blanc est issu d’un seul cépage parmi quatre : riesling, gewurztraminer, pinot gris et muscat ; quelques grands crus peuvent aussi produire des rouges, de pinot noir uniquement. La règle a des exceptions : le sylvaner est admis au seul Zotzenberg, l’Altenberg de Bergheim autorise un assemblage à riesling dominant (avec gewurztraminer et pinot gris), et le Kaefferkopf un assemblage à gewurztraminer dominant. Considéré comme le plus noble des cépages d’Alsace, le riesling donne en général des vins vifs, souvent secs et sans bois, capables de longues gardes, et certains évoluent avec l’âge vers des notes de pétrole. Les mentions « vendanges tardives » et « sélection de grains nobles » existent aussi pour lui, avec des richesses minimales en sucre fixées par le cahier des charges.",
+    mnemo: "Quatre sièges autour de la table des grands crus alsaciens (riesling, gewurztraminer, pinot gris, muscat) et un strapontin pour le sylvaner, réservé au Zotzenberg.",
+    flash: {"q":"Quels sont, en règle générale, les quatre cépages des alsaces grands crus blancs ?","a":"Le riesling, le gewurztraminer, le pinot gris et le muscat.","keys":[["riesling"],["gewurz"],["pinot gris"],["muscat"]]},
+    qcm: {"q":"Quelle exception à la règle des quatre cépages existe en Alsace grand cru ?","opts":["Le sylvaner est admis au Zotzenberg","Le pinot blanc est admis seul dans tous les grands crus","Le sauvignon blanc est admis au Kaefferkopf","Le sylvaner est admis dans tous les grands crus du Bas-Rhin"],"good":0,"expl":"Le sylvaner n’a droit au nom d’un grand cru qu’au Zotzenberg, et il y est vinifié seul. Le pinot blanc n’est jamais revendiqué seul en grand cru, et le sauvignon blanc ne figure dans aucun encépagement de grand cru."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis un cépage d’Alsace, vif et souvent élevé sans bois, qui donne des vins secs comme des vendanges tardives. Avec l’âge, certains de mes vins prennent des notes de pétrole.","payload":{"accepted":["riesling","le riesling"]},"explanation":"Vivacité, élevage sans bois et notes de pétrole au vieillissement composent le portrait habituel du riesling ; ce sont des tendances, pas des règles."},
+      {"type":"matching","prompt":"Associe chaque lieu-dit de l’Alsace grand cru à sa particularité.","payload":{"pairs":[["Altenberg de Bergheim","Assemblage à riesling dominant"],["Kaefferkopf","Assemblage à gewurztraminer dominant"]]},"explanation":"Ces deux grands crus admettent l’assemblage, mais pas autour du même cépage : le riesling mène à Bergheim, le gewurztraminer au Kaefferkopf."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"En règle générale, un alsace grand cru est issu d’un seul cépage et non d’un assemblage.","answer":true},"explanation":"La règle est le cépage unique, hors muscats assemblés entre eux ; seuls quelques lieux-dits comme l’Altenberg de Bergheim ou le Kaefferkopf autorisent un assemblage."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Seuils de sucre des mentions VT/SGN pour le riesling : ⚠️ non retenus ; la mise en page du tableau VII.2.b du cahier des charges est ambiguë à l’extraction (seuils du riesling et du pinot gris à lire dans le PDF)",
+      "Riesling « le plus noble » d’Alsace, vif, sans bois, garde longue, notes de pétrole avec l’âge : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), aucune interprofession (CIVA) lue ; à présenter comme tendances","Rouges de pinot noir en grand cru : ⚠️ Hengst, Kirchberg de Barr et Vorbourg dans la version INAO de 2024 (projet en procédure d’opposition), Hengst et Kirchberg de Barr depuis 2022 selon Réussir ; liste des lieux-dits non reprise dans la fiche"
+    ],
+    src: "Cahier des charges AOC Alsace grand cru (BO-agri, 30 juin 2016) ; INAO, cahier des charges AOC Alsace grand cru (version du 11 septembre 2024) ; Synvira, Terroirs d’Alsace ; Decanter, Sylvaner becomes grand cru grape (2006) ; JancisRobinson.com, Riesling ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 78-79 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+{
+    id: 376,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: "Bourgogne", appel: null },
+    titre: "Pinot noir : un cépage fin, tout en nuances et très sensible au climat",
+    synth: "Le pinot noir a une pellicule fine : ses vins sont peu colorés et aux tanins modestes comparés à ceux d’un cabernet-sauvignon ou d’une syrah, et le climat comme le millésime pèsent lourd sur le résultat. En Bourgogne, il donne les rouges de la Côte de Nuits et de la Côte de Beaune, de robe rubis et de petits fruits rouges ; un Gevrey-Chambertin est plus puissant et structuré, un Volnay plus fin, ses tanins équilibrés par une acidité discrète. En Champagne, il occupe 38 % du vignoble (meunier 31 %, chardonnay 31 %) et apporte corps et structure. Dans la Loire du Centre, il fait les rouges et rosés de Sancerre, Menetou-Salon et Reuilly, là où les blancs sont de sauvignon.",
+    mnemo: "Une peau de pêche tendre : elle se meurtrit à la première averse mais exhale tout de suite le parfum. Un raisin à fleur de peau, qui dit l’année plutôt que la force.",
+    flash: {"q":"Quelles sont les conséquences de la pellicule fine du pinot noir sur le vin et sur la vigne ?","a":"Des vins peu colorés, aux tanins modestes, plutôt fins ; un raisin sensible aux maladies (botrytis, pourriture) et très marqué par le climat et le millésime.","keys":[["couleur","pâle","peu coloré"],["tanin"],["climat","millésime"]]},
+    qcm: {"q":"Entre un Volnay et un Gevrey-Chambertin rouges, lequel est typiquement le plus puissant et structuré ?","opts":["Le Gevrey-Chambertin","Le Volnay","Les deux sont identiques en structure","Ni l’un ni l’autre : ce sont des vins légers sans tanins"],"good":0,"expl":"Les deux sont des pinots noirs de la Côte d’Or, mais l’un est décrit comme dense et structuré, l’autre comme très fin avec un équilibre tannique tenu par l’acidité : le lieu module un même cépage."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? J’ai la peau fine, je donne des vins de couleur et de tanins modestes, je suis sensible au climat de l’année, et je représente 38 % du vignoble de Champagne.","payload":{"accepted":["pinot noir","le pinot noir","pinot"]},"explanation":"Le pourcentage et la finesse de la pellicule désignent le pinot noir ; meunier et chardonnay, à 31 % chacun, ne fournissent pas le même profil."},
+      {"type":"odd_one_out","prompt":"Quelle appellation n’a pas le pinot noir pour ses rouges ?","payload":{"options":["Sancerre","Menetou-Salon","Reuilly","Pomerol"],"answer":3},"explanation":"Sancerre, Menetou-Salon et Reuilly font leurs rouges de pinot noir en Loire du Centre ; Pomerol, sur la rive droite bordelaise, est à dominante merlot."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"En Champagne, le chardonnay est le cépage le plus planté.","answer":false},"explanation":"Une idée reçue liée à l’image du champagne blanc : le pinot noir arrive en tête avec 38 %, devant le meunier et le chardonnay à égalité."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Lien Gevrey-Chambertin et Volnay ↔ pinot noir : ⚠️ les fiches INAO lues ne nomment pas le cépage ; une seule source (Grands Bourgogne, 2b), cahiers des charges non lus","Gevrey puissant et structuré, Volnay fin : ⚠️ une seule fiche INAO par appellation, et la fiche Volnay lue est celle d’un premier cru, généralisée à l’appellation","Poids du climat et du millésime : ⚠️ deux sources de niveau 2b seulement (Enartis, Grands Bourgogne)","Pinot noir qui apporte corps et structure en Champagne : ⚠️ Comité Champagne seul","Sensibilité aux maladies (botrytis, pourriture) dans la réponse du flash : ⚠️ eXtension seul"],
+    src: "INAO, fiches Gevrey-Chambertin, Volnay, Sancerre, Menetou-Salon et Reuilly ; Comité Champagne, Champagne and its grape varieties ; DRAAF Hauts-de-France, Filière champagne ; eXtension, Growing Pinot Noir Wine Grapes ; AWRI (Dambergs), Pinot noir phenolics, AWITC 2015 ; Enartis, Climate and Pinot noir wine style ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 86-87 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+},
+{
+    id: 377,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: "Bordeaux", appel: null },
+    titre: "Cabernet-sauvignon dans le verre : la colonne vertébrale des rouges du Médoc",
+    synth: "Sur la rive gauche de la Gironde, dans le Médoc et le Haut-Médoc, le cabernet-sauvignon est le cépage majoritaire d’assemblages avec le merlot, le cabernet franc et le petit verdot, le plus souvent élevés en fût de chêne. Il pousse sur des sols de graves, d’où des vins colorés, structurés par les tanins et faits pour la garde, avec souvent du cassis et, avec le fût, des notes de cèdre ou de vanille. Le merlot y apporte rondeur et fruits rouges. Le poivron vert n’est pas sa signature exclusive : il trahit surtout un raisin peu mûr (pyrazines) et se retrouve aussi chez le cabernet franc, le sauvignon blanc ou le merlot.",
+    mnemo: "Le charpentier et le sculpteur : le cabernet-sauvignon pose la charpente de graves et de tanins, le merlot vient l’arrondir en fruits rouges.",
+    flash: {"q":"Dans les rouges du Médoc et du Haut-Médoc, quel cépage est majoritaire et avec quels partenaires est-il assemblé ?","a":"Le cabernet-sauvignon, assemblé avec le merlot (rondeur, fruits rouges), le cabernet franc et le petit verdot.","keys":[["cabernet-sauvignon","cabernet sauvignon"],["merlot"],["cabernet franc","petit verdot"]]},
+    qcm: {"q":"Quel type de sol caractérise la rive gauche bordelaise, où domine le cabernet-sauvignon ?","opts":["Des graves : graviers et galets alluviaux","Des argiles froides sans cailloux","Des sables purs sans calcaire ni argile","Des schistes noirs"],"good":0,"expl":"Ces sols de graviers drainent bien et retiennent la chaleur, ce qui convient à un cépage tardif ; les argiles fraîches sont plutôt le terrain du merlot sur la rive droite."},
+    exos: [
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le poivron vert est un arôme que seul le cabernet-sauvignon peut donner.","answer":false},"explanation":"Les pyrazines, responsables de l’odeur de poivron, marquent aussi le cabernet franc et le sauvignon blanc ; c’est surtout la maturité qui décide de leur présence."},
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis majoritaire dans les rouges du Médoc, mes vins sont colorés, tanniques et de garde, et le merlot, mon partenaire d’assemblage, vient arrondir mes tanins.","payload":{"accepted":["cabernet-sauvignon","cabernet sauvignon","le cabernet-sauvignon","le cabernet sauvignon"]},"explanation":"Majoritaire dans les assemblages médocains, il apporte couleur, tanins et aptitude à la garde ; le merlot y joue le rôle d’arrondisseur."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Poivron vert lié au peu de maturité et non propre au cabernet-sauvignon, cassis et cèdre comme repères aromatiques (⚠️) : Virginia Tech Enology Notes et wein.plus ; aucune interprofession lue (CIVB illisible), descripteurs à présenter comme repères non universels","6e cépage de France, 37 372 ha en 2024 (⚠️) : chiffre FranceAgriMer extrait automatiquement d’un tableau, à recontrôler sur le PDF avant tout usage ; absent de la synthèse et des exercices","« Majoritaire » est la formule INAO pour Médoc et Haut-Médoc : plusieurs crus de Bordeaux sont à dominante merlot, ne pas écrire « toujours dominant »"],
+    src: "INAO, fiches Médoc, Haut-Médoc et Pessac-Léognan ; Decanter, Left and right bank Bordeaux explained ; Virginia Tech, Enology Notes 132 (méthoxypyrazines) ; wein.plus Lexikon, Cabernet Sauvignon ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 88-89 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+},
+{
+    id: 378,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: "Bordeaux", appel: null },
+    titre: "Merlot : le cépage de la rondeur à Pomerol et Saint-Émilion",
+    synth: "Sur la rive droite de la Dordogne, à Pomerol et à Saint-Émilion, le merlot est le cépage dominant : il donne des vins souples, amples, aux tanins soyeux, avec des fruits rouges et noirs, de la prune, de la violette ou de la truffe. Il aime les sols plus frais de graves et sables mêlés d’argile (Pomerol) ou d’argilo-calcaire (Saint-Émilion), et il arrondit aussi les assemblages médocains dominés par le cabernet-sauvignon. Il mûrit généralement plus tôt que le cabernet-sauvignon. C’est l’un des deux premiers cépages de France par la surface, au coude à coude avec l’ugni blanc. Son nom viendrait probablement du merle, une hypothèse et non un fait établi.",
+    mnemo: "Le coussin de velours : posé sur la charpente de graves du cabernet, il adoucit l’assise ; à lui seul sur l’argile de la rive droite, il fait tout le fauteuil.",
+    flash: {"q":"Dans quelles appellations bordelaises le merlot est-il dominant, et que donne-t-il aux vins ?","a":"Pomerol et Saint-Émilion (rive droite) : rondeur, souplesse, tanins soyeux, fruits rouges et noirs.","keys":[["pomerol"],["saint-émilion","saint emilion"],["rond","souple","soyeux"]]},
+    qcm: {"q":"Pourquoi les rouges de la rive droite sont-ils typiquement plus souples que ceux de la rive gauche ?","opts":["Le merlot, sur des sols plus argileux, y domine les assemblages","Le cabernet-sauvignon y est vendangé plus tôt","Ils ne sont jamais élevés en barrique","Le cabernet franc y est interdit"],"good":0,"expl":"Le cépage dominant et le sol se conjuguent : le merlot, plus rond, se plaît sur argile fraîche, alors que le cabernet-sauvignon des graves apporte davantage de tanins et de structure."},
+    exos: [
+      {"type":"matching","prompt":"Associe chaque vin à son cépage dominant.","payload":{"pairs":[["Pomerol","Merlot"],["Haut-Médoc","Cabernet-sauvignon"],["Gevrey-Chambertin","Pinot noir"]]},"explanation":"Trois terroirs, trois cépages : rive droite bordelaise (merlot), rive gauche (cabernet-sauvignon), Côte de Nuits (pinot noir)."},
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis dominant à Pomerol et à Saint-Émilion, mes vins sont souples avec des tanins soyeux et des notes de prune, et j’arrondis les assemblages du Médoc.","payload":{"accepted":["merlot","le merlot","merlot noir"]},"explanation":"Rondeur, tanins soyeux et prune sont les marques du merlot, qui joue en Médoc le rôle de partenaire arrondissant le cabernet-sauvignon."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"L’origine du nom « merlot » à partir du merle est établie avec certitude.","answer":false},"explanation":"Le lien avec le merle (oiseau amateur du raisin mûr, ou couleur sombre des baies) est une hypothèse courante, mais la raison exacte reste obscure."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Rang du merlot en France (⚠️) : 1er jusqu’en 2023, 2e en 2024 derrière l’ugni blanc (92 845 ha contre 99 816 ha), chiffres FranceAgriMer extraits automatiquement d’un tableau, à recontrôler sur le PDF ; formulé « l’un des deux premiers cépages de France », le classement dépendant de l’année et du périmètre","Maturité plus précoce que le cabernet-sauvignon (⚠️) : seulement Decanter (deux pages), non confirmée par l’INAO ni une source technique (IFV, CIVB)","Étymologie « merle » (⚠️) : hypothèse (wein.plus, Etymonline), aucune source 2a lue","Saint-Émilion : fiche INAO lue = premier grand cru classé uniquement, ne pas généraliser aux autres niveaux de l’appellation"],
+    src: "INAO, fiches Pomerol, Saint-Émilion grand cru (premier grand cru classé), Médoc et Haut-Médoc ; Decanter, Left and right bank Bordeaux explained ; Decanter, Merlot (grape guide) ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; wein.plus Lexikon, Merlot ; Etymonline, merlot ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 90-91 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+},
+{
+    id: 379,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: "Vallée du Rhône", appel: null },
+    titre: "Syrah : un cépage français, pas persan, du Rhône nord au Languedoc",
+    synth: "La syrah est un croisement de deux cépages français, la dureza et la mondeuse blanche (Bowers et al., 2000, confirmé par Vouillamoz et Grando, 2006) : le lien avec la ville iranienne de Shiraz relève de la légende, comme le récit du chevalier Stérimberg devenu ermite sur la colline de l’Hermitage. Elle fait les grands rouges du Rhône nord : cornas et saint-joseph rouge reposent sur elle, l’hermitage rouge peut y ajouter jusqu’à 15 % de marsanne ou de roussanne, et la côte-rôtie peut y associer du viognier, plafonné à 20 % de l’assemblage par le cahier des charges (en pratique, souvent très peu, et parfois rien). En Languedoc, c’est le plus réussi des cépages « améliorateurs » qui ont remplacé une partie du carignan : première variété rouge du bassin Languedoc-Roussillon en 2025 (DRAAF Occitanie, données CVI). Son pendant australien, le shiraz, est souvent plus riche et plus chocolaté.",
+    mnemo: "Un voyageur au passeport français, né de deux parents de chez nous : on lui a inventé un visa persan, mais son vrai carnet de famille s’écrit dureza et mondeuse blanche.",
+    flash: {"q":"De quels cépages la syrah est-elle issue, et que vaut le lien avec la ville de Shiraz ?","a":"Elle est issue d’un croisement dureza × mondeuse blanche, deux cépages français ; le lien avec la ville iranienne de Shiraz est une légende.","keys":[["dureza"],["mondeuse"],["légende","français"]]},
+    qcm: {"q":"Que prévoit le cahier des charges de la côte-rôtie à côté de la syrah ?","opts":["Du viognier est possible, dans la limite de 20 % de l’assemblage","Du viognier est obligatoire, à hauteur de 20 % de l’assemblage","De la marsanne est possible, jusqu’à 15 % de l’assemblage","Du grenache noir est possible, comme cépage accessoire"],"good":0,"expl":"Le texte fixe un plafond, pas une recette : l’appellation exige au moins 80 % de syrah dans l’assemblage, et beaucoup de vins n’ont que peu de viognier, voire aucun. Les 15 % de marsanne et roussanne concernent l’hermitage rouge."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Je suis le fruit d’un croisement entre la dureza et la mondeuse blanche. Je fais les rouges de cornas, et on m’appelle shiraz en Australie.","payload":{"accepted":["syrah","la syrah","shiraz"]},"explanation":"Ses deux parents sont français, ce qui contredit toute origine persane. Le nom shiraz désigne la même variété en Australie."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"L’hermitage rouge est obligatoirement élaboré à 100 % de syrah.","answer":false},"explanation":"Le cépage dominant est la syrah, mais jusqu’à 15 % de marsanne et/ou de roussanne sont autorisés. Une simplification courante fait oublier ce complément blanc."},
+      {"type":"cloze","prompt":"Complète la phrase.","payload":{"text":"En Languedoc, la syrah est le plus réussi des cépages {{améliorateurs}} et a remplacé une partie du {{carignan}}."},"explanation":"Cette politique a rééquilibré l’encépagement du bassin : la syrah est devenue le premier cépage rouge en surface, le carignan reculant fortement."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Légende de Stérimberg (⚠️) : chevalier revenu de la croisade des Albigeois, ermitage daté de 1224 par la tradition, nom « Hermitage » attesté au XVIIe siècle (Inter Rhône, Wine Spectator) ; aucune source historique primaire lue, à présenter comme légende",
+      "Shiraz australien plus riche, plus chocolaté (⚠️) : une seule source (Jancis Robinson), descripteur non universel",
+      "Cahiers des charges lus : côte-rôtie (copie du Syndicat, recoupée par le projet INAO PNO 2023 : syrah ≥ 80 % de l’assemblage) et hermitage (BO-agri du 19 décembre 2024 : syrah ≥ 85 % de l’assemblage) ; cornas et saint-joseph non lus, données d’Inter Rhône",
+      "Lieu de naissance du croisement non établi par les sources lues : la fiche dit seulement « deux parents français »"
+    ],
+    src: "Bowers, Siret, Meredith, This et Boursiquot (2000), Acta Horticulturae 528:129-132 ; Vouillamoz et Grando (2006), Heredity 97:102-110 ; Cahier des charges de l’AOC Côte-Rôtie (copie du Syndicat des Côtes du Rhône ; projet INAO PNO 2023) ; Cahier des charges de l’AOC Hermitage (BO-agri, 19 décembre 2024) ; Inter Rhône, Hermitage, Cornas et Saint-Joseph ; DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Jancis Robinson, Syrah ; Wine Spectator, Hermitage: The Soul of Syrah ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 92-93 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+  {
+    id: 380,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Fondamental",
+    geo: { pays: "France", region: "Roussillon", appel: null },
+    titre: "Grenache noir : cépage du Sud, des rosés aux vins doux naturels",
+    synth: "Le grenache noir s’appelle garnacha en Espagne et cannonau en Sardaigne ; son berceau reste débattu entre l’Espagne et la Sardaigne. En Languedoc-Roussillon, c’est le deuxième cépage rouge du bassin derrière la syrah (DRAAF Occitanie, données CVI 2025), et ses vieilles vignes se concentrent dans les Pyrénées-Orientales, liées aux appellations traditionnelles dont les vins doux naturels. Il en est le cépage principal en Roussillon (Banyuls, Maury, Rivesaltes). En France, il était en 2016 le troisième cépage en surface (78 631 ha), juste derrière le merlot et l’ugni blanc (Anderson et Nelgen 2020). Sa pellicule relativement fine l’oriente souvent vers le rosé, notamment en Provence et en Navarre, ou vers des rouges ronds, mûrs et confiturés. À Châteauneuf-du-Pape, le cahier des charges autorise 18 variétés (le décompte d’usage de « 13 cépages » réunit les couleurs d’un même cépage : grenache, piquepoul, clairette) et n’impose aucun minimum de grenache.",
+    mnemo: "Un soleil sur un mur de pierres sèches : la peau fine du grenache cuit doucement, d’où des rosés pâles ou des rouges ronds et généreux.",
+    flash: {"q":"Quels noms porte le grenache noir en Espagne et en Sardaigne, et que sait-on de son origine ?","a":"Garnacha en Espagne, cannonau en Sardaigne. Son origine reste débattue entre l’Espagne et la Sardaigne.","keys":[["garnacha"],["cannonau"],["débat","espagne","sardaigne"]]},
+    qcm: {"q":"Dans le vignoble Languedoc-Roussillon, où se trouvent surtout les vieilles vignes de grenache noir ?","opts":["Dans les Pyrénées-Orientales","Dans l’Aude","Dans le Gard","Dans l’Hérault"],"good":0,"expl":"L’âge moyen y est nettement plus élevé qu’ailleurs dans le bassin (CVI 2015), parce que le département porte des appellations traditionnelles, dont les vins doux naturels, qui entretiennent ces vignes."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? On m’appelle garnacha en Espagne et cannonau en Sardaigne. Je suis le cépage principal des vins doux naturels du Roussillon et le deuxième cépage rouge du Languedoc-Roussillon derrière la syrah.","payload":{"accepted":["grenache","le grenache","grenache noir","le grenache noir"]},"explanation":"Les noms locaux désignent une seule variété. Sa place dans les vins doux naturels du Roussillon et dans le classement des rouges du bassin suffit à l’identifier."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le grenache est le deuxième cépage le plus planté de France, juste derrière le merlot.","answer":false},"explanation":"L’ugni blanc s’intercale : le grenache arrivait 3e en 2015 (OIV) comme en 2024 (FranceAgriMer). Le classement bouge d’une année à l’autre, d’où la prudence avec les palmarès."},
+      {"type":"odd_one_out","prompt":"Quel nom ne désigne pas le grenache noir ?","payload":{"options":["Garnacha","Cannonau","Mazuelo"],"answer":2},"explanation":"Mazuelo est un nom espagnol du carignan, employé notamment à Rioja ; garnacha et cannonau sont les noms espagnol et sarde du grenache."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Origine du grenache (⚠️) : hypothèse espagnole (Aragon) contre revendication sarde rapportée par Jancis Robinson ; étude Mattia et al. (2009) trouvée mais conclusions non lues, divergence à présenter comme débat ouvert",
+      "Châteauneuf-du-Pape (⚠️) : 18 variétés et absence de minimum de grenache lues dans la copie du cahier des charges hébergée par chateauneuf.com ; décompte « 13 » non confirmé par une seconde source officielle, extranet INAO non lu",
+      "Grenache principal des vins doux naturels du Roussillon (⚠️) : une seule source (Jancis Robinson) ; cahier des charges de Maury non lu, seuil de Banyuls (projet PNO 2023) volontairement non repris",
+      "Pellicule fine et vocation rosé (⚠️) : une seule source (Jancis Robinson), descripteur non universel",
+      "Synonymes garnacha et cannonau : Jancis Robinson, résultat de l’étude génétique Mattia et al. non lu"
+    ],
+    src: "DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Agreste Occitanie, Analyse et études n°8 (2018), âge du vignoble ; OIV, Grapevine varieties area by country 2015 (Focus OIV 2017) ; K. Anderson et S. Nelgen, Which Winegrape Varieties are Grown Where?, éd. révisée (University of Adelaide Press, 2020), tableau 39 ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; Cahier des charges de l’AOC Châteauneuf-du-Pape (chateauneuf.com) ; Jancis Robinson, Grenache ; Mattia et al. (2009), J. Hort. Sci. Biotechnol. 84(1) (notice) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 94-95 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
+  },
+  {
+    id: 381,
+    theme: "Cépages",
+    sous: ["Profil & usage"],
+    niveau: "Intermédiaire",
+    geo: { pays: "France", region: "Languedoc", appel: null },
+    titre: "Carignan : du cépage de masse aux vieilles vignes recherchées",
+    synth: "Le carignan est probablement d’origine espagnole, sans doute aragonaise (peut-être autour de Cariñena) ; il y porte les noms de cariñena ou mazuelo (mazuela, nom officiel espagnol), carignano en Italie ; en Catalogne, le nom samsó lui est souvent donné, mais il sert aussi pour le cinsault, d’où des confusions. Tardif, vigoureux et sensible à l’oïdium et au mildiou, il pouvait donner jusqu’à 200 hl/ha en plaine, pour des vins aux tanins et à l’acidité souvent rudes. Il fut longtemps le premier cépage de France, avec un pic d’environ 211 000 ha en 1968 (Plantgrape), avant les arrachages subventionnés et la montée des cépages « améliorateurs » syrah et grenache ; le merlot l’a dépassé entre 1998 et 2008 (Plantgrape). Dans le monde, sa surface est passée d’environ 128 000 ha en 2000 à 47 000 ha en 2016 (Anderson et Nelgen 2020). Il est devenu le cépage des vieilles vignes du Languedoc-Roussillon : âge moyen d’environ 42 ans en 2015 (Agreste), contre environ 25 ans pour le grenache noir et 17,5 ans pour la syrah. Sur sols pauvres et à faible rendement, ces vignes en gobelet donnent ses meilleurs vins, souvent vendus en IGP ou Vin de France quand ils sont 100 % carignan.",
+    mnemo: "Le doyen du village : celui qui était l’ouvrier de tous les champs, a failli être chassé du pays, et qu’on revient consulter aujourd’hui pour ses rides, c’est-à-dire ses vieux ceps.",
+    flash: {"q":"Quelle est l’origine probable du carignan et quels noms porte-t-il en Espagne ?","a":"Origine probablement espagnole, sans doute en Aragon (peut-être autour de Cariñena) ; en Espagne, cariñena et mazuelo (mazuela est le nom officiel).","keys":[["aragon","espagn"],["cariñena","carinena","mazuelo","mazuela"]]},
+    qcm: {"q":"Parmi les grands cépages rouges du Languedoc-Roussillon, lequel a les vignes les plus âgées (CVI 2015) ?","opts":["Le carignan","Le grenache noir","La syrah","Le merlot"],"good":0,"expl":"Le carignan a été planté massivement avant les replantations en cépages améliorateurs ; ses ceps ont donc eu le temps de vieillir, alors que la syrah, plus récente dans le bassin, a le parc le plus jeune."},
+    exos: [
+      {"type":"short_answer","prompt":"Qui suis-je ? Tardif et vigoureux, sensible à l’oïdium, probablement né en Aragon, je suis le cépage des vieilles vignes du Languedoc-Roussillon et on m’appelle mazuelo à Rioja.","payload":{"accepted":["carignan","le carignan","cariñena","carinena"]},"explanation":"Le cumul d’une origine aragonaise probable, d’un cycle tardif et de la place des vieilles vignes dans le Sud ne laisse que lui."},
+      {"type":"matching","prompt":"Associe chaque synonyme au cépage correspondant.","payload":{"pairs":[["Shiraz","Syrah"],["Cannonau","Grenache noir"],["Mazuelo","Carignan"]]},"explanation":"Un même cépage change de nom selon le pays : shiraz en Australie, cannonau en Sardaigne, mazuelo en Espagne (Rioja)."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le carignan donne ses meilleurs vins avec des rendements élevés, sur des sols riches de plaine.","answer":false},"explanation":"La plaine fertile le pousse à des rendements massifs et à des vins rudes. Les cuvées recherchées viennent de vieilles vignes sur sols pauvres, à faible rendement, où le fruit mûr équilibre tanins et acidité."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: [
+      "Dépassement par le merlot (⚠️) : entre 1998 (carignan 102 317 ha, merlot 90 059) et 2008 (73 728 contre 117 354) selon la série de Plantgrape ; merlot déjà premier en 2002 selon Réussir ; Jancis Robinson dit « fin du XXe siècle »",
+      "Pic de 211 254 ha en 1968 (⚠️) : série de Plantgrape seule ; arrachages subventionnés : sources 2a/2b seulement (Réussir 2002, article de 2007, Jancis Robinson, Le Point 2022)",
+      "Sensibilité aux maladies, rendements jusqu’à 200 hl/ha, tanins et acidité rudes (⚠️) : Jancis Robinson, article de 2007 et Decanter, aucune source officielle ; résistance à la sécheresse non confirmée, volontairement omise",
+      "Carignan pur surtout en IGP ou Vin de France (⚠️) : Decanter et Le Point, cahiers des charges AOC non lus, exceptions possibles","Origine (⚠️) : « probablement Aragon » (Plantgrape), « peut-être près de Cariñena » (Decanter) ; Puiggròs (Dossiers Agraris 20, 2017) le dit présent en Catalogne et en Aragon depuis le Moyen Âge et conteste le lien avec la ville","Samsó (⚠️) : nom catalan appliqué au carignan mais aussi au cinsault, et la DO Penedès le liste comme variété distincte (Puiggròs 2017 ; Vinorandum ; wein.plus) ; ne jamais l’utiliser comme réponse d’exercice"
+    ],
+    src: "Plantgrape (IFV/INRAE), fiche Carignan ; K. Anderson et S. Nelgen, Which Winegrape Varieties are Grown Where?, éd. révisée (University of Adelaide Press, 2020), tableau 6 ; Agreste Occitanie, Analyse et études n°8 (2018), âge du vignoble Languedoc-Roussillon ; DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Jancis Robinson, Carignan ; Decanter, The rise of Carignan ; Réussir Vigne, Un vignoble en perpétuelle évolution (2002) ; Le Point, Carignan, interprète de terroir (2022) ; J. M. Puiggròs Jové, Història dels orígens de la carinyena, Dossiers Agraris 20 (ICEA-IEC, 2017) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 102-103 ; cf. Mille Vignes, P. Lepeltier, p. 31",
+    page: 31
   }
 );

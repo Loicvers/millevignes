@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 189 vérifiées, 182 à vérifier (256 points).
+384 fiches : 189 vérifiées, 195 à vérifier (300 points).
 Hors dette : 590 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
@@ -623,3 +623,73 @@ Hors dette : 590 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 370** (p.278) — Le vocabulaire de la structure : corps, nervosité, mollesse, équilibre
 - [ ] Définitions de nervosité, mollesse, souplesse et formules d’équilibre (⚠️) : recoupement limité à des lexiques et pages pédagogiques de niveau 2b (PCVT, École des vins et spiritueux) ; à recouper avec Peynaud, Le goût du vin
+
+**Fiche 372** (p.31) — Le chardonnay : un cépage qui prend l’empreinte du climat et de la cave
+- [ ] Origine : ⚠️ Plantgrape (niveau 1) le dit originaire de Bourgogne ; d’autres sources s’en tiennent au nord-est de la France, d’après la répartition des parents au Moyen Âge (Bowers et al. 1999) et les synonymes locaux (Burgundy Report 2017)
+- [ ] Village de Chardonnay (Saône-et-Loire) à l’origine du nom du cépage : ⚠️ hypothèse très répandue, formulée avec prudence par l’Oxford Companion (« may have taken its name »), sans preuve directe
+- [ ] Blanc de blancs de Champagne : ⚠️ issu de raisins blancs seulement, le plus souvent de chardonnay (Guide Hachette des vins) ; les autres cépages blancs autorisés (pinot blanc, arbane, petit meslier, Comité Champagne 2024) peuvent y entrer ; définition réglementaire non lue dans une source de niveau 1
+- [ ] Descripteurs selon le climat (pomme/citron, fruits tropicaux) et notes beurrées/toastées liées au fût et à la malolactique : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), à présenter comme tendances
+
+**Fiche 373** (p.31) — Le sauvignon blanc : soliste en Centre-Loire, partenaire du sémillon à Bordeaux
+- [ ] Assemblage bordelais (sémillon, muscadelle ; Sauternes) : ⚠️ le principe est confirmé (INAO Pessac-Léognan, JancisRobinson.com) mais les proportions réglementaires (CIVB) n’ont pas été lues
+- [ ] Origine du « Fumé blanc » de Mondavi : ⚠️ divergence sur la date (fin des années 1960 selon la presse, début des années 1970 selon l’Oxford Companion), aucune source du domaine lue ; ne pas donner d’année
+
+**Fiche 374** (p.31) — Le chenin : un seul cépage, du sec au liquoreux et aux bulles
+- [ ] Implantation du chenin en Loire « au IXe siècle » (acte de 845 pour l’abbaye de Glanfeuil) : ⚠️ tradition non prouvée (impossible de savoir si les vignes étaient du chenin) ; première mention attestée plus tardive (1469 selon iDealwine, source 2b) ; aucune source de niveau 1 ne confirme le IXe siècle
+- [ ] Coulée de Serrant « parmi les plus grands blancs de France » (Curnonsky) : ⚠️ avis de critique rapporté par l’INAO et le Guide Hachette ; le texte original de Curnonsky n’a pas été lu ; le livre écrit « du monde », contre « de France » dans les sources
+- [ ] Longévité des moelleux : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), repère d’usage
+
+**Fiche 375** (p.31) — Le riesling en Alsace grand cru : la règle des quatre cépages et ses exceptions
+- [ ] Seuils de sucre des mentions VT/SGN pour le riesling : ⚠️ non retenus ; la mise en page du tableau VII.2.b du cahier des charges est ambiguë à l’extraction (seuils du riesling et du pinot gris à lire dans le PDF)
+- [ ] Riesling « le plus noble » d’Alsace, vif, sans bois, garde longue, notes de pétrole avec l’âge : ⚠️ un seul ouvrage de niveau 2a (JancisRobinson.com), aucune interprofession (CIVA) lue ; à présenter comme tendances
+- [ ] Rouges de pinot noir en grand cru : ⚠️ Hengst, Kirchberg de Barr et Vorbourg dans la version INAO de 2024 (projet en procédure d’opposition), Hengst et Kirchberg de Barr depuis 2022 selon Réussir ; liste des lieux-dits non reprise dans la fiche
+
+**Fiche 376** (p.31) — Pinot noir : un cépage fin, tout en nuances et très sensible au climat
+- [ ] Lien Gevrey-Chambertin et Volnay ↔ pinot noir : ⚠️ les fiches INAO lues ne nomment pas le cépage ; une seule source (Grands Bourgogne, 2b), cahiers des charges non lus
+- [ ] Gevrey puissant et structuré, Volnay fin : ⚠️ une seule fiche INAO par appellation, et la fiche Volnay lue est celle d’un premier cru, généralisée à l’appellation
+- [ ] Poids du climat et du millésime : ⚠️ deux sources de niveau 2b seulement (Enartis, Grands Bourgogne)
+- [ ] Pinot noir qui apporte corps et structure en Champagne : ⚠️ Comité Champagne seul
+- [ ] Sensibilité aux maladies (botrytis, pourriture) dans la réponse du flash : ⚠️ eXtension seul
+
+**Fiche 377** (p.31) — Cabernet-sauvignon dans le verre : la colonne vertébrale des rouges du Médoc
+- [ ] Poivron vert lié au peu de maturité et non propre au cabernet-sauvignon, cassis et cèdre comme repères aromatiques (⚠️) : Virginia Tech Enology Notes et wein.plus ; aucune interprofession lue (CIVB illisible), descripteurs à présenter comme repères non universels
+- [ ] 6e cépage de France, 37 372 ha en 2024 (⚠️) : chiffre FranceAgriMer extrait automatiquement d’un tableau, à recontrôler sur le PDF avant tout usage ; absent de la synthèse et des exercices
+- [ ] « Majoritaire » est la formule INAO pour Médoc et Haut-Médoc : plusieurs crus de Bordeaux sont à dominante merlot, ne pas écrire « toujours dominant »
+
+**Fiche 378** (p.31) — Merlot : le cépage de la rondeur à Pomerol et Saint-Émilion
+- [ ] Rang du merlot en France (⚠️) : 1er jusqu’en 2023, 2e en 2024 derrière l’ugni blanc (92 845 ha contre 99 816 ha), chiffres FranceAgriMer extraits automatiquement d’un tableau, à recontrôler sur le PDF ; formulé « l’un des deux premiers cépages de France », le classement dépendant de l’année et du périmètre
+- [ ] Maturité plus précoce que le cabernet-sauvignon (⚠️) : seulement Decanter (deux pages), non confirmée par l’INAO ni une source technique (IFV, CIVB)
+- [ ] Étymologie « merle » (⚠️) : hypothèse (wein.plus, Etymonline), aucune source 2a lue
+- [ ] Saint-Émilion : fiche INAO lue = premier grand cru classé uniquement, ne pas généraliser aux autres niveaux de l’appellation
+
+**Fiche 379** (p.31) — Syrah : un cépage français, pas persan, du Rhône nord au Languedoc
+- [ ] Légende de Stérimberg (⚠️) : chevalier revenu de la croisade des Albigeois, ermitage daté de 1224 par la tradition, nom « Hermitage » attesté au XVIIe siècle (Inter Rhône, Wine Spectator) ; aucune source historique primaire lue, à présenter comme légende
+- [ ] Shiraz australien plus riche, plus chocolaté (⚠️) : une seule source (Jancis Robinson), descripteur non universel
+- [ ] Cahiers des charges lus : côte-rôtie (copie du Syndicat, recoupée par le projet INAO PNO 2023 : syrah ≥ 80 % de l’assemblage) et hermitage (BO-agri du 19 décembre 2024 : syrah ≥ 85 % de l’assemblage) ; cornas et saint-joseph non lus, données d’Inter Rhône
+- [ ] Lieu de naissance du croisement non établi par les sources lues : la fiche dit seulement « deux parents français »
+
+**Fiche 380** (p.31) — Grenache noir : cépage du Sud, des rosés aux vins doux naturels
+- [ ] Origine du grenache (⚠️) : hypothèse espagnole (Aragon) contre revendication sarde rapportée par Jancis Robinson ; étude Mattia et al. (2009) trouvée mais conclusions non lues, divergence à présenter comme débat ouvert
+- [ ] Châteauneuf-du-Pape (⚠️) : 18 variétés et absence de minimum de grenache lues dans la copie du cahier des charges hébergée par chateauneuf.com ; décompte « 13 » non confirmé par une seconde source officielle, extranet INAO non lu
+- [ ] Grenache principal des vins doux naturels du Roussillon (⚠️) : une seule source (Jancis Robinson) ; cahier des charges de Maury non lu, seuil de Banyuls (projet PNO 2023) volontairement non repris
+- [ ] Pellicule fine et vocation rosé (⚠️) : une seule source (Jancis Robinson), descripteur non universel
+- [ ] Synonymes garnacha et cannonau : Jancis Robinson, résultat de l’étude génétique Mattia et al. non lu
+
+**Fiche 381** (p.31) — Carignan : du cépage de masse aux vieilles vignes recherchées
+- [ ] Dépassement par le merlot (⚠️) : entre 1998 (carignan 102 317 ha, merlot 90 059) et 2008 (73 728 contre 117 354) selon la série de Plantgrape ; merlot déjà premier en 2002 selon Réussir ; Jancis Robinson dit « fin du XXe siècle »
+- [ ] Pic de 211 254 ha en 1968 (⚠️) : série de Plantgrape seule ; arrachages subventionnés : sources 2a/2b seulement (Réussir 2002, article de 2007, Jancis Robinson, Le Point 2022)
+- [ ] Sensibilité aux maladies, rendements jusqu’à 200 hl/ha, tanins et acidité rudes (⚠️) : Jancis Robinson, article de 2007 et Decanter, aucune source officielle ; résistance à la sécheresse non confirmée, volontairement omise
+- [ ] Carignan pur surtout en IGP ou Vin de France (⚠️) : Decanter et Le Point, cahiers des charges AOC non lus, exceptions possibles
+- [ ] Origine (⚠️) : « probablement Aragon » (Plantgrape), « peut-être près de Cariñena » (Decanter) ; Puiggròs (Dossiers Agraris 20, 2017) le dit présent en Catalogne et en Aragon depuis le Moyen Âge et conteste le lien avec la ville
+- [ ] Samsó (⚠️) : nom catalan appliqué au carignan mais aussi au cinsault, et la DO Penedès le liste comme variété distincte (Puiggròs 2017 ; Vinorandum ; wein.plus) ; ne jamais l’utiliser comme réponse d’exercice
+
+**Fiche 382** (p.278) — Classer un vin par style
+- [ ] Grille vif / aromatique / rond (blancs), léger / puissant / tannique (rouges), léger / puissant (rosés), fruité / complexe (effervescents) : ⚠️ grille propre à l’École du Vin, aucune source lue ne reprend ces familles (d’autres grilles, comme Wine Folly, classent surtout par corps ; le WSET décrit avec les échelles du SAT) ; présentée ici comme grille d’école, pas comme norme
+
+**Fiche 383** (p.278) — Lire le climat dans le verre
+- [ ] Fruits frais et acidulés en climat frais, plus mûrs en climat chaud : ⚠️ source principale de niveau 2b (Wine Folly), tendance à présenter comme repère, valable à cépage constant
+- [ ] Couleur et climat chaud : ⚠️ données issues surtout d’une étude sur raisin de table en chambre de croissance (Yamane et al., 2006) et d’une revue (van Leeuwen et Destrac-Irvine, 2017) ; la fiche enseigne seulement que « chaud = plus coloré » est une idée reçue à écarter, sans fixer de seuil
+
+**Fiche 384** (p.278) — Juger la qualité d’un vin : critères et échelles
+- [ ] BLIC : les quatre critères sont confirmés par un support de cours WSET niveau 2 (Online Classroom : « quality is assessed based on balance, length or finish, intensity and complexity », de 0 à 4 critères pour aller de poor à outstanding) ; le sigle BLIC n’y figure pas : ⚠️ usage rapporté par GuildSomm (préparation MW) et des sites de formation (2b)
+- [ ] Cinq critères de l’École du Vin et échelle à cinq niveaux, avec la typicité en plus de BLIC : ⚠️ grille propre à l’école, sans source indépendante qui la reprenne telle quelle ; la typicité est rangée par un site de formation (2b) parmi des caractéristiques secondaires au niveau Diploma
