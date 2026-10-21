@@ -1,21 +1,26 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 56 vérifiées, 285 à vérifier (867 points).
+341 fiches : 56 vérifiées, 285 à vérifier (872 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
 - [ ] Présence au XVIIe siècle : UC Davis seul ; une autre source situe la première mention écrite vers 1775 (« Petit Cabernet », Libourne)
 - [ ] Débourrement : « trois semaines après le chasselas » dans la synthèse, « deux semaines » dans l’exercice ; écart à trancher
 
-**Fiche 3** (p.183) — Le classement de 1855
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+**Fiche 3** (p.179) — Le classement de 1855
+- [ ] Prix comme critère principal (⚠️) : Decanter, Farr Vintners, The Wine Doctor et Comptoir des Millésimes le disent, mais ce sont des sources de niveau 2b ; le site du Conseil des Grands Crus Classés en 1855 parle d’expérience, de qualité du terroir et de renommée sans citer le prix, et Wine Spectator ne nomme aucun critère. Ouvrage d’historien (Markham, 1855) ou JancisRobinson.com non lus.
+- [ ] Cantemerle (⚠️, non repris dans la synthèse) : ajouté en 1856 selon Decanter, Farr et Comptoir des Millésimes (omis par erreur), mais Wine Spectator le place dans la liste d’origine.
+- [ ] Nombres de crus en 1855 (⚠️, non repris) : 58 rouges selon Wine Spectator (4 premiers), 61 aujourd’hui (5 premiers) selon le Conseil 1855 ; pour Sauternes et Barsac, Farr donne 9 premiers et 11 seconds, Wine Spectator 11 et 12 ou 13 : à recouper sur le texte du classement.
 
 **Fiche 4** (p.45) — La véraison
 - [ ] Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe
 
-**Fiche 5** (p.158) — Le climat bourguignon
-- [ ] Pastilles de vérification d'origine non conservées : revérifier les sources.
+**Fiche 5** (p.183) — Le climat bourguignon
+- [ ] Première mention du mot « climat » en 1584 pour le Clos de Bèze (⚠️) : seule iDealwine (niveau 2b) la donne, dans les mêmes termes que le livre ; le résumé de Garcia (L’Atelier du CRH, 2014) place le sens bourguignon spécifique à partir du XVIIe siècle ; les textes d’historiens (HAL) sont bloqués, la date n’est pas recoupée. Elle figure déjà parmi les points à vérifier de docs/erreurs-du-livre.md.
+- [ ] Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre, non recoupée par une source lue.
+- [ ] Classements savants qui ne reflètent qu’imparfaitement la consommation d’élite, système des équivalences (⚠️) : thèse du livre (p. 184), non recoupée ; la question vrai/faux repose dessus.
+- [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée.
 
 **Fiche 6** (p.16) — Classification botanique de Vitis vinifera
 - [ ] Nom de la sous-espèce cultivée (⚠️) : sativa (livre) contre vinifera. Un glossaire (Wein-Plus, niveau 2b) juge « sativa » obsolète ; la base WFO (instantané 2019) range sativa et sylvestris en synonymes de V. vinifera. VIVC et IPNI n’ont pas pu être consultés.

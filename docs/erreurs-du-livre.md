@@ -171,6 +171,7 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 166-169 : Eiffel à Byrrh et chez CVNE ; Carbonneau « 50 architectures et 250 systèmes » ; fil de fer en 1875.
 - p. 174 : vignoble de Cognac 282 000 ha « en 1875 » (282 667 ha en 1877 selon le BNIC) et 78 000 ha en 2019 (76 000 à 84 729 selon la définition) ; « 14 hl de vin » incohérent.
 - p. 178-181 : Vienne « plus de 700 ha » (590-600 ha selon deux sources) ; Pontack’s Head 1660 ou 1666.
+- p. 183 : fondation de Cluny en 909 → 910 selon iDealwine (2b) ; écart mineur, non tranché.
 - p. 184-188 : « usages locaux, loyaux et constants » rattachés à 1905 (les sources : 1908 et 1919) ; Chablis : 400 ha en 1920 et seize ans de procès ; mot « climat » en 1584 ; plus de soixante autres AOC en 1936.
 - p. 193-197 : Haraszthy « plus de 500 variétés » (300 à 350 selon les sources) ; Franschhoek « 1650 » (huguenots en 1688) ; dates de Jefferson ; chiffres Castel 2018.
 - p. 199 : Lavaux, ventes en baisse de 10 à 15 % après l’inscription (non retrouvé ; +30 % de fréquentation confirmé) ; candidature de la Rioja « refusée » (différée en 2015).

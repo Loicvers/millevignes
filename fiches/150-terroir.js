@@ -5,28 +5,41 @@ FICHES.push(
     theme: "Classifications",
     sous: ["Histoire des crus"],
     niveau: "Intermédiaire",
-    geo: { pays: "France", region: "Bordeaux", appel: "Margaux" },
+    geo: {"pays":"France","region":"Bordeaux","appel":null},
     titre: "Le classement de 1855",
-    synth: "Établi pour l'Exposition universelle de Paris, ce classement hiérarchise les crus du Médoc (et Sauternes) selon le prix de vente de l'époque, en cinq niveaux. Quasi figé depuis : une seule modification majeure en plus d'un siècle et demi.",
-    mnemo: "« 1855, gravé dans le marbre. » Né d'une expo, classé par le prix, presque jamais retouché. 18-55, deux paires.",
-    flash: { q: "Sur quel critère reposait le classement de 1855 ?", a: "Le prix de vente des vins à l'époque.", keys: [["prix"]] },
-    qcm: { q: "À quelle occasion fut créé le classement de 1855 ?", opts: ["La Révolution française", "L'Exposition universelle de Paris", "La création des AOC", "Le phylloxéra"], good: 1 },
-    src: "Lepeltier, Mille Vignes — Terroir",
-    page: 183
+    synth: "Pour l’Exposition universelle de Paris de 1855, voulue par Napoléon III, la chambre de commerce de Bordeaux confie aux courtiers de la place une liste des grands vins, établie surtout d’après leur prix de marché, reflet de leur réputation. Les rouges du Médoc, plus Haut-Brion (Graves), y sont répartis en cinq niveaux de crus ; les liquoreux de Sauternes et Barsac sont classés à part, en trois niveaux, avec Château d’Yquem seul « premier cru supérieur ». Presque figé depuis, il n’a connu qu’une promotion au rang de premier cru : Mouton-Rothschild, deuxième cru passé premier en 1973. Lepeltier le cite à propos d’Yquem (p. 160) et de Haut-Brion (p. 179) ; le « 1855 » de Lavalle (p. 184) est un autre classement, celui des climats de Côte-d’Or.",
+    mnemo: "En 1855, les courtiers collent une étiquette de prix sur les châteaux : le Médoc, un invité des Graves (Haut-Brion), et Yquem seul tout en haut des liquoreux.",
+    flash: {"q":"Sur quel critère reposait surtout le classement de 1855 ?","a":"Sur le prix de marché des vins, reflet de leur réputation.","keys":[["prix","marché","cours"]]},
+    qcm: {"q":"À quelle occasion le classement de 1855 a-t-il été dressé ?","opts":["La Révolution française","L’Exposition universelle de Paris","La création des AOC","La crise du phylloxéra"],"good":1,"expl":"Napoléon III voulait montrer les vins français à Paris et la chambre de commerce de Bordeaux a commandé une liste aux courtiers ; la Révolution, les AOC (1935) et le phylloxéra (seconde moitié du XIXe siècle, après la liste) n’y sont pour rien."},
+    exos: [
+      {"type":"matching","prompt":"Associe chaque château à son rang dans la classification de 1855.","payload":{"pairs":[["Château d’Yquem","Seul « premier cru supérieur » des liquoreux"],["Château Haut-Brion","Seul rouge classé hors du Médoc, dans les Graves"],["Château Mouton-Rothschild","Deuxième cru en 1855, premier cru depuis 1973"]]},"explanation":"Les trois cas sont les exceptions de la liste : un liquoreux au-dessus de tous, un Graves au milieu du Médoc, et la seule modification de rang au sommet."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le classement de 1855 couvre l’ensemble du vignoble bordelais.","answer":false},"explanation":"Il se limite aux rouges du Médoc et à un seul Graves, Haut-Brion, avec un classement séparé pour les liquoreux de Sauternes et Barsac ; il n’a pas été conçu comme un inventaire de la Gironde entière."},
+      {"type":"cloze","prompt":"Complète.","payload":{"text":"La liste de 1855 a été confiée par la {{chambre de commerce}} de Bordeaux aux {{courtiers|courtiers en vin}} de la place."},"explanation":"Ce sont des intermédiaires qui connaissaient les cours des vins au jour le jour, d’où un classement fondé sur ce que le marché payait."}
+    ],
+    status: "needs_review",
+    to_check: ["Prix comme critère principal (⚠️) : Decanter, Farr Vintners, The Wine Doctor et Comptoir des Millésimes le disent, mais ce sont des sources de niveau 2b ; le site du Conseil des Grands Crus Classés en 1855 parle d’expérience, de qualité du terroir et de renommée sans citer le prix, et Wine Spectator ne nomme aucun critère. Ouvrage d’historien (Markham, 1855) ou JancisRobinson.com non lus.","Cantemerle (⚠️, non repris dans la synthèse) : ajouté en 1856 selon Decanter, Farr et Comptoir des Millésimes (omis par erreur), mais Wine Spectator le place dans la liste d’origine.","Nombres de crus en 1855 (⚠️, non repris) : 58 rouges selon Wine Spectator (4 premiers), 61 aujourd’hui (5 premiers) selon le Conseil 1855 ; pour Sauternes et Barsac, Farr donne 9 premiers et 11 seconds, Wine Spectator 11 et 12 ou 13 : à recouper sur le texte du classement."],
+    src: "Mille Vignes, P. Lepeltier, p. 160, 179, 184 ; Conseil des Grands Crus Classés en 1855 (gcc-1855.fr) ; Wine Spectator, « The 1855 Bordeaux Classification » et « The 1855 Classification » ; Decanter, « The official Bordeaux wine classification of 1855 » ; Farr Vintners, « Your guide to the 1855 classification » ; Comptoir des Millésimes, « Classement de 1855 » ; The Wine Doctor, classement de Sauternes",
+    page: 179
   },
   {
     id: 5,
     theme: "Géographie viticole",
     sous: ["Notion de terroir"],
     niveau: "Fondamental",
-    geo: { pays: "France", region: "Bourgogne", appel: null },
+    geo: {"pays":"France","region":"Bourgogne","appel":null},
     titre: "Le climat bourguignon",
-    synth: "En Bourgogne, un « climat » n'est pas la météo : c'est une parcelle précise, délimitée et nommée, avec sa géologie et son exposition. Classés à l'UNESCO, ils incarnent l'idée française de terroir.",
-    mnemo: "« En Bourgogne, le climat est un lieu, pas un temps. » Un climat = une parcelle à nom propre (ex. Montrachet).",
-    flash: { q: "Que désigne un « climat » en Bourgogne ?", a: "Une parcelle de vigne délimitée et nommée.", keys: [["parcelle","parcelles","lieu","lieu-dit","terroir"],["délimitée","délimité","nommée","nom"]] },
-    qcm: { q: "Les climats de Bourgogne sont…", opts: ["Des prévisions météo", "Des parcelles délimitées classées UNESCO", "Des cépages locaux", "Des techniques de taille"], good: 1 },
-    src: "Lepeltier, Mille Vignes — Terroir",
-    page: 158
+    synth: "En Bourgogne, « climat » ne renvoie pas à la météo : le mot désigne un lieu-dit parcellaire aux conditions géologiques et climatiques propres, délimité, nommé et hiérarchisé. Selon le livre, il apparaît dans le vocabulaire viticole en 1584 pour le Clos de Bèze, puis se généralise et devient réservé aux parcelles et à leurs vins ; les notables urbains en font la norme de l’origine et de la qualité d’un vin. Ces climats suivent pourtant la propriété foncière, pas forcément l’homogénéité du sol ou de la topographie, et les classements savants du XIXe siècle (Jullien 1816, Morelot 1831, Lavalle 1855, comité de Beaune 1860) servent ensuite de base aux appellations des années 1930.",
+    mnemo: "Un climat bourguignon, c’est une adresse, pas un bulletin météo : un nom de lieu sur un plan cadastral, dessiné par les propriétaires.",
+    flash: {"q":"Que désigne un « climat » en Bourgogne ?","a":"Un lieu-dit parcellaire délimité, nommé et hiérarchisé, aux conditions de sol et de climat propres, et non la météo.","keys":[["parcelle","lieu-dit","lieu"],["délimité","délimitée","nommé","nommée","nom"]]},
+    qcm: {"q":"Sur quoi repose d’abord le découpage des climats, selon Lepeltier ?","opts":["Sur la propriété foncière, pas forcément sur l’homogénéité du sol","Sur des analyses de sol faites par les moines de Cîteaux","Sur des zones de températures mesurées au XIXe siècle","Sur le décret-loi de 1935 qui a créé l’AOC"],"good":0,"expl":"Les parcelles suivent les limites de propriété, qui ne coïncident pas toujours avec la géologie ; les moines n’ont pas laissé de trace de dégustation de terre, et les décrets des années 1930 sont venus après."},
+    exos: [
+      {"type":"ordering","prompt":"Remets dans l’ordre de publication ces classements des climats de la Côte-d’Or.","payload":{"items":["Jullien","Morelot","Lavalle","Comité d’agriculture de Beaune"]},"explanation":"Trois auteurs publient entre 1816 et 1855, puis un comité collectif propose en 1860 un plan hiérarchique qui sert de référence au syndicat de 1935 pour définir au moins une appellation (Clos-Vougeot)."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Les classements de climats du XIXe siècle reflétaient fidèlement les vins d’élite réellement consommés à l’époque.","answer":false},"explanation":"Selon le livre, l’essentiel du vin passait par les négociants, qui l’assemblaient et le vendaient sous une marque géographique ; les vignerons n’étaient que fournisseurs de raisins ou de moût, d’où un classement de notables qui ne reflétait cette réalité qu’imparfaitement."}
+    ],
+    status: "needs_review",
+    to_check: ["Première mention du mot « climat » en 1584 pour le Clos de Bèze (⚠️) : seule iDealwine (niveau 2b) la donne, dans les mêmes termes que le livre ; le résumé de Garcia (L’Atelier du CRH, 2014) place le sens bourguignon spécifique à partir du XVIIe siècle ; les textes d’historiens (HAL) sont bloqués, la date n’est pas recoupée. Elle figure déjà parmi les points à vérifier de docs/erreurs-du-livre.md.","Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre, non recoupée par une source lue.","Classements savants qui ne reflètent qu’imparfaitement la consommation d’élite, système des équivalences (⚠️) : thèse du livre (p. 184), non recoupée ; la question vrai/faux repose dessus.","Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée."],
+    src: "Mille Vignes, P. Lepeltier, p. 183-184 ; UNESCO, Les Climats du vignoble de Bourgogne (liste du patrimoine mondial 1425) ; Pérard et Jacquet, « Vin et patrimoine : l’exemple du Château du Clos-Vougeot », CULTUR 8(3), 2014 ; Garcia, L’Atelier du CRH 12, 2014 (résumé, DOAJ) ; iDealwine, « Un climat, c’est quoi ? »",
+    page: 183
   },
   {
     id: 189,
