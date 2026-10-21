@@ -60,9 +60,12 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 135 : fondateur de Calera « Josh Jansen » → Josh Jensen.
 - p. 136 : pression « 12 fois » celle de la surface vers 12-24 km → des centaines de MPa, soit des milliers de fois (le diagramme p. 137 donne 500-1000 MPa).
 - p. 138 : plus vieilles roches « plus de 500 millions d’années » → gneiss d’Acasta, environ 4 milliards d’années.
+- p. 140 : horizons « 0, A, B, C, R ou M » → au Référentiel pédologique 2008 (AFES, lu), R et M ne sont pas des horizons mais des couches (R : roche dure ; M : roche meuble ou tendre, craie, marne ; p. 26) ; la lettre est O ; le livre omet E (éluvial) et appelle « terre arable » l’horizon labouré, noté L (ex-Ap, p. 14) ; « B » ne désigne plus que BT (argilluvial) et BP (podzolique), un horizon d’altération sans accumulation étant noté S (p. 15-19).
 - p. 148 : Paraje Altamira reconnue « en 2017 » → indication géographique reconnue par la résolution INV n° 44/2013 du 6 décembre 2013 (BO du 13 janvier 2014) ; 2017 = extension de la zone (résolution E 82/2017).
 - p. 345 (bibliographie) : Karbowiak et al. 2019, « Wine aging: a bottleneck story », cité dans « Nature » → *npj Science of Food* (PMC6684617).
 - p. 346 (bibliographie) : « Starkenman, Christian, et al. », guêpes et levures (PNAS 2012) → premier auteur Irene Stefanini (Stefanini et al., PNAS 109(33), 2012).
+- p. 149 : sols viticoles « anthroposols » parce que modifiés « à plus de 50 % » → le Référentiel pédologique 2008 exige une transformation sur au moins 50 cm d’épaisseur (anthroposols transformés) ; le critère de 50 % porte sur le volume de matériaux artificiels (anthroposols artificiels) ; concept jugé « très restrictif », peu de sols agricoles y entrent (p. 91).
+- p. 154 : Orléans « devenu au XVIe siècle » un grand vignoble commercial → déjà réputé au Moyen Âge : le roi d’Angleterre en fait acheter en 1206 et 1215, lettres royales de 1451 (Dion, Annales de géographie 1952, p. 419-420, lu). Le rôle de la Loire et de la Beauce est confirmé.
 - p. 156 : le 18e amendement « interdit la consommation » → il interdisait fabrication, vente et transport, pas la possession ni la consommation (ratifié en 1919, en vigueur en 1920, abrogé en 1933).
 - p. 159 : clos de Parnay « classé » et construit en 1894 → inscrit aux Monuments historiques en 2011, construit en 1896 (Mérimée).
 - p. 160 : karez de Turpan « inscrits » à l’UNESCO, 1 000 puits et 1 600 km → liste indicative seulement (2008) ; plus de 1 100 karez et plus de 5 000 km.
@@ -147,7 +150,8 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 88 : Darricau, La Vigne et ses plantes compagnes (2019), Diego Tomasi et le roncier, « baragane » ; jachère luzerne-vesce-avoine contre le court-noué (non retrouvés).
 - p. 90 : échelle de permaculture en dix niveaux d’Alain Malard (non retrouvée).
 - p. 91 : Restinclières « 53 ha », INRA « depuis 1990 » (≈ 50 ha ; 1990 = achat par le Département, INRA vers 1995).
-- p. 92 : viticulture = 15,6 % des pesticides pour 3,2 % de la SAU (source de 2002 introuvable ; Sénat, 2012 : 14,4 % et 3,3 %).
+- p. 86 : oïdium et mildiou = « la quasi-totalité » des traitements fongicides → Ecophyto R&D (INRA, 2009, lu) y ajoute la pourriture grise : 17 à 20 % de l’IFT fongicide dans les essais bordelais. Nuance.
+- p. 92 : viticulture = 15,6 % des pesticides pour 3,2 % de la SAU (source de 2002 introuvable ; Sénat, 2012 : 14,4 % et 3,3 % ; Ecophyto R&D 2009, lu : environ 20 % en masse pour 3,7 % de la SAU ; unités différentes).
 - p. 94 : Larrère, Du bon usage de la nature « 1998 » (Aubier, 1997, une source) ; « Grand Partage » datant du début des années 1980.
 - p. 95 : carte bio 2020 : Provence 43,89 % (≈ 30 % pour PACA ailleurs), Champagne 6,15 % non recoupé ; France ≈ 137 400 ha, 17 %.
 - p. 96-97 : Pineau, La Corne de vache et le Microscope (2019 ; 2020 selon La Vie des idées) ; date de l’AVN ; S.A.I.N.S. (une source) ; définition du vin naturel chez Jullien (non lue).
@@ -159,20 +163,25 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 113-115 : latitudes sud 25-45° (30-40° chez Schultz et Jones) ; altitude : acidité +1 % par 100 m ; retard de végétation selon Galet (non lu) ; limites d’altitude du Beaujolais (rien dans le cahier des charges).
 - p. 114 : Etna « 1000 m au sud et à l’est, 800 m au nord » → le disciplinare trace des courbes variables (800-1000 m au nord, 400 m à l’est, 600 m au sud-ouest) ; le livre écrit DOC dans le texte et AOC sur la carte (DOC).
 - p. 119 : Mont Saint Helens (1980) parmi les éruptions refroidissantes (non retenu par l’USGS).
-- p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, chap. 5, lu : durées variables selon les auteurs).
+- p. 120 : vendanges à Beaune 1559 « 21 août » (24 août ailleurs), 2003 « 19 août » (20 août chez Labbé) ; bornes de l’optimum médiéval (900-1300) et du petit âge glaciaire (XIVe-1850) contre 950-1250 et 1450-1850 (GIEC AR5, chap. 5, lu : durées variables selon les auteurs) ; pic froid 1620-1670 alors que Chuine et al. (Nature 2004, lu) reconstituent en Bourgogne des printemps-étés parmi les plus chauds de la série dans les années 1630-1680 (indicateurs différents) ; « trois dernières décennies parmi les plus chaudes du dernier millénaire » : la série de Chuine commence en 1370.
+- p. 121 : Drosophila suzukii rangée parmi les effets du réchauffement, attaques de 2014 → Rouzès et al. (J. Int. Sci. Vigne Vin, 2012, lu) la décrivent comme espèce invasive, détectée à Sauternes et Barsac aux vendanges 2011, sans dégât ni lien climatique cité.
 - p. 121 : vignoble d’Angleterre et du pays de Galles 2 700 ha (3 758 ha en 2021) ; réchauffement préindustriel de Ruddiman « plus de 1 °C » (0,8 °C) ; salinité 1,28 g/L, « cold units » d’Afrique du Sud, « chaos climatique » attribué à Jamie Goode (non retrouvés).
 - p. 124-125 : la Bourgogne modèle du système d’appellations (l’INAO cite d’abord Champagne, cognac, Bordeaux) ; recours croissant aux géologues ; œnogéologie de Georges Truc (dates non confirmées).
 - p. 130 : « pierre bleue » de Juliénas et Côte-de-Brouilly = diorite (l’interprofession ne parle pas de diorite) ; roches des crus communaux du Muscadet (Gorges, Le Pallet : sources divergentes). Cahier des charges AOC Juliénas (2024, lu) : granite rose et schistes volcano-sédimentaires, ni diorite ni pierre bleue.
 - p. 134 : travertin à Pouilly-Fumé (absent des descriptions de l’appellation) ; shales « plus de 46 % » des sédimentaires (non retrouvé).
 - p. 139-145 : basalte altéré « dix fois plus vite » que le granite ; pH de la craie champenoise (7,9-8,5) et des schistes de Moselle (< 6) ; albédo basalte 10 %, calcaire 35 % ; calcaires « urgoniens » à Châteauneuf-du-Pape ; étude Bourguignon (53 parcelles, 86 %) inédite ; Wittendal : 2 816 « climats » et non « vignobles » ; Seguin : travaux de 1969-1970, 1986 = synthèse.
+- p. 140-142 : lithosol présenté comme premier stade de la formation d’un sol → au Référentiel pédologique 2008, la plupart des lithosols résultent de l’érosion d’un sol antérieur (p. 219) ; « 9 GER » identifiés sur 7 propriétés bordelaises → l’étude parle de types de sols (van Leeuwen et al. 2008) et les GER « ne sont pas une catégorie » du Référentiel (p. XIII) ; « complexolyse » (citée d’après G. Truc) a un autre sens au Référentiel (attaque des minéraux par des composés organiques acides, podzolisation).
 - p. 147-149 : nombre d’UTB de l’atlas du Val de Loire et « plus vaste au monde » ; typologie de Vaudour en quatre sens (non retrouvée) ; foncier champenois 2020 : 1 196 000 €/ha (SAFER : environ 1 041 000) ; classement suisse par la végétation spontanée (contredit pour Vaud et Valais).
+- p. 150 : « un fait social et non géologique » attribué à Dion (d’après Pitte, 2010) → la formule n’est pas dans l’article de 1952 (lu), plus nuancé : l’homme fixe les limites de l’aire, mais à l’intérieur le terrain compte ; peut-être dans l’Histoire de la vigne (1959), non lue.
 - p. 151-157 : isotherme de 18 °C, carte de 1953 et carte de Chabin (2004) ; 200 vinaigriers à Orléans en 1787 ; dicton médocain sur les vignes qui « voient l’eau » ; papes d’Avignon « 1305-1362 » (papauté d’Avignon : 1309-1377).
 - p. 160-163 : Henri IV et le drainage du Médoc ; gadoues interdites en 1997 ; distance Madère-Maroc (647 km dans le livre, 520-600 km ailleurs).
+- p. 165-166 : typologie de Parain → d’après le compte rendu de Champier (Revue de géographie de Lyon, 1957, lu), le cellier voûté est caractéristique de la France centrale et le Sud loge son vin en chai non voûté ; le livre place le cellier voûté en Méditerranée. Article de Parain (1955) non lu.
 - p. 166-169 : Eiffel à Byrrh et chez CVNE ; Carbonneau « 50 architectures et 250 systèmes » ; fil de fer en 1875.
 - p. 174 : vignoble de Cognac 282 000 ha « en 1875 » (282 667 ha en 1877 selon le BNIC) et 78 000 ha en 2019 (76 000 à 84 729 selon la définition) ; « 14 hl de vin » incohérent.
 - p. 178-181 : Vienne « plus de 700 ha » (590-600 ha selon deux sources) ; Pontack’s Head 1660 ou 1666.
 - p. 183 : fondation de Cluny en 909 → 910 selon iDealwine (2b) ; écart mineur, non tranché.
-- p. 184-188 : « usages locaux, loyaux et constants » rattachés à 1905 (les sources : 1908 et 1919) ; Chablis : 400 ha en 1920 et seize ans de procès ; mot « climat » en 1584 ; plus de soixante autres AOC en 1936.
+- p. 182 : glossaire de la carte de Haut-Brion → définitions approximatives au regard du Référentiel pédologique 2008 : calcosol (sol carbonaté à horizon Sca, ancien « sol brun calcaire »), « sol arénacé » (le terme est arénosol : plus de 65 % de sables sur au moins 120 cm), peyrosol (au moins 60 % d’éléments grossiers sur 50 cm, graviers compris depuis 2008).
+- p. 184-188 : « usages locaux, loyaux et constants » rattachés à 1905 (absents de la loi de 1905 consolidée sur Légifrance, rédaction d’origine non lue ; présents dans la loi du 6 mai 1919, art. 13 d’origine) ; Chablis : 400 ha en 1920 et seize ans de procès ; « climat » de 1584 rattaché au Clos de Bèze (Garcia : Gevrey-Chambertin, sans préciser le clos) ; plus de soixante autres AOC en 1936.
 - p. 193-197 : Haraszthy « plus de 500 variétés » (300 à 350 selon les sources) ; Franschhoek « 1650 » (huguenots en 1688) ; dates de Jefferson ; chiffres Castel 2018.
 - p. 199 : Lavaux, ventes en baisse de 10 à 15 % après l’inscription (non retrouvé ; +30 % de fréquentation confirmé) ; candidature de la Rioja « refusée » (différée en 2015).
 - p. 204 : seules la pomme et la poire fermenteraient sans correction (thèse de l’autrice) ; proportions chiffrées de la baie ; 1 500 composés.
@@ -223,14 +232,21 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 55 : 41 B créé en 1882 par Millardet et de Grasset ; plus de 80 % du vignoble champenois (Comité Champagne).
 - p. 64 : clones 76, 95 et 96 ≈ la moitié du chardonnay : 47 ha sur 95 de vignes-mères de greffons certifiées en 2017 (FranceAgriMer ; une seule source).
 - p. 64 : section de sélection de 1944 créée par Jean Branas (IFV).
+- p. 79 : « mille milliards d’espèces » microbiennes, « 0,001 % » connu → cohérent avec la prédiction de Locey et Lennon (PNAS 2016, lu : 10^11 à 10^12 espèces, « potentiellement » 99,999 % non découvertes) ; c’est une extrapolation de modèle.
+- p. 97-98 : Haudricourt (L’Homme, 1962, lu) : « action directe positive » et « action indirecte négative » sont bien ses termes ; le rapprochement avec Fukuoka est propre au livre (Haudricourt refuse un déterminisme géographique).
 - p. 100 : DOC Aversa (asprinio) reconnue le 31 juillet 1993 ; vigne mariée sur tuteurs vivants, généralement des peupliers (disciplinare, art. 8).
 - p. 105 : gelée noire rattachée au gel d’advection (Le Cap et al., INRAE, SICTAG Mag’ 2021) ; Pleinchamp la range dans le gel d’évaporation.
+- p. 119-120 : bans de vendanges de Bourgogne comme thermomètre du printemps-été depuis 1370 ; été 2003 exceptionnel (environ 5,9 °C au-dessus de 1960-1989, devant 1523) (Chuine et al., Nature 432, 2004, lu).
 - p. 110 : système CCM de Tonietto et Carbonneau (2004) : 97 régions de 29 pays, IF = minimales de septembre (texte intégral lu).
 - p. 121 : règles VIFA (directive INAO du 3 juin 2021) : 5 % de l'encépagement, 10 % de l'assemblage, 10 variétés par couleur, convention de 10 ans.
+- p. 140 : 32 groupes de la base mondiale WRB et 34 grands ensembles de références (chapitres) du Référentiel pédologique 2008 (AFES, lu, annexe 5 et sommaire).
 - p. 142 : 51 grands crus d’Alsace sur une mosaïque géologique (Taste France ; CIVA, vinsalsace.com).
 - p. 142 : étude de van Leeuwen et al. (2008) : 7 crus bordelais, ~400 ha, 9 types de sols (texte IVES lu).
 - p. 148 : Unité terroir viticole de Carbonneau (cépage et système de culture ajoutés à l’UTB).
+- p. 154 : thèse de Dion sur les débouchés (ports, rivières navigables, Loire et Beauce pour Orléans) ; p. 158 : citation de Dion sur la création d’un vignoble en terrain neuf (Annales de géographie 1952, p. 418-420 et 431, lu).
+- p. 162 : apports de terre à Volnay (1468-1469) et à Beaune (1468) (Garcia 2011, lu).
 - p. 179 : Bordeaux classée à l’UNESCO (Port de la Lune, 2007) : le livre parle bien de la ville, pas du bâtiment de la Cité du Vin.
+- p. 183-185 : premier « climat » dans les actes viticoles en 1584 à Gevrey-Chambertin ; ordonnance du 31 juillet 1395 contre le gamay ; classements de Morelot (1831) et Lavalle (1855) (Garcia 2011, lu) ; premiers crus de 1943, climats au patrimoine mondial en 2015 (Garcia 2020, lu) ; 1re édition de Jullien en 1816 (avant-propos de la 2e édition, 1822).
 - p. 183-186 : lois du 1er août 1905, du 5 août 1908, du 6 mai 1919 ; loi Capus (1927) ; décret-loi du 30 juillet 1935 ; six AOC du 15 mai 1936 ; INAO en 1947 (sources INAO).
 - p. 195 : AVA créées en 1980 (Augusta, Missouri) ; 85 % des raisins de l’AVA.
 - p. 219 : jeune fino fortifié à 15,5 % vol. (schéma du livre), concordant avec les sources espagnoles.

@@ -115,12 +115,8 @@ FICHES.push(
       { type: "flashcard", prompt: "Pourquoi l’affirmation « 90 % de la biomasse terrestre = microbes » est-elle écartée ?", payload: { answer: "Bar-On et al. (2018) comptent environ 80 % de plantes et 15 % de bactéries ; ~90 % de la biomasse bactérienne est en sous-sol profond." } }
     ],
     status: "needs_review",
-    to_check: [
-      "Titre et date de Jamais seul : une seule page lue (Espace des sciences)",
-      "Estimation de 10^12 espèces microbiennes et fraction connue de 0,001 % : extrapolation modélisée (Locey et Lennon), texte PNAS non lu",
-      "Le chiffre de 90 % attribué à Selosse n’a pas été retrouvé dans ses écrits : il n’est pas repris"
-    ],
-    src: "Mille Vignes, P. Lepeltier, p. 79 ; Bar-On, Phillips et Milo (2018), The biomass distribution on Earth ; Our World in Data, Life on Earth ; Locey et Lennon, Scaling laws predict global microbial diversity ; Espace des sciences, Jamais seul",
+    to_check: ["Titre et date de Jamais seul : une seule page lue (Espace des sciences)","Estimation de 10^12 espèces microbiennes : Locey et Lennon (PNAS 113(21), 2016, lu) prédisent 10^11 à 10^12 espèces par extrapolation, jugée risquée par les auteurs ; « potentiellement 99,999 % » des taxons restent à découvrir : ordre de grandeur du livre cohérent, mais c’est une prédiction de modèle, une seule source","Le chiffre de 90 % attribué à Selosse n’a pas été retrouvé dans ses écrits : il n’est pas repris"],
+    src: "Mille Vignes, P. Lepeltier, p. 79 ; Bar-On, Phillips et Milo (2018), The biomass distribution on Earth ; Our World in Data, Life on Earth ; Locey et Lennon, Scaling laws predict global microbial diversity (PNAS 113(21), 5970-5975, 2016, lu) ; Espace des sciences, Jamais seul",
     page: 79
   },
   {
@@ -484,11 +480,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié",
-      "15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D 2010 non lu (HAL bloqué)"
-    ],
-    src: "Mille Vignes, P. Lepeltier, p. 92 ; Universalis, Rachel Carson ; Britannica, Rachel Carson ; L’Info Durable, Vigne et pesticides (mission sénatoriale 2012) ; Assemblée nationale, QE n° 100076",
+    to_check: ["Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié","15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D, tome III (INRA, 2009, lu) donne environ 20 % des pesticides en masse pour 3,7 % de la SAU, d’après Aubertot et al. 2005. Unités différentes (dépenses, masse, part de marché) : à ne pas mélanger"],
+    src: "Mille Vignes, P. Lepeltier, p. 92 ; Universalis, Rachel Carson ; Britannica, Rachel Carson ; L’Info Durable, Vigne et pesticides (mission sénatoriale 2012) ; Assemblée nationale, QE n° 100076 ; Mézière et al., Ecophyto R&D, tome III, viticulture (INRA, 2009, lu)",
     page: 92
   },
   {
@@ -675,12 +668,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’article de Haudricourt sur la domestication des animaux et la culture des plantes date de 1962.", answer: true }, explanation: "« Domestication des animaux, culture des plantes et traitement d’autrui », L’Homme, 1962." }
     ],
     status: "needs_review",
-    to_check: [
-      "Distinction de Haudricourt entre action directe positive (Occident) et indirecte négative (Asie) : thèse non confirmée dans les sources lues (analyse HAL bloquée)",
-      "Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
-    src: "Mille Vignes, P. Lepeltier, p. 97-98",
+    to_check: ["Distinction de Haudricourt : confirmée par l’article (L’Homme 2 (1), 1962, p. 40-50, lu) : les termes « action directe positive » et « action indirecte négative » sont les siens, avec pour modèles l’élevage du mouton d’un côté et l’igname de l’autre ; il oppose Occident méditerranéen et Chine ou Océanie mais refuse d’y voir un déterminisme géographique, et ne parle pas de Fukuoka : le rapprochement avec l’agriculture naturelle japonaise est celui du livre","Dates de vie de Haudricourt (1911-1996) : non vérifiées dans l’article lu","Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 97-98 ; Haudricourt, « Domestication des animaux, culture des plantes et traitement d’autrui », L’Homme 2 (1), 1962, p. 40-50 (Persée, lu)",
     page: 97
   },
   {

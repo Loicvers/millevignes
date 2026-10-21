@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 56 vérifiées, 285 à vérifier (872 points).
+341 fiches : 57 vérifiées, 284 à vérifier (870 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -17,10 +17,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe
 
 **Fiche 5** (p.183) — Le climat bourguignon
-- [ ] Première mention du mot « climat » en 1584 pour le Clos de Bèze (⚠️) : seule iDealwine (niveau 2b) la donne, dans les mêmes termes que le livre ; le résumé de Garcia (L’Atelier du CRH, 2014) place le sens bourguignon spécifique à partir du XVIIe siècle ; les textes d’historiens (HAL) sont bloqués, la date n’est pas recoupée. Elle figure déjà parmi les points à vérifier de docs/erreurs-du-livre.md.
+- [ ] Première mention du mot « climat » en 1584 : confirmée à Gevrey-Chambertin (Garcia 2011, lu, d’après Garcia et Labbé ; iDealwine) ; le rattachement au Clos de Bèze (⚠️) ne figure que chez iDealwine (niveau 2b). Garcia fixe le sens viticole au XVIIIe siècle et date de 1676 les premiers vins de climats vendus à Dijon (Chambertin et Clos de Bèze, Garcia 2020).
 - [ ] Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre, non recoupée par une source lue.
 - [ ] Classements savants qui ne reflètent qu’imparfaitement la consommation d’élite, système des équivalences (⚠️) : thèse du livre (p. 184), non recoupée ; la question vrai/faux repose dessus.
-- [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée.
+- [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée. Morelot (1831) et Lavalle (1855) sont confirmés par Garcia 2011 ; la 1re édition de Jullien (1816) par l’avant-propos de sa 2e édition (1822).
 
 **Fiche 6** (p.16) — Classification botanique de Vitis vinifera
 - [ ] Nom de la sous-espèce cultivée (⚠️) : sativa (livre) contre vinifera. Un glossaire (Wein-Plus, niveau 2b) juge « sativa » obsolète ; la base WFO (instantané 2019) range sativa et sylvestris en synonymes de V. vinifera. VIVC et IPNI n’ont pas pu être consultés.
@@ -247,7 +247,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 101** (p.79) — Selosse : les microbes, jamais seuls
 - [ ] Titre et date de Jamais seul : une seule page lue (Espace des sciences)
-- [ ] Estimation de 10^12 espèces microbiennes et fraction connue de 0,001 % : extrapolation modélisée (Locey et Lennon), texte PNAS non lu
+- [ ] Estimation de 10^12 espèces microbiennes : Locey et Lennon (PNAS 113(21), 2016, lu) prédisent 10^11 à 10^12 espèces par extrapolation, jugée risquée par les auteurs ; « potentiellement 99,999 % » des taxons restent à découvrir : ordre de grandeur du livre cohérent, mais c’est une prédiction de modèle, une seule source
 - [ ] Le chiffre de 90 % attribué à Selosse n’a pas été retrouvé dans ses écrits : il n’est pas repris
 
 **Fiche 102** (p.81) — Les mycorhizes : une alliance racine-champignon
@@ -320,7 +320,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 116** (p.92) — Après 1945 : la viticulture conventionnelle
 - [ ] Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié
-- [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable en ligne ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D 2010 non lu (HAL bloqué)
+- [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D, tome III (INRA, 2009, lu) donne environ 20 % des pesticides en masse pour 3,7 % de la SAU, d’après Aubertot et al. 2005. Unités différentes (dépenses, masse, part de marché) : à ne pas mélanger
 
 **Fiche 117** (p.93) — Raisonnée, intégrée, durable : les demi-mesures
 - [ ] Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé
@@ -359,7 +359,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 123** (p.97) — Agir indirectement : Haudricourt et Fukuoka
-- [ ] Distinction de Haudricourt entre action directe positive (Occident) et indirecte négative (Asie) : thèse non confirmée dans les sources lues (analyse HAL bloquée)
+- [ ] Distinction de Haudricourt : confirmée par l’article (L’Homme 2 (1), 1962, p. 40-50, lu) : les termes « action directe positive » et « action indirecte négative » sont les siens, avec pour modèles l’élevage du mouton d’un côté et l’igname de l’autre ; il oppose Occident méditerranéen et Chine ou Océanie mais refuse d’y voir un déterminisme géographique, et ne parle pas de Fukuoka : le rapprochement avec l’agriculture naturelle japonaise est celui du livre
+- [ ] Dates de vie de Haudricourt (1911-1996) : non vérifiées dans l’article lu
 - [ ] Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
@@ -502,6 +503,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 150** (p.120) — Le petit âge glaciaire et le grand hiver de 1709
 - [ ] Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850, chap. 5, tableau 5.1, lu), qui précise que les durées varient selon les auteurs : divergence de convention, non tranchée
+- [ ] Pic froid 1620-1670 du livre : en Bourgogne, la reconstitution de Chuine et al. (Nature 2004, lu), tirée des dates de vendange, donne au contraire des printemps-étés parmi les plus chauds de la série dans les années 1630 à 1680 (au-dessus du 90e centile) ; les deux ne mesurent pas la même chose (températures d’avril à août en Bourgogne) : divergence signalée, non tranchée
 - [ ] Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon
 - [ ] Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs
 - [ ] Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris
@@ -527,7 +529,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 154** (p.121) — Nouveaux ravageurs : flavescence dorée et Drosophila suzukii
 - [ ] Flavescence dorée : le livre présente l’extension nordique comme un effet du réchauffement, la source (Réussir Vigne, Thiéry) nuance fortement ; source unique
-- [ ] Drosophila suzukii : 2011 (Réussir Vigne) contre 2014 (livre) ; première détection française souvent donnée vers 2010 (source INRAE bloquée) ; aucune de ces dates n’est donnée comme bonne réponse
+- [ ] Drosophila suzukii : première détection dans le vignoble bordelais aux vendanges 2011, sans dégât (Rouzès et al., J. Int. Sci. Vigne Vin 46(2), 2012, lu ; Réussir Vigne) ; les attaques de 2014 dans le Centre et le Nord-Est (livre) et le lien avec le climat ne sont pas vérifiés
 - [ ] Cépages « gris » (livre) : non confirmés, seule la préférence pour les rouges est étayée
 
 **Fiche 155** (p.121) — Les nouveaux territoires viticoles
@@ -667,13 +669,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Altération chimique des roches (⚠️) : le détail (eau acide, hydrolyse) n’est pas doublé par deux sources de niveau 1 ou 2a ; la fiche n’en retient que l’idée générale.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
-**Fiche 179** (p.140) — Lire un sol : les horizons
-- [ ] Horizons O, A, E, B, C, R (⚠️, une seule source de niveau 2b) : Lepeltier omet l’horizon E ; la lettre est O (organique) et non le chiffre 0 ; le détail R/M/D du Référentiel pédologique n’est pas vérifié.
-- [ ] 34 grands ensembles de références du Référentiel pédologique 2008 (⚠️, une seule source, mais de niveau 1 : AFES).
-- [ ] 32 groupes de la base mondiale WRB (⚠️, une seule source, édition non précisée).
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-- [ ] Lessivage de E vers B (⚠️) : le sens du mouvement est déduit des définitions (E appauvri, B en accumulation) ; non formulé tel quel dans les sources lues.
-
 **Fiche 180** (p.142) — Pas de sol idéal pour la vigne
 - [ ] Frugalité de la vigne et préférence pour les sols pauvres sans carence ni excès (⚠️) : affirmation du livre, non vérifiée à part dans les sources.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -716,11 +711,11 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 187** (p.149) — L’homme fabrique le terroir
 - [ ] Prix du foncier champenois 2020 : le livre donne 1 196 000 €/ha, le chiffre SAFER relayé pour l’AOC entière est 1 041 000 €/ha ; seul l’ordre de grandeur (environ 1 M€/ha) est repris, divergence signalée.
 - [ ] Hors appellation : « moins de 14 000 €/ha » du livre, cohérent avec les terres et prés de la Marne (10 740 €/ha en 2020) mais mélange peut-être deux séries ; non repris en chiffre.
-- [ ] Seuil « plus de 50 % » d’anthroposols : non retrouvé (Référentiel pédologique AFES à consulter), non repris ; le terme lui-même est bien employé en pédologie viticole.
+- [ ] Anthroposols : le seuil du livre (« plus de 50 % ») est corrigé d’après le Référentiel pédologique 2008 (PDF lu, p. 91 : sol transformé sur au moins 50 cm ; le critère de 50 % concerne le volume de matériaux artificiels des anthroposols artificiels ; concept jugé « très restrictif » pour les sols agricoles). Une seule source, de niveau 1.
 - [ ] Murs, irrigation et dispositifs antigel comme leviers sur le climat : énoncé du livre, non recoupé par une source dédiée.
 
 **Fiche 188** (p.149) — Les quatre sens du mot « terroir »
-- [ ] Typologie en quatre sens (matière, espace, conscience, slogan) attribuée à Vaudour (2003) : non retrouvée dans les textes de Vaudour lus, ni l’année 2003 ; présentée comme « selon Lepeltier, d’après Vaudour ». Ne pas la confondre avec les quatre registres d’un article de 1996-98 (milieu exploité, plante, matière première, vin).
+- [ ] Typologie en quatre sens (matière, espace, conscience, slogan) attribuée à Vaudour : non retrouvée dans les textes de Vaudour lus (résumé de sa thèse, Académie d’agriculture 2002 ; compte rendu de son livre par J. Nicod, Annales de géographie 2004) ; présentée comme « selon Lepeltier, d’après Vaudour ». L’ouvrage de 2003 existe bien (Les terroirs viticoles. Définitions, caractérisation et protection, La Vigne/Dunod, 294 p.). Ne pas confondre avec les quatre registres d’un article de 1996-98 (milieu exploité, plante, matière première, vin).
 - [ ] Libellés des quatre sens (« agro-culturale », « terroir-matière », etc.) : reformulés d’après le livre, non recoupés.
 
 **Fiche 190** (p.151) — Les trois viticultures de Dion : Sud facile, marges incertaines, limite nord commerciale
@@ -729,8 +724,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Carte de 1953 et isotherme de juillet de 18 °C (⚠️) : non retrouvés dans les sources lues, volontairement non repris ici.
 
 **Fiche 192** (p.154) — Orléans et l’ordonnance de 1395 : quand le volume menace la qualité
-- [ ] Orléans grand vignoble commercial au XVIe siècle, ruiné par la quantité (⚠️) : thèse de Lepeltier/Dion non recoupée ; les Archives de Touraine et Garrier avancent la règle des 20 lieues (1577) et la concurrence de vins moins chers.
+- [ ] Orléans ruiné par la quantité (⚠️) : thèse de Lepeltier/Dion ; Jullien (éd. 1822) va dans ce sens (réputation perdue avec des plants plus productifs), mais les Archives de Touraine et Garrier avancent la règle des 20 lieues (1577) et la concurrence de vins moins chers. Le rôle de la Loire et de la Beauce et la renommée médiévale sont confirmés par Dion 1952 (p. 419-420, lu).
 - [ ] Règle des 20 lieues de 1577 (⚠️) : citée par des sources de niveau 2b ; texte de l’arrêt non lu.
+- [ ] Ordonnance de 1395 : date et interdiction du gamay confirmées (Garcia 2011, lu) ; l’interdiction du fumier n’y figure pas (⚠️, sources de presse seulement).
 - [ ] Chiffre de 200 vinaigriers à Orléans en 1787 (⚠️) : non retrouvé, volontairement non repris.
 
 **Fiche 193** (p.156) — La prohibition américaine : 18e et 21e amendements
@@ -741,9 +737,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 194** (p.158) — Le terroir, une œuvre humaine : de Dion à Roupnel
-- [ ] Citation de Dion (1952) et thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).
+- [ ] Citation de Dion (1952) : confirmée (Annales de géographie 61, p. 431, lu). Thèse d’une « naturalité » consacrée par les AOC (⚠️) : propos de l’autrice, aucune source de niveau 1 lue (extranet INAO bloqué).
 - [ ] Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.
-- [ ] Absence de texte français interdisant le remaniement des parcelles, étude de Garcia (⚠️) : thèse relayée par le livre, non vérifiée (HAL bloqué).
+- [ ] Absence de texte français interdisant le remaniement des parcelles (⚠️) : thèse relayée par le livre ; Garcia 2011 (lu) documente des apports de terre anciens (Volnay 1468-1469, Beaune 1468) mais ne traite pas de ce point.
 - [ ] Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 - [ ] Yquem : environ 100 km de drains (⚠️) : une seule source lue (iDealwine), le « plus de 100 km » du livre n’est pas confirmé.
@@ -852,12 +848,12 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Classement des Graves : liste des rouges en 1953, liste complète en 1959 ; sources de niveau 2b seulement (Vinatis, Wine with Seth, iDealwine), source INAO non lue
 
 **Fiche 210** (p.183) — Moines, notables et premiers classements des climats
-- [ ] Mythe des moines et hiérarchie fixée par les notables de Beaune et Dijon (⚠️) : thèse de l’autrice appuyée sur Garcia, Labbé et Jacquet ; articles HAL et Atlas des climats bloqués, non lus.
-- [ ] Mot « climat » attesté en 1584 (⚠️) : une seule source de presse (iDealwine), non recoupée ; l’inscription UNESCO de 2015 est confirmée.
-- [ ] Classements de Jullien (1816), Morelot (1831), Lavalle (1855) et du comité de Beaune (1860) (⚠️) : dates reprises du livre, sources académiques bloquées.
+- [ ] Mythe des moines et hiérarchie fixée par les notables (⚠️, une seule source académique, deux textes) : Garcia 2011 (lu) ne trouve pas de climats gallo-romains sur les coteaux, voit une emprise médiévale des domaines de Cluny et de Cîteaux sans hiérarchie des lieux, puis des domaines d’Église passés au XVIIe siècle aux parlementaires et à la noblesse de robe ; Garcia 2020 (lu) attribue la promotion des climats à ces notables dijonnais. Labbé, Jacquet et l’Atlas des climats non lus.
+- [ ] Mot « climat » en 1584 : confirmé à Gevrey-Chambertin (Garcia 2011 ; iDealwine) ; l’inscription UNESCO de 2015 est confirmée (UNESCO ; Garcia 2020).
+- [ ] Classements : Morelot (1831) et Lavalle (1855) confirmés par Garcia 2011 (une source) ; 1re édition de Jullien en 1816 confirmée par l’avant-propos de sa 2e édition (1822) ; comité de Beaune (1860) confirmé par Pérard et Jacquet 2014 (voir fiche 5). Jullien classe les vins à l’échelle de la France par classes et par dégustation, pas par climat.
 
 **Fiche 211** (p.184) — De la fraude à l’INAO : la chronologie fondatrice des appellations
-- [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : les sources lues la rattachent à 1908 (UMC) et 1919 (INAO) ; texte de 1905 non lu (Légifrance bloqué).
+- [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : absente de la loi de 1905 dans sa version consolidée (Légifrance, lu ; rédaction d’origine non consultée) ; présente dans la loi du 6 mai 1919 (art. 13, rédaction d’origine, et art. 1 dans sa version de 1966 ; Légifrance, lu) ; les autres sources la rattachent à 1908 (UMC) et à 1919 (INAO ; Garcia 2020).
 
 **Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
 - [ ] Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.
@@ -900,7 +896,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Terrasses du Lavaux : Xe siècle selon le livre, XIe siècle selon l’UNESCO (non utilisé dans la fiche).
 - [ ] La Rioja : candidature différée en 2015 (une seule source de presse 2019), et lien avec le manque de cohésion de la filière = interprétation du livre.
 - [ ] Robert Mondavi comme modèle de l’œnotourisme actuel : une seule source (2b) sur les activités de Mondavi ; le rôle de « modèle » est l’avis du livre.
-- [ ] Routes des vins : Allemagne 1935, Bourgogne 1937, Alsace 1953 sur des sources 2b ; datation « années 1920 » du livre non retrouvée.
+- [ ] Routes des vins : Allemagne 1935, Alsace 1953 sur des sources 2b ; Bourgogne 1937 confirmée aussi par Garcia 2020 (première route touristique des vins en France) ; datation « années 1920 » du livre non retrouvée.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 223** (p.204) — Pourquoi le raisin fait du vin

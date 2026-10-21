@@ -119,13 +119,13 @@ pas seules à passer une fiche en ✅.
 
 | Référence | État |
 |---|---|
-| Vaudour 2003, *Les Terroirs viticoles* (Dunod) | livre — attendu |
+| Vaudour 2003, *Les Terroirs viticoles* (Dunod) | livre — attendu ; connu par le compte rendu de Nicod (*Annales de géographie*, 2004) et le résumé de thèse (2001), lus le 21/10/2026 |
 | Atkinson 2011, « Terroir and the Côte de Nuits » (*Journal of Wine Research* 22) | bloqué (payant) — attendu |
 | Wittendal 2004, ACP des vignes de la Côte | à tester — attendu |
 | Garcia et al. 2020, les moines n'ont pas goûté la terre (*Crescentis* n° 3) | à tester (université de Bourgogne) |
 | Garcia 2011, le goût du lieu (*Cahiers d'histoire de la vigne et du vin*) | à tester |
 | Garcia et al. 2010, vignoble gallo-romain de Gevrey (*Revue archéologique de l'Est*) | bloqué (OpenEdition) |
-| Garcia et al. 2014, construction des climats ; Garcia, Labbé et Quiquerez 2017 | à tester |
+| Garcia et al. 2014, construction des climats ; Garcia, Labbé et Quiquerez 2017 | à tester ; lus à la place : Garcia 2011 (EUD, halshs-00599282) et Garcia 2020 (*POUR* 237-238), 21/10/2026 |
 | Garcia et Jacquet 2020, trajectoire du terroir (in Yengué et Stengel) | livre |
 | Jacquet 2009, appellations et typicité (*Territoires du vin* n° 1) | à tester |
 | Jacquet 2018, le goût de l'origine 1947-1974 (*Crescentis*) | à tester |
@@ -134,11 +134,11 @@ pas seules à passer une fiche en ✅.
 | Vincent et Jacquet 2012, le Kimméridgien à Chablis (congrès des terroirs) | à tester |
 | Lucand 2019, étiquettes de Bourgogne (*Crescentis* n° 2) | à tester |
 | Wolikow et Jacquet (dir.) 2018, *Bourgogne(s) viticole(s)* | livre |
-| Dion 1934, 1990, 2010 ; Pitte (dir.) 2010 ; Delay et Chevallier 2015 (*Cybergeo*) | livre / bloqué |
+| Dion 1934, 1990, 2010 ; Pitte (dir.) 2010 ; Delay et Chevallier 2015 (*Cybergeo*) | livre / bloqué ; Dion 1952 (*Annales de géographie*, Persée) lu le 21/10/2026 |
 | Parker 2017, *Le Goût de terroir* ; Hinnewinkel 2004 et 2010 ; Yengué et Stengel 2020 | livre |
-| Rouvellac 2013 (HDR) et 2020 (*Norois*) | à tester / bloqué |
+| Rouvellac 2013 (HDR) et 2020 (*Norois*) | 2013 lu (déposé le 21/10/2026, HAL tel-00933444) / 2020 bloqué |
 | Schirmer 2000 (*Annales de géographie*), 2018, 2020 ; Velasco-Graciet et Schirmer 2010 | bloqué / livre |
-| Parain 1955, maison vigneronne ; Royer 1980 | livre |
+| Parain 1955, maison vigneronne ; Royer 1980 | livre ; Parain connu par le compte rendu de Champier (*Revue de géographie de Lyon*, 1957), lu |
 | Dubrion 2011, routes du vin ; Minard 1860, carte des flux de vins | livre / domaine public |
 | Figeac-Monthus et Lachaud-Martin 2021, *Ville & Vin* ; Lachaud 2012 (Sauternais) | livre |
 | Bohling 2018, *The Sober Revolution* ; Colman 2010 ; Regan-Lefebvre 2022 ; Unwin 1991 | livre |
@@ -165,7 +165,7 @@ pas seules à passer une fiche en ✅.
 | IFV, élevage en barriques (fiche pratique) | à tester |
 | Stanziani 2003, falsification du vin 1880-1905 | bloqué (Cairn) |
 | Goode 2018, *Flawless* ; Goode 2021 ; Goode et Harrop 2007 ; Smith 2013 | livre |
-| Woolf 2018, *Amber Revolution* ; Feiring ; Legeron 2020 ; Morain 2019-2020 ; Pineau 2019 | livre |
+| Woolf 2018, *Amber Revolution* ; Feiring ; Legeron 2020 ; Morain 2019-2020 ; Pineau 2019 | livre (Pineau : couverture seule reçue, texte attendu) |
 | Chauvet (communications et livres) ; Néauport ; Léglise 2002-2003 ; Lagorce 2021 | livre |
 | Foulonneau 2019 ; Navarre et Belly 2017 ; Godart et Saint-Lô 2019 | livre |
 | Liger-Belair 2020 ; Liger-Belair et Rochard 2008 ; Louapre 2013 | livre / à tester |
@@ -184,3 +184,10 @@ Philosophie, anthropologie et essais (Descola, Latour, Larrère, Morizot, Deleuz
 Lévi-Strauss, Barthes, Scott, Haudricourt), littérature et textes antiques (Virgile, Columelle,
 Pline, Euripide, Platon, Rabelais, Nietzsche), accords mets-vins (Bourguignon, Faure-Brac, Franck,
 Goldstein…), films et revues : utiles pour les cours et masterclass, pas comme source de fait.
+
+## Sources déposées par Loïc et lues le 21/10/2026 (hors bibliographie du livre ou en complément)
+Haudricourt 1962 (*L'Homme*) ; Jullien, *Topographie de tous les vignobles connus*, 2e éd. 1822 (Google Books) ;
+Chuine et al. 2004 (*Nature* 432) ; Locey et Lennon 2016 (*PNAS*) ; Rouzès et al. 2012 (*J. Int. Sci. Vigne Vin*) ;
+Mézière et al., Ecophyto R&D tome III viticulture (INRA, 2009) ; AFES, Référentiel pédologique 2008 (PDF intégral) ;
+Jourjon, Morlat et Seguin 1991 (résumé seulement) ; lois du 1er août 1905 et du 6 mai 1919 (Légifrance, versions consolidées) ;
+règlement délégué (UE) 2019/33 (EUR-Lex). Hors cadre : Kouao et al. 2020 (climat de la Côte d'Ivoire), sans apport.
