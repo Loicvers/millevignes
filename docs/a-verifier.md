@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-336 fiches : 54 vérifiées, 282 à vérifier (827 points).
+336 fiches : 54 vérifiées, 282 à vérifier (834 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1233,6 +1233,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 296** (p.293) — Bordelaise, bourguignonne, champenoise : trois formes, trois logiques
 - [ ] Fiche entière (⚠️) : lecture de Pitte (2013) rapportée par le livre (épaule carrée contre dépôt, décantation fait culturel) ; aucune source indépendante lue, la fiche l’attribue à Pitte et au livre.
 - [ ] Date de la dénomination « bouteille bordelaise », ancienneté des verriers des Chartrons et « modèle le plus vendu du monde » : non repris (non confirmés).
+- [ ] Épaules carrées et dépôt, thèse culturelle de Pitte : une seule lecture (le livre) ; tout le cours reste attribué à Pitte et au livre.
 
 **Fiche 298** (p.294) — Le poids du verre dans le bilan carbone
 - [ ] 68 % (⚠️) : le livre ne précise pas qu’il s’agit de verre + transport selon des études australiennes (une seule source, JancisRobinson.com / R. Smart) ; les bilans français ont été rapprochés de plusieurs sources (Réussir Vigne, Adelphe, IFV), de niveaux variables.
@@ -1258,6 +1259,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 304** (p.297) — Choisir son obturateur : l’oxygène avant le goût
 - [ ] Niveaux de transmission d’oxygène par type de bouchon (technique faible à modéré, synthétique modéré à élevé, liège naturel très variable) (⚠️) : une seule fiche technique de l’AWRI ; le livre parle de « transfert » là où l’AWRI et l’OIV parlent de « transmission ».
+- [ ] Ordre capsule Saranex / bouchon technique (⚠️) : l’étude OIV 2017 place deux capsules Saranex et deux bouchons techniques parmi les moins perméables, sans les départager ; le schéma n’ordonne donc que « capsule à vis (très étanche) » puis technique puis synthétique.
+- [ ] Saran-étain environ dix fois plus étanche que le Saranex (⚠️) : fiche AWRI, en cc d’oxygène par jour (0,00005-0,0005 contre 0,0001-0,001) ; une seule source.
+- [ ] Bouchon technique parmi les moins perméables dans l’étude OIV 2017 (⚠️) : unité différente (mg/jour), classement sensoriel non toujours confirmé.
 
 **Fiche 305** (p.298) — Colmaté, aggloméré, technique : les bouchons de liège reconstitués
 - [ ] Typologie colmaté / multipièces / aggloméré (⚠️) : définitions et usages donnés par le livre, non recoupés par une source lue.
@@ -1304,6 +1308,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 316** (p.307) — Température de service : plages et refroidissement rapide
 - [ ] Effet de la taille du flacon (⚠️) : le livre le signale sans le chiffrer ; aucune source lue.
 - [ ] Graphiques p. 307 (⚠️) : unités et échelles illisibles sur les deux scans, aucune valeur reprise ; réfrigérateur modélisé à 0 °C d’air, atypique.
+- [ ] Seau à moitié d’eau et de glace, bouteille immergée environ 30 minutes (⚠️) : durée donnée par le seul Comité Champagne ; l’académie de Versailles confirme seulement que le seau est le moyen le plus efficace.
 
 **Fiche 318** (p.310) — Le symposion grec : boire ensemble, vin coupé d’eau
 - [ ] Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté).
@@ -1331,6 +1336,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] 1958 (⚠️) : premier verre de la future gamme Sommeliers (Bourgogne Grand Cru, de Claus Riedel) selon Wine Spectator et un revendeur, ce qui concorde avec le livre ; sources de presse et de revendeur seulement.
 - [ ] Gamme Sommeliers : lancée en 1973 (page Riedel), 31 formes en 2022 selon le livre (⚠️) : un revendeur parle de 10 formes au départ et 28 aujourd’hui après réduction de 31 ; sources producteur ou revendeur seulement.
 - [ ] The Wine Glass (⚠️) : lancement de juin 2018 avec Richard Brendon confirmé par JancisRobinson.com ; dimensions du livre non reprises (224 mm correspond à 8,8 in, non 8,1).
+- [ ] Origine de Riedel en Bohême (aujourd’hui en Tchéquie) (⚠️) : un seul revendeur (2b) ; le site Riedel donne seulement 1756 et Kufstein.
 
 **Fiche 324** (p.314) — Santé publique en France : Haut Comité, loi Évin, repères
 - [ ] « Code du vin » de 1954 (⚠️) : non retrouvé ; seule la création du Haut Comité est étayée (une source, le rapport du Sénat de 1979).
@@ -1378,6 +1384,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Senderens formalisant complémentarité et contraste, lien avec Puisais (⚠️) : non confirmés hors du livre.
 - [ ] Veronelli, Vaccarini et intensité (⚠️) : non vérifiés hors du livre.
 - [ ] Guide du vin de Raymond Dumay (⚠️) : date et contenu non vérifiés ; aucune question posée.
+- [ ] Tout le contenu repose sur le livre (Centelles, Senderens, Veronelli, Vaccarini non consultés) ; la fiche reste « à vérifier ».
 
 **Fiche 334** (p.328) — Chartier et les harmonies moléculaires
 - [ ] Lien avec Hervé This et avec elBulli (⚠️) : le travail de consultant auprès de Ferran Adrià (2006-2010) est confirmé par un entretien (niveau 2b), pas la lecture d’Hervé This.
