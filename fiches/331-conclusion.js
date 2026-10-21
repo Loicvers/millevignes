@@ -4,7 +4,7 @@ FICHES.push(
     id: 337,
     theme: "Histoire",
     sous: ["Moderne"],
-    niveau: "Fondamental",
+    niveau: "Intermédiaire",
     geo: null,
     titre: "Un vin de paradoxes : le constat de la conclusion",
     synth: "Lepeltier ouvre sa conclusion sur deux rencontres de 2022, le symposium « Act for Change » à la Cité du Vin de Bordeaux (juin) et la conférence en ligne « Green Wine Future » (mai) : toutes deux concluent qu’il est urgent d’agir face aux enjeux environnementaux. Mais pour quoi agir, alors que le vin semble avoir perdu son sens pour beaucoup de consommateurs ? Elle l’explique par une série de paradoxes : produit de luxe et boisson de privilégiés alors qu’il fut nécessaire et populaire, patrimoine et fleuron économique mais cible des lobbys antialcool, symbole de naturalité mais jamais aussi « hyperculturel », symbole d’enracinement mais jamais aussi mondialisé. Pour elle, ces paradoxes reflètent nos propres contradictions : le vin est un miroir de nos civilisations.",

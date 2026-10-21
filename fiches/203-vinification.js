@@ -1115,7 +1115,7 @@ FICHES.push(
     id: 359,
     theme: "Vinification",
     sous: ["Techniques"],
-    niveau: "Intermédiaire",
+    niveau: "Fondamental",
     geo: null,
     titre: "La stabilisation tartrique : cristaux, froid et inhibiteurs",
     synth: "Un vin est naturellement sursaturé en bitartrate de potassium et le dépose dès que le froid le saisit : ces cristaux de bouteille ne changent rien au goût, c’est un défaut d’aspect que le client ne tolère pas. Le tartrate de calcium, lui, se forme lentement, parfois des mois après la mise, et le froid ne le prévient pas bien. Pour l’éviter avant la mise, on peut faire cristalliser puis filtrer (stabilisation par le froid, énergivore), ajouter un inhibiteur qui coiffe les germes de cristaux (acide métatartrique, vite hydrolysé : environ trois mois à 20 °C ; CMC, autorisée dans l’UE pour la seule stabilisation tartrique des blancs, rosés et effervescents ; mannoprotéines, que libèrent aussi les lies), ou retirer les ions par électrodialyse (réservée à la stabilisation tartrique, elle baisse un peu le pH).",

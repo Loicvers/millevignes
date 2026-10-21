@@ -13,4 +13,5 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - Bilan objectif du projet. Décisions : double vérification réservée aux faits clés (champ `selon_livre` pour les détails secondaires, hors dette) ; prochain grand chantier = France par régions, appellations, cépages et styles (atlas déposés) ; le lien avec les bouteilles de la cave viendra après ; point d'usage réel dans quelques semaines.
 - Tri des 846 points à vérifier (sonnet, relecture opus) : 590 rangés « selon le livre », 256 restent en dette ; notes « Wikipédia retiré » gardées en dette.
 - Étiquettes géographiques normalisées et catalogue `REGIONS_FR` (test). Sauvegarde de la progression par le menu de partage.
+- Niveaux : les 20 cas litigieux tranchés selon l’avis de Claude, validé par Loïc.
 - Contexte réorganisé : CONTEXTE-PROJET réduit aux règles stables ; chiffres générés dans `docs/etat.md` ; ce journal ; sources lues dans `docs/sources-lues.md`.
