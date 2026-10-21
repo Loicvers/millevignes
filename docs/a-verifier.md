@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 57 vérifiées, 284 à vérifier (869 points).
+341 fiches : 57 vérifiées, 284 à vérifier (868 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -961,7 +961,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Mutage rattaché à Arnaud de Villeneuve : seul le XIIIe siècle est confirmé (INAO, Idealwine) ; l’année 1258 du livre n’est pas établie.
 - [ ] Pourriture noble : mécanisme tiré d’une source de presse (Idealwine) ; perte d’eau du livre (jusqu’à 50 % du poids de la baie) et perte de jus de la source (au moins 65 %) non réconciliées.
 - [ ] Vin de paille et vin de glace : détails de séchage et de température issus de sources de tourisme ou de blog, cahiers des charges non lus.
-- [ ] Mention « doux » à 45 g/l : règlement délégué 2019/33 lu via legislation.gov.uk ; dérogations pour les vins secs non reprises ici.
 
 **Fiche 236** (p.221) — Macération carbonique, vins orange et qvevri
 - [ ] Michel Flanzy, 1934 : une seule source (notice INRAE Prodinra).

@@ -107,7 +107,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    src: "Mille Vignes, P. Lepeltier, p. 293 ; règlement délégué (UE) 2019/33, annexe VII (copie legislation.gov.uk) ; directive 2007/45/CE (copie legislation.gov.uk) ; BO-agri, cahier des charges AOC Alsace / Vin d’Alsace ; INAO, fiches Château-Grillet et Alsace.",
+    src: "Mille Vignes, P. Lepeltier, p. 293 ; règlement délégué (UE) 2019/33, annexe VII (texte officiel EUR-Lex lu le 21/10/2026 et copie legislation.gov.uk) ; directive 2007/45/CE (copie legislation.gov.uk) ; BO-agri, cahier des charges AOC Alsace / Vin d’Alsace ; INAO, fiches Château-Grillet et Alsace.",
     page: 293
   },
   {
