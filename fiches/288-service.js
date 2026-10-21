@@ -443,8 +443,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.","Accueil hostile de l’étiquette de 1924 (⚠️) : rapporté par le livre seul.","Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b ; le Journal officiel n’a pas pu être lu."],
-    src: "Mille Vignes, P. Lepeltier, p. 302-303 ; Decanter, Mouton Rothschild labels ; Decanter, Jacques Chirac and the Mouton upgrade ; National WWII Museum, Mouton Rothschild and the 1945 Victory Vintage ; Château Mouton Rothschild, site officiel (art des étiquettes) ; Club oenologique, Mouton-Rothschild’s legendary labels and the forgotten artist ; The Drinks Business, The thirst for first (2019).",
+    to_check: ["Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.","Accueil hostile de l’étiquette de 1924 (⚠️) : rapporté par le livre seul.","Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b et par Spurrier et Dovaz (1992, p. 85-86) ; le Journal officiel n’a pas pu être lu."],
+    src: "Mille Vignes, P. Lepeltier, p. 302-303 ; Decanter, Mouton Rothschild labels ; Decanter, Jacques Chirac and the Mouton upgrade ; National WWII Museum, Mouton Rothschild and the 1945 Victory Vintage ; Château Mouton Rothschild, site officiel (art des étiquettes) ; Club oenologique, Mouton-Rothschild’s legendary labels and the forgotten artist ; The Drinks Business, The thirst for first (2019) ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 85-86",
     page: 302
   },
   {

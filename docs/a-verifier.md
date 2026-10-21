@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-365 fiches : 67 vérifiées, 298 à vérifier (863 points).
+365 fiches : 67 vérifiées, 298 à vérifier (861 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -973,7 +973,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pasteur chargé en 1863 d’étudier les maladies du vin (⚠️) : une seule source (Institut Pasteur) ; la parution des Études sur le vin en 1866 est confirmée (Handbook of Enology, vol. 1, p. 2 ; Science History Institute).
 - [ ] Chaptal chimiste (⚠️) : une seule source (Oxford Companion to Wine).
 - [ ] Lien ferrocyanure / création du DNO et décret du 20 mai 1955 (⚠️) : une seule source (IFV) ; le rôle personnel de Jean Ribéreau-Gayon dans la validation du ferrocyanure n’apparaît dans aucune source lue.
-- [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; la préface du Handbook of Enology (2006) défend la thèse inverse, sans nivellement de la qualité ; Peynaud y apparaît comme coauteur de Ribéreau-Gayon (1947-1982), collaborateur plutôt qu’élève.
+- [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; la préface du Handbook of Enology (2006) défend la thèse inverse, sans nivellement de la qualité. Peynaud y apparaît comme coauteur de Ribéreau-Gayon (1947-1982) ; Spurrier et Dovaz (1992) le présentent comme son « premier élève et premier collaborateur ».
 - [ ] Peynaud partisan de peu d’interventions et d’une qualité gagnée au vignoble (⚠️) : citations rapportées par le livre p. 238, source primaire (Le Vin et les Jours) non lue.
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
@@ -1081,7 +1081,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 271** (p.263) — Odeur ou arôme : deux voies vers le nez
 - [ ] Odeur = voie orthonasale, arôme = voie rétronasale (⚠️) : usage de vocabulaire propre au livre, non universel (le livre lui-même emploie « arôme » pour les deux) ; une seule source lue (Spence 2012) décrit les deux voies, sans cette terminologie.
 - [ ] Mémoire, émotions et souvenirs propres à chaque dégustateur (⚠️) : thèse du livre (G. Lepousez), non recoupée par une source lue ; seule la variabilité des récepteurs est confirmée.
-- [ ] Goût surtout issu de l’olfaction rétronasale (⚠️) : une seule revue lue (Spence 2012, qui cite Shepherd), citée dans le cours avec cette réserve.
 
 **Fiche 272** (p.263) — Primaires, secondaires, tertiaires : d’où viennent les arômes
 - [ ] Nombre de composés volatils (⚠️) : « 700 à 1 000 » est attribué au livre ; Styger, Prior et Bauer (2011) donnent environ 1 000 composés pour le profil d’un vin, le Handbook of Enology (vol. 1, p. 256) « plusieurs centaines » pour le raisin ; fourchette exacte non retrouvée.
@@ -1099,7 +1098,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Roue d’Ann Noble (⚠️) : première publication en 1984 (Am. J. Enol. Vitic. 35:107-109), version modifiée en 1987, d’après le site officiel de la roue et un entretien avec Ann Noble (niveau 2b) ; le livre écrit 1980 et parle de roues de couleurs, alors que Noble cite des roues de saveurs ; l’article de 1984 n’a pas été lu directement.
 
 **Fiche 279** (p.271) — Le sucré du vin : sucres résiduels, glycérol, bois et fraude
-- [ ] Rôle sucrant de l’alcool (⚠️) : affirmation du livre, non recoupée par une seconde source.
 - [ ] Glycérol (⚠️) : OENO One (citant Noble et Bursick, 1984) place le seuil de sucrosité vers 5 g/l ; pour le Handbook of Enology (vol. 2, p. 56-57), 5 g/l est la teneur minimale habituelle (jusqu’à 15-20 g/l) et l’effet sur la saveur demande des doses bien supérieures ; le chiffre du livre (8 g/l) n’est pas repris.
 - [ ] Triterpénoïdes sucrés du bois neuf (⚠️) : les travaux de l’ISVV (Marchal et al., 2015 ; Gammacurta et al., 2019) sont confirmés, mais la date de 2020 donnée par le livre n’est pas retrouvée ; seule l’équipe est citée.
 - [ ] Arômes sucrés (vanille, fruits mûrs) qui n’activent pas le récepteur du sucré (⚠️) : thèse du livre, non recoupée.
@@ -1110,7 +1108,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] « Unique capteur de l’acidité », « acide tartrique rare dans la nature » (⚠️) : formulations simplifiées ou non vérifiées ; non reprises.
 
 **Fiche 281** (p.273) — Salé, salin, amer : ce que le vin contient vraiment
-- [ ] Amertume (⚠️) : 25 récepteurs confirmés (Chandrashekar, 2006 ; BitterDB) ; origine phénolique, rôle de l’alcool et de l’acidité, réflexe inné et apprentissage culturel : thèses du livre, partiellement recoupées ; « plus de 1 000 composés » (comptage de BitterDB, tous non testés sur les 25 récepteurs) et « facteur 1 000 » entre individus non repris.
+- [ ] Amertume (⚠️) : 25 récepteurs confirmés (Chandrashekar, 2006 ; BitterDB) ; origine phénolique et perception lente, en fin de bouche, confirmées (Spurrier et Dovaz, 1992, p. 188 et 215) ; rôle de l’alcool et de l’acidité, réflexe inné et apprentissage culturel : thèses du livre, partiellement recoupées ; « plus de 1 000 composés » et « facteur 1 000 » entre individus non repris.
 - [ ] Récepteur du salé (⚠️) : statut moins tranché dans la littérature que dans le livre (canaux ENaC, controverse en 2006) ; non repris.
 - [ ] Umami du vin (⚠️) : libération par l’autolyse des lies appuyée par une source de presse (Gault&Millau) ; l’acide succinique a un goût amer et salé, sans umami (AWRI ; Handbook of Enology, vol. 2, p. 7) ; non repris.
 - [ ] Calcium et magnésium, « sixième saveur » (⚠️) : hypothèse de recherche (récepteur CaSR, kokumi) ; seuils de 40 et 80 mg/l et place en milieu de bouche (Lepousez : finale persistante) non repris.
@@ -1238,7 +1236,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 312** (p.302) — Mouton Rothschild : l’étiquette d’artiste
 - [ ] Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.
 - [ ] Accueil hostile de l’étiquette de 1924 (⚠️) : rapporté par le livre seul.
-- [ ] Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b ; le Journal officiel n’a pas pu être lu.
+- [ ] Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b et par Spurrier et Dovaz (1992, p. 85-86) ; le Journal officiel n’a pas pu être lu.
 
 **Fiche 313** (p.302) — Lire une étiquette : les codes visuels
 - [ ] Quatre systèmes de signes et exemples de lecture (⚠️) : décrits par le livre d’après Celhay ; l’article de Celhay et Remaud (HAL) n’a pu être lu en entier.
