@@ -94,6 +94,22 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 281 : la dégustation « considérée comme un type de synesthésie » → correspondances intermodales ; la synesthésie stricte est rare (Spence et Wang, 2015).
 - p. 285 : « mercaptan (H2S) » → le sulfure d’hydrogène n’est pas un thiol ; étude de Starkenmann et Deneulin « 2017 » → J. Agric. Food Chem., novembre 2016 (quatre auteurs).
 - p. 273 et 285 : teneur en minéraux « 2 à 4 g », puis « 1 à 2 g/l » → environ 1,5 à 2 g/l, 4 g/l au plus (Parr et al., 2018, d’après Coombe et Dry).
+- p. 293 : vin en bouteille de verre « 75 % des achats dans le monde, soit 30 milliards de bouteilles » → 30 milliards ≈ toute la consommation mondiale (OIV 2023 : 221 Mhl, environ 29,5 milliards de bouteilles de 75 cl), pas 75 % de celle-ci.
+- p. 294 : verre = « 68 % en moyenne » des émissions de la filière → chiffre australien (R. Smart, via JancisRobinson.com) couvrant verre et transport ; bilans français : 28 à 50 % pour l’emballage (Bordeaux, Champagne, Bourgogne, IFV).
+- p. 292 : Kenelm Digby « 1603-1655 » → mort en 1665.
+- p. 295 : Portugal « 33 % » de la production mondiale de liège → environ 50 % de la production (APCOR, FAO ; la carte p. 299 dit bien 50 %) ; 33-34 % est sa part des surfaces.
+- p. 300 : Nouvel Empire égyptien « 1500 à 100 av. J.-C. » → environ 1550-1070 av. J.-C. (Met).
+- p. 302 : Mouton Rothschild « premier grand cru classé » à propos de 1924 → second cru en 1855, premier cru classé depuis 1973 (anachronisme de rang).
+- p. 311 : christianisme religion officielle « en 392 » → édit de Thessalonique, 380 (392 : interdiction des cultes païens).
+- p. 311 : « le médecin Joseph Reinach » remettant en 1853 un prix à Magnus Huss → Reinach, né en 1856, avocat et député ; la phrase « beaucoup d’ivrognes, pas d’alcooliques » est attribuée à un porte-parole de l’Académie vers 1852 (Prestwich).
+- p. 311 : « plus d’un demi-million de mastroquets » en 1880, « un pour 82 habitants » → 356 863 débits en 1880 hors Paris (Yvernès, 1889) ; le ratio 1 pour 82 correspond à 1913-1914.
+- p. 312-313 : verre « 224 mm / 8.1 inch » → 224 mm valent 8,8 in.
+- p. 314 : « À consommer avec modération » « obligatoire en 1989 » → mention volontaire ; seul le message sanitaire de l’art. L. 3323-4 du Code de la santé publique est obligatoire (réponses ministérielles, 2003 et 2009).
+- p. 314 : ivresse au volant « première cause de décès liés à l’alcool » → les cancers viennent en tête (Santé publique France, 2015 : 16 000 décès sur 41 000).
+- p. 317 (atténué) : Viandier de Taillevent « au XIIIe siècle » → la version de Taillevent est du XIVe siècle ; un Viandier anonyme plus ancien existe.
+- p. 326 : Route des vins de Bourgogne (1937) « un an après » la route allemande → la Deutsche Weinstraße date de 1935.
+- p. 329 : « en 2012, il développe à elBulli » (Ferran Centelles) → le restaurant a fermé le 30 juillet 2011.
+- p. 318-319 et 324-325 : le même sommelier prénommé « Philippe » puis « Alain » Bourguignon (incohérence interne).
 
 ## Non confirmés
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
@@ -159,6 +175,11 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 271-277 : nombre de bourgeons par papille du schéma p. 275 (à relire sur le PDF) ; « plusieurs millions » de cellules gustatives ; glycérol visqueux dès 8 g/l ; seuil de sucrosité 2 g/l ; fructose « deux fois » plus sucré ; molécules sucrantes du bois « identifiées en 2020 » (travaux d’Axel Marchal publiés en 2015 et 2019) ; acide succinique « umami » ; calcium à 80 mg/l et seuil de 40 mg/l ; récepteur du gras chez l’humain « en 2005 » ; roue de Gawel « 12 familles, 53 termes ».
 - p. 278-283 : étude Valentin et Ballester (Dijon, 2016, « 9 champs sémantiques ») non retrouvée ; typologie des six commentateurs de Peynaud et Blouin (une seule source).
 - p. 284-287 : Coutier « 1991 » ; pic du mot minéralité « vers 1994 » (de seconde main) ; indice de minéralité de David Lefebvre ; cristallisation sensible présentée comme une mécanique « bien connue ».
+- p. 288-294 : Chartrons 1723 ; forme bordelaise nommée en 1837 ; 3 000 / 30 / 2 verreries ; 80 % des vins bus dans les 24 h ; 2,5 millions de bouteilles champenoises vers 1770 ; 75 cl légal en 1866 et « quart populaire » de 0,7577 l ; Muscadet parmi les flûtes réservées (absent de l’annexe VII du règlement 2019/33) ; récit des marchands anglais qui embouteillent et sucrent au sucre de canne.
+- p. 295-299 : loi de 1937 sur le cycle de neuf ans (le minimum légal existe : décret-loi 169/2001) ; « loi de 1209 » (charte locale de Castelo Rodrigo) ; tire-bouchon généralisé « à partir de 1730 » (mention écrite 1681, brevet 1795) ; Penfolds, Yalumba, Hardys et 250 000 bouteilles ; capsule en Australie 10 % et 88 % (Halliday : environ 25 % en 2004, 91 % en 2013) ; bouchon de verre « depuis 2003 » (Wine Spectator : 2004) ; « 15 % » et « 20 % » de Spence et Wang (communiqué de l’APCOR, pas l’article) ; pourcentage du Maroc sur la carte (OCR douteux).
+- p. 300-304 : dates d’Akhénaton de la légende p. 303 ; « 8 + 1 + 1 » mentions obligatoires ; ordre de diffusion de la lithographie (Allemagne, Champagne, Bordelais) ; étiquette « deuxième critère après le prix » ; Leeuwin « 1981 » (millésime 1980) ; exposition du SFMOMA « en 2011 » (20 novembre 2010 - 17 avril 2011).
+- p. 305-316 : Gilgamesh et une « vigne » d’immortalité ; « Code du vin » de Mendès France (1954) ; lois de 1959 sur l’ivresse au volant ; 135 l en 1950 et 162 l en 1880 ; fin du vin à la cantine en 1956 (presse seulement) ; Pitte, Le Désir du vin « 2004 » (2009) ; courbes de refroidissement p. 307 et chiffres des enchères p. 308-309.
+- p. 317-329 : carte du Véry (1790) ; Union des sommeliers de Paris (1907), CAP 1980, BP 1984 ; concours du meilleur sommelier de France en 1961 ; Restaurant de Boulanger en 1765 (tradition, Spang) ; classification et apports de Centelles, Senderens, Veronelli, Vaccarini et Roca (livre seul) ; lien de Chartier avec Hervé This.
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -201,3 +222,11 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 272 : pH 3 à 4 = 1 à 0,1 mg/l d’ions H+ : calcul juste. p. 274 : 25 récepteurs de l’amer, un pour le sucré, un pour l’umami ; pas de carte de la langue.
 - p. 282-283 : Cité de la gastronomie et du vin de Dijon (2022) ; degrés d’alcool de la verticale Kronos de Cathy Corison (JancisRobinson.com, 2019).
 - p. 285 : la pierre à fusil ne vient pas « littéralement » des silex du sol : compatible avec Starkenmann et al. (2016), qui trouvent le même disulfane dans le silex et dans le vin sans montrer de transfert.
+- p. 293 : flûte d’Alsace imposée par le cahier des charges AOC Alsace ; clavelin de 62 cl ; bocksbeutel (annexe VII du règlement 2019/33).
+- p. 299 : Portugal ≈ 50 % de la production mondiale de liège (APCOR, FAO).
+- p. 302 : étiquette de Jean Carlu pour Mouton en 1924 ; étiquettes d’artistes depuis 1945.
+- p. 307 : la taille du flacon s’ajoute aux autres facteurs de refroidissement (« sans même tenir compte de la taille ») : pas d’erreur.
+- p. 311 : Magnus Huss crée le mot « alcoolisme » en 1849.
+- p. 314 : loi Évin, n° 91-32 du 10 janvier 1991.
+- p. 317-327 : Confrérie des Chevaliers du Tastevin (1934) ; étymologie de « sommelier » (bête de somme) ; repas gastronomique des Français à l’UNESCO (16 novembre 2010, accords mets-vins compris).
+- p. 329 : Asian Palate de Jeannie Cho Lee date bien de 2009 (le livre de 2011 est Mastering Wine for the Asian Palate).

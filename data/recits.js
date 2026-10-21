@@ -853,5 +853,131 @@ const RECITS = [
   "Le pic d’usage du mot « autour de 1994 » vient d’une étude citée par Parr et al. (2018), lue de seconde main ; le lien entre benzylméthanethiol et minéralité reste débattu.",
   "L’indice de minéralité de David Lefebvre (cendres moins potassium), sa théorie de la minéralisation et la cristallisation sensible sont rapportés d’après le livre, sans source indépendante ni validation."
  ]
+},
+{
+ "chapitre": "Les contenants du vin",
+ "pages": "288-294",
+ "question": "Pourquoi le vin est-il presque toujours dans une bouteille en verre, et pourquoi cette bouteille a-t-elle des formes si différentes ?",
+ "fil": [
+  "<b>Des jarres au tonneau.</b> Dans l’Antiquité, la terre cuite domine : dolia pour vinifier et stocker, amphores pour transporter et vendre. Le tonneau en bois finit par les supplanter, mais ses origines (Rhètes, Gaulois) et sa date restent débattues.",
+  "<b>Le verre prend le dessus.</b> Objet de luxe puis courant, le verre est associé à la gastronomie parce qu’il ne change pas le goût et laisse voir le vin. Au XVIe siècle, le mot « bouteille » désigne surtout un récipient en verre.",
+  "<b>La révolution anglaise.</b> Faute de bois, l’Angleterre fond le verre au charbon (Mansell, 1615) et obtient, avec Digby, des bouteilles épaisses et foncées, solides et bouchables au liège. Selon le livre, elles permettent d’embouteiller pour la vente, de faire le champagne effervescent et de mettre en cave les « new French clarets ».",
+  "<b>Des formes, des logiques.</b> Les verriers carrent les épaules de la bordelaise pour empiler et retenir les dépôts ; bourguignonne et champenoise gardent des épaules douces. D’autres formes régionales (flûte, clavelin, bocksbeutel) sont aujourd’hui encadrées dans l’Union européenne.",
+  "<b>Un contenant sous contrainte.</b> La contenance fait l’objet de normes (75 cl, liste européenne de quantités nominales), et le poids du verre pèse dans le bilan carbone : l’emballage représente de 28 à 50 % des émissions selon les bilans français.",
+  "<b>Quelles alternatives ?</b> Bag-in-box, PET, canette, vrac, réemploi permettent de réduire l’impact des vins non destinés à la garde, mais, pour Lepeltier, le principal frein reste le consommateur, attaché à l’image de qualité de la bouteille de verre."
+ ],
+ "defend": "Lepeltier défend l’idée que la bouteille de verre, grande innovation historique devenue symbole de qualité, doit aujourd’hui évoluer, et que ce changement dépend surtout de nos habitudes de consommation.",
+ "client": "« La bouteille en verre épais, mise au point en Angleterre au XVIIe siècle, a changé la garde du vin, mais elle pèse lourd dans son bilan carbone ; pour les vins du quotidien, d’autres contenants existent. »",
+ "filRouge": "Pourquoi le vin reste-t-il si souvent vendu en bouteille de verre, malgré son poids écologique ?",
+ "prudence": [
+  "Digby (⚠️) : l’attribution de la bouteille noire moulée est populaire, peu référencée ; ses dates de vie ne sont pas reprises.",
+  "Contenance de l’amphore (20 à 30 l), origine et date du tonneau (⚠️) : sources divergentes.",
+  "Récit du champagne et du « new French claret » (⚠️) : propos du livre, non recoupés.",
+  "Origine du 75 cl et date de 1866 (⚠️) : non confirmées.",
+  "68 % des émissions dues au verre : chiffre australien (verre et transport) ; les bilans français vont de 28 à 50 %.",
+  "Livre vs réglementation : le Muscadet n’est pas dans la liste réservée de la flûte d’Alsace."
+ ]
+},
+{
+ "chapitre": "Comment fermer le vin ?",
+ "pages": "295-299",
+ "question": "Pourquoi le liège ferme-t-il encore la plupart des bouteilles, alors que d’autres bouchages existent ?",
+ "fil": [
+  "<b>Un bouchon oublié, puis redécouvert.</b> Pour Lepeltier, qui s’appuie sur Jean-Robert Pitte, le liège sert déjà à fermer des récipients dans l’Antiquité, puis il disparaît avec le tonneau et le manque de contenants à obturer. Le vin se ferme alors avec des herbes, du bois, de l’étoupe ou de l’huile. Le retour du liège tient à la bouteille à l’anglaise, au verre épais et au goulot renforcé, que les marchands anglais bouchent avec ce matériau découvert au Portugal et en Espagne.",
+  "<b>Un arbre, une filière.</b> Le chêne-liège se laisse écorcer sans mourir : après un premier liège vierge vers 25 ans, il faut au moins neuf ans entre deux récoltes et le liège de qualité bouchon n’arrive qu’au troisième écorçage, environ 43 ans après la plantation. Le Portugal en fournit environ la moitié et protège cet arbre depuis très longtemps.",
+  "<b>Des atouts, mais pas de perfection.</b> Selon le livre, le liège flotte, est imperméable aux liquides, se comprime sans perdre sa forme et résiste à l’humidité. Il reste pourtant un matériau vivant, d’où des variations d’une bouteille à l’autre, et il peut gâter le vin, par le goût de bouchon ou par une oxydation indirecte.",
+  "<b>Les alternatives.</b> La capsule à vis, née en France, s’impose d’abord en Australie, après l’engagement de producteurs de riesling de la Clare Valley en 2000, et en Nouvelle-Zélande. Les bouchons techniques reconstituent du liège broyé et purifié ; les synthétiques sont peu coûteux mais vieillissent mal selon le livre ; le bouchon de verre, inerte, se rapproche de la capsule.",
+  "<b>Choisir par l’oxygène.</b> Tous les obturateurs se disent neutres au goût : le producteur choisit donc surtout la quantité d’oxygène qui passe, en fonction du vin et de sa garde. Les études comparatives se contredisent, et la répartition des bouchages dans le monde est difficile à établir faute de données indépendantes.",
+  "<b>Un symbole fort.</b> Le liège séduit aussi par son image de qualité et son faible coût écologique. Une étude de 2017 (Spence et Wang) montre que le bruit d’ouverture influence le jugement des consommateurs, ce qui fait du bouchage un enjeu de marketing autant que de technique."
+ ],
+ "defend": "Lepeltier défend qu’aucun bouchage n’est neutre ni parfait : le choix est technique (oxygène, garde), mais aussi symbolique et commercial.",
+ "client": "« Le bon bouchon dépend du vin et du temps qu’il doit attendre : le liège garde une image de qualité, mais la capsule, le bouchon technique ou le verre sont de vrais choix, pas des bouchons au rabais. »",
+ "filRouge": "Quel bouchon choisir pour un vin : liège, capsule à vis ou autre ?",
+ "prudence": [
+  "Part du Portugal : environ 50 % de la production mondiale de liège (carte p. 299) ; le « 33 % de la production » de la p. 295 ressemble à sa part des surfaces (34 %), lecture à confirmer.",
+  "Protection du chêne-liège : le livre cite une loi de 1209 ; une source décrit plutôt une charte locale et l’APCOR parle de « depuis le Moyen Âge » ; le minimum de neuf ans entre écorçages est légal aujourd’hui (décret-loi portugais 169/2001).",
+  "Le livre appelle « mâle » le liège vierge : seul « vierge » est retrouvé dans les sources lues.",
+  "Capsule à vis : le mouvement de 2000 est attesté pour la Clare Valley ; le livre cite d’autres maisons et une commande de bouteilles que les sources lues ne retrouvent pas, la fiche s’en tient donc à la Clare Valley. Taux australiens divergents : 10 % (2004) et 88 % (2013) pour le livre, environ 25 % et 91 % chez Halliday.",
+  "Part de chaque type de bouchage dans le monde : estimations contradictoires selon les fabricants ; les chiffres de 2019 du livre ne sont pas retrouvés, donc non repris, de même que les prix indiqués, qui restent des ordres de grandeur anciens.",
+  "Bouchon de verre : « 2003 » pour le livre, première commercialisation américaine annoncée pour mars 2004 par Wine Spectator.",
+  "Dates du livre non retrouvées et non reprises : 1937 pour le cycle légal de neuf ans entre écorçages, 1730 pour la généralisation du tire-bouchon (première mention écrite en 1681, premier brevet en 1795).",
+  "Étude de Spence et Wang (2017) : étude préliminaire, financement de Bompas & Parr déclaré et lien de Spence avec l’APCOR ; les pourcentages du livre viennent d’un communiqué de l’APCOR, non repris."
+ ]
+},
+{
+ "chapitre": "Les mythologies de l’étiquette",
+ "pages": "300-304",
+ "question": "Pourquoi une simple étiquette de vin raconte-t-elle autant de choses ?",
+ "fil": [
+  "<b>Un petit papier très ancien.</b> Authentifier et nommer le vin est une pratique millénaire : les jarres de l’Égypte du Nouvel Empire portaient déjà année de règne, domaine, lieu et nom du vigneron. Les sceaux antiques et les marques sur barriques en sont, pour Lepeltier, les descendants de moins en moins précis.",
+  "<b>L’invention du papier imprimé.</b> L’étiquette actuelle naît avec la mise en bouteille : rectangles de papier manuscrits, puis étiquettes lithographiées, plus colorées, moins chères et faciles à reproduire. Les motifs sont d’abord pris sur catalogue, avant de se différencier selon les besoins de chacun.",
+  "<b>De l’information à la rhétorique.</b> Les fraudes de l’époque phylloxérique et l’industrialisation généralisent l’étiquette, dont le rôle premier reste d’informer sur l’authenticité. La loi la normalise à mesure que naissent les appellations : mentions obligatoires, termes réservés comme château, clos ou cru, termes interdits aux vins sans indication géographique. Depuis le 8 décembre 2023, ingrédients et valeur énergétique s’y ajoutent.",
+  "<b>Les étiquettes icônes.</b> Dès 1924, le baron Philippe de Rothschild confie à Jean Carlu l’étiquette de Mouton, puis fait de l’artiste une signature annuelle à partir de 1945. Leeuwin Estate, Taittinger et les dessinateurs de Charlie Hebdo prolongent cet esprit, selon le livre, jusqu’à casser les codes du vin dans les années 1980-1990.",
+  "<b>Vue sans être lue.</b> L’étiquette est perçue globalement avant d’être lue. Celhay y décrit quatre systèmes de signes (mise en page, typographie, couleurs, illustrations) : le centrage évoque le classique, les lettres gothiques l’ancienneté, le papier blanc la qualité.",
+  "<b>Un récit à acheter.</b> Bobrie distingue des étiquettes qui racontent le vin et d’autres qui racontent le buveur. Avec la grande distribution, la vente en ligne et les réseaux sociaux, le visuel prend le pas sur l’information, et les vins naturels combinent contre-culture et retour à la nature."
+ ],
+ "defend": "L’étiquette n’est pas un simple support d’information : c’est un outil de normes, de marketing et de récit dont il faut savoir lire les codes.",
+ "client": "« Avant même que vous lisiez un mot, la mise en page, les lettres et les couleurs de cette étiquette vous racontent déjà une histoire. »",
+ "filRouge": "L’étiquette n’est-elle que du papier, ou dit-elle vraiment quelque chose du vin ?",
+ "prudence": [
+  "Le livre date le Nouvel Empire de « 1500 à 100 av. J.-C. » ; les sources donnent environ 1550-1070 av. J.-C. (une seule source de niveau 1).",
+  "Les dates entre parenthèses de la légende de l’étiquette d’Amarna (p. 303) ne correspondent pas à la chronologie courante du règne et ne sont pas reprises.",
+  "Le livre parle d’un nombre précis de mentions obligatoires ; les documents officiels comptent différemment, et deux mentions ont été ajoutées en décembre 2023 : mieux vaut retenir la liste.",
+  "Château, clos, cru : « seules AOP » pour le livre, AOP et IGP pour les noms d’exploitation selon les guides officiels ; le texte réglementaire de base n’a pas été lu directement.",
+  "Le livre appelle Mouton « premier grand cru classé » à propos de 1924 : c’est son rang actuel (deuxième cru en 1855, premier cru classé en 1973). Début de la série annuelle : 1945 ou 1946 selon les sources.",
+  "La lithographie date de 1796 (Senefelder) mais le livre situe l’essor des étiquettes dans les années 1820 ; le lien avec l’étiquette de vin repose sur le livre.",
+  "Plusieurs affirmations du livre (place de l’étiquette parmi les critères d’achat, ordre de diffusion géographique de la lithographie) n’ont pas été retrouvées ; l’exposition du SFMOMA existe bien (20 novembre 2010 - 17 avril 2011), mais elle n’est pas reprise dans les sources et ne sont pas reprises ; Leeuwin Estate, Taittinger et Mascarello reposent sur une seule source."
+ ]
+},
+{
+ "chapitre": "Boire le vin",
+ "pages": "305-316",
+ "question": "Pourquoi boit-on du vin, et comment les manières de boire ont-elles changé ?",
+ "fil": [
+  "<b>Un bien social.</b> Pour Lepeltier, l’histoire du boire est récente comme discipline et ne suit pas les grandes périodes politiques ou religieuses. Le vin s’est répandu parce qu’on l’a choisi, comme on choisit un ami : d’autres alcools offraient les mêmes propriétés. Choisir une boisson dit une identité, et les manières de boire se transmettent par les parents, les pairs ou un groupe que l’on veut rejoindre.",
+  "<b>L’Antiquité.</b> En Grèce, le culte de Dionysos fait du vin un passage de la vie sauvage à la vie cultivée, et le symposion encadre l’ivresse : le vin pur étant réservé au dieu, on le coupe d’eau, sous l’autorité d’un maître du banquet, avec une vaisselle spécialisée.",
+  "<b>Religion et médecine.</b> Le christianisme fait du vin le sang du Christ à l’eucharistie. Au Moyen Âge, la théorie des humeurs d’Hippocrate et de Galien fait du vin un médicament, à bien choisir pour qu’il ne devienne pas poison. Sous Louis XIV, Fagon oppose bourgogne et champagne, tandis que l’ivresse légère thérapeutique est peu à peu remise en cause.",
+  "<b>Fortifiant, puis fléau.</b> Au XIXe siècle, le vin passe pour le remède de l’alcool fort, quand Magnus Huss forge le mot « alcoolisme ». À partir de 1954, la France institutionnalise la lutte contre l’alcoolisme, puis encadre la publicité avec la loi Évin ; aujourd’hui, les repères officiels sont de 2 verres par jour au plus et 10 par semaine.",
+  "<b>Mesurer, coter, servir.</b> Les objets du boire se spécialisent : températures de service et refroidissement rapide à l’eau, verres hyperspécialisés ou universels. Certains crus sont aussi cotés comme des actions, ce que suivent les indices de Liv-ex (Fine Wine 1000, Fine Wine 50).",
+  "<b>Une révolution accélérée.</b> En un siècle, boissons, lieux et normes du boire ont basculé, entre « cuite » et « cru ». Pour Lepeltier, deux regards éclairent ce changement, le marketing et la sommellerie ; elle cite Fabrizio Bucella, pour qui, face au puritanisme actuel, boire pourrait devenir un acte de résistance."
+ ],
+ "defend": "Le vin est un bien social et un acte culturel : on le boit par choix, et les codes du boire se sont transformés, de la religion et de la médecine à la marchandisation.",
+ "client": "« On ne boit pas du vin parce qu’il le faut, mais parce qu’on l’a choisi : ce choix dit qui l’on est et avec qui l’on boit, et il a beaucoup changé en un siècle. »",
+ "filRouge": "Boit-on du vin par besoin ou par choix ?",
+ "prudence": [
+  "Le livre place l’officialisation du christianisme en 392 ; l’édit de Thessalonique date de 380, 392 étant l’interdiction complète des cultes païens.",
+  "La remarque « beaucoup d’ivrognes, pas d’alcooliques » est attribuée par le livre à un médecin nommé, pour une scène datée de 1853 ; Prestwich la rapporte à un porte-parole anonyme de l’Académie vers 1852, et l’auteur réel n’est pas identifié.",
+  "Plusieurs chiffres de la p. 311 (nombre de débits de boissons en 1880, un café pour 82 habitants, 162 l par personne) ne sont pas repris : les sources donnent environ 357 000 débits hors Paris en 1880, et le ratio de 1 pour 82 correspond plutôt à 1913-1914.",
+  "Le livre date de 1989 une mention obligatoire de modération ; la loi ne rend obligatoire que le message sanitaire de l’article L. 3323-4, la formule de modération étant ajoutée volontairement par les producteurs. La première loi sur l’ivresse au volant (1959), la fin du vin à la cantine en 1956 (presse seulement, aucun texte officiel lu) et le « Code du vin » de 1954 (introuvable) ne sont pas confirmés.",
+  "Le livre qualifie l’ivresse au volant de première cause de décès liés à l’alcool ; Santé publique France place les cancers en tête.",
+  "Bornes de la querelle bourgogne-champagne : 1650-1730 pour le livre, de 1652 à environ 1780 selon l’Union des Maisons de Champagne.",
+  "Mésopotamie et Gilgamesh (p. 306), Nietzsche abstinent, Homo imbibens (McGovern) et analogie Dionysos-Christ (Pitte) ne sont pas repris faute de source confirmée ; le titre et la date du livre de Pitte divergent.",
+  "Les courbes de température (p. 307) et l’infographie des enchères (p. 308-309) sont illisibles ou non attribuables ; la fiche technique du verre donne 224 mm pour 8,1 in, alors que la conversion exacte est 8,8 in.",
+  "La composition du panier Liv-ex a été révisée depuis le dossier de presse (Bordeaux Legends 40 et reste du monde 60 aujourd’hui contre 50 et 50 dans le livre)."
+ ]
+},
+{
+ "chapitre": "L’art de servir le vin : accords et sommellerie",
+ "pages": "317-329",
+ "question": "Pourquoi marie-t-on tel vin avec tel plat, et depuis quand ?",
+ "fil": [
+  "<b>Un art récent.</b> Boire du vin à table existe depuis la maîtrise de la vinification, mais l’art de marier un cru à un plat est, pour Lepeltier, une codification très récente. Au Moyen Âge, le vin est choisi selon la théorie des humeurs ; à la fin du XVIIIe siècle, le repas « à la française » apporte tous les plats ensemble, sans harmonie avec le vin.",
+  "<b>Les fondations.</b> Après la Révolution, les progrès de la vigne au chai et à la bouteille enrichissent les caves. Grimod de La Reynière publie le Manuel des amphitryons (1808), puis Brillat-Savarin la Physiologie du goût (1825), dont certains aphorismes codifient l’ordre des mets et des boissons. Le restaurant moderne, avec son menu et ses portions individuelles, offre alors un cadre au service du vin.",
+  "<b>Des accords fabriqués.</b> Pour Lepeltier, beaucoup d’accords perçus comme éternels sont une création politique et touristique des années 1920-1930. Elle s’appuie sur l’histoire des gastronomies régionales, de la carte de Cadet de Gassicourt (1809) au Club des Cent (1912), puis sur l’exemple bourguignon : Foire gastronomique, Paulée, confrérie du Tastevin.",
+  "<b>Le sommelier.</b> Le mot vient du « sommier », conducteur de bête de somme chargé des malles de la cour. Longtemps technicien de la cave, le sommelier est menacé dans les années 1960 par la crise de la restauration et la mise en bouteilles généralisée, puis se réinvente en conseiller, avec des concours et l’ASI (1969).",
+  "<b>Les théories des accords.</b> Le livre suit la chronologie de Roca et Centelles : accords classiques (subjectivité, régionalité, objectivité, essais et erreurs), puis contemporains (Senderens et la complémentarité ou le contraste, Veronelli et l’intensité). Centelles insiste sur l’intensité et la complexité du plat, Roca sur les émotions, Chartier sur les molécules aromatiques.",
+  "<b>La fabrique du goût.</b> Hanni propose d’accorder le vin au dîneur, Cho Lee ouvre aux palais asiatiques, et les algorithmes explorent de nouvelles frontières. Faute de vérité absolue, l’accord relève d’une fabrique du goût entre esthétique, économie et politique, que résume le « goût juste » de Jacques Puisais."
+ ],
+ "defend": "Les accords mets-vins ne sont ni naturels ni éternels : ils sont une construction historique, politique et culturelle, toujours redéfinie.",
+ "client": "« Cet accord qui vous paraît évident est plus récent qu’on ne le croit : il a été construit, et il peut encore se discuter selon vos goûts. »",
+ "filRouge": "Les accords mets-vins de nos régions sont-ils éternels ?",
+ "prudence": [
+  "Le livre place le Viandier de Taillevent au XIIIe siècle ; la version attribuée à Taillevent date de la fin du XIVe siècle (un Viandier anonyme plus ancien existe).",
+  "Le bouillon de Boulanger (1765) est une tradition que l’historienne Rebecca Spang n’a pas pu confirmer dans les archives.",
+  "Jeannie Cho Lee : Asian Palate date bien de 2009 ; son livre de 2011 (Mastering Wine for the Asian Palate) est un ouvrage différent.",
+  "Plusieurs dates et attributions (Foire de Dijon 1921, Paulée 1923, Club des Cent 1912, Michelin et étoiles des années 1930) reposent sur une seule source de niveau 2b ou sur le livre seul.",
+  "La classification des accords de Centelles, les apports de Roca, Veronelli, Vaccarini et Senderens ne sont pas recoupés hors du livre.",
+  "L’infographie des harmonies moléculaires (p. 328) est en partie illisible : seuls des exemples sûrs sont repris."
+ ]
 }
 ];

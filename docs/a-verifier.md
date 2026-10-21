@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-292 fiches : 50 vérifiées, 242 à vérifier (730 points).
+336 fiches : 54 vérifiées, 282 à vérifier (827 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1216,3 +1216,180 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Acidité (⚠️) : preuves jugées peu claires par Parr et al. 2018 ; l’acide succinique cité par le livre n’est pas retrouvé.
 - [ ] Goût salé (⚠️) : association rapportée par Parr et al. 2018 seul ; part de l’umami et du calcium avancée par le livre non confirmée ; non reprise.
 - [ ] Vins discrets, sucrés ou boisés, et primauté du nez sur le toucher (⚠️) : affirmations du livre, non retrouvées dans une source indépendante ; non reprises.
+
+**Fiche 293** (p.288) — Amphore, dolium, tonneau : les contenants du vin antique
+- [ ] Contenance de l’amphore, 20 à 30 l (⚠️) : une seule source chiffrée (environ 30 l pour une amphore gauloise) ; la fiche l’attribue au livre.
+- [ ] Origine et date du tonneau (⚠️) : trois sources, trois datations (Rhètes ou Étrurie vers 500 av. J.-C. ; invention gauloise remplaçant le dolium à la fin du IIe s. (Études héraultaises ; le ministère de la Culture parle de l’Antiquité tardive) ; généralisation au IIe s. apr. J.-C.) ; la fiche présente le débat.
+
+**Fiche 294** (p.292) — Mansell, Digby et la bouteille au charbon
+- [ ] Digby, inventeur de la bouteille (⚠️) : l’enquête de brevet citée par la revue spécialisée parle de bouteilles plus solides pour cidre, poiré et bière, pas expressément pour le vin ; l’attribution populaire manque de références. Dates de vie de Digby volontairement omises (le livre en donne une version erronée).
+- [ ] Bouteille « moulée, à base piquée, rebouchée au liège » et liège redécouvert au Portugal (⚠️) : propos du livre, non retrouvés dans les sources lues ; la fiche les attribue au livre.
+- [ ] Date du monopole de Mansell : 1615 (proclamation et brevet, revue spécialisée) ou 1623 (presse) ; la fiche cite les deux.
+
+**Fiche 295** (p.292) — Bouteille anglaise : champagne et « new French claret »
+- [ ] Ensemble de la fiche (⚠️) : récit du livre (marchands anglais, sucre de canne, prise de mousse en bouteille, reprise par les Champenois, soufre hollandais, new French claret), en partie recoupé par The Conversation (verre au charbon, liège, sucre ajouté en Angleterre décrit par Merret en 1662, déjà traité dans la fiche 237), qui ne dit pas que les marchands embouteillaient eux-mêmes et ne parle pas de sucre de canne ; reste à vérifier chez Pitte (2013) ou dans un ouvrage sur l’histoire du Champagne et du bordeaux.
+- [ ] Date de l’autorisation de vendre en bouteilles en France et chiffres de production champenoise : non repris (non confirmés).
+
+**Fiche 296** (p.293) — Bordelaise, bourguignonne, champenoise : trois formes, trois logiques
+- [ ] Fiche entière (⚠️) : lecture de Pitte (2013) rapportée par le livre (épaule carrée contre dépôt, décantation fait culturel) ; aucune source indépendante lue, la fiche l’attribue à Pitte et au livre.
+- [ ] Date de la dénomination « bouteille bordelaise », ancienneté des verriers des Chartrons et « modèle le plus vendu du monde » : non repris (non confirmés).
+
+**Fiche 298** (p.294) — Le poids du verre dans le bilan carbone
+- [ ] 68 % (⚠️) : le livre ne précise pas qu’il s’agit de verre + transport selon des études australiennes (une seule source, JancisRobinson.com / R. Smart) ; les bilans français ont été rapprochés de plusieurs sources (Réussir Vigne, Adelphe, IFV), de niveaux variables.
+- [ ] Poids moyen de la bouteille, 500 g / plus de 800 g (⚠️) : presse (Decanter) et AWRI, sans source normative.
+- [ ] Allègement de la Champagne à 835 g (⚠️) : seulement de la presse (Drinks International, Wine Industry Advisor) ; aucune source du CIVC lue ; date indiquée de façon divergente (2010 ou 2016), donc omise. « Des milliers de tonnes de verre » : non retrouvé.
+
+**Fiche 299** (p.294) — 75 cl et contenances légales : ce que fixe l’Union européenne
+- [ ] Origine du 75 cl : quart populaire de 0,7577 l, gallon impérial, barrique de 225 l (⚠️) : explications commerciales sans archives ; 50 gallons impériaux valent environ 227 l, non 225 l ; le quart populaire n’a pas été retrouvé.
+- [ ] Adoption légale du 75 cl en France en 1866 (⚠️) : aucune date légale retrouvée (Légifrance inaccessible) ; la fiche l’attribue au livre.
+
+**Fiche 301** (p.295) — Du liège antique à l’oubli, puis le retour avec la bouteille anglaise
+- [ ] Liège dans l’Antiquité (⚠️) : une source lue (FAO) confirme l’usage du liège par les Grecs pour des bouchons de vin et d’huile et par les Romains pour sceller des récipients, mais les amphores retrouvées en mer ne sont pas confirmées.
+- [ ] Oubli du liège, épisode des flotteurs de pêcheurs et diffusion du cork « en moins d’un siècle » (⚠️) : récit du livre (d’après Pitte), non recoupé par une source lue.
+
+**Fiche 302** (p.296) — Le chêne-liège : un arbre qu’on écorce sans le tuer, un pays qui le protège
+- [ ] Loi de 1209 (⚠️) : aucune source de niveau 1 ou 2a ne la confirme ; une source décrit une charte locale de Sancho Ier (Castelo Rodrigo) et non une loi nationale, et l’APCOR dit seulement « depuis le Moyen Âge ».
+- [ ] « 33 % de la production » (p. 295) lu comme une part de surface (⚠️) : lecture à confirmer ; les sources lues donnent 34 % des surfaces (APCOR) et environ 50 % de la production.
+
+**Fiche 303** (p.296) — La capsule à vis : née en France, adoptée par l’Australie
+- [ ] Part de l’Australie sous capsule (⚠️) : le livre donne 10 % (2004) et 88 % (2013), Halliday environ 25 % et 91 % ; les populations mesurées diffèrent, donc ces chiffres ne se comparent pas.
+- [ ] Origine de la capsule (⚠️) : l’AWRI indique 1959 pour le vin de table, Amcor les années 1960 ; la date et le motif « spiritueux » du livre ne sont pas retrouvés, donc non repris.
+- [ ] Suisse et chasselas : livre et Amcor (première application suisse) concordent, mais le motif de l’étanchéité est celui du livre.
+
+**Fiche 304** (p.297) — Choisir son obturateur : l’oxygène avant le goût
+- [ ] Niveaux de transmission d’oxygène par type de bouchon (technique faible à modéré, synthétique modéré à élevé, liège naturel très variable) (⚠️) : une seule fiche technique de l’AWRI ; le livre parle de « transfert » là où l’AWRI et l’OIV parlent de « transmission ».
+
+**Fiche 305** (p.298) — Colmaté, aggloméré, technique : les bouchons de liège reconstitués
+- [ ] Typologie colmaté / multipièces / aggloméré (⚠️) : définitions et usages donnés par le livre, non recoupés par une source lue.
+- [ ] Procédé Diam au CO2 supercritique (⚠️) : documents du fabricant et presse technique (niveau 2b), sans étude indépendante lue ; le nombre de molécules extraites avancé par le fabricant n’est pas repris.
+
+**Fiche 306** (p.298) — Bouchons synthétiques et bouchon de verre : les alternatives au liège
+- [ ] Défauts du plastique (⚠️) : durcissement, goût et coût écologique tirés du livre seul, sans source indépendante lue.
+- [ ] Date du bouchon de verre (⚠️) : le livre dit 2003 ; Wine Spectator (2004) annonce la première commercialisation américaine pour mars 2004 ; 2003 pourrait désigner des essais ou un millésime.
+- [ ] Propriétés du verre (inerte, recyclable en partie, proche de la capsule) (⚠️) : affirmations du livre, fabricant non lu.
+
+**Fiche 307** (p.299) — Le bruit du bouchon influence le jugement : l’étude de Spence et Wang
+- [ ] Vue et son (⚠️) : le livre parle de la vue et du son ; le résumé de l’article ne mentionne que le son d’ouverture.
+- [ ] Financement (⚠️) : le livre dit « industrie du liège » ; l’article déclare Bompas & Parr et un travail de Spence avec l’APCOR. Les pourcentages avancés par le livre viennent d’un communiqué de l’APCOR, pas de l’article : non repris.
+- [ ] Portée (⚠️) : étude préliminaire sur un échantillon de convenance.
+
+**Fiche 308** (p.300) — Les jarres inscrites de l’Égypte ancienne
+- [ ] Bornes du Nouvel Empire (⚠️) : environ 1550-1070 av. J.-C. d’après une seule source de niveau 1 (Metropolitan Museum) ; le livre donne « 1500 à 100 av. J.-C. ».
+- [ ] Marque du B de Bandol (⚠️) : une seule source (cahier des charges de l’AOC Bandol, fûts marqués au fer rouge de la lettre B), marque historique de provenance.
+
+**Fiche 309** (p.300) — Du rectangle manuscrit à l’étiquette lithographiée
+- [ ] Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre.
+
+**Fiche 311** (p.302) — Château, clos, cru : des mots réservés
+- [ ] « Seules AOP » ou « AOP et IGP » (⚠️) : « Château » et « Clos » figurent comme mentions traditionnelles AOP dans le registre des termes traditionnels (copie britannique d’eAmbrosia), alors qu’economie.gouv.fr et la DREETS ouvrent les noms d’exploitation aux AOP et aux IGP ; le guide professionnel de la DGCCRF contient les deux formulations ; le décret 2012-655 n’a pas été lu directement.
+- [ ] « Hospices » (⚠️) : présent dans la liste des termes interdits aux vins sans IG du guide DREETS Nouvelle-Aquitaine, mais absent de la fiche DGCCRF lue.
+
+**Fiche 312** (p.302) — Mouton Rothschild : l’étiquette d’artiste
+- [ ] Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.
+- [ ] Accueil hostile de l’étiquette de 1924 (⚠️) : rapporté par le livre seul.
+- [ ] Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b ; le Journal officiel n’a pas pu être lu.
+
+**Fiche 313** (p.302) — Lire une étiquette : les codes visuels
+- [ ] Quatre systèmes de signes et exemples de lecture (⚠️) : décrits par le livre d’après Celhay ; l’article de Celhay et Remaud (HAL) n’a pu être lu en entier.
+- [ ] « Vue sans être lue » (⚠️) : formule attribuée par le livre à Jeanneret et Souchier (1999), texte original non lu.
+
+**Fiche 314** (p.305) — Le vin, un bien social : on le boit par choix
+- [ ] Trois voies de transmission, formule de Roger Dion et caractère « hyperculturalisé » du vin (⚠️) : rapportés d’après le livre ; seul le compte rendu de Ferlan confirme la thèse générale de Lecoutre (boire façonné par des processus culturels, médicaux et moraux, distinction par la boisson).
+- [ ] Formule du livre sur l’abstinence comme refus des normes du groupe (⚠️) : non retrouvée dans le compte rendu de Ferlan, non reprise.
+
+**Fiche 315** (p.306) — Dionysos : le vin comme passage à la vie cultivée
+- [ ] Mythe de Dionysos, lecture cuvaison/taille, thèse de Boulay et de Daraki (⚠️) : rapportés d’après le livre ; aucune source indépendante lue (Boulay 2015, Euripide, Otto, Vernant non consultés).
+- [ ] Rapprochements avec Osiris et le Christ (⚠️) : non repris.
+
+**Fiche 316** (p.307) — Température de service : plages et refroidissement rapide
+- [ ] Effet de la taille du flacon (⚠️) : le livre le signale sans le chiffrer ; aucune source lue.
+- [ ] Graphiques p. 307 (⚠️) : unités et échelles illisibles sur les deux scans, aucune valeur reprise ; réfrigérateur modélisé à 0 °C d’air, atypique.
+
+**Fiche 318** (p.310) — Le symposion grec : boire ensemble, vin coupé d’eau
+- [ ] Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté).
+- [ ] Date du Banquet de Platon (⚠️) : 380 av. J.-C. pour le livre, vers 375 pour Universalis ; à dire « vers 380-370 ». Nietzsche présenté comme totalement abstinent : non repris.
+
+**Fiche 319** (p.311) — Vin et christianisme : eucharistie et 380/392
+- [ ] Eucharistie, tempérance et rôle de l’Église pendant les invasions (⚠️) : rapportés d’après le livre, aucune source lue.
+- [ ] Séquence 391-392 des interdictions des cultes païens (⚠️) : Larousse seul pour le détail ; 380 pour l’édit de Thessalonique confirmé par Larousse et Universalis.
+
+**Fiche 320** (p.311) — Vin et médecine des humeurs
+- [ ] Théorie des humeurs, quatre types de vin prescrits et vertus de la consommation quotidienne (⚠️) : rapportés d’après le livre ; aucune source indépendante lue.
+- [ ] Correspondance entre humeurs et types de vin (⚠️) : le livre ne la donne pas, la fiche n’en propose aucune.
+
+**Fiche 321** (p.311) — Fagon, bourgogne contre champagne
+- [ ] Fagon, d’Aquin, 1693-1694 et goutte du roi (⚠️) : une seule source (Union des Maisons de Champagne).
+- [ ] Bornes de la querelle (⚠️) : 1650-1730 pour le livre, 1652 à environ 1780 pour l’Union des Maisons de Champagne ; non tranché.
+- [ ] « Religion nationale » (Nourrisson, 2013) et remise en cause de l’ivresse légère (⚠️) : rapportés d’après le livre ; ouvrage non lu.
+
+**Fiche 322** (p.311) — Le vin fortifiant et Magnus Huss : naissance de l’alcoolisme
+- [ ] Vin remède de l’alcool fort et fortifiant des classes (⚠️) : thèse du livre, non recoupée.
+- [ ] Remarque « beaucoup d’ivrognes, pas d’alcooliques » (⚠️) : Prestwich l’attribue à un porte-parole anonyme de l’Académie vers 1852 (renvoi à Tournan, 1916) ; auteur non identifié.
+- [ ] Prix remis à Huss, année et académie (⚠️) : 1853 ou 1852, Académie des sciences ou française ; non repris.
+
+**Fiche 323** (p.312) — Le choix du verre : hyperspécialisé ou universel
+- [ ] 1958 (⚠️) : premier verre de la future gamme Sommeliers (Bourgogne Grand Cru, de Claus Riedel) selon Wine Spectator et un revendeur, ce qui concorde avec le livre ; sources de presse et de revendeur seulement.
+- [ ] Gamme Sommeliers : lancée en 1973 (page Riedel), 31 formes en 2022 selon le livre (⚠️) : un revendeur parle de 10 formes au départ et 28 aujourd’hui après réduction de 31 ; sources producteur ou revendeur seulement.
+- [ ] The Wine Glass (⚠️) : lancement de juin 2018 avec Richard Brendon confirmé par JancisRobinson.com ; dimensions du livre non reprises (224 mm correspond à 8,8 in, non 8,1).
+
+**Fiche 324** (p.314) — Santé publique en France : Haut Comité, loi Évin, repères
+- [ ] « Code du vin » de 1954 (⚠️) : non retrouvé ; seule la création du Haut Comité est étayée (une source, le rapport du Sénat de 1979).
+
+**Fiche 325** (p.317) — Marier mets et vins : un art codifié très tard
+- [ ] Viandier de Taillevent (⚠️) : le livre le date du XIIIe siècle ; la version attribuée à Taillevent (v. 1310-1395) est antérieure à 1380, tandis qu’un Viandier anonyme du XIIIe siècle (manuscrit de Sion) existe : divergence non tranchée.
+- [ ] Ménagier de Paris, 1393 (⚠️) : date donnée par le livre, non recoupée par une source lue.
+- [ ] Humeurs et normalisation XVIe-XIXe siècle (⚠️) : thèse de Lepeltier, source unique.
+
+**Fiche 326** (p.317) — Le repas gastronomique des Français, de l’UNESCO à la gastro-diplomatie
+- [ ] Gastro-diplomatie de Fabius, 2014 (⚠️) : l’opération « Goût de France » est annoncée en août 2014 (Localtis, niveau 2b) ; le lien explicite avec les accords mets-vins n’est pas démontré par la source lue.
+- [ ] Ouvrage dirigé par Pitte (⚠️) : titre exact, co-auteurs et année non confirmés sur une fiche d’éditeur ; aucune question posée.
+
+**Fiche 327** (p.318) — Grimod de La Reynière et Brillat-Savarin : les fondations
+- [ ] Grimod, Manuel des amphitryons, 1808 (⚠️) : une seule source lue (Fondation Napoléon), concordante avec la frise du livre.
+- [ ] Brillat-Savarin, 1825 (⚠️) : date confirmée par Britannica ; le contenu des aphorismes X à XIII n’a pas été recoupé hors du livre.
+- [ ] Papilles et molécules, 2009 (⚠️) : notice BnF concordante, mais fait traité dans la fiche suivante sur Chartier.
+
+**Fiche 328** (p.320) — Le restaurant moderne : portions individuelles et vins au verre
+- [ ] Boulanger, 1765 (⚠️) : tradition non prouvée (Rebecca Spang n’a trouvé aucune trace dans les archives de police, de corporations ou de notaires) ; sources de niveau 2b, Spang non consulté directement.
+- [ ] Cuisiniers de cour au chômage après la Révolution (⚠️) : thèse du livre, source unique.
+
+**Fiche 329** (p.323) — Cartes gastronomiques et gastronomies régionales : de 1809 au Club des Cent
+- [ ] Carte de Cadet de Gassicourt, 1809 (⚠️) : une seule source lue, un revendeur de cartes anciennes (Geographicus, niveau 2b) qui la dit la plus ancienne connue ; le livre dit « première » dans le texte et « une des premières » en légende.
+- [ ] Club des Cent, 1912 (⚠️) : une seule source de presse (Slate.fr, niveau 2b).
+- [ ] Analyse de Csergo (⚠️) : reprise du livre, non lue directement.
+
+**Fiche 330** (p.323) — Bourgogne, années 1920-1930 : des accords « éternels » fabriqués
+- [ ] Foire gastronomique de Dijon, 1921 (⚠️) : date donnée par le livre et par un agenda d’événements (niveau 2b) ; Decanter dit seulement « années 1920 ».
+- [ ] Paulée de Meursault, 1923 (⚠️) : une seule source (site de la Paulée, niveau 2b).
+- [ ] Création politique des années 1920-1930 (⚠️) : thèse de Lepeltier appuyée sur Laferté et Jacquet (2013), non lus directement.
+- [ ] Michelin, étoiles des années 1930 (⚠️) : création du guide en 1900 confirmée (Michelin) ; répartition régionale des étoiles non vérifiée.
+
+**Fiche 331** (p.326) — Sommelier : du conducteur de bête de somme au service du vin
+- [ ] Apparition de la sommellerie au XIXe siècle avec la restauration (⚠️) : thèse du livre, sans contradiction trouvée mais non recoupée précisément.
+- [ ] Sommelier d’échansonnerie sous l’Ancien Régime (⚠️) : détail du livre non recoupé.
+
+**Fiche 332** (p.326) — Du technicien de cave au médiateur du goût
+- [ ] Manuel du sommelier d’André Jullien, 1822 (⚠️) : une seule notice de catalogue lue ; aucune question posée.
+- [ ] Crise des années 1960 et rôle des concours (⚠️) : analyses de Fedoul et d’Olivesi citées par le livre, non lues directement.
+- [ ] ASI et concours mondial en 1969 : deux sources concordantes (ASI, wein.plus) ; la liste de pays du livre n’est pas reprise.
+
+**Fiche 333** (p.327) — Principes d’accord : complémentarité, contraste, intensité
+- [ ] Classification de Centelles (⚠️) : source unique, le livre ; l’ouvrage de Centelles n’a pas été consulté.
+- [ ] Senderens formalisant complémentarité et contraste, lien avec Puisais (⚠️) : non confirmés hors du livre.
+- [ ] Veronelli, Vaccarini et intensité (⚠️) : non vérifiés hors du livre.
+- [ ] Guide du vin de Raymond Dumay (⚠️) : date et contenu non vérifiés ; aucune question posée.
+
+**Fiche 334** (p.328) — Chartier et les harmonies moléculaires
+- [ ] Lien avec Hervé This et avec elBulli (⚠️) : le travail de consultant auprès de Ferran Adrià (2006-2010) est confirmé par un entretien (niveau 2b), pas la lecture d’Hervé This.
+- [ ] Nationalité canadienne et détails de l’infographie (⚠️) : repris du livre ; certains libellés de molécules sont illisibles.
+- [ ] Papilles et molécules, 2009 : notice BnF (niveau 1) concordante ; édition anglaise Wiley en 2012.
+
+**Fiche 335** (p.329) — Centelles et Roca : intensité, complexité et harmonies intégrales
+- [ ] Titre ¿Qué vino con este pato? et année 2016 (⚠️) : non recoupés sur une page de catalogue lue ; le rôle de sommelier à elBulli de 2000 à 2011 est confirmé (niveau 2b).
+- [ ] Sapiens del vino, 2018-2023 (⚠️) : dates du livre non recoupées ; le projet est lié à l’elBullifoundation.
+- [ ] Harmonies intégrales de Roca (⚠️) : source unique, le livre .
+
+**Fiche 336** (p.329) — Hanni, le palais asiatique et le « goût juste »
+- [ ] Asian Palate, 2009 (⚠️) : date concordante entre le livre et une page universitaire (Smith College, 2011, niveau 2b) ; la notice PolyU (septembre 2011) concerne le livre suivant, Mastering Wine for the Asian Palate. Nationalité « américano-coréenne » non vérifiée.
+- [ ] Tim Hanni, Why You Like the Wines You Like, 2013, quatre vinotypes (⚠️) : une seule source (The Wine Economist, niveau 2b).
+- [ ] Puisais et le « goût juste » (⚠️) : la notice BnF confirme le personnage, pas la citation ni son rôle auprès des chefs.

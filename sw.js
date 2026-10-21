@@ -8,7 +8,7 @@ const FICHIERS = [
   "fonts/cormorant.woff2", "fonts/cormorant-italic.woff2", "fonts/inter.woff2",
   "fiches.js",
   "fiches/016-domestication.js", "fiches/040-nature.js", "fiches/076-ecologie.js", "fiches/104-climat.js",
-  "fiches/124-geologie.js", "fiches/150-terroir.js", "fiches/203-vinification.js", "fiches/244-degustation.js",
+  "fiches/124-geologie.js", "fiches/150-terroir.js", "fiches/203-vinification.js", "fiches/244-degustation.js", "fiches/288-service.js",
   "data/lexique.js", "data/recits.js", "data/mille-vignes-sommaire.json", "exercices.js",
 ];
 
