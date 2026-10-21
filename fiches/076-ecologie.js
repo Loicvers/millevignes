@@ -603,7 +603,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Une histoire du vin nature",
-    synth: "Il n’existe pas de définition légale du vin nature, mais l’expression a une longue histoire. Lepeltier cite André Jullien (Topographie de tous les vignobles connus, 1816) pour un vin « naturel » sans substance étrangère, puis la révolte des vignerons du Midi contre les vins de sucre et trafiqués (1907) et le groupement allemand de 1910, ancêtre du VDP. L’expression revient dans les années 1980 contre les vins technologiques, dans le sillage de Jules Chauvet (1907-1989), négociant du Beaujolais dont s’inspireraient Marcel Lapierre et Pierre Overnoy. L’anthropologue Christelle Pineau a consacré un livre à ce mouvement (2019 selon Lepeltier, 2020 selon La Vie des idées).",
+    synth: "Il n’existe pas de définition légale du vin nature, mais l’expression a une longue histoire. Lepeltier cite André Jullien (Topographie de tous les vignobles connus, 1816) pour un vin « naturel » sans substance étrangère, puis la révolte des vignerons du Midi contre les vins de sucre et trafiqués (1907) et le groupement allemand de 1910, ancêtre du VDP. L’expression revient dans les années 1980 contre les vins technologiques, dans le sillage de Jules Chauvet (1907-1989), négociant du Beaujolais dont s’inspireraient Marcel Lapierre et Pierre Overnoy. L’anthropologue Christelle Pineau a consacré un livre à ce mouvement (La Corne de vache et le Microscope, La Découverte, 2019).",
     mnemo: "1907 le Midi crie contre le sucre, 1910 l’Allemagne pose son label : le « naturel » naît d’une méfiance envers le sac de sucre.",
     flash: { q: "Que devient le groupement fondé en 1910 par des producteurs allemands, le Verband Deutscher Naturweinversteigerer ?", a: "Il est l’ancêtre de l’actuel VDP ; « Naturwein » désignait un vin non chaptalisé.", keys: [["VDP"],["chaptalisé","chaptalisation"]] },
     qcm: { q: "Quelle année marque la révolte des vignerons du Languedoc-Roussillon contre les vins de sucre et trafiqués ?", opts: ["1816", "1907", "1962", "1985"], good: 1 },
@@ -614,14 +614,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel nom porte aujourd’hui le groupement allemand fondé en 1910 sous le nom de Verband Deutscher Naturweinversteigerer ?", payload: { accepted: ["VDP", "le VDP", "Verband Deutscher Prädikatsweingüter"] } }
     ],
     status: "needs_review",
-    to_check: [
-      "Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues, texte de 1816 non consulté",
-      "Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum",
-      "Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme",
-      "Livre de Pineau : 2019 selon Lepeltier, 2020 selon La Vie des idées (éditeur non consulté) ; sous-titre « radicalités » au pluriel ; « vignerons chercheurs » non retrouvé",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
-    src: "Mille Vignes, P. Lepeltier, p. 96-97 ; wein.plus, Jullien et association of German natural wine auctioneers ; La Passion du Vin (forum) ; La Vie des idées, In Vino Natura",
+    to_check: ["Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues ; texte de 1816 non consulté (2e édition de 1822 reçue le 21/10/2026, passage non relevé)","Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum","Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme","Livre de Pineau : 2019 et sous-titre « Le vin « nature », entre sciences, croyances et radicalités » d’après la notice de l’ouvrage (La Découverte, 234 p., capture reçue le 21/10/2026) et le livre ; La Vie des idées, dont le compte rendu paraît en 2020, est la seule à donner 2020 ; « vignerons chercheurs » non retrouvé","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 96-97 ; wein.plus, Jullien et association of German natural wine auctioneers ; La Passion du Vin (forum) ; La Vie des idées, In Vino Natura ; Pineau, La Corne de vache et le Microscope (La Découverte, 2019), notice de l’ouvrage",
     page: 97
   },
   {

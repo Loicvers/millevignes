@@ -346,10 +346,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Jura : Réussir indique 29 % (périmètre départemental) contre 32,81 % sur la carte
 
 **Fiche 121** (p.97) — Une histoire du vin nature
-- [ ] Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues, texte de 1816 non consulté
+- [ ] Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues ; texte de 1816 non consulté (2e édition de 1822 reçue le 21/10/2026, passage non relevé)
 - [ ] Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum
 - [ ] Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme
-- [ ] Livre de Pineau : 2019 selon Lepeltier, 2020 selon La Vie des idées (éditeur non consulté) ; sous-titre « radicalités » au pluriel ; « vignerons chercheurs » non retrouvé
+- [ ] Livre de Pineau : 2019 et sous-titre « Le vin « nature », entre sciences, croyances et radicalités » d’après la notice de l’ouvrage (La Découverte, 234 p., capture reçue le 21/10/2026) et le livre ; La Vie des idées, dont le compte rendu paraît en 2020, est la seule à donner 2020 ; « vignerons chercheurs » non retrouvé
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 122** (p.97) — Les chartes du vin nature
