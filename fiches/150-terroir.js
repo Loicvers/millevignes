@@ -243,8 +243,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.","Vignobles parmi les cultures les plus érodées d’Europe (⚠️) : une seule source de niveau 2a (Solid Earth 2015).","Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.","Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.","Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.","Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.","Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses du XIe siècle selon l’UNESCO, à recouper.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
-    src: "Mille Vignes, P. Lepeltier, p. 161-162 ; UNESCO, Lavaux, Vineyard Terraces (décision 31COM 8B.46) ; Solid Earth 6 (2015), érosion en vignoble",
+    to_check: ["Moyenne de 12 t/ha/an (⚠️) : ordre de grandeur des vignobles européens (Cerdan et al., relayé par Solid Earth 2015), pas des sols européens en 2018 ; une seule source lue.","Vignobles parmi les cultures les plus érodées d’Europe (⚠️) : une seule source de niveau 2a (Solid Earth 2015).","Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.","Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.","Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.","Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses du XIe siècle selon l’UNESCO, à recouper.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    src: "Mille Vignes, P. Lepeltier, p. 161-162 ; UNESCO, Lavaux, Vineyard Terraces (décision 31COM 8B.46) ; Solid Earth 6 (2015), érosion en vignoble ; J.-P. Garcia, « La construction géo-historique des climats de Bourgogne », 2011 (HAL-SHS halshs-00599282, lu : remontées de terres en bas de coteau, comptes ducaux des XIVe-XVe siècles).",
     page: 161
   },
   {
@@ -790,8 +790,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Charte de Fontevraud (colloque de juillet 2003, pilotée par Joël Rochard) : une seule source lue (IVES), date exacte d’adoption non précisée.","Sites classés et inscrits (loi du 2 mai 1930, art. L341-1 s. du Code de l’environnement) : une seule source officielle lue (ministère), Légifrance bloqué.","Zone agricole protégée (loi d’orientation agricole du 9 juillet 1999, art. L112-2 du Code rural) : une seule source officielle lue (Banque des Territoires), Légifrance bloqué.","Liste des menaces (remembrement, arrachage, infrastructures, urbanisation) : reprise du livre, non recoupée avec une source externe."],
-    src: "Mille Vignes, P. Lepeltier, p. 198-199 ; Conseil de l’Europe, Convention européenne du paysage ; IVES, The Fontevraud Charter (Rochard) ; ministère de la Transition écologique, Politique des sites ; Banque des Territoires, ZAP et PAEN",
+    to_check: ["Charte de Fontevraud (colloque de juillet 2003, pilotée par Joël Rochard) : une seule source lue (IVES), date exacte d’adoption non précisée.","Liste des menaces (remembrement, arrachage, infrastructures, urbanisation) : reprise du livre, non recoupée avec une source externe."],
+    src: "Mille Vignes, P. Lepeltier, p. 198-199 ; Conseil de l’Europe, Convention européenne du paysage ; IVES, The Fontevraud Charter (Rochard) ; ministère de la Transition écologique, Politique des sites ; Banque des Territoires, ZAP et PAEN ; Code de l’environnement, art. L341-1, et Code rural et de la pêche maritime, art. L112-2 (Légifrance, lus).",
     page: 198
   },
   {

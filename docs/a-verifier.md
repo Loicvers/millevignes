@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 72 vérifiées, 299 à vérifier (855 points).
+371 fiches : 72 vérifiées, 299 à vérifier (851 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -756,7 +756,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Microclimats de terrasse, sol approfondi côté aval (⚠️) : affirmations du livre non vérifiées ; seule une étude du Monferrato (Piémont) confirme que terrasses et couvert végétal réduisent l’érosion.
 - [ ] Seuil de 10 % de pente (⚠️) : l’équivalence 5,7° est exacte par calcul, mais le seuil agronomique est une thèse de l’autrice.
 - [ ] Terrasses du Douro et du Nord rhodanien (⚠️) : exemples du livre, non recherchés.
-- [ ] Tradition de remonter la terre érodée (⚠️) : fondée sur Garcia, source HAL bloquée.
 - [ ] Lavaux inscrit en 2007 : confirmé (UNESCO, décision 31COM 8B.46) ; « près de mille ans » d’aménagement (⚠️) : terrasses du XIe siècle selon l’UNESCO, à recouper.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
@@ -871,8 +870,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 221** (p.198) — Pourquoi et comment protéger un paysage viticole
 - [ ] Charte de Fontevraud (colloque de juillet 2003, pilotée par Joël Rochard) : une seule source lue (IVES), date exacte d’adoption non précisée.
-- [ ] Sites classés et inscrits (loi du 2 mai 1930, art. L341-1 s. du Code de l’environnement) : une seule source officielle lue (ministère), Légifrance bloqué.
-- [ ] Zone agricole protégée (loi d’orientation agricole du 9 juillet 1999, art. L112-2 du Code rural) : une seule source officielle lue (Banque des Territoires), Légifrance bloqué.
 - [ ] Liste des menaces (remembrement, arrachage, infrastructures, urbanisation) : reprise du livre, non recoupée avec une source externe.
 
 **Fiche 222** (p.199) — Les effets ambivalents de l’inscription : œnotourisme et Lavaux
@@ -912,7 +909,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Spontané jusqu’aux années 1970 (⚠️) : le Handbook of Enology (vol. 1, p. 429) décrit plutôt des pieds de cuve, remplacés par les levures sèches à partir des années 1980 ; aucun pourcentage actuel d’ensemencement trouvé.
 
 **Fiche 232** (p.214) — Terroir microbien : l’habitat pèse plus que la région
-- [ ] Knight et al. (2015), populations régionales de S. cerevisiae et phénotype du vin (⚠️) : une seule notice lue (Univ. Lincoln), texte intégral bloqué ; le livre ne cite pas l’étude sous ce nom
 - [ ] Thèse d’Auckland, habitat plus explicatif que la région (⚠️) : un seul résumé lu (ResearchSpace) ; nature et date de l’étude non recoupées avec le travail de Morrison-Whittle et Goddard cité par le livre
 
 **Fiche 234** (p.218) — Le soufre dans le chai : de la mèche hollandaise à l’étiquette
@@ -1394,7 +1390,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chaptalisation interdite dans le Midi (⚠️) : réponse ministérielle ancienne (Assemblée nationale, 14e législature) citant les cours d’appel du Sud ; aucune version actuelle lue.
 
 **Fiche 353** (p.235) — Corriger l’acidité : acide tartrique, carbonate de calcium, bicarbonate de potassium
-- [ ] Plafonds réglementaires (⚠️) : texte d’origine de 2013, annexe VIII, partie I, section C : acidification jusqu’à 1,5 g/l (en acide tartrique) pour moûts et vins en cours de fermentation, 2,5 g/l pour les vins, désacidification des vins jusqu’à 1 g/l, acidification et désacidification exclusives, acidification et enrichissement exclusifs sauf dérogation. Le Handbook (2006) donne le même cadre. Version consolidée en vigueur non lue (EUR-Lex inaccessible) : aucun chiffre en synthèse ni en exercice.
+- [ ] Plafonds réglementaires : la version consolidée du règlement (UE) 1308/2013 (18 août 2026, EUR-Lex, lue), annexe VIII, partie I, section C, a changé par rapport au texte de 2013 et au Handbook : acidification de tous les produits (raisins frais, moûts, vins) jusqu’à 4 g/l en acide tartrique (53,3 meq/l), désacidification des vins jusqu’à 1 g/l (13,3 meq/l) ; acidification et désacidification d’un même produit, ainsi qu’acidification et enrichissement (sauf dérogation), s’excluent. Aucun chiffre en synthèse ni en exercice.
 - [ ] Choix du sel (⚠️) : le Handbook préfère le carbonate de calcium pour les moûts très acides et réserve le bicarbonate aux retouches ; l’AWRI préfère en général le bicarbonate de potassium, le plus doux. Divergence de pratique, signalée seulement par la prudence de la synthèse.
 
 **Fiche 354** (p.236) — Compléments et alternatives au SO2 : ce que chacun ne fait pas
