@@ -118,7 +118,9 @@ function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 
   }
   const q = shuffle(due).slice(0, max);
   for (const e of suite) if (q.length < max) q.push(e);
-  fresh.sort((a, b) => (a[0].fiche.page || 0) - (b[0].fiche.page || 0) || a[0].fiche.id - b[0].fiche.id);
+  // Ordre du livre, puis les fiches hors livre (France) par id.
+  const rang = f => f.page || (f.source === "france" ? 1e6 : 0);
+  fresh.sort((a, b) => rang(a[0].fiche) - rang(b[0].fiche) || a[0].fiche.id - b[0].fiche.id);
   for (const exos of fresh.slice(0, Math.max(0, newFiches - started))) {
     const first = exos.find(e => e.type === "flashcard") || exos[0];
     const pick = [first, ...exos.filter(e => e !== first && RESTITUER.includes(e.type)), ...exos.filter(e => e !== first)].slice(0, perNew);

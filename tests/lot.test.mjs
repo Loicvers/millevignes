@@ -60,7 +60,7 @@ test("migration de fiches.js sans perte", () => {
   for (const f of legacy.FICHES) {
     const n = m.notions.find(x => x.legacy_id === f.id);
     for (const k of ["theme", "niveau", "titre", "synth", "mnemo"]) assert.equal(n[k], f[k]);
-    assert.equal(n.refs[0].page, f.page);
+    assert.equal(n.refs[0].page, f.page ?? null);
     const qcm = m.exercises.find(e => e.id === `${n.id}-02`);
     assert.equal(qcm.payload.options[qcm.payload.answer], f.qcm.opts[f.qcm.good]);
   }

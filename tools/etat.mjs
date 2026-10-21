@@ -17,7 +17,7 @@ const sections = readdirSync("fiches").filter(f => f.endsWith(".js")).sort().map
   vm.runInNewContext("const FICHES=[];" + readFileSync("fiches/" + f, "utf8") + ";this.F=FICHES;", c);
   const ids = c.F.map(x => x.id), pages = c.F.map(x => x.page).filter(Boolean);
   const ns = notions.filter(n => ids.includes(n.legacy_id));
-  return `| ${f} | ${ids.length} | ${Math.min(...ids)}–${Math.max(...ids)} | ${Math.min(...pages)}–${Math.max(...pages)} | ${nb(ns, n => n.status === "verified")} | ${nb(ns, n => n.cours)} | ${nb(ns, n => n.schema)} |`;
+  return `| ${f} | ${ids.length} | ${Math.min(...ids)}–${Math.max(...ids)} | ${pages.length ? `${Math.min(...pages)}–${Math.max(...pages)}` : "hors livre"} | ${nb(ns, n => n.status === "verified")} | ${nb(ns, n => n.cours)} | ${nb(ns, n => n.schema)} |`;
 });
 
 writeFileSync("docs/etat.md", [

@@ -215,9 +215,9 @@ function renderToc(list,filtre){
       const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
       const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h,sa);grid.append(sd);box=sd;}
-    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.page);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.page);remplir();}else chapOuverts.delete(c.page);};
+    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else chapOuverts.delete(c.chapitre);};
     const sm=el('summary'),nv=fs.filter(vue).length;
-    sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',fs.length?`p. ${c.page} · ${nv}/${fs.length}`:`p. ${c.page} · récit seul`));
+    sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
     const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
     const inn=el('div','chap-in'),act=el('div','chap-act'),pool=fs.flatMap(f=>EXOS.filter(e=>e.fiche===f));
     const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
@@ -268,7 +268,7 @@ function ouvrirZoom(fig){
 document.addEventListener('click',e=>{const f=e.target.closest('.schema');if(f&&!f.closest('#zoom')&&!f.closest('#support'))ouvrirZoom(f);});
 document.addEventListener('keydown',e=>{const f=e.target.classList&&e.target.classList.contains('schema')&&e.target;if(f&&(e.key==='Enter'||e.key===' ')){e.preventDefault();ouvrirZoom(f);}});
 // Détails que seul le livre (ou une source) appuie : signalés, sans compter comme « à vérifier ».
-const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>Selon Lepeltier, non recoupé (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
+const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>${f.source==='france'?'Source unique, non recoupé':'Selon le livre, non recoupé'} (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
   const mine=EXOS.filter(e=>e.fiche===f);
@@ -652,7 +652,10 @@ fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
   CHAPS=[...par].map(([c,fiches])=>({...c,fiches}));
   // chapitres sans fiches mais avec un récit : lisibles avant le lot
   if(typeof RECITS!=='undefined')toc.forEach(c=>{if(!par.has(c)&&RECITS.some(r=>r.chapitre===c.chapitre))CHAPS.push({...c,fiches:[]});});
-  CHAPS.sort((a,b)=>a.page-b.page);render();
+  CHAPS.sort((a,b)=>a.page-b.page);
+  // Chapitres hors livre « La France viticole », après le livre, dans l'ordre de FRANCE_SOMMAIRE.
+  if(typeof FRANCE_SOMMAIRE!=='undefined')FRANCE_SOMMAIRE.forEach(c=>{const fs=FICHES.filter(f=>f.source==='france'&&f.chapitre===c.chapitre).sort((a,b)=>a.id-b.id);if(fs.length)CHAPS.push({partie:'La France viticole',section:c.section,chapitre:c.chapitre,fiches:fs});});
+  render();
 }).catch(()=>{});
 // Le schéma s'affiche en entier la première fois dans la séance, puis derrière « Voir le schéma » (comme la synthèse).
 function schemaCorrection(f){

@@ -15,24 +15,34 @@ export const fichesFiles = (path = "fiches.js") => {
 
 export function loadFichesJs(path) {
   const ctx = {};
-  vm.runInNewContext(fichesFiles(path).map(f => readFileSync(f, "utf8")).join("\n;\n") + ";this.out={FICHES,SOUS,THEME_ORDER,REGIONS_FR};", ctx);
+  vm.runInNewContext(fichesFiles(path).map(f => readFileSync(f, "utf8")).join("\n;\n") + ";this.out={FICHES,SOUS,THEME_ORDER,REGIONS_FR,FRANCE_SOMMAIRE};", ctx);
   return ctx.out;
 }
 
 export const notionId = n => `mv-${String(n).padStart(4, "0")}`;
 
-export function migrate({ FICHES, SOUS, THEME_ORDER }) {
+export function migrate({ FICHES, SOUS, THEME_ORDER, FRANCE_SOMMAIRE = [] }) {
   const sources = [{
     id: "mille-vignes", type: "livre", level: "2a", title: "Mille Vignes", author: "Pascaline Lepeltier",
     // Éditeur, année et ISBN non renseignés dans fiches.js : à compléter, ne pas inventer.
     toc: TOC, content_version: 1,
+  }, {
+    // Fiches hors livre : chaque fiche cite ses sources dans src (cahiers des charges, interprofessions, atlas).
+    id: "france", type: "autre", level: "2a", title: "La France viticole", author: null, toc: null, content_version: 1,
   }];
   const notions = [], exercises = [];
   for (const f of FICHES) {
     const id = notionId(f.id);
     // Partie, section et chapitre déduits de la page ; un chapitre saisi à la main est gardé pour que validate() signale un écart.
+    if (f.source === "france") {
+      const fc = FRANCE_SOMMAIRE.find(c => c.chapitre === f.chapitre);
+      if (!fc) throw new Error(`fiche ${f.id} : chapitre « ${f.chapitre} » absent de FRANCE_SOMMAIRE`);
+      if (f.page) throw new Error(`fiche ${f.id} : une fiche « france » n'a pas de page`);
+    }
     const ch = f.page ? chapterAt(TOC, f.page) : null;
-    const ref = { source_id: "mille-vignes", page: f.page ?? null, note: f.src,
+    const ref = f.source === "france"
+      ? { source_id: "france", page: null, note: f.src, partie: "La France viticole", section: FRANCE_SOMMAIRE.find(c => c.chapitre === f.chapitre).section, chapitre: f.chapitre }
+      : { source_id: "mille-vignes", page: f.page ?? null, note: f.src,
       partie: ch?.partie ?? f.partie ?? null, section: ch?.section ?? null, chapitre: f.chapitre ?? ch?.chapitre ?? null };
     notions.push({
       id, legacy_id: f.id, theme: f.theme, sous: f.sous ?? [], niveau: f.niveau, geo: f.geo ?? null,

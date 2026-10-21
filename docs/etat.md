@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 384 (dernier id : 384) · exercices : 1844
-- Vérifiées : 189 · à vérifier : 195 (300 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 590
-- Niveaux : Fondamental 123 · Intermédiaire 173 · Pointu 88
+- Fiches : 401 (dernier id : 401) · exercices : 1942
+- Vérifiées : 198 · à vérifier : 203 (313 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 632
+- Niveaux : Fondamental 127 · Intermédiaire 186 · Pointu 88
 - Cours (Approfondir) : 58 · schémas : 70
 - Lexique : 14 termes · récits de chapitre : 52
 
@@ -20,3 +20,4 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 244-degustation.js | 48 | 253–384 | 245–285 | 29 | 7 | 6 |
 | 288-service.js | 46 | 293–371 | 288–329 | 28 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
+| fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 0 |

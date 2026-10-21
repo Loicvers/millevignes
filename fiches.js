@@ -17,6 +17,7 @@
    - qcm     : { q, opts:[...], good, expl } (good = index de la bonne réponse, base 0 ; expl = pourquoi, facultatif)
    - src     : source courte
    - page    : page précise dans Mille Vignes (nombre) — facultatif mais recommandé
+   - source, chapitre : fiche hors livre de « La France viticole » → source: "france", chapitre pris dans FRANCE_SOMMAIRE, pas de page
    - schema  : { svg, legende, src } — schéma ORIGINAL redessiné (jamais une copie du livre),
                src = crédit « D'après Lepeltier, Mille Vignes, p. X » — facultatif
    - exos    : exercices supplémentaires { type, prompt, payload, explanation } — voir docs/IMPORT_FORMAT.md
@@ -46,6 +47,17 @@ const SOUS = {
 const REGIONS_FR = [
   "Alsace", "Beaujolais", "Bordeaux", "Bourgogne", "Champagne", "Charentes", "Corse", "Jura",
   "Languedoc", "Lorraine", "Provence", "Roussillon", "Savoie", "Sud-Ouest", "Val de Loire", "Vallée du Rhône"
+];
+
+/* Chapitres hors livre « La France viticole » (fiches à `source: "france"`, sans `page`, avec `chapitre`).
+   L'ordre de cette liste est l'ordre de lecture ; ces chapitres viennent après ceux de Mille Vignes. */
+const FRANCE_SOMMAIRE = [
+  { section: "Bourgogne", chapitre: "Bourgogne : panorama et appellations" },
+  { section: "Bourgogne", chapitre: "Chablis et Grand Auxerrois" },
+  { section: "Bourgogne", chapitre: "Côte de Nuits" },
+  { section: "Bourgogne", chapitre: "Côte de Beaune" },
+  { section: "Bourgogne", chapitre: "Côte chalonnaise" },
+  { section: "Bourgogne", chapitre: "Mâconnais" },
 ];
 
 /* Ordre d'affichage des thèmes dans le filtre */

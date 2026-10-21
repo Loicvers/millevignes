@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-384 fiches : 189 vérifiées, 195 à vérifier (300 points).
-Hors dette : 590 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+401 fiches : 198 vérifiées, 203 à vérifier (313 points).
+Hors dette : 632 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -693,3 +693,32 @@ Hors dette : 590 détails laissés « selon le livre » (champ `selon_livre`, no
 **Fiche 384** (p.278) — Juger la qualité d’un vin : critères et échelles
 - [ ] BLIC : les quatre critères sont confirmés par un support de cours WSET niveau 2 (Online Classroom : « quality is assessed based on balance, length or finish, intensity and complexity », de 0 à 4 critères pour aller de poor à outstanding) ; le sigle BLIC n’y figure pas : ⚠️ usage rapporté par GuildSomm (préparation MW) et des sites de formation (2b)
 - [ ] Cinq critères de l’École du Vin et échelle à cinq niveaux, avec la typicité en plus de BLIC : ⚠️ grille propre à l’école, sans source indépendante qui la reprenne telle quelle ; la typicité est rangée par un site de formation (2b) parmi des caractéristiques secondaires au niveau Diploma
+
+**Fiche 385** (p.?) — Carte d’identité de la Bourgogne : étendue, sous-régions, couleurs
+- [ ] Libellés des cinq sous-régions (« Chablis et Grand Auxerrois », « Côte chalonnaise et Couchois ») : page BIVB bloquée aux robots ; le Châtillonnais, ajouté en relecture, n’est confirmé que par Bourgogne Tourisme, libellés repris de la consigne et seulement recoupés par le cahier des charges AOC Bourgogne (dénominations Couchois, Vézelay, Chitry).
+
+**Fiche 386** (p.?) — La pyramide des appellations de Bourgogne : 84 AOC en quatre étages
+- [ ] Nombre total de climats classés en premier cru : décomptes divergents selon les sources (562, 585, 640) et chiffre en hausse (22 climats à Pouilly-Fuissé depuis 2020) ; décompte BIVB à jour non lisible. Aucun chiffre précis n’est donné dans la fiche.
+- [ ] Part de la production par étage : un seul décompte récent lu (régionales environ 52 %, villages environ 36 %, premiers crus environ 11 %, grands crus environ 1,4 %), source non officielle ; seul l’ordre de grandeur « moins de 2 % » pour les grands crus est repris (concordant avec l’atlas, sans source officielle).
+
+**Fiche 388** (p.?) — Les cépages de Bourgogne : place réglementaire du pinot noir, du chardonnay, de l’aligoté et du gamay
+- [ ] Irancy : plafond de 10 % pour césar et pinot gris ensemble lu dans une version de travail (v2.2, 2010) du cahier des charges, non la version homologuée ; la fiche dit seulement « un peu de césar » et le rôle du césar est confirmé par la page INAO.
+- [ ] Coteaux bourguignons : liste détaillée des cépages par couleur non lue au cahier des charges ; seul le principe (nom adopté en 2011 pour l’ancien Bourgogne Grand Ordinaire, cépages bourguignons seuls ou assemblés) est repris, recoupé par la fiche produit INAO et JancisRobinson.com.
+
+**Fiche 389** (p.?) — Domaines et négoce en Bourgogne : un vignoble en miettes
+- [ ] Rôle de la Révolution et du Code civil dans le morcellement : l’atlas affirme que les successions napoléoniennes ont accéléré le morcellement, mais aucune source lue ne le confirme pour la Bourgogne. L’UNESCO, au contraire, date le parcellage très fin du Moyen Âge et des XVIe-XVIIIe siècles ; la fiche écrit donc « déjà très fin dès le Moyen Âge » et ne cite pas le Code civil.
+
+**Fiche 390** (p.?) — Le crémant de Bourgogne : AOC, méthode, cépages et mentions Éminent
+- [ ] Éminent (au moins 24 mois sur lies) et Grand Éminent (au moins 36 mois, pinot noir et chardonnay seulement, dosage inférieur à 15 g/L) : source de niveau 1 non lue ; confirmé seulement par Decanter (2016), Drinks International et un producteur ; ces mentions viennent du syndicat des producteurs (UPECB) et ne figurent pas dans le cahier des charges de 2021 lu en relecture, d’où le ton « décrites par la presse ». Savoir si ces mentions figurent au cahier des charges.
+- [ ] Plafond du gamay : 20 % dans le cahier des charges 2018 et dans deux autres sources, mais 30 % dans une version publiée le 16/12/2021 ; la fiche ne donne pas le chiffre. Relecture : la version homologuée par l’arrêté du 02/12/2021 donne bien « inférieure ou égale à 30 % » ; reste à vérifier qu’aucune version postérieure n’existe.
+- [ ] Précision du socle de 30 % : pinot noir et chardonnay seuls, ou aussi pinot blanc et pinot gris selon les textes ; la fiche reste vague sur la liste exacte.
+
+**Fiche 398** (p.?) — Les Hospices de Beaune, les Trois Glorieuses et la Saint-Vincent tournante
+- [ ] Date de création de la Paulée de Meursault : « à partir de 1932 » pour le BIVB (vins-bourgogne.fr), 1923 pour l’atlas, iDealwine (2010) et festivalenfrance.com (repas relancé par Jules Lafon), 1930 sur une page iDealwine ; non tranché, ne pas affirmer une seule date en masterclass.
+- [ ] Organisateur de la vente : Sotheby’s depuis la 161e vente (2021) pour « au moins cinq ans » (Wine Business International) ; confirmé pour 2025 (Beaune Tourisme, mesinfos.fr) et annoncé pour la 166e vente du 15 novembre 2026 (onivapp.com, d’après les Hospices) ; à revérifier à chaque édition.
+
+**Fiche 399** (p.?) — Côte chalonnaise : Bouzeron, Rully, Mercurey, Givry, Montagny et les Bourgogne régionaux
+- [ ] Couleurs de Bourgogne Côtes du Couchois : « rouge » seul dans le cahier des charges du Bourgogne homologué (arrêté du 11/12/2023), mais « blancs, rouges » dans le projet de modification de juin 2026 (non homologué) ; la fiche INAO du Couchois évoque rouge, blanc et plus rarement rosé. À reconfirmer après homologation.
+
+**Fiche 401** (p.?) — Pouilly-Fuissé, Pouilly-Loché et Pouilly-Vinzelles : roches de Solutré et Vergisson, premiers crus de 2020
+- [ ] 4 premiers crus à Pouilly-Loché (1) et Pouilly-Vinzelles (3) dès le millésime 2024 : trois articles de presse (Decanter, The Drinks Business, iDealwine) concordent, mais le texte officiel (arrêté, BO-agri) n’a pu être lu (fichier illisible) et la date de reconnaissance n’est pas confirmée au niveau INAO. Relecture : le projet de cahier des charges Pouilly-Vinzelles (INAO, avis du comité national du 06/02/2024) liste bien Les Longeays, Les Pétaux et Les Quarts, mais reste un projet.
