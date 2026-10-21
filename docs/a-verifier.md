@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 62 vérifiées, 279 à vérifier (836 points).
+341 fiches : 64 vérifiées, 277 à vérifier (826 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -952,22 +952,20 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 238** (p.225) — Jouer avec l’oxygène : élevage réducteur ou oxydatif
 - [ ] Élevage réducteur et thiols (⚠️) : la protection des thiols contre l’oxydation est établie pour le jus et le vin blanc (Handbook of Enology, vol. 1, p. 417-420) ; les odeurs soufrées des lies tassées en grande cuve aussi (p. 439-440) ; le lien direct « élevage réducteur protège les thiols » reste du livre.
-- [ ] Élevage oxydatif : tanins assouplis, couleur stabilisée, effets des apports massifs (⚠️) : affirmations du livre, non recoupées
 - [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; le Handbook of Enology (vol. 1, p. 341-342) la décrit aussi pendant la fermentation, sans nom d’inventeur ; date et matériel du livre non repris
-- [ ] Apport d’oxygène d’une barrique neuve, de l’ordre de 10 à 30 mg/l/an (⚠️) : fourchette tirée de Junqua et al. (2021, environ 11 mg/l/an) et de Nevares (2014, 27 à 32 mg/l/an), lus dans un article de synthèse ; les valeurs publiées vont de 8 à 45 mg/l/an selon la méthode, le grain et l’âge du fût. Le chiffre du livre (0,4 mg/l/an, 80 % par la bonde) n’est pas retrouvé
-- [ ] Part de l’entrée d’oxygène par les joints et le bois (63 % et 16 %) et grain très fin à 45 mg/l/an (⚠️) : Vivas et Glories (1997), lu via un article de synthèse, non consulté directement.
+- [ ] Répartition de l’entrée d’oxygène (⚠️) : 63 % par les joints, 16 % par le bois et 21 % par la bonde (Vivas et Glories 1997, lu via un article de synthèse et repris par le Handbook of Enology, vol. 2, p. 412 : une même étude) ; les 45 mg/l/an correspondent à une barrique neuve de chêne du Centre à bonde silicone (tableau 13.14), pas à un grain très fin.
 
 **Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
 - [ ] Grain fin du sessile et lien grain-arômes (⚠️) : le Handbook of Enology (vol. 1, p. 437) associe grain fin, sessile et lactones, gros grain (Limousin), pédonculé et tanins ; Prida et al. (2007) trouvent des cernes proches entre les deux espèces : lien débattu.
-- [ ] Chêne américain : richesse en lactones (coco) confirmée (Handbook of Enology, vol. 1, p. 437-438 ; IFV) ; le clou de girofle (eugénol, « épicé, fumé » pour le Handbook) reste au livre.
-- [ ] Profils aromatiques des forêts françaises (⚠️) : carte de l’IFV reprise par le livre p. 229, document d’origine non consulté
+- [ ] Chêne américain : richesse en lactones (coco) confirmée (Handbook of Enology, vol. 1, p. 437-438 ; vol. 2, p. 417-418 ; IFV) ; le clou de girofle du livre n’est pas appuyé : l’eugénol du chêne américain est deux fois moindre que celui du sessile (vol. 2, tableau 13.17).
+- [ ] Profils aromatiques des forêts françaises (⚠️) : carte de l’IFV reprise par le livre p. 229, document d’origine non consulté ; le Handbook of Enology (vol. 2, p. 417) donne des moyennes par région (Limousin riche en ellagitanins, Centre en lactones) et juge l’origine géographique seule insuffisante pour classer un bois.
 - [ ] Sessile plus riche en lactones et eugénol : confirmé (Prida, 2007), mais la distribution du sessile est bimodale, certains arbres sont aussi pauvres en lactone que des pédonculés ; d’où « en moyenne »
 
 **Fiche 240** (p.228) — La fabrication du fût : chauffe, taille et âge
-- [ ] Ordre débit, séchage, cintrage, bousinage (⚠️) : ordre du livre p. 228, non recoupé ; durées et taux d’humidité du livre non repris (IFV : 18 à 24 mois de séchage, le livre dit 18 à 36)
-- [ ] Correspondances aromatiques (⚠️) : furfural à note grillée mais d’impact olfactif négligeable, eugénol épicé et fumé, vanilline qui recule à très forte chauffe, gaïacol qui augmente (Handbook of Enology, vol. 1, p. 437-438, tableau 13.19) ; « amande » et « clou » viennent du livre.
+- [ ] Durées de séchage (⚠️) : 18 à 36 mois (livre), 18 à 24 mois (IFV), 24 mois pour des douelles de 21 mm et 36 mois pour 28 mm (Handbook of Enology, vol. 2, p. 418-419) ; l’ordre fendage, séchage, cintrage, chauffe est confirmé ; durées non reprises.
+- [ ] Correspondances aromatiques (⚠️) : furfural presque imperceptible, amande grillée du méthyl-5-furfural, eugénol épicé, vanilline qui recule à très forte chauffe, gaïacol qui augmente (Handbook of Enology, vol. 1, p. 437-438 ; vol. 2, p. 420-422 : un même ouvrage) ; « amande » pour le furfural et « clou » viennent du livre.
 - [ ] Un petit fût marque plus qu’un grand (⚠️) : affirmation du livre p. 230, non chiffrée dans les sources lues ; l’épuisement du bois avec l’usage est confirmé
-- [ ] Contenances 225 l (barrique bordelaise) et 228 l (pièce bourguignonne) (⚠️) : tableau du livre p. 227, non recoupé dans les sources lues (228 l n’est retrouvé que pour les fûts du vin de paille jurassien).
+- [ ] Pièce bourguignonne de 228 l (⚠️) : non recoupée (retrouvée seulement pour les fûts du vin de paille jurassien) ; la barrique bordelaise de 225 l est confirmée (Handbook of Enology, vol. 2, p. 394).
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
 - [ ] Gras et longueur dus aux polysaccharides (⚠️) : l’autolyse et la libération de mannoprotéines, qui stabilisent le vin, sont confirmées (Handbook of Enology, vol. 1, p. 432-435), mais le Handbook juge leur effet direct sur le volume en bouche non établi (p. 434).
@@ -1008,18 +1006,16 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
 
 **Fiche 250** (p.240) — Brettanomyces, souris et géosmine : trois défauts de nez et de bouche
-- [ ] Goût de souris (⚠️) : libération au pH de la salive et producteurs (bactéries lactiques, certaines Brett) décrits par une seule source (Wine Anorak) ; perception rétronasale et lien avec un SO2 faible confirmés aussi par l’AWRI (OENO IVAS 2019) ; le livre dit « pyridines », alors que l’APY est une pyrroline.
-- [ ] Seuil de la géosmine (⚠️) : 25 ng/l (Virginia Tech), 40 ng/l (La Guerche et al.) et 100 ng/l (glossaire) selon les sources ; seul l’ordre de grandeur est retenu.
+- [ ] Goût de souris (⚠️) : producteurs (surtout des bactéries lactiques du genre Lactobacillus, Brettanomyces possible) confirmés par Wine Anorak et le Handbook of Enology (vol. 2, p. 280-281) ; libération au pH de la salive décrite par une seule source (Wine Anorak) ; perception rétronasale et lien avec un SO2 faible confirmés par l’AWRI (OENO IVAS 2019) ; le livre dit « pyridines », alors que l’APY est une pyrroline.
 
 **Fiche 251** (p.240) — Réduction, oxydation, lumière : les défauts du soufre et de l’oxygène
-- [ ] Éthanal « pomme verte » (⚠️) : note olfactive non recoupée ; son rôle dans les vins de voile (fino, vin jaune) est confirmé par le Handbook of Enology (vol. 1, p. 477-478).
-- [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 (pas les effervescents de toute origine) ; causes encore discutées, la qualité des bouchons est contestée.
+- [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 ; causes encore discutées, la qualité des bouchons est contestée. Le Handbook of Enology (vol. 2, p. 274-275) décrit un vieillissement prématuré des blancs secs lié au sotolon et à l’aminoacétophénone, sans parler de la Bourgogne.
 
 **Fiche 252** (p.242) — Le goût de bouchon : TCA, TeCA et TBA
 - [ ] Fréquence du goût de bouchon en baisse (⚠️) : estimations anciennes de 0,5 à 6 % des vins tranquilles (Chatonnet et al., 2003) contre environ 1,5 % aujourd’hui (iDealwine, presse) ; chiffre de l’IFV cité par le livre non retrouvé, aucun chiffre repris.
 - [ ] Part du liège dans les contaminations (⚠️) : 80 à 95 % selon les sources, méthodes non précisées ; aucun pourcentage repris.
 - [ ] TBA retrouvé sur des bouchons synthétiques (⚠️) : une seule source (Virginia Tech Enology).
-- [ ] Seuil du TeCA (~12 ng/l dans un rouge) et du TBA (~4 ng/l) (⚠️) : une source chacune (Chatonnet 2003 ; Virginia Tech) ; seuils variables selon la matrice et le jury.
+- [ ] Seuils du TeCA et du TBA (⚠️) : environ 12 ng/l pour le TeCA dans un rouge (Chatonnet 2003), 4 ng/l dans l’eau et 150 ng/l pour une altération nette dans le vin selon le Handbook of Enology (vol. 2, p. 260) ; TBA vers 4 ng/l (Virginia Tech) ; seuils très dépendants de la matrice et du jury.
 
 **Fiche 253** (p.245) — Aristote et les huit saveurs : le goût des Grecs
 - [ ] Attribution des quatre éléments à Empédocle et des qualités élémentaires à Hippocrate (⚠️) : reprise du livre ; l’Encyclopædia Universalis confirme la théorie des humeurs hippocratique, pas le détail de chaque attribution.
@@ -1069,7 +1065,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 264** (p.254) — La salive : sans elle, pas de lecture des tanins
 - [ ] Composition de la salive : 99 % d’eau et plus de 3 000 protéines (⚠️) : chiffres issus de deux sources distinctes (New Zealand Dental Journal, 2014 ; Castagnola et al., 2017) mais un inventaire de protéomique, la plupart à l’état de traces ; non repris en exercice.
-- [ ] Astringence et mucine (⚠️) : une seule étude (Lee, Ismail, Vickers, J. Food Sci., 2012) précise que les tanins précipitent surtout les protéines riches en proline, pas les mucines ; le mécanisme exact reste débattu.
+- [ ] Astringence et mucine (⚠️) : une étude (Lee, Ismail, Vickers, J. Food Sci., 2012) montre que les tanins précipitent surtout les protéines riches en proline, pas les mucines ; le Handbook of Enology (vol. 2, p. 148 et 181) cite les deux (glycoprotéines de la salive, dont la mucine, et protéines riches en proline) : mécanisme exact débattu.
 - [ ] Salive et régulation du pH (⚠️) : fonction affirmée par le livre, non recoupée par une seconde source.
 - [ ] Salivation selon les saveurs (acidité : salive fluide ; umami : salive épaisse) et variations individuelles de salive (⚠️) : non recherchées, non reprises.
 
@@ -1080,7 +1076,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chauvet dégustant vers 11 heures, la faim stimulant l’odorat (⚠️) : anecdote du livre (p. 256), non recoupée.
 
 **Fiche 267** (p.259) — Lire et mesurer la robe : teinte, intensité et âge
-- [ ] Teinte, luminosité et chromatisme selon l’OIV (⚠️) : triplet repris du livre ; la méthode OIV lue (OIV-MA-AS2-07B) définit l’intensité (A420 + A520 + A620) et la nuance (A420/A520), la définition en teinte, luminosité et chromaticité relève d’une autre méthode non lue.
+- [ ] Teinte, luminosité et chromatisme (⚠️) : triplet repris du livre, qui relève du système CIELAB (Handbook of Enology, vol. 2, p. 178) plutôt que de l’OIV ; la méthode OIV lue (OIV-MA-AS2-07B) définit l’intensité (A420 + A520 + A620) et la nuance (A420/A520), formules confirmées par le Handbook.
 - [ ] Échelle violacé, grenat, tuilé, brun et jaune-vert, orangé, ambré, brun (⚠️) : le mécanisme est confirmé (anthocyanes libres remplacées par des pigments polymérisés) mais ce vocabulaire est conventionnel, non retrouvé dans une source normative.
 - [ ] Exemple du jeune barolo (⚠️) : exemple du livre (p. 262), non vérifié par les sources lues.
 - [ ] Seuil de 4,5 des côtes-du-rhône rouges (⚠️) : lu dans des mesures de campagne syndicales (2019) et dans une modification temporaire du cahier des charges (millésime 2023, eAmbrosia) ; texte permanent du cahier des charges non lu.
@@ -1105,20 +1101,12 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] WSET : malolactique et fût classés en secondaires (⚠️) : lu dans une seule version (WSET Level 2, version française) ; à recouper avec une seconde source WSET.
 - [ ] Nombre de molécules réellement odorantes, 20 à 40 (⚠️) : une seule source (Ferreira et al., synthèse IVES) ; le livre ne le donne pas.
 
-**Fiche 273** (p.264) — Arômes variétaux : poivron, muscat et pétrole
-- [ ] Monoterpènes (⚠️) : notes florales et d’agrumes d’après une seule source (Styger, Prior, Bauer 2011) ; abondance dans les muscats et baisse d’environ moitié sous l’effet de Botrytis confirmées par le Handbook of Enology (vol. 1, p. 246 et 402) ; « changent peu à la vinification » (livre) non retrouvé, non repris.
-
 **Fiche 274** (p.264) — La rotundone : le poivre de la syrah que 1 personne sur 5 ne sent pas
 - [ ] Cépages porteurs (⚠️) : syrah bien établie (Wood et al. 2008 ; AWRI) ; pineau d’Aunis et grüner veltliner d’après l’AWRI, l’IVES et Decanter ; le mourvèdre cité par le livre n’apparaît dans aucune liste lue, non repris.
 - [ ] Part des insensibles (⚠️ nuance) : 20 % (Wood et al. 2008, Decanter) à 20-25 % (AWRI), sur des panels australiens ; le livre écrit 20 %. Date d’identification non reprise (le livre écrit 2005, la publication scientifique date de 2008).
 
-**Fiche 275** (p.264) — Les thiols variétaux du sauvignon : buis, pamplemousse, fruit de la passion
-- [ ] Cuivre (⚠️) : une seule étude de niveau 1 (Hatzidimitriou, Dubourdieu et al., essais sur sauvignon) montre une baisse du 4MMP, mécanisme encore discuté ; le livre écrit « détruit », plus fort que les résultats.
-- [ ] Descripteurs du 3MH et du 3MHA (⚠️) : pamplemousse et fruit de la passion selon Styger et al. et Krebiehl ; les nuances varient selon les sources.
-
 **Fiche 276** (p.265) — Arômes de fermentation et de fût : banane, beurre, coco, vanille
-- [ ] Effet de la chauffe (⚠️) : selon l’IFV, la chauffe « tend à diminuer » les composés odorants, là où le livre écrit « détruit » ; la whisky-lactone (coco), plus abondante dans le chêne blanc d’Amérique, et la baisse de la vanilline réduite par les levures pendant une fermentation en fût sont confirmées (IFV ; Handbook of Enology, vol. 1, p. 437-438).
-- [ ] Sotolon (⚠️) : molécule clé des vins botrytisés et des finos (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477) ; vin jaune, curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
+- [ ] Sotolon (⚠️) : molécule clé des vins botrytisés, des finos et du vin jaune, dont il fait la note de noix (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477 ; vol. 2, p. 64) ; curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
 - [ ] Acétate d’isoamyle et macération carbonique (⚠️) : affirmation du livre ; le Handbook of Enology (vol. 1, p. 76) confirme l’effet d’une fermentation à froid, mais juge l’origine de l’arôme de macération carbonique encore inconnue (p. 388).
 
 **Fiche 277** (p.268) — Reconnaître un arôme : mémoire, analogie et roue de Noble
@@ -1144,10 +1132,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Calcium et magnésium, « sixième saveur » (⚠️) : hypothèse de recherche (récepteur CaSR, kokumi) ; seuils de 40 et 80 mg/l et place en milieu de bouche (Lepousez : finale persistante) non repris.
 
 **Fiche 282** (p.276) — Tanins et astringence : peau, pépins et fût
-- [ ] Qualificatifs des tanins de pépins (verts) et de pellicules (soyeux) (⚠️) : les différences de structure sont avérées (Kyraleou et al., 2015), mais la source lue conclut à une astringence égale à concentration égale ; qualificatifs présentés comme ceux du livre.
-- [ ] Anthocyanes « sans goût » (⚠️) : Paissoni et al. (2023) citent des effets des anthocyanes sur la bouche (astringence, amertume en vin modèle, texture crayeuse) ; formulation absolue du livre nuancée.
-- [ ] Classification des tanins (⚠️) : non recoupée ; le livre range les anthocyanes et les catéchines parmi les tanins condensés, alors que les anthocyanes ne sont pas des tanins et que les catéchines sont des flavan-3-ols ; non reprise.
-- [ ] Ellagitanins du chêne, rôle du pH, du sucre et des protéines, caractère cumulatif de l’astringence (⚠️) : affirmations du livre, non recoupées par une source lue.
+- [ ] Qualificatifs des tanins de pépins (verts) et de pellicules (soyeux) (⚠️) : structures différentes (Kyraleou et al., 2015 ; Handbook of Enology, vol. 2, p. 196) ; le Handbook (p. 182) associe pépins et risque d’astringence, pellicules et rondeur, mais Kyraleou conclut à une astringence égale à concentration égale.
+- [ ] Caractère cumulatif de l’astringence et rôle du sucre (⚠️) : affirmations du livre ; astringence des ellagitanins du chêne, effet aggravant de l’acidité et atténuant des protéines et des polysaccharides décrits par le Handbook of Enology (vol. 2, p. 148-149, 181-183 et 413), une seule source.
 
 **Fiche 283** (p.277) — Dire le toucher du vin : les roues de Gawel et de Pickering
 - [ ] Roue de Gawel (⚠️) : auteur, année (2000, Adélaïde) et vins rouges confirmés (Gawel, Oberholster et Francis, Aust. J. Grape Wine Res. 6) ; sous-types d’astringence retenus d’après des revues (OENO One ; Paissoni et al., 2023), mais le texte intégral n’a pas été lu ; le décompte du livre (12 familles, 53 termes) n’est pas retrouvé et n’est pas repris.
