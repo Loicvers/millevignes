@@ -15,7 +15,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 5** (p.183) — Le climat bourguignon
 - [ ] Première mention du mot « climat » en 1584 : confirmée à Gevrey-Chambertin (Garcia 2011, lu, d’après Garcia et Labbé ; iDealwine) ; le rattachement au Clos de Bèze (⚠️) ne figure que chez iDealwine (niveau 2b). Garcia fixe le sens viticole au XVIIIe siècle et date de 1676 les premiers vins de climats vendus à Dijon (Chambertin et Clos de Bèze, Garcia 2020).
-- [ ] Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre, non recoupée par une source lue.
+- [ ] Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre ; l’UNESCO décrit au contraire des parcelles délimitées « selon leurs caractéristiques géologiques, hydrographiques et atmosphériques », tout en soulignant leur façonnage par le travail humain et la permanence du cadastre : divergence non tranchée.
 - [ ] Classements savants qui ne reflètent qu’imparfaitement la consommation d’élite, système des équivalences (⚠️) : thèse du livre (p. 184), non recoupée ; la question vrai/faux repose dessus.
 - [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée. Morelot (1831) et Lavalle (1855) sont confirmés par Garcia 2011 ; la 1re édition de Jullien (1816) par l’avant-propos de sa 2e édition (1822).
 
@@ -545,7 +545,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 158** (p.124) — Bourgogne, climats et appellations : le sol comme critère
 - [ ] Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.
-- [ ] Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.
 - [ ] Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).
 - [ ] Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée.
 
@@ -843,6 +842,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Mythe des moines et hiérarchie fixée par les notables (⚠️, une seule source académique, deux textes) : Garcia 2011 (lu) ne trouve pas de climats gallo-romains sur les coteaux, voit une emprise médiévale des domaines de Cluny et de Cîteaux sans hiérarchie des lieux, puis des domaines d’Église passés au XVIIe siècle aux parlementaires et à la noblesse de robe ; Garcia 2020 (lu) attribue la promotion des climats à ces notables dijonnais. Labbé, Jacquet et l’Atlas des climats non lus.
 - [ ] Mot « climat » en 1584 : confirmé à Gevrey-Chambertin (Garcia 2011 ; iDealwine) ; l’inscription UNESCO de 2015 est confirmée (UNESCO ; Garcia 2020).
 - [ ] Classements : Morelot (1831) et Lavalle (1855) confirmés par Garcia 2011 (une source) ; 1re édition de Jullien en 1816 confirmée par l’avant-propos de sa 2e édition (1822) ; comité de Beaune (1860) confirmé par Pérard et Jacquet 2014 (voir fiche 5). Jullien classe les vins à l’échelle de la France par classes et par dégustation, pas par climat.
+- [ ] Rôle des moines (⚠️, divergence) : la déclaration de valeur universelle exceptionnelle de l’UNESCO attribue l’identification du vin à son lieu, depuis le haut Moyen Âge, aux ordres bénédictin et cistercien et aux ducs Valois ; Garcia (2011, 2020) et Lepeltier y voient surtout l’œuvre des notables des XVIIe-XVIIIe siècles : divergence présentée, non tranchée.
 
 **Fiche 211** (p.184) — De la fraude à l’INAO : la chronologie fondatrice des appellations
 - [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : absente de la loi de 1905 dans sa version consolidée (Légifrance, lu ; rédaction d’origine non consultée) ; présente dans la loi du 6 mai 1919 (art. 13, rédaction d’origine, et art. 1 dans sa version de 1966 ; Légifrance, lu) ; les autres sources la rattachent à 1908 (UMC) et à 1919 (INAO ; Garcia 2020).

@@ -41,8 +41,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.","Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.","Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).","Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée."],
-    src: "Mille Vignes, P. Lepeltier, p. 124-125 ; UNESCO, Les Climats du vignoble de Bourgogne ; INAO, « 1905-1935 : les débuts des appellations d’origine » et « Délimitation des aires de production » ; Bourgogne Tourisme ; Fanet, Terroir, climat, sol (IVES).",
+    to_check: ["Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.","Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).","Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée."],
+    src: "Mille Vignes, P. Lepeltier, p. 124-125 ; UNESCO, Les Climats du vignoble de Bourgogne ; INAO, « 1905-1935 : les débuts des appellations d’origine » et « Délimitation des aires de production » ; Bourgogne Tourisme ; Fanet, Terroir, climat, sol (IVES). ; UNESCO, Centre du patrimoine mondial, fiche 1425 « Les Climats du vignoble de Bourgogne » (VUE, critères iii et v, 13 219 ha)",
     page: 124
   },
   {
