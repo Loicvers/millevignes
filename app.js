@@ -706,11 +706,19 @@ function updateBadges(){document.getElementById('dueBadge').textContent=mode==='
 updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
-function exportProg(){
+async function exportProg(){
+  const nom='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';
   const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,seances,programmes:store},null,2)],{type:'application/json'});
-  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(a.href);
+  // Sur iPhone, le menu de partage permet « Enregistrer dans Fichiers » (iCloud Drive) ; ailleurs, téléchargement.
+  const file=new File([blob],nom,{type:'application/json'});
+  if(navigator.canShare&&navigator.canShare({files:[file]})){
+    try{await navigator.share({files:[file]});}
+    catch(e){if(e.name==='AbortError')return; // partage annulé : rien n'est sauvegardé
+      dl(blob,nom);}
+  }else dl(blob,nom);
   try{localStorage.setItem(SAVED_KEY,String(now()));}catch{}majBandeau();
 }
+function dl(blob,nom){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=nom;a.click();URL.revokeObjectURL(a.href);}
 document.querySelector('.zoom-x').onclick=fermerZoom;
 const ptBtn=document.getElementById('pretestBtn');
 const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pretestOn()?'activé':'désactivé');

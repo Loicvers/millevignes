@@ -45,7 +45,8 @@ FICHES.push(
     cours: null,
     schema: {"svg":"<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<text x=\"12\" y=\"16\" opacity=\"0.7\">°C</text>\n<rect x=\"20\" y=\"80\" width=\"64\" height=\"16\" fill-opacity=\"0.06\" stroke=\"currentColor\"/>\n<rect x=\"84\" y=\"80\" width=\"96\" height=\"16\" fill-opacity=\"0.2\" stroke=\"currentColor\"/>\n<rect x=\"180\" y=\"80\" width=\"32\" height=\"16\" fill-opacity=\"0.55\" stroke=\"currentColor\"/>\n<rect x=\"212\" y=\"80\" width=\"64\" height=\"16\" fill-opacity=\"0.2\" stroke=\"currentColor\"/>\n<rect x=\"276\" y=\"80\" width=\"32\" height=\"16\" fill-opacity=\"0.06\" stroke=\"currentColor\"/>\n<line x1=\"20\" y1=\"100\" x2=\"308\" y2=\"100\" stroke=\"currentColor\"/><line x1=\"20\" y1=\"96\" x2=\"20\" y2=\"104\" stroke=\"currentColor\"/><text x=\"20\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">0</text><line x1=\"52\" y1=\"96\" x2=\"52\" y2=\"104\" stroke=\"currentColor\"/><text x=\"52\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">5</text><line x1=\"84\" y1=\"96\" x2=\"84\" y2=\"104\" stroke=\"currentColor\"/><text x=\"84\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">10</text><line x1=\"116\" y1=\"96\" x2=\"116\" y2=\"104\" stroke=\"currentColor\"/><text x=\"116\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">15</text><line x1=\"148\" y1=\"96\" x2=\"148\" y2=\"104\" stroke=\"currentColor\"/><text x=\"148\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">20</text><line x1=\"180\" y1=\"96\" x2=\"180\" y2=\"104\" stroke=\"currentColor\"/><text x=\"180\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">25</text><line x1=\"212\" y1=\"96\" x2=\"212\" y2=\"104\" stroke=\"currentColor\"/><text x=\"212\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">30</text><line x1=\"244\" y1=\"96\" x2=\"244\" y2=\"104\" stroke=\"currentColor\"/><text x=\"244\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">35</text><line x1=\"276\" y1=\"96\" x2=\"276\" y2=\"104\" stroke=\"currentColor\"/><text x=\"276\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">40</text><line x1=\"308\" y1=\"96\" x2=\"308\" y2=\"104\" stroke=\"currentColor\"/><text x=\"308\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">45</text>\n<text x=\"84\" y=\"40\" text-anchor=\"middle\" font-weight=\"bold\">10 °C</text><text x=\"84\" y=\"52\" text-anchor=\"middle\">zéro de végétation</text><line x1=\"84\" y1=\"56\" x2=\"84\" y2=\"78\" stroke=\"currentColor\"/>\n<text x=\"196\" y=\"28\" text-anchor=\"middle\" font-weight=\"bold\">optimum</text><text x=\"196\" y=\"40\" text-anchor=\"middle\">photosynthèse ~25-30</text><line x1=\"196\" y1=\"44\" x2=\"196\" y2=\"78\" stroke=\"currentColor\"/>\n<text x=\"276\" y=\"58\" text-anchor=\"middle\" font-weight=\"bold\">40 °C</text><text x=\"276\" y=\"70\" text-anchor=\"middle\" font-size=\"8\">très altérée</text>\n<text x=\"52\" y=\"140\" text-anchor=\"middle\">repos</text>\n<text x=\"132\" y=\"140\" text-anchor=\"middle\">croissance</text><text x=\"132\" y=\"151\" text-anchor=\"middle\">(degrés « actifs »)</text>\n<text x=\"244\" y=\"140\" text-anchor=\"middle\">ralentit</text><text x=\"244\" y=\"151\" text-anchor=\"middle\">(stomates se ferment)</text>\n<text x=\"160\" y=\"182\" text-anchor=\"middle\" opacity=\"0.75\">Les indices de Winkler et de Huglin comptent la chaleur au-dessus de 10 °C.</text>\n<text x=\"160\" y=\"194\" text-anchor=\"middle\" opacity=\"0.75\">Le livre situe l’optimum à 24-28 °C.</text>\n</svg>","legende":"Les seuils de température de la vigne : 10 °C pour démarrer, un optimum vers 25-30 °C, une photosynthèse très altérée vers 40 °C.","src":"D’après Lepeltier, Mille Vignes, p. 105 ; Kriedemann 1968 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: ["Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Greer et Weedon (sémillon) 25 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles exposées ; retenir « autour de 25-30 °C ».","Arrêt vers 40 °C (⚠️) : thèse du livre. Les travaux récents de Greer et Weedon (ISHS ; Functional Plant Biology 43, 2016) confirment une baisse dès 35 °C et un effet nuisible de 40 °C sur tous les processus de croissance, sans parler d’arrêt ; Kriedemann (1968) trouvait encore une activité à 40 °C et un arrêt vers 45-50 °C. « Très altérée vers 40 °C » est retenu.","Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).","Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Greer et Weedon (sémillon) 25 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles exposées ; retenir « autour de 25-30 °C ».","Arrêt vers 40 °C (⚠️) : thèse du livre. Les travaux récents de Greer et Weedon (ISHS ; Functional Plant Biology 43, 2016) confirment une baisse dès 35 °C et un effet nuisible de 40 °C sur tous les processus de croissance, sans parler d’arrêt ; Kriedemann (1968) trouvait encore une activité à 40 °C et un arrêt vers 45-50 °C. « Très altérée vers 40 °C » est retenu.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).","Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche."],
     src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; Huglin 1978, Nouveau mode d’évaluation des possibilités héliothermiques d’un milieu viticole ; Familia Torres, Budbreak ; Kriedemann 1968, Photosynthesis in vine leaves (Vitis) ; Agarwal et Martin, Photosynthetic temperature responses in six common wine grape varieties (Univ. Toronto Scarborough, poster) ; Jones, Climate, grapes and wine (IVES) ; Greer et Weedon, réponse de la photosynthèse du sémillon à la température (ISHS, Acta Horticulturae 956) ; Greer et Weedon, Functional Plant Biology 43(10), 2016",
     page: 105
   },
@@ -135,12 +136,8 @@ FICHES.push(
       src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; Le Cap et al., Gelées du printemps 2020 à Quincy, SICTAG Mag’, février 2021 (hal-03279299) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF). Cf. Mille Vignes, p. 105."
     },
     status: "needs_review",
-    to_check: [
-      "Récolte 2021 : estimation de septembre (33,3 Mhl) révisée ensuite ; valeur finale Agreste à confirmer",
-      "Gelée noire : rattachée au gel d’advection par le livre et par Le Cap et al. (2021), au gel d’évaporation par Pleinchamp ; gelée blanche = gelée radiative (Le Cap et al.). Divergence non tranchée.",
-      "Gel d’évaporation (⚠️, une seule source) : le livre l’explique par l’équilibre d’un sol humide avec un air à 0 °C ; Pleinchamp par l’évaporation qui prélève de la chaleur.",
-      "Gels majeurs : le livre cite 2019, 2021 et 2022 ; les sources consultées confirment 2021, 2017 (et 1991), pas 2019 ni 2022 pour le vignoble national."
-    ],
+    to_check: ["Gelée noire : rattachée au gel d’advection par le livre et par Le Cap et al. (2021), au gel d’évaporation par Pleinchamp ; gelée blanche = gelée radiative (Le Cap et al.). Divergence non tranchée.","Gel d’évaporation (⚠️, une seule source) : le livre l’explique par l’équilibre d’un sol humide avec un air à 0 °C ; Pleinchamp par l’évaporation qui prélève de la chaleur."],
+    selon_livre: ["Récolte 2021 : estimation de septembre (33,3 Mhl) révisée ensuite ; valeur finale Agreste à confirmer","Gels majeurs : le livre cite 2019, 2021 et 2022 ; les sources consultées confirment 2021, 2017 (et 1991), pas 2019 ni 2022 pour le vignoble national."],
     src: "Mille Vignes, P. Lepeltier, p. 105 ; Pleinchamp, Les différents types de gel et leurs paramètres de développement ; Perennia, Spring frost and freeze damage (vigne) ; Le Cap et al., Gelées du printemps 2020 à Quincy, SICTAG Mag’, février 2021 (hal-03279299) ; La Libre, production française (estimation ministère de l’Agriculture, sept. 2021) ; Gault&Millau, production 2017 (Agreste) ; BSV Vigne PACA n°4 du 13 avril 2021 (DRAAF).",
     page: 105
   },
@@ -208,11 +205,8 @@ FICHES.push(
       src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index. Cf. Mille Vignes, p. 108-110."
     },
     status: "needs_review",
-    to_check: [
-      "Projet UC Davis (⚠️) : le livre parle de 74 parcelles de la Napa Valley et de 60 cépages testés aux canicules ; UC Davis précise que 74 blocs ont fourni des données de chimie 2015 en cabernet-sauvignon et que les 60 cultivars sont répartis dans deux blocs.",
-      "Seuils des régions : donnés en °F-jours à l’origine (Amerine et Winkler 1944) ; équivalents en °C-jours et scission de la région I en Ia et Ib à sourcer (le livre ne cite pas les seuils).",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Seuils des régions : donnés en °F-jours à l’origine (Amerine et Winkler 1944) ; équivalents en °C-jours et scission de la région I en Ia et Ib à sourcer (le livre ne cite pas les seuils).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Projet UC Davis (⚠️) : le livre parle de 74 parcelles de la Napa Valley et de 60 cépages testés aux canicules ; UC Davis précise que 74 blocs ont fourni des données de chimie 2015 en cabernet-sauvignon et que les 60 cultivars sont répartis dans deux blocs."],
     src: "Mille Vignes, P. Lepeltier, p. 108 et 110 ; Amerine et Winkler 1944, Composition and quality of musts and wines of California grapes, Hilgardia 15(6) ; Huglin 1978 ; xclim, indices agro-climatiques ; UC Davis, Winkler index modernization (Forrestel) ; JancisRobinson.com, Winiarski’s new climate index.",
     page: 108
   },
@@ -327,11 +321,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "Échelle de Jones (⚠️) : le livre la date de 2005 ; la source consultée est une synthèse de 2006, date non confirmée.",
-      "GFV et GSR (⚠️) : GFV est confirmé, mais GSR, le chiffre de 95 cépages et la date de 2011 ne sont pas retrouvés ; la source montre Parker travaillant avec des équipes françaises (INRAE, Bordeaux)."
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Échelle de Jones (⚠️) : le livre la date de 2005 ; la source consultée est une synthèse de 2006, date non confirmée.","GFV et GSR (⚠️) : GFV est confirmé, mais GSR, le chiffre de 95 cépages et la date de 2011 ne sont pas retrouvés ; la source montre Parker travaillant avec des équipes françaises (INRAE, Bordeaux)."],
     src: "Mille Vignes, P. Lepeltier, p. 110 ; Jones, Climate, grapes and wine (IVES, d’après Jones 2006) ; IVES, Classification for timing of flowering and veraison with the GFV model (Parker et al.).",
     page: 110
   },
@@ -354,7 +346,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Besoins en eau (⚠️) : INRAE et Deloire & Pellegrino donnent 450-550 mm de consommation ; le livre cite 250-350 mm au minimum et 400 mm typique, ainsi que des moyennes annuelles de 600-900 mm non vérifiées. Le Handbook of Enology (vol. 1, p. 266 et 272) raisonne en pluie annuelle : sous 400 mm, rendements viables difficiles ; la plupart des grands vins sous 700-800 mm. Chiffres non comparables.","Acide abscissique (⚠️) : fermeture des stomates (OENO One ; Handbook of Enology, vol. 1, p. 268) ; levée de l’inhibition des enzymes d’accumulation des sucres et promotion de la maturation (Handbook, p. 249 et 268, une seule source) ; l’« aiguillage » des sucres vers les fruits du livre n’est étayé qu’en partie."],
+    to_check: ["Besoins en eau (⚠️) : INRAE et Deloire & Pellegrino donnent 450-550 mm de consommation ; le livre cite 250-350 mm au minimum et 400 mm typique, ainsi que des moyennes annuelles de 600-900 mm non vérifiées. Le Handbook of Enology (vol. 1, p. 266 et 272) raisonne en pluie annuelle : sous 400 mm, rendements viables difficiles ; la plupart des grands vins sous 700-800 mm. Chiffres non comparables."],
+    selon_livre: ["Acide abscissique (⚠️) : fermeture des stomates (OENO One ; Handbook of Enology, vol. 1, p. 268) ; levée de l’inhibition des enzymes d’accumulation des sucres et promotion de la maturation (Handbook, p. 249 et 268, une seule source) ; l’« aiguillage » des sucres vers les fruits du livre n’est étayé qu’en partie."],
     src: "Mille Vignes, P. Lepeltier, p. 110-111 ; Deloire et Pellegrino, revue technique IVES sur le déficit hydrique de la vigne ; INRAE, Pech Rouge, présentation sur l’eau et la vigne ; OENO One, revue sur le déficit hydrique modéré, l’ABA et la qualité du raisin ; FAO, Irrigation and drainage paper 56 (ETo, ETc, Kc) ; Tonietto et Carbonneau 2004 (copie Embrapa) ; Ribéreau-Gayon, Dubourdieu, Donèche, Lonvaud, Handbook of Enology, vol. 1, 2e éd. (2006), p. 249, 266-272",
     page: 110
   },
@@ -376,10 +369,9 @@ FICHES.push(
     ],
     schema: { svg: "<svg viewBox='0 0 360 236' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' fill='currentColor'><text x='4' y='13' font-size='10' font-weight='bold'>Principe de l’effet de foehn</text><polygon points='50,200 190,40 330,200' fill-opacity='0.12' stroke='currentColor' stroke-width='1.5'/><line x1='4' y1='200' x2='356' y2='200' stroke='currentColor' stroke-opacity='0.5'/><line x1='36' y1='160' x2='85' y2='160' stroke='currentColor' stroke-dasharray='3 3' stroke-opacity='0.7'/><circle cx='50' cy='200' r='3'/><circle cx='85' cy='160' r='3'/><circle cx='190' cy='40' r='3'/><circle cx='260' cy='120' r='3'/><circle cx='330' cy='200' r='3'/><text x='4' y='194' font-size='10' font-weight='bold'>15 °C</text><text x='78' y='154' font-size='10' font-weight='bold' text-anchor='end'>10 °C</text><text x='74' y='168' font-size='8' text-anchor='end'>condensation</text><text x='190' y='30' font-size='10' font-weight='bold' text-anchor='middle'>2,5 °C</text><text x='270' y='124' font-size='10' font-weight='bold'>12,5 °C</text><text x='316' y='192' font-size='10' font-weight='bold' text-anchor='end'>22,5 °C</text><text x='58' y='178' font-size='8' text-anchor='end'>-1 °C/100 m</text><text x='125' y='96' font-size='8' text-anchor='end'>-0,5 °C/100 m</text><text x='262' y='92' font-size='8'>+1 °C/100 m</text><text x='4' y='80' font-size='9'>Air humide</text><text x='4' y='92' font-size='9'>→ pluie</text><text x='250' y='28' font-size='9'>Air sec et chaud</text><text x='356' y='44' font-size='8' text-anchor='end'>3 000 m</text><text x='356' y='124' font-size='8' text-anchor='end'>2 000 m</text><text x='356' y='214' font-size='8' text-anchor='end'>1 000 m</text><text x='50' y='230' font-size='9'>Côté au vent</text><text x='330' y='230' font-size='9' text-anchor='end'>Côté sous le vent</text></svg>", legende: "Principe de l’effet de foehn : l’air perd son humidité à la montée, puis se réchauffe plus vite qu’il ne s’est refroidi en descendant.", src: "D’après Lepeltier, Mille Vignes, p. 111 ; ESA Eduspace, L’effet de foehn." },
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "Foehn, vignobles concernés (⚠️) : Jurançon confirmé par l’INAO (vent chaud et sec du sud) mais sans le mot foehn ; Alsace citée par une seule source (blog) ; le livre place le chinook en Oregon et dans l’État de Washington, la source seulement en Oregon."
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Foehn, vignobles concernés (⚠️) : Jurançon confirmé par l’INAO (vent chaud et sec du sud) mais sans le mot foehn ; Alsace citée par une seule source (blog) ; le livre place le chinook en Oregon et dans l’État de Washington, la source seulement en Oregon."],
     src: "Mille Vignes, P. Lepeltier, p. 111-112 ; ESA Eduspace, L’effet de foehn ; Bubbly Professor, Zonda, Diablo, Nor’wester, Chinook : the foehn winds of wine ; INAO, cahier des charges / fiche AOC Jurançon.",
     page: 111
   },
@@ -402,11 +394,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Grêle (⚠️, une seule source journalistique citant Météo-France) : le livre dit qu’elle devient plus courante ; la source conclut à l’absence de tendance claire.",
-      "Mistral (⚠️, une seule source) : l’INAO confirme l’exposition de la vallée du Rhône au mistral, mais pas l’effet du vent sur la vigne.",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Grêle (⚠️, une seule source journalistique citant Météo-France) : le livre dit qu’elle devient plus courante ; la source conclut à l’absence de tendance claire.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Mistral (⚠️, une seule source) : l’INAO confirme l’exposition de la vallée du Rhône au mistral, mais pas l’effet du vent sur la vigne."],
     src: "Mille Vignes, P. Lepeltier, p. 111-112 ; INAO, fiche AOC (vallée du Rhône exposée au mistral) ; JancisRobinson.com, Petaluma Gap, Trump’s first new AVA ; Libération, La grêle, un péril climatique qui grossit en France (Météo-France, CCR, France Assureurs).",
     page: 111
   },
@@ -428,13 +417,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "UV et Nouvelle-Zélande (⚠️) : le livre annonce 30 à 40 % de radiations en plus ; la seule source chiffrée (McKenzie et al. 2006, via le ministère néo-zélandais) donne environ 40 % pour les UV de pointe estivale ; essai NIWA préliminaire.",
-      "UV la nuit (⚠️, une seule source) : Cornell confirme l’effet sur l’oïdium et le mildiou ; la date de 2019 donnée par le livre n’est pas vérifiée.",
-      "UV d’Avignon (⚠️, une seule source de presse agricole) : Urban et Aarrouf ne sont pas nommés ; les vignobles bordelais, champenois et ligériens depuis 2019 ne sont pas retrouvés.",
-      "Kaolin (⚠️) : effet anti-chaleur annoncé sans chiffres ; les essais français consultés portent surtout sur la cicadelle (environ 50 % d’efficacité)."
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["UV et Nouvelle-Zélande (⚠️) : le livre annonce 30 à 40 % de radiations en plus ; la seule source chiffrée (McKenzie et al. 2006, via le ministère néo-zélandais) donne environ 40 % pour les UV de pointe estivale ; essai NIWA préliminaire.","UV la nuit (⚠️, une seule source) : Cornell confirme l’effet sur l’oïdium et le mildiou ; la date de 2019 donnée par le livre n’est pas vérifiée.","UV d’Avignon (⚠️, une seule source de presse agricole) : Urban et Aarrouf ne sont pas nommés ; les vignobles bordelais, champenois et ligériens depuis 2019 ne sont pas retrouvés.","Kaolin (⚠️) : effet anti-chaleur annoncé sans chiffres ; les essais français consultés portent surtout sur la cicadelle (environ 50 % d’efficacité)."],
     src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; OMS, Ultraviolet radiation and health ; Hong Kong Observatory, Ultraviolet radiation at high altitude ; Ministry for the Environment NZ, New Zealand’s UV levels (McKenzie et al. 2006) ; NIWA, UV, NZ and grapes ; Cornell Chronicle 2020, Robots armed with UV light fight grape mildew ; Pleinchamp, Des UV contre le mildiou et l’oïdium de la vigne (UV Boosting) ; Wein.plus, Californian vintners spray clay on grape leaves ; Ecophytopic, fiche pratique viticulture (kaolinite).",
     page: 105
   }
@@ -457,14 +442,9 @@ FICHES.push(
     ],
     cours: null,
     schema: {"svg":"<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<rect x=\"36\" y=\"15.5\" width=\"164\" height=\"189\" fill-opacity=\"0.03\" stroke=\"currentColor\"/>\n<rect x=\"36\" y=\"85.43\" width=\"164\" height=\"49.139999999999986\" fill-opacity=\"0.08\" stroke=\"currentColor\"/><rect x=\"36\" y=\"57.5\" width=\"164\" height=\"21\" fill-opacity=\"0.4\" stroke=\"currentColor\"/><rect x=\"36\" y=\"141.5\" width=\"164\" height=\"10.5\" fill-opacity=\"0.4\" stroke=\"currentColor\"/><rect x=\"36\" y=\"136.25\" width=\"164\" height=\"21\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\" fill=\"none\"/><line x1=\"36\" y1=\"47\" x2=\"200\" y2=\"47\" stroke=\"currentColor\" stroke-opacity=\"0.25\"/><text x=\"32\" y=\"50\" text-anchor=\"end\" font-size=\"8\" opacity=\"0.7\">60° N</text><line x1=\"36\" y1=\"78.5\" x2=\"200\" y2=\"78.5\" stroke=\"currentColor\" stroke-opacity=\"0.25\"/><text x=\"32\" y=\"81.5\" text-anchor=\"end\" font-size=\"8\" opacity=\"0.7\">30° N</text><line x1=\"36\" y1=\"110\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-opacity=\"0.25\"/><text x=\"32\" y=\"113\" text-anchor=\"end\" font-size=\"8\" opacity=\"0.7\">0°</text><line x1=\"36\" y1=\"141.5\" x2=\"200\" y2=\"141.5\" stroke=\"currentColor\" stroke-opacity=\"0.25\"/><text x=\"32\" y=\"144.5\" text-anchor=\"end\" font-size=\"8\" opacity=\"0.7\">30° S</text><line x1=\"36\" y1=\"173\" x2=\"200\" y2=\"173\" stroke=\"currentColor\" stroke-opacity=\"0.25\"/><text x=\"32\" y=\"176\" text-anchor=\"end\" font-size=\"8\" opacity=\"0.7\">60° S</text>\n<text x=\"118\" y=\"107\" text-anchor=\"middle\" opacity=\"0.7\">équateur</text>\n<line x1=\"200\" y1=\"68\" x2=\"212\" y2=\"68\" stroke=\"currentColor\"/><text x=\"216\" y=\"66\" font-weight=\"bold\">30e-50e N</text><text x=\"216\" y=\"77\">bande classique</text>\n<line x1=\"200\" y1=\"110\" x2=\"212\" y2=\"110\" stroke=\"currentColor\"/><text x=\"216\" y=\"102\" font-weight=\"bold\">tropiques</text><text x=\"216\" y=\"113\">pas de dormance,</text><text x=\"216\" y=\"124\">jusqu’à 2 récoltes/an</text>\n<line x1=\"200\" y1=\"146.75\" x2=\"212\" y2=\"146.75\" stroke=\"currentColor\"/><text x=\"216\" y=\"144.75\" font-weight=\"bold\">30e-40e S</text><text x=\"216\" y=\"155.75\">Schultz et Jones</text><text x=\"216\" y=\"166.75\">pointillés : 25e-45e,</text><text x=\"216\" y=\"177.75\">selon le livre</text>\n<text x=\"216\" y=\"17.599999999999994\">vers les pôles :</text><text x=\"216\" y=\"28.599999999999994\">variétés résistantes</text><text x=\"216\" y=\"39.599999999999994\">au froid</text>\n</svg>","legende":"Les bandes viticoles de part et d’autre de l’équateur ; pour l’hémisphère sud, deux bornes coexistent.","src":"D’après Lepeltier, Mille Vignes, p. 113 ; Schultz et Jones ; dessin simplifié et original"},
-    status: "needs_review",
-    to_check: [
-      "Récoltes tropicales : le livre dit plusieurs par an ; la source consultée donne jusqu’à deux (cycles de 90 à 150 jours)",
-      "Bande de l’hémisphère sud : 25e-45e (livre) contre 30e-40e (Schultz et Jones) : divergence non tranchée, présentée comme telle",
-      "Limites polaires actuelles (57° N, au-delà de 45° S) : une seule source (Jones 2019)",
-      "Norvège : variétés résistantes au froid confirmées (NIBIO) ; le livre dit hybrides et 59° N, non vérifié, volontairement non repris",
-      "45e parallèle, livre « La Magie du 45e parallèle » et perte de 0,6 °C par degré de latitude : non retrouvés, volontairement écartés"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Récoltes tropicales : le livre dit plusieurs par an ; la source consultée donne jusqu’à deux (cycles de 90 à 150 jours)","Bande de l’hémisphère sud : 25e-45e (livre) contre 30e-40e (Schultz et Jones) : divergence non tranchée, présentée comme telle","Limites polaires actuelles (57° N, au-delà de 45° S) : une seule source (Jones 2019)","Norvège : variétés résistantes au froid confirmées (NIBIO) ; le livre dit hybrides et 59° N, non vérifié, volontairement non repris","45e parallèle, livre « La Magie du 45e parallèle » et perte de 0,6 °C par degré de latitude : non retrouvés, volontairement écartés"],
     src: "Mille Vignes, P. Lepeltier, p. 113 ; OENO One (citant Schultz & Jones, 2010) ; IVES, Jones 2019 ; Embrapa, Grapevine performance and production strategies in tropical climates ; NIBIO, Can Norway become a wine country ?",
     page: 113
   },
@@ -533,7 +513,8 @@ FICHES.push(
       src: "Mille Vignes, P. Lepeltier ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; Arias et al. (2022), Climate change effects on grapevine physiology and biochemistry: benefits and challenges of high altitude, Frontiers in Plant Science 13:835425 ; Wineland (Afrique du Sud) ; Asadullayev et al., ICCPEAS 2025. Cf. Mille Vignes, p. 113-114."
     },
     status: "needs_review",
-    to_check: ["Gradient du livre (0,6 °C par 100 m jusqu’à 500 m, puis 1 °C par 170 m) : changement de gradient à 500 m non retrouvé dans les sources ; la valeur moyenne de 0,6 °C par 100 m est, elle, confirmée","Retard de végétation de Galet (1 jour par 30 m, puis par 20 m) : non retrouvé ; une source donne 6 à 7 jours par 100 m (divergence non tranchée, aucun chiffre en exercice)","Sucre (−0,8 à 1 % par 100 m) et acidité (+1 % dans le livre, +0,9 g/L dans une publication non sourcée) : tendance confirmée, chiffres indicatifs","Ao Yun et Quebrada de Humahuaca au-delà de 2000 m : repris du livre, non recoupé","UV plus forts, peau plus épaisse, plus de couleur et de tanins (⚠️) : Arias et al. (2022, résumé lu seul) confirment UV-B élevés, fortes amplitudes thermiques et plus de métabolites secondaires en altitude, mais pas l’épaississement de la peau ni la baisse de sucre ou la hausse d’acidité ; à confirmer dans IVES (Gambetta) ou dans le texte complet d’Arias."],
+    to_check: ["UV plus forts, peau plus épaisse, plus de couleur et de tanins (⚠️) : Arias et al. (2022, résumé lu seul) confirment UV-B élevés, fortes amplitudes thermiques et plus de métabolites secondaires en altitude, mais pas l’épaississement de la peau ni la baisse de sucre ou la hausse d’acidité ; à confirmer dans IVES (Gambetta) ou dans le texte complet d’Arias."],
+    selon_livre: ["Gradient du livre (0,6 °C par 100 m jusqu’à 500 m, puis 1 °C par 170 m) : changement de gradient à 500 m non retrouvé dans les sources ; la valeur moyenne de 0,6 °C par 100 m est, elle, confirmée","Retard de végétation de Galet (1 jour par 30 m, puis par 20 m) : non retrouvé ; une source donne 6 à 7 jours par 100 m (divergence non tranchée, aucun chiffre en exercice)","Sucre (−0,8 à 1 % par 100 m) et acidité (+1 % dans le livre, +0,9 g/L dans une publication non sourcée) : tendance confirmée, chiffres indicatifs","Ao Yun et Quebrada de Humahuaca au-delà de 2000 m : repris du livre, non recoupé"],
     src: "Mille Vignes, P. Lepeltier, p. 113-114 ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; Arias et al. (2022), Frontiers in Plant Science 13:835425 ; Wineland ; Asadullayev et al., ICCPEAS 2025",
     page: 113
   },
@@ -556,13 +537,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Quota Mille : citée par Gambero Rosso comme limite haute, absente du disciplinare consulté",
-      "Limites d’altitude « 1000 m sud et est, 800 m nord » (livre) : non retrouvées ; le disciplinare donne des courbes de niveau variables (800, 900, 1000 m au nord, 400 m à l’est, 600 m au sud-ouest), présentées comme telles",
-      "DOC contre AOC : le livre emploie les deux (texte et légende de la carte) ; DOC confirmé par le disciplinare",
-      "Débat de 2024 sur un passage éventuel en DOCG : non acté, non repris dans la fiche",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Quota Mille : citée par Gambero Rosso comme limite haute, absente du disciplinare consulté","Limites d’altitude « 1000 m sud et est, 800 m nord » (livre) : non retrouvées ; le disciplinare donne des courbes de niveau variables (800, 900, 1000 m au nord, 400 m à l’est, 600 m au sud-ouest), présentées comme telles","DOC contre AOC : le livre emploie les deux (texte et légende de la carte) ; DOC confirmé par le disciplinare","Débat de 2024 sur un passage éventuel en DOCG : non acté, non repris dans la fiche"],
     src: "Mille Vignes, P. Lepeltier, p. 114 ; Disciplinare Etna DOC (copie AIS), art. 1, 3 et 9 ; Gambero Rosso, Etna DOC et Quota Mille",
     page: 114
   },
@@ -585,13 +561,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris",
-      "Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (Decanter, niveau 2b : le plateau boisé de la Montagne protège Mailly, Verzenay et Verzy des dépressions de sud-ouest) ; moulin de Verzenay et vents d’ouest non vérifiés",
-      "Expositions de Nuits-Saint-Georges et Meursault (⚠️) : plus aucune source (le cahier des charges INAO de Nuits-Saint-Georges et le dossier DREAL « Climats de Bourgogne » ne donnent pas l’orientation) ; Hermitage plein sud : confirmé par le cahier des charges INAO",
-      "Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris","Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (Decanter, niveau 2b : le plateau boisé de la Montagne protège Mailly, Verzenay et Verzy des dépressions de sud-ouest) ; moulin de Verzenay et vents d’ouest non vérifiés","Expositions de Nuits-Saint-Georges et Meursault (⚠️) : plus aucune source (le cahier des charges INAO de Nuits-Saint-Georges et le dossier DREAL « Climats de Bourgogne » ne donnent pas l’orientation) ; Hermitage plein sud : confirmé par le cahier des charges INAO","Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée"],
     src: "Mille Vignes, P. Lepeltier, p. 115 ; Decanter, Champagne report: the two faces of the Montagne de Reims ; INAO, cahier des charges AOC Hermitage",
     page: 115
   },
@@ -614,12 +585,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Gulf Stream : le livre dit qu’une eau chaude atténue la latitude ; une source météo nuance (effet surtout hivernal et indirect sur les étés), niveau 2b uniquement, à confirmer avec Météo-France",
-      "Humboldt : le livre l’associe à la côte ouest américaine ; les sources le situent au Chili (Pérou compris) ; une seule source, orientée marketing, pour les détails (Casablanca, Leyda, Limarí)",
-      "Reflet du Léman et terrasses de Lavaux : confirmés par le dossier UNESCO ; le chiffre « plus de 1 °C » du livre n’est pas retrouvé, non repris",
-      "Brouillard de San Pablo : confirmé par une seule source de niveau 2a (AWRI)"
-    ],
+    to_check: ["Gulf Stream : le livre dit qu’une eau chaude atténue la latitude ; une source météo nuance (effet surtout hivernal et indirect sur les étés), niveau 2b uniquement, à confirmer avec Météo-France","Humboldt : le livre l’associe à la côte ouest américaine ; les sources le situent au Chili (Pérou compris) ; une seule source, orientée marketing, pour les détails (Casablanca, Leyda, Limarí)"],
+    selon_livre: ["Reflet du Léman et terrasses de Lavaux : confirmés par le dossier UNESCO ; le chiffre « plus de 1 °C » du livre n’est pas retrouvé, non repris","Brouillard de San Pablo : confirmé par une seule source de niveau 2a (AWRI)"],
     src: "Mille Vignes, P. Lepeltier, p. 115-116 ; Figaro Nautisme / Météo Consult, Le Gulf Stream et les étés de la façade atlantique ; INAO, cahier des charges AOC Médoc (effet thermique des eaux de l’Atlantique et de la Gironde) ; Futura-Sciences, Gulf Stream ; 1WineDude, Humboldt ; AWRI, Carneros ; UNESCO, dossier Lavaux",
     page: 115
   },
@@ -642,12 +609,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "7 % du vignoble européen (⚠️) : chiffre du livre, aucune source retrouvée (Tarolli et al. 2023 ne donne aucun pourcentage), à présenter comme estimation de Lepeltier ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)",
-      "Exemples français : Banyuls et Côte-Rôtie cités par le livre seul (aucune source retrouvée) ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée",
-      "Le livre présente les critères comme cumulatifs ; le CERVIM précise qu’une seule condition suffit (divergence signalée en exercice)",
-      "Mécanisation presque impossible, exploitations familiales : repris du livre, non recoupé"
-    ],
+    to_check: ["Le livre présente les critères comme cumulatifs ; le CERVIM précise qu’une seule condition suffit (divergence signalée en exercice)"],
+    selon_livre: ["7 % du vignoble européen (⚠️) : chiffre du livre, aucune source retrouvée (Tarolli et al. 2023 ne donne aucun pourcentage), à présenter comme estimation de Lepeltier ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)","Exemples français : Banyuls et Côte-Rôtie cités par le livre seul (aucune source retrouvée) ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée","Mécanisation presque impossible, exploitations familiales : repris du livre, non recoupé"],
     src: "Mille Vignes, P. Lepeltier, p. 116 ; CERVIM, About us ; CERVIM, décret italien sur la viticulture héroïque ; Tarolli et al. (2023), Heroic viticulture: environmental and socioeconomic challenges of unique heritage landscapes, iScience 26, 107125 ; Tomasi, CERVIM 2026",
     page: 116
   }
@@ -672,13 +635,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Classement du livre par surface plantée (méditerranéen, puis semi-aride, puis tempéré) : non retrouvé dans les sources consultées",
-      "Willamette (Oregon) : le livre la range en climat maritime ; un classement Köppen Csb (méditerranéen à été frais) est avancé ailleurs, à sourcer ; non tranché",
-      "Descriptions des types de climat (étés, pluies) : reprises du livre, non recoupées par une source indépendante",
-      "Carbonneau et Escudier, De l’œnologie à la viticulture (Quae) : année de parution (2017 selon le livre) non confirmée",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Descriptions des types de climat (étés, pluies) : reprises du livre, non recoupées par une source indépendante","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Classement du livre par surface plantée (méditerranéen, puis semi-aride, puis tempéré) : non retrouvé dans les sources consultées","Willamette (Oregon) : le livre la range en climat maritime ; un classement Köppen Csb (méditerranéen à été frais) est avancé ailleurs, à sourcer ; non tranché","Carbonneau et Escudier, De l’œnologie à la viticulture (Quae) : année de parution (2017 selon le livre) non confirmée"],
     src: "Mille Vignes, P. Lepeltier, p. 117 ; Puga et al. 2022, A climatic classification of the world’s wine regions (Oeno One) ; Éditions Quae, Alain Carbonneau",
     page: 117
   },
@@ -701,13 +659,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Krakatau : couchers de soleil rouges environ 3 ans ; le refroidissement chiffré (jusqu’à 1,2 °C) d’une source universitaire n’est pas recoupé et n’est pas repris",
-      "Mont Saint Helens : l’USGS le cite pour son CO2, pas comme éruption refroidissante ; classement du livre non confirmé, volontairement absent des exercices",
-      "Millésime 1816 en Bourgogne ou ailleurs : date de vendanges non vérifiée, non reprise",
-      "Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Krakatau : couchers de soleil rouges environ 3 ans ; le refroidissement chiffré (jusqu’à 1,2 °C) d’une source universitaire n’est pas recoupé et n’est pas repris","Mont Saint Helens : l’USGS le cite pour son CO2, pas comme éruption refroidissante ; classement du livre non confirmé, volontairement absent des exercices","Millésime 1816 en Bourgogne ou ailleurs : date de vendanges non vérifiée, non reprise","Pinatubo ne figure pas dans la frise du livre : ajouté d’après l’USGS et la NASA"],
     src: "Mille Vignes, P. Lepeltier, p. 119 ; Futura-Sciences, L’éruption du Tambora est bien responsable de l’année 1816 sans été ; Oregon State University, Describe the 1883 eruption of Krakatau ; USGS, Volcanoes can affect climate ; GIEC AR5, groupe I, chap. 5 (FAQ 5.1) ; NASA Earth Observatory, Volcanoes and climate change",
     page: 119
   },
@@ -730,13 +683,9 @@ FICHES.push(
     ],
     schema: null,
     cours: {"lede":"Avant les thermomètres, il y avait les vendanges : chaque année, une autorité fixe une date, et cette date finit dans les archives. Aligner des siècles de ban, c’est lire une courbe de température.","frise":[{"date":"1354","txt":"Début de la série de Beaune exploitée par Labbé et al. (2019), qui court jusqu’en 2018."},{"date":"1370","txt":"Début de la série bourguignonne de Chuine et al. (2004) pour reconstituer les températures de printemps-été."},{"date":"1967","txt":"Le Roy Ladurie publie Histoire du climat depuis l’an mil et popularise les dates de vendanges comme indicateur."},{"date":"1988-2018","txt":"À Beaune, les vendanges commencent en moyenne environ 13 jours plus tôt qu’avant (Labbé et al.)."},{"date":"2003","txt":"Canicule : été probablement le plus chaud en Bourgogne depuis 1370 selon Chuine et al."}],"essentiel":"Un ban de vendanges est une date officielle, donc archivée ; plus la date est précoce, plus le printemps-été a été chaud. Chaque série doit être corrigée de ce qui relève des hommes (guerres, pratiques, décisions).","sections":[{"h":"Pourquoi une date de vendange dit la température","blocs":[{"imp":"essentiel","txt":"La vigne mûrit d’autant plus vite que la saison est chaude : une vendange précoce signe un printemps-été chaud, une tardive du froid ou de la pluie. Comme le ban est une décision publique, il laisse une trace écrite."},{"imp":"important","txt":"Les historiens du climat l’utilisent avec d’autres témoins : dates de moisson des blés, progression des glaciers, cernes des arbres."},{"imp":"utile","txt":"Chuine et al. ne lisent pas la date brute : un modèle de maturation du pinot noir la convertit en température de printemps-été."}],"table":null},{"h":"Trois jalons de la méthode","blocs":[{"imp":"essentiel","txt":"Chaque étape fait passer la méthode d’un cran : de l’idée historique à la reconstitution chiffrée, puis à la série la plus longue."}],"table":{"caption":"Qui a fait quoi","head":["Travail","Ce qu’il apporte","À retenir"],"rows":[{"imp":"essentiel","cells":["Le Roy Ladurie (Histoire du climat depuis l’an mil, 1967)","Les bans de vendanges deviennent un indicateur climatique","Phénologie historique, à côté de la glaciologie et de la dendrochronologie"]},{"imp":"essentiel","cells":["Chuine et al. (Nature, 2004)","Températures de printemps-été en Bourgogne, de 1370 à 2003","L’été 2003 est probablement le plus chaud depuis 1370 ; des étés aussi chauds que ceux des années 1990 avaient déjà eu lieu avant"]},{"imp":"important","cells":["Labbé et al. (Climate of the Past, 2019)","Série de Beaune, de 1354 à 2018","Vendanges autour du 28 septembre jusqu’en 1987, puis environ 13 jours plus tôt ; phase tardive 1820-1860 liée entre autres à des éruptions"]}]}},{"h":"Les limites de la méthode","blocs":[{"imp":"essentiel","txt":"Une date de vendanges n’est pas qu’un thermomètre : guerres, évolution œnologique et choix du propriétaire jouent aussi. D’où la démarche interdisciplinaire (historiens, climatologues, écophysiologistes, modélisateurs) qui croise les séries."},{"imp":"culture","txt":"Les records de précocité : le livre cite le 16 août 1556 à Beaune, comme les compilations usuelles ; mais l’étude de Labbé et al. se contredit entre son texte (16 août) et un tableau (26 août). Pour 2003, 19 août selon le livre et le Burgundy Report, 20 août selon Labbé. On retiendra « mi à fin août »."}],"table":null}],"synthese":[{"imp":"essentiel","txt":"Ban de vendanges = date officielle d’ouverture, donc archivée ; vendange précoce = saison chaude."},{"imp":"essentiel","txt":"Chuine et al. (2004) reconstituent les températures bourguignonnes depuis 1370 ; Labbé et al. (2019) montrent environ 13 jours d’avance à Beaune depuis 1988."},{"imp":"important","txt":"Toujours séparer le climat de l’humain : guerres, pratiques, décisions du propriétaire."},{"imp":"utile","txt":"À un client : une vendange en août n’est pas nouvelle (1556), mais elle était exceptionnelle ; elle devient fréquente."}],"src":"Mille Vignes, P. Lepeltier ; Chuine et al. 2004, Grape ripening as a past climate indicator (Nature 432, 289) ; NOAA/WDS Paleoclimatology, jeu de données Chuine et al. 2004 ; Labbé et al. 2019, Climate of the Past 15, 1485-1501 ; Burgundy Report, Harvest trivia: the historical August harvests in Beaune ; compte rendu de H. Lamb, Nature 217 (1968) ; Hérodote.net, L’historien de la France paysanne et du climat. Cf. Mille Vignes, p. 119-120."},
-    status: "needs_review",
-    to_check: [
-      "Labbé et al. 2019 : une seule étude primaire ; le livre ne la cite pas, chiffres cohérents avec sa tendance",
-      "Vendanges 1556 à Beaune : 16 août (livre, compilations) contre 26 août (tableau de Labbé) ; vendanges 2003 : 19 août (livre, Burgundy Report) contre 20 août (Labbé) ; vendanges 1559 : 21 (livre) contre 24 août (Burgundy Report) ; non tranché, aucune de ces dates n’est donnée comme bonne réponse",
-      "« Beau XVIe siècle » et « record de précocité en Europe » : formules non retrouvées dans les sources consultées ; seule la précocité des années 1550 en Bourgogne est étayée",
-      "Série bourguignonne « depuis 1370 » (livre, Chuine) ; Beaune commence en 1354 chez Labbé : nuance de périmètre, pas contradiction"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Labbé et al. 2019 : une seule étude primaire ; le livre ne la cite pas, chiffres cohérents avec sa tendance","Vendanges 1556 à Beaune : 16 août (livre, compilations) contre 26 août (tableau de Labbé) ; vendanges 2003 : 19 août (livre, Burgundy Report) contre 20 août (Labbé) ; vendanges 1559 : 21 (livre) contre 24 août (Burgundy Report) ; non tranché, aucune de ces dates n’est donnée comme bonne réponse","« Beau XVIe siècle » et « record de précocité en Europe » : formules non retrouvées dans les sources consultées ; seule la précocité des années 1550 en Bourgogne est étayée","Série bourguignonne « depuis 1370 » (livre, Chuine) ; Beaune commence en 1354 chez Labbé : nuance de périmètre, pas contradiction"],
     src: "Mille Vignes, P. Lepeltier, p. 119-120 ; Chuine et al. 2004, Grape ripening as a past climate indicator (Nature 432, 289-290, lu) ; NOAA/WDS Paleoclimatology, jeu de données Chuine et al. 2004 (Bourgogne, 1370-2003) ; Labbé et al. 2019, Climate of the Past 15, 1485-1501 ; Burgundy Report, Harvest trivia: the historical August harvests in Beaune ; Hérodote.net, L’historien de la France paysanne et du climat",
     page: 119
   },
@@ -759,12 +708,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Erreur du livre (p. 120) : « Groenland couvert alors de vignes » ; aucune source ne confirme, à ajouter à la liste des erreurs du livre",
-      "Domesday Book : 46 vignobles selon RealClimate, 46 à 52 selon les auteurs ; source unique, et son auteur juge les vignobles un mauvais indicateur de température",
-      "Vignobles belges : source unique (ULiège, conférence 2026), le parallèle avec l’optimum médiéval n’y est pas démontré",
-      "Raisins du Vinland : l’existence de raisins sauvages, peut-être des baies, est elle-même débattue"
-    ],
+    to_check: ["Raisins du Vinland : l’existence de raisins sauvages, peut-être des baies, est elle-même débattue"],
+    selon_livre: ["Erreur du livre (p. 120) : « Groenland couvert alors de vignes » ; aucune source ne confirme, à ajouter à la liste des erreurs du livre","Domesday Book : 46 vignobles selon RealClimate, 46 à 52 selon les auteurs ; source unique, et son auteur juge les vignobles un mauvais indicateur de température","Vignobles belges : source unique (ULiège, conférence 2026), le parallèle avec l’optimum médiéval n’y est pas démontré"],
     src: "Mille Vignes, P. Lepeltier, p. 120 ; World History Encyclopedia, Le Groenland à l’ère viking ; World History Encyclopedia, Disparition des colonies vikings du Groenland ; World History Encyclopedia, Vinland ; Saga of the Greenlanders (résumé) ; Canadian Mysteries (Univ. Victoria), Vinland et climat ; RealClimate, Medieval warmth and English wine ; ULiège (Doutreloup, Sacré), conférence Amis de l’Université de Liège 2026",
     page: 120
   },
@@ -787,7 +732,8 @@ FICHES.push(
     cours: null,
     schema: {"svg":"<svg viewBox=\"0 0 320 212\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<text x=\"8\" y=\"40\" font-weight=\"700\">Livre</text>\n<rect x=\"53\" y=\"28\" width=\"92\" height=\"18\" rx=\"3\" fill-opacity=\"0.12\" stroke=\"currentColor\"/><rect x=\"145\" y=\"28\" width=\"126.5\" height=\"18\" rx=\"3\" fill-opacity=\"0.45\" stroke=\"currentColor\"/>\n<text x=\"8\" y=\"100\" font-weight=\"700\">GIEC</text>\n<rect x=\"64.5\" y=\"88\" width=\"69\" height=\"18\" rx=\"3\" fill-opacity=\"0.12\" stroke=\"currentColor\"/><rect x=\"179.5\" y=\"88\" width=\"92\" height=\"18\" rx=\"3\" fill-opacity=\"0.45\" stroke=\"currentColor\"/>\n<g font-size=\"8\"><text x=\"99\" y=\"22\" text-anchor=\"middle\">optimum médiéval</text><text x=\"208.25\" y=\"22\" text-anchor=\"middle\">petit âge glaciaire</text>\n<text x=\"99\" y=\"82\" text-anchor=\"middle\">anomalie médiévale</text><text x=\"225.5\" y=\"82\" text-anchor=\"middle\">petit âge glaciaire</text></g>\n<line x1=\"239.07000000000002\" y1=\"24\" x2=\"239.07000000000002\" y2=\"150\" stroke=\"currentColor\" stroke-dasharray=\"3 2\"/><text x=\"239.07000000000002\" y=\"138\" text-anchor=\"middle\" font-weight=\"700\">1709</text>\n<line x1=\"20\" y1=\"150\" x2=\"306\" y2=\"150\" stroke=\"currentColor\"/><line x1=\"30\" y1=\"150\" x2=\"30\" y2=\"156\" stroke=\"currentColor\"/><text x=\"30\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">800</text><line x1=\"76\" y1=\"150\" x2=\"76\" y2=\"156\" stroke=\"currentColor\"/><text x=\"76\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">1000</text><line x1=\"122\" y1=\"150\" x2=\"122\" y2=\"156\" stroke=\"currentColor\"/><text x=\"122\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">1200</text><line x1=\"168\" y1=\"150\" x2=\"168\" y2=\"156\" stroke=\"currentColor\"/><text x=\"168\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">1400</text><line x1=\"214\" y1=\"150\" x2=\"214\" y2=\"156\" stroke=\"currentColor\"/><text x=\"214\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">1600</text><line x1=\"260\" y1=\"150\" x2=\"260\" y2=\"156\" stroke=\"currentColor\"/><text x=\"260\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">1800</text><line x1=\"306\" y1=\"150\" x2=\"306\" y2=\"156\" stroke=\"currentColor\"/><text x=\"306\" y=\"168\" text-anchor=\"middle\" opacity=\"0.7\">2000</text>\n<text x=\"160\" y=\"190\" text-anchor=\"middle\">Mêmes épisodes, bornes différentes : les dates varient</text><text x=\"160\" y=\"202\" text-anchor=\"middle\">selon les auteurs (aucun consensus).</text>\n</svg>","legende":"Optimum médiéval et petit âge glaciaire selon le livre et selon le GIEC (AR5), avec le grand hiver de 1709.","src":"D’après Lepeltier, Mille Vignes, p. 120 ; GIEC AR5, groupe I, chap. 5 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: ["Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850, chap. 5, tableau 5.1, lu), qui précise que les durées varient selon les auteurs : divergence de convention, non tranchée","Pic froid 1620-1670 du livre : en Bourgogne, la reconstitution de Chuine et al. (Nature 2004, lu), tirée des dates de vendange, donne au contraire des printemps-étés parmi les plus chauds de la série dans les années 1630 à 1680 (au-dessus du 90e centile) ; les deux ne mesurent pas la même chose (températures d’avril à août en Bourgogne) : divergence signalée, non tranchée","Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon","Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs","Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Bornes : livre (optimum 900-1300 ; petit âge glaciaire XIVe siècle-1850 avec pics 1300-1380, 1620-1670, 1820-1860) contre GIEC AR5 (950-1250 ; 1450-1850, chap. 5, tableau 5.1, lu), qui précise que les durées varient selon les auteurs : divergence de convention, non tranchée","Pic froid 1620-1670 du livre : en Bourgogne, la reconstitution de Chuine et al. (Nature 2004, lu), tirée des dates de vendange, donne au contraire des printemps-étés parmi les plus chauds de la série dans les années 1630 à 1680 (au-dessus du 90e centile) ; les deux ne mesurent pas la même chose (températures d’avril à août en Bourgogne) : divergence signalée, non tranchée","Grand hiver de 1709 : source unique (Études héraultaises) ; « destructeur de nombreux vignobles » plausible mais non recoupé, la source cite arbres fruitiers, récoltes et Saint-Simon","Petit âge glaciaire de l’Antiquité tardive (536-660, Büntgen et al. 2016) : lien avec la chute de l’Empire romain et la peste de Justinien présenté comme hypothèse par les auteurs","Écart de température moyen de 0,3 à 0,7 °C entre optima et petits âges glaciaires (livre) : non recoupé, non repris"],
     src: "Mille Vignes, P. Lepeltier, p. 120 ; Études héraultaises, L’hiver 1709 (2006) ; Büntgen et al. 2016, Nature Geoscience (Late Antique Little Ice Age) ; Chuine et al. 2004, Nature 432, 289-290 (lu)",
     page: 120
   },
@@ -810,14 +756,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "+1,2 °C en 2020 : une seule source officielle consultée (OMM), chiffre conforme au livre",
-      "Avance des vendanges : 13, 15, 24 ou 26 jours selon vignoble, période et méthode ; le livre parle d’une semaine d’avance du débourrement à la véraison, non confirmée par les sources",
-      "Tavel et Châteauneuf-du-Pape : source de presse unique (Pleinchamp)",
-      "Hausse du degré alcoolique : aucun chiffre trouvé dans les sources, aucun « +x % vol. » avancé",
-      "Geisenheim : le livre évoque plus de biomasse « dont acides » et plus de sensibilité aux pathogènes ; l’étude VineyardFACE ne le confirme pas (auteurs : chaleur et sécheresse pourraient changer le constat)",
-      "Ruddiman (2003) : 0,8 °C vers 1800 dans l’article, « plus de 1 °C » dans le livre ; refroidissements « depuis 2 500 ans » (livre) contre épidémies des 1 000 dernières années (article) ; hypothèse présentée comme provisoire par son auteur"
-    ],
+    to_check: ["Avance des vendanges : 13, 15, 24 ou 26 jours selon vignoble, période et méthode ; le livre parle d’une semaine d’avance du débourrement à la véraison, non confirmée par les sources"],
+    selon_livre: ["+1,2 °C en 2020 : une seule source officielle consultée (OMM), chiffre conforme au livre","Tavel et Châteauneuf-du-Pape : source de presse unique (Pleinchamp)","Hausse du degré alcoolique : aucun chiffre trouvé dans les sources, aucun « +x % vol. » avancé","Geisenheim : le livre évoque plus de biomasse « dont acides » et plus de sensibilité aux pathogènes ; l’étude VineyardFACE ne le confirme pas (auteurs : chaleur et sécheresse pourraient changer le constat)","Ruddiman (2003) : 0,8 °C vers 1800 dans l’article, « plus de 1 °C » dans le livre ; refroidissements « depuis 2 500 ans » (livre) contre épidémies des 1 000 dernières années (article) ; hypothèse présentée comme provisoire par son auteur"],
     src: "Mille Vignes, P. Lepeltier, p. 118-121 ; OMM, State of the Global Climate 2020 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Labbé et al. 2019, Climate of the Past 15, 1485-1501 ; Pleinchamp, Vendanges 24 jours plus tôt en 50 ans ; OENO One, étude VineyardFACE Geisenheim (CO2 élevé, cabernet-sauvignon 2019-2021) ; Ruddiman 2003, The anthropogenic greenhouse era began thousands of years ago (Climatic Change)",
     page: 120
   },
@@ -839,12 +779,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "Six cépages approuvés en 2021 : presse seule (The Drinks Business) ; la liste actuelle (dix variétés, sans petit manseng) et les plafonds de 5 % et 10 % sont confirmés par les cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026)",
-      "Leviers d’adaptation : LACCAVE/INRAE ne traite ni les porte-greffes ni l’altitude ; lien porte-greffes / sécheresse non vérifié ici",
-      "Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Six cépages approuvés en 2021 : presse seule (The Drinks Business) ; la liste actuelle (dix variétés, sans petit manseng) et les plafonds de 5 % et 10 % sont confirmés par les cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026)","Leviers d’adaptation : LACCAVE/INRAE ne traite ni les porte-greffes ni l’altitude ; lien porte-greffes / sécheresse non vérifié ici","Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices"],
     src: "Mille Vignes, P. Lepeltier, p. 121-122 ; LACCAVE / INRAE, document de synthèse sur l’adaptation de la filière vin ; Syndicat des vins de Bordeaux, Nouveaux cépages dans les cahiers des charges Bordeaux ; INAO, cahiers des charges AOC Bordeaux (arrêté du 13 mai 2026) et Bordeaux supérieur (arrêté du 4 juin 2026) ; The Drinks Business, INAO approves six new grapes in Bordeaux (27 janv. 2021) ; Decanter, Bordeaux winemakers allow new grapes (2 juillet 2019) ; INAO, directive VIFA du 3 juin 2021",
     page: 121
   },
@@ -866,12 +803,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "VitAdapt (INRAE Bordeaux) : parcelle plantée en 2009 avec 52 cépages (31 rouges, 21 blancs), six groupes de précocité et une vingtaine de cépages microvinifiés, confirmés (Chambre d’agriculture de la Gironde, PNDV Tour 2023 ; posters et actes IVES de Destrac-Irvine ; AgriAdapt) ; le livre parle d’une « vingtaine de vinifications », il s’agit d’une vingtaine de cépages vinifiés sur plusieurs millésimes. Une seule source chacun : surface d’environ 0,5 ha (L’Info Durable) et 5 hybrides résistants (document non signé).",
-      "Terret noir : « replanté à Châteauneuf-du-Pape » (livre) nuancé par Tablas Creek et iDealwine (autorisé, très peu planté) ; ne pas le confondre avec les cépages de l’AOC Bordeaux ni avec VitAdapt",
-      "Tablas Creek : importation 2003, planté en 2010, récolte vers 21-21,6 °Brix : source du domaine, intérêt commercial possible"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["VitAdapt (INRAE Bordeaux) : parcelle plantée en 2009 avec 52 cépages (31 rouges, 21 blancs), six groupes de précocité et une vingtaine de cépages microvinifiés, confirmés (Chambre d’agriculture de la Gironde, PNDV Tour 2023 ; posters et actes IVES de Destrac-Irvine ; AgriAdapt) ; le livre parle d’une « vingtaine de vinifications », il s’agit d’une vingtaine de cépages vinifiés sur plusieurs millésimes. Une seule source chacun : surface d’environ 0,5 ha (L’Info Durable) et 5 hybrides résistants (document non signé).","Terret noir : « replanté à Châteauneuf-du-Pape » (livre) nuancé par Tablas Creek et iDealwine (autorisé, très peu planté) ; ne pas le confondre avec les cépages de l’AOC Bordeaux ni avec VitAdapt","Tablas Creek : importation 2003, planté en 2010, récolte vers 21-21,6 °Brix : source du domaine, intérêt commercial possible"],
     src: "Mille Vignes, P. Lepeltier, p. 121-122 ; L’Info Durable, Sur la parcelle 52, Bordeaux teste des cépages étrangers ; Tablas Creek, Terret noir ; iDealwine, Les 13 cépages à Châteauneuf : mythe ou réalité",
     page: 122
   },
@@ -894,7 +828,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Flavescence dorée : le livre présente l’extension nordique comme un effet du réchauffement, la source (Réussir Vigne, Thiéry) nuance fortement ; source unique","Drosophila suzukii : première détection dans le vignoble bordelais aux vendanges 2011, sans dégât (Rouzès et al., J. Int. Sci. Vigne Vin 46(2), 2012, lu ; Réussir Vigne) ; les attaques de 2014 dans le Centre et le Nord-Est (livre) et le lien avec le climat ne sont pas vérifiés","Cépages « gris » (livre) : non confirmés, seule la préférence pour les rouges est étayée"],
+    to_check: ["Flavescence dorée : le livre présente l’extension nordique comme un effet du réchauffement, la source (Réussir Vigne, Thiéry) nuance fortement ; source unique"],
+    selon_livre: ["Drosophila suzukii : première détection dans le vignoble bordelais aux vendanges 2011, sans dégât (Rouzès et al., J. Int. Sci. Vigne Vin 46(2), 2012, lu ; Réussir Vigne) ; les attaques de 2014 dans le Centre et le Nord-Est (livre) et le lien avec le climat ne sont pas vérifiés","Cépages « gris » (livre) : non confirmés, seule la préférence pour les rouges est étayée"],
     src: "Mille Vignes, P. Lepeltier, p. 121 ; Réussir Vigne, Progression de la cicadelle de la flavescence dorée vers les régions du nord ; Réussir Vigne, Rester vigilant face à Drosophila suzukii ; Rouzès, Delbac, Ravidat et Thiéry, First occurrence of Drosophila suzukii in the Sauternes vineyards (J. Int. Sci. Vigne Vin 46(2), 145-147, 2012, lu)",
     page: 121
   },
@@ -916,12 +851,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "Superficie britannique : 3 758 ha en 2021 (Food Standards Agency, via Decanter) contre 2 700 ha et 150 ha en 1975 dans le livre ; écart non expliqué, chiffre 1975 non retrouvé",
-      "Bodega Colomé : environ 135 ha de 2 400 à 3 111 m, « plus haut du monde » = revendication commerciale, source unique ; altitudes de Tupungato, Uco, San Carlos (plus de 1 100 m) non vérifiées",
-      "Australia’s Wine Future : le livre donne 5 km de résolution ; la source précise 5 km seulement pour le sud-est (environ 10 km pour la Tasmanie, le Queensland et le nord de la Nouvelle-Galles du Sud)"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Superficie britannique : 3 758 ha en 2021 (Food Standards Agency, via Decanter) contre 2 700 ha et 150 ha en 1975 dans le livre ; écart non expliqué, chiffre 1975 non retrouvé","Bodega Colomé : environ 135 ha de 2 400 à 3 111 m, « plus haut du monde » = revendication commerciale, source unique ; altitudes de Tupungato, Uco, San Carlos (plus de 1 100 m) non vérifiées","Australia’s Wine Future : le livre donne 5 km de résolution ; la source précise 5 km seulement pour le sud-est (environ 10 km pour la Tasmanie, le Queensland et le nord de la Nouvelle-Galles du Sud)"],
     src: "Mille Vignes, P. Lepeltier, p. 121 ; Decanter, Sales of English and Welsh wine soared in 2021 ; Wein.plus Lexikon, Colomé ; Wine Australia, Australia’s Wine Future: A Climate Atlas",
     page: 121
   },
@@ -943,10 +875,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Source unique et non indépendante (histoire du domaine sur son site) : comparaison avec la Côte d’Or, dates 1970-1972, eau froide du Gassac",
-      "Les grèzes et les dates d’Enjalbert (1910-1983) figurent dans le livre mais pas sur la page du domaine : non reprises"
-    ],
+    to_check: ["Source unique et non indépendante (histoire du domaine sur son site) : comparaison avec la Côte d’Or, dates 1970-1972, eau froide du Gassac"],
+    selon_livre: ["Les grèzes et les dates d’Enjalbert (1910-1983) figurent dans le livre mais pas sur la page du domaine : non reprises"],
     src: "Mille Vignes, P. Lepeltier, p. 123 ; Mas de Daumas Gassac, Histoire du domaine",
     page: 123
   }

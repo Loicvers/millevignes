@@ -13,7 +13,7 @@ const out = [
   ``,
   `Généré par \`tools/a-verifier.mjs\` depuis les champs \`to_check\` : ne pas éditer à la main.`,
   `${notions.length} fiches : ${verified} vérifiées, ${todo.length} à vérifier (${items} points).`,
-  `Hors dette : ${selon} détails laissés « selon Lepeltier » (champ \`selon_livre\`, non listés ici).`,
+  `Hors dette : ${selon} détails laissés « selon le livre » (champ \`selon_livre\`, non listés ici).`,
   ``,
   ...todo.map(n => `**Fiche ${n.legacy_id}** (p.${n.refs?.[0]?.page ?? "?"}) — ${n.titre}\n` +
     n.to_check.map(t => `- [ ] ${t}`).join("\n") + "\n"),

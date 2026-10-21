@@ -17,11 +17,8 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<rect x=\"8\" y=\"18\" width=\"190\" height=\"22\" rx=\"5\" fill-opacity=\"0.08\" stroke=\"currentColor\"/><text x=\"16\" y=\"33\" font-weight=\"bold\">litière</text><text x=\"206\" y=\"28\">matière organique libre</text><text x=\"206\" y=\"38\">et grossière, en surface</text>\n<rect x=\"8\" y=\"42\" width=\"190\" height=\"30\" rx=\"5\" fill-opacity=\"0.18\" stroke=\"currentColor\"/><text x=\"16\" y=\"61\" font-weight=\"bold\">matière organique fraîche</text><text x=\"206\" y=\"56\">fine, en cours de</text><text x=\"206\" y=\"66\">décomposition</text>\n<rect x=\"8\" y=\"74\" width=\"190\" height=\"44\" rx=\"5\" fill-opacity=\"0.32\" stroke=\"currentColor\"/><text x=\"16\" y=\"100\" font-weight=\"bold\">humus</text><text x=\"206\" y=\"94\">transformé, stable,</text><text x=\"206\" y=\"104\">lié aux minéraux</text>\n<path d=\"M8 120 L198 120 L198 168 L8 168 Z\" fill-opacity=\"0.08\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"16\" y=\"146\" font-weight=\"bold\">sol minéral</text>\n<path d=\"M8 170 L40 178 L70 172 L110 182 L150 174 L198 180 L198 204 L8 204 Z\" fill-opacity=\"0.5\" stroke=\"currentColor\"/><text x=\"16\" y=\"198\" font-weight=\"bold\">roche mère</text>\n<text x=\"206\" y=\"150\">Le sol est l’interface</text><text x=\"206\" y=\"160\">entre l’atmosphère</text><text x=\"206\" y=\"170\">et la roche.</text>\n<text x=\"8\" y=\"12\" opacity=\"0.7\">atmosphère</text>\n</svg>","legende":"La fraction organique du sol, de la litière à l’humus, au-dessus du sol minéral et de la roche mère.","src":"D’après Lepeltier, Mille Vignes, p. 76 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: [
-      "« Trop petit, trop sale, trop opaque » : une présentation de Selosse parle de cinq termes (opaque, sale, lent, trop petit, dégradant) ; Lepeltier simplifie",
-      "Chiffres du livre (sol 6,5 % de la surface terrestre, terres non cultivables 22,5 %) : non retrouvés, volontairement non repris",
-      "« Sol vu comme simple support » jusqu’aux années 1970 : repris du livre, non recoupé", "Découpage litière / matière organique fraîche / humus : repris du livre (p. 76), non recoupé"
-    ],
+    to_check: ["Découpage litière / matière organique fraîche / humus : repris du livre (p. 76), non recoupé"],
+    selon_livre: ["« Trop petit, trop sale, trop opaque » : une présentation de Selosse parle de cinq termes (opaque, sale, lent, trop petit, dégradant) ; Lepeltier simplifie","Chiffres du livre (sol 6,5 % de la surface terrestre, terres non cultivables 22,5 %) : non retrouvés, volontairement non repris","« Sol vu comme simple support » jusqu’aux années 1970 : repris du livre, non recoupé"],
     src: "Mille Vignes, P. Lepeltier, p. 76 ; Selosse, Le sol, un invisible omniprésent (diaporama) ; Population Education, Earth’s surface",
     page: 76
   },
@@ -43,6 +40,7 @@ FICHES.push(
     ],
     status: "needs_review",
     to_check: ["Enchaînement des étapes de décomposition et composition de l’humus : repris du livre (p. 78), non recoupé par une source indépendante"],
+    selon_livre: [],
     src: "Mille Vignes, P. Lepeltier, p. 78",
     page: 78
   },
@@ -64,12 +62,8 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 214\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L7 4L0 8z\" fill=\"currentColor\"/></marker></defs>\n<text x=\"80\" y=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Sans pont : répulsion</text>\n<rect x=\"14\" y=\"30\" width=\"44\" height=\"22\" rx=\"4\" fill-opacity=\"0.35\" stroke=\"currentColor\"/><text x=\"36\" y=\"45\" text-anchor=\"middle\">argile −</text>\n<ellipse cx=\"128\" cy=\"41\" rx=\"24\" ry=\"14\" fill-opacity=\"0.15\" stroke=\"currentColor\"/><text x=\"128\" y=\"45\" text-anchor=\"middle\">humus −</text>\n<line x1=\"68\" y1=\"41\" x2=\"62\" y2=\"41\" stroke=\"currentColor\" marker-end=\"url(#a)\"/><line x1=\"92\" y1=\"41\" x2=\"100\" y2=\"41\" stroke=\"currentColor\" marker-end=\"url(#a)\"/>\n<text x=\"80\" y=\"70\" text-anchor=\"middle\" opacity=\"0.75\">les deux sont lessivés</text>\n<text x=\"240\" y=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Avec pont : complexe</text>\n<rect x=\"176\" y=\"30\" width=\"44\" height=\"22\" rx=\"4\" fill-opacity=\"0.35\" stroke=\"currentColor\"/>\n<circle cx=\"236\" cy=\"41\" r=\"11\" fill-opacity=\"0.6\"/><text x=\"236\" y=\"24\" text-anchor=\"middle\" font-weight=\"bold\">Ca²⁺</text>\n<ellipse cx=\"276\" cy=\"41\" rx=\"24\" ry=\"14\" fill-opacity=\"0.15\" stroke=\"currentColor\"/>\n<text x=\"198\" y=\"68\" text-anchor=\"middle\">argile</text><text x=\"276\" y=\"68\" text-anchor=\"middle\">humus</text>\n<text x=\"160\" y=\"104\" text-anchor=\"middle\" font-weight=\"bold\">complexe argilo-humique</text>\n<text x=\"160\" y=\"118\" text-anchor=\"middle\">ponts : Ca²⁺, Mg²⁺, hydroxydes de fer, colles biologiques</text>\n<rect x=\"60\" y=\"134\" width=\"200\" height=\"34\" rx=\"6\" fill-opacity=\"0.12\" stroke=\"currentColor\"/>\n<text x=\"160\" y=\"148\" text-anchor=\"middle\">le complexe retient K⁺, NH₄⁺… et les rend</text><text x=\"160\" y=\"160\" text-anchor=\"middle\">aux racines par échange</text>\n<text x=\"160\" y=\"186\" text-anchor=\"middle\" font-weight=\"bold\">CEC</text><text x=\"160\" y=\"198\" text-anchor=\"middle\">capacité d’échange cationique</text>\n</svg>","legende":"Argile et humus, tous deux négatifs, se repoussent ; un pont (calcium, par exemple) les lie en complexe qui retient les cations nutritifs.","src":"D’après Lepeltier, Mille Vignes, p. 78 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: [
-      "Rôle d’agrégation de la glomaline : identité de la molécule discutée (extrait brut GRSP, mélange possible de matières organiques ; revue 2021)",
-      "Thèse de Claude et Lydia Bourguignon sur l’origine des argiles (indirectement via la nutrition des plantes) : non reprise par la pédologie classique, non reprise ici",
-      "Définition de la CEC : une source générale et une citation de l’IFV seulement",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Rôle d’agrégation de la glomaline : identité de la molécule discutée (extrait brut GRSP, mélange possible de matières organiques ; revue 2021)","Définition de la CEC : une source générale et une citation de l’IFV seulement","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Thèse de Claude et Lydia Bourguignon sur l’origine des argiles (indirectement via la nutrition des plantes) : non reprise par la pédologie classique, non reprise ici"],
     src: "Mille Vignes, P. Lepeltier, p. 78 ; USDA ARS, AR Magazine (2002), glomaline ; Crop Science Centre, revue de 25 ans de recherche sur la glomaline (2021) ; IRD, formation des argiles ; Pleinchamp (IFV)",
     page: 78
   },
@@ -89,13 +83,9 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel chercheur de l’INRA de Dijon chiffre à un milliard le nombre de bactéries par gramme de sol ?", payload: { accepted: ["Ranjard", "Lionel Ranjard"] } },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Un gramme de sol contient de l’ordre d’un milliard de bactéries et d’un million d’espèces.", answer: true } }
     ],
-    status: "needs_review",
-    to_check: [
-      "Étymologie d’anécique (grec anesis, « élasticité ») et date de la classification de Bouché (1977 selon l’AFES, 1972 selon une autre source) : non tranchés",
-      "MO moyenne des sols viticoles français « à peine 2 % » et Trentin « le double » : non retrouvés (Trentin : 2,4 à 3,2 % selon l’année)",
-      "Taille des micro-organismes « 10^-9 m » donnée par le livre : probable erreur d’ordre de grandeur, non reprise",
-      "Faible biomasse microbienne des vignobles (Ranjard) : une seule source journalistique"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Étymologie d’anécique (grec anesis, « élasticité ») et date de la classification de Bouché (1977 selon l’AFES, 1972 selon une autre source) : non tranchés","MO moyenne des sols viticoles français « à peine 2 % » et Trentin « le double » : non retrouvés (Trentin : 2,4 à 3,2 % selon l’année)","Taille des micro-organismes « 10^-9 m » donnée par le livre : probable erreur d’ordre de grandeur, non reprise","Faible biomasse microbienne des vignobles (Ranjard) : une seule source journalistique"],
     src: "Mille Vignes, P. Lepeltier, p. 79-81 ; Futura-Sciences, atlas des bactéries du sol (2019) ; Réussir Grandes Cultures, la vie du sol livre ses secrets (2014) ; MNHN Sciences Press, Atlas français des bactéries du sol ; Capowiez et al., Étude et Gestion des Sols (2022) ; Fondazione Mach, sols viticoles trentins",
     page: 79
   },
@@ -114,8 +104,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Bar-On et al. (2018), les microbes représentent 90 % de la biomasse terrestre.", answer: false }, explanation: "Ils pèsent environ 16 % (bactéries ~15 %, archées, champignons) ; les plantes font environ 80 %. Environ 90 % de la biomasse bactérienne se trouve en sous-sol profond, d’où peut-être la confusion." },
       { type: "flashcard", prompt: "Pourquoi l’affirmation « 90 % de la biomasse terrestre = microbes » est-elle écartée ?", payload: { answer: "Bar-On et al. (2018) comptent environ 80 % de plantes et 15 % de bactéries ; ~90 % de la biomasse bactérienne est en sous-sol profond." } }
     ],
-    status: "needs_review",
-    to_check: ["Titre et date de Jamais seul : une seule page lue (Espace des sciences)","Estimation de 10^12 espèces microbiennes : Locey et Lennon (PNAS 113(21), 2016, lu) prédisent 10^11 à 10^12 espèces par extrapolation, jugée risquée par les auteurs ; « potentiellement 99,999 % » des taxons restent à découvrir : ordre de grandeur du livre cohérent, mais c’est une prédiction de modèle, une seule source","Le chiffre de 90 % attribué à Selosse n’a pas été retrouvé dans ses écrits : il n’est pas repris"],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Titre et date de Jamais seul : une seule page lue (Espace des sciences)","Estimation de 10^12 espèces microbiennes : Locey et Lennon (PNAS 113(21), 2016, lu) prédisent 10^11 à 10^12 espèces par extrapolation, jugée risquée par les auteurs ; « potentiellement 99,999 % » des taxons restent à découvrir : ordre de grandeur du livre cohérent, mais c’est une prédiction de modèle, une seule source","Le chiffre de 90 % attribué à Selosse n’a pas été retrouvé dans ses écrits : il n’est pas repris"],
     src: "Mille Vignes, P. Lepeltier, p. 79 ; Bar-On, Phillips et Milo (2018), The biomass distribution on Earth ; Our World in Data, Life on Earth ; Locey et Lennon, Scaling laws predict global microbial diversity (PNAS 113(21), 5970-5975, 2016, lu) ; Espace des sciences, Jamais seul",
     page: 79
   },
@@ -137,10 +128,8 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<text x=\"68\" y=\"20\" text-anchor=\"middle\" font-weight=\"bold\">Endomycorhize</text><text x=\"68\" y=\"32\" text-anchor=\"middle\">à arbuscules (vigne)</text>\n<rect x=\"8\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"8\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"8\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"38\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"68\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"98\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><path d=\"M0 104 C12 102 26 106 38 104 C44 103 48 104 52 104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><g stroke=\"currentColor\" stroke-width=\"1.2\" fill=\"none\"><path d=\"M52 104 L58 96 L62 92 M58 96 L62 98 M52 104 L60 106 L64 102 M60 106 L63 110 M52 104 L56 112 L52 116 M56 112 L60 115\"/></g><text x=\"96\" y=\"132\" font-size=\"8\">arbuscule</text><line x1=\"94\" y1=\"130\" x2=\"62\" y2=\"108\" stroke=\"currentColor\" stroke-opacity=\"0.5\"/>\n<text x=\"68\" y=\"166\" text-anchor=\"middle\">le champignon entre</text><text x=\"68\" y=\"177\" text-anchor=\"middle\">dans les cellules</text>\n<text x=\"252\" y=\"20\" text-anchor=\"middle\" font-weight=\"bold\">Ectomycorhize</text><text x=\"252\" y=\"32\" text-anchor=\"middle\">(chêne truffier…)</text>\n<rect x=\"192\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"60\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"192\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"90\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"192\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"222\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"252\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"282\" y=\"120\" width=\"28\" height=\"28\" rx=\"3\" fill-opacity=\"0.06\" stroke=\"currentColor\"/><rect x=\"188\" y=\"52\" width=\"128\" height=\"8\" fill-opacity=\"0.45\"/><g stroke=\"currentColor\" stroke-width=\"1.4\"><line x1=\"221\" y1=\"60\" x2=\"221\" y2=\"148\"/><line x1=\"251\" y1=\"60\" x2=\"251\" y2=\"148\"/><line x1=\"281\" y1=\"60\" x2=\"281\" y2=\"148\"/></g>\n<text x=\"252\" y=\"166\" text-anchor=\"middle\">manteau autour de la racine,</text><text x=\"252\" y=\"177\" text-anchor=\"middle\">hyphes entre les cellules</text>\n<text x=\"160\" y=\"200\" text-anchor=\"middle\">Échange : la plante donne des sucres,</text><text x=\"160\" y=\"212\" text-anchor=\"middle\">le champignon apporte eau, azote et phosphore.</text>\n</svg>","legende":"Endomycorhize à arbuscules, celle de la vigne, et ectomycorhize, plus rare.","src":"D’après Lepeltier, Mille Vignes, p. 81 ; dessin simplifié et original"},
     status: "needs_review",
-    to_check: [
-      "Part des plantes à endomycorhizes à arbuscules : 72 % des espèces à fleurs (Brundrett et Tedersoo), environ 80 % (Mycoagra, livre) : formulé « 70 à 80 % »",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Part des plantes à endomycorhizes à arbuscules : 72 % des espèces à fleurs (Brundrett et Tedersoo), environ 80 % (Mycoagra, livre) : formulé « 70 à 80 % »"],
     src: "Mille Vignes, P. Lepeltier, p. 77 et 81 ; Brundrett et Tedersoo (2018), New Phytologist ; Projet CASDAR Mycoagra, fiche symbiose mycorhizienne ; Frontiers in Plant Science (2021), mycorhization de Vitis vinifera ; Réussir Vigne (2017)",
     page: 81
   },
@@ -161,11 +150,8 @@ FICHES.push(
       { type: "explain_client", prompt: "Un client te demande : « pourquoi une vigne nourrie aux engrais minéraux peut-elle devenir plus fragile ? » Explique-le-lui.", payload: { model: "Quand l’azote, le phosphore et le potassium arrivent directement par les engrais, la vigne n’a plus besoin de nourrir ses champignons mycorhiziens, qui régressent. Elle perd alors leurs autres services : exploration d’un grand volume de sol, protection contre les pathogènes, résistance aux stress, structure du sol. Elle devient dépendante des engrais et, selon Lepeltier, plus sensible aux maladies, ce qui pousse à traiter davantage.", criteria: ["Une vigne fertilisée en azote, phosphore et potassium nourrit moins ses champignons mycorhiziens, qui régressent", "Elle perd leurs services (nutrition, protection contre des pathogènes, atténuation des stress, structure du sol) et devient dépendante des engrais", "Mots simples, pas de jargon sans explication"] }, explanation: "Question fil rouge du chapitre « La vigne et son monde souterrain » (Mille Vignes, p. 81-84). Attendu : mycorhizes délaissées, services perdus, dépendance." }
     ],
     status: "needs_review",
-    to_check: [
-      "Volume de sol exploré par le mycélium : le livre dit « jusqu’à mille fois » (p. 81) puis « centuplé » (p. 84) ; Mycoagra : au moins 40 fois (une seule source). Facteur non repris",
-      "« Double spirale de dépendance » de Selosse (p. 93) : citée par le livre, non relue",
-      "Bénéfices phytosanitaires de la RIM sur vigne : possibles mais non démontrés au champ pour les maladies foliaires"
-    ],
+    to_check: ["Bénéfices phytosanitaires de la RIM sur vigne : possibles mais non démontrés au champ pour les maladies foliaires"],
+    selon_livre: ["Volume de sol exploré par le mycélium : le livre dit « jusqu’à mille fois » (p. 81) puis « centuplé » (p. 84) ; Mycoagra : au moins 40 fois (une seule source). Facteur non repris","« Double spirale de dépendance » de Selosse (p. 93) : citée par le livre, non relue"],
     src: "Mille Vignes, P. Lepeltier, p. 81-84 et 93 ; Frontiers in Plant Science (2021), symbiose AM et défenses de Vitis vinifera ; Réussir Vigne (2017) ; Projet CASDAR Mycoagra, fiche symbiose mycorhizienne",
     page: 81
   },
@@ -185,8 +171,9 @@ FICHES.push(
       { type: "ordering", prompt: "Remets ces jalons dans l’ordre chronologique.", payload: { items: ["Description de Xiphinema index (Thorne et Allen)", "Rôle de vecteur identifié (Hewitt, Raski, Goheen)", "Xiphinema italiae signalé comme vecteur secondaire"] } },
       { type: "short_answer", prompt: "Quel est le sigle du virus du court-noué ?", payload: { accepted: ["GFLV", "grapevine fanleaf virus"] } }
     ],
-    status: "needs_review",
-    to_check: ["Majorité des nématodes du sol non pathogènes (prédateurs, décomposeurs) : repris du livre (p. 81), non recoupé"],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Majorité des nématodes du sol non pathogènes (prédateurs, décomposeurs) : repris du livre (p. 81), non recoupé"],
     src: "Mille Vignes, P. Lepeltier, p. 81 ; FAO, Fanleaf degeneration ; INRAE, plaquette VACCIVINE (2021) ; Acta Agriculturae Slovenica, Xiphinema index",
     page: 81
   },
@@ -205,12 +192,9 @@ FICHES.push(
       { type: "ordering", prompt: "Selon la carte du livre (p. 80), remets ces vagues de propagation dans l’ordre, de la plus ancienne à la plus récente.", payload: { items: ["Foyer anglais (1845)", "Vinho Verde, Rosselló, Gandie (1851)", "Maresme, Málaga, Banyalbufar (1852)", "La Palma, Lanzarote (1854)"] } },
       { type: "flashcard_reverse", prompt: "1845-1854", payload: { answer: "Période de propagation de l’oïdium en Europe représentée sur la carte du livre." } }
     ],
-    status: "needs_review",
-    to_check: [
-      "Dates régionales divergentes : Bordeaux 1851 (livre) contre 1850 (Académie) ; Suisse 1852 contre 1851 ; Rioja 1853 contre 1854-1862 ; Requena 1854 contre 1855 (Geocrítica)",
-      "Dates espagnoles de 1852 : une seule source (Geocrítica, Université de Barcelone)",
-      "Voies terrestres et maritimes : non vérifiées dans les sources lues", "Arrivée en France (serres près de Paris en 1847, tout le pays vers 1850) : Académie d’agriculture seule (deux textes du même colloque)"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Dates régionales divergentes : Bordeaux 1851 (livre) contre 1850 (Académie) ; Suisse 1852 contre 1851 ; Rioja 1853 contre 1854-1862 ; Requena 1854 contre 1855 (Geocrítica)","Dates espagnoles de 1852 : une seule source (Geocrítica, Université de Barcelone)","Voies terrestres et maritimes : non vérifiées dans les sources lues","Arrivée en France (serres près de Paris en 1847, tout le pays vers 1850) : Académie d’agriculture seule (deux textes du même colloque)"],
     src: "Mille Vignes, P. Lepeltier, p. 80 ; Académie d’agriculture de France, histoire de l’oïdium (2007) ; Wein.plus, William Tucker ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064) ; Geocrítica (Université de Barcelone), l’oïdium en Catalogne",
     page: 80
   },
@@ -230,11 +214,8 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque espèce à son nom usuel.", payload: { pairs: [["Tuber melanosporum", "Truffe noire du Périgord"], ["Tuber aestivum", "Truffe d’été"], ["Tuber magnatum", "Truffe blanche"]] } }
     ],
     status: "needs_review",
-    to_check: [
-      "Plants de vigne mycorhizés en pépinière (« depuis une dizaine d’années » selon le livre) : une seule source lue (Réussir Vigne, 2017) ; date de début d’offre commerciale non établie",
-      "Débat souches importées contre indigènes : question posée par le livre, non vérifiée",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Plants de vigne mycorhizés en pépinière (« depuis une dizaine d’années » selon le livre) : une seule source lue (Réussir Vigne, 2017) ; date de début d’offre commerciale non établie","Débat souches importées contre indigènes : question posée par le livre, non vérifiée"],
     src: "Mille Vignes, P. Lepeltier, p. 84 ; Paolocci et al. (2004), Tuber aestivum and T. uncinatum ; Réussir Vigne (2017), plants mycorhizés",
     page: 84
   }
@@ -256,12 +237,8 @@ FICHES.push(
       { type: "explain_client", prompt: "Un client te demande : « qu’est-ce qu’un holobionte, et pourquoi la vigne en est-elle un ? » Explique-le-lui.", payload: { model: "Un holobionte est l’ensemble formé par un organisme et les micro-organismes qu’il héberge. La vigne en est un : ses chloroplastes descendent de bactéries, ses feuilles et ses racines abritent des bactéries et des champignons (dont les mycorhizes) qui la nourrissent et la protègent. Ses maladies et sa santé dépendent de cet équilibre, que les traitements peu sélectifs peuvent rompre.", criteria: ["Un holobionte est un organisme et les micro-organismes qu’il héberge (son microbiote), des mutualistes aux parasites", "La vigne en est un : sa feuille héberge une phyllosphère de micro-organismes, et ses chloroplastes descendent de cyanobactéries (endosymbiose)", "Mots simples, pas de jargon sans explication"] }, explanation: "Question fil rouge du chapitre « La vigne et son monde aérien » (Mille Vignes, p. 85). Attendu : organisme + microbes ; endosymbiose ; équilibre fragile." }
     ],
     status: "needs_review",
-    to_check: [
-      "Date de Margulis : le livre dit « années 1970 » ; l’article fondateur (signé Lynn Sagan) paraît en 1967 et le livre de synthèse date de 1970 ; dates de vie de Margulis non revérifiées",
-      "Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur) ; une antériorité de Meyer-Abich (1943) est avancée ailleurs, à sourcer ; non tranché",
-      "« 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Date de Margulis : le livre dit « années 1970 » ; l’article fondateur (signé Lynn Sagan) paraît en 1967 et le livre de synthèse date de 1970 ; dates de vie de Margulis non revérifiées","Origine du terme holobionte : Margulis 1991 selon Simon et al. (Microbiome, 2019, Selosse coauteur) ; une antériorité de Meyer-Abich (1943) est avancée ailleurs, à sourcer ; non tranché","« 100 millions de bactéries par gramme de feuille » (livre) non retrouvé : les sources donnent 10^6 à 10^7 par cm² de feuille ; chiffre non repris ici"],
     src: "Mille Vignes, P. Lepeltier, p. 85 ; Encyclopédie de l’environnement, pionniers de la théorie endosymbiotique ; Embryo Project, On the Origin of Mitosing Cells (1967) ; Simon, Marchesi, Mougel et Selosse, Host-microbiota interactions: from holobiont theory to analysis (Microbiome, 2019) ; BioNumbers, bactéries par cm² de feuille",
     page: 85
   },
@@ -327,11 +304,9 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Dans les Géorgiques, Virgile évoque l’union des vignes et des ormes.", answer: true }, explanation: "Géorgiques I, v. 2 : « ulmisque adiungere vitis ». Le livre ne nomme pas le poète ; l’identification à Virgile est une inférence. L’expression vite maritata n’y figure pas." },
       { type: "mcq_single", prompt: "Selon le livre, qui plantait la vigne sur échalas, par opposition à l’arbre ?", payload: { options: ["Les riches", "Les pauvres", "Les moines uniquement", "Les armées romaines"], answer: 0 }, explanation: "Selon Lepeltier, les riches utilisaient l’échalas, les pauvres des arbres et la complantation." }
     ],
-    status: "needs_review",
-    to_check: [
-      "Étrusques (conduite haute) et héritage gréco-oriental du gobelet : une seule source (Guado al Melo, vulgarisation) ; à doubler par un ouvrage académique",
-      "Virgile : identification du « poète » par inférence ; le terme vite maritata ne figure pas dans son texte"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Étrusques (conduite haute) et héritage gréco-oriental du gobelet : une seule source (Guado al Melo, vulgarisation) ; à doubler par un ouvrage académique","Virgile : identification du « poète » par inférence ; le terme vite maritata ne figure pas dans son texte"],
     src: "Mille Vignes, P. Lepeltier, p. 82-83 (schéma), 86-88 ; Virgile, Georgics I (Sacred Texts) ; Guado al Melo, Wine and the Etruscans II: the married vine ; Consoglobe, Tentez la joualle ; Réussir Vigne, Viticulture en Gironde : la mixité de plantes permise par les joualles (définition du CNRTL)",
     page: 86
   },
@@ -351,12 +326,8 @@ FICHES.push(
       { type: "cloze", prompt: "Complète.", payload: { text: "L’armoise de {{Verlot}} (Artemisia verlotiorum) a été reliée au {{1,8-cinéole}} dans des rouges français." } }
     ],
     status: "needs_review",
-    to_check: [
-      "1,8-cinéole (AWRI) : l’AWRI insiste sur le contact avec des débris d’eucalyptus plutôt que sur un « dépôt » aérien ; l’étude sur les pinots de la Yarra Valley n’a pas été confirmée",
-      "Martha’s Vineyard : effet des eucalyptus présenté comme acquis par le livre, mais contesté par Heitz ; une seule source (Decanter)",
-      "Les frères Verlot (Bernard et Jean-Baptiste) non vérifiés",
-      "Darricau, La Vigne et ses plantes compagnes (2019) et Diego Tomasi / roncier et pinot noir : non retrouvés, non repris"
-    ],
+    to_check: ["1,8-cinéole (AWRI) : l’AWRI insiste sur le contact avec des débris d’eucalyptus plutôt que sur un « dépôt » aérien ; l’étude sur les pinots de la Yarra Valley n’a pas été confirmée"],
+    selon_livre: ["Martha’s Vineyard : effet des eucalyptus présenté comme acquis par le livre, mais contesté par Heitz ; une seule source (Decanter)","Les frères Verlot (Bernard et Jean-Baptiste) non vérifiés","Darricau, La Vigne et ses plantes compagnes (2019) et Diego Tomasi / roncier et pinot noir : non retrouvés, non repris"],
     src: "Mille Vignes, P. Lepeltier, p. 88 ; AWRI, Fact sheet Eucalyptus character in wine ; Poitou, Thibon, Darriet, J. Agric. Food Chem. 65(2), 2017 (ISVV) ; Réussir Vigne, Les notes végétales dévoilent leurs mystères ; Decanter, Heitz Martha’s Vineyard 1974",
     page: 88
   },
@@ -376,12 +347,8 @@ FICHES.push(
       { type: "mcq_multi", prompt: "Quelles familles le livre cite-t-il parmi les engrais verts ?", payload: { options: ["Brassicacées (crucifères)", "Poacées (graminées)", "Fabacées", "Orchidacées", "Éricacées"], answers: [0, 1, 2] }, explanation: "Les fabacées fixent l’azote ; brassicacées et poacées décompactent le sol." }
     ],
     status: "needs_review",
-    to_check: [
-      "Cahier des charges de Saumur-Champigny : version PNO de 2015 lue, état actuel non vérifié",
-      "Ducerf, L’Encyclopédie des plantes bio-indicatrices : existence confirmée par des catalogues, contenu non lu",
-      "« Baragane » (poireau des vignes dans le Bordelais) : non confirmé ; Allium vineale s’appelle « ail des vignes »",
-      "Luzerne, vesce velue et avoine en jachère contre les nématodes du court-noué : non confirmés (la source lue cite le sainfoin et au moins 18 mois de repos)"
-    ],
+    to_check: ["Cahier des charges de Saumur-Champigny : version PNO de 2015 lue, état actuel non vérifié"],
+    selon_livre: ["Ducerf, L’Encyclopédie des plantes bio-indicatrices : existence confirmée par des catalogues, contenu non lu","« Baragane » (poireau des vignes dans le Bordelais) : non confirmé ; Allium vineale s’appelle « ail des vignes »","Luzerne, vesce velue et avoine en jachère contre les nématodes du court-noué : non confirmés (la source lue cite le sainfoin et au moins 18 mois de repos)"],
     src: "Mille Vignes, P. Lepeltier, p. 88-89 ; INAO, CDC Saumur-Champigny (PNO juin 2015) ; INAO, CDC Irouléguy ; INAO, CDC Lussac Saint-Émilion 2023 ; Kokopelli, Encyclopédie des plantes bio-indicatrices ; Farmknowledge, Allium vineale ; DRAAF Grand Est, fiche court-noué",
     page: 88
   },
@@ -401,11 +368,8 @@ FICHES.push(
       { type: "flashcard", prompt: "Quelle technique, testée dans le projet Agrolife, évite de traiter les vers de la grappe par insecticide ?", payload: { answer: "La confusion sexuelle." }, explanation: "Elle perturbe l’accouplement des tordeuses." }
     ],
     status: "needs_review",
-    to_check: [
-      "Pyrale : le livre cite la pyrale de la vigne ; la source lue (Réussir) vise la pyrale du daphné (Cryptoblabes gnidiella), une autre espèce ; nom latin de la pyrale de la vigne (Sparganothis pilleriana) non vérifié",
-      "Agrolife : projet de juin 2014 à juin 2017 à Kapilio-Lania ; murets de pierres sèches non cités par les sources, caractère « LIFE » (UE) non explicite",
-      "Eulia (Argyrotaenia pulchellana) : une seule source (Réussir Vigne) ; eudémis et cochylis recoupées par la DRAAF Nouvelle-Aquitaine"
-    ],
+    to_check: ["Pyrale : le livre cite la pyrale de la vigne ; la source lue (Réussir) vise la pyrale du daphné (Cryptoblabes gnidiella), une autre espèce ; nom latin de la pyrale de la vigne (Sparganothis pilleriana) non vérifié"],
+    selon_livre: ["Agrolife : projet de juin 2014 à juin 2017 à Kapilio-Lania ; murets de pierres sèches non cités par les sources, caractère « LIFE » (UE) non explicite","Eulia (Argyrotaenia pulchellana) : une seule source (Réussir Vigne) ; eudémis et cochylis recoupées par la DRAAF Nouvelle-Aquitaine"],
     src: "Mille Vignes, P. Lepeltier, p. 87, 89-91 ; Réussir Vigne, Vers de la grappe : eudémis, cochylis, eulia et pyrale ; DRAAF Nouvelle-Aquitaine, fiche technique vers de la grappe ; Cyprus Mail, Ditching the poisons ; CUT (Ktisis), fiche projet AGROLIFE",
     page: 89
   },
@@ -424,12 +388,9 @@ FICHES.push(
       { type: "mcq_single", prompt: "Environ combien d’essences d’arbres compte le domaine ?", payload: { options: ["Environ 8", "Environ 80", "Environ 200", "Environ 800"], answer: 1 }, explanation: "« Quelque 80 essences » selon L’Info Durable (le livre dit plus de 80)." },
       { type: "short_answer", prompt: "Comment appelle-t-on l’association d’arbres et de cultures étudiée à Restinclières ?", payload: { accepted: ["agroforesterie", "l’agroforesterie", "viti-agroforesterie", "agroforesterie viticole"] } }
     ],
-    status: "needs_review",
-    to_check: [
-      "Surface : 53 ha (livre) contre 50 ha (domaine) ou 40 ha en agroforesterie selon les sources ; non tranché",
-      "INRA « depuis 1990 » (livre) : 1990 est l’achat par le Département ; INRA = convention en 1995 (Ecophytopic) ou premiers essais en 1996 avec Christian Dupraz (Réussir)",
-      "Parcelle de 1996 : syrah, grenache et 7 essences (cormier, pins, aulne, cyprès, poirier) non retrouvés ; sources partielles (cormiers, pins pignon, arbres espacés d’environ 15 m)"
-    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Surface : 53 ha (livre) contre 50 ha (domaine) ou 40 ha en agroforesterie selon les sources ; non tranché","INRA « depuis 1990 » (livre) : 1990 est l’achat par le Département ; INRA = convention en 1995 (Ecophytopic) ou premiers essais en 1996 avec Christian Dupraz (Réussir)","Parcelle de 1996 : syrah, grenache et 7 essences (cormier, pins, aulne, cyprès, poirier) non retrouvés ; sources partielles (cormiers, pins pignon, arbres espacés d’environ 15 m)"],
     src: "Mille Vignes, P. Lepeltier, p. 88, 91 ; L’Info Durable, À Restinclières les arbres protègent les cultures ; Ecophytopic, fiche Restinclières ; Réussir Vigne, Agroforesterie les pièges à éviter",
     page: 91
   },
@@ -449,11 +410,8 @@ FICHES.push(
       { type: "ordering", prompt: "Selon l’échelle de permaculture présentée dans le livre (attribuée à Alain Malard), remets ces niveaux dans l’ordre croissant.", payload: { items: ["Monoculture", "Sol couvert", "Haies", "Arbres", "Vaches", "Poules"] }, explanation: "Ordre repris du schéma du livre (p. 90) : monoculture, sol couvert, paillages, haies, arbres, vaches, poules, cochons, paysages, énergie." }
     ],
     status: "needs_review",
-    to_check: [
-      "Échelle de permaculture en 10 niveaux : non retrouvée dans les sources lues (Réussir présente Alain Malard comme vigneron et auteur de Vignes, vins et permaculture) ; présentée comme proposition citée par Lepeltier",
-      "Date de l’emblème Elzevier : 1620 selon Elsevier ; une adaptation d’un emblème de Corrozet (1540) est avancée ailleurs, à sourcer ; non tranché",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Échelle de permaculture en 10 niveaux : non retrouvée dans les sources lues (Réussir présente Alain Malard comme vigneron et auteur de Vignes, vins et permaculture) ; présentée comme proposition citée par Lepeltier","Date de l’emblème Elzevier : 1620 selon Elsevier ; une adaptation d’un emblème de Corrozet (1540) est avancée ailleurs, à sourcer ; non tranché"],
     src: "Mille Vignes, P. Lepeltier, p. 90-91 ; Réussir Vigne, Cinq points clés pour structurer une parcelle en permaculture ; Elsevier Connect, What does Non Solus mean ; Britannica, Elzevir family",
     page: 90
   }
@@ -478,7 +436,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié","15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D, tome III (INRA, 2009, lu) donne environ 20 % des pesticides en masse pour 3,7 % de la SAU, d’après Aubertot et al. 2005. Unités différentes (dépenses, masse, part de marché) : à ne pas mélanger"],
+    to_check: ["15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D, tome III (INRA, 2009, lu) donne environ 20 % des pesticides en masse pour 3,7 % de la SAU, d’après Aubertot et al. 2005. Unités différentes (dépenses, masse, part de marché) : à ne pas mélanger"],
+    selon_livre: ["Printemps silencieux : paru en 1962 (fr. 1963) ; le livre situe la prise de conscience dans les années 1970 sans dater la parution ; éditeur français non vérifié"],
     src: "Mille Vignes, P. Lepeltier, p. 92 ; Universalis, Rachel Carson ; Britannica, Rachel Carson ; L’Info Durable, Vigne et pesticides (mission sénatoriale 2012) ; Assemblée nationale, QE n° 100076 ; Mézière et al., Ecophyto R&D, tome III, viticulture (INRA, 2009, lu)",
     page: 92
   },
@@ -501,12 +460,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé",
-      "Origine de la HVE : Grenelle (2007+), Grenelle II (2010), décret de juin 2011 ; Pleinchamp date la certification de 2012 ; numéro du décret non confirmé",
-      "ISO 14001 : aucune source lue ne la relie à la viticulture durable française",
-      "Sylvaine Boulanger-Fassier, La Viticulture durable… (2008) : référence non retrouvée"
-    ],
+    to_check: ["Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé","Origine de la HVE : Grenelle (2007+), Grenelle II (2010), décret de juin 2011 ; Pleinchamp date la certification de 2012 ; numéro du décret non confirmé"],
+    selon_livre: ["ISO 14001 : aucune source lue ne la relie à la viticulture durable française","Sylvaine Boulanger-Fassier, La Viticulture durable… (2008) : référence non retrouvée"],
     src: "Mille Vignes, P. Lepeltier, p. 93 ; AIDA/INERIS, décret n° 2002-631 ; Générations Futures, L’agriculture raisonnée ; DRAAF Bourgogne-Franche-Comté, fiche HVE ; Le Monde du Droit, certification environnementale (JO 21 juin 2011) ; Pleinchamp, les 10 ans de la HVE",
     page: 93
   },
@@ -529,10 +484,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Latour : l’expression « Grand Partage » datée du « début des années 1980 » et les « deux partages » (humains/non-humains ; modernes/non-modernes) ne sont pas confirmés ; l’expression est antérieure (Goody, Lévi-Strauss)",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Latour : l’expression « Grand Partage » datée du « début des années 1980 » et les « deux partages » (humains/non-humains ; modernes/non-modernes) ne sont pas confirmés ; l’expression est antérieure (Goody, Lévi-Strauss)"],
     src: "Mille Vignes, P. Lepeltier, p. 93-94 ; Collège de France, biographie de Philippe Descola ; Lex.dk, Philippe Descola ; Universalis, Anthropologie et ontologie ; Britannica, Gaia hypothesis ; Green Templeton College, James Lovelock",
     page: 93
   },
@@ -555,12 +508,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Larrère, Du bon usage de la nature : 1997 (Aubier, une seule source) contre 1998 dans le livre ; à doubler avec le catalogue BnF",
-      "Morizot : « crise de la sensibilité » et « diplomatie » (formules du livre) non retrouvées littéralement dans l’entretien Reporterre lu",
-      "Raw Wine Alive! : événement des 5-6 décembre 2021 confirmé, mais « premier colloque international en ligne » non confirmé",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Larrère, Du bon usage de la nature : 1997 (Aubier, une seule source) contre 1998 dans le livre ; à doubler avec le catalogue BnF","Morizot : « crise de la sensibilité » et « diplomatie » (formules du livre) non retrouvées littéralement dans l’entretien Reporterre lu","Raw Wine Alive! : événement des 5-6 décembre 2021 confirmé, mais « premier colloque international en ligne » non confirmé"],
     src: "Mille Vignes, P. Lepeltier, p. 94 ; Critiques Libres, Manières d’être vivant ; Reporterre, entretien avec Baptiste Morizot ; MINT Lab, Université de Murcie ; JancisRobinson.com, Alive 2021 ; The Drinks Business, Isabelle Legeron MW et Alive",
     page: 94
   },
@@ -583,13 +532,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: [
-      "Provence : 43,89 % sur la carte contre « proche de 30 % » pour PACA (Réussir/Agence Bio 2020) ; périmètre différent probable",
-      "Languedoc-Roussillon : 17,15 % sur la carte contre 19 % (Occitanie, DRAAF) ; hectares divergents selon les sources",
-      "Corse (30,56 %) et Champagne (6,15 %) : ordre de grandeur plausible, non recoupé par une source officielle",
-      "Part nationale de 17 % (une seule source, Réussir) ; biodynamie nationale ~1,4 % valable fin 2019, chiffre 2020 non trouvé",
-      "Jura : Réussir indique 29 % (périmètre départemental) contre 32,81 % sur la carte"
-    ],
+    to_check: ["Provence : 43,89 % sur la carte contre « proche de 30 % » pour PACA (Réussir/Agence Bio 2020) ; périmètre différent probable","Corse (30,56 %) et Champagne (6,15 %) : ordre de grandeur plausible, non recoupé par une source officielle","Part nationale de 17 % (une seule source, Réussir) ; biodynamie nationale ~1,4 % valable fin 2019, chiffre 2020 non trouvé","Jura : Réussir indique 29 % (périmètre départemental) contre 32,81 % sur la carte"],
+    selon_livre: ["Languedoc-Roussillon : 17,15 % sur la carte contre 19 % (Occitanie, DRAAF) ; hectares divergents selon les sources"],
     src: "Mille Vignes, P. Lepeltier, p. 95 ; Réussir Vigne, chiffres de la viticulture bio en 2020 (Agence Bio) ; Réussir Vigne, bio 2020 en régions ; Decanter, Bordeaux organic vineyards (CIVB) ; DRAAF Bourgogne-Franche-Comté, viticulture ; DRAAF Occitanie, viticulture LR ; L’Info Durable, biodynamie (2019)",
     page: 95
   }
@@ -612,7 +556,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel nom porte aujourd’hui le groupement allemand fondé en 1910 sous le nom de Verband Deutscher Naturweinversteigerer ?", payload: { accepted: ["VDP", "le VDP", "Verband Deutscher Prädikatsweingüter"] } }
     ],
     status: "needs_review",
-    to_check: ["Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues ; texte de 1816 non consulté (2e édition de 1822 reçue le 21/10/2026, passage non relevé)","Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum","Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme","Livre de Pineau : 2019 et sous-titre « Le vin « nature », entre sciences, croyances et radicalités » d’après la notice de l’ouvrage (La Découverte, 234 p., capture reçue le 21/10/2026) et le livre ; La Vie des idées, dont le compte rendu paraît en 2020, est la seule à donner 2020 ; « vignerons chercheurs » non retrouvé","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Définition de Jullien (vin sans substance étrangère) : citation non retrouvée dans les sources lues ; texte de 1816 non consulté (2e édition de 1822 reçue le 21/10/2026, passage non relevé)","Chauvet inspirateur de Lapierre et Overnoy, guidés par Néauport : le rôle de Néauport ne repose que sur un témoignage de forum","Chauvet n’emploierait jamais l’expression « vin naturel » : aucune source ne l’atteste ni ne l’infirme","Livre de Pineau : 2019 et sous-titre « Le vin « nature », entre sciences, croyances et radicalités » d’après la notice de l’ouvrage (La Découverte, 234 p., capture reçue le 21/10/2026) et le livre ; La Vie des idées, dont le compte rendu paraît en 2020, est la seule à donner 2020 ; « vignerons chercheurs » non retrouvé"],
     src: "Mille Vignes, P. Lepeltier, p. 96-97 ; wein.plus, Jullien et association of German natural wine auctioneers ; La Passion du Vin (forum) ; La Vie des idées, In Vino Natura ; Pineau, La Corne de vache et le Microscope (La Découverte, 2019), notice de l’ouvrage",
     page: 97
   },
@@ -634,12 +579,8 @@ FICHES.push(
       { type: "flashcard_reverse", prompt: "Syndicat créé à l’automne 2019, label présenté en mars 2020 : de quelle charte s’agit-il ?", payload: { answer: "Vin Méthode Nature" } }
     ],
     status: "needs_review",
-    to_check: [
-      "Année de fondation de l’AVN : 2000 selon une source, aucune année ailleurs ; ne pas dater",
-      "S.A.I.N.S. : une seule source donne 2012, les autres citent la charte sans date",
-      "Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Année de fondation de l’AVN : 2000 selon une source, aucune année ailleurs ; ne pas dater","S.A.I.N.S. : une seule source donne 2012, les autres citent la charte sans date"],
     src: "Mille Vignes, P. Lepeltier, p. 97 ; Idealwine, label officiel ; Que Choisir, vins nature ; M. Touton ; Reporterre",
     page: 97
   },
@@ -660,7 +601,8 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "L’article de Haudricourt sur la domestication des animaux et la culture des plantes date de 1962.", answer: true }, explanation: "« Domestication des animaux, culture des plantes et traitement d’autrui », L’Homme, 1962." }
     ],
     status: "needs_review",
-    to_check: ["Distinction de Haudricourt : confirmée par l’article (L’Homme 2 (1), 1962, p. 40-50, lu) : les termes « action directe positive » et « action indirecte négative » sont les siens, avec pour modèles l’élevage du mouton d’un côté et l’igname de l’autre ; il oppose Occident méditerranéen et Chine ou Océanie mais refuse d’y voir un déterminisme géographique, et ne parle pas de Fukuoka : le rapprochement avec l’agriculture naturelle japonaise est celui du livre","Dates de vie de Haudricourt (1911-1996) : non vérifiées dans l’article lu","Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Distinction de Haudricourt : confirmée par l’article (L’Homme 2 (1), 1962, p. 40-50, lu) : les termes « action directe positive » et « action indirecte négative » sont les siens, avec pour modèles l’élevage du mouton d’un côté et l’igname de l’autre ; il oppose Occident méditerranéen et Chine ou Océanie mais refuse d’y voir un déterminisme géographique, et ne parle pas de Fukuoka : le rapprochement avec l’agriculture naturelle japonaise est celui du livre","Dates de vie de Haudricourt (1911-1996) : non vérifiées dans l’article lu","Cultures de Fukuoka : riz et céréales d’hiver confirmés, agrumes non retrouvés"],
     src: "Mille Vignes, P. Lepeltier, p. 97-98 ; Haudricourt, « Domestication des animaux, culture des plantes et traitement d’autrui », L’Homme 2 (1), 1962, p. 40-50 (Persée, lu)",
     page: 97
   },
@@ -682,13 +624,8 @@ FICHES.push(
       { type: "flashcard", prompt: "Explique : quel point commun relie vin nature, permaculture, viticulture régénératrice et vitiforesterie ?", payload: { answer: "Toutes pensent le vignoble comme un ensemble d’écosystèmes à préserver plutôt que comme une monoculture à contrôler. Elles remplacent « un problème, une molécule » par la prévention et la compréhension des déséquilibres, limitent la chimie de synthèse et la perturbation des sols, et cherchent à accompagner la vigne avec ses partenaires (microbes, plantes, animaux) plutôt qu’à lutter contre eux." }, explanation: "Question fil rouge du chapitre « Cohabiter avec la vigne » (Mille Vignes, p. 96-101). Attendu : écosystème, prévention, moins d’intrants, cohabitation." }
     ],
     status: "needs_review",
-    to_check: [
-      "Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)",
-      "Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965",
-      "Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés",
-      "Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Rodale et le terme « regenerative organic agriculture » au début des années 1980 : date non confirmée (site du Rodale Institute illisible)","Lett en 1965 : pinot noir confirmé ; le pinot gris est « premier des États-Unis », pas « de la Willamette », et n’est pas daté de 1965","Jason Lett, 24 ha et études sur les mycorhizes (p. 98) : non retrouvés","Mimi Casteel « ingénieure forestière » : les sources disent seulement qu’elle a étudié les sciences forestières"],
     src: "Mille Vignes, P. Lepeltier, p. 96-98 ; Regenerative Viticulture Foundation, About us ; The Drinks Business ; Eyrie Vineyards, grape growing ; International Fine Wines, The Eyrie Vineyards ; Oregon Business",
     page: 98
   },
@@ -709,13 +646,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Sur quel arbre l’asprinio d’Aversa est-il conduit selon Lepeltier ?", payload: { accepted: ["peuplier", "le peuplier", "peupliers", "les peupliers"] }, explanation: "Selon le livre, à plus de 10 m de haut." }
     ],
     status: "needs_review",
-    to_check: [
-      "Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source",
-      "Vallée de Cinti : arbres-tuteurs (molle et chañar) confirmés par une seule source (Vinetur, presse spécialisée, niveau 2b)",
-      "Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue",
-      "Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser",
-      "Fosse-Sèche : 15 ha de vigne et 45 ha au total confirmés ; 30 ha (p. 99) contre 18 ha (p. 101) d’aménagement, 4 500 à 5 000 arbres et projet Nature 2050 non vérifiés"
-    ],
+    to_check: ["Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser"],
+    selon_livre: ["Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source","Vallée de Cinti : arbres-tuteurs (molle et chañar) confirmés par une seule source (Vinetur, presse spécialisée, niveau 2b)","Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue","Fosse-Sèche : 15 ha de vigne et 45 ha au total confirmés ; 30 ha (p. 99) contre 18 ha (p. 101) d’aménagement, 4 500 à 5 000 arbres et projet Nature 2050 non vérifiés"],
     src: "Mille Vignes, P. Lepeltier, p. 99-101 ; Apron and Sneakers, asprinio d’Aversa ; Vinetur, Valle de Cinti, más de cuatro siglos de vinos bolivianos (2023) ; Raisin, vignerons de Charnay ; Chambre d’agriculture de l’Aude, gestion du cuivre ; Atlantic Loire Valley, Fosse-Sèche",
     page: 100
   },
@@ -736,12 +668,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel mot désigne le pâturage d’animaux dans la vigne ?", payload: { accepted: ["vitipastoralisme", "le vitipastoralisme", "viti-pastoralisme"] } }
     ],
     status: "needs_review",
-    to_check: [
-      "Surface néo-zélandaise : 37 000 ha selon Lepeltier, environ 42 000 ha (41 991 en 2023, 42 519 en 2024) selon New Zealand Winegrowers",
-      "Moutons : 27 millions selon Lepeltier, 23,6 millions au 30 juin 2024 selon Stats NZ (chiffre variable selon l’année)",
-      "59 % : part des viticulteurs dans l’étude (communication personnelle de Sustainable Winegrowing NZ), non des hectares ; erreur d’interprétation probable du livre",
-      "Léon Barral : bovins (environ 60 vaches) d’après les sources lues ; statut de « pionnier » non attesté"
-    ],
+    to_check: ["59 % : part des viticulteurs dans l’étude (communication personnelle de Sustainable Winegrowing NZ), non des hectares ; erreur d’interprétation probable du livre"],
+    selon_livre: ["Surface néo-zélandaise : 37 000 ha selon Lepeltier, environ 42 000 ha (41 991 en 2023, 42 519 en 2024) selon New Zealand Winegrowers","Moutons : 27 millions selon Lepeltier, 23,6 millions au 30 juin 2024 selon Stats NZ (chiffre variable selon l’année)","Léon Barral : bovins (environ 60 vaches) d’après les sources lues ; statut de « pionnier » non attesté"],
     src: "Mille Vignes, P. Lepeltier, p. 101 ; Niles, Garrett & Walsh (2018), Agronomy for Sustainable Development ; UVM ScholarWorks ; NZ Winegrowers, Vineyard report 2024 ; Stats NZ via Scoop ; Réussir Vigne ; Not Drinking Poison",
     page: 101
   },
@@ -762,11 +690,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quel enjeu social domine l’agroécologie en Amérique latine selon Lepeltier ?", payload: { accepted: ["souveraineté alimentaire", "la souveraineté alimentaire"] } }
     ],
     status: "needs_review",
-    to_check: [
-      "Origine du mot : Bensin 1928 (Wezel et al.) ou Friederichs 1930 (Dalgaard et al.) ; dates de Bensin (1881-1973) non vérifiées",
-      "Altieri : 1983 selon Lepeltier, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer",
-      "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
-    ],
+    to_check: ["Origine du mot : Bensin 1928 (Wezel et al.) ou Friederichs 1930 (Dalgaard et al.) ; dates de Bensin (1881-1973) non vérifiées","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    selon_livre: ["Altieri : 1983 selon Lepeltier, 1987 selon un catalogue (édition Westview) ; titre exact à confirmer"],
     src: "Mille Vignes, P. Lepeltier, p. 101 ; CiNii, catalogue Altieri",
     page: 101
   }
