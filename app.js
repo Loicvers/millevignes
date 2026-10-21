@@ -267,6 +267,8 @@ function ouvrirZoom(fig){
 }
 document.addEventListener('click',e=>{const f=e.target.closest('.schema');if(f&&!f.closest('#zoom')&&!f.closest('#support'))ouvrirZoom(f);});
 document.addEventListener('keydown',e=>{const f=e.target.classList&&e.target.classList.contains('schema')&&e.target;if(f&&(e.key==='Enter'||e.key===' ')){e.preventDefault();ouvrirZoom(f);}});
+// Détails que seul le livre (ou une source) appuie : signalés, sans compter comme « à vérifier ».
+const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>Selon Lepeltier, non recoupé (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
   const mine=EXOS.filter(e=>e.fiche===f);
@@ -276,6 +278,7 @@ function card(f){
   const chk=f.to_check||[];
   const statTag=f.status==='verified'?'<span class="tag ok">✓ vérifiée</span>':chk.length?'<span class="tag warn">⚠ à vérifier</span>':'';
   const chkList=chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
+  const selon=selonHTML(f);
   const subTags=(f.sous||[]).map(s=>`<span class="sub-tag">${s}</span>`).join('');
   c.innerHTML=`
     <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${dueTag}</div>
@@ -289,7 +292,7 @@ function card(f){
     <div class="sub-tags">${subTags}</div>
     ${schemaHTML(f)}
     ${coursHTML(f.cours)}
-    ${chkList}
+    ${chkList}${selon}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>
     <div class="flash-hint">Flashcard — touche pour retourner</div>
     <div class="flash" tabindex="0" role="button" aria-label="Retourner la flashcard"><div class="flash-in"><div class="flash-face flash-front">${f.flash.q}</div><div class="flash-face flash-back">${f.flash.a}</div></div></div>
@@ -670,7 +673,7 @@ function finish(ex,ok,fb,actions,body,crit){
   if(expl)fb.append(el('p','fb-expl',expl));
   fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
-  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
+  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);

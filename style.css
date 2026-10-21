@@ -115,6 +115,7 @@
   .tag.warn{color:var(--warn);border:1px solid var(--warn)}
   .to-check{font-size:12.5px;color:var(--muted);margin:0 0 14px}
   .to-check summary{cursor:pointer;color:var(--warn)}
+  .selon-livre summary{cursor:pointer;color:var(--muted,#777)}
   .schema{margin:0 0 14px;border:1px solid var(--line);border-radius:3px;padding:10px;background:var(--paper)}
   .schema{cursor:zoom-in}
   .zoom{position:fixed;inset:0;z-index:110;background:rgba(22,19,15,.94);overflow:auto;padding:64px 12px 28px}.zoom[hidden]{display:none}

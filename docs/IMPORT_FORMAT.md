@@ -88,11 +88,12 @@ Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
 
 - `refs` vers `mille-vignes` : donner la **page** suffit. Partie, section et chapitre se déduisent du sommaire (`data/mille-vignes-sommaire.json`). Si `chapitre` est indiqué et ne correspond pas à la page, le lot est refusé.
 - `theme`, `sous` : catalogue de `fiches.js` (11 thèmes). Un sous-thème hors catalogue est refusé.
-- `niveau` : `Fondamental` · `Intermédiaire` · `Pointu`. `geo` : objet ou `null`.
+- `niveau` : `Fondamental` · `Intermédiaire` · `Pointu`. `geo` : objet ou `null` ; en France, `region` vient du catalogue `REGIONS_FR` de `fiches.js` (un test refuse tout autre nom) ; une appellation exige sa région.
 - **`status` et pastilles** :
   - tous les faits importants ✅ → `"verified"` ;
   - au moins un fait ⚠️ → `"needs_review"` **et** `to_check` liste ces faits (obligatoire) ;
   - les faits ❌ ne figurent pas dans la notion ;
+  - **double vérification réservée aux faits clés** (règle du 21/10/2026) : un fait qu'on répétera à un client ou en masterclass (définition, date ou chiffre central, réglementation, santé) reste dans `to_check` tant qu'il n'est pas ✅. Un détail secondaire que seul le livre (ou une source unique) appuie va dans `selon_livre` : affiché « Selon le livre, non recoupé », il ne compte pas comme dette et n'empêche pas `verified`. Reclasser des points existants : `node tools/trier-points.mjs tri.json` ;
   - `"draft"` pour un brouillon, `"needs_update"` pour une donnée susceptible d'être périmée.
 - `divergences` (facultatif) : désaccords entre sources ou avec l'autrice, non tranchés.
 

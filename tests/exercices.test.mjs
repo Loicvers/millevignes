@@ -62,6 +62,7 @@ test("les pastilles d'une fiche (status, to_check) passent dans data/base.json",
     const n = notions.find(n => n.legacy_id === f.id);
     assert.equal(n.status, f.status);
     assert.deepEqual(n.to_check, JSON.parse(JSON.stringify(f.to_check ?? [])));
+    assert.deepEqual(n.selon_livre, JSON.parse(JSON.stringify(f.selon_livre ?? [])));
   }
 });
 

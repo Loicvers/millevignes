@@ -66,6 +66,13 @@ test("migration de fiches.js sans perte", () => {
   }
 });
 
+test("régions françaises : noms du catalogue REGIONS_FR", () => {
+  const { FICHES, REGIONS_FR } = loadFichesJs(new URL("../fiches.js", import.meta.url).pathname);
+  const bad = FICHES.filter(f => f.geo?.pays === "France" && f.geo.region && !REGIONS_FR.includes(f.geo.region));
+  assert.equal(bad.length, 0, bad.map(f => `${f.id} : ${f.geo.region}`).join(", "));
+  assert.ok(FICHES.every(f => !f.geo?.appel || f.geo.region), "une appellation sans région est invisible dans l'arbre");
+});
+
 test("normalisation des réponses saisies", () => {
   assert.equal(normalize("  Véraison "), normalize("veraison"));
   assert.equal(normalize("ŒNOLOGIE"), "oenologie");

@@ -10,7 +10,8 @@
    - theme   : thème principal (unique) — voir THEME_ORDER
    - sous    : sous-thèmes (plusieurs possibles) — voir catalogue SOUS
    - niveau  : "Fondamental" | "Intermédiaire" | "Pointu"
-   - geo     : { pays, region, appel } ou null
+   - geo     : { pays, region, appel } ou null (region française : catalogue REGIONS_FR)
+   - status, to_check : pastilles ; selon_livre : détails secondaires laissés au livre (hors dette)
    - titre, synth (synthèse), mnemo (astuce)
    - flash   : { q, a }  (flashcard à retourner)
    - qcm     : { q, opts:[...], good, expl } (good = index de la bonne réponse, base 0 ; expl = pourquoi, facultatif)
@@ -39,6 +40,13 @@ const SOUS = {
   "Histoire":           ["Antiquité", "Moyen Âge", "Moderne"],
   "Service":            ["Contenants", "Bouchage", "Température & carafage", "Art de servir"]
 };
+
+/* Régions viticoles françaises admises dans geo.region (un test refuse tout autre nom).
+   Ajouter ici une région manquante plutôt que d'inventer une variante. */
+const REGIONS_FR = [
+  "Alsace", "Beaujolais", "Bordeaux", "Bourgogne", "Champagne", "Charentes", "Corse", "Jura",
+  "Languedoc", "Lorraine", "Provence", "Roussillon", "Savoie", "Sud-Ouest", "Val de Loire", "Vallée du Rhône"
+];
 
 /* Ordre d'affichage des thèmes dans le filtre */
 const THEME_ORDER = [

@@ -27,7 +27,7 @@ FICHES.push(
     theme: "Histoire",
     sous: ["Moderne"],
     niveau: "Intermédiaire",
-    geo: {"pays":"Angleterre","region":null,"appel":null},
+    geo: {"pays":"Royaume-Uni","region":"Angleterre","appel":null},
     titre: "Mansell, Digby et la bouteille au charbon",
     synth: "Au début du XVIIe siècle, l’Angleterre manque de bois : une proclamation royale de 1615 interdit le bois dans les verreries et ouvre la voie au verre fondu au charbon, dont Robert Mansell acquiert le brevet (son monopole est parfois daté de 1623). Dans les années 1630, une enquête sur brevet reconnaît Kenelm Digby comme l’inventeur d’un procédé pour des bouteilles plus solides et plus foncées, résistant à la pression. Selon le livre, ces bouteilles épaisses, noires et moulées, à base renforcée, supportent les longs transports, s’empilent et se rebouchent au liège.",
     mnemo: "Du bois au charbon, du verre fragile au verre costaud : la forêt est sauvée et la bouteille devient assez solide pour voyager debout dans une pile.",

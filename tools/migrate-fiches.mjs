@@ -15,7 +15,7 @@ export const fichesFiles = (path = "fiches.js") => {
 
 export function loadFichesJs(path) {
   const ctx = {};
-  vm.runInNewContext(fichesFiles(path).map(f => readFileSync(f, "utf8")).join("\n;\n") + ";this.out={FICHES,SOUS,THEME_ORDER};", ctx);
+  vm.runInNewContext(fichesFiles(path).map(f => readFileSync(f, "utf8")).join("\n;\n") + ";this.out={FICHES,SOUS,THEME_ORDER,REGIONS_FR};", ctx);
   return ctx.out;
 }
 
@@ -40,6 +40,7 @@ export function migrate({ FICHES, SOUS, THEME_ORDER }) {
       // Pastilles de la fiche (status, to_check) ; à défaut, statut prudent.
       status: f.status ?? "needs_review",
       to_check: f.to_check ?? (f.status ? [] : ["Pastilles de vérification d'origine non conservées : revérifier les sources."]),
+      selon_livre: f.selon_livre ?? [], // détails non vérifiés laissés au crédit de l'autrice : pas une dette
       cours: f.cours ?? null, schema: f.schema ?? null, content_version: 1,
     });
     exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a, ...(f.flash.keys && { keys: f.flash.keys }) }, content_version: 1 });

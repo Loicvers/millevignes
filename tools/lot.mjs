@@ -38,6 +38,7 @@ function checkNotion(n, tax, err) {
   if (n.geo != null && !isStr(n.geo.pays)) err(`${at} : geo.pays manquant (ou geo: null)`);
   if (!Array.isArray(n.refs) || !n.refs.length) err(`${at} : refs doit citer au moins une source`);
   if (n.status === "needs_review" && !isStrArr(n.to_check ?? [])) err(`${at} : status needs_review exige to_check (les faits ⚠️)`);
+  if (!isStrArr(n.selon_livre ?? [], 0)) err(`${at} : selon_livre doit être une liste de textes`);
   // Le SVG est injecté tel quel dans la page : on n'accepte qu'un dessin inerte et crédité.
   if (n.schema != null) {
     const svg = n.schema.svg;
