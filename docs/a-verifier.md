@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-365 fiches : 67 vérifiées, 298 à vérifier (863 points).
+371 fiches : 69 vérifiées, 302 à vérifier (872 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1461,3 +1461,20 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 365** (p.307) — Les dépôts en bouteille : ce qu’ils disent au caviste
 - [ ] Dépôt dans un vieux rouge « attendu après quatre ou cinq ans » (⚠️) : repère du seul Handbook (p. 285-286), donné comme ordre de grandeur et non comme règle ; la fiche dit seulement « après quelques années ».
 - [ ] Dépôt de lies et trouble microbien dans un vin non filtré (⚠️) : le Handbook (p. 364) évoque des sédiments de composés phénoliques instables et de micro-organismes dans les vins mis en bouteille sans filtration, avec parfois des odeurs anormales ; non recoupé par une seconde source.
+
+**Fiche 367** (p.256) — Bien déguster : les conditions qui font (ou défont) un vin dans le verre
+- [ ] Température d’environ 15 °C pour la dégustation technique (⚠️) : Spurrier et Dovaz seuls ; l’OIV (2016) exige seulement la même température pour tous les vins d’une série, sans la fixer
+- [ ] Palais frais : ni plats relevés, ni chocolat, ni menthe, ni tabac avant la séance (⚠️) : seul le manuel de 1992 le détaille ; l’OIV parle de bonne santé générale, de disponibilité et de concentration
+
+**Fiche 368** (p.262) — Aérer ou décanter : les deux raisons de passer un vin en carafe
+- [ ] Préparation d’un vieux vin (⚠️) : Spurrier et Dovaz préconisent le panier verseur sans redresser la bouteille, Jancis Robinson et Château Cantenac Brown la redressent d’abord plusieurs heures ou un jour ou deux ; aucune durée retenue
+- [ ] Vins très vieux et fragiles (⚠️) : le manuel propose de goûter puis, pour des vins très vieux aux arômes volatils, de remettre le bouchon plutôt que de décanter ; Robinson les décante au dernier moment, formulation nuancée
+- [ ] Peu d’effet d’une ouverture longtemps à l’avance (⚠️) : position de Peynaud rapportée par Spurrier et Dovaz (échanges quasi nuls), non recoupée ailleurs
+- [ ] Effet de l’aération (⚠️) : Lepeltier (p. 262, étude Vila Viniteca) ne trouve aucun gain d’intensité aromatique et des vins plus astringents et amers ; Spurrier et Dovaz (p. 196) et Jancis Robinson y voient un moyen d’ouvrir un rouge fermé ; l’avis de Lepeltier mène, l’autre reste une nuance ; le nombre de vins de l’étude n’est pas repris (erreur du livre, 4 vins dans le protocole).
+
+**Fiche 369** (p.271) — Les trois temps de la bouche et la persistance : attaque, évolution, finale
+- [ ] Échelle de durées donnée par le manuel (vin ordinaire 1 à 3 s, grand vin 6 à 8 s, très grand vin 11 à 15 s, grands liquoreux 20 à 25 s) (⚠️) : Hachette Vins avance plus de 10 caudalies pour les grands vins ; il n’existe pas d’échelle internationale normalisée : aucun chiffre repris dans les exercices
+- [ ] Découpage attaque / évolution (ou milieu) / finale (⚠️) : le manuel parle d’attaque, d’épanouissement et de longueur ; « évolution » et « milieu de bouche » viennent de guides de niveau 2b (Hachette Vins, Vinetur), Lepeltier (p. 271) parle d’attaque, de fin de bouche et de finale ; « évolution » reste à recouper avec Peynaud, Le goût du vin
+
+**Fiche 370** (p.278) — Le vocabulaire de la structure : corps, nervosité, mollesse, équilibre
+- [ ] Définitions de nervosité, mollesse, souplesse et formules d’équilibre (⚠️) : recoupement limité à des lexiques et pages pédagogiques de niveau 2b (PCVT, École des vins et spiritueux) ; à recouper avec Peynaud, Le goût du vin

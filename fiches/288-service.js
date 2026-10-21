@@ -1006,5 +1006,27 @@ FICHES.push(
     to_check: ["Dépôt dans un vieux rouge « attendu après quatre ou cinq ans » (⚠️) : repère du seul Handbook (p. 285-286), donné comme ordre de grandeur et non comme règle ; la fiche dit seulement « après quelques années ».","Dépôt de lies et trouble microbien dans un vin non filtré (⚠️) : le Handbook (p. 364) évoque des sédiments de composés phénoliques instables et de micro-organismes dans les vins mis en bouteille sans filtration, avec parfois des odeurs anormales ; non recoupé par une seconde source."],
     src: "Ribéreau-Gayon, Glories, Maujean, Dubourdieu, Handbook of Enology, vol. 2, 2e éd. (2006), p. 24, 285-286, 364 et 373 ; AWRI, Crystalline deposits ; Enartis, Post-Bottling Wine Defects: Red (dépôts de matière colorante) ; cf. Mille Vignes, P. Lepeltier, p. 307 ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 19 et 48",
     page: 307
+  },
+  {
+    id: 371,
+    theme: "Service",
+    sous: ["Art de servir"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "L’ordre de service des vins au repas : règles et exceptions",
+    synth: "Pour qu’un vin n’éclipse pas le suivant, on sert en général le blanc avant le rouge, le léger avant le corsé, le sec avant le doux, le moins alcoolisé avant le plus alcoolisé, le plus frais avant le plus tempéré et le jeune avant le vieux ; l’idée de fond est qu’un vin nouvellement servi ne doit jamais faire regretter le précédent. Ces règles se contredisent parfois et admettent des exceptions : un vin jeune très robuste écrase un vieux vin délicat, qu’on sert alors d’abord ; un moelleux ou un liquoreux peut ouvrir le repas avec un foie gras ou accompagner un bleu ; un effervescent peut s’inviter au cœur du repas. Ce qui compte, c’est une progression sans heurt, pas la règle appliquée à la lettre.",
+    mnemo: "On monte un escalier : léger, sec et jeune en bas ; riche, doux et ancien en haut. Mais un gros vin jeune posé trop tôt, et le vieux vin fragile qui suit ne s’entend plus.",
+    flash: {"q":"Cite les règles classiques de l’ordre de service des vins au repas.","a":"Blanc avant rouge, léger avant corsé, sec avant doux, jeune avant vieux (et le moins alcoolisé avant le plus alcoolisé).","keys":[["blanc"],["léger"],["sec"],["jeune"]]},
+    qcm: {"q":"Au menu : un vieux bordeaux délicat et un jeune rouge très tannique. Quel ordre respecte l’esprit des règles ?","opts":["Le vieux bordeaux d’abord, pour qu’il ne soit pas écrasé","Le jeune rouge d’abord, car on sert toujours le jeune avant le vieux","Peu importe : l’ordre n’a pas d’effet sur le goût","Les deux en même temps, pour comparer"],"good":0,"expl":"La règle « jeune avant vieux » vise à préserver la subtilité : un vin robuste écrase un vin âgé et délicat servi après lui. Quand deux règles s’opposent, c’est la finesse du plus fragile qui décide."},
+    exos: [
+      {"type":"ordering","prompt":"Remets dans l’ordre un menu classique, du premier au dernier vin.","payload":{"items":["Champagne brut à l’apéritif","Blanc sec vif sur le poisson","Rouge léger et fruité sur la volaille","Rouge puissant sur le gibier","Liquoreux sur le dessert"]},"explanation":"On monte en intensité : effervescent et blanc sec d’abord, rouge léger avant rouge puissant, et le doux en dernier, car il fait paraître acide le vin sec qui le suit."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Un vin liquoreux ne se sert jamais qu’au dessert.","answer":false},"explanation":"« Sec avant doux » est un guide, pas un interdit : un liquoreux accompagne bien un foie gras en début de repas ou un fromage bleu. En fin de repas, les convives rassasiés boudent même parfois un vin aussi riche."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 188-190 et 195 ; Jancis Robinson (dir.), The Oxford Companion to Wine, 3e éd. (2006), « Order of wines to be served » ; Gault&Millau, L’ordre de dégustation des vins importe-t-il ? ; cf. Mille Vignes, P. Lepeltier, p. 322 (Brillat-Savarin)",
+    page: 322
   }
 );

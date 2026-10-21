@@ -898,5 +898,116 @@ FICHES.push(
     to_check: ["SO2 (⚠️) : lien positif rapporté par Parr et al. 2018 (deux études) et par Rodrigues et al. (OENO One, citant Parr et al. 2016) ; corrélation, pas cause.","Réduction (⚠️) : divergence entre Parr et al. 2018 (non trouvée comme moteur), Malfeito-Ferreira 2022 (centrale) et un groupe d’experts de la thèse de Rodrigues Silva (opposée à la minéralité).","Acidité (⚠️) : preuves jugées peu claires par Parr et al. 2018 ; l’acide succinique cité par le livre n’est pas retrouvé.","Goût salé (⚠️) : association rapportée par Parr et al. 2018 seul ; part de l’umami et du calcium avancée par le livre non confirmée ; non reprise.","Vins discrets, sucrés ou boisés, et primauté du nez sur le toucher (⚠️) : affirmations du livre, non retrouvées dans une source indépendante ; non reprises."],
     src: "Mille Vignes, P. Lepeltier, p. 285 ; Parr, Maltman, Easton, Ballester (2018), « Minerality in Wine: Towards the Reality behind the Myths », Beverages 4(4):77 ; Rodrigues et al., OENO One (minéralité perçue) ; Rodrigues et al. (2017), Food Chemistry 230:553-562 ; Malfeito-Ferreira (2022), composés soufrés réduits et minéralité ; Rodrigues Silva (2016), thèse, Université de Bourgogne (via Vin Québec)",
     page: 285
+  },
+  {
+    id: 366,
+    theme: "Dégustation",
+    sous: ["Méthode"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Aveugle, horizontale, verticale, comparative : à chaque dégustation son objectif",
+    synth: "La dégustation à l’aveugle cache l’identité des vins (bouteilles masquées, échantillons codés) pour juger style et qualité sans le poids de l’étiquette ou du prix, alors qu’une dégustation ouverte convient pour apprendre un style ou suivre un producteur. La verticale aligne un même vin (même château ou domaine) sur plusieurs millésimes : tout est constant sauf le climat de l’année, ce qui isole l’effet du millésime. L’horizontale réunit des vins d’un même millésime, d’appellations ou de producteurs différents, pour mesurer le poids du sol, du microclimat, du cépage et de la vinification. Ces formats sont comparatifs : la comparaison est l’élément le plus important d’une séance, qu’on limite à huit à dix vins pour que le palais reste fiable.",
+    mnemo: "Verticale : on monte l’escalier d’une même cave, un millésime par marche. Horizontale : on longe la rue d’une même année, de cave en cave. Aveugle : on joue avec un bandeau sur les yeux.",
+    flash: {"q":"Que compare une dégustation verticale, et que compare une horizontale ?","a":"Verticale : un même vin (même domaine) sur plusieurs millésimes, pour isoler l’effet du millésime. Horizontale : des vins différents d’un même millésime, pour comparer sols, appellations, cépages et vinifications.","keys":[["millésimes","années","millésime"],["même millésime","même année","une année"]]},
+    qcm: {"q":"Quel est l’intérêt principal d’une dégustation à l’aveugle ?","opts":["Juger style et qualité sans l’influence de l’étiquette, de la bouteille ou du prix","Servir tous les vins à une température plus fraîche","Goûter davantage de vins dans la même séance","Isoler l’effet du millésime chez un même producteur"],"good":0,"expl":"La vue prime sur les autres sens : ce que l’on voit du flacon oriente le jugement avant même la première gorgée. Cacher l’identité ne change ni la température ni la fatigue du palais, et c’est la verticale qui isole le millésime."},
+    exos: [
+      {"type":"matching","prompt":"Associe chaque objectif au format de dégustation.","payload":{"pairs":[["Suivre la régularité d’un domaine au fil des années","Verticale"],["Comparer des appellations voisines sur une même année","Horizontale"],["Juger la qualité sans être influencé par l’étiquette ni le prix","À l’aveugle"]]},"explanation":"Chaque format répond à une question : le temps qui passe (verticale), l’origine à millésime égal (horizontale), la liberté de jugement (aveugle)."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Une dégustation horizontale ne peut jamais se faire à l’aveugle.","answer":false},"explanation":"Les axes sont indépendants : l’aveugle dit si l’on connaît les vins, l’horizontale ou la verticale dit ce qu’on compare. Une horizontale se fait très bien en codant les échantillons."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 140-141 ; Jancis Robinson (dir.), The Oxford Companion to Wine, 3e éd. (2006), « Blind tasting » ; OIV, Document sur l’analyse sensorielle du vin (2016), p. 5, 7 et 28 ; Wine Spectator, Can you explain wine-tasting terms like blind, non-blind, horizontal and vertical? ; cf. Mille Vignes, P. Lepeltier, p. 251",
+    page: 251
+  },
+  {
+    id: 367,
+    theme: "Dégustation",
+    sous: ["Méthode"],
+    niveau: "Fondamental",
+    geo: null,
+    titre: "Bien déguster : les conditions qui font (ou défont) un vin dans le verre",
+    synth: "Le dégustateur et la pièce comptent autant que le vin : il faut être en forme (un rhume rend l’exercice impossible) et avoir le palais frais, sans plat relevé, chocolat, menthe ni tabac juste avant, de préférence le matin. La salle est claire, neutre, bien aérée, sans parfum ni odeur de cuisine, avec une lumière du jour et un fond blanc pour lire la robe. Le verre est incolore, à pied et normalisé (ISO 3591), et tous les vins d’une même série sont servis à la même température (environ 15 °C dans l’expertise technique décrite par le manuel de 1992 : trop frais pour certains vins, trop chaud pour d’autres, mais commun à tous et propice à l’exploration en bouche). Une séance ne dépasse pas huit à dix échantillons ; pour juger, on les présente codés et dans un ordre aléatoire, et pour s’initier on choisit une gamme qui va du sec au doux et du léger au corsé.",
+    mnemo: "Un casting : même scène claire et silencieuse pour tous les candidats, un jury reposé au nez dégagé, et pas plus de huit à dix prétendants avant la pause.",
+    flash: {"q":"Cite quatre conditions pour bien juger un vin (dégustateur, lieu, verre, série).","a":"Dégustateur en forme, au palais frais (de préférence le matin) ; pièce claire, aérée, sans odeur parasite ; verre normalisé, incolore et à pied ; même température pour tous les vins d’une série, en nombre limité.","keys":[["forme","santé","rhume","frais"],["odeur","aér","parasite"],["normalisé","ISO","incolore","pied"],["même température","température"]]},
+    qcm: {"q":"Dans une séance de dégustation technique, que faut-il imposer à tous les vins d’une même série ?","opts":["La même température de service","Le même cépage","Le même millésime","La même couleur de robe"],"good":0,"expl":"Il s’agit de multiplier les paramètres communs : si la température varie, on ne sait plus si la différence vient du vin ou du service. Cépage, millésime et couleur sont au contraire ce qu’on cherche souvent à comparer."},
+    exos: [
+      {"type":"mcq_multi","prompt":"Lesquelles de ces situations faussent la dégustation d’un vin ?","payload":{"options":["Un rhume ou une grippe","Une pièce où flotte une odeur de cuisine ou de tabac","Des échantillons codés, présentés dans un ordre aléatoire","Un chocolat ou une pastille de menthe croqués juste avant"],"answers":[0,1,3]},"explanation":"Le nez et le palais sont l’instrument de mesure : congestion, odeurs parasites ou palais saturé de menthe ou de cacao déforment ce qu’on perçoit. Le codage et l’ordre aléatoire, eux, protègent le jugement des préjugés."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Pour juger une robe, on place le verre sur un fond coloré qui fait ressortir la teinte.","answer":false},"explanation":"Un fond blanc et une lumière du jour ne modifient pas la teinte perçue : on voit la vraie couleur et l’intensité du vin, et on peut comparer deux robes sur la même base."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Température d’environ 15 °C pour la dégustation technique (⚠️) : Spurrier et Dovaz seuls ; l’OIV (2016) exige seulement la même température pour tous les vins d’une série, sans la fixer","Palais frais : ni plats relevés, ni chocolat, ni menthe, ni tabac avant la séance (⚠️) : seul le manuel de 1992 le détaille ; l’OIV parle de bonne santé générale, de disponibilité et de concentration"],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 16-18 et 140 ; OIV, Document sur l’analyse sensorielle du vin (2016), p. 4-6, 7 et 28 ; Hachette Vins, Comment déguster un vin (lumière naturelle, fond blanc) ; cf. Mille Vignes, P. Lepeltier, p. 256",
+    page: 256
+  },
+  {
+    id: 368,
+    theme: "Service",
+    sous: ["Température & carafage"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Aérer ou décanter : les deux raisons de passer un vin en carafe",
+    synth: "Le carafage a deux buts. L’aération d’un vin jeune et réduit (rouge tannique, parfois grand blanc) dissipe vite les odeurs soufrées d’œuf ou de chou, mais fait aussi évaporer un peu d’alcool et d’arômes fragiles, puis l’oxydation modifie sur plusieurs heures, et différemment selon chaque bouteille, la perception des tanins et de l’acidité : une dégustation comparative citée par Lepeltier n’a trouvé aucun gain d’intensité aromatique, plutôt des vins plus astringents et amers, et déboucher longtemps à l’avance n’aère presque pas, vu la petite surface du goulot. Décanter un vieux vin sert surtout à le séparer de son dépôt : on le verse doucement, en surveillant le goulot à la lumière, et le plus près possible du service, car un vin âgé et fragile s’éteint à l’air. Blancs légers, rosés et rouges fragiles n’y gagnent rien ; la solution la plus sage est d’ouvrir, de goûter, puis de choisir (remettre le bouchon, laisser ouvert ou carafer).",
+    mnemo: "Aérer, c’est ouvrir les fenêtres d’une maison fermée depuis un an ; décanter, c’est verser l’eau en laissant le sable au fond du seau.",
+    flash: {"q":"Pourquoi carafe-t-on un vin jeune, et pourquoi décante-t-on un vieux vin ?","a":"Le jeune : l’aération dissipe les odeurs de réduction (œuf, chou). Le vieux : on le sépare de son dépôt, au dernier moment, car un vin fragile s’éteint à l’air.","keys":[["aér","air","ouvr"],["dépôt"]]},
+    qcm: {"q":"Un très vieux rouge fragile présente un dépôt. Quand le décanter ?","opts":["Juste avant de le servir","Plusieurs heures avant, pour qu’il s’ouvre","La veille, dans une carafe large","Jamais : un vieux vin ne se décante pas"],"good":0,"expl":"Le but est de le séparer du dépôt, pas de l’aérer : un vin âgé perd vite ses arômes à l’air et peut tourner à l’aigre. Une longue aération en carafe large se discute pour un jeune rouge réduit, jamais pour un vin âgé."},
+    exos: [
+      {"type":"mcq_multi","prompt":"Quels vins gagnent généralement à être carafés ou décantés ?","payload":{"options":["Un jeune rouge aux odeurs de réduction (œuf, chou)","Un vieux rouge de garde avec un dépôt","Un rosé de l’été","Un blanc sec léger de type muscadet"],"answers":[0,1]},"explanation":"L’air dissipe la réduction du jeune ; le vieux, lui, gagne à être séparé de son dépôt. Rosés et blancs légers vivent de leur fraîcheur et de leur fruit, que l’air émousse sans rien leur apporter."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Déboucher une bouteille trois heures avant le repas suffit à bien aérer le vin.","answer":false},"explanation":"Le goulot offre une surface de contact minuscule : l’échange avec l’air est quasi nul, d’où l’intérêt de ne déboucher qu’au dernier moment ou de verser dans une carafe, d’autant plus large que le vin est jeune."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Préparation d’un vieux vin (⚠️) : Spurrier et Dovaz préconisent le panier verseur sans redresser la bouteille, Jancis Robinson et Château Cantenac Brown la redressent d’abord plusieurs heures ou un jour ou deux ; aucune durée retenue","Vins très vieux et fragiles (⚠️) : le manuel propose de goûter puis, pour des vins très vieux aux arômes volatils, de remettre le bouchon plutôt que de décanter ; Robinson les décante au dernier moment, formulation nuancée","Peu d’effet d’une ouverture longtemps à l’avance (⚠️) : position de Peynaud rapportée par Spurrier et Dovaz (échanges quasi nuls), non recoupée ailleurs","Effet de l’aération (⚠️) : Lepeltier (p. 262, étude Vila Viniteca) ne trouve aucun gain d’intensité aromatique et des vins plus astringents et amers ; Spurrier et Dovaz (p. 196) et Jancis Robinson y voient un moyen d’ouvrir un rouge fermé ; l’avis de Lepeltier mène, l’autre reste une nuance ; le nombre de vins de l’étude n’est pas repris (erreur du livre, 4 vins dans le protocole)."],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 196-197 ; Jancis Robinson, Decanters, decanting and caring for glassware (JancisRobinson.com) ; Château Cantenac Brown, How to decant wine (2021) ; Le Baroudeur du Vin, Carafer ou décanter ; cf. Mille Vignes, P. Lepeltier, p. 262",
+    page: 262
+  },
+  {
+    id: 369,
+    theme: "Dégustation",
+    sous: ["Méthode"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Les trois temps de la bouche et la persistance : attaque, évolution, finale",
+    synth: "En bouche, le vin se lit en trois temps : l’attaque, première impression qui doit être nette, franche et précise ; l’évolution ou milieu de bouche (le manuel de 1992 parle d’épanouissement), où la bouche s’emplit d’arômes sans trou ni creux et où l’on juge corps et équilibre ; puis la finale, ce qui reste une fois le vin avalé ou craché. La persistance aromatique et gustative, ou longueur, se chronomètre bouche vide, en secondes, appelées caudalies (une caudalie vaut une seconde). Plus elle est longue, plus le vin est généralement jugé grand, et dans un vin réussi arômes et structure s’éteignent de concert.",
+    mnemo: "Un coup de cloche : le choc du battant (attaque), la résonance qui s’étale (évolution), puis l’écho qui s’éteint, que l’on chronomètre (caudalies).",
+    flash: {"q":"Quels sont les trois temps de la bouche ?","a":"Attaque, évolution (milieu de bouche), finale.","keys":[["attaque"],["évolution","milieu","épanouissement"],["finale","longueur"]]},
+    qcm: {"q":"Que mesure une caudalie ?","opts":["Une seconde de persistance aromatique en bouche","Un degré d’alcool perçu en finale","Un gramme de tanins par litre","Un point d’intensité de la robe"],"good":0,"expl":"C’est une unité de temps, pas de concentration : elle chronomètre la durée pendant laquelle les arômes restent perceptibles. Les autres propositions renvoient à la composition ou à la couleur."},
+    exos: [
+      {"type":"ordering","prompt":"Remets dans l’ordre les temps de la bouche.","payload":{"items":["Attaque : première impression, nette et franche","Évolution : la bouche s’emplit d’arômes, sans creux","Finale : arômes persistants après avoir avalé ou craché"]},"explanation":"La dégustation en bouche suit le trajet du vin : d’abord le contact, puis le développement, enfin ce qui reste. C’est dans cet ordre qu’on prend ses notes."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Un vin court, qui s’efface presque aussitôt après la gorgée, est rarement considéré comme un grand vin.","answer":true},"explanation":"Les vins de qualité supérieure ont tendance à avoir des finales plus longues et plus complexes : la longueur est l’un des critères qui séparent un petit vin d’un grand."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Échelle de durées donnée par le manuel (vin ordinaire 1 à 3 s, grand vin 6 à 8 s, très grand vin 11 à 15 s, grands liquoreux 20 à 25 s) (⚠️) : Hachette Vins avance plus de 10 caudalies pour les grands vins ; il n’existe pas d’échelle internationale normalisée : aucun chiffre repris dans les exercices","Découpage attaque / évolution (ou milieu) / finale (⚠️) : le manuel parle d’attaque, d’épanouissement et de longueur ; « évolution » et « milieu de bouche » viennent de guides de niveau 2b (Hachette Vins, Vinetur), Lepeltier (p. 271) parle d’attaque, de fin de bouche et de finale ; « évolution » reste à recouper avec Peynaud, Le goût du vin"],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 26-27 et 215 (glossaire, vocabulaire) ; WSET, Systematic Approach to Tasting, niveau 3 (2022), finale de courte à longue ; Hachette Vins, Comment déguster un vin ; Vinetur, Que nous dit vraiment la finale d’un vin ? (2026) ; wein.plus, Caudalie ; cf. Mille Vignes, P. Lepeltier, p. 271",
+    page: 271
+  },
+  {
+    id: 370,
+    theme: "Dégustation",
+    sous: ["Méthode"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Le vocabulaire de la structure : corps, nervosité, mollesse, équilibre",
+    synth: "La structure est ce qui tient le vin en bouche : acidité, alcool, tanins pour les rouges, sucre pour les moelleux. Un vin corsé est riche en alcool et en extrait, un vin maigre ou plat remplit mal la bouche ; la nervosité traduit une acidité franche qui tend le vin, la mollesse son manque d’acidité (fréquent dans les années chaudes) ; ferme ou dur disent des tanins ou une acidité très présents, et souple l’absence de dureté. L’équilibre est le point où ces forces se compensent : acidité et alcool pour un blanc sec, avec le sucre pour un moelleux (trop de sucre donne un vin doucereux, pâteux), acidité, alcool et tanins pour un rouge.",
+    mnemo: "Une tente : acidité, alcool et tanins sont les mâts qui la tiennent ; trop tendue, elle est dure, pas assez, elle s’affaisse et devient molle.",
+    flash: {"q":"Un vin manque d’acidité et paraît flasque : quel mot emploie-t-on, et quel est son contraire ?","a":"Mou (mollesse) ; le contraire est le vin nerveux, dont l’acidité franche tend le vin.","keys":[["mou","mollesse","flasque"],["nerveux","nervosité"]]},
+    qcm: {"q":"Pour un vin rouge, quels éléments faut-il équilibrer ?","opts":["Acidité, alcool et tanins","Sucre, gaz carbonique et soufre","Couleur, limpidité et jambes","Température, verre et carafage"],"good":0,"expl":"Ce sont les trois forces de structure qui se compensent dans un rouge. Les autres listes mélangent des composants non structurants, des critères visuels ou des conditions de service."},
+    exos: [
+      {"type":"matching","prompt":"Associe chaque mot à ce qu’il décrit en bouche.","payload":{"pairs":[["Ferme","Tanins très présents, manque de souplesse"],["Corsé","Riche en alcool et en extrait, bien constitué"],["Maigre","Pauvre en alcool et en extrait, remplit mal la bouche"],["Doucereux","Douceur fade, peu agréable"]]},"explanation":"Ces mots ne décrivent pas un seul composant : ils disent comment l’acidité, les tanins, le corps ou le sucre pèsent les uns par rapport aux autres."},
+      {"type":"odd_one_out","prompt":"Quel mot ne décrit pas un manque de plénitude en bouche ?","payload":{"options":["Maigre","Plat","Aqueux","Charnu"],"answer":3},"explanation":"Charnu qualifie au contraire un vin qui remplit bien la bouche. Maigre, plat et aqueux signalent un manque de corps, d’alcool ou de concentration."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Pour un blanc sec, l’équilibre se cherche surtout entre le sucre et les tanins.","answer":false},"explanation":"Un blanc sec n’a ni sucre notable ni tanins marqués : sa structure repose sur l’acidité et l’alcool. Le sucre entre en jeu pour les moelleux, les tanins pour les rouges."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Définitions de nervosité, mollesse, souplesse et formules d’équilibre (⚠️) : recoupement limité à des lexiques et pages pédagogiques de niveau 2b (PCVT, École des vins et spiritueux) ; à recouper avec Peynaud, Le goût du vin"],
+    src: "Spurrier et Dovaz, Académie du vin : la dégustation (Bordas, 1992), p. 26-27 et 215 ; PCVT, Lexique de la dégustation ; École des vins et spiritueux, Goût du vin : équilibre des saveurs et vieillissement (2021) ; WSET, Systematic Approach to Tasting, niveau 3 (2022), acidité, tanin, alcool, corps ; cf. Mille Vignes, P. Lepeltier, p. 278",
+    page: 278
   }
 );
