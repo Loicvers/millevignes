@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-292 fiches : 50 vérifiées, 242 à vérifier (722 points).
+292 fiches : 50 vérifiées, 242 à vérifier (730 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1050,6 +1050,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 256** (p.247) — L’INAO et la dégustation d’agrément
 - [ ] Proposition de Capus en 1943, refus du ministère de la Justice et diffusion volontaire à Bordeaux, dans le Muscadet et en Bourgogne (⚠️) : une seule source (deux articles de Jacquet : proposition du 20 octobre 1943, rejetée) ; Jacquet cite aussi le Pineau des Charentes (1945) comme première appellation soumise à une dégustation obligatoire, ce que le livre ne mentionne pas.
 - [ ] Contrôle actuel des AOC (⚠️) : d’après le plan de contrôle type AOC viti de l’INAO, examen analytique et organoleptique d’un lot par opérateur, par couleur et par an (100 % du vrac expédié hors de France), sur prélèvement aléatoire ; date de la réforme et seconde source à trouver.
+- [ ] Règlement CEE 817/70 appliqué aux AOC par le décret de 1974 (⚠️) : une seule source (article de la revue Pour, Cairn) ; absent de la frise chronologique de l’INAO ; texte du règlement non lu (EUR-Lex bloqué).
 
 **Fiche 257** (p.247) — Jules Chauvet : le bouquet d’abord, et le verre INAO
 - [ ] Dégustation des œnologues d’avant Chauvet centrée sur le toucher de bouche et les défauts (⚠️) : propos du livre ; Jacquet note seulement qu’en 1947 Peynaud reste centré sur les caractères tactiles, et la chimie (alcool, acidité, SO2) n’a pas été vérifiée.
@@ -1109,10 +1110,15 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 271** (p.263) — Odeur ou arôme : deux voies vers le nez
 - [ ] Odeur = voie orthonasale, arôme = voie rétronasale (⚠️) : usage de vocabulaire propre au livre, non universel (le livre lui-même emploie « arôme » pour les deux) ; une seule source lue (Spence 2012) décrit les deux voies, sans cette terminologie.
 - [ ] Mémoire, émotions et souvenirs propres à chaque dégustateur (⚠️) : thèse du livre (G. Lepousez), non recoupée par une source lue ; seule la variabilité des récepteurs est confirmée.
+- [ ] Goût surtout issu de l’olfaction rétronasale (⚠️) : une seule revue lue (Spence 2012, qui cite Shepherd), citée dans le cours avec cette réserve.
 
 **Fiche 272** (p.263) — Primaires, secondaires, tertiaires : d’où viennent les arômes
 - [ ] Nombre de composés volatils (⚠️) : « 700 à 1 000 » est attribué au livre ; Styger, Prior et Bauer (2011) donnent environ 1 000 composés chimiques pour le profil d’un vin, ordre de grandeur concordant, fourchette exacte non retrouvée.
 - [ ] Rangement des arômes de fermentation (⚠️) : secondaires chez Lepeltier et dans la tradition française, primaires pour le WSET ; divergence d’école, non tranchée.
+- [ ] Exemples de molécules secondaires et tertiaires du tableau (⚠️) : acétate d’isoamyle, diacétyle, whisky-lactone, vanilline, sotolon, une seule source chacune (cf. fiche 276).
+- [ ] WSET : malolactique et fût classés en secondaires (⚠️) : lu dans une seule version (WSET Level 2, version française) ; à recouper avec une seconde source WSET.
+- [ ] Thiols du sauvignon présents dans le raisin sous forme de précurseurs inodores, libérés à la fermentation (⚠️) : précurseurs conjugués à la cystéine libérés par la levure (Darriet et al. ; Styger et al.), cités comme exemple de frontière floue.
+- [ ] Nombre de molécules réellement odorantes, 20 à 40 (⚠️) : une seule source (Ferreira et al., synthèse IVES) ; le livre ne le donne pas.
 
 **Fiche 273** (p.264) — Arômes variétaux : poivron, muscat et pétrole
 - [ ] Monoterpènes (⚠️) : notes florales et d’agrumes, abondance dans les muscats, une seule source lue (Styger, Prior, Bauer 2011) ; « changent peu à la vinification », « dégradés au vieillissement » et « minorés par Botrytis » (livre) non retrouvés, non repris.
@@ -1197,6 +1203,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Teneur du vin en minéraux (⚠️) : le livre donne 1-2 g/l (p. 285) et 2-4 g/l (p. 273) ; Parr et al. 2018, d’après Coombe et Dry, indiquent environ 1,5 à 2 g/l, 4 g/l au plus (conversion faite par nous) : seule l’expression « quelques grammes par litre » est reprise, aucun chiffre en question.
 - [ ] Autres voies d’influence du sol : drainage, albédo, microbiote (⚠️) : liste du livre, non retrouvée dans une source indépendante ; l’étude de Rodrigues et al. (Food Chemistry, 2017) va dans le sens de voies non littérales sans la valider.
 - [ ] Arguments du livre non repris (⚠️) : oligo-éléments venant surtout de l’humus, exclusion du sel par la vigne, comparaison avec les eaux minérales, fossiles Exogyra de Chablis sans goût : non confirmés par une seconde source.
+- [ ] Starkenmann et al. (2016) (⚠️) : disulfane d’hydrogène détecté dans le silex et dans deux chasselas jugés minéraux ; une seule étude, conclusion « peuvent contribuer », citée dans le cours avec cette réserve.
+- [ ] BMT et minéralité perçue (⚠️) : l’identification du composé (Tominaga et al., 2003) est confirmée, mais le lien avec la minéralité est débattu (Parr et al., 2018) ; non tranché dans le cours.
 
 **Fiche 291** (p.285) — Pierre à fusil : des composés soufrés, pas un goût de roche
 - [ ] Lien BMT et minéralité perçue (⚠️) : débat rapporté par une seule synthèse (Parr et al. 2018), qui note qu’un travail récent n’a pas trouvé de lien significatif tandis que Capone et al. en trouvent un pour des chardonnays australiens.
