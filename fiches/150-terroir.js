@@ -151,7 +151,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : une source de niveau 2b (Wine Business) ; archives fédérales américaines bloquées, non lues.","Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.","Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.","17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Entrée en vigueur du 18e amendement : ratification certifiée le 16 janvier 1919 et prohibition nationale à minuit le 17 janvier 1920 (Library of Congress), un an après la ratification (Constitution Annotated) ; certaines sources datent l’entrée en vigueur de l’amendement au 16 janvier 1920 et celle de la loi Volstead au 17 (National Constitution Center) ; écart d’un jour non tranché, aucune date au jour près en exercice.","Monopoles d’État : 17 États de contrôle selon la NABCA (annuaire en ligne ; fiche 2022), 18 juridictions avec le comté de Montgomery (Maryland) ; Alaska, Minnesota, Dakota du Sud et Maryland n’appliquent que des formes partielles du modèle ; les « 13 juridictions » du livre ne sont pas retrouvées (⚠️).","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
     src: "Mille Vignes, P. Lepeltier, p. 156-157 ; Wine Business, infographic « Prohibition Repeal » ; Korona POS, alcohol control states",
     page: 156
   },
@@ -608,7 +608,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.","Extensions sur terrains portlandiens et critère agronomique (⚠️) : une source (Vincent) ; ses surfaces sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
+    to_check: ["Chronologie de Chablis : jugements de 1920 à 1932, jugement d’Auxerre de 1929 « sans la référence géologique », AOC en 1938 (décret du 13 janvier 1938) et aire parcellaire approuvée le 31 janvier 1978 (✅, cahiers des charges Chablis et Chablis grand cru, arrêtés du 11 décembre 2023 et du 24 octobre 2024) ; huit communes en 1920, vingt en 1929 et la date de 1976 restent sur une seule source (Vincent, Terroir 2012) (⚠️) ; l’aire compte aujourd’hui 17 communes de l’Yonne.","Extensions sur terrains portlandiens et critère agronomique (⚠️) : une seule source (Vincent) ; le cahier des charges AOC Chablis (2023) ne mentionne ni le Portlandien ni de critère agronomique, il décrit des sols toujours calcaires (calcaire du Barrois en corniche, talus marneux) et environ 4 000 ha (2008) ; surfaces de Vincent non reprises.","Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."],
     src: "Mille Vignes, P. Lepeltier, p. 185 et 188 ; Vincent, Terroir 2012 (IVES), chronologie de la délimitation de Chablis",
     page: 185
   },
@@ -631,7 +631,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.","386 AOC/AOP viticoles et 77 IGP viticoles (⚠️) : chiffres INAO 2023, à réactualiser ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus)."],
+    to_check: ["Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.","386 AOC/AOP viticoles et 77 IGP viticoles en 2023 (INAO, chiffres clés) (⚠️) : 366 et 76 en 2022, 363 et 74 en 2020 selon l’INAO ; écart 2022-2023 inexpliqué (changement de décompte ?) ; aucun chiffre 2024 ou 2025 trouvé ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus)."],
     src: "Mille Vignes, P. Lepeltier, p. 189 ; règlement (CEE) 2081/92 (WIPO Lex) ; INAO, dates clés ; INAO, chiffres clés 2019 et 2023 ; IPPT, Fundamentals of EU IP law, Wine ; TheTradeHub, règlement 1308/2013 art. 93.",
     page: 189
   },

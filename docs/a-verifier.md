@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-365 fiches : 65 vérifiées, 300 à vérifier (875 points).
+365 fiches : 67 vérifiées, 298 à vérifier (863 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -281,9 +281,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
-**Fiche 109** (p.86) — Terroirs microbiens : une piste débattue
-- [ ] Contestation par d’autres études : affirmée par le livre ; Setati et al. (cités par Gilbert et al.) trouvent plus de variation à l’intérieur d’une parcelle qu’entre parcelles ; autres études non lues
-
 **Fiche 110** (p.86) — La vigne mariée à l’arbre (vite maritata)
 - [ ] Étrusques (conduite haute) et héritage gréco-oriental du gobelet : une seule source (Guado al Melo, vulgarisation) ; à doubler par un ouvrage académique
 - [ ] Virgile : identification du « poète » par inférence ; le terme vite maritata ne figure pas dans son texte
@@ -520,7 +517,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Parentés (arinarnoa = tannat × cabernet-sauvignon, liliorila = baroque × chardonnay) : Decanter seule, marselan et castets non vérifiés (VIVC) ; non utilisées dans les exercices
 
 **Fiche 153** (p.122) — VitAdapt et les cépages oubliés : le terret
-- [ ] VitAdapt : 0,5 ha, 2009, 52 cépages (31 rouges, 21 blancs), source L’Info Durable ; 5 hybrides, 6 groupes de précocité et vingtaine de vinifications (livre) non confirmés ; source INRAE bloquée
+- [ ] VitAdapt (INRAE Bordeaux) : parcelle plantée en 2009 avec 52 cépages (31 rouges, 21 blancs), six groupes de précocité et une vingtaine de cépages microvinifiés, confirmés (Chambre d’agriculture de la Gironde, PNDV Tour 2023 ; posters et actes IVES de Destrac-Irvine ; AgriAdapt) ; le livre parle d’une « vingtaine de vinifications », il s’agit d’une vingtaine de cépages vinifiés sur plusieurs millésimes. Une seule source chacun : surface d’environ 0,5 ha (L’Info Durable) et 5 hybrides résistants (document non signé).
 - [ ] Terret noir : « replanté à Châteauneuf-du-Pape » (livre) nuancé par Tablas Creek et iDealwine (autorisé, très peu planté) ; ne pas le confondre avec les cépages de l’AOC Bordeaux ni avec VitAdapt
 - [ ] Tablas Creek : importation 2003, planté en 2010, récolte vers 21-21,6 °Brix : source du domaine, intérêt commercial possible
 
@@ -548,7 +545,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.
 - [ ] Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).
 - [ ] Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée.
-- [ ] Chablis réservé aux sols kimméridgiens en 1938 (⚠️, non utilisé en exercice) : une seule source (Fanet, IVES) ; non repris dans la synthèse.
 
 **Fiche 159** (p.126) — Le temps long : échelle des temps géologiques et tectonique
 - [ ] Plus de 4,5 milliards d’années pour la Terre et 3,8 milliards d’années pour les ensembles de roches anciennes (⚠️) : une seule source lue (Universalis) ; ordres de grandeur, des roches et zircons plus anciens existent ; âge de la Terre non énoncé dans la page lue.
@@ -575,13 +571,12 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 163** (p.130) — Vignobles sur roches plutoniques en France : granite, pierre bleue, gabbro
 - [ ] Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.
-- [ ] Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques. Le cahier des charges AOC Juliénas (arrêté du 20 février 2024, lu) ne nomme ni diorite ni pierre bleue : granite rose, arène granitique et, en haut de coteau, schistes volcano-sédimentaires. Reste à lire le cahier des charges Brouilly / Côte de Brouilly.
+- [ ] Pierre bleue (erreur du livre, reportée) : le livre et Decanter parlent de diorite ; les cahiers des charges AOC Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) décrivent des porphyres (« roches métamorphiques massives ») appelés localement « pierres bleues », avec du granite ; celui de Juliénas (arrêté du 20 février 2024) ne nomme pas la pierre bleue. La fiche ne présente pas la diorite comme établie.
 - [ ] Roches des crus communaux du Muscadet (cahier des charges AOC Muscadet Sèvre et Maine, arrêté du 16 octobre 2019, lu) : Clisson granite à gros grains et Gorges gabbro confirmés (✅ avec les sources de presse) ; pour Le Pallet, le texte ne nomme pas la roche (roches peu altérées, très fracturées) ; gneiss à Goulaine et à Monnières-Saint-Fiacre.
 - [ ] Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 164** (p.132) — Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre
-- [ ] Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.
 - [ ] Forst et basalte (⚠️, une seule source) : basalte du volcan Pechstein limité à certains lieux-dits, le reste sur grès bigarré, calcaire, argile, limon.
 - [ ] Columbia Valley (⚠️, une source officielle) : le basalte est le substrat profond, les sols de surface sont surtout du loess et des alluvions de crue.
 - [ ] Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.
@@ -646,14 +641,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.
 - [ ] Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.
 - [ ] Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.
-- [ ] Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Turisme Priorat non lu.
-- [ ] Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.
+- [ ] Priorat, llicorella (✅) : substrat compact d’ardoise (pissarra) du Paléozoïque, de profondeur moyenne à faible (Turisme Priorat ; Guinjoan, Badia et Tulla, Documents d’Anàlisi Geogràfica, 2014) ; les sources parlent d’ardoise plutôt que de schiste ; la DOQ ne définit pas le terme.
+- [ ] Douro, xisto (✅) : socle de schistes paléozoïques (Figueiredo et al., IPB) dont la foliation laisse passer les racines (Tomasi, IVES, d’après Maltman 2008) ; fracture presque verticale d’après une source de vulgarisation seulement ; le « regroupement de roches » du livre n’est pas confirmé ; l’article de Sousa n’a pas été retrouvé.
 - [ ] Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 176** (p.137) — Gneiss, amphibolite, serpentinite : du Muscadet à la Wachau
 - [ ] Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges AOC Muscadet Sèvre et Maine (2019, lu) ne nomme pas la roche du Pallet (roches peu altérées, très fracturées) et attribue le gneiss à Goulaine et à Monnières-Saint-Fiacre.
-- [ ] Nombre de crus du Muscadet (⚠️) : le cahier des charges de 2019 en compte 7 en Sèvre-et-Maine (Clisson, Gorges, Goulaine, Mouzillon-Tillières, Château-Thébaud, Monnières-Saint-Fiacre, Le Pallet) ; d’autres zones ont été approuvées depuis selon la presse (10 selon Wine With Seth) ; version en vigueur non lue ; volontairement non retenu dans la fiche et les exercices.
+- [ ] Nombre de crus du Muscadet (⚠️ pour l’avenir) : le cahier des charges AOC Muscadet Sèvre et Maine le plus récent lu (arrêté du 26 novembre 2025) compte 7 dénominations géographiques complémentaires (Château-Thébaud, Clisson, Gorges, Goulaine, Monnières-Saint-Fiacre, Mouzillon-Tillières, Le Pallet) ; La Haie-Fouassière et Vallet ont été mises en consultation publique par l’INAO (25 août-25 octobre 2025), reconnaissance non vérifiée ; le « 10 » de Wine With Seth n’est pas établi ; nombre non retenu dans les exercices.
 - [ ] Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.
 - [ ] Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -694,9 +689,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Lampourdier (⚠️) : attesté comme lieu de carrières de sables et calcaires, pas explicitement comme massif géologique ; non repris.
 
 **Fiche 185** (p.146) — Rationaliser le terroir : l’Unité terroir de base (UTB)
-- [ ] Études de sol commandées par l’INAO dès la fin des années 1930 : l’INAO date de 1935 et les premières délimitations de 1936-1938, mais le caractère géo-pédologique de ces analyses n’est pas confirmé ; fait attribué à Lepeltier.
-- [ ] Précocité, vigueur et alimentation en eau comme trois variables de l’UTB : précocité et eau sont documentées (étude Anjou, Rioux, Guilbault, Morlat), la vigueur n’a pas été retrouvée comme variable de l’UTB elle-même.
-- [ ] Attribution à l’INRA d’Angers et à René Morlat : concordante avec les sources lues (IVES) mais aucune page INRAE directe ; le rôle de Salette et d’Asselin cités par le livre n’est pas établi.
+- [ ] Études de sol commandées par l’INAO dès la fin des années 1930 (⚠️) : Fanet (INAO, IVES) confirme que la délimitation est confiée à des experts extérieurs désignés par le Comité national (géologues, pédologues), mais sans date ; l’INAO date de 1935 et les premières AOC de 1936 ; la date « fin des années 1930 » reste attribuée à Lepeltier.
+- [ ] Rôle de Salette (⚠️) : le concept d’UTB vient de l’Unité vigne et vin de l’INRA d’Angers (R. Morlat), confirmé par deux articles IVES (Pasquini, Asselin et Jourjon 2002 ; Morlat et al. 1996) ; C. Asselin est coauteur de travaux de cette unité ; le rôle de Salette cité par le livre n’est confirmé par aucune source lue.
 
 **Fiche 186** (p.148) — De l’UTB à l’UTV : cépage, climat du Nouveau Monde et Mendoza
 - [ ] Paraje Altamira : reconnue comme indication géographique par la résolution INV n° 44/2013 (6 décembre 2013, BO du 13 janvier 2014, lue) ; zone étendue en 2017 (résolution E 82/2017) ; le livre place la reconnaissance en 2017 : erreur reportée dans docs/erreurs-du-livre.md.
@@ -727,10 +721,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Chiffre de 200 vinaigriers à Orléans en 1787 (⚠️) : non retrouvé, volontairement non repris.
 
 **Fiche 193** (p.156) — La prohibition américaine : 18e et 21e amendements
-- [ ] Dates de ratification et d’entrée en vigueur du 18e amendement (⚠️) : une source de niveau 2b (Wine Business) ; archives fédérales américaines bloquées, non lues.
-- [ ] Le 18e amendement n’interdisait ni la possession ni la consommation (⚠️) : même limite de sources ; contredit la formulation du livre (p. 156), qui parle d’une consommation interdite.
-- [ ] Ratification du 21e amendement le 5 décembre 1933 (⚠️) : sources de niveau 2b seulement.
-- [ ] 17 États au modèle de contrôle en 2021 (⚠️) : chiffre confirmé par deux sources de niveau 2b, mais qui classent différemment certains États ; TTB et NABCA non lus ; Dakota du Sud, Alaska et « 13 juridictions » non retrouvés.
+- [ ] Entrée en vigueur du 18e amendement : ratification certifiée le 16 janvier 1919 et prohibition nationale à minuit le 17 janvier 1920 (Library of Congress), un an après la ratification (Constitution Annotated) ; certaines sources datent l’entrée en vigueur de l’amendement au 16 janvier 1920 et celle de la loi Volstead au 17 (National Constitution Center) ; écart d’un jour non tranché, aucune date au jour près en exercice.
+- [ ] Monopoles d’État : 17 États de contrôle selon la NABCA (annuaire en ligne ; fiche 2022), 18 juridictions avec le comté de Montgomery (Maryland) ; Alaska, Minnesota, Dakota du Sud et Maryland n’appliquent que des formes partielles du modèle ; les « 13 juridictions » du livre ne sont pas retrouvées (⚠️).
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 194** (p.158) — Le terroir, une œuvre humaine : de Dion à Roupnel
@@ -853,13 +845,13 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Formule « usages locaux, loyaux et constants » rattachée à 1905 par le livre (⚠️) : absente de la loi de 1905 dans sa version consolidée (Légifrance, lu ; rédaction d’origine non consultée) ; présente dans la loi du 6 mai 1919 (art. 13, rédaction d’origine, et art. 1 dans sa version de 1966 ; Légifrance, lu) ; les autres sources la rattachent à 1908 (UMC) et à 1919 (INAO ; Garcia 2020).
 
 **Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
-- [ ] Chronologie 1920 (huit communes), 1929 (vingt communes), 1938, 1976 (⚠️) : une seule source détaillée (Vincent, Terroir 2012, IVES) ; le livre donne en plus environ 400 ha en 1920, non retrouvé et non repris ici.
-- [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : une source (Vincent) ; ses surfaces sont incohérentes entre elles (5 200 ha en 1978, environ 4 000 ha dans son introduction), non reprises.
+- [ ] Chronologie de Chablis : jugements de 1920 à 1932, jugement d’Auxerre de 1929 « sans la référence géologique », AOC en 1938 (décret du 13 janvier 1938) et aire parcellaire approuvée le 31 janvier 1978 (✅, cahiers des charges Chablis et Chablis grand cru, arrêtés du 11 décembre 2023 et du 24 octobre 2024) ; huit communes en 1920, vingt en 1929 et la date de 1976 restent sur une seule source (Vincent, Terroir 2012) (⚠️) ; l’aire compte aujourd’hui 17 communes de l’Yonne.
+- [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : une seule source (Vincent) ; le cahier des charges AOC Chablis (2023) ne mentionne ni le Portlandien ni de critère agronomique, il décrit des sols toujours calcaires (calcaire du Barrois en corniche, talus marneux) et environ 4 000 ha (2008) ; surfaces de Vincent non reprises.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 214** (p.189) — De l’AOC à l’AOP : textes européens, seuils et chiffres
 - [ ] Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.
-- [ ] 386 AOC/AOP viticoles et 77 IGP viticoles (⚠️) : chiffres INAO 2023, à réactualiser ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
+- [ ] 386 AOC/AOP viticoles et 77 IGP viticoles en 2023 (INAO, chiffres clés) (⚠️) : 366 et 76 en 2022, 363 et 74 en 2020 selon l’INAO ; écart 2022-2023 inexpliqué (changement de décompte ?) ; aucun chiffre 2024 ou 2025 trouvé ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
 
 **Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
 - [ ] Sassicaia 1968 présenté en 1971 (⚠️) : une source (Winewithseth) ; plantation de 1944 et premier millésime familial non confirmés.
@@ -933,10 +925,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Histoire : le Handbook of Enology (vol. 1, p. 193 et 211) situe l’usage général du SO2 à la fin du XVIIIe siècle et son emploi en vinification au début du XXe, sans dater les premières mentions ni la mèche.
 
 **Fiche 235** (p.219) — Les vins sucrés : concentrer le raisin ou muter
-- [ ] Alcool ajouté aux VDN (⚠️) : 5 à 10 % du volume du moût selon la réglementation française décrite par le Handbook of Enology (vol. 1, 2006, p. 471), 10 % au plus selon la fiche INAO Rivesaltes, contre 5 à 25 % dans le livre ; cahiers des charges en vigueur à vérifier un par un.
 - [ ] Mutage rattaché à Arnaud de Villeneuve : seul le XIIIe siècle est confirmé (INAO, Idealwine) ; l’année 1258 du livre n’est pas établie.
 - [ ] Pourriture noble : mécanisme confirmé (Idealwine ; Handbook of Enology, vol. 1, p. 450-451) ; pertes : environ la moitié du poids de la baie et près des deux tiers du volume de jus (Handbook, p. 287), ce qui réconcilie le livre (jusqu’à 50 % du poids) et la source de presse (au moins 65 % du jus) ; chiffres non repris en exercice.
-- [ ] Vin de paille et vin de glace : principe du séchage et du gel partiel confirmé (Handbook of Enology, vol. 1, p. 449-450 : gel vers −6 à −7 °C) ; détails de séchage issus de sources de tourisme ou de blog, cahiers des charges non lus.
 
 **Fiche 236** (p.221) — Macération carbonique, vins orange et qvevri
 - [ ] Michel Flanzy : 1934 selon la notice INRAE Prodinra, 1935 selon le Handbook of Enology (vol. 1, p. 385), qui cite Pasteur comme premier observateur de l’effet du CO2 sur les baies entières ; divergence non tranchée.
@@ -988,8 +978,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
 - [ ] SO2 bio 100/150 mg/l sous 2 g/l de sucres (⚠️) : deux fiches de certificateurs (Certis, TÜV Nord) citant le règlement (UE) 2021/1165, annexe V D, dont le texte n’a pas pu être lu.
-- [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024 ; Biodyvin serait moins strict (80/105 mg/l selon Réussir, une source de presse), cahier des charges Biodyvin non lu.
-- [ ] Vin méthode nature < 30 mg/l (⚠️) : label privé du Syndicat de défense des vins naturels, décrit par deux sources de presse ; charte non lue.
+- [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024, une seule source. Biodyvin (cahier des charges lu, non daté) : 80 mg/l pour les rouges et 105 mg/l pour les blancs et rosés jusqu’à 5 g/l de sucres (110 et 135 en élevage de plus de 9 mois), 105 et 130 mg/l au-delà ; moins strict que Demeter.
 - [ ] Seuil de sucres des vins « secs » pour le SO2 conventionnel (⚠️) : 5 g/l dans le droit de l’UE et 4 g/l pour l’OIV, concordants avec le tableau 8.1 du Handbook of Enology (vol. 1, 2006, p. 195), qui donnait alors 160 et 210 mg/l pour l’UE ; texte en vigueur (règlement 2019/934, annexe I partie B) non relu en entier.
 - [ ] Origine historique des limites d’acidité volatile (⚠️) : le décret du 19 août 1921 fixait une limite plus haute (2,5 g/l), abaissée en 1930 puis en 1938 (une seule source, Jacquet, IVES/OIV 2024, qui cite le texte d’origine ; la version consolidée actuelle du décret ne contient plus de chiffre) ; les 18 et 20 meq/l viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
 
@@ -1012,9 +1001,9 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 ; causes encore discutées, la qualité des bouchons est contestée. Le Handbook of Enology (vol. 2, p. 274-275) décrit un vieillissement prématuré des blancs secs lié au sotolon et à l’aminoacétophénone, sans parler de la Bourgogne.
 
 **Fiche 252** (p.242) — Le goût de bouchon : TCA, TeCA et TBA
-- [ ] Fréquence du goût de bouchon en baisse (⚠️) : estimations anciennes de 0,5 à 6 % des vins tranquilles (Chatonnet et al., 2003) contre environ 1,5 % aujourd’hui (iDealwine, presse) ; chiffre de l’IFV cité par le livre non retrouvé, aucun chiffre repris.
-- [ ] Part du liège dans les contaminations (⚠️) : 80 à 95 % selon les sources, méthodes non précisées ; aucun pourcentage repris.
-- [ ] TBA retrouvé sur des bouchons synthétiques (⚠️) : une seule source (Virginia Tech Enology).
+- [ ] Fréquence du goût de bouchon en baisse (⚠️) : 5,5 % des bouteilles bouchées liège en 1994 et 5 à 8 % en 2001-2003 contre environ 1,3 % des vins de l’International Wine Challenge 2007-2017 (AWRI, Technical Review 248, 2020 ; données de concours) ; chiffre de l’IFV cité par le livre non retrouvé ; aucun chiffre repris.
+- [ ] Part du liège dans les contaminations (⚠️) : le liège est la source principale des haloanisoles (Hjelmeland, UC Davis 2013, citant Chatonnet et al. 2004), sans pourcentage ; la fourchette de 80 à 95 % n’est confirmée par aucune source de niveau 1 ou 2a ; aucun pourcentage repris.
+- [ ] TBA sur des bouchons synthétiques (⚠️) : non confirmé ; Virginia Tech signale son précurseur, le tribromophénol, sur les plastiques de cave, bouchons synthétiques compris, et le TBA comme un composé volatil qui se fixe sur les surfaces ; aucune seconde source.
 - [ ] Seuils du TeCA et du TBA (⚠️) : environ 12 ng/l pour le TeCA dans un rouge (Chatonnet 2003), 4 ng/l dans l’eau et 150 ng/l pour une altération nette dans le vin selon le Handbook of Enology (vol. 2, p. 260) ; TBA vers 4 ng/l (Virginia Tech) ; seuils très dépendants de la matrice et du jury.
 
 **Fiche 253** (p.245) — Aristote et les huit saveurs : le goût des Grecs
@@ -1032,7 +1021,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 256** (p.247) — L’INAO et la dégustation d’agrément
 - [ ] Proposition de Capus en 1943, refus du ministère de la Justice et diffusion volontaire à Bordeaux, dans le Muscadet et en Bourgogne (⚠️) : une seule source (deux articles de Jacquet : proposition du 20 octobre 1943, rejetée) ; Jacquet cite aussi le Pineau des Charentes (1945) comme première appellation soumise à une dégustation obligatoire, ce que le livre ne mentionne pas.
-- [ ] Contrôle actuel des AOC (⚠️) : d’après le plan de contrôle type AOC viti de l’INAO, examen analytique et organoleptique d’un lot par opérateur, par couleur et par an (100 % du vrac expédié hors de France), sur prélèvement aléatoire ; date de la réforme et seconde source à trouver.
+- [ ] Contrôle actuel des AOC (⚠️ pour la date d’application) : réforme par l’ordonnance n° 2006-1547 du 7 décembre 2006 (deux sources : Réussir, réponse ministérielle à l’Assemblée nationale), décret d’application de janvier 2007 ; syndicats devenus ODG, contrôle confié à des organismes accrédités selon un plan de contrôle ; application généralisée en 2008 (date du 1er juillet 2008 tirée d’une source sur une AOC non viticole). Plan de contrôle type AOC viti de l’INAO : un lot par opérateur, par couleur et par an (100 % du vrac expédié hors de France), sur prélèvement aléatoire.
 - [ ] Règlement CEE 817/70 appliqué aux AOC par le décret de 1974 (⚠️) : une seule source (article de la revue Pour, Cairn) ; absent de la frise chronologique de l’INAO ; texte du règlement non lu (EUR-Lex bloqué).
 
 **Fiche 257** (p.247) — Jules Chauvet : le bouquet d’abord, et le verre INAO
@@ -1079,7 +1068,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Teinte, luminosité et chromatisme (⚠️) : triplet repris du livre, qui relève du système CIELAB (Handbook of Enology, vol. 2, p. 178) plutôt que de l’OIV ; la méthode OIV lue (OIV-MA-AS2-07B) définit l’intensité (A420 + A520 + A620) et la nuance (A420/A520), formules confirmées par le Handbook.
 - [ ] Échelle violacé, grenat, tuilé, brun et jaune-vert, orangé, ambré, brun (⚠️) : le mécanisme est confirmé (anthocyanes libres remplacées par des pigments polymérisés) mais ce vocabulaire est conventionnel, non retrouvé dans une source normative.
 - [ ] Exemple du jeune barolo (⚠️) : exemple du livre (p. 262), non vérifié par les sources lues.
-- [ ] Seuil de 4,5 des côtes-du-rhône rouges (⚠️) : lu dans des mesures de campagne syndicales (2019) et dans une modification temporaire du cahier des charges (millésime 2023, eAmbrosia) ; texte permanent du cahier des charges non lu.
 
 **Fiche 268** (p.259) — Les larmes du vin : l’effet Marangoni
 - [ ] « Plus de larmes, plus d’alcool » (⚠️) : règle empirique ; la contrainte de Marangoni passe par un maximum vers 10 % d’éthanol en masse (un cognac à 35 % en donne une légèrement plus faible) et l’observabilité dépend du type de vin et de la propreté du verre (Venerus et Simavilla, 2015 ; Physics World). Glycérol et sucre ne sont pas traités par les sources lues.
@@ -1100,10 +1088,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Rangement des arômes de fermentation (⚠️) : secondaires chez Lepeltier et dans la tradition française, primaires pour le WSET ; divergence d’école, non tranchée.
 - [ ] WSET : malolactique et fût classés en secondaires (⚠️) : lu dans une seule version (WSET Level 2, version française) ; à recouper avec une seconde source WSET.
 - [ ] Nombre de molécules réellement odorantes, 20 à 40 (⚠️) : une seule source (Ferreira et al., synthèse IVES) ; le livre ne le donne pas.
-
-**Fiche 274** (p.264) — La rotundone : le poivre de la syrah que 1 personne sur 5 ne sent pas
-- [ ] Cépages porteurs (⚠️) : syrah bien établie (Wood et al. 2008 ; AWRI) ; pineau d’Aunis et grüner veltliner d’après l’AWRI, l’IVES et Decanter ; le mourvèdre cité par le livre n’apparaît dans aucune liste lue, non repris.
-- [ ] Part des insensibles (⚠️ nuance) : 20 % (Wood et al. 2008, Decanter) à 20-25 % (AWRI), sur des panels australiens ; le livre écrit 20 %. Date d’identification non reprise (le livre écrit 2005, la publication scientifique date de 2008).
 
 **Fiche 276** (p.265) — Arômes de fermentation et de fût : banane, beurre, coco, vanille
 - [ ] Sotolon (⚠️) : molécule clé des vins botrytisés, des finos et du vin jaune, dont il fait la note de noix (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477 ; vol. 2, p. 64) ; curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.

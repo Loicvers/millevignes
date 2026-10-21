@@ -41,7 +41,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.","Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.","Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).","Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée.","Chablis réservé aux sols kimméridgiens en 1938 (⚠️, non utilisé en exercice) : une seule source (Fanet, IVES) ; non repris dans la synthèse."],
+    to_check: ["Hiérarchie en pyramide et 33 grands crus (⚠️) : une seule source de niveau 2b (Bourgogne Tourisme : 33 grands crus, 44 communales, 7 régionales) ; le niveau « sous-régional » du livre n’y figure pas ; à recouper avec le BIVB ou l’INAO.","Classement des climats selon le potentiel des sols (⚠️) : la page UNESCO décrit les parcelles, pas une hiérarchie des crus.","Bourgogne modèle du système d’appellations (⚠️) : thèse du livre, non confirmée par l’INAO (lois de 1905 et 1919, décrets de Champagne, du cognac, de Bordeaux).","Recours croissant de l’INAO aux géologues (⚠️) : aucune source lue ne date ni ne chiffre la tendance ; seule la base scientifique de la délimitation est confirmée."],
     src: "Mille Vignes, P. Lepeltier, p. 124-125 ; UNESCO, Les Climats du vignoble de Bourgogne ; INAO, « 1905-1935 : les débuts des appellations d’origine » et « Délimitation des aires de production » ; Bourgogne Tourisme ; Fanet, Terroir, climat, sol (IVES).",
     page: 124
   },
@@ -165,7 +165,7 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.",
-      "Pierre bleue = diorite (⚠️, divergence) : le livre et Decanter disent diorite ; l’interprofession parle de roches volcaniques. Le cahier des charges AOC Juliénas (arrêté du 20 février 2024, lu) ne nomme ni diorite ni pierre bleue : granite rose, arène granitique et, en haut de coteau, schistes volcano-sédimentaires. Reste à lire le cahier des charges Brouilly / Côte de Brouilly.",
+      "Pierre bleue (erreur du livre, reportée) : le livre et Decanter parlent de diorite ; les cahiers des charges AOC Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) décrivent des porphyres (« roches métamorphiques massives ») appelés localement « pierres bleues », avec du granite ; celui de Juliénas (arrêté du 20 février 2024) ne nomme pas la pierre bleue. La fiche ne présente pas la diorite comme établie.",
       "Roches des crus communaux du Muscadet (cahier des charges AOC Muscadet Sèvre et Maine, arrêté du 16 octobre 2019, lu) : Clisson granite à gros grains et Gorges gabbro confirmés (✅ avec les sources de presse) ; pour Le Pallet, le texte ne nomme pas la roche (roches peu altérées, très fracturées) ; gneiss à Goulaine et à Monnières-Saint-Fiacre.",
       "Chais en surface à cause du granite dur (⚠️) : affirmation du livre, aucune source lue.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
@@ -180,7 +180,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre",
-    synth: "Le basalte, équivalent volcanique du gabbro, est une roche sombre qui porte entre autres l’Auvergne (la fiche INAO parle d’activité volcanique sans nommer le basalte), certains lieux-dits de Forst en Palatinat et, en socle sous du loess, la Columbia Valley. Le livre le dit « très fertile » une fois altéré puis décrit les sols volcaniques comme pauvres en matière organique : une fertilité minérale potentielle ne fait pas forcément une vigne vigoureuse. La rhyolite, équivalent volcanique du granite, reste minoritaire à Savennières (environ 5 % de l’appellation, le schiste dominant avec près de 58 %). Enfin, le porphyre est une texture (gros cristaux dans une pâte fine, cristallisation en deux temps), pas une variété d’andésite comme le laisse entendre le livre.",
+    synth: "Le basalte, équivalent volcanique du gabbro, est une roche sombre qui porte entre autres l’Auvergne (le cahier des charges des Côtes d’Auvergne le cite à Chanturgue et Châteaugay, parmi des sols variés : marnes, colluvions volcaniques, granites, gneiss), certains lieux-dits de Forst en Palatinat et, en socle sous du loess, la Columbia Valley. Le livre le dit « très fertile » une fois altéré puis décrit les sols volcaniques comme pauvres en matière organique : une fertilité minérale potentielle ne fait pas forcément une vigne vigoureuse. La rhyolite, équivalent volcanique du granite, reste minoritaire à Savennières (environ 5 % de l’appellation, le schiste dominant avec près de 58 %). Enfin, le porphyre est une texture (gros cristaux dans une pâte fine, cristallisation en deux temps), pas une variété d’andésite comme le laisse entendre le livre.",
     mnemo: "Le basalte, c’est du gabbro refroidi en urgence : même composition sombre, grain fin. Le porphyre, c’est une pâte à gâteau avec des pépites de chocolat : de gros cristaux noyés dans une pâte fine.",
     flash: {"q":"Le porphyre est-il une roche à part entière ?","a":"Non, c’est une texture : de gros cristaux (phénocristaux) dans une pâte plus fine, signe d’une cristallisation en deux temps. On parle par exemple d’une andésite porphyrique.","keys":[["texture"]]},
     qcm: {"q":"Quelle roche domine à Savennières, d’après les sources ?","opts":["La rhyolite","Le basalte","Le schiste","Le granite"],"good":2,"expl":"La rhyolite y existe bel et bien (environ 5 %) mais le livre la met en avant alors que le sol dominant de l’appellation est le schiste."},
@@ -193,7 +193,7 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "Auvergne (⚠️) : la fiche INAO des Côtes d’Auvergne ne nomme pas le basalte ; les sols incluent aussi granite et sédimentaire selon les secteurs, non vérifié.",
+      
       "Forst et basalte (⚠️, une seule source) : basalte du volcan Pechstein limité à certains lieux-dits, le reste sur grès bigarré, calcaire, argile, limon.",
       "Columbia Valley (⚠️, une source officielle) : le basalte est le substrat profond, les sols de surface sont surtout du loess et des alluvions de crue.",
       "Savennières (⚠️, une seule source) : répartition schistes 57,6 %, rhyolites ou microgranites 4,9 % ; chiffre à recouper avec le BRGM ou l’ODG. Coteaux du Layon non vérifiés.",
@@ -201,7 +201,7 @@ FICHES.push(
       "Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford).",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 132 ; INAO (fiche Côtes d’Auvergne) ; Washington State Wine Commission (Columbia Valley) ; Vins et Millésimes (Savennières) ; Réussir Vigne (vignobles volcaniques) ; WorldAtlas (sols volcaniques) ; Futura-Sciences (porphyrique) ; Université d’Oxford, Earth Sciences (andésite)",
+    src: "Mille Vignes, P. Lepeltier, p. 132 ; INAO (fiche Côtes d’Auvergne) ; cahier des charges AOC Côtes d’Auvergne (2018) ; Washington State Wine Commission (Columbia Valley) ; Vins et Millésimes (Savennières) ; Réussir Vigne (vignobles volcaniques) ; WorldAtlas (sols volcaniques) ; Futura-Sciences (porphyrique) ; Université d’Oxford, Earth Sciences (andésite)",
     page: 132
   },
   {
@@ -488,8 +488,8 @@ FICHES.push(
       "Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.",
       "Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.",
       "Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.",
-      "Priorat, llicorella (⚠️) : définition de la llicorella issue d’un seul site (pages jumelles) ; Turisme Priorat non lu.",
-      "Douro, xisto (⚠️) : fracture verticale et regroupement de roches issus d’un seul site ; l’article IVES de Sousa n’a pas été lu.",
+      "Priorat, llicorella (✅) : substrat compact d’ardoise (pissarra) du Paléozoïque, de profondeur moyenne à faible (Turisme Priorat ; Guinjoan, Badia et Tulla, Documents d’Anàlisi Geogràfica, 2014) ; les sources parlent d’ardoise plutôt que de schiste ; la DOQ ne définit pas le terme.",
+      "Douro, xisto (✅) : socle de schistes paléozoïques (Figueiredo et al., IPB) dont la foliation laisse passer les racines (Tomasi, IVES, d’après Maltman 2008) ; fracture presque verticale d’après une source de vulgarisation seulement ; le « regroupement de roches » du livre n’est pas confirmé ; l’article de Sousa n’a pas été retrouvé.",
       "Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
@@ -518,7 +518,7 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges AOC Muscadet Sèvre et Maine (2019, lu) ne nomme pas la roche du Pallet (roches peu altérées, très fracturées) et attribue le gneiss à Goulaine et à Monnières-Saint-Fiacre.",
-      "Nombre de crus du Muscadet (⚠️) : le cahier des charges de 2019 en compte 7 en Sèvre-et-Maine (Clisson, Gorges, Goulaine, Mouzillon-Tillières, Château-Thébaud, Monnières-Saint-Fiacre, Le Pallet) ; d’autres zones ont été approuvées depuis selon la presse (10 selon Wine With Seth) ; version en vigueur non lue ; volontairement non retenu dans la fiche et les exercices.",
+      "Nombre de crus du Muscadet (⚠️ pour l’avenir) : le cahier des charges AOC Muscadet Sèvre et Maine le plus récent lu (arrêté du 26 novembre 2025) compte 7 dénominations géographiques complémentaires (Château-Thébaud, Clisson, Gorges, Goulaine, Monnières-Saint-Fiacre, Mouzillon-Tillières, Le Pallet) ; La Haie-Fouassière et Vallet ont été mises en consultation publique par l’INAO (25 août-25 octobre 2025), reconnaissance non vérifiée ; le « 10 » de Wine With Seth n’est pas établi ; nombre non retenu dans les exercices.",
       "Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.",
       "Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
@@ -741,7 +741,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Études de sol commandées par l’INAO dès la fin des années 1930 : l’INAO date de 1935 et les premières délimitations de 1936-1938, mais le caractère géo-pédologique de ces analyses n’est pas confirmé ; fait attribué à Lepeltier.","Précocité, vigueur et alimentation en eau comme trois variables de l’UTB : précocité et eau sont documentées (étude Anjou, Rioux, Guilbault, Morlat), la vigueur n’a pas été retrouvée comme variable de l’UTB elle-même.","Attribution à l’INRA d’Angers et à René Morlat : concordante avec les sources lues (IVES) mais aucune page INRAE directe ; le rôle de Salette et d’Asselin cités par le livre n’est pas établi."],
+    to_check: ["Études de sol commandées par l’INAO dès la fin des années 1930 (⚠️) : Fanet (INAO, IVES) confirme que la délimitation est confiée à des experts extérieurs désignés par le Comité national (géologues, pédologues), mais sans date ; l’INAO date de 1935 et les premières AOC de 1936 ; la date « fin des années 1930 » reste attribuée à Lepeltier.","Rôle de Salette (⚠️) : le concept d’UTB vient de l’Unité vigne et vin de l’INRA d’Angers (R. Morlat), confirmé par deux articles IVES (Pasquini, Asselin et Jourjon 2002 ; Morlat et al. 1996) ; C. Asselin est coauteur de travaux de cette unité ; le rôle de Salette cité par le livre n’est confirmé par aucune source lue."],
     src: "Mille Vignes, P. Lepeltier, p. 146-148 ; Rioux, Guilbault, Morlat, Étude Terroirs d’Anjou (IVES) ; Carbonneau, Interactions terroir-vigne (IVES) ; INAO, Histoire 1935-1970",
     page: 146
   },

@@ -306,10 +306,8 @@ FICHES.push(
       { type: "short_answer", prompt: "Quelle technique d’analyse a servi à décrire les communautés de levures et de bactéries des moûts ?", payload: { accepted: ["séquençage", "le séquençage", "séquençage de l’ADN", "sequencage"] } },
       { type: "flashcard_reverse", prompt: "Études de séquençage montrant des communautés microbiennes propres à une zone, discutées par Lepeltier.", payload: { answer: "Le terroir microbien" } }
     ],
-    status: "needs_review",
-    to_check: [
-      "Contestation par d’autres études : affirmée par le livre ; Setati et al. (cités par Gilbert et al.) trouvent plus de variation à l’intérieur d’une parcelle qu’entre parcelles ; autres études non lues"
-    ],
+    status: "verified",
+    to_check: [],
     src: "Mille Vignes, P. Lepeltier, p. 86 ; Infowine, Mapping the microbial terroir of wine ; UC Davis Mills lab, page de l’étude Bokulich et al. ; Bokulich, Thorngate, Richardson et Mills, Microbial biogeography of wine grapes is conditioned by cultivar, vintage, and climate (PNAS 111(1), E139-E148, en ligne le 25 novembre 2013) ; Gilbert, van der Lelie et Zarraonaindia, Microbial terroir for wine grapes (PNAS, 2014)",
     page: 86
   },

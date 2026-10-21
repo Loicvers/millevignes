@@ -879,7 +879,7 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "VitAdapt : 0,5 ha, 2009, 52 cépages (31 rouges, 21 blancs), source L’Info Durable ; 5 hybrides, 6 groupes de précocité et vingtaine de vinifications (livre) non confirmés ; source INRAE bloquée",
+      "VitAdapt (INRAE Bordeaux) : parcelle plantée en 2009 avec 52 cépages (31 rouges, 21 blancs), six groupes de précocité et une vingtaine de cépages microvinifiés, confirmés (Chambre d’agriculture de la Gironde, PNDV Tour 2023 ; posters et actes IVES de Destrac-Irvine ; AgriAdapt) ; le livre parle d’une « vingtaine de vinifications », il s’agit d’une vingtaine de cépages vinifiés sur plusieurs millésimes. Une seule source chacun : surface d’environ 0,5 ha (L’Info Durable) et 5 hybrides résistants (document non signé).",
       "Terret noir : « replanté à Châteauneuf-du-Pape » (livre) nuancé par Tablas Creek et iDealwine (autorisé, très peu planté) ; ne pas le confondre avec les cépages de l’AOC Bordeaux ni avec VitAdapt",
       "Tablas Creek : importation 2003, planté en 2010, récolte vers 21-21,6 °Brix : source du domaine, intérêt commercial possible"
     ],
