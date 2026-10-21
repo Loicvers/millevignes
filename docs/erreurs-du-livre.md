@@ -79,6 +79,21 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 235 : livre de Pascal Ribéreau-Gayon sur l’histoire de l’œnologie à Bordeaux daté de 2001 → 2011.
 - p. 240 : limite d’acidité volatile « instaurée depuis 1921 » → le décret du 19 août 1921 fixait 2,5 g/l, abaissé en 1930 (1,8) puis 1938 (1,2) ; les 18 et 20 meq/l actuels viennent du droit européen (Jacquet, IVES/OIV 2024).
 - p. 242 : « tétratrichloroanisole » → 2,3,4,6-tétrachloroanisole (TeCA).
+- p. 245 : Hermippe, comique « du IVe siècle av. J.-C. » → Ve siècle (Attalus ; Smith).
+- p. 251 : Institute of Masters of Wine « créé en 1953 » → premier examen MW en 1953, Institut fondé en 1955 (Oxford Companion ; AIM25).
+- p. 253 : goût « métallique » dû au fer « lié aux tanins » → arrière-goût de poisson dû au fer libre (Fe²⁺) qui oxyde les lipides (Tamura et al., 2009).
+- p. 254 : la mucine dans l’astringence → les tanins précipitent surtout les protéines salivaires riches en proline (Lee, Ismail, Vickers, 2012).
+- p. 257 : intéroception « conceptualisée » par Claude Bernard → terme de Sherrington (1906) ; Bernard a décrit le milieu intérieur (nuance).
+- p. 258 : raisins blancs par « perte des gènes de la biosynthèse » → inactivation des gènes régulateurs VvMybA1 et VvMybA2 ; anthocyanes « à 1 ou 2 sucres » → monoglucosides chez V. vinifera (Fournier-Level et al., 2010 ; Ferrandino et al., 2012).
+- p. 259 : bulles nées sur une fibre « laissée par le polissage du verre » ou un « défaut de la paroi » → fibres de cellulose venues de l’air ou de l’essuyage ; les irrégularités du verre sont trop petites (Liger-Belair).
+- p. 262 : étude Vila Viniteca sur le carafage « sur 5 à 9 vins » → 4 vins dans le protocole publié (conclusions fidèles).
+- p. 264 : précurseurs des thiols « liés à des sucres », libérés par des glycosidases → conjugués à la cystéine ou au glutathion, libérés par une β-lyase (Tominaga, Darriet, Dubourdieu) ; pamplemousse rattaché au 4MMP → au 3MH.
+- p. 266 (tableau) : « 1-phényléthanol » → 2-phényléthanol pour la note de rose (AWRI ; Styger et al.).
+- p. 270 : roue des arômes d’Ann Noble « en 1980 » → publiée en 1984 (AJEV 35:107-109), modifiée en 1987 (AJEV 38:143-146).
+- p. 280 : les Himbas « ne peuvent distinguer » le bleu parmi des verts → pas de mot séparé pour bleu et vert ; effets sur la mémoire et l’apprentissage (Roberson, Davidoff et al., 2005).
+- p. 281 : la dégustation « considérée comme un type de synesthésie » → correspondances intermodales ; la synesthésie stricte est rare (Spence et Wang, 2015).
+- p. 285 : « mercaptan (H2S) » → le sulfure d’hydrogène n’est pas un thiol ; étude de Starkenmann et Deneulin « 2017 » → J. Agric. Food Chem., novembre 2016 (quatre auteurs).
+- p. 273 et 285 : teneur en minéraux « 2 à 4 g », puis « 1 à 2 g/l » → environ 1,5 à 2 g/l, 4 g/l au plus (Parr et al., 2018, d’après Coombe et Dry).
 
 ## Non confirmés
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
@@ -137,6 +152,13 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 226-231 : grain plus fin du chêne sessile (non confirmé par Prida, 2007) ; Lorentz né en 1775 (Annales des Mines : 1774) ; micro-oxygénation de Ducournau en 1991 à Madiran (une source) ; prix des fûts, copeaux et staves.
 - p. 234-238 : OIV « 48 pays et 16 observateurs » (aujourd’hui 51 États membres et 13 observateurs) ; station agronomique de Bordeaux 1874 (Oxford Companion : 1880) ; « 102 produits » autorisés ; plafonds de SO2 bio et biodynamiques selon les cahiers des charges.
 - p. 240-243 : 5 à 8 % de bouteilles bouchonnées (littérature : 0,5 à 6 %, en baisse) ; « 70 % » des cas de TCA dus au liège ; 20 % de la population insensible à la géosmine ; diacétyle et cystéine donnant le pop-corn ; Beaucastel 1990 et son 4-éthylphénol.
+- p. 244-251 : mot « dégustation » en 1519 ; « plus de cinq mille ans » de dégustation ; « moins de 6 % » des ventes en AOC dans les années 1940 ; commissions de dégustation INAO en 1954 ; pondérations de la grille d’Amerine « sur 100 » (la grille UC Davis de 1959 est sur 20) ; cote « diamètre de base 9 mm » du verre INAO ; « 108 000 » formés WSET (= candidats d’une seule année) et « 800 centres » ; Vedel seul auteur de l’Essai de 1972 (avec Charles, Charnay, Tourmeau).
+- p. 252-257 : 15-17 % du cortex pour la vue et 1 % pour l’odorat ; « plusieurs milliards » d’odeurs ; 30-50 % de non-détecteurs de la β-ionone ; écart d’un facteur 1 000 pour le PTC ; novice aussi bon qu’un sommelier « en quelques jours » ; canal de l’acide « identifié en 2019 » (OTOP1 : 2018, confirmé en 2019) ; expérience de Morrot « réalisée en 2000 » (publiée en 2001).
+- p. 258-262 : nuanciers de 143 et 139 nuances du Centre du rosé (charte de 7 couleurs, 12 aujourd’hui) ; seuil d’intensité colorante de 7 des côtes-du-rhône-villages (documents syndicaux seulement) ; 1 200-1 400 mg/l de CO2 et seuil de 850 mg/l pour les perlants.
+- p. 263-270 : 700 à 1 000 composés volatils ; « une trentaine » de composés du tampon aromatique (22 à 27 chez Ferreira) et 5 classes d’impact (6) ; rotundone « identifiée en 2005 » (publiée en 2008) ; Corbin « 1998 » (1re éd. 1982) ; Pfister et ses « 10 dominantes » ; Bourgogne 2004 et les coccinelles.
+- p. 271-277 : nombre de bourgeons par papille du schéma p. 275 (à relire sur le PDF) ; « plusieurs millions » de cellules gustatives ; glycérol visqueux dès 8 g/l ; seuil de sucrosité 2 g/l ; fructose « deux fois » plus sucré ; molécules sucrantes du bois « identifiées en 2020 » (travaux d’Axel Marchal publiés en 2015 et 2019) ; acide succinique « umami » ; calcium à 80 mg/l et seuil de 40 mg/l ; récepteur du gras chez l’humain « en 2005 » ; roue de Gawel « 12 familles, 53 termes ».
+- p. 278-283 : étude Valentin et Ballester (Dijon, 2016, « 9 champs sémantiques ») non retrouvée ; typologie des six commentateurs de Peynaud et Blouin (une seule source).
+- p. 284-287 : Coutier « 1991 » ; pic du mot minéralité « vers 1994 » (de seconde main) ; indice de minéralité de David Lefebvre ; cristallisation sensible présentée comme une mécanique « bien connue ».
 
 ## Confirmés après vérification (le livre avait raison)
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
@@ -173,3 +195,9 @@ Ne pas les reprendre dans les fiches. Compléter à chaque lot : page, ce que di
 - p. 219 : jeune fino fortifié à 15,5 % vol. (schéma du livre), concordant avec les sources espagnoles.
 - p. 239 et 243 : Cheval Blanc 1947, sucres résiduels et acidité volatile élevés : les deux passages du livre sont compatibles (Decanter, JancisRobinson).
 - p. 236 : diplôme national d’œnologue créé par la loi du 19 mars 1955 ; ferrocyanure autorisé par le décret du 20 mai 1955 (IFV).
+- p. 245-249 : Galien et la dégustation en cinq temps, huit saveurs d’Aristote (Boulay ; OIV) ; Comité national 1935 devenu INAO en 1947 ; dégustation d’agrément obligatoire par le décret du 19 octobre 1974 (aujourd’hui remplacée par des contrôles par prélèvement) ; verre INAO : NF V09-110 (1971), ISO 3591 (1977), environ 215 ml.
+- p. 251 : Broadbent MW en 1960, Wine Tasting en 1968 ; Jugement de Paris (1976).
+- p. 259 : Thomson (1855) puis Marangoni pour les larmes du vin : chronologie juste. p. 260 : 10,5 % = part du rosé dans la consommation mondiale (OIV : plus de 10 %).
+- p. 272 : pH 3 à 4 = 1 à 0,1 mg/l d’ions H+ : calcul juste. p. 274 : 25 récepteurs de l’amer, un pour le sucré, un pour l’umami ; pas de carte de la langue.
+- p. 282-283 : Cité de la gastronomie et du vin de Dijon (2022) ; degrés d’alcool de la verticale Kronos de Cathy Corison (JancisRobinson.com, 2019).
+- p. 285 : la pierre à fusil ne vient pas « littéralement » des silex du sol : compatible avec Starkenmann et al. (2016), qui trouvent le même disulfane dans le silex et dans le vin sans montrer de transfert.

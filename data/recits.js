@@ -690,5 +690,168 @@ const RECITS = [
  "prudence": [
   "Faits vérifiés avec le lot de fiches 223-252 (octobre 2026) ; écarts avec le livre : voir les pastilles « à vérifier » des fiches et docs/erreurs-du-livre.md."
  ]
+},
+{
+ "chapitre": "La dégustation, une histoire de l’expertise et de la qualité",
+ "pages": "244-251",
+ "question": "Comment la dégustation est-elle devenue une expertise, et qu’a-t-elle changé à la qualité du vin ?",
+ "fil": [
+  "<b>Pourquoi déguster.</b> L’analyse scientifique garantit la valeur marchande d’un vin et lutte contre la fraude, mais sans perception sensorielle on ne peut pas juger sa qualité. Pour cela il faut isoler une sensation, la nommer et partager une grille de lecture avec d’autres dégustateurs. Pour Lepeltier, la dégustation ne se contente pas de constater : elle fixe des normes, celle de la qualité marchande comme celle de la typicité.",
+  "<b>Les Grecs, premiers analystes.</b> Aristote décrit huit saveurs entre le doux et l’amer, la théorie des humeurs sert de grille médicale, et Galien analyse le vin en cinq temps : robe, saveur, consistance, bouquet, puissance. Le nez y compte peu, et le livre y voit l’origine de notre pauvreté de vocabulaire olfactif.",
+  "<b>Des négociants aux appellations.</b> À la fin du XIXe siècle, négociants et courtiers goûtent pour assembler : le tastevin vérifie la limpidité, la structure est le critère clé, le mot « terroir » est péjoratif. Avec les AOC, il faut pouvoir goûter et valider la typicité : l’INAO naît en 1947 et la dégustation d’agrément devient obligatoire par le décret du 19 octobre 1974.",
+  "<b>Chauvet et le verre.</b> Jules Chauvet met le bouquet au premier plan, rend positif le goût de terroir et remplace les mots vagues par des termes analytiques. Avec André Vedel, il contribue au verre de dégustation normalisé, devenu la norme ISO 3591.",
+  "<b>Le modèle anglo-saxon et ses limites.</b> Grilles notées, diplômes (Master of Wine, WSET, Master Sommeliers), Wine Tasting de Broadbent et Jugement de Paris font de la dégustation analytique une référence mondiale. Pour Lepeltier, elle standardise aussi la typicité, d’où la dégustation géosensorielle de Deiss, Rigaux et Camus, qui revient au toucher de bouche : c’est le paradoxe d’une méthode qui se veut objective avec des moyens subjectifs."
+ ],
+ "defend": "La dégustation ne fait pas que mesurer la qualité d’un vin : elle contribue à la définir, en fixant ce qu’on appelle typique ou bon, et elle reste un objet et un sujet qui se construisent mutuellement.",
+ "client": "« Quand on déguste un vin d’appellation, on ne juge pas seulement s’il est bon : on vérifie aussi qu’il est typique de son appellation. »",
+ "filRouge": "Pourquoi fait-on déguster les vins d’appellation ?",
+ "prudence": [
+  "Le livre écrit que l’Institute of Masters of Wine est « créé en 1953 » : 1953 est la date du premier examen, l’Institut est fondé en 1955.",
+  "Le livre date le comique Hermippe du IVe siècle av. J.-C. ; les sources lues le placent au Ve siècle, et l’attribution du passage cité n’a pas été retrouvée.",
+  "Le livre attribue à Amerine une grille sur 100 points aux pondérations non retrouvées ; le repère de Davis est une grille sur 20 points de 1959 (sources de niveau 2b).",
+  "La part des AOC dans les ventes des années 1940, les commissions de dégustation de l’INAO datées par le livre, l’ancienneté très haute attribuée aux dégustations de crus au Proche-Orient et la date d’apparition du mot « dégustation » ne sont pas confirmées par les sources lues.",
+  "Le chiffre d’étudiants WSET donné par le livre correspond aux candidats d’une seule année (2020-2021), non à des étudiants formés cumulés ; le nombre de centres n’est pas retrouvé.",
+  "L’Essai sur la dégustation des vins (1972) est signé d’André Vedel avec trois co-auteurs, non de lui seul ; l’INAO adopte le verre en 1970, l’AFNOR le normalise en 1971 et l’ISO en 1977.",
+  "Chauvet, présenté comme père des vins naturels, n’employait pas lui-même l’expression ; son rôle est traité à la fiche sur le vin nature.",
+  "L’agrément systématique de 1974 n’est plus la règle : les vins d’AOC sont aujourd’hui contrôlés par prélèvements (plan de contrôle INAO)."
+ ]
+},
+{
+ "chapitre": "La dégustation, des sens au cerveau",
+ "pages": "252-257",
+ "question": "Pourquoi le goût du vin n’est-il pas dans le verre mais construit par le cerveau ?",
+ "fil": [
+  "<b>Tous les sens à la fois.</b> Le vin sollicite la vue, l’odorat, le goût, le toucher en bouche et même l’ouïe. Le cerveau réunit ces signaux en une seule perception, que Gordon M. Shepherd nomme la flaveur ; Gabriel Lepousez (Institut Pasteur) en enseigne l’approche sous le nom de neuro-œnologie, repris du livre de Shepherd. Quand les informations concordent, la perception se renforce ; quand elles divergent, le cerveau reconstruit à partir des autres indices.",
+  "<b>La vue qui biaise.</b> Dans une expérience publiée en 2001 (Morrot, Brochet et Dubourdieu), un vin blanc coloré en rouge a été décrit comme un vin rouge. Le livre date l’expérience de 2000 et y voit la preuve que le cerveau goûte d’abord avec les yeux ; pour limiter ce biais, il cite les verres noirs ou les yeux bandés.",
+  "<b>La bouche, qui sent, goûte et touche.</b> Les saveurs remontent par trois nerfs (facial, glossopharyngien, vague), tandis que le trijumeau porte le toucher, la chaleur et l’irritation. Autre effet de la bouche : certains accords avec le poisson laissent un arrière-goût que les études relient au fer libre du vin, qui oxyde les lipides du poisson.",
+  "<b>La salive, invisible et indispensable.</b> Elle lubrifie et protège la bouche, et rend l’astringence perceptible : les tanins se lient à ses protéines, surtout celles riches en proline, et la bouche devient rugueuse. Pour Lepousez, sans salive il serait impossible de lire les tanins du vin.",
+  "<b>Chacun sa dégustation.</b> Génétique, culture, expérience et état du corps changent ce que l’on perçoit : le livre en conclut qu’aucune dégustation n’est universelle ni tout à fait objective. La faim, par exemple, aiguiserait l’odorat, et l’intéroception, la perception des signaux du corps, ferait de la digestibilité (la buvabilité) un critère possible. Ce qui s’entraîne vite, c’est la perception ; l’expertise (identifier, mémoriser, verbaliser) demande des années."
+ ],
+ "defend": "Un vin ne se réduit pas à la somme de ses molécules : le cerveau le construit en assemblant les sens, l’expérience et l’attente, ce qui explique les biais et la variabilité entre dégustateurs, et justifie de s’en méfier avec méthode.",
+ "client": "« Le même vin blanc, teinté en rouge, a été décrit comme un vin rouge par des dégustateurs : l’œil influence le nez, et c’est le cerveau qui fabrique le goût. »",
+ "filRouge": "Pourquoi dit-on que le goût du vin se fabrique dans le cerveau ?",
+ "prudence": [
+  "Le livre date l’expérience du vin blanc teinté en rouge de 2000 ; la publication (Morrot, Brochet et Dubourdieu) et Lepousez indiquent 2001.",
+  "Le livre explique le goût métallique par un fer « lié aux tanins » ; les études lues attribuent l’effet au fer libre (Fe²⁺), pour un arrière-goût de poisson.",
+  "Le livre cite la mucine pour l’astringence ; les études lues montrent que les tanins précipitent surtout les protéines salivaires riches en proline.",
+  "Le livre attribue l’intéroception à Claude Bernard (années 1870) ; le terme est de Sherrington (1906), Claude Bernard ayant décrit le milieu intérieur.",
+  "Faim, hormones et seuil olfactif, ainsi que l’apprentissage « en quelques jours, aussi bien qu’un sommelier », sont des affirmations du livre non confirmées par les sources lues."
+ ]
+},
+{
+ "chapitre": "Voir le vin",
+ "pages": "258-262",
+ "question": "Que nous dit la robe d’un vin, et pourquoi faut-il s’en méfier ?",
+ "fil": [
+  "<b>D’où vient la couleur.</b> Dans les rouges et les rosés, elle vient presque entièrement des anthocyanes, des pigments du raisin noir. Chez Vitis vinifera, la malvidine domine ; selon le livre, la couleur est extraite avant les tanins puis se stabilise quand les pigments s’associent à d’autres polyphénols. Un cépage blanc est blanc parce que deux gènes régulateurs (VvMybA1 et VvMybA2) sont inactivés.",
+  "<b>Lire et mesurer la robe.</b> L’intensité colorante est la somme des absorbances à 420, 520 et 620 nm, et les côtes-du-rhône rouges doivent atteindre au moins 4,5 lors des contrôles. Selon le livre, le pH, la macération, le SO2 et l’élevage en bois modifient la couleur, et un tempranillo élevé deux ans en fût usagé sera plus pâle et tuilé qu’un autre élevé en barrique neuve. Avec l’âge, l’intensité baisse et le violet vire au grenat, au tuilé puis au brun.",
+  "<b>Larmes et bulles.</b> Les larmes viennent de l’évaporation de l’alcool sur la paroi (effet Marangoni, expliqué par Thomson en 1855) : elles ne mesurent pas le degré. Les bulles du champagne naissent sur des fibres de cellulose creuses, montent en grossissant, puis éclatent en projetant des aérosols aromatiques (travaux de Liger-Belair).",
+  "<b>Le rosé.</b> Pour un vin dont l’attrait repose sur la couleur, le Centre du rosé de Vidauban a créé des nuanciers et une charte de sept couleurs en trois intensités. Le rosé pèse un peu plus de 10 % de la consommation mondiale de vin.",
+  "<b>La vue qui prédit et qui trompe.</b> Nous voyons le vin avant de le sentir, et le cerveau en déduit ce qu’il va goûter : un jeune barolo pâle, presque rosé, laisse attendre un vin léger alors qu’il est aromatique et tannique (exemple du livre). L’expérience du vin blanc teinté en rouge, décrit avec des mots de vin rouge, en est l’exemple le plus connu. Le livre cite aussi une étude du caviste Vila Viniteca : après décantation, l’intensité aromatique n’augmente pas, l’astringence monte, l’acidité et la douceur ne bougent pas. Pour Lepeltier, fermer les yeux ou utiliser un verre noir aide à rééquilibrer les perceptions."
+ ],
+ "defend": "La robe est un indice, pas un verdict : elle renseigne sur le raisin, la vinification et l’âge, mais l’œil prédit autant qu’il informe et peut tromper.",
+ "client": "« La couleur d’un vin se mesure : une appellation peut même exiger un minimum, comme les côtes-du-rhône rouges, contrôlés à 4,5 au moins. »",
+ "filRouge": "Peut-on juger un vin à sa couleur ?",
+ "prudence": [
+  "Le livre écrit que les anthocyanes sont liées à « 1 ou 2 sucres » et qu’un cépage est blanc par « perte des gènes de la biosynthèse » ; les sources lues donnent des monoglucosides et des gènes régulateurs inactivés.",
+  "Le livre attribue les fibres de cellulose au polissage du verre et cite aussi les défauts de la paroi ; Liger-Belair décrit des fibres venues de l’air ou de l’essuyage, et juge les irrégularités du verre trop petites pour amorcer des bulles.",
+  "« Plus de larmes, plus d’alcool » est une règle empirique : la force qui tire le liquide ne croît pas sans limite avec l’alcool.",
+  "Le chiffre de 10,5 % est la part du rosé dans la consommation mondiale de vin, pas celle de la France ; les nombres de nuances des nuanciers cités par le livre n’ont pas été retrouvés.",
+  "Le seuil de 4,5 des côtes-du-rhône rouges figure dans des mesures de campagne (2019) et dans une modification temporaire du cahier des charges (millésime 2023) ; celui des côtes-du-rhône-villages n’est confirmé que par des documents syndicaux.",
+  "La teneur en CO2 des vins tranquilles perlants et le seuil de perception cités par le livre ne sont pas documentés par les sources lues.",
+  "Le protocole publié par Vila Viniteca porte sur moins de vins que ne l’écrit le livre ; seules ses conclusions sont reprises.",
+  "Les affirmations du livre sur l’effet de l’intensité de la couleur sur l’intensité aromatique attendue et sur l’inhibition des centres olfactifs par la vue ne sont pas confirmées par les sources lues."
+ ]
+},
+{
+ "chapitre": "Sentir le vin",
+ "pages": "263-270",
+ "question": "Comment naissent les arômes du vin, et pourquoi l’olfaction semble-t-elle si subjective ?",
+ "fil": [
+  "<b>Deux portes pour les parfums.</b> On perçoit les molécules volatiles d’un vin directement par le nez (voie orthonasale, l’odeur) ou par la bouche, via l’arrière-gorge (voie rétronasale, l’arôme). La chaleur et la salive peuvent même révéler ce que le nez ne sent pas, comme le goût de souris. Le livre emploie « arôme » pour les deux.",
+  "<b>D’où viennent les arômes.</b> Primaires ou variétaux (le raisin), secondaires (la vinification), tertiaires (l’élevage puis la bouteille) : selon le livre, 700 à 1 000 composés volatils ont été répertoriés, la plupart sous le seuil de perception. Selon les écoles, les arômes de fermentation sont secondaires (Lepeltier, tradition française) ou primaires (WSET).",
+  "<b>Des signatures de cépage.</b> Les méthoxypyrazines donnent le poivron, les monoterpènes le parfum floral des muscats, le TDN le pétrole du riesling, la rotundone le poivre de la syrah, que 20 % des dégustateurs environ ne sentent pas. Les thiols du sauvignon (buis, pamplemousse, fruit de la passion) sont cachés dans le raisin sous forme de précurseurs, que la levure libère pendant la fermentation.",
+  "<b>La fermentation et le fût.</b> Les levures fabriquent des esters (banane), les bactéries lactiques le diacétyle (beurre) ; le bois neuf apporte la whisky-lactone (noix de coco) et la vanilline, et l’élevage oxydatif le sotolon (curry, noix) du vin jaune.",
+  "<b>Un nez, des nez.</b> Environ 400 types de récepteurs olfactifs, et plus de 30 % de différences fonctionnelles entre deux personnes : chacun a ses seuils. Le cerveau perçoit un mélange comme une image globale qu’il compare à sa mémoire ; faute de mots propres aux odeurs, on décrit par analogie (« violette »), et la roue d’Ann Noble propose un vocabulaire commun."
+ ],
+ "defend": "Sentir un vin, ce n’est pas lire une liste de molécules : c’est reconnaître, avec un nez et une mémoire propres à chacun, une image globale ; un vocabulaire commun aide à en parler.",
+ "client": "« Quand je dis « violette », il n’y a pas de violette dans le verre : votre nez reconnaît une ressemblance avec une odeur que vous avez déjà en mémoire. »",
+ "filRouge": "Pourquoi deux personnes ne sentent-elles pas exactement le même vin ?",
+ "prudence": [
+  "Le livre date la roue d’Ann Noble de 1980 : sa première publication est de 1984 (version modifiée en 1987).",
+  "Le livre rattache le pamplemousse au 4MMP et décrit les précurseurs de thiols comme liés à des sucres, libérés par des enzymes de la salive : les sources lues parlent du 3MH pour le pamplemousse et de précurseurs liés à la cystéine libérés par une β-lyase.",
+  "Le livre dit que le cuivre « détruit » les thiols : les essais montrent une baisse du 4MMP du sauvignon, avec un mécanisme encore discuté.",
+  "Le nombre de composés volatils (700 à 1 000), le facteur de 1 000 à 10 000 entre seuils individuels et l’estimation de « plus de 1 000 milliards d’odeurs » viennent du livre sans confirmation (le nombre d’odeurs est contesté) ; les 400 récepteurs et les plus de 30 % de différences entre deux personnes sont confirmés.",
+  "Le livre date la rotundone de 2005 et cite le mourvèdre ; la publication scientifique date de 2008 et le mourvèdre n’apparaît dans aucune liste lue.",
+  "Le livre date l’ouvrage d’Alain Corbin de 1998 : c’est probablement une réédition (première édition 1982) ; l’épisode des coccinelles en Bourgogne en 2004 est rapporté par le livre, non confirmé."
+ ]
+},
+{
+ "chapitre": "Goûter le vin",
+ "pages": "271-277",
+ "question": "Quelles saveurs et quelles sensations le vin provoque-t-il en bouche, et comment les décrire ?",
+ "fil": [
+  "<b>Une bouche qui goûte et qui touche.</b> Le vin provoque des saveurs (sensations chimiques) mais aussi des sensations tactiles, thermiques et irritantes, portées par le trijumeau. Il n’existe pas de « carte de la langue » avec une zone par saveur : toutes les zones perçoivent le sucré, le salé, l’acide, l’amer et l’umami, avec des écarts de sensibilité. Côté récepteurs, l’amer en compte environ 25, le sucré un seul, l’umami un seul ; l’umami a été isolé en 1908 par Kikunae Ikeda.",
+  "<b>Le sucré.</b> La sucrosité vient d’abord des sucres résiduels, non d’un arôme de fruit mûr. L’alcool, le glycérol et des triterpénoïdes sucrés du bois neuf, étudiés à l’ISVV par Axel Marchal, y contribuent ; la vanille ou les fruits mûrs renforcent seulement l’idée de sucré. En 1985, du diéthylène glycol ajouté à des vins autrichiens pour les arrondir a déclenché un durcissement du contrôle.",
+  "<b>L’acidité.</b> Colonne vertébrale du vin, elle vient du tartrique (spécifique au raisin et le plus fort), du malique (transformé par la malolactique) et du citrique. L’acidité totale se compte en g/l d’acide sulfurique en France, d’acide tartrique ailleurs, avec un rapport de 1,53. Le pH, échelle logarithmique, mesure la force : un point de moins, dix fois plus d’ions H⁺.",
+  "<b>Amer, salin, umami.</b> Dire d’un vin qu’il est « salé » est un abus de langage : il contient très peu de sel de cuisine. L’amertume est une vraie saveur, qui domine la fin de bouche et dont l’appréciation s’apprend. Le livre, avec Gabriel Lepousez, propose de distinguer plusieurs salinités (umami des lies, calcium et magnésium) à titre d’hypothèse.",
+  "<b>Tanins et mots du toucher.</b> Les tanins du raisin et du bois, en se liant aux protéines de la salive, donnent l’astringence, sensation tactile cumulative. Faute de mots, les dégustateurs recourent aux métaphores ; les roues de Gawel (vins rouges, 2000) et de Pickering (vins blancs, 2008) offrent un lexique plus précis du toucher de bouche."
+ ],
+ "defend": "Goûter un vin, ce n’est pas lire une carte de la langue mais suivre une dynamique de saveurs, de textures et de mots, que la salive, le pH et le vocabulaire de chacun font varier.",
+ "client": "« Non, la langue n’a pas de zones pour chaque saveur : toutes ses régions perçoivent le sucré, le salé, l’acide, l’amer et l’umami. »",
+ "filRouge": "Quelles saveurs perçoit-on dans le vin, et la langue a-t-elle des zones pour chacune ?",
+ "prudence": [
+  "Le livre date de 2020 les triterpénoïdes sucrés du bois neuf d’Axel Marchal ; les travaux de l’ISVV lus sont de 2015 et 2019, et seule l’équipe est citée.",
+  "Le livre donne des chiffres non confirmés par les sources lues : bourgeons et cellules gustatives, glycérol dès 8 g/l, seuil de sucrosité de 2 g/l, fructose « deux fois plus sucré », calcium à 40 et 80 mg/l.",
+  "Le livre dit les minéraux du vin de 2 à 4 g (p. 273) puis de 1 à 2 g/l (p. 285) ; les sources donnent environ 1,5 à 2 g/l, 4 g/l au plus : on retient « quelques grammes par litre ».",
+  "Le livre qualifie l’acide succinique d’umami ; les sources scientifiques lues parlent d’un goût salé et amer, et seule la presse parle d’umami.",
+  "Le livre juge que les anthocyanes n’ont pas de goût et qualifie de verts les tanins de pépins ; les études lues nuancent le premier point et ne confirment pas le second.",
+  "Le décompte du livre pour la roue de Gawel (12 familles, 53 termes) et les analogies de pâtisserie attribuées à Pickering ne sont pas retrouvés dans les sources lues."
+ ]
+},
+{
+ "chapitre": "Les langages du vin",
+ "pages": "278-283",
+ "question": "Peut-on mettre des mots sur un vin, et lesquels ?",
+ "fil": [
+  "<b>Déguster, c’est parler.</b> Pour Lepeltier, il n’y a vraiment dégustation que partagée et commentée : savoir boire un vin, c’est aussi savoir en parler. On y arrive par imitation de notes, par des grilles et des descripteurs consensuels, mais il n’existe pas un langage du vin : le vocabulaire dépend de la formation, du bagage linguistique et de la situation. Le livre s’appuie sur les six commentateurs de Peynaud et Blouin, du technicien à l’amateur, et cite Max Léglise : on dit « bonbon acidulé, violette, réglisse, cerise », pas des molécules.",
+  "<b>La langue façonne-t-elle la perception ?</b> L’hypothèse de Sapir-Whorf dit que chaque langue découpe le réel à sa façon. Sa version forte, qui ferait de la langue une prison, est rejetée par presque tous les linguistes ; l’exemple des Himbas, qui ont un mot unique pour le bleu et le vert, montre des écarts de mémoire et d’apprentissage, pas une incapacité à voir.",
+  "<b>Les odeurs, bien senties et mal nommées.</b> Nous détectons bien les odeurs mais les décrivons mal : le lexique est imprécis, plus émotionnel et plus prototypique qu’analytique. Le livre y voit un effet du cerveau ; les Jahai, qui nomment les odeurs aussi bien que les couleurs, rappellent que la langue et la culture comptent aussi. Faute de mots, les dégustateurs inventent des images, qui valent si les références sont partagées.",
+  "<b>Décrire par un autre sens.</b> Le toucher en bouche s’exprime par des métaphores de corps, de tissu, de matière ou de forme, parfois hasardeuses : des « tanins gras » ne contiennent pas de lipides. Le livre y voit de la synesthésie, mais la recherche (Spence) parle plutôt de correspondances intermodales, largement partagées, alors que la synesthésie stricte est rare.",
+  "<b>Juger et comprendre.</b> La dégustation analytique est un bon point de départ, mais elle ignore la salinité, le toucher et le temps ; il faut y ajouter une approche globale et les émotions. La carte de Kronos de Cathy Corison dessinée par Elaine Chukan Brown, avec ses vingt millésimes, ses mots-clés et son degré d’alcool, montre une autre façon de dire le vin."
+ ],
+ "defend": "On ne décrit jamais un vin sans le déformer un peu : les mots ne reproduisent pas la sensation, mais ils fonctionnent s’ils sont construits, partagés et complétés par d’autres formes d’expression ; l’important n’est pas de juger seulement, mais de comprendre le vin et sa propre perception.",
+ "client": "« Chacun parle du vin avec les mots de son métier et de son histoire : on sent mieux qu’on ne nomme, et c’est pour cela qu’on invente des images qu’il faut partager pour qu’elles servent. »",
+ "filRouge": "Pourquoi est-il si difficile de mettre des mots sur un vin ?",
+ "prudence": [
+  "Le livre écrit que les Himbas « ne peuvent distinguer » le bleu du vert ; les études (Roberson, Davidoff et al., 2005) montrent des écarts de mémoire et d’apprentissage, pas une incapacité à voir.",
+  "Le livre dit que la dégustation est aujourd’hui considérée comme une synesthésie ; Spence et Wang (2015) parlent de correspondances intermodales, et la synesthésie stricte est rare.",
+  "Le livre explique la difficulté à nommer les odeurs par la physiologie du cerveau ; l’étude sur les Jahai (Majid et Burenhult, 2014) montre qu’elle tient aussi à la langue et à la culture.",
+  "Les six types de commentaires de Peynaud et Blouin, la phrase de Max Léglise, les trois approches de Gabriel Lepousez et l’étude de Dijon sur le vocabulaire tactile (« neuf champs sémantiques ») ne sont pas confirmés par les sources lues : ils sont attribués au livre ou non repris.",
+  "Le livre écrit « Cités du vin (Bordeaux, Dijon) » ; la Cité du Vin de Bordeaux (2016) est confirmée, mais la Cité internationale de la gastronomie et du vin de Dijon (2022) n’est pas décrite comme un parcours immersif.",
+  "La carte de Kronos : les vingt degrés d’alcool sont confirmés, la « vingtième » désigne le vingtième millésime et non un anniversaire du domaine."
+ ]
+},
+{
+ "chapitre": "Goûter la minéralité, mythe ou réalité ?",
+ "pages": "284-287",
+ "question": "Un vin « minéral » a-t-il le goût de son sol ?",
+ "fil": [
+  "<b>Un mot récent et flou.</b> Selon le livre, « minéralité » est devenu central dans le monde du vin à partir des années 1990 : étiquettes citant la roche mère, commentaires promotionnels, pratiques parfois improbables. Les chercheurs (Parr, Maltman et collègues, 2018) constatent que le mot mélange le sens géologique, les éléments nutritifs absorbés par la plante et une sensation en bouche, sans définition commune.",
+  "<b>L’argument du géologue.</b> Alex Maltman rappelle que les minéraux d’une roche sont des cristaux solides : la vigne n’absorbe que des éléments dissous, en petites quantités, et le vin n’en contient que quelques grammes par litre, surtout du potassium. Le livre en conclut qu’il n’y a pas de lien littéral et causal entre la roche et le goût minéral, même si le sol peut influencer le vin par d’autres voies.",
+  "<b>Des métaphores trompeuses.</b> Terre retournée, pétrichor, cuivre, pierre à fusil : le livre montre que ces odeurs viennent de molécules organiques ou soufrées. Pour la pierre à fusil, l’étude de Starkenmann et collègues (2016) a retrouvé le disulfane d’hydrogène dans le silex et dans des chasselas jugés minéraux ; l’équipe bordelaise de Tominaga a, en 2003, identifié le benzylméthanethiol, une note fumée.",
+  "<b>Que perçoit-on ?</b> Depuis 2012, les recherches pointent plusieurs pistes sans en confirmer aucune : le SO2, l’acidité (résultats équivoques), la réduction (rôle débattu), le goût salé. Les vins fruités sont jugés moins minéraux. Pour le livre, il y aurait des minéralités plutôt qu’une seule minéralité.",
+  "<b>Un mot à manier avec prudence.</b> Pour Lepeltier, mieux vaudrait s’abstenir d’un mot sans consensus, tout en reconnaissant sa force de communication entre dégustateurs. Le livre présente aussi, sans les trancher, la théorie de l’œnologue David Lefebvre (minéralisation du vin) et la cristallisation sensible, méthode contestée d’inspiration anthroposophique."
+ ],
+ "defend": "Pour Lepeltier, le mot décrit une impression que les dégustateurs partagent, mais il manque de définition commune et ne prouve pas que l’on goûte le sol.",
+ "client": "« Ce n’est pas le goût de la pierre : la vigne ne boit pas la roche, et ce que les dégustateurs appellent minéral recouvre plusieurs sensations, dont des notes soufrées fumées comme la pierre à fusil. »",
+ "filRouge": "Peut-on goûter la roche du vignoble dans un verre de vin ?",
+ "prudence": [
+  "Début de l’essor du mot : années 1990 selon le livre, années 1980 selon d’autres sources ; aucune année précise n’est établie, et la date de 1991 attribuée à Coutier n’est pas confirmée.",
+  "Le livre appelle l’H2S un « mercaptan » : c’est une erreur de chimie, l’H2S n’est pas un thiol ; il date aussi l’étude de Starkenmann de 2017 (elle date de 2016), étude qui a retrouvé le même disulfane dans le silex et dans le vin.",
+  "Teneur du vin en minéraux : le livre donne 1-2 g/l (p. 285) puis 2-4 g/l (p. 273) ; les sources indiquent environ 1,5 à 2 g/l, 4 g/l au plus : seul « quelques grammes par litre » est retenu.",
+  "Le pic d’usage du mot « autour de 1994 » vient d’une étude citée par Parr et al. (2018), lue de seconde main ; le lien entre benzylméthanethiol et minéralité reste débattu.",
+  "L’indice de minéralité de David Lefebvre (cendres moins potassium), sa théorie de la minéralisation et la cristallisation sensible sont rapportés d’après le livre, sans source indépendante ni validation."
+ ]
 }
 ];

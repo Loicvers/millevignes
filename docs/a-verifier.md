@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-252 fiches : 45 vérifiées, 207 à vérifier (617 points).
+292 fiches : 50 vérifiées, 242 à vérifier (722 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1033,3 +1033,178 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Part du liège dans les contaminations (⚠️) : 80 à 95 % selon les sources, méthodes non précisées ; aucun pourcentage repris.
 - [ ] TBA retrouvé sur des bouchons synthétiques (⚠️) : une seule source (Virginia Tech Enology).
 - [ ] Seuil du TeCA (~12 ng/l dans un rouge) et du TBA (~4 ng/l) (⚠️) : une source chacune (Chatonnet 2003 ; Virginia Tech) ; seuils variables selon la matrice et le jury.
+
+**Fiche 253** (p.245) — Aristote et les huit saveurs : le goût des Grecs
+- [ ] Attribution des quatre éléments à Empédocle et des qualités élémentaires à Hippocrate (⚠️) : reprise du livre ; l’Encyclopædia Universalis confirme la théorie des humeurs hippocratique, pas le détail de chaque attribution.
+- [ ] Durée de la théorie des humeurs (⚠️) : le livre dit « jusqu’à la Renaissance », Universalis jusqu’à la fin du XVIIIe siècle environ ; la fiche dit « pendant des siècles ». La correspondance éléments, qualités et humeurs du tableau du livre (p. 246) n’est pas confirmée ligne à ligne et n’est pas reprise.
+- [ ] Vin des banquets jugé pour ses vertus médicinales (⚠️) : affirmation du livre, aucune source lue ne la détaille.
+- [ ] Saveurs d’Aristote (⚠️ pour la présentation du livre) : Aristote donne bien huit espèces de saveurs (De l’âme II, 10 ; De la sensation 4), mais le livre présente l’huileux comme un ajout d’Aristote à une liste de Galien, et les listes de son texte et de son tableau ne se superposent pas exactement.
+
+**Fiche 254** (p.245) — Galien : la dégustation en cinq temps
+- [ ] Contenu détaillé de chaque temps (nuances et pureté de la couleur, toucher de bouche, puissance = potentiel de garde) (⚠️) : propos du livre ; seule la liste des cinq critères, dans cet ordre, est confirmée par Boulay (Routledge) et par l’OIV.
+- [ ] Bouquet peu central et pauvreté du vocabulaire olfactif occidental (⚠️) : Boulay confirme que l’odeur vient en quatrième position ; le lien avec le manque de mots pour les odeurs est une thèse du livre. Les termes grecs de l’odorat n’ont pas été retrouvés dans une source lue.
+
+**Fiche 255** (p.246) — Négociants et courtiers : déguster pour assembler
+- [ ] Négociants et courtiers, tastevin, structure, bouquet peu décrit, canons collectifs et sens négatif de « terroir » (⚠️) : analyse attribuée à Olivier Jacquet (université de Bourgogne) par le livre ; ses articles (Crescentis 2018, Territoires du vin 2021) confirment ses travaux sur l’histoire de la dégustation et des AOC, mais le passage n’a pas été relu ligne à ligne ; source unique.
+
+**Fiche 256** (p.247) — L’INAO et la dégustation d’agrément
+- [ ] Proposition de Capus en 1943, refus du ministère de la Justice et diffusion volontaire à Bordeaux, dans le Muscadet et en Bourgogne (⚠️) : une seule source (deux articles de Jacquet : proposition du 20 octobre 1943, rejetée) ; Jacquet cite aussi le Pineau des Charentes (1945) comme première appellation soumise à une dégustation obligatoire, ce que le livre ne mentionne pas.
+- [ ] Contrôle actuel des AOC (⚠️) : d’après le plan de contrôle type AOC viti de l’INAO, examen analytique et organoleptique d’un lot par opérateur, par couleur et par an (100 % du vrac expédié hors de France), sur prélèvement aléatoire ; date de la réforme et seconde source à trouver.
+
+**Fiche 257** (p.247) — Jules Chauvet : le bouquet d’abord, et le verre INAO
+- [ ] Dégustation des œnologues d’avant Chauvet centrée sur le toucher de bouche et les défauts (⚠️) : propos du livre ; Jacquet note seulement qu’en 1947 Peynaud reste centré sur les caractères tactiles, et la chimie (alcool, acidité, SO2) n’a pas été vérifiée.
+- [ ] Bouquet au premier plan, « goût de terroir » devenu positif et vocabulaire plus analytique (⚠️) : thèse de Jacquet reprise par le livre ; source unique.
+- [ ] Note de dégustation du Beychevelle 1946 (⚠️) : citée par le livre depuis Jules Chauvet ou le Talent du vin (1997) ; aucune source lue ne la reproduit.
+- [ ] Verre INAO (⚠️ pour le prénom) : le livre et Jacquet écrivent André Vedel, le Syndicat des Côtes du Rhône écrit Georges ; 1970 est la date d’adoption (congrès de l’ISO), la norme AFNOR date de 1971 et la norme ISO 3591 de 1977. La contenance de 215 ml est confirmée par plusieurs sources, mais les cotes du dessin du livre ne sont pas reprises.
+
+**Fiche 259** (p.251) — De Davis au WSET : la dégustation anglo-saxonne devient mondiale
+- [ ] Grille d’Amerine (⚠️) : le livre la décrit sur 100 points (années 1950) ; les sources lues décrivent une grille sur 100 points d’Amerine et Winkler (1935-1959) aux pondérations différentes, et la grille sur 20 points de UC Davis (1959) ; sources de niveau 2b seulement, à confirmer dans Amerine et Roessler (1976) ; les pondérations ne sont pas reprises.
+- [ ] Influence de la grille d’Amerine sur l’IMW, le WSET et le Court of Master Sommeliers (⚠️) : affirmation du livre, non confirmée par les sources lues.
+- [ ] Wine Tasting « premier livre de dégustation grand public en anglais » (⚠️) : Encyclopedia.com le dit premier livre de dégustation en anglais, Decanter « l’un des premiers guides structurés » ; la fiche reprend donc seulement la date de 1968.
+- [ ] Institut des Masters of Wine : le livre dit « créé en 1953 », alors que 1953 est la date du premier examen et 1955 celle de la fondation de l’Institut (Oxford Companion to Wine, AIM25).
+
+**Fiche 260** (p.252) — Le goût du vin se fabrique dans le cerveau
+- [ ] Flaveur (Shepherd) et « neuro-œnologie » (⚠️) : une seule source par élément (fiche éditeur de Neuroenology, Columbia University Press, 2016 ; notice de l’article de Shepherd, Nature, 2006, texte intégral non lu) ; rattachement de Lepousez à l’Institut Pasteur établi par une seule source.
+- [ ] Apprentissage perceptif rapide (⚠️) : une seule revue (Frontiers in Psychology, 2013) ; l’affirmation du livre selon laquelle un novice détecte des composés « aussi bien qu’un sommelier » en quelques jours n’est pas retrouvée et n’est pas reprise.
+- [ ] Cerveau prédictif (⚠️) : le principe est étayé, mais la couleur agit surtout sur l’identité de la saveur, moins sur son intensité ; l’exemple de la vanille cité par le livre n’est pas retrouvé (la source lue donne le caramel) et n’est pas repris.
+
+**Fiche 261** (p.252) — La vue qui biaise : le vin blanc teinté en rouge
+- [ ] Date de l’expérience (⚠️) : publiée en 2001 (Brain and Language 79:309-320) ; le livre la dit réalisée en 2000, date de réalisation non vérifiée. Affiliation : Brochet et Dubourdieu (Bordeaux 2), Morrot (INRA Montpellier).
+- [ ] Verres noirs ou yeux bandés (⚠️) : préconisation du livre, non recoupée par les sources lues.
+
+**Fiche 262** (p.253) — Vin et poisson : le fer libre et l’arrière-goût de poisson
+- [ ] Mécanisme du fer (⚠️) : Tamura et al. (J. Agric. Food Chem., 2009) lu par notice et résumés (ScienceDaily, Slate) et recoupé par un résumé de l’American Chemical Society ; texte intégral non lu.
+- [ ] « Fer lié aux tanins » et goût « métallique » (⚠️) : non retrouvés ; Tamura décrit un arrière-goût de poisson dû au Fe²⁺ libre. Pour Reith et Spence, le rôle de l’olfaction rétronasale dans la perception « métallique » est établi (1-octèn-3-one issue de l’oxydation lipidique), mais « métallique » comme saveur reste incertain.
+
+**Fiche 263** (p.254) — Les nerfs de la bouche : facial, glossopharyngien, vague et trijumeau
+- [ ] Exemples du livre sur le trijumeau (⚠️) : éthanol qui « chauffe », menthol, gaz carbonique et pH bas qui irritent ; non recoupés individuellement, seule la fonction générale du trijumeau (toucher, chaleur, irritation) est confirmée.
+
+**Fiche 264** (p.254) — La salive : sans elle, pas de lecture des tanins
+- [ ] Composition de la salive : 99 % d’eau et plus de 3 000 protéines (⚠️) : chiffres issus de deux sources distinctes (New Zealand Dental Journal, 2014 ; Castagnola et al., 2017) mais un inventaire de protéomique, la plupart à l’état de traces ; non repris en exercice.
+- [ ] Astringence et mucine (⚠️) : une seule étude (Lee, Ismail, Vickers, J. Food Sci., 2012) précise que les tanins précipitent surtout les protéines riches en proline, pas les mucines ; le mécanisme exact reste débattu.
+- [ ] Salive et régulation du pH (⚠️) : fonction affirmée par le livre, non recoupée par une seconde source.
+- [ ] Salivation selon les saveurs (acidité : salive fluide ; umami : salive épaisse) et variations individuelles de salive (⚠️) : non recherchées, non reprises.
+
+**Fiche 265** (p.257) — L’intéroception : quand le corps participe à la dégustation
+- [ ] Faim, hormones et seuil olfactif ; Chauvet goûtant vers 11 heures (⚠️) : affirmations du livre, non recherchées ni recoupées ; présentées comme telles.
+- [ ] Intéroception, « sixième sens » et buvabilité attribués à Lepousez (⚠️) : le texte de Lepousez lu (2019) ne traite pas d’intéroception ; attribution non vérifiée.
+- [ ] Attribution historique (⚠️) : Sherrington (1906) et Claude Bernard (milieu intérieur) d’après un chapitre de synthèse (Galvez-Pol et al., 2022) et Britannica ; la nuance dépend de la définition retenue.
+- [ ] Chauvet dégustant vers 11 heures, la faim stimulant l’odorat (⚠️) : anecdote du livre (p. 256), non recoupée.
+
+**Fiche 267** (p.259) — Lire et mesurer la robe : teinte, intensité et âge
+- [ ] Teinte, luminosité et chromatisme selon l’OIV (⚠️) : triplet repris du livre ; la méthode OIV lue (OIV-MA-AS2-07B) définit l’intensité (A420 + A520 + A620) et la nuance (A420/A520), la définition en teinte, luminosité et chromaticité relève d’une autre méthode non lue.
+- [ ] Échelle violacé, grenat, tuilé, brun et jaune-vert, orangé, ambré, brun (⚠️) : le mécanisme est confirmé (anthocyanes libres remplacées par des pigments polymérisés) mais ce vocabulaire est conventionnel, non retrouvé dans une source normative.
+- [ ] Exemple du jeune barolo (⚠️) : exemple du livre (p. 262), non vérifié par les sources lues.
+- [ ] Seuil de 4,5 des côtes-du-rhône rouges (⚠️) : lu dans des mesures de campagne syndicales (2019) et dans une modification temporaire du cahier des charges (millésime 2023, eAmbrosia) ; texte permanent du cahier des charges non lu.
+
+**Fiche 268** (p.259) — Les larmes du vin : l’effet Marangoni
+- [ ] « Plus de larmes, plus d’alcool » (⚠️) : règle empirique ; la contrainte de Marangoni passe par un maximum vers 10 % d’éthanol en masse (un cognac à 35 % en donne une légèrement plus faible) et l’observabilité dépend du type de vin et de la propreté du verre (Venerus et Simavilla, 2015 ; Physics World). Glycérol et sucre ne sont pas traités par les sources lues.
+- [ ] Température et verre « trop propre » (⚠️) : facteurs cités par le livre ; la propreté du verre n’est évoquée que par une source.
+
+**Fiche 270** (p.260) — Le rosé : la couleur d’abord, de Vidauban à la charte des rosés du monde
+- [ ] Nombre de nuances des deux nuanciers (⚠️) : le livre donne des nombres précis que ni le site du Centre du rosé ni les articles lus ne retrouvent (selon les documents, des versions de 9 à 36 teintes) ; non repris.
+- [ ] Part du rosé en croissance « exponentielle » et statut « secondaire » jusqu’aux années 1990 (⚠️) : affirmations du livre ; les sources lues donnent une part passée de 8,4 % en 2002 à plus de 10 % en 2019 ; non reprises.
+- [ ] Charte des rosés (⚠️) : 7 couleurs en 3 intensités dans la documentation du Centre du rosé ; la palette actuelle du site en compte 12 (nacre, pomelo, mangue, groseille, grenat ajoutés).
+
+**Fiche 271** (p.263) — Odeur ou arôme : deux voies vers le nez
+- [ ] Odeur = voie orthonasale, arôme = voie rétronasale (⚠️) : usage de vocabulaire propre au livre, non universel (le livre lui-même emploie « arôme » pour les deux) ; une seule source lue (Spence 2012) décrit les deux voies, sans cette terminologie.
+- [ ] Mémoire, émotions et souvenirs propres à chaque dégustateur (⚠️) : thèse du livre (G. Lepousez), non recoupée par une source lue ; seule la variabilité des récepteurs est confirmée.
+
+**Fiche 272** (p.263) — Primaires, secondaires, tertiaires : d’où viennent les arômes
+- [ ] Nombre de composés volatils (⚠️) : « 700 à 1 000 » est attribué au livre ; Styger, Prior et Bauer (2011) donnent environ 1 000 composés chimiques pour le profil d’un vin, ordre de grandeur concordant, fourchette exacte non retrouvée.
+- [ ] Rangement des arômes de fermentation (⚠️) : secondaires chez Lepeltier et dans la tradition française, primaires pour le WSET ; divergence d’école, non tranchée.
+
+**Fiche 273** (p.264) — Arômes variétaux : poivron, muscat et pétrole
+- [ ] Monoterpènes (⚠️) : notes florales et d’agrumes, abondance dans les muscats, une seule source lue (Styger, Prior, Bauer 2011) ; « changent peu à la vinification », « dégradés au vieillissement » et « minorés par Botrytis » (livre) non retrouvés, non repris.
+- [ ] Méthoxypyrazines, cépages concernés (⚠️) : seul le sauvignon blanc est documenté par les sources lues (Styger et al. ; Krebiehl) ; l’association avec les cabernets et le Sud-Ouest, citée par le livre, n’est pas reprise.
+
+**Fiche 274** (p.264) — La rotundone : le poivre de la syrah que 1 personne sur 5 ne sent pas
+- [ ] Cépages porteurs (⚠️) : syrah bien établie (Wood et al. 2008 ; AWRI) ; pineau d’Aunis et grüner veltliner d’après l’AWRI, l’IVES et Decanter ; le mourvèdre cité par le livre n’apparaît dans aucune liste lue, non repris.
+- [ ] Part des insensibles (⚠️ nuance) : 20 % (Wood et al. 2008, Decanter) à 20-25 % (AWRI), sur des panels australiens ; le livre écrit 20 %. Date d’identification non reprise (le livre écrit 2005, la publication scientifique date de 2008).
+
+**Fiche 275** (p.264) — Les thiols variétaux du sauvignon : buis, pamplemousse, fruit de la passion
+- [ ] Cuivre (⚠️) : une seule étude de niveau 1 (Hatzidimitriou, Dubourdieu et al., essais sur sauvignon) montre une baisse du 4MMP, mécanisme encore discuté ; le livre écrit « détruit », plus fort que les résultats.
+- [ ] Descripteurs du 3MH et du 3MHA (⚠️) : pamplemousse et fruit de la passion selon Styger et al. et Krebiehl ; les nuances varient selon les sources.
+- [ ] Le livre (p. 264) écrit que les précurseurs sont liés à des sucres et libérés par des enzymes de la salive (glycosidases), et parle de « mercaptans » ; non repris, les sources lues parlent de conjugués à la cystéine et d’une β-lyase.
+
+**Fiche 276** (p.265) — Arômes de fermentation et de fût : banane, beurre, coco, vanille
+- [ ] Acétate d’isoamyle (⚠️) : banane et poire, une seule source lue (Styger et al. 2011) ; le rôle de la levure 71B cité par le livre n’est pas confirmé, non repris.
+- [ ] Diacétyle (⚠️) : noisette, beurre et formation par les bactéries lactiques pendant la FML d’après une seule source lue (Styger et al.).
+- [ ] Whisky-lactone, vanilline et chauffe (⚠️) : un seul document de niveau 1 (IFV) ; il parle de « chêne blanc d’Amérique » et non de Quercus alba, et la chauffe « tend à diminuer » les composés odorants, là où le livre écrit « détruit » ; la baisse de la vanilline en cours de fermentation en fût n’est pas vérifiée.
+- [ ] Sotolon (⚠️) : molécule clé des vins de voile et botrytisés (Guichard et al. 1992) ; vin jaune, curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
+- [ ] Acétate d’isoamyle favorisé par la fermentation à froid et la macération carbonique (⚠️) : affirmation du livre, non retrouvée dans les sources lues.
+
+**Fiche 277** (p.268) — Reconnaître un arôme : mémoire, analogie et roue de Noble
+- [ ] Carte olfactive et comparaison avec la mémoire (⚠️) : modèle présenté par le livre (G. Lepousez), non recoupé par une source lue ; « une banane libère près de 200 molécules » vient aussi du livre.
+- [ ] Jules Chauvet (⚠️) : dates 1907-1989 confirmées par une seule source (Wein.plus) ; son rôle dans le vocabulaire des arômes (années 1960) est l’avis du livre, non documenté par une source lue.
+- [ ] Roue d’Ann Noble (⚠️) : première publication en 1984 (Am. J. Enol. Vitic. 35:107-109), version modifiée en 1987, d’après le site officiel de la roue et un entretien avec Ann Noble (niveau 2b) ; le livre écrit 1980 et parle de roues de couleurs, alors que Noble cite des roues de saveurs ; l’article de 1984 n’a pas été lu directement.
+
+**Fiche 279** (p.271) — Le sucré du vin : sucres résiduels, glycérol, bois et fraude
+- [ ] Rôle sucrant de l’alcool (⚠️) : affirmation du livre, non recoupée par une seconde source.
+- [ ] Glycérol (⚠️) : une seule source (OENO One, citant Noble et Bursick, 1984) place le seuil de sucrosité vers 5 g/l et la viscosité nettement plus haut ; le chiffre du livre (8 g/l, viscosité et sucré) n’est pas repris.
+- [ ] Triterpénoïdes sucrés du bois neuf (⚠️) : les travaux de l’ISVV (Marchal et al., 2015 ; Gammacurta et al., 2019) sont confirmés, mais la date de 2020 donnée par le livre n’est pas retrouvée ; seule l’équipe est citée.
+- [ ] Arômes sucrés (vanille, fruits mûrs) qui n’activent pas le récepteur du sucré (⚠️) : thèse du livre, non recoupée.
+- [ ] Fructose « deux fois plus sucré », seuil de sucrosité de 2 g/l et peptide sucrant de l’autolyse (⚠️) : valeurs divergentes ou source unique ; non repris.
+
+**Fiche 280** (p.272) — L’acidité du vin : acides, g/l et pH
+- [ ] Acide malique (⚠️) : maturité et baisse après la véraison appuyées par Ribéreau-Gayon (teneurs), mais le blocage de la malolactique dans certains styles (muscadet, sancerre, vinho verde) n’est pas vérifié et n’est pas repris ; la transformation du malique en lactique reste celle du livre.
+- [ ] Acide citrique (⚠️) : une seule source (Ribéreau-Gayon, 0,5 à 1 g/l avant la malolactique) ; le reste du portrait du livre n’est pas recoupé.
+- [ ] Plage de pH (⚠️) : Ribéreau-Gayon donne 2,8 à 4,0 pour les vins, le livre 3 à 4 (simplification acceptable) ; la plage d’acidité de 2,5 à 8 g/l n’est pas retrouvée et n’est pas reprise.
+- [ ] « Unique capteur de l’acidité », « acide tartrique rare dans la nature » (⚠️) : formulations simplifiées ou non vérifiées ; non reprises.
+
+**Fiche 281** (p.273) — Salé, salin, amer : ce que le vin contient vraiment
+- [ ] Minéraux du vin (⚠️) : le livre donne 2 à 4 g (p. 273) puis 1 à 2 g/l (p. 285) ; Parr et al. (2018) indiquent environ 1,5 à 2 g/l, 4 g/l au plus, surtout du potassium, avec peu de sodium et de chlorure : seul « quelques grammes par litre » est repris.
+- [ ] Amertume (⚠️) : 25 récepteurs confirmés (Chandrashekar, 2006 ; BitterDB) ; origine phénolique, rôle de l’alcool et de l’acidité, réflexe inné et apprentissage culturel : thèses du livre, partiellement recoupées ; « plus de 1 000 composés » (comptage de BitterDB, tous non testés sur les 25 récepteurs) et « facteur 1 000 » entre individus non repris.
+- [ ] Récepteur du salé (⚠️) : statut moins tranché dans la littérature que dans le livre (canaux ENaC, controverse en 2006) ; non repris.
+- [ ] Umami du vin (⚠️) : libération par l’autolyse des lies appuyée par une source de presse (Gault&Millau) ; rôle de l’acide succinique contesté (AWRI : goût salé et amer, sans umami) ; non repris.
+- [ ] Calcium et magnésium, « sixième saveur » (⚠️) : hypothèse de recherche (récepteur CaSR, kokumi) ; seuils de 40 et 80 mg/l et place en milieu de bouche (Lepousez : finale persistante) non repris.
+
+**Fiche 282** (p.276) — Tanins et astringence : peau, pépins et fût
+- [ ] Qualificatifs des tanins de pépins (verts) et de pellicules (soyeux) (⚠️) : les différences de structure sont avérées (Kyraleou et al., 2015), mais la source lue conclut à une astringence égale à concentration égale ; qualificatifs présentés comme ceux du livre.
+- [ ] Anthocyanes « sans goût » (⚠️) : Paissoni et al. (2023) citent des effets des anthocyanes sur la bouche (astringence, amertume en vin modèle, texture crayeuse) ; formulation absolue du livre nuancée.
+- [ ] Classification des tanins (⚠️) : non recoupée ; le livre range les anthocyanes et les catéchines parmi les tanins condensés, alors que les anthocyanes ne sont pas des tanins et que les catéchines sont des flavan-3-ols ; non reprise.
+- [ ] Ellagitanins du chêne, rôle du pH, du sucre et des protéines, caractère cumulatif de l’astringence (⚠️) : affirmations du livre, non recoupées par une source lue.
+
+**Fiche 283** (p.277) — Dire le toucher du vin : les roues de Gawel et de Pickering
+- [ ] Roue de Gawel (⚠️) : auteur, année (2000, Adélaïde) et vins rouges confirmés (Gawel, Oberholster et Francis, Aust. J. Grape Wine Res. 6) ; sous-types d’astringence retenus d’après des revues (OENO One ; Paissoni et al., 2023), mais le texte intégral n’a pas été lu ; le décompte du livre (12 familles, 53 termes) n’est pas retrouvé et n’est pas repris.
+- [ ] Roue de Pickering (⚠️) : bâtie sur celle de Gawel, avec persistance et sans flaveur rétronasale (Pickering et Demiglio, 2008, d’après Paissoni et al.) ; les analogies de pâtisserie du livre (meringue, chantilly) ne sont pas retrouvées pour les vins blancs tranquilles (meringue et mousse apparaissent chez les mêmes auteurs pour les mousseux) ; nationalité canadienne non confirmée.
+- [ ] Coutier (⚠️) : citation et vocabulaire du goût en grande partie métaphorique rapportés d’après le livre, dictionnaire non lu ; néologismes datés (croquant, bodybuildé) non repris.
+- [ ] Analogies de textures de Gawel (talc, satin, suède…) (⚠️) : liste du livre, non recoupée.
+
+**Fiche 284** (p.278) — Il n’y a pas un langage du vin, mais des langages
+- [ ] Six types de commentateurs de Peynaud et Blouin (⚠️) : une seule source indépendante de niveau 2b (un blog qui cite l’ouvrage, 4e édition 2006) ; texte original non consulté ; la fiche l’attribue au livre.
+- [ ] Phrase attribuée à Max Léglise (⚠️) : l’attribution précise n’est pas retrouvée (seule l’existence de son livre d’initiation à la dégustation est confirmée) ; la fiche la présente comme citée par le livre.
+
+**Fiche 286** (p.280) — Odeurs et mots : bien sentir, mal nommer
+- [ ] Explication du livre par le traitement cérébral de l’olfaction (⚠️) : seul un résumé de l’explication neurocognitive d’Olofsson et Gottfried (2015) a été lu, via un blog universitaire, pas l’article ; la fiche la présente comme l’avis du livre et la nuance par les Jahai (✅, Cognition 2014).
+- [ ] Argument de Joël Candau sur les analogies et les référents communs (⚠️) : l’article de 2005 (titre et année confirmés) n'a pas pu être lu ; la fiche le rapporte d’après le livre.
+
+**Fiche 287** (p.281) — Correspondances intermodales : décrire le vin par un autre sens
+- [ ] Dégustation « considérée comme une synesthésie » (⚠️) : le livre affirme un consensus que Spence et Wang (2015) contredisent ; Marks et Mulvenna parlent de « synesthésie faible » ; la fiche retient « correspondances intermodales ».
+- [ ] Tanins verts, gras, calcaires : ni lipides ni calcaire (⚠️) : raisonnement logique, non étayé par une source lue ; attribué au livre.
+- [ ] Punkovino (⚠️) : série ARTE de 2019 en 10 épisodes avec des interprétations musicales du vin, confirmée par des agrégateurs de niveau 2b seulement ; les lieux cités par le livre (Anjou, Allemagne), les réalisateurs et le titre « Vinesthésie » ne sont pas retrouvés, et ne sont pas repris.
+- [ ] Étude dijonnaise sur le vocabulaire tactile (matières à toucher) : introuvable ; non reprise.
+
+**Fiche 288** (p.282) — Au-delà de l’analyse : dégustation globale, émotions et carte de Kronos
+- [ ] Trois approches de Gabriel Lepousez (rationalité critique, émotions, imagination associative) (⚠️) : sa conférence à l’Académie internationale du vin (2019) porte sur l’intégration du goût par le cerveau, pas sur ces approches ; la fiche les attribue au livre (la synthèse les présente comme une position de Lepeltier).
+- [ ] Carte Kronos (⚠️) : les vingt degrés d’alcool (12,8 à 13,8 %) sont confirmés (tableau d’Elaine Chukan Brown, JancisRobinson.com, 2019, et fiches Corison) ; l’auteure du dessin est confirmée, la date « février 2019 » et le mot « vingtième anniversaire » ne le sont pas (il s’agit du vingtième millésime de Kronos) ; les mots-clés de la carte ne sont pas repris.
+- [ ] Jugement sur les limites de la dégustation analytique : opinion de Lepeltier.
+
+**Fiche 289** (p.284) — Minéralité : un mot récent aux sens multiples
+- [ ] Début de l’essor du mot (⚠️) : années 1990 selon le livre et l’International Wine Challenge ; années 1980 selon la thèse de H. Rodrigues Silva (Université de Bourgogne, 2016, relayée par Vin Québec) et un blog ; « une dizaine d’années » (Parr et al. 2018) ou « vingt dernières années » (Deneulin et al. 2016) pour la hausse d’usage : datation non tranchée, aucune année précise reprise.
+
+**Fiche 290** (p.284) — Goûte-t-on la roche du vignoble ? L’argument de Maltman
+- [ ] Teneur du vin en minéraux (⚠️) : le livre donne 1-2 g/l (p. 285) et 2-4 g/l (p. 273) ; Parr et al. 2018, d’après Coombe et Dry, indiquent environ 1,5 à 2 g/l, 4 g/l au plus (conversion faite par nous) : seule l’expression « quelques grammes par litre » est reprise, aucun chiffre en question.
+- [ ] Autres voies d’influence du sol : drainage, albédo, microbiote (⚠️) : liste du livre, non retrouvée dans une source indépendante ; l’étude de Rodrigues et al. (Food Chemistry, 2017) va dans le sens de voies non littérales sans la valider.
+- [ ] Arguments du livre non repris (⚠️) : oligo-éléments venant surtout de l’humus, exclusion du sel par la vigne, comparaison avec les eaux minérales, fossiles Exogyra de Chablis sans goût : non confirmés par une seconde source.
+
+**Fiche 291** (p.285) — Pierre à fusil : des composés soufrés, pas un goût de roche
+- [ ] Lien BMT et minéralité perçue (⚠️) : débat rapporté par une seule synthèse (Parr et al. 2018), qui note qu’un travail récent n’a pas trouvé de lien significatif tandis que Capone et al. en trouvent un pour des chardonnays australiens.
+- [ ] Starkenmann et al. (2016) (⚠️) : seul le résumé a été lu ; les polysulfanes « peuvent contribuer » à l’odeur minérale, seuils et dosages non vérifiés ; deux chasselas sur 80 bouteilles jugés par 62 professionnels, aucun chiffre repris en question.
+
+**Fiche 292** (p.285) — Que perçoit-on de « minéral » ? SO2, acidité, réduction, sel
+- [ ] SO2 (⚠️) : lien positif rapporté par Parr et al. 2018 (deux études) et par Rodrigues et al. (OENO One, citant Parr et al. 2016) ; corrélation, pas cause.
+- [ ] Réduction (⚠️) : divergence entre Parr et al. 2018 (non trouvée comme moteur), Malfeito-Ferreira 2022 (centrale) et un groupe d’experts de la thèse de Rodrigues Silva (opposée à la minéralité).
+- [ ] Acidité (⚠️) : preuves jugées peu claires par Parr et al. 2018 ; l’acide succinique cité par le livre n’est pas retrouvé.
+- [ ] Goût salé (⚠️) : association rapportée par Parr et al. 2018 seul ; part de l’umami et du calcium avancée par le livre non confirmée ; non reprise.
+- [ ] Vins discrets, sucrés ou boisés, et primauté du nez sur le toucher (⚠️) : affirmations du livre, non retrouvées dans une source indépendante ; non reprises.
