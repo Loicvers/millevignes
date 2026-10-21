@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 69 vérifiées, 302 à vérifier (872 points).
+371 fiches : 69 vérifiées, 302 à vérifier (873 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1385,6 +1385,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 347** (p.232) — Extraire en rouge : chapeau de marc, remontage, pigeage, délestage
 - [ ] Risque de sur-extraction (tanins durs, astringents), pigeage qui rend rustiques cabernets et merlots (⚠️) : affirmations du Handbook (p. 344, 350), non retrouvées dans les sources de recoupement lues
 - [ ] Oxygène à limiter avec une vendange pourrie (⚠️) : Handbook seul (p. 341), à recouper
+- [ ] Délestage, volume et débit (⚠️) : retour du jus par le haut, sur le marc, confirmé (Handbook of Enology, vol. 1, p. 342-343 ; AWRI, Grapegrower & Winemaker 712, 2023 ; Oxford Companion to Wine) ; volume divergent : un tiers à la moitié de la cuve (Handbook), tout le jus (AWRI, iDealwine) ; retour « brutal » (Handbook) ou « doux » (Oxford Companion) ; repos de 1 à 3 heures selon les sources. Aucun chiffre repris en exercice.
 
 **Fiche 348** (p.232) — Durée et température de cuvaison : primeur ou vin de garde
 - [ ] Risque de rusticité des tanins en macération prolongée à chaud sur vendange moyenne (⚠️) : Handbook seul (p. 352)
