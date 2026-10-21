@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 57 vérifiées, 284 à vérifier (870 points).
+341 fiches : 57 vérifiées, 284 à vérifier (869 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -872,7 +872,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 216** (p.192) — Lieu contre cépage : deux logiques d’étiquette qui se rapprochent
-- [ ] Seuil de 85 % pour millésime et cépage (règlement délégué (UE) 2019/33, art. 49-50) : lu seulement via la copie legislation.gov.uk, texte EUR-Lex non consulté (page bloquée)
 - [ ] Mention de cépage et millésime pour les vins sans IG en France (agrément FranceAgriMer) : date exacte d’autorisation non précisée dans les pages lues
 
 **Fiche 217** (p.192) — Le Jugement de Paris : la Californie entre dans la cour des grands

@@ -676,8 +676,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Seuil de 85 % pour millésime et cépage (règlement délégué (UE) 2019/33, art. 49-50) : lu seulement via la copie legislation.gov.uk, texte EUR-Lex non consulté (page bloquée)","Mention de cépage et millésime pour les vins sans IG en France (agrément FranceAgriMer) : date exacte d’autorisation non précisée dans les pages lues"],
-    src: "Mille Vignes, P. Lepeltier, p. 192-195 ; règlement délégué (UE) 2019/33 (copie legislation.gov.uk) ; FranceAgriMer, note VSIG 2010-2011 ; Parlement européen (OEIL), règlement (CE) 479/2008",
+    to_check: ["Mention de cépage et millésime pour les vins sans IG en France (agrément FranceAgriMer) : date exacte d’autorisation non précisée dans les pages lues"],
+    src: "Mille Vignes, P. Lepeltier, p. 192-195 ; règlement délégué (UE) 2019/33, JO L 9 du 11.1.2019, art. 49 §1 et 50 §1 (texte officiel EUR-Lex lu le 21/10/2026 ; 100 % si plusieurs cépages) et copie legislation.gov.uk ; FranceAgriMer, note VSIG 2010-2011 ; Parlement européen (OEIL), règlement (CE) 479/2008",
     page: 192
   },
   {
