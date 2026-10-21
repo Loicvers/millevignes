@@ -3,8 +3,8 @@
 Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables (date, chiffre, molécule, texte) ; un jugement de dégustatrice ou de praticienne de Lepeltier qui diverge d’une autre source va dans « Non confirmés » et reste l’avis de référence dans la fiche. Compléter à chaque lot : page, ce que dit le livre → ce qui est vérifié (source).
 
 ## Erreurs
-- p. 16 : pulpe du raisin présentée comme l’« albumen nourricier » du pépin → la pulpe est le mésocarpe (paroi du fruit) ; l’albumen est dans la graine (eXtension, Basic Grape Berry Structure ; Sorbonne Université, fruits charnus).
-- p. 18 : « Mother Vine » de Roanoke « datée de 1500 » → tradition ; historiens : années 1850.
+- p. 16 : pulpe du raisin présentée comme l’« albumen nourricier » du pépin, et pépin assimilé à l’embryon → la pulpe est le mésocarpe (paroi du fruit) ; le pépin est la graine entière, qui contient l’embryon, et l’albumen (endosperme) est dans la graine (eXtension, Basic Grape Berry Structure ; Sorbonne Université, fruits charnus ; Kuhn et al., J. Exp. Bot. 2014 ; Liu et al., Biomolecules 2021 ; Fröbel et Zyprian, Front. Plant Sci. 2019).
+- p. 18 : « Mother Vine » de Roanoke « datée de 1500 » → aucune source lue pour 1500 ; l’historien Clarence Gohdes la fait remonter aux années 1850 et Reimer (1909) réfute son statut de plus vieille vigne des États-Unis (NCpedia, J. Hairr, 2006, lu via un résumé ; Gohdes non lu) ; tradition locale d’environ 400 ans (sources 2b).
 - p. 18 : refuge de V. vinifera pendant « les dernières glaciations de l’Éocène » → l’Éocène est une période chaude presque sans glace ; le refuge date du dernier maximum glaciaire, vers 20 000 ans (Hutchinson et al., Climate of the Past 2021 ; Eos 2023, d’après Dong et al., Science 2023).
 - p. 19 : hypothèse « corroborée par la présence de résine et de pépins » → l’étude de 2017 n’a trouvé ni résine ni pépins (Sci.News, Smithsonian, National Geographic, d’après McGovern et al., PNAS 2017) ; le livre dit d’ailleurs plus bas « sans résine ».
 - p. 19 : jarre « datée de 5980 » et décorée → la jarre à décor de grappes vient d’un troisième site, Khramis Didi-Gora (Sci.News 2017) ; dates publiées 6000-5800 av. J.-C., 5980 introuvable.
@@ -131,11 +131,16 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 ## Non confirmés
 - p. 16 : Vitacées apparues quand les continents « ne forment qu’une seule masse » → la Pangée se fragmente dès ~200 Ma, bien avant le Crétacé supérieur (Britannica seule).
 - p. 16 : génome « décodé intégralement en 2007 » → ébauche en 2007 ; référence complète (T2T) en 2023. Nuance.
-- p. 17-18 : nombres d’espèces par bassin (37, 34, 1) et 17 genres de Vitacées → Wan et al. 2013 : jusqu’à 30, 28 et 2 ; Wen et al. 2018 : 16 genres.
-- p. 18 : V. amurensis à −45 °C (PLOS ONE : −40 °C) ; Jilin Changbai Mountains « entreprise japonaise » (nationalité non trouvée) ; recherches russes de 1907 non retrouvées.
+- p. 16-17 : nombre d’espèces de Vitis (le livre en cumule environ 74 : 34 + 37 + 3) → « environ 60 » (Wan et al. 2013 ; Flora of China 2007), 83 espèces acceptées dans POWO (Kew), environ 86 à 91 noms dans World Flora Online ; le livre ne donne pas de total p. 16.
+- p. 16 : Vitacées apparues il y a « 100 millions d’années » → plus ancien fossile sûr : graine indienne d’environ 66 Ma (Indovitis, Florida Museum d’après Manchester et al. 2013) ; les 90 Ma de Wan et al. (2013) sont un calibrage, pas un résultat.
+- p. 16 : Vitis sezannensis « plus vieux fossile de feuille de vigne (56 Ma) » → aucune feuille plus ancienne trouvée mais aucune source ne le confirme ; Thanétien : 59,24 à 56,00 Ma (ICS v2026-06), 56 Ma étant la limite supérieure ; descripteur du nom non établi (Lemoine selon Blot 1983, Saporta selon des sources secondaires ; absent de GBIF, IPNI, PBDB) ; le livre ne nomme pas Saporta.
+- p. 17 : « une seule espèce » de Vitis en Europe et au Proche-Orient → confirmé comme espèce indigène (POWO ; Arrigo et Arnold 2007) ; Wan et al. (2013) parlent de deux espèces en Asie moyenne et Europe sans les nommer ; le passage est p. 17, pas p. 16.
+- p. 17 : Muscadinia « trois espèces » → 2 selon POWO (qui l’inclut dans Vitis) et Hickey et al. (2019), 3 selon Olien (1990) via Frontiers (2022), 1 ou 2 selon Wan et al. (2013).
+- p. 17-18 : nombres d’espèces par bassin (37, 34, 1) et 17 genres de Vitacées → le 37 est le décompte de la Chine seule (Flora of China 12, 2007) ; le 34 non retrouvé ; Wan et al. 2013 : jusqu’à 30, 28 et 2 ; genres : 16 (Wen et al. 2018), 20 (POWO) ; aucune source lue ne donne 17.
+- p. 18 : V. amurensis à −45 °C → environ −40 °C dans l’habitat naturel (Venuti et al. 2013 ; Liu et Li 2013 ; Zhang et al. 2014), LT50 d’environ −31 °C sur rameaux (Zhang et al. 2012) ; Jilin Changbai Mountains « entreprise japonaise » : confirmé par une seule source 2b (Decanter China 2013) ; recherches russes de 1907 non retrouvées (Zarja severa et Severnyi : croisement de 1936) ; Cabernet Severny ne descend pas de Zarya Severa (parente de Rondo et Solaris).
 - p. 19 : seulement deux acides cités (tartrique, succinique) → l’étude en relève quatre (avec malique et citrique) ; omission. « Huit jarres de 300 l » : fragments de huit grandes jarres.
 - p. 19 : Jiahu « plus vieille boisson alcoolisée » → une bière natoufienne de Raqefet (~13 000 ans) est avancée par Liu et al. 2018 (communiqué de Stanford seul).
-- p. 20 : hermaphrodites « issus de plants mâles » → la génétique décrit des recombinaisons entre haplotypes mâle et femelle, au moins deux indépendantes (Massonnet et al. 2020 ; Zou et al. 2021).
+- p. 20 : hermaphrodites « issus de plants mâles », « rares mutants » → la génétique décrit des recombinaisons entre haplotypes mâle et femelle, au moins deux indépendantes, probablement avant la domestication (Massonnet et al. 2020 ; Zou et al. 2021) ; thèse de Vouillamoz non retrouvée (le livre ne la référence pas).
 - p. 21 : acide syringique « dans la majorité des jarres » égyptiennes → seules des amphores de Toutânkhamon analysées, 3 sur 8 positives (Guasch-Jané et al. 2006).
 - p. 33 : 71,9 % du vignoble français pour une poignée de cépages et 337 variétés autorisées (le « 72 % » de mon-viti concerne les porte-greffes) ; environ 1 300 cépages au Luxembourg vers 1848 (le Sénat donne 1 498 en 1842 et 1 924 en 1848).
 - p. 35-36 : 402 000 ha / 32 % d'HPD (environ 400 000 ha et 29-30 % en 1958), « plus de 130 variétés » (66 selon IVES Technical Reviews, 2024).
@@ -223,6 +228,8 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 18 : lambrusque protégée en France depuis 1995 (arrêté du 20 janvier 1982 modifié le 31 août 1995, annexe I).
 - p. 19 : sites à ~50 km au sud de Tbilissi, culture de Shulaveri-Shomu, 6000-5800 av. J.-C. (PNAS 2017 ; National Geographic ; Sci.News).
 - p. 20 : « apomixie végétative » est un terme botanique classique (Gustafsson ; Stebbins), pas une erreur.
+- p. 18 : racines de V. amurensis : environ −16 °C, valeur d’essai (Guo et al., Vitis 26, 1987, lu en entier), la plus basse de 16 porte-greffes testés.
+- p. 18 : hybrides Muscadinia × Vitis (2n = 39) normalement stériles → très peu fertiles, avec quelques rétrocroisements réussis (Riaz et al. 2008 ; Viljoen et Spies 1995 ; Rubio et al. 2020).
 - p. 331 : Mythologies de Barthes, 1957 ; Mondovino (2004) et Le Goût et le Pouvoir (2007) de Nossiter.
 - Speechly décrit bien le croisement de variétés (traité de 1790, p. 50-60).
 - Semis de sérine (Grahm) et de teroldego (Foradori) ; étude calabraise de Meneghetti (2015).
