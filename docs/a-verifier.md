@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 57 vérifiées, 284 à vérifier (868 points).
+341 fiches : 60 vérifiées, 281 à vérifier (849 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -12,9 +12,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Prix comme critère principal (⚠️) : Decanter, Farr Vintners, The Wine Doctor et Comptoir des Millésimes le disent, mais ce sont des sources de niveau 2b ; le site du Conseil des Grands Crus Classés en 1855 parle d’expérience, de qualité du terroir et de renommée sans citer le prix, et Wine Spectator ne nomme aucun critère. Ouvrage d’historien (Markham, 1855) ou JancisRobinson.com non lus.
 - [ ] Cantemerle (⚠️, non repris dans la synthèse) : ajouté en 1856 selon Decanter, Farr et Comptoir des Millésimes (omis par erreur), mais Wine Spectator le place dans la liste d’origine.
 - [ ] Nombres de crus en 1855 (⚠️, non repris) : 58 rouges selon Wine Spectator (4 premiers), 61 aujourd’hui (5 premiers) selon le Conseil 1855 ; pour Sauternes et Barsac, Farr donne 9 premiers et 11 seconds, Wine Spectator 11 et 12 ou 13 : à recouper sur le texte du classement.
-
-**Fiche 4** (p.45) — La véraison
-- [ ] Contenu (véraison) sourcé par Lepeltier seule : à recouper par une source externe
 
 **Fiche 5** (p.183) — Le climat bourguignon
 - [ ] Première mention du mot « climat » en 1584 : confirmée à Gevrey-Chambertin (Garcia 2011, lu, d’après Garcia et Labbé ; iDealwine) ; le rattachement au Clos de Bèze (⚠️) ne figure que chez iDealwine (niveau 2b). Garcia fixe le sens viticole au XVIIIe siècle et date de 1676 les premiers vins de climats vendus à Dijon (Chambertin et Clos de Bèze, Garcia 2020).
@@ -155,7 +152,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Clone 1066 : agréé en France, petites baies et faible rendement confirmés (AWRI, essai EIT Hawke’s Bay) ; le terme « millerandé » ne figure que chez l’AWRI
 
 **Fiche 67** (p.46) — Les trois phases de la baie
-- [ ] Trois phases de la baie, acides et stade de Baggiolini : sourcés par Lepeltier seule ; eXtension et une étude PMC confirment seulement l’accumulation des sucres après la véraison
+- [ ] Découpage en trois phases (⚠️) : croissance herbacée avec accumulation des acides, puis maturation, confirmées par le Handbook of Enology (vol. 1, p. 243-251), qui place la véraison dans une phase de pause et ne compte pas la surmaturité comme une phase ; stade de Baggiolini non vérifié.
 
 **Fiche 70** (p.48) — La grappe et sa rafle
 - [ ] Rafle (port de la grappe, lignification, retour de la vendange entière) : sourcée par Lepeltier et l’OIV seulement
@@ -419,8 +416,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] GFV et GSR (⚠️) : GFV est confirmé, mais GSR, le chiffre de 95 cépages et la date de 2011 ne sont pas retrouvés ; la source montre Parker travaillant avec des équipes françaises (INRAE, Bordeaux).
 
 **Fiche 136** (p.110) — L’eau de la vigne : besoins, contrainte hydrique et évapotranspiration
-- [ ] Besoins en eau (⚠️) : INRAE et Deloire & Pellegrino donnent 450-550 mm de consommation ; le livre cite 250-350 mm au minimum et 400 mm typique, ainsi que des moyennes annuelles de 600-900 mm non vérifiées. Chiffres non comparables.
-- [ ] Acide abscissique (⚠️, une seule source) : OENO One décrit la fermeture des stomates et l’accumulation de métabolites secondaires ; le rôle d’aiguillage des sucres vers les fruits, avancé par le livre, n’est pas confirmé.
+- [ ] Besoins en eau (⚠️) : INRAE et Deloire & Pellegrino donnent 450-550 mm de consommation ; le livre cite 250-350 mm au minimum et 400 mm typique, ainsi que des moyennes annuelles de 600-900 mm non vérifiées. Le Handbook of Enology (vol. 1, p. 266 et 272) raisonne en pluie annuelle : sous 400 mm, rendements viables difficiles ; la plupart des grands vins sous 700-800 mm. Chiffres non comparables.
+- [ ] Acide abscissique (⚠️) : fermeture des stomates (OENO One ; Handbook of Enology, vol. 1, p. 268) ; levée de l’inhibition des enzymes d’accumulation des sucres et promotion de la maturation (Handbook, p. 249 et 268, une seule source) ; l’« aiguillage » des sucres vers les fruits du livre n’est étayé qu’en partie.
 
 **Fiche 137** (p.111) — L’effet de foehn
 - [ ] Foehn, vignobles concernés (⚠️) : Jurançon confirmé par l’INAO (vent chaud et sec du sud) mais sans le mot foehn ; Alsace citée par une seule source (blog) ; le livre place le chinook en Oregon et dans l’État de Washington, la source seulement en Oregon.
@@ -900,49 +897,34 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 223** (p.204) — Pourquoi le raisin fait du vin
 - [ ] Définition OIV (fermentation de raisins frais ou de moût, 8,5 % vol. minimum) : une seule page OIV lue ; dérogations éventuelles au seuil non vérifiées.
-- [ ] Acidité et pH qui freinent les microbes : cohérent avec les revues lues (pH des raisins de 2,9 à 3,8), mais le lien direct avec la survie microbienne n’y est pas détaillé.
-- [ ] Polyphénols antiseptiques protégeant de la piqûre acétique : affirmation du livre, non retrouvée dans les sources lues.
+- [ ] Polyphénols antiseptiques protégeant de la piqûre acétique (⚠️) : non retrouvé ; le Handbook of Enology (vol. 1, p. 167) juge incertain l’effet des composés phénoliques sur les bactéries lactiques (tanins et procyanidines inhibiteurs, d’autres phénols stimulants) et ne dit rien des bactéries acétiques.
 - [ ] Vins de fruits corrigés (sucre et eau) : une seule source de niveau 1 (TTB, T.D. ATF-403, règle américaine) ; pomme et poire absentes de cette source, d’où la mention « thèse de l’autrice ».
-
-**Fiche 224** (p.206) — Sucres et alcool : glucose, fructose et 17 g/l par degré
-- [ ] Rapport glucose/fructose : 0,8 à 1,1 à maturité selon le cépage (Amerine et Thoukis, Vitis, 1958) ; glucose plutôt majoritaire avant maturité chez la syrah (Bozovic et al.) ; pas de règle générale.
-- [ ] Saccharose quasi nul après la véraison : même étude unique (Bozovic, Rogiers, Deloire).
-- [ ] 20 g/100 g (cuve) équivalents à environ 200 g/l : une source donne 100 à 300 g/l dans le jus ; ordre de grandeur.
-
-**Fiche 225** (p.206) — Les acides du raisin : tartrique, malique, potassium et pH
-- [ ] Acide citrique « troisième acide » : une seule source lue (Oregon State University) le décrit comme présent en petites quantités, avec un effet minime sur le pH ; « majeur » dans le livre est excessif.
-- [ ] Tartrique et malique « responsables de 90 % de l’acidité » (livre) : chiffre non retrouvé, non repris dans la fiche.
 
 **Fiche 226** (p.206) — Polyphénols, arômes et maturités qui divergent
 - [ ] Précurseurs de thiols du sauvignon blanc réduits d’environ 70 % à +1,5 °C : une seule étude (Wu et al., OENO One, 2019) ; effet du réchauffement sur le découplage seulement implicite dans les sources.
 - [ ] Comparaison du livre « chenin en sous-maturité comme un sauvignon, en surmaturité comme un riesling » : non retrouvée, non reprise.
 
 **Fiche 227** (p.208) — De la chimie à la biologie : comprendre la fermentation
-- [ ] Lavoisier (1789), la matière du sucre se retrouve dans l’alcool et le gaz (⚠️) : une seule source lue (Universalis, Fermentations, repères chronologiques)
+- [ ] Lavoisier (1789), la matière du sucre se retrouve dans l’alcool et le gaz (⚠️) : son rôle fondateur dans l’étude chimique de la fermentation, à la fin du XVIIIe siècle, est confirmé (Universalis ; Handbook of Enology, vol. 1, p. 1), mais le bilan de matière et l’année 1789 restent à une seule source.
 
 **Fiche 228** (p.209) — Une compétition microbienne : la levure du vin est rare sur le raisin
-- [ ] Sélection par le manque d’oxygène (⚠️) : affirmation du livre, non retrouvée dans les sources lues (IFV, Tokaj) qui décrivent la tolérance à l’alcool et le SO2
 - [ ] Date de l’étude sur les guêpes et frelons : 2012 (PNAS 109:13398) selon la notice lue, 2013 selon le livre ; divergence signalée dans la synthèse
 
 **Fiche 229** (p.211) — Trois fermentations : alcoolique, malolactique, acétique
-- [ ] FML « obligatoire pour les rouges en Europe » (⚠️) : le livre le dit ; une revue technique (Réussir Vigne) parle d’exigence de qualité, aucun texte réglementaire trouvé (niveau 1 absent) ; formulé ici comme pratique courante
-- [ ] Fermentation acétique qui exige l’oxygène (⚠️) : une seule source lue (Science History Institute, Pasteur 1866, voile de Mycoderma aceti) ; contradiction interne du livre p. 211 / p. 215
+- [ ] FML « obligatoire pour les rouges en Europe » (⚠️) : aucun texte réglementaire trouvé ; le Handbook of Enology (vol. 1, p. 370 et 399) la dit indispensable et universelle en rouge pour des raisons techniques (stabilité), une revue technique (Réussir Vigne) parle d’exigence de qualité : formulé ici comme pratique courante
 
 **Fiche 230** (p.212) — Piloter les levures : température, oxygène, soufre, nutriments
-- [ ] Azote et vitamines comme nutriments des levures (⚠️) : affirmation du livre, non vérifiée dans les sources lues (thiamine, phosphates non repris)
-- [ ] Levures sèches actives : années 1960 (livre, compatible avec une synthèse de Vitis 1968 sur la levure séchée) contre 1979 (Agroscope, première levure de vin sèche commercialisée) : divergence signalée, non tranchée
+- [ ] Levures sèches actives : années 1960 (livre, compatible avec une synthèse de Vitis 1968 sur la levure séchée) contre 1979 (Agroscope, première levure de vin sèche commercialisée) ; le Handbook of Enology (vol. 1, 2006, p. 429) situe leur essor dans les vingt années précédentes : la date du livre paraît précoce, divergence non tranchée
 - [ ] Seuils d’ensemencement (au-dessus de 15 °C) : sources IFV et CRAAQ, valeurs indicatives selon le vin
 
 **Fiche 231** (p.214) — Levures indigènes ou sélectionnées : un débat technique et idéologique
 - [ ] Position de l’IFV (⚠️) : une seule source lue (Itinéraires n°18, 2008) ; chiffre d’environ 30 % de fermentations spontanées difficiles tiré de ce document ; la formule du livre sur « trente ans de recherches » sans lien entre complexité levurienne et complexité du vin n’a pas été retrouvée
 - [ ] Position de Nicolas Joly sur les levures indigènes (⚠️) : rapportée par le livre, source primaire non lue
-- [ ] Spontané jusqu’aux années 1970, ensemencé majoritaire aujourd’hui (⚠️) : affirmation du livre non recoupée
-- [ ] Moût jamais totalement stérile (⚠️) : affirmation du livre non recoupée
+- [ ] Spontané jusqu’aux années 1970 (⚠️) : le Handbook of Enology (vol. 1, p. 429) décrit plutôt des pieds de cuve, remplacés par les levures sèches à partir des années 1980 ; aucun pourcentage actuel d’ensemencement trouvé.
 
 **Fiche 232** (p.214) — Terroir microbien : l’habitat pèse plus que la région
 - [ ] Knight et al. (2015), populations régionales de S. cerevisiae et phénotype du vin (⚠️) : une seule notice lue (Univ. Lincoln), texte intégral bloqué ; le livre ne cite pas l’étude sous ce nom
 - [ ] Thèse d’Auckland, habitat plus explicatif que la région (⚠️) : un seul résumé lu (ResearchSpace) ; nature et date de l’étude non recoupées avec le travail de Morrison-Whittle et Goddard cité par le livre
-- [ ] Critiques sur l’échelle et la stabilité des différences, et points de consensus (⚠️) : affirmations du livre non recoupées
 
 **Fiche 233** (p.218) — Les vins sous voile : vin jaune et xérès
 - [ ] Fortification du jeune fino à 15-15,5 % : une source de niveau 2b (Foods and Wines from Spain), concordante avec le schéma du livre (15,5 %) ; le cahier des charges de la manzanilla donne 15-17 % pour le vin fini.
@@ -954,7 +936,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] 1487 comme première mention du soufre : deux sites de vulgarisation seulement, date débattue (GuildSomm), aucune source de niveau 1 ou 2a.
 - [ ] Mèche hollandaise : le livre donne 1765, les sources lues l’attestent dès le XVIIe siècle (presse spécialisée et Oxford Companion via CKBK) ; 1765 non retrouvé.
 - [ ] Seuil de 10 mg/l : règlement 1169/2011 annexe II lu via legislation.gov.uk, non relu sur EUR-Lex.
-- [ ] Rôles du SO2 (antioxydant, antiseptique) : exposé du livre, non recoupé dans les sources lues.
+- [ ] Histoire : le Handbook of Enology (vol. 1, p. 193 et 211) situe l’usage général du SO2 à la fin du XVIIIe siècle et son emploi en vinification au début du XXe, sans dater les premières mentions ni la mèche.
 
 **Fiche 235** (p.219) — Les vins sucrés : concentrer le raisin ou muter
 - [ ] Alcool ajouté aux VDN : 10 % maximum (fiche INAO Rivesaltes) contre 5 à 25 % dans le livre ; divergence non tranchée, à vérifier cahier des charges par cahier des charges.
@@ -1012,18 +994,18 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Rôle du débourbage (goûts désagréables si omis) : pratique courante, non recoupée dans les sources lues.
 
 **Fiche 244** (p.234) — De l’art empirique à la science : l’école de Bordeaux
-- [ ] Institut d’œnologie de Bordeaux fondé en 1949 par Jean Ribéreau-Gayon (⚠️) : une seule source (The Drinks Business) ; Oxford Companion situe la station de Gayon vers 1880, et le livre 1874 (non repris ici).
-- [ ] Pasteur chargé en 1863 d’étudier les maladies du vin (⚠️) : une seule source (Institut Pasteur) ; la parution des Études sur le vin en 1866 n’est pas confirmée, elle n’est donc pas retenue.
+- [ ] Institut d’œnologie de Bordeaux fondé en 1949 par Jean Ribéreau-Gayon (⚠️) : une seule source (The Drinks Business) ; 1949 est aussi l’année du Traité d’œnologie de J. Ribéreau-Gayon (préface du Handbook of Enology), confusion possible ; Oxford Companion situe la station de Gayon vers 1880, et le livre 1874 (non repris ici).
+- [ ] Pasteur chargé en 1863 d’étudier les maladies du vin (⚠️) : une seule source (Institut Pasteur) ; la parution des Études sur le vin en 1866 est confirmée (Handbook of Enology, vol. 1, p. 2 ; Science History Institute).
 - [ ] Chaptal chimiste (⚠️) : une seule source (Oxford Companion to Wine).
 - [ ] Lien ferrocyanure / création du DNO et décret du 20 mai 1955 (⚠️) : une seule source (IFV) ; le rôle personnel de Jean Ribéreau-Gayon dans la validation du ferrocyanure n’apparaît dans aucune source lue.
-- [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; Peynaud « élève » de Ribéreau-Gayon : les sources parlent plutôt d’une collaboration.
+- [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; la préface du Handbook of Enology (2006) défend la thèse inverse, sans nivellement de la qualité ; Peynaud y apparaît comme coauteur de Ribéreau-Gayon (1947-1982), collaborateur plutôt qu’élève.
 - [ ] Peynaud partisan de peu d’interventions et d’une qualité gagnée au vignoble (⚠️) : citations rapportées par le livre p. 238, source primaire (Le Vin et les Jours) non lue.
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
 - [ ] SO2 bio 100/150 mg/l sous 2 g/l de sucres (⚠️) : deux fiches de certificateurs (Certis, TÜV Nord) citant le règlement (UE) 2021/1165, annexe V D, dont le texte n’a pas pu être lu.
 - [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024 ; Biodyvin serait moins strict (80/105 mg/l selon Réussir, une source de presse), cahier des charges Biodyvin non lu.
 - [ ] Vin méthode nature < 30 mg/l (⚠️) : label privé du Syndicat de défense des vins naturels, décrit par deux sources de presse ; charte non lue.
-- [ ] Seuil de sucres des vins « secs » pour le SO2 conventionnel (⚠️) : 4 g/l pour l’OIV, 5 g/l dans un texte reprenant la réglementation de l’UE ; annexe I partie B du règlement 2019/934 non lue en entier.
+- [ ] Seuil de sucres des vins « secs » pour le SO2 conventionnel (⚠️) : 5 g/l dans le droit de l’UE et 4 g/l pour l’OIV, concordants avec le tableau 8.1 du Handbook of Enology (vol. 1, 2006, p. 195), qui donnait alors 160 et 210 mg/l pour l’UE ; texte en vigueur (règlement 2019/934, annexe I partie B) non relu en entier.
 - [ ] Origine historique des limites d’acidité volatile (⚠️) : le décret du 19 août 1921 fixait une limite plus haute (2,5 g/l), abaissée en 1930 puis en 1938 (une seule source, Jacquet, IVES/OIV 2024, qui cite le texte d’origine ; la version consolidée actuelle du décret ne contient plus de chiffre) ; les 18 et 20 meq/l viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
 
 **Fiche 247** (p.237) — Étiqueter ce qu’il y a dans le vin
@@ -1043,7 +1025,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Seuil de la géosmine (⚠️) : 25 ng/l (Virginia Tech), 40 ng/l (La Guerche et al.) et 100 ng/l (glossaire) selon les sources ; seul l’ordre de grandeur est retenu.
 
 **Fiche 251** (p.240) — Réduction, oxydation, lumière : les défauts du soufre et de l’oxygène
-- [ ] Éthanal (acétaldéhyde), pomme verte, recherché dans les vins de voile (⚠️) : affirmation du livre, non recoupée par les sources lues.
+- [ ] Éthanal « pomme verte » (⚠️) : note olfactive non recoupée ; son rôle dans les vins de voile (fino, vin jaune) est confirmé par le Handbook of Enology (vol. 1, p. 477-478).
 - [ ] Goût de lumière (⚠️) : mécanisme riboflavine, méthionine, méthional, méthanethiol, disulfure de diméthyle et sensibilité du verre clair décrits par une seule source (Fracassetti et al., 2021) ; le brunissement évoqué par le livre n’y est pas confirmé.
 - [ ] Prémox (⚠️) : source unique (Decanter), qui ne documente que les blancs de Bourgogne à partir de 1995-1996 (pas les effervescents de toute origine) ; causes encore discutées, la qualité des bouchons est contestée.
 
@@ -1132,16 +1114,13 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Goût surtout issu de l’olfaction rétronasale (⚠️) : une seule revue lue (Spence 2012, qui cite Shepherd), citée dans le cours avec cette réserve.
 
 **Fiche 272** (p.263) — Primaires, secondaires, tertiaires : d’où viennent les arômes
-- [ ] Nombre de composés volatils (⚠️) : « 700 à 1 000 » est attribué au livre ; Styger, Prior et Bauer (2011) donnent environ 1 000 composés chimiques pour le profil d’un vin, ordre de grandeur concordant, fourchette exacte non retrouvée.
+- [ ] Nombre de composés volatils (⚠️) : « 700 à 1 000 » est attribué au livre ; Styger, Prior et Bauer (2011) donnent environ 1 000 composés pour le profil d’un vin, le Handbook of Enology (vol. 1, p. 256) « plusieurs centaines » pour le raisin ; fourchette exacte non retrouvée.
 - [ ] Rangement des arômes de fermentation (⚠️) : secondaires chez Lepeltier et dans la tradition française, primaires pour le WSET ; divergence d’école, non tranchée.
-- [ ] Exemples de molécules secondaires et tertiaires du tableau (⚠️) : acétate d’isoamyle, diacétyle, whisky-lactone, vanilline, sotolon, une seule source chacune (cf. fiche 276).
 - [ ] WSET : malolactique et fût classés en secondaires (⚠️) : lu dans une seule version (WSET Level 2, version française) ; à recouper avec une seconde source WSET.
-- [ ] Thiols du sauvignon présents dans le raisin sous forme de précurseurs inodores, libérés à la fermentation (⚠️) : précurseurs conjugués à la cystéine libérés par la levure (Darriet et al. ; Styger et al.), cités comme exemple de frontière floue.
 - [ ] Nombre de molécules réellement odorantes, 20 à 40 (⚠️) : une seule source (Ferreira et al., synthèse IVES) ; le livre ne le donne pas.
 
 **Fiche 273** (p.264) — Arômes variétaux : poivron, muscat et pétrole
-- [ ] Monoterpènes (⚠️) : notes florales et d’agrumes, abondance dans les muscats, une seule source lue (Styger, Prior, Bauer 2011) ; « changent peu à la vinification », « dégradés au vieillissement » et « minorés par Botrytis » (livre) non retrouvés, non repris.
-- [ ] Méthoxypyrazines, cépages concernés (⚠️) : seul le sauvignon blanc est documenté par les sources lues (Styger et al. ; Krebiehl) ; l’association avec les cabernets et le Sud-Ouest, citée par le livre, n’est pas reprise.
+- [ ] Monoterpènes (⚠️) : notes florales et d’agrumes d’après une seule source (Styger, Prior, Bauer 2011) ; abondance dans les muscats et baisse d’environ moitié sous l’effet de Botrytis confirmées par le Handbook of Enology (vol. 1, p. 246 et 402) ; « changent peu à la vinification » (livre) non retrouvé, non repris.
 
 **Fiche 274** (p.264) — La rotundone : le poivre de la syrah que 1 personne sur 5 ne sent pas
 - [ ] Cépages porteurs (⚠️) : syrah bien établie (Wood et al. 2008 ; AWRI) ; pineau d’Aunis et grüner veltliner d’après l’AWRI, l’IVES et Decanter ; le mourvèdre cité par le livre n’apparaît dans aucune liste lue, non repris.
@@ -1150,14 +1129,11 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 275** (p.264) — Les thiols variétaux du sauvignon : buis, pamplemousse, fruit de la passion
 - [ ] Cuivre (⚠️) : une seule étude de niveau 1 (Hatzidimitriou, Dubourdieu et al., essais sur sauvignon) montre une baisse du 4MMP, mécanisme encore discuté ; le livre écrit « détruit », plus fort que les résultats.
 - [ ] Descripteurs du 3MH et du 3MHA (⚠️) : pamplemousse et fruit de la passion selon Styger et al. et Krebiehl ; les nuances varient selon les sources.
-- [ ] Le livre (p. 264) écrit que les précurseurs sont liés à des sucres et libérés par des enzymes de la salive (glycosidases), et parle de « mercaptans » ; non repris, les sources lues parlent de conjugués à la cystéine et d’une β-lyase.
 
 **Fiche 276** (p.265) — Arômes de fermentation et de fût : banane, beurre, coco, vanille
-- [ ] Acétate d’isoamyle (⚠️) : banane et poire, une seule source lue (Styger et al. 2011) ; le rôle de la levure 71B cité par le livre n’est pas confirmé, non repris.
-- [ ] Diacétyle (⚠️) : noisette, beurre et formation par les bactéries lactiques pendant la FML d’après une seule source lue (Styger et al.).
-- [ ] Whisky-lactone, vanilline et chauffe (⚠️) : un seul document de niveau 1 (IFV) ; il parle de « chêne blanc d’Amérique » et non de Quercus alba, et la chauffe « tend à diminuer » les composés odorants, là où le livre écrit « détruit » ; la baisse de la vanilline en cours de fermentation en fût n’est pas vérifiée.
-- [ ] Sotolon (⚠️) : molécule clé des vins de voile et botrytisés (Guichard et al. 1992) ; vin jaune, curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
-- [ ] Acétate d’isoamyle favorisé par la fermentation à froid et la macération carbonique (⚠️) : affirmation du livre, non retrouvée dans les sources lues.
+- [ ] Effet de la chauffe (⚠️) : selon l’IFV, la chauffe « tend à diminuer » les composés odorants, là où le livre écrit « détruit » ; la whisky-lactone (coco), plus abondante dans le chêne blanc d’Amérique, et la baisse de la vanilline réduite par les levures pendant une fermentation en fût sont confirmées (IFV ; Handbook of Enology, vol. 1, p. 437-438).
+- [ ] Sotolon (⚠️) : molécule clé des vins botrytisés et des finos (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477) ; vin jaune, curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
+- [ ] Acétate d’isoamyle et macération carbonique (⚠️) : affirmation du livre ; le Handbook of Enology (vol. 1, p. 76) confirme l’effet d’une fermentation à froid, mais juge l’origine de l’arôme de macération carbonique encore inconnue (p. 388).
 
 **Fiche 277** (p.268) — Reconnaître un arôme : mémoire, analogie et roue de Noble
 - [ ] Carte olfactive et comparaison avec la mémoire (⚠️) : modèle présenté par le livre (G. Lepousez), non recoupé par une source lue ; « une banane libère près de 200 molécules » vient aussi du livre.
@@ -1172,8 +1148,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Fructose « deux fois plus sucré », seuil de sucrosité de 2 g/l et peptide sucrant de l’autolyse (⚠️) : valeurs divergentes ou source unique ; non repris.
 
 **Fiche 280** (p.272) — L’acidité du vin : acides, g/l et pH
-- [ ] Acide malique (⚠️) : maturité et baisse après la véraison appuyées par Ribéreau-Gayon (teneurs), mais le blocage de la malolactique dans certains styles (muscadet, sancerre, vinho verde) n’est pas vérifié et n’est pas repris ; la transformation du malique en lactique reste celle du livre.
-- [ ] Acide citrique (⚠️) : une seule source (Ribéreau-Gayon, 0,5 à 1 g/l avant la malolactique) ; le reste du portrait du livre n’est pas recoupé.
+- [ ] Acide citrique (⚠️) : 0,5 à 1 g/l avant la malolactique selon le vol. 2 du Handbook ; le vol. 1 (p. 145) juge 0,5 g/l « normalement non atteint » dans le vin et rappelle la limite d’ajout de 1 g/l (p. 307) : à ne pas confondre.
 - [ ] Plage de pH (⚠️) : Ribéreau-Gayon donne 2,8 à 4,0 pour les vins, le livre 3 à 4 (simplification acceptable) ; la plage d’acidité de 2,5 à 8 g/l n’est pas retrouvée et n’est pas reprise.
 - [ ] « Unique capteur de l’acidité », « acide tartrique rare dans la nature » (⚠️) : formulations simplifiées ou non vérifiées ; non reprises.
 
