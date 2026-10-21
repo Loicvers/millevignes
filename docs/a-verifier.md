@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-341 fiches : 62 vérifiées, 279 à vérifier (839 points).
+341 fiches : 62 vérifiées, 279 à vérifier (836 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -1003,7 +1003,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Environ 3,5 g/l de sucres résiduels et moût refroidi à la glace (⚠️) : une seule source (Decanter).
 
 **Fiche 249** (p.240) — La « volat’ » : vinaigre et vernis
-- [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : thèse du livre ; seul l’exemple de Cheval Blanc 1947 (acidité volatile élevée, aujourd’hui jugée fautive) est confirmé par deux sources, sans chiffre d’acidité volatile.
+- [ ] Acidité volatile qui donne du relief à dose modérée (⚠️) : thèse du livre, contredite par le Handbook of Enology (vol. 2, p. 238 : jamais d’effet positif ; seul l’acétate d’éthyle vers 50-80 mg/l complexifie, p. 59) ; l’exemple de Cheval Blanc 1947 (acidité volatile élevée, aujourd’hui jugée fautive) est confirmé par deux sources.
 - [ ] Décret du 19 août 1921 (⚠️) : une seule source (Jacquet, IVES/OIV 2024, qui cite l’article 1 du texte d’origine) : 2,5 g/l (2 g/l si le vin est nettement piqué), abaissée à 1,8 g/l par le décret du 1er février 1930 puis à 1,2 g/l (1,5 g/l chez les détaillants) par celui du 28 juin 1938 ; unité non précisée ; la version consolidée actuelle ne contient plus de chiffre ; non repris en exercice.
 - [ ] Limites de 18 et 20 meq/l : renvoyées à la fiche 246 (non rediscutées ici).
 
@@ -1128,21 +1128,19 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 279** (p.271) — Le sucré du vin : sucres résiduels, glycérol, bois et fraude
 - [ ] Rôle sucrant de l’alcool (⚠️) : affirmation du livre, non recoupée par une seconde source.
-- [ ] Glycérol (⚠️) : une seule source (OENO One, citant Noble et Bursick, 1984) place le seuil de sucrosité vers 5 g/l et la viscosité nettement plus haut ; le chiffre du livre (8 g/l, viscosité et sucré) n’est pas repris.
+- [ ] Glycérol (⚠️) : OENO One (citant Noble et Bursick, 1984) place le seuil de sucrosité vers 5 g/l ; pour le Handbook of Enology (vol. 2, p. 56-57), 5 g/l est la teneur minimale habituelle (jusqu’à 15-20 g/l) et l’effet sur la saveur demande des doses bien supérieures ; le chiffre du livre (8 g/l) n’est pas repris.
 - [ ] Triterpénoïdes sucrés du bois neuf (⚠️) : les travaux de l’ISVV (Marchal et al., 2015 ; Gammacurta et al., 2019) sont confirmés, mais la date de 2020 donnée par le livre n’est pas retrouvée ; seule l’équipe est citée.
 - [ ] Arômes sucrés (vanille, fruits mûrs) qui n’activent pas le récepteur du sucré (⚠️) : thèse du livre, non recoupée.
-- [ ] Fructose « deux fois plus sucré », seuil de sucrosité de 2 g/l et peptide sucrant de l’autolyse (⚠️) : valeurs divergentes ou source unique ; non repris.
+- [ ] Fructose « deux fois plus sucré » (⚠️) : pouvoir sucrant de 1,73 contre 0,74 pour le glucose, le saccharose valant 1 (Handbook of Enology, vol. 2, p. 67) : deux fois plus que le glucose, pas que le sucre de table ; seuil de sucrosité de 2 g/l et peptide sucrant de l’autolyse : source unique, non repris.
 
 **Fiche 280** (p.272) — L’acidité du vin : acides, g/l et pH
-- [ ] Acide citrique (⚠️) : 0,5 à 1 g/l avant la malolactique selon le vol. 2 du Handbook ; le vol. 1 (p. 145) juge 0,5 g/l « normalement non atteint » dans le vin et rappelle la limite d’ajout de 1 g/l (p. 307) : à ne pas confondre.
-- [ ] Plage de pH (⚠️) : Ribéreau-Gayon donne 2,8 à 4,0 pour les vins, le livre 3 à 4 (simplification acceptable) ; la plage d’acidité de 2,5 à 8 g/l n’est pas retrouvée et n’est pas reprise.
+- [ ] Acide citrique (⚠️) : 0,5 à 1 g/l avant la malolactique (Handbook of Enology, vol. 2, p. 5) ; le vol. 1 (p. 145) juge pourtant 0,5 g/l « normalement non atteint » dans le vin et rappelle la limite d’ajout de 1 g/l (p. 307) : à ne pas confondre.
 - [ ] « Unique capteur de l’acidité », « acide tartrique rare dans la nature » (⚠️) : formulations simplifiées ou non vérifiées ; non reprises.
 
 **Fiche 281** (p.273) — Salé, salin, amer : ce que le vin contient vraiment
-- [ ] Minéraux du vin (⚠️) : le livre donne 2 à 4 g (p. 273) puis 1 à 2 g/l (p. 285) ; Parr et al. (2018) indiquent environ 1,5 à 2 g/l, 4 g/l au plus, surtout du potassium, avec peu de sodium et de chlorure : seul « quelques grammes par litre » est repris.
 - [ ] Amertume (⚠️) : 25 récepteurs confirmés (Chandrashekar, 2006 ; BitterDB) ; origine phénolique, rôle de l’alcool et de l’acidité, réflexe inné et apprentissage culturel : thèses du livre, partiellement recoupées ; « plus de 1 000 composés » (comptage de BitterDB, tous non testés sur les 25 récepteurs) et « facteur 1 000 » entre individus non repris.
 - [ ] Récepteur du salé (⚠️) : statut moins tranché dans la littérature que dans le livre (canaux ENaC, controverse en 2006) ; non repris.
-- [ ] Umami du vin (⚠️) : libération par l’autolyse des lies appuyée par une source de presse (Gault&Millau) ; rôle de l’acide succinique contesté (AWRI : goût salé et amer, sans umami) ; non repris.
+- [ ] Umami du vin (⚠️) : libération par l’autolyse des lies appuyée par une source de presse (Gault&Millau) ; l’acide succinique a un goût amer et salé, sans umami (AWRI ; Handbook of Enology, vol. 2, p. 7) ; non repris.
 - [ ] Calcium et magnésium, « sixième saveur » (⚠️) : hypothèse de recherche (récepteur CaSR, kokumi) ; seuils de 40 et 80 mg/l et place en milieu de bouche (Lepousez : finale persistante) non repris.
 
 **Fiche 282** (p.276) — Tanins et astringence : peau, pépins et fût
@@ -1180,7 +1178,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Début de l’essor du mot (⚠️) : années 1990 selon le livre et l’International Wine Challenge ; années 1980 selon la thèse de H. Rodrigues Silva (Université de Bourgogne, 2016, relayée par Vin Québec) et un blog ; « une dizaine d’années » (Parr et al. 2018) ou « vingt dernières années » (Deneulin et al. 2016) pour la hausse d’usage : datation non tranchée, aucune année précise reprise.
 
 **Fiche 290** (p.284) — Goûte-t-on la roche du vignoble ? L’argument de Maltman
-- [ ] Teneur du vin en minéraux (⚠️) : le livre donne 1-2 g/l (p. 285) et 2-4 g/l (p. 273) ; Parr et al. 2018, d’après Coombe et Dry, indiquent environ 1,5 à 2 g/l, 4 g/l au plus (conversion faite par nous) : seule l’expression « quelques grammes par litre » est reprise, aucun chiffre en question.
 - [ ] Autres voies d’influence du sol : drainage, albédo, microbiote (⚠️) : liste du livre, non retrouvée dans une source indépendante ; l’étude de Rodrigues et al. (Food Chemistry, 2017) va dans le sens de voies non littérales sans la valider.
 - [ ] Arguments du livre non repris (⚠️) : oligo-éléments venant surtout de l’humus, exclusion du sel par la vigne, comparaison avec les eaux minérales, fossiles Exogyra de Chablis sans goût : non confirmés par une seconde source.
 - [ ] Starkenmann et al. (2016) (⚠️) : disulfane d’hydrogène détecté dans le silex et dans deux chasselas jugés minéraux ; une seule étude, conclusion « peuvent contribuer », citée dans le cours avec cette réserve.
