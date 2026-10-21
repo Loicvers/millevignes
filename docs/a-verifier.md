@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 72 vérifiées, 299 à vérifier (850 points).
+371 fiches : 72 vérifiées, 299 à vérifier (849 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -19,7 +19,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée. Morelot (1831) et Lavalle (1855) sont confirmés par Garcia 2011 ; la 1re édition de Jullien (1816) par l’avant-propos de sa 2e édition (1822).
 
 **Fiche 6** (p.16) — Classification botanique de Vitis vinifera
-- [ ] Nom de la sous-espèce cultivée (⚠️) : sativa (livre) contre vinifera. Un glossaire (Wein-Plus, niveau 2b) juge « sativa » obsolète ; la base WFO (instantané 2019) range sativa et sylvestris en synonymes de V. vinifera. VIVC et IPNI n’ont pas pu être consultés.
 - [ ] Nombre d’espèces de Vitis (⚠️) : « environ 60 » (Wan et al., BMC Evol. Biol. 2013) mais « plus de 60 » à environ 100 selon une revue de Frontiers in Plant Science (2022).
 - [ ] Une seule espèce en Europe et au Proche-Orient (⚠️, livre seul) : Wan et al. (2013) en comptent deux pour l’Asie moyenne et l’Europe.
 
