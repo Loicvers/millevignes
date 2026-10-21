@@ -983,5 +983,28 @@ FICHES.push(
     to_check: ["Asian Palate, 2009 (⚠️) : date concordante entre le livre et une page universitaire (Smith College, 2011, niveau 2b) ; la notice PolyU (septembre 2011) concerne le livre suivant, Mastering Wine for the Asian Palate. Nationalité « américano-coréenne » non vérifiée.","Tim Hanni, Why You Like the Wines You Like, 2013, quatre vinotypes (⚠️) : une seule source (The Wine Economist, niveau 2b).","Puisais et le « goût juste » (⚠️) : la notice BnF confirme le personnage, pas la citation ni son rôle auprès des chefs."],
     src: "Mille Vignes, P. Lepeltier, p. 329 et 320 ; The Wine Economist, Tim Hanni’s Vinotype Analysis ; Business Today, Testing the Asian palate ; PolyU, Jeannie Cho Lee Eng (profil) ; Smith College, Jeannie Cho Lee ’90 releases Mastering Wine for the Asian Palate (2011) ; BnF, notice de Jacques Puisais",
     page: 329
+  },
+  {
+    id: 365,
+    theme: "Service",
+    sous: ["Température & carafage"],
+    niveau: "Fondamental",
+    geo: null,
+    titre: "Les dépôts en bouteille : ce qu’ils disent au caviste",
+    synth: "Trois dépôts se rencontrent. Des cristaux de tartre (bitartrate de potassium), plus nombreux quand le vin a eu froid, sont sans effet sur le goût : un défaut d’aspect seulement, qu’on explique au client. Dans un vieux rouge, la matière colorante et les tanins précipitent en un dépôt sombre : c’est le dépôt normal d’un vin de garde, qui n’apparaît en principe qu’après quelques années et en petite quantité, et on s’en défait en décantant doucement. Un dépôt de lies ou un trouble uniforme dans un vin non filtré demande en revanche de goûter : une odeur piquée ou des bulles imprévues signalent une altération microbienne.",
+    mnemo: "Cristaux = sucre candi au fond de la tasse ; dépôt sombre = marc de café du vieux rouge ; trouble uniforme avec odeur = lait qui tourne : celui-là, on le goûte avant de le servir.",
+    flash: {"q":"Des cristaux incolores ou rougeâtres dans une bouteille : faut-il écarter le vin ?","a":"Non : ce sont des cristaux de tartre, sans effet sur le goût ; défaut d’aspect seulement.","keys":[["tartre","tartrate"],["non","goût","aspect","inoffensif"]]},
+    qcm: {"q":"Un client signale un dépôt sombre sur le flanc d’un rouge de quinze ans. Que lui répondre ?","opts":["C’est de la matière colorante et des tanins précipités, normal avec l’âge : on décante doucement","Ce sont des cristaux de tartre, qui prouvent que le vin a été mal stabilisé","C’est le signe d’une refermentation en bouteille, il faut renvoyer le vin","C’est un trouble protéique dû à un excès de collage"],"good":0,"expl":"Dans les vieux rouges, la matière colorante devient peu à peu insoluble et se dépose. Les cristaux de tartre sont durs et cristallins (teintés de rouge dans un rouge) ; une refermentation se manifesterait par un trouble, des bulles ou une odeur anormale."},
+    exos: [
+      {"type":"matching","prompt":"Associe chaque dépôt à son origine.","payload":{"pairs":[["Cristaux incolores au fond d’un blanc passé au frais","Bitartrate de potassium"],["Dépôt sombre amorphe sur le flanc d’un vieux rouge","Matière colorante et tanins précipités"],["Trouble uniforme et odeur anormale dans un vin non filtré","Altération microbienne à écarter"]]},"explanation":"La forme, la couleur et l’âge du vin orientent le diagnostic ; l’odeur tranche entre dépôt normal et défaut."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le froid favorise l’apparition de cristaux de tartre dans la bouteille.","answer":true},"explanation":"Le bitartrate de potassium est moins soluble à basse température : un vin passé au réfrigérateur ou à la cave en hiver peut les déposer, sans changer de goût."},
+      {"type":"odd_one_out","prompt":"Quel dépôt ou trouble n’est pas un phénomène normal ?","payload":{"options":["Cristaux de bitartrate de potassium au fond d’un blanc","Dépôt sombre de matière colorante dans un rouge de quinze ans","Trouble uniforme avec odeur piquée ou petites bulles dans un vin tranquille"],"answer":2},"explanation":"Les deux premiers sont connus et sans danger ; le troisième évoque une altération microbienne ou une refermentation, qui justifie d’écarter le vin."}
+    ],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Dépôt dans un vieux rouge « attendu après quatre ou cinq ans » (⚠️) : repère du seul Handbook (p. 285-286), donné comme ordre de grandeur et non comme règle ; la fiche dit seulement « après quelques années ».","Dépôt de lies et trouble microbien dans un vin non filtré (⚠️) : le Handbook (p. 364) évoque des sédiments de composés phénoliques instables et de micro-organismes dans les vins mis en bouteille sans filtration, avec parfois des odeurs anormales ; non recoupé par une seconde source."],
+    src: "Ribéreau-Gayon, Glories, Maujean, Dubourdieu, Handbook of Enology, vol. 2, 2e éd. (2006), p. 24, 285-286, 364 et 373 ; AWRI, Crystalline deposits ; Enartis, Post-Bottling Wine Defects: Red (dépôts de matière colorante) ; cf. Mille Vignes, P. Lepeltier, p. 307",
+    page: 307
   }
 );

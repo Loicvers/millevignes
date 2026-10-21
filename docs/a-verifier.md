@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-356 fiches : 65 vérifiées, 291 à vérifier (860 points).
+365 fiches : 65 vérifiées, 300 à vérifier (875 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -968,7 +968,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Pièce bourguignonne de 228 l (⚠️) : non recoupée (retrouvée seulement pour les fûts du vin de paille jurassien) ; la barrique bordelaise de 225 l est confirmée (Handbook of Enology, vol. 2, p. 394).
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
-- [ ] Gras et longueur dus aux polysaccharides (⚠️) : l’autolyse et la libération de mannoprotéines, qui stabilisent le vin, sont confirmées (Handbook of Enology, vol. 1, p. 432-435), mais le Handbook juge leur effet direct sur le volume en bouche non établi (p. 434).
+- [ ] Gras et longueur dus aux polysaccharides (⚠️) : l’autolyse et la libération de mannoprotéines, qui stabilisent le vin contre la casse protéique et le tartre, sont confirmées (Handbook of Enology, vol. 1, p. 432-435 ; vol. 2, p. 86 et 134-137), mais leur effet direct sur le volume en bouche est jugé négligeable ou non établi (vol. 1, p. 434 ; vol. 2, p. 86).
 - [ ] Glutathion libéré par les lies et protecteur des thiols, goûts herbacés (⚠️) : affirmations du livre, non retrouvées ; seul le lien entre lies mal conduites et réduction est confirmé (Handbook of Enology, vol. 1, p. 436-440).
 - [ ] Muscadet sur lie (⚠️) : une seule source, la fiche produit INAO (lies fines au moins jusqu’au 1er mars et jusqu’à l’expédition, sans aération, mise en bouteille dans le chai de vinification avant le 31 décembre)
 
@@ -1444,3 +1444,36 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Histamine qui continue d’augmenter après la malolactique, y compris par des cellules non cultivables (⚠️) : Handbook seul ; l’OIV ne le précise pas
 - [ ] Seuils de toxicité et limites réglementaires : non traités ; le code OIV (CST 369-2011) ne fixe aucun chiffre et certaines limites nationales existent, non vérifiées ici
 - [ ] pH et histamine (⚠️) : l’OIV cite le pH élevé comme facteur de risque (populations bactériennes) ; le Handbook (p. 154) note, en milieu de laboratoire, une production par souche plus forte à pH bas, sans sucre et en présence d’éthanol. Seule la position de l’OIV est reprise.
+
+**Fiche 357** (p.206) — Les familles de composés phénoliques : qui est où dans la baie ?
+- [ ] Resvératrol dans la peau (⚠️) : localisation donnée par le Handbook (vol. 2, p. 144) seul ; les sources de recoupement lues (WSU, Molecules 2021) ne précisent pas le tissu. Les autres localisations (anthocyanes et flavonols dans la peau, tanins condensés dans peau et pépins, hydrolysables absents du raisin) sont recoupées.
+
+**Fiche 358** (p.225) — Ce que deviennent couleur et tanins d’un rouge en élevage
+- [ ] Assouplissement des tanins (⚠️) : le Handbook l’explique par la polymérisation via l’éthanal, les combinaisons avec anthocyanes, polysaccharides et protéines et la précipitation des plus gros agrégats ; la revue de la Washington State University juge le mécanisme non résolu et évoque aussi une dépolymérisation. Formulé ici avec « en général ». La stabilisation des pigments (pont éthyle, pigments polymères, pyranoanthocyanines orangées) est recoupée (WSU ; Trends in Food Science & Technology 2017, 67, 139-149).
+
+**Fiche 359** (p.232) — La stabilisation tartrique : cristaux, froid et inhibiteurs
+- [ ] CMC (⚠️) : le Handbook (2006) la dit en attente d’autorisation dans l’UE ; l’OIV a adopté une monographie en 2009 (résolution OIV/OENO 366/2009, blancs et effervescents) ; le statut actuel dans l’UE et en France n’a pas été vérifié sur le texte en vigueur (règlement délégué (UE) 2019/934), d’où une formulation limitée à l’OIV.
+
+**Fiche 360** (p.232) — La casse protéique des blancs et la bentonite
+- [ ] Test à 80 °C (⚠️) : le Handbook le juge le plus fiable, l’IFV (Réussir Vigne) le dit trop sévère et propose un test plus doux à 45 °C ; 80 °C est retenu par le Handbook (30 min) et l’AWRI (2 h) ; aucun exercice ne porte sur la température.
+- [ ] Dose à partir de laquelle la bentonite ternit les arômes (⚠️) : le Handbook cite le dépassement de 80 g/hl, l’IFV 50 g/hl ; aucun chiffre n’est donné dans la fiche.
+
+**Fiche 361** (p.232) — Le collage : colles, PVPP et effet sur les tanins
+- [ ] Étiquetage des résidus de colles allergènes (⚠️) : seul le lien avec la fiche 247 est établi ; la règle actuelle dans l’UE et en France (résidus détectables ou non, cas de la colle de poisson) n’a pas été vérifiée sur le texte en vigueur, aucune exigence chiffrée n’est donc reprise.
+- [ ] Liste et usages des colles : le Handbook (2006) signale l’interdiction du sang et du lait entier dans l’UE et des protéines végétales encore à l’étude ; le choix de produits autorisés aujourd’hui n’a pas été revérifié sur 2019/934.
+
+**Fiche 362** (p.232) — Filtrer ou centrifuger : ce qu’on retient, ce qu’on risque
+- [ ] Débat sur la filtration (⚠️) : la position du Handbook (critique « souvent injustifiée ») est en tension avec l’observation de pertes aromatiques sur membrane tangentielle (Prodanov et al., OENO One : jusqu’à 43 % pour des esters sur une membrane de 500 kDa) ; les deux points sont présentés, la question reste ouverte selon le vin et le matériel.
+- [ ] « La filtration clarifie sans stabiliser » : énoncé du Handbook (p. 286, 364) non recoupé par une seconde source.
+
+**Fiche 363** (p.240) — Les casses métalliques : fer et cuivre troublent le vin
+- [ ] Cadre réglementaire du ferrocyanure et du phytate de calcium (⚠️) : le Handbook (2006, p. 99 et 101) décrit l’usage du ferrocyanure en France (blancs, rosés, déclaration préalable, œnologue) ; l’état actuel (règlement délégué (UE) 2019/934, annexe I) n’a pas été vérifié : aucune règle ni dose n’est donnée dans la fiche.
+- [ ] Casse bleue en rouge (⚠️) : le Handbook parle d’un complexe fer-phénols (teinte sombre, reflet noirâtre) ; l’AWRI l’appelle casse bleue (tannate ferrique), rare. Mécanisme concordant, vocabulaire non repris.
+
+**Fiche 364** (p.240) — Le vieillissement atypique des blancs (ATA) : un blanc qui vieillit trop vite
+- [ ] Causes au vignoble (⚠️) : le Handbook (vol. 2, p. 277) associe le défaut à des vignes en carence azotée ou en forte contrainte hydrique ; Linsenmeier et al., Vitis 43(4), 2004, citent aussi rendement élevé, récolte précoce, UV, mais leurs mesures ne confirment pas le lien entre azote et acide indole-acétique. Formulé comme association débattue.
+- [ ] Rôle du glutathion et de l’élevage sur lies : démontré dans le Handbook (Dubourdieu et Lavigne, 2002) ; une étude de 2023 (Appl. Sci. 13, 8472) trouve que les tanins protègent plus que le glutathion : nuance non reprise dans la synthèse.
+
+**Fiche 365** (p.307) — Les dépôts en bouteille : ce qu’ils disent au caviste
+- [ ] Dépôt dans un vieux rouge « attendu après quatre ou cinq ans » (⚠️) : repère du seul Handbook (p. 285-286), donné comme ordre de grandeur et non comme règle ; la fiche dit seulement « après quelques années ».
+- [ ] Dépôt de lies et trouble microbien dans un vin non filtré (⚠️) : le Handbook (p. 364) évoque des sédiments de composés phénoliques instables et de micro-organismes dans les vins mis en bouteille sans filtration, avec parfois des odeurs anormales ; non recoupé par une seconde source.
