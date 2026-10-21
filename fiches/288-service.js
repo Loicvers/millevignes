@@ -287,7 +287,7 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: ["Typologie colmaté / multipièces / aggloméré (⚠️) : définitions et usages donnés par le livre, non recoupés par une source lue.","Procédé Diam au CO2 supercritique (⚠️) : documents du fabricant et presse technique (niveau 2b), sans étude indépendante lue ; le nombre de molécules extraites avancé par le fabricant n’est pas repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 298 ; Diam, brochure Diamant Process (copie Hauserpack) ; Interempresas, Descorchar, recuperar la reputación perdida del corcho (2017) ; Harpers, Origine by Diam launched across Europe (2017) ; Wine with Seth, Alternative wine closures",
+    src: "Mille Vignes, P. Lepeltier, p. 298 ; Diam, brochure Diamant Process (copie Hauserpack) ; Interempresas, Descorchar, recuperar la reputación perdida del corcho (2017) ; Harpers, Origine by Diam launched across Europe (2017) ; Réussir Vigne, Le bouchon technique biosourcé séduit les vignerons bio ou HVE (micro-aggloméré : farine de liège et liant)",
     page: 298
   },
   {

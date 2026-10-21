@@ -46,13 +46,13 @@ FICHES.push(
     schema: {"svg":"<svg viewBox=\"0 0 320 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"currentColor\" font-size=\"9\">\n<text x=\"12\" y=\"16\" opacity=\"0.7\">°C</text>\n<rect x=\"20\" y=\"80\" width=\"64\" height=\"16\" fill-opacity=\"0.06\" stroke=\"currentColor\"/>\n<rect x=\"84\" y=\"80\" width=\"96\" height=\"16\" fill-opacity=\"0.2\" stroke=\"currentColor\"/>\n<rect x=\"180\" y=\"80\" width=\"32\" height=\"16\" fill-opacity=\"0.55\" stroke=\"currentColor\"/>\n<rect x=\"212\" y=\"80\" width=\"64\" height=\"16\" fill-opacity=\"0.2\" stroke=\"currentColor\"/>\n<rect x=\"276\" y=\"80\" width=\"32\" height=\"16\" fill-opacity=\"0.06\" stroke=\"currentColor\"/>\n<line x1=\"20\" y1=\"100\" x2=\"308\" y2=\"100\" stroke=\"currentColor\"/><line x1=\"20\" y1=\"96\" x2=\"20\" y2=\"104\" stroke=\"currentColor\"/><text x=\"20\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">0</text><line x1=\"52\" y1=\"96\" x2=\"52\" y2=\"104\" stroke=\"currentColor\"/><text x=\"52\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">5</text><line x1=\"84\" y1=\"96\" x2=\"84\" y2=\"104\" stroke=\"currentColor\"/><text x=\"84\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">10</text><line x1=\"116\" y1=\"96\" x2=\"116\" y2=\"104\" stroke=\"currentColor\"/><text x=\"116\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">15</text><line x1=\"148\" y1=\"96\" x2=\"148\" y2=\"104\" stroke=\"currentColor\"/><text x=\"148\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">20</text><line x1=\"180\" y1=\"96\" x2=\"180\" y2=\"104\" stroke=\"currentColor\"/><text x=\"180\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">25</text><line x1=\"212\" y1=\"96\" x2=\"212\" y2=\"104\" stroke=\"currentColor\"/><text x=\"212\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">30</text><line x1=\"244\" y1=\"96\" x2=\"244\" y2=\"104\" stroke=\"currentColor\"/><text x=\"244\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">35</text><line x1=\"276\" y1=\"96\" x2=\"276\" y2=\"104\" stroke=\"currentColor\"/><text x=\"276\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">40</text><line x1=\"308\" y1=\"96\" x2=\"308\" y2=\"104\" stroke=\"currentColor\"/><text x=\"308\" y=\"116\" text-anchor=\"middle\" opacity=\"0.7\">45</text>\n<text x=\"84\" y=\"40\" text-anchor=\"middle\" font-weight=\"bold\">10 °C</text><text x=\"84\" y=\"52\" text-anchor=\"middle\">zéro de végétation</text><line x1=\"84\" y1=\"56\" x2=\"84\" y2=\"78\" stroke=\"currentColor\"/>\n<text x=\"196\" y=\"28\" text-anchor=\"middle\" font-weight=\"bold\">optimum</text><text x=\"196\" y=\"40\" text-anchor=\"middle\">photosynthèse ~25-30</text><line x1=\"196\" y1=\"44\" x2=\"196\" y2=\"78\" stroke=\"currentColor\"/>\n<text x=\"276\" y=\"58\" text-anchor=\"middle\" font-weight=\"bold\">40 °C</text><text x=\"276\" y=\"70\" text-anchor=\"middle\" font-size=\"8\">très altérée</text>\n<text x=\"52\" y=\"140\" text-anchor=\"middle\">repos</text>\n<text x=\"132\" y=\"140\" text-anchor=\"middle\">croissance</text><text x=\"132\" y=\"151\" text-anchor=\"middle\">(degrés « actifs »)</text>\n<text x=\"244\" y=\"140\" text-anchor=\"middle\">ralentit</text><text x=\"244\" y=\"151\" text-anchor=\"middle\">(stomates se ferment)</text>\n<text x=\"160\" y=\"182\" text-anchor=\"middle\" opacity=\"0.75\">Les indices de Winkler et de Huglin comptent la chaleur au-dessus de 10 °C.</text>\n<text x=\"160\" y=\"194\" text-anchor=\"middle\" opacity=\"0.75\">Le livre situe l’optimum à 24-28 °C.</text>\n</svg>","legende":"Les seuils de température de la vigne : 10 °C pour démarrer, un optimum vers 25-30 °C, une photosynthèse très altérée vers 40 °C.","src":"D’après Lepeltier, Mille Vignes, p. 105 ; Kriedemann 1968 ; dessin simplifié et original"},
     status: "needs_review",
     to_check: [
-      "Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25-30 °C, Wine With Seth 20-30 °C ; retenir « autour de 25-30 °C ».",
-      "Ralentissement et arrêt (⚠️) : sources de niveau 2b seulement ; elles parlent de forte altération vers 40 °C et non d’arrêt total, et une source évoque une inhibition dès 35 °C.",
+      "Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles de vignes exposées ; retenir « autour de 25-30 °C ».",
+      "Ralentissement et arrêt (⚠️) : Kriedemann (1968, niveau 2a) ne voit pas de baisse notable avant 35 °C, trouve les feuilles encore actives à 40 °C et une photosynthèse nulle vers 45-50 °C ; un poster de l’Université de Toronto Scarborough (Agarwal et Martin, niveau 2b) relie le déclin à la fermeture des stomates quand la chaleur monte (mesures de 25 à 40 °C) ; le « ralentit au-delà de 30 °C » et le « très altérée vers 40 °C » de la fiche n’ont plus de source solide.",
       "Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).",
       "Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; Huglin 1978, Nouveau mode d’évaluation des possibilités héliothermiques d’un milieu viticole ; Familia Torres, Budbreak ; Kriedemann 1968, Photosynthesis in vine leaves (Vitis) ; Wine With Seth, Photosynthesis in vines ; Wine With Seth, Latitude and the wine belt ; Jones, Climate, grapes and wine (IVES).",
+    src: "Mille Vignes, P. Lepeltier, p. 105 et 108 ; Huglin 1978, Nouveau mode d’évaluation des possibilités héliothermiques d’un milieu viticole ; Familia Torres, Budbreak ; Kriedemann 1968, Photosynthesis in vine leaves (Vitis) ; Agarwal et Martin, Photosynthetic temperature responses in six common wine grape varieties (Univ. Toronto Scarborough, poster) ; Jones, Climate, grapes and wine (IVES).",
     page: 105
   },
   {
@@ -338,7 +338,7 @@ FICHES.push(
       "Échelle de Jones (⚠️) : le livre la date de 2005 ; la source consultée est une synthèse de 2006, date non confirmée.",
       "GFV et GSR (⚠️) : GFV est confirmé, mais GSR, le chiffre de 95 cépages et la date de 2011 ne sont pas retrouvés ; la source montre Parker travaillant avec des équipes françaises (INRAE, Bordeaux)."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 110 ; Jones, Climate, grapes and wine (IVES, d’après Jones 2006) ; Wine With Seth, Latitude and the wine belt ; IVES, Classification for timing of flowering and veraison with the GFV model (Parker et al.).",
+    src: "Mille Vignes, P. Lepeltier, p. 110 ; Jones, Climate, grapes and wine (IVES, d’après Jones 2006) ; IVES, Classification for timing of flowering and veraison with the GFV model (Parker et al.).",
     page: 110
   },
   {
@@ -536,16 +536,11 @@ FICHES.push(
         { imp: "important", txt: "UV forts et nuits fraîches : plus de couleur, de tanins et d’arômes." },
         { imp: "utile", txt: "À un client : un vin d’altitude joue la fraîcheur, mais il y a une altitude au-delà de laquelle la vigne ne mûrit plus." }
       ],
-      src: "Mille Vignes, P. Lepeltier ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; WineWithSeth, High altitude viticulture ; Wineland (Afrique du Sud) ; Asadullayev et al., ICCPEAS 2025. Cf. Mille Vignes, p. 113-114."
+      src: "Mille Vignes, P. Lepeltier ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; Arias et al. (2022), Climate change effects on grapevine physiology and biochemistry: benefits and challenges of high altitude, Frontiers in Plant Science 13:835425 ; Wineland (Afrique du Sud) ; Asadullayev et al., ICCPEAS 2025. Cf. Mille Vignes, p. 113-114."
     },
     status: "needs_review",
-    to_check: [
-      "Gradient du livre (0,6 °C par 100 m jusqu’à 500 m, puis 1 °C par 170 m) : changement de gradient à 500 m non retrouvé dans les sources ; la valeur moyenne de 0,6 °C par 100 m est, elle, confirmée",
-      "Retard de végétation de Galet (1 jour par 30 m, puis par 20 m) : non retrouvé ; une source donne 6 à 7 jours par 100 m (divergence non tranchée, aucun chiffre en exercice)",
-      "Sucre (−0,8 à 1 % par 100 m) et acidité (+1 % dans le livre, +0,9 g/L dans une publication non sourcée) : tendance confirmée, chiffres indicatifs",
-      "Ao Yun et Quebrada de Humahuaca au-delà de 2000 m : repris du livre, non recoupé"
-    ],
-    src: "Mille Vignes, P. Lepeltier, p. 113-114 ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; WineWithSeth, High altitude viticulture ; Wineland ; Asadullayev et al., ICCPEAS 2025",
+    to_check: ["Gradient du livre (0,6 °C par 100 m jusqu’à 500 m, puis 1 °C par 170 m) : changement de gradient à 500 m non retrouvé dans les sources ; la valeur moyenne de 0,6 °C par 100 m est, elle, confirmée","Retard de végétation de Galet (1 jour par 30 m, puis par 20 m) : non retrouvé ; une source donne 6 à 7 jours par 100 m (divergence non tranchée, aucun chiffre en exercice)","Sucre (−0,8 à 1 % par 100 m) et acidité (+1 % dans le livre, +0,9 g/L dans une publication non sourcée) : tendance confirmée, chiffres indicatifs","Ao Yun et Quebrada de Humahuaca au-delà de 2000 m : repris du livre, non recoupé","UV plus forts, peau plus épaisse, plus de couleur et de tanins (⚠️) : Arias et al. (2022, résumé lu seul) confirment UV-B élevés, fortes amplitudes thermiques et plus de métabolites secondaires en altitude, mais pas l’épaississement de la peau ni la baisse de sucre ou la hausse d’acidité ; à confirmer dans IVES (Gambetta) ou dans le texte complet d’Arias."],
+    src: "Mille Vignes, P. Lepeltier, p. 113-114 ; Infoclimat, gradient thermique vertical ; IVES, Gambetta, altitude du vignoble ; Arias et al. (2022), Frontiers in Plant Science 13:835425 ; Wineland ; Asadullayev et al., ICCPEAS 2025",
     page: 113
   },
   {
@@ -598,12 +593,12 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris",
-      "Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (WineWithSeth) ; moulin de Verzenay et vents d’ouest non vérifiés",
-      "Expositions de Nuits-Saint-Georges, Meursault et Hermitage : une seule source (WineWithSeth)",
+      "Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (Decanter, niveau 2b : le plateau boisé de la Montagne protège Mailly, Verzenay et Verzy des dépressions de sud-ouest) ; moulin de Verzenay et vents d’ouest non vérifiés",
+      "Expositions de Nuits-Saint-Georges et Meursault (⚠️) : plus aucune source (le cahier des charges INAO de Nuits-Saint-Georges et le dossier DREAL « Climats de Bourgogne » ne donnent pas l’orientation) ; Hermitage plein sud : confirmé par le cahier des charges INAO",
       "Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée",
       "Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier."
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 115 ; WineWithSeth, Aspect and sun angle at different latitudes ; WineWithSeth, Montagne de Reims",
+    src: "Mille Vignes, P. Lepeltier, p. 115 ; Decanter, Champagne report: the two faces of the Montagne de Reims ; INAO, cahier des charges AOC Hermitage",
     page: 115
   },
   {
@@ -631,7 +626,7 @@ FICHES.push(
       "Reflet du Léman et terrasses de Lavaux : confirmés par le dossier UNESCO ; le chiffre « plus de 1 °C » du livre n’est pas retrouvé, non repris",
       "Brouillard de San Pablo : confirmé par une seule source de niveau 2a (AWRI)"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 115-116 ; Figaro Nautisme / Météo Consult, Le Gulf Stream et les étés de la façade atlantique ; WineWithSeth, Atlantic influence on coastal vineyards ; 1WineDude, Humboldt ; AWRI, Carneros ; UNESCO, dossier Lavaux",
+    src: "Mille Vignes, P. Lepeltier, p. 115-116 ; Figaro Nautisme / Météo Consult, Le Gulf Stream et les étés de la façade atlantique ; INAO, cahier des charges AOC Médoc (effet thermique des eaux de l’Atlantique et de la Gironde) ; Futura-Sciences, Gulf Stream ; 1WineDude, Humboldt ; AWRI, Carneros ; UNESCO, dossier Lavaux",
     page: 115
   },
   {
@@ -654,12 +649,12 @@ FICHES.push(
     cours: null,
     status: "needs_review",
     to_check: [
-      "7 % du vignoble européen : une seule source (WineWithSeth), à présenter comme estimation ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)",
-      "Exemples français : Banyuls et Côte-Rôtie cités par une seule source ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée",
+      "7 % du vignoble européen (⚠️) : chiffre du livre, aucune source retrouvée (Tarolli et al. 2023 ne donne aucun pourcentage), à présenter comme estimation de Lepeltier ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)",
+      "Exemples français : Banyuls et Côte-Rôtie cités par le livre seul (aucune source retrouvée) ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée",
       "Le livre présente les critères comme cumulatifs ; le CERVIM précise qu’une seule condition suffit (divergence signalée en exercice)",
       "Mécanisation presque impossible, exploitations familiales : repris du livre, non recoupé"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 116 ; CERVIM, About us ; CERVIM, décret italien sur la viticulture héroïque ; WineWithSeth, Heroic viticulture ; Tomasi, CERVIM 2026",
+    src: "Mille Vignes, P. Lepeltier, p. 116 ; CERVIM, About us ; CERVIM, décret italien sur la viticulture héroïque ; Tarolli et al. (2023), Heroic viticulture: environmental and socioeconomic challenges of unique heritage landscapes, iScience 26, 107125 ; Tomasi, CERVIM 2026",
     page: 116
   }
 ,

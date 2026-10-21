@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-365 fiches : 67 vérifiées, 298 à vérifier (861 points).
+365 fiches : 67 vérifiées, 298 à vérifier (863 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -168,6 +168,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 74** (p.50) — Le cycle du phylloxéra
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Nodosités sur radicelles et tubérosités sur racines âgées, femelles ailées (⚠️) : l’INRAE (niveau 1) confirme œuf d’hiver, formes gallicole et radicicole, nodules ou tubérosités en partie nécrotiques, sols sableux et atteinte surtout racinaire de V. vinifera, mais ne distingue pas l’âge des racines ni ne parle de femelles ailées dispersant l’insecte : ces deux détails ne reposent plus que sur le livre.
 
 **Fiche 75** (p.51) — Les vignobles épargnés et les vieilles vignes franches de pied
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -187,6 +188,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 80** (p.55) — Un pool génétique trop étroit : la leçon de l’AxR1
 - [ ] AxR1 obtenu par Ganzin en 1879 : une seule source (Wein.plus).
 - [ ] Premiers dégâts du biotype B : 1983 selon Granett et al. (California Agriculture, 1991), 1982 dans la presse ; cause de l’échec (biotype plus virulent ou résistance insuffisante) débattue
+- [ ] AxR1 : recommandation de l’Université de Californie par Lider (1958) et retrait en décembre 1989 (⚠️) : sources de niveau 2b seulement (chronique de presse locale, diapositives de cours UC Davis, qui ne parlent pas d’une recommandation formelle) ; part de 70 % de Napa-Sonoma, 2 sites en 1983 puis plus de 70 en 1991 confirmés par le résumé de Granett et al. (1991) ; « dizaines de milliers d’acres » replantés : aucune source retrouvée, retiré de la synthèse.
 
 **Fiche 82** (p.58) — Les techniques de greffe : fente, anglaise, oméga, écusson
 - [ ] Machine oméga : brevet US 3 969 843 déposé en 1975 par Eugen et Hans Wahler (Weinstadt) ; Lepeltier écrit « Wagner » ; une seule source
@@ -367,7 +369,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 125** (p.100) — La vitiforesterie aujourd’hui
 - [ ] Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source
-- [ ] Vallée de Cinti : arbres-tuteurs confirmés par une seule source
+- [ ] Vallée de Cinti : arbres-tuteurs (molle et chañar) confirmés par une seule source (Vinetur, presse spécialisée, niveau 2b)
 - [ ] Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue
 - [ ] Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser
 - [ ] Fosse-Sèche : 15 ha de vigne et 45 ha au total confirmés ; 30 ha (p. 99) contre 18 ha (p. 101) d’aménagement, 4 500 à 5 000 arbres et projet Nature 2050 non vérifiés
@@ -388,8 +390,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Avancée des vendanges en France (⚠️, une seule source) : Pleinchamp/INRAE donne environ 24 jours plus tôt depuis les années 1970 ; le livre parle d’un mois à Châteauneuf-du-Pape, chiffre non retrouvé.
 
 **Fiche 129** (p.105) — Températures : zéro de végétation, optimum et excès de chaleur
-- [ ] Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25-30 °C, Wine With Seth 20-30 °C ; retenir « autour de 25-30 °C ».
-- [ ] Ralentissement et arrêt (⚠️) : sources de niveau 2b seulement ; elles parlent de forte altération vers 40 °C et non d’arrêt total, et une source évoque une inhibition dès 35 °C.
+- [ ] Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles de vignes exposées ; retenir « autour de 25-30 °C ».
+- [ ] Ralentissement et arrêt (⚠️) : Kriedemann (1968, niveau 2a) ne voit pas de baisse notable avant 35 °C, trouve les feuilles encore actives à 40 °C et une photosynthèse nulle vers 45-50 °C ; un poster de l’Université de Toronto Scarborough (Agarwal et Martin, niveau 2b) relie le déclin à la fermeture des stomates quand la chaleur monte (mesures de 25 à 40 °C) ; le « ralentit au-delà de 30 °C » et le « très altérée vers 40 °C » de la fiche n’ont plus de source solide.
 - [ ] Plage thermique des vignobles (⚠️) : le livre cite des isothermes annuelles de 10-22 °C, non retrouvées ; les sources donnent 13-21 °C en saison de croissance (grandeur différente).
 - [ ] Le chiffre du livre « moins de 25 % de photosynthèse sous 10 °C » n’a été retrouvé dans aucune source : non repris dans la fiche.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -442,6 +444,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Retard de végétation de Galet (1 jour par 30 m, puis par 20 m) : non retrouvé ; une source donne 6 à 7 jours par 100 m (divergence non tranchée, aucun chiffre en exercice)
 - [ ] Sucre (−0,8 à 1 % par 100 m) et acidité (+1 % dans le livre, +0,9 g/L dans une publication non sourcée) : tendance confirmée, chiffres indicatifs
 - [ ] Ao Yun et Quebrada de Humahuaca au-delà de 2000 m : repris du livre, non recoupé
+- [ ] UV plus forts, peau plus épaisse, plus de couleur et de tanins (⚠️) : Arias et al. (2022, résumé lu seul) confirment UV-B élevés, fortes amplitudes thermiques et plus de métabolites secondaires en altitude, mais pas l’épaississement de la peau ni la baisse de sucre ou la hausse d’acidité ; à confirmer dans IVES (Gambetta) ou dans le texte complet d’Arias.
 
 **Fiche 142** (p.114) — L’Etna, vignoble d’altitude
 - [ ] Quota Mille : citée par Gambero Rosso comme limite haute, absente du disciplinare consulté
@@ -452,8 +455,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 143** (p.115) — Exposition et pente : où tourner la vigne
 - [ ] Précision du livre (sud-sud-est privilégié, ouest-sud-ouest ombragé le matin) : principe solide mais non sourcé en niveau 1 ; seul le principe général est repris
-- [ ] Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (WineWithSeth) ; moulin de Verzenay et vents d’ouest non vérifiés
-- [ ] Expositions de Nuits-Saint-Georges, Meursault et Hermitage : une seule source (WineWithSeth)
+- [ ] Montagne de Reims (Verzenay, Verzy, Mailly face nord, abrités des dépressions de sud-ouest) : une seule source (Decanter, niveau 2b : le plateau boisé de la Montagne protège Mailly, Verzenay et Verzy des dépressions de sud-ouest) ; moulin de Verzenay et vents d’ouest non vérifiés
+- [ ] Expositions de Nuits-Saint-Georges et Meursault (⚠️) : plus aucune source (le cahier des charges INAO de Nuits-Saint-Georges et le dossier DREAL « Climats de Bourgogne » ne donnent pas l’orientation) ; Hermitage plein sud : confirmé par le cahier des charges INAO
 - [ ] Barolo (170-540 m, plantations nouvelles interdites au nord) : une seule source de niveau 2b, non repris ; Pline et le classement des falernes : non vérifié dans le texte antique, non repris ; Beaujolais : limites d’altitude du livre non retrouvées dans le cahier des charges INAO, écarté ; formule sur la conduction de la chaleur par le sol : ambiguë, écartée
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
@@ -464,8 +467,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Brouillard de San Pablo : confirmé par une seule source de niveau 2a (AWRI)
 
 **Fiche 145** (p.116) — La viticulture héroïque et le CERVIM
-- [ ] 7 % du vignoble européen : une seule source (WineWithSeth), à présenter comme estimation ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)
-- [ ] Exemples français : Banyuls et Côte-Rôtie cités par une seule source ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée
+- [ ] 7 % du vignoble européen (⚠️) : chiffre du livre, aucune source retrouvée (Tarolli et al. 2023 ne donne aucun pourcentage), à présenter comme estimation de Lepeltier ; la source CERVIM 2026 consultée ne donne que le chiffre italien (environ 3 % du vignoble italien)
+- [ ] Exemples français : Banyuls et Côte-Rôtie cités par le livre seul (aucune source retrouvée) ; Collioure et l’Auvergne (livre) non vérifiés en tant qu’appellations. Liste des membres du CERVIM (cervim.org, lue le 20/10/2026) : membres français dont la Région Auvergne-Rhône-Alpes (catégorie A) et le Syndicat des Vignobles de la Côte Vermeille (catégorie B) ; aucune appellation (Collioure, Banyuls, Côte-Rôtie) n’y est nommée
 - [ ] Le livre présente les critères comme cumulatifs ; le CERVIM précise qu’une seule condition suffit (divergence signalée en exercice)
 - [ ] Mécanisation presque impossible, exploitations familiales : repris du livre, non recoupé
 
@@ -608,6 +611,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Seuil de l’argile (⚠️) : 2 µm en pédologie et dans de nombreux manuels européens, 4 µm selon l’échelle de Wentworth (USGS) ; seule l’USGS a été lue. Seuil non utilisé dans les exercices.
 - [ ] Seuil sable/gravier de 2 mm (⚠️, une seule source, USGS, niveau 1) : norme de Wentworth ; le « > 4 mm » du livre désigne les cailloutis, pas une contradiction.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Safres de Châteauneuf-du-Pape (⚠️) : le Syndicat cite des formations de « saffre, sable et grès » sans définir le safre ; « grès compact du sud du Rhône » vient du livre, une seule source.
 
 **Fiche 169** (p.134) — Roches chimiques et biochimiques : craie, diatomite, gypse, tuffeau
 - [ ] Classement du silex (⚠️) : chimique selon le livre ; un classement biochimique (chert) est avancé ailleurs, à sourcer ; classification non unanime, présentée comme telle.
@@ -618,13 +622,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % : à sourcer.
 - [ ] Propriétés du calcaire (⚠️) : rétention d’eau très variable selon porosité ; pH élevé cohérent mais non chiffré dans les sources lues.
 - [ ] Marne (⚠️) : « parts égales » du livre simplifie un intervalle d’environ 35-65 % d’argile (Universalis, une seule source).
-- [ ] Calcaires oolithiques de Côte-d’Or (⚠️) : confirmés dans le Bajocien par une seule source (WineWithSeth) ; entroques de Pouilly-Fuissé non vérifiées, non reprises.
+- [ ] Calcaires oolithiques de Côte-d’Or (⚠️) : une seule source (Leveque, Toulemonde et Andreux 2006, IVES) : calcaires durs du Bajocien et du Bathonien dans la Côte de Nuits, « oolite blanche » rattachée au Bathonien (Gevrey-Chambertin), non au Bajocien ; synthèse reformulée ; entroques de Pouilly-Fuissé non vérifiées, non reprises.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 171** (p.135) — Galets roulés et graves : drainants, inertes, et pourtant précieux
-- [ ] Galets drainants et inertes (⚠️) : propriétés reprises du livre ; seul le cas de Châteauneuf-du-Pape est documenté (WineWithSeth, une seule source), les graves bordelaises n’ont pas été recoupées.
+- [ ] Galets drainants et inertes (⚠️) : propriétés reprises du livre ; seul le cas de Châteauneuf-du-Pape est documenté (Syndicat des vignerons de Châteauneuf : galets de quartzite sur argile rouge, drainage non évoqué ; une seule source), les graves bordelaises n’ont pas été recoupées.
 - [ ] Rôle thermique des galets (⚠️) : débat présenté comme tel (opinion de Ralph Garcin, Château La Nerthe, rapportée par une source), non tranché.
 - [ ] Inertie limitée aux galets et graves : le livre ne l’applique pas aux lœss ni aux sables.
+- [ ] Rôle thermique des galets (⚠️) : le Syndicat de Châteauneuf (source de promotion) affirme qu’ils restituent aux grappes la chaleur du jour, à l’inverse de l’avis rapporté de La Nerthe ; la fiche présente le débat sans le trancher.
 
 **Fiche 172** (p.135) — Calera : chercher du calcaire hors de France
 - [ ] Date de plantation (⚠️) : le livre dit 1974 ; Wine Spectator situe la découverte du site en 1974, Vinography l’achat du terrain en 1973 et la plantation en 1975 ; seule la décennie est retenue, aucun exercice sur l’année.
@@ -638,17 +643,14 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 175** (p.136) — Vignobles sur ardoises et schistes : Anjou noir, Faugères, Moselle, Priorat, Douro
-- [ ] Anjou noir (⚠️) : identité schisteuse (schistes, ardoise, phtanite, spilite) tirée d’une seule source lue.
-- [ ] Côte Brune, Côte-Rôtie (⚠️) : substrat décrit tantôt comme micaschiste, tantôt comme micaschiste ou gneiss selon les sources ; la fiche ne tranche pas.
-- [ ] Moselle (⚠️) : ardoise de la Moselle moyenne tirée d’une seule famille de sources (blog Wine With Seth) ; âge dévonien non repris.
-- [ ] Priorat, llicorella (✅) : substrat compact d’ardoise (pissarra) du Paléozoïque, de profondeur moyenne à faible (Turisme Priorat ; Guinjoan, Badia et Tulla, Documents d’Anàlisi Geogràfica, 2014) ; les sources parlent d’ardoise plutôt que de schiste ; la DOQ ne définit pas le terme.
-- [ ] Douro, xisto (✅) : socle de schistes paléozoïques (Figueiredo et al., IPB) dont la foliation laisse passer les racines (Tomasi, IVES, d’après Maltman 2008) ; fracture presque verticale d’après une source de vulgarisation seulement ; le « regroupement de roches » du livre n’est pas confirmé ; l’article de Sousa n’a pas été retrouvé.
+- [ ] Anjou noir (⚠️) : identité schisteuse confirmée par vinsdeloire.fr (schistes, massif armoricain, spilites) et par Winedoctor (C. Kissack, niveau 2b : schiste et ardoise) ; phtanite non retrouvée, non reprise.
+- [ ] Moselle (⚠️) : la moitié des vignes (Saar, Ruwer, Moselle moyenne de Trèves à Zell) est sur ardoise dévonienne (Weinland Mosel, brochure) ; schistes gris, rouge et bleu du Marienburg : Indigo Wine (Clemens Busch), une seule source.
 - [ ] Effets indirects (chaleur, lumière, vie du sol) (⚠️) : hypothèse présentée comme telle par le livre, non vérifiée dans les sources lues ; la minéralité au goût est traitée plus loin (p. 284).
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 176** (p.137) — Gneiss, amphibolite, serpentinite : du Muscadet à la Wachau
-- [ ] Gneiss du Pallet (⚠️) : deux sources de niveau 2b seulement ; le cahier des charges AOC Muscadet Sèvre et Maine (2019, lu) ne nomme pas la roche du Pallet (roches peu altérées, très fracturées) et attribue le gneiss à Goulaine et à Monnières-Saint-Fiacre.
-- [ ] Nombre de crus du Muscadet (⚠️ pour l’avenir) : le cahier des charges AOC Muscadet Sèvre et Maine le plus récent lu (arrêté du 26 novembre 2025) compte 7 dénominations géographiques complémentaires (Château-Thébaud, Clisson, Gorges, Goulaine, Monnières-Saint-Fiacre, Mouzillon-Tillières, Le Pallet) ; La Haie-Fouassière et Vallet ont été mises en consultation publique par l’INAO (25 août-25 octobre 2025), reconnaissance non vérifiée ; le « 10 » de Wine With Seth n’est pas établi ; nombre non retenu dans les exercices.
+- [ ] Gneiss du Pallet (⚠️) : une seule source de niveau 2b restante (la seconde source est retirée) ; le cahier des charges AOC Muscadet Sèvre et Maine (2019, lu) ne nomme pas la roche du Pallet (roches peu altérées, très fracturées) et attribue le gneiss à Goulaine et à Monnières-Saint-Fiacre.
+- [ ] Nombre de crus du Muscadet (⚠️ pour l’avenir) : le cahier des charges AOC Muscadet Sèvre et Maine le plus récent lu (arrêté du 26 novembre 2025) compte 7 dénominations géographiques complémentaires (Château-Thébaud, Clisson, Gorges, Goulaine, Monnières-Saint-Fiacre, Mouzillon-Tillières, Le Pallet) ; La Haie-Fouassière et Vallet ont été mises en consultation publique par l’INAO (25 août-25 octobre 2025), reconnaissance non vérifiée ; le chiffre de 10 crus avancé par certaines sources de presse n’est pas établi ; nombre non retenu dans les exercices.
 - [ ] Amphibolite emblématique du Muscadet (⚠️) : citée parmi les roches du Muscadet (surtout Côtes de Grandlieu), mais le caractère « emblématique » est une appréciation ; les argiles d’altération (montmorillonite) ne sont pas confirmées.
 - [ ] Serpentinite et vigne (⚠️) : richesse en magnésium, pauvreté en calcium, nickel et chrome tirés d’une source écologique générale, non viticole ; le volet potassium du livre (et Troodos, Chypre) n’est pas confirmé ; statut métamorphique de la serpentinite à confirmer par une seconde source.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -684,9 +686,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 184** (p.144) — Châteauneuf-du-Pape : une mosaïque de sols
-- [ ] Secteurs géologiques (⚠️) : sources du syndicat de Châteauneuf, de Wine With Seth, du Département de Vaucluse ; les styles par secteur viennent du livre (Georges Truc), non revérifiés.
+- [ ] Secteurs géologiques (⚠️) : sources du syndicat de Châteauneuf (safres, sables, grès, calcaires crétacés à l’ouest, galets de quartzite sur argile rouge) et du Département de Vaucluse ; les styles par secteur viennent du livre (Georges Truc), non revérifiés.
 - [ ] « Calcaires urgoniens » (⚠️) : terme du livre absent des sources lues, qui parlent de calcaires crétacés (l’Urgonien est un faciès du Crétacé inférieur) ; orientation ouest/est du livre non confirmée telle quelle.
 - [ ] Lampourdier (⚠️) : attesté comme lieu de carrières de sables et calcaires, pas explicitement comme massif géologique ; non repris.
+- [ ] Galets « seul résidu des terrasses », autres roches dissoutes et argiles ferrugineuses (⚠️) : le Syndicat confirme galets de quartzite sur sous-sol d’argile rouge, pas le mécanisme de dissolution ; à confirmer par une source géologique (Vins du Rhône, Département de Vaucluse) ou à retirer de la synthèse.
 
 **Fiche 185** (p.146) — Rationaliser le terroir : l’Unité terroir de base (UTB)
 - [ ] Études de sol commandées par l’INAO dès la fin des années 1930 (⚠️) : Fanet (INAO, IVES) confirme que la délimitation est confiée à des experts extérieurs désignés par le Comité national (géologues, pédologues), mais sans date ; l’INAO date de 1935 et les premières AOC de 1936 ; la date « fin des années 1930 » reste attribuée à Lepeltier.
@@ -694,7 +697,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 186** (p.148) — De l’UTB à l’UTV : cépage, climat du Nouveau Monde et Mendoza
 - [ ] Paraje Altamira : reconnue comme indication géographique par la résolution INV n° 44/2013 (6 décembre 2013, BO du 13 janvier 2014, lue) ; zone étendue en 2017 (résolution E 82/2017) ; le livre place la reconnaissance en 2017 : erreur reportée dans docs/erreurs-du-livre.md.
-- [ ] Cône alluvial du Tunuyán et galets encroûtés de carbonate de calcium : source de niveau 2b seulement (Wine With Seth), le texte de 2017 n’en parle pas.
+- [ ] Cône alluvial du Tunuyán et carbonate de calcium dans les sols (⚠️) : Reginato (2017, niveau 2a) et une fiche technique Zuccardi (producteur, niveau 2b) ; « galets encroûtés de carbonate de calcium » non confirmé, retiré de la synthèse ; les résolutions INV ne décrivent pas les sols.
 - [ ] Raisonnement par le climat dans les pays neufs : Winkler (Davis, 1944) confirmé par une encyclopédie ; la méthode homoclimatique australienne citée par le livre n’est pas vérifiée et n’est pas reprise.
 - [ ] Zuccardi, Parra et la cartographie de Mendoza « depuis 2012 par la faculté de Cuyo » : date non retrouvée, non reprise ; seule la validation des limites d’Altamira par l’UNCuyo et l’INTA est établie.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
@@ -787,12 +790,12 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 202** (p.169) — Conduire la vigne : la planche des tailles
-- [ ] Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, une source décrit une baguette de 6 à 10 yeux et un courson de renouvellement, non repris dans les exercices.
+- [ ] Descriptions des tailles (gobelet, pergola, lyre, Genève, Scott-Henry) (⚠️) : celles du livre (p. 169-170), non recoupées par une seconde source ; Guyot simple : le livre décrit un bras et un courson à 2 yeux, la MSA Alpes-Vaucluse décrit une baguette de 6 à 8 yeux et un courson en attente, non repris dans les exercices.
 - [ ] Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue.
 - [ ] Chiffres de Carbonneau (50 architectures, 250 systèmes, 2007) (⚠️) : non retrouvés, non repris ; seule l’idée d’une dizaine de systèmes dominants est donnée comme position du livre.
 - [ ] Sigle « TMP » (taille mécanique de précision) dans le livre (OCR p. 169-170) (⚠️) : les chroniques de Carbonneau parlent de taille rase de précision (TRP) ; sigle et définition non confirmés, non repris.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-- [ ] Cordon de Royat : un bras horizontal portant 2 à 5 coursons de 2 yeux (⚠️) : description du livre (p. 170) ; la seule autre source lue ne confirme pas le nombre de coursons.
+- [ ] Cordon de Royat : un bras horizontal portant 2 à 5 coursons de 2 yeux (⚠️) : description du livre (p. 170) ; la MSA Alpes-Vaucluse confirme les coursons de 2 yeux mais décrit un cordon à 5-6 coursons (3 par bras sur un double cordon) ; le nombre de coursons du livre n’est pas confirmé.
 - [ ] Silhouettes du schéma (⚠️) : formes simplifiées d’après le livre ; le Guyot simple est dessiné avec une baguette et un courson, forme compatible avec les deux descriptions divergentes.
 
 **Fiche 203** (p.172) — Le fleuve, autoroute du vin : canaux et rivières aménagés
@@ -834,7 +837,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Talence : la limite Pessac/Talence vient du livre ; non retrouvée dans les pages consultées (Millésima, iDealwine)
 - [ ] Croupes de graves protégées par la Garonne : sol de graves sur terrasses de quartz confirmé (Millésima), mais le rôle de protection par la Garonne et la hauteur des croupes ne sont pas confirmés
 - [ ] Taverne de Pontac à Londres : 1666 selon le site du domaine, 1660 selon iDealwine ; divergence non tranchée
-- [ ] Classement des Graves : liste des rouges en 1953, liste complète en 1959 ; sources de niveau 2b seulement (Vinatis, Wine with Seth, iDealwine), source INAO non lue
+- [ ] Classement des Graves : sources de niveau 2b seulement (Vinatis, iDealwine, Berry Bros. & Rudd, Winedoctor) qui divergent : Winedoctor dit établi en 1953 et révisé en 1959, BBR dit 1953 pour rouges et blancs, ratifié en 1958, révision de 1959 ajoutant quatre blancs et deux rouges ; source INAO non lue
 
 **Fiche 210** (p.183) — Moines, notables et premiers classements des climats
 - [ ] Mythe des moines et hiérarchie fixée par les notables (⚠️, une seule source académique, deux textes) : Garcia 2011 (lu) ne trouve pas de climats gallo-romains sur les coteaux, voit une emprise médiévale des domaines de Cluny et de Cîteaux sans hiérarchie des lieux, puis des domaines d’Église passés au XVIIe siècle aux parlementaires et à la noblesse de robe ; Garcia 2020 (lu) attribue la promotion des climats à ces notables dijonnais. Labbé, Jacquet et l’Atlas des climats non lus.
@@ -854,10 +857,10 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] 386 AOC/AOP viticoles et 77 IGP viticoles en 2023 (INAO, chiffres clés) (⚠️) : 366 et 76 en 2022, 363 et 74 en 2020 selon l’INAO ; écart 2022-2023 inexpliqué (changement de décompte ?) ; aucun chiffre 2024 ou 2025 trouvé ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
 
 **Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
-- [ ] Sassicaia 1968 présenté en 1971 (⚠️) : une source (Winewithseth) ; plantation de 1944 et premier millésime familial non confirmés.
+- [ ] Sassicaia 1968 mis sur le marché en 1971 (⚠️) : une source (Tenuta San Guido, producteur ; Gambero Rosso confirme 1968 mais parle d’un accord avec Antinori en 1972) ; plantation de 1944 et premier millésime familial non confirmés.
 - [ ] Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971.
-- [ ] Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour Winewithseth (Belfrage).
-- [ ] IGT 1992, Bolgheri DOC 1994, Sassicaia DOC propre en 2013 (⚠️) : sources de niveau 2 seulement (DoctorWine, Winewithseth).
+- [ ] Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, non recoupé ; « surnom forgé par la presse et le commerce » (explication d’exo) : aucune source retrouvée.
+- [ ] IGT 1992 (⚠️) : DoctorWine seul ; sous-zone Bolgheri-Sassicaia : disciplinare officiel (DM du 5 novembre 1994, modifié par DM du 19 décembre 2013, texte Mipaaf) ; DOC propre en 2013 : Tenuta San Guido (producteur) ; date de la DOC Bolgheri elle-même (1994 dans la fiche) à vérifier, l’article 9 du disciplinare citant un DPR du 1er août 1983.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 216** (p.192) — Lieu contre cépage : deux logiques d’étiquette qui se rapprochent
@@ -942,7 +945,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 238** (p.225) — Jouer avec l’oxygène : élevage réducteur ou oxydatif
 - [ ] Élevage réducteur et thiols (⚠️) : la protection des thiols contre l’oxydation est établie pour le jus et le vin blanc (Handbook of Enology, vol. 1, p. 417-420) ; les odeurs soufrées des lies tassées en grande cuve aussi (p. 439-440) ; le lien direct « élevage réducteur protège les thiols » reste du livre.
-- [ ] Micro-oxygénation attribuée à Patrick Ducournau (⚠️) : deux sites spécialisés (niveau 2b), aucune source officielle ; le Handbook of Enology (vol. 1, p. 341-342) la décrit aussi pendant la fermentation, sans nom d’inventeur ; date et matériel du livre non repris
 - [ ] Répartition de l’entrée d’oxygène (⚠️) : 63 % par les joints, 16 % par le bois et 21 % par la bonde (Vivas et Glories 1997, lu via un article de synthèse et repris par le Handbook of Enology, vol. 2, p. 412 : une même étude) ; les 45 mg/l/an correspondent à une barrique neuve de chêne du Centre à bonde silicone (tableau 13.14), pas à un grain très fin.
 
 **Fiche 239** (p.226) — Le chêne et ses forêts : sessile, pédonculé, américain
@@ -1089,7 +1091,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Nombre de molécules réellement odorantes, 20 à 40 (⚠️) : une seule source (Ferreira et al., synthèse IVES) ; le livre ne le donne pas.
 
 **Fiche 276** (p.265) — Arômes de fermentation et de fût : banane, beurre, coco, vanille
-- [ ] Sotolon (⚠️) : molécule clé des vins botrytisés, des finos et du vin jaune, dont il fait la note de noix (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477 ; vol. 2, p. 64) ; curry et fenugrec d’après une source de vulgarisation ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
+- [ ] Sotolon (⚠️) : molécule clé des vins botrytisés, des finos et du vin jaune, dont il fait la note de noix (Guichard et al. 1992 ; Handbook of Enology, vol. 1, p. 290, 452 et 477 ; vol. 2, p. 64) ; fenugrec et noix d’après Moio et al. (1999, niveau 2a), curry d’après un dictionnaire de caviste (Cavesa, niveau 2b) ; la solérone de Jerez citée par le livre n’est pas confirmée, non reprise.
 - [ ] Acétate d’isoamyle et macération carbonique (⚠️) : affirmation du livre ; le Handbook of Enology (vol. 1, p. 76) confirme l’effet d’une fermentation à froid, mais juge l’origine de l’arôme de macération carbonique encore inconnue (p. 388).
 
 **Fiche 277** (p.268) — Reconnaître un arôme : mémoire, analogie et roue de Noble

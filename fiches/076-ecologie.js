@@ -711,12 +711,12 @@ FICHES.push(
     status: "needs_review",
     to_check: [
       "Asprinio d’Aversa : DOC du 31 juillet 1993 confirmée et tuteurs vivants « généralement des peupliers » jusqu’à une vingtaine de mètres (disciplinare, art. 8) ; ormes et « 10 à 15 m » : une seule source",
-      "Vallée de Cinti : arbres-tuteurs confirmés par une seule source",
+      "Vallée de Cinti : arbres-tuteurs (molle et chañar) confirmés par une seule source (Vinetur, presse spécialisée, niveau 2b)",
       "Vignenvie (Charnay, 2007, 3 ha, Éric Texier) : aucune source fiable lue",
       "Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser",
       "Fosse-Sèche : 15 ha de vigne et 45 ha au total confirmés ; 30 ha (p. 99) contre 18 ha (p. 101) d’aménagement, 4 500 à 5 000 arbres et projet Nature 2050 non vérifiés"
     ],
-    src: "Mille Vignes, P. Lepeltier, p. 99-101 ; Apron and Sneakers, asprinio d’Aversa ; Wine With Seth, Cinti Valley ; Raisin, vignerons de Charnay ; Chambre d’agriculture de l’Aude, gestion du cuivre ; Atlantic Loire Valley, Fosse-Sèche",
+    src: "Mille Vignes, P. Lepeltier, p. 99-101 ; Apron and Sneakers, asprinio d’Aversa ; Vinetur, Valle de Cinti, más de cuatro siglos de vinos bolivianos (2023) ; Raisin, vignerons de Charnay ; Chambre d’agriculture de l’Aude, gestion du cuivre ; Atlantic Loire Valley, Fosse-Sèche",
     page: 100
   },
   {
