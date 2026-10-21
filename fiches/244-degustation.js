@@ -760,8 +760,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Explication du livre par le traitement cérébral de l’olfaction (⚠️) : seul un résumé de l’explication neurocognitive d’Olofsson et Gottfried (2015) a été lu, via un blog universitaire, pas l’article ; la fiche la présente comme l’avis du livre et la nuance par les Jahai (✅, Cognition 2014).","Argument de Joël Candau sur les analogies et les référents communs (⚠️) : l’article de 2005 (titre et année confirmés) n'a pas pu être lu ; la fiche le rapporte d’après le livre."],
-    src: "Mille Vignes, P. Lepeltier, p. 280 ; Majid et Burenhult, Odors are expressible in language, as long as you speak the right language, Cognition 130 (2014) ; ScienceDaily, communiqué du 3 janvier 2014 ; Cambridge English Faculty Cognitive Blog (résumé d’Olofsson et Gottfried, 2015) ; J. Candau, « Vin, arômes, couleurs et descripteurs sensoriels. Quel partage de la dégustation ? » (2005), tel que cité par le livre",
+    to_check: ["Explication du livre par le traitement cérébral de l’olfaction (⚠️) : seul un résumé de l’explication neurocognitive d’Olofsson et Gottfried (2015) a été lu, via un blog universitaire, pas l’article ; la fiche la présente comme l’avis du livre et la nuance par les Jahai (✅, Cognition 2014)."],
+    src: "Mille Vignes, P. Lepeltier, p. 280 ; Majid et Burenhult, Odors are expressible in language, as long as you speak the right language, Cognition 130 (2014) ; ScienceDaily, communiqué du 3 janvier 2014 ; Cambridge English Faculty Cognitive Blog (résumé d’Olofsson et Gottfried, 2015) ; J. Candau, « Vin, arômes, couleurs et descripteurs sensoriels. Quel partage de la dégustation ? » (2005), tel que cité par le livre ; J. Candau, « Vin, arômes, couleurs et descripteurs sensoriels. Quel partage de la dégustation ? », MEI 23, 2005 (HAL-SHS halshs-01756541, lu).",
     page: 280
   },
   {

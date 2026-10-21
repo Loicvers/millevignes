@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-371 fiches : 69 vérifiées, 302 à vérifier (873 points).
+371 fiches : 71 vérifiées, 300 à vérifier (856 points).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -14,7 +14,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Nombres de crus en 1855 (⚠️, non repris) : 58 rouges selon Wine Spectator (4 premiers), 61 aujourd’hui (5 premiers) selon le Conseil 1855 ; pour Sauternes et Barsac, Farr donne 9 premiers et 11 seconds, Wine Spectator 11 et 12 ou 13 : à recouper sur le texte du classement.
 
 **Fiche 5** (p.183) — Le climat bourguignon
-- [ ] Première mention du mot « climat » en 1584 : confirmée à Gevrey-Chambertin (Garcia 2011, lu, d’après Garcia et Labbé ; iDealwine) ; le rattachement au Clos de Bèze (⚠️) ne figure que chez iDealwine (niveau 2b). Garcia fixe le sens viticole au XVIIIe siècle et date de 1676 les premiers vins de climats vendus à Dijon (Chambertin et Clos de Bèze, Garcia 2020).
 - [ ] Climats calés sur la propriété foncière plutôt que sur l’homogénéité physique (⚠️) : thèse du livre ; l’UNESCO décrit au contraire des parcelles délimitées « selon leurs caractéristiques géologiques, hydrographiques et atmosphériques », tout en soulignant leur façonnage par le travail humain et la permanence du cadastre : divergence non tranchée.
 - [ ] Classements savants qui ne reflètent qu’imparfaitement la consommation d’élite, système des équivalences (⚠️) : thèse du livre (p. 184), non recoupée ; la question vrai/faux repose dessus.
 - [ ] Classements du XIXe siècle comme base des appellations (⚠️) : confirmé pour Clos-Vougeot seulement (Pérard et Jacquet 2014 : plan du comité de Beaune de 1860 repris par le syndicat de 1935, appellation officialisée le 31 juillet 1937) ; l’UNESCO indique que beaucoup de climats sont définis par les décrets de 1936. Généralisation à toute la Bourgogne non vérifiée. Morelot (1831) et Lavalle (1855) sont confirmés par Garcia 2011 ; la 1re édition de Jullien (1816) par l’avant-propos de sa 2e édition (1822).
@@ -771,7 +770,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 199** (p.164) — L’architecture vigneronne : cabanes, caves et celliers
 - [ ] Noms régionaux des cabanes de vigne (⚠️) : une seule source (La Passion du Vin, niveau 2b) ; « folie » pour la Touraine non retrouvé ; seule la cadole (✅, deux sources) est reprise.
 - [ ] Typologie de Parain et zones de répartition (⚠️) : source unique et indirecte (Études héraultaises) ; les sources placent aussi le cellier non voûté vers les Pyrénées, le Massif central et la vallée Rhône-Saône, le livre à l’Ouest et au Sud-Ouest.
-- [ ] Référence de 1955 (⚠️) : la source lue décrit un article de Parain dans Arts et traditions populaires (1955), non un livre co-signé Dion ; le livre écrit « Roger Dion puis Charles Parain, dans La Maison vigneronne en France (1955) » ; à recouper avec la bibliographie.
 - [ ] Explication par l’alcool, la fragilité du vin et les 10-12 °C (⚠️) : raisonnement du livre, non recoupé par une autre source ; le livre place le Midi à la fois en cellier voûté en hauteur et en cellier de rez-de-chaussée.
 
 **Fiche 200** (p.166) — Châteaux, chais et grandes caves du négoce
@@ -853,7 +851,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 214** (p.189) — De l’AOC à l’AOP : textes européens, seuils et chiffres
-- [ ] Seuils 100 % (AOP) et 85 % (IGP) de raisins de l’aire (⚠️) : règlement 1308/2013, art. 93, confirmé par deux sources secondaires (IPPT, TheTradeHub) ; EUR-Lex inaccessible aux outils.
 - [ ] 386 AOC/AOP viticoles et 77 IGP viticoles en 2023 (INAO, chiffres clés) (⚠️) : 366 et 76 en 2022, 363 et 74 en 2020 selon l’INAO ; écart 2022-2023 inexpliqué (changement de décompte ?) ; aucun chiffre 2024 ou 2025 trouvé ; le livre cite 363 pour 2019 (vins et eaux-de-vie confondus).
 
 **Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
@@ -924,7 +921,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 234** (p.218) — Le soufre dans le chai : de la mèche hollandaise à l’étiquette
 - [ ] 1487 comme première mention du soufre : deux sites de vulgarisation seulement, date débattue (GuildSomm), aucune source de niveau 1 ou 2a.
 - [ ] Mèche hollandaise : le livre donne 1765, les sources lues l’attestent dès le XVIIe siècle (presse spécialisée et Oxford Companion via CKBK) ; 1765 non retrouvé.
-- [ ] Seuil de 10 mg/l : règlement 1169/2011 annexe II lu via legislation.gov.uk, non relu sur EUR-Lex.
 - [ ] Histoire : le Handbook of Enology (vol. 1, p. 193 et 211) situe l’usage général du SO2 à la fin du XVIIIe siècle et son emploi en vinification au début du XXe, sans dater les premières mentions ni la mèche.
 
 **Fiche 235** (p.219) — Les vins sucrés : concentrer le raisin ou muter
@@ -974,18 +970,16 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Institut d’œnologie de Bordeaux fondé en 1949 par Jean Ribéreau-Gayon (⚠️) : une seule source (The Drinks Business) ; 1949 est aussi l’année du Traité d’œnologie de J. Ribéreau-Gayon (préface du Handbook of Enology), confusion possible ; Oxford Companion situe la station de Gayon vers 1880, et le livre 1874 (non repris ici).
 - [ ] Pasteur chargé en 1863 d’étudier les maladies du vin (⚠️) : une seule source (Institut Pasteur) ; la parution des Études sur le vin en 1866 est confirmée (Handbook of Enology, vol. 1, p. 2 ; Science History Institute).
 - [ ] Chaptal chimiste (⚠️) : une seule source (Oxford Companion to Wine).
-- [ ] Lien ferrocyanure / création du DNO et décret du 20 mai 1955 (⚠️) : une seule source (IFV) ; le rôle personnel de Jean Ribéreau-Gayon dans la validation du ferrocyanure n’apparaît dans aucune source lue.
+- [ ] Lien ferrocyanure / diplôme national d’œnologue (⚠️) : le titre d’œnologue est protégé par la loi n° 55-308 du 19 mars 1955 (visée par les textes en vigueur, Légifrance ; questions écrites à l’Assemblée nationale) ; le « décret du 20 mai 1955 » de l’IFV n’a pas été retrouvé ; le lien avec l’autorisation du ferrocyanure et le rôle personnel de Jean Ribéreau-Gayon restent sur une seule source (IFV).
 - [ ] Terme « peynaudisation » (⚠️) : attesté par Decanter (une source de presse) ; la préface du Handbook of Enology (2006) défend la thèse inverse, sans nivellement de la qualité. Peynaud y apparaît comme coauteur de Ribéreau-Gayon (1947-1982) ; Spurrier et Dovaz (1992) le présentent comme son « premier élève et premier collaborateur ».
 - [ ] Peynaud partisan de peu d’interventions et d’une qualité gagnée au vignoble (⚠️) : citations rapportées par le livre p. 238, source primaire (Le Vin et les Jours) non lue.
 
 **Fiche 246** (p.236) — Soufre et acidité volatile : deux plafonds réglementaires
-- [ ] SO2 bio 100/150 mg/l sous 2 g/l de sucres (⚠️) : deux fiches de certificateurs (Certis, TÜV Nord) citant le règlement (UE) 2021/1165, annexe V D, dont le texte n’a pas pu être lu.
 - [ ] SO2 Demeter 70/90 mg/l sous 5 g/l (⚠️) : cahier des charges Demeter France 2024, une seule source. Biodyvin (cahier des charges lu, non daté) : 80 mg/l pour les rouges et 105 mg/l pour les blancs et rosés jusqu’à 5 g/l de sucres (110 et 135 en élevage de plus de 9 mois), 105 et 130 mg/l au-delà ; moins strict que Demeter.
-- [ ] Seuil de sucres des vins « secs » pour le SO2 conventionnel (⚠️) : 5 g/l dans le droit de l’UE et 4 g/l pour l’OIV, concordants avec le tableau 8.1 du Handbook of Enology (vol. 1, 2006, p. 195), qui donnait alors 160 et 210 mg/l pour l’UE ; texte en vigueur (règlement 2019/934, annexe I partie B) non relu en entier.
 - [ ] Origine historique des limites d’acidité volatile (⚠️) : le décret du 19 août 1921 fixait une limite plus haute (2,5 g/l), abaissée en 1930 puis en 1938 (une seule source, Jacquet, IVES/OIV 2024, qui cite le texte d’origine ; la version consolidée actuelle du décret ne contient plus de chiffre) ; les 18 et 20 meq/l viennent du droit européen ; l’anecdote des maîtres de chai bordelais du livre n’est pas vérifiable.
 
 **Fiche 247** (p.237) — Étiqueter ce qu’il y a dans le vin
-- [ ] Mention des allergènes (sulfites, lait, œuf) (⚠️) : reprise du livre, non recoupée dans la recherche (règlement 1308/2013 art. 119 et textes sur les allergènes non lus) ; aucun exercice n’en dépend.
+- [ ] Mention des allergènes : l’article 119 du règlement 1308/2013 (version consolidée du 18 août 2026, lue) impose la liste des ingrédients du règlement 1169/2011 ; « sulfites » obligatoire au-delà de 10 mg/l (annexe II, point 12, lu) ; le lait et l’œuf (protéines de collage) cités par le livre n’ont pas été relus dans l’annexe II (⚠️).
 
 **Fiche 248** (p.239) — Défaut ou caractère ? Le cas de Cheval Blanc 1947
 - [ ] Habitude, culture et désensibilisation à certains composés (⚠️) : affirmation du livre (p. 243), aucune source lue ne la documente ; seule la variabilité génétique des seuils est confirmée.
@@ -1131,7 +1125,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 286** (p.280) — Odeurs et mots : bien sentir, mal nommer
 - [ ] Explication du livre par le traitement cérébral de l’olfaction (⚠️) : seul un résumé de l’explication neurocognitive d’Olofsson et Gottfried (2015) a été lu, via un blog universitaire, pas l’article ; la fiche la présente comme l’avis du livre et la nuance par les Jahai (✅, Cognition 2014).
-- [ ] Argument de Joël Candau sur les analogies et les référents communs (⚠️) : l’article de 2005 (titre et année confirmés) n'a pas pu être lu ; la fiche le rapporte d’après le livre.
 
 **Fiche 287** (p.281) — Correspondances intermodales : décrire le vin par un autre sens
 - [ ] Dégustation « considérée comme une synesthésie » (⚠️) : le livre affirme un consensus que Spence et Wang (2015) contredisent ; Marks et Mulvenna parlent de « synesthésie faible » ; la fiche retient « correspondances intermodales ».
@@ -1197,7 +1190,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 302** (p.296) — Le chêne-liège : un arbre qu’on écorce sans le tuer, un pays qui le protège
 - [ ] Loi de 1209 (⚠️) : aucune source de niveau 1 ou 2a ne la confirme ; une source décrit une charte locale de Sancho Ier (Castelo Rodrigo) et non une loi nationale, et l’APCOR dit seulement « depuis le Moyen Âge ».
-- [ ] « 33 % de la production » (p. 295) lu comme une part de surface (⚠️) : lecture à confirmer ; les sources lues donnent 34 % des surfaces (APCOR) et environ 50 % de la production.
+- [ ] « 33 % de la production » (p. 295) lu comme une part de surface (⚠️ lecture) : l’étude APCOR 2020 (lue) donne au Portugal 34 % des surfaces de chêne-liège (719 900 ha sur 2,12 millions) et environ 50 % de la production (environ 100 000 t sur 201 000) ; le Maroc 18 % des surfaces, l’Algérie 11 %.
 
 **Fiche 303** (p.296) — La capsule à vis : née en France, adoptée par l’Australie
 - [ ] Part de l’Australie sous capsule (⚠️) : le livre donne 10 % (2004) et 88 % (2013), Halliday environ 25 % et 91 % ; les populations mesurées diffèrent, donc ces chiffres ne se comparent pas.
@@ -1230,10 +1223,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 309** (p.300) — Du rectangle manuscrit à l’étiquette lithographiée
 - [ ] Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre.
-
-**Fiche 311** (p.302) — Château, clos, cru : des mots réservés
-- [ ] « Seules AOP » ou « AOP et IGP » (⚠️) : « Château » et « Clos » figurent comme mentions traditionnelles AOP dans le registre des termes traditionnels (copie britannique d’eAmbrosia), alors qu’economie.gouv.fr et la DREETS ouvrent les noms d’exploitation aux AOP et aux IGP ; le guide professionnel de la DGCCRF contient les deux formulations ; le décret 2012-655 n’a pas été lu directement.
-- [ ] « Hospices » (⚠️) : présent dans la liste des termes interdits aux vins sans IG du guide DREETS Nouvelle-Aquitaine, mais absent de la fiche DGCCRF lue.
 
 **Fiche 312** (p.302) — Mouton Rothschild : l’étiquette d’artiste
 - [ ] Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.
@@ -1276,8 +1265,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 322** (p.311) — Le vin fortifiant et Magnus Huss : naissance de l’alcoolisme
 - [ ] Vin remède de l’alcool fort et fortifiant des classes (⚠️) : thèse du livre, non recoupée.
-- [ ] Remarque « beaucoup d’ivrognes, pas d’alcooliques » (⚠️) : Prestwich l’attribue à un porte-parole anonyme de l’Académie vers 1852 (renvoi à Tournan, 1916) ; auteur non identifié.
-- [ ] Prix remis à Huss, année et académie (⚠️) : 1853 ou 1852, Académie des sciences ou française ; non repris.
+- [ ] Remarque « beaucoup d’ivrognes, pas d’alcooliques » (⚠️) : Prestwich (International Review of Social History, lu) la cite d’après Tournan (1916, p. 101) et l’attribue à un porte-parole non nommé de l’Académie française, en 1852, lors d’un hommage à Magnus Huss ; auteur non identifié.
+- [ ] Hommage à Huss (⚠️) : 1852, Académie française selon Prestwich (une source) ; la nature exacte (prix ou hommage) et l’académie restent à recouper ; non repris.
 
 **Fiche 323** (p.312) — Le choix du verre : hyperspécialisé ou universel
 - [ ] 1958 (⚠️) : premier verre de la future gamme Sommeliers (Bourgogne Grand Cru, de Claus Riedel) selon Wine Spectator et un revendeur, ce qui concorde avec le livre ; sources de presse et de revendeur seulement.
@@ -1295,7 +1284,7 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 
 **Fiche 326** (p.317) — Le repas gastronomique des Français, de l’UNESCO à la gastro-diplomatie
 - [ ] Gastro-diplomatie de Fabius, 2014 (⚠️) : l’opération « Goût de France » est annoncée en août 2014 (Localtis, niveau 2b) ; le lien explicite avec les accords mets-vins n’est pas démontré par la source lue.
-- [ ] Ouvrage dirigé par Pitte (⚠️) : titre exact, co-auteurs et année non confirmés sur une fiche d’éditeur ; aucune question posée.
+- [ ] Ouvrage dirigé par Pitte (⚠️) : « Les Accords mets-vins » (CNRS Éditions), actes des conférences de l’École du Château de Ferrières (novembre 2016), prix Edmond de Rothschild 2017 (Slate ; La Procure) ; sous-titre « un art français » et coauteurs non confirmés sur la fiche éditeur ; aucune question posée.
 
 **Fiche 327** (p.318) — Grimod de La Reynière et Brillat-Savarin : les fondations
 - [ ] Grimod, Manuel des amphitryons, 1808 (⚠️) : une seule source lue (Fondation Napoléon), concordante avec la frise du livre.
@@ -1303,7 +1292,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Papilles et molécules, 2009 (⚠️) : notice BnF concordante, mais fait traité dans la fiche suivante sur Chartier.
 
 **Fiche 328** (p.320) — Le restaurant moderne : portions individuelles et vins au verre
-- [ ] Boulanger, 1765 (⚠️) : tradition non prouvée (Rebecca Spang n’a trouvé aucune trace dans les archives de police, de corporations ou de notaires) ; sources de niveau 2b, Spang non consulté directement.
 - [ ] Cuisiniers de cour au chômage après la Révolution (⚠️) : thèse du livre, source unique.
 
 **Fiche 329** (p.323) — Cartes gastronomiques et gastronomies régionales : de 1809 au Club des Cent
@@ -1312,9 +1300,8 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Analyse de Csergo (⚠️) : reprise du livre, non lue directement.
 
 **Fiche 330** (p.323) — Bourgogne, années 1920-1930 : des accords « éternels » fabriqués
-- [ ] Foire gastronomique de Dijon, 1921 (⚠️) : date donnée par le livre et par un agenda d’événements (niveau 2b) ; Decanter dit seulement « années 1920 ».
 - [ ] Paulée de Meursault, 1923 (⚠️) : une seule source (site de la Paulée, niveau 2b).
-- [ ] Création politique des années 1920-1930 (⚠️) : thèse de Lepeltier appuyée sur Laferté et Jacquet (2013), non lus directement.
+- [ ] Création politique des années 1920-1930 (⚠️ partiel) : appuyée par Jacquet (Cahiers de géographie du Québec, 2013, lu : foire de Dijon créée en 1921 par Gaston Gérard, Paulée de Meursault première « folklorisation », route des vins de Bourgogne en 1937, première de France) ; Laferté non lu ; la route allemande de 1935 n’est confirmée que par une source de niveau 2b.
 - [ ] Michelin, étoiles des années 1930 (⚠️) : création du guide en 1900 confirmée (Michelin) ; répartition régionale des étoiles non vérifiée.
 
 **Fiche 331** (p.326) — Sommelier : du conducteur de bête de somme au service du vin
@@ -1368,12 +1355,11 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] « Homme blanc occidental, buveur historique » et diversité des buveurs (⚠️) : constat de Lepeltier, non sourcé dans le livre ; aucune source indépendante lue.
 
 **Fiche 342** (p.211) — Au-delà de l’alcool : glycérol, succinique, acétaldéhyde, acétique
-- [ ] Part du sucre détournée vers le glycérol (environ 8 %) et glycérol de 5 à 8 g/l (⚠️) : Handbook seul, aucun recoupement trouvé
+- [ ] Part du sucre détournée vers le glycérol, environ 8 % (⚠️) : Handbook seul ; la teneur en glycérol est recoupée : 4 à 9 g/l selon Remize et al. (Applied and Environmental Microbiology, 1999, lu), 5 à 8 g/l selon le Handbook.
 - [ ] Acétaldéhyde « pomme blette, xérès » quand il domine (⚠️) : une seule source (AWRI, Wine flavours, faults and taints) ; le Handbook ne donne pas le descripteur
 - [ ] Lien entre carence en thiamine et composés carbonylés (non repris ici) : Handbook seul
 
 **Fiche 344** (p.212) — Fermentation qui traîne ou qui s’arrête : causes et remèdes
-- [ ] Rôle des acides gras à chaîne courte comme inhibiteurs et des écorces de levure comme remède (⚠️) : Handbook ; la source OSU confirme l’usage des écorces mais pas le mécanisme, et les articles de recoupement (AEM) n’ont pas pu être lus
 - [ ] Densité immobile 24 à 48 h pour confirmer l’arrêt (⚠️) : Handbook seul
 
 **Fiche 345** (p.218) — Les formes du SO2 : libre, combiné, moléculaire
@@ -1408,20 +1394,17 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] Durées de contact (2-20 h en pressoir, 10-36 h en cuve) et proportions de la Provence : issues du Handbook seul, non reprises dans la fiche
 
 **Fiche 352** (p.235) — Enrichir le moût : sucre, moût concentré rectifié, concentration
-- [ ] Plafonds d’enrichissement par zone viticole (⚠️) : le texte d’origine de 2013 du règlement (UE) 1308/2013, annexe VIII, partie I, donne 3 % vol. en zone A, 2 % en zone B et 1,5 % en zone C, plus une concentration limitée à 20 % de volume et à 2 % vol. (la version consolidée en vigueur n’a pas pu être lue, EUR-Lex inaccessible) ; non repris en chiffres dans la synthèse. Les limites de 20 % et 2 % de la concentration sont confirmées par l’OIV (résolution OENO 2/98 et fiche osmose inverse).
 - [ ] Chaptalisation interdite dans le Midi (⚠️) : réponse ministérielle ancienne (Assemblée nationale, 14e législature) citant les cours d’appel du Sud ; aucune version actuelle lue.
 
 **Fiche 353** (p.235) — Corriger l’acidité : acide tartrique, carbonate de calcium, bicarbonate de potassium
 - [ ] Plafonds réglementaires (⚠️) : texte d’origine de 2013, annexe VIII, partie I, section C : acidification jusqu’à 1,5 g/l (en acide tartrique) pour moûts et vins en cours de fermentation, 2,5 g/l pour les vins, désacidification des vins jusqu’à 1 g/l, acidification et désacidification exclusives, acidification et enrichissement exclusifs sauf dérogation. Le Handbook (2006) donne le même cadre. Version consolidée en vigueur non lue (EUR-Lex inaccessible) : aucun chiffre en synthèse ni en exercice.
-- [ ] Acides autorisés pour acidifier (⚠️) : le Handbook et le texte d’origine parlent d’acide tartrique exclusivement ; la liste de 2019/934 (version britannique conservée) mentionne aussi les acides malique et lactique, sans plafond propre. Divergence non tranchée : seule la voie tartrique est décrite ici.
 - [ ] Choix du sel (⚠️) : le Handbook préfère le carbonate de calcium pour les moûts très acides et réserve le bicarbonate aux retouches ; l’AWRI préfère en général le bicarbonate de potassium, le plus doux. Divergence de pratique, signalée seulement par la prudence de la synthèse.
 
 **Fiche 354** (p.236) — Compléments et alternatives au SO2 : ce que chacun ne fait pas
-- [ ] Statuts et plafonds actuels (⚠️) : OIV, sorbate 200 mg/l (en acide sorbique, peu avant la mise), lysozyme 500 mg/l (moût et vin cumulés), acide ascorbique 250 mg/l (vin). Le texte consolidé du règlement 2019/934 n’a pas pu être lu (EUR-Lex inaccessible) : sorbate et lysozyme y figurent au tableau 2 (vu sur la version britannique conservée), le règlement délégué 2024/3085 supprime la condition de 250 mg/l pour l’acide ascorbique au profit du renvoi à l’OIV (jusqu’à 300 mg/l dans le vin) ; date d’application non vérifiée. Aucun chiffre en exercice.
-- [ ] Acide ascorbique sur moût (⚠️) : le Handbook (2006) dit l’usage non autorisé en France et, dans l’UE, limité au vin ; l’OIV l’admet pour les moûts (résolution OENO 11/2001) ; statut actuel dans l’UE non vérifié. Non repris dans la synthèse.
+- [ ] Plafonds actuels (⚠️) : OIV, sorbate 200 mg/l (en acide sorbique), lysozyme 500 mg/l (moût et vin cumulés), acide ascorbique 250 mg/l (vin) ; le règlement délégué (UE) 2019/934 (version consolidée du 29 décembre 2024, lue) autorise sorbate, lysozyme et acide ascorbique (celui-ci aussi sur raisins frais et moûts) sans que la limite chiffrée figure dans le tableau lu ; 250 mg/l pour l’ascorbique d’après la copie britannique du texte.
 
 **Fiche 355** (p.240) — Piqûre lactique, tourne, graisse, amertume : les maladies bactériennes du vin
-- [ ] Tourne et amertume par l’acroléine (⚠️) : mécanismes décrits dans le Handbook seul ; l’ITV France confirme seulement les noms des maladies et la dégradation de l’acide tartrique et la production de composés amers
+- [ ] Tourne (⚠️) : mécanisme (dégradation de l’acide tartrique) décrit par le Handbook et nommé par l’ITV France ; amertume confirmée par deux sources : les bactéries lactiques transforment le glycérol en acroléine, qui se combine aux phénols des rouges (Handbook ; AWRI, Grapegrower & Winemaker 622, 2015).
 - [ ] Graisse : apparition quelques mois après la mise et récupération possible du vin après traitement (⚠️) : Handbook seul ; UC Davis confirme viscosité par glucane et diacétyl chez P. damnosus
 
 **Fiche 356** (p.240) — Les amines biogènes : histamine et consorts
@@ -1436,9 +1419,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 **Fiche 358** (p.225) — Ce que deviennent couleur et tanins d’un rouge en élevage
 - [ ] Assouplissement des tanins (⚠️) : le Handbook l’explique par la polymérisation via l’éthanal, les combinaisons avec anthocyanes, polysaccharides et protéines et la précipitation des plus gros agrégats ; la revue de la Washington State University juge le mécanisme non résolu et évoque aussi une dépolymérisation. Formulé ici avec « en général ». La stabilisation des pigments (pont éthyle, pigments polymères, pyranoanthocyanines orangées) est recoupée (WSU ; Trends in Food Science & Technology 2017, 67, 139-149).
 
-**Fiche 359** (p.232) — La stabilisation tartrique : cristaux, froid et inhibiteurs
-- [ ] CMC (⚠️) : le Handbook (2006) la dit en attente d’autorisation dans l’UE ; l’OIV a adopté une monographie en 2009 (résolution OIV/OENO 366/2009, blancs et effervescents) ; le statut actuel dans l’UE et en France n’a pas été vérifié sur le texte en vigueur (règlement délégué (UE) 2019/934), d’où une formulation limitée à l’OIV.
-
 **Fiche 360** (p.232) — La casse protéique des blancs et la bentonite
 - [ ] Test à 80 °C (⚠️) : le Handbook le juge le plus fiable, l’IFV (Réussir Vigne) le dit trop sévère et propose un test plus doux à 45 °C ; 80 °C est retenu par le Handbook (30 min) et l’AWRI (2 h) ; aucun exercice ne porte sur la température.
 - [ ] Dose à partir de laquelle la bentonite ternit les arômes (⚠️) : le Handbook cite le dépassement de 80 g/hl, l’IFV 50 g/hl ; aucun chiffre n’est donné dans la fiche.
@@ -1452,7 +1432,6 @@ Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas édit
 - [ ] « La filtration clarifie sans stabiliser » : énoncé du Handbook (p. 286, 364) non recoupé par une seconde source.
 
 **Fiche 363** (p.240) — Les casses métalliques : fer et cuivre troublent le vin
-- [ ] Cadre réglementaire du ferrocyanure et du phytate de calcium (⚠️) : le Handbook (2006, p. 99 et 101) décrit l’usage du ferrocyanure en France (blancs, rosés, déclaration préalable, œnologue) ; l’état actuel (règlement délégué (UE) 2019/934, annexe I) n’a pas été vérifié : aucune règle ni dose n’est donnée dans la fiche.
 - [ ] Casse bleue en rouge (⚠️) : le Handbook parle d’un complexe fer-phénols (teinte sombre, reflet noirâtre) ; l’AWRI l’appelle casse bleue (tannate ferrique), rare. Mécanisme concordant, vocabulaire non repris.
 
 **Fiche 364** (p.240) — Le vieillissement atypique des blancs (ATA) : un blanc qui vieillit trop vite
