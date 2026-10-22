@@ -293,7 +293,7 @@ function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en av
   return svg.replace(/<\/svg>\s*$/,`<g class="partenaires">${g}</g></svg>`);
 }
 // Fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
-const partenairesHTML=f=>{const r=f.geo&&f.geo.region;const l=r?partenaires.filter(p=>p.region===r):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<div class="mnemo"><span class="m-lbl">Mes partenaires</span>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</div>`:'';};
+const partenairesHTML=f=>{const r=f.geo&&f.geo.region;const l=r?partenaires.filter(p=>p.region===r):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<details class="mnemo partenaires-liste"><summary class="m-lbl">Mes partenaires (${l.length})</summary>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</details>`:'';};
 const schemaHTML=f=>f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;

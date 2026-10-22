@@ -267,3 +267,5 @@
   .ex-crit .prog-check{min-height:44px;margin-top:0}
   textarea.ex-input[readonly]{background:var(--paper2)}
   .ex-crit input{flex:none}
+
+  .partenaires-liste>summary{cursor:pointer;min-height:32px;display:flex;align-items:center;list-style:none;margin-bottom:0}.partenaires-liste>summary::-webkit-details-marker{display:none}.partenaires-liste[open]>summary{margin-bottom:3px}.partenaires-liste>summary::before{content:"▸";margin-right:6px}.partenaires-liste[open]>summary::before{content:"▾"}
