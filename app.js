@@ -256,7 +256,17 @@ function fitSvg(svg){
   }
   fitCache.set(svg,out);return out;
 }
-const schemaHTML=f=>f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(f.schema.svg)}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
+/* ============ MES PARTENAIRES (fichier privé importé, gardé dans ce navigateur seulement) ============ */
+const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
+const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+// Points des partenaires posés sur la carte d'une fiche (coordonnées calculées à la préparation du fichier, par fiche).
+function avecPartenaires(f,svg){
+  const pts=partenaires.filter(p=>p.points&&p.points[f.id]);if(!pts.length)return svg;
+  const g=pts.map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"/><text x="${+x+5}" y="${+y+3}" font-size="7.5" fill="currentColor">${escH(p.nom)}</text>`;}).join('');
+  return svg.replace(/<\/svg>\s*$/,`<g class="partenaires">${g}</g></svg>`);
+}
+const partenairesHTML=f=>{const r=f.geo&&f.geo.region;const l=r?partenaires.filter(p=>p.region===r):[];return l.length?`<div class="mnemo"><span class="m-lbl">Mes partenaires</span>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</div>`:'';};
+const schemaHTML=f=>f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}
@@ -293,6 +303,7 @@ function card(f){
     ${schemaHTML(f)}
     ${coursHTML(f.cours)}
     ${chkList}${selon}
+    ${partenairesHTML(f)}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>
     <div class="flash-hint">Flashcard — touche pour retourner</div>
     <div class="flash" tabindex="0" role="button" aria-label="Retourner la flashcard"><div class="flash-in"><div class="flash-face flash-front">${f.flash.q}</div><div class="flash-face flash-back">${f.flash.a}</div></div></div>
@@ -747,3 +758,16 @@ document.getElementById('importProg').onchange=async e=>{
   saveProg();updateBadges();render();
 };
 document.getElementById('resetAll').onclick=()=>{if((prompt('Cela efface toute ta progression de mémorisation, sans retour possible. Pense d\'abord à la sauvegarder.\n\nPour confirmer, tape EFFACER :')||'').trim()==='EFFACER'){prog={};save();lues={};saveLues();updateBadges();render();}};
+
+// Import du fichier privé de partenaires préparé par Claude (jamais publié dans le dépôt).
+document.getElementById('partBtn').onclick=()=>document.getElementById('partFile').click();
+document.getElementById('partFile').onchange=async e=>{
+  const file=e.target.files[0];e.target.value='';if(!file)return;
+  let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
+  const l=data&&data.app==='millevignes-partenaires'&&Array.isArray(data.partenaires)&&data.partenaires;
+  const ok=l&&l.every(p=>p&&typeof p.nom==='string'&&p.nom.length<=120&&(!p.points||Object.values(p.points).every(v=>Array.isArray(v)&&v.length===2&&v.every(Number.isFinite))));
+  if(!ok){alert('Ce fichier n\'est pas un fichier de partenaires Mille Vignes.');return;}
+  if(!confirm(`Importer ${l.length} partenaire(s) ? Ils restent dans ce navigateur seulement et remplacent la liste actuelle (${partenaires.length}).`))return;
+  partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
+  fitCache.clear();render();
+};
