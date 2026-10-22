@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 497 (dernier id : 497) · exercices : 2430
 - Vérifiées : 279 · à vérifier : 218 (339 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 952
 - Niveaux : Fondamental 162 · Intermédiaire 228 · Pointu 107
-- Cours (Approfondir) : 58 · schémas : 72
+- Cours (Approfondir) : 58 · schémas : 75
 - Lexique : 14 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -25,7 +25,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 0 |
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 0 |
 | fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 0 |
-| fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 0 |
+| fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 1 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 1 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 0 |
@@ -41,7 +41,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-provence-appellations.js | 3 | 489–491 | hors livre | 3 | 0 | 0 |
 | fr-provence.js | 1 | 419–419 | hors livre | 0 | 0 | 0 |
 | fr-rhone-appellations.js | 13 | 434–446 | hors livre | 13 | 0 | 0 |
-| fr-rhone.js | 2 | 415–416 | hors livre | 2 | 0 | 0 |
+| fr-rhone.js | 2 | 415–416 | hors livre | 2 | 0 | 2 |
 | fr-roussillon-appellations.js | 3 | 481–483 | hors livre | 3 | 0 | 0 |
 | fr-roussillon.js | 1 | 418–418 | hors livre | 1 | 0 | 0 |
 | fr-savoie-appellations.js | 2 | 494–495 | hors livre | 2 | 0 | 0 |
