@@ -33,12 +33,14 @@
   {
    "label": "Juliénas",
    "deps": [
-    "69"
+    "69",
+    "71"
    ],
    "communes": [
     "Juliénas",
     "Jullié",
-    "Émeringes"
+    "Émeringes",
+    "Pruzilly"
    ],
    "pos": [
     -22,
@@ -129,7 +131,8 @@
     "69"
    ],
    "communes": [
-    "Régnié-Durette"
+    "Régnié-Durette",
+    "Lantignié"
    ],
    "pos": [
     -24,

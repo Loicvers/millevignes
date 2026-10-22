@@ -12,7 +12,8 @@ const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().repla
 const communes = {};
 for (const d of cfg.deps) for (const f of JSON.parse(fs.readFileSync(`${GEO}/c${d}.geojson`)).features) communes[d + ":" + norm(f.properties.nom)] = f.geometry;
 const polys = g => g.type === "Polygon" ? [g.coordinates] : g.coordinates;
-const find = (name, ds = cfg.deps) => { for (const d of ds) { const g = communes[d + ":" + norm(name)]; if (g) return g; } console.error("MANQUANT", name); return null; };
+const find = (name, ds = cfg.deps) => { if (name.includes("|")) [name, ds] = [name.split("|")[0], [name.split("|")[1]]]; // "Nom|dép" pour une commune homonyme
+  for (const d of ds) { const g = communes[d + ":" + norm(name)]; if (g) return g; } console.error("MANQUANT", name); return null; };
 
 const terre = cfg.clipDep ? JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => cfg.clipDep.includes(f.properties.code)).map(f => polys(f.geometry)) : null;
 const depGeo = c => JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => c.includes(f.properties.code)).flatMap(f => polys(f.geometry));

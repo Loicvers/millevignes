@@ -18,24 +18,27 @@
     "2B"
    ],
    "communes": [
-    "Rogliano",
-    "Ersa",
-    "Centuri",
-    "Morsiglia",
-    "Pino",
-    "Luri",
-    "Cagnano",
     "Barrettali",
+    "Brando",
+    "Cagnano",
     "Canari",
+    "Centuri",
+    "Ersa",
+    "Luri",
+    "Meria",
+    "Morsiglia",
     "Nonza",
-    "Olmeta-di-Capocorso",
     "Ogliastro",
     "Olcani",
-    "Sisco",
+    "Olmeta-di-Capocorso",
     "Pietracorbara",
-    "Brando",
+    "Pino",
+    "Rogliano",
+    "San-Martino-di-Lota",
+    "Santa-Maria-di-Lota",
+    "Sisco",
     "Tomino",
-    "Meria"
+    "Ville-di-Pietrabugno"
    ]
   },
   {
@@ -59,20 +62,38 @@
     "2B"
    ],
    "communes": [
-    "Calvi",
-    "Calenzana",
-    "Lumio",
-    "Montegrosso",
-    "Zilia",
+    "Algajola",
     "Aregno",
     "Avapessa",
+    "Belgodère",
+    "Calenzana",
+    "Calvi",
     "Cateri",
-    "Lavatoggio",
-    "Algajola",
-    "Sant'Antonino",
     "Corbara",
+    "Costa",
+    "Feliceto",
+    "Galéria",
+    "L'Île-Rousse",
+    "Lama",
+    "Lavatoggio",
+    "Lumio",
+    "Manso",
+    "Moncale",
+    "Montegrosso",
     "Monticello",
-    "Santa-Reparata-di-Balagna"
+    "Muro",
+    "Nessa",
+    "Novella",
+    "Occhiatana",
+    "Palasca",
+    "Pietralba",
+    "Pigna",
+    "Sant'Antonino",
+    "Santa-Reparata-di-Balagna",
+    "Speloncato",
+    "Urtaca",
+    "Ville-di-Paraso",
+    "Zilia"
    ]
   },
   {
@@ -102,19 +123,42 @@
     "2A"
    ],
    "communes": [
+    "Afa",
     "Ajaccio",
     "Alata",
-    "Afa",
+    "Albitreccia",
+    "Ambiegna",
     "Appietto",
+    "Arbori",
+    "Arro",
     "Bastelicaccia",
+    "Calcatoggio",
+    "Cannelle",
+    "Carbuccia",
+    "Cargèse",
+    "Casaglione",
+    "Casalabriva",
+    "Cauro",
+    "Coggia",
+    "Cognocoli-Monticchi",
+    "Coti-Chiavari",
     "Cuttoli-Corticchiato",
     "Eccica-Suarella",
+    "Grosseto-Prugna",
+    "Ocana",
     "Peri",
+    "Piana",
+    "Pietrosella",
+    "Pila-Canale",
+    "Sant'Andréa-d'Orcino",
+    "Sari-d'Orcino",
     "Sarrola-Carcopino",
-    "Villanova",
+    "Serra-di-Ferro",
     "Tavaco",
     "Valle-di-Mezzana",
-    "Grosseto-Prugna"
+    "Vero",
+    "Vico",
+    "Villanova"
    ]
   },
   {
@@ -123,18 +167,22 @@
     "2A"
    ],
    "communes": [
-    "Sartène",
-    "Propriano",
-    "Grossa",
-    "Bilia",
-    "Granace",
-    "Foce",
-    "Giuncheto",
-    "Belvédère-Campomoro",
-    "Olmeto",
-    "Viggianello",
     "Arbellara",
-    "Fozzano"
+    "Belvédère-Campomoro",
+    "Bilia",
+    "Fozzano",
+    "Granace",
+    "Grossa",
+    "Giuncheto",
+    "Loreto-di-Tallano",
+    "Mela",
+    "Olmeto",
+    "Olmiccia",
+    "Propriano",
+    "Sainte-Lucie-de-Tallano",
+    "Sartène",
+    "Sollacaro",
+    "Viggianello"
    ]
   },
   {
@@ -144,9 +192,8 @@
    ],
    "communes": [
     "Figari",
-    "Pianottoli-Caldarello",
     "Monacia-d'Aullène",
-    "Sotta"
+    "Pianottoli-Caldarello"
    ]
   },
   {
@@ -155,8 +202,14 @@
     "2A"
    ],
    "communes": [
+    "Bonifacio",
+    "Conca",
+    "Lecci",
     "Porto-Vecchio",
-    "Lecci"
+    "San-Gavino-di-Carbini",
+    "Sari-Solenzara",
+    "Sotta",
+    "Zonza"
    ]
   }
  ],

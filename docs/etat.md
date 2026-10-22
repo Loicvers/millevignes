@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 497 (dernier id : 497) · exercices : 2430
 - Vérifiées : 279 · à vérifier : 218 (339 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 952
 - Niveaux : Fondamental 162 · Intermédiaire 228 · Pointu 107
-- Cours (Approfondir) : 58 · schémas : 90
+- Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 14 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -46,5 +46,5 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-roussillon.js | 1 | 418–418 | hors livre | 1 | 0 | 1 |
 | fr-savoie-appellations.js | 2 | 494–495 | hors livre | 2 | 0 | 0 |
 | fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 1 |
-| fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 0 |
+| fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |

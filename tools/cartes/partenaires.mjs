@@ -45,6 +45,6 @@ const cartes = loadFichesJs("fiches.js").FICHES.filter(f => f.source === "france
 const partenaires = liste.map(p => {
   const ll = commune(p.communeGeo ?? p.commune, p.dep), points = {};
   for (const c of cartes) { const [x, y] = c.proj(ll); if (x >= 0 && y >= 0 && x <= c.W && y <= c.H) points[c.id] = [+x.toFixed(1), +y.toFixed(1)]; }
-  return { nom: p.nom, commune: p.commune, region: p.region, appellations: p.appellations, points };
+  return { nom: p.nom, commune: p.commune, region: p.region, appellations: p.appellations, ll: ll.map(v => +v.toFixed(5)), points }; // ll : recalcul côté site si une carte change de cadrage
 });
 process.stdout.write(JSON.stringify({ app: "millevignes-partenaires", version: 1, partenaires }, null, 1) + "\n");

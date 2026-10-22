@@ -83,8 +83,7 @@
     "Billième",
     "Lucey",
     "Yenne",
-    "Saint-Jean-de-Chevelu",
-    "Traize"
+    "Saint-Jean-de-Chevelu"
    ]
   },
   {
@@ -119,9 +118,9 @@
     "Saint-Jeoire-Prieuré",
     "Fréterive",
     "Montmélian",
-    "Saint-Pierre-de-Soucy",
     "Francin",
-    "Chignin"
+    "Chignin",
+    "Saint-Pierre-d'Albigny"
    ],
    "pos": [
     24,
@@ -149,9 +148,14 @@
     "Ambérieu-en-Bugey",
     "Vaux-en-Bugey",
     "Lagnieu",
-    "Seillonnaz",
-    "Bettant"
-   ]
+    "Seillonnaz"
+   ],
+   "pos": [
+    -18,
+    4,
+    "end"
+   ],
+   "trait": true
   }
  ],
  "villes": [

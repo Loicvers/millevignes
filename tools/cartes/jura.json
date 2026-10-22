@@ -8,7 +8,7 @@
  "marges": [
   0.3,
   0.04,
-  0.15,
+  0.3,
   0.04
  ],
  "largeur": 220,
@@ -109,24 +109,18 @@
     "Montholier",
     "Grozon",
     "Buvilly",
-    "Chamole",
     "Miéry",
-    "Barretaine",
     "Toulouse-le-Château",
     "Le Louverot",
     "Saint-Germain-lès-Arlay",
     "Bréry",
-    "Saizenay",
     "Salins-les-Bains",
-    "Vertamboz",
     "Perrigny",
     "Macornay",
     "Chilly-le-Vignoble",
-    "Courlaoux",
     "Montmorot",
     "Saint-Amour",
-    "Balanod",
-    "Graye-et-Charnay"
+    "Balanod"
    ],
    "pos": [
     -16,

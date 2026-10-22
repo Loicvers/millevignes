@@ -284,10 +284,12 @@ const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(local
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
 function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en avant (onglet Cartes), nom écrit sur la carte
-  const pts=partenaires.filter(p=>p.points&&p.points[f.id]);if(!pts.length)return svg;
+  const pj=(svg.match(/data-proj="([^"]+)"/)||[])[1]?.split(',').map(Number),vb=(svg.match(/viewBox="([^"]+)"/)||[])[1]?.split(/[ ,]+/).map(Number);
+  const pos=p=>{if(pj&&p.ll){const[x0,y1,k,s]=pj,x=(p.ll[0]-x0)*k*s,y=(y1-p.ll[1])*s;return x>=0&&y>=0&&x<=vb[2]&&y<=vb[3]?[+x.toFixed(1),+y.toFixed(1)]:null;}return p.points?.[f.id];}; // ll : suit la carte même si son cadrage a changé
+  const pts=partenaires.filter(p=>pos(p));if(!pts.length)return svg;
   const W=+(svg.match(/viewBox="[^"]*?[ ,]+[^ ,"]+[ ,]+([\d.]+)/)||[,400])[1],fs=Math.max(8,W/45);
-  const g=pts.map(p=>{const[x,y]=p.points[f.id];if(hl&&hl.has(p.nom))return '';return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"><title>${escH(p.nom)}</title></circle>`;}).join('')
-    +pts.filter(p=>hl&&hl.has(p.nom)).map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="${fs*.6}" fill="#8b1e3f" stroke="#fff" stroke-width="1.5"><title>${escH(p.nom)}</title></circle><text x="${+x+fs*.9}" y="${+y+fs*.35}" font-size="${fs}" font-weight="700" fill="#8b1e3f" stroke="#fff" stroke-width="3" paint-order="stroke">${escH(p.nom)}</text>`;}).join('');
+  const g=pts.map(p=>{const[x,y]=pos(p);if(hl&&hl.has(p.nom))return '';return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"><title>${escH(p.nom)}</title></circle>`;}).join('')
+    +pts.filter(p=>hl&&hl.has(p.nom)).map(p=>{const[x,y]=pos(p);return `<circle cx="${+x}" cy="${+y}" r="${fs*.6}" fill="#8b1e3f" stroke="#fff" stroke-width="1.5"><title>${escH(p.nom)}</title></circle><text x="${+x+fs*.9}" y="${+y+fs*.35}" font-size="${fs}" font-weight="700" fill="#8b1e3f" stroke="#fff" stroke-width="3" paint-order="stroke">${escH(p.nom)}</text>`;}).join('');
   return svg.replace(/<\/svg>\s*$/,`<g class="partenaires">${g}</g></svg>`);
 }
 // Fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.

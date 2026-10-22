@@ -82,13 +82,11 @@
     "Fleys",
     "Fontenay-près-Chablis",
     "La Chapelle-Vaupelteigne",
-    "Lichères-près-Aigremont",
     "Ligny-le-Châtel",
     "Lignorelles",
     "Maligny",
     "Poilly-sur-Serein",
     "Préhy",
-    "Saint-Cyr-les-Colons",
     "Villy",
     "Viviers"
    ],
@@ -109,7 +107,6 @@
     "Chitry",
     "Coulanges-la-Vineuse",
     "Vincelottes",
-    "Vincelles",
     "Escolives-Sainte-Camille",
     "Jussy",
     "Val-de-Mercy",
@@ -148,11 +145,8 @@
     "Obtrée",
     "Larrey",
     "Bouix",
-    "Cérilly",
     "Montliot-et-Courcelles",
-    "Étrochey",
     "Belan-sur-Ource",
-    "Prusly-sur-Ource",
     "Gomméville",
     "Griselles"
    ],
@@ -267,7 +261,8 @@
     "Jully-lès-Buxy",
     "Saint-Vallerin",
     "Saint-Denis-de-Vaux",
-    "Mellecey"
+    "Mellecey",
+    "Chagny"
    ],
    "deps": [
     "71"
@@ -370,7 +365,7 @@
  "marges": [
   0.2,
   0.08,
-  0.35,
+  0.6,
   0.06
  ],
  "textes": [

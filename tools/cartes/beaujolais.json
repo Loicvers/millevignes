@@ -38,7 +38,9 @@
     "Charentay",
     "Odenas",
     "Quincié-en-Beaujolais",
-    "Saint-Étienne-la-Varenne"
+    "Saint-Étienne-la-Varenne",
+    "Lantignié",
+    "Pruzilly"
    ],
    "opacite": 0.38,
    "pos": [
@@ -50,30 +52,29 @@
   {
    "label": "Beaujolais-Villages",
    "deps": [
-    "69",
-    "71"
+    "71",
+    "69"
    ],
    "communes": [
-    "Lantignié",
+    "Les Ardillats",
     "Beaujeu",
-    "Vaux-en-Beaujolais",
-    "Le Perréon",
-    "Saint-Étienne-des-Oullières",
-    "Salles-Arbuissonnas-en-Beaujolais",
-    "Lancié",
-    "Corcelles-en-Beaujolais",
-    "Marchampt",
-    "Vauxrenard",
-    "Leynes",
-    "Chânes",
-    "Saint-Symphorien-d'Ancelles",
-    "Pruzilly",
-    "Chaintré",
-    "Saint-Julien",
     "Blacé",
+    "Denicé",
+    "Lancié",
+    "Marchampt",
     "Montmelas-Saint-Sorlin",
+    "Le Perréon",
+    "Rivolet",
     "Saint-Didier-sur-Beaujeu",
-    "Les Ardillats"
+    "Saint-Étienne-des-Oullières",
+    "Saint-Julien",
+    "Salles-Arbuissonnas-en-Beaujolais",
+    "Vaux-en-Beaujolais",
+    "Vauxrenard",
+    "Chânes",
+    "Leynes",
+    "Saint-Symphorien-d'Ancelles",
+    "Saint-Vérand"
    ],
    "opacite": 0.22,
    "pos": [
@@ -85,7 +86,8 @@
   {
    "label": "Beaujolais",
    "deps": [
-    "69"
+    "69",
+    "71"
    ],
    "communes": [
     "Theizé",
@@ -105,11 +107,9 @@
     "Anse",
     "Pommiers",
     "Gleizé",
-    "Denicé",
     "Lacenas",
     "Cogny",
     "Arnas",
-    "Rivolet",
     "Jarnioux",
     "Frontenas",
     "Moiré",
@@ -122,9 +122,13 @@
     "Belmont-d'Azergues",
     "Chazay-d'Azergues",
     "Lozanne",
-    "Civrieux-d'Azergues",
-    "Les Chères",
-    "Quincieux"
+    "Belleville",
+    "Saint-Jean-d'Ardières",
+    "Saint-Georges-de-Reneins",
+    "Limas",
+    "Corcelles-en-Beaujolais",
+    "Chaintré",
+    "Crêches-sur-Saône"
    ],
    "opacite": 0.12,
    "pos": [
