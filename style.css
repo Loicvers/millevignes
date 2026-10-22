@@ -243,7 +243,7 @@
     .sup-quiz{break-before:page}.sup-quiz h2{font-family:'Cormorant',serif;font-size:18pt;margin-bottom:8pt}
     .sup-quiz>ol>li{margin:0 0 10pt 14pt;break-inside:avoid}.sup-opts{list-style:lower-alpha;margin-left:16pt}.sup-line{margin-top:6pt}
   }
-  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 4px}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*{width:100%}.ex-actions .later{margin-left:0}}
+  @media(max-width:560px){.brand{font-size:25px}.grid{grid-template-columns:1fr}.tab{font-size:12px;padding:11px 3px;letter-spacing:0}.tabs{overflow-x:auto}.tab .long{display:none}.filt-act{flex-direction:column;width:100%}.filt-act>*{width:100%}.ex-actions .later{margin-left:0}}
   .tab{white-space:nowrap}
   .stat-line{margin-bottom:10px}
   .suivi{max-width:560px;margin:0 auto}

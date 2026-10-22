@@ -114,7 +114,7 @@ document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs
 
 /* ============ TABS ============ */
 function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'||m==='suivi'?'none':'block';render();}
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -131,6 +131,7 @@ function render(){
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
   if(mode==='suivi')return renderSuivi();
+  if(mode==='cartes')return renderCartes();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
   document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
   const list=FICHES.filter(matches);
@@ -170,6 +171,28 @@ function renderSuivi(){
   ];
   const h=el('h2','suivi-t','Mon suivi');grid.append(h,el('p','suivi-note','Chiffres indicatifs : un seul utilisateur, aucune preuve. Ils servent à te repérer, pas à te noter.'));
   rows.forEach(([l,v,d])=>{const c=el('div','suivi-row');c.append(el('div','suivi-l',l),el('div','suivi-v',v),el('p','suivi-d',d));grid.append(c);});
+}
+/* ============ CARTES (toutes les cartes de régions, pour situer un domaine devant un client) ============ */
+let carteQuery='';
+const CARTES=FICHES.filter(f=>f.source==='france'&&/viewBox="/.test(f.schema?.svg??'')).sort((a,b)=>!a.geo?.region?-1:!b.geo?.region?1:a.geo.region.localeCompare(b.geo.region,'fr')||a.id-b.id);
+function renderCartes(){
+  document.getElementById('introLine').textContent=partenaires.length?'Cherche un domaine, une commune, une appellation ou une région : la carte s’affiche avec le domaine en évidence. Touche une carte pour l’agrandir.':'Toutes les cartes des régions. Touche une carte pour l’agrandir. Importe tes partenaires (bas de page) pour les y voir.';
+  document.getElementById('progPanel').hidden=true;
+  grid.className='lexique';grid.innerHTML='';
+  const q=el('input','ex-input');q.type='search';q.placeholder=partenaires.length?'Domaine, commune, appellation ou région':'Région ou appellation';q.setAttribute('aria-label','Chercher une carte');q.value=carteQuery;
+  const list=el('div');
+  const draw=()=>{list.innerHTML='';const n=normalize(carteQuery);
+    const hits=n?partenaires.filter(p=>normalize([p.nom,p.commune,p.region,...(p.appellations||[])].join(' ')).includes(n)):[];
+    const hl=new Set(hits.map(p=>p.nom));
+    const vues=!n?CARTES:hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
+    vues.forEach(f=>{const d=el('div','card lex');
+      d.append(el('h3',null,f.geo?.region||'France'),el('p','src',f.titre));
+      d.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`+(hits.length?'':partenairesHTML(f)));
+      const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);list.append(d);});
+    if(hits.length)list.prepend(el('p','suivi-note',hits.map(p=>p.nom+(p.commune?' ('+p.commune+')':'')+(p.appellations?.length?' — '+p.appellations.join(', '):'')).join(' ; ')));
+    if(!vues.length)list.append(el('p','empty','Aucune carte ne correspond.'));};
+  q.oninput=()=>{carteQuery=q.value;draw();};
+  grid.append(q,list);draw();
 }
 /* ============ LEXIQUE ============ */
 let lexQuery='';
@@ -260,9 +283,11 @@ function fitSvg(svg){
 const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
-function avecPartenaires(f,svg){
+function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en avant (onglet Cartes), nom écrit sur la carte
   const pts=partenaires.filter(p=>p.points&&p.points[f.id]);if(!pts.length)return svg;
-  const g=pts.map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"><title>${escH(p.nom)}</title></circle>`;}).join('');
+  const W=+(svg.match(/viewBox="[^"]*?[ ,]+[^ ,"]+[ ,]+([\d.]+)/)||[,400])[1],fs=Math.max(8,W/45);
+  const g=pts.map(p=>{const[x,y]=p.points[f.id];if(hl&&hl.has(p.nom))return '';return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"><title>${escH(p.nom)}</title></circle>`;}).join('')
+    +pts.filter(p=>hl&&hl.has(p.nom)).map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="${fs*.6}" fill="#8b1e3f" stroke="#fff" stroke-width="1.5"><title>${escH(p.nom)}</title></circle><text x="${+x+fs*.9}" y="${+y+fs*.35}" font-size="${fs}" font-weight="700" fill="#8b1e3f" stroke="#fff" stroke-width="3" paint-order="stroke">${escH(p.nom)}</text>`;}).join('');
   return svg.replace(/<\/svg>\s*$/,`<g class="partenaires">${g}</g></svg>`);
 }
 // Fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
