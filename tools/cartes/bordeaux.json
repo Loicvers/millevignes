@@ -1,0 +1,350 @@
+{
+ "deps": [
+  "33"
+ ],
+ "fleuves": [
+  "Garonne",
+  "Dordogne"
+ ],
+ "marges": [
+  0.15,
+  0.08,
+  0.12,
+  0.06
+ ],
+ "zones": [
+  {
+   "label": "Médoc",
+   "communes": [
+    "Saint-Yzans-de-Médoc",
+    "Couquèques",
+    "Ordonnac",
+    "Blaignan",
+    "Saint-Germain-d'Esteuil",
+    "Bégadan",
+    "Saint-Christoly-Médoc",
+    "Civrac-en-Médoc",
+    "Valeyrac",
+    "Prignac-en-Médoc",
+    "Lesparre-Médoc",
+    "Gaillan-en-Médoc",
+    "Queyrac",
+    "Jau-Dignac-et-Loirac",
+    "Vensac"
+   ]
+  },
+  {
+   "label": "Haut-Médoc",
+   "communes": [
+    "Saint-Seurin-de-Cadourne",
+    "Vertheuil",
+    "Cissac-Médoc",
+    "Saint-Estèphe",
+    "Pauillac",
+    "Saint-Julien-Beychevelle",
+    "Saint-Laurent-Médoc",
+    "Saint-Sauveur",
+    "Cussac-Fort-Médoc",
+    "Lamarque",
+    "Arcins",
+    "Listrac-Médoc",
+    "Moulis-en-Médoc",
+    "Soussans",
+    "Margaux-Cantenac",
+    "Arsac",
+    "Labarde",
+    "Macau",
+    "Ludon-Médoc",
+    "Le Pian-Médoc",
+    "Parempuyre",
+    "Blanquefort",
+    "Le Taillan-Médoc",
+    "Avensan",
+    "Castelnau-de-Médoc"
+   ]
+  },
+  {
+   "label": "Graves",
+   "communes": [
+    "Pessac",
+    "Talence",
+    "Léognan",
+    "Martillac",
+    "Saint-Médard-d'Eyrans",
+    "Cadaujac",
+    "Villenave-d'Ornon",
+    "Gradignan",
+    "Portets",
+    "Arbanats",
+    "Virelade",
+    "Podensac",
+    "Illats",
+    "Cérons",
+    "Landiras",
+    "Budos",
+    "Pujols-sur-Ciron",
+    "Saint-Pierre-de-Mons",
+    "Langon",
+    "Toulenne",
+    "Saint-Morillon",
+    "Saint-Selve",
+    "Castres-Gironde",
+    "Beautiran",
+    "Ayguemorte-les-Graves",
+    "La Brède",
+    "Roaillan"
+   ],
+   "pos": [
+    -22,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Sauternais",
+   "communes": [
+    "Sauternes",
+    "Barsac",
+    "Bommes",
+    "Fargues",
+    "Preignac"
+   ],
+   "pos": [
+    -4,
+    26,
+    "middle"
+   ]
+  },
+  {
+   "label": "Entre-deux-Mers",
+   "communes": [
+    "Créon",
+    "Sadirac",
+    "Lignan-de-Bordeaux",
+    "Camblanes-et-Meynac",
+    "Quinsac",
+    "Langoiran",
+    "Tabanac",
+    "Cadillac",
+    "Loupiac",
+    "Sainte-Croix-du-Mont",
+    "Saint-Macaire",
+    "Verdelais",
+    "Targon",
+    "Cessac",
+    "Frontenac",
+    "Sauveterre-de-Guyenne",
+    "Rauzan",
+    "Branne",
+    "Grézillac",
+    "Génissac",
+    "Moulon",
+    "Saint-Germain-du-Puch",
+    "Espiet",
+    "Tizac-de-Curton",
+    "Daignac",
+    "Dardenac",
+    "Blésignac",
+    "Baron",
+    "Croignon",
+    "Cursan",
+    "Haux",
+    "Capian",
+    "Villenave-de-Rions",
+    "Rions",
+    "Paillet",
+    "Lestiac-sur-Garonne",
+    "Escoussans",
+    "Soulignac",
+    "Saint-Genis-du-Bois",
+    "Mauriac",
+    "Blasimon",
+    "Pellegrue",
+    "Monségur",
+    "Saint-Ferme",
+    "Castelviel",
+    "Gornac",
+    "Arbis",
+    "Ladaux",
+    "Omet",
+    "Donzac",
+    "Monprimblanc",
+    "Gabarnac",
+    "Saint-Pierre-de-Bat",
+    "Sallebœuf",
+    "Pompignac",
+    "Fargues-Saint-Hilaire",
+    "Carignan-de-Bordeaux",
+    "Bonnetan",
+    "Loupes",
+    "Saint-Quentin-de-Baron",
+    "Nérigean",
+    "Saint-Pey-de-Castets",
+    "Pujols",
+    "Civrac-sur-Dordogne",
+    "Mouliets-et-Villemartin",
+    "Saint-Jean-de-Blaignac",
+    "Cabara",
+    "Lugaignac",
+    "Naujan-et-Postiac",
+    "Romagne",
+    "Courpiac",
+    "Faleyras",
+    "Bellebat",
+    "Montignac",
+    "Saint-Brice",
+    "Coirac",
+    "Martres",
+    "Sainte-Radegonde",
+    "Vayres",
+    "Saint-Sulpice-et-Cameyrac",
+    "Beychac-et-Caillau",
+    "Saint-Loubès",
+    "Izon",
+    "Saint-Caprais-de-Bordeaux",
+    "Latresne",
+    "Cénac",
+    "Baurech",
+    "Le Tourne"
+   ]
+  },
+  {
+   "label": "Libournais",
+   "communes": [
+    "Saint-Émilion",
+    "Saint-Christophe-des-Bardes",
+    "Saint-Étienne-de-Lisse",
+    "Saint-Hippolyte",
+    "Saint-Laurent-des-Combes",
+    "Saint-Pey-d'Armens",
+    "Saint-Sulpice-de-Faleyrens",
+    "Vignonet",
+    "Libourne",
+    "Pomerol",
+    "Lalande-de-Pomerol",
+    "Néac",
+    "Montagne",
+    "Lussac",
+    "Puisseguin",
+    "Fronsac",
+    "Saint-Michel-de-Fronsac",
+    "Saint-Aignan",
+    "Saillans",
+    "La Rivière",
+    "Saint-Germain-de-la-Rivière",
+    "Castillon-la-Bataille",
+    "Belvès-de-Castillon",
+    "Gardegan-et-Tourtirac",
+    "Saint-Magne-de-Castillon",
+    "Sainte-Colombe",
+    "Saint-Philippe-d'Aiguille",
+    "Saint-Genès-de-Castillon",
+    "Les Salles-de-Castillon",
+    "Francs",
+    "Saint-Cibard",
+    "Tayac"
+   ],
+   "pos": [
+    10,
+    -30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Blayais et Bourgeais",
+   "communes": [
+    "Bourg",
+    "Bayon-sur-Gironde",
+    "Gauriac",
+    "Samonac",
+    "Saint-Seurin-de-Bourg",
+    "Comps",
+    "Villeneuve",
+    "Tauriac",
+    "Lansac",
+    "Pugnac",
+    "Prignac-et-Marcamps",
+    "Teuillac",
+    "Mombrier",
+    "Saint-Ciers-de-Canesse",
+    "Saint-Trojan",
+    "Blaye",
+    "Plassac",
+    "Cars",
+    "Berson",
+    "Saint-Martin-Lacaussade",
+    "Fours",
+    "Saint-Androny",
+    "Anglade",
+    "Eyrans",
+    "Saint-Genès-de-Blaye",
+    "Cartelègue",
+    "Mazion",
+    "Saint-Paul",
+    "Étauliers",
+    "Braud-et-Saint-Louis",
+    "Saint-Ciers-sur-Gironde",
+    "Saint-Aubin-de-Blaye",
+    "Reignac",
+    "Marcillac",
+    "Générac",
+    "Saugon",
+    "Campugnan",
+    "Saint-Girons-d'Aiguevives",
+    "Saint-Seurin-de-Cursac",
+    "Saint-Christoly-de-Blaye",
+    "Cézac"
+   ],
+   "pos": [
+    30,
+    -28,
+    "middle"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Bordeaux",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Libourne",
+   "pos": [
+    0,
+    12,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Pauillac",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Langon",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Blaye",
+   "pos": [
+    6,
+    8,
+    "start"
+   ]
+  }
+ ],
+ "clipDep": [
+  "33"
+ ]
+}

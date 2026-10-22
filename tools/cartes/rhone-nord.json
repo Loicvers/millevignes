@@ -1,0 +1,195 @@
+{
+ "deps": [
+  "69",
+  "42",
+  "07",
+  "26",
+  "38"
+ ],
+ "fleuves": [],
+ "marges": [
+  0.12,
+  0.04,
+  0.14,
+  0.04
+ ],
+ "largeur": 260,
+ "zones": [
+  {
+   "label": "Côte-Rôtie",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Ampuis",
+    "Saint-Cyr-sur-le-Rhône",
+    "Tupin-et-Semons"
+   ],
+   "pos": [
+    -10,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Condrieu",
+   "deps": [
+    "69",
+    "42",
+    "07"
+   ],
+   "communes": [
+    "Condrieu",
+    "Vérin",
+    "Saint-Michel-sur-Rhône",
+    "Chavanay",
+    "Saint-Pierre-de-Bœuf",
+    "Malleval",
+    "Limony"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Saint-Joseph",
+   "deps": [
+    "07"
+   ],
+   "communes": [
+    "Charnas",
+    "Félines",
+    "Serrières",
+    "Peyraud",
+    "Champagne",
+    "Saint-Désirat",
+    "Andance",
+    "Talencieux",
+    "Sarras",
+    "Ozon",
+    "Arras-sur-Rhône",
+    "Eclassan",
+    "Vion",
+    "Lemps",
+    "Saint-Jean-de-Muzols",
+    "Tournon-sur-Rhône",
+    "Mauves",
+    "Glun",
+    "Saint-Étienne-de-Valoux",
+    "Sécheras"
+   ],
+   "pos": [
+    -22,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Hermitage",
+   "deps": [
+    "26"
+   ],
+   "communes": [
+    "Tain-l'Hermitage"
+   ],
+   "pos": [
+    12,
+    -4,
+    "start"
+   ]
+  },
+  {
+   "label": "Crozes-Hermitage",
+   "deps": [
+    "26"
+   ],
+   "communes": [
+    "Crozes-Hermitage",
+    "Larnage",
+    "Mercurol-Veaunes",
+    "Gervans",
+    "Érôme",
+    "Serves-sur-Rhône",
+    "Chanos-Curson",
+    "Beaumont-Monteux",
+    "Pont-de-l'Isère",
+    "La Roche-de-Glun"
+   ],
+   "pos": [
+    14,
+    6,
+    "start"
+   ]
+  },
+  {
+   "label": "Cornas",
+   "deps": [
+    "07"
+   ],
+   "communes": [
+    "Cornas"
+   ],
+   "pos": [
+    -10,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Saint-Péray",
+   "deps": [
+    "07"
+   ],
+   "communes": [
+    "Saint-Péray",
+    "Toulaud"
+   ],
+   "pos": [
+    -14,
+    8,
+    "end"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Vienne",
+   "dep": "38",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Tournon-sur-Rhône",
+   "dep": "07",
+   "label": "Tournon",
+   "pos": [
+    6,
+    10,
+    "start"
+   ]
+  },
+  {
+   "nom": "Valence",
+   "dep": "26",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "fondFort": true,
+ "textes": [
+  {
+   "t": "Rhône",
+   "lon": 4.83,
+   "lat": 45.27,
+   "rot": 80
+  }
+ ]
+}

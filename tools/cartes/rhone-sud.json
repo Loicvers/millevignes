@@ -1,0 +1,199 @@
+{
+ "deps": [
+  "84",
+  "26",
+  "30"
+ ],
+ "fleuves": [
+  "Durance"
+ ],
+ "marges": [
+  0.1,
+  0.06,
+  0.22,
+  0.06
+ ],
+ "zones": [
+  {
+   "label": "Châteauneuf-du-Pape",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Châteauneuf-du-Pape",
+    "Courthézon",
+    "Bédarrides",
+    "Sorgues",
+    "Orange"
+   ],
+   "pos": [
+    24,
+    40,
+    "middle"
+   ]
+  },
+  {
+   "label": "Gigondas",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Gigondas"
+   ],
+   "pos": [
+    -20,
+    6,
+    "end"
+   ]
+  },
+  {
+   "label": "Vacqueyras",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Vacqueyras",
+    "Sarrians"
+   ],
+   "pos": [
+    16,
+    10,
+    "start"
+   ]
+  },
+  {
+   "label": "Beaumes-de-Venise",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Beaumes-de-Venise",
+    "Lafare",
+    "La Roque-Alric",
+    "Suzette"
+   ],
+   "pos": [
+    12,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Rasteau",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Rasteau"
+   ],
+   "pos": [
+    18,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Cairanne",
+   "deps": [
+    "84"
+   ],
+   "communes": [
+    "Cairanne"
+   ],
+   "pos": [
+    -22,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Vinsobres",
+   "deps": [
+    "26"
+   ],
+   "communes": [
+    "Vinsobres"
+   ],
+   "pos": [
+    0,
+    -16,
+    "middle"
+   ]
+  },
+  {
+   "label": "Tavel",
+   "deps": [
+    "30"
+   ],
+   "communes": [
+    "Tavel"
+   ],
+   "pos": [
+    0,
+    16,
+    "middle"
+   ]
+  },
+  {
+   "label": "Lirac",
+   "deps": [
+    "30"
+   ],
+   "communes": [
+    "Lirac",
+    "Roquemaure",
+    "Saint-Laurent-des-Arbres",
+    "Saint-Geniès-de-Comolas"
+   ],
+   "pos": [
+    -24,
+    6,
+    "end"
+   ]
+  },
+  {
+   "label": "Laudun",
+   "deps": [
+    "30"
+   ],
+   "communes": [
+    "Laudun-l'Ardoise",
+    "Saint-Victor-la-Coste",
+    "Tresques"
+   ],
+   "pos": [
+    -16,
+    0,
+    "end"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Orange",
+   "dep": "84",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Avignon",
+   "dep": "84"
+  },
+  {
+   "nom": "Carpentras",
+   "dep": "84"
+  }
+ ],
+ "fondFort": true,
+ "textes": [
+  {
+   "t": "Rhône",
+   "lon": 4.72,
+   "lat": 44.2,
+   "rot": 80
+  }
+ ]
+}

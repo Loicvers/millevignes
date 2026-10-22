@@ -1,0 +1,281 @@
+{
+ "deps": [
+  "44",
+  "49",
+  "37",
+  "41",
+  "18",
+  "58",
+  "85",
+  "79",
+  "86"
+ ],
+ "fleuves": [
+  "Loire",
+  "Cher",
+  "Vienne"
+ ],
+ "marges": [
+  0.3,
+  0.3,
+  0.3,
+  0.3
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Pays nantais",
+   "deps": [
+    "44",
+    "49",
+    "85"
+   ],
+   "communes": [
+    "Vallet",
+    "Clisson",
+    "Gorges",
+    "Le Pallet",
+    "La Haie-Fouassière",
+    "Saint-Fiacre-sur-Maine",
+    "Maisdon-sur-Sèvre",
+    "Monnières",
+    "Mouzillon",
+    "La Chapelle-Heulin",
+    "Le Loroux-Bottereau",
+    "Le Landreau",
+    "La Boissière-du-Doré",
+    "La Regrippière",
+    "Château-Thébaud",
+    "Haute-Goulaine",
+    "Basse-Goulaine",
+    "Saint-Lumine-de-Clisson",
+    "Aigrefeuille-sur-Maine",
+    "Vertou",
+    "Saint-Philbert-de-Grand-Lieu",
+    "La Chevrolière",
+    "Saint-Lumine-de-Coutais",
+    "Saint-Colomban",
+    "Corcoué-sur-Logne",
+    "Le Bignon",
+    "Remouillé",
+    "La Planche",
+    "Vieillevigne",
+    "Montbert",
+    "Geneston",
+    "Ancenis",
+    "Saint-Géréon",
+    "Oudon",
+    "Le Cellier",
+    "Mauves-sur-Loire",
+    "Divatte-sur-Loire",
+    "Orée d'Anjou"
+   ],
+   "pos": [
+    0,
+    -26,
+    "middle"
+   ]
+  },
+  {
+   "label": "Anjou-Saumur",
+   "deps": [
+    "49",
+    "79"
+   ],
+   "communes": [
+    "Savennières",
+    "Bouchemaine",
+    "Rochefort-sur-Loire",
+    "Chalonnes-sur-Loire",
+    "Beaulieu-sur-Layon",
+    "Rablay-sur-Layon",
+    "Bellevigne-en-Layon",
+    "Val-du-Layon",
+    "Martigné-Briand",
+    "Brissac Loire Aubance",
+    "Doué-en-Anjou",
+    "Terranjou",
+    "Aubigné-sur-Layon",
+    "Les Garennes sur Loire",
+    "Mûrs-Erigné",
+    "Denée",
+    "Saumur",
+    "Saint-Cyr-en-Bourg",
+    "Varrains",
+    "Souzay-Champigny",
+    "Parnay",
+    "Turquant",
+    "Montsoreau",
+    "Brézé",
+    "Le Puy-Notre-Dame",
+    "Montreuil-Bellay",
+    "Épieds",
+    "Le Coudray-Macouard",
+    "Distré",
+    "Saint-Just-sur-Dive",
+    "Lys-Haut-Layon",
+    "Tuffalun",
+    "Bellevigne-les-Châteaux"
+   ],
+   "pos": [
+    0,
+    30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Touraine",
+   "deps": [
+    "37",
+    "41"
+   ],
+   "communes": [
+    "Vouvray",
+    "Vernou-sur-Brenne",
+    "Rochecorbon",
+    "Montlouis-sur-Loire",
+    "Lussault-sur-Loire",
+    "Saint-Martin-le-Beau",
+    "Chinon",
+    "Cravant-les-Coteaux",
+    "Beaumont-en-Véron",
+    "Savigny-en-Véron",
+    "Ligré",
+    "Bourgueil",
+    "Restigné",
+    "Benais",
+    "Saint-Nicolas-de-Bourgueil",
+    "Ingrandes-de-Touraine",
+    "Amboise",
+    "Chargé",
+    "Mosnes",
+    "Limeray",
+    "Azay-le-Rideau",
+    "Chenonceaux",
+    "Chissay-en-Touraine",
+    "Thésée",
+    "Saint-Georges-sur-Cher",
+    "Pouillé",
+    "Mareuil-sur-Cher",
+    "Oisly",
+    "Cheverny",
+    "Cour-Cheverny",
+    "Noizay",
+    "Chançay",
+    "Reugny",
+    "Vallières-les-Grandes",
+    "Monthou-sur-Cher",
+    "Saint-Aignan",
+    "Noyers-sur-Cher",
+    "Faverolles-sur-Cher",
+    "Panzoult",
+    "Rivière",
+    "Huismes",
+    "Coteaux-sur-Loire"
+   ],
+   "pos": [
+    0,
+    30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Centre-Loire",
+   "deps": [
+    "18",
+    "58"
+   ],
+   "communes": [
+    "Sancerre",
+    "Bué",
+    "Crézancy-en-Sancerre",
+    "Ménétréol-sous-Sancerre",
+    "Saint-Satur",
+    "Sury-en-Vaux",
+    "Verdigny",
+    "Vinon",
+    "Thauvenay",
+    "Menetou-Râtel",
+    "Sainte-Gemme-en-Sancerrois",
+    "Pouilly-sur-Loire",
+    "Saint-Andelain",
+    "Tracy-sur-Loire",
+    "Saint-Laurent-l'Abbaye",
+    "Garchy",
+    "Mesves-sur-Loire",
+    "Saint-Martin-sur-Nohain",
+    "Menetou-Salon",
+    "Morogues",
+    "Parassy",
+    "Quantilly",
+    "Vignoux-sous-les-Aix",
+    "Aubinges",
+    "Quincy",
+    "Brinay",
+    "Cosne-Cours-sur-Loire"
+   ],
+   "pos": [
+    -18,
+    -22,
+    "end"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Nantes",
+   "dep": "44",
+   "pos": [
+    0,
+    12,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Angers",
+   "dep": "49",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Saumur",
+   "dep": "49",
+   "pos": [
+    6,
+    -4,
+    "start"
+   ]
+  },
+  {
+   "nom": "Tours",
+   "dep": "37",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Blois",
+   "dep": "41",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Bourges",
+   "dep": "18",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "textes": []
+}

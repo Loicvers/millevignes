@@ -1,0 +1,220 @@
+{
+ "deps": [
+  "51",
+  "10",
+  "02"
+ ],
+ "fleuves": [
+  "Marne",
+  "Seine",
+  "Aube"
+ ],
+ "marges": [
+  0.12,
+  0.06,
+  0.18,
+  0.06
+ ],
+ "zones": [
+  {
+   "label": "Montagne de Reims",
+   "deps": [
+    "51"
+   ],
+   "communes": [
+    "Verzenay",
+    "Verzy",
+    "Mailly-Champagne",
+    "Ludes",
+    "Chigny-les-Roses",
+    "Rilly-la-Montagne",
+    "Villers-Marmery",
+    "Trépail",
+    "Ambonnay",
+    "Bouzy",
+    "Louvois",
+    "Sillery",
+    "Puisieulx",
+    "Beaumont-sur-Vesle",
+    "Villers-Allerand",
+    "Montbré",
+    "Sermiers",
+    "Écueil",
+    "Chamery",
+    "Villedommange",
+    "Sacy",
+    "Jouy-lès-Reims",
+    "Pargny-lès-Reims",
+    "Tauxières-Mutry",
+    "Vaudemange",
+    "Billy-le-Grand",
+    "Villers-aux-Nœuds",
+    "Coulommes-la-Montagne",
+    "Gueux",
+    "Vrigny",
+    "Saint-Thierry",
+    "Hermonville",
+    "Val de Livre",
+    "Ville-Dommange"
+   ],
+   "pos": [
+    30,
+    -34,
+    "middle"
+   ]
+  },
+  {
+   "label": "Vallée de la Marne",
+   "deps": [
+    "51",
+    "02"
+   ],
+   "communes": [
+    "Aÿ-Champagne",
+    "Dizy",
+    "Hautvillers",
+    "Cumières",
+    "Damery",
+    "Venteuil",
+    "Reuil",
+    "Châtillon-sur-Marne",
+    "Vandières",
+    "Verneuil",
+    "Dormans",
+    "Œuilly",
+    "Boursault",
+    "Mardeuil",
+    "Champillon",
+    "Mutigny",
+    "Avenay-Val-d'Or",
+    "Tours-sur-Marne",
+    "Bisseuil",
+    "Mareuil-le-Port",
+    "Leuvrigny",
+    "Festigny",
+    "Troissy",
+    "Fleury-la-Rivière",
+    "Romery",
+    "Cormoyeux",
+    "Charly-sur-Marne",
+    "Nogent-l'Artaud",
+    "Azy-sur-Marne",
+    "Essômes-sur-Marne",
+    "Chézy-sur-Marne",
+    "Crouttes-sur-Marne",
+    "Château-Thierry",
+    "Passy-sur-Marne",
+    "Trélou-sur-Marne",
+    "Mézy-Moulins"
+   ],
+   "pos": [
+    -70,
+    30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côte des Blancs",
+   "deps": [
+    "51"
+   ],
+   "communes": [
+    "Cramant",
+    "Avize",
+    "Oger",
+    "Le Mesnil-sur-Oger",
+    "Blancs-Coteaux",
+    "Chouilly",
+    "Cuis",
+    "Grauves",
+    "Bergères-lès-Vertus",
+    "Vertus",
+    "Moussy",
+    "Pierry",
+    "Monthelon",
+    "Flavigny",
+    "Voipreux",
+    "Villeneuve-Renneville-Chevigny"
+   ],
+   "pos": [
+    18,
+    6,
+    "start"
+   ]
+  },
+  {
+   "label": "Côte des Bar",
+   "deps": [
+    "10"
+   ],
+   "communes": [
+    "Les Riceys",
+    "Bar-sur-Seine",
+    "Celles-sur-Ource",
+    "Landreville",
+    "Loches-sur-Ource",
+    "Essoyes",
+    "Polisot",
+    "Polisy",
+    "Buxeuil",
+    "Gyé-sur-Seine",
+    "Neuville-sur-Seine",
+    "Courteron",
+    "Mussy-sur-Seine",
+    "Avirey-Lingey",
+    "Bagneux-la-Fosse",
+    "Bar-sur-Aube",
+    "Urville",
+    "Colombé-le-Sec",
+    "Baroville",
+    "Bergères",
+    "Arconville",
+    "Proverville",
+    "Couvignon",
+    "Meurville",
+    "Bligny",
+    "Champignol-lez-Mondeville",
+    "Colombé-la-Fosse",
+    "Merrey-sur-Arce",
+    "Ville-sur-Arce",
+    "Chacenay",
+    "Fontette",
+    "Noé-les-Mallets",
+    "Balnot-sur-Laignes"
+   ],
+   "pos": [
+    0,
+    -30,
+    "middle"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Reims",
+   "dep": "51",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Épernay",
+   "dep": "51"
+  },
+  {
+   "nom": "Château-Thierry",
+   "dep": "02",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Troyes",
+   "dep": "10"
+  }
+ ]
+}

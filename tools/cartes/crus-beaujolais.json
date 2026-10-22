@@ -1,0 +1,175 @@
+{
+ "deps": [
+  "69",
+  "71"
+ ],
+ "fleuves": [
+  "Saône",
+  "Sane"
+ ],
+ "marges": [
+  0.1,
+  0.03,
+  0.12,
+  0.03
+ ],
+ "largeur": 300,
+ "zones": [
+  {
+   "label": "Saint-Amour",
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Saint-Amour-Bellevue"
+   ],
+   "pos": [
+    22,
+    -10,
+    "start"
+   ]
+  },
+  {
+   "label": "Juliénas",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Juliénas",
+    "Jullié",
+    "Émeringes"
+   ],
+   "pos": [
+    -22,
+    -8,
+    "end"
+   ]
+  },
+  {
+   "label": "Chénas",
+   "deps": [
+    "69",
+    "71"
+   ],
+   "communes": [
+    "Chénas",
+    "La Chapelle-de-Guinchay"
+   ],
+   "pos": [
+    30,
+    -2,
+    "start"
+   ]
+  },
+  {
+   "label": "Moulin-à-Vent",
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Romanèche-Thorins"
+   ],
+   "pos": [
+    26,
+    10,
+    "start"
+   ]
+  },
+  {
+   "label": "Fleurie",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Fleurie"
+   ],
+   "pos": [
+    -4,
+    -2,
+    "middle"
+   ]
+  },
+  {
+   "label": "Chiroubles",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Chiroubles"
+   ],
+   "pos": [
+    -24,
+    4,
+    "end"
+   ]
+  },
+  {
+   "label": "Morgon",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Villié-Morgon"
+   ],
+   "pos": [
+    26,
+    4,
+    "start"
+   ]
+  },
+  {
+   "label": "Régnié",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Régnié-Durette"
+   ],
+   "pos": [
+    -24,
+    4,
+    "end"
+   ]
+  },
+  {
+   "label": "Brouilly",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Saint-Lager",
+    "Cercié",
+    "Charentay",
+    "Odenas",
+    "Quincié-en-Beaujolais",
+    "Saint-Étienne-la-Varenne"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  }
+ ],
+ "textes": [],
+ "villes": [
+  {
+   "nom": "Belleville",
+   "dep": "69",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Beaujeu",
+   "dep": "69",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
+  }
+ ]
+}

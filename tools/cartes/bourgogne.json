@@ -1,0 +1,316 @@
+{
+ "deps": [
+  "21",
+  "71",
+  "89"
+ ],
+ "fleuves": [
+  "Saône",
+  "Sane",
+  "Yonne"
+ ],
+ "zones": [
+  {
+   "label": "Chablis",
+   "communes": [
+    "Chablis",
+    "Beine",
+    "Béru",
+    "Chemilly-sur-Serein",
+    "Chichée",
+    "Collan",
+    "Courgis",
+    "Fleys",
+    "Fontenay-près-Chablis",
+    "La Chapelle-Vaupelteigne",
+    "Lichères-près-Aigremont",
+    "Ligny-le-Châtel",
+    "Lignorelles",
+    "Maligny",
+    "Poilly-sur-Serein",
+    "Préhy",
+    "Saint-Cyr-les-Colons",
+    "Villy",
+    "Viviers"
+   ],
+   "deps": [
+    "89"
+   ],
+   "pos": [
+    8,
+    -14,
+    "middle"
+   ]
+  },
+  {
+   "label": "Grand Auxerrois",
+   "communes": [
+    "Irancy",
+    "Saint-Bris-le-Vineux",
+    "Chitry",
+    "Coulanges-la-Vineuse",
+    "Vincelottes",
+    "Vincelles",
+    "Escolives-Sainte-Camille",
+    "Jussy",
+    "Val-de-Mercy",
+    "Migé",
+    "Auxerre",
+    "Quenne",
+    "Épineuil",
+    "Tonnerre",
+    "Dannemoine",
+    "Vézelay",
+    "Saint-Père",
+    "Asquins",
+    "Tharoiseau"
+   ],
+   "deps": [
+    "89"
+   ],
+   "pos": [
+    -30,
+    34,
+    "start"
+   ]
+  },
+  {
+   "label": "Châtillonnais",
+   "communes": [
+    "Massingy",
+    "Vix",
+    "Molesme",
+    "Charrey-sur-Seine",
+    "Mosson",
+    "Pothières",
+    "Poinçon-lès-Larrey",
+    "Villers-Patras",
+    "Noiron-sur-Seine",
+    "Obtrée",
+    "Larrey",
+    "Bouix",
+    "Cérilly",
+    "Montliot-et-Courcelles",
+    "Étrochey",
+    "Belan-sur-Ource",
+    "Prusly-sur-Ource",
+    "Gomméville",
+    "Griselles"
+   ],
+   "deps": [
+    "21"
+   ],
+   "pos": [
+    0,
+    30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côte de Nuits",
+   "communes": [
+    "Chenôve",
+    "Marsannay-la-Côte",
+    "Couchey",
+    "Fixin",
+    "Brochon",
+    "Gevrey-Chambertin",
+    "Morey-Saint-Denis",
+    "Chambolle-Musigny",
+    "Vougeot",
+    "Flagey-Echézeaux",
+    "Vosne-Romanée",
+    "Nuits-Saint-Georges",
+    "Premeaux-Prissey",
+    "Comblanchien",
+    "Corgoloin"
+   ],
+   "deps": [
+    "21"
+   ],
+   "pos": [
+    -12,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Côte de Beaune",
+   "communes": [
+    "Ladoix-Serrigny",
+    "Aloxe-Corton",
+    "Pernand-Vergelesses",
+    "Savigny-lès-Beaune",
+    "Chorey-lès-Beaune",
+    "Beaune",
+    "Pommard",
+    "Volnay",
+    "Monthelie",
+    "Auxey-Duresses",
+    "Saint-Romain",
+    "Meursault",
+    "Puligny-Montrachet",
+    "Chassagne-Montrachet",
+    "Saint-Aubin",
+    "Santenay",
+    "Remigny",
+    "Cheilly-lès-Maranges",
+    "Dezize-lès-Maranges",
+    "Sampigny-lès-Maranges"
+   ],
+   "deps": [
+    "21",
+    "71"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Couchois",
+   "communes": [
+    "Couches",
+    "Dracy-lès-Couches",
+    "Saint-Jean-de-Trézy",
+    "Saint-Maurice-lès-Couches",
+    "Saint-Pierre-de-Varennes",
+    "Saint-Sernin-du-Plain"
+   ],
+   "deps": [
+    "71"
+   ],
+   "pos": [
+    -12,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Côte chalonnaise",
+   "communes": [
+    "Bouzeron",
+    "Chassey-le-Camp",
+    "Rully",
+    "Aluze",
+    "Mercurey",
+    "Saint-Martin-sous-Montaigu",
+    "Givry",
+    "Dracy-le-Fort",
+    "Jambles",
+    "Barizey",
+    "Saint-Désert",
+    "Moroges",
+    "Buxy",
+    "Montagny-lès-Buxy",
+    "Jully-lès-Buxy",
+    "Saint-Vallerin",
+    "Saint-Denis-de-Vaux",
+    "Mellecey"
+   ],
+   "deps": [
+    "71"
+   ],
+   "pos": [
+    -16,
+    8,
+    "end"
+   ]
+  },
+  {
+   "label": "Mâconnais",
+   "communes": [
+    "Mâcon",
+    "Solutré-Pouilly",
+    "Fuissé",
+    "Vergisson",
+    "Chaintré",
+    "Vinzelles",
+    "Chasselas",
+    "Davayé",
+    "Leynes",
+    "Prissé",
+    "Saint-Vérand",
+    "Chânes",
+    "Viré",
+    "Clessé",
+    "Lugny",
+    "Azé",
+    "Igé",
+    "Pierreclos",
+    "Charnay-lès-Mâcon",
+    "Hurigny",
+    "Sologny",
+    "Milly-Lamartine",
+    "Bussières",
+    "La Roche-Vineuse",
+    "Verzé",
+    "Uchizy",
+    "Chardonnay",
+    "Péronne",
+    "Montbellet",
+    "Cruzille",
+    "Saint-Gengoux-de-Scissé",
+    "Bissy-la-Mâconnaise",
+    "Burgy"
+   ],
+   "deps": [
+    "71"
+   ],
+   "pos": [
+    -14,
+    0,
+    "end"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Dijon",
+   "dep": "21"
+  },
+  {
+   "nom": "Beaune",
+   "dep": "21",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Chalon-sur-Saône",
+   "dep": "71",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Mâcon",
+   "dep": "71",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Auxerre",
+   "dep": "89",
+   "pos": [
+    0,
+    -5,
+    "middle"
+   ]
+  }
+ ],
+ "marges": [
+  0.2,
+  0.08,
+  0.35,
+  0.06
+ ]
+}

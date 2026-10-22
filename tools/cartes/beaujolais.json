@@ -1,0 +1,169 @@
+{
+ "deps": [
+  "69",
+  "71"
+ ],
+ "fleuves": [
+  "Saône",
+  "Sane"
+ ],
+ "marges": [
+  0.08,
+  0.05,
+  0.12,
+  0.04
+ ],
+ "largeur": 260,
+ "zones": [
+  {
+   "label": "Crus",
+   "deps": [
+    "69",
+    "71"
+   ],
+   "communes": [
+    "Saint-Amour-Bellevue",
+    "Juliénas",
+    "Jullié",
+    "Émeringes",
+    "Chénas",
+    "La Chapelle-de-Guinchay",
+    "Romanèche-Thorins",
+    "Fleurie",
+    "Chiroubles",
+    "Villié-Morgon",
+    "Régnié-Durette",
+    "Saint-Lager",
+    "Cercié",
+    "Charentay",
+    "Odenas",
+    "Quincié-en-Beaujolais",
+    "Saint-Étienne-la-Varenne"
+   ],
+   "opacite": 0.38,
+   "pos": [
+    8,
+    -30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Beaujolais-Villages",
+   "deps": [
+    "69",
+    "71"
+   ],
+   "communes": [
+    "Lantignié",
+    "Beaujeu",
+    "Vaux-en-Beaujolais",
+    "Le Perréon",
+    "Saint-Étienne-des-Oullières",
+    "Salles-Arbuissonnas-en-Beaujolais",
+    "Lancié",
+    "Corcelles-en-Beaujolais",
+    "Marchampt",
+    "Vauxrenard",
+    "Durette",
+    "Leynes",
+    "Chânes",
+    "Saint-Symphorien-d'Ancelles",
+    "Pruzilly",
+    "Chaintré",
+    "Saint-Julien",
+    "Blacé",
+    "Montmelas-Saint-Sorlin",
+    "Arbuissonnas",
+    "Saint-Didier-sur-Beaujeu",
+    "Les Ardillats"
+   ],
+   "opacite": 0.22,
+   "pos": [
+    -40,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Beaujolais",
+   "deps": [
+    "69"
+   ],
+   "communes": [
+    "Theizé",
+    "Oingt",
+    "Bagnols",
+    "Le Bois-d'Oingt",
+    "Légny",
+    "Ville-sur-Jarnioux",
+    "Liergues",
+    "Pouilly-le-Monial",
+    "Chessy",
+    "Châtillon",
+    "Lachassagne",
+    "Alix",
+    "Marcy",
+    "Charnay",
+    "Morancé",
+    "Lucenay",
+    "Anse",
+    "Pommiers",
+    "Gleizé",
+    "Denicé",
+    "Lacenas",
+    "Cogny",
+    "Arnas",
+    "Rivolet",
+    "Jarnioux",
+    "Frontenas",
+    "Moiré",
+    "Saint-Laurent-d'Oingt",
+    "Sainte-Paule",
+    "Ternand",
+    "Létra",
+    "Chamelet",
+    "Saint-Vérand",
+    "Val d'Oingt",
+    "Porte des Pierres Dorées",
+    "Saint-Jean-des-Vignes",
+    "Belmont-d'Azergues",
+    "Chazay-d'Azergues",
+    "Lozanne",
+    "Civrieux-d'Azergues",
+    "Les Chères",
+    "Quincieux"
+   ],
+   "opacite": 0.12,
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Villefranche-sur-Saône",
+   "dep": "69",
+   "label": "Villefranche",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Mâcon",
+   "dep": "71"
+  },
+  {
+   "nom": "Belleville",
+   "dep": "69",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ]
+}
