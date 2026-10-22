@@ -1,0 +1,296 @@
+{
+ "deps": [
+  "34",
+  "11",
+  "30"
+ ],
+ "fleuves": [
+  "Aude",
+  "Hérault",
+  "Orb"
+ ],
+ "marges": [
+  0.12,
+  0.1,
+  0.15,
+  0.1
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Pic Saint-Loup",
+   "deps": [
+    "34",
+    "30"
+   ],
+   "communes": [
+    "Cazevieille",
+    "Claret",
+    "Corconne",
+    "Fontanès",
+    "Lauret",
+    "Le Triadou",
+    "Les Matelles",
+    "Saint-Jean-de-Cuculles",
+    "Saint-Mathieu-de-Tréviers",
+    "Valflaunès",
+    "Vacquières",
+    "Sauteyrargues",
+    "Rouet",
+    "Notre-Dame-de-Londres",
+    "Saint-Martin-de-Londres",
+    "Viols-le-Fort",
+    "Saint-Bauzille-de-Montmel",
+    "Guzargues",
+    "Assas",
+    "Saint-Vincent-de-Barbeyrargues"
+   ]
+  },
+  {
+   "label": "Terrasses du Larzac",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Aniane",
+    "Arboras",
+    "Jonquières",
+    "Lagamas",
+    "Montpeyroux",
+    "Saint-Guiraud",
+    "Saint-Jean-de-Fos",
+    "Saint-Saturnin-de-Lucian",
+    "Saint-Privat",
+    "Saint-Jean-de-la-Blaquière",
+    "Soumont",
+    "Le Bosc",
+    "Octon",
+    "Salasc",
+    "Mourèze",
+    "Villeneuvette",
+    "Puéchabon",
+    "Saint-André-de-Sangonis"
+   ]
+  },
+  {
+   "label": "Faugères",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Faugères",
+    "Autignac",
+    "Cabrerolles",
+    "Caussiniojouls",
+    "Fos",
+    "Laurens",
+    "Roquessels"
+   ]
+  },
+  {
+   "label": "Saint-Chinian",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Saint-Chinian",
+    "Assignan",
+    "Babeau-Bouldoux",
+    "Berlou",
+    "Causses-et-Veyran",
+    "Cazedarnes",
+    "Cébazan",
+    "Cessenon-sur-Orb",
+    "Creissan",
+    "Ferrières-Poussarou",
+    "Pierrerue",
+    "Prades-sur-Vernazobre",
+    "Puisserguier",
+    "Quarante",
+    "Roquebrun",
+    "Saint-Nazaire-de-Ladarez",
+    "Villespassans",
+    "Vieussan"
+   ]
+  },
+  {
+   "label": "Minervois",
+   "deps": [
+    "34",
+    "11"
+   ],
+   "communes": [
+    "La Livinière",
+    "Azillanet",
+    "Cesseras",
+    "Félines-Minervois",
+    "Siran",
+    "Olonzac",
+    "Pépieux",
+    "Rieux-Minervois",
+    "Azille",
+    "Laure-Minervois",
+    "Peyriac-Minervois",
+    "Trausse",
+    "Caunes-Minervois",
+    "Villeneuve-Minervois",
+    "Pouzols-Minervois",
+    "Homps",
+    "Aigne",
+    "Beaufort",
+    "La Caunette",
+    "Minerve",
+    "Agel",
+    "Aigues-Vives",
+    "Puichéric",
+    "Oupia",
+    "Tourouzelle",
+    "Escales",
+    "Castelnau-d'Aude",
+    "La Redorte",
+    "Saint-Frichoux",
+    "Bagnoles",
+    "Villegly",
+    "Malves-en-Minervois",
+    "Bize-Minervois",
+    "Mailhac",
+    "Pouzols-Minervois",
+    "Argeliers"
+   ]
+  },
+  {
+   "label": "Corbières",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Lagrasse",
+    "Boutenac",
+    "Fabrezan",
+    "Ferrals-les-Corbières",
+    "Thézan-des-Corbières",
+    "Durban-Corbières",
+    "Saint-Laurent-de-la-Cabrerisse",
+    "Camplong-d'Aude",
+    "Montséret",
+    "Saint-André-de-Roquelongue",
+    "Bizanet",
+    "Ornaisons",
+    "Luc-sur-Orbieu",
+    "Cruscades",
+    "Talairan",
+    "Villerouge-Termenès",
+    "Albas",
+    "Embres-et-Castelmaure",
+    "Quintillan",
+    "Montgaillard",
+    "Padern",
+    "Tournissan",
+    "Ribaute",
+    "Moux",
+    "Fontcouverte",
+    "Conilhac-Corbières",
+    "Portel-des-Corbières",
+    "Sigean",
+    "Roquefort-des-Corbières",
+    "Feuilla",
+    "Palairac",
+    "Saint-Jean-de-Barrou",
+    "Fontjoncouse",
+    "Coustouge",
+    "Montbrun-des-Corbières",
+    "Douzens",
+    "Capendu",
+    "Comigne",
+    "Pradelles-en-Val",
+    "Montlaur",
+    "Fabrezan",
+    "Villeneuve-les-Corbières"
+   ]
+  },
+  {
+   "label": "Fitou",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Fitou",
+    "Leucate",
+    "Caves",
+    "Treilles",
+    "La Palme",
+    "Tuchan",
+    "Paziols",
+    "Cascastel-des-Corbières"
+   ]
+  },
+  {
+   "label": "Limoux",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Limoux",
+    "Pieusse",
+    "Pomas",
+    "Cépie",
+    "Roquetaillade-et-Conilhac",
+    "Magrie",
+    "Saint-Hilaire",
+    "Pauligne",
+    "Ajac",
+    "Malras",
+    "Castelreng",
+    "Cournanel",
+    "Gardie",
+    "Villelongue-d'Aude",
+    "Tourreilles",
+    "Saint-Polycarpe",
+    "La Digne-d'Amont",
+    "La Digne-d'Aval",
+    "Loupia",
+    "Villebazy",
+    "Belcastel-et-Buc",
+    "Alaigne",
+    "Malviès",
+    "Bouriège"
+   ]
+  },
+  {
+   "label": "Picpoul de Pinet",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Pinet",
+    "Pomérols",
+    "Florensac",
+    "Castelnau-de-Guers",
+    "Mèze",
+    "Montagnac"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Montpellier",
+   "dep": "34"
+  },
+  {
+   "nom": "Béziers",
+   "dep": "34"
+  },
+  {
+   "nom": "Narbonne",
+   "dep": "11"
+  },
+  {
+   "nom": "Carcassonne",
+   "dep": "11"
+  },
+  {
+   "nom": "Nîmes",
+   "dep": "30"
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "deps": [
+  "73",
+  "74",
+  "01",
+  "38"
+ ],
+ "fleuves": [
+  "Rhône",
+  "Rhne",
+  "Isère"
+ ],
+ "marges": [
+  0.15,
+  0.08,
+  0.15,
+  0.08
+ ],
+ "largeur": 300,
+ "zones": [
+  {
+   "label": "Léman",
+   "deps": [
+    "74"
+   ],
+   "communes": [
+    "Loisin",
+    "Ballaison",
+    "Douvaine",
+    "Marin",
+    "Thonon-les-Bains",
+    "Sciez",
+    "Publier",
+    "Massongy"
+   ]
+  },
+  {
+   "label": "Ayze",
+   "deps": [
+    "74"
+   ],
+   "communes": [
+    "Ayse",
+    "Marignier",
+    "Bonneville"
+   ]
+  },
+  {
+   "label": "Frangy et Seyssel",
+   "deps": [
+    "74",
+    "01"
+   ],
+   "communes": [
+    "Frangy",
+    "Seyssel",
+    "Corbonod",
+    "Desingy",
+    "Musièges",
+    "Vanzy"
+   ]
+  },
+  {
+   "label": "Chautagne",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Ruffieux",
+    "Serrières-en-Chautagne",
+    "Motz",
+    "Chindrieux",
+    "Vions"
+   ]
+  },
+  {
+   "label": "Jongieux",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Jongieux",
+    "Billième",
+    "Lucey",
+    "Yenne",
+    "Saint-Jean-de-Chevelu",
+    "Traize"
+   ]
+  },
+  {
+   "label": "Apremont et Abymes",
+   "deps": [
+    "73",
+    "38"
+   ],
+   "communes": [
+    "Les Marches",
+    "Myans",
+    "Apremont",
+    "Chapareillan",
+    "Saint-Baldoph"
+   ],
+   "pos": [
+    -22,
+    10,
+    "end"
+   ]
+  },
+  {
+   "label": "Combe de Savoie",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Arbin",
+    "Cruet",
+    "Saint-Jean-de-la-Porte",
+    "Saint-Jeoire-Prieuré",
+    "Fréterive",
+    "Montmélian",
+    "Saint-Pierre-de-Soucy",
+    "Francin",
+    "Chignin"
+   ],
+   "pos": [
+    24,
+    8,
+    "start"
+   ]
+  },
+  {
+   "label": "Bugey",
+   "deps": [
+    "01"
+   ],
+   "communes": [
+    "Cerdon",
+    "Montagnieu",
+    "Vongnes",
+    "Flaxieu",
+    "Virieu-le-Grand",
+    "Belley",
+    "Groslée",
+    "Saint-Benoît",
+    "Culoz",
+    "Béon",
+    "Talissieu",
+    "Ambérieu-en-Bugey",
+    "Vaux-en-Bugey",
+    "Lagnieu",
+    "Seillonnaz",
+    "Bettant"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Chambéry",
+   "dep": "73"
+  },
+  {
+   "nom": "Annecy",
+   "dep": "74"
+  },
+  {
+   "nom": "Thonon-les-Bains",
+   "dep": "74",
+   "label": "Thonon"
+  }
+ ]
+}

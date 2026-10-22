@@ -1,0 +1,200 @@
+{
+ "deps": [
+  "83",
+  "13"
+ ],
+ "fleuves": [
+  "Durance",
+  "Rhône",
+  "Rhne"
+ ],
+ "marges": [
+  0.1,
+  0.08,
+  0.1,
+  0.06
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Côtes de Provence",
+   "deps": [
+    "83",
+    "13"
+   ],
+   "communes": [
+    "La Londe-les-Maures",
+    "Pierrefeu-du-Var",
+    "Cuers",
+    "Puget-Ville",
+    "Collobrières",
+    "Gonfaron",
+    "Le Luc",
+    "Le Cannet-des-Maures",
+    "Vidauban",
+    "Les Arcs",
+    "Taradeau",
+    "Lorgues",
+    "Draguignan",
+    "Trans-en-Provence",
+    "La Motte",
+    "Le Muy",
+    "Puget-sur-Argens",
+    "Fréjus",
+    "Roquebrune-sur-Argens",
+    "Saint-Tropez",
+    "Ramatuelle",
+    "Gassin",
+    "La Croix-Valmer",
+    "Cogolin",
+    "Grimaud",
+    "La Môle",
+    "Bormes-les-Mimosas",
+    "Hyères",
+    "Carnoules",
+    "Pignans",
+    "Flassans-sur-Issole",
+    "Besse-sur-Issole",
+    "Cabasse",
+    "Les Mayons",
+    "Entrecasteaux",
+    "Saint-Antonin-du-Var",
+    "Trets",
+    "Puyloubier",
+    "Pourrières",
+    "Rousset",
+    "Pourcieux",
+    "Le Plan-de-la-Tour",
+    "Sainte-Maxime",
+    "La Garde-Freinet",
+    "Le Thoronet",
+    "Flayosc",
+    "Callas"
+   ]
+  },
+  {
+   "label": "Coteaux varois",
+   "deps": [
+    "83"
+   ],
+   "communes": [
+    "Brignoles",
+    "La Celle",
+    "Camps-la-Source",
+    "Tourves",
+    "Rougiers",
+    "Nans-les-Pins",
+    "Saint-Maximin-la-Sainte-Baume",
+    "Bras",
+    "Châteauvert",
+    "Correns",
+    "Montfort-sur-Argens",
+    "Le Val",
+    "Vins-sur-Caramy",
+    "Cotignac",
+    "Carcès",
+    "Brue-Auriac",
+    "Seillons-Source-d'Argens",
+    "Ollières",
+    "La Roquebrussanne",
+    "Garéoult",
+    "Forcalqueiret",
+    "Rocbaron",
+    "Néoules",
+    "Mazaugues",
+    "Méounes-lès-Montrieux"
+   ]
+  },
+  {
+   "label": "Coteaux d’Aix",
+   "deps": [
+    "13"
+   ],
+   "communes": [
+    "Lambesc",
+    "Rognes",
+    "Saint-Cannat",
+    "Le Puy-Sainte-Réparade",
+    "Pélissanne",
+    "La Barben",
+    "Éguilles",
+    "Ventabren",
+    "Coudoux",
+    "La Fare-les-Oliviers",
+    "Lançon-Provence",
+    "Rognac",
+    "Velaux",
+    "Saint-Estève-Janson",
+    "La Roque-d'Anthéron",
+    "Charleval",
+    "Mallemort",
+    "Alleins",
+    "Vernègues",
+    "Aurons",
+    "Venelles",
+    "Meyrargues",
+    "Peyrolles-en-Provence",
+    "Aix-en-Provence"
+   ]
+  },
+  {
+   "label": "Les Baux",
+   "deps": [
+    "13"
+   ],
+   "communes": [
+    "Les Baux-de-Provence",
+    "Maussane-les-Alpilles",
+    "Mouriès",
+    "Saint-Rémy-de-Provence",
+    "Fontvieille",
+    "Paradou",
+    "Eygalières"
+   ]
+  },
+  {
+   "label": "Cassis",
+   "deps": [
+    "13"
+   ],
+   "communes": [
+    "Cassis"
+   ]
+  },
+  {
+   "label": "Bandol",
+   "deps": [
+    "83"
+   ],
+   "communes": [
+    "Bandol",
+    "Le Castellet",
+    "La Cadière-d'Azur",
+    "Le Beausset",
+    "Saint-Cyr-sur-Mer",
+    "Sanary-sur-Mer",
+    "Évenos",
+    "Ollioules"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Marseille",
+   "dep": "13"
+  },
+  {
+   "nom": "Toulon",
+   "dep": "83"
+  },
+  {
+   "nom": "Aix-en-Provence",
+   "dep": "13",
+   "label": "Aix"
+  },
+  {
+   "nom": "Saint-Tropez",
+   "dep": "83"
+  }
+ ]
+}

@@ -1,0 +1,319 @@
+{
+ "deps": [
+  "24",
+  "46",
+  "81",
+  "31",
+  "82",
+  "32",
+  "65",
+  "64",
+  "12",
+  "47"
+ ],
+ "fleuves": [
+  "Garonne",
+  "Dordogne",
+  "Lot",
+  "Tarn",
+  "Adour",
+  "Aveyron"
+ ],
+ "marges": [
+  0.3,
+  0.15,
+  0.3,
+  0.15
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Bergerac",
+   "deps": [
+    "24"
+   ],
+   "communes": [
+    "Bergerac",
+    "Monbazillac",
+    "Pomport",
+    "Rouffignac-de-Sigoulès",
+    "Colombier",
+    "Saint-Laurent-des-Vignes",
+    "Saussignac",
+    "Gageac-et-Rouillac",
+    "Sigoulès",
+    "Ribagnac",
+    "Cunèges",
+    "Razac-de-Saussignac",
+    "Monestier",
+    "Thénac",
+    "Creysse",
+    "Lembras",
+    "Saint-Sauveur",
+    "Montcaret",
+    "Saint-Michel-de-Montaigne",
+    "Vélines",
+    "Port-Sainte-Foy-et-Ponchapt",
+    "Fougueyrolles",
+    "Lamonzie-Saint-Martin",
+    "Prigonrieux",
+    "Ginestet",
+    "Cours-de-Pile",
+    "Mouleydier"
+   ]
+  },
+  {
+   "label": "Cahors",
+   "deps": [
+    "46"
+   ],
+   "communes": [
+    "Cahors",
+    "Pradines",
+    "Douelle",
+    "Mercuès",
+    "Caillac",
+    "Parnac",
+    "Luzech",
+    "Albas",
+    "Bélaye",
+    "Prayssac",
+    "Puy-l'Évêque",
+    "Vire-sur-Lot",
+    "Duravel",
+    "Soturac",
+    "Touzac",
+    "Grézels",
+    "Castelfranc",
+    "Anglars-Juillac",
+    "Lagardelle",
+    "Crayssac",
+    "Floressas",
+    "Sauzet",
+    "Trespoux-Rassiels",
+    "Le Montat",
+    "Saint-Vincent-Rive-d'Olt",
+    "Lamagdelaine",
+    "Arcambal",
+    "Espère",
+    "Villesèque",
+    "Labastide-du-Vert",
+    "Pescadoires",
+    "Lacapelle-Cabanac",
+    "Mauroux"
+   ]
+  },
+  {
+   "label": "Gaillac",
+   "deps": [
+    "81"
+   ],
+   "communes": [
+    "Gaillac",
+    "Lisle-sur-Tarn",
+    "Rabastens",
+    "Cahuzac-sur-Vère",
+    "Castelnau-de-Montmiral",
+    "Cestayrols",
+    "Senouillac",
+    "Labastide-de-Lévis",
+    "Técou",
+    "Brens",
+    "Cadalen",
+    "Broze",
+    "Andillac",
+    "Vieux",
+    "Montans",
+    "Lagrave",
+    "Couffouleux",
+    "Loupiac",
+    "Fayssac",
+    "Florentin",
+    "Bernac",
+    "Castanet",
+    "Peyrole",
+    "Le Verdier",
+    "Campagnac",
+    "Vindrac-Alayrac",
+    "Donnazac",
+    "Souel",
+    "Noailles",
+    "Larroque"
+   ]
+  },
+  {
+   "label": "Fronton",
+   "deps": [
+    "31",
+    "82"
+   ],
+   "communes": [
+    "Fronton",
+    "Villaudric",
+    "Vacquiers",
+    "Bouloc",
+    "Castelnau-d'Estrétefonds",
+    "Saint-Rustice",
+    "Villeneuve-lès-Bouloc",
+    "Fabas",
+    "Campsas",
+    "Nohic",
+    "Orgueil",
+    "Labastide-Saint-Pierre",
+    "Canals",
+    "Pompignan",
+    "Grisolles",
+    "Villematier",
+    "Saint-Sauveur"
+   ]
+  },
+  {
+   "label": "Madiran",
+   "deps": [
+    "32",
+    "65",
+    "64"
+   ],
+   "communes": [
+    "Madiran",
+    "Maumusson-Laguian",
+    "Viella",
+    "Aydie",
+    "Castelnau-Rivière-Basse",
+    "Soublecause",
+    "Lascazères",
+    "Hagedet",
+    "Saint-Lanne",
+    "Crouseilles",
+    "Portet",
+    "Conchez-de-Béarn",
+    "Diusse",
+    "Cannet",
+    "Moncaup",
+    "Arrosès",
+    "Mont-Disse",
+    "Gayon",
+    "Lembeye",
+    "Cadillon",
+    "Corbère-Abères",
+    "Mascaraàs-Haron",
+    "Tadousse-Ussau",
+    "Riscle",
+    "Caixon",
+    "Labatut-Rivière",
+    "Sombrun",
+    "Villefranque",
+    "Saint-Aunix-Lengros",
+    "Projan",
+    "Sarron",
+    "Burosse-Mendousse",
+    "Lasserre",
+    "Vialer",
+    "Gerderest",
+    "Arricau-Bordes",
+    "Aurions-Idernes",
+    "Lannecaube",
+    "Séméacq-Blachon",
+    "Coslédaà-Lube-Boast",
+    "Monpezat",
+    "Escurès",
+    "Samsons-Lion",
+    "Simacourbe",
+    "Mascaraàs-Haron",
+    "Castillon (Canton de Lembeye)"
+   ]
+  },
+  {
+   "label": "Jurançon",
+   "deps": [
+    "64"
+   ],
+   "communes": [
+    "Jurançon",
+    "Gan",
+    "Monein",
+    "Lahourcade",
+    "Lasseube",
+    "Lasseubetat",
+    "Aubertin",
+    "Saint-Faust",
+    "Laroin",
+    "Artiguelouve",
+    "Cuqueron",
+    "Parbayse",
+    "Estialescq",
+    "Lacommande",
+    "Arbus",
+    "Mazères-Lezons",
+    "Narcastet",
+    "Rontignon",
+    "Uzos",
+    "Haut-de-Bosdarros",
+    "Bosdarros",
+    "Lucq-de-Béarn",
+    "Cardesse",
+    "Abos",
+    "Tarsacq",
+    "Aubertin"
+   ]
+  },
+  {
+   "label": "Irouléguy",
+   "deps": [
+    "64"
+   ],
+   "communes": [
+    "Irouléguy",
+    "Saint-Étienne-de-Baïgorry",
+    "Anhaux",
+    "Ascarat",
+    "Ispoure",
+    "Saint-Jean-Pied-de-Port",
+    "Bidarray",
+    "Jaxu",
+    "Lasse",
+    "Saint-Martin-d'Arrossa",
+    "Ossès",
+    "Uhart-Cize",
+    "Saint-Jean-le-Vieux"
+   ]
+  },
+  {
+   "label": "Marcillac",
+   "deps": [
+    "12"
+   ],
+   "communes": [
+    "Marcillac-Vallon",
+    "Salles-la-Source",
+    "Clairvaux-d'Aveyron",
+    "Valady",
+    "Nauviale",
+    "Balsac",
+    "Mouret",
+    "Pruines",
+    "Saint-Christophe-Vallon",
+    "Druelle",
+    "Goutrens"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Toulouse",
+   "dep": "31"
+  },
+  {
+   "nom": "Pau",
+   "dep": "64"
+  },
+  {
+   "nom": "Agen",
+   "dep": "47"
+  },
+  {
+   "nom": "Rodez",
+   "dep": "12"
+  }
+ ]
+}

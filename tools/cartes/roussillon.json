@@ -1,0 +1,124 @@
+{
+ "deps": [
+  "66",
+  "11"
+ ],
+ "fleuves": [
+  "Têt",
+  "Tech",
+  "Agly"
+ ],
+ "marges": [
+  0.1,
+  0.08,
+  0.18,
+  0.08
+ ],
+ "largeur": 300,
+ "zones": [
+  {
+   "label": "Maury",
+   "deps": [
+    "66"
+   ],
+   "communes": [
+    "Maury",
+    "Saint-Paul-de-Fenouillet",
+    "Lesquerde",
+    "Rasiguères"
+   ],
+   "pos": [
+    -6,
+    -14,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côtes du Roussillon Villages",
+   "deps": [
+    "66"
+   ],
+   "communes": [
+    "Latour-de-France",
+    "Caramany",
+    "Tautavel",
+    "Cases-de-Pène",
+    "Estagel",
+    "Montner",
+    "Planèze",
+    "Bélesta",
+    "Cassagnes",
+    "Vingrau",
+    "Espira-de-l'Agly",
+    "Calce",
+    "Baixas",
+    "Pézilla-la-Rivière",
+    "Saint-Arnac",
+    "Ansignan"
+   ],
+   "pos": [
+    -10,
+    30,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côtes du Roussillon",
+   "deps": [
+    "66"
+   ],
+   "communes": [
+    "Thuir",
+    "Terrats",
+    "Fourques",
+    "Trouillas",
+    "Passa",
+    "Tresserre",
+    "Banyuls-dels-Aspres",
+    "Llauro",
+    "Camélas",
+    "Castelnou",
+    "Ponteilla",
+    "Llupia",
+    "Sainte-Colombe-de-la-Commanderie",
+    "Montauriol",
+    "Tordères",
+    "Caixas",
+    "Villemolaque",
+    "Saint-Génis-des-Fontaines",
+    "Laroque-des-Albères",
+    "Saint-André",
+    "Sorède",
+    "Montesquieu-des-Albères",
+    "Villelongue-dels-Monts",
+    "Brouilla",
+    "Ortaffa",
+    "Bages",
+    "Corneilla-del-Vercol",
+    "Elne"
+   ]
+  },
+  {
+   "label": "Banyuls et Collioure",
+   "deps": [
+    "66"
+   ],
+   "communes": [
+    "Banyuls-sur-Mer",
+    "Cerbère",
+    "Collioure",
+    "Port-Vendres"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Perpignan",
+   "dep": "66"
+  },
+  {
+   "nom": "Rivesaltes",
+   "dep": "66"
+  }
+ ]
+}

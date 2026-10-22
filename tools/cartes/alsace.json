@@ -1,0 +1,155 @@
+{
+ "deps": [
+  "67",
+  "68"
+ ],
+ "fleuves": [
+  "Rhin",
+  "Rhine",
+  "Rhein",
+  "Ill"
+ ],
+ "marges": [
+  0.25,
+  0.06,
+  0.55,
+  0.06
+ ],
+ "largeur": 240,
+ "zones": [
+  {
+   "label": "Bas-Rhin",
+   "deps": [
+    "67"
+   ],
+   "communes": [
+    "Marlenheim",
+    "Wangen",
+    "Traenheim",
+    "Westhoffen",
+    "Bergbieten",
+    "Dangolsheim",
+    "Balbronn",
+    "Avolsheim",
+    "Molsheim",
+    "Mutzig",
+    "Dorlisheim",
+    "Wolxheim",
+    "Rosheim",
+    "Bœrsch",
+    "Ottrott",
+    "Obernai",
+    "Bernardswiller",
+    "Heiligenstein",
+    "Barr",
+    "Gertwiller",
+    "Mittelbergheim",
+    "Andlau",
+    "Eichhoffen",
+    "Bernardvillé",
+    "Itterswiller",
+    "Nothalten",
+    "Blienschwiller",
+    "Dambach-la-Ville",
+    "Epfig",
+    "Scherwiller",
+    "Châtenois",
+    "Kintzheim",
+    "Orschwiller",
+    "Saint-Pierre",
+    "Stotzheim",
+    "Kirchheim",
+    "Odratzheim",
+    "Scharrachbergheim-Irmstett",
+    "Dahlenheim"
+   ],
+   "pos": [
+    -26,
+    0,
+    "end"
+   ]
+  },
+  {
+   "label": "Haut-Rhin",
+   "deps": [
+    "68"
+   ],
+   "communes": [
+    "Saint-Hippolyte",
+    "Rodern",
+    "Rorschwihr",
+    "Bergheim",
+    "Ribeauvillé",
+    "Hunawihr",
+    "Zellenberg",
+    "Riquewihr",
+    "Beblenheim",
+    "Mittelwihr",
+    "Bennwihr",
+    "Kaysersberg Vignoble",
+    "Kientzheim",
+    "Sigolsheim",
+    "Ammerschwihr",
+    "Katzenthal",
+    "Niedermorschwihr",
+    "Ingersheim",
+    "Turckheim",
+    "Wintzenheim",
+    "Wettolsheim",
+    "Eguisheim",
+    "Husseren-les-Châteaux",
+    "Vœgtlinshoffen",
+    "Gueberschwihr",
+    "Pfaffenheim",
+    "Rouffach",
+    "Westhalten",
+    "Soultzmatt",
+    "Orschwihr",
+    "Bergholtz",
+    "Bergholtzzell",
+    "Guebwiller",
+    "Wuenheim",
+    "Thann",
+    "Vieux-Thann",
+    "Herrlisheim-près-Colmar",
+    "Obermorschwihr",
+    "Hattstatt",
+    "Steinbach",
+    "Uffholtz",
+    "Cernay",
+    "Kaysersberg"
+   ],
+   "pos": [
+    -26,
+    0,
+    "end"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Strasbourg",
+   "dep": "67"
+  },
+  {
+   "nom": "Obernai",
+   "dep": "67"
+  },
+  {
+   "nom": "Colmar",
+   "dep": "68"
+  },
+  {
+   "nom": "Mulhouse",
+   "dep": "68"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Vosges",
+   "lon": 7.05,
+   "lat": 48.2,
+   "rot": -75
+  }
+ ]
+}

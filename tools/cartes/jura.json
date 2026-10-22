@@ -1,0 +1,161 @@
+{
+ "deps": [
+  "39"
+ ],
+ "fleuves": [
+  "Doubs"
+ ],
+ "marges": [
+  0.3,
+  0.04,
+  0.15,
+  0.04
+ ],
+ "largeur": 220,
+ "zones": [
+  {
+   "label": "Arbois",
+   "deps": [
+    "39"
+   ],
+   "communes": [
+    "Arbois",
+    "Montigny-lès-Arsures",
+    "Pupillin",
+    "Mesnay",
+    "Les Planches-près-Arbois",
+    "Villette-lès-Arbois",
+    "Vadans",
+    "Mathenay",
+    "Abergement-le-Grand",
+    "Saint-Cyr-Montmalin",
+    "Molamboz"
+   ],
+   "pos": [
+    22,
+    0,
+    "start"
+   ],
+   "opacite": 0.3
+  },
+  {
+   "label": "Château-Chalon",
+   "deps": [
+    "39"
+   ],
+   "communes": [
+    "Château-Chalon",
+    "Ménétru-le-Vignoble",
+    "Nevy-sur-Seille",
+    "Domblans"
+   ],
+   "pos": [
+    16,
+    -2,
+    "start"
+   ],
+   "opacite": 0.5
+  },
+  {
+   "label": "L’Étoile",
+   "deps": [
+    "39"
+   ],
+   "communes": [
+    "L'Étoile",
+    "Plainoiseau",
+    "Quintigny",
+    "Saint-Didier"
+   ],
+   "pos": [
+    -16,
+    4,
+    "end"
+   ],
+   "opacite": 0.42
+  },
+  {
+   "label": "Côtes du Jura",
+   "deps": [
+    "39"
+   ],
+   "communes": [
+    "Poligny",
+    "Voiteur",
+    "Arlay",
+    "Montaigu",
+    "Conliège",
+    "Gevingey",
+    "Rotalier",
+    "Saint-Lothain",
+    "Passenans",
+    "Frontenay",
+    "Le Vernois",
+    "Pannessières",
+    "Vernantois",
+    "Grusse",
+    "Cesancey",
+    "Sainte-Agnès",
+    "Vincelles",
+    "Beaufort",
+    "Orbagna",
+    "Maynal",
+    "Cuisia",
+    "Gizia",
+    "Mantry",
+    "Lavigny",
+    "Montholier",
+    "Grozon",
+    "Buvilly",
+    "Chamole",
+    "Miéry",
+    "Barretaine",
+    "Toulouse-le-Château",
+    "Le Louverot",
+    "Saint-Germain-lès-Arlay",
+    "Bréry",
+    "Saizenay",
+    "Salins-les-Bains",
+    "Vertamboz",
+    "Perrigny",
+    "Macornay",
+    "Chilly-le-Vignoble",
+    "Courlaoux",
+    "Montmorot",
+    "Saint-Amour",
+    "Balanod",
+    "Graye-et-Charnay"
+   ],
+   "pos": [
+    -30,
+    80,
+    "end"
+   ],
+   "opacite": 0.16
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Lons-le-Saunier",
+   "dep": "39",
+   "pos": [
+    0,
+    16,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Poligny",
+   "dep": "39",
+   "pos": [
+    8,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Dole",
+   "dep": "39"
+  }
+ ]
+}

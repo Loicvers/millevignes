@@ -1,0 +1,174 @@
+{
+ "deps": [
+  "2A",
+  "2B"
+ ],
+ "fleuves": [],
+ "marges": [
+  0.1,
+  0.06,
+  0.15,
+  0.06
+ ],
+ "largeur": 240,
+ "zones": [
+  {
+   "label": "Cap Corse",
+   "deps": [
+    "2B"
+   ],
+   "communes": [
+    "Rogliano",
+    "Ersa",
+    "Centuri",
+    "Morsiglia",
+    "Pino",
+    "Luri",
+    "Cagnano",
+    "Barrettali",
+    "Canari",
+    "Nonza",
+    "Olmeta-di-Capocorso",
+    "Ogliastro",
+    "Olcani",
+    "Sisco",
+    "Pietracorbara",
+    "Brando",
+    "Tomino",
+    "Meria"
+   ]
+  },
+  {
+   "label": "Patrimonio",
+   "deps": [
+    "2B"
+   ],
+   "communes": [
+    "Patrimonio",
+    "Barbaggio",
+    "Farinole",
+    "Oletta",
+    "Poggio-d'Oletta",
+    "Saint-Florent",
+    "Santo-Pietro-di-Tenda"
+   ]
+  },
+  {
+   "label": "Calvi",
+   "deps": [
+    "2B"
+   ],
+   "communes": [
+    "Calvi",
+    "Calenzana",
+    "Lumio",
+    "Montegrosso",
+    "Zilia",
+    "Aregno",
+    "Avapessa",
+    "Cateri",
+    "Lavatoggio",
+    "Algajola",
+    "Sant'Antonino",
+    "Corbara",
+    "Monticello",
+    "Santa-Reparata-di-Balagna"
+   ]
+  },
+  {
+   "label": "Côte orientale",
+   "deps": [
+    "2B"
+   ],
+   "communes": [
+    "Aléria",
+    "Linguizzetta",
+    "Tallone",
+    "Ghisonaccia",
+    "Antisanti",
+    "Tox",
+    "Canale-di-Verde",
+    "San-Giuliano",
+    "Prunelli-di-Fiumorbo",
+    "Aghione",
+    "Giuncaggio",
+    "Poggio-di-Nazza",
+    "Serra-di-Fiumorbo"
+   ]
+  },
+  {
+   "label": "Ajaccio",
+   "deps": [
+    "2A"
+   ],
+   "communes": [
+    "Ajaccio",
+    "Alata",
+    "Afa",
+    "Appietto",
+    "Bastelicaccia",
+    "Cuttoli-Corticchiato",
+    "Eccica-Suarella",
+    "Peri",
+    "Sarrola-Carcopino",
+    "Villanova",
+    "Tavaco",
+    "Valle-di-Mezzana",
+    "Grosseto-Prugna",
+    "Porticcio"
+   ]
+  },
+  {
+   "label": "Sartène",
+   "deps": [
+    "2A"
+   ],
+   "communes": [
+    "Sartène",
+    "Propriano",
+    "Grossa",
+    "Bilia",
+    "Granace",
+    "Foce",
+    "Giuncheto",
+    "Belvédère-Campomoro",
+    "Olmeto",
+    "Viggianello",
+    "Arbellara",
+    "Fozzano"
+   ]
+  },
+  {
+   "label": "Figari",
+   "deps": [
+    "2A"
+   ],
+   "communes": [
+    "Figari",
+    "Pianottoli-Caldarello",
+    "Monacia-d'Aullène",
+    "Sotta"
+   ]
+  },
+  {
+   "label": "Porto-Vecchio",
+   "deps": [
+    "2A"
+   ],
+   "communes": [
+    "Porto-Vecchio",
+    "Lecci"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Bastia",
+   "dep": "2B"
+  },
+  {
+   "nom": "Corte",
+   "dep": "2B"
+  }
+ ]
+}
