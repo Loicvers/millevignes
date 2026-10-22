@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-475 fiches : 253 vérifiées, 222 à vérifier (346 points).
-Hors dette : 862 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+483 fiches : 262 vérifiées, 221 à vérifier (343 points).
+Hors dette : 902 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -755,17 +755,12 @@ Hors dette : 862 détails laissés « selon le livre » (champ `selon_livre`, no
 - [ ] Crus bourgeois : trois niveaux depuis 2020 (249 châteaux : 14 exceptionnels, 56 supérieurs, 179 crus bourgeois), révision annoncée en février 2025 (170 : 14, 36, 120) ; presse seule, Alliance des crus bourgeois non lue ⚠️
 - [ ] Place de Bordeaux : circuit de distribution (courtiers, plus de 400 négociants) et vente en primeur au printemps suivant la récolte ; presse spécialisée seule, CIVB non lu ⚠️
 
-**Fiche 414** (p.?) — Le Sud-Ouest : une mosaïque de cépages locaux
-- [ ] Madiran : tannat au moins 60 % de l’assemblage et des plantations d’après l’arrêté du 26 novembre 2025 ; seuil antérieur (50 % ?) non établi, un seul texte officiel clair ⚠️
-- [ ] Fronton : négrette au moins 50 % des plantations (règle actuelle), 51 % et 40 % de l’assemblage dans un projet de 2024, 50 % de l’assemblage selon une source de presse ; seuil à confirmer au cahier en vigueur ⚠️
-
 **Fiche 417** (p.?) — Languedoc : une pyramide d’appellations encore en mouvement
 - [ ] Surface du vignoble languedocien : 236 000 ha exploités (bassin Languedoc-Roussillon, AD’OCC d’après Agriscope 2018) à 263 000 ha (Occitanie entière) ; Pays d’Oc 2022 parle de 240 000 ha ; aucun chiffre récent de niveau 1 ⚠️
 - [ ] Pyramide et liste des communales : CIVL 2022-2023 (Boutenac, Faugères, Fitou, La Clape, La Livinière), CIVL 2024 (Boutenac, Faugères, La Clape, La Livinière, Montpeyroux, Fitou absent), INAO février 2026 (Montpeyroux approuvé, décret et accord de la Commission européenne à formaliser, relayé par Decanter) ; cahier des charges Languedoc non lu (extranet INAO bloqué) ⚠️
 - [ ] IGP Pays d’Oc : 120 000 ha, environ 6,8 Mhl en 2022, première IGP française et première à l’export : chiffres de l’organisme de défense lui-même, sans recoupement indépendant ⚠️
 
 **Fiche 419** (p.?) — Provence : la région du rosé
-- [ ] Bandol rouge ≥ 50 % de mourvèdre, rosé ≥ 20 %, élevage du rouge ≥ 18 mois, AOC du 11 novembre 1941 : lu dans un projet de modification du cahier des charges approuvé en novembre 2024 ; version publiée non lue ⚠️
 - [ ] Part de la Provence dans les rosés du monde : environ 5 % d’après le CIVP (chiffres clés 2024), mais non repris dans le bilan 2025 ; le livre dit 6 % ⚠️
 
 **Fiche 420** (p.?) — Corse : niellucciu, sciaccarellu et vermentino

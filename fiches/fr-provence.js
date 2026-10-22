@@ -17,8 +17,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Bandol rouge ≥ 50 % de mourvèdre, rosé ≥ 20 %, élevage du rouge ≥ 18 mois, AOC du 11 novembre 1941 : lu dans un projet de modification du cahier des charges approuvé en novembre 2024 ; version publiée non lue ⚠️","Part de la Provence dans les rosés du monde : environ 5 % d’après le CIVP (chiffres clés 2024), mais non repris dans le bilan 2025 ; le livre dit 6 % ⚠️"],
-    selon_livre: ["Bellet (Nice) : rouge et rosé de braquet et folle noire, blanc de vermentino et chardonnay, AOC du 11 novembre 1941 : fiches INAO seules, surface non donnée"],
-    src: "CIVP, chiffres clés 2024 et 2025, guide pratique ; FranceAgriMer, Observatoire du rosé (2014) ; wein.plus d’après Inrap (vignoble de Marseille) ; INAO, projet de cahier des charges Bandol (2024) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 234-237 ; cf. Mille Vignes, P. Lepeltier, p. 183"
+    to_check: ["Part de la Provence dans les rosés du monde : environ 5 % d’après le CIVP (chiffres clés 2024), mais non repris dans le bilan 2025 ; le livre dit 6 % ⚠️"],
+    selon_livre: ["Bellet (Nice) : rouge et rosé de braquet et folle noire, blanc de vermentino (chardonnay seulement accessoire), AOC du 11 novembre 1941 : fiches INAO et cahier des charges (décret du 1er décembre 2011) ; surface non donnée"],
+    src: "CIVP, chiffres clés 2024 et 2025, guide pratique ; FranceAgriMer, Observatoire du rosé (2014) ; wein.plus d’après Inrap (vignoble de Marseille) ; INAO, cahier des charges Bandol (BO-agri, arrêté du 11 août 2026, 8 communes, 40 hl/ha) et projet de modification (2024) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 234-237 ; cf. Mille Vignes, P. Lepeltier, p. 183"
   }
 );

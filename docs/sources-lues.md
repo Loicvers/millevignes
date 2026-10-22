@@ -82,3 +82,7 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## La France viticole — Alsace, grands crus et mentions (22/10/2026)
 - BO-agri : cahiers des charges Alsace, Alsace grand cru (arrêté du 9 mai 2022 ; avis INAO 2024 Vorbourg), Crémant d’Alsace ; eAmbrosia, fiches techniques des grands crus (Rangen, Schlossberg, Brand, Hengst, Geisberg, Goldert, Gloeckelberg, Furstentum) ; Decanter (2019) ; Harpers (24/07/2024). Bloqués : CIVA, vinsalsace.com, Légifrance (JO du 07/07/2024).
+
+## La France viticole — Sud-Ouest et Provence (22/10/2026)
+- Sud-Ouest : décret n° 2011-1367 (Cahors, reproduction du Musée des boissons ; pas au BO-agri) ; BO-agri : Madiran (26/11/2025), Pacherenc du Vic-Bilh (2017, 2025), Jurançon (2025), Bergerac, Monbazillac, Pécharmant (2018), Saussignac, Montravel (2014), Rosette, Gaillac (2015, projet 2025), Fronton (14/04/2025), Marcillac, Irouléguy ; interprofession Cahors Vallée du Lot ; Oxford Companion (micro-oxygénation).
+- Provence : BO-agri : Côtes de Provence (2019, projet 2023), Coteaux d’Aix, Coteaux Varois, Bandol (11/08/2026), Cassis, Palette, Bellet, Les Baux de Provence (24/10/2024) ; fiche INAO et dossier de presse de Pierrevert (cahier des charges introuvable) ; CIVP ; Decanter. Bloqués : lejournaldesentreprises.com, doctrine.fr.
