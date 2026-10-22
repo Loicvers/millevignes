@@ -41,7 +41,7 @@ export function migrate({ FICHES, SOUS, THEME_ORDER, FRANCE_SOMMAIRE = [] }) {
     }
     const ch = f.page ? chapterAt(TOC, f.page) : null;
     const ref = f.source === "france"
-      ? { source_id: "france", page: null, note: f.src, partie: "La France viticole", section: FRANCE_SOMMAIRE.find(c => c.chapitre === f.chapitre).section, chapitre: f.chapitre }
+      ? { source_id: "france", page: null, note: f.src, partie: FRANCE_SOMMAIRE.find(c => c.chapitre === f.chapitre).partie ?? "La France viticole", section: FRANCE_SOMMAIRE.find(c => c.chapitre === f.chapitre).section, chapitre: f.chapitre }
       : { source_id: "mille-vignes", page: f.page ?? null, note: f.src,
       partie: ch?.partie ?? f.partie ?? null, section: ch?.section ?? null, chapitre: f.chapitre ?? ch?.chapitre ?? null };
     notions.push({

@@ -49,7 +49,8 @@ const REGIONS_FR = [
   "Languedoc", "Lorraine", "Provence", "Roussillon", "Savoie", "Sud-Ouest", "Val de Loire", "Vallée du Rhône"
 ];
 
-/* Chapitres hors livre « La France viticole » (fiches à `source: "france"`, sans `page`, avec `chapitre`).
+/* Chapitres hors livre (fiches à `source: "france"`, sans `page`, avec `chapitre`) : « La France viticole » par défaut,
+   ou la partie indiquée par `partie` (ex. « Le monde viticole » pour l'international).
    L'ordre de cette liste est l'ordre de lecture ; ces chapitres viennent après ceux de Mille Vignes. */
 const FRANCE_SOMMAIRE = [
   { section: "France", chapitre: "La France viticole : vue d’ensemble" },

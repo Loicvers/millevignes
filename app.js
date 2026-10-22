@@ -692,7 +692,7 @@ fetch('data/mille-vignes-sommaire.json').then(r=>r.json()).then(toc=>{
   if(typeof RECITS!=='undefined')toc.forEach(c=>{if(!par.has(c)&&RECITS.some(r=>r.chapitre===c.chapitre))CHAPS.push({...c,fiches:[]});});
   CHAPS.sort((a,b)=>a.page-b.page);
   // Chapitres hors livre « La France viticole », après le livre, dans l'ordre de FRANCE_SOMMAIRE.
-  if(typeof FRANCE_SOMMAIRE!=='undefined')FRANCE_SOMMAIRE.forEach(c=>{const fs=FICHES.filter(f=>f.source==='france'&&f.chapitre===c.chapitre).sort((a,b)=>a.id-b.id);if(fs.length)CHAPS.push({partie:'La France viticole',section:c.section,chapitre:c.chapitre,fiches:fs});});
+  if(typeof FRANCE_SOMMAIRE!=='undefined')FRANCE_SOMMAIRE.forEach(c=>{const fs=FICHES.filter(f=>f.source==='france'&&f.chapitre===c.chapitre).sort((a,b)=>a.id-b.id);if(fs.length)CHAPS.push({partie:c.partie||'La France viticole',section:c.section,chapitre:c.chapitre,fiches:fs});});
   render();
 }).catch(()=>{});
 // Le schéma s'affiche en entier la première fois dans la séance, puis derrière « Voir le schéma » (comme la synthèse).
