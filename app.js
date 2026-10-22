@@ -744,7 +744,12 @@ function majBandeau(){
 function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Session du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
 
 updateBadges();render();importFromHash();
-if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
+if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
+  // Nouvelle version du site installée : recharger tout de suite (sauf pendant une séance d'exercices) au lieu d'attendre l'ouverture suivante.
+  const avant=navigator.serviceWorker.controller;let fait=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(avant&&!fait&&mode!=='due'){fait=true;location.reload();}});
+  navigator.serviceWorker.register('sw.js').then(r=>r.update()).catch(()=>{});
+}
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 async function exportProg(){
   const nom='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';
