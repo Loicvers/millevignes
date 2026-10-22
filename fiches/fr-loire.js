@@ -1,0 +1,45 @@
+// La France viticole — Val de Loire (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 409,
+    theme: "Géographie viticole",
+    sous: ["Régions","Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Val de Loire","appel":null},
+    source: "france",
+    chapitre: "Val de Loire : panorama et appellations",
+    titre: "Loire de l’Atlantique : Pays nantais et Anjou-Saumur",
+    synth: "À l’embouchure de la Loire, les vignobles nantais reposent sur un seul cépage blanc, le melon (dit melon de Bourgogne) : muscadet-sèvre-et-maine et muscadet-coteaux-de-la-loire datent du décret du 14 novembre 1936, le muscadet régional de 1937 et le muscadet-côtes-de-grandlieu de 1994. Au-dessus de l’appellation, des crus communaux (Clisson, Gorges, Le Pallet…) précisent l’origine, mais leur liste s’allonge encore. En remontant vers Angers et Saumur, on change de registre : cabernet franc et chenin dominent, avec un peu de cabernet sauvignon et de gamay, pour des appellations aussi variées que savennières, coteaux-du-layon, bonnezeaux, quarts-de-chaume, saumur-champigny, rosé-d’anjou ou cabernet-d’anjou. Le gros-plant et le muscadet restent, eux, côté nantais.",
+    mnemo: "Une Loire qui se jette dans l’Atlantique : à l’estuaire, un melon blanc et salin pour les huîtres ; dès qu’on remonte vers l’Anjou, le fleuve prend la couleur du chenin doré et du cabernet franc rouge sombre.",
+    flash: {"q":"Quels sont les cépages dominants en Anjou-Saumur ?","a":"Le cabernet franc et le chenin, avec du cabernet sauvignon et du gamay en complément.","keys":[["cabernet franc"],["chenin"]]},
+    qcm: {"q":"Quand les appellations muscadet-sèvre-et-maine et muscadet-coteaux-de-la-loire ont-elles été reconnues ?","opts":["En 1936","En 1905","En 1948","En 1962"],"good":0,"expl":"Les deux relèvent du même décret du 14 novembre 1936 ; le muscadet régional est venu un an plus tard et les côtes-de-grandlieu bien plus tard, en 1994."},
+    exos: [{"type":"short_answer","prompt":"Qui suis-je ? Je suis un cépage blanc, seul cépage de toutes les appellations muscadet, cultivé dans les vignobles nantais.","payload":{"accepted":["melon","melon de bourgogne"]},"explanation":"Le muscadet est le nom de l’appellation ; le cépage s’appelle le melon (de Bourgogne)."},{"type":"odd_one_out","prompt":"Laquelle de ces appellations n’appartient pas au vignoble d’Anjou-Saumur ?","payload":{"options":["Coteaux-du-layon","Bonnezeaux","Savennières","Gros-plant"],"answer":3},"explanation":"Le gros-plant se trouve dans les vignobles nantais, avec le muscadet ; les trois autres sont angevines."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Dans le vignoble suivi par InterLoire (hors Centre-Loire), le chenin est le cépage le plus planté.","answer":false},"explanation":"Le cabernet franc arrive en tête, devant le chenin puis le melon ; les pourcentages varient d’une année à l’autre, mais pas l’ordre."}],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️","Rosé-de-loire « au moins 30 % de cabernets » (livre p. 201, guide de presse) : le cahier des charges de 2024 liste les cépages sans proportion minimale ⚠️"],
+    selon_livre: ["Mention « sur lies » du muscadet et durée d’élevage des crus communaux : un seul texte officiel lu (cahier des charges 2019), calendrier par dates, non recoupé","Rosé-d’anjou à dominante de grolleau, reconnu en 1957 : INAO seul ; cabernet-d’anjou demi-sec non vérifié","Savennières, coteaux-du-layon, bonnezeaux : chenin, du sec au liquoreux ; saumur-champigny : cabernet franc (livre p. 201, non recoupé appellation par appellation)","Quarts-de-chaume, grand cru depuis 2011, seule appellation française de liquoreux à porter cette mention : InterLoire seul"],
+    src: "InterLoire, livret pro (chiffres clés par vignoble) ; Vins du Centre-Loire, nos appellations ; BO-agri, cahiers des charges Muscadet Sèvre et Maine (arrêté du 16/10/2019), Muscadet Coteaux de la Loire, Muscadet ; INAO, page produit Muscadet ; INAO, avis de consultation publique de 3 DGC du muscadet (2025) ; BO-agri, cahier des charges Rosé de Loire (2024) ; INAO, page produit Rosé d’Anjou ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 198-201 ; cf. Mille Vignes, P. Lepeltier, p. 183"
+  },
+  {
+    id: 410,
+    theme: "Géographie viticole",
+    sous: ["Régions","Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Val de Loire","appel":null},
+    source: "france",
+    chapitre: "Val de Loire : panorama et appellations",
+    titre: "Loire du cœur et de l’amont : Touraine et Centre-Loire",
+    synth: "En Touraine, le chenin donne le vouvray (chenin seul, orbois accessoire jusqu’à 5 %, décret du 8 décembre 1936), décliné en sec, demi-sec, moelleux et en mousseux ou pétillant ; montlouis, son voisin, est lui aussi de chenin seul. Chinon, bourgueil et saint-nicolas-de-bourgueil sont les rouges de la région, à base de cabernet franc. Le Centre-Loire, en amont, a sa propre organisation et ne dépend pas d’InterLoire : sancerre (sauvignon seul en blanc, pinot noir seul en rouge et rosé), pouilly-fumé, menetou-salon, quincy (blanc uniquement, sauvignon avec au plus 10 % de sauvignon gris, sur les communes de Quincy et de Brinay) et reuilly. Le paysage inscrit à l’Unesco va de Sully-sur-Loire à Chalonnes : Sancerre en est en amont, hors périmètre.",
+    mnemo: "Deux étages d’une même maison : au rez-de-chaussée, la Touraine garde ses caves creusées dans la roche et son chenin ; à l’étage, le Centre-Loire ouvre ses fenêtres sur le sauvignon et le pinot noir.",
+    flash: {"q":"Que sait-on du cépage et des styles du vouvray ?","a":"Chenin (orbois accessoire à 5 % au plus) ; vins tranquilles secs, demi-secs ou moelleux, et mousseux ou pétillants ; reconnu en 1936.","keys":[["chenin"],["sec","moelleux","demi-sec"],["mousseux","pétillant","bulles"]]},
+    qcm: {"q":"Quel cépage fait les rouges et les rosés de Sancerre ?","opts":["Le pinot noir, seul","Le gamay, seul","Un assemblage de pinot noir et de cabernet franc","Le cabernet franc, seul"],"good":0,"expl":"Sancerre est une appellation de Centre-Loire : sauvignon en blanc, pinot noir en rouge et en rosé. Le cabernet franc est le cépage rouge de la Touraine."},
+    exos: [{"type":"matching","prompt":"Associe chaque appellation à son cépage.","payload":{"pairs":[["Vouvray","Chenin"],["Quincy","Sauvignon blanc"],["Chinon rouge","Cabernet franc"]]},"explanation":"Chaque appellation a un cépage de référence : chenin à Vouvray, cabernet franc pour les rouges de Chinon, sauvignon à Quincy."},{"type":"odd_one_out","prompt":"Laquelle de ces appellations n’est pas en Centre-Loire ?","payload":{"options":["Pouilly-fumé","Menetou-salon","Quincy","Chinon"],"answer":3},"explanation":"Chinon est en Touraine, vignoble de cabernet franc ; les trois autres sont des appellations du Centre-Loire."},{"type":"short_answer","prompt":"Qui suis-je ? Appellation du Cher, vin blanc uniquement, de sauvignon avec un peu de sauvignon gris, produit sur ma commune et sur Brinay.","payload":{"accepted":["quincy"]},"explanation":"Le cahier des charges limite l’aire à deux communes, Quincy et Brinay."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Sancerre se trouve dans le périmètre du Val de Loire inscrit à l’Unesco.","answer":false},"explanation":"L’inscription couvre le tronçon de Sully-sur-Loire à Chalonnes ; Sancerre est en amont de Sully, et l’inscription vise un paysage, non un vignoble."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Quincy : décret du 6 août 1936 (cahiers des charges BO-agri), antérieur à celui de sancerre (14 novembre 1936) ; qu’il soit la première AOC de la Loire n’est affirmé par aucune source lue","Cabernet franc, premier cépage planté du vignoble InterLoire (hors Centre-Loire) devant le chenin : InterLoire, deux documents concordants mais pourcentages variables d’une année à l’autre","Tuffeau : roche calcaire de la vallée (livre seul, non recoupé)"],
+    src: "InterLoire, livret pro ; Vins du Centre-Loire, nos appellations ; BO-agri, cahiers des charges Vouvray, Sancerre, Quincy, Chinon, Bourgueil, Saint-Nicolas-de-Bourgueil ; INAO, pages produit Vouvray, Chinon, Montlouis-sur-Loire ; UNESCO, Val de Loire entre Sully-sur-Loire et Chalonnes ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 198-203 ; cf. Mille Vignes, P. Lepeltier, p. 183"
+  }
+);

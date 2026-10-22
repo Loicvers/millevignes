@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-401 fiches : 198 vérifiées, 203 à vérifier (313 points).
-Hors dette : 632 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+420 fiches : 204 vérifiées, 216 à vérifier (344 points).
+Hors dette : 683 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -722,3 +722,60 @@ Hors dette : 632 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 401** (p.?) — Pouilly-Fuissé, Pouilly-Loché et Pouilly-Vinzelles : roches de Solutré et Vergisson, premiers crus de 2020
 - [ ] 4 premiers crus à Pouilly-Loché (1) et Pouilly-Vinzelles (3) dès le millésime 2024 : trois articles de presse (Decanter, The Drinks Business, iDealwine) concordent, mais le texte officiel (arrêté, BO-agri) n’a pu être lu (fichier illisible) et la date de reconnaissance n’est pas confirmée au niveau INAO. Relecture : le projet de cahier des charges Pouilly-Vinzelles (INAO, avis du comité national du 06/02/2024) liste bien Les Longeays, Les Pétaux et Les Quarts, mais reste un projet.
+
+**Fiche 402** (p.?) — La France viticole : trois climats et une pyramide d’appellations
+- [ ] Répartition AOP / IGP / sans IG en 2024 (404 300 / 200 300 / 38 700 ha) : une seule source de niveau 1 lue (FranceAgriMer, fiche filière 2026), parts en pourcentage lues sur graphiques ⚠️
+- [ ] Surface du vignoble français : entre 740 000 ha (OIV 2025, relayé par Vinetur) et 792 000 ha (OIV 2023, chiffre provisoire) ; FranceAgriMer donne 783 000 ha sans année ⚠️
+- [ ] Trois grands climats (océanique, continental, méditerranéen) et rattachement du Rhône Sud, du Languedoc-Roussillon et de la Provence au méditerranéen : classification courante, non recoupée sur une source de niveau 1 ⚠️
+
+**Fiche 403** (p.?) — La Champagne : quatre grands secteurs, trois cépages et des crus classés par village
+- [ ] Premiers crus : 42 communes autorisées à la seule mention « premier cru » (liste du cahier des charges, soit 59 communes avec mention de cru en comptant les 17 grands crus) contre 44 premiers crus (livre, DRAAF) : divergence non tranchée ; le chiffre de 44 n’est pas retrouvé dans le texte actuel ⚠️
+- [ ] Découpage en secteurs et cépage dominant de chacun (Montagne de Reims, Vallée de la Marne, Côte des Blancs, Côte des Bar ; éventuelle Côte de Sézanne) : le Comité Champagne et deux sources 2b ne concordent pas sur le cépage de la Côte des Bar (pinot noir seul ou pinot noir et chardonnay) ⚠️
+- [ ] Rosé-des-riceys : rosé tranquille de pinot noir seul, élevage jusqu’au 1er juillet de l’année suivante : appuyé par le seul cahier des charges (deux versions, 2020 et 2023), sans source indépendante ⚠️
+
+**Fiche 405** (p.?) — L’Alsace : un vignoble de cépages, des grands crus de lieux-dits
+- [ ] Étendue du vignoble (environ 170 km, 1 à 20 km de large, 150 à 400 m, environ 15 600 ha) : 170 km (livre, Vins Vignes Vignerons) contre 180 km (Chambre d’agriculture) ; borne nord Marlenheim ou Wissembourg ; aucune donnée CIVA lue (site bloqué) ⚠️
+- [ ] Hiérarchie des AOC alsaciennes (alsace 1962, alsace grand cru, crémant-d’alsace ; 53 AOP) et date de l’AOC Alsace grand cru : 1974 (alsace-du-vin.com) contre décret du 20 novembre 1975 (Vins Vignes Vignerons) : à confirmer sur une source officielle ⚠️
+- [ ] Vendanges tardives et sélection de grains nobles : cépages admis, millésime obligatoire, vendange manuelle, sans enrichissement, élevage jusqu’au 1er juin de la 2e année ; seuils de sucre volontairement non repris (valeurs des muscats mal extraites, riesling non lu) ⚠️
+- [ ] Crémant d’Alsace : cépages (auxerrois, chardonnay, pinot blanc, pinot gris, pinot noir, riesling), 9 mois au moins sur lies, mise en marché 12 mois après le tirage : appuyé par le seul cahier des charges (2025) et un site 2b ⚠️
+
+**Fiche 406** (p.?) — Le Beaujolais : gamay, villages et dix crus
+- [ ] Dates de reconnaissance des crus autres que Régnié (Morgon, Fleurie, Chiroubles, Chénas, Moulin-à-Vent 1936 ; Brouilly, Côte de Brouilly, Juliénas 1938 ; Saint-Amour 1946) : INAO seul, seconde source non lue ⚠️ ; le livre dit « Moulin-à-Vent plus ancienne appellation » mais la base de cette ancienneté n’est pas établie, ne pas l’enseigner
+- [ ] Vinification : la macération semi-carbonique et les grappes entières sont dominantes selon Inter Beaujolais, mais ni vendange manuelle obligatoire ni grappes entières obligatoires ne sont lues dans les cahiers des charges consultés (qui encadrent la récolte mécanique) ⚠️
+
+**Fiche 407** (p.?) — Le Jura : savagnin, vin jaune et vin de paille
+- [ ] Liste et poids des appellations (six AOC : Arbois, Château-Chalon, L’Étoile, Côtes du Jura, Crémant du Jura, Macvin du Jura ; environ 2 100 ha, base déclarations 2023) : un seul document de niveau 1 (infographie CIVJ) et une source 2b ; parts de cépages de l’infographie non reprises ⚠️
+- [ ] Arbois : reconnaissance par décret du 15 mai 1936, 12 communes (13 selon la description du même texte), mention Pupillin : appuyé par le seul cahier des charges, qui se contredit sur le nombre de communes ⚠️
+- [ ] Château-Chalon : réservé au vin jaune, quatre communes (Château-Chalon, Domblans en partie, Menétru-le-Vignoble, Nevy-sur-Seille), environ 55 ha ; date de reconnaissance flottante (29 ou 31 mai 1936) ⚠️
+
+**Fiche 409** (p.?) — Loire de l’Atlantique : Pays nantais et Anjou-Saumur
+- [ ] Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️
+- [ ] Rosé-de-loire « au moins 30 % de cabernets » (livre p. 201, guide de presse) : le cahier des charges de 2024 liste les cépages sans proportion minimale ⚠️
+
+**Fiche 411** (p.?) — Bordeaux rive gauche : Médoc, Graves et Sauternais
+- [ ] Barsac peut revendiquer Sauternes (pas l’inverse) : CIVB seul, règle du cahier de l’AOC Barsac non lue ⚠️
+
+**Fiche 412** (p.?) — Bordeaux rive droite et Entre-deux-Mers
+- [ ] Extensions des VIFA au Médoc, Haut-Médoc et Listrac-Médoc (décembre 2022, quatre rouges) puis à Margaux (juillet 2023, castets seul) : dates d’une seule source de presse ; le CIVB parle du castets « à l’essai » à Margaux ⚠️
+- [ ] Entre-deux-Mers rouge : au moins 4 500 pieds/ha, désherbage chimique interdit, aucun cépage au-delà de 80 % : WSET seul (2b), cahier des charges non lu ⚠️
+
+**Fiche 413** (p.?) — Les classements de Bordeaux aujourd’hui et la place
+- [ ] Classement des Graves (1959) : 16 crus d’après une source de presse, 14 « crus classés de Graves » dans Pessac-Léognan d’après le CIVB ; écart non expliqué, source officielle non trouvée ⚠️
+- [ ] Crus bourgeois : trois niveaux depuis 2020 (249 châteaux : 14 exceptionnels, 56 supérieurs, 179 crus bourgeois), révision annoncée en février 2025 (170 : 14, 36, 120) ; presse seule, Alliance des crus bourgeois non lue ⚠️
+- [ ] Place de Bordeaux : circuit de distribution (courtiers, plus de 400 négociants) et vente en primeur au printemps suivant la récolte ; presse spécialisée seule, CIVB non lu ⚠️
+
+**Fiche 414** (p.?) — Le Sud-Ouest : une mosaïque de cépages locaux
+- [ ] Madiran : tannat au moins 60 % de l’assemblage et des plantations d’après l’arrêté du 26 novembre 2025 ; seuil antérieur (50 % ?) non établi, un seul texte officiel clair ⚠️
+- [ ] Fronton : négrette au moins 50 % des plantations (règle actuelle), 51 % et 40 % de l’assemblage dans un projet de 2024, 50 % de l’assemblage selon une source de presse ; seuil à confirmer au cahier en vigueur ⚠️
+
+**Fiche 417** (p.?) — Languedoc : une pyramide d’appellations encore en mouvement
+- [ ] Surface du vignoble languedocien : 236 000 ha exploités (bassin Languedoc-Roussillon, AD’OCC d’après Agriscope 2018) à 263 000 ha (Occitanie entière) ; Pays d’Oc 2022 parle de 240 000 ha ; aucun chiffre récent de niveau 1 ⚠️
+- [ ] Pyramide et liste des communales : CIVL 2022-2023 (Boutenac, Faugères, Fitou, La Clape, La Livinière), CIVL 2024 (Boutenac, Faugères, La Clape, La Livinière, Montpeyroux, Fitou absent), INAO février 2026 (Montpeyroux approuvé, décret et accord de la Commission européenne à formaliser, relayé par Decanter) ; cahier des charges Languedoc non lu (extranet INAO bloqué) ⚠️
+- [ ] IGP Pays d’Oc : 120 000 ha, environ 6,8 Mhl en 2022, première IGP française et première à l’export : chiffres de l’organisme de défense lui-même, sans recoupement indépendant ⚠️
+
+**Fiche 419** (p.?) — Provence : la région du rosé
+- [ ] Bandol rouge ≥ 50 % de mourvèdre, rosé ≥ 20 %, élevage du rouge ≥ 18 mois, AOC du 11 novembre 1941 : lu dans un projet de modification du cahier des charges approuvé en novembre 2024 ; version publiée non lue ⚠️
+- [ ] Part de la Provence dans les rosés du monde : environ 5 % d’après le CIVP (chiffres clés 2024), mais non repris dans le bilan 2025 ; le livre dit 6 % ⚠️
+
+**Fiche 420** (p.?) — Corse : niellucciu, sciaccarellu et vermentino
+- [ ] Niellucciu et sangiovese : le livre le présente comme « parent du sangiovese » ; la littérature le décrit plutôt comme génétiquement identique. Aucune source lue (VIVC en maintenance) ne tranche, donc la parenté n’est pas reprise dans la fiche ⚠️

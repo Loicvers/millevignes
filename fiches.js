@@ -52,12 +52,26 @@ const REGIONS_FR = [
 /* Chapitres hors livre « La France viticole » (fiches à `source: "france"`, sans `page`, avec `chapitre`).
    L'ordre de cette liste est l'ordre de lecture ; ces chapitres viennent après ceux de Mille Vignes. */
 const FRANCE_SOMMAIRE = [
+  { section: "France", chapitre: "La France viticole : vue d’ensemble" },
+  { section: "Champagne", chapitre: "Champagne : panorama et appellations" },
+  { section: "Alsace", chapitre: "Alsace : panorama et appellations" },
   { section: "Bourgogne", chapitre: "Bourgogne : panorama et appellations" },
   { section: "Bourgogne", chapitre: "Chablis et Grand Auxerrois" },
   { section: "Bourgogne", chapitre: "Côte de Nuits" },
   { section: "Bourgogne", chapitre: "Côte de Beaune" },
   { section: "Bourgogne", chapitre: "Côte chalonnaise" },
   { section: "Bourgogne", chapitre: "Mâconnais" },
+  { section: "Beaujolais", chapitre: "Beaujolais : panorama et appellations" },
+  { section: "Jura", chapitre: "Jura : panorama et appellations" },
+  { section: "Savoie", chapitre: "Savoie : panorama et appellations" },
+  { section: "Val de Loire", chapitre: "Val de Loire : panorama et appellations" },
+  { section: "Bordeaux", chapitre: "Bordeaux : panorama et appellations" },
+  { section: "Sud-Ouest", chapitre: "Sud-Ouest : panorama et appellations" },
+  { section: "Vallée du Rhône", chapitre: "Vallée du Rhône : panorama et appellations" },
+  { section: "Languedoc", chapitre: "Languedoc : panorama et appellations" },
+  { section: "Roussillon", chapitre: "Roussillon : panorama et appellations" },
+  { section: "Provence", chapitre: "Provence : panorama et appellations" },
+  { section: "Corse", chapitre: "Corse : panorama et appellations" },
 ];
 
 /* Ordre d'affichage des thèmes dans le filtre */

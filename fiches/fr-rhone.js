@@ -1,0 +1,45 @@
+// La France viticole — Vallée du Rhône (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 415,
+    theme: "Géographie viticole",
+    sous: ["Régions","Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Vallée du Rhône","appel":null},
+    source: "france",
+    chapitre: "Vallée du Rhône : panorama et appellations",
+    titre: "Rhône Nord : huit crus sur des coteaux, un vignoble minuscule",
+    synth: "Dans le nord de la vallée, huit crus s’accrochent à des coteaux : Côte-Rôtie, Condrieu, Château-Grillet, Saint-Joseph, Crozes-Hermitage, Hermitage, Cornas et Saint-Péray. À eux tous ils couvrent à peine 4 300 à 4 500 ha (4 337 ha en 2023, 4 472 ha en 2024), une goutte face aux quelque 63 300 ha de l’ensemble de la vallée en 2024 ; la barre des 80 000 ha parfois avancée pour le Nord est donc très loin de la réalité. En rouge, c’est le domaine de la syrah ; les cépages blancs qu’on peut y associer selon l’appellation sont détaillés dans la fiche sur la syrah. Ces crus coiffent la pyramide commune à toute la vallée : côtes-du-rhône, côtes-du-rhône-villages (avec ou sans nom géographique), puis les crus. Pour un client : de toutes petites surfaces, donc des vins rares.",
+    mnemo: "Un escalier de pierre au bord du fleuve : huit marches-crus étroites, taillées dans la pente, avec un seul rouge de syrah qui monte les marches une à une.",
+    flash: {"q":"Quels sont les huit crus du Rhône Nord ?","a":"Côte-Rôtie, Condrieu, Château-Grillet, Saint-Joseph, Crozes-Hermitage, Hermitage, Cornas et Saint-Péray.","keys":[["côte-rôtie","cote-rotie","côte rôtie"],["condrieu"],["château-grillet","chateau-grillet","château grillet"],["saint-joseph","st-joseph"],["crozes-hermitage","crozes"],["hermitage","ermitage"],["cornas"],["saint-péray","saint-peray","st-péray"]]},
+    qcm: {"q":"Quel est l’ordre de grandeur de la surface cumulée des crus du Rhône Nord (2023-2024) ?","opts":["Environ 450 ha","Environ 4 400 ha","Environ 44 000 ha","Environ 80 000 ha"],"good":1,"expl":"Les relevés du Syndicat des Côtes du Rhône (2023) et d’Inter Rhône (2024) convergent autour de 4 300 à 4 500 ha. Les chiffres plus élevés confondent le Nord avec toute la vallée, voire la dépassent."},
+    exos: [{"type":"ordering","prompt":"Remets la pyramide du Rhône dans l’ordre, de la base au sommet.","payload":{"items":["Côtes-du-rhône","Côtes-du-rhône-villages","Crus"]},"explanation":"La base large est la plus vaste en surface ; plus on monte, plus l’aire se resserre et plus les règles se durcissent."},{"type":"odd_one_out","prompt":"Laquelle de ces appellations n’est pas un cru du Rhône Nord ?","payload":{"options":["Côte-Rôtie","Cornas","Saint-Joseph","Gigondas"],"answer":3},"explanation":"Gigondas fait partie des crus du Rhône Sud, comme Vacqueyras ou Rasteau ; les trois autres sont septentrionaux."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Condrieu et Château-Grillet seraient des blancs de viognier ; Château-Grillet, monopole enclavé d’environ 3,5 ha, serait le plus petit cru de France (3,5 ha relevé par iDealwine, statut de monopole non lu sur une source de niveau 1)","Crus du Nord installés sur des coteaux escarpés d’un climat semi-continental : formulation du livre, non recoupée ici"],
+    src: "Inter Rhône, chiffres clés et encyclopédie (2024-2025) ; Syndicat des Côtes du Rhône, chiffres du millésime 2023 ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 218-227 (erreur de surface relevée p. 220) ; cf. Mille Vignes, P. Lepeltier, p. 183"
+  },
+  {
+    id: 416,
+    theme: "Géographie viticole",
+    sous: ["Régions","Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Vallée du Rhône","appel":null},
+    source: "france",
+    chapitre: "Vallée du Rhône : panorama et appellations",
+    titre: "Rhône Sud : dix crus, du châteauneuf-du-pape à Laudun",
+    synth: "Depuis la promotion de Laudun en 2024 (reconnu cru par le comité national de l’INAO le 11 septembre 2024, premier millésime 2024), les Côtes du Rhône comptent 18 crus : 8 au Nord et 10 au Sud. Ceux du Sud sont Châteauneuf-du-Pape, Gigondas, Vacqueyras, Lirac, Tavel, Vinsobres, Beaumes-de-Venise, Rasteau, Cairanne et Laudun, sur environ 7 800 ha en 2023 et 8 200 ha en 2024. Sous eux, les côtes-du-rhône-villages portent un nom géographique dans 21 cas (22 avant le départ de Laudun) ; au-dessous, les côtes-du-rhône régionaux. Châteauneuf-du-Pape a été l’une des cinq appellations viticoles du décret du 15 mai 1936 (avec Arbois, Cassis, Monbazillac et Tavel, plus Cognac pour les eaux-de-vie), et non « la première AOP » de France. Au Sud, on pense assemblages, grenache en tête, et Tavel pour le rosé.",
+    mnemo: "Une table de dix couverts : Châteauneuf-du-Pape en bout de table avec son décret de 1936 sous le verre, et Laudun, le petit dernier, installé en 2024 sur la chaise d’appoint.",
+    flash: {"q":"Quels sont les dix crus du Rhône Sud (liste de 2024) ?","a":"Châteauneuf-du-Pape, Gigondas, Vacqueyras, Lirac, Tavel, Vinsobres, Beaumes-de-Venise, Rasteau, Cairanne et Laudun.","keys":[["châteauneuf-du-pape","chateauneuf-du-pape","châteauneuf","chateauneuf"],["gigondas"],["vacqueyras"],["lirac"],["tavel"],["vinsobres"],["beaumes-de-venise","beaumes de venise"],["rasteau"],["cairanne"],["laudun"]]},
+    qcm: {"q":"Quel cru a été promu en 2024 et a porté la pyramide du Rhône à 18 crus ?","opts":["Laudun","Cairanne","Visan","Rasteau"],"good":0,"expl":"Cairanne et Rasteau étaient déjà des crus, et Visan reste un côtes-du-rhône-villages avec nom géographique. Laudun, jusque-là village, a changé d’étage en 2024."},
+    exos: [{"type":"cloze","prompt":"Complète la phrase.","payload":{"text":"Depuis 2024, les Côtes du Rhône comptent {{18}} crus, dont {{8}} au Nord et {{10}} au Sud."},"explanation":"Laudun a fait passer le Sud de 9 à 10 crus, le Nord restant à 8."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Châteauneuf-du-Pape est la toute première appellation viticole reconnue en France.","answer":false},"explanation":"Elle figure dans le décret du 15 mai 1936 aux côtés de quatre autres appellations de vin (Arbois, Cassis, Monbazillac, Tavel) : elle fait partie d’un groupe fondateur, pas d’un premier rang unique."},{"type":"odd_one_out","prompt":"Laquelle de ces appellations ne figure pas dans le décret du 15 mai 1936 ?","payload":{"options":["Arbois","Cassis","Monbazillac","Gigondas"],"answer":3},"explanation":"Le décret de 1936 regroupe Arbois, Cassis, Châteauneuf-du-Pape, Monbazillac et Tavel pour les vins ; Gigondas, cru du Rhône Sud, n’en fait pas partie."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Tavel, environ 770 ha (presse locale seule) ; le rosé exclusif est décrit par la fiche INAO et par Wine With Seth, cahier des charges non lu","Cairanne serait reconnue cru en 2016 selon l’INAO, en 2015 selon Decanter : divergence non tranchée, date non reprise","Rôle du baron Le Roy dans la naissance de l’AOC Châteauneuf-du-Pape : Inter Rhône date son obtention de 1933 et lie 1936 aux jugements de Tournon et d’Uzès, source unique, non reprise","Grenache pilier des assemblages du Sud, mistral et galets roulés, VDN de Rasteau et de Beaumes-de-Venise : formulations du livre, non recoupées ici"],
+    src: "Inter Rhône, chiffres clés et encyclopédie (2024-2025) ; Syndicat des Côtes du Rhône, chiffres du millésime 2023 et page Côtes du Rhône Villages (21 noms géographiques) ; Decanter, promotion de Laudun (2024) ; INAO, Premières appellations (décret du 15 mai 1936) ; Vitisphere, les 90 ans des AOC ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 218-227 ; cf. Mille Vignes, P. Lepeltier, p. 183"
+  }
+);
