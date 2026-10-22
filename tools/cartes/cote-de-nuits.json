@@ -1,0 +1,184 @@
+{
+ "deps": [
+  "21"
+ ],
+ "fleuves": [],
+ "largeur": 260,
+ "marges": [
+  0.12,
+  0.02,
+  0.12,
+  0.02
+ ],
+ "zones": [
+  {
+   "label": "Marsannay",
+   "communes": [
+    "Chenôve",
+    "Marsannay-la-Côte",
+    "Couchey"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Fixin",
+   "communes": [
+    "Fixin"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Brochon",
+   "communes": [
+    "Brochon"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Gevrey-Chambertin",
+   "communes": [
+    "Gevrey-Chambertin"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Morey-Saint-Denis",
+   "communes": [
+    "Morey-Saint-Denis"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Chambolle-Musigny",
+   "communes": [
+    "Chambolle-Musigny"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Vougeot",
+   "communes": [
+    "Vougeot"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Flagey-Échezeaux",
+   "communes": [
+    "Flagey-Echézeaux"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Vosne-Romanée",
+   "communes": [
+    "Vosne-Romanée"
+   ],
+   "pos": [
+    -26,
+    0,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Nuits-Saint-Georges",
+   "communes": [
+    "Nuits-Saint-Georges"
+   ],
+   "pos": [
+    30,
+    6,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Premeaux-Prissey",
+   "communes": [
+    "Premeaux-Prissey"
+   ],
+   "pos": [
+    34,
+    -4,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Comblanchien",
+   "communes": [
+    "Comblanchien"
+   ],
+   "pos": [
+    -30,
+    8,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Corgoloin",
+   "communes": [
+    "Corgoloin"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Dijon",
+   "pos": [
+    -6,
+    10,
+    "end"
+   ]
+  }
+ ],
+ "textes": []
+}

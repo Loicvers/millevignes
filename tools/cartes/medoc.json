@@ -1,0 +1,178 @@
+{
+ "deps": [
+  "33"
+ ],
+ "clipDep": [
+  "33"
+ ],
+ "fleuves": [],
+ "largeur": 280,
+ "marges": [
+  0.1,
+  0.04,
+  0.2,
+  0.04
+ ],
+ "fondFort": false,
+ "zones": [
+  {
+   "label": "Médoc",
+   "communes": [
+    "Saint-Yzans-de-Médoc",
+    "Couquèques",
+    "Ordonnac",
+    "Blaignan",
+    "Saint-Germain-d'Esteuil",
+    "Bégadan",
+    "Saint-Christoly-Médoc",
+    "Civrac-en-Médoc",
+    "Valeyrac",
+    "Prignac-en-Médoc",
+    "Lesparre-Médoc",
+    "Gaillan-en-Médoc",
+    "Queyrac",
+    "Jau-Dignac-et-Loirac",
+    "Vensac"
+   ],
+   "opacite": 0.14
+  },
+  {
+   "label": "Haut-Médoc",
+   "communes": [
+    "Saint-Seurin-de-Cadourne",
+    "Vertheuil",
+    "Cissac-Médoc",
+    "Saint-Laurent-Médoc",
+    "Saint-Sauveur",
+    "Cussac-Fort-Médoc",
+    "Lamarque",
+    "Arcins",
+    "Macau",
+    "Ludon-Médoc",
+    "Le Pian-Médoc",
+    "Parempuyre",
+    "Blanquefort",
+    "Le Taillan-Médoc",
+    "Avensan",
+    "Castelnau-de-Médoc"
+   ],
+   "opacite": 0.2,
+   "pos": [
+    0,
+    3,
+    "middle"
+   ],
+   "at": [
+    -0.9,
+    45.2
+   ]
+  },
+  {
+   "label": "Saint-Estèphe",
+   "communes": [
+    "Saint-Estèphe"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true,
+   "opacite": 0.34
+  },
+  {
+   "label": "Pauillac",
+   "communes": [
+    "Pauillac"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true,
+   "opacite": 0.4
+  },
+  {
+   "label": "Saint-Julien",
+   "communes": [
+    "Saint-Julien-Beychevelle"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true,
+   "opacite": 0.34
+  },
+  {
+   "label": "Listrac-Médoc",
+   "communes": [
+    "Listrac-Médoc"
+   ],
+   "pos": [
+    -34,
+    -8,
+    "end"
+   ],
+   "trait": true,
+   "opacite": 0.34
+  },
+  {
+   "label": "Moulis-en-Médoc",
+   "communes": [
+    "Moulis-en-Médoc"
+   ],
+   "pos": [
+    -26,
+    10,
+    "end"
+   ],
+   "trait": true,
+   "opacite": 0.4
+  },
+  {
+   "label": "Margaux",
+   "communes": [
+    "Margaux-Cantenac",
+    "Soussans",
+    "Labarde",
+    "Arsac"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true,
+   "opacite": 0.4
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Lesparre-Médoc",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Blaye",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Gironde",
+   "lon": -0.78,
+   "lat": 45.3,
+   "rot": -60
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "deps": [
+  "21",
+  "71"
+ ],
+ "fleuves": [],
+ "largeur": 340,
+ "marges": [
+  0.12,
+  0.02,
+  0.12,
+  0.02
+ ],
+ "zones": [
+  {
+   "label": "Ladoix-Serrigny",
+   "communes": [
+    "Ladoix-Serrigny"
+   ],
+   "pos": [
+    36,
+    -8,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Pernand-Vergelesses",
+   "communes": [
+    "Pernand-Vergelesses"
+   ],
+   "pos": [
+    -40,
+    -14,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Aloxe-Corton",
+   "communes": [
+    "Aloxe-Corton"
+   ],
+   "pos": [
+    40,
+    -22,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Savigny-lès-Beaune",
+   "communes": [
+    "Savigny-lès-Beaune"
+   ],
+   "pos": [
+    -40,
+    10,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Chorey-lès-Beaune",
+   "communes": [
+    "Chorey-les-Beaune"
+   ],
+   "pos": [
+    34,
+    10,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Beaune",
+   "communes": [
+    "Beaune"
+   ],
+   "pos": [
+    4,
+    -6,
+    "middle"
+   ],
+   "trait": false
+  },
+  {
+   "label": "Pommard",
+   "communes": [
+    "Pommard"
+   ],
+   "pos": [
+    56,
+    6,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Volnay",
+   "communes": [
+    "Volnay"
+   ],
+   "pos": [
+    48,
+    22,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Monthelie",
+   "communes": [
+    "Monthelie"
+   ],
+   "pos": [
+    -34,
+    2,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Auxey-Duresses",
+   "communes": [
+    "Auxey-Duresses"
+   ],
+   "pos": [
+    -30,
+    12,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Saint-Romain",
+   "communes": [
+    "Saint-Romain"
+   ],
+   "pos": [
+    -30,
+    -6,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Meursault",
+   "communes": [
+    "Meursault"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Puligny-Montrachet",
+   "communes": [
+    "Puligny-Montrachet"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Saint-Aubin",
+   "communes": [
+    "Saint-Aubin"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Chassagne-Montrachet",
+   "communes": [
+    "Chassagne-Montrachet"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Santenay",
+   "communes": [
+    "Santenay"
+   ],
+   "pos": [
+    14,
+    3,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Maranges",
+   "communes": [
+    "Cheilly-lès-Maranges",
+    "Dezize-lès-Maranges",
+    "Sampigny-lès-Maranges"
+   ],
+   "pos": [
+    -14,
+    3,
+    "end"
+   ],
+   "trait": true,
+   "deps": [
+    "71"
+   ]
+  }
+ ],
+ "villes": [],
+ "textes": []
+}
