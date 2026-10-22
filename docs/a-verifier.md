@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-433 fiches : 214 vérifiées, 219 à vérifier (346 points).
-Hors dette : 724 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+445 fiches : 225 vérifiées, 220 à vérifier (347 points).
+Hors dette : 756 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -466,7 +466,7 @@ Hors dette : 724 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 241** (p.228) — Les lies fines et le bâtonnage
 - [ ] Gras et longueur dus aux lies (⚠️) : avis de Lepeltier, retenu ; l’autolyse et la libération de mannoprotéines, qui stabilisent le vin contre la casse protéique et le tartre, sont confirmées (Handbook of Enology, vol. 1, p. 432-435 ; vol. 2, p. 86 et 134-137), mais le Handbook juge leur effet direct sur le volume en bouche faible ou non établi (vol. 1, p. 434 ; vol. 2, p. 86).
-- [ ] Muscadet sur lie (⚠️) : une seule source, la fiche produit INAO (lies fines au moins jusqu’au 1er mars et jusqu’à l’expédition, sans aération, mise en bouteille dans le chai de vinification avant le 31 décembre)
+- [ ] Muscadet sur lie (⚠️) : « sans aération » vient de la seule fiche produit INAO ; lies fines jusqu’au 1er mars et mise en bouteille entre le 1er mars et le 30 juin de la deuxième année confirmées par les cahiers des charges Muscadet Sèvre et Maine et Muscadet Coteaux de la Loire (arrêtés du 26 novembre 2025)
 
 **Fiche 242** (p.230) — Les alternatives au fût : copeaux, foudres, béton, inox, qvevri
 - [ ] Foudre de plus de 1 000 l et moindre impact d’un grand contenant (⚠️) : affirmations du livre p. 230, non recoupées
@@ -787,3 +787,6 @@ Hors dette : 724 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 431** (p.?) — Pomerol et les satellites : Lalande-de-Pomerol, Fronsac et les voisines de Saint-Émilion
 - [ ] Pomerol sans classement officiel : le cahier des charges est muet et aucun texte de niveau 1 ne l’affirme ; seules des sources 2b (Hachette Vins, vinsetmillesimes) et le livre le disent ⚠️
+
+**Fiche 448** (p.?) — Les crus communaux du Muscadet : sept dénominations sur gabbro, granite et gneiss
+- [ ] Statut de Champtoceaux (DGC demandée pour Muscadet Coteaux de la Loire), La Haie-Fouassière et Vallet : la liste des sept dénominations vient du cahier des charges homologué le 26 novembre 2025 (BO-agri), mais l’interprofession (vinsdeloire.fr) affiche déjà dix crus communaux et un article de presse de 2025 parle d’une consultation publique de l’INAO (25 août au 25 octobre) ; aucune reconnaissance officielle trouvée ⚠️
