@@ -39,7 +39,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    selon_livre: ["Coteaux du Cap Corse : vermentinu au moins 80 % en blanc, cépages principaux au moins 60 % en rouge ; rendements 45 hl/ha pour Calvi et Coteaux du Cap Corse, 50 hl/ha pour Figari, Porto-Vecchio et Sartène en blanc et rosé : cahier des charges 2019 seul","Sols du sud : granitiques à Figari, Porto-Vecchio et Sartène : cahier des charges 2019 seul","Muscat du Cap Corse : mutage à l’alcool neutre de 5 à 10 % du moût, 15 à 18 % vol. acquis, 17 communes, sols schisteux et calcaires, rendement de 30 hl/ha : eAmbrosia seul"],
-    src: "BO-agri, cahier des charges AOC Vin de Corse (12 déc. 2019) ; INAO, fiche AOP Vin de Corse ; INAO, fiche AOP Muscat du Cap Corse ; eAmbrosia (Commission européenne), cahier des charges Muscat du Cap Corse"
+    selon_livre: ["Coteaux du Cap Corse : vermentinu au moins 80 % en blanc, cépages principaux au moins 60 % en rouge ; rendements 45 hl/ha pour Calvi et Coteaux du Cap Corse, 50 hl/ha pour Figari, Porto-Vecchio et Sartène en blanc et rosé : cahier des charges 2019 seul","Sols du sud : granitiques à Figari, Porto-Vecchio et Sartène : cahier des charges 2019 seul","Muscat du Cap Corse : 15 à 18 % vol. acquis, 17 communes, sols schisteux et calcaires, rendement de 30 hl/ha : eAmbrosia seul (le mutage à l’alcool neutre à 96 % vol., de 5 à 10 % du moût, est confirmé par le cahier des charges de 2009)"],
+    src: "BO-agri, cahier des charges AOC Vin de Corse (12 déc. 2019) ; INAO, fiche AOP Vin de Corse ; INAO, fiche AOP Muscat du Cap Corse ; eAmbrosia (Commission européenne), cahier des charges Muscat du Cap Corse ; Légifrance, décret n° 2009-1231 du 13 octobre 2009 (cahiers des charges des vins doux naturels, version initiale) : muscat à petits grains blancs seul, AOC du 19 novembre 1997, mutage"
   }
 );

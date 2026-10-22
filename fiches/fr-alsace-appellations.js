@@ -19,7 +19,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Proportions de l’assemblage de l’Altenberg de Bergheim (riesling 50 à 70 %) et du Kaefferkopf (gewurztraminer 60 à 80 %) : cahier des charges de 2022 seul lu en détail"],
-    src: "BO-agri, cahier des charges des 51 appellations Alsace grand cru (15 janv. 2026) ; BO-agri, cahier des charges des 51 appellations Alsace grand cru (23 juin 2022) ; BO-agri, avis de procédure nationale d’opposition Alsace grand cru Vorbourg (2024) ; Harpers, Grand Cru Vorbourg (24 juil. 2024) ; Réussir Vigne, Le pinot noir accède à deux grands crus alsaciens (13 juin 2022) ; fiche 405 de ce site (51 lieux-dits, 37 Haut-Rhin et 14 Bas-Rhin)"
+    src: "BO-agri, cahier des charges des 51 appellations Alsace grand cru (15 janv. 2026) ; BO-agri, cahier des charges des 51 appellations Alsace grand cru (23 juin 2022) ; BO-agri, avis de procédure nationale d’opposition Alsace grand cru Vorbourg (2024) ; Harpers, Grand Cru Vorbourg (24 juil. 2024) ; Réussir Vigne, Le pinot noir accède à deux grands crus alsaciens (13 juin 2022) ; fiche 405 de ce site (51 lieux-dits, 37 Haut-Rhin et 14 Bas-Rhin) ; Légifrance, arrêté du 4 juillet 2024 modifiant le cahier des charges des 51 AOC Alsace grand cru (JORF du 7 juillet 2024 : pinot noir rouge au Vorbourg)"
   },
   {
     id: 468,
