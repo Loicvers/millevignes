@@ -1,0 +1,185 @@
+{
+ "deps": [
+  "24",
+  "33"
+ ],
+ "fleuves": [
+  "Dordogne"
+ ],
+ "largeur": 340,
+ "marges": [
+  0.04,
+  0.04,
+  0.04,
+  0.04
+ ],
+ "zones": [
+  {
+   "label": "Bergerac",
+   "communes": [
+    "Bergerac",
+    "Monbazillac",
+    "Pomport",
+    "Rouffignac-de-Sigoulès",
+    "Colombier",
+    "Saint-Laurent-des-Vignes",
+    "Saussignac",
+    "Gageac-et-Rouillac",
+    "Sigoulès",
+    "Ribagnac",
+    "Cunèges",
+    "Razac-de-Saussignac",
+    "Monestier",
+    "Thénac",
+    "Creysse",
+    "Lembras",
+    "Saint-Sauveur",
+    "Montcaret",
+    "Saint-Michel-de-Montaigne",
+    "Vélines",
+    "Port-Sainte-Foy-et-Ponchapt",
+    "Fougueyrolles",
+    "Lamonzie-Saint-Martin",
+    "Prigonrieux",
+    "Ginestet",
+    "Cours-de-Pile",
+    "Mouleydier"
+   ],
+   "opacite": 0.12,
+   "at": [
+    0.425,
+    44.75
+   ],
+   "pos": [
+    -26,
+    24,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Montravel",
+   "communes": [
+    "Bonneville-et-Saint-Avit-de-Fumadières",
+    "Le Fleix",
+    "Fougueyrolles",
+    "Lamothe-Montravel",
+    "Monfaucon",
+    "Montcaret",
+    "Montazeau",
+    "Montpeyroux",
+    "Nastringues",
+    "Port-Sainte-Foy-et-Ponchapt",
+    "Saint-Antoine-de-Breuilh",
+    "Saint-Méard-de-Gurçon",
+    "Saint-Michel-de-Montaigne",
+    "Saint-Vivien",
+    "Vélines"
+   ],
+   "opacite": 0.3
+  },
+  {
+   "label": "Saussignac",
+   "communes": [
+    "Gageac-et-Rouillac",
+    "Monestier",
+    "Razac-de-Saussignac",
+    "Saussignac"
+   ],
+   "opacite": 0.34,
+   "pos": [
+    -34,
+    22,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Monbazillac",
+   "communes": [
+    "Colombier",
+    "Monbazillac",
+    "Pomport",
+    "Rouffignac-de-Sigoulès",
+    "Saint-Laurent-des-Vignes"
+   ],
+   "opacite": 0.38,
+   "pos": [
+    10,
+    30,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Rosette",
+   "communes": [
+    "Bergerac",
+    "Creysse",
+    "Ginestet",
+    "Lembras",
+    "Maurens",
+    "Prigonrieux"
+   ],
+   "opacite": 0.2,
+   "at": [
+    0.43,
+    44.89
+   ],
+   "pos": [
+    -14,
+    -12,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Pécharmant",
+   "communes": [
+    "Bergerac",
+    "Creysse",
+    "Lembras",
+    "Saint-Sauveur"
+   ],
+   "opacite": 0.3,
+   "at": [
+    0.56,
+    44.87
+   ],
+   "pos": [
+    40,
+    -4,
+    "start"
+   ],
+   "trait": true
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Bergerac",
+   "dep": "24",
+   "pos": [
+    0,
+    14,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Sainte-Foy-la-Grande",
+   "dep": "33",
+   "pos": [
+    0,
+    13,
+    "middle"
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Dordogne",
+   "lon": 0.3,
+   "lat": 44.84,
+   "rot": 0
+  }
+ ]
+}

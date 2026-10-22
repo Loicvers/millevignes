@@ -47,3 +47,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 22/10/2026 : onglet « Cartes » : toutes les cartes (France, régions, zooms) sur une page, recherche par domaine, commune, appellation ou région ; le partenaire trouvé est mis en évidence et nommé sur la carte. Cache mv-v19.
 - 22/10/2026 : le site se recharge seul quand une nouvelle version est installée (hors séance d'exercices). Cache mv-v20.
 - 22/10/2026 : zoom des cartes ajusté à l'écran (plus de défilement horizontal, agrandissement au pincement) ; titres courts des cartes (`schema.titre`, affiché dans l'onglet Cartes à la place du titre de la fiche) ; `poser.mjs` accepte un titre en 6e argument.
+- 22/10/2026 : zoom Bergerac (fiche 487 : Montravel, Saussignac, Monbazillac, Rosette, Pécharmant sur fond de l'AOC Bergerac). Onglet Cartes : le titre de la carte devient le gros titre, la région passe en sous-titre.

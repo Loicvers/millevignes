@@ -186,7 +186,7 @@ function renderCartes(){
     const hl=new Set(hits.map(p=>p.nom));
     const vues=!n?CARTES:hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
     vues.forEach(f=>{const d=el('div','card lex');
-      d.append(el('h3',null,f.geo?.region||'France'),el('p','src',f.schema.titre||f.titre));
+      d.append(el('h3',null,f.schema.titre||f.geo?.region||'France'),el('p','src',f.schema.titre?(f.geo?.region||'France'):f.titre));
       d.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`+(hits.length?'':partenairesHTML(f)));
       const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);list.append(d);});
     if(hits.length)list.prepend(el('p','suivi-note',hits.map(p=>p.nom+(p.commune?' ('+p.commune+')':'')+(p.appellations?.length?' — '+p.appellations.join(', '):'')).join(' ; ')));
