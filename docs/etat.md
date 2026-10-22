@@ -3,7 +3,7 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 497 (dernier id : 497) · exercices : 2430
-- Vérifiées : 276 · à vérifier : 221 (343 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 949
+- Vérifiées : 279 · à vérifier : 218 (339 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 952
 - Niveaux : Fondamental 162 · Intermédiaire 228 · Pointu 107
 - Cours (Approfondir) : 58 · schémas : 71
 - Lexique : 14 termes · récits de chapitre : 52
@@ -27,7 +27,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 0 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 0 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 0 |
-| fr-champagne-appellations.js | 8 | 459–466 | hors livre | 6 | 0 | 0 |
+| fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 0 |
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 0 |
@@ -36,7 +36,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-jura.js | 1 | 407–407 | hors livre | 0 | 0 | 0 |
 | fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 1 | 417–417 | hors livre | 0 | 0 | 0 |
-| fr-loire-appellations.js | 12 | 447–458 | hors livre | 11 | 0 | 0 |
+| fr-loire-appellations.js | 12 | 447–458 | hors livre | 12 | 0 | 0 |
 | fr-loire.js | 2 | 409–410 | hors livre | 1 | 0 | 0 |
 | fr-provence-appellations.js | 3 | 489–491 | hors livre | 3 | 0 | 0 |
 | fr-provence.js | 1 | 419–419 | hors livre | 0 | 0 | 0 |

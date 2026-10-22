@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-497 fiches : 276 vérifiées, 221 à vérifier (343 points).
-Hors dette : 949 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+497 fiches : 279 vérifiées, 218 à vérifier (339 points).
+Hors dette : 952 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -778,13 +778,3 @@ Hors dette : 949 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 431** (p.?) — Pomerol et les satellites : Lalande-de-Pomerol, Fronsac et les voisines de Saint-Émilion
 - [ ] Pomerol sans classement officiel : le cahier des charges est muet et aucun texte de niveau 1 ne l’affirme ; seules des sources 2b (Hachette Vins, vinsetmillesimes) et le livre le disent ⚠️
-
-**Fiche 448** (p.?) — Les crus communaux du Muscadet : sept dénominations sur gabbro, granite et gneiss
-- [ ] Statut de Champtoceaux (DGC demandée pour Muscadet Coteaux de la Loire), La Haie-Fouassière et Vallet : la liste des sept dénominations vient du cahier des charges homologué le 26 novembre 2025 (BO-agri), mais l’interprofession (vinsdeloire.fr) affiche déjà dix crus communaux et un article de presse de 2025 parle d’une consultation publique de l’INAO (25 août au 25 octobre) ; aucune reconnaissance officielle trouvée ⚠️
-
-**Fiche 459** (p.?) — La Montagne de Reims : pinot noir et grands crus sur un massif boisé
-- [ ] Part de pinot noir du secteur : environ 40 % (Union des Maisons, tout le secteur) contre 56 % pour la seule Grande Montagne (Decanter) : périmètres différents ⚠️
-
-**Fiche 460** (p.?) — La Vallée de la Marne : le pays du meunier, avec l’enclave de pinot noir d’Aÿ
-- [ ] Rattachement de Tours-sur-Marne : Vallée de la Marne pour The Wine Doctor et Wine with Seth (l’Union des Maisons y fait commencer le vignoble de la vallée), « au pied de la Montagne de Reims » pour Decanter : non tranché ⚠️
-- [ ] Part du meunier : environ 59 % (Union des Maisons, ensemble de la vallée) contre 67 % pour le corps principal de la vallée (Decanter) : périmètres différents ⚠️
