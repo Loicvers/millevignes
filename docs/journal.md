@@ -59,3 +59,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 2026-10-22 : fiche 17 (Égypte), texte à trous acide syringique recentré sur les anthocyanes (malvidine acceptée), explication simplifiée.
 - 2026-10-22 : mots du lexique soulignés dans les textes de lecture (synthèses, astuces, corrections, approfondir) ; un toucher ouvre la définition et le déclic, avec « Voir au lexique » hors séance.
 - 2026-10-22 : lexique, ajout de « millerandage » (Le Robert, Larousse, Vitis 1995). Photos sous licence libre demandées pour coulure, millerandage, court-noué : recherche Wikimedia Commons impossible depuis la session (site non joignable), en attente.
+- 23/10/2026 : 117 exercices « façon WSET » ajoutés aux fiches France (Bourgogne, Beaujolais, Alsace, Bordeaux, Champagne, Loire, Rhône), reformulés d'après les banques de questions WSET, uniquement sur les faits vérifiés de chaque fiche ; relecture indépendante (17 corrigés, 20 retirés).

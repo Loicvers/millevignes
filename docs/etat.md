@@ -2,11 +2,11 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 497 (dernier id : 497) · exercices : 2430
+- Fiches : 497 (dernier id : 497) · exercices : 2547
 - Vérifiées : 279 · à vérifier : 218 (339 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 952
 - Niveaux : Fondamental 162 · Intermédiaire 228 · Pointu 107
 - Cours (Approfondir) : 58 · schémas : 91
-- Lexique : 14 termes · récits de chapitre : 52
+- Lexique : 15 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
