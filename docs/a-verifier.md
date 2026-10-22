@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-420 fiches : 204 vérifiées, 216 à vérifier (344 points).
-Hors dette : 683 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+433 fiches : 214 vérifiées, 219 à vérifier (346 points).
+Hors dette : 724 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -752,15 +752,10 @@ Hors dette : 683 détails laissés « selon le livre » (champ `selon_livre`, no
 - [ ] Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️
 - [ ] Rosé-de-loire « au moins 30 % de cabernets » (livre p. 201, guide de presse) : le cahier des charges de 2024 liste les cépages sans proportion minimale ⚠️
 
-**Fiche 411** (p.?) — Bordeaux rive gauche : Médoc, Graves et Sauternais
-- [ ] Barsac peut revendiquer Sauternes (pas l’inverse) : CIVB seul, règle du cahier de l’AOC Barsac non lue ⚠️
-
 **Fiche 412** (p.?) — Bordeaux rive droite et Entre-deux-Mers
 - [ ] Extensions des VIFA au Médoc, Haut-Médoc et Listrac-Médoc (décembre 2022, quatre rouges) puis à Margaux (juillet 2023, castets seul) : dates d’une seule source de presse ; le CIVB parle du castets « à l’essai » à Margaux ⚠️
-- [ ] Entre-deux-Mers rouge : au moins 4 500 pieds/ha, désherbage chimique interdit, aucun cépage au-delà de 80 % : WSET seul (2b), cahier des charges non lu ⚠️
 
 **Fiche 413** (p.?) — Les classements de Bordeaux aujourd’hui et la place
-- [ ] Classement des Graves (1959) : 16 crus d’après une source de presse, 14 « crus classés de Graves » dans Pessac-Léognan d’après le CIVB ; écart non expliqué, source officielle non trouvée ⚠️
 - [ ] Crus bourgeois : trois niveaux depuis 2020 (249 châteaux : 14 exceptionnels, 56 supérieurs, 179 crus bourgeois), révision annoncée en février 2025 (170 : 14, 36, 120) ; presse seule, Alliance des crus bourgeois non lue ⚠️
 - [ ] Place de Bordeaux : circuit de distribution (courtiers, plus de 400 négociants) et vente en primeur au printemps suivant la récolte ; presse spécialisée seule, CIVB non lu ⚠️
 
@@ -779,3 +774,16 @@ Hors dette : 683 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 420** (p.?) — Corse : niellucciu, sciaccarellu et vermentino
 - [ ] Niellucciu et sangiovese : le livre le présente comme « parent du sangiovese » ; la littérature le décrit plutôt comme génétiquement identique. Aucune source lue (VIVC en maintenance) ne tranche, donc la parenté n’est pas reprise dans la fiche ⚠️
+
+**Fiche 424** (p.?) — Les crus bourgeois du Médoc : un classement qui se rejoue
+- [ ] Aucune source de niveau 1 : l’Alliance des crus bourgeois (crus-bourgeois.com) bloque les robots. Les chiffres de 2025 (170 : 14 / 36 / 120) concordent dans six sources de presse (Decanter, Jane Anson, Drinks Business, Vert de Vin, Wine Industry Advisor, Meininger), à confirmer sur le texte officiel ⚠️
+- [ ] Total de 2020 : 249 (dont 179 crus bourgeois) selon FRW, Drinks Business et Jane Anson, 250 (dont 180) selon Harpers et Meininger ; la synthèse dit « près de 250 » ⚠️
+
+**Fiche 425** (p.?) — Les Graves : une bande de graviers entre Bordeaux et Langon
+- [ ] Graves supérieures : suppression de l’appellation en 2025 (modification AM05 notifiée à l’UE le 30/09/2025, arrêté du 19 septembre 2025) ✅ ; le nom reste utilisable sur l’étiquette des blancs avec sucres résiduels « jusqu’à la récolte 2028 », d’après le seul cahier des charges homologué (BO-agri), sans seconde source ⚠️
+
+**Fiche 426** (p.?) — Pessac-Léognan et le classement des Graves : 16 châteaux
+- [ ] Chronologie du classement des Graves : le cahier des charges de Pessac-Léognan (INAO) ne cite que 1959 ; Wine Cellar Insider parle d’une liste non officielle du 7 août 1953, finalisée le 16 février 1959 ; FRW et BBR d’un projet de 1953, ratifié en 1958 et modifié en 1959 ; aucun arrêté lu ⚠️
+
+**Fiche 431** (p.?) — Pomerol et les satellites : Lalande-de-Pomerol, Fronsac et les voisines de Saint-Émilion
+- [ ] Pomerol sans classement officiel : le cahier des charges est muet et aucun texte de niveau 1 ne l’affirme ; seules des sources 2b (Hachette Vins, vinsetmillesimes) et le livre le disent ⚠️

@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 420 (dernier id : 420) · exercices : 2036
-- Vérifiées : 204 · à vérifier : 216 (344 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 683
-- Niveaux : Fondamental 139 · Intermédiaire 193 · Pointu 88
+- Fiches : 433 (dernier id : 433) · exercices : 2109
+- Vérifiées : 214 · à vérifier : 219 (346 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 724
+- Niveaux : Fondamental 143 · Intermédiaire 202 · Pointu 88
 - Cours (Approfondir) : 58 · schémas : 71
 - Lexique : 14 termes · récits de chapitre : 52
 
@@ -22,7 +22,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 0 |
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 0 |
-| fr-bordeaux.js | 3 | 411–413 | hors livre | 0 | 0 | 0 |
+| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 0 |
+| fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 0 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 0 |
