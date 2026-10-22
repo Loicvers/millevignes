@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 420 (dernier id : 420) · exercices : 2036
 - Vérifiées : 204 · à vérifier : 216 (344 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 683
 - Niveaux : Fondamental 139 · Intermédiaire 193 · Pointu 88
-- Cours (Approfondir) : 58 · schémas : 70
+- Cours (Approfondir) : 58 · schémas : 71
 - Lexique : 14 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -26,7 +26,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 0 |
-| fr-france.js | 1 | 402–402 | hors livre | 0 | 0 | 0 |
+| fr-france.js | 1 | 402–402 | hors livre | 0 | 0 | 1 |
 | fr-jura.js | 1 | 407–407 | hors livre | 0 | 0 | 0 |
 | fr-languedoc.js | 1 | 417–417 | hors livre | 0 | 0 | 0 |
 | fr-loire.js | 2 | 409–410 | hors livre | 1 | 0 | 0 |
