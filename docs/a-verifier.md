@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-497 fiches : 279 vérifiées, 218 à vérifier (339 points).
-Hors dette : 952 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+508 fiches : 285 vérifiées, 223 à vérifier (349 points).
+Hors dette : 984 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -778,3 +778,23 @@ Hors dette : 952 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 431** (p.?) — Pomerol et les satellites : Lalande-de-Pomerol, Fronsac et les voisines de Saint-Émilion
 - [ ] Pomerol sans classement officiel : le cahier des charges est muet et aucun texte de niveau 1 ne l’affirme ; seules des sources 2b (Hachette Vins, vinsetmillesimes) et le livre le disent ⚠️
+
+**Fiche 515** (p.41) — Densité de plantation et rendement : ce que fixent les AOC
+- [ ] Cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral : ⚠️ valeurs à relire avant diffusion
+
+**Fiche 516** (p.41) — Guyot, cordon de Royat, gobelet : reconnaître les tailles et les lire dans les cahiers des charges
+- [ ] Cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral : ⚠️ valeurs à relire avant diffusion
+
+**Fiche 517** (p.44) — Palissage et systèmes de conduite : plan relevé, échalas, lyre, vigne haute
+- [ ] Champagne, hauteur de feuillage d’au moins 0,6 fois l’écartement : ⚠️ dans l’arrêté de 2022, règle rangée sous la taille Guyot asymétrique ; portée générale non établie (Coteaux champenois la pose en règle générale) : retirée de la synthèse
+- [ ] Vigne haute (cordon haut, taille mécanique) : ⚠️ deux retours d’exploitants (Réussir 2023, Chambre d’agriculture d’Occitanie 2017), pas d’essai comparatif ni de cahier des charges
+- [ ] Lyre : ⚠️ Katerji et al. (1994) comparent un seul pied par système sur une saison ; les effets sur la qualité ne sont pas retenus
+
+**Fiche 518** (p.62) — Les travaux en vert : ébourgeonnage, relevage, rognage, effeuillage, vendange en vert
+- [ ] Moment de la vendange en vert : ⚠️ divergence entre le WSET (peu après la véraison) et Hachette (juillet, après une nouaison abondante) ; aucune date retenue dans la fiche
+- [ ] Relevage obligatoire en Champagne au plus tard à la fermeture de la grappe : ⚠️ règle rangée sous la taille Guyot asymétrique dans l’arrêté de 2022 : retirée de la synthèse
+- [ ] Cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral : ⚠️ dates (Côte-Rôtie, 1er juillet) à relire avant diffusion
+
+**Fiche 519** (p.62) — Le calendrier du vigneron : de la taille à la vendange
+- [ ] Dates limites de taille (Montlouis avant le 1er mai, Beaujolais 15 mai) : ⚠️ cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral ; à relire avant diffusion
+- [ ] Liage avant la floraison en Champagne : ⚠️ règle rangée sous la taille Guyot asymétrique dans l’arrêté de 2022

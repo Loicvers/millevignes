@@ -98,3 +98,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Introuvable : liste officielle des communes de la Côte de Sézanne (secteur nommé par le Comité Champagne et l'UMC, pas une aire délimitée) ; non tracée.
 - À vérifier : la version du cahier des charges Languedoc du 11/08/2026 semble ne plus citer le Grès de Montpellier parmi ses dénominations (lecture partielle).
 - Vignoble de Bergerac (22/10/2026, carte de la fiche 487) : BO-agri, aires de Montravel (2014, 15 communes ; la page INAO plus ancienne en donne 14), Côtes de Montravel et Haut-Montravel (13 communes), Pécharmant (2018, 4), Saussignac (2013, 4), Rosette (2017, 6), Bergerac (2021, 87 entrées), Côtes de Bergerac (2017).
+
+## Compléments WSET — travail à la vigne (23/10/2026, fiches 515-525)
+- WSET, Understanding Wines (L3, 2016) ; cahiers des charges (BO-agri, lus par résumé WebFetch, pas en texte intégral) : Champagne (arrêté 2022), Côte-Rôtie, Beaujolais, Sauternes, crémants d'Alsace et de Bourgogne, Côtes du Rhône ; courrier INAO du 11/08/2023 et avis du 19/06/2025 (irrigation, décret 2023-735) ; règlement (UE) 2018/1981 (cuivre, via legislation.gov.uk) ; IFV, Sicavac, Demeter, Biodyvin, Agence Bio, Réussir. Bloqués : Légifrance (D. 645-5, D. 665-17-5), Chambre d'agriculture de la Gironde, Pleinchamp, Agroscope, champagne.fr ; Firecrawl sans crédits.
