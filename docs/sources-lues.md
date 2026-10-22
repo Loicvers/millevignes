@@ -89,3 +89,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## La France viticole — Languedoc et Roussillon (22/10/2026)
 - BO-agri : cahiers des charges Pic Saint-Loup (2017), Terrasses du Larzac (2014 ; projet INAO du 18/06/2026), Saint-Chinian (9/12/2024), Minervois, Minervois-la-Livinière, Corbières, Corbières-Boutenac, Fitou, Limoux, Crémant de Limoux, Picpoul de Pinet, Clairette du Languedoc, Muscats de Frontignan, Lunel et Mireval ; Banyuls et Banyuls grand cru (2018, arrêté du 4/7/2024), Collioure, Rivesaltes (14/6/2023), Muscat de Rivesaltes, Côtes du Roussillon (2022), Côtes du Roussillon Villages (2017, 2023, 2025) ; projet Maury ; fiches INAO ; CIVL (pages partiellement incohérentes, écartées). Introuvables : cahiers des charges de Faugères, Maury (homologué), Saint-Jean-de-Minervois, Blanquette de Limoux.
+
+## La France viticole — Jura, Savoie, Corse (22/10/2026)
+- BO-agri : cahiers des charges Arbois, Côtes du Jura, L’Étoile, Crémant du Jura, Macvin du Jura (2025), projet Château-Chalon (février 2026) ; Vin de Savoie (2023), Roussette de Savoie, Seyssel, Crémant de Savoie (décret n° 2015-1135), Bugey (2013) ; Patrimonio, Ajaccio, Vin de Corse (2019) ; fiches INAO et eAmbrosia (Muscat du Cap Corse). Introuvables au BO-agri : cahiers des charges en vigueur de Château-Chalon et du Muscat du Cap Corse.

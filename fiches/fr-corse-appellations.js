@@ -1,0 +1,45 @@
+// La France viticole — Corse, appellations (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 496,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Corse","appel":"Patrimonio"},
+    source: "france",
+    chapitre: "Corse : appellations",
+    titre: "Patrimonio et Ajaccio : calcaire du nord, granite de l’ouest",
+    synth: "Patrimonio, au nord, autour de Saint-Florent, se joue sur des sols surtout argilo-calcaires avec, vers l’est, des terrains caillouteux et schisteux ; le niellucciu fait les rouges et rosés, le vermentinu seul les blancs. Ajaccio, appellation propre depuis 1984 sur la côte ouest, repose sur des granites légers, sableux, pauvres et secs : le sciaccarellu est le cépage de référence des rouges et rosés, le vermentinu celui des blancs. Les deux ne font que des vins tranquilles. Le rouge de Patrimonio est puissant et de garde ; le sciaccarellu d’Ajaccio donne des vins poivrés et épicés. Pour un client : « Patrimonio, c’est le niellucciu sur calcaire ; Ajaccio, le sciaccarellu sur granite. »",
+    mnemo: "Deux cailloux dans la poche : un calcaire blanc ramassé au nord, près de Saint-Florent, avec le niellucciu gravé dessus ; un granite gris ramassé à l’ouest, près d’Ajaccio, marqué sciaccarellu.",
+    flash: {"q":"Où se trouve Patrimonio et sur quels sols domine-t-il ?","a":"Dans le nord de la Corse (Haute-Corse), autour du golfe de Saint-Florent, sur des sols surtout argilo-calcaires.","keys":[["saint-florent","saint florent","nord","haute-corse"],["argilo-calcaire","calcaire"]]},
+    qcm: {"q":"Quelle appellation corse repose sur des sols granitiques, avec le sciaccarellu comme cépage de référence pour les rouges ?","opts":["Patrimonio","Ajaccio","Muscat du Cap Corse","Calvi"],"good":1,"expl":"Ajaccio, sur la côte ouest, a des granites légers et pauvres. Patrimonio est sur des argilo-calcaires et fait du niellucciu ; Calvi est une dénomination de Vin de Corse, et le Muscat du Cap Corse est un vin doux naturel."},
+    exos: [{"type":"cloze","prompt":"Complète les cépages de référence.","payload":{"text":"Le rouge de Patrimonio repose sur le {{niellucciu|nielluccio|nielucciu}}, celui d’Ajaccio sur le {{sciaccarellu|sciaccarello}}."},"explanation":"Ces deux cépages autochtones sont les repères pour distinguer les rouges corses ; les blancs des deux appellations reposent sur le vermentinu."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Les AOC Patrimonio et Ajaccio admettent aussi des vins doux ou des vins mousseux.","answer":false},"explanation":"Les deux cahiers des charges réservent l’appellation aux vins tranquilles blancs, rouges et rosés ; le vin doux de l’île est le muscat du Cap Corse, une AOC à part."},{"type":"explain_client","prompt":"Un client hésite entre un Patrimonio et un Ajaccio. Aide-le à comprendre la différence.","payload":{"model":"Ce sont deux terroirs et deux cépages différents. Patrimonio est au nord, autour de Saint-Florent, sur des sols argilo-calcaires, avec du niellucciu pour les rouges et rosés et du vermentinu pour les blancs. Ajaccio est sur la côte ouest, sur des granites légers et pauvres, avec le sciaccarellu pour les rouges et rosés. Les rouges de Patrimonio sont puissants et de garde, le sciaccarellu d’Ajaccio est poivré.","criteria":["Il situe Patrimonio au nord et Ajaccio à l’ouest","Il oppose les sols (argilo-calcaires contre granite)","Il associe le niellucciu à Patrimonio et le sciaccarellu à Ajaccio"]},"explanation":"La réponse relie lieu, sol et cépage : la même logique sert pour toutes les appellations corses."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Patrimonio : blancs de vermentino seul ; rouges au moins 90 % de niellucciu, rosés au moins 75 % ; rendement 50 hl/ha : cahier des charges 2022 seul","Ajaccio : blancs au moins 80 % de vermentinu, sciaccarellu au moins 40 % dans les rouges et rosés ; rendement 45 hl/ha : cahier des charges 2019 seul","Nombre de communes d’Ajaccio : 35 dans la liste du cahier des charges, 36 dans sa description et sur la fiche INAO : chiffre non repris"],
+    src: "BO-agri, cahier des charges AOC Patrimonio (12 mai 2022) ; INAO, fiche AOP Patrimonio ; BO-agri, cahier des charges AOC Ajaccio (12 déc. 2019) ; INAO, fiche AOP Ajaccio"
+  },
+  {
+    id: 497,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"France","region":"Corse","appel":"Vin de Corse"},
+    source: "france",
+    chapitre: "Corse : appellations",
+    titre: "Vin de Corse, ses cinq dénominations et le muscat du Cap Corse",
+    synth: "L’AOC Vin de Corse (ou Corse), reconnue en 1972, couvre l’île en blanc, rouge et rosé tranquilles, avec le vermentinu pour les blancs (au moins 75 %) et le grenache, le niellucciu et le sciaccarellu pour les rouges et rosés (au moins 50 % ensemble). Elle peut ajouter l’une de cinq dénominations : Calvi et Coteaux du Cap Corse au nord (Haute-Corse), Figari, Porto-Vecchio et Sartène au sud (Corse-du-Sud). Le sud repose surtout sur le granite, avec des sols pauvres et secs à Figari. Le muscat du Cap Corse est une AOC distincte de vin doux naturel, de muscat blanc à petits grains, reconnue à la fin de 1997. Pour un client : « Corse, c’est le vin de l’île ; la dénomination (Sartène, Calvi…) précise le coin. »",
+    mnemo: "Une carte de l’île en deux moitiés : trois dénominations au sud (Figari, Porto-Vecchio, Sartène, celles du granit) et deux au nord (Calvi et Cap Corse) ; tout en haut, le cap qui donne aussi son muscat.",
+    flash: {"q":"Quel cépage et quel minimum pour les blancs de l’AOC Vin de Corse ?","a":"Le vermentinu (vermentino), au moins 75 % de l’encépagement.","keys":[["vermentino","vermentinu","malvoisie"],["75"]]},
+    qcm: {"q":"Combien de dénominations géographiques peuvent compléter le nom « Vin de Corse » ?","opts":["3","4","5","7"],"good":2,"expl":"Cinq : Calvi, Coteaux du Cap Corse, Figari, Porto-Vecchio et Sartène. Piège : Patrimonio et Ajaccio sont voisines mais sont des AOC distinctes, pas des dénominations de Vin de Corse."},
+    exos: [{"type":"odd_one_out","prompt":"Lequel de ces cépages n’est pas un cépage principal des rouges et rosés de Vin de Corse ?","payload":{"options":["Grenache","Niellucciu","Syrah","Sciaccarellu"],"answer":2},"explanation":"Les cépages principaux sont le grenache, le niellucciu et le sciaccarellu, qui doivent former ensemble au moins la moitié de l’encépagement ; la syrah n’en fait pas partie."},{"type":"mcq_multi","prompt":"Quelles dénominations de Vin de Corse se trouvent en Corse-du-Sud ?","payload":{"options":["Figari","Calvi","Porto-Vecchio","Coteaux du Cap Corse","Sartène"],"answers":[0,2,4]},"explanation":"Figari, Porto-Vecchio et Sartène sont au sud ; Calvi et Coteaux du Cap Corse sont en Haute-Corse, au nord."},{"type":"short_answer","prompt":"Quel est l’unique cépage du muscat du Cap Corse ?","payload":{"accepted":["muscat blanc à petits grains","muscat à petits grains","muscat petits grains","petits grains"]},"explanation":"Le muscat du Cap Corse est un vin doux naturel issu du seul muscat blanc à petits grains."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Coteaux du Cap Corse : vermentinu au moins 80 % en blanc, cépages principaux au moins 60 % en rouge ; rendements 45 hl/ha pour Calvi et Coteaux du Cap Corse, 50 hl/ha pour Figari, Porto-Vecchio et Sartène en blanc et rosé : cahier des charges 2019 seul","Sols du sud : granitiques à Figari, Porto-Vecchio et Sartène : cahier des charges 2019 seul","Muscat du Cap Corse : mutage à l’alcool neutre de 5 à 10 % du moût, 15 à 18 % vol. acquis, 17 communes, sols schisteux et calcaires, rendement de 30 hl/ha : eAmbrosia seul"],
+    src: "BO-agri, cahier des charges AOC Vin de Corse (12 déc. 2019) ; INAO, fiche AOP Vin de Corse ; INAO, fiche AOP Muscat du Cap Corse ; eAmbrosia (Commission européenne), cahier des charges Muscat du Cap Corse"
+  }
+);

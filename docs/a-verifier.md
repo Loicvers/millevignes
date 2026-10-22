@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-491 fiches : 270 vérifiées, 221 à vérifier (343 points).
-Hors dette : 929 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+497 fiches : 276 vérifiées, 221 à vérifier (343 points).
+Hors dette : 949 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -741,8 +741,8 @@ Hors dette : 929 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 407** (p.?) — Le Jura : savagnin, vin jaune et vin de paille
 - [ ] Liste et poids des appellations (six AOC : Arbois, Château-Chalon, L’Étoile, Côtes du Jura, Crémant du Jura, Macvin du Jura ; environ 2 100 ha, base déclarations 2023) : un seul document de niveau 1 (infographie CIVJ) et une source 2b ; parts de cépages de l’infographie non reprises ⚠️
-- [ ] Arbois : reconnaissance par décret du 15 mai 1936, 12 communes (13 selon la description du même texte), mention Pupillin : appuyé par le seul cahier des charges, qui se contredit sur le nombre de communes ⚠️
-- [ ] Château-Chalon : réservé au vin jaune, quatre communes (Château-Chalon, Domblans en partie, Menétru-le-Vignoble, Nevy-sur-Seille), environ 55 ha ; date de reconnaissance flottante (29 ou 31 mai 1936) ⚠️
+- [ ] Arbois : nombre de communes, 12 dans la liste du cahier des charges et 13 dans sa description ⚠️
+- [ ] Château-Chalon : environ 55 ha (source unique) ; date de reconnaissance flottante (29 ou 31 mai 1936 dans le même projet de cahier des charges, 31 mai sur la fiche INAO) ⚠️
 
 **Fiche 409** (p.?) — Loire de l’Atlantique : Pays nantais et Anjou-Saumur
 - [ ] Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️
