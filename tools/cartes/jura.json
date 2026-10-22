@@ -32,11 +32,12 @@
     "Molamboz"
    ],
    "pos": [
-    22,
-    0,
+    14,
+    2,
     "start"
    ],
-   "opacite": 0.3
+   "opacite": 0.3,
+   "trait": false
   },
   {
    "label": "Château-Chalon",
@@ -50,11 +51,12 @@
     "Domblans"
    ],
    "pos": [
-    16,
-    -2,
+    26,
+    4,
     "start"
    ],
-   "opacite": 0.5
+   "opacite": 0.5,
+   "trait": true
   },
   {
    "label": "L’Étoile",
@@ -68,11 +70,12 @@
     "Saint-Didier"
    ],
    "pos": [
-    -16,
+    -22,
     4,
     "end"
    ],
-   "opacite": 0.42
+   "opacite": 0.42,
+   "trait": true
   },
   {
    "label": "Côtes du Jura",
@@ -126,12 +129,16 @@
     "Graye-et-Charnay"
    ],
    "pos": [
-    -30,
-    80,
+    -16,
+    3,
     "end"
    ],
    "opacite": 0.16,
-   "trait": true
+   "trait": true,
+   "at": [
+    5.47,
+    46.6
+   ]
   }
  ],
  "villes": [

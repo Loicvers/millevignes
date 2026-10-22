@@ -48,3 +48,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 22/10/2026 : le site se recharge seul quand une nouvelle version est installée (hors séance d'exercices). Cache mv-v20.
 - 22/10/2026 : zoom des cartes ajusté à l'écran (plus de défilement horizontal, agrandissement au pincement) ; titres courts des cartes (`schema.titre`, affiché dans l'onglet Cartes à la place du titre de la fiche) ; `poser.mjs` accepte un titre en 6e argument.
 - 22/10/2026 : zoom Bergerac (fiche 487 : Montravel, Saussignac, Monbazillac, Rosette, Pécharmant sur fond de l'AOC Bergerac). Onglet Cartes : le titre de la carte devient le gros titre, la région passe en sous-titre.
+- 22/10/2026 : carte du Jura (fiche 407), étiquettes replacées au plus près de leurs zones.
