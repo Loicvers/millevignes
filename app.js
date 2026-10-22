@@ -186,7 +186,7 @@ function renderCartes(){
     const hl=new Set(hits.map(p=>p.nom));
     const vues=!n?CARTES:hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
     vues.forEach(f=>{const d=el('div','card lex');
-      d.append(el('h3',null,f.geo?.region||'France'),el('p','src',f.titre));
+      d.append(el('h3',null,f.geo?.region||'France'),el('p','src',f.schema.titre||f.titre));
       d.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`+(hits.length?'':partenairesHTML(f)));
       const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);list.append(d);});
     if(hits.length)list.prepend(el('p','suivi-note',hits.map(p=>p.nom+(p.commune?' ('+p.commune+')':'')+(p.appellations?.length?' — '+p.appellations.join(', '):'')).join(' ; ')));
@@ -298,8 +298,7 @@ let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}
 function ouvrirZoom(fig){
   const z=document.getElementById('zoom'),c=fig.cloneNode(true);c.removeAttribute('tabindex');c.removeAttribute('role');c.removeAttribute('aria-label');
-  const vb=c.querySelector('svg').viewBox.baseVal;c.style.setProperty('--zw',Math.round(vb.width*1.5)+'px'); // ~13 px de texte pour un corps de 9
-  z.querySelector('.zoom-in').replaceChildren(c);z.hidden=false;document.body.style.overflow='hidden';zoomOpener=fig;z.scrollTo(0,0);z.querySelector('button').focus();
+    z.querySelector('.zoom-in').replaceChildren(c);z.hidden=false;document.body.style.overflow='hidden';zoomOpener=fig;z.scrollTo(0,0);z.querySelector('button').focus();
 }
 document.addEventListener('click',e=>{const f=e.target.closest('.schema');if(f&&!f.closest('#zoom')&&!f.closest('#support'))ouvrirZoom(f);});
 document.addEventListener('keydown',e=>{const f=e.target.classList&&e.target.classList.contains('schema')&&e.target;if(f&&(e.key==='Enter'||e.key===' ')){e.preventDefault();ouvrirZoom(f);}});
