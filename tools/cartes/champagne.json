@@ -10,7 +10,7 @@
   "Aube"
  ],
  "marges": [
-  0.12,
+  0.2,
   0.06,
   0.18,
   0.06
@@ -52,7 +52,9 @@
     "Gueux",
     "Vrigny",
     "Saint-Thierry",
-    "Hermonville"
+    "Hermonville",
+    "Taissy",
+    "Trois-Puits"
    ],
    "pos": [
     30,
@@ -104,7 +106,9 @@
     "Mézy-Moulins",
     "Pierry",
     "Moussy",
-    "Monthelon"
+    "Monthelon",
+    "Fontaine-sur-Aÿ",
+    "Germaine"
    ],
    "pos": [
     -70,
@@ -126,8 +130,8 @@
     "Cuis",
     "Grauves",
     "Bergères-lès-Vertus",
-    "Flavigny",
-    "Villeneuve-Renneville-Chevigny"
+    "Villeneuve-Renneville-Chevigny",
+    "Oiry"
    ],
    "pos": [
     18,
@@ -165,7 +169,7 @@
     "Proverville",
     "Couvignon",
     "Meurville",
-    "Bligny",
+    "Bligny|10",
     "Champignol-lez-Mondeville",
     "Colombé-la-Fosse",
     "Merrey-sur-Arce",
