@@ -803,3 +803,37 @@ document.getElementById('partFile').onchange=async e=>{
   partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
   fitCache.clear();render();
 };
+
+/* ============ MOTS DU LEXIQUE DANS LES TEXTES ============ */
+// Souligne la première occurrence de chaque terme du lexique dans les textes de lecture ; un toucher ouvre sa définition.
+// Pas dans les énoncés d'exercice (la définition soufflerait la réponse), ni dans l'onglet Lexique lui-même.
+const LEX_SEL='.synth,.mnemo,.fb-expl,.lede,.ess,.lead,.proj-synth,.cours p,.cours li,.cours td';
+const LEX_FORMES=LEXIQUE.flatMap(t=>t.terme.replace(/\(.*?\)/g,'').split(/[\/,]/).map(s=>s.trim()).filter(Boolean).map(f=>[f,t])).sort((a,b)=>b[0].length-a[0].length);
+const LEX_RE=new RegExp(`(?<!\\p{L})(${LEX_FORMES.map(([f])=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')})(?:s|x)?(?!\\p{L})`,'giu');
+const lexDe=m=>{const n=normalize(m);return (LEX_FORMES.find(([f])=>n===normalize(f)||n===normalize(f)+'s'||n===normalize(f)+'x')||[])[1];};
+function lexMarquer(zone){
+  if(!LEXIQUE.length||zone.closest?.('.lexique'))return;
+  zone.querySelectorAll(LEX_SEL).forEach(bloc=>{
+    if(bloc.dataset.lx||bloc.closest('.lexique'))return;bloc.dataset.lx=1;
+    const vus=new Set(),w=document.createTreeWalker(bloc,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,summary,.lx,svg')?2:1}),noeuds=[];
+    while(w.nextNode())noeuds.push(w.currentNode);
+    noeuds.forEach(n=>{
+      const txt=n.nodeValue,frag=document.createDocumentFragment();let i=0,touche=false;
+      for(const m of txt.matchAll(LEX_RE)){const t=lexDe(m[0]);if(!t||vus.has(t))continue;vus.add(t);touche=true;
+        frag.append(txt.slice(i,m.index));const s=el('span','lx',m[0]);s.tabIndex=0;s.setAttribute('role','button');s.dataset.terme=t.terme;frag.append(s);i=m.index+m[0].length;}
+      if(touche){frag.append(txt.slice(i));n.replaceWith(frag);}
+    });
+  });
+}
+const lexPop=el('div','lex-pop');lexPop.hidden=true;lexPop.setAttribute('role','dialog');document.body.append(lexPop);
+function lexOuvrir(terme){
+  const t=LEXIQUE.find(x=>x.terme===terme);if(!t)return;lexPop.innerHTML='';
+  const x=el('button','lex-x','×');x.setAttribute('aria-label','Fermer');x.onclick=()=>lexPop.hidden=true;
+  lexPop.append(x,el('h4',null,t.terme),el('p',null,t.def));
+  const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);lexPop.append(m);
+  if(mode!=='due'){const b=el('button','btn','Voir au lexique');b.onclick=()=>{lexPop.hidden=true;lexQuery=t.terme;setMode('lexique');window.scrollTo(0,0);};lexPop.append(b);}
+  lexPop.hidden=false;x.focus();
+}
+document.addEventListener('click',e=>{const s=e.target.closest('.lx');if(s){e.preventDefault();e.stopPropagation();lexOuvrir(s.dataset.terme);}else if(!lexPop.hidden&&!lexPop.contains(e.target))lexPop.hidden=true;},true);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lexPop.hidden=true;else if(e.key==='Enter'&&e.target.classList?.contains('lx'))lexOuvrir(e.target.dataset.terme);});
+['grid','support','proj'].forEach(id=>{const z=document.getElementById(id);if(!z)return;lexMarquer(z);new MutationObserver(()=>lexMarquer(z)).observe(z,{childList:true,subtree:true});});

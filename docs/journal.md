@@ -57,3 +57,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 22/10/2026 : liste « Mes partenaires » sous les cartes repliable (fermée par défaut, nombre de domaines affiché). Cache mv-v24.
 - 2026-10-22 : fiche 16, exercice « culture Shulaveri-Shomu » jugé sans intérêt (Loïc), remplacé par une question sur l’introgression.
 - 2026-10-22 : fiche 17 (Égypte), texte à trous acide syringique recentré sur les anthocyanes (malvidine acceptée), explication simplifiée.
+- 2026-10-22 : mots du lexique soulignés dans les textes de lecture (synthèses, astuces, corrections, approfondir) ; un toucher ouvre la définition et le déclic, avec « Voir au lexique » hors séance.

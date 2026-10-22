@@ -269,3 +269,10 @@
   .ex-crit input{flex:none}
 
   .partenaires-liste>summary{cursor:pointer;min-height:32px;display:flex;align-items:center;list-style:none;margin-bottom:0}.partenaires-liste>summary::-webkit-details-marker{display:none}.partenaires-liste[open]>summary{margin-bottom:3px}.partenaires-liste>summary::before{content:"▸";margin-right:6px}.partenaires-liste[open]>summary::before{content:"▾"}
+
+  /* mots du lexique dans les textes */
+  .lx{text-decoration:underline dotted var(--gold);text-decoration-thickness:1.5px;text-underline-offset:3px;cursor:help}
+  .lex-pop{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);width:min(440px,calc(100% - 32px));max-height:60vh;overflow:auto;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--wine);border-radius:4px;box-shadow:0 8px 30px rgba(0,0,0,.18);padding:16px 18px;z-index:1000}
+  .lex-pop h4{font-family:'Cormorant',serif;font-size:22px;margin:0 28px 6px 0}
+  .lex-pop p{margin-bottom:10px}
+  .lex-x{position:absolute;top:8px;right:10px;border:none;background:none;font-size:24px;line-height:1;cursor:pointer;color:var(--muted);padding:4px 8px}
