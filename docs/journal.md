@@ -58,3 +58,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 2026-10-22 : fiche 16, exercice « culture Shulaveri-Shomu » jugé sans intérêt (Loïc), remplacé par une question sur l’introgression.
 - 2026-10-22 : fiche 17 (Égypte), texte à trous acide syringique recentré sur les anthocyanes (malvidine acceptée), explication simplifiée.
 - 2026-10-22 : mots du lexique soulignés dans les textes de lecture (synthèses, astuces, corrections, approfondir) ; un toucher ouvre la définition et le déclic, avec « Voir au lexique » hors séance.
+- 2026-10-22 : lexique, ajout de « millerandage » (Le Robert, Larousse, Vitis 1995). Photos sous licence libre demandées pour coulure, millerandage, court-noué : recherche Wikimedia Commons impossible depuis la session (site non joignable), en attente.

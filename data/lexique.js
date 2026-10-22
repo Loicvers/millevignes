@@ -168,5 +168,19 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "L’origine du nom n’est pas expliquée par les sources consultées ; elle est déduite de la composition du mot et du symptôme. Plus de 60 % du vignoble français serait touché (INRAE, 2021)."
+ },
+ {
+  "terme": "millerandage",
+  "def": "Défaut de fécondation de la vigne : dans une même grappe, une partie des baies reste très petite, souvent sans pépins, à côté de baies normales.",
+  "etym": "dérivé de millerandé (« vigne millerandée ») avec le suffixe -age.",
+  "declic": "Une grappe millerandée, c’est la poule et ses poussins : de grosses baies entourées de petites.",
+  "src": [
+   "Le Robert (millerandage)",
+   "Larousse (millerandé)",
+   "Fougère-Rifot, Park et Bouard, Vitis 34 (1995)",
+   "fiche 65"
+  ],
+  "status": "verified",
+  "note": "L’origine du mot millerand n’est pas expliquée par les sources consultées."
  }
 ];
