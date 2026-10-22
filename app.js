@@ -259,13 +259,14 @@ function fitSvg(svg){
 /* ============ MES PARTENAIRES (fichier privé importé, gardé dans ce navigateur seulement) ============ */
 const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
-// Points des partenaires posés sur la carte d'une fiche (coordonnées calculées à la préparation du fichier, par fiche).
+// Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
 function avecPartenaires(f,svg){
   const pts=partenaires.filter(p=>p.points&&p.points[f.id]);if(!pts.length)return svg;
-  const g=pts.map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"/><text x="${+x+5}" y="${+y+3}" font-size="7.5" fill="currentColor">${escH(p.nom)}</text>`;}).join('');
+  const g=pts.map(p=>{const[x,y]=p.points[f.id];return `<circle cx="${+x}" cy="${+y}" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="${+x}" cy="${+y}" r="1.2" fill="currentColor"><title>${escH(p.nom)}</title></circle>`;}).join('');
   return svg.replace(/<\/svg>\s*$/,`<g class="partenaires">${g}</g></svg>`);
 }
-const partenairesHTML=f=>{const r=f.geo&&f.geo.region;const l=r?partenaires.filter(p=>p.region===r):[];return l.length?`<div class="mnemo"><span class="m-lbl">Mes partenaires</span>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</div>`:'';};
+// Fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
+const partenairesHTML=f=>{const r=f.geo&&f.geo.region;const l=r?partenaires.filter(p=>p.region===r):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<div class="mnemo"><span class="m-lbl">Mes partenaires</span>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</div>`:'';};
 const schemaHTML=f=>f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
