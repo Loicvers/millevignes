@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 483 (dernier id : 491) · exercices : 2361
-- Vérifiées : 262 · à vérifier : 221 (343 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 902
-- Niveaux : Fondamental 157 · Intermédiaire 223 · Pointu 103
+- Fiches : 491 (dernier id : 491) · exercices : 2400
+- Vérifiées : 270 · à vérifier : 221 (343 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 929
+- Niveaux : Fondamental 160 · Intermédiaire 226 · Pointu 105
 - Cours (Approfondir) : 58 · schémas : 71
 - Lexique : 14 termes · récits de chapitre : 52
 
@@ -32,6 +32,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 0 |
 | fr-france.js | 1 | 402–402 | hors livre | 0 | 0 | 1 |
 | fr-jura.js | 1 | 407–407 | hors livre | 0 | 0 | 0 |
+| fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 1 | 417–417 | hors livre | 0 | 0 | 0 |
 | fr-loire-appellations.js | 12 | 447–458 | hors livre | 11 | 0 | 0 |
 | fr-loire.js | 2 | 409–410 | hors livre | 1 | 0 | 0 |
@@ -39,6 +40,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-provence.js | 1 | 419–419 | hors livre | 0 | 0 | 0 |
 | fr-rhone-appellations.js | 13 | 434–446 | hors livre | 13 | 0 | 0 |
 | fr-rhone.js | 2 | 415–416 | hors livre | 2 | 0 | 0 |
+| fr-roussillon-appellations.js | 3 | 481–483 | hors livre | 3 | 0 | 0 |
 | fr-roussillon.js | 1 | 418–418 | hors livre | 1 | 0 | 0 |
 | fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 0 |
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 0 |
