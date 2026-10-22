@@ -79,3 +79,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## La France viticole — Beaujolais, les dix crus (22/10/2026)
 - BO-agri : cahiers des charges Beaujolais (02/09/2022), Brouilly et Côte de Brouilly (2021, 2024), Morgon, Régnié (décret du 20/12/1988), Juliénas (2024), Chénas, Saint-Amour, Chiroubles, Fleurie, Moulin-à-Vent ; INAO, note primeur (campagne 2024, art. D. 645-17 du code rural, non relu sur Légifrance) ; BRGM, notice de la carte géologique au 1/50 000, feuille Beaujeu (1982) ; Inter Beaujolais ; Guide Hachette ; World of Fine Wine (premiers crus de Moulin-à-Vent, 2024).
+
+## La France viticole — Alsace, grands crus et mentions (22/10/2026)
+- BO-agri : cahiers des charges Alsace, Alsace grand cru (arrêté du 9 mai 2022 ; avis INAO 2024 Vorbourg), Crémant d’Alsace ; eAmbrosia, fiches techniques des grands crus (Rangen, Schlossberg, Brand, Hengst, Geisberg, Goldert, Gloeckelberg, Furstentum) ; Decanter (2019) ; Harpers (24/07/2024). Bloqués : CIVA, vinsalsace.com, Légifrance (JO du 07/07/2024).

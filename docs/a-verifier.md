@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-470 fiches : 248 vérifiées, 222 à vérifier (348 points).
-Hors dette : 853 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+475 fiches : 253 vérifiées, 222 à vérifier (346 points).
+Hors dette : 862 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -734,8 +734,6 @@ Hors dette : 853 détails laissés « selon le livre » (champ `selon_livre`, no
 **Fiche 405** (p.?) — L’Alsace : un vignoble de cépages, des grands crus de lieux-dits
 - [ ] Étendue du vignoble (environ 170 km, 1 à 20 km de large, 150 à 400 m, environ 15 600 ha) : 170 km (livre, Vins Vignes Vignerons) contre 180 km (Chambre d’agriculture) ; borne nord Marlenheim ou Wissembourg ; aucune donnée CIVA lue (site bloqué) ⚠️
 - [ ] Hiérarchie des AOC alsaciennes (alsace 1962, alsace grand cru, crémant-d’alsace ; 53 AOP) et date de l’AOC Alsace grand cru : 1974 (alsace-du-vin.com) contre décret du 20 novembre 1975 (Vins Vignes Vignerons) : à confirmer sur une source officielle ⚠️
-- [ ] Vendanges tardives et sélection de grains nobles : cépages admis, millésime obligatoire, vendange manuelle, sans enrichissement, élevage jusqu’au 1er juin de la 2e année ; seuils de sucre volontairement non repris (valeurs des muscats mal extraites, riesling non lu) ⚠️
-- [ ] Crémant d’Alsace : cépages (auxerrois, chardonnay, pinot blanc, pinot gris, pinot noir, riesling), 9 mois au moins sur lies, mise en marché 12 mois après le tirage : appuyé par le seul cahier des charges (2025) et un site 2b ⚠️
 
 **Fiche 406** (p.?) — Le Beaujolais : gamay, villages et dix crus
 - [ ] Dates de reconnaissance des crus autres que Régnié (Morgon, Fleurie, Chiroubles, Chénas, Moulin-à-Vent 1936 ; Brouilly, Côte de Brouilly, Juliénas 1938 ; Saint-Amour 1946) : INAO seul, seconde source non lue ⚠️ ; le livre dit « Moulin-à-Vent plus ancienne appellation » mais la base de cette ancienneté n’est pas établie, ne pas l’enseigner
