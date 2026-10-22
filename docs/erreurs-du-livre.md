@@ -54,7 +54,6 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 122 : sept nouveaux cépages d’adaptation à Bordeaux, dont le petit manseng → c’était la proposition des producteurs (2019) ; l’INAO en a approuvé six en 2021, et les cahiers des charges AOC Bordeaux et Bordeaux supérieur (2026) en comptent dix, sans petit manseng.
 - p. 126 : tectonique des plaques attribuée à Wegener en 1915 → Wegener présente la dérive des continents en 1912 (livre en 1915) ; la tectonique des plaques date des années 1960. L’échelle des temps « inventée en 1913 » : c’est sa première version chiffrée (Holmes), l’échelle relative date du XIXe siècle.
 - p. 127 : « environ 4 000 minéraux » connus → plus de 6 200 espèces validées par l’IMA (liste de juillet 2026 : 6 226).
-- p. 130 : juliénas et côte-de-brouilly « principalement constitués de diorite », la « pierre bleue » → les cahiers des charges Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) appellent « pierres bleues » des porphyres (roches métamorphiques massives), avec du granite ; celui de Juliénas (2024) décrit granite rose et schistes volcano-sédimentaires ; aucun ne cite la diorite.
 - p. 132 : porphyre présenté comme une forme d’andésite → c’est une texture (phénocristaux dans une pâte fine).
 - p. 133 : roches sédimentaires « plus de 70 % de la croûte » → ~75 % de la surface des continents, ~8 % du volume de la croûte.
 - p. 135 : fondateur de Calera « Josh Jansen » → Josh Jensen.
@@ -128,6 +127,7 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 318-319 et 324-325 : le même sommelier prénommé « Philippe » puis « Alain » Bourguignon (incohérence interne).
 
 ## Non confirmés
+- p. 130 : « pierre bleue » de Côte-de-Brouilly en diorite → retiré des erreurs le 22/10/2026 : la notice BRGM de la feuille Beaujeu (1/50 000, 1982) décrit des « métadiorites de Brouilly » ; les cahiers des charges (2021, 2024) parlent de porphyres sans nommer la diorite. Divergence non tranchée ; Juliénas (granite rose, schistes volcano-sédimentaires) reste non confirmé.
 - p. 16 : Vitacées apparues quand les continents « ne forment qu’une seule masse » → la Pangée se fragmente dès ~200 Ma, bien avant le Crétacé supérieur (Britannica seule).
 - p. 16 : génome « décodé intégralement en 2007 » → ébauche en 2007 ; référence complète (T2T) en 2023. Nuance.
 - p. 18 : « Mother Vine » de Roanoke « datée de 1500 » → date sans source ; d’après l’Encyclopedia of North Carolina (J. Hairr, 2006, NCpedia, texte lu), Reimer (1909) réfute son statut de plus vieille vigne des États-Unis et trouve sur Roanoke cinq vieilles vignes « en deux rangs droits », que Clarence Gohdes (1982) fait remonter aux années 1850 ; Gohdes date ces vignes, pas nommément la Mother Vine ; source unique de seconde main, Reimer et Gohdes non lus ; tradition locale d’environ 400 ans (sources 2b).

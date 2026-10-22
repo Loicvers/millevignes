@@ -324,7 +324,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Vin orange comme blanc macéré, couleur ambrée : définition du livre, non recoupée dans une source de niveau 1 ou 2a.","Beaujolais comme exemple de macération carbonique (⚠️) : le Handbook of Enology (vol. 1, p. 394) cite le gamay et les vins primeurs sans nommer le beaujolais ; l’appellation reste à une source (le livre)."],
+    to_check: ["Vin orange comme blanc macéré, couleur ambrée : définition du livre, non recoupée dans une source de niveau 1 ou 2a.","Beaujolais comme exemple de macération carbonique (⚠️) : le Handbook of Enology (vol. 1, p. 394) cite le gamay et les vins primeurs sans nommer le beaujolais ; le cahier des charges AOC Beaujolais (arrêté du 2 septembre 2022) décrit la vinification typique de la région comme inspirée de la « macération semi-carbonique » : le lien est confirmé pour la semi-carbonique, la carbonique stricte reste au livre."],
     selon_livre: ["Michel Flanzy : 1934 selon la notice INRAE Prodinra, 1935 selon le Handbook of Enology (vol. 1, p. 385), qui cite Pasteur comme premier observateur de l’effet du CO2 sur les baies entières ; divergence non tranchée.","Gravner et Radikon (Frioul, années 1990) : source de presse unique (Decanter) ; Frioul tiré du livre."],
     src: "Mille Vignes, P. Lepeltier, p. 221-222 ; INRAE Prodinra, Carbonic maceration wines ; UNESCO, méthode géorgienne de vinification en qvevri ; Decanter ; Ribéreau-Gayon, Dubourdieu, Donèche, Lonvaud, Handbook of Enology, vol. 1, 2e éd. (2006), p. 385-394",
     page: 221

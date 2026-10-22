@@ -76,3 +76,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## La France viticole — Champagne, secteurs et styles (22/10/2026)
 - BO-agri : cahier des charges Champagne (7 août 2025 ; 16 oct. 2014), Coteaux champenois, Rosé des Riceys ; projet INAO 2026 ; Comité Champagne (fiche Élaboration 2024, pages cépages par secteur) ; Union des Maisons de Champagne ; règlement (UE) 2019/934 art. 8 ; question écrite QE 49220 ; Decanter ; The Wine Doctor ; Université de Reims (réserve, 2020). Bloqués : pages terroir de champagne.fr, vinatis.com.
+
+## La France viticole — Beaujolais, les dix crus (22/10/2026)
+- BO-agri : cahiers des charges Beaujolais (02/09/2022), Brouilly et Côte de Brouilly (2021, 2024), Morgon, Régnié (décret du 20/12/1988), Juliénas (2024), Chénas, Saint-Amour, Chiroubles, Fleurie, Moulin-à-Vent ; INAO, note primeur (campagne 2024, art. D. 645-17 du code rural, non relu sur Légifrance) ; BRGM, notice de la carte géologique au 1/50 000, feuille Beaujeu (1982) ; Inter Beaujolais ; Guide Hachette ; World of Fine Wine (premiers crus de Moulin-à-Vent, 2024).

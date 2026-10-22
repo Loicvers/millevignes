@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-466 fiches : 244 vérifiées, 222 à vérifier (348 points).
-Hors dette : 836 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+470 fiches : 248 vérifiées, 222 à vérifier (348 points).
+Hors dette : 853 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -278,7 +278,7 @@ Hors dette : 836 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 163** (p.130) — Vignobles sur roches plutoniques en France : granite, pierre bleue, gabbro
 - [ ] Granite au Rhône nord et Côte-Rôtie métamorphique (⚠️, une seule source de presse spécialisée) : à recouper avec Inter Rhône.
-- [ ] Pierre bleue (erreur du livre, reportée) : le livre et Decanter parlent de diorite ; les cahiers des charges AOC Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) décrivent des porphyres (« roches métamorphiques massives ») appelés localement « pierres bleues », avec du granite ; celui de Juliénas (arrêté du 20 février 2024) ne nomme pas la pierre bleue. La fiche ne présente pas la diorite comme établie.
+- [ ] Pierre bleue (divergence, le livre n’est pas en erreur pour Brouilly) : la notice de la carte géologique BRGM feuille Beaujeu (1982) décrit des « métadiorites de Brouilly » ; le livre et Decanter parlent de diorite ; les cahiers des charges AOC Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) décrivent des porphyres (« roches métamorphiques massives ») appelés localement « pierres bleues », avec du granite ; celui de Juliénas (arrêté du 20 février 2024) ne nomme pas la pierre bleue. La fiche ne présente pas la diorite comme établie.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 164** (p.132) — Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre
@@ -454,7 +454,7 @@ Hors dette : 836 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 236** (p.221) — Macération carbonique, vins orange et qvevri
 - [ ] Vin orange comme blanc macéré, couleur ambrée : définition du livre, non recoupée dans une source de niveau 1 ou 2a.
-- [ ] Beaujolais comme exemple de macération carbonique (⚠️) : le Handbook of Enology (vol. 1, p. 394) cite le gamay et les vins primeurs sans nommer le beaujolais ; l’appellation reste à une source (le livre).
+- [ ] Beaujolais comme exemple de macération carbonique (⚠️) : le Handbook of Enology (vol. 1, p. 394) cite le gamay et les vins primeurs sans nommer le beaujolais ; le cahier des charges AOC Beaujolais (arrêté du 2 septembre 2022) décrit la vinification typique de la région comme inspirée de la « macération semi-carbonique » : le lien est confirmé pour la semi-carbonique, la carbonique stricte reste au livre.
 
 **Fiche 237** (p.222) — Les effervescents : trois façons de faire des bulles
 - [ ] Blanquette de Limoux : 1531 (tradition de Saint-Hilaire, une source de presse) contre 1544 (livre) ; divergence non tranchée, aucune source lue ne donne 1544.
