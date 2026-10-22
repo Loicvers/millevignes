@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-458 fiches : 238 vérifiées, 220 à vérifier (347 points).
-Hors dette : 808 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+466 fiches : 244 vérifiées, 222 à vérifier (348 points).
+Hors dette : 836 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -730,8 +730,6 @@ Hors dette : 808 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 403** (p.?) — La Champagne : quatre grands secteurs, trois cépages et des crus classés par village
 - [ ] Premiers crus : 42 communes autorisées à la seule mention « premier cru » (liste du cahier des charges, soit 59 communes avec mention de cru en comptant les 17 grands crus) contre 44 premiers crus (livre, DRAAF) : divergence non tranchée ; le chiffre de 44 n’est pas retrouvé dans le texte actuel ⚠️
-- [ ] Découpage en secteurs et cépage dominant de chacun (Montagne de Reims, Vallée de la Marne, Côte des Blancs, Côte des Bar ; éventuelle Côte de Sézanne) : le Comité Champagne et deux sources 2b ne concordent pas sur le cépage de la Côte des Bar (pinot noir seul ou pinot noir et chardonnay) ⚠️
-- [ ] Rosé-des-riceys : rosé tranquille de pinot noir seul, élevage jusqu’au 1er juillet de l’année suivante : appuyé par le seul cahier des charges (deux versions, 2020 et 2023), sans source indépendante ⚠️
 
 **Fiche 405** (p.?) — L’Alsace : un vignoble de cépages, des grands crus de lieux-dits
 - [ ] Étendue du vignoble (environ 170 km, 1 à 20 km de large, 150 à 400 m, environ 15 600 ha) : 170 km (livre, Vins Vignes Vignerons) contre 180 km (Chambre d’agriculture) ; borne nord Marlenheim ou Wissembourg ; aucune donnée CIVA lue (site bloqué) ⚠️
@@ -790,3 +788,10 @@ Hors dette : 808 détails laissés « selon le livre » (champ `selon_livre`, no
 
 **Fiche 448** (p.?) — Les crus communaux du Muscadet : sept dénominations sur gabbro, granite et gneiss
 - [ ] Statut de Champtoceaux (DGC demandée pour Muscadet Coteaux de la Loire), La Haie-Fouassière et Vallet : la liste des sept dénominations vient du cahier des charges homologué le 26 novembre 2025 (BO-agri), mais l’interprofession (vinsdeloire.fr) affiche déjà dix crus communaux et un article de presse de 2025 parle d’une consultation publique de l’INAO (25 août au 25 octobre) ; aucune reconnaissance officielle trouvée ⚠️
+
+**Fiche 459** (p.?) — La Montagne de Reims : pinot noir et grands crus sur un massif boisé
+- [ ] Part de pinot noir du secteur : environ 40 % (Union des Maisons, tout le secteur) contre 56 % pour la seule Grande Montagne (Decanter) : périmètres différents ⚠️
+
+**Fiche 460** (p.?) — La Vallée de la Marne : le pays du meunier, avec l’enclave de pinot noir d’Aÿ
+- [ ] Rattachement de Tours-sur-Marne : Vallée de la Marne pour The Wine Doctor et Wine with Seth (l’Union des Maisons y fait commencer le vignoble de la vallée), « au pied de la Montagne de Reims » pour Decanter : non tranché ⚠️
+- [ ] Part du meunier : environ 59 % (Union des Maisons, ensemble de la vallée) contre 67 % pour le corps principal de la vallée (Decanter) : périmètres différents ⚠️

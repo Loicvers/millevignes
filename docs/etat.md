@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 458 (dernier id : 458) · exercices : 2237
-- Vérifiées : 238 · à vérifier : 220 (347 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 808
-- Niveaux : Fondamental 149 · Intermédiaire 213 · Pointu 96
+- Fiches : 466 (dernier id : 466) · exercices : 2277
+- Vérifiées : 244 · à vérifier : 222 (348 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 836
+- Niveaux : Fondamental 151 · Intermédiaire 217 · Pointu 98
 - Cours (Approfondir) : 58 · schémas : 71
 - Lexique : 14 termes · récits de chapitre : 52
 
@@ -25,6 +25,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 0 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 0 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 0 |
+| fr-champagne-appellations.js | 8 | 459–466 | hors livre | 6 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 0 |
 | fr-france.js | 1 | 402–402 | hors livre | 0 | 0 | 1 |
