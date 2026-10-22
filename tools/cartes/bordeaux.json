@@ -245,10 +245,11 @@
     "Tayac"
    ],
    "pos": [
-    10,
-    -30,
-    "middle"
-   ]
+    30,
+    -26,
+    "start"
+   ],
+   "trait": true
   },
   {
    "label": "Blayais et Bourgeais",
@@ -346,5 +347,25 @@
  ],
  "clipDep": [
   "33"
+ ],
+ "textes": [
+  {
+   "t": "Gironde",
+   "lon": -0.86,
+   "lat": 45.38,
+   "rot": -62
+  },
+  {
+   "t": "Garonne",
+   "lon": -0.36,
+   "lat": 44.66,
+   "rot": 38
+  },
+  {
+   "t": "Dordogne",
+   "lon": -0.36,
+   "lat": 44.95,
+   "rot": -15
+  }
  ]
 }

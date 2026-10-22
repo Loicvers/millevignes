@@ -27,7 +27,8 @@
     22,
     -10,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Juliénas",
@@ -43,7 +44,8 @@
     -22,
     -8,
     "end"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Chénas",
@@ -59,7 +61,8 @@
     30,
     -2,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Moulin-à-Vent",
@@ -73,7 +76,8 @@
     26,
     10,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Fleurie",
@@ -101,7 +105,8 @@
     -24,
     4,
     "end"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Morgon",
@@ -115,7 +120,8 @@
     26,
     4,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Régnié",
@@ -129,7 +135,8 @@
     -24,
     4,
     "end"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Brouilly",
@@ -151,7 +158,14 @@
    ]
   }
  ],
- "textes": [],
+ "textes": [
+  {
+   "t": "Saône",
+   "lon": 4.795,
+   "lat": 46.16,
+   "rot": 80
+  }
+ ],
  "villes": [
   {
    "nom": "Belleville",

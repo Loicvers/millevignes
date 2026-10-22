@@ -17,7 +17,7 @@ function toExercises(f) {
 function schemaExercise(f) {
   if (!f.schema) return [];
   const all = [...f.schema.svg.matchAll(/<text[^>]*font-weight="bold"[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
-  const labels = [...new Set(all)].filter(t => all.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 3);
+  const labels = [...new Set(all)].filter(t => all.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 4);
   if (labels.length < 3) return [];
   return [{ id: notionId(f.id) + "-sc", type: "label_schema", prompt: "Quel terme a été effacé du schéma (le « ? ») ?", payload: { labels }, fiche: f }];
 }

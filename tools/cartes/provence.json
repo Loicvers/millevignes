@@ -1,7 +1,8 @@
 {
  "deps": [
   "83",
-  "13"
+  "13",
+  "06"
  ],
  "fleuves": [
   "Durance",
@@ -11,7 +12,7 @@
  "marges": [
   0.1,
   0.08,
-  0.1,
+  0.72,
   0.06
  ],
  "largeur": 360,
@@ -195,6 +196,56 @@
   {
    "nom": "Saint-Tropez",
    "dep": "83"
+  },
+  {
+   "nom": "Nice",
+   "dep": "06",
+   "pos": [
+    6,
+    8,
+    "start"
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Durance",
+   "lon": 5.25,
+   "lat": 43.73,
+   "rot": -15
+  },
+  {
+   "t": "Rhône",
+   "lon": 4.66,
+   "lat": 43.72,
+   "rot": 70
+  },
+  {
+   "t": "Méditerranée",
+   "lon": 5.75,
+   "lat": 43.07
+  }
+ ],
+ "points": [
+  {
+   "nom": "Meyreuil",
+   "dep": "13",
+   "label": "Palette",
+   "pos": [
+    0,
+    14,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Nice",
+   "dep": "06",
+   "label": "Bellet",
+   "pos": [
+    0,
+    -6,
+    "middle"
+   ]
   }
  ]
 }

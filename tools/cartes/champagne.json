@@ -32,7 +32,7 @@
     "Trépail",
     "Ambonnay",
     "Bouzy",
-    "Louvois",
+    "Val de Livre",
     "Sillery",
     "Puisieulx",
     "Beaumont-sur-Vesle",
@@ -41,11 +41,10 @@
     "Sermiers",
     "Écueil",
     "Chamery",
-    "Villedommange",
+    "Ville-Dommange",
     "Sacy",
     "Jouy-lès-Reims",
     "Pargny-lès-Reims",
-    "Tauxières-Mutry",
     "Vaudemange",
     "Billy-le-Grand",
     "Villers-aux-Nœuds",
@@ -53,9 +52,7 @@
     "Gueux",
     "Vrigny",
     "Saint-Thierry",
-    "Hermonville",
-    "Val de Livre",
-    "Ville-Dommange"
+    "Hermonville"
    ],
    "pos": [
     30,
@@ -88,7 +85,6 @@
     "Mutigny",
     "Avenay-Val-d'Or",
     "Tours-sur-Marne",
-    "Bisseuil",
     "Mareuil-le-Port",
     "Leuvrigny",
     "Festigny",
@@ -121,19 +117,16 @@
    "communes": [
     "Cramant",
     "Avize",
-    "Oger",
-    "Le Mesnil-sur-Oger",
     "Blancs-Coteaux",
+    "Le Mesnil-sur-Oger",
     "Chouilly",
     "Cuis",
     "Grauves",
     "Bergères-lès-Vertus",
-    "Vertus",
     "Moussy",
     "Pierry",
     "Monthelon",
     "Flavigny",
-    "Voipreux",
     "Villeneuve-Renneville-Chevigny"
    ],
    "pos": [
@@ -215,6 +208,26 @@
   {
    "nom": "Troyes",
    "dep": "10"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Marne",
+   "lon": 3.72,
+   "lat": 49.06,
+   "rot": -8
+  },
+  {
+   "t": "Seine",
+   "lon": 3.8,
+   "lat": 48.47,
+   "rot": -30
+  },
+  {
+   "t": "Aube",
+   "lon": 4.62,
+   "lat": 48.3,
+   "rot": -40
   }
  ]
 }

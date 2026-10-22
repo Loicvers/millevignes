@@ -18,6 +18,67 @@
  "largeur": 360,
  "zones": [
   {
+   "label": "Grès de Montpellier",
+   "communes": [
+    "Aumelas",
+    "Assas",
+    "Beaulieu",
+    "Boisseron",
+    "Campagne",
+    "Castelnau-le-Lez",
+    "Castries",
+    "Combaillaux",
+    "Cournonsec",
+    "Cournonterral",
+    "Saint-Christol",
+    "Vérargues",
+    "Garrigues",
+    "Gignac",
+    "Guzargues",
+    "Juvignac",
+    "Lavérune",
+    "Lunel",
+    "Lunel-Viel",
+    "Mauguio",
+    "Montagnac",
+    "Montbazin",
+    "Montpellier",
+    "Murviel-lès-Montpellier",
+    "Pignan",
+    "Plaissan",
+    "Poussan",
+    "Prades-le-Lez",
+    "Restinclières",
+    "Saturargues",
+    "Saint-Aunès",
+    "Saint-Bauzille-de-la-Sylve",
+    "Saint-Bauzille-de-Montmel",
+    "Saint-Clément-de-Rivière",
+    "Saint-Drézéry",
+    "Saint-Geniès-des-Mourgues",
+    "Saint-Georges-d'Orques",
+    "Saint-Pargoire",
+    "Saint-Pons-de-Mauchiens",
+    "Saint-Sériès",
+    "Saint-Vincent-de-Barbeyrargues",
+    "Sussargues",
+    "Vailhauquès",
+    "Vendémian",
+    "Villeneuve-lès-Maguelone",
+    "Villeveyrac"
+   ],
+   "deps": [
+    "34"
+   ],
+   "opacite": 0.14,
+   "pos": [
+    6,
+    36,
+    "start"
+   ],
+   "trait": true
+  },
+  {
    "label": "Pic Saint-Loup",
    "deps": [
     "34",
@@ -234,7 +295,8 @@
     "Pieusse",
     "Pomas",
     "Cépie",
-    "Roquetaillade-et-Conilhac",
+    "Roquetaillade",
+    "Conilhac-de-la-Montagne",
     "Magrie",
     "Saint-Hilaire",
     "Pauligne",
@@ -269,12 +331,113 @@
     "Mèze",
     "Montagnac"
    ]
+  },
+  {
+   "label": "La Clape",
+   "communes": [
+    "Armissan",
+    "Fleury",
+    "Gruissan",
+    "Narbonne",
+    "Salles-d'Aude",
+    "Vinassan"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.36,
+   "pos": [
+    34,
+    -22,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Cabardès",
+   "communes": [
+    "Alzonne",
+    "Aragon",
+    "Conques-sur-Orbiel",
+    "Fournes-Cabardès",
+    "Fraisse-Cabardès",
+    "Les Ilhes",
+    "Lastours",
+    "Montolieu",
+    "Moussoulens",
+    "Pennautier",
+    "Pezens",
+    "Sainte-Eulalie",
+    "Ventenac-Cabardès",
+    "Villanière",
+    "Villardonnel",
+    "Villedubert",
+    "Villegailhenc",
+    "Villemoustaussou"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.3
+  },
+  {
+   "label": "Malepère",
+   "communes": [
+    "Alaigne",
+    "Alairac",
+    "Arzens",
+    "Bellegarde-du-Razès",
+    "Belvèze-du-Razès",
+    "Brézilhac",
+    "Brugairolles",
+    "Cailhau",
+    "Cailhavel",
+    "Cambieure",
+    "Carcassonne",
+    "La Cassaigne",
+    "Caux-et-Sauzens",
+    "Couffoulens",
+    "La Courtète",
+    "Donazac",
+    "Fanjeaux",
+    "Fenouillet-du-Razès",
+    "Ferran",
+    "La Force",
+    "Gramazie",
+    "Hounoux",
+    "Lasserre-de-Prouille",
+    "Laurac",
+    "Lauraguel",
+    "Lavalette",
+    "Malviès",
+    "Mazerolles-du-Razès",
+    "Montclar",
+    "Montgradail",
+    "Montréal",
+    "Preixan",
+    "Roullens",
+    "Routier",
+    "Saint-Martin-de-Villereglan",
+    "Villarzel-du-Razès",
+    "Villeneuve-lès-Montréal",
+    "Villesèquelande",
+    "Villesiscle"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.2
   }
  ],
  "villes": [
   {
    "nom": "Montpellier",
-   "dep": "34"
+   "dep": "34",
+   "pos": [
+    6,
+    -5,
+    "start"
+   ]
   },
   {
    "nom": "Béziers",
@@ -282,7 +445,12 @@
   },
   {
    "nom": "Narbonne",
-   "dep": "11"
+   "dep": "11",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
   },
   {
    "nom": "Carcassonne",
@@ -291,6 +459,19 @@
   {
    "nom": "Nîmes",
    "dep": "30"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Aude",
+   "lon": 2.62,
+   "lat": 43.235,
+   "rot": -5
+  },
+  {
+   "t": "Méditerranée",
+   "lon": 3.75,
+   "lat": 43.25
   }
  ]
 }

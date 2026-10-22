@@ -92,3 +92,8 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## La France viticole — Jura, Savoie, Corse (22/10/2026)
 - BO-agri : cahiers des charges Arbois, Côtes du Jura, L’Étoile, Crémant du Jura, Macvin du Jura (2025), projet Château-Chalon (février 2026) ; Vin de Savoie (2023), Roussette de Savoie, Seyssel, Crémant de Savoie (décret n° 2015-1135), Bugey (2013) ; Patrimonio, Ajaccio, Vin de Corse (2019) ; fiches INAO et eAmbrosia (Muscat du Cap Corse). Introuvables au BO-agri : cahiers des charges en vigueur de Château-Chalon et du Muscat du Cap Corse.
+
+## Cartes de sous-régions — aires ajoutées (22/10/2026)
+- BO-agri : aires géographiques de Monbazillac (2017), Buzet (14/4/2025), Saint-Mont (9/12/2024), IGP Côtes de Gascogne (1/9/2025 : tout le Gers, 25 communes des Landes, 14 du Lot-et-Garonne) ; Cabardès (2016, source unique), Malepère (2/9/2022), AOC Languedoc (23/11/2022 ; Grès de Montpellier, 45 communes, recoupé par la PNO 2023) ; Palette (4/7/2024), Château-Grillet (2015), Côtes du Roussillon (22/3/2022, 102 communes, source unique), Côtes du Roussillon Villages (27/7/2023, 51 communes), Rivesaltes (14/6/2023, 94 communes). INAO : PNO La Clape (2015, version non homologuée), Bellet (décret 2011, Nice seule), AOC Bourgogne (PNO 2023 : Hautes-Côtes de Nuits et de Beaune, non vérifiée homologuée ; recoupement partiel décret 2011/2013).
+- Introuvable : liste officielle des communes de la Côte de Sézanne (secteur nommé par le Comité Champagne et l'UMC, pas une aire délimitée) ; non tracée.
+- À vérifier : la version du cahier des charges Languedoc du 11/08/2026 semble ne plus citer le Grès de Montpellier parmi ses dénominations (lecture partielle).

@@ -93,10 +93,9 @@
     "Le Vernois",
     "Pannessières",
     "Vernantois",
-    "Grusse",
+    "Val-Sonnette",
     "Cesancey",
     "Sainte-Agnès",
-    "Vincelles",
     "Beaufort",
     "Orbagna",
     "Maynal",
@@ -131,7 +130,8 @@
     80,
     "end"
    ],
-   "opacite": 0.16
+   "opacite": 0.16,
+   "trait": true
   }
  ],
  "villes": [

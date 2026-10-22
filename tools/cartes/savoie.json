@@ -104,7 +104,8 @@
     -22,
     10,
     "end"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Combe de Savoie",
@@ -126,7 +127,8 @@
     24,
     8,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Bugey",
@@ -140,8 +142,7 @@
     "Flaxieu",
     "Virieu-le-Grand",
     "Belley",
-    "Groslée",
-    "Saint-Benoît",
+    "Groslée-Saint-Benoit",
     "Culoz",
     "Béon",
     "Talissieu",
@@ -166,6 +167,32 @@
    "nom": "Thonon-les-Bains",
    "dep": "74",
    "label": "Thonon"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Rhône",
+   "lon": 5.93,
+   "lat": 46.13,
+   "rot": -50
+  },
+  {
+   "t": "lac du Bourget",
+   "lon": 5.875,
+   "lat": 45.72,
+   "rot": 78
+  },
+  {
+   "t": "lac Léman",
+   "lon": 6.42,
+   "lat": 46.44,
+   "rot": 0
+  },
+  {
+   "t": "Isère",
+   "lon": 6.3,
+   "lat": 45.62,
+   "rot": 35
   }
  ]
 }

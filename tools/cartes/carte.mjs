@@ -15,7 +15,8 @@ const polys = g => g.type === "Polygon" ? [g.coordinates] : g.coordinates;
 const find = (name, ds = cfg.deps) => { for (const d of ds) { const g = communes[d + ":" + norm(name)]; if (g) return g; } console.error("MANQUANT", name); return null; };
 
 const terre = cfg.clipDep ? JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => cfg.clipDep.includes(f.properties.code)).map(f => polys(f.geometry)) : null;
-const zones = cfg.zones.map(z => { let geom = pc.union(...z.communes.map(n => find(n, z.deps)).filter(Boolean).map(polys)); if (terre) geom = pc.intersection(geom, pc.union(...terre)); return { ...z, geom }; });
+const depGeo = c => JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => c.includes(f.properties.code)).flatMap(f => polys(f.geometry));
+const zones = cfg.zones.map(z => { let geom = pc.union(...(z.communes ?? []).map(n => find(n, z.deps)).filter(Boolean).map(polys), ...(z.departements ? depGeo(z.departements).map(p => [p]) : [])); if (terre) geom = pc.intersection(geom, pc.union(...terre)); return { ...z, geom }; });
 const pts = zones.flatMap(z => z.geom.flat(2));
 let [x0, y0, x1, y1] = [Math.min(...pts.map(p => p[0])), Math.min(...pts.map(p => p[1])), Math.max(...pts.map(p => p[0])), Math.max(...pts.map(p => p[1]))];
 const [mw, ms, me, mn] = cfg.marges ?? [0.12, 0.12, 0.12, 0.12]; x0 -= mw; x1 += me; y0 -= ms; y1 += mn;
@@ -55,18 +56,24 @@ for (const file of ["rivers.geojson", "riv_eu.geojson"]) for (const f of JSON.pa
 }
 const rivPath = riv.map(l => "M" + dp(l, 0.5).map(p => p.join(",")).join("L")).join("");
 
-let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+// data-proj : lon,lat → x = (lon - x0)·k·s, y = (y1 - lat)·s (sert à placer les points partenaires).
+let svg = `<svg viewBox="0 0 ${W} ${H}" data-proj="${[x0, y1, k, s].map(v => +v.toFixed(6)).join(",")}" xmlns="http://www.w3.org/2000/svg">`;
 svg += `<g fill="currentColor" stroke="currentColor" stroke-opacity="${cfg.fondFort ? 0.45 : 0.2}" stroke-width="${cfg.fondFort ? 0.7 : 0.4}"><path fill-opacity="0.06" d="${fond}"/></g>`;
-svg += `<g fill="currentColor" stroke="none">` + zones.map((z, i) => `<path fill-opacity="${z.opacite ?? [0.3, 0.2, 0.36, 0.24, 0.32, 0.18, 0.28, 0.22][i % 8]}" d="${pathOf(z.geom)}"/>`).join("") + `</g>`;
+svg += `<g fill="currentColor" style="stroke:var(--paper,#fff)" stroke-width="0.7" stroke-linejoin="round">` + zones.map((z, i) => `<path fill-opacity="${z.opacite ?? [0.3, 0.2, 0.36, 0.24, 0.32, 0.18, 0.28, 0.22][i % 8]}" d="${pathOf(z.geom)}"/>`).join("") + `</g>`;
 svg += `<g fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"><path d="${rivPath}"/></g><g fill="currentColor">`;
 for (const v of cfg.villes) {
   const g = find(v.nom, v.dep ? [v.dep] : undefined); if (!g) continue; const [x, y] = centroid(polys(g)); const [dx, dy, a] = v.pos ?? [6, 3, "start"];
   svg += `<rect x="${(x - 2).toFixed(1)}" y="${(y - 2).toFixed(1)}" width="4" height="4" fill="none" stroke="currentColor" stroke-width="1"/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" font-size="8" font-style="italic" opacity="0.75">${v.label ?? v.nom}</text>`;
 }
+for (const p of cfg.points ?? []) { // appellation non séparable à l’échelle communale : point sur sa commune
+  const g = find(p.nom, p.dep ? [p.dep] : undefined); if (!g) continue; const [x, y] = centroid(polys(g)); const [dx, dy, a] = p.pos ?? [5, 3, "start"];
+  svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" font-size="9" font-weight="bold">${p.label}</text>`;
+}
 for (const z of zones) {
-  const [cx, cy] = centroid(z.geom), [dx, dy, a] = z.pos ?? [0, 3, "middle"];
+  const [cx, cy] = z.at ? P(z.at) : centroid(z.geom), [dx, dy, a] = z.pos ?? [0, 3, "middle"]; // at : [lon, lat] quand le centre tombe sur une autre zone
+  if (z.trait) svg += `<path d="M${cx.toFixed(1)},${cy.toFixed(1)}L${(cx + dx + (a === "start" ? -2 : a === "end" ? 2 : 0)).toFixed(1)},${(cy + dy - 3).toFixed(1)}" stroke="currentColor" stroke-width="0.6" stroke-opacity="0.7" fill="none"/><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="1.2"/>`;
   svg += `<text x="${(cx + dx).toFixed(1)}" y="${(cy + dy).toFixed(1)}" text-anchor="${a}" font-size="9.5" font-weight="bold">${z.label}</text>`;
 }
-for (const t of cfg.textes ?? []) { const [x, y] = P([t.lon, t.lat]); svg += `<text x="${x}" y="${y}" text-anchor="middle" font-size="7.5" font-style="italic" opacity="0.6"${t.rot ? ` transform="rotate(${t.rot} ${x} ${y})"` : ""}>${t.t}</text>`; }
+for (const t of cfg.textes ?? []) { const [x, y] = P([t.lon, t.lat]); svg += `<text x="${x}" y="${y}" text-anchor="middle" ${t.gras ? 'font-size="9.5" font-weight="bold"' : 'font-size="7.5" font-style="italic" opacity="0.6"'}${t.rot ? ` transform="rotate(${t.rot} ${x} ${y})"` : ""}>${t.t}</text>`; }
 svg += `</g></svg>`;
 process.stdout.write(svg);

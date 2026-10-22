@@ -74,7 +74,8 @@
     0,
     -26,
     "middle"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Anjou-Saumur",
@@ -88,13 +89,11 @@
     "Rochefort-sur-Loire",
     "Chalonnes-sur-Loire",
     "Beaulieu-sur-Layon",
-    "Rablay-sur-Layon",
     "Bellevigne-en-Layon",
     "Val-du-Layon",
-    "Martigné-Briand",
+    "Terranjou",
     "Brissac Loire Aubance",
     "Doué-en-Anjou",
-    "Terranjou",
     "Aubigné-sur-Layon",
     "Les Garennes sur Loire",
     "Mûrs-Erigné",
@@ -115,13 +114,14 @@
     "Saint-Just-sur-Dive",
     "Lys-Haut-Layon",
     "Tuffalun",
-    "Bellevigne-les-Châteaux"
+    "Chacé"
    ],
    "pos": [
     0,
     30,
     "middle"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Touraine",
@@ -145,7 +145,7 @@
     "Restigné",
     "Benais",
     "Saint-Nicolas-de-Bourgueil",
-    "Ingrandes-de-Touraine",
+    "Coteaux-sur-Loire",
     "Amboise",
     "Chargé",
     "Mosnes",
@@ -170,14 +170,14 @@
     "Faverolles-sur-Cher",
     "Panzoult",
     "Rivière",
-    "Huismes",
-    "Coteaux-sur-Loire"
+    "Huismes"
    ],
    "pos": [
     0,
     30,
     "middle"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Centre-Loire",
@@ -218,7 +218,8 @@
     -18,
     -22,
     "end"
-   ]
+   ],
+   "trait": true
   }
  ],
  "villes": [
@@ -277,5 +278,12 @@
    ]
   }
  ],
- "textes": []
+ "textes": [
+  {
+   "t": "Loire",
+   "lon": -0.22,
+   "lat": 47.36,
+   "rot": -3
+  }
+ ]
 }

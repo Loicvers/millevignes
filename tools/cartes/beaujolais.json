@@ -64,7 +64,6 @@
     "Corcelles-en-Beaujolais",
     "Marchampt",
     "Vauxrenard",
-    "Durette",
     "Leynes",
     "Chânes",
     "Saint-Symphorien-d'Ancelles",
@@ -73,7 +72,6 @@
     "Saint-Julien",
     "Blacé",
     "Montmelas-Saint-Sorlin",
-    "Arbuissonnas",
     "Saint-Didier-sur-Beaujeu",
     "Les Ardillats"
    ],
@@ -91,13 +89,11 @@
    ],
    "communes": [
     "Theizé",
-    "Oingt",
+    "Val d'Oingt",
     "Bagnols",
-    "Le Bois-d'Oingt",
     "Légny",
     "Ville-sur-Jarnioux",
-    "Liergues",
-    "Pouilly-le-Monial",
+    "Porte des Pierres Dorées",
     "Chessy",
     "Châtillon",
     "Lachassagne",
@@ -117,14 +113,11 @@
     "Jarnioux",
     "Frontenas",
     "Moiré",
-    "Saint-Laurent-d'Oingt",
     "Sainte-Paule",
     "Ternand",
     "Létra",
     "Chamelet",
     "Saint-Vérand",
-    "Val d'Oingt",
-    "Porte des Pierres Dorées",
     "Saint-Jean-des-Vignes",
     "Belmont-d'Azergues",
     "Chazay-d'Azergues",
@@ -164,6 +157,14 @@
     3,
     "start"
    ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Saône",
+   "lon": 4.81,
+   "lat": 46.08,
+   "rot": 80
   }
  ]
 }

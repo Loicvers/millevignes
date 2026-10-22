@@ -9,7 +9,8 @@
   "65",
   "64",
   "12",
-  "47"
+  "47",
+  "40"
  ],
  "fleuves": [
   "Garonne",
@@ -27,6 +28,63 @@
  ],
  "largeur": 360,
  "zones": [
+  {
+   "label": "Côtes de Gascogne",
+   "departements": [
+    "32"
+   ],
+   "communes": [
+    "Aire-sur-l'Adour",
+    "Arthez-d'Armagnac",
+    "Betbezer-d'Armagnac",
+    "Bourdalat",
+    "Castandet",
+    "Cazères-sur-l'Adour",
+    "Créon-d'Armagnac",
+    "Escalans",
+    "Le Frêche",
+    "Gabarret",
+    "Hontanx",
+    "Labastide-d'Armagnac",
+    "Lacquy",
+    "Lagrange",
+    "Lussagnet",
+    "Mauvezin-d'Armagnac",
+    "Montégut",
+    "Parleboscq",
+    "Perquie",
+    "Sainte-Foy",
+    "Saint-Gein",
+    "Saint-Julien-d'Armagnac",
+    "Saint-Justin",
+    "Le Vignau",
+    "Villeneuve-de-Marsan",
+    "Andiran",
+    "Fieux",
+    "Francescas",
+    "Le Fréchou",
+    "Lannes",
+    "Lasserre",
+    "Mézin",
+    "Moncrabeau",
+    "Nérac",
+    "Poudenas",
+    "Réaup-Lisse",
+    "Sainte-Maure-de-Peyriac",
+    "Saint-Pé-Saint-Simon",
+    "Sos"
+   ],
+   "deps": [
+    "40",
+    "47"
+   ],
+   "opacite": 0.1,
+   "pos": [
+    40,
+    -4,
+    "middle"
+   ]
+  },
   {
    "label": "Bergerac",
    "deps": [
@@ -125,7 +183,7 @@
     "Vieux",
     "Montans",
     "Lagrave",
-    "Couffouleux",
+    "Coufouleux",
     "Loupiac",
     "Fayssac",
     "Florentin",
@@ -221,7 +279,13 @@
     "Simacourbe",
     "Mascaraàs-Haron",
     "Castillon (Canton de Lembeye)"
-   ]
+   ],
+   "pos": [
+    -26,
+    10,
+    "end"
+   ],
+   "trait": true
   },
   {
    "label": "Jurançon",
@@ -289,13 +353,128 @@
     "Clairvaux-d'Aveyron",
     "Valady",
     "Nauviale",
-    "Balsac",
     "Mouret",
     "Pruines",
     "Saint-Christophe-Vallon",
-    "Druelle",
+    "Druelle Balsac",
     "Goutrens"
    ]
+  },
+  {
+   "label": "Buzet",
+   "communes": [
+    "Ambrus",
+    "Anzex",
+    "Barbaste",
+    "Bruch",
+    "Buzet-sur-Baïse",
+    "Calignac",
+    "Caubeyres",
+    "Damazan",
+    "Espiens",
+    "Feugarolles",
+    "Lavardac",
+    "Leyritz-Moncassin",
+    "Moncaut",
+    "Montagnac-sur-Auvignon",
+    "Montesquieu",
+    "Montgaillard-en-Albret",
+    "Nérac",
+    "Pompiey",
+    "Puch-d'Agenais",
+    "Razimet",
+    "Saint-Léon",
+    "Saint-Pierre-de-Buzet",
+    "Sainte-Colombe-en-Bruilhois",
+    "Sérignac-sur-Garonne",
+    "Vianne",
+    "Villefranche-du-Queyran",
+    "Xaintrailles"
+   ],
+   "deps": [
+    "47"
+   ]
+  },
+  {
+   "label": "Saint-Mont",
+   "communes": [
+    "Aignan",
+    "Arblade-le-Bas",
+    "Armous-et-Cau",
+    "Aurensan",
+    "Beaumarchès",
+    "Bernède",
+    "Bouzon-Gellenave",
+    "Castelnavet",
+    "Caumont",
+    "Corneillan",
+    "Couloumé-Mondebat",
+    "Courties",
+    "Fusterouau",
+    "Gazax-et-Baccarisse",
+    "Ju-Belloc",
+    "Labarthète",
+    "Ladevèze-Rivière",
+    "Ladevèze-Ville",
+    "Lannux",
+    "Lasserade",
+    "Lelin-Lapujolle",
+    "Louslitges",
+    "Loussous-Débat",
+    "Lupiac",
+    "Margouët-Meymes",
+    "Maulichères",
+    "Peyrusse-Grande",
+    "Peyrusse-Vieille",
+    "Plaisance",
+    "Pouydraguin",
+    "Projan",
+    "Riscle",
+    "Sabazan",
+    "Saint-Aunix-Lengros",
+    "Saint-Mont",
+    "Saint-Pierre-d'Aubézies",
+    "Sarragachies",
+    "Tasque",
+    "Termes-d'Armagnac",
+    "Tieste-Uragnoux",
+    "Tourdun",
+    "Verlus",
+    "Averon-Bergelle",
+    "Dému",
+    "Marciac",
+    "Seailles"
+   ],
+   "deps": [
+    "32"
+   ],
+   "opacite": 0.34,
+   "pos": [
+    22,
+    -20,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Monbazillac",
+   "communes": [
+    "Colombier",
+    "Monbazillac",
+    "Pomport",
+    "Rouffignac-de-Sigoulès",
+    "Saint-Laurent-des-Vignes"
+   ],
+   "deps": [
+    "24"
+   ],
+   "opacite": 0.4,
+   "pos": [
+    -30,
+    22,
+    "end"
+   ],
+   "trait": true
   }
  ],
  "villes": [
@@ -314,6 +493,32 @@
   {
    "nom": "Rodez",
    "dep": "12"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Garonne",
+   "lon": 0.98,
+   "lat": 44.12,
+   "rot": -20
+  },
+  {
+   "t": "Dordogne",
+   "lon": 0.78,
+   "lat": 44.88,
+   "rot": 0
+  },
+  {
+   "t": "Lot",
+   "lon": 0.88,
+   "lat": 44.43,
+   "rot": -5
+  },
+  {
+   "t": "Tarn",
+   "lon": 1.35,
+   "lat": 44.0,
+   "rot": -20
   }
  ]
 }

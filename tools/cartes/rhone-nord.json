@@ -95,10 +95,11 @@
     "Tain-l'Hermitage"
    ],
    "pos": [
-    12,
-    -4,
+    34,
+    -26,
     "start"
-   ]
+   ],
+   "trait": true
   },
   {
    "label": "Crozes-Hermitage",
@@ -190,6 +191,18 @@
    "lon": 4.83,
    "lat": 45.27,
    "rot": 80
+  }
+ ],
+ "points": [
+  {
+   "nom": "Vérin",
+   "dep": "42",
+   "label": "Château-Grillet",
+   "pos": [
+    8,
+    3,
+    "start"
+   ]
   }
  ]
 }
