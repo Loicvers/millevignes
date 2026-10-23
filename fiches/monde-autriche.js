@@ -1,0 +1,45 @@
+// Le monde viticole — Autriche (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 536,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Autriche","region":null,"appel":null},
+    source: "france",
+    chapitre: "Autriche : panorama et régions",
+    titre: "L’Autriche : grüner veltliner, riesling et zweigelt, rangés par DAC",
+    synth: "Le grüner veltliner couvre près d’un tiers du vignoble autrichien (32 % en 2025) ; le zweigelt est le premier cépage rouge (13 %), devant le blaufränkisch. Les appellations régionales typées, les DAC, relient une origine à un style et se hiérarchisent en trois niveaux : Gebietswein (région), Ortswein (village) et Riedenwein (parcelle). Sur le Danube, en Basse-Autriche, le Kamptal DAC repose sur le grüner veltliner et le riesling, et s’ouvre depuis le millésime 2024 au chardonnay, au weissburgunder et au grauburgunder. La Wachau est un DAC depuis 2020, avec une vendange à la main : ses vins secs de l’association Vinea Wachau se rangent selon le degré d’alcool, du Steinfeder (jusqu’à 11,5 % vol.) au Federspiel (11,5 à 12,5 %) puis au Smaragd (au moins 12,5 %). Enfin, en Autriche, Kabinett est une catégorie de Qualitätswein et non un Prädikat.",
+    mnemo: "De la plume à l’émeraude : dans la Wachau, le vin le plus léger porte une plume dans son nom (Steinfeder), le plus riche une pierre précieuse (Smaragd), et le Federspiel fait le pont.",
+    flash: {"q":"Depuis quand la Wachau est-elle un DAC, et quel mode de vendange y est imposé ?","a":"Depuis 2020 ; la vendange se fait à la main.","keys":[["2020"],["main"]]},
+    qcm: {"q":"Quel cépage est le plus planté d’Autriche ?","opts":["Le grüner veltliner","Le welschriesling","Le zweigelt","Le riesling"],"good":0,"expl":"Le zweigelt est le premier cépage rouge mais reste loin du grüner veltliner, au tiers du vignoble. Le welschriesling, sans lien avec le riesling, vient bien après."},
+    exos: [{"type":"ordering","prompt":"Range ces vins secs de la Wachau du moins alcoolisé au plus alcoolisé.","payload":{"items":["Steinfeder","Federspiel","Smaragd"]},"explanation":"Les trois marques ont été créées pour classer les vins secs d’après leur degré naturel, qui reflète la maturité du raisin ; le plus léger est le Steinfeder, le plus riche le Smaragd."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Depuis le millésime 2024, un chardonnay du Kamptal peut être vendu sous l’appellation Kamptal DAC.","answer":true},"explanation":"Le Kamptal a élargi son appellation à trois cépages bourguignons ; ils restent toutefois discrets, car leur nom ne peut figurer que sur l’étiquette principale, pas sur l’étiquette de façade."},{"type":"short_answer","prompt":"Qui suis-je ? Premier cépage rouge d’Autriche, avec environ 13 % du vignoble, devant le blaufränkisch.","payload":{"accepted":["zweigelt","le zweigelt","blauer zweigelt","le blauer zweigelt"]},"explanation":"Le grüner veltliner domine l’ensemble du vignoble, mais il est blanc : côté rouge, c’est le zweigelt qui mène, et le blaufränkisch vient derrière lui."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Kremstal DAC (grüner veltliner et riesling, WSET) : spécification BMLUK non lue (accès bloqué) ; non repris.","Blaufränkisch surtout au Burgenland : WSET seul ; non repris.","Nombre de DAC : 17 selon le WSET, 18 avec la Thermenregion en 2023 selon Wine With Seth (2b) ; non repris.","Riesling : moins de 5 % du vignoble autrichien (WSET seul).","Zweigelt, croisement de sankt laurent et de blaufränkisch (WSET seul).","Wachau : vins secs de moins de 9 g/l de sucre résiduel (WSET seul ; la page Vinea Wachau ne donne pas le sucre).","Wachau : riesling sur gneiss, grüner veltliner sur loess (WSET seul)."],
+    src: "Vinea Wachau, The brandnames (vinea-wachau.at) ; Wachau-DAC-Verordnung, BGBl. II Nr. 200/2020 (5.5.2020) ; Decanter, Austria’s Wachau region awarded DAC status (12.5.2020) ; BMLUK, Weingesetz 2009 et Kamptal DAC neu ab Jahrgang 2024 ; Advantage Austria (WKO), Zahlen und Fakten Wein (2025) ; WSET, D3 Wines of the World (août 2024), chapitre Austria"
+  },
+  {
+    id: 537,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Autriche","region":"Burgenland","appel":null},
+    source: "france",
+    chapitre: "Autriche : panorama et régions",
+    titre: "Les liquoreux autrichiens : le lac de Neusiedl, le botrytis et le Ruster Ausbruch",
+    synth: "Autour du lac de Neusiedl, dans le Burgenland, les automnes tièdes et humides favorisent le botrytis, d’où des liquoreux de baies flétries et triées à la main. Les Prädikate autrichiens suivent la logique du poids du moût, mais Kabinett en est exclu, et la liste compte Ausbruch en plus de Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein et Strohwein ; ni chaptalisation, ni Süßreserve. Le Ruster Ausbruch, de la ville de Rust, est une appellation (DAC) réservée aux vins de baies botrytisées flétries sur pied, triées à la main, au niveau d’une TBA et d’au moins 30 °KMW ; les cépages actuels comptent notamment le weissburgunder, le chardonnay et le welschriesling.",
+    mnemo: "Un lac qui tient l’automne tiède et humide comme une serre : le raisin flétrit, le sucre se concentre, et un seul nom de ville, Rust, est inscrit sur la bouteille d’Ausbruch.",
+    flash: {"q":"Quelle ville des bords du lac de Neusiedl donne son nom à un liquoreux de baies botrytisées, d’un niveau équivalent à la TBA ?","a":"Rust : le Ruster Ausbruch (au moins 30 °KMW).","keys":[["rust"],["ausbruch"]]},
+    qcm: {"q":"Quelle mention n’est pas un Prädikat en Autriche ?","opts":["Kabinett","Ausbruch","Strohwein","Eiswein"],"good":0,"expl":"Ausbruch, Strohwein et Eiswein figurent bien parmi les Prädikate autrichiens, alors que le Kabinett est une catégorie de Qualitätswein non chaptalisée, mais située hors de la série des Prädikate."},
+    exos: [{"type":"mcq_multi","prompt":"Lesquelles de ces conditions concernent le Ruster Ausbruch ?","payload":{"options":["Raisins de la ville de Rust","Baies botrytisées flétries sur pied, triées à la main","Chaptalisation autorisée jusqu’à 2 % vol.","Niveau TBA, au moins 30 °KMW"],"answers":[0,1,3]},"explanation":"Le cahier des charges repose sur l’origine, la sélection à la main et la concentration naturelle du moût. Une chaptalisation n’aurait aucun sens pour un Prädikat, qui interdit tout enrichissement."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le Ruster Ausbruch est un vin sec issu de vendanges tardives.","answer":false},"explanation":"C’est un liquoreux : l’exigence d’un niveau TBA suppose des baies botrytisées flétries et un moût très riche, qui conserve beaucoup de sucre."},{"type":"cloze","prompt":"Complète pour expliquer le style des liquoreux du Neusiedlersee.","payload":{"text":"Autour du lac de Neusiedl, des automnes tièdes et {{humides}} favorisent le {{botrytis}}, qui flétrit les baies et concentre le {{sucre}} ; les raisins sont triés à la {{main}}."},"explanation":"L’humidité propre au lac est ce qui rend le botrytis régulier ; sans elle, pas de pourriture noble, donc pas de liquoreux de ce type. Le tri à la main suit la maturité baie par baie."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Brouillard du lac et après-midi ensoleillés qui empêchent la pourriture grise : source unique, non recoupé (WSET).","Welschriesling à peau fine, très présent pour les BA et TBA : source unique, non recoupé (WSET).","Neusiedlersee DAC (rouges à base de zweigelt), liquoreux sous la mention Burgenland : source unique, non recoupé.","Année du DAC Ruster Ausbruch : 2020 (WSET) contre 2019 (BMLUK) ; non reprise."],
+    src: "BMLUK (Autriche), Ruster Ausbruch et Weingesetz 2009 (Bezeichnungsrecht) ; wein.plus, Austrian sweet wine Ruster Ausbruch receives DAC status ; WSET, D3 Wines of the World (août 2024), chapitre Austria"
+  }
+);
