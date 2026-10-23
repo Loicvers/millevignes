@@ -3,7 +3,7 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 591 (dernier id : 592) · exercices : 3054
-- Vérifiées : 371 · à vérifier : 220 (327 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
+- Vérifiées : 373 · à vérifier : 218 (324 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
 - Niveaux : Fondamental 180 · Intermédiaire 301 · Pointu 110
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
@@ -16,7 +16,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
 | 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
 | 150-terroir.js | 36 | 3–222 | 150–199 | 13 | 5 | 5 |
-| 203-vinification.js | 69 | 223–592 | 204–242 | 45 | 14 | 14 |
+| 203-vinification.js | 69 | 223–592 | 204–242 | 47 | 14 | 14 |
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
 | 288-service.js | 52 | 293–571 | 288–329 | 35 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
