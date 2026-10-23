@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-575 fiches : 348 vérifiées, 227 à vérifier (354 points).
+579 fiches : 351 vérifiées, 228 à vérifier (355 points).
 Hors dette : 1175 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
@@ -811,3 +811,6 @@ Hors dette : 1175 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 575** (p.?) — Floc de Gascogne, macvin et vins de liqueur : ce qui les sépare des vins doux naturels
 - [ ] Floc de Gascogne (mutage à l’armagnac, blanc ou rosé, 16 à 18 % vol.) : INAO (fiche produit), projet de cahier des charges 2026 et Guide Hachette concordants, mais cahier des charges homologué (décret n° 2011-1620 du 23 novembre 2011) non lu, Légifrance et BO bloqués : à relire avant de passer la fiche en verified
+
+**Fiche 577** (p.221) — Grappes entières : carbonique, semi-carbonique et vendange entière partielle, comparées à l’éraflée-foulée
+- [ ] Couleur et tanins : ⚠️ divergence : le WSET dit que la carbonique pure extrait de la couleur mais peu de tanin ; l’essai IFV Sicarex-Beaujolais (Réussir Vigne, 17 essais sur gamay) trouve, pour la vinification beaujolaise semi-carbonique comparée à l’éraflée, 33 mg/l d’anthocyanes en moins et 0,27 g/l de tanins en plus (rafles) ; méthodes voisines mais pas identiques, non tranché
