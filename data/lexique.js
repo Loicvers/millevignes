@@ -26,6 +26,7 @@ const LEXIQUE = [
  },
  {
   "terme": "lambrusque",
+  "photo": {"fichier": "Vitis vinifera subsp. sylvestris sl9.jpg", "legende": "Lambrusque (vigne sauvage) grimpée dans la cime d’un arbre.", "auteur": "Stefan Lefnaer", "licence": "CC BY-SA 4.0"},
   "def": "Vigne sauvage européenne (Vitis vinifera subsp. sylvestris), ancêtre de la vigne cultivée.",
   "etym": "du latin labrusca, vigne sauvage.",
   "declic": "Labrusca : la vigne d’avant la culture.",
@@ -59,6 +60,7 @@ const LEXIQUE = [
  },
  {
   "terme": "sarment",
+  "photo": {"fichier": "Sarments vigne côte rôtie.jpg", "legende": "Fagot de sarments en Côte-Rôtie, rassemblés après la taille.", "auteur": "Olivier Lemoine", "licence": "CC BY-SA 4.0"},
   "def": "Rameau de l’année de la vigne, lignifié après l’aoûtement.",
   "etym": "du latin sarmentum, branchage coupé.",
   "declic": "Sarmentum : ce qu’on taille.",
@@ -70,6 +72,7 @@ const LEXIQUE = [
  },
  {
   "terme": "vrille",
+  "photo": {"fichier": "Tendril of Solaris grapes growing in Chateaux Luna vineyard.jpg", "legende": "Vrille enroulée autour d’un fil de palissage.", "auteur": "W. Carter", "licence": "CC0"},
   "def": "Organe filiforme enroulé par lequel la vigne s’accroche à son support.",
   "etym": "du latin viticula, petite vigne (diminutif de vitis), via l’ancien français veille ; le r s’explique mal.",
   "declic": "Viticula : la petite vigne qui s’enroule.",
@@ -93,6 +96,7 @@ const LEXIQUE = [
  },
  {
   "terme": "greffe",
+  "photo": {"fichier": "Greffe omega chardonnay.JPG", "legende": "Greffe oméga sur chardonnay : le greffon s’emboîte dans le porte-greffe par une découpe en Ω.", "auteur": "Epop", "licence": "domaine public"},
   "def": "Union d’un greffon et d’un porte-greffe pour former un seul plant.",
   "etym": "de l’ancien français graife, du latin graphium, stylet.",
   "declic": "Graphium, le stylet : imagine le greffon taillé en pointe.",
@@ -184,5 +188,135 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "L’origine du mot millerand n’est pas expliquée par les sources consultées."
+ },
+ {
+  "terme": "mildiou",
+  "def": "Maladie de la vigne due à Plasmopara viticola, venue d’Amérique. Elle exige de l’eau libre (pluie, rosée, brouillard) : tache jaunâtre « en tache d’huile » sur le dessus de la feuille, duvet blanc au revers, grappes duveteuses puis brunes. Lutte classique au cuivre (bouillie bordelaise).",
+  "etym": "de l’anglais mildew, d’abord écrit tel quel en français (1874) puis mildiou (1881) ; en vieil anglais, « rosée de miel ».",
+  "declic": "Mildiou = eau : sans pluie ni rosée, pas de tache d’huile.",
+  "src": [
+   "CNRTL (étymologie)",
+   "Chambres d’agriculture Auvergne-Rhône-Alpes, Maladies de la vigne",
+   "fiche 520"
+  ],
+  "status": "verified",
+  "note": "",
+  "photo": {
+   "fichier": "Plasmopara viticola a1 (4).jpg",
+   "legende": "Taches de mildiou sur le dessus d’une feuille.",
+   "auteur": "Jerzy Opioła",
+   "licence": "CC BY-SA 4.0"
+  }
+ },
+ {
+  "terme": "oïdium",
+  "def": "Maladie de la vigne due au champignon Erysiphe necator : feutrage poudreux blanc grisâtre sur feuilles et baies, qui peuvent éclater. Contrairement au mildiou, il n’a pas besoin de pluie et aime le temps doux et le feuillage dense. Lutte classique au soufre.",
+  "etym": "du latin scientifique oidium, formé sur le grec ôon, « œuf ».",
+  "declic": "Oïdium = poussière : il vient par temps sec, on le soufre.",
+  "src": [
+   "CNRTL (étymologie)",
+   "Chambres d’agriculture Auvergne-Rhône-Alpes, Maladies de la vigne",
+   "fiche 521"
+  ],
+  "status": "verified",
+  "note": "",
+  "photo": {
+   "fichier": "Oidium vigne.jpg",
+   "legende": "Grappe atteinte d’oïdium : baies poudrées de gris, certaines éclatées.",
+   "auteur": "Olivier Lemoine",
+   "licence": "CC BY-SA 4.0"
+  }
+ },
+ {
+  "terme": "botrytis / pourriture noble",
+  "def": "Botrytis cinerea est un champignon des baies. Avec une alternance d’humidité et de temps sec, il dessèche la baie et concentre ses sucres : c’est la pourriture noble des liquoreux (Sauternes, Tokaj). Avec une humidité persistante, il laisse un feutre gris qui sent le moisi : c’est la pourriture grise, un défaut.",
+  "etym": "",
+  "declic": "Même champignon, deux destins : le temps qui alterne fait le liquoreux, la pluie qui dure fait le moisi.",
+  "src": [
+   "Ribéreau-Gayon et al., Handbook of Enology, vol. 1 (2006)",
+   "fiche 346"
+  ],
+  "status": "verified",
+  "note": "Étymologie de botrytis non vérifiée dans une source consultée.",
+  "photo": {
+   "fichier": "Sauternes noble rot grapes.jpg",
+   "legende": "Grappe de Sauternes atteinte de pourriture noble : baies flétries, couvertes du champignon.",
+   "auteur": "Edwin",
+   "licence": "CC BY-SA 2.0"
+  }
+ },
+ {
+  "terme": "phylloxéra",
+  "def": "Minuscule puceron d’origine américaine (Daktulosphaira vitifoliae) qui pique les racines de la vigne européenne jusqu’à la tuer ; sur les vignes américaines, il forme surtout des galles sur les feuilles. Il a ravagé le vignoble européen à partir des années 1860 ; la parade reste la greffe sur porte-greffe américain.",
+  "etym": "nom scientifique créé par Planchon (Phylloxera vastatrix, 1868), du grec phullon, « feuille », et xêros, « sec ».",
+  "declic": "Phyllo-xéra : la feuille sèche ; mais c’est par la racine qu’il tue.",
+  "src": [
+   "CNRTL (étymologie)",
+   "INRAE, Encyclopédie des pucerons",
+   "fiches 55 et 74"
+  ],
+  "status": "verified",
+  "note": "",
+  "photo": {
+   "fichier": "Daktulosphaira vitifoliae. closeup.jpg",
+   "legende": "Galles de phylloxéra au revers d’une feuille de vigne (forme des feuilles, visible surtout sur vignes américaines).",
+   "auteur": "Beatriz Moisset",
+   "licence": "CC BY-SA 4.0"
+  }
+ },
+ {
+  "terme": "esca",
+  "def": "Maladie du bois de la vigne, causée par plusieurs champignons qui nécrosent le tronc puis le transforment en pourriture blanche (amadou). Forme lente : feuilles « tigrées » et dessèchement sur plusieurs années ; forme apoplectique : le cep meurt d’un coup en pleine chaleur. Aucun traitement autorisé depuis l’interdiction de l’arsénite de sodium (2001).",
+  "etym": "",
+  "declic": "Feuilles tigrées dehors, amadou dedans.",
+  "src": [
+   "IFV Occitanie, Esca",
+   "INRAE Ephytia, Vigne : principaux symptômes",
+   "fiche 83"
+  ],
+  "status": "verified",
+  "note": "Étymologie non vérifiée dans une source consultée.",
+  "photo": {
+   "fichier": "Esca auf Müller-Thurgau am Versuchsgut Agneshof des LFZ Klosterneuburg 2025-08-15 01.jpg",
+   "legende": "Feuille « tigrée » d’esca : bandes jaunes et brunes entre les nervures.",
+   "auteur": "Tsui",
+   "licence": "CC BY-SA 4.0"
+  }
+ },
+ {
+  "terme": "flavescence dorée",
+  "def": "Maladie grave de la vigne due à un phytoplasme (bactérie sans paroi) et transmise par une cicadelle, Scaphoideus titanus. Feuilles décolorées (jaunes sur cépages blancs, rouges sur cépages noirs) et enroulées vers le bas, rameaux qui ne s’aoûtent pas, grappes qui se dessèchent. Elle est sans danger pour la santé humaine.",
+  "etym": "",
+  "declic": "Flavescence dorée : la feuille jaunit et s’enroule, la cicadelle a piqué.",
+  "src": [
+   "Agence canadienne d’inspection des aliments, Jaunisse de la vigne : guide d’identification",
+   "fiche 154"
+  ],
+  "status": "verified",
+  "note": "Étymologie non vérifiée dans une source consultée.",
+  "photo": {
+   "fichier": "Flavescence dorée 3.jpg",
+   "legende": "Feuilles atteintes de flavescence dorée, décolorées et enroulées.",
+   "auteur": "Josef Klement",
+   "licence": "CC BY 2.0 AT"
+  }
+ },
+ {
+  "terme": "black rot",
+  "def": "Maladie de la vigne due au champignon Guignardia bidwellii, venue d’Amérique du Nord. Sur les feuilles, des taches brun clair bordées de brun foncé, ponctuées de points noirs ; sur les baies, une tache qui gagne tout le grain, lequel se ride et se momifie en quelques jours, noir à reflets bleutés.",
+  "etym": "mot anglais, littéralement « pourriture noire ».",
+  "declic": "Black rot : la baie noircit et sèche en momie.",
+  "src": [
+   "INRAE Ephytia, Black rot et principaux symptômes",
+   "fiche 93"
+  ],
+  "status": "verified",
+  "note": "",
+  "photo": {
+   "fichier": "Guignardia bidwellii (black rot) on grape 2.jpg",
+   "legende": "Grappe touchée par le black rot : baies momifiées, noires, à côté de baies encore saines.",
+   "auteur": "Clemson University, USDA Cooperative Extension",
+   "licence": "domaine public"
+  }
  }
 ];

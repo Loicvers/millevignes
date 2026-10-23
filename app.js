@@ -215,7 +215,7 @@ function renderLexique(){
     [...LEXIQUE].sort((a,b)=>a.terme.localeCompare(b.terme,'fr')).filter(t=>!n||normalize(t.terme+' '+t.def).includes(n)).forEach(t=>{
       const d=el('div','card lex');
       d.append(el('h3',null,t.terme),el('p','synth',t.def));const ph=lexPhoto(t);if(ph)d.append(ph);
-      const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);
+      if(t.etym){const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
       const fs=lexFiches(t,FICHES).slice(0,6);
