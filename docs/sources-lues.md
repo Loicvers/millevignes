@@ -116,3 +116,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Le monde viticole — Espagne, Portugal, Grèce (23/10/2026, fiches 545-552)
 - WSET D3 (2024) et D4 (2020) ; MAPA (cahiers des charges, termes traditionnels), cahiers des charges Toro (2024), Rueda (2019, rév. 2024), Rioja (document unique 2024), Bierzo (2021), Cava et Consejo Regulador (normes 2022) ; Agronews (loi 6/2015) ; Portugal via FAOLEX et informador.pt : décret-loi 254/98, Portarias 212/2014, 244/2014, 783/2009, 118/2014 ; CVRA ; document unique grec de l’AOP Santorin ; Wines of Greece ; Decanter, The Drinks Business, Wine with Seth (2b). Bloqués : boe.es, docava.es, vinhoverde.pt, winesofportugal.com, diariodarepublica.pt.
+
+## Le monde viticole — Australie, Nouvelle-Zélande, Afrique du Sud (23/10/2026, fiches 560-565)
+- WSET L3 (2016) et D4 (2020) ; Wine Australia (truth in labelling, registre des GI) ; MPI et Wine Regulations 2021 (clause 43) ; New Zealand Winegrowers ; SAWIS (bulletins, proposition Cap Classique 2021), WOSA, Wines of Elgin, Cap Classique Producers Association ; Dictionary of South African English ; Wine Companion, The Drinks Business, The Buyer, Decanter, Wine with Seth (2b). Bloqués : pages GI et label integrity de Wine Australia, nzwine.com/regions, legislation.govt.nz, PDF SAWIS (robots), dlrrd.gov.za.

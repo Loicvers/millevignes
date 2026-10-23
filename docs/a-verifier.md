@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-552 fiches : 328 vérifiées, 224 à vérifier (351 points).
-Hors dette : 1105 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+558 fiches : 333 vérifiées, 225 à vérifier (352 points).
+Hors dette : 1130 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -802,3 +802,6 @@ Hors dette : 1105 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Indications d’âge : ⚠️ divergence non tranchée : l’IVDP cite 10, 20, 30 et 40 ans (« plus de 40 » selon la réglementation reprise par For the Love of Port), le WSET signale une catégorie « 50 ans » approuvée en 2022 ; chiffre de 40 ans non testé
 - [ ] Durée en bois du reserve tawny : ⚠️ six ans selon le WSET, sept ans selon la réglementation reprise par For the Love of Port et un document ancien de l’IVDP ; non repris dans la fiche
 - [ ] Rosé : ⚠️ aucune source de niveau 1 lue (la page IVDP des catégories spéciales n’en parle pas) ; style récent et macération brève confirmés par Wines of Portugal et le WSET ; invention par Croft non reprise (WSET seul)
+
+**Fiche 565** (p.?) — L’Afrique du Sud fraîche et le Cap Classique : Elgin, Walker Bay et les bulles
+- [ ] Temps minimal sur lies du Cap Classique, non repris : ⚠️ 12 mois dès la vendange 2023 selon la proposition de la CCPA publiée par SAWIS (2021), l’association, The Buyer et Wine with Seth, mais « depuis 2021 » selon Decanter ; 36 mois proposés pour la classe à élevage prolongé ; texte adopté (Regulations, Table 2, items 17A et 17B) non lu, le bulletin SAWIS 2025 ne donne pas les durées ; 9 mois dans le WSET D4 (2020), dépassé

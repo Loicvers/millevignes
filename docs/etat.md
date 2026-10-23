@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 552 (dernier id : 558) · exercices : 2856
-- Vérifiées : 328 · à vérifier : 224 (351 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1105
-- Niveaux : Fondamental 173 · Intermédiaire 271 · Pointu 108
+- Fiches : 558 (dernier id : 565) · exercices : 2885
+- Vérifiées : 333 · à vérifier : 225 (352 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1130
+- Niveaux : Fondamental 174 · Intermédiaire 276 · Pointu 108
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 15 termes · récits de chapitre : 52
 
@@ -48,8 +48,10 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 1 |
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
+| monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 1 | 0 | 0 |
 | monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 0 |
 | monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 0 |
+| monde-australie.js | 3 | 560–562 | hors livre | 3 | 0 | 0 |
 | monde-autriche.js | 2 | 536–537 | hors livre | 2 | 0 | 0 |
 | monde-canada.js | 1 | 556–556 | hors livre | 1 | 0 | 0 |
 | monde-chili.js | 1 | 557–557 | hors livre | 1 | 0 | 0 |
@@ -57,4 +59,5 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 0 |
 | monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 0 |
 | monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 0 |
+| monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 0 |
 | monde-portugal.js | 6 | 526–551 | hors livre | 5 | 0 | 0 |

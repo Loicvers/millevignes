@@ -1,0 +1,24 @@
+// Le monde viticole — Nouvelle-Zélande (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 563,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Nouvelle-Zélande","region":null,"appel":null},
+    source: "france",
+    chapitre: "Nouvelle-Zélande",
+    titre: "La Nouvelle-Zélande : Marlborough, Central Otago, Hawke’s Bay et Martinborough",
+    synth: "Isolée dans le Pacifique, la Nouvelle-Zélande a un climat maritime, plus frais sur l’île du Sud, avec de longues heures de soleil et des nuits rafraîchies. Marlborough, dans le nord de l’île du Sud, concentre environ 71 % du vignoble national et fait la gloire du sauvignon blanc ; la vallée de Wairau donne un vin plus tropical, celle d’Awatere, plus fraîche, sèche et ventée, un style plus herbacé. Central Otago, l’une des régions les plus méridionales du monde et la plus haute du pays, au climat semi-continental, est le fief du pinot noir ; Martinborough, dans le Wairarapa, au sud de l’île du Nord, en fait aussi une spécialité. À Hawke’s Bay, les graviers drainants de Gimblett Gravels, qui emmagasinent la chaleur, portent merlot, cabernet et syrah. Pour mentionner un cépage, un millésime ou une zone, au moins 85 % du vin doit en provenir ; la capsule à vis (voir la fiche 303) est devenue la norme.",
+    mnemo: "Un pays en deux : au nord de l’île du Sud, une mer de sauvignon qui sent la passion ; tout au sud, un pinot de montagne qui garde ses gants ; au centre-est de l’île du Nord, une rivière de graviers chauds où mûrissent les rouges.",
+    flash: {"q":"Quelle part approximative du vignoble néo-zélandais se trouve à Marlborough, et quel cépage y domine ?","a":"Environ 71 % de la surface productive (2023) ; le sauvignon blanc domine.","keys":[["71"],["sauvignon"]]},
+    qcm: {"q":"Que sont les Gimblett Gravels de Hawke’s Bay ?","opts":["Une zone de graviers drainants qui retiennent la chaleur, propice aux rouges","Un plateau calcaire frais réservé au sauvignon blanc","Une vallée d’altitude semi-continentale plantée de pinot noir","Une île volcanique au climat tropical"],"good":0,"expl":"Les graviers de la vallée évacuent l’eau et rendent la chaleur, d’où des raisins noirs bien mûrs ; Marlborough est la zone du sauvignon et Central Otago celle du pinot noir semi-continental."},
+    exos: [{"type":"matching","prompt":"Associe chaque zone néo-zélandaise à ce qui la caractérise.","payload":{"pairs":[["Marlborough","Sauvignon blanc, vallées de Wairau et d’Awatere"],["Central Otago","Pinot noir, climat semi-continental, région la plus haute du pays"],["Gimblett Gravels","Graviers drainants, merlot, cabernet, syrah"],["Martinborough","Wairarapa, pointe sud de l’île du Nord"]]},"explanation":"Chaque zone s’explique par un facteur : le sauvignon par la fraîcheur maritime de Marlborough, le pinot par l’altitude et le contraste thermique de l’Otago, les rouges de Hawke’s Bay par la chaleur des graviers."},{"type":"short_answer","prompt":"Un sauvignon blanc de Marlborough plus vif et plus herbacé, sans les notes tropicales de sa voisine, vient d’une vallée plus fraîche, plus sèche et plus ventée. Quelle vallée ?","payload":{"accepted":["awatere","l’awatere","vallée d’awatere","la vallée d’awatere","awatere valley"]},"explanation":"La fraîcheur et le vent ralentissent la maturité : le raisin garde plus d’acidité et des arômes verts, alors que la Wairau, plus abritée, pousse vers le fruit tropical."},{"type":"cloze","prompt":"Complète.","payload":{"text":"En Nouvelle-Zélande, pour indiquer un cépage, un millésime ou une zone, au moins {{85}} % du vin doit provenir de ce cépage, de ce millésime ou de cette zone."},"explanation":"Ce seuil, fixé par la réglementation néo-zélandaise du vin, ressemble à celui de l’Australie : il laisse une marge d’assemblage tout en protégeant l’indication."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Plus de 95 % des vins néo-zélandais sous capsule à vis : source unique (New Zealand Winegrowers) ; la fiche 303 traite de l’initiative de 2001.","Climat de Martinborough comparé à celui de la Bourgogne : source unique, non reprise.","Hawke’s Bay, la plus chaude des grandes zones viticoles : source unique (WSET L3), non recoupée.","Part du sauvignon blanc dans le vignoble (environ deux tiers, 2023) : calcul tiré du rapport viticole de New Zealand Winegrowers, non recoupé."],
+    src: "New Zealand Winegrowers, New Zealand Wine: a comprehensive guide to the regions and varieties et Vineyard Report 2024 ; MPI (Nouvelle-Zélande), Guide to meet requirements for wine labelling (2013), page « Labelling requirements for wine » et document de consultation sur la règle des 85 % (clause 6 du Wine (Specifications) Notice 2006 ; la page MPI renvoie aujourd’hui aux Wine Regulations 2021, clause 43) ; WSET, Understanding Wines (2016), chapitre New Zealand"
+  }
+);
