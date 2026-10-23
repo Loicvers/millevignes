@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 538 (dernier id : 538) · exercices : 2779
-- Vérifiées : 314 · à vérifier : 224 (351 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1068
-- Niveaux : Fondamental 171 · Intermédiaire 259 · Pointu 108
+- Fiches : 544 (dernier id : 558) · exercices : 2809
+- Vérifiées : 320 · à vérifier : 224 (351 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1088
+- Niveaux : Fondamental 172 · Intermédiaire 264 · Pointu 108
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 15 termes · récits de chapitre : 52
 
@@ -49,7 +49,11 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
 | monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 0 |
+| monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 0 |
 | monde-autriche.js | 2 | 536–537 | hors livre | 2 | 0 | 0 |
+| monde-canada.js | 1 | 556–556 | hors livre | 1 | 0 | 0 |
+| monde-chili.js | 1 | 557–557 | hors livre | 1 | 0 | 0 |
 | monde-espagne.js | 2 | 529–530 | hors livre | 2 | 0 | 0 |
+| monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 0 |
 | monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 0 |
 | monde-portugal.js | 4 | 526–531 | hors livre | 3 | 0 | 0 |

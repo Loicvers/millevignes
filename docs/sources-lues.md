@@ -110,3 +110,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Le monde viticole — Allemagne, Autriche, Tokaj (23/10/2026, fiches 532-538)
 - WSET D3 Wines of the World (2024) et support L3 module 4 ; Deutsches Weininstitut (deutscheweine.de, winesofgermany.com « Levels of Sweetness ») ; Weingesetz (gesetze-im-internet.de) ; VDP ; Pfalzwein ; BMLUK (règlement Kamptal DAC, 18/09/2024) ; cahier des charges de l’AOP Tokaj (eAmbrosia) ; wein.plus, Wine with Seth (2b). Bloqués : austrianwine.com, jancisrobinson.com, annexe III B du règlement (UE) 2019/33 sur legislation.gov.uk, WeinV § 17 (Oechsle), spécification Kremstal DAC (PDF BMLUK), Decanter (Tokaj).
+
+## Le monde viticole — Amériques (23/10/2026, fiches 553-558)
+- WSET L3 (2016) et D3 (2024, début de la Californie seulement) ; 27 CFR 4.23 et 4.25 (Cornell LII), TTB, T.D. TTB-45 (Federal Register, 2 mai 2006) ; Napa Valley Vintners, Paso Robles Wine Country Alliance, Oregon Wine Board, Washington State Wine Commission, VQA Ontario / Wine Country Ontario, Wine Growers BC et gouvernement de C.-B. (2022), Wines of Chile, SAG (décret 464), Wines of Argentina (fiches PDF). Bloqués : eCFR § 4.27, govinfo, argentina.gob.ar (INV), pages web de Wines of Chile et Wines of Argentina, California Wine Institute.

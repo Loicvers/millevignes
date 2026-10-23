@@ -103,6 +103,22 @@ const FRANCE_SOMMAIRE = [
   { partie: "Le monde viticole", section: "Allemagne", chapitre: "Allemagne : régions" },
   { partie: "Le monde viticole", section: "Autriche", chapitre: "Autriche : panorama et régions" },
   { partie: "Le monde viticole", section: "Hongrie", chapitre: "Hongrie : Tokaj" },
+  { partie: "Le monde viticole", section: "Italie", chapitre: "Italie : panorama et classifications" },
+  { partie: "Le monde viticole", section: "Italie", chapitre: "Italie : nord" },
+  { partie: "Le monde viticole", section: "Italie", chapitre: "Italie : centre" },
+  { partie: "Le monde viticole", section: "Italie", chapitre: "Italie : sud et îles" },
+  { partie: "Le monde viticole", section: "Espagne", chapitre: "Espagne : panorama et classifications" },
+  { partie: "Le monde viticole", section: "Espagne", chapitre: "Espagne : régions" },
+  { partie: "Le monde viticole", section: "Portugal", chapitre: "Portugal : vins tranquilles" },
+  { partie: "Le monde viticole", section: "Grèce", chapitre: "Grèce" },
+  { partie: "Le monde viticole", section: "États-Unis", chapitre: "États-Unis : Californie" },
+  { partie: "Le monde viticole", section: "États-Unis", chapitre: "États-Unis : Oregon et Washington" },
+  { partie: "Le monde viticole", section: "Canada", chapitre: "Canada" },
+  { partie: "Le monde viticole", section: "Chili", chapitre: "Chili" },
+  { partie: "Le monde viticole", section: "Argentine", chapitre: "Argentine" },
+  { partie: "Le monde viticole", section: "Australie", chapitre: "Australie" },
+  { partie: "Le monde viticole", section: "Nouvelle-Zélande", chapitre: "Nouvelle-Zélande" },
+  { partie: "Le monde viticole", section: "Afrique du Sud", chapitre: "Afrique du Sud" },
 ];
 
 /* Ordre d'affichage des thèmes dans le filtre */
