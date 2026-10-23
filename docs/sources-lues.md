@@ -1,5 +1,7 @@
 # Sources déjà lues
 
+**Ouvrage transversal** : *The Oxford Companion to Wine*, 5e éd. (Robinson, Harding, Thomas, 2023), lu par entrées le 23/10/2026 pour recouper les points ⚠️ de toutes les sections et pour le lexique (texte privé, hors dépôt ; registre des sources du projet).
+
 Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les recherches. Repris de CONTEXTE-PROJET le 21/10/2026. Les sources citées par Lepeltier sont dans `docs/bibliographie-lepeltier.md` ; les documents encore attendus, dans le doc « Mille Vignes — documents à rechercher ».
 
 ## Cépages, plants, maladies (Domestication, Nature)
