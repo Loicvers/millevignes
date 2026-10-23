@@ -1385,7 +1385,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Rôle d’assurance du cabernet franc dans le Médoc et les Graves quand le cabernet-sauvignon mûrit mal : source unique (JancisRobinson.com), non recoupé","Descripteurs aromatiques précis (crayon, cassis, violette, graphite) : un descripteur par source, non recoupé"],
-    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Cabernet franc N ; JancisRobinson.com, Cabernet Franc ; Boursiquot et al., Parentage of Merlot and related winegrape cultivars of southwestern France, Australian Journal of Grape and Wine Research (2009), résumé ; INAO, cahiers des charges Irouléguy, Tursan et Coteaux du Quercy ; WSET, Understanding Wines (2016) ; Decanter, Top Loire Cabernet Franc wines ; iDealwine, Le cabernet franc",
+    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Cabernet franc N ; JancisRobinson.com, Cabernet Franc ; Boursiquot et al., Parentage of Merlot and related winegrape cultivars of southwestern France, Australian Journal of Grape and Wine Research (2009), résumé ; INAO, cahiers des charges Irouléguy, Tursan et Coteaux du Quercy ; WSET, Understanding Wines (2016) ; Decanter, Top Loire Cabernet Franc wines ; iDealwine, Le cabernet franc ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1405,7 +1405,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Notes de banane et de bonbon liées à la macération carbonique : source unique (JancisRobinson.com), non recoupé","Évolution de Morgon et de Moulin-à-Vent vers un profil proche du pinot noir avec l’âge : source unique (JancisRobinson.com), non recoupé","Présence du gamay en Suisse : source unique (JancisRobinson.com), non recoupé"],
-    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Gamay N ; Inter Beaujolais, Cépage Gamay ; INAO, cahier des charges AOC Beaujolais (BO-Agri) ; JancisRobinson.com, Gamay ; WSET, Understanding Wines (2016)",
+    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Gamay N ; Inter Beaujolais, Cépage Gamay ; INAO, cahier des charges AOC Beaujolais (BO-Agri) ; JancisRobinson.com, Gamay ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1425,7 +1425,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Seuil de 70 % de malbec à Cahors : source unique lue ici (JancisRobinson.com) ; voir la fiche Cahors pour le cahier des charges, non recoupé dans cette fiche","Rôle mineur du côt en Anjou-Touraine : source unique (JancisRobinson.com), non recoupé ici ; voir la fiche Touraine","Arômes de fruits noirs, de cèdre et de terre à Cahors : source unique (WSET, 2016), non recoupé"],
-    src: "Boursiquot et al., Parentage of Merlot and related winegrape cultivars of southwestern France, Australian Journal of Grape and Wine Research (2009), résumé ; Vins de Cahors, Malbec : les apports de l’ampélographie moléculaire ; eAmbrosia, document unique AOP Cahors ; INAO, cahiers des charges Brulhois et Coteaux du Quercy ; JancisRobinson.com, Malbec ; WSET, Understanding Wines (2016)",
+    src: "Boursiquot et al., Parentage of Merlot and related winegrape cultivars of southwestern France, Australian Journal of Grape and Wine Research (2009), résumé ; Vins de Cahors, Malbec : les apports de l’ampélographie moléculaire ; eAmbrosia, document unique AOP Cahors ; INAO, cahiers des charges Brulhois et Coteaux du Quercy ; JancisRobinson.com, Malbec ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1445,7 +1445,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Parenté du tannat non établie : seul wein.plus l’affirme explicitement, non recoupé","Micro-oxygénation comme outil d’assouplissement : source unique (wein.plus), non recoupé"],
-    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Tannat N ; INAO, cahiers des charges AOC Madiran (BO-Agri 2015, 2017 et arrêté du 26 novembre 2025), Irouléguy et Tursan ; JancisRobinson.com, Tannat ; WSET, Understanding Wines (2016) ; eAmbrosia, document unique AOP Cahors ; wein.plus Magazine, Tannat, the tamed powerhouse from France’s southwest",
+    src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Tannat N ; INAO, cahiers des charges AOC Madiran (BO-Agri 2015, 2017 et arrêté du 26 novembre 2025), Irouléguy et Tursan ; JancisRobinson.com, Tannat ; WSET, Understanding Wines (2016) ; eAmbrosia, document unique AOP Cahors ; wein.plus Magazine, Tannat, the tamed powerhouse from France’s southwest ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1625,7 +1625,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Présence à Bergerac, Monbazillac et Gaillac : deux sources de niveau 2b (Falstaff, Château Berne), cahiers des charges non lus","Origine bordelaise du cépage : Château Berne et MasterClass seulement (Falstaff : sud-ouest de la France), non reprise","Épaisseur de la peau : fine pour WSET et Falstaff, épaisse pour Château Berne, non reprise"],
-    src: "WSET, Understanding Wines (2016) ; Falstaff, Grape varieties: Semillon ; Château Berne, Guide cépages : sémillon blanc ; MasterClass, Semillon wine guide ; cf. fiches Graves et Sauternes du dépôt",
+    src: "WSET, Understanding Wines (2016) ; Falstaff, Grape varieties: Semillon ; Château Berne, Guide cépages : sémillon blanc ; MasterClass, Semillon wine guide ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1645,7 +1645,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Précocité et résistance au gel : divergence (WSET : mûrit tôt et résiste au gel ; UC Davis : mi-saison, débourrement précoce sensible au gel, bonne reprise), non reprise"],
-    src: "INAO, fiche AOC Muscadet ; BO-agri, cahier des charges AOC Muscadet (arrêté du 5 février 2021, modifié le 27 mai 2021) ; Guide Hachette des vins, Melon de Bourgogne : origine, utilisation, particularités ; Wine with Seth, Melon de Bourgogne (cite le VIVC) ; UC Davis, Melon Fact Sheet ; WSET, Understanding Wines (2016) ; cf. fiches Muscadet et pinot du dépôt",
+    src: "INAO, fiche AOC Muscadet ; BO-agri, cahier des charges AOC Muscadet (arrêté du 5 février 2021, modifié le 27 mai 2021) ; Guide Hachette des vins, Melon de Bourgogne : origine, utilisation, particularités ; Wine with Seth, Melon de Bourgogne (cite le VIVC) ; UC Davis, Melon Fact Sheet ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1665,7 +1665,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Petit manseng et pourriture noble : divergence (WSET : concentration sans botrytis ; Hachette : baies pouvant développer la pourriture noble), fiche limitée au passerillage","Présence hors de France (Espagne, Australie, Nouvelle-Zélande) : source unique (Vinatis), non recoupé"],
-    src: "INAO, fiches AOP Jurançon ; Guide Hachette des vins, Cépages : le gros manseng et le petit manseng ; Vinatis, Mansengs ; WSET, Understanding Wines (2016) ; cf. fiche Madiran et Pacherenc du dépôt",
+    src: "INAO, fiches AOP Jurançon ; Guide Hachette des vins, Cépages : le gros manseng et le petit manseng ; Vinatis, Mansengs ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1685,7 +1685,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Identique au pigato ligure et à la favorita piémontaise : source unique (Wine with Seth), non recoupé","Origine du cépage : Anatolie ou Grèce via Gênes, Italie ou Espagne selon les sources, divergence non reprise","Présence en Languedoc-Roussillon (Costières de Nîmes, Collioure) : deux sources de niveau 2b, cahiers des charges non lus, non reprise"],
-    src: "INAO, fiches IGP Var et AOC Vin de Corse / Corse Figari ; BO-agri, cahier des charges Bandol (décret du 22 septembre 2011) ; Vinatis, Vermentino / Rolle ; iDealwine, Zoom sur un cépage : quand le rolle joue les grands blancs ; Wine with Seth, Vermentino / Rolle ; cf. fiches Corse et Provence du dépôt",
+    src: "INAO, fiches IGP Var et AOC Vin de Corse / Corse Figari ; BO-agri, cahier des charges Bandol (décret du 22 septembre 2011) ; Vinatis, Vermentino / Rolle ; iDealwine, Zoom sur un cépage : quand le rolle joue les grands blancs ; Wine with Seth, Vermentino / Rolle ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   },
   {
@@ -1705,7 +1705,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: ["Rouges tranquilles de Loire (Orléans, Touraine) : source unique, non recoupé (Vinatis)","Présence hors de France (États-Unis, Angleterre, Nouvelle-Zélande, Allemagne sous le nom de Schwarzriesling) : cités par Vinatis, seul Schwarzriesling par WSET, non recoupé"],
-    src: "Wine Anorak (J. Goode), Why Pinot Meunier is weird (but wonderful) (2020) ; IntechOpen, chapitre 67039 (Franks et al. ; Boss et Thomas) ; Boss et Thomas, Nature 416 (2002), résumé ; The Drinks Business, A fine breed (2011) ; Comité Champagne, Fiche Vigne Champagne (2024) ; WSET, Understanding Wines (2016) ; Vinatis, Pinot meunier ; cf. fiche 2 du dépôt",
+    src: "Wine Anorak (J. Goode), Why Pinot Meunier is weird (but wonderful) (2020) ; IntechOpen, chapitre 67039 (Franks et al. ; Boss et Thomas) ; Boss et Thomas, Nature 416 (2002), résumé ; The Drinks Business, A fine breed (2011) ; Comité Champagne, Fiche Vigne Champagne (2024) ; WSET, Understanding Wines (2016) ; Vinatis, Pinot meunier ; cf. Mille Vignes, P. Lepeltier, p. 31",
     page: 31
   }
 );

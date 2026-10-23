@@ -344,7 +344,7 @@ function card(f){
     <div class="flash-hint">Flashcard — touche pour retourner</div>
     <div class="flash" tabindex="0" role="button" aria-label="Retourner la flashcard"><div class="flash-in"><div class="flash-face flash-front">${f.flash.q}</div><div class="flash-face flash-back">${f.flash.a}</div></div></div>
     <button class="btn train">S'entraîner — ${mine.length} exercice(s)</button>
-    <div class="src">— ${f.src}${f.page?', p. '+f.page:''}</div>`;
+    <div class="src">— ${f.src}${f.page&&!f.src.trim().endsWith('p. '+f.page)?', p. '+f.page:''}</div>`;
     const flash=corps.querySelector('.flash');flash.onclick=()=>flash.classList.toggle('flip');flash.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flash.click();}};
     corps.querySelector('.train').onclick=()=>startSession(shuffle(mine),'Fiche : '+f.titre,[f.id]); // fiche déjà sous les yeux
   };
@@ -460,7 +460,7 @@ function printSupport(){
       (it.contenu!=='synth'?`<p><b>Astuce mémo : </b>${f.mnemo}</p>`:'')+
       (it.contenu==='essentiel'?`<ul class="sup-ess">${essentiels(f).map(x=>`<li>${x}</li>`).join('')}</ul>`:'')+
       (it.vin?`<table class="sup-grille">${['Œil','Nez','Bouche','Mes notes'].map(x=>`<tr><th>${x}</th><td></td></tr>`).join('')}</table>`:'')+
-      `<p class="sup-src">${f.src}${f.page?', p. '+f.page:''}</p>`);
+      `<p class="sup-src">${f.src}${f.page&&!f.src.trim().endsWith('p. '+f.page)?', p. '+f.page:''}</p>`);
     s.append(a);});
   if(pr.quiz){const qs=quizFor(pr.items.map(x=>FICHE_BY_ID[x.id]));
     if(qs.length){
