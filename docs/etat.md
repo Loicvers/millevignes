@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 508 (dernier id : 525) · exercices : 2637
-- Vérifiées : 285 · à vérifier : 223 (349 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 984
-- Niveaux : Fondamental 164 · Intermédiaire 237 · Pointu 107
+- Fiches : 514 (dernier id : 531) · exercices : 2665
+- Vérifiées : 290 · à vérifier : 224 (351 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 993
+- Niveaux : Fondamental 166 · Intermédiaire 241 · Pointu 107
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 15 termes · récits de chapitre : 52
 
@@ -48,3 +48,5 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 1 |
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
+| monde-espagne.js | 2 | 529–530 | hors livre | 2 | 0 | 0 |
+| monde-portugal.js | 4 | 526–531 | hors livre | 3 | 0 | 0 |

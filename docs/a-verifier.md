@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-508 fiches : 285 vérifiées, 223 à vérifier (349 points).
-Hors dette : 984 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+514 fiches : 290 vérifiées, 224 à vérifier (351 points).
+Hors dette : 993 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -385,7 +385,6 @@ Hors dette : 984 détails laissés « selon le livre » (champ `selon_livre`, no
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 198** (p.163) — Madère : un vin né des terrasses et de la mer
-- [ ] Estufagem : 45 °C pendant quatre mois (livre, Madeira Wine Company) contre 46 à 55 °C pendant au moins trois mois (Burton) (⚠️) : divergence non tranchée.
 - [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 199** (p.164) — L’architecture vigneronne : cabanes, caves et celliers
@@ -798,3 +797,8 @@ Hors dette : 984 détails laissés « selon le livre » (champ `selon_livre`, no
 **Fiche 519** (p.62) — Le calendrier du vigneron : de la taille à la vendange
 - [ ] Dates limites de taille (Montlouis avant le 1er mai, Beaujolais 15 mai) : ⚠️ cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral ; à relire avant diffusion
 - [ ] Liage avant la floraison en Champagne : ⚠️ règle rangée sous la taille Guyot asymétrique dans l’arrêté de 2022
+
+**Fiche 528** (p.?) — Les portos tawny, blancs et rosés
+- [ ] Indications d’âge : ⚠️ divergence non tranchée : l’IVDP cite 10, 20, 30 et 40 ans (« plus de 40 » selon la réglementation reprise par For the Love of Port), le WSET signale une catégorie « 50 ans » approuvée en 2022 ; chiffre de 40 ans non testé
+- [ ] Durée en bois du reserve tawny : ⚠️ six ans selon le WSET, sept ans selon la réglementation reprise par For the Love of Port et un document ancien de l’IVDP ; non repris dans la fiche
+- [ ] Rosé : ⚠️ aucune source de niveau 1 lue (la page IVDP des catégories spéciales n’en parle pas) ; style récent et macération brève confirmés par Wines of Portugal et le WSET ; invention par Croft non reprise (WSET seul)

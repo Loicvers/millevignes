@@ -96,6 +96,9 @@ const FRANCE_SOMMAIRE = [
   { section: "Provence", chapitre: "Provence : appellations et dénominations" },
   { section: "Corse", chapitre: "Corse : panorama et appellations" },
   { section: "Corse", chapitre: "Corse : appellations" },
+  { partie: "Le monde viticole", section: "Portugal", chapitre: "Portugal : porto" },
+  { partie: "Le monde viticole", section: "Portugal", chapitre: "Portugal : madère" },
+  { partie: "Le monde viticole", section: "Espagne", chapitre: "Espagne : xérès" },
 ];
 
 /* Ordre d'affichage des thèmes dans le filtre */

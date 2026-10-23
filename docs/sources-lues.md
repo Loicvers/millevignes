@@ -101,3 +101,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Compléments WSET — travail à la vigne (23/10/2026, fiches 515-525)
 - WSET, Understanding Wines (L3, 2016) ; cahiers des charges (BO-agri, lus par résumé WebFetch, pas en texte intégral) : Champagne (arrêté 2022), Côte-Rôtie, Beaujolais, Sauternes, crémants d'Alsace et de Bourgogne, Côtes du Rhône ; courrier INAO du 11/08/2023 et avis du 19/06/2025 (irrigation, décret 2023-735) ; règlement (UE) 2018/1981 (cuivre, via legislation.gov.uk) ; IFV, Sicavac, Demeter, Biodyvin, Agence Bio, Réussir. Bloqués : Légifrance (D. 645-5, D. 665-17-5), Chambre d'agriculture de la Gironde, Pleinchamp, Agroscope, champagne.fr ; Firecrawl sans crédits.
+
+## Le monde viticole — vins mutés (23/10/2026, fiches 526-531)
+- WSET, D5 Fortified Wines (août 2024), lu en entier ; IVDP (région, élaboration, catégories spéciales) ; eAmbrosia, cahier des charges Porto/Douro ; Junta de Andalucía, documents uniques DOP Jerez-Xérès-Sherry et Manzanilla-Sanlúcar ; JORAM, Portarias 38 et 39/2015 (madère) ; JancisRobinson.com (« Dear dear Madeira ») ; Decanter, Taylor’s, Falstaff, Sherry Notes, Lustau, Wine with Seth (2b). Bloqués : sherry.wine (Consejo Regulador), ivbam.madeira.gov.pt, page IVDP « colour and sweetness », règlement IVDP 242/2010.

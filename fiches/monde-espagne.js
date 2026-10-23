@@ -1,0 +1,45 @@
+// Le monde viticole — Espagne (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 529,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Fondamental",
+    geo: {"pays":"Espagne","region":"Andalousie","appel":"Jerez-Xérès-Sherry"},
+    source: "france",
+    chapitre: "Espagne : xérès",
+    titre: "Le xérès : le triangle de Jerez, le palomino et la flor",
+    synth: "Le xérès est un vin fortifié d’Andalousie dont le cœur est le « triangle » formé par Jerez de la Frontera, El Puerto de Santa María et Sanlúcar de Barrameda, où se trouvent les chais d’élevage (bodegas). Le palomino, cépage neutre, y domine ; il pousse sur l’albariza, un sol blanc calcaire (plus de 25 % de carbonate de calcium), mêlé d’argile et de silice, qui retient l’eau de l’hiver pour la saison sèche. Pour le fino et la manzanilla, le vin fortifié autour de 15 % vol. se couvre d’un voile de levures, la flor, qui l’isole de l’oxygène et le garde pâle et sec. La manzanilla est un fino élevé à Sanlúcar, dont le climat atlantique, plus frais et humide, favorise un voile épais.",
+    mnemo: "Un triangle de craie au soleil : trois villes, un sol blanc qui boit l’hiver pour le rendre l’été, et sur le vin un édredon de levures qui l’isole de l’air comme un dormeur sous sa couette.",
+    flash: {"q":"Quel sol caractérise le vignoble du xérès, et pourquoi est-il précieux ?","a":"L’albariza, un sol blanc calcaire qui retient l’eau de la saison humide et la restitue pendant l’été sec.","keys":[["albariza"],["eau","humidité","retient","réserve"]]},
+    qcm: {"q":"Quelle ville du triangle de Jerez est le lieu d’élevage de la manzanilla ?","opts":["Sanlúcar de Barrameda","Jerez de la Frontera","El Puerto de Santa María","Cadix"],"good":0,"expl":"Jerez et El Puerto de Santa María font bien partie du triangle, mais c’est le climat atlantique de Sanlúcar qui définit la manzanilla. Cadix est la capitale de la province, hors du triangle."},
+    exos: [{"type":"matching","prompt":"Associe chaque terme à ce qu’il désigne.","payload":{"pairs":[["Albariza","Sol blanc calcaire qui retient l’eau"],["Flor","Voile de levures qui isole le vin de l’air"],["Palomino","Cépage neutre dominant, base des xérès secs"]]},"explanation":"Chaque terme explique un maillon du style : le sol qui nourrit la vigne, le cépage neutre qui laisse la place à l’élevage, la levure qui le transforme."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Pour élaborer un fino, on fortifie fortement le vin, au-delà de 17 % vol., afin de favoriser le voile de flor.","answer":false},"explanation":"Les levures du voile ne supportent pas un degré trop élevé : le fino est fortifié juste assez pour écarter les autres micro-organismes, alors qu’un degré supérieur est réservé aux xérès élevés sans voile."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Palomino : environ 97 % du vignoble (WSET seul) ; zone de production d’environ 7 000 ha (WSET seul).","Fortification du fino : 15 à 17 % vol. selon le document unique de la DOP, 15 à 15,5 % pour l’élevage biologique selon le WSET ; la fiche s’en tient à « autour de 15 % »."],
+    src: "Junta de Andalucía, Documento único de la DOP Jerez-Xérès-Sherry ; Junta de Andalucía, Documento único de la DOP Manzanilla-Sanlúcar de Barrameda ; Falstaff, Palomino ; Sherry Notes, All about Sherry : five minutes introduction ; Lustau, All you need to know about Manzanilla de Sanlúcar ; Wine with Seth, Manzanilla-Sanlúcar de Barrameda DO ; WSET, D5 Fortified Wines (août 2024), chapitre Sherry"
+  },
+  {
+    id: 530,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Espagne","region":"Andalousie","appel":"Jerez-Xérès-Sherry"},
+    source: "france",
+    chapitre: "Espagne : xérès",
+    titre: "Les xérès oxydatifs et doux, et le système de solera",
+    synth: "L’oloroso est fortifié dès le départ à 17 % vol. ou plus, ce qui empêche la flor de se former : il vieillit à l’air, devient brun et prend des notes de noix et de fruits secs. L’amontillado commence son élevage sous voile comme un fino, puis, refortifié, finit à l’air ; le palo cortado, proche des deux, vieillit aussi à l’air après la disparition du voile. Ces trois xérès sont secs (moins de 5 g/l de sucre) ; le Pedro Ximénez (plus de 212 g/l) et le moscatel (plus de 160 g/l), issus de raisins séchés au soleil, sont naturellement doux, alors que les pale creams et les creams sont des xérès adoucis. Le vieillissement se fait en solera : des fûts rangés en étages (criaderas), où l’on soutire le vin de la solera, la rangée la plus âgée, et on la complète avec celui de l’étage au-dessus, sans jamais expédier plus de 40 % du stock par an.",
+    mnemo: "Un escalier de tonneaux où le plus jeune se verse dans l’aîné : à chaque marche, le vin du dessus nourrit celui du dessous, et au pied de l’escalier, la solera, le « sol » du système.",
+    flash: {"q":"Quelle différence d’élevage entre un fino et un amontillado ?","a":"Le fino reste tout son élevage sous voile de flor ; l’amontillado commence sous voile, puis, refortifié, finit son élevage à l’air, sans voile.","keys":[["voile","flor"],["oxyd","air"]]},
+    qcm: {"q":"Quel xérès est naturellement doux et issu de raisins séchés au soleil ?","opts":["Le Pedro Ximénez","L’oloroso","Le palo cortado","Le fino"],"good":0,"expl":"L’oloroso et le palo cortado sont oxydatifs mais secs, le fino est sec et sous voile. Seuls le Pedro Ximénez et le moscatel doivent leur douceur à des raisins concentrés par le séchage."},
+    exos: [{"type":"ordering","prompt":"Classe ces xérès du plus sec au plus doux.","payload":{"items":["Fino","Pale cream","Cream","Pedro Ximénez"]},"explanation":"Le fino est sec par nature, le pale cream et le cream sont adoucis à des degrés croissants, alors que le Pedro Ximénez conserve le sucre concentré de ses raisins séchés."},{"type":"matching","prompt":"Associe chaque xérès ou terme à sa description.","payload":{"pairs":[["Oloroso","Fortifié à 17 % vol. ou plus, élevage à l’air dès le départ"],["Amontillado","Élevage sous voile d’abord, puis à l’air"],["Criadera","Étage plus jeune, qui remplit la rangée située en dessous"],["Solera","Rangée la plus âgée du système, d’où l’on soutire le vin"]]},"explanation":"Les deux xérès se distinguent par ce qui arrive à la flor ; solera et criadera sont les deux niveaux du système de vieillissement."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Dans une solera, on peut soutirer chaque année la totalité du vin de la solera pour l’expédier.","answer":false},"explanation":"Le principe est de ne prélever qu’une fraction (au plus 40 % du stock) pour que le vin âgé reste toujours mêlé aux plus jeunes, ce qui garantit un style constant d’une année à l’autre."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["VOS (plus de 20 ans) et VORS (plus de 30 ans), mentions 12 et 15 ans : document unique de la DOP et WSET concordent, non repris dans la synthèse.","Palo cortado : base issue des premiers jus et second tri (WSET seul) ; Sherry Notes parle d’environ un tiers transféré à chaque soutirage, contre un plafond d’expédition de 40 % du stock (DOP, WSET)."],
+    src: "Junta de Andalucía, Documento único de la DOP Jerez-Xérès-Sherry ; Sherry Notes, All about Sherry : five minutes introduction ; WSET, D5 Fortified Wines (août 2024), chapitre Sherry"
+  }
+);
