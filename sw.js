@@ -1,7 +1,7 @@
 // Cache des fichiers du site : le site s'ouvre hors ligne. Chaque fichier est servi depuis le cache puis
 // remis à jour en arrière-plan : la nouvelle version apparaît au rechargement suivant.
 // Ajouter ici tout nouveau fichier du site (un test compare cette liste à index.html).
-const CACHE = "mv-v32";
+const CACHE = "mv-v33";
 const FICHIERS = [
   "./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
@@ -12,7 +12,7 @@ const FICHIERS = [
   "data/lexique.js", "data/recits.js", "data/mille-vignes-sommaire.json", "exercices.js",
 ];
 
-self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FICHIERS)).then(() => self.skipWaiting())));
+self.addEventListener("install", e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FICHIERS.map(f => new Request(f, { cache: "reload" })))).then(() => self.skipWaiting())));
 self.addEventListener("activate", e => e.waitUntil(
   caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener("fetch", e => {
