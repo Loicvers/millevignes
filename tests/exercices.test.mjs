@@ -71,8 +71,9 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
   const { schemaExercise, maskSchema } = ctx.sx;
   const exos = FICHES.flatMap(schemaExercise);
   assert.ok(exos.length >= 10);
-  for (const ex of exos) {
-    const m = maskSchema(ex.fiche.schema.svg, ex.payload.labels);
+  // Chaque étiquette tour à tour (un tirage au hasard laissait passer un cas sur N).
+  for (const ex of exos) for (const t of ex.payload.labels) {
+    const m = maskSchema(ex.fiche.schema.svg, ex.payload.labels, [t, ...ex.payload.labels.filter(l => l !== t)]);
     const target = m.options[m.answer];
     assert.equal((m.svg.match(/font-weight="bold"[^>]*><tspan font-size="15">\?<\/tspan><\/text>/g) || []).length, 1, ex.id);
     assert.ok(!m.svg.includes(`>${target}</text>`), ex.id + " : l'étiquette masquée reste visible");
