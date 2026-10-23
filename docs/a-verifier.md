@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-579 fiches : 351 vérifiées, 228 à vérifier (355 points).
-Hors dette : 1175 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+583 fiches : 354 vérifiées, 229 à vérifier (358 points).
+Hors dette : 1191 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -814,3 +814,8 @@ Hors dette : 1175 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 577** (p.221) — Grappes entières : carbonique, semi-carbonique et vendange entière partielle, comparées à l’éraflée-foulée
 - [ ] Couleur et tanins : ⚠️ divergence : le WSET dit que la carbonique pure extrait de la couleur mais peu de tanin ; l’essai IFV Sicarex-Beaujolais (Réussir Vigne, 17 essais sur gamay) trouve, pour la vinification beaujolaise semi-carbonique comparée à l’éraflée, 33 mg/l d’anthocyanes en moins et 0,27 g/l de tanins en plus (rafles) ; méthodes voisines mais pas identiques, non tranché
+
+**Fiche 584** (p.222) — Vins désalcoolisés : techniques, mentions européennes et ce que l’alcool apportait
+- [ ] Règlement 2026/471 : étiquetage applicable au 19 septembre 2027, stocks étiquetés avant écoulables (⚠️) : AGRINFO seul, texte EUR-Lex non lu ; sort des AOP et IGP dans le nouveau texte non vérifié (une source de presse, Food Business MEA, dit qu’elles peuvent être totalement ou partiellement désalcoolisées) ; mention « désalcoolisé » remplacée selon la WSTA, non dit par AGRINFO
+- [ ] Ampleur de la perte d’arômes et de viscosité (⚠️) : chiffres d’une revue (Springer, plus de 90 % de volatils perdus sous 3 % vol) et d’une étude sur rouge (Pham et al., 2019, viscosité −6 à −9 %) ; dépend du procédé, de la teneur finale et du vin
+- [ ] Osmose inverse (eau passant plus facilement que l’éthanol, alcool retiré du perméat) : ⚠️ principe décrit d’après une étude sur rouge (RO-EP) et la revue Springer ; les détails varient selon les installations
