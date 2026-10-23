@@ -318,5 +318,33 @@ const LEXIQUE = [
    "auteur": "Clemson University, USDA Cooperative Extension",
    "licence": "domaine public"
   }
+ },
+ {
+  "terme": "macération carbonique",
+  "def": "Vinification en rouge où des grappes entières, non foulées, sont placées dans une cuve saturée de gaz carbonique : privées d’oxygène, les baies commencent à fermenter de l’intérieur, sans levures (fermentation intracellulaire), puis elles sont pressées et les levures achèvent la fermentation hors des peaux. Elle extrait de la couleur mais peu de tanins et donne des vins souples et très fruités (kirsch, banane, bonbon).",
+  "etym": "macération, du latin macerare, rendre mou en faisant tremper ; carbonique, de carbone (latin carbo, charbon), pour le gaz carbonique.",
+  "declic": "Carbonique : la baie entière, enfermée dans le gaz, fermente de l’intérieur.",
+  "src": [
+   "WSET, Understanding Wines (2016), vinification des rouges",
+   "Réussir Vigne, Réussir sa macération carbonique en cinq points (avec essai IFV)",
+   "etymonline (macerate)",
+   "fiche 236"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+{
+  "terme": "macération semi-carbonique",
+  "def": "Variante beaujolaise de la macération carbonique : les grappes entières, non éraflées, remplissent la cuve sans apport de gaz ; celles du fond, écrasées par le poids, libèrent un jus que les levures font fermenter, et le gaz carbonique ainsi produit chasse l’oxygène, si bien que les baies restées entières fermentent de l’intérieur. Après quelques jours (de 4 à 6 pour un primeur, autour de 10 à 15 pour un cru), on écoule, on presse et on termine la fermentation.",
+  "etym": "semi-, du latin semi, à moitié : le gaz carbonique vient de la cuve elle-même, pas d’un apport extérieur.",
+  "declic": "Semi-carbonique : la cuve fabrique elle-même son gaz.",
+  "src": [
+   "Inter Beaujolais, Semi-carbonic maceration (beaujolais.com)",
+   "WSET, Understanding Wines (2016), vinification des rouges",
+   "Réussir Vigne, Réussir sa macération carbonique en cinq points",
+   "fiches 236, 475 et 499"
+  ],
+  "status": "verified",
+  "note": ""
  }
 ];
