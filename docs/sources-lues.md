@@ -119,3 +119,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Le monde viticole — Australie, Nouvelle-Zélande, Afrique du Sud (23/10/2026, fiches 560-565)
 - WSET L3 (2016) et D4 (2020) ; Wine Australia (truth in labelling, registre des GI) ; MPI et Wine Regulations 2021 (clause 43) ; New Zealand Winegrowers ; SAWIS (bulletins, proposition Cap Classique 2021), WOSA, Wines of Elgin, Cap Classique Producers Association ; Dictionary of South African English ; Wine Companion, The Drinks Business, The Buyer, Decanter, Wine with Seth (2b). Bloqués : pages GI et label integrity de Wine Australia, nzwine.com/regions, legislation.govt.nz, PDF SAWIS (robots), dlrrd.gov.za.
+
+## Le monde viticole — Italie (23/10/2026, fiches 539-544)
+- WSET D3 (2024) et D4 ; loi 238/2016 (art. 28, 31, 33) ; disciplinari (Regione Piemonte, AIS, Gazzetta Ufficiale) : Barolo, Barbaresco, Gavi, Asti, Brunello, Taurasi, Fiano di Avellino, Greco di Tufo, Soave, Verdicchio, Cerasuolo di Vittoria ; loi 851/1984 (Marsala) ; règlement de la marque Ripasso (Chambre de commerce de Vérone) ; JancisRobinson.com (barbera, Bolgheri). Bloqués : catalogue MASAF (erreur serveur), disciplinari Etna, Vermentino di Gallura, Bolgheri sur aisitalia.it, plusieurs pages de consorzi.

@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-558 fiches : 333 vérifiées, 225 à vérifier (352 points).
-Hors dette : 1130 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+564 fiches : 339 vérifiées, 225 à vérifier (352 points).
+Hors dette : 1149 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base

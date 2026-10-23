@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 558 (dernier id : 565) · exercices : 2885
-- Vérifiées : 333 · à vérifier : 225 (352 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1130
-- Niveaux : Fondamental 174 · Intermédiaire 276 · Pointu 108
+- Fiches : 564 (dernier id : 565) · exercices : 2918
+- Vérifiées : 339 · à vérifier : 225 (352 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1149
+- Niveaux : Fondamental 175 · Intermédiaire 281 · Pointu 108
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 15 termes · récits de chapitre : 52
 
@@ -59,5 +59,6 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 0 |
 | monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 0 |
 | monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 0 |
+| monde-italie.js | 6 | 539–544 | hors livre | 6 | 0 | 0 |
 | monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 0 |
 | monde-portugal.js | 6 | 526–551 | hors livre | 5 | 0 | 0 |
