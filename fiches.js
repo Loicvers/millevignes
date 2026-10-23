@@ -99,6 +99,10 @@ const FRANCE_SOMMAIRE = [
   { partie: "Le monde viticole", section: "Portugal", chapitre: "Portugal : porto" },
   { partie: "Le monde viticole", section: "Portugal", chapitre: "Portugal : madère" },
   { partie: "Le monde viticole", section: "Espagne", chapitre: "Espagne : xérès" },
+  { partie: "Le monde viticole", section: "Allemagne", chapitre: "Allemagne : panorama et classifications" },
+  { partie: "Le monde viticole", section: "Allemagne", chapitre: "Allemagne : régions" },
+  { partie: "Le monde viticole", section: "Autriche", chapitre: "Autriche : panorama et régions" },
+  { partie: "Le monde viticole", section: "Hongrie", chapitre: "Hongrie : Tokaj" },
 ];
 
 /* Ordre d'affichage des thèmes dans le filtre */
