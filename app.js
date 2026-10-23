@@ -314,7 +314,7 @@ function ouvrirZoom(fig){
 document.addEventListener('click',e=>{const f=e.target.closest('.schema');if(f&&!f.closest('#zoom')&&!f.closest('#support'))ouvrirZoom(f);});
 document.addEventListener('keydown',e=>{const f=e.target.classList&&e.target.classList.contains('schema')&&e.target;if(f&&(e.key==='Enter'||e.key===' ')){e.preventDefault();ouvrirZoom(f);}});
 // Détails que seul le livre (ou une source) appuie : signalés, sans compter comme « à vérifier ».
-const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>${f.source==='france'?'Source unique, non recoupé':'Selon le livre, non recoupé'} (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
+const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>${f.source==='france'||/cf\. Mille Vignes|complément hors livre/.test(f.src)?'Source unique, non recoupé':'Selon le livre, non recoupé'} (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
   const mine=EXOS.filter(e=>e.fiche===f);
