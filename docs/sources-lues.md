@@ -122,3 +122,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Le monde viticole — Italie (23/10/2026, fiches 539-544)
 - WSET D3 (2024) et D4 ; loi 238/2016 (art. 28, 31, 33) ; disciplinari (Regione Piemonte, AIS, Gazzetta Ufficiale) : Barolo, Barbaresco, Gavi, Asti, Brunello, Taurasi, Fiano di Avellino, Greco di Tufo, Soave, Verdicchio, Cerasuolo di Vittoria ; loi 851/1984 (Marsala) ; règlement de la marque Ripasso (Chambre de commerce de Vérone) ; JancisRobinson.com (barbera, Bolgheri). Bloqués : catalogue MASAF (erreur serveur), disciplinari Etna, Vermentino di Gallura, Bolgheri sur aisitalia.it, plusieurs pages de consorzi.
+
+## Compléments WSET — accords, conservation, garde, prix (23/10/2026, fiches 566-571)
+- WSET L3 (2016) et D5 (2024) ; Zoecklein (Virginia Tech, accords) ; Kustos et al. 2020 (umami) ; Trevisani et al. 2002 (Nature Neuroscience, piment et alcool) ; Decanter (Sheppard 2024) ; Wine Spectator (Gugino 2003) ; JancisRobinson.com ; CIVB (bordeaux.com, primeurs) ; FINE+RARE ; Highbury Vintners (2026, prix) ; Guide Hachette, Wine Society, Wine Folly (2b). Bloqués : ScienceDirect, RSC Advances, pages CIVB ; aucune source belge sur le prix.
