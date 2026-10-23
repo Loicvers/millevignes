@@ -195,6 +195,15 @@ function renderCartes(){
   grid.append(q,list);draw();
 }
 /* ============ LEXIQUE ============ */
+// Photo libre de droits (Wikimedia Commons), avec crédit et licence obligatoires.
+// shortcut: image chargée depuis Commons, donc absente hors ligne ; la copier dans le dépôt si l'usage hors ligne compte.
+function lexPhoto(t){
+  if(!t.photo)return null;const p=t.photo,f=el('figure','lex-ph'),i=el('img');
+  i.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(p.fichier)+'?width=640';i.alt=p.legende;i.loading='lazy';
+  const c=el('figcaption',null,p.legende+' '),a=el('a',null,`Photo : ${p.auteur}, ${p.licence}, Wikimedia Commons`);
+  a.href='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.fichier);a.target='_blank';a.rel='noopener';
+  c.append(a);f.append(i,c);return f;}
+
 let lexQuery='';
 function renderLexique(){
   document.getElementById('introLine').textContent='Les mots du métier, avec leur origine : retenir le sens d’un mot, c’est souvent retenir son étymologie.';
@@ -205,7 +214,7 @@ function renderLexique(){
   const draw=()=>{list.innerHTML='';const n=normalize(lexQuery);
     [...LEXIQUE].sort((a,b)=>a.terme.localeCompare(b.terme,'fr')).filter(t=>!n||normalize(t.terme+' '+t.def).includes(n)).forEach(t=>{
       const d=el('div','card lex');
-      d.append(el('h3',null,t.terme),el('p','synth',t.def));
+      d.append(el('h3',null,t.terme),el('p','synth',t.def));const ph=lexPhoto(t);if(ph)d.append(ph);
       const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
@@ -829,7 +838,7 @@ const lexPop=el('div','lex-pop');lexPop.hidden=true;lexPop.setAttribute('role','
 function lexOuvrir(terme){
   const t=LEXIQUE.find(x=>x.terme===terme);if(!t)return;lexPop.innerHTML='';
   const x=el('button','lex-x','×');x.setAttribute('aria-label','Fermer');x.onclick=()=>lexPop.hidden=true;
-  lexPop.append(x,el('h4',null,t.terme),el('p',null,t.def));
+  lexPop.append(x,el('h4',null,t.terme),el('p',null,t.def));const ph=lexPhoto(t);if(ph)lexPop.append(ph);
   const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);lexPop.append(m);
   if(mode!=='due'){const b=el('button','btn','Voir au lexique');b.onclick=()=>{lexPop.hidden=true;lexQuery=t.terme;setMode('lexique');window.scrollTo(0,0);};lexPop.append(b);}
   lexPop.hidden=false;x.focus();

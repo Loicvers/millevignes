@@ -81,6 +81,7 @@ const LEXIQUE = [
  },
  {
   "terme": "coulure",
+  "photo": {"fichier": "Coulure_2014_P7053002_bew.jpg", "legende": "Grappe coulurée pendant la floraison : la rafle est presque nue, les fleurs sont tombées sans former de baies.", "auteur": "Hvczech", "licence": "CC0"},
   "def": "Chute des fleurs ou très jeunes baies après floraison, par mauvaise fécondation ou stress.",
   "etym": "dérivé de couler avec le suffixe -ure.",
   "declic": "Les fleurs coulent au lieu de nouer.",
@@ -171,6 +172,7 @@ const LEXIQUE = [
  },
  {
   "terme": "millerandage",
+  "photo": {"fichier": "Grappe_millerandage.jpg", "legende": "Grappe millerandée : des baies de tailles très inégales sur une même grappe.", "auteur": "Olivier Lemoine (Photo-Terroir.fr)", "licence": "CC BY-SA 4.0"},
   "def": "Défaut de fécondation de la vigne : dans une même grappe, une partie des baies reste très petite, souvent sans pépins, à côté de baies normales.",
   "etym": "dérivé de millerandé (« vigne millerandée ») avec le suffixe -age.",
   "declic": "Une grappe millerandée, c’est la poule et ses poussins : de grosses baies entourées de petites.",
