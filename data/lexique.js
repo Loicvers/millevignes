@@ -664,5 +664,420 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "Le plafond de 40 % du stock expédié par an et le minimum de deux ans sont dans la fiche 530. Sens ancien : le DLE donne aussi pour solera « la lie du vin » et le Larousse espagnol-français la traduit par « lie » ; cela n’est pas repris. Origine suelo : DLE et Sherry Notes (niveau 2b)."
+ },
+ {
+  "terme": "tanin",
+  "def": "Famille de composés phénoliques qui se lient aux protéines de la salive et donnent l’astringence, cette sensation de bouche asséchée et rugueuse (avec un peu d’amertume). Dans le vin, ils viennent surtout de la pellicule, des pépins et de la rafle, et un peu du bois d’élevage ; ils soutiennent la couleur et la garde des rouges et s’assouplissent en se combinant entre eux avec le temps.",
+  "etym": "Le nom vient de l’usage de ces composés pour tanner les peaux d’animaux (Oxford).",
+  "declic": "Un thé trop infusé : la langue qui accroche, c’est le tanin.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « tannins »",
+   "fiche 226",
+   "fiche 358",
+   "fiche 70"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "élevage",
+  "def": "Ensemble des soins donnés au vin entre la fin de la fermentation et la mise en bouteille : cuve ou fût, soutirages, passage sur lies, collage, etc. Le mot n’a pas d’équivalent direct en anglais ; il suggère que le vigneron « éduque » un vin encore brut.",
+  "etym": "Même mot que l’élevage d’animaux ou d’enfants (« bien élevé ») ; Oxford le glose par « rearing » (« élever »).",
+  "declic": "Le vigneron est un parent : il élève son vin jusqu’à la majorité de la mise en bouteille.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « élevage »",
+   "fiche 243",
+   "fiche 233",
+   "fiche 358"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "porte-greffe",
+  "def": "Plant dont on ne garde que le système racinaire, sur lequel on greffe le cépage voulu (le greffon). Il sert d’abord à résister au phylloxéra et aux nématodes, puis à s’adapter au calcaire ou à la sécheresse ; il influe sur la vigueur et le rendement, mais le raisin vient entièrement du greffon. Les porte-greffes actuels descendent d’espèces américaines (riparia, rupestris, berlandieri).",
+  "etym": "",
+  "declic": "Le porte-greffe est le socle : il porte la plante, jamais le raisin.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « rootstock »",
+   "fiche 45",
+   "fiche 79"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "anthocyanes",
+  "def": "Pigments rouges à bleus des raisins noirs, logés surtout dans la pellicule, qui donnent sa couleur au vin rouge. Leur teinte dépend de l’acidité (plus le milieu est acide, plus le rouge est vif) ; en vieillissant, ils se lient aux tanins en pigments plus stables. Les cépages blancs n’en produisent pas.",
+  "etym": "Du grec anthos (« fleur ») et de « cyan » (bleu), d’après Oxford.",
+  "declic": "Anthos = fleur : la couleur des pétales, mais cachée dans la peau du raisin.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « anthocyanins »",
+   "fiche 266",
+   "fiche 358",
+   "fiche 226"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "fermentation malolactique",
+  "def": "Transformation par des bactéries lactiques de l’acide malique, plutôt vert et dur, en acide lactique, plus doux, avec un dégagement de gaz carbonique. Ce n’est pas une vraie fermentation : elle suit en général la fermentation alcoolique. Elle diminue l’acidité, stabilise le vin et peut ajouter des notes beurrées (diacétyle) ; on l’évite parfois pour garder de la vivacité, par exemple sur riesling ou chenin.",
+  "etym": "",
+  "declic": "Pomme verte (malique) devient lait (lactique).",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « malolactic conversion »",
+   "fiche 343"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "véraison",
+  "def": "Moment où la baie, jusque-là verte et dure, change de couleur (elle rougit ou vire au jaune translucide), s’assouplit et commence à mûrir : le sucre monte, l’acidité baisse. Elle marque le début du compte à rebours avant les vendanges.",
+  "etym": "Mot français repris tel quel en anglais (veraison), d’après Oxford.",
+  "declic": "La baie « met ses couleurs » : feu vert pour la maturation.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « veraison »",
+   "fiche 4",
+   "fiche 87"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "débourrement",
+  "def": "Éclatement des bourgeons au printemps : les premières feuilles vertes apparaissent et la vigne sort de son repos hivernal, autour de 10 °C de température moyenne de l’air. Un débourrement tardif protège mieux des gelées de printemps, d’où l’intérêt de cépages tardifs comme le meunier dans la Vallée de la Marne.",
+  "etym": "",
+  "declic": "On sort du « coton » (stade B de Baggiolini) : le bourgeon débourre.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « budbreak »",
+   "fiche 514",
+   "fiche 87"
+  ],
+  "status": "needs_review",
+  "note": "Aucune fiche vérifiée ne définit le terme (fiches 514, 523, 556 l’emploient) ; à confirmer par IFV ou INRAE."
+ },
+ {
+  "terme": "aoûtement",
+  "def": "Maturation des rameaux en fin d’été : la tige verte brunit et devient ligneuse (tissu liégeux, mise en réserve de glucides) pour résister au froid de l’hiver. Elle commence à la base du rameau et gagne vers la pointe.",
+  "etym": "",
+  "declic": "Le rameau prend son bronzage d’août : du vert au brun.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « cane ripening »",
+   "fiche 87"
+  ],
+  "status": "needs_review",
+  "note": "Oxford traite « cane ripening / lignification » sans donner le mot « aoûtement » ; fiche 87 (Lepeltier, stade O) seul lien. À confirmer par IFV ou INRAE."
+ },
+ {
+  "terme": "rafle",
+  "def": "Charpente de la grappe : l’axe et les ramifications qui portent les baies, riches en fibres et en tanins, verts ou lignifiés selon la maturité. On l’enlève à la réception (éraflage) ou on la garde (vendange entière), selon le style voulu.",
+  "etym": "",
+  "declic": "La rafle est le squelette de la grappe : ce qui reste quand on a mangé les baies.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « stem »",
+   "fiche 70",
+   "fiche 578"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "pressurage",
+  "def": "Opération qui presse le raisin ou le marc pour en extraire le liquide. En blanc et en rosé de pressurage direct, on presse avant la fermentation ; en rouge, on presse le marc après l’écoulage pour obtenir le vin de presse, plus coloré et tannique. Le pressoir pneumatique monte la pression progressivement et ménage la vendange.",
+  "etym": "",
+  "declic": "Blanc : on presse puis on fait fermenter. Rouge : on fait fermenter puis on presse.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « pressing »",
+   "fiche 579",
+   "fiche 350",
+   "fiche 351"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "foulage et éraflage",
+  "def": "Deux gestes à l’arrivée de la vendange. L’éraflage sépare les baies de la rafle (il est facultatif) ; le foulage éclate les baies pour libérer le jus et faciliter l’extraction, sans écraser les pépins amers. Les machines (érafloir-fouloir) combinent souvent les deux.",
+  "etym": "",
+  "declic": "D’abord on ôte les queues (éraflage), ensuite on piétine (foulage).",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « destemming »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « crushing »",
+   "fiche 578"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "saignée (rosé)",
+  "def": "Méthode de rosé (et de concentration du rouge) : après un court contact avec les peaux en cuve, on prélève une partie du jus, qui devient le rosé, plus coloré et corsé que celui du pressurage direct. Le rouge resté en cuve, avec plus de peaux par litre de jus, peut en sortir plus concentré.",
+  "etym": "Même mot que la saignée médicale ; Oxford le traduit par « bled » (« saigné »).",
+  "declic": "Comme une prise de sang : on prélève un peu de jus coloré, c’est le rosé.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « saignée »",
+   "fiche 351"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "pigeage et remontage",
+  "def": "Deux façons de brasser le chapeau de marc pendant la fermentation d’un rouge. Le pigeage l’enfonce dans le jus (au pied, à la main ou mécaniquement) ; le remontage pompe du jus en bas de cuve pour arroser le chapeau par le haut. Ils extraient couleur et tanins et évitent que le chapeau sèche ; abusés, ils durcissent les tanins.",
+  "etym": "",
+  "declic": "Pigeage : on pousse vers le bas. Remontage : le jus remonte.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « punching down »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « pumping over »",
+   "fiche 347"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "collage",
+  "def": "Clarification et stabilisation du vin par ajout d’une substance (albumine d’œuf, gélatine, caséine, colle de poisson, PVPP, bentonite) qui floconne et entraîne au fond particules et tanins instables. Sur un rouge, il assouplit ; sur un blanc, il préserve la couleur claire et évite les troubles.",
+  "etym": "Du verbe coller : Oxford glose collage par « sticking » (« coller »).",
+  "declic": "On colle les impuretés pour qu’elles tombent ensemble, comme sur un papier tue-mouches.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « fining »",
+   "fiche 361",
+   "fiche 243"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 361 non vérifiée ; fiche 243 (vérifiée) ne cite que le collage comme étape."
+ },
+ {
+  "terme": "vin doux naturel",
+  "def": "Vin doux obtenu par mutage : on ajoute de l’alcool au moût en cours de fermentation, ce qui arrête les levures et laisse le sucre naturel du raisin. Il est donc sucré et plus alcoolisé qu’un vin ordinaire. Exemples : Banyuls, Maury, Rivesaltes, Muscat de Frontignan, Beaumes-de-Venise ; les cépages typiques sont le muscat et le grenache.",
+  "etym": "",
+  "declic": "« Naturel » = le sucre vient du raisin ; l’alcool ajouté sert seulement à stopper la fermentation.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « vin doux naturel »",
+   "fiche 508",
+   "fiche 380"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "polyphénols",
+  "def": "Grande famille de molécules du raisin (pellicule, pépins, rafle) qui comprend les anthocyanes, source de la couleur, et les tanins, source de la structure et de l’astringence. Extraits pendant la macération, ils évoluent en élevage ; les rouges en contiennent beaucoup plus que les blancs.",
+  "etym": "",
+  "declic": "Les polyphénols sont la boîte à outils du raisin : couleur et structure.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « phenolics »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « tannins »",
+   "fiche 226",
+   "fiche 243"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "sulfitage",
+  "def": "Ajout de dioxyde de soufre (SO2) au raisin, au moût ou au vin pour le protéger de l’oxydation et des microbes. Il peut se faire à la réception de la vendange, avant ou après la fermentation, pendant l’élevage et à la mise. Une partie du SO2 se combine et ne protège plus : c’est le SO2 libre qu’on suit.",
+  "etym": "",
+  "declic": "Le SO2 est le garde du corps du vin : il garde la porte contre l’air et les microbes.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « sulfur dioxide »",
+   "fiche 578",
+   "fiche 345"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "brettanomyces",
+  "def": "Levure de contamination qui produit des phénols volatils (écurie, cuir, pansement, épices, fumé), surtout dans les rouges élevés en barrique ; elle profite d’un SO2 insuffisant. On la considère comme un défaut, que quelques producteurs tolèrent à très faible dose.",
+  "etym": "",
+  "declic": "« Brett » : le cheval s’est invité dans la cave.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « Brettanomyces »",
+   "fiche 250"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 250 non vérifiée."
+ },
+ {
+  "terme": "goût de bouchon (TCA)",
+  "def": "Défaut aromatique de moisi, carton mouillé ou chien mouillé qui étouffe le fruit et raccourcit la finale. Il est dû surtout au TCA (2,4,6-trichloroanisole), détectable à quelques ng/l ; le liège est la source principale, mais le bois du chai ou les barriques peuvent aussi contaminer. Certains dégustateurs y sont peu sensibles.",
+  "etym": "",
+  "declic": "Carton mouillé et cave humide : le bouchon a pris l’eau.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « cork taint »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « TCA »",
+   "fiche 252"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 252 non vérifiée (fiche 307 vérifiée traite un autre sujet)."
+ },
+ {
+  "terme": "rotundone",
+  "def": "Molécule (sesquiterpène) responsable de la note de poivre noir de la syrah, trouvée aussi dans le grüner veltliner et d’autres cépages. Détectable à des doses infimes, elle échappe pourtant à environ une personne sur cinq. Elle vient surtout des peaux et ressort davantage en climat frais.",
+  "etym": "Nom tiré de Cyperus rotundus, le souchet où elle a d’abord été découverte (Oxford).",
+  "declic": "Rotundone = grain de poivre ; mais un nez sur cinq ne l’entend pas.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « rotundone »",
+   "fiche 274"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "pyrazines (méthoxypyrazines)",
+  "def": "Molécules azotées à odeur végétale : poivron vert, herbacé, asperge. Les plus connues dans le vin sont les méthoxypyrazines, typiques du sauvignon blanc et du cabernet-sauvignon, qui dominent quand le raisin est cueilli peu mûr ; maturité et effeuillage les réduisent.",
+  "etym": "",
+  "declic": "Pyrazine = poivron : un raisin pas assez mûr sent le potager.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « methoxypyrazines »",
+   "fiche 273",
+   "fiche 1"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "sélection massale",
+  "def": "Technique de multiplication de la vigne où l’on prélève du bois sur de nombreux ceps choisis d’une vieille parcelle, sans suivre chaque pied individuellement, pour garder la diversité génétique et l’adaptation au lieu. Elle s’oppose à la sélection clonale, qui part d’un seul pied de référence multiplié à l’identique.",
+  "etym": "",
+  "declic": "Massale = en masse : on choisit tout un lot de bons ceps, pas un seul champion.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « mass selection »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « clonal selection »",
+   "fiche 90"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 90 non vérifiée ; fiches 77 et 92 (vérifiées) emploient le terme sans le définir."
+ },
+ {
+  "terme": "ampélographie",
+  "def": "Science qui décrit et identifie les cépages d’après leurs caractères visibles (feuille, grappe, rameau). On y ajoute aujourd’hui les empreintes ADN (ampélographie moléculaire), plus fiables que l’aspect de la plante.",
+  "etym": "Du grec ampelos (« vigne ») et graphos (« description »), d’après Oxford.",
+  "declic": "Ampelos = vigne, graphein = décrire : le portrait-robot du cépage.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « ampelography »",
+   "fiche 27",
+   "fiche 70"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "millésime",
+  "def": "Année de récolte du raisin dont est issu le vin. Elle porte la marque de la météo de cette année-là : le climat fixe le style d’une région, le millésime en est l’expression d’une année précise. Un vin non millésimé est un assemblage d’années, comme beaucoup de champagnes.",
+  "etym": "",
+  "declic": "Le climat, c’est le caractère ; le millésime, l’humeur de l’année.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « vintage year »",
+   "fiche 128",
+   "fiche 580"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 128 non vérifiée ; fiche 580 (vérifiée) n’évoque que l’assemblage de millésimes."
+ },
+ {
+  "terme": "rendement (hl/ha)",
+  "def": "Quantité de vin (ou de raisin) produite par un vignoble sur une surface donnée. En France et dans la plupart des pays d’Europe, on l’exprime en hectolitres de vin par hectare (hl/ha), et les cahiers des charges des appellations le plafonnent ; ailleurs, on compte plutôt en tonnes de raisin par hectare. Le lien entre rendement et qualité est discuté.",
+  "etym": "",
+  "declic": "hl/ha : les litres de vin que donne un hectare, plafond de l’appellation à la clé.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « yield »",
+   "fiche 62"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "assemblage",
+  "def": "Opération qui consiste à choisir et mélanger des lots (cépages, parcelles, cuves, fûts, millésimes) pour obtenir un vin plus équilibré ou plus régulier que chacun d’eux. Elle est essentielle en Champagne (vins de réserve, style de maison) et à Bordeaux (merlot et cabernet-sauvignon) ; elle ne sert pas à masquer un défaut.",
+  "etym": "Mot français (« assembler ») repris tel quel par Oxford.",
+  "declic": "Un orchestre : chaque lot joue sa partie, le maître de chai dirige.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « assemblage »",
+   "fiche 580"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "barrique",
+  "def": "Fût de chêne de 225 litres, modèle bordelais, le plus répandu pour l’élevage. Le bois apporte tanins et arômes et laisse passer un peu d’oxygène, qui assouplit les tanins et stabilise la couleur.",
+  "etym": "",
+  "declic": "225 litres, c’est 300 bouteilles de 75 cl : une barrique, un petit stock.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « barrique »",
+   "fiche 546",
+   "fiche 358",
+   "fiche 299"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "levures indigènes",
+  "def": "Levures présentes naturellement sur le raisin et dans le chai, par opposition aux levures sélectionnées ajoutées en sec. La fermentation spontanée est moins prévisible, mais ses défenseurs y voient une signature du lieu et du millésime, thèse débattue chez les scientifiques ; en pratique, le chai et l’air apportent aussi leurs souches.",
+  "etym": "",
+  "declic": "Indigène = du cru : les levures du pays, pas celles du sachet.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « yeast »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « spontaneous fermentation »",
+   "fiche 231"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 231 non vérifiée ; le vocabulaire varie (Oxford distingue « ambient », « native/indigenous » et « wild » ; wild = non-Saccharomyces)."
+ },
+ {
+  "terme": "biodynamie",
+  "def": "Forme d’agriculture biologique fondée sur les idées de Rudolf Steiner : la vigne est pensée comme un organisme de ferme, traitée avec des préparations de plantes et de minéraux (dont les préparations 500, bouse de corne, et 501, silice de corne) et conduite selon des rythmes lunaires et planétaires. Demeter et Biodyvin la certifient ; ses effets restent sans explication scientifique conclusive.",
+  "etym": "",
+  "declic": "Bio, plus calendrier lunaire, plus tisanes : le vignoble comme organisme vivant.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « biodynamic viticulture »",
+   "fiche 522"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "taille (gobelet, Guyot, cordon)",
+  "def": "Coupe hivernale du bois qui règle la charge de la vigne. Le gobelet est une tête aux bras courts taillés à coursons, sans fil, adaptée aux climats secs ; le Guyot est une taille longue (une baguette et un courson de remplacement, en simple ou en double) ; le cordon est un bras permanent horizontal taillé à coursons, comme le cordon de Royat.",
+  "etym": "",
+  "declic": "Gobelet = un verre, Guyot = une baguette plus une réserve, cordon = un bras sur le fil.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « pruning »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « gobelet »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « Guyot, Jules »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « cordon »",
+   "fiche 516"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 516 non vérifiée ; fiches 110 et 564 (vérifiées) citent seulement le gobelet."
+ },
+ {
+  "terme": "palissage",
+  "def": "Fixation de la vigne sur un support (piquets, fils) pour guider les rameaux. Le palissage vertical, ou plan relevé, garde un feuillage étroit et aéré, ce qui aide la maturation et limite les maladies, et il permet la vendange mécanique, à laquelle le gobelet non palissé se prête mal.",
+  "etym": "",
+  "declic": "Palissage = on met la vigne en rang d’oignons sur ses fils.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « shoot positioning »",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « trellis systems »",
+   "fiche 517"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 517 non vérifiée."
+ },
+ {
+  "terme": "effeuillage",
+  "def": "Retrait de feuilles autour des grappes pour les aérer et les exposer au soleil. Les baies sèchent plus vite après pluie ou rosée, ce qui limite la pourriture grise, et l’on obtient moins de méthoxypyrazines herbacées ; on l’effectue tôt, quand les baies sont encore petites.",
+  "etym": "",
+  "declic": "On ouvre les rideaux : la grappe prend l’air et la lumière.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « leaf removal »",
+   "fiche 518"
+  ],
+  "status": "needs_review",
+  "note": "Fiche 518 non vérifiée."
  }
 ];
