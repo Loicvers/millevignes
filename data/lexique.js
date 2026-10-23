@@ -19,43 +19,47 @@ const LEXIQUE = [
   "etym": "de l’anglais clone, lui-même du grec klôn, jeune pousse.",
   "declic": "Klôn = pousse : une bouture, copie du pied-mère.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « clone »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
   "terme": "lambrusque",
   "photo": {"fichier": "Vitis vinifera subsp. sylvestris sl9.jpg", "legende": "Lambrusque (vigne sauvage) grimpée dans la cime d’un arbre.", "auteur": "Stefan Lefnaer", "licence": "CC BY-SA 4.0"},
-  "def": "Vigne sauvage européenne (Vitis vinifera subsp. sylvestris), ancêtre de la vigne cultivée.",
+  "def": "Vigne sauvage européenne (Vitis vinifera subsp. sylvestris, aussi écrit silvestris), dont l’homme a tiré la vigne cultivée. Ses pieds sont mâles ou femelles, alors que la vigne cultivée a des fleurs hermaphrodites.",
   "etym": "du latin labrusca, vigne sauvage.",
   "declic": "Labrusca : la vigne d’avant la culture.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « wild vines »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
   "terme": "hybride",
-  "def": "Individu issu du croisement de deux espèces ou variétés différentes (en viticulture, croisement interspécifique).",
+  "def": "En viticulture, cépage né du croisement de deux espèces de vigne différentes (par exemple une vigne américaine et Vitis vinifera). Le croisement de deux variétés de la même espèce s’appelle un croisement, pas un hybride. Les textes européens parlent de « croisement interspécifique ».",
   "etym": "du latin hibrida, enfant d’un croisement, rapproché ensuite du grec hubris, excès.",
   "declic": "Hibrida : né d’un mélange, hors norme.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « hybrids »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
   "terme": "teinturier (cépage)",
-  "def": "Cépage à pulpe colorée, qui donne un jus rouge dès le pressurage.",
+  "def": "Cépage à pulpe colorée, qui donne un jus rouge dès le pressurage ; on le plantait pour foncer des vins trop pâles.",
   "etym": "dérivé de teinture avec le suffixe -ier (celui qui teint).",
   "declic": "Teinturier : sa pulpe teint le vin comme un teinturier teint l’étoffe.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « teinturier »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": "étymologie du mot général"
  },
  {
@@ -65,33 +69,36 @@ const LEXIQUE = [
   "etym": "du latin sarmentum, branchage coupé.",
   "declic": "Sarmentum : ce qu’on taille.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « cane »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
   "terme": "vrille",
   "photo": {"fichier": "Tendril of Solaris grapes growing in Chateaux Luna vineyard.jpg", "legende": "Vrille enroulée autour d’un fil de palissage.", "auteur": "W. Carter", "licence": "CC0"},
-  "def": "Organe filiforme enroulé par lequel la vigne s’accroche à son support.",
+  "def": "Organe filiforme qui s’enroule au contact d’un support pour que la vigne grimpe. Chez la vigne, c’est une grappe avortée ; elle se lignifie une fois enroulée et devient alors très dure.",
   "etym": "du latin viticula, petite vigne (diminutif de vitis), via l’ancien français veille ; le r s’explique mal.",
   "declic": "Viticula : la petite vigne qui s’enroule.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « tendril »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": "apparition du r discutée"
  },
  {
   "terme": "coulure",
   "photo": {"fichier": "Coulure_2014_P7053002_bew.jpg", "legende": "Grappe coulurée pendant la floraison : la rafle est presque nue, les fleurs sont tombées sans former de baies.", "auteur": "Hvczech", "licence": "CC0"},
-  "def": "Chute des fleurs ou très jeunes baies après floraison, par mauvaise fécondation ou stress.",
+  "def": "Chute excessive des fleurs ou des très jeunes baies pendant ou juste après la floraison, qui laisse des grappes clairsemées. Elle vient d’un manque de sucres dans la plante : temps froid, couvert et humide à la floraison, ou vigueur excessive des rameaux. Grenache, malbec et merlot y sont très sensibles.",
   "etym": "dérivé de couler avec le suffixe -ure.",
   "declic": "Les fleurs coulent au lieu de nouer.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « coulure »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
@@ -101,9 +108,10 @@ const LEXIQUE = [
   "etym": "de l’ancien français graife, du latin graphium, stylet.",
   "declic": "Graphium, le stylet : imagine le greffon taillé en pointe.",
   "src": [
-   "Wiktionnaire"
+   "Wiktionnaire",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « grafting »"
   ],
-  "status": "needs_review",
+  "status": "verified",
   "note": ""
  },
  {
@@ -115,7 +123,8 @@ const LEXIQUE = [
    "La langue française (dictionnaire)",
    "Online Etymology Dictionary, terpene",
    "IFV, fiche Monoterpènes",
-   "UC Davis, Waterhouse Lab, Terpenes"
+   "UC Davis, Waterhouse Lab, Terpenes",
+   "Oxford Companion to Wine, 5e éd. (2023), entrée « terpenes »"
   ],
   "status": "needs_review",
   "note": "Étymologie à trancher : allemand Terpen (de Terpentin) selon La langue française ; l’Online Etymology Dictionary fait venir l’anglais terpene (1902) de terebene, nom tiré de la térébinthe."
