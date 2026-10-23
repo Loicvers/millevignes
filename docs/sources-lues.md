@@ -125,3 +125,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Compléments WSET — accords, conservation, garde, prix (23/10/2026, fiches 566-571)
 - WSET L3 (2016) et D5 (2024) ; Zoecklein (Virginia Tech, accords) ; Kustos et al. 2020 (umami) ; Trevisani et al. 2002 (Nature Neuroscience, piment et alcool) ; Decanter (Sheppard 2024) ; Wine Spectator (Gugino 2003) ; JancisRobinson.com ; CIVB (bordeaux.com, primeurs) ; FINE+RARE ; Highbury Vintners (2026, prix) ; Guide Hachette, Wine Society, Wine Folly (2b). Bloqués : ScienceDirect, RSC Advances, pages CIVB ; aucune source belge sur le prix.
+
+## La France viticole — IGP, Charentes, Lorraine (23/10/2026, fiches 572-576)
+- BO-agri : cahiers des charges Pineau des Charentes (2011, 2024, 2025), Côtes de Gascogne (2014, 2025), Val de Loire (2025), Méditerranée (2025), Comté Tolosan (2015 modifié 2017), Côtes de Toul (2021), Moselle (2019) ; INAO (fiches produit, Floc de Gascogne, projet 2026) ; FranceAgriMer ; règlement (UE) 1308/2013 (vin de liqueur) ; OIV ; WSET D3 ; Guide Hachette, iDealwine, Vinatis, Decanter, ville de Toul (2b). Bloqués : pineau.com, extranet INAO (Comté Tolosan 2025), Légifrance et BO (décret 2011-1620, floc).

@@ -1,0 +1,45 @@
+// La France viticole — Charentes (hors livre). Voir l’en-tête de fiches.js et FRANCE_SOMMAIRE.
+FICHES.push(
+  {
+    id: 574,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Fondamental",
+    geo: {"pays":"France","region":"Charentes","appel":"Pineau des Charentes"},
+    source: "france",
+    chapitre: "Charentes : pineau et vins de liqueur",
+    titre: "Le pineau des Charentes : un vin de liqueur muté au cognac",
+    synth: "Le pineau des Charentes est un vin de liqueur : on y mute du moût de raisin avec de l’eau-de-vie AOC Cognac d’au moins 60 % vol., élevée en fût de chêne et rassise. Le moût doit dépasser 170 g/L de sucre au moment du mutage, et le vin fini titre entre 16 et 22 % vol. Ce n’est pas un vin doux naturel, car l’alcool ajouté est l’eau-de-vie de la région, non un alcool neutre. Il existe en blanc (colombard, ugni blanc, sauvignon, sémillon, folle blanche, entre autres), en rosé et en rouge (cabernets, merlot, cot). Le cahier des charges en vigueur impose au blanc 18 mois d’élevage au moins, dont 12 en chêne ; les mentions « vieux » et « très vieux » (ou « extra vieux ») exigent plus de 7 et plus de 12 ans en bois de chêne, contre 5 et 10 ans dans la version de 2011 que reprennent encore certains guides.",
+    mnemo: "Une carafe de jus de raisin frais dans laquelle on verse un trait de cognac dès les vendanges : le sucre reste prisonnier du moût, et l’alcool le fait monter à 16 degrés au moins.",
+    flash: {"q":"Pourquoi le pineau des Charentes reste-t-il sucré ?","a":"Parce qu’on ajoute au moût de l’eau-de-vie de cognac, qui empêche sa fermentation : le sucre du raisin reste dans le vin.","keys":[["cognac","eau-de-vie","eau de vie"],["sucre"],["ferment"]]},
+    qcm: {"q":"Quelles couleurs l’AOC pineau des Charentes admet-elle ?","opts":["Blanc, rosé et rouge","Blanc et rosé seulement","Blanc, ambré et tuilé","Rouge seulement"],"good":0,"expl":"Ambré et tuilé sont des mentions de vins doux naturels (rivesaltes, rasteau), pas des couleurs du pineau. Le rouge existe bel et bien dans l’appellation, à côté du blanc et du rosé."},
+    exos: [{"type":"cloze","prompt":"Complète.","payload":{"text":"Le pineau des Charentes titre entre {{16}} et {{22}} % vol., et son moût doit dépasser {{170}} g/L de sucre au moment du mutage."},"explanation":"Le sucre du moût est ce qui reste dans le vin, puisque l’eau-de-vie arrête la fermentation : un moût riche est donc une condition de l’équilibre doux."},{"type":"short_answer","prompt":"Qui suis-je ? Je suis un vin de liqueur de l’Ouest, né d’un moût de raisin muté à l’eau-de-vie de cognac ; je me décline en blanc, rosé et rouge.","payload":{"accepted":["pineau des charentes","le pineau des charentes","pineau","le pineau"]},"explanation":"Le cognac comme alcool de mutage désigne directement l’appellation charentaise, à ne pas confondre avec le floc, muté à l’armagnac."},{"type":"odd_one_out","prompt":"Laquelle de ces exigences ne s’applique pas à l’eau-de-vie qui mute le pineau des Charentes ?","payload":{"options":["Être une eau-de-vie AOC Cognac","Titrer au moins 60 % vol.","Avoir été élevée en fût de chêne","Être un alcool neutre à 96 % vol."],"answer":3},"explanation":"Le cahier des charges veut une eau-de-vie de caractère, passée par le chêne et rassise ; l’alcool neutre à 96 % vol. est celui des vins doux naturels."}],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["« Mi-muté » (moût partiellement fermenté avant mutage) : Guide Hachette seul ; le cahier des charges ne fixe aucun stade de mutage ; non repris.","Élevage minimal du rouge (12 mois dont 8 en bois de chêne) et du rosé (jusqu’au 1er mars suivant la récolte) : cahiers des charges 2024 et 2025 ; non repris dans la synthèse."],
+    src: "INAO, fiche produit Pineau des Charentes ; BO-agri, cahier des charges AOC Pineau des Charentes (arrêté du 18 novembre 2024, BO du 28 novembre 2024) ; BO-agri, cahier des charges AOC Pineau des Charentes (arrêté du 1er juillet 2025, BO du 10 juillet 2025) ; INAO, projet de modification du cahier des charges Pineau des Charentes (2026) ; Guide Hachette des vins, appellation Pineau-des-Charentes ; cahier des charges AOC Pineau des Charentes homologué par décret du 4 novembre 2011 (version antérieure, copie Sommelier Academy)"
+  },
+  {
+    id: 575,
+    theme: "Géographie viticole",
+    sous: ["Appellations"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"France","region":"Sud-Ouest","appel":"Floc de Gascogne"},
+    source: "france",
+    chapitre: "Charentes : pineau et vins de liqueur",
+    titre: "Floc de Gascogne, macvin et vins de liqueur : ce qui les sépare des vins doux naturels",
+    synth: "Le floc de Gascogne est gascon, non charentais : c’est un vin de liqueur du pays d’armagnac, du moût muté à l’armagnac, blanc ou rosé, titrant 16 à 18 % vol., en AOC depuis 1990. Le macvin du Jura (fiche 493) suit la même logique avec un marc du Jura, comme le pineau avec le cognac : chacun reçoit l’eau-de-vie de son terroir. Les vins doux naturels (rivesaltes, banyuls, muscat de Beaumes-de-Venise) sont mutés autrement, à l’alcool vinique neutre d’au moins 96 % vol., à raison de 5 à 10 % du volume du moût. Le droit européen définit le vin de liqueur par un titre acquis de 15 à 22 % vol. et par l’ajout d’alcool neutre d’origine viticole ou d’eau-de-vie de vin, voire de marc pour certaines appellations : c’est le cahier des charges de chaque appellation qui choisit l’alcool, et ce choix sert de repère au comptoir.",
+    mnemo: "Pineau, floc, macvin : chaque vin boit l’eau-de-vie de sa maison (cognac, armagnac, marc), alors que le vin doux naturel reçoit un alcool neutre, sans accent ni terroir.",
+    flash: {"q":"Quelle eau-de-vie mute le floc de Gascogne, et quelles couleurs existent ?","a":"L’armagnac ; le floc est blanc ou rosé (16 à 18 % vol.).","keys":[["armagnac"],["rosé","rose"]]},
+    qcm: {"q":"Qu’est-ce qui distingue, en pratique, un pineau ou un floc d’un vin doux naturel ?","opts":["L’alcool ajouté : eau-de-vie du terroir contre alcool vinique neutre","Le cépage : le vin doux naturel est toujours un muscat","La couleur : le vin de liqueur est toujours blanc","Le titre : le vin doux naturel ne dépasse jamais 15 % vol."],"good":0,"expl":"Le rasteau est un vin doux naturel de grenache, le pineau comme le floc existent en rosé, et un vin doux naturel titre au moins 15 % vol. : ni le cépage, ni la couleur, ni le degré ne tranchent. Seul le choix de l’alcool de mutage trace la ligne."},
+    exos: [{"type":"matching","prompt":"Associe chaque vin à l’alcool avec lequel on le mute.","payload":{"pairs":[["Pineau des Charentes","Eau-de-vie de cognac"],["Floc de Gascogne","Armagnac"],["Macvin du Jura","Marc du Jura"],["Muscat de Beaumes-de-Venise","Alcool vinique neutre"]]},"explanation":"Trois vins de liqueur suivent leur eau-de-vie de pays ; le vin doux naturel fait exception, avec un alcool volontairement sans origine particulière."},{"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le floc de Gascogne est un vin de liqueur produit dans la région du cognac, en Charentes.","answer":false},"explanation":"Il vient de Gascogne, dans l’aire de l’armagnac, et c’est ce voisinage qui explique son alcool de mutage. Le piège tient à sa parenté de méthode avec le pineau, son cousin charentais."},{"type":"short_answer","prompt":"Quel alcool ajoute-t-on au moût pour faire un vin doux naturel ?","payload":{"accepted":["alcool vinique","alcool vinique neutre","alcool neutre","un alcool vinique neutre","alcool vinique neutre à 96 %","alcool neutre d’origine viticole","alcool d’origine viticole"]},"explanation":"Ce qui compte, c’est qu’il soit neutre : il arrête la fermentation sans rien apporter au goût, à l’inverse d’une eau-de-vie de terroir."}],
+    schema: null,
+    cours: null,
+    status: "needs_review",
+    to_check: ["Floc de Gascogne (mutage à l’armagnac, blanc ou rosé, 16 à 18 % vol.) : INAO (fiche produit), projet de cahier des charges 2026 et Guide Hachette concordants, mais cahier des charges homologué (décret n° 2011-1620 du 23 novembre 2011) non lu, Légifrance et BO bloqués : à relire avant de passer la fiche en verified"],
+    selon_livre: ["Le site du floc évoque aussi des flocs « rouges » ; INAO, projet de cahier des charges et Hachette ne citent que blanc et rosé : écarté.","Aire et cépages du floc : lus dans le seul projet de 2026 ; non repris."],
+    src: "INAO, fiche produit Floc de Gascogne ; INAO, projet de cahier des charges Floc de Gascogne (2026) ; Floc de Gascogne (site officiel), histoire ; Guide Hachette des vins, appellation Floc-de-gascogne ; règlement (UE) 1308/2013, annexe VII partie II (texte d’origine, legislation.gov.uk, et reproduction FranceAgriMer) ; OIV, définition du vin de liqueur ; INAO, fiche produit Pineau des Charentes ; BO-agri, cahier des charges Pineau des Charentes (2024-2025) ; fiches 235, 443 et 493 du site (cahiers des charges Rivesaltes, Banyuls, Muscat de Beaumes-de-Venise et Macvin du Jura)"
+  }
+);

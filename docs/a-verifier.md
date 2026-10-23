@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-570 fiches : 344 vérifiées, 226 à vérifier (353 points).
-Hors dette : 1163 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+575 fiches : 348 vérifiées, 227 à vérifier (354 points).
+Hors dette : 1175 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (2e toutes catégories derrière le kyoho, données OIV 2015) : une seule source primaire, reprise par Vitisphere ; JancisRobinson (Anderson et Nelgen, 2016) le classe aussi 1er cépage de cuve, sur une autre base
@@ -808,3 +808,6 @@ Hors dette : 1163 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 567** (p.325) — Sel, acidité, piment, gras, amertume : ce que le plat fait au vin
 - [ ] Sel qui adoucit le vin (moins d’astringence, d’amertume et d’acidité) : ⚠️ divergence : WSET dans ce sens, Zoecklein (Virginia Tech) observe que le sel peut accentuer les tanins rugueux des rouges et l’acidité perçue des blancs ; non tranché
+
+**Fiche 575** (p.?) — Floc de Gascogne, macvin et vins de liqueur : ce qui les sépare des vins doux naturels
+- [ ] Floc de Gascogne (mutage à l’armagnac, blanc ou rosé, 16 à 18 % vol.) : INAO (fiche produit), projet de cahier des charges 2026 et Guide Hachette concordants, mais cahier des charges homologué (décret n° 2011-1620 du 23 novembre 2011) non lu, Légifrance et BO bloqués : à relire avant de passer la fiche en verified
