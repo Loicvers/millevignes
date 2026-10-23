@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-591 fiches : 368 vérifiées, 223 à vérifier (336 points).
+591 fiches : 371 vérifiées, 220 à vérifier (327 points).
 Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
@@ -524,40 +524,32 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Starkenmann et al. (2016) (⚠️) : seul le résumé a été lu ; les polysulfanes « peuvent contribuer » à l’odeur minérale, seuils et dosages non vérifiés ; deux chasselas sur 80 bouteilles jugés par 62 professionnels, aucun chiffre repris en question ; Oxford Companion (5e éd., 2023, entrées « flint » et « minerality ») : relie l’odeur de silex frappé à des polysulfanes issus d’impuretés du silex (« flint ») et rappelle que Tominaga et al. ont identifié le benzèneméthanethiol (benzylmercaptan), qui donnerait aux sauvignons une note silex ou fumée (« minerality »), sans citer Starkenmann ni le disulfane d’hydrogène dans le vin
 
 **Fiche 295** (p.292) — Bouteille anglaise : champagne et « new French claret »
-- [ ] Ensemble de la fiche (⚠️) : récit du livre (marchands anglais, sucre de canne, prise de mousse en bouteille, reprise par les Champenois, soufre hollandais, new French claret), en partie recoupé par The Conversation (verre au charbon, liège, sucre ajouté en Angleterre décrit par Merret en 1662, déjà traité dans la fiche 237), qui ne dit pas que les marchands embouteillaient eux-mêmes et ne parle pas de sucre de canne ; reste à vérifier chez Pitte (2013) ou dans un ouvrage sur l’histoire du Champagne et du bordeaux.
+- [ ] Ensemble de la fiche (⚠️) : récit du livre (marchands anglais, sucre de canne, prise de mousse en bouteille, reprise par les Champenois, soufre hollandais, new French claret), en partie recoupé par The Conversation (verre au charbon, liège, sucre ajouté en Angleterre décrit par Merret en 1662, déjà traité dans la fiche 237), qui ne dit pas que les marchands embouteillaient eux-mêmes et ne parle pas de sucre de canne ; reste à vérifier chez Pitte (2013) ou dans un ouvrage sur l’histoire du Champagne et du bordeaux ; Oxford Companion (5e éd., 2023, entrée « glass, history of ») : les bouteilles anglaises plus solides (fours à charbon dès 1615) ont rendu possible le pétillement voulu, probablement apprécié d’abord à Londres ; liège, mèches de soufre hollandaises (entrée « Dutch wine trade ») et « new French clarets » du Médoc (entrée « claret ») sont confirmés ; en revanche, l’embouteillage pour la vente par les marchands anglais et le sucre de canne n’y sont pas mentionnés.
 
 **Fiche 296** (p.293) — Bordelaise, bourguignonne, champenoise : trois formes, trois logiques
 - [ ] Fiche entière (⚠️) : lecture de Pitte (2013) rapportée par le livre (épaule carrée contre dépôt, décantation fait culturel) ; aucune source indépendante lue, la fiche l’attribue à Pitte et au livre.
 - [ ] Épaules carrées et dépôt, thèse culturelle de Pitte : une seule lecture (le livre) ; tout le cours reste attribué à Pitte et au livre.
 
 **Fiche 298** (p.294) — Le poids du verre dans le bilan carbone
-- [ ] 68 % (⚠️) : le livre ne précise pas qu’il s’agit de verre + transport selon des études australiennes (une seule source, JancisRobinson.com / R. Smart) ; les bilans français ont été rapprochés de plusieurs sources (Réussir Vigne, Adelphe, IFV), de niveaux variables.
 - [ ] Allègement de la Champagne à 835 g (⚠️) : seulement de la presse (Drinks International, Wine Industry Advisor) ; aucune source du CIVC lue ; date indiquée de façon divergente (2010 ou 2016), donc omise. « Des milliers de tonnes de verre » : non retrouvé.
 
-**Fiche 305** (p.298) — Colmaté, aggloméré, technique : les bouchons de liège reconstitués
-- [ ] Typologie colmaté / multipièces / aggloméré (⚠️) : définitions et usages donnés par le livre, non recoupés par une source lue.
-- [ ] Procédé Diam au CO2 supercritique (⚠️) : documents du fabricant et presse technique (niveau 2b), sans étude indépendante lue ; le nombre de molécules extraites avancé par le fabricant n’est pas repris.
-
 **Fiche 306** (p.298) — Bouchons synthétiques et bouchon de verre : les alternatives au liège
-- [ ] Défauts du plastique (⚠️) : durcissement, goût et coût écologique tirés du livre seul, sans source indépendante lue.
+- [ ] Défauts du plastique (⚠️) : durcissement, goût et coût écologique tirés du livre seul, sans source indépendante lue ; Oxford Companion (5e éd., 2023, entrée « closures ») : les synthétiques séduisent par leur coût et leur fiabilité mais ne sont pas biodégradables et peuvent absorber des composés aromatiques du vin ; le durcissement des polymères et la migration de molécules ne sont pas évoqués.
 
 **Fiche 309** (p.300) — Du rectangle manuscrit à l’étiquette lithographiée
-- [ ] Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre.
+- [ ] Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre ; Oxford Companion (5e éd., 2023, entrée « labels ») : étiquettes papier d’abord manuscrites puis imprimées dès les premières années du XIXe siècle, mais généralisation de l’étiquette de vin seulement vers 1860 grâce aux colles assez fortes (entrée aussi « bottles ») ; lithographie et Senefelder non mentionnés, donc l’essor des années 1820 n’est pas confirmé.
 
 **Fiche 312** (p.302) — Mouton Rothschild : l’étiquette d’artiste
-- [ ] Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale.
+- [ ] Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale ; Oxford Companion (5e éd., 2023, entrée « artists’ labels ») : l’Oxford retient 1945 : étiquette de Carlu pour le millésime 1924, puis coutume annuelle instaurée à partir du millésime 1945 par le baron Philippe de Rothschild (entrée aussi « Mouton Rothschild, Château »), sans mention de 1946.
 
 **Fiche 314** (p.305) — Le vin, un bien social : on le boit par choix
 - [ ] Trois voies de transmission, formule de Roger Dion et caractère « hyperculturalisé » du vin (⚠️) : rapportés d’après le livre ; seul le compte rendu de Ferlan confirme la thèse générale de Lecoutre (boire façonné par des processus culturels, médicaux et moraux, distinction par la boisson).
 
 **Fiche 315** (p.306) — Dionysos : le vin comme passage à la vie cultivée
-- [ ] Mythe de Dionysos, lecture cuvaison/taille, thèse de Boulay et de Daraki (⚠️) : rapportés d’après le livre ; aucune source indépendante lue (Boulay 2015, Euripide, Otto, Vernant non consultés).
-
-**Fiche 316** (p.307) — Température de service : plages et refroidissement rapide
-- [ ] Seau à moitié d’eau et de glace, bouteille immergée environ 30 minutes (⚠️) : durée donnée par le seul Comité Champagne ; l’académie de Versailles confirme seulement que le seau est le moyen le plus efficace.
+- [ ] Mythe de Dionysos, lecture cuvaison/taille, thèse de Boulay et de Daraki (⚠️) : rapportés d’après le livre ; aucune source indépendante lue (Boulay 2015, Euripide, Otto, Vernant non consultés) ; Oxford Companion (5e éd., 2023, entrée « Dionysus ») : l’Oxford confirme un Dionysos dieu du vin à la fois bienfaiteur et dangereux pour l’ordre établi (Les Bacchantes d’Euripide), mais ne reprend ni le mythe de Sémélé et du démembrement, ni la lecture cuvaison/taille, ni les thèses de Boulay et de Daraki.
 
 **Fiche 318** (p.310) — Le symposion grec : boire ensemble, vin coupé d’eau
-- [ ] Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté).
+- [ ] Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté) ; Oxford Companion (5e éd., 2023, entrée « symposium ») : l’Oxford confirme le vin bu après le repas et coupé d’eau, le cratère, le symposiarque qui détermine la dilution et règle la boisson, et le tamada du supra géorgien (entrée « Georgia ») ; péliké, hydrie, psykter et le fait que le symposiarque soit à jeun ne sont pas mentionnés.
 
 **Fiche 319** (p.311) — Vin et christianisme : eucharistie et 380/392
 - [ ] Séquence 391-392 des interdictions des cultes païens (⚠️) : Larousse seul pour le détail ; 380 pour l’édit de Thessalonique confirmé par Larousse et Universalis.
@@ -566,7 +558,7 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Théorie des humeurs, quatre types de vin prescrits et vertus de la consommation quotidienne (⚠️) : rapportés d’après le livre ; aucune source indépendante lue.
 
 **Fiche 321** (p.311) — Fagon, bourgogne contre champagne
-- [ ] Fagon, d’Aquin, 1693-1694 et goutte du roi (⚠️) : une seule source (Union des Maisons de Champagne).
+- [ ] Fagon, d’Aquin, 1693-1694 et goutte du roi (⚠️) : une seule source (Union des Maisons de Champagne) ; Oxford Companion (5e éd., 2023, entrée « Burgundy ») : l’Oxford confirme que Fagon, médecin de Louis XIV, a prescrit du vieux bourgogne de préférence au champagne (entrée aussi « medicine, wine in »), sans mentionner d’Aquin, les dates 1693-1694 ni la goutte du roi.
 
 **Fiche 324** (p.314) — Santé publique en France : Haut Comité, loi Évin, repères
 - [ ] « Code du vin » de 1954 (⚠️) : non retrouvé ; seule la création du Haut Comité est étayée (une source, le rapport du Sénat de 1979).
@@ -575,7 +567,7 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Gastro-diplomatie de Fabius, 2014 (⚠️) : l’opération « Goût de France » est annoncée en août 2014 (Localtis, niveau 2b) ; le lien explicite avec les accords mets-vins n’est pas démontré par la source lue.
 
 **Fiche 330** (p.323) — Bourgogne, années 1920-1930 : des accords « éternels » fabriqués
-- [ ] Création politique des années 1920-1930 (⚠️ partiel) : appuyée par Jacquet (Cahiers de géographie du Québec, 2013, lu : foire de Dijon créée en 1921 par Gaston Gérard, Paulée de Meursault première « folklorisation », route des vins de Bourgogne en 1937, première de France) ; Laferté non lu ; la route allemande de 1935 n’est confirmée que par une source de niveau 2b.
+- [ ] Création politique des années 1920-1930 (⚠️ partiel) : appuyée par Jacquet (Cahiers de géographie du Québec, 2013, lu : foire de Dijon créée en 1921 par Gaston Gérard, Paulée de Meursault première « folklorisation », route des vins de Bourgogne en 1937, première de France) ; Laferté non lu ; la route allemande de 1935 n’est confirmée que par une source de niveau 2b ; Oxford Companion (5e éd., 2023, entrée « Pfalz ») : l’Oxford confirme la route allemande du vin (Palatinat) officiellement établie en 1935 pour relier 40 villages ; il ne dit rien de la Foire de Dijon, de la Paulée, de la route de Bourgogne de 1937 ni du caractère politique de ces créations.
 
 **Fiche 333** (p.327) — Principes d’accord : complémentarité, contraste, intensité
 - [ ] Classification de Centelles (⚠️) : source unique, le livre ; l’ouvrage de Centelles n’a pas été consulté.
@@ -660,22 +652,20 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Cinq critères de l’École du Vin et échelle à cinq niveaux, avec la typicité en plus de BLIC : ⚠️ grille propre à l’école, sans source indépendante qui la reprenne telle quelle ; la typicité est rangée par un site de formation (2b) parmi des caractéristiques secondaires au niveau Diploma ; Oxford Companion (5e éd., 2023, entrée « typicality ») : range la typicité parmi les dimensions intrinsèques de la qualité (Charters et Pettigrew) et la juge importante en dégustation de jugement, sans reprendre la grille en cinq critères de l’École du Vin
 
 **Fiche 385** (p.?) — Carte d’identité de la Bourgogne : étendue, sous-régions, couleurs
-- [ ] Libellés des cinq sous-régions (« Chablis et Grand Auxerrois », « Côte chalonnaise et Couchois ») : page BIVB bloquée aux robots ; le Châtillonnais, ajouté en relecture, n’est confirmé que par Bourgogne Tourisme, libellés repris de la consigne et seulement recoupés par le cahier des charges AOC Bourgogne (dénominations Couchois, Vézelay, Chitry).
+- [ ] Libellés des cinq sous-régions (« Chablis et Grand Auxerrois », « Côte chalonnaise et Couchois ») : page BIVB bloquée aux robots ; le Châtillonnais, ajouté en relecture, n’est confirmé que par Bourgogne Tourisme, libellés repris de la consigne et seulement recoupés par le cahier des charges AOC Bourgogne (dénominations Couchois, Vézelay, Chitry) ; Oxford Companion (5e éd., 2023, entrée « Burgundy ») : l’Oxford retient Chablis et les vins d’Auxerre, Côte de Nuits, Côte de Beaune, Côte chalonnaise et Mâconnais, avec Bourgogne Côtes du Couchois comme appellation, mais ne cite pas le Châtillonnais ni les libellés BIVB.
 
 **Fiche 386** (p.?) — La pyramide des appellations de Bourgogne : 84 AOC en quatre étages
 - [ ] Nombre total de climats classés en premier cru : décomptes divergents selon les sources (562, 585, 640) et chiffre en hausse (22 climats à Pouilly-Fuissé depuis 2020) ; décompte BIVB à jour non lisible. Aucun chiffre précis n’est donné dans la fiche.
 - [ ] Part de la production par étage : un seul décompte récent lu (régionales environ 52 %, villages environ 36 %, premiers crus environ 11 %, grands crus environ 1,4 %), source non officielle ; seul l’ordre de grandeur « moins de 2 % » pour les grands crus est repris (concordant avec l’atlas, sans source officielle).
 
 **Fiche 388** (p.?) — Les cépages de Bourgogne : place réglementaire du pinot noir, du chardonnay, de l’aligoté et du gamay
-- [ ] Irancy : plafond de 10 % pour césar et pinot gris ensemble lu dans une version de travail (v2.2, 2010) du cahier des charges, non la version homologuée ; la fiche dit seulement « un peu de césar » et le rôle du césar est confirmé par la page INAO.
-- [ ] Coteaux bourguignons : liste détaillée des cépages par couleur non lue au cahier des charges ; seul le principe (nom adopté en 2011 pour l’ancien Bourgogne Grand Ordinaire, cépages bourguignons seuls ou assemblés) est repris, recoupé par la fiche produit INAO et JancisRobinson.com.
+- [ ] Coteaux bourguignons : liste détaillée des cépages par couleur non lue au cahier des charges ; seul le principe (nom adopté en 2011 pour l’ancien Bourgogne Grand Ordinaire, cépages bourguignons seuls ou assemblés) est repris, recoupé par la fiche produit INAO et JancisRobinson.com. ; Oxford Companion (5e éd., 2023, entrée « Bourguignons, Coteaux ») : l’Oxford donne la liste des cépages (blancs : aligoté, chardonnay, melon de Bourgogne, pinot blanc, pinot gris ; rouges : gamay, pinot noir, et césar dans l’Yonne) et confirme qu’elle remplace le Bourgogne grand ordinaire, mais date l’appellation de 2013 ; écart de l’Oxford avec la fiche produit INAO (nom actuel depuis 2011), possiblement lié à une version ultérieure du texte : la date de l’INAO fait foi.
 
 **Fiche 389** (p.?) — Domaines et négoce en Bourgogne : un vignoble en miettes
-- [ ] Rôle de la Révolution et du Code civil dans le morcellement : l’atlas affirme que les successions napoléoniennes ont accéléré le morcellement, mais aucune source lue ne le confirme pour la Bourgogne. L’UNESCO, au contraire, date le parcellage très fin du Moyen Âge et des XVIe-XVIIIe siècles ; la fiche écrit donc « déjà très fin dès le Moyen Âge » et ne cite pas le Code civil.
+- [ ] Rôle de la Révolution et du Code civil dans le morcellement : l’atlas affirme que les successions napoléoniennes ont accéléré le morcellement, mais aucune source lue ne le confirme pour la Bourgogne. L’UNESCO, au contraire, date le parcellage très fin du Moyen Âge et des XVIe-XVIIIe siècles ; la fiche écrit donc « déjà très fin dès le Moyen Âge » et ne cite pas le Code civil. ; Oxford Companion (5e éd., 2023, entrée « Burgundy ») : l’Oxford rejoint l’atlas : les vignes, presque toutes à l’Église ou à la noblesse jusqu’à la Révolution, sont vendues à partir de 1791, souvent à plusieurs acquéreurs, puis divisées encore par le partage égal des successions du Code napoléonien ; il ne dit rien d’un parcellaire déjà très fin au Moyen Âge, si bien que la divergence avec l’UNESCO reste ouverte (deux sources pour la Révolution et le Code, une pour le morcellement médiéval).
 
 **Fiche 390** (p.?) — Le crémant de Bourgogne : AOC, méthode, cépages et mentions Éminent
 - [ ] Éminent (au moins 24 mois sur lies) et Grand Éminent (au moins 36 mois, pinot noir et chardonnay seulement, dosage inférieur à 15 g/L) : source de niveau 1 non lue ; confirmé seulement par Decanter (2016), Drinks International et un producteur ; ces mentions viennent du syndicat des producteurs (UPECB) et ne figurent pas dans le cahier des charges de 2021 lu en relecture, d’où le ton « décrites par la presse ». Savoir si ces mentions figurent au cahier des charges.
-- [ ] Plafond du gamay : 20 % dans le cahier des charges 2018 et dans deux autres sources, mais 30 % dans une version publiée le 16/12/2021 ; la fiche ne donne pas le chiffre. Relecture : la version homologuée par l’arrêté du 02/12/2021 donne bien « inférieure ou égale à 30 % » ; reste à vérifier qu’aucune version postérieure n’existe.
 - [ ] Précision du socle de 30 % : pinot noir et chardonnay seuls, ou aussi pinot blanc et pinot gris selon les textes ; la fiche reste vague sur la liste exacte.
 
 **Fiche 398** (p.?) — Les Hospices de Beaune, les Trois Glorieuses et la Saint-Vincent tournante
@@ -683,53 +673,52 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Organisateur de la vente : Sotheby’s depuis la 161e vente (2021) pour « au moins cinq ans » (Wine Business International) ; confirmé pour 2025 (Beaune Tourisme, mesinfos.fr) et annoncé pour la 166e vente du 15 novembre 2026 (onivapp.com, d’après les Hospices) ; à revérifier à chaque édition.
 
 **Fiche 399** (p.?) — Côte chalonnaise : Bouzeron, Rully, Mercurey, Givry, Montagny et les Bourgogne régionaux
-- [ ] Couleurs de Bourgogne Côtes du Couchois : « rouge » seul dans le cahier des charges du Bourgogne homologué (arrêté du 11/12/2023), mais « blancs, rouges » dans le projet de modification de juin 2026 (non homologué) ; la fiche INAO du Couchois évoque rouge, blanc et plus rarement rosé. À reconfirmer après homologation.
+- [ ] Couleurs de Bourgogne Côtes du Couchois : « rouge » seul dans le cahier des charges du Bourgogne homologué (arrêté du 11/12/2023), mais « blancs, rouges » dans le projet de modification de juin 2026 (non homologué) ; la fiche INAO du Couchois évoque rouge, blanc et plus rarement rosé. À reconfirmer après homologation ; Oxford Companion (5e éd., 2023, entrée « Couchois, Bourgogne, Côtes du ») : l’Oxford décrit l’appellation (créée en 2000) comme réservée aux rouges de pinot noir, ce qui appuie le camp « rouge seul » du cahier homologué, sans mentionner blanc ni rosé.
 
 **Fiche 401** (p.?) — Pouilly-Fuissé, Pouilly-Loché et Pouilly-Vinzelles : roches de Solutré et Vergisson, premiers crus de 2020
 - [ ] 4 premiers crus à Pouilly-Loché (1) et Pouilly-Vinzelles (3) dès le millésime 2024 : trois articles de presse (Decanter, The Drinks Business, iDealwine) concordent, mais le texte officiel (arrêté, BO-agri) n’a pu être lu (fichier illisible) et la date de reconnaissance n’est pas confirmée au niveau INAO. Relecture : le projet de cahier des charges Pouilly-Vinzelles (INAO, avis du comité national du 06/02/2024) liste bien Les Longeays, Les Pétaux et Les Quarts, mais reste un projet.
 
 **Fiche 402** (p.?) — La France viticole : trois climats et une pyramide d’appellations
-- [ ] Répartition AOP / IGP / sans IG en 2024 (404 300 / 200 300 / 38 700 ha) : une seule source de niveau 1 lue (FranceAgriMer, fiche filière 2026), parts en pourcentage lues sur graphiques ⚠️
-- [ ] Surface du vignoble français : entre 740 000 ha (OIV 2025, relayé par Vinetur) et 792 000 ha (OIV 2023, chiffre provisoire) ; FranceAgriMer donne 783 000 ha sans année ⚠️
-- [ ] Trois grands climats (océanique, continental, méditerranéen) et rattachement du Rhône Sud, du Languedoc-Roussillon et de la Provence au méditerranéen : classification courante, non recoupée sur une source de niveau 1 ⚠️
+- [ ] Répartition AOP / IGP / sans IG en 2024 (404 300 / 200 300 / 38 700 ha) : une seule source de niveau 1 lue (FranceAgriMer, fiche filière 2026), parts en pourcentage lues sur graphiques ⚠️ ; Oxford Companion (5e éd., 2023, entrée « France ») : l’Oxford donne environ 58 % d’AOC (2018) et 34 % d’IGP, le reste en eaux-de-vie ou vin de France, parts différentes des chiffres de 2024 sans que cela invalide l’un ou l’autre (années et bases de calcul distinctes).
+- [ ] Surface du vignoble français : entre 740 000 ha (OIV 2025, relayé par Vinetur) et 792 000 ha (OIV 2023, chiffre provisoire) ; FranceAgriMer donne 783 000 ha sans année ⚠️ ; Oxford Companion (5e éd., 2023, entrée « France ») : l’Oxford indique un peu moins de 800 000 ha (avec raisins de table et à eaux-de-vie) depuis les années 2010, plutôt stables, ce qui se rapproche de 783 000 et 792 000 ha mais pas de 740 000 ha.
+- [ ] Trois grands climats (océanique, continental, méditerranéen) et rattachement du Rhône Sud, du Languedoc-Roussillon et de la Provence au méditerranéen : classification courante, non recoupée sur une source de niveau 1 ⚠️ ; Oxford Companion (5e éd., 2023, entrée « France ») : l’Oxford distingue un sud méditerranéen, un ouest tempéré par l’Atlantique et un est continental ; Languedoc (« définitivement méditerranéen ») et Provence (« la plus méditerranéenne de France ») sont confirmés, le Rhône Sud n’est pas rattaché explicitement.
 
 **Fiche 403** (p.?) — La Champagne : quatre grands secteurs, trois cépages et des crus classés par village
-- [ ] Premiers crus : 42 communes autorisées à la seule mention « premier cru » (liste du cahier des charges, soit 59 communes avec mention de cru en comptant les 17 grands crus) contre 44 premiers crus (livre, DRAAF) : divergence non tranchée ; le chiffre de 44 n’est pas retrouvé dans le texte actuel ⚠️
+- [ ] Premiers crus : 42 communes autorisées à la seule mention « premier cru » (liste du cahier des charges, soit 59 communes avec mention de cru en comptant les 17 grands crus) contre 44 premiers crus (livre, DRAAF) : divergence non tranchée ; le chiffre de 44 n’est pas retrouvé dans le texte actuel ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Champagne ») : l’Oxford donne 17 communes grands crus et 42 premiers crus (soit 59), ce qui appuie le chiffre de 42 contre celui de 44.
 
 **Fiche 405** (p.?) — L’Alsace : un vignoble de cépages, des grands crus de lieux-dits
-- [ ] Étendue du vignoble (environ 170 km, 1 à 20 km de large, 150 à 400 m, environ 15 600 ha) : 170 km (livre, Vins Vignes Vignerons) contre 180 km (Chambre d’agriculture) ; borne nord Marlenheim ou Wissembourg ; aucune donnée CIVA lue (site bloqué) ⚠️
-- [ ] Hiérarchie des AOC alsaciennes (alsace 1962, alsace grand cru, crémant-d’alsace ; 53 AOP) et date de l’AOC Alsace grand cru : 1974 (alsace-du-vin.com) contre décret du 20 novembre 1975 (Vins Vignes Vignerons) : à confirmer sur une source officielle ⚠️
+- [ ] Étendue du vignoble (environ 170 km, 1 à 20 km de large, 150 à 400 m, environ 15 600 ha) : 170 km (livre, Vins Vignes Vignerons) contre 180 km (Chambre d’agriculture) ; borne nord Marlenheim ou Wissembourg ; aucune donnée CIVA lue (site bloqué) ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Alsace ») : l’Oxford décrit une bande étroite de 100 km du nord au sud le long des Vosges, chiffre différent de 170 et 180 km (différences de périmètre possibles, non tranché).
+- [ ] Hiérarchie des AOC alsaciennes (alsace 1962, alsace grand cru, crémant-d’alsace ; 53 AOP) et date de l’AOC Alsace grand cru : 1974 (alsace-du-vin.com) contre décret du 20 novembre 1975 (Vins Vignes Vignerons) : à confirmer sur une source officielle ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Alsace ») : l’Oxford date l’AOC Alsace de 1962, l’Alsace grand cru de 1975 (51 lieux-dits après les extensions de 1983, 1992 et 2007) et le crémant d’Alsace de 1976, ce qui appuie 1975 contre 1974, sans citer le décret.
 
 **Fiche 406** (p.?) — Le Beaujolais : gamay, villages et dix crus
 - [ ] Dates de reconnaissance des crus autres que Régnié (Morgon, Fleurie, Chiroubles, Chénas, Moulin-à-Vent 1936 ; Brouilly, Côte de Brouilly, Juliénas 1938 ; Saint-Amour 1946) : INAO seul, seconde source non lue ⚠️ ; le livre dit « Moulin-à-Vent plus ancienne appellation » mais la base de cette ancienneté n’est pas établie, ne pas l’enseigner
-- [ ] Vinification : la macération semi-carbonique et les grappes entières sont dominantes selon Inter Beaujolais, mais ni vendange manuelle obligatoire ni grappes entières obligatoires ne sont lues dans les cahiers des charges consultés (qui encadrent la récolte mécanique) ⚠️
+- [ ] Vinification : la macération semi-carbonique et les grappes entières sont dominantes selon Inter Beaujolais, mais ni vendange manuelle obligatoire ni grappes entières obligatoires ne sont lues dans les cahiers des charges consultés (qui encadrent la récolte mécanique) ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Beaujolais ») : l’Oxford confirme la macération semi-carbonique de grappes entières comme technique caractéristique et affirme que toute la cueillette doit être manuelle (phrase placée après un passage sur Beaujolais-Villages et les crus) ; cette obligation ne figure pas dans les cahiers des charges lus, qui encadrent la récolte mécanique : écart de l’Oxford, possiblement daté ou décrivant l’usage plutôt que la règle, les cahiers des charges faisant foi.
 
 **Fiche 407** (p.?) — Le Jura : savagnin, vin jaune et vin de paille
-- [ ] Liste et poids des appellations (six AOC : Arbois, Château-Chalon, L’Étoile, Côtes du Jura, Crémant du Jura, Macvin du Jura ; environ 2 100 ha, base déclarations 2023) : un seul document de niveau 1 (infographie CIVJ) et une source 2b ; parts de cépages de l’infographie non reprises ⚠️
 - [ ] Arbois : nombre de communes, 12 dans la liste du cahier des charges et 13 dans sa description ⚠️
 - [ ] Château-Chalon : environ 55 ha (source unique) ; date de reconnaissance flottante (29 ou 31 mai 1936 dans le même projet de cahier des charges, 31 mai sur la fiche INAO) ⚠️
 
 **Fiche 409** (p.?) — Loire de l’Atlantique : Pays nantais et Anjou-Saumur
-- [ ] Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️
+- [ ] Crus communaux du muscadet : 7 en vigueur d’après le cahier des charges de 2019 (Clisson, Gorges, Le Pallet, Goulaine, Château-Thébaud, Monnières-Saint-Fiacre, Mouzillon-Tillières) ; 3 autres (Vallet, La Haie-Fouassière, Champtoceaux) en consultation INAO en 2025 et déjà présentés par InterLoire, reconnaissance définitive non établie ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Muscadet ») : l’Oxford rattache les crus communaux à une approbation de 2011 et en cite dix : Gorges, Clisson et Le Pallet d’abord, rejoints ensuite par les sept autres dont Vallet, La Haye-Fouassière et Champtoceaux ; écart de l’Oxford avec le cahier des charges de 2019 (sept crus) et la consultation INAO de 2025 sur les trois derniers, possiblement par anticipation : les textes officiels font foi, la reconnaissance des trois derniers reste à confirmer.
 - [ ] Rosé-de-loire « au moins 30 % de cabernets » (livre p. 201, guide de presse) : le cahier des charges de 2024 liste les cépages sans proportion minimale ⚠️
 
 **Fiche 412** (p.?) — Bordeaux rive droite et Entre-deux-Mers
 - [ ] Extensions des VIFA au Médoc, Haut-Médoc et Listrac-Médoc (décembre 2022, quatre rouges) puis à Margaux (juillet 2023, castets seul) : dates d’une seule source de presse ; le CIVB parle du castets « à l’essai » à Margaux ⚠️
 
 **Fiche 413** (p.?) — Les classements de Bordeaux aujourd’hui et la place
-- [ ] Crus bourgeois : trois niveaux depuis 2020 (249 châteaux : 14 exceptionnels, 56 supérieurs, 179 crus bourgeois), révision annoncée en février 2025 (170 : 14, 36, 120) ; presse seule, Alliance des crus bourgeois non lue ⚠️
-- [ ] Place de Bordeaux : circuit de distribution (courtiers, plus de 400 négociants) et vente en primeur au printemps suivant la récolte ; presse spécialisée seule, CIVB non lu ⚠️
+- [ ] Crus bourgeois : trois niveaux depuis 2020 (249 châteaux : 14 exceptionnels, 56 supérieurs, 179 crus bourgeois), révision annoncée en février 2025 (170 : 14, 36, 120) ; presse seule, Alliance des crus bourgeois non lue ⚠️ ; Oxford Companion (5e éd., 2023, entrée « cru bourgeois ») : l’Oxford confirme le classement par domaine de 2020, renouvelable tous les cinq ans après dégustation à l’aveugle de cinq millésimes, avec des niveaux Supérieur et Exceptionnel, mais ne donne aucun effectif.
+- [ ] Place de Bordeaux : circuit de distribution (courtiers, plus de 400 négociants) et vente en primeur au printemps suivant la récolte ; presse spécialisée seule, CIVB non lu ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Bordeaux trade ») : l’Oxford confirme le circuit producteurs, courtiers (77 en 2021) et négociants (La Place de Bordeaux) ainsi que le rôle des ventes en primeur, mais avance environ 300 négociants, et non plus de 400, sans préciser le calendrier de la vente.
 
 **Fiche 417** (p.?) — Languedoc : une pyramide d’appellations encore en mouvement
-- [ ] Surface du vignoble languedocien : 236 000 ha exploités (bassin Languedoc-Roussillon, AD’OCC d’après Agriscope 2018) à 263 000 ha (Occitanie entière) ; Pays d’Oc 2022 parle de 240 000 ha ; aucun chiffre récent de niveau 1 ⚠️
-- [ ] Pyramide et liste des communales : CIVL 2022-2023 (Boutenac, Faugères, Fitou, La Clape, La Livinière), CIVL 2024 (Boutenac, Faugères, La Clape, La Livinière, Montpeyroux, Fitou absent), INAO février 2026 (Montpeyroux approuvé, décret et accord de la Commission européenne à formaliser, relayé par Decanter) ; cahier des charges Languedoc non lu (extranet INAO bloqué) ⚠️
-- [ ] IGP Pays d’Oc : 120 000 ha, environ 6,8 Mhl en 2022, première IGP française et première à l’export : chiffres de l’organisme de défense lui-même, sans recoupement indépendant ⚠️
+- [ ] Surface du vignoble languedocien : 236 000 ha exploités (bassin Languedoc-Roussillon, AD’OCC d’après Agriscope 2018) à 263 000 ha (Occitanie entière) ; Pays d’Oc 2022 parle de 240 000 ha ; aucun chiffre récent de niveau 1 ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Languedoc ») : l’Oxford cite 241 537 ha (Languedoc et Roussillon, tournant du siècle), dans la fourchette indiquée, et un chiffre très inférieur pour 2018 (62 900 ha) qu’il ne recoupe pas avec les autres sources.
+- [ ] Pyramide et liste des communales : CIVL 2022-2023 (Boutenac, Faugères, Fitou, La Clape, La Livinière), CIVL 2024 (Boutenac, Faugères, La Clape, La Livinière, Montpeyroux, Fitou absent), INAO février 2026 (Montpeyroux approuvé, décret et accord de la Commission européenne à formaliser, relayé par Decanter) ; cahier des charges Languedoc non lu (extranet INAO bloqué) ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Languedoc AOC ») : l’Oxford décrit l’AOC Languedoc de 2007 avec ses dénominations complémentaires (dont Montpeyroux, Pézenas, Cabrières), sans reprendre la liste CIVL des communales ni l’approbation de Montpeyroux en 2026.
+- [ ] IGP Pays d’Oc : 120 000 ha, environ 6,8 Mhl en 2022, première IGP française et première à l’export : chiffres de l’organisme de défense lui-même, sans recoupement indépendant ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Languedoc ») : l’Oxford confirme que le Languedoc fournit près de 60 % de l’IGP française de niveau intermédiaire, souvent étiquetée Pays d’Oc, sans reprendre les 120 000 ha, les 6,8 Mhl ni le classement de première IGP.
 
 **Fiche 419** (p.?) — Provence : la région du rosé
 - [ ] Part de la Provence dans les rosés du monde : environ 5 % d’après le CIVP (chiffres clés 2024), mais non repris dans le bilan 2025 ; le livre dit 6 % ⚠️
 
 **Fiche 420** (p.?) — Corse : niellucciu, sciaccarellu et vermentino
-- [ ] Niellucciu et sangiovese : le livre le présente comme « parent du sangiovese » ; la littérature le décrit plutôt comme génétiquement identique. Aucune source lue (VIVC en maintenance) ne tranche, donc la parenté n’est pas reprise dans la fiche ⚠️
+- [ ] Niellucciu et sangiovese : le livre le présente comme « parent du sangiovese » ; la littérature le décrit plutôt comme génétiquement identique. Aucune source lue (VIVC en maintenance) ne tranche, donc la parenté n’est pas reprise dans la fiche ⚠️ ; Oxford Companion (5e éd., 2023, entrée « Niellucciu ») : l’Oxford présente le niellucciu comme le nom corse du sangiovese, sans parler de parenté : il appuie la lecture « identique » plutôt que « parent du ».
 
 **Fiche 424** (p.?) — Les crus bourgeois du Médoc : un classement qui se rejoue
 - [ ] Aucune source de niveau 1 : l’Alliance des crus bourgeois (crus-bourgeois.com) bloque les robots. Les chiffres de 2025 (170 : 14 / 36 / 120) concordent dans six sources de presse (Decanter, Jane Anson, Drinks Business, Vert de Vin, Wine Industry Advisor, Meininger), à confirmer sur le texte officiel ⚠️
@@ -739,10 +728,7 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Graves supérieures : suppression de l’appellation en 2025 (modification AM05 notifiée à l’UE le 30/09/2025, arrêté du 19 septembre 2025) ✅ ; le nom reste utilisable sur l’étiquette des blancs avec sucres résiduels « jusqu’à la récolte 2028 », d’après le seul cahier des charges homologué (BO-agri), sans seconde source ⚠️
 
 **Fiche 426** (p.?) — Pessac-Léognan et le classement des Graves : 16 châteaux
-- [ ] Chronologie du classement des Graves : le cahier des charges de Pessac-Léognan (INAO) ne cite que 1959 ; Wine Cellar Insider parle d’une liste non officielle du 7 août 1953, finalisée le 16 février 1959 ; FRW et BBR d’un projet de 1953, ratifié en 1958 et modifié en 1959 ; aucun arrêté lu ⚠️
-
-**Fiche 431** (p.?) — Pomerol et les satellites : Lalande-de-Pomerol, Fronsac et les voisines de Saint-Émilion
-- [ ] Pomerol sans classement officiel : le cahier des charges est muet et aucun texte de niveau 1 ne l’affirme ; seules des sources 2b (Hachette Vins, vinsetmillesimes) et le livre le disent ⚠️
+- [ ] Chronologie du classement des Graves : le cahier des charges de Pessac-Léognan (INAO) ne cite que 1959 ; Wine Cellar Insider parle d’une liste non officielle du 7 août 1953, finalisée le 16 février 1959 ; FRW et BBR d’un projet de 1953, ratifié en 1958 et modifié en 1959 ; aucun arrêté lu ⚠️ ; Oxford Companion (5e éd., 2023, entrée « classification ») : l’Oxford confirme une liste unique de 1953 légèrement augmentée en 1959, en ordre alphabétique (entrée aussi « Pessac-Léognan », qui parle du classement de 1959), sans mention d’une ratification de 1958 ni d’arrêté.
 
 **Fiche 515** (p.41) — Densité de plantation et rendement : ce que fixent les AOC
 - [ ] Cahiers des charges lus par résumé automatique des PDF (WebFetch), pas en texte intégral : ⚠️ valeurs à relire avant diffusion
@@ -765,18 +751,17 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Liage avant la floraison en Champagne : ⚠️ règle rangée sous la taille Guyot asymétrique dans l’arrêté de 2022
 
 **Fiche 528** (p.?) — Les portos tawny, blancs et rosés
-- [ ] Indications d’âge : ⚠️ divergence non tranchée : l’IVDP cite 10, 20, 30 et 40 ans (« plus de 40 » selon la réglementation reprise par For the Love of Port), le WSET signale une catégorie « 50 ans » approuvée en 2022 ; chiffre de 40 ans non testé
-- [ ] Durée en bois du reserve tawny : ⚠️ six ans selon le WSET, sept ans selon la réglementation reprise par For the Love of Port et un document ancien de l’IVDP ; non repris dans la fiche
-- [ ] Rosé : ⚠️ aucune source de niveau 1 lue (la page IVDP des catégories spéciales n’en parle pas) ; style récent et macération brève confirmés par Wines of Portugal et le WSET ; invention par Croft non reprise (WSET seul)
+- [ ] Indications d’âge : ⚠️ divergence non tranchée : l’IVDP cite 10, 20, 30 et 40 ans (« plus de 40 » selon la réglementation reprise par For the Love of Port), le WSET signale une catégorie « 50 ans » approuvée en 2022 ; chiffre de 40 ans non testé ; Oxford Companion (5e éd., 2023, entrée « port ») : l’Oxford cite les mentions 10, 20, 30, 40 et 50 ans, présentées comme approximatives et validées par dégustation de l’IVDP, ce qui appuie l’existence de la catégorie 50 ans.
+- [ ] Durée en bois du reserve tawny : ⚠️ six ans selon le WSET, sept ans selon la réglementation reprise par For the Love of Port et un document ancien de l’IVDP ; non repris dans la fiche ; Oxford Companion (5e éd., 2023, entrée « port ») : l’Oxford précise que les tawnies vieillis passent six ans ou plus en fût, et que Tawny Reserve vise au moins sept ans, ce qui appuie sept ans pour le reserve tawny.
 
 **Fiche 565** (p.?) — L’Afrique du Sud fraîche et le Cap Classique : Elgin, Walker Bay et les bulles
 - [ ] Temps minimal sur lies du Cap Classique, non repris : ⚠️ 12 mois dès la vendange 2023 selon la proposition de la CCPA publiée par SAWIS (2021), l’association, The Buyer et Wine with Seth, mais « depuis 2021 » selon Decanter ; 36 mois proposés pour la classe à élevage prolongé ; texte adopté (Regulations, Table 2, items 17A et 17B) non lu, le bulletin SAWIS 2025 ne donne pas les durées ; 9 mois dans le WSET D4 (2020), dépassé
 
 **Fiche 567** (p.325) — Sel, acidité, piment, gras, amertume : ce que le plat fait au vin
-- [ ] Sel qui adoucit le vin (moins d’astringence, d’amertume et d’acidité) : ⚠️ divergence : WSET dans ce sens, Zoecklein (Virginia Tech) observe que le sel peut accentuer les tanins rugueux des rouges et l’acidité perçue des blancs ; non tranché
+- [ ] Sel qui adoucit le vin (moins d’astringence, d’amertume et d’acidité) : ⚠️ divergence : WSET dans ce sens, Zoecklein (Virginia Tech) observe que le sel peut accentuer les tanins rugueux des rouges et l’acidité perçue des blancs ; non tranché ; Oxford Companion (5e éd., 2023, entrée « food-and-wine matching ») : l’Oxford affirme que le sel atténue l’impact de l’acidité, ce qui rejoint la position WSET sur l’acidité, sans se prononcer sur l’astringence ni l’amertume et sans citer Zoecklein ; la divergence sur les tanins des rouges reste ouverte.
 
 **Fiche 575** (p.?) — Floc de Gascogne, macvin et vins de liqueur : ce qui les sépare des vins doux naturels
-- [ ] Floc de Gascogne (mutage à l’armagnac, blanc ou rosé, 16 à 18 % vol.) : INAO (fiche produit), projet de cahier des charges 2026 et Guide Hachette concordants, mais cahier des charges homologué (décret n° 2011-1620 du 23 novembre 2011) non lu, Légifrance et BO bloqués : à relire avant de passer la fiche en verified
+- [ ] Floc de Gascogne (mutage à l’armagnac, blanc ou rosé, 16 à 18 % vol.) : INAO (fiche produit), projet de cahier des charges 2026 et Guide Hachette concordants, mais cahier des charges homologué (décret n° 2011-1620 du 23 novembre 2011) non lu, Légifrance et BO bloqués : à relire avant de passer la fiche en verified ; Oxford Companion (5e éd., 2023, entrée « Floc de Gascogne ») : l’Oxford confirme l’AOC de 1990, le mutage par un armagnac jeune produit par la même entreprise et environ 17 % vol., et ajoute un élevage d’au moins neuf mois ; il parle toutefois d’un vin de liqueur « rouge et blanc » et non blanc ou rosé : écart de l’Oxford avec la fiche produit INAO et le projet de cahier des charges, possiblement de terminologie, qui ne remet pas en cause les textes officiels.
 
 **Fiche 577** (p.221) — Grappes entières : carbonique, semi-carbonique et vendange entière partielle, comparées à l’éraflée-foulée
 - [ ] Couleur et tanins : ⚠️ divergence : le WSET dit que la carbonique pure extrait de la couleur mais peu de tanin ; l’essai IFV Sicarex-Beaujolais (Réussir Vigne, 17 essais sur gamay) trouve, pour la vinification beaujolaise semi-carbonique comparée à l’éraflée, 33 mg/l d’anthocyanes en moins et 0,27 g/l de tanins en plus (rafles) ; méthodes voisines mais pas identiques, non tranché

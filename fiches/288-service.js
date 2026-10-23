@@ -64,9 +64,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Ensemble de la fiche (⚠️) : récit du livre (marchands anglais, sucre de canne, prise de mousse en bouteille, reprise par les Champenois, soufre hollandais, new French claret), en partie recoupé par The Conversation (verre au charbon, liège, sucre ajouté en Angleterre décrit par Merret en 1662, déjà traité dans la fiche 237), qui ne dit pas que les marchands embouteillaient eux-mêmes et ne parle pas de sucre de canne ; reste à vérifier chez Pitte (2013) ou dans un ouvrage sur l’histoire du Champagne et du bordeaux."],
+    to_check: ["Ensemble de la fiche (⚠️) : récit du livre (marchands anglais, sucre de canne, prise de mousse en bouteille, reprise par les Champenois, soufre hollandais, new French claret), en partie recoupé par The Conversation (verre au charbon, liège, sucre ajouté en Angleterre décrit par Merret en 1662, déjà traité dans la fiche 237), qui ne dit pas que les marchands embouteillaient eux-mêmes et ne parle pas de sucre de canne ; reste à vérifier chez Pitte (2013) ou dans un ouvrage sur l’histoire du Champagne et du bordeaux ; Oxford Companion (5e éd., 2023, entrée « glass, history of ») : les bouteilles anglaises plus solides (fours à charbon dès 1615) ont rendu possible le pétillement voulu, probablement apprécié d’abord à Londres ; liège, mèches de soufre hollandaises (entrée « Dutch wine trade ») et « new French clarets » du Médoc (entrée « claret ») sont confirmés ; en revanche, l’embouteillage pour la vente par les marchands anglais et le sucre de canne n’y sont pas mentionnés."],
     selon_livre: ["Date de l’autorisation de vendre en bouteilles en France et chiffres de production champenoise : non repris (non confirmés)."],
-    src: "Mille Vignes, P. Lepeltier, p. 292 ; The Conversation, Champagne is deeply French but the English invented the bubbles.",
+    src: "Mille Vignes, P. Lepeltier, p. 292 ; The Conversation, Champagne is deeply French but the English invented the bubbles. ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 292
   },
   {
@@ -132,9 +132,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["68 % (⚠️) : le livre ne précise pas qu’il s’agit de verre + transport selon des études australiennes (une seule source, JancisRobinson.com / R. Smart) ; les bilans français ont été rapprochés de plusieurs sources (Réussir Vigne, Adelphe, IFV), de niveaux variables.","Allègement de la Champagne à 835 g (⚠️) : seulement de la presse (Drinks International, Wine Industry Advisor) ; aucune source du CIVC lue ; date indiquée de façon divergente (2010 ou 2016), donc omise. « Des milliers de tonnes de verre » : non retrouvé."],
+    to_check: ["Allègement de la Champagne à 835 g (⚠️) : seulement de la presse (Drinks International, Wine Industry Advisor) ; aucune source du CIVC lue ; date indiquée de façon divergente (2010 ou 2016), donc omise. « Des milliers de tonnes de verre » : non retrouvé."],
     selon_livre: ["Poids moyen de la bouteille, 500 g / plus de 800 g (⚠️) : presse (Decanter) et AWRI, sans source normative."],
-    src: "Mille Vignes, P. Lepeltier, p. 293-294 ; JancisRobinson.com, « Carbon footprints, wine and the consumer » ; Réussir Vigne, « La neutralité carbone d’ici 2050 » ; Adelphe, communiqué Wine Pilot (2024) ; IFV (Adoir, Luzi et al.), OIV 2024 ; Decanter, « Wine bottles: a heavy price » ; AWRI, « Alternative packaging » ; Drinks International, « CIVC unveils lighter bottle » (2010).",
+    src: "Mille Vignes, P. Lepeltier, p. 293-294 ; JancisRobinson.com, « Carbon footprints, wine and the consumer » ; Réussir Vigne, « La neutralité carbone d’ici 2050 » ; Adelphe, communiqué Wine Pilot (2024) ; IFV (Adoir, Luzi et al.), OIV 2024 ; Decanter, « Wine bottles: a heavy price » ; AWRI, « Alternative packaging » ; Drinks International, « CIVC unveils lighter bottle » (2010). ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 294
   },
   {
@@ -295,9 +295,9 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: ["Typologie colmaté / multipièces / aggloméré (⚠️) : définitions et usages donnés par le livre, non recoupés par une source lue.","Procédé Diam au CO2 supercritique (⚠️) : documents du fabricant et presse technique (niveau 2b), sans étude indépendante lue ; le nombre de molécules extraites avancé par le fabricant n’est pas repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 298 ; Diam, brochure Diamant Process (copie Hauserpack) ; Interempresas, Descorchar, recuperar la reputación perdida del corcho (2017) ; Harpers, Origine by Diam launched across Europe (2017) ; Réussir Vigne, Le bouchon technique biosourcé séduit les vignerons bio ou HVE (micro-aggloméré : farine de liège et liant)",
+    status: "verified",
+    to_check: [],
+    src: "Mille Vignes, P. Lepeltier, p. 298 ; Diam, brochure Diamant Process (copie Hauserpack) ; Interempresas, Descorchar, recuperar la reputación perdida del corcho (2017) ; Harpers, Origine by Diam launched across Europe (2017) ; Réussir Vigne, Le bouchon technique biosourcé séduit les vignerons bio ou HVE (micro-aggloméré : farine de liège et liant) ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 298
   },
   {
@@ -318,9 +318,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Défauts du plastique (⚠️) : durcissement, goût et coût écologique tirés du livre seul, sans source indépendante lue."],
+    to_check: ["Défauts du plastique (⚠️) : durcissement, goût et coût écologique tirés du livre seul, sans source indépendante lue ; Oxford Companion (5e éd., 2023, entrée « closures ») : les synthétiques séduisent par leur coût et leur fiabilité mais ne sont pas biodégradables et peuvent absorber des composés aromatiques du vin ; le durcissement des polymères et la migration de molécules ne sont pas évoqués."],
     selon_livre: ["Date du bouchon de verre (⚠️) : le livre dit 2003 ; Wine Spectator (2004) annonce la première commercialisation américaine pour mars 2004 ; 2003 pourrait désigner des essais ou un millésime.","Propriétés du verre (inerte, recyclable en partie, proche de la capsule) (⚠️) : affirmations du livre, fabricant non lu."],
-    src: "Mille Vignes, P. Lepeltier, p. 298 ; Wine Spectator, New Glass Wine Stopper Hopes to Oust Cork (2004) ; Decanter, Which cork is best?",
+    src: "Mille Vignes, P. Lepeltier, p. 298 ; Wine Spectator, New Glass Wine Stopper Hopes to Oust Cork (2004) ; Decanter, Which cork is best? ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 298
   },
   {
@@ -389,8 +389,8 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre."],
-    src: "Mille Vignes, P. Lepeltier, p. 300 et légende p. 303 ; Deutsches Patent- und Markenamt (DPMA), Senefelder, Grands inventeurs ; Napa Valley Wine Academy, évolution des étiquettes.",
+    to_check: ["Lithographie et étiquette de vin (⚠️) : l’invention par Senefelder (1796) vient d’une source officielle allemande (DPMA) et d’une source de niveau 2b ; le lien avec la naissance de l’étiquette de vin et l’essor des années 1820 repose sur le livre ; Oxford Companion (5e éd., 2023, entrée « labels ») : étiquettes papier d’abord manuscrites puis imprimées dès les premières années du XIXe siècle, mais généralisation de l’étiquette de vin seulement vers 1860 grâce aux colles assez fortes (entrée aussi « bottles ») ; lithographie et Senefelder non mentionnés, donc l’essor des années 1820 n’est pas confirmé."],
+    src: "Mille Vignes, P. Lepeltier, p. 300 et légende p. 303 ; Deutsches Patent- und Markenamt (DPMA), Senefelder, Grands inventeurs ; Napa Valley Wine Academy, évolution des étiquettes. ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 300
   },
   {
@@ -456,9 +456,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale."],
+    to_check: ["Début de la série annuelle (⚠️) : 1945 selon Decanter et le livre, 1946 selon le musée national de la Seconde Guerre mondiale ; Oxford Companion (5e éd., 2023, entrée « artists’ labels ») : l’Oxford retient 1945 : étiquette de Carlu pour le millésime 1924, puis coutume annuelle instaurée à partir du millésime 1945 par le baron Philippe de Rothschild (entrée aussi « Mouton Rothschild, Château »), sans mention de 1946."],
     selon_livre: ["Accueil hostile de l’étiquette de 1924 (⚠️) : rapporté par le livre seul.","Date précise du texte de 1973 (⚠️) : seule l’année est confirmée, par des sources 2a et 2b et par Spurrier et Dovaz (1992, p. 85-86) ; le Journal officiel n’a pas pu être lu."],
-    src: "Mille Vignes, P. Lepeltier, p. 302-303 ; Decanter, Mouton Rothschild labels ; Decanter, Jacques Chirac and the Mouton upgrade ; National WWII Museum, Mouton Rothschild and the 1945 Victory Vintage ; Château Mouton Rothschild, site officiel (art des étiquettes) ; Club oenologique, Mouton-Rothschild’s legendary labels and the forgotten artist ; The Drinks Business, The thirst for first (2019) ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 85-86",
+    src: "Mille Vignes, P. Lepeltier, p. 302-303 ; Decanter, Mouton Rothschild labels ; Decanter, Jacques Chirac and the Mouton upgrade ; National WWII Museum, Mouton Rothschild and the 1945 Victory Vintage ; Château Mouton Rothschild, site officiel (art des étiquettes) ; Club oenologique, Mouton-Rothschild’s legendary labels and the forgotten artist ; The Drinks Business, The thirst for first (2019) ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 85-86 ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 302
   },
   {
@@ -527,9 +527,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Mythe de Dionysos, lecture cuvaison/taille, thèse de Boulay et de Daraki (⚠️) : rapportés d’après le livre ; aucune source indépendante lue (Boulay 2015, Euripide, Otto, Vernant non consultés)."],
+    to_check: ["Mythe de Dionysos, lecture cuvaison/taille, thèse de Boulay et de Daraki (⚠️) : rapportés d’après le livre ; aucune source indépendante lue (Boulay 2015, Euripide, Otto, Vernant non consultés) ; Oxford Companion (5e éd., 2023, entrée « Dionysus ») : l’Oxford confirme un Dionysos dieu du vin à la fois bienfaiteur et dangereux pour l’ordre établi (Les Bacchantes d’Euripide), mais ne reprend ni le mythe de Sémélé et du démembrement, ni la lecture cuvaison/taille, ni les thèses de Boulay et de Daraki."],
     selon_livre: ["Rapprochements avec Osiris et le Christ (⚠️) : non repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 306 ; T. Boulay, « Dionysos, les cultes bachiques et les travaux viticoles » (2015), tel que cité par le livre (non lu)",
+    src: "Mille Vignes, P. Lepeltier, p. 306 ; T. Boulay, « Dionysos, les cultes bachiques et les travaux viticoles » (2015), tel que cité par le livre (non lu) ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 306
   },
   {
@@ -550,10 +550,10 @@ FICHES.push(
     ],
     schema: {"svg":"<svg viewBox=\"0 0 320 256\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" font-size=\"10\"><line x1=\"36\" y1=\"30\" x2=\"36\" y2=\"238\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><line x1=\"32\" y1=\"222\" x2=\"40\" y2=\"222\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"225\" text-anchor=\"end\" font-size=\"10\">6</text><line x1=\"32\" y1=\"190\" x2=\"40\" y2=\"190\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"193\" text-anchor=\"end\" font-size=\"10\">8</text><line x1=\"32\" y1=\"158\" x2=\"40\" y2=\"158\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"161\" text-anchor=\"end\" font-size=\"10\">10</text><line x1=\"32\" y1=\"126\" x2=\"40\" y2=\"126\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"129\" text-anchor=\"end\" font-size=\"10\">12</text><line x1=\"32\" y1=\"94\" x2=\"40\" y2=\"94\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"97\" text-anchor=\"end\" font-size=\"10\">14</text><line x1=\"32\" y1=\"62\" x2=\"40\" y2=\"62\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"65\" text-anchor=\"end\" font-size=\"10\">16</text><line x1=\"32\" y1=\"30\" x2=\"40\" y2=\"30\" stroke=\"currentColor\" stroke-opacity=\"0.7\" stroke-width=\"1\"/><text x=\"28\" y=\"33\" text-anchor=\"end\" font-size=\"10\">18</text><text x=\"10\" y=\"16\" font-size=\"10\">°C</text><rect x=\"44\" y=\"190\" width=\"26\" height=\"32\" rx=\"3\" fill-opacity=\"0.1\" stroke=\"currentColor\" stroke-opacity=\"0.55\" stroke-width=\"1\"/><text x=\"80\" y=\"210.0\" font-weight=\"bold\">crémant</text><text x=\"130.8\" y=\"210.0\">6-8 °C · BIVB</text><rect x=\"44\" y=\"158\" width=\"26\" height=\"32\" rx=\"3\" fill-opacity=\"0.22\" stroke=\"currentColor\" stroke-opacity=\"0.55\" stroke-width=\"1\"/><text x=\"80\" y=\"178.0\" font-weight=\"bold\">champagne</text><text x=\"143.6\" y=\"178.0\">8-10 °C · Comité Champagne</text><rect x=\"44\" y=\"126\" width=\"26\" height=\"32\" rx=\"3\" fill-opacity=\"0.1\" stroke=\"currentColor\" stroke-opacity=\"0.55\" stroke-width=\"1\"/><text x=\"80\" y=\"146.0\" font-weight=\"bold\">aligoté</text><text x=\"130.8\" y=\"146.0\">blancs vifs, 10-12 °C · BIVB</text><rect x=\"44\" y=\"94\" width=\"26\" height=\"32\" rx=\"3\" fill-opacity=\"0.18\" stroke=\"currentColor\" stroke-opacity=\"0.55\" stroke-width=\"1\"/><text x=\"80\" y=\"114.0\" font-weight=\"bold\">autres blancs</text><text x=\"169.2\" y=\"114.0\">12-14 °C · BIVB</text><rect x=\"44\" y=\"46\" width=\"26\" height=\"16\" rx=\"3\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-opacity=\"0.55\" stroke-width=\"1\"/><text x=\"80\" y=\"58.0\" font-weight=\"bold\">rouges</text><text x=\"124.4\" y=\"58.0\">16-17 °C · BIVB</text></svg>","legende":"Thermomètre des plages de service : BIVB pour les vins de Bourgogne, Comité Champagne pour le champagne (de 6 à 18 °C).","src":"Schéma original d’après BIVB et Comité Champagne ; Lepeltier, Mille Vignes, p. 307"},
     cours: {"lede":"Le même vin, servi trop chaud ou trop froid, ne se goûte pas pareil. Les interprofessions donnent des plages ; encore faut-il savoir atteindre la température à temps.","frise":null,"essentiel":"La température change ce qu’on perçoit du vin. Repères des interprofessions : champagne 8 à 10 °C, crémant de Bourgogne 6 à 8 °C, blancs de Bourgogne 10 à 14 °C, rouges de Bourgogne 16 à 17 °C. Pour refroidir vite : un seau d’eau et de glace, pas de l’air.","sections":[{"h":"Les plages des interprofessions","blocs":[{"imp":"essentiel","txt":"La température modifie la perception du vin ; Peynaud et Blouin, cités par le livre, insistent sur son importance et sur le temps nécessaire pour l’atteindre."},{"imp":"important","txt":"Les plages varient selon la source : mieux vaut citer l’interprofession du vin concerné. Le livre ne chiffre pas ces plages."}],"table":{"caption":"Températures de service conseillées","head":["Type de vin","Plage","Source"],"rows":[{"imp":"essentiel","cells":["Crémant de Bourgogne","6-8 °C","BIVB"]},{"imp":"essentiel","cells":["Champagne","8-10 °C","Comité Champagne"]},{"imp":"important","cells":["Blancs vifs et fruités (type aligoté)","10-12 °C","BIVB"]},{"imp":"important","cells":["Autres blancs de Bourgogne (Chablis grand cru, côte de Beaune)","12-14 °C","BIVB"]},{"imp":"important","cells":["Rouges de Bourgogne","16-17 °C","BIVB"]}]}},{"h":"Refroidir vite","blocs":[{"imp":"essentiel","txt":"L’eau refroidit plus vite que l’air. Le Comité Champagne conseille un seau à moitié rempli d’eau et de glace, bouteille immergée environ 30 minutes."},{"imp":"important","txt":"Pour le livre, la durée dépend de la température de départ et du mode de refroidissement (seau, air, réfrigérateur). La taille du flacon (demi-bouteille, magnum) s’y ajoute, et ses graphiques n’en tiennent pas compte."}],"table":null}],"synthese":[{"imp":"essentiel","txt":"Bulles 6-10 °C, blancs de Bourgogne 10-14 °C, rouges de Bourgogne 16-17 °C : citer l’interprofession."},{"imp":"essentiel","txt":"Seau d’eau et de glace, bouteille immergée environ 30 minutes : plus rapide que l’air."},{"imp":"important","txt":"Durée : dépend de la température de départ, du mode de refroidissement et de la taille du flacon."},{"imp":"utile","txt":"À un client : « Les bulles se servent le plus frais, vers 6 à 10 °C, les blancs de Bourgogne entre 10 et 14 °C, les rouges de Bourgogne vers 16-17 °C. Pour refroidir vite, un seau mi-eau mi-glace, environ une demi-heure. »"}],"src":"Mille Vignes, P. Lepeltier, p. 307 ; Comité Champagne, fiche service champagne (champagne.education) ; BIVB, températures de service (bourgogne-wines.com) ; Académie de Versailles, support de cours sur le service (2003). Cf. Mille Vignes, p. 307."},
-    status: "needs_review",
-    to_check: ["Seau à moitié d’eau et de glace, bouteille immergée environ 30 minutes (⚠️) : durée donnée par le seul Comité Champagne ; l’académie de Versailles confirme seulement que le seau est le moyen le plus efficace."],
+    status: "verified",
+    to_check: [],
     selon_livre: ["Effet de la taille du flacon (⚠️) : le livre le signale sans le chiffrer ; aucune source lue.","Graphiques p. 307 (⚠️) : unités et échelles illisibles sur les deux scans, aucune valeur reprise ; réfrigérateur modélisé à 0 °C d’air, atypique."],
-    src: "Mille Vignes, P. Lepeltier, p. 307 ; Comité Champagne (interprofession), fiche service champagne (champagne.education) ; BIVB, températures de service (version anglaise, bourgogne-wines.com) ; JancisRobinson.com, serving temperatures ; Académie de Versailles, support de cours sur le service (2003) ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 196",
+    src: "Mille Vignes, P. Lepeltier, p. 307 ; Comité Champagne (interprofession), fiche service champagne (champagne.education) ; BIVB, températures de service (version anglaise, bourgogne-wines.com) ; JancisRobinson.com, serving temperatures ; Académie de Versailles, support de cours sur le service (2003) ; Spurrier et Dovaz, La dégustation (Bordas, 1992), p. 196 ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 307
   },
   {
@@ -597,9 +597,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté)."],
+    to_check: ["Description du symposion, vaisselle, rôle du symposiarque et tamada (⚠️) : rapportés d’après le livre, aucune source indépendante lue (Boulay 2015 non consulté) ; Oxford Companion (5e éd., 2023, entrée « symposium ») : l’Oxford confirme le vin bu après le repas et coupé d’eau, le cratère, le symposiarque qui détermine la dilution et règle la boisson, et le tamada du supra géorgien (entrée « Georgia ») ; péliké, hydrie, psykter et le fait que le symposiarque soit à jeun ne sont pas mentionnés."],
     selon_livre: ["Date du Banquet de Platon (⚠️) : 380 av. J.-C. pour le livre, vers 375 pour Universalis ; à dire « vers 380-370 ». Nietzsche présenté comme totalement abstinent : non repris."],
-    src: "Mille Vignes, P. Lepeltier, p. 310 ; Encyclopædia Universalis, article Platon (datation du Banquet)",
+    src: "Mille Vignes, P. Lepeltier, p. 310 ; Encyclopædia Universalis, article Platon (datation du Banquet) ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 310
   },
   {
@@ -668,9 +668,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Fagon, d’Aquin, 1693-1694 et goutte du roi (⚠️) : une seule source (Union des Maisons de Champagne)."],
+    to_check: ["Fagon, d’Aquin, 1693-1694 et goutte du roi (⚠️) : une seule source (Union des Maisons de Champagne) ; Oxford Companion (5e éd., 2023, entrée « Burgundy ») : l’Oxford confirme que Fagon, médecin de Louis XIV, a prescrit du vieux bourgogne de préférence au champagne (entrée aussi « medicine, wine in »), sans mentionner d’Aquin, les dates 1693-1694 ni la goutte du roi."],
     selon_livre: ["Bornes de la querelle (⚠️) : 1650-1730 pour le livre, 1652 à environ 1780 pour l’Union des Maisons de Champagne ; non tranché.","« Religion nationale » (Nourrisson, 2013) et remise en cause de l’ivresse légère (⚠️) : rapportés d’après le livre ; ouvrage non lu."],
-    src: "Mille Vignes, P. Lepeltier, p. 311 ; Union des Maisons de Champagne, histoire de la querelle des médecins et Fagon",
+    src: "Mille Vignes, P. Lepeltier, p. 311 ; Union des Maisons de Champagne, histoire de la querelle des médecins et Fagon ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 311
   },
   {
@@ -876,9 +876,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Création politique des années 1920-1930 (⚠️ partiel) : appuyée par Jacquet (Cahiers de géographie du Québec, 2013, lu : foire de Dijon créée en 1921 par Gaston Gérard, Paulée de Meursault première « folklorisation », route des vins de Bourgogne en 1937, première de France) ; Laferté non lu ; la route allemande de 1935 n’est confirmée que par une source de niveau 2b."],
+    to_check: ["Création politique des années 1920-1930 (⚠️ partiel) : appuyée par Jacquet (Cahiers de géographie du Québec, 2013, lu : foire de Dijon créée en 1921 par Gaston Gérard, Paulée de Meursault première « folklorisation », route des vins de Bourgogne en 1937, première de France) ; Laferté non lu ; la route allemande de 1935 n’est confirmée que par une source de niveau 2b ; Oxford Companion (5e éd., 2023, entrée « Pfalz ») : l’Oxford confirme la route allemande du vin (Palatinat) officiellement établie en 1935 pour relier 40 villages ; il ne dit rien de la Foire de Dijon, de la Paulée, de la route de Bourgogne de 1937 ni du caractère politique de ces créations."],
     selon_livre: ["Paulée de Meursault, 1923 (⚠️) : une seule source (site de la Paulée, niveau 2b).","Michelin, étoiles des années 1930 (⚠️) : création du guide en 1900 confirmée (Michelin) ; répartition régionale des étoiles non vérifiée."],
-    src: "Mille Vignes, P. Lepeltier, p. 323 et 326 ; Festival en France, Foire internationale et gastronomique de Dijon ; Decanter, The fair that cuts the mustard ; La Paulée de Meursault, History ; Cirkwi et Comptoir des Millésimes, confrérie du Tastevin ; Guide MICHELIN, À propos ; O. Jacquet, « La route des vins et l’émergence d’un tourisme viticole en Bourgogne dans l’entre-deux-guerres », Cahiers de géographie du Québec 57(162), 2013 (HAL INRAE hal-02642479, lu).",
+    src: "Mille Vignes, P. Lepeltier, p. 323 et 326 ; Festival en France, Foire internationale et gastronomique de Dijon ; Decanter, The fair that cuts the mustard ; La Paulée de Meursault, History ; Cirkwi et Comptoir des Millésimes, confrérie du Tastevin ; Guide MICHELIN, À propos ; O. Jacquet, « La route des vins et l’émergence d’un tourisme viticole en Bourgogne dans l’entre-deux-guerres », Cahiers de géographie du Québec 57(162), 2013 (HAL INRAE hal-02642479, lu). ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 323
   },
   {
@@ -1101,9 +1101,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Sel qui adoucit le vin (moins d’astringence, d’amertume et d’acidité) : ⚠️ divergence : WSET dans ce sens, Zoecklein (Virginia Tech) observe que le sel peut accentuer les tanins rugueux des rouges et l’acidité perçue des blancs ; non tranché"],
+    to_check: ["Sel qui adoucit le vin (moins d’astringence, d’amertume et d’acidité) : ⚠️ divergence : WSET dans ce sens, Zoecklein (Virginia Tech) observe que le sel peut accentuer les tanins rugueux des rouges et l’acidité perçue des blancs ; non tranché ; Oxford Companion (5e éd., 2023, entrée « food-and-wine matching ») : l’Oxford affirme que le sel atténue l’impact de l’acidité, ce qui rejoint la position WSET sur l’acidité, sans se prononcer sur l’astringence ni l’amertume et sans citer Zoecklein ; la divergence sur les tanins des rouges reste ouverte."],
     selon_livre: ["Amertume du plat qui s’ajoute à celle du vin (plats amers : blancs ou rouges peu tanniques) : source unique (WSET)","Piment qui réduit aussi corps, douceur et fruité du vin et accentue son amertume : source unique (WSET)"],
-    src: "WSET, Understanding Wines: Explaining Style and Quality (2016), p. 12-14 ; JancisRobinson.com, Matching wine and food – an introduction (3 juillet 2019, mis à jour le 7 janvier 2025) ; Zoecklein, Matching Table Wines with Food (Virginia Tech, enology.fst.vt.edu) ; Kustos, Heymann, Jeffery, Goodman, Bastian, Intertwined: What makes food and wine pairings appropriate?, Food Research International 136 (2020), 109463 ; Decanter, J. Sheppard, How to pair wines with spicy food: a style guide (mis à jour le 12 août 2024) ; Trevisani et al., Ethanol elicits and potentiates nociceptor responses via the vanilloid receptor-1, Nature Neuroscience 5(6) (2002), p. 546-551 ; complément hors livre, cf. Mille Vignes, P. Lepeltier, p. 325",
+    src: "WSET, Understanding Wines: Explaining Style and Quality (2016), p. 12-14 ; JancisRobinson.com, Matching wine and food – an introduction (3 juillet 2019, mis à jour le 7 janvier 2025) ; Zoecklein, Matching Table Wines with Food (Virginia Tech, enology.fst.vt.edu) ; Kustos, Heymann, Jeffery, Goodman, Bastian, Intertwined: What makes food and wine pairings appropriate?, Food Research International 136 (2020), 109463 ; Decanter, J. Sheppard, How to pair wines with spicy food: a style guide (mis à jour le 12 août 2024) ; Trevisani et al., Ethanol elicits and potentiates nociceptor responses via the vanilloid receptor-1, Nature Neuroscience 5(6) (2002), p. 546-551 ; complément hors livre, cf. Mille Vignes, P. Lepeltier, p. 325 ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 325
   },
   {

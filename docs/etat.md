@@ -3,7 +3,7 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 591 (dernier id : 592) · exercices : 3054
-- Vérifiées : 368 · à vérifier : 223 (336 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
+- Vérifiées : 371 · à vérifier : 220 (327 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
 - Niveaux : Fondamental 180 · Intermédiaire 301 · Pointu 110
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
@@ -18,13 +18,13 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 150-terroir.js | 36 | 3–222 | 150–199 | 13 | 5 | 5 |
 | 203-vinification.js | 69 | 223–592 | 204–242 | 45 | 14 | 14 |
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
-| 288-service.js | 52 | 293–571 | 288–329 | 33 | 7 | 5 |
+| 288-service.js | 52 | 293–571 | 288–329 | 35 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 1 |
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 1 |
-| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 1 |
+| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 10 | 0 | 1 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 1 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 3 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
