@@ -113,3 +113,6 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Le monde viticole — Amériques (23/10/2026, fiches 553-558)
 - WSET L3 (2016) et D3 (2024, début de la Californie seulement) ; 27 CFR 4.23 et 4.25 (Cornell LII), TTB, T.D. TTB-45 (Federal Register, 2 mai 2006) ; Napa Valley Vintners, Paso Robles Wine Country Alliance, Oregon Wine Board, Washington State Wine Commission, VQA Ontario / Wine Country Ontario, Wine Growers BC et gouvernement de C.-B. (2022), Wines of Chile, SAG (décret 464), Wines of Argentina (fiches PDF). Bloqués : eCFR § 4.27, govinfo, argentina.gob.ar (INV), pages web de Wines of Chile et Wines of Argentina, California Wine Institute.
+
+## Le monde viticole — Espagne, Portugal, Grèce (23/10/2026, fiches 545-552)
+- WSET D3 (2024) et D4 (2020) ; MAPA (cahiers des charges, termes traditionnels), cahiers des charges Toro (2024), Rueda (2019, rév. 2024), Rioja (document unique 2024), Bierzo (2021), Cava et Consejo Regulador (normes 2022) ; Agronews (loi 6/2015) ; Portugal via FAOLEX et informador.pt : décret-loi 254/98, Portarias 212/2014, 244/2014, 783/2009, 118/2014 ; CVRA ; document unique grec de l’AOP Santorin ; Wines of Greece ; Decanter, The Drinks Business, Wine with Seth (2b). Bloqués : boe.es, docava.es, vinhoverde.pt, winesofportugal.com, diariodarepublica.pt.
