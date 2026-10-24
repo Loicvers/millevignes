@@ -3,14 +3,14 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 634 (dernier id : 636) · exercices : 3271
-- Vérifiées : 405 · à vérifier : 229 (326 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1348
+- Vérifiées : 410 · à vérifier : 224 (318 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1348
 - Niveaux : Fondamental 198 · Intermédiaire 325 · Pointu 111
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 107 | 1–625 | 16–38 | 77 | 7 | 10 |
+| 016-domestication.js | 107 | 1–625 | 16–38 | 79 | 7 | 10 |
 | 040-nature.js | 52 | 4–634 | 40–73 | 36 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
@@ -24,12 +24,12 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 1 |
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 1 |
-| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 1 |
+| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 10 | 0 | 1 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 1 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 10 | 0 | 3 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
-| fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 1 |
-| fr-charentes.js | 2 | 574–575 | hors livre | 1 | 0 | 0 |
+| fr-champagne.js | 2 | 403–404 | hors livre | 2 | 0 | 1 |
+| fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 0 |
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 2 | 0 | 1 |
