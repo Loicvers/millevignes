@@ -39,7 +39,7 @@ const SOUS = {
   "Dégustation":        ["Méthode", "Arômes", "Défauts"],
   "Accords":            ["Principes", "Régionaux"],
   "Histoire":           ["Antiquité", "Moyen Âge", "Moderne"],
-  "Service":            ["Contenants", "Bouchage", "Température & carafage", "Art de servir"]
+  "Service":            ["Contenants", "Bouchage", "Température & carafage", "Art de servir", "Commerce"]
 };
 
 /* Régions viticoles françaises admises dans geo.region (un test refuse tout autre nom).

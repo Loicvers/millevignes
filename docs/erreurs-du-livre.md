@@ -84,7 +84,6 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 211 et 215 : le livre se contredit sur la fermentation acétique (oxygène nécessaire p. 211, inutile p. 215) → les bactéries acétiques ont besoin d’oxygène.
 - p. 211 : fermentation malolactique « obligatoire » pour les rouges en Europe → pratique technique quasi universelle, aucun texte réglementaire ne l’impose (Handbook of Enology, vol. 1, p. 370 et 399 ; Réussir Vigne).
 - p. 212 : étude sur les guêpes et frelons réservoirs de levures datée de 2013 → Stefanini et al., PNAS, 2012.
-- p. 219 : vins doux naturels mutés avec « 5 à 25 % » d’alcool → 5 à 10 % du volume du moût, en alcool d’origine viticole d’au moins 96 % vol. (cahiers des charges Rivesaltes, 2023, et Banyuls, 2024 ; Handbook of Enology, 2006).
 - p. 228 : furfural à odeur d’« amande » → note grillée, d’impact olfactif négligeable aux doses du vin (Handbook of Enology, vol. 1, p. 437).
 - p. 230 : apport d’oxygène d’une barrique neuve de 0,4 mg/l/an, dont 80 % par la bonde → environ 11 à 45 mg/l/an selon les études ; la bonde pèse environ 21 % ou moins (Junqua et al., OENO One, 2021 ; Handbook of Enology, vol. 2, p. 412) ; 0,4 mg/l est l’oxygène dissous mesuré dans une barrique (tableau 13.4).
 - p. 235 : livre de Pascal Ribéreau-Gayon sur l’histoire de l’œnologie à Bordeaux daté de 2001 → 2011.

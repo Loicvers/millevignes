@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-623 fiches : 401 vérifiées, 222 à vérifier (316 points).
-Hors dette : 1344 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+634 fiches : 405 vérifiées, 229 à vérifier (326 points).
+Hors dette : 1348 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (⚠️) : selon l’OIV, premier cépage de cuve (environ 341 000 ha en 2015) et deuxième toutes catégories derrière le kyoho, raisin de table (Focus OIV 2017, repris par Vitisphere) ; JancisRobinson (Anderson et Nelgen) le classe aussi premier cépage de cuve ; l’Oxford Companion (5e éd., 2023) donne environ 310 700 ha en 2016, premier cépage mondial sans séparer cuve et table ; Wine Grapes ne donne aucun total mondial.
@@ -763,3 +763,27 @@ Hors dette : 1344 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 624** (p.31) — Le niellucciu : le grand rouge de Patrimonio
 - [ ] Lien avec le sangiovese (⚠️ divergence) : génétiquement identique pour Wine Grapes (2012, entrées Sangiovese et Nielluccio), Plantgrape (fiche Nielluccio N) et l’Oxford Companion (5e éd., 2023, entrées « Niellucciu », « Sangiovese » et « Corsica », où il est le nom corse du sangiovese) ; « parent du sangiovese » d’après le livre de Lepeltier, formule rapportée par la fiche 420 mais introuvable dans les extraits du livre disponibles ; formulé « de la famille du sangiovese », aucune question n’en dépend
+
+**Fiche 626** (p.293) — Domaine, négociant, coopérative : qui fait le vin qu’on vend
+- [ ] Poids des coopératives en France (⚠️) : FranceAgriMer (fiche filière vin, 2026) donne 560 caves coopératives et plus de 46 % des volumes vinifiés hors cognac ; une dépêche AFP du 3 juillet 2025 parle d’« environ la moitié » du vin français, avec environ 550 coopératives ; Réussir Vigne (1er décembre 2023, données 2020-2021) donne environ 40 % de la production hors champagne et 415 caves. Écarts de périmètre, d’année et de définition non tranchés ; Vignerons Coopérateurs de France non lu (accès refusé).
+
+**Fiche 628** (p.296) — Ouvrir et servir : vin tranquille, effervescent, vieille bouteille
+- [ ] Angle d’ouverture d’un effervescent (⚠️) : WSET niveau 3 environ 30°, Oxford Companion environ 45°, Comité Champagne et Académie de Versailles 30 à 45° ; l’angle précis n’est pas tranché, aucun exercice n’en dépend.
+
+**Fiche 629** (p.307) — Servir à la bonne température : pourquoi, et comment y arriver vite
+- [ ] Dosage du seau (⚠️) : Comité Champagne, seau « rempli à moitié d’eau et de glace » ; WSET niveau 3, seau aux trois quarts avec glace et eau à parts égales ; WSET niveau 1, de l’eau en plus de la glace sans proportion. Principe commun, deux dosages différents.
+
+**Fiche 630** (p.312) — Le verre : forme, remplissage, nettoyage
+- [ ] Effet de la flûte sur l’arôme (⚠️) : Oxford (la flûte préserve la mousse mais supprime l’arôme) et l’École du Vin (une flûte droite bride les arômes) s’opposent au WSET niveau 3 (la flûte renforce les bulles et l’arôme) ; le Comité Champagne décrit un verre haut, ventru et resserré en haut sans citer la flûte.
+
+**Fiche 631** (p.316) — Vin ouvert et vin au verre : combien de temps, quels systèmes
+- [ ] Durée d’un vin ouvert (⚠️) : Oxford, 2 à 3 jours pour la plupart des vins jeunes et pour un porto mis en bouteille ; Robinson (2009), un jeune ruby plusieurs semaines et un vin commercial plusieurs jours voire une semaine ; Robinson (2021), 2 à 3 jours pour un bourgogne rouge, quelques jours pour un blanc boisé, des semaines pour un riesling sec ; École du Vin, à consommer dans les heures qui suivent. Aucune durée unique n’est retenue.
+- [ ] Efficacité de la pompe à vide (⚠️) : l’École du Vin la juge le meilleur système bon marché ; Robinson la trouve peu efficace ; le WSET niveaux 1 et 3 la présentent comme une méthode, inadaptée aux effervescents.
+
+**Fiche 634** (p.67) — Âge des vignes et mention « vieilles vignes »
+- [ ] Âge de remplacement des vignes (⚠️, deux mesures différentes) : le WSET L3 (p. 34) dit que la plupart des vignes sont remplacées entre 30 et 50 ans, ce qui est un âge habituel d’arrachage ; Lepeltier (p. 67) écrit que la durée de vie moyenne d’une vigne est aujourd’hui de 20 à 25 ans, constat actuel lié à l’arrachage croissant de vignes de moins de trente ans et au dépérissement des jeunes plants ; Oxford (« vine age ») note un déclin de vigueur souvent dès 20 à 30 ans. Les deux chiffres ne décrivent pas la même chose ; aucun exercice n’en dépend.
+- [ ] Rendement maximal entre 10 et 40 ans (⚠️) : WSET D1 seul ; Oxford décrit une production stable dès 3 à 6 ans et un déclin souvent dès 20 à 30 ans. Aucun exercice n’en dépend.
+- [ ] Absence de texte français définissant « vieilles vignes » (✅ à la date de mai 2026, à re-vérifier car une évolution est annoncée) : constat (WSET D1, Burgundy Report du 5 février 2026, fédérations viticoles de Bordeaux et de Bergerac du 7 mai 2026) ; vérifier qu’aucun texte n’a été publié depuis. Les mêmes fédérations disent que les contrôles retiennent déjà 35 ans : source indirecte, non reprise.
+
+**Fiche 635** (p.220) — Vins doux naturels : mutage sur grains ou sur moût, élevage et rancio
+- [ ] Proportion d’alcool de mutage (⚠️, périmètres différents) : les cahiers des charges de Rivesaltes (arrêté du 14/06/2023), de Banyuls et du Muscat de Rivesaltes fixent 5 à 10 % du volume du moût, évalués en alcool pur, avec un alcool d’au moins 96 % vol. ; Lepeltier (p. 220) donne 5 à 25 % d’alcool neutre titrant 77 à 96 %, pour tous les vins mutés en cours de fermentation, porto compris (WSET D5 : environ 1 litre d’eau-de-vie à 77 % pour 4 litres de moût). Les deux chiffres ne mesurent pas la même chose ; à confirmer avec Loïc avant de l’enseigner. Aucun exercice n’en dépend. NB : la fiche « Les vins sucrés : concentrer le raisin ou muter » écrit que le livre annonce « à tort » 5 à 25 % : à reformuler.

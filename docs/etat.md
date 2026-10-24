@@ -2,23 +2,23 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 623 (dernier id : 625) · exercices : 3216
-- Vérifiées : 401 · à vérifier : 222 (316 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1344
-- Niveaux : Fondamental 188 · Intermédiaire 324 · Pointu 111
+- Fiches : 634 (dernier id : 636) · exercices : 3271
+- Vérifiées : 405 · à vérifier : 229 (326 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1348
+- Niveaux : Fondamental 198 · Intermédiaire 325 · Pointu 111
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
 | 016-domestication.js | 107 | 1–625 | 16–38 | 77 | 7 | 10 |
-| 040-nature.js | 51 | 4–521 | 40–73 | 36 | 7 | 15 |
+| 040-nature.js | 52 | 4–634 | 40–73 | 36 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
 | 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
 | 150-terroir.js | 37 | 3–596 | 150–199 | 12 | 5 | 5 |
-| 203-vinification.js | 69 | 223–592 | 204–242 | 47 | 14 | 14 |
+| 203-vinification.js | 71 | 223–636 | 204–242 | 48 | 14 | 14 |
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
-| 288-service.js | 52 | 293–571 | 288–329 | 35 | 7 | 5 |
+| 288-service.js | 60 | 293–633 | 288–329 | 38 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 1 |
