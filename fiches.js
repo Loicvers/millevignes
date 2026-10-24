@@ -108,6 +108,8 @@ const FRANCE_SOMMAIRE = [
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages de la Vallée du Rhône" },
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages du Midi méditerranéen" },
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages de Corse" },
+  { partie: "Les cépages", section: "Cépages", chapitre: "Cépages d’Italie" },
+  { partie: "Les cépages", section: "Cépages", chapitre: "Cépages d’Espagne" },
   { partie: "Le monde viticole", section: "Allemagne", chapitre: "Allemagne : panorama et classifications" },
   { partie: "Le monde viticole", section: "Allemagne", chapitre: "Allemagne : régions" },
   { partie: "Le monde viticole", section: "Autriche", chapitre: "Autriche : panorama et régions" },

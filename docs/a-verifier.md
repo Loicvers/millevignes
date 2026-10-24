@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-644 fiches : 418 vérifiées, 226 à vérifier (322 points).
-Hors dette : 1349 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+664 fiches : 424 vérifiées, 240 à vérifier (349 points).
+Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (⚠️) : selon l’OIV, premier cépage de cuve (environ 341 000 ha en 2015) et deuxième toutes catégories derrière le kyoho, raisin de table (Focus OIV 2017, repris par Vitisphere) ; JancisRobinson (Anderson et Nelgen) le classe aussi premier cépage de cuve ; l’Oxford Companion (5e éd., 2023) donne environ 310 700 ha en 2016, premier cépage mondial sans séparer cuve et table ; Wine Grapes ne donne aucun total mondial.
@@ -777,3 +777,58 @@ Hors dette : 1349 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 640** (p.268) — S’entraîner à reconnaître les odeurs : mémoire plus que flair
 - [ ] Effet d’une exposition répétée sur le seuil de détection (⚠️) : la revue et le manuel (p. 72-73) affirment qu’un mois d’exposition à une odeur abaisse le seuil de perception, en citant des études ; Parr et collègues (2002) trouvent des seuils comparables entre experts et novices. Les deux ne se contredisent pas forcément (expertise acquise ou entraînement ciblé), mais la question est ouverte ; études citées par le manuel non relues.
 - [ ] Protocole d’entraînement précis (⚠️) : une minute par jour pendant un mois, comparaison deux à deux acacia/aubépine (miel et cire contre amande douce) ; source unique (manuel RVF Academy, p. 72-73).
+
+**Fiche 647** (p.?) — Le sangiovese : le rouge de Toscane, à la cerise vive et aux tanins serrés
+- [ ] Parenté du sangiovese : Wine Grapes (2012) donne ciliegiolo × calabrese di montenuovo ; Oxford Companion (5e éd., 2023) juge ces parentés invalidées et dit les parents inconnus ⚠️ : divergence, source la plus récente = Oxford, à recouper par la publication d’origine avant d’enseigner une parenté.
+
+**Fiche 649** (p.?) — Le barbera : le rouge piémontais à l’acidité vive et aux tanins souples
+- [ ] Origine du barbera : Wine Grapes (2012) la dit inconnue et probablement non piémontaise, l’Oxford (5e éd., 2023) le rattache au coccalona nera ⚠️ : divergence à recouper avant d’enseigner une origine.
+- [ ] Barbera d’Asti DOCG : barbera 90 % minimum d’après le disciplinare actuel (reproduction AIS Italia), contre jusqu’à 15 % d’autres cépages dans Wine Grapes (2012) ⚠️ : seconde source récente non trouvée, à croiser avec le consorzio ou eAmbrosia.
+
+**Fiche 653** (p.?) — Le nero d’Avola : le grand rouge de Sicile, fruité et ferme
+- [ ] Origine du nero d’Avola : Sicile probable (Avola, Syracuse) pour Wine Grapes, avec la Calabre possible vu l’ancien nom Calabrese ; Oxford (5e éd., 2023) suggère la Calabre (descendant possible du mantonico bianco) ⚠️ : divergence non tranchée, à recouper.
+
+**Fiche 654** (p.?) — Le primitivo : le zinfandel des Pouilles, alias le tribidrag croate
+- [ ] Origine du primitivo / tribidrag : croate pour Wine Grapes (liens parent-enfant avec des cépages dalmates), mais l’étude AFLP de Fanizza et al. (2005) plaide pour le sud de l’Italie et juge la question non résolue ⚠️ : source unique à recouper.
+- [ ] DOCG de Manduria : seul le Primitivo di Manduria Dolce Naturale (100 % primitivo, doux naturel) est DOCG, le sec est DOC ⚠️ : un seul disciplinare consulté pour la DOCG, à croiser avec eAmbrosia ou le consorzio avant de l’enseigner.
+
+**Fiche 655** (p.?) — La glera : le raisin du prosecco, un mousseux frais fait en cuve close
+- [ ] Renommage du prosecco en glera (2009) : concordant chez Wine Grapes, Oxford (5e éd., 2023) et WSET L3 (2016), et DM du 17.07.2009 confirmé pour la DOC Prosecco ⚠️, mais le texte officiel du changement de nom du cépage (registre des variétés) n’a pas été retrouvé.
+- [ ] Origine de la glera : istrienne (ADN identique au teran bijeli, selon Wine Grapes) ou enfant de la vulpea (Oxford) ⚠️ : deux hypothèses de source unique, non exclusives.
+
+**Fiche 658** (p.?) — Le tempranillo : le grand rouge d’Espagne, fait par l’élevage
+- [ ] Berceau du tempranillo en Rioja ou Navarre : source unique (Wine Grapes), l’Oxford ne se prononce pas
+- [ ] Parent précis de l’albillo mayor (benedicto, variété aragonaise disparue) : Oxford seul ; le lien parent-descendant avec l’albillo mayor est, lui, recoupé
+- [ ] Tinta de Toro : synonyme pour Wine Grapes et l’Oxford, mais le WSET D3 (2024) rapporte que certains y voient un clone adapté ou une variété distincte ; question ouverte
+
+**Fiche 659** (p.?) — La mencía : le rouge du Nord-Ouest, léger en plaine, sérieux sur schiste
+- [ ] Bierzo cépage-berceau : source unique (Wine Grapes), Oxford ne se prononce pas ; mencía attestée seulement fin XIXe siècle
+- [ ] Parents alfrocheiro × patorra : Oxford seul ; l’exclusion du lien avec le cabernet franc est recoupée (Wine Grapes + Oxford), celle des liens avec le graciano et la garnacha repose sur Wine Grapes seul
+- [ ] Règle d’encépagement du Bierzo rouge : divergence non arbitrée entre le WSET D3 (2024) et le cahier des charges MAPA (2021), donc aucun pourcentage de mencía n’est donné
+
+**Fiche 660** (p.?) — L’albariño : le blanc atlantique de Galice, vif et salin
+- [ ] Origine : nord-ouest de la péninsule (Galice ou nord du Portugal), caractère autochtone non prouvé : source unique (Wine Grapes)
+- [ ] Mention « Rías Baixas Albariño » = 100 % albariño : un seul document officiel (cahier des charges Xunta de Galicia), non relu en direct ni recoupé auprès du Consejo Regulador
+
+**Fiche 661** (p.?) — Le verdejo : le blanc de Rueda, amer en finale et herbacé
+- [ ] Berceau du verdejo à Rueda : « très probablement », source unique (Wine Grapes)
+- [ ] Parents du verdejo et du godello (savagnin × castellana blanca) : Oxford seul ; la fratrie verdejo-godello est, elle, recoupée (Wine Grapes + Oxford)
+
+**Fiche 662** (p.?) — Le godello : le blanc de Valdeorras sauvé de l’oubli
+- [ ] Origine probable sur les rives du Sil et première mention dans le Douro : « most likely », source unique (Wine Grapes)
+- [ ] Parents du godello (savagnin × castellana blanca) : Oxford seul ; la fratrie avec le verdejo est, elle, recoupée
+
+**Fiche 663** (p.?) — Le palomino : la base neutre du xérès
+- [ ] Palomino et palomino fino identiques par l’ADN : Wine Grapes seul ; l’Oxford dit seulement que le palomino fino est souvent appelé simplement palomino
+- [ ] Fino enrichi à 15-17 % vol. selon le cahier des charges de Jerez : non recoupé par une seconde source ; à Montilla-Moriles, des fino sont faits sans mutage
+
+**Fiche 664** (p.?) — Le pedro ximénez : le raisin passerillé des grands vins doux d’Andalousie
+- [ ] Origine andalouse, culture attestée depuis le XVIIe siècle au moins : source unique (Wine Grapes), l’Oxford ne traite pas l’origine
+- [ ] Seuils de sucre : Montilla-Moriles (moût ≥ 450 g/L, vin ≥ 272 g/L) et Jerez (PX > 212 g/L, ≥ 85 % de moût de raisins soleillés) sont deux cahiers des charges distincts, non recoupés entre eux ; WSET L3 évoque jusqu’à 500 g/L de sucre résiduel
+
+**Fiche 665** (p.?) — Le xarel·lo : le pilier à la fois fenouil et pomme du cava
+- [ ] Origine et parenté ADN du xarel·lo : aucune source de niveau 2a hors Oxford (pas d’entrée Wine Grapes) ; une parenté avancée par une source de presse spécialisée (2013, 20 marqueurs) est écartée comme non vérifiable
+- [ ] Mention du cépage sur l’étiquette du Penedès à partir de 85 % : un seul document officiel (cahier des charges INCAVI, §8.7.1), non recoupé
+
+**Fiche 666** (p.?) — La parellada : la finesse d’altitude du cava
+- [ ] Lien de proche parenté possible avec l’albillo real : source unique (Wine Grapes, d’après Ibañez 2003), non confirmé ; l’origine aragonaise est, elle, recoupée (Wine Grapes + Oxford)
