@@ -54,6 +54,7 @@ function checkNotion(n, tax, err) {
     for (const k of JAUGE) if (!(j[k] == null || (Number.isInteger(j[k]) && j[k] >= 1 && j[k] <= 5))) err(`${at} : jauge.${k} doit valoir 1 à 5, null ou être absent`);
     if (!isStr(j.style)) err(`${at} : jauge.style manquant (le style décrit, ex. « Alsace, vin sec »)`);
     if (!isStr(j.src)) err(`${at} : jauge.src (crédit) manquant`);
+    if (j.note != null && !isStr(j.note)) err(`${at} : jauge.note doit être un texte`);
     if (!isStrArr(j.a_verifier ?? [], 0) || (j.a_verifier ?? []).some(k => !JAUGE.includes(k))) err(`${at} : jauge.a_verifier : critères parmi ${JAUGE.join(", ")}`);
   }
   const imps = [];
