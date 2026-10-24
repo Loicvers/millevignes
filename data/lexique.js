@@ -158,6 +158,7 @@ const LEXIQUE = [
  },
  {
   "terme": "nématode",
+  "photo": {"fichier": "Xiphinema sp. Juvenile (J1).jpg", "legende": "Xiphinema, genre du nématode vecteur du court-noué : jeune individu au microscope (×1000).", "auteur": "Wperazap", "licence": "CC BY-SA 4.0"},
   "def": "Petit ver rond, non segmenté et souvent microscopique, qui vit dans le sol, dans l’eau ou en parasite d’animaux ou de plantes. En vigne, la plupart sont inoffensifs (prédateurs, décomposeurs), mais Xiphinema index pique les racines et transmet le virus du court-noué.",
   "etym": "du grec nêmatôdês, filamenteux, de nêma, fil (lui-même de nein, filer).",
   "declic": "Nêma = fil : le nématode est un fil vivant, un ver fin comme un fil.",
@@ -405,6 +406,7 @@ const LEXIQUE = [
  },
 {
   "terme": "chapeau de marc",
+  "photo": {"fichier": "Red wine cap.jpg", "legende": "Chapeau de marc d’un rouge en fermentation, enfoncé dans le jus.", "auteur": "Wollombi (Flickr)", "licence": "CC BY 2.0"},
   "def": "Masse de peaux et de pépins (avec un peu de pulpe) que le gaz carbonique de la fermentation pousse à la surface de la cuve dans la vinification en rouge. Laissé seul, il échange peu avec le jus et donne peu de couleur, d’arômes et de tanins : on l’arrose (remontage), on l’enfonce (pigeage) ou on le noie sous le jus (délestage).",
   "etym": "chapeau : du bas latin cappellus, « coiffe » ; marc : tiré de marcher au sens de « fouler », le marc étant le résidu des fruits dont on a extrait le suc.",
   "declic": "Un radeau de peaux flotte sur le jus rouge : tant qu’on ne l’enfonce pas ou ne l’arrose pas, il garde sa couleur pour lui.",
@@ -618,6 +620,7 @@ const LEXIQUE = [
  },
 {
   "terme": "voile de levures / flor",
+  "photo": {"fichier": "FLOR-ValdiviaJerez59.jpg", "legende": "Fût de xérès à fond vitré montrant le voile de flor à la surface du vin (Jerez de la Frontera).", "auteur": "El Pantera", "licence": "CC BY-SA 3.0"},
   "def": "Pellicule de levures qui se forme à la surface d’un vin laissé en contact avec un peu d’air dans un fût non complètement rempli : c’est le voile du vin jaune du Jura, appelé flor à Jerez (fino, manzanilla). Ces levures se nourrissent de l’alcool et de l’oxygène, isolent le vin d’un contact direct avec l’air et lui donnent des arômes propres, dus en particulier à l’éthanal (noix, pomme). La flor ne prospère plus au-delà d’environ 15,5 % vol : fortifié à 17 % ou plus, le xérès vieillit sans voile (oloroso).",
   "etym": "voile : du latin velum (Larousse) ; flor : mot espagnol issu du latin flos, « fleur », qui désigne aussi la pellicule que fait le vin à sa surface.",
   "declic": "Le voile est un couvercle vivant : une peau de levures qui s’interpose entre le vin et l’air.",
@@ -635,6 +638,7 @@ const LEXIQUE = [
  },
 {
   "terme": "passerillage",
+  "photo": {"fichier": "Passito z01.JPG", "legende": "Raisins mis à sécher sur claies pour un vin de raisins passerillés (Slovénie).", "auteur": "Zyance", "licence": "CC BY 3.0"},
   "def": "Dessèchement des raisins qui, laissés sur la souche, perdent de l’eau et concentrent leurs sucres. On parle aussi de passerillage pour des raisins séchés sur claies ou sur paille après la vendange (vin de paille). Il demande un automne sec, sans quoi l’humidité fait pourrir les baies ; il est distinct de la pourriture noble, qui passe par le Botrytis.",
   "etym": "tiré de passerillé, raisin séché : de l’ancien français passe, « sec », du latin passus, de pandere, « faire sécher au soleil » (Larousse).",
   "declic": "Le raisin devient raisin sec sans quitter son cep : le vent et le soleil font l’évaporation à la place du pressoir.",
@@ -651,6 +655,7 @@ const LEXIQUE = [
  },
 {
   "terme": "solera",
+  "photo": {"fichier": "Sherry cellar, Solera system 2, 2003.jpg", "legende": "Chai de xérès à Jerez de la Frontera : fûts empilés en rangées.", "auteur": "Falkue", "licence": "CC BY-SA 3.0"},
   "def": "Système de vieillissement par assemblage fractionné, typique du xérès. Les fûts sont groupés en étages (criaderas) selon l’âge moyen de leur vin ; la rangée la plus âgée, qui se nomme elle-même solera (le mot désigne aussi, par extension, tout le système), fournit le vin mis en bouteille. On ne la vide jamais : ce qu’on y prélève est remplacé par le vin de l’étage juste plus jeune, lui-même complété par le suivant, si bien que chaque mise contient plusieurs millésimes.",
   "etym": "mot espagnol dérivé de suelo, « sol » : la rangée la plus âgée est posée au ras du sol.",
   "declic": "La solera, c’est le levain du boulanger : on y prélève un peu, on le rafraîchit avec du plus jeune, et il garde l’esprit de la maison.",
@@ -734,6 +739,7 @@ const LEXIQUE = [
  },
  {
   "terme": "véraison",
+  "photo": {"fichier": "Véraison grappe 50.jpg", "legende": "Grappe de pinot noir à mi-véraison : les baies changent de couleur une à une.", "auteur": "Olivier Lemoine", "licence": "CC BY-SA 4.0"},
   "def": "Moment où la baie, jusque-là verte et dure, change de couleur (elle rougit ou vire au jaune translucide), s’assouplit et commence à mûrir : le sucre monte, l’acidité baisse. Elle marque le début du compte à rebours avant les vendanges.",
   "etym": "Mot français repris tel quel en anglais (veraison), d’après Oxford.",
   "declic": "La baie « met ses couleurs » : feu vert pour la maturation.",
@@ -747,6 +753,7 @@ const LEXIQUE = [
  },
  {
   "terme": "débourrement",
+  "photo": {"fichier": "Pinot noir budburst Sept 2010.jpg", "legende": "Débourrement d’un pinot noir : le bourgeon s’ouvre et laisse sortir les premières feuilles (Tasmanie).", "auteur": "Mark Smith", "licence": "CC BY 2.0"},
   "def": "Éclatement des bourgeons au printemps : les premières feuilles vertes apparaissent et la vigne sort de son repos hivernal, autour de 10 °C de température moyenne de l’air. Un débourrement tardif protège mieux des gelées de printemps, d’où l’intérêt de cépages tardifs comme le meunier dans la Vallée de la Marne.",
   "etym": "",
   "declic": "On sort du « coton » (stade B de Baggiolini) : le bourgeon débourre.",
@@ -824,6 +831,7 @@ const LEXIQUE = [
  },
  {
   "terme": "pigeage et remontage",
+  "photo": {"fichier": "Pigeage in a wine barrel.jpg", "legende": "Pigeage : un caviste enfonce à la main le chapeau de marc d’une fermentation en fût.", "auteur": "Ryan O’Connell", "licence": "CC BY-SA 2.0"},
   "def": "Deux façons de brasser le chapeau de marc pendant la fermentation d’un rouge. Le pigeage l’enfonce dans le jus (au pied, à la main ou mécaniquement) ; le remontage pompe du jus en bas de cuve pour arroser le chapeau par le haut. Ils extraient couleur et tanins et évitent que le chapeau sèche ; abusés, ils durcissent les tanins.",
   "etym": "",
   "declic": "Pigeage : on pousse vers le bas. Remontage : le jus remonte.",
@@ -1042,6 +1050,7 @@ const LEXIQUE = [
  },
  {
   "terme": "taille (gobelet, Guyot, cordon)",
+  "photo": {"fichier": "Gaillac taille guyot.jpg", "legende": "Vignes taillées en guyot dans le vignoble de Gaillac (Tarn), sur une terrasse de galets.", "auteur": "PANDA 81", "licence": "CC BY-SA 3.0"},
   "def": "Coupe hivernale du bois qui règle la charge de la vigne. Le gobelet est une tête aux bras courts taillés à coursons, sans fil, adaptée aux climats secs ; le Guyot est une taille longue (une baguette et un courson de remplacement, en simple ou en double) ; le cordon est un bras permanent horizontal taillé à coursons, comme le cordon de Royat.",
   "etym": "",
   "declic": "Gobelet = un verre, Guyot = une baguette plus une réserve, cordon = un bras sur le fil.",
