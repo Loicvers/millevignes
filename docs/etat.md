@@ -2,20 +2,20 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 592 (dernier id : 593) · exercices : 3059
-- Vérifiées : 374 · à vérifier : 218 (322 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
-- Niveaux : Fondamental 180 · Intermédiaire 302 · Pointu 110
+- Fiches : 594 (dernier id : 596) · exercices : 3070
+- Vérifiées : 374 · à vérifier : 220 (326 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
+- Niveaux : Fondamental 180 · Intermédiaire 303 · Pointu 111
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 77 | 1–514 | 16–38 | 49 | 7 | 10 |
+| 016-domestication.js | 78 | 1–595 | 16–38 | 49 | 7 | 10 |
 | 040-nature.js | 51 | 4–521 | 40–73 | 36 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
 | 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
-| 150-terroir.js | 36 | 3–222 | 150–199 | 13 | 5 | 5 |
+| 150-terroir.js | 37 | 3–596 | 150–199 | 13 | 5 | 5 |
 | 203-vinification.js | 69 | 223–592 | 204–242 | 47 | 14 | 14 |
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
 | 288-service.js | 52 | 293–571 | 288–329 | 35 | 7 | 5 |

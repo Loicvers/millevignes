@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-592 fiches : 374 vérifiées, 218 à vérifier (322 points).
+594 fiches : 374 vérifiées, 220 à vérifier (326 points).
 Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
@@ -761,3 +761,11 @@ Hors dette : 1220 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 593** (p.?) — Greco di Tufo : un village, un cépage, une DOCG de Campanie
 - [ ] Nature exacte du sous-sol de Tufo (⚠️) : ISPRA (feuille 432) décrit grès, pélites et conglomérats du Messinien, Oxford et JancisRobinson.com un calcaire tendre, Sarah Marsh (2026) des argiles et marnes ; Alex Maltman (2022) soutient un tuf volcanique sans étude de terrain. Étude Magliulo et al. (Geoheritage, 2020) à lire en texte intégral.
+
+**Fiche 595** (p.20) — Table et cuve : les deux lignées de la vigne cultivée (étude de 2023)
+- [ ] Deux domestications contemporaines vers 11 000 ans (⚠️, divergence) : Dong et al. 2023 (Science 379, p. 892-896) et le communiqué de presse repris par AZoLifeSciences (3 mars 2023) ; Magris et al. 2021 (Nature Communications) concluent à un événement unique en Asie occidentale ; l’Oxford Companion (5e éd., 2023, « origins of viniculture ») retient une domestication unique au Proche-Orient (« hypothèse de Noé »), suivie de croisements avec les sauvages locaux. Dates obtenues par modélisation génomique (MSMC2) ; les auteurs signalent eux-mêmes l’écart avec l’archéologie.
+- [ ] Cépages de cuve européens issus de la lignée d’Asie occidentale, avec 11 à 18 % d’ascendance sauvage occidentale, rôle mineur de la lignée caucasienne (⚠️) : Dong et al. 2023 seul (p. 895-898) ; l’Oxford Companion s’accorde sur une origine orientale suivie de croisements locaux, sans distinguer de lignées ni donner de chiffres.
+
+**Fiche 596** (p.179) — Avant 1855 : le marché invente les grands crus
+- [ ] Chronologie des niveaux (⚠️) : premiers crus à la charnière des XVIIe et XVIIIe siècles, deuxièmes vers le milieu du XVIIIe, troisièmes déjà en place en 1787, quatrièmes dans les années 1820, cinq niveaux et 60 domaines au début des années 1850 : Markham (Conseil des Grands Crus Classés en 1855, source officielle) seul pour les étapes intermédiaires ; l’Oxford Companion (5e éd., 2023, « classification » et « Bordeaux ») confirme la visite de Jefferson en 1787, les cinq classes et les 60 domaines, et date l’arrivée de Lafite, Latour et Margaux en Angleterre du début du XVIIIe siècle.
+- [ ] Date de la commande de 1855 (⚠️) : lettre du 5 avril 1855 de la Chambre de commerce au Syndicat des courtiers selon Markham ; 6 avril selon le site les-grands-crus-classes.fr ; remise le 18 avril dans les deux. L’Oxford ne donne pas de date.
