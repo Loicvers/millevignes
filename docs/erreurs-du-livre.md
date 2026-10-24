@@ -125,6 +125,9 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 326 : Route des vins de Bourgogne (1937) « un an après » la route allemande → la Deutsche Weinstraße date de 1935.
 - p. 329 : « en 2012, il développe à elBulli » (Ferran Centelles) → le restaurant a fermé le 30 juillet 2011.
 - p. 318-319 et 324-325 : le même sommelier prénommé « Philippe » puis « Alain » Bourguignon (incohérence interne).
+- p. 127 : Silurien nommé d’après « la tribu gauloise des Silures » → les Silures sont une tribu du sud-est du pays de Galles (romano-britannique), d’où le nom donné par Murchison en 1835 (BGS, rapport RR07005 ; Geological Society of London).
+- p. 98 : Fukuoka présenté comme « microbiologiste » → les biographies lues parlent d’études de pathologie végétale, puis d’un poste d’inspecteur à la douane de Yokohama (Chelsea Green ; NYRB) ; microbiologie non confirmée.
+- p. 199 : terrasses du Lavaux aménagées par les moines « au Xe siècle » → les terrasses actuelles remontent au XIe siècle (UNESCO, fiche 1243 ; Office fédéral de la culture suisse, fiche Lavaux).
 
 ## Non confirmés
 - p. 130 : « pierre bleue » de Côte-de-Brouilly en diorite → retiré des erreurs le 22/10/2026 : la notice BRGM de la feuille Beaujeu (1/50 000, 1982) décrit des « métadiorites de Brouilly » ; les cahiers des charges (2021, 2024) parlent de porphyres sans nommer la diorite. Divergence non tranchée ; Juliénas (granite rose, schistes volcano-sédimentaires) reste non confirmé.
@@ -223,6 +226,7 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 331 : rencontres de 2022 (35 experts de 17 pays ; 160 intervenants à Green Wine Future) → chiffres non retrouvés (IWSC : plus d’une centaine ; Wine Industry Advisor : 170).
 - p. 332 : séparation nature/culture née à Athènes au IVe siècle av. J.-C. → Lex.dk (d’après Descola) situe l’idée moderne de nature aux Lumières. Divergence.
 - p. 332 : « agriculture biologique, biodynamie puis permaculture » → à ne pas lire comme une chronologie (biodynamie 1924, organic farming 1940).
+- p. 172-173 : canal du Loing « 1723 » → travaux de 1719 à 1724, jonction de Buges ouverte en 1721 (Mérimée IA45000050 et IA45000056) ; 1723 introuvable, peut-être une date d’ouverture partielle.
 
 ## Confirmés après vérification (le livre avait raison)
 - p. 18 : lambrusque protégée en France depuis 1995 (arrêté du 20 janvier 1982 modifié le 31 août 1995, annexe I).
@@ -291,3 +295,4 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 314 : loi Évin, n° 91-32 du 10 janvier 1991.
 - p. 317-327 : Confrérie des Chevaliers du Tastevin (1934) ; étymologie de « sommelier » (bête de somme) ; repas gastronomique des Français à l’UNESCO (16 novembre 2010, accords mets-vins compris).
 - p. 329 : Asian Palate de Jeannie Cho Lee date bien de 2009 (le livre de 2011 est Mastering Wine for the Asian Palate).
+- p. 160 : marais du Médoc et de Bordeaux drainés au XVIIe siècle par des ingénieurs néerlandais (Steimer, RAB 2011 ; Oxford Companion, entrée Médoc ; Bordeaux Métropole, étude archéogéographique des marais, 2015 : Alefsen et Jelmers, 1644) ; levadas de Madère, canaux d’irrigation (p. 163 ; Oxford, entrée madeira ; UNESCO, liste indicative n° 6230).

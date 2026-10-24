@@ -3,22 +3,22 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 664 (dernier id : 666) · exercices : 3483
-- Vérifiées : 424 · à vérifier : 240 (349 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1393
+- Vérifiées : 460 · à vérifier : 204 (298 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1379
 - Niveaux : Fondamental 214 · Intermédiaire 338 · Pointu 112
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 81 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 51 | 1–595 | 16–38 | 32 | 7 | 10 |
-| 040-nature.js | 52 | 4–634 | 40–73 | 36 | 7 | 15 |
-| 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
-| 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
-| 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
-| 150-terroir.js | 37 | 3–596 | 150–199 | 12 | 5 | 5 |
-| 203-vinification.js | 71 | 223–636 | 204–242 | 48 | 14 | 14 |
-| 244-degustation.js | 53 | 253–640 | 245–285 | 32 | 7 | 6 |
-| 288-service.js | 66 | 293–646 | 288–329 | 44 | 7 | 5 |
+| 016-domestication.js | 51 | 1–595 | 16–38 | 34 | 7 | 10 |
+| 040-nature.js | 52 | 4–634 | 40–73 | 40 | 7 | 15 |
+| 076-ecologie.js | 32 | 97–522 | 76–101 | 12 | 0 | 3 |
+| 104-climat.js | 31 | 128–524 | 104–123 | 13 | 5 | 6 |
+| 124-geologie.js | 32 | 157–188 | 124–149 | 18 | 6 | 6 |
+| 150-terroir.js | 37 | 3–596 | 150–199 | 18 | 5 | 5 |
+| 203-vinification.js | 71 | 223–636 | 204–242 | 49 | 14 | 14 |
+| 244-degustation.js | 53 | 253–640 | 245–285 | 33 | 7 | 6 |
+| 288-service.js | 66 | 293–646 | 288–329 | 49 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | cepages.js | 76 | 372–666 | hors livre | 53 | 0 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |

@@ -1171,7 +1171,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    selon_livre: [],
+    selon_livre: ["Laine mouillée du chenin, mine de crayon du cabernet-sauvignon, bacon de la syrah : selon le CMS (Classic Grape Markers v25.2) seul ; la page « Common wine aromas » de JancisRobinson.com ne les recoupe pas (elle rattache la mine de crayon au cabernet franc)."],
     src: "Court of Master Sommeliers Europe, Classic Grape Markers v25.2 (Tim Gaiser MS), fiches cabernet-sauvignon, pinot noir, cabernet franc, grenache, syrah, sauvignon blanc, chardonnay, chenin blanc ; WSET, Understanding Wines: Explaining Style and Quality (2016), p. 57-58 (sauvignon blanc), p. 60 (chardonnay), p. 66-70 (cabernet-sauvignon, pinot noir, syrah, grenache), p. 96-98 (chenin, cabernet franc de Loire) ; fiches du site sur le chardonnay, le sauvignon blanc, le pinot noir, le cabernet-sauvignon, la syrah, le grenache, le cabernet franc et la rotundone ; complément hors livre, cf. Mille Vignes, P. Lepeltier, p. 252",
     page: 252
   },
@@ -1193,13 +1193,10 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: [
-      "Existence et contenu de la méthode « intuitive » (⚠️) : décrite par la revue (p. 33-34 et suivantes) et par le manuel (Massin, RVF Academy, p. 31-45) du même éditeur ; aucune source indépendante lue (Oxford, WSET, Académie du Vin) ne la décrit. Les protocoles précis (bandeau, lâcher-prise, debriefing, carnet) ne sont donc pas confirmés.",
-      "Ce que dit Mille Vignes (⚠️) : je n’ai pas trouvé de passage de Lepeltier consacré à cette méthode dans les pages 244-287 ; à vérifier avant d’attribuer la fiche à une page du livre."
-    ],
-    selon_livre: [],
-    src: "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 33-35 ; I. Fritsch, F. Humbert, F. Thomas, Manuel de dégustation du vin (Massin, RVF Academy), p. 31-45 et 70-72 ; Morrot, Brochet, Dubourdieu, « The color of odors », Brain and Language (2001) ; Oxford Companion to Wine, 5e éd. (2023), entrée « tasting » (trois temps œil, nez, bouche) ; fiches 258, 261.",
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Observation de l’évolution du vin de l’attaque à la finale et intérêt d’être guidé par une personne qui a déjà pratiqué : selon la RVF (Apprendre à déguster, 2024, et manuel RVF Academy) ; non repris par iDealwine."],
+    src: "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 33-35 ; I. Fritsch, F. Humbert, F. Thomas, Manuel de dégustation du vin (Massin, RVF Academy), p. 31-45 et 70-72 ; Morrot, Brochet, Dubourdieu, « The color of odors », Brain and Language (2001) ; Oxford Companion to Wine, 5e éd. (2023), entrée « tasting » (trois temps œil, nez, bouche) ; fiches 258, 261. ; iDealwine, V. Bureau, On a testé : passer le certificat de dégustation de Franck Thomas Formation (5 juin 2025) ; Villa Ephrussi de Rothschild, présentation de Franck Thomas ; complément hors livre, cf. Mille Vignes, P. Lepeltier, p. 251-252 (yeux bandés évoqués pour la géosensorielle)",
     page: 251
   },
   {

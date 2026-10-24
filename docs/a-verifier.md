@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-664 fiches : 424 vérifiées, 240 à vérifier (349 points).
-Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+664 fiches : 460 vérifiées, 204 à vérifier (298 points).
+Hors dette : 1379 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (⚠️) : selon l’OIV, premier cépage de cuve (environ 341 000 ha en 2015) et deuxième toutes catégories derrière le kyoho, raisin de table (Focus OIV 2017, repris par Vitisphere) ; JancisRobinson (Anderson et Nelgen) le classe aussi premier cépage de cuve ; l’Oxford Companion (5e éd., 2023) donne environ 310 700 ha en 2016, premier cépage mondial sans séparer cuve et table ; Wine Grapes ne donne aucun total mondial.
@@ -43,12 +43,6 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 20** (p.18) — Vitis amurensis, la vigne du grand froid
 - [ ] Température limite dans l’air (⚠️) : « environ −40 °C » chez Venuti 2013, Liu et Li 2013, Zhang 2014 et Xin 2018, affirmation d’introduction sans mesure ; LT50 d’environ −31 °C sur rameaux d’une accession (Zhang et al., Vitis, 2012) ; −45 °C du livre introuvable ; Decanter China parle de −30 °C en hiver dans le nord-est de la Chine. La fiche garde « de l’ordre de −40 °C ».
 
-**Fiche 25** (p.24) — L’Ampélographie de Viala et Vermorel (1901-1910)
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « literature of wine ») : l’Oxford confirme l’Ampélographie en sept volumes (Viala, professeur à Montpellier, soutenu par l’industriel Vermorel), publiée de 1901 à 1910 sur 5 200 variétés, avec des planches en couleurs ; il ne dit rien des 24 000 noms ni des collaborateurs
-
-**Fiche 26** (p.25) — Pierre Galet et l’ampélographie par la feuille
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « ampelography ») : l’Oxford présente Galet comme l’ampélographe moderne le plus célèbre, parti des porte-greffes en 1944, auteur d’une clé en 1946 et du Précis d’ampélographie pratique en 1952, qui décrit la feuille par la mesure des longueurs et angles des nervures ; rien sur Agnel, Ravaz ni la liste OIV
-
 **Fiche 36** (p.33) — Des milliers de cépages, une poignée plantée
 - [ ] 70,2 % : relocalisé dans le Focus OIV 2017 (p. 22, tableau France, 806 000 ha) : somme des dix premières variétés, non énoncée dans le texte, année des données non précisée (2015 probable) ; une seule source
 - [ ] Environ 6 000 : même estimation à l’OIV (Focus 2017), mais pour les seuls cépages de cuve de V. vinifera ; une seule source au-delà de Lepeltier ; Oxford Companion (5e éd., 2023, entrée « vine varieties ») : l’Oxford donne une fourchette de 5 000 à 10 000 variétés de vinifera connues (nombreux synonymes) et 1 368 cultivées commercialement (Wine Grapes, 2012), sans retenir précisément 6 000 ; Wine Grapes (2012, introduction) parle d’environ 10 000 variétés existantes ; le chiffre de 1 368 vient de l’Oxford, qui l’attribue à Wine Grapes
@@ -73,20 +67,16 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 50** (p.36) — PiWi : les cépages résistants en Europe
 - [ ] Nombre de variétés résistantes inscrites en Europe : aucun chiffre consolidé (66 selon IVES Technical Reviews, 2024 ; 130 selon Lepeltier)
 
-**Fiche 61** (p.44) — Photosynthèse, respiration, transpiration
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « photosynthesis ») : la photosynthèse, la respiration et la transpiration sont décrites dans le même sens (entrées « photosynthesis », « respiration », « transpiration ») ; l’origine endosymbiotique des chloroplastes et la respiration des jeunes feuilles n’y figurent pas.
-
 **Fiche 67** (p.46) — Les trois phases de la baie
 - [ ] Découpage en trois phases (⚠️) : croissance herbacée avec accumulation des acides, puis maturation, confirmées par le Handbook of Enology (vol. 1, p. 243-251), qui place la véraison dans une phase de pause et ne compte pas la surmaturité comme une phase ; stade de Baggiolini non vérifié ; Oxford Companion (5e éd., 2023, entrée « ripening, grape ») : la baie reste dure, verte et acide jusqu’à la véraison, qui ouvre la maturation ; l’Oxford ne mentionne ni pause de croissance ni stades de Baggiolini.
 
 **Fiche 74** (p.50) — Le cycle du phylloxéra
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « phylloxera ») : cycle sexué et asexué, formes gallicole et radicicole, femelles ailées, œuf d’hiver, galles foliaires limitées aux vignes américaines et immunité des sols sableux concordent (entrée « phylloxera ») ; la distinction nodosités/tubérosités n’y figure pas.
-
-**Fiche 75** (p.51) — Les vignobles épargnés et les vieilles vignes franches de pied
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « phylloxera ») : plusieurs vignobles restent indemnes, notamment au Chili et en Australie-Méridionale, et le phylloxéra voyage dans la terre adhérant aux outils (entrées « phylloxera », « Chile ») ; la charte de la Barossa et ses seuils d’âge n’y figurent pas.
+- [ ] Frise du cours : Laliman à la Tourrate « en 1866 » et commission qui se range à la greffe « en 1888 » (⚠️) : une seule source chacune (Foëx pour 1866 ; Legros 2005, qui parle d’une « commission nationale du phylloxéra » qui préconise le greffage en 1888) ; voir fiche 76
 
 **Fiche 76** (p.51) — Lutter contre le phylloxéra : chimistes contre américanistes
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « phylloxera ») : chimistes (sulfure de carbone, submersion) et américanistes s’opposent, Bazille suggère le greffage en 1869 et Laliman signale la résistance des vignes américaines (entrée « phylloxera ») ; les dates de 1866, 1874, 1888 et le rapport de Daniel n’y figurent pas.
+- [ ] Commission du phylloxéra qui se range à la greffe en 1888 (⚠️) : seul Legros (Étude et Gestion des Sols, 2005) a été lu ; il nomme une « commission nationale du phylloxéra » qui reconnaît en 1888 l’échec de la lutte chimique et préconise le greffage ; ni la date ni l’intitulé « commission supérieure » ne sont recoupés, et le livre n’en parle pas
+- [ ] Rapport de Lucien Daniel (1908) (⚠️) : le livre (p. 51-52) cite La Question phylloxérique, le greffage et la crise viticole comme rapport commandé par l’État ; Birebent (2016, exposé d’un greffeur) confirme une mission officielle confiée à Daniel et ses réserves sur la greffe, sans le titre ni la date ; dates de vie (1856-1940) confirmées par la BnF et le livre
+- [ ] Laliman à la Tourrate « depuis 1866 » (⚠️) : Foëx seul ; un extrait Quae parle de vignes américaines cultivées par Laliman dès 1840, Birebent dès 1850 ; Legros le cite comme pépiniériste fournissant des sarments américains à Bazille en 1871 ; 1866 correspond peut-être à l’installation à la Tourrate, non tranché
 
 **Fiche 80** (p.55) — Un pool génétique trop étroit : la leçon de l’AxR1
 - [ ] AxR1 : recommandation de l’Université de Californie par Lider (1958) et retrait en décembre 1989 (⚠️) : sources de niveau 2b seulement (chronique de presse locale, diapositives de cours UC Davis, qui ne parlent pas d’une recommandation formelle) ; part de 70 % de Napa-Sonoma, 2 sites en 1983 puis plus de 70 en 1991 confirmés par le résumé de Granett et al. (1991) ; « dizaines de milliers d’acres » replantés : aucune source retrouvée, retiré de la synthèse ; Oxford Companion (5e éd., 2023, entrée « AXR1 ») : l’AXR1 a été largement adopté en Californie, a cédé dans les années 1980 à un nouveau biotype et a imposé de vastes replantations à Napa et Sonoma (entrées « AXR1 », « rootstock », « phylloxera ») ; la recommandation de Lider (1958) et la date de décembre 1989 n’y figurent pas.
@@ -97,12 +87,6 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 90** (p.65) — Sélection massale contre sélection clonale
 - [ ] Droits limités au propre vignoble (Lepeltier) : l’arrêté du 17 juin 2020 (art. 4, lu) prévoit la pépinière privée réservée à l’exploitation, sans interdire qu’une sélection massale soit multipliée par un pépiniériste en catégorie standard
 
-**Fiche 95** (p.73) — Goethe et la métamorphose des plantes
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 96** (p.73) — Steiner, la biodynamie et le « geste de la vigne »
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « biodynamic viticulture ») : la biodynamie repose sur des théories décrites en 1924 par Rudolf Steiner (entrée « biodynamic viticulture ») ; Koberwitz, les huit conférences, le lien avec Goethe et Florin n’y figurent pas.
-
 **Fiche 97** (p.76) — Le sol, interface vivante
 - [ ] Découpage litière / matière organique fraîche / humus : repris du livre (p. 76), non recoupé ; Oxford Companion (5e éd., 2023, entrée « organic matter ») : la matière organique fraîche se décompose jusqu’à un état stabilisé, l’humus, et la litière se trouve en surface (entrée « organic matter ») ; le découpage litière / matière fraîche / humus n’y figure pas tel quel.
 
@@ -111,24 +95,19 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 99** (p.78) — Complexe argilo-humique, CEC et glomaline
 - [ ] Rôle d’agrégation de la glomaline : identité de la molécule discutée (extrait brut GRSP, mélange possible de matières organiques ; revue 2021)
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « cation exchange ») : argiles et humus, chargés négativement, retiennent des cations et l’humus donne une structure grumeleuse (entrées « cation exchange », « organic matter ») ; glomaline, ponts cationiques et Sara Wright n’y figurent pas.
 
 **Fiche 102** (p.81) — Les mycorhizes : une alliance racine-champignon
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « mycorrhiza ») : la vigne forme une symbiose avec des champignons mycorhiziens à arbuscules qui améliore l’absorption des nutriments (entrée « mycorrhiza ») ; Frank, l’ancienneté de l’alliance et les proportions d’espèces n’y figurent pas.
+- [ ] Ancienneté de la symbiose, « plus de 450 millions d’années » (⚠️) : chiffre du livre (p. 81) ; Brundrett et Tedersoo (2018) font remonter la mycorhize à arbuscules aux premières plantes terrestres, au-delà de 450 Ma selon le rédacteur ; un titre du Real Jardín Botánico (CSIC) parle de plus de 400 Ma, et la plus ancienne mycorhize fossile identifiée date d’environ 407 Ma (Windyfield Chert) : chiffre exact non recoupé
 
 **Fiche 103** (p.81) — Quatre services des mycorhizes, et le piège des engrais
 - [ ] Bénéfices phytosanitaires de la RIM sur vigne : possibles mais non démontrés au champ pour les maladies foliaires ; Oxford Companion (5e éd., 2023, entrée « mycorrhiza ») : l’Oxford (entrée « mycorrhiza ») dit que ces champignons améliorent la résistance aux pathogènes, sans préciser les maladies ni les essais au champ.
 
 **Fiche 106** (p.84) — Truffes et plants de vigne mycorhizés
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 107** (p.85) — La vigne holobionte : une plante habitée de microbes
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Tuber uncinatum et T. aestivum = une seule espèce (⚠️) : seule l’étude de Paolocci et al. (FEMS Microbiology Letters, 2004) a été lue ; elle conclut à deux morphotypes d’une même espèce ; Larousse présente encore les deux comme truffes distinctes
+- [ ] Plants mycorhizés Sicavac (⚠️) : Réussir Vigne rapporte des essais 2009-2015 et un gain de croissance qui disparaît trois à quatre ans après plantation ; le document Sicavac (2016) cite un programme 2009-2014 et un effet limité à la première ou aux deux premières années (formulé au conditionnel) ; divergence signalée dans la synthèse, non tranchée
 
 **Fiche 108** (p.85) — Le biocontrôle microbien et les agents des maladies de la vigne
 - [ ] Metschnikowia fructicola : une seule source (souche commercialisée, efficacité modérée sur raisin de table) ; homologation pour la vigne de cuve en France non vérifiée
-- [ ] Willaertia magna : règlement d’exécution (UE) 2025/1177 lu via une copie tierce (approbation à l’échelle de l’espèce, jusqu’en 2040) ; AMM française d’un produit commercial non vérifiée
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « biologicals ») : Trichoderma contre les maladies du bois, flavescence dorée à phytoplasme transmise par Scaphoideus titanus et maladie de Pierce bactérienne concordent, le mildiou étant daté de 1878 (entrées « biologicals », « esca », « flavescence dorée », « downy mildew ») ; Bacillus pumilus, Metschnikowia fructicola et Willaertia n’y figurent pas.
 
 **Fiche 111** (p.88) — Plantes compagnes et arômes du vin
 - [ ] 1,8-cinéole (AWRI) : l’AWRI insiste sur le contact avec des débris d’eucalyptus plutôt que sur un « dépôt » aérien ; l’étude sur les pinots de la Yarra Valley n’a pas été confirmée ; Oxford Companion (5e éd., 2023, entrée « eucalyptus character ») : les eucalyptus voisins sont la source principale du 1,8-cinéole, surtout par les feuilles ou écorces récoltées avec le raisin plutôt que par l’absorption par les baies (entrée « eucalyptus character ») ; l’étude sur les pinots de la Yarra Valley n’y figure pas.
@@ -139,9 +118,6 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 113** (p.89) — Ravageurs de la vigne et auxiliaires
 - [ ] Pyrale : le livre cite la pyrale de la vigne ; la source lue (Réussir) vise la pyrale du daphné (Cryptoblabes gnidiella), une autre espèce ; nom latin de la pyrale de la vigne (Sparganothis pilleriana) non vérifié ; Oxford Companion (5e éd., 2023, entrée « moths ») : l’Oxford (entrée « moths ») cite en Europe Lobesia botrana, Eupoecilia ambiguella, Argyrotaenia ljungiana et Sparganothis pilleriana ; il n’emploie pas le nom « pyrale » ni ne mentionne Cryptoblabes gnidiella.
 
-**Fiche 115** (p.90) — Permaculture, animaux au vignoble et « Non solus »
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « biodynamic viticulture ») : vaches, chevaux, moutons et poules servent au fumier, à la traction et à la lutte contre adventices et ravageurs (entrée « biodynamic viticulture ») ; l’échelle de Malard et la devise « Non solus » n’y figurent pas.
-
 **Fiche 116** (p.92) — Après 1945 : la viticulture conventionnelle
 - [ ] 15,6 % des pesticides pour 3,2 % de la SAU (chiffres de 2002, publiés en 2005) : source introuvable ; Butault et al. (NESE n° 35, 2011, données 2006, lu) donnent 14,4 % des dépenses de pesticides pour 3,3 % de la SAU, chiffres repris par le Sénat (2012) ; Ecophyto R&D, tome III (INRA, 2009, lu) donne environ 20 % des pesticides en masse pour 3,7 % de la SAU, d’après Aubertot et al. 2005. Unités différentes (dépenses, masse, part de marché) : à ne pas mélanger
 
@@ -149,11 +125,8 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Le livre date l’encouragement officiel de la viticulture raisonnée « depuis 2000 » ; le texte officiel est le décret n° 2002-631 du 25 avril 2002 (JO du 28 avril 2002, lu sur AIDA/Ineris), qui ne vise aucun texte de 2000 ; « 2000 » non retrouvé
 - [ ] Origine de la HVE : Grenelle (2007+), Grenelle II (2010), décret de juin 2011 ; Pleinchamp date la certification de 2012 ; numéro du décret non confirmé
 
-**Fiche 118** (p.93) — Descola, Latour et la fin du Grand Partage
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
 **Fiche 119** (p.94) — Une diplomatie avec le vivant : Larrère, Morizot, Calvo
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Larrère, Du bon usage de la nature (⚠️) : 1997 chez Aubier selon la page de Catherine Larrère (La Vie des idées, réédition Champs Flammarion 2009) et la notice Agris/FAO ; 1998 selon le livre (p. 94) et une notice de libraire (Aubier, coll. Alto) ; catalogue BnF non lu, date non tranchée
 
 **Fiche 120** (p.95) — La carte du bio viticole français en 2020
 - [ ] Provence : 43,89 % sur la carte contre « proche de 30 % » pour PACA (Réussir/Agence Bio 2020) ; périmètre différent probable
@@ -162,17 +135,16 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Jura : Réussir indique 29 % (périmètre départemental) contre 32,81 % sur la carte
 
 **Fiche 121** (p.97) — Une histoire du vin nature
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « natural wine ») : le vin nature est un terme non réglementé, Chauvet en est le « grand-père », Lapierre le suit à la fin des années 1970 et ces vins arrivent dans les bars parisiens au début des années 1980 (entrée « natural wine ») ; la Topographie de Jullien (1816) est datée dans l’entrée « literature of wine » ; le groupement de 1910 y figure (entrées « German history » et « VDP ») : quatre associations de vendeurs aux enchères de vins naturels, c’est-à-dire non chaptalisés, s’unissent en 1910, ancêtre de l’actuel VDP ; Overnoy et Pineau n’y figurent pas.
+- [ ] Dates de Chauvet 1907-1989 (⚠️) : Wein.plus et le livre (p. 97) seulement ; World of Fine Wine confirme un négociant et chimiste du nord du Beaujolais sans dates
+- [ ] Overnoy inspiré par Chauvet (⚠️) : seul winewithseth le dit, via Jacques Néauport ; pour Lapierre, l’Oxford Companion (« natural wine ») et World of Fine Wine concordent
 
 **Fiche 122** (p.97) — Les chartes du vin nature
-- [ ] Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation DGCCRF confirmée, rôle de l’INAO contesté (reconnaissance selon M. Touton, rejet d’une définition en 2018 selon Reporterre)
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « natural wine ») : le vin nature est un terme non réglementé, d’où des vins vendus en vin de France (entrée « natural wine ») ; aucune charte privée n’y est citée.
-
-**Fiche 123** (p.97) — Agir indirectement : Haudricourt et Fukuoka
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Vin Méthode Nature « seule » à pouvoir figurer sur l’étiquette : à nuancer (AVN et S.A.I.N.S. existent comme chartes privées) ; validation du texte et du logo par la DGCCRF confirmée (Idealwine, BKWine) ; rôle de l’INAO contesté (reconnaissance selon M. Touton et Decanter ; BKWine : initiative privée dont l’INAO n’est pas responsable ; rejet d’une définition en 2018 selon Reporterre)
+- [ ] Seuil de SO2 (⚠️) : la charte a deux logos selon BKWine (2b) : « Vin méthode nature » sans aucun sulfite ajouté (≤ 20 mg/L mesurés) et « sulfites < 30 mg/L », ajout permis seulement à la mise en bouteille ; Idealwine parle de SO2 total < 30 mg/L, Decanter d’un ajout maximal de 30 mg/L ; tous excluent l’ajout avant ou pendant la fermentation ; cahier des charges non lu, la fiche ne présente que le second logo
+- [ ] Contrôle (⚠️) : audits aléatoires annuels d’un organisme certificateur (Idealwine) ; évaluation externe de chaque vin fini (Decanter) ; deux formulations à ne pas fondre
 
 **Fiche 124** (p.98) — Permaculture, régénératif et vigne non labourée
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Oregon ») : David Lett (Eyrie) a planté le pinot noir dans la Willamette Valley en 1965 (entrée « Oregon ») ; le non-labour d’Eyrie, Mollison et Holmgren, Rodale et la Regenerative Viticulture Foundation n’y figurent pas.
+- [ ] Rodale et « regenerative organic agriculture » (⚠️) : le livre dit début des années 1980 ; TABLE évoque un usage par le Rodale Institute dès les années 1970 ; le Rodale Institute dit seulement que Robert Rodale a forgé le terme, sans date ; date non tranchée
 
 **Fiche 125** (p.100) — La vitiforesterie aujourd’hui
 - [ ] Cuivre de Vignenvie : 600 g/an donné comme « dix fois moins » que la limite bio ; la limite bio est de 28 kg/ha sur 7 ans (4 kg/ha/an en moyenne), soit environ sept fois moins, et l’unité de 600 g est à préciser ; Oxford Companion (5e éd., 2023, entrée « organic viticulture ») : la limite bio est de 28 kg/ha en moyenne sur sept ans, soit 4 kg/ha/an (entrée « organic viticulture ») ; Vignenvie et l’unité des 600 g n’y figurent pas.
@@ -181,8 +153,7 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] 59 % : part des viticulteurs dans l’étude (communication personnelle de Sustainable Winegrowing NZ), non des hectares ; erreur d’interprétation probable du livre
 
 **Fiche 127** (p.101) — L’agroécologie : un mot né en 1928
-- [ ] Origine du mot : Bensin 1928 (Wezel et al.) ou Friederichs 1930 (Dalgaard et al.) ; dates de Bensin (1881-1973) non vérifiées
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Origine du mot agroécologie (⚠️) : Bensin 1928 (Wezel et al., livre) contre Friederichs 1930 (Dalgaard et al.) ; un document INRAE (BASC) précise que Bensin n’emploie pas le mot dans ses travaux de 1928 et 1935 ; la fondation Micheletti présente son article d’août 1930 (International Review of Agriculture) comme l’un des premiers à l’employer ; attribution non tranchée
 
 **Fiche 128** (p.104) — Climat, météo et millésime
 - [ ] Avancée des vendanges en Bourgogne (⚠️, une seule source) : le livre dit environ deux semaines depuis 1960-1970 ; National Geographic (Labbé et al. 2019) situe le net décrochage à la fin des années 1980 ; Oxford Companion (5e éd., 2023, entrée « climate change ») : même étude, les vendanges de 1988 à 2018 ont lieu 13 jours plus tôt que la moyenne des plus de 600 ans précédents, les années très chaudes étant devenues la norme depuis 1988.
@@ -191,7 +162,6 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 129** (p.105) — Températures : zéro de végétation, optimum et excès de chaleur
 - [ ] Optimum de photosynthèse (⚠️) : le livre donne 24-28 °C, Greer et Weedon (sémillon) 25 °C, Kriedemann (1968) 25 °C en serre et 30 °C pour des feuilles exposées ; retenir « autour de 25-30 °C » ; Oxford Companion (5e éd., 2023, entrée « photosynthesis ») : efficacité maximale pour des feuilles à environ 15-30 °C avec un léger pic vers 25 °C, et forte inhibition sous 15 °C comme au-delà de 30 °C.
 - [ ] Arrêt vers 40 °C (⚠️) : thèse du livre. Les travaux récents de Greer et Weedon (ISHS ; Functional Plant Biology 43, 2016) confirment une baisse dès 35 °C et un effet nuisible de 40 °C sur tous les processus de croissance, sans parler d’arrêt ; Kriedemann (1968) trouvait encore une activité à 40 °C et un arrêt vers 45-50 °C. « Très altérée vers 40 °C » est retenu ; Oxford Companion (5e éd., 2023, entrée « heat stress ») : au-delà de 40 °C de température diurne, la vigne cesse pratiquement de photosynthétiser (enzymes inopérantes), ce qui va dans le sens du livre.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 130** (p.105) — Le froid : gel d’hiver et gel de printemps
 - [ ] Gel d’hiver (⚠️, une seule source) : le livre place les dégâts de vinifera vers -15/-20 °C et la résistance des vignes américaines et asiatiques à -30 °C ; WSU donne -22 à -26 °C de résistance maximale pour vinifera, environ -29 °C pour labrusca et hybrides, et ne traite pas des espèces asiatiques ; Oxford Companion (5e éd., 2023, entrées « temperature » et « winter freeze ») : les vinifera bien aoûtés en dormance supportent environ -15 °C, les vinifera sensibles demandent des sites où -20 °C n’arrive pas plus d’une fois par décennie, et le Concord américain est cultivé là où -29 °C survient une année sur trois ; espèces asiatiques non traitées.
@@ -200,25 +170,22 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Gelée noire (⚠️) : rattachée à l’advection par le livre et Le Cap et al. (2021), au rayonnement par la FAO (Snyder, vol. 1 : gel radiatif sans dépôt de glace), à l’évaporation par Pleinchamp (qui y met aussi la gelée blanche) ; l’AMS et l’Oxford la définissent seulement par l’absence de givre. Blanche et noire décrivent l’aspect (humidité de l’air), pas un mécanisme : divergence non tranchée.
 - [ ] Gel d’évaporation (⚠️, une seule source) : le livre l’explique par l’équilibre d’un sol humide avec un air à 0 °C ; Pleinchamp par l’évaporation qui prélève de la chaleur.
 
-**Fiche 132** (p.108) — L’indice de Winkler
-- [ ] Seuils des régions : donnés en °F-jours à l’origine (Amerine et Winkler 1944) ; équivalents en °C-jours et scission de la région I en Ia et Ib à sourcer (le livre ne cite pas les seuils).
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
 **Fiche 136** (p.110) — L’eau de la vigne : besoins, contrainte hydrique et évapotranspiration
 - [ ] Besoins en eau (⚠️) : INRAE et Deloire & Pellegrino donnent 450-550 mm de consommation ; le livre cite 250-350 mm au minimum et 400 mm typique, ainsi que des moyennes annuelles de 600-900 mm non vérifiées. Le Handbook of Enology (vol. 1, p. 266 et 272) raisonne en pluie annuelle : sous 400 mm, rendements viables difficiles ; la plupart des grands vins sous 700-800 mm. Chiffres non comparables ; Oxford Companion (5e éd., 2023, entrée « rainfall ») : pluie annuelle moyenne d’environ 700 mm dans les régions viticoles du monde (de moins de 100 mm à plus de 1 700 mm), sans chiffre de consommation de la vigne.
 
 **Fiche 138** (p.111) — Vents et grêle
 - [ ] Grêle (⚠️, une seule source journalistique citant Météo-France) : le livre dit qu’elle devient plus courante ; la source conclut à l’absence de tendance claire ; Oxford Companion (5e éd., 2023, entrées « hail » et « Burgundy ») : la Bourgogne serait apparemment de plus en plus sujette à la grêle, surtout en Côte de Beaune, peut-être en lien avec le changement climatique, sans étude chiffrée.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Petaluma Gap « première AVA définie par le vent, au moins 8 mph » (⚠️) : « première AVA définie par le vent » vient du seul JancisRobinson.com (7/12/2017) ; le TTB (règle finale du 7/12/2017, en vigueur le 8/01/2018) retient vent et topographie comme traits distinctifs ; un document TTB de la pétition cite 8 mph comme seuil d’effet notable sur la vigne, sans en faire un critère de délimitation
+- [ ] Van Duzer (nuance) : AVA publiée le 14/12/2018 (en vigueur le 14/01/2019) ; le TTB attribue l’épaississement des peaux aux vents constants et la maturation lente aux températures plus fraîches, non au vent seul
 
 **Fiche 141** (p.113) — L’altitude : fraîcheur, acidité et limites
 - [ ] UV plus forts, peau plus épaisse, plus de couleur et de tanins (⚠️) : Arias et al. (2022, résumé lu seul) confirment UV-B élevés, fortes amplitudes thermiques et plus de métabolites secondaires en altitude, mais pas l’épaississement de la peau ni la baisse de sucre ou la hausse d’acidité ; à confirmer dans IVES (Gambetta) ou dans le texte complet d’Arias ; Oxford Companion (5e éd., 2023, entrée « elevation ») : en altitude, maturation retardée, nuits plus fraîches et acidité plus élevée, et davantage d’UV qui stimulent probablement la synthèse des composés phénoliques ; épaississement de la peau non mentionné.
 
 **Fiche 142** (p.114) — L’Etna, vignoble d’altitude
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Quota Mille (⚠️) : Gambero Rosso la décrit comme une route provinciale (Linguaglossa, Castiglione di Sicilia, Randazzo) dont la zone située au nord est hors DOC et revendiquée par certains producteurs ; JancisRobinson.com parle d’une limite haute à 1000 m, au-delà de laquelle les vins sont vendus en IGT Terre Siciliane ; le disciplinare ne nomme pas cette route (son art. 3 cite « quota 1.000 » comme courbe de niveau, à partir de Casale Brancato) ; « route = limite haute » et l’explication sur son nom reposent sur la presse
 
 **Fiche 143** (p.115) — Exposition et pente : où tourner la vigne
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Expositions de Nuits-Saint-Georges et Meursault (⚠️) : le dossier UNESCO des Climats donne des versants orientés à l’est pour la Côte de Beaune (Meursault y est, sans être nommé) ; la Côte de Nuits est « est ou sud-est » avec un point d’interrogation chez Hachette Vins (2b) ; aucune source officielle n’indique l’orientation de Nuits-Saint-Georges (ni le cahier des charges INAO ni le dossier DREAL)
 
 **Fiche 144** (p.115) — Masses d’eau et courants marins
 - [ ] Gulf Stream : le livre dit qu’une eau chaude atténue la latitude ; une source météo nuance (effet surtout hivernal et indirect sur les étés), niveau 2b uniquement, à confirmer avec Météo-France ; Oxford Companion (5e éd., 2023, entrée « Bordeaux ») : l’Atlantique, réchauffé par le Gulf Stream, tempère le climat bordelais et cette régulation s’étend loin dans les terres grâce à l’estuaire de la Gironde, sans nuance sur l’hiver ou l’été.
@@ -229,16 +196,15 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 146** (p.117) — Classer les climats viticoles
 - [ ] Descriptions des types de climat (étés, pluies) : reprises du livre, non recoupées par une source indépendante ; Oxford Companion (5e éd., 2023, entrées « mediterranean climate », « maritime climate », « continental climate ») : méditerranéen = étés chauds et secs, hivers doux et humides ; maritime = faible amplitude annuelle, saisons plus longues et fraîches, plus de précipitations ; continental = hivers plus froids, gel de printemps plus fréquent, étés plus chauds et souvent plus humides ; les semi-arides ne sont pas traités comme famille.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 147** (p.119) — Volcans et millésimes
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Durée des couchers de soleil colorés après Krakatau (⚠️) : environ 3 ans selon Oregon State University (et le livre), « des mois » selon la fiche EBSCO ; la synthèse dit « des années »
 
 **Fiche 149** (p.120) — L’optimum climatique médiéval et les vignes du Nord
 - [ ] Raisins du Vinland : l’existence de raisins sauvages, peut-être des baies, est elle-même débattue
 
 **Fiche 150** (p.120) — Le petit âge glaciaire et le grand hiver de 1709
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Seconde vague de gel d’« environ trois semaines » (⚠️) : c’est la formule de Saint-Simon citée par Études héraultaises (« trois autres semaines ») ; Geneacaux décrit 18 jours de froid intense, 10 jours de redoux puis retour du gel jusqu’au début de mars, soit un autre découpage ; durée non tranchée
 
 **Fiche 151** (p.120) — Le réchauffement actuel et les vendanges
 - [ ] Avance des vendanges : 13, 15, 24 ou 26 jours selon vignoble, période et méthode ; le livre parle d’une semaine d’avance du débourrement à la véraison, non confirmée par les sources ; Oxford Companion (5e éd., 2023, entrée « climate change ») : 13 jours d’avance en Bourgogne entre 1988 et 2018 et, de façon générale, 5 à 30 jours d’avance des stades de la vigne selon cépages et lieux, avec des intervalles entre stades raccourcis de deux semaines ou plus ; la « semaine » du livre n’y figure pas.
@@ -255,9 +221,6 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 159** (p.126) — Le temps long : échelle des temps géologiques et tectonique
 - [ ] Wegener 1912 / 1915 et tectonique des plaques des années 1960 (⚠️) : une seule source lue (Futura-Sciences).
 
-**Fiche 160** (p.127) — Les noms des âges géologiques : lieux, peuples et roches
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
 **Fiche 161** (p.127) — Minéral, élément chimique, roche : trois mots à ne pas confondre
 - [ ] Élément défini par son nombre de protons (⚠️) : une seule source lue (Inrap) ; le nombre d’isotopes du carbone annoncé par l’extraction (quatre) n’est pas repris, la source en donne trois naturels.
 - [ ] Définition d’une roche et du calcaire, cycle des roches (⚠️) : énoncés par le livre, non recoupés par une source dédiée ; Oxford Companion (5e éd., 2023, entrées « rock » et « limestone ») : la roche est un agrégat rigide de minéraux naturellement liés ; le calcaire est constitué surtout de calcite (carbonate de calcium) et se forme le plus souvent en mer chaude peu profonde ; cycle des roches non décrit.
@@ -268,70 +231,29 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 163** (p.130) — Vignobles sur roches plutoniques en France : granite, pierre bleue, gabbro
 - [ ] Pierre bleue (divergence, le livre n’est pas en erreur pour Brouilly) : la notice de la carte géologique BRGM feuille Beaujeu (1982) décrit des « métadiorites de Brouilly » ; le livre et Decanter parlent de diorite ; les cahiers des charges AOC Brouilly et Côte de Brouilly (arrêté du 22 février 2021, lus) décrivent des porphyres (« roches métamorphiques massives ») appelés localement « pierres bleues », avec du granite ; celui de Juliénas (arrêté du 20 février 2024) ne nomme pas la pierre bleue. La fiche ne présente pas la diorite comme établie.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 164** (p.132) — Vignobles sur roches volcaniques : basalte, rhyolite, andésite et porphyre
 - [ ] Fertilité des sols basaltiques (⚠️) : potentiel nutritif élevé de la roche (Oxford) mais sols pauvres en matière organique et parfois appauvris en bases (Indrick 2008 sur l’Oregon ; résumé IVES sur la Columbia Valley, sans mention de fertilité) ; vigueur réelle non établie par les sources lues ; montmorillonite non retrouvée. Écart expliqué par roche fraîche contre sol altéré, non tranché.
-- [ ] Porphyre (⚠️, correction du livre) : texture et non roche d’après deux sources (Futura-Sciences, Oxford).
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Savennières (⚠️) : parts de 57,6 % de schistes et 4,9 % de rhyolites ou microgranites d’une seule source (Vins et Millésimes, sur la surface revendiquable) ; le cahier des charges AOC confirme seulement schistes et grès dominants avec des filons locaux de rhyolite et de spilite, sans pourcentages
 
 **Fiche 165** (p.132) — Les projections volcaniques : cendres, lapilli, ponce, tuf
-- [ ] Ponce = écume de lave solidifiée et classement des téphras (⚠️) : définitions du livre non recoupées par les sources lues ; Oxford Companion (5e éd., 2023, entrée « tuff ») : le tuf est une roche volcanique fine formée de matériau cendreux éjecté, déposé puis durci, mais ni la ponce ni le classement des téphras ne sont définis.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Sol aspa de Santorin (⚠️) : ponce, cendre, fragments de basalte et sable confirmés par WineWithSeth seul (2b) ; l’andésite ne vient que du livre
 
 **Fiche 166** (p.132) — Les « vins de volcan » : une signature commune ?
-- [ ] Analyses de John Szabo (⚠️) : rapportées par un article de presse technique, pas par une publication à comité de lecture ; le second chercheur cité par le livre n’est pas confirmé et n’est pas utilisé ici.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 167** (p.133) — Naissance d’une roche sédimentaire
-- [ ] Part des roches sédimentaires (⚠️) : le livre dit « plus de 70 % de la croûte » ; les sources donnent environ 70-75 % de la surface des continents et environ 8 % du volume de la croûte, d’où la formulation corrigée de la fiche.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 168** (p.133) — Roches détritiques : de l’argile au poudingue
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Analyses de potassium rapportées par John Szabo (⚠️) : le seul cas retrouvé est celui d’un œnologue des Açores (Azores Wine Company) qui mesure 3 à 4 fois plus de potassium dans des vins volcaniques que dans ceux du Portugal continental (The Drinks Business, 2016) ; Szabo précise que le lien avec le goût n’est pas mesuré ; pas de publication à comité de lecture ; le second chercheur cité par le livre (étude en cours avec B. Marsan) n’est pas confirmé et n’est pas utilisé
 
 **Fiche 169** (p.134) — Roches chimiques et biochimiques : craie, diatomite, gypse, tuffeau
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 170** (p.134) — Le calcaire et ses cousins : dolomie, marne, calcaire oolithique
-- [ ] Seuil de 50 % (⚠️) : seuil général de carbonates (calcite, aragonite, dolomite) selon Futura/OQLF, pas uniquement de CaCO3 ; calcaire pur au-delà de 90 % : à sourcer.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 173** (p.136) — Le métamorphisme : une roche transformée sans fondre
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 174** (p.136) — De l’argile à la migmatite : une gradation sans frontière nette
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 175** (p.136) — Vignobles sur ardoises et schistes : Anjou noir, Faugères, Moselle, Priorat, Douro
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Tuffeau (⚠️) : Futura-Sciences le dit formé de débris de coquilles et de foraminifères ; la notice DREAL Nouvelle-Aquitaine décrit une craie micacée et glauconieuse, tendre et poreuse, à bryozoaires, bivalves et ammonites, sans foraminifères ni coccolithes ; le contraste « plutôt que coccolithes » et l’exercice d’association « carapaces et foraminifères » reposent sur Futura seul
 
 **Fiche 176** (p.137) — Gneiss, amphibolite, serpentinite : du Muscadet à la Wachau
 - [ ] Nombre de crus du Muscadet (⚠️ pour l’avenir) : le cahier des charges AOC Muscadet Sèvre et Maine le plus récent lu (arrêté du 26 novembre 2025) compte 7 dénominations géographiques complémentaires (Château-Thébaud, Clisson, Gorges, Goulaine, Monnières-Saint-Fiacre, Mouzillon-Tillières, Le Pallet) ; Vallet et La Haie-Fouassière (Muscadet Sèvre et Maine) ainsi que Champtoceaux (Muscadet Coteaux de la Loire) ont été mises en consultation publique par l’INAO (25 août-25 octobre 2025), puis en procédure nationale d’opposition selon Vigneron du Val de Loire (24 septembre 2026 ; clôture les 17 et 18 novembre 2026) : non reconnues à ce jour ; le chiffre de 10 crus avancé par certaines sources de presse n’est pas établi ; nombre non retenu dans les exercices ; Oxford Companion (5e éd., 2023, entrée « Muscadet ») : cite dix crus communaux, les sept ci-dessus plus Vallet, La Haye-Fouassière et Champtoceaux, liste identique à celle d’InterLoire, qui anticipe les trois dénominations non encore reconnues ; les textes officiels (sept DGC) font foi.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 177** (p.138) — Le cycle des roches : un recyclage permanent qui fabrique les sols
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 178** (p.139) — Naissance d’un sol : la pédogenèse
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
-**Fiche 180** (p.142) — Pas de sol idéal pour la vigne
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 181** (p.142) — Nutrition minérale : ce que le sol donne vraiment
 - [ ] Azote comme facteur chimique clé et primauté des propriétés physiques (⚠️, une seule source, van Leeuwen et al., IVES) ; Oxford Companion (5e éd., 2023, entrée « soil and wine quality ») : à la suite de Seguin, l’opinion scientifique tient les propriétés physiques du sol, surtout celles qui règlent l’alimentation en eau, pour l’influence dominante après le climat ; côté chimie, mal connue, l’azote fait « en partie exception », avec un optimum au plus modéré ; l’Oxford ne le désigne pas comme le facteur chimique le plus influent
 - [ ] Six macro-éléments N, P, K, Mg, Ca, S (⚠️) : liste du livre, non recoupée dans la recherche (à doubler : IFV, chambre d’agriculture) ; Oxford Companion (5e éd., 2023, entrée « vine nutrition ») : mêmes six macroéléments, auxquels l’ouvrage ajoute le chlore, plus six oligo-éléments (manganèse, fer, zinc, cuivre, molybdène, bore).
 
-**Fiche 183** (p.143) — Ce qui règle l’eau : texture, fissures, pierrosité et argiles
-- [ ] Smectites contre kaolinite et illite (⚠️, une seule source de niveau 2b : Wineanorak) : à doubler par un manuel (BRGM, Planet-Terre) ; Oxford Companion (5e éd., 2023, entrée « clay ») : les kaolinites soutiennent des structures stables, alors que les montmorillonites (smectites) gonflent à l’humidité et se rétractent au sec, d’où une instabilité de structure possible ; les argiles de type mica retiennent le potassium, sans que l’illite soit nommée.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
-
 **Fiche 184** (p.144) — Châteauneuf-du-Pape : une mosaïque de sols
 - [ ] Galets « seul résidu des terrasses », autres roches dissoutes et argiles ferrugineuses (⚠️) : le Syndicat confirme galets de quartzite sur sous-sol d’argile rouge, pas le mécanisme de dissolution ; à confirmer par une source géologique (Vins du Rhône, Département de Vaucluse) ou à retirer de la synthèse ; Oxford Companion (5e éd., 2023, entrée « Châteauneuf-du-Pape ») : galets roulés sur beaucoup de vignes, mais aussi sols sableux (Rayas), grès rouge compacté et calcaire ; ni mécanisme de dissolution ni argiles ferrugineuses.
-
-**Fiche 186** (p.148) — De l’UTB à l’UTV : cépage, climat du Nouveau Monde et Mendoza
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
 
 **Fiche 187** (p.149) — L’homme fabrique le terroir
 - [ ] Anthroposols : le seuil du livre (« plus de 50 % ») est corrigé d’après le Référentiel pédologique 2008 (PDF lu, p. 91 : sol transformé sur au moins 50 cm ; le critère de 50 % concerne le volume de matériaux artificiels des anthroposols artificiels ; concept jugé « très restrictif » pour les sols agricoles). Une seule source, de niveau 1.
@@ -348,11 +270,9 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 193** (p.156) — La prohibition américaine : 18e et 21e amendements
 - [ ] Monopoles d’État : 17 États de contrôle selon la NABCA (annuaire en ligne ; fiche 2022), 18 juridictions avec le comté de Montgomery (Maryland) ; Alaska, Minnesota, Dakota du Sud et Maryland n’appliquent que des formes partielles du modèle ; les « 13 juridictions » du livre ne sont pas retrouvées (⚠️).
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Prohibition ») : confirme les termes de l’amendement (fabrication, vente, transport), la fin de la Prohibition au 5 décembre 1933 et le régime à trois niveaux (producteur, grossiste, détaillant) instauré après l’abrogation, sans chiffre sur les États de contrôle
 
 **Fiche 194** (p.158) — Le terroir, une œuvre humaine : de Dion à Roupnel
 - [ ] Absence de texte français interdisant le remaniement des parcelles (⚠️) : thèse relayée par le livre ; Garcia 2011 (lu) documente des apports de terre anciens (Volnay 1468-1469, Beaune 1468) mais ne traite pas de ce point.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « terroir ») : confirme que le terroir inclut l’intervention humaine (définition de l’OIV de 2010, choix de culture présentés comme une gestion du terroir), sans traiter du remaniement des sols ni de Dion
 - [ ] Déclassement de parcelles par l’INAO en Alsace pour apport de terre (⚠️) : non retrouvé dans les sources lues.
 - [ ] Témoignage de Roupnel sur les racines de Chambertin (⚠️) : passage non retrouvé dans les sources lues.
 
@@ -361,35 +281,24 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 196** (p.160) — Domestiquer l’eau : drains, levadas et karez
 - [ ] Statut UNESCO des karez (⚠️) : liste indicative lue (soumission en 2008), aucune inscription au patrimoine mondial trouvée.
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « madeira ») : confirme les levadas de Madère (plus de 2 000 km de canaux d’irrigation) ; pour Yquem, il donne 100 ha en production, ce que confirme le site de LVMH (« une centaine d’hectares ») ; les 113 ha viennent d’une source 2b (« superficie du domaine »), non confirmés ; rien sur l’assèchement du Médoc ni sur les karez
-
-**Fiche 197** (p.161) — Terrasses : tenir la pente, retenir la terre
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « hillside vineyards ») : confirme l’usage des terrasses en travers de la pente pour limiter l’érosion et faciliter la mécanisation (Douro, Hermitage), sans seuil de pente, sans chiffre d’érosion et sans mention du Lavaux
-
-**Fiche 198** (p.163) — Madère : un vin né des terrasses et de la mer
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « madeira ») : recoupe le vinho da roda, le canteiro, les estufas, les levadas, le phylloxéra, la Prohibition et la révolution russe de 1917 (il parle de révolution, non de guerre civile) ; il ne donne ni les dates 1418-1419 ni les températures d’estufagem
 
 **Fiche 199** (p.164) — L’architecture vigneronne : cabanes, caves et celliers
 - [ ] Typologie de Parain et zones de répartition (⚠️) : source unique et indirecte (Études héraultaises) ; les sources placent aussi le cellier non voûté vers les Pyrénées, le Massif central et la vallée Rhône-Saône, le livre à l’Ouest et au Sud-Ouest.
 
 **Fiche 200** (p.166) — Châteaux, chais et grandes caves du négoce
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « chai ») : décrit le château bordelais type (demeure sans fonction de vinification, cuverie, chai de première année, chai de deuxième année) et rattache l’affirmation architecturale aux châteaux bordelais du XIXe siècle, sans citer Eiffel, Bofill ni la date du chai de Lafite
-
-**Fiche 201** (p.166) — L’architecture contemporaine du vin : de Mondavi aux « starchitectes »
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « winery design ») : cite Calatrava à Ysios et Gehry à Marqués de Riscal parmi les grandes signatures de l’architecture viticole et présente la cave moderne comme soutien de l’image de marque et de l’accueil du public, sans préciser la nature des bâtiments ni le cas de Pétrus
+- [ ] La Concha et Eiffel (⚠️) : la Ville de Jerez attribue le dessin à Eiffel et dit la bodega élevée en l’honneur d’Isabelle II après sa visite d’octobre 1862 ; Lonely Planet et Sherry Notes (2b) datent la commande de 1862 ; aucune date de construction confirmée, la synthèse ne la donne plus.
+- [ ] Eiffel à CVNE (Rioja) et à Byrrh (Thuir) (⚠️) : CVNE l’affirme sur son propre site (producteur) ; pour Byrrh, une page de tourisme n’attribue à Eiffel que la verrière de la halle et la notice du ministère de la Culture ne le cite pas ; attribution non confirmée, signalée comme telle dans la synthèse.
 
 **Fiche 202** (p.169) — Conduire la vigne : la planche des tailles
 - [ ] Standardisation au milieu du XIXe siècle grâce à Guyot, palissage sur fil, mécanisation (⚠️) : le livre ; les sources nuancent le rôle de Guyot (codifié et diffusé, non inventé : ✅, traité de 1860) ; le fil de fer des années 1850, généralisé dès 1875 (livre p. 165), n’est confirmé par aucune source lue ; Oxford Companion (5e éd., 2023, entrée « Guyot, Jules ») : confirme que Guyot a diffusé dans les années 1860 une taille en cannes déjà ancienne en France, sans parler de standardisation au milieu du XIXe siècle, de fil de fer ni de mécanisation à cette époque
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Guyot, Jules ») : corrobore le rôle de Guyot (taille en cannes ancienne, diffusée dans les années 1860, traités traduits en anglais) sans autre précision sur la standardisation des conduites
-
-**Fiche 203** (p.172) — Le fleuve, autoroute du vin : canaux et rivières aménagés
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « France ») : confirme que la proximité de rivières navigables décidait de l’exportation du vin plus que la qualité, que le canal du Midi date de la fin du XVIIe siècle (sans année précise) et que les rapides du Cachão da Valeira ont longtemps bloqué la remontée du Douro ; rien sur les canaux de la Loire
+- [ ] Taille longue « 4 à 10 yeux » (⚠️) : chiffre du livre (p. 169), repris à l’identique par Dico du Vin (2b) ; l’IFV Occitanie ne fixe pas de nombre (« baguette à x yeux ») ; la taille courte à 2 yeux est confirmée (IFV Occitanie, Dico du Vin, livre) ; l’exercice à trous interroge sur ce chiffre.
 
 **Fiche 205** (p.174) — Pèlerins, moines et routes lointaines : Cluny, Compostelle, soie
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « burgundy ») : confirme le rôle de Cluny dans la viticulture bourguignonne et date la fondation de l’abbaye de 910 (Conférence des académies : charte n° 112 « du 11 septembre 910 (ou 909) » ; Universalis : 909, 910 résultant d’une erreur d’indiction ; non tranché) ; rien sur le réseau de maisons, Marcillac, Irache ni la route de la soie
+- [ ] Date de fondation de Cluny (⚠️) : 910 selon le site de l’abbaye (charte du 11 septembre 910) et l’Oxford Companion ; 909 selon l’Encyclopædia Universalis (910 venant d’une erreur d’indiction) et le livre ; la synthèse et l’exercice admettent les deux dates ; non tranché.
+- [ ] Réseau clunisien (⚠️) : « plus de 1 200 monastères » dans le livre, 1 184 maisons selon l’Universalis, « près d’un millier » à la fin du XIIIe siècle selon le site de l’abbaye ; aucune source lue ne relie ce réseau à l’accueil des pèlerins de Compostelle.
 
 **Fiche 208** (p.178) — La ville façonnée par le vin : Chartrons, Bordeaux, Reims et Épernay
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier.
+- [ ] Cité du Vin et périmètre UNESCO (⚠️) : inaugurée le 31 mai 2016 (Ville de Bordeaux) ✅ ; le bien inscrit est l’ensemble urbain « Bordeaux, Port de la Lune » (2007), mais la carte du périmètre et de la zone tampon n’a pas été lue : le bâtiment pourrait s’y trouver ; l’exercice vrai/faux reste juste (le bâtiment n’est pas l’objet de l’inscription) mais son explication est à revoir si le bâtiment est dans le bien.
 
 **Fiche 209** (p.179) — Haut-Brion : un grand cru dans la ville
 - [ ] Classement des Graves : liste de 1953 puis révision de 1959 ✅ (CIVB ; Winedoctor ; Oxford pour 1959). Ratification en 1958 et détail des ajouts de 1959 (quatre blancs, deux rouges) : Berry Bros. & Rudd seul (⚠️) ; aucun arrêté officiel lu. Ne pas dater au jour près ni dire quel château est entré à quelle date.
@@ -399,24 +308,17 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Rôle des moines (⚠️, divergence de portée) : grands propriétaires médiévaux, non contesté (UNESCO ; Phillips 2023 : Cîteaux, environ 2 000 ha de vignes avant 1790). Hiérarchie des parcelles imputée aux moines : posée par l’UNESCO et l’Oxford sans travaux cités, rejetée par Garcia 2011 et 2020 et par Pérard et Jacquet 2014, que suit Lepeltier. Les deux thèses ne portent pas sur le même objet (propriété contre classement des lieux).
 
 **Fiche 213** (p.185) — Chablis : le Kimméridgien dans les procès de délimitation
-- [ ] Chronologie de Chablis : jugements de 1920 à 1932, jugement d’Auxerre de 1929 « sans la référence géologique », AOC en 1938 (décret du 13 janvier 1938) et aire parcellaire approuvée le 31 janvier 1978 (✅, cahiers des charges Chablis et Chablis grand cru, arrêtés du 11 décembre 2023 et du 24 octobre 2024) ; huit communes en 1920, vingt en 1929 et la date de 1976 restent sur une seule source (Vincent, Terroir 2012) (⚠️) ; l’aire compte aujourd’hui 17 communes de l’Yonne.
+- [ ] Chronologie de Chablis : jugements d’Auxerre de 1929 étendant l’appellation à vingt communes sans référence géologique (Vincent ; Monocépage : 24 juillet et 18 octobre 1929 ; cahier des charges INAO), décret du 13 janvier 1938 et aire parcellaire du 31 janvier 1978 ✅ ; huit communes en 1920 (⚠️) : Vincent cite un jugement d’Auxerre du 8 décembre 1920 limitant Chablis à huit communes, Monocépage date du même jour un jugement du tribunal de Tonnerre visant trois communes exclues ; sources non concordantes. L’aire compte aujourd’hui 17 communes de l’Yonne.
+- [ ] Décret de 1976 supprimant la référence au Kimméridgien (⚠️) : Vincent donne un décret du 24 novembre 1976 ; Monocépage évoque un réaménagement de l’aire par l’INAO en 1976, appliqué en 1978, sans parler de suppression de la référence ; les cahiers des charges INAO n’en disent rien.
 - [ ] Extensions sur terrains portlandiens et critère agronomique (⚠️) : une seule source (Vincent) ; le cahier des charges AOC Chablis (2023) ne mentionne ni le Portlandien ni de critère agronomique, il décrit des sols toujours calcaires (calcaire du Barrois en corniche, talus marneux) et environ 4 000 ha (2008) ; surfaces de Vincent non reprises ; Oxford Companion (5e éd., 2023, entrée « Chablis ») : précise que les sites hauts, en Petit Chablis, reposent sur le Portlandien, plus récent que le Kimméridgien, et que l’extension de l’appellation, au-delà de ce qui était prévu à l’origine, est contestée ; il n’évoque pas de critère agronomique
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Chablis ») : corrobore la création de l’appellation en 1938 et précise que « Kimméridgien » désigne le socle rocheux, non le sol, sans lien démontré avec le goût du vin ; il ne documente pas les procès de délimitation
 
 **Fiche 214** (p.189) — De l’AOC à l’AOP : textes européens, seuils et chiffres
 - [ ] 386 AOC/AOP et 77 IGP viticoles en 2023 (⚠️ sur l’écart) : chiffre confirmé par trois pages INAO (Chiffres-clés SIQO 2023, exposition des 90 ans) ; l’INAO donnait 366 et 76 en 2022 (Chiffres-clés SIQO 2022) et 363 et 74 en 2020 ; le saut 2022-2023 n’est expliqué dans aucun document lu (aucune note de méthode) ; pas de chiffre 2024 avant l’été 2026. Toujours écrire « en 2023, selon l’INAO » ; le livre cite 363 pour 2019.
 
 **Fiche 215** (p.189) — Super-Toscans : quand de grands vins sortent des appellations
 - [ ] Sassicaia 1968 mis sur le marché en 1971 (⚠️) : Tenuta San Guido (producteur), reprise par Wine Anorak et World of Fine Wine, aucune source indépendante du producteur ; Gambero Rosso confirme 1968 mais parle d’un accord avec Antinori en 1972) ; plantation de 1944 et premier millésime familial non confirmés ; Oxford Companion (5e éd., 2023, entrée « Sassicaia ») : donne deux repères non concordants : premières petites quantités commerciales au milieu des années 1970 (entrée Sassicaia) mais débuts commerciaux du Sassicaia et du Tignanello au début des années 1970 (entrée vino da tavola) ; plantation « dès les années 1940 », sans millésime 1968 ni année de mise en marché
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Supertuscan ») : recoupe Sassicaia et Tignanello vendus d’abord en vino da tavola dès le début des années 1970, l’IGT de 1992 et les DOC de 1994 et 2013 ; il date l’apparition du terme « Supertuscan » des années 1970 (et non du début des années 1980)
-- [ ] Tignanello (⚠️) : le livre dit 1974 ; les sources donnent une production dès 1970 et vin de table en 1971 ; Oxford Companion (5e éd., 2023, entrée « vino da tavola ») : place les débuts commerciaux du Tignanello au début des années 1970, en vino da tavola (et mentionne 1975 pour l’abandon du canaiolo au profit du cabernet), ce qui s’éloigne de 1974 sans donner d’année précise
-
-**Fiche 217** (p.192) — Le Jugement de Paris : la Californie entre dans la cour des grands
-- [ ] Date du 24 mai 1976 (⚠️) : une source (Smithsonian Magazine) ; le livre écrit 4 juillet ; Oxford Companion (5e éd., 2023, entrée « Judgment of Paris ») : date la dégustation de 1976 sans préciser le mois ni le jour, et ne tranche donc pas entre le 24 mai et le 4 juillet
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Judgment of Paris ») : confirme que Steven Spurrier, alors caviste à Paris, a organisé la dégustation de 1976 et que le Stag’s Leap Wine Cellars cabernet-sauvignon 1973 arrive en tête, devant Mouton-Rothschild 1970 et Haut-Brion 1970, sans mention de Montelena ni de la date exacte
-
-**Fiche 222** (p.199) — Les effets ambivalents de l’inscription : œnotourisme et Lavaux
-- [ ] Sources revues le 20/10/2026 : Wikipédia retiré des sources ; les faits qui s’appuyaient dessus sont à revérifier ; Oxford Companion (5e éd., 2023, entrée « Mondavi ») : confirme que Robert Mondavi a fait de l’œnotourisme (et d’événements culturels) un axe de son modèle dès l’ouverture de sa winery en 1966, sans rien sur le Lavaux ni la Rioja
+- [ ] Terme « Super Tuscan » (⚠️) : début des années 1980 pour le livre, milieu des années 1980 pour DoctorWine (mot attribué au journaliste Nicholas Belfrage, MW), années 1970 pour l’Oxford Companion (entrée Supertuscan) ; non tranché, la synthèse donne les trois datations.
+- [ ] Tignanello (⚠️) : le livre dit 1974 ; Berry Bros & Rudd donne 1971 comme premier millésime proprement dit, sorti en 1974 en vino da tavola (le 1974 du livre peut donc être la sortie), Gambero Rosso une sortie en 1971, DoctorWine un essai de 1970 en Chianti Classico Riserva ; l’Oxford place ses débuts commerciaux au début des années 1970 ; ajout du cabernet en 1975 (Gambero Rosso, DoctorWine, Oxford).
 
 **Fiche 223** (p.204) — Pourquoi le raisin fait du vin
 - [ ] Définition OIV (fermentation de raisins frais ou de moût, 8,5 % vol. minimum) : une seule page OIV lue ; dérogations éventuelles au seuil non vérifiées ; Oxford Companion (5e éd., 2023, entrée « wine ») : le vin au sens européen est issu de la fermentation du jus de raisins fraîchement récoltés ; ni le moût ni le seuil de 8,5 % vol. n’y figurent
@@ -746,33 +648,8 @@ Hors dette : 1393 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Chronologie des niveaux (⚠️) : premiers crus à la charnière des XVIIe et XVIIIe siècles, deuxièmes vers le milieu du XVIIIe, troisièmes déjà en place en 1787, quatrièmes dans les années 1820, cinq niveaux et 60 domaines au début des années 1850 : Markham (Conseil des Grands Crus Classés en 1855, source officielle) seul pour les étapes intermédiaires ; l’Oxford Companion (5e éd., 2023, « classification » et « Bordeaux ») confirme la visite de Jefferson en 1787, les cinq classes et les 60 domaines, et date l’arrivée de Lafite, Latour et Margaux en Angleterre du début du XVIIIe siècle.
 - [ ] Date de la commande de 1855 (⚠️) : lettre du 5 avril 1855 de la Chambre de commerce au Syndicat des courtiers selon Markham ; 6 avril selon le site les-grands-crus-classes.fr ; remise le 18 avril dans les deux. L’Oxford ne donne pas de date.
 
-**Fiche 626** (p.293) — Domaine, négociant, coopérative : qui fait le vin qu’on vend
-- [ ] Poids des coopératives en France (⚠️) : FranceAgriMer (fiche filière vin, 2026) donne 560 caves coopératives et plus de 46 % des volumes vinifiés hors cognac ; une dépêche AFP du 3 juillet 2025 parle d’« environ la moitié » du vin français, avec environ 550 coopératives ; Réussir Vigne (1er décembre 2023, données 2020-2021) donne environ 40 % de la production hors champagne et 415 caves. Écarts de périmètre, d’année et de définition non tranchés ; Vignerons Coopérateurs de France non lu (accès refusé).
-
-**Fiche 628** (p.296) — Ouvrir et servir : vin tranquille, effervescent, vieille bouteille
-- [ ] Angle d’ouverture d’un effervescent (⚠️) : WSET niveau 3 environ 30°, Oxford Companion environ 45°, Comité Champagne et Académie de Versailles 30 à 45° ; l’angle précis n’est pas tranché, aucun exercice n’en dépend.
-
-**Fiche 629** (p.307) — Servir à la bonne température : pourquoi, et comment y arriver vite
-- [ ] Dosage du seau (⚠️) : Comité Champagne, seau « rempli à moitié d’eau et de glace » ; WSET niveau 3, seau aux trois quarts avec glace et eau à parts égales ; WSET niveau 1, de l’eau en plus de la glace sans proportion. Principe commun, deux dosages différents.
-
-**Fiche 630** (p.312) — Le verre : forme, remplissage, nettoyage
-- [ ] Effet de la flûte sur l’arôme (⚠️) : Oxford (la flûte préserve la mousse mais supprime l’arôme) et l’École du Vin (une flûte droite bride les arômes) s’opposent au WSET niveau 3 (la flûte renforce les bulles et l’arôme) ; le Comité Champagne décrit un verre haut, ventru et resserré en haut sans citer la flûte.
-
-**Fiche 631** (p.316) — Vin ouvert et vin au verre : combien de temps, quels systèmes
-- [ ] Durée d’un vin ouvert (⚠️) : Oxford, 2 à 3 jours pour la plupart des vins jeunes et pour un porto mis en bouteille ; Robinson (2009), un jeune ruby plusieurs semaines et un vin commercial plusieurs jours voire une semaine ; Robinson (2021), 2 à 3 jours pour un bourgogne rouge, quelques jours pour un blanc boisé, des semaines pour un riesling sec ; École du Vin, à consommer dans les heures qui suivent. Aucune durée unique n’est retenue.
-- [ ] Efficacité de la pompe à vide (⚠️) : l’École du Vin la juge le meilleur système bon marché ; Robinson la trouve peu efficace ; le WSET niveaux 1 et 3 la présentent comme une méthode, inadaptée aux effervescents.
-
 **Fiche 634** (p.67) — Âge des vignes et mention « vieilles vignes »
-- [ ] Âge de remplacement des vignes (⚠️, deux mesures différentes) : le WSET L3 (p. 34) dit que la plupart des vignes sont remplacées entre 30 et 50 ans, ce qui est un âge habituel d’arrachage ; Lepeltier (p. 67) écrit que la durée de vie moyenne d’une vigne est aujourd’hui de 20 à 25 ans, constat actuel lié à l’arrachage croissant de vignes de moins de trente ans et au dépérissement des jeunes plants ; Oxford (« vine age ») note un déclin de vigueur souvent dès 20 à 30 ans. Les deux chiffres ne décrivent pas la même chose ; aucun exercice n’en dépend.
-- [ ] Rendement maximal entre 10 et 40 ans (⚠️) : WSET D1 seul ; Oxford décrit une production stable dès 3 à 6 ans et un déclin souvent dès 20 à 30 ans. Aucun exercice n’en dépend.
-- [ ] Absence de texte français définissant « vieilles vignes » (✅ à la date de mai 2026, à re-vérifier car une évolution est annoncée) : constat (WSET D1, Burgundy Report du 5 février 2026, fédérations viticoles de Bordeaux et de Bergerac du 7 mai 2026) ; vérifier qu’aucun texte n’a été publié depuis. Les mêmes fédérations disent que les contrôles retiennent déjà 35 ans : source indirecte, non reprise.
-
-**Fiche 635** (p.220) — Vins doux naturels : mutage sur grains ou sur moût, élevage et rancio
-- [ ] Proportion d’alcool de mutage (⚠️, périmètres différents) : les cahiers des charges de Rivesaltes (arrêté du 14/06/2023), de Banyuls et du Muscat de Rivesaltes fixent 5 à 10 % du volume du moût, évalués en alcool pur, avec un alcool d’au moins 96 % vol. ; Lepeltier (p. 220) donne 5 à 25 % d’alcool neutre titrant 77 à 96 %, pour tous les vins mutés en cours de fermentation, porto compris (WSET D5 : environ 1 litre d’eau-de-vie à 77 % pour 4 litres de moût). Les deux chiffres ne mesurent pas la même chose ; à confirmer avec Loïc avant de l’enseigner. Aucun exercice n’en dépend. NB : la fiche « Les vins sucrés : concentrer le raisin ou muter » écrit que le livre annonce « à tort » 5 à 25 % : à reformuler.
-
-**Fiche 639** (p.251) — La dégustation intuitive : yeux fermés, sans jugement
-- [ ] Existence et contenu de la méthode « intuitive » (⚠️) : décrite par la revue (p. 33-34 et suivantes) et par le manuel (Massin, RVF Academy, p. 31-45) du même éditeur ; aucune source indépendante lue (Oxford, WSET, Académie du Vin) ne la décrit. Les protocoles précis (bandeau, lâcher-prise, debriefing, carnet) ne sont donc pas confirmés.
-- [ ] Ce que dit Mille Vignes (⚠️) : je n’ai pas trouvé de passage de Lepeltier consacré à cette méthode dans les pages 244-287 ; à vérifier avant d’attribuer la fiche à une page du livre.
+- [ ] Absence de texte français définissant « vieilles vignes » (⚠️, à re-vérifier) : DGCCRF (brochure 2023) : mention non réglementée mais à justifier ; INAO, comité national des 11-12 juin 2025 (lu) : simple prise de connaissance de la résolution OIV (≥ 35 ans), pour « clarifier » l’usage sur les étiquettes ; Burgundy Report (5 février 2026) : seuil de 35 ans annoncé, portée juridique incertaine ; aucun texte publié trouvé au 25/10/2026, mais Légifrance et le BO-agri n’ont pas été relus en entier.
 
 **Fiche 640** (p.268) — S’entraîner à reconnaître les odeurs : mémoire plus que flair
 - [ ] Effet d’une exposition répétée sur le seuil de détection (⚠️) : la revue et le manuel (p. 72-73) affirment qu’un mois d’exposition à une odeur abaisse le seuil de perception, en citant des études ; Parr et collègues (2002) trouvent des seuils comparables entre experts et novices. Les deux ne se contredisent pas forcément (expertise acquise ou entraînement ciblé), mais la question est ouverte ; études citées par le manuel non relues.
