@@ -2,11 +2,11 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 634 (dernier id : 636) · exercices : 3271
-- Vérifiées : 410 · à vérifier : 224 (318 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1348
-- Niveaux : Fondamental 198 · Intermédiaire 325 · Pointu 111
+- Fiches : 644 (dernier id : 646) · exercices : 3321
+- Vérifiées : 418 · à vérifier : 226 (322 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1349
+- Niveaux : Fondamental 204 · Intermédiaire 328 · Pointu 112
 - Cours (Approfondir) : 58 · schémas : 91
-- Lexique : 76 termes · récits de chapitre : 52
+- Lexique : 81 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
@@ -17,8 +17,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
 | 150-terroir.js | 37 | 3–596 | 150–199 | 12 | 5 | 5 |
 | 203-vinification.js | 71 | 223–636 | 204–242 | 48 | 14 | 14 |
-| 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
-| 288-service.js | 60 | 293–633 | 288–329 | 38 | 7 | 5 |
+| 244-degustation.js | 53 | 253–640 | 245–285 | 32 | 7 | 6 |
+| 288-service.js | 66 | 293–646 | 288–329 | 44 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | cepages.js | 56 | 372–625 | hors livre | 47 | 0 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |

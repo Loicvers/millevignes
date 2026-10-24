@@ -1079,5 +1079,72 @@ const LEXIQUE = [
   ],
   "status": "needs_review",
   "note": "Fiche 518 non vérifiée."
+ },
+{
+  "terme": "astringence",
+  "def": "Sensation de bouche asséchée, rugueuse, qui resserre les tissus de la bouche, provoquée surtout par les tanins qui se lient aux protéines de la salive. On la ressent au toucher, pas au goût : elle se confond souvent avec l’amertume, mais c’est une autre sensation.",
+  "etym": "",
+  "declic": "Le thé trop infusé qui accroche la langue.",
+  "src": [
+    "Oxford Companion to Wine, 5e éd. (2023), entrée « astringency »",
+    "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 99-101",
+    "I. Fritsch, F. Humbert, F. Thomas, Manuel de dégustation du vin (Massin, RVF Academy), p. 74",
+    "fiche 264"
+  ],
+  "status": "verified",
+  "note": "Le manuel RVF Academy et la revue sont du même éditeur : ils comptent comme une seule source. Oxford écrit que l’astringence a longtemps été classée parmi les saveurs primaires puis confondue avec l’amertume."
+ },
+ {
+  "terme": "rétro-olfaction (voie rétronasale)",
+  "def": "Perception des arômes par l’arrière de la bouche : quand on avale ou qu’on expire, les vapeurs du vin remontent vers le nez par le fond de la gorge. C’est elle qui donne l’essentiel des arômes ressentis en bouche, distincts de ceux qu’on sent en approchant le verre du nez.",
+  "etym": "",
+  "declic": "Le parfum qui remonte quand on expire par le nez après avoir avalé.",
+  "src": [
+    "Oxford Companion to Wine, 5e éd. (2023), entrée « tasting » (impressions de la voie rétronasale)",
+    "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 34-35",
+    "fiche 272"
+  ],
+  "status": "verified",
+  "note": "Distinguer voie orthonasale (par les narines) et rétronasale ; voir la fiche 272 sur les deux voies."
+ },
+ {
+  "terme": "finale (longueur en bouche, persistance aromatique)",
+  "def": "Impression que laisse le vin à la fin de la dégustation, après qu’on l’a avalé ou recraché. Si elle se prolonge, on parle de finale longue ; si elle disparaît vite, de finale courte. Une longue finale, avec l’équilibre, est un signe de qualité. La durée se mesure parfois en caudalies, une caudalie valant une seconde.",
+  "etym": "",
+  "declic": "L’écho d’une cloche : plus il dure, plus le vin est long.",
+  "src": [
+    "Oxford Companion to Wine, 5e éd. (2023), entrée « finish »",
+    "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 99",
+    "I. Fritsch, F. Humbert, F. Thomas, Manuel de dégustation du vin (Massin, RVF Academy), p. 74",
+    "fiche 369"
+  ],
+  "status": "verified",
+  "note": "La caudalie comme unité d’une seconde figure dans la fiche 369 (Académie du Vin) et dans le manuel RVF Academy."
+ },
+ {
+  "terme": "casse (casse ferrique)",
+  "def": "Accident de limpidité du vin : un trouble ou un dépôt causé par un excès de fer ou de cuivre, ou par des protéines instables dans les blancs. La casse ferrique, due au fer, apparaît quand le vin prend l’air. On la prévient en cave par la stabilisation (voir les fiches sur les casses métalliques et la casse protéique).",
+  "etym": "",
+  "declic": "Un vin qui se casse : il se trouble comme un liquide qui tourne.",
+  "src": [
+    "Oxford Companion to Wine, 5e éd. (2023), entrée « casse »",
+    "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 61 (casse ferrique et limpidité)",
+    "I. Fritsch, F. Humbert, F. Thomas, Manuel de dégustation du vin (Massin, RVF Academy), p. 60-61"
+  ],
+  "status": "needs_review",
+  "note": "Définition d’Oxford, recoupée par les fiches 363 et voisines du site ; la revue et le manuel RVF (même éditeur) relient en plus la casse ferrique à l’arrivée des cuves en métal, point non confirmé par une source indépendante."
+ },
+ {
+  "terme": "rancio",
+  "def": "Terme de dégustation peu précis, employé dans plusieurs langues pour un style de vin, souvent muté ou vin doux naturel, obtenu en l’exposant volontairement à l’oxygène et à la chaleur. Il évoque la noix, les fruits secs et les notes rances. Le rancio sec catalan (Roussillon) est une version sèche de ce style.",
+  "etym": "",
+  "declic": "Le fond d’un fût de vieux muscat resté sous le toit : noix, cire, fruits secs.",
+  "src": [
+    "Oxford Companion to Wine, 5e éd. (2023), entrée « rancio »",
+    "La Revue du Vin de France, Collection Découverte n° 2, Apprendre à déguster (mai 2024), p. 99",
+    "fiches Roussillon du site (fr-roussillon.js)"
+  ],
+  "status": "needs_review",
+  "note": "À rapprocher de l’audit : le rancio sec figure déjà dans les fiches Roussillon ; vérifier le numéro exact des fiches avant d’ajouter les renvois. Définition d’Oxford ; le détail « sec catalan » est dans le manuel RVF Academy (p. 99)."
  }
 ];

@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-634 fiches : 410 vérifiées, 224 à vérifier (318 points).
-Hors dette : 1348 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+644 fiches : 418 vérifiées, 226 à vérifier (322 points).
+Hors dette : 1349 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (⚠️) : selon l’OIV, premier cépage de cuve (environ 341 000 ha en 2015) et deuxième toutes catégories derrière le kyoho, raisin de table (Focus OIV 2017, repris par Vitisphere) ; JancisRobinson (Anderson et Nelgen) le classe aussi premier cépage de cuve ; l’Oxford Companion (5e éd., 2023) donne environ 310 700 ha en 2016, premier cépage mondial sans séparer cuve et table ; Wine Grapes ne donne aucun total mondial.
@@ -769,3 +769,11 @@ Hors dette : 1348 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 635** (p.220) — Vins doux naturels : mutage sur grains ou sur moût, élevage et rancio
 - [ ] Proportion d’alcool de mutage (⚠️, périmètres différents) : les cahiers des charges de Rivesaltes (arrêté du 14/06/2023), de Banyuls et du Muscat de Rivesaltes fixent 5 à 10 % du volume du moût, évalués en alcool pur, avec un alcool d’au moins 96 % vol. ; Lepeltier (p. 220) donne 5 à 25 % d’alcool neutre titrant 77 à 96 %, pour tous les vins mutés en cours de fermentation, porto compris (WSET D5 : environ 1 litre d’eau-de-vie à 77 % pour 4 litres de moût). Les deux chiffres ne mesurent pas la même chose ; à confirmer avec Loïc avant de l’enseigner. Aucun exercice n’en dépend. NB : la fiche « Les vins sucrés : concentrer le raisin ou muter » écrit que le livre annonce « à tort » 5 à 25 % : à reformuler.
+
+**Fiche 639** (p.251) — La dégustation intuitive : yeux fermés, sans jugement
+- [ ] Existence et contenu de la méthode « intuitive » (⚠️) : décrite par la revue (p. 33-34 et suivantes) et par le manuel (Massin, RVF Academy, p. 31-45) du même éditeur ; aucune source indépendante lue (Oxford, WSET, Académie du Vin) ne la décrit. Les protocoles précis (bandeau, lâcher-prise, debriefing, carnet) ne sont donc pas confirmés.
+- [ ] Ce que dit Mille Vignes (⚠️) : je n’ai pas trouvé de passage de Lepeltier consacré à cette méthode dans les pages 244-287 ; à vérifier avant d’attribuer la fiche à une page du livre.
+
+**Fiche 640** (p.268) — S’entraîner à reconnaître les odeurs : mémoire plus que flair
+- [ ] Effet d’une exposition répétée sur le seuil de détection (⚠️) : la revue et le manuel (p. 72-73) affirment qu’un mois d’exposition à une odeur abaisse le seuil de perception, en citant des études ; Parr et collègues (2002) trouvent des seuils comparables entre experts et novices. Les deux ne se contredisent pas forcément (expertise acquise ou entraînement ciblé), mais la question est ouverte ; études citées par le manuel non relues.
+- [ ] Protocole d’entraînement précis (⚠️) : une minute par jour pendant un mois, comparaison deux à deux acacia/aubépine (miel et cire contre amande douce) ; source unique (manuel RVF Academy, p. 72-73).
