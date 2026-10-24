@@ -10,7 +10,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 107 | 1–625 | 16–38 | 79 | 7 | 10 |
+| 016-domestication.js | 51 | 1–595 | 16–38 | 32 | 7 | 10 |
 | 040-nature.js | 52 | 4–634 | 40–73 | 36 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
@@ -20,6 +20,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
 | 288-service.js | 60 | 293–633 | 288–329 | 38 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
+| cepages.js | 56 | 372–625 | hors livre | 47 | 0 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 1 |
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |

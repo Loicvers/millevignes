@@ -584,34 +584,34 @@ Hors dette : 1348 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 370** (p.278) — Le vocabulaire de la structure : corps, nervosité, mollesse, équilibre
 - [ ] Définitions de nervosité, mollesse, souplesse et formules d’équilibre (⚠️) : recoupement limité à des lexiques et pages pédagogiques de niveau 2b (PCVT, École des vins et spiritueux) ; à recouper avec Peynaud, Le goût du vin ; Oxford Companion (5e éd., 2023, entrée « structure ») : définit la structure surtout par les tanins (l’acidité pouvant s’y ajouter), « dur » par des tanins astringents et peu de fruit, le corps par l’alcool et l’harmonie par la proportion entre éléments aromatiques et structurels ; pas de définition de nervosité, mollesse ni souplesse
 
-**Fiche 372** (p.31) — Le chardonnay : un cépage qui prend l’empreinte du climat et de la cave
+**Fiche 372** (p.?) — Le chardonnay : un cépage qui prend l’empreinte du climat et de la cave
 - [ ] Descripteurs selon le climat (pomme/citron, fruits tropicaux) et notes beurrées/toastées liées au fût et à la malolactique (⚠️, tendances) : JancisRobinson.com ; Wine Grapes et l’Oxford Companion confirment le principe (peu d’arôme propre, empreinte du lieu et de la cave ; Chablis tendu, Mâconnais du melon à la pomme mûre) sans citer les fruits tropicaux ni le beurre.
 
-**Fiche 373** (p.31) — Le sauvignon blanc : soliste en Centre-Loire, partenaire du sémillon à Bordeaux
+**Fiche 373** (p.?) — Le sauvignon blanc : soliste en Centre-Loire, partenaire du sémillon à Bordeaux
 - [ ] Assemblage bordelais (sémillon, muscadelle ; Sauternes) : ⚠️ le principe est confirmé (INAO Pessac-Léognan, JancisRobinson.com) mais les proportions réglementaires (CIVB) n’ont pas été lues ; Oxford Companion (5e éd., 2023, entrée « Sauternes ») : l’Oxford confirme l’assemblage sémillon (environ 80 %), sauvignon blanc et un peu de muscadelle à Sauternes, mais décrit des proportions de plantation et non des minima réglementaires
 - [ ] Origine du « Fumé blanc » de Mondavi : ⚠️ divergence sur la date (fin des années 1960 selon la presse, début des années 1970 selon l’Oxford Companion), aucune source du domaine lue ; ne pas donner d’année ; Oxford Companion (5e éd., 2023, entrée « Fumé Blanc ») : pour l’Oxford, le nom Fumé Blanc est une idée de Robert Mondavi du début des années 1970 (entrée « Fumé Blanc »), sans source du domaine
 
-**Fiche 374** (p.31) — Le chenin : un seul cépage, du sec au liquoreux et aux bulles
+**Fiche 374** (p.?) — Le chenin : un seul cépage, du sec au liquoreux et aux bulles
 - [ ] Implantation du chenin en Loire « au IXe siècle » (acte de 845 pour l’abbaye de Glanfeuil) : ⚠️ tradition non prouvée (impossible de savoir si les vignes étaient du chenin) ; première mention attestée plus tardive (1469 selon iDealwine, source 2b) ; aucune source de niveau 1 ne confirme le IXe siècle
 - [ ] Coulée de Serrant « parmi les plus grands blancs de France » (Curnonsky) : ⚠️ avis de critique rapporté par l’INAO et le Guide Hachette ; le texte original de Curnonsky n’a pas été lu ; le livre écrit « du monde », contre « de France » dans les sources
 
-**Fiche 375** (p.31) — Le riesling en Alsace grand cru : la règle des quatre cépages et ses exceptions
+**Fiche 375** (p.?) — Le riesling en Alsace grand cru : la règle des quatre cépages et ses exceptions
 - [ ] Seuils de sucre des mentions VT/SGN pour le riesling : ⚠️ non retenus ; la mise en page du tableau VII.2.b du cahier des charges est ambiguë à l’extraction (seuils du riesling et du pinot gris à lire dans le PDF) ; Oxford Companion (5e éd., 2023, entrée « Alsace ») : l’Oxford donne pour la VT un minimum de sucre de 244 g/l pour le riesling et de 276 g/l pour les SGN (valeurs à comparer au tableau VII.2.b du cahier des charges)
 - [ ] Rouges de pinot noir en grand cru : ⚠️ Hengst, Kirchberg de Barr et Vorbourg dans la version INAO de 2024 (projet en procédure d’opposition), Hengst et Kirchberg de Barr depuis 2022 selon Réussir ; liste des lieux-dits non reprise dans la fiche ; Oxford Companion (5e éd., 2023, entrée « Alsace ») : l’Oxford indique que depuis 2022 le pinot noir est éligible au grand cru à Kirchberg et Hengst, sans mentionner le Vorbourg
 
-**Fiche 377** (p.31) — Cabernet-sauvignon dans le verre : la colonne vertébrale des rouges du Médoc
+**Fiche 377** (p.?) — Cabernet-sauvignon dans le verre : la colonne vertébrale des rouges du Médoc
 - [ ] 6e cépage de France, 37 372 ha en 2024 (⚠️) : chiffre FranceAgriMer extrait automatiquement d’un tableau, à recontrôler sur le PDF avant tout usage ; absent de la synthèse et des exercices ; l’Oxford Companion donne 46 971 ha en 2020, Wine Grapes 56 386 ha en 2009 (4e rouge) : chiffres de dates différentes
 
-**Fiche 378** (p.31) — Merlot : le cépage de la rondeur à Pomerol et Saint-Émilion
+**Fiche 378** (p.?) — Merlot : le cépage de la rondeur à Pomerol et Saint-Émilion
 - [ ] Rang du merlot en France (⚠️) : 1er jusqu’en 2023, 2e en 2024 derrière l’ugni blanc (92 845 ha contre 99 816 ha), chiffres FranceAgriMer extraits automatiquement d’un tableau, à recontrôler sur le PDF ; l’Oxford Companion le place premier en 2019-2020 (114 785 ha), Wine Grapes premier en 2009 (115 746 ha) : les années diffèrent, d’où la formule « l’un des deux premiers »
 
-**Fiche 379** (p.31) — Syrah : un cépage français, pas persan, du Rhône nord au Languedoc
+**Fiche 379** (p.?) — Syrah : un cépage français, pas persan, du Rhône nord au Languedoc
 - [ ] Légende de Stérimberg (⚠️) : chevalier revenu de la croisade des Albigeois, ermitage daté de 1224 par la tradition, nom « Hermitage » attesté au XVIIe siècle (Inter Rhône, Wine Spectator) ; aucune source historique primaire ni historien trouvé, à présenter comme légende ; la version Albigeois est celle d’Inter Rhône, du Routard et de Gardine (1224 ou 1225), Jaboulet et Chapoutier disent seulement « les croisades » (1224), et la version Terre sainte et Blanche de Castille régente (Oxford) ne se concilie pas avec 1224 ; Inter Rhône précise que le vignoble existait dès l’Antiquité et que l’ermite n’a donné que son nom ; Oxford Companion (5e éd., 2023, entrées « Rhône » et « Hermitage ») : l’Oxford rapporte une autre version de la légende : Gaspard de Stérimberg, croisé revenu de Terre sainte, obtient de Blanche de Castille, régente pendant la minorité de Louis IX, le droit de bâtir une chapelle et y vit en ermite trente ans ; ni croisade des Albigeois ni date de 1224 ; l’entrée « Hermitage » juge l’origine du nom brouillée par des légendes concurrentes et cite une première mention anglaise en 1680
 
-**Fiche 380** (p.31) — Grenache noir : cépage du Sud, des rosés aux vins doux naturels
+**Fiche 380** (p.?) — Grenache noir : cépage du Sud, des rosés aux vins doux naturels
 - [ ] Pellicule fine et vocation rosé (⚠️) : une seule source (Jancis Robinson), descripteur non universel ; Oxford Companion (5e éd., 2023, entrée « Grenache Noir ») : l’Oxford note un vin plus pâle que la plupart des rouges et fait du grenache la base des rosés les plus fruités du Sud (Tavel, Lirac, Provence), sans parler de la finesse de la pellicule
 
-**Fiche 381** (p.31) — Carignan : du cépage de masse aux vieilles vignes recherchées
+**Fiche 381** (p.?) — Carignan : du cépage de masse aux vieilles vignes recherchées
 - [ ] Dépassement par le merlot (⚠️) : entre 1998 (carignan 102 317 ha, merlot 90 059) et 2008 (73 728 contre 117 354) selon la série de Plantgrape ; merlot déjà premier en 2002 selon Réussir ; « fin du XXe siècle » pour Jancis Robinson, « vers le tournant du siècle » pour l’Oxford ; Wine Grapes (53 155 ha en 2009) n’emploie pas la même base que Plantgrape
 - [ ] Pic de 211 254 ha en 1968 (⚠️) : série de Plantgrape seule ; Wine Grapes indique seulement que le carignan a dépassé l’aramon après 1958
 - [ ] Carignan pur surtout en IGP ou Vin de France (⚠️) : Decanter et Le Point, cahiers des charges AOC non lus, exceptions possibles
