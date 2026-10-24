@@ -51,7 +51,7 @@ function checkNotion(n, tax, err) {
   // Jauge de structure (grille WSET sur 5) : 1 à 5, ou null quand le critère ne s'applique pas (tanins d'un blanc).
   if (n.jauge != null) {
     const j = n.jauge;
-    for (const k of JAUGE) if (!(j[k] === null || (Number.isInteger(j[k]) && j[k] >= 1 && j[k] <= 5))) err(`${at} : jauge.${k} doit valoir 1 à 5 ou null`);
+    for (const k of JAUGE) if (!(j[k] == null || (Number.isInteger(j[k]) && j[k] >= 1 && j[k] <= 5))) err(`${at} : jauge.${k} doit valoir 1 à 5, null ou être absent`);
     if (!isStr(j.style)) err(`${at} : jauge.style manquant (le style décrit, ex. « Alsace, vin sec »)`);
     if (!isStr(j.src)) err(`${at} : jauge.src (crédit) manquant`);
     if (!isStrArr(j.a_verifier ?? [], 0) || (j.a_verifier ?? []).some(k => !JAUGE.includes(k))) err(`${at} : jauge.a_verifier : critères parmi ${JAUGE.join(", ")}`);

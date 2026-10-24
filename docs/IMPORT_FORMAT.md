@@ -136,6 +136,7 @@ jauge: { style: "Alsace, vin sec", acidite: 5, tanins: null, alcool: 3, corps: 3
 ```
 
 - Échelle de la grille de dégustation WSET : 1 faible · 2 moyen- · 3 moyen · 4 moyen+ · 5 élevé. `null` : critère sans objet (tanins d'un blanc).
+- Critère absent du champ : aucune source ne le documente ; il n’est pas affiché (jamais estimé).
 - `style` : le vin décrit (région et style typiques), car la structure change selon le lieu et la vinification.
 - Un niveau n'est posé que s'il s'appuie sur une source ; deux sources concordantes sinon le critère va dans `a_verifier` (⚠ affiché). Divergence : le niveau de la source la plus récente, l'écart noté dans `selon_livre` ou un exercice.
 - Exercices tirés des jauges (`ordering`, `mcq_single`…) : seulement sur des critères hors `a_verifier`, entre cépages au même style comparable.
