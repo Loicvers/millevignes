@@ -20,6 +20,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); Deutsches Weininstitut, brochure Riesling; BO-agri, cahier des charges AOC Alsace (17/10/2019); JancisRobinson.com, Riesling; Guide Hachette des Vins, Alsace riesling; iDealwine, La saga des cépages ép. 7; Oxford Companion to Wine, 5e éd. (2023), entrées « Riesling » et « TDN »; WSET D3, Wines of the World (2024); cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":[3,5],"aromes":[4,5],"a_verifier":["alcool","corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Le WSET donne un alcool moyen pour l'Alsace ; Oxford et Wine Grapes le disent plutôt léger, mais pour le cépage en général. Jeune, le riesling d'Alsace peut paraître discret au nez (Oxford)."},
   },
   {
     id: 375,
@@ -42,6 +43,7 @@ FICHES.push(
     src: "Cahier des charges AOC Alsace grand cru (BO-agri, 30 juin 2016) ; INAO, cahier des charges AOC Alsace grand cru (version du 11 septembre 2024) ; Synvira, Terroirs d’Alsace ; Decanter, Sylvaner becomes grand cru grape (2006) ; JancisRobinson.com, Riesling ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 78-79 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023)",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace grand cru, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":[3,5],"aromes":[4,5],"a_verifier":["alcool","corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Rien de propre aux grands crus dans les sources : jauge du riesling d'Alsace (fiche 597). Le WSET donne un alcool moyen pour l'Alsace ; Oxford et Wine Grapes le disent plutôt léger, mais pour le cépage en général. Jeune, le riesling d'Alsace peut paraître discret au nez (Oxford). Beaucoup de grands crus gardent aujourd'hui un peu de sucre."},
   },
   {
     id: 506,
@@ -63,6 +65,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Gewurztraminer ; INAO, projet de cahier des charges AOC Alsace (comité national du 12 juin 2025) ; JancisRobinson.com, Gewurztraminer ; wein.plus, glossaire, Gewürztraminer et Savagnin Rose ; WSET, Understanding Wines (2016), chap. Alsace ; WSET L3, support de cours Module 4 (2022) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":1,"tanins":null,"alcool":5,"corps":5,"aromes":5,"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 507,
@@ -84,6 +87,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Pinot gris ; INAO, projet de cahier des charges AOC Alsace (comité national du 12 juin 2025) ; WSET, Understanding Wines (2016), chap. 8 et Alsace ; JancisRobinson.com, Pinot Gris/Grigio ; AGRA, L’appellation Tokay pinot gris interdite officiellement le 31 mars (17 janv. 2007) ; idealwine.net, Tokay ou pinot gris ; wein.plus, glossaire, Pinot Gris ; Règlement (CE) n° 382/2007 de la Commission du 4 avril 2007 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":4,"tanins":null,"alcool":5,"corps":5,"aromes":2,"a_verifier":["acidite","alcool","aromes"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Acidité : Oxford la dit ferme en Alsace, Wine Grapes plutôt basse pour le cépage en général. Arômes : Oxford le dit doucement parfumé, Wine Grapes capiteux quand il est bien mûr."},
   },
   {
     id: 598,
@@ -105,6 +109,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Alsace (17/10/2019); JancisRobinson.com, Sylvaner; iDealwine, La saga des cépages ép. 7; Vinatis, Sylvaner; La Passion du Vin, fil Sylvaner; Oxford Companion to Wine, 5e éd. (2023), entrées « Sylvaner » et « Silvaner »; WSET D3, Wines of the World (2024); WSET, Understanding Wines (2016); cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace, blanc sec","acidite":4,"tanins":null,"alcool":3,"corps":[3,4],"aromes":2,"a_verifier":["acidite","alcool","corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 599,
@@ -126,6 +131,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Alsace (17/10/2019, deux versions); JancisRobinson.com, Pinot Blanc; Guide Hachette des Vins, Alsace pinot blanc ou klevner; Oxford Companion to Wine, 5e éd. (2023), entrées « Pinot Blanc » et « Auxerrois »; WSET D3, Wines of the World (2024); WSET, Understanding Wines (2016); cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages d’Alsace",
+    jauge: {"style":"Alsace, blanc sec","tanins":null,"alcool":3,"corps":1,"aromes":[1,2],"a_verifier":["alcool","corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Corps : le WSET dit le pinot blanc léger, Wine Grapes moyen. Arômes : le WSET le dit non aromatique, Oxford pas particulièrement aromatique. Acidité omise : moyenne pour le pinot blanc, basse pour l'auxerrois."},
   },
 {
     id: 372,
@@ -149,6 +155,7 @@ FICHES.push(
     src: "Bowers et al., Historical Genetics: The Parentage of Chardonnay, Gamay, and Other Wine Grapes of Northeastern France, Science 285 (1999), p. 1562-1565 ; Plantgrape (IFV/INRAE/Institut Agro), fiche Chardonnay B ; INAO, fiches Chablis premier cru Les Épinottes et Côte de Vaubarousse ; Comité Champagne, Fiche Vigne Champagne (2024) ; JancisRobinson.com, Chardonnay ; J. Robinson (dir.), The Oxford Companion to Wine (2006), « Mâcon-Villages » ; Burgundy Report, All about Chardonnay (2017) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 74 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
+    jauge: {"style":"Bourgogne, blanc sec","acidite":5,"tanins":null,"alcool":[3,4],"corps":4,"a_verifier":["alcool"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Acidité la plus haute à Chablis, moyenne en Mâconnais ; les meilleurs blancs (Côte de Beaune) sont les plus corsés, Chablis le plus léger."},
   },
 {
     id: 376,
@@ -173,6 +180,7 @@ FICHES.push(
     src: "INAO, fiches Gevrey-Chambertin, Volnay, Sancerre, Menetou-Salon et Reuilly ; Comité Champagne, Champagne and its grape varieties ; DRAAF Hauts-de-France, Filière champagne ; eXtension, Growing Pinot Noir Wine Grapes ; AWRI (Dambergs), Pinot noir phenolics, AWITC 2015 ; Enartis, Climate and Pinot noir wine style ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 86-87 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023)",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
+    jauge: {"style":"Bourgogne, rouge","acidite":5,"tanins":[1,3],"a_verifier":["acidite","tanins"],"src":"WSET, Understanding Wines (2016)"},
 },
   {
     id: 601,
@@ -194,6 +202,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Bourgogne Aligoté (homologué 11/12/2023); INAO, fiche AOC Bouzeron; JancisRobinson.com, Aligoté; Guide Hachette des Vins, Bourgogne aligoté; Vinatis, Aligoté; Oxford Companion to Wine, 5e éd. (2023), entrées « Aligoté » et « Bouzeron »; WSET D3, Wines of the World (2024); cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
+    jauge: {"style":"Bourgogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"a_verifier":["corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 499,
@@ -215,6 +224,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Gamay N ; Inter Beaujolais, Cépage Gamay ; INAO, cahier des charges AOC Beaujolais (BO-Agri) ; JancisRobinson.com, Gamay ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
+    jauge: {"style":"Beaujolais, rouge","tanins":[1,3],"corps":[1,2],"a_verifier":["tanins"],"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012)","note":"Le beaujolais simple et le nouveau sont légers en corps et en tanins ; les crus (Morgon, Moulin-à-Vent) sont plus structurés."},
   },
   {
     id: 514,
@@ -257,6 +267,7 @@ FICHES.push(
     src: "INRAE, communiqué du 11 juin 2019 (Ramos-Madrigal et al., Nature Plants, 10 juin 2019) ; BO-agri, cahier des charges AOC Arbois (arrêté du 2 septembre 2022) ; Decanter, What is Savagnin ? Ask Decanter ; JancisRobinson.com, Savagnin ; AWRI, Alternative varieties : Savagnin ; Systembolaget, Savagnin ; Regner et al., Parentage analysis and pedigree reconstruction of vine cultivars using microsatellite markers, Acta Horticulturae 528 (2000), résumé ; Plantgrape (IFV/INRAE/Institut Agro), fiche Gewurztraminer ; wein.plus, glossaire, Savagnin Rose ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Jura et de Savoie",
+    jauge: {"style":"Jura, blanc sec","acidite":5,"tanins":null,"corps":[4,5],"a_verifier":["acidite","corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 620,
@@ -320,6 +331,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Vin de Savoie (6/07/2023); Falstaff, Jacquère; Guide Hachette des Vins, Savoie (vin de); Vinatis, Les cépages des vins de Savoie; Oxford Companion to Wine, 5e éd. (2023), entrées « Jacquère » et « Savoie »; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Jura et de Savoie",
+    jauge: {"style":"Savoie, blanc sec","acidite":4,"tanins":null,"corps":[1,2],"aromes":2,"a_verifier":["acidite","corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 604,
@@ -362,6 +374,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; Plantgrape (IFV/INRAE/Institut Agro), fiche Mondeuse N ; INAO, fiche Vin de Savoie Arbin ; Hachette Vins, AOC Savoie ; Vinatis, Mondeuse ; Oxford Companion to Wine, 5e éd. (2023), entrées « Mondeuse Noire », « Mondeuse Blanche » et « Savoie » ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Jura et de Savoie",
+    jauge: {"style":"Savoie, rouge","tanins":[4,5],"aromes":4,"a_verifier":["tanins"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 600,
@@ -383,6 +396,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Alsace (17/10/2019); BO-agri, cahier des charges AOC Vin de Savoie (6/07/2023); JancisRobinson.com, Chasselas; Guide Hachette des Vins, Pouilly-sur-Loire; Vinatis, Les cépages des vins de Savoie; Oxford Companion to Wine, 5e éd. (2023), entrées « Chasselas », « Pouilly-sur-Loire » et « Savoie »; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Jura et de Savoie",
+    jauge: {"style":"Savoie et Léman, blanc sec","tanins":null,"corps":[1,2],"aromes":1,"a_verifier":["corps","aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 373,
@@ -405,6 +419,7 @@ FICHES.push(
     src: "INAO, fiches Pouilly-Fumé ou Blanc Fumé de Pouilly, Reuilly et Pessac-Léognan blanc ; Vins du Centre-Loire, Nos appellations ; JancisRobinson.com, Sauvignon blanc ; J. Robinson (dir.), The Oxford Companion to Wine (2006), « Fumé Blanc » ; VinePair, Robert Mondavi Napa Valley Fumé Blanc ; The Wine Doctor, Pouilly-Fumé ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 76 ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Val de Loire",
+    jauge: {"style":"Centre-Loire (Sancerre, Pouilly-Fumé), blanc sec","acidite":5,"tanins":null,"aromes":5,"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 374,
@@ -427,6 +442,7 @@ FICHES.push(
     src: "INAO, fiches Vouvray, Vouvray pétillant, Savennières, Coulée de Serrant (sec et moelleux/doux) ; JancisRobinson.com, Chenin blanc ; Chenin Blanc Association of South Africa, History of Chenin ; Dictionary of South African English, « steen » ; iDealwine, Saga des cépages, épisode 3 : le chenin ; Guide Hachette des vins, Savennières-coulée-de-serrant ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 80-81 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023)",
     source: "france",
     chapitre: "Cépages du Val de Loire",
+    jauge: {"style":"Anjou-Saumur, blanc sec","acidite":5,"tanins":null,"corps":[3,5],"a_verifier":["corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Le vouvray sec est plus léger (corps léger à moyen) ; le savennières, plus ample."},
   },
   {
     id: 511,
@@ -448,6 +464,7 @@ FICHES.push(
     src: "INAO, fiche AOC Muscadet ; BO-agri, cahier des charges AOC Muscadet (arrêté du 5 février 2021, modifié le 27 mai 2021) ; Guide Hachette des vins, Melon de Bourgogne : origine, utilisation, particularités ; Wine with Seth, Melon de Bourgogne (cite le VIVC) ; UC Davis, Melon Fact Sheet ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Val de Loire",
+    jauge: {"style":"Muscadet, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":1,"aromes":1,"a_verifier":["acidite","alcool","corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Le WSET dit l'acidité élevée ; Oxford et Wine Grapes la disent vive, ce qui va dans le même sens."},
   },
   {
     id: 602,
@@ -511,6 +528,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; Plantgrape (IFV/INRAE/Institut Agro), fiche Grolleau N ; INAO, fiche Rosé d’Anjou ; Oxford Companion to Wine, 5e éd. (2023), entrée « Grolleau Noir » ; WSET, Understanding Wines (2016) ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Val de Loire",
+    jauge: {"style":"Touraine et Anjou, rouge léger","acidite":[4,5],"corps":[1,2],"a_verifier":["acidite"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Niveaux du rouge ; le grolleau sert surtout au rosé d'Anjou, que les sources ne décrivent pas."},
   },
 {
     id: 377,
@@ -535,6 +553,7 @@ FICHES.push(
     src: "INAO, fiches Médoc, Haut-Médoc et Pessac-Léognan ; Decanter, Left and right bank Bordeaux explained ; Virginia Tech, Enology Notes 132 (méthoxypyrazines) ; wein.plus Lexikon, Cabernet Sauvignon ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 88-89 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Médoc, rouge","acidite":4,"tanins":5,"corps":[3,5],"a_verifier":["acidite","corps"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
 },
 {
     id: 378,
@@ -560,6 +579,7 @@ FICHES.push(
     src: "INAO, fiches Pomerol, Saint-Émilion grand cru (premier grand cru classé), Médoc et Haut-Médoc ; Decanter, Left and right bank Bordeaux explained ; Decanter, Merlot (grape guide) ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; wein.plus Lexikon, Merlot ; Etymonline, merlot ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 90-91 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Bordeaux rive droite, rouge","alcool":3,"corps":3,"a_verifier":["alcool","corps"],"src":"WSET, Understanding Wines (2016)","note":"Valable pour le merlot bordelais vendangé tôt ; le style vendangé très mûr est plus riche."},
 },
   {
     id: 498,
@@ -581,6 +601,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Cabernet franc N ; JancisRobinson.com, Cabernet Franc ; Boursiquot et al., Parentage of Merlot and related winegrape cultivars of southwestern France, Australian Journal of Grape and Wine Research (2009), résumé ; INAO, cahiers des charges Irouléguy, Tursan et Coteaux du Quercy ; WSET, Understanding Wines (2016) ; Decanter, Top Loire Cabernet Franc wines ; iDealwine, Le cabernet franc ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Loire (Chinon, Bourgueil), rouge","corps":[2,3],"aromes":4,"a_verifier":["corps","aromes"],"src":"Oxford Companion to Wine (2023)","note":"Plus léger sur les sables, plus corsé sur les coteaux."},
   },
   {
     id: 610,
@@ -665,6 +686,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrée Trebbiano Toscano ; JancisRobinson.com, Ugni Blanc ; BNIC, cognac.fr, Cognac grapes varieties ; IDAC, armagnac.fr, Grape varieties and terroirs ; Camus, Les cépages du cognac ; Wine With Seth, Ugni blanc ; Vinatis, Ugni blanc ; iDealwine, cépages du Sud-Ouest ; Oxford Companion to Wine, 5e éd. (2023), entrées « Ugni Blanc » et « Trebbiano » ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Charentes et Gascogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"a_verifier":["acidite","corps","aromes"],"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012)"},
   },
   {
     id: 607,
@@ -686,6 +708,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrée Colombard ; Plantgrape (IFV/INRAE/Institut Agro), fiche Colombard ; BNIC, cognac.fr, Cognac grapes varieties ; IDAC, armagnac.fr, Grape varieties and terroirs ; Camus, Les cépages du cognac ; Vinatis, Colombard ; iDealwine, cépages du Sud-Ouest ; Wine With Seth, Colombard ; Oxford Companion to Wine, 5e éd. (2023), entrée « Colombard » ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Côtes de Gascogne, blanc sec","acidite":4,"tanins":null,"aromes":2,"a_verifier":["acidite","aromes"],"src":"Wine Grapes (2012)"},
   },
   {
     id: 608,
@@ -707,6 +730,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrée Folle Blanche ; BNIC, cognac.fr, Cognac grapes varieties ; IDAC, armagnac.fr, Grape varieties and terroirs ; INAO, projet de cahier des charges Gros Plant du Pays nantais ; Interloire, vinsdeloire.fr, Folle blanche ; Camus, Les cépages du cognac ; Wine With Seth, Ugni blanc ; The Wine Doctor, Gros Plant ; Oxford Companion to Wine, 5e éd. (2023), entrées « Folle Blanche », « Gros Plant du Pays Nantais » et « Ugni Blanc » ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
+    jauge: {"style":"Pays nantais (gros plant), blanc sec","acidite":5,"tanins":null,"aromes":1,"a_verifier":["aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 500,
@@ -749,6 +773,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Tannat N ; INAO, cahiers des charges AOC Madiran (BO-Agri 2015, 2017 et arrêté du 26 novembre 2025), Irouléguy et Tursan ; JancisRobinson.com, Tannat ; WSET, Understanding Wines (2016) ; eAmbrosia, document unique AOP Cahors ; wein.plus Magazine, Tannat, the tamed powerhouse from France’s southwest ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
+    jauge: {"style":"Madiran, rouge","acidite":[4,5],"tanins":5,"a_verifier":["acidite"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Les madirans modernes ont des tanins plus mûrs et plus souples qu'autrefois."},
   },
   {
     id: 512,
@@ -791,6 +816,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrée Mauzac Blanc ; INAO, projet de cahier des charges AOP Gaillac (2025) ; Languedoc Wines (IVL), AOP Limoux Blanquette de Limoux ; JancisRobinson.com, Sud-Ouest de la France ; Wine With Seth, Mauzac ; Berry Bros & Rudd, Mauzac ; iDealwine, cépages du Sud-Ouest ; Oxford Companion to Wine, 5e éd. (2023), entrées « Mauzac », « Gaillac » et « Limoux » ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
+    jauge: {"style":"Gaillac et Limoux, blanc","acidite":5,"tanins":null,"aromes":[3,4],"a_verifier":["acidite","aromes"],"src":"Oxford Companion to Wine (2023)"},
   },
   {
     id: 611,
@@ -833,6 +859,7 @@ FICHES.push(
     src: "INAO, cahier des charges AOP Gaillac (2025) ; INAO, cahier des charges AOC Madiran ; INAO, fiche AOC Marcillac ; J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; La Passion du Vin, Marcillac, à la découverte du fer servadou ; The Back Label, Fer Servadou ; Stanley’s, Braucol ; Falstaff, Fer Servadou ; Oxford Companion to Wine, 5e éd. (2023), entrées « Fer » et « Marcillac » ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
+    jauge: {"style":"Marcillac et Gaillac, rouge","tanins":4,"corps":[4,5],"a_verifier":["corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 618,
@@ -854,6 +881,7 @@ FICHES.push(
     src: "INAO, cahier des charges AOP Gaillac (2025) ; J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; Oxford Companion to Wine, 5e éd. (2023), entrées « Duras » et « Gaillac » ;  ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
+    jauge: {"style":"Gaillac, rouge","acidite":4,"alcool":4,"corps":[4,5],"a_verifier":["acidite","alcool","corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
 {
     id: 379,
@@ -879,6 +907,7 @@ FICHES.push(
     src: "Bowers, Siret, Meredith, This et Boursiquot (2000), Acta Horticulturae 528:129-132 ; Vouillamoz et Grando (2006), Heredity 97:102-110 (dureza sœur du teroldego) ; Cahier des charges de l’AOC Côte-Rôtie (copie du Syndicat des Côtes du Rhône ; projet INAO PNO 2023) ; Cahier des charges de l’AOC Hermitage (BO-agri, 19 décembre 2024) ; Inter Rhône, Hermitage, Cornas et Saint-Joseph ; DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Jancis Robinson, Syrah ; Wine Spectator, Hermitage: The Soul of Syrah ; Routard, chapelle Saint-Christophe ; Gardine, Hermitage ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 92-93 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de la Vallée du Rhône",
+    jauge: {"style":"Rhône nord (Côte-Rôtie, Hermitage, Cornas), rouge","tanins":[3,5],"corps":5,"a_verifier":["tanins","corps"],"src":"WSET, Understanding Wines (2016)","note":"Corps plein pour les crus de coteaux ; Saint-Joseph et Crozes de plaine sont plus légers."},
   },
   {
     id: 504,
@@ -900,6 +929,7 @@ FICHES.push(
     src: "INAO, cahiers des charges Hermitage (projet de modification 2024), Crozes-Hermitage, Saint-Joseph et Saint-Péray (BO-agri), lus pour les fiches du Rhône nord ; Inter Rhône, pages Marsanne et Roussanne (vins-rhone.com) ; JancisRobinson.com, Marsanne et Roussanne ; WSET, Understanding Wines (2016), chapitres Rhône nord et Australie ; iDealwine, The history of grape varieties, épisode 4 : Northern Rhône ; Wein.plus, Marsanne et Roussanne ; Oxford Companion to Wine (J. Robinson, 3e éd., 2006), Roussanne ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de la Vallée du Rhône",
+    jauge: {"style":"Rhône nord, blanc sec","tanins":null,"corps":[4,5],"aromes":4,"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Niveaux chiffrés sur la marsanne ; la roussanne est dite plus fine et plus aromatique, sans niveau. Acidité omise : modérée pour la marsanne, plus vive pour la roussanne."},
   },
   {
     id: 505,
@@ -921,6 +951,7 @@ FICHES.push(
     src: "INAO, cahiers des charges Condrieu, Château-Grillet et Côte-Rôtie (BO-agri), lus pour les fiches du Rhône nord ; Inter Rhône, page Viognier (vins-rhone.com) ; JancisRobinson.com, Viognier, et DNA reveals how Syrah and Viognier are related (2007, extrait lisible) ; WSET, Understanding Wines (2016), chapitres Rhône nord et Languedoc ; iDealwine, The history of grape varieties, épisode 4 : Northern Rhône ; Wein.plus, Viognier ; Oxford Companion to Wine (J. Robinson, 3e éd., 2006), Viognier ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de la Vallée du Rhône",
+    jauge: {"style":"Condrieu, blanc sec","acidite":1,"tanins":null,"alcool":5,"corps":5,"aromes":5,"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 380,
@@ -945,6 +976,7 @@ FICHES.push(
     src: "DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Agreste Occitanie, Analyse et études n°8 (2018), âge du vignoble ; OIV, Grapevine varieties area by country 2015 (Focus OIV 2017) ; K. Anderson et S. Nelgen, Which Winegrape Varieties are Grown Where?, éd. révisée (University of Adelaide Press, 2020), tableau 39 ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; Cahier des charges de l’AOC Châteauneuf-du-Pape (chateauneuf.com) ; Jancis Robinson, Grenache ; Mattia et al. (2009), J. Hort. Sci. Biotechnol. 84(1) (notice) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 94-95 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012), entrée Garnacha",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Rhône sud et Languedoc, rouge sec","acidite":1,"tanins":[3,4],"alcool":5,"corps":5,"a_verifier":["acidite","tanins","corps"],"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012)","note":"Niveaux du rouge sec ; l'alcool des vins doux naturels vient du mutage. Tanins marqués surtout dans la jeunesse des châteauneufs."},
   },
   {
     id: 381,
@@ -970,6 +1002,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE), fiche Carignan ; K. Anderson et S. Nelgen, Which Winegrape Varieties are Grown Where?, éd. révisée (University of Adelaide Press, 2020), tableau 6 ; Agreste Occitanie, Analyse et études n°8 (2018), âge du vignoble Languedoc-Roussillon ; DRAAF Occitanie, Encépagement du vignoble (CVI, Agreste) ; Jancis Robinson, Carignan ; Decanter, The rise of Carignan ; Réussir Vigne, Un vignoble en perpétuelle évolution (2002) ; Le Point, Carignan, interprète de terroir (2022) ; J. M. Puiggròs Jové, Història dels orígens de la carinyena, Dossiers Agraris 20 (ICEA-IEC, 2017) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 102-103 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Languedoc-Roussillon, rouge","acidite":5,"tanins":5,"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 502,
@@ -991,6 +1024,7 @@ FICHES.push(
     src: "Inter Rhône, page Mourvèdre (vins-rhone.com) ; JancisRobinson.com, Mourvèdre ; Falstaff, Mourvèdre ; WSET, Understanding Wines (2016), chapitres Rhône, Languedoc-Roussillon et Provence ; INAO, cahier des charges Bandol (BO-agri), lu pour la fiche Bandol ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Bandol, rouge","tanins":5,"corps":5,"a_verifier":["corps"],"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012)"},
   },
   {
     id: 503,
@@ -1012,6 +1046,7 @@ FICHES.push(
     src: "Inter Rhône, Cinsault or Cinsaut grape variety (vins-rhone.com) ; JancisRobinson.com, Cinsault ; Decanter, Cinsault: it’s not just a backing singer ; Falstaff, Cinsault ; WSET, Understanding Wines (2016), chapitres Rhône sud, Languedoc-Roussillon et Afrique du Sud ; INAO, cahier des charges Bandol (BO-agri), lu pour la fiche Bandol ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Languedoc et Provence, rouge léger","corps":[1,2],"aromes":[3,4],"a_verifier":["corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Arômes marqués surtout dans la jeunesse."},
   },
   {
     id: 615,
@@ -1033,6 +1068,7 @@ FICHES.push(
     src: "BO-agri, cahier des charges AOC Côtes du Roussillon (arrêté du 22 mars 2022) ; J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; JancisRobinson.com, Grenache Blanc ; Tablas Creek, Grenache Blanc ; idealwine, La saga des cépages (ép. 5) ; Oxford Companion to Wine, 5e éd. (2023), entrées « Grenache Blanc » et « Roussillon » ; WSET, Understanding Wines (2016) ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Languedoc-Roussillon, blanc sec","acidite":1,"tanins":null,"alcool":[4,5],"corps":5,"a_verifier":["acidite","alcool"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
 {
     id: 612,
@@ -1075,6 +1111,7 @@ FICHES.push(
     src: "BO-agri, cahier des charges AOC La Clape (décret 2015-1389) ; BO-agri, cahier des charges AOC Bandol ; J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; JancisRobinson.com, Bourboulenc ; Tablas Creek, Bourboulenc ; idealwine, La saga des cépages (ép. 5) ; Oxford Companion to Wine, 5e éd. (2023), entrées « Bourboulenc » et « La Clape » ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"La Clape et Languedoc, blanc sec","acidite":4,"tanins":null,"alcool":3,"aromes":4,"a_verifier":["acidite","alcool","aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Arômes : Oxford le dit aromatique, Wine Grapes seulement semi-aromatique."},
   },
   {
     id: 613,
@@ -1117,6 +1154,7 @@ FICHES.push(
     src: "BO-agri, cahier des charges AOC Côtes du Roussillon (arrêté du 22 mars 2022) ; J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012) ; JancisRobinson.com, Macabeo ; Vine to Wine Circle, Macabeo ; La Passion du Vin, dégustation de macabeus du Roussillon ; Oxford Companion to Wine, 5e éd. (2023), entrées « Macabeo » et « Viura » ; WSET D3, Wines of the World (2024) ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Roussillon, blanc sec","acidite":1,"tanins":null,"aromes":[1,2],"a_verifier":["acidite","aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Arômes : Oxford juge le macabeu du Roussillon cueilli tôt sans grand caractère, alors que Wine Grapes le dit assez aromatique jeune, sans viser la France."},
   },
   {
     id: 508,
@@ -1138,6 +1176,7 @@ FICHES.push(
     src: "INAO, fiches AOP Muscat de Frontignan, de Mireval, de Lunel, de Saint-Jean-de-Minervois, de Rivesaltes, du Cap Corse et de Beaumes-de-Venise ; INAO, projet de cahier des charges AOC Alsace (comité national du 12 juin 2025) ; Decanter, What’s the difference between Muscat, Moscatel and Moscato ? ; wein.plus, glossaire, Muscat Ottonel et Muscat d’Alexandrie ; Peiró et al., Genetic variability assessment in Muscat grapevines, Spanish Journal of Agricultural Research 16(2) (2018) ; Hachette des vins, AOC Alsace muscat ; WSET, Understanding Wines (2016), chap. Alsace et muscats fortifiés ; WSET L3, support de cours Module 4 (2022) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Midi méditerranéen",
+    jauge: {"style":"Muscat sec (Alsace, Roussillon)","acidite":[1,3],"tanins":null,"corps":[1,2],"aromes":5,"a_verifier":["acidite"],"src":"WSET, Understanding Wines (2016) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Valable pour le muscat sec ; les muscats mutés (vins doux naturels) sont plus riches et plus alcooleux."},
   },
   {
     id: 624,
@@ -1159,6 +1198,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrées Nielluccio et Sangiovese ; Plantgrape (IFV/INRAE/Institut Agro), fiche Nielluccio N ; INAO, fiche AOC Patrimonio ; Visit Corsica (CIV Corse), cépages corses ; Stanley’s, Niellucciu ; Oxford Companion to Wine, 5e éd. (2023), entrées « Niellucciu », « Sangiovese » et « Corsica » ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Corse",
+    jauge: {"style":"Patrimonio, rouge","acidite":4,"tanins":4,"a_verifier":["acidite"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)"},
   },
   {
     id: 625,
@@ -1180,6 +1220,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012), entrée Mammolo ; INAO, fiche AOC Ajaccio ; CIV Corse, fiche Sciaccarellu ; Oxford Companion to Wine, 5e éd. (2023), entrées « Sciaccarellu », « Mammolo » et « Corsica » ; cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Corse",
+    jauge: {"style":"Ajaccio et Sartène, rouge","acidite":4,"tanins":1,"alcool":4,"a_verifier":["acidite","tanins"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Les sartènes sont décrits comme corsés, les ajaccios comme plus croquants."},
   },
   {
     id: 513,
@@ -1201,5 +1242,6 @@ FICHES.push(
     src: "INAO, fiches IGP Var et AOC Vin de Corse / Corse Figari ; BO-agri, cahier des charges Bandol (décret du 22 septembre 2011) ; Vinatis, Vermentino / Rolle ; iDealwine, Zoom sur un cépage : quand le rolle joue les grands blancs ; Wine with Seth, Vermentino / Rolle ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; Plantgrape (IFV/INRAE/Institut Agro), fiche Vermentino ; Oxford Companion to Wine, 5e éd. (2023), entrée « Vermentino »",
     source: "france",
     chapitre: "Cépages de Corse",
+    jauge: {"style":"Corse et Provence, blanc sec","acidite":4,"tanins":null,"corps":[3,5],"aromes":4,"a_verifier":["acidite","corps"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Le corps moyen à plein est donné pour le vermentinu de Patrimonio."},
   }
 );
