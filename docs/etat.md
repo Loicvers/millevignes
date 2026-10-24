@@ -2,8 +2,8 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 594 (dernier id : 596) · exercices : 3070
-- Vérifiées : 374 · à vérifier : 220 (326 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
+- Fiches : 594 (dernier id : 596) · exercices : 3071
+- Vérifiées : 373 · à vérifier : 221 (315 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1255
 - Niveaux : Fondamental 180 · Intermédiaire 303 · Pointu 111
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
@@ -15,7 +15,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |
 | 124-geologie.js | 32 | 157–188 | 124–149 | 6 | 6 | 6 |
-| 150-terroir.js | 37 | 3–596 | 150–199 | 13 | 5 | 5 |
+| 150-terroir.js | 37 | 3–596 | 150–199 | 12 | 5 | 5 |
 | 203-vinification.js | 69 | 223–592 | 204–242 | 47 | 14 | 14 |
 | 244-degustation.js | 49 | 253–588 | 245–285 | 30 | 7 | 6 |
 | 288-service.js | 52 | 293–571 | 288–329 | 35 | 7 | 5 |
@@ -24,14 +24,14 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-alsace.js | 1 | 405–405 | hors livre | 0 | 0 | 1 |
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 1 |
-| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 10 | 0 | 1 |
+| fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 9 | 0 | 1 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 1 |
 | fr-bourgogne.js | 17 | 385–401 | hors livre | 10 | 0 | 3 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 1 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 1 | 0 | 0 |
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
-| fr-corse.js | 1 | 420–420 | hors livre | 0 | 0 | 1 |
+| fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 2 | 0 | 1 |
 | fr-jura-appellations.js | 2 | 492–493 | hors livre | 2 | 0 | 0 |
 | fr-jura.js | 1 | 407–407 | hors livre | 0 | 0 | 1 |
