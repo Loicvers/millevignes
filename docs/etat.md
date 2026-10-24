@@ -2,15 +2,15 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 594 (dernier id : 596) · exercices : 3071
-- Vérifiées : 373 · à vérifier : 221 (315 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1255
-- Niveaux : Fondamental 180 · Intermédiaire 303 · Pointu 111
+- Fiches : 623 (dernier id : 625) · exercices : 3216
+- Vérifiées : 401 · à vérifier : 222 (316 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1344
+- Niveaux : Fondamental 188 · Intermédiaire 324 · Pointu 111
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 78 | 1–595 | 16–38 | 49 | 7 | 10 |
+| 016-domestication.js | 107 | 1–625 | 16–38 | 77 | 7 | 10 |
 | 040-nature.js | 51 | 4–521 | 40–73 | 36 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 8 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 12 | 5 | 6 |

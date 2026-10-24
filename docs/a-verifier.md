@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-594 fiches : 373 vérifiées, 221 à vérifier (315 points).
-Hors dette : 1255 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+623 fiches : 401 vérifiées, 222 à vérifier (316 points).
+Hors dette : 1344 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 1** (p.27) — Le cabernet sauvignon
 - [ ] Rang mondial (⚠️) : selon l’OIV, premier cépage de cuve (environ 341 000 ha en 2015) et deuxième toutes catégories derrière le kyoho, raisin de table (Focus OIV 2017, repris par Vitisphere) ; JancisRobinson (Anderson et Nelgen) le classe aussi premier cépage de cuve ; l’Oxford Companion (5e éd., 2023) donne environ 310 700 ha en 2016, premier cépage mondial sans séparer cuve et table ; Wine Grapes ne donne aucun total mondial.
@@ -760,3 +760,6 @@ Hors dette : 1255 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 596** (p.179) — Avant 1855 : le marché invente les grands crus
 - [ ] Chronologie des niveaux (⚠️) : premiers crus à la charnière des XVIIe et XVIIIe siècles, deuxièmes vers le milieu du XVIIIe, troisièmes déjà en place en 1787, quatrièmes dans les années 1820, cinq niveaux et 60 domaines au début des années 1850 : Markham (Conseil des Grands Crus Classés en 1855, source officielle) seul pour les étapes intermédiaires ; l’Oxford Companion (5e éd., 2023, « classification » et « Bordeaux ») confirme la visite de Jefferson en 1787, les cinq classes et les 60 domaines, et date l’arrivée de Lafite, Latour et Margaux en Angleterre du début du XVIIIe siècle.
 - [ ] Date de la commande de 1855 (⚠️) : lettre du 5 avril 1855 de la Chambre de commerce au Syndicat des courtiers selon Markham ; 6 avril selon le site les-grands-crus-classes.fr ; remise le 18 avril dans les deux. L’Oxford ne donne pas de date.
+
+**Fiche 624** (p.31) — Le niellucciu : le grand rouge de Patrimonio
+- [ ] Lien avec le sangiovese (⚠️ divergence) : génétiquement identique pour Wine Grapes (2012, entrées Sangiovese et Nielluccio), Plantgrape (fiche Nielluccio N) et l’Oxford Companion (5e éd., 2023, entrées « Niellucciu », « Sangiovese » et « Corsica », où il est le nom corse du sangiovese) ; « parent du sangiovese » d’après le livre de Lepeltier, formule rapportée par la fiche 420 mais introuvable dans les extraits du livre disponibles ; formulé « de la famille du sangiovese », aucune question n’en dépend

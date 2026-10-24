@@ -143,3 +143,9 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Domestication (fiches 7, 8, 15, 16, 18) : Dong et al., « Dual domestications and origin of traits in grapevine evolution », Science 379 (2023), texte intégral lu (figures et tableaux supplémentaires S1-S35 non lus ; deux passages mal extraits, sur les refuges de Syl-W et un second goulot au dernier maximum glaciaire, non utilisés).
 - Cépages (fiches 1, 20, 36, 41, 44, 372, 377-381, 420, 498-514) : Wine Grapes (Robinson, Harding, Vouillamoz, 2012), texte des entrées par cépage et introduction (lecture ciblée). Non disponibles : AUXERROIS, GOUAIS BLANC, SILVANER, SAUVIGNON BLANC, ZARYA SEVERA, TEINTURIER, LÉON MILLOT ; surfaces de 2008-2010 seulement.
 - Bordeaux, classement de 1855 (fiches 3, 209, 312, 413, 421-430, 596) : D. Markham Jr, « L’Histoire du Classement de 1855 », Conseil des Grands Crus Classés en 1855 (niveau 1 ; rouges seulement, sans la liste). Oxford Companion (5e éd.) relu pour les entrées « Sauternes », « classification », « classed growth », « Haut-Brion, Château », « Bordeaux », « Bordeaux trade » et « British influence on the wine trade ».
+
+## Profils de cépages français, fiches 597-625 (24/10/2026)
+- Wine Grapes (Robinson, Harding, Vouillamoz, 2012) : entrée de chaque cépage (texte intégral par entrée).
+- Oxford Companion to Wine, 5e éd. (2023) : entrées des 29 cépages et des appellations citées (relecture).
+- WSET, Understanding Wines (L3, 2016) et Wines of the World (D3, 2024) : profils gustatifs et régions (relecture).
+- Cahiers des charges lus (BO-agri, via WebFetch) : AOC Alsace, Cour-Cheverny, Bourgogne aligoté, Roussette de Savoie, Vin de Savoie, La Clape ; projets Gros Plant, Fronton (2024), Gaillac (2025) ; fiche INAO Bouzeron. Plantgrape refuse les robots : fiches lues seulement pour quelques cépages.
