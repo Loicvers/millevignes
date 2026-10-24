@@ -51,7 +51,7 @@ export function migrate({ FICHES, SOUS, THEME_ORDER, FRANCE_SOMMAIRE = [] }) {
       status: f.status ?? "needs_review",
       to_check: f.to_check ?? (f.status ? [] : ["Pastilles de vérification d'origine non conservées : revérifier les sources."]),
       selon_livre: f.selon_livre ?? [], // détails non vérifiés laissés au crédit de l'autrice : pas une dette
-      cours: f.cours ?? null, schema: f.schema ?? null, jauge: f.jauge ?? null, content_version: 1,
+      cours: f.cours ?? null, schema: f.schema ?? null, jauge: f.jauge ?? null, noms: f.noms ?? [], content_version: 1,
     });
     exercises.push({ id: `${id}-01`, type: "flashcard", notion_ids: [id], prompt: f.flash.q, payload: { answer: f.flash.a, ...(f.flash.keys && { keys: f.flash.keys }) }, content_version: 1 });
     exercises.push({ id: `${id}-02`, type: "mcq_single", notion_ids: [id], prompt: f.qcm.q, payload: { options: f.qcm.opts, answer: f.qcm.good }, explanation: f.qcm.expl, content_version: 1 });

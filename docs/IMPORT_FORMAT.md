@@ -126,6 +126,10 @@ Champ `schema` de la notion (et de la fiche dans `fiches/*.js`), affiché dans l
 - `svg` : un seul `<svg>…</svg>` inerte. Refusé s'il contient un script, un attribut d'événement (`onload`…), un `foreignObject` ou un lien externe. Couleurs via `currentColor` pour suivre le thème.
 - `legende` et `src` (crédit) obligatoires.
 
+## Autres noms (fiches de cépages)
+
+Champ facultatif `noms: [{ nom: "Garnacha", ou: "Espagne" }, …]` : synonymes vrais (Wine Grapes « principal synonyms », recoupés), au plus 6, avec le pays ou la région où le nom s’emploie ; jamais une fausse identité (« varieties commonly mistaken for »). Affiché « Autres noms » sur la fiche.
+
 ## Jauge de structure (fiches de cépages)
 
 Champ facultatif `jauge`, affiché en points sur la fiche (« Structure typique ») :

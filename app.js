@@ -311,7 +311,9 @@ const jaugeHTML=f=>{const j=f.jauge;if(!j)return '';const av=j.a_verifier||[];
   const lig=k=>{const[a,b]=[].concat(j[k],j[k]),mot=a===b?NIV5[a-1]:`${NIV5[a-1]} à ${NIV5[b-1]}`,chk=av.includes(k);
     return `<div class="j-l" role="img" aria-label="${JAUGE_LBL[k]} : ${mot}${chk?', à vérifier':''}"><span>${JAUGE_LBL[k]}</span><span class="j-p" aria-hidden="true">${'●'.repeat(a)}<b>${'●'.repeat(b-a)}</b><i>${'●'.repeat(5-b)}</i></span><small aria-hidden="true">${mot}${chk?' ⚠':''}</small></div>`;};
   return `<div class="jauge"><span class="m-lbl">Structure typique</span>${Object.keys(JAUGE_LBL).filter(k=>j[k]!=null).map(lig).join('')}${j.note?`<small class="j-s">${j.note}</small>`:''}<small class="j-s">${j.style} — ${j.src}</small></div>`;};
-const schemaHTML=f=>jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
+// Autres noms du cépage (pays ou région où ils s'emploient).
+const nomsHTML=f=>f.noms?.length?`<p class="noms"><span class="m-lbl">Autres noms</span> ${f.noms.map(n=>`<b>${n.nom}</b> (${n.ou})`).join(', ')}</p>`:'';
+const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}

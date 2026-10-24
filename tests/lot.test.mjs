@@ -115,3 +115,10 @@ test("jauge de structure : niveaux 1 à 5 ou null, style et crédit obligatoires
   const errs = validate(ko, base).join("\n");
   for (const m of [/jauge\.acidite/, /jauge\.corps/, /jauge\.style/, /jauge\.src/, /a_verifier/]) assert.match(errs, m);
 });
+
+test("autres noms : liste de { nom, ou }", () => {
+  const ok = lot(); ok.notions[0].noms = [{ nom: "Garnacha", ou: "Espagne" }];
+  assert.deepEqual(validate(ok, base), []);
+  const ko = lot(); ko.notions[0].noms = [{ nom: "Garnacha" }];
+  assert.match(validate(ko, base).join("\n"), /noms doit/);
+});

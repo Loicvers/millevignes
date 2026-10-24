@@ -58,6 +58,7 @@ function checkNotion(n, tax, err) {
     if (j.note != null && !isStr(j.note)) err(`${at} : jauge.note doit être un texte`);
     if (!isStrArr(j.a_verifier ?? [], 0) || (j.a_verifier ?? []).some(k => !JAUGE.includes(k))) err(`${at} : jauge.a_verifier : critères parmi ${JAUGE.join(", ")}`);
   }
+  if (!Array.isArray(n.noms ?? []) || (n.noms ?? []).some(x => !isStr(x?.nom) || !isStr(x?.ou))) err(`${at} : noms doit être une liste de { nom, ou }`);
   const imps = [];
   JSON.stringify(n.cours ?? null, (k, v) => (k === "imp" && v != null && imps.push(v), v));
   for (const i of imps) if (!IMP.includes(i)) err(`${at} : imp « ${i} » invalide (${IMP.join(" | ")})`);

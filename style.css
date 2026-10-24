@@ -118,6 +118,7 @@
   .selon-livre summary{cursor:pointer;color:var(--muted,#777)}
   .schema{margin:0 0 14px;border:1px solid var(--line);border-radius:3px;padding:10px;background:var(--paper)}
   .schema{cursor:zoom-in}
+  .noms{margin:0 0 14px;font-size:13.5px}.noms b{font-weight:600}
   .jauge{margin:0 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:3px;font-size:13.5px}
   .j-l{display:grid;grid-template-columns:6.5em auto 1fr;gap:10px;align-items:center;line-height:1.7}
   .j-p{color:var(--gold);letter-spacing:3px;font-size:17px}.j-p i{font-style:normal;opacity:.22}.j-p b{font-weight:inherit;opacity:.5}
