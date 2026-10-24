@@ -133,3 +133,8 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 
 ## Compléments WSET — vinification (23/10/2026, fiches 577-588)
 - WSET L3 (2016) et D4 ; OIV (Code des pratiques œnologiques, OENO 545A-2016, II.3.5.16, ECO 3/93) ; règlements (UE) 2019/33 (annexe III, mentions de douceur), 2021/2117 et 2026/471 (vins désalcoolisés ; texte de 2026 non lisible, communiqué du Parlement européen et AGRINFO) ; IFV et ITV France ; AWRI ; Oxford Companion ; Inter Beaujolais ; Comité Champagne et cahier des charges Champagne (31/07/2025) ; Consorzio Asti ; G. Liger-Belair (2022) ; Cheynier et al. (Vitis, 1991) ; Mojsov 2011 ; Şener 2018 ; Réussir Vigne, Club Oenologique (2b). Bloqués : EUR-Lex (curl), annexe VIII du règlement 2021/2117, page DGCCRF, JancisRobinson.com (payant) ; D1 tronqué.
+
+## Divergences et Greco di Tufo (24/10/2026)
+- Disciplinari Greco di Tufo DOCG (DM 13.10.2020, copie Federvini) et Bolgheri DOC (DPR 1983, DM 1994) ; loi italienne n° 164 du 10 février 1992 (IGT) ; ISPRA, carte géologique d'Italie 1/50 000, feuille 432 Benevento (notice, 2007) ; Sarah Marsh MW (World of Fine Wine, 2026) ; A. Maltman (World of Fine Wine, 2022).
+- Cahiers des charges : Beaujolais (2022), Brouilly (2024), Moulin-à-Vent (2020, 2024), Muscadet Sèvre et Maine (26/11/2025), Coteaux bourguignons (décret 2011-1618, modifié 2013), Floc de Gascogne (fiche INAO, projet 2026) ; FranceAgriMer (chiffres 2024, publiés le 21/11/2025) ; CIVB (chiffres 2014) ; Agreste / DRAAF Grand Est (2021).
+- Histoire : Focus OIV 2017 (cépages) ; Pl@ntGrape (alicante bouschet) ; Viret et al., BIO Web of Conferences 2019 (hybrides) ; Pérard et Jacquet, CULTUR 2014 (moines bourguignons) ; Encyclopædia Universalis (Cluny) ; Œnologues de France (Institut d'œnologie).

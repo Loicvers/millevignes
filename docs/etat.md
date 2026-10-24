@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 591 (dernier id : 592) · exercices : 3054
-- Vérifiées : 373 · à vérifier : 218 (324 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
-- Niveaux : Fondamental 180 · Intermédiaire 301 · Pointu 110
+- Fiches : 592 (dernier id : 593) · exercices : 3059
+- Vérifiées : 374 · à vérifier : 218 (322 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1220
+- Niveaux : Fondamental 180 · Intermédiaire 302 · Pointu 110
 - Cours (Approfondir) : 58 · schémas : 91
 - Lexique : 76 termes · récits de chapitre : 52
 
@@ -26,7 +26,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-beaujolais.js | 1 | 406–406 | hors livre | 0 | 0 | 1 |
 | fr-bordeaux-appellations.js | 13 | 421–433 | hors livre | 10 | 0 | 1 |
 | fr-bordeaux.js | 3 | 411–413 | hors livre | 1 | 0 | 1 |
-| fr-bourgogne.js | 17 | 385–401 | hors livre | 9 | 0 | 3 |
+| fr-bourgogne.js | 17 | 385–401 | hors livre | 10 | 0 | 3 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
 | fr-champagne.js | 2 | 403–404 | hors livre | 1 | 0 | 1 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 1 | 0 | 0 |
@@ -61,6 +61,6 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 0 |
 | monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 0 |
 | monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 0 |
-| monde-italie.js | 6 | 539–544 | hors livre | 6 | 0 | 0 |
+| monde-italie.js | 7 | 539–593 | hors livre | 6 | 0 | 0 |
 | monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 0 |
 | monde-portugal.js | 6 | 526–551 | hors livre | 5 | 0 | 0 |
