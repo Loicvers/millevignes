@@ -173,6 +173,7 @@ const LEXIQUE = [
  },
  {
   "terme": "court-noué",
+  "photo": {"fichier": "Bugwood 5356702", "url": "https://bugwoodcloud.org/images/768x512/5356702.jpg", "page": "https://www.ipmimages.org/browse/image/5356702", "source": "Bugwood.org", "legende": "Feuille de vigne atteinte de court-noué : limbe déformé, nervures rapprochées en éventail.", "auteur": "William M. Brown Jr.", "licence": "CC BY-NC 3.0 (usage non commercial)"},
   "def": "Maladie virale grave de la vigne, due surtout au GFLV (grapevine fanleaf virus), plus rarement à l’ArMV, et transmise par un nématode du sol, Xiphinema index. Symptômes : ceps rabougris, rameaux aux entre-nœuds raccourcis et déformés, feuilles déformées ou décolorées. Conséquences : coulure, millerandage, pertes de rendement (jusqu’à 80 %) et vie du cep écourtée. Aucun traitement curatif : on prévient par l’arrachage, un long repos du sol, des plants sains (sélection clonale) et des porte-greffes résistants au nématode.",
   "etym": "nom composé descriptif : court + noué, d’après les rameaux aux nœuds rapprochés (entre-nœuds courts).",
   "declic": "Court-noué : des nœuds trop courts, un cep qui rabougrit ; le coupable, un nématode qui pique les racines.",

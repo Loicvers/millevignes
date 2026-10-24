@@ -199,9 +199,10 @@ function renderCartes(){
 // shortcut: image chargée depuis Commons, donc absente hors ligne ; la copier dans le dépôt si l'usage hors ligne compte.
 function lexPhoto(t){
   if(!t.photo)return null;const p=t.photo,f=el('figure','lex-ph'),i=el('img');
-  i.src='https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(p.fichier)+'?width=640';i.alt=p.legende;i.loading='lazy';
-  const c=el('figcaption',null,p.legende+' '),a=el('a',null,`Photo : ${p.auteur}, ${p.licence}, Wikimedia Commons`);
-  a.href='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.fichier);a.target='_blank';a.rel='noopener';
+  // Hors Commons (p.url) : image d'une autre banque, avec sa page et son nom de source pour le crédit.
+  i.src=p.url||'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(p.fichier)+'?width=640';i.alt=p.legende;i.loading='lazy';
+  const c=el('figcaption',null,p.legende+' '),a=el('a',null,`Photo : ${p.auteur}, ${p.licence}, ${p.source||'Wikimedia Commons'}`);
+  a.href=p.page||'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(p.fichier);a.target='_blank';a.rel='noopener';
   c.append(a);f.append(i,c);return f;}
 
 let lexQuery='';
