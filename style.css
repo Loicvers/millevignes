@@ -120,7 +120,7 @@
   .schema{cursor:zoom-in}
   .jauge{margin:0 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:3px;font-size:13.5px}
   .j-l{display:grid;grid-template-columns:6.5em auto 1fr;gap:10px;align-items:center;line-height:1.7}
-  .j-p{color:var(--gold);letter-spacing:3px;font-size:17px}.j-p i{font-style:normal;opacity:.22}
+  .j-p{color:var(--gold);letter-spacing:3px;font-size:17px}.j-p i{font-style:normal;opacity:.22}.j-p b{font-weight:inherit;opacity:.5}
   .j-l small{color:var(--muted,inherit);opacity:.75}
   .j-s{display:block;margin-top:6px;opacity:.7;font-size:12px}
   .zoom{position:fixed;inset:0;z-index:110;background:rgba(22,19,15,.94);overflow:auto;padding:64px 12px 28px}.zoom[hidden]{display:none}
