@@ -25,6 +25,7 @@ const PAYLOADS = {
   explain_client: p => [!isStr(p.model) && "model (réponse modèle) manquant", !isStrArr(p.criteria, 3) || p.criteria.length !== 3 ? "criteria : exactement 3 critères (textes non vides)" : null],
   odd_one_out: p => [!isStrArr(p.options, 3) && "options : au moins 3 textes", isStrArr(p.options, 3) && !isIdx(p.answer, p.options) && "answer : index de l'intrus hors des options"],
 };
+export const JAUGE = ["acidite", "tanins", "alcool", "corps", "aromes"];
 export const EXERCISE_TYPES = Object.keys(PAYLOADS);
 
 function checkNotion(n, tax, err) {
@@ -46,6 +47,14 @@ function checkNotion(n, tax, err) {
     else if (/<script|<foreignObject|\son\w+\s*=|(href|src)\s*=\s*["']?\s*(https?:|javascript:|data:)/i.test(svg)) err(`${at} : schema.svg ne doit contenir ni script, ni événement, ni lien externe`);
     if (!isStr(n.schema.legende)) err(`${at} : schema.legende manquante`);
     if (!isStr(n.schema.src)) err(`${at} : schema.src (crédit) manquant`);
+  }
+  // Jauge de structure (grille WSET sur 5) : 1 à 5, ou null quand le critère ne s'applique pas (tanins d'un blanc).
+  if (n.jauge != null) {
+    const j = n.jauge;
+    for (const k of JAUGE) if (!(j[k] === null || (Number.isInteger(j[k]) && j[k] >= 1 && j[k] <= 5))) err(`${at} : jauge.${k} doit valoir 1 à 5 ou null`);
+    if (!isStr(j.style)) err(`${at} : jauge.style manquant (le style décrit, ex. « Alsace, vin sec »)`);
+    if (!isStr(j.src)) err(`${at} : jauge.src (crédit) manquant`);
+    if (!isStrArr(j.a_verifier ?? [], 0) || (j.a_verifier ?? []).some(k => !JAUGE.includes(k))) err(`${at} : jauge.a_verifier : critères parmi ${JAUGE.join(", ")}`);
   }
   const imps = [];
   JSON.stringify(n.cours ?? null, (k, v) => (k === "imp" && v != null && imps.push(v), v));

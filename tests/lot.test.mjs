@@ -107,3 +107,11 @@ test("schéma : SVG inerte et crédité seulement", () => {
     assert.match(validate(l, base).join("\n"), m);
   }
 });
+
+test("jauge de structure : niveaux 1 à 5 ou null, style et crédit obligatoires", () => {
+  const ok = lot(); ok.notions[0].jauge = { style: "Alsace, sec", acidite: 5, tanins: null, alcool: 3, corps: 3, aromes: 4, a_verifier: ["alcool"], src: "WSET L3" };
+  assert.deepEqual(validate(ok, base), []);
+  const ko = lot(); ko.notions[0].jauge = { acidite: 6, tanins: null, alcool: 3, corps: 3, aromes: 4, a_verifier: ["sucre"] };
+  const errs = validate(ko, base).join("\n");
+  for (const m of [/jauge\.acidite/, /jauge\.style/, /jauge\.src/, /a_verifier/]) assert.match(errs, m);
+});
