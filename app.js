@@ -294,7 +294,7 @@ const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(local
 // Mes vins (champ vins des partenaires) : encadré « Dans ma cave » des fiches et QCM « quelle bouteille illustre… », retirés puis recalculés à chaque import.
 const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom})));
 function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of caveExercises(vinsDe(),FICHES)){EXOS.push(e);EX_BY_ID[e.id]=e;}}
-majCave();
+try{majCave();}catch(e){console.error(e);} // un fichier privé mal formé ne doit pas bloquer le site
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
 function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en avant (onglet Cartes), nom écrit sur la carte
