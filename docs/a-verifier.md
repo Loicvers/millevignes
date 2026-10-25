@@ -14,8 +14,8 @@ Hors dette : 1618 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] France et Italie concentrent la plus grande diversité génétique des cépages de cuve d’Europe de l’Ouest, l’Italie en tête (⚠️) : Magris et al. (2021) seuls ; les recensements de Wine Grapes (lus via une note de l’université d’Adélaïde, niveau 2b) vont dans le même sens mais comptent des cépages, pas une diversité génétique ; Laucou et al. (2018) et Emanuelli et al. (2013) ne comparent pas les pays.
 
 **Fiche 669** (p.21) — Le cabernet franc, un cépage ancien à forte part sauvage
-- [ ] Forte ascendance sauvage occidentale du cabernet franc et ressemblance avec les lambrusques du versant atlantique des Pyrénées (⚠️) : Magris et al. (2021) seuls, qui renvoient à Lavignac (Cépages du Sud-Ouest, 2001), non lu.
-- [ ] Origine basque du cabernet franc (⚠️) : JancisRobinson.com et Wine Grapes (relayé par The Drinks Business 2017) concordent, mais partagent une autrice (J. Robinson) et ne comptent que pour une source.
+- [ ] Forte ascendance sauvage occidentale du cabernet franc et ressemblance avec les lambrusques du versant atlantique des Pyrénées (⚠️) : Magris et al. (2021) seuls, qui renvoient à Lavignac (Cépages du Sud-Ouest, 2001), non lu. Wine Grapes (texte intégral, entrée Cabernet Franc) ne parle pas de vigne sauvage : il cite Lavignac seulement pour dire que l’achéria, le cabernet franc basque, est le clone morphologiquement le plus archaïque.
+- [ ] Origine basque du cabernet franc (⚠️) : Wine Grapes, lu en texte intégral, fonde l’origine basque sur des liens parent-enfant avec deux vieux cépages basques, le morenoa et le hondarribi beltza (d’après Boursiquot et al. 2009) ; JancisRobinson.com a la même autrice (J. Robinson) et le résumé de Boursiquot et al. 2009 n’en parle pas : une seule source à ce jour.
 
 **Fiche 670** (p.21) — Les mansengs, une famille entre savagnin et vigne sauvage
-- [ ] Origine du petit manseng par croisement entre un cépage cultivé et une vigne sauvage (⚠️) : hypothèse de Magris et al. (2021) seuls.
+- [ ] Origine du petit manseng par croisement entre un cépage cultivé et une vigne sauvage (⚠️) : hypothèse de Magris et al. (2021) seuls ; Wine Grapes (texte intégral) ne nomme pas le second parent du petit manseng et ne parle pas de vigne sauvage.
