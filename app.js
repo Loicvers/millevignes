@@ -291,6 +291,10 @@ function fitSvg(svg){
 }
 /* ============ MES PARTENAIRES (fichier privé importé, gardé dans ce navigateur seulement) ============ */
 const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
+// Mes vins (champ vins des partenaires) : encadré « Dans ma cave » des fiches et QCM « quelle bouteille illustre… », retirés puis recalculés à chaque import.
+const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom})));
+function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of caveExercises(vinsDe(),FICHES)){EXOS.push(e);EX_BY_ID[e.id]=e;}}
+majCave();
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
 function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en avant (onglet Cartes), nom écrit sur la carte
@@ -305,7 +309,8 @@ function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en av
 // Une appellation du partenaire relève de la fiche si elle commence par son nom (« Saint-Émilion grand cru » → Saint-Émilion, « Mâcon-Péronne » → Mâcon ; « Haut-Médoc » ≠ Médoc, « Graves de Vayres » ≠ Graves).
 const memeAppel=(a,appel)=>{const x=normalize(a),y=normalize(appel);return x===y||(x.startsWith(y+' ')&&!/^(de|du|des|d) /.test(x.slice(y.length+1)));};
 // Fiche d'appellation : mes domaines de cette appellation ; fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
-const partenairesHTML=f=>{const g=f.geo||{};const l=g.appel?partenaires.filter(p=>(p.appellations||[]).some(a=>memeAppel(a,g.appel))):g.region?partenaires.filter(p=>p.region===g.region):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<details class="mnemo partenaires-liste"${g.appel?' open':''}><summary class="m-lbl">${g.appel?'Dans ma cave':'Mes partenaires'} (${l.length})</summary>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</details>`:'';};
+const caveHTML=f=>{const l=vinsDe().filter(v=>v.liens&&v.liens[f.id]);return l.length?`<details class="mnemo partenaires-liste" open><summary class="m-lbl">Dans ma cave (${l.length})</summary>${l.map(v=>{const x=v.liens[f.id];return `<b>${escH(v.cuvee)}</b> — ${escH(v.dom)}${x.d?' : '+escH(x.d)+(x.s==='ok'?' ✅':' ⚠️'):''}`;}).join('<br>')}</details>`:'';};
+const partenairesHTML=f=>{const cave=caveHTML(f);if(cave)return cave;const g=f.geo||{};const l=g.appel?partenaires.filter(p=>(p.appellations||[]).some(a=>memeAppel(a,g.appel))):g.region?partenaires.filter(p=>p.region===g.region):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<details class="mnemo partenaires-liste"${g.appel?' open':''}><summary class="m-lbl">${g.appel?'Dans ma cave':'Mes partenaires'} (${l.length})</summary>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</details>`:'';};
 // Jauge de structure sur 5 (grille WSET : faible, moyen-, moyen, moyen+, élevé) ; ⚠ sur un critère non recoupé.
 const JAUGE_LBL={acidite:'Acidité',tanins:'Tanins',alcool:'Alcool',corps:'Corps',aromes:'Arômes'},NIV5=['faible','moyen-','moyen','moyen+','élevé'];
 // Niveau = entier, ou fourchette [a,b] de la source : points pleins jusqu'à a, pâles jusqu'à b.
@@ -818,11 +823,11 @@ document.getElementById('partFile').onchange=async e=>{
   const file=e.target.files[0];e.target.value='';if(!file)return;
   let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
   const l=data&&data.app==='millevignes-partenaires'&&Array.isArray(data.partenaires)&&data.partenaires;
-  const ok=l&&l.every(p=>p&&typeof p.nom==='string'&&p.nom.length<=120&&(!p.points||Object.values(p.points).every(v=>Array.isArray(v)&&v.length===2&&v.every(Number.isFinite))));
+  const ok=l&&l.every(p=>p&&typeof p.nom==='string'&&p.nom.length<=120&&(!p.points||Object.values(p.points).every(v=>Array.isArray(v)&&v.length===2&&v.every(Number.isFinite)))&&(!p.vins||Array.isArray(p.vins)&&p.vins.every(v=>v&&typeof v.cuvee==='string'&&v.liens&&typeof v.liens==='object')));
   if(!ok){alert('Ce fichier n\'est pas un fichier de partenaires Mille Vignes.');return;}
   if(!confirm(`Importer ${l.length} partenaire(s) ? Ils restent dans ce navigateur seulement et remplacent la liste actuelle (${partenaires.length}).`))return;
   partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
-  fitCache.clear();render();
+  majCave();fitCache.clear();render();
 };
 
 /* ============ MOTS DU LEXIQUE DANS LES TEXTES ============ */

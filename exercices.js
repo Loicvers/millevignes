@@ -46,6 +46,23 @@ function lexiqueExercises(lex, fiches) {
   });
 }
 
+// Ma cave (fichier privé) : « quelle bouteille illustre cette notion ? », un QCM par fiche reliée à une cuvée par un fait documenté.
+// vins : [{ cuvee, dom, liens: { <id fiche>: { k: "appel"|"cepage"|"notion", t: "sol:schiste", d: détail, s: "ok"|"warn" } } }]
+// shortcut: les leurres sont des cuvées documentées sur un autre fait de la même famille (sol, vinif…), pas une preuve qu'elles ne l'illustrent pas ; à revoir si une fausse correction est signalée.
+function caveExercises(vins, fiches) {
+  const nom = v => v.cuvee + " (" + v.dom + ")", fam = t => t.split(":")[0];
+  return fiches.flatMap(f => {
+    const bons = vins.filter(v => v.liens && v.liens[f.id] && v.liens[f.id].k === "notion");
+    if (!bons.length) return [];
+    const bon = shuffle(bons)[0], l = bon.liens[f.id];
+    const leurres = shuffle(vins.filter(v => !(v.liens && v.liens[f.id]) && Object.values(v.liens || {}).some(x => x.k === "notion" && fam(x.t) === fam(l.t)))).slice(0, 3);
+    if (leurres.length < 3) return [];
+    const options = shuffle([bon, ...leurres]).map(nom);
+    return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave, quelle bouteille illustre : « " + f.titre + " » ?",
+      payload: { options, answer: options.indexOf(nom(bon)) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + nom(bon) + " : " + l.d, fiche: f }];
+  });
+}
+
 // Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
 // Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.
 // flash.keys (facultatif) : points attendus, chacun avec ses variantes acceptées, ex. [["Asie","asiatique"],["40"]] ;

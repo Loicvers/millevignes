@@ -81,6 +81,17 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
   }
 });
 
+test("ma cave : un QCM par notion documentée, bonne réponse reliée, leurres de la même famille", () => {
+  vm.runInNewContext("this.cv=caveExercises", ctx);
+  const f = { id: 175, titre: "Schistes" }, g = { id: 170, titre: "Calcaire" };
+  const v = (cuvee, t, id, k = "notion") => ({ cuvee, dom: "D", liens: { [id]: { k, t, d: "x", s: "ok" } } });
+  const vins = [v("A", "sol:schiste", 175), v("B", "sol:calcaire", 170), v("C", "sol:calcaire", 170), v("E", "sol:calcaire", 170), v("F", "vinif:sur-lie", 241), v("G", "", 175, "appel")];
+  const ex = ctx.cv(vins, [f, g]);
+  assert.equal(ex.length, 1); // calcaire : un seul leurre de la famille sol → pas d'exercice
+  assert.equal(ex[0].payload.options[ex[0].payload.answer], "A (D)");
+  assert.ok(!ex[0].payload.options.some(o => /^[FG] /.test(o)));
+});
+
 test("flashcard écrite : correction par mots-clés", () => {
   vm.runInNewContext("this.fk=flashKeys", ctx);
   const a = "Le baco blanc (baco 22 A), dans l’AOC Armagnac.";
