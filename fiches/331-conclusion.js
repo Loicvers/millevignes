@@ -67,8 +67,8 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    selon_livre: ["Rôles prêtés aux cinq pionniers (⚠️) : lecture de Lepeltier. Chauvet négociant-chimiste et mentor de Lapierre dès 1981 : concordant (Wine Spectator, World of Fine Wine, Natural’s Will) ; Néauport arrivé plus tard dans le groupe beaujolais ; Morel et Chapel cités seulement par Raisin (niveau 2b).","Datation « années 1980 » (⚠️) : cohérente avec la rencontre Chauvet-Lapierre en 1981 et le « Gang of Four » du début des années 1980, mais les sources lues montrent des racines antérieures au mouvement ; datation de Lepeltier."],
-    src: "Mille Vignes, P. Lepeltier, p. 332 ; Wine Spectator, Beaujolais Loses Top Winemaker Marcel Lapierre at 60 ; The World of Fine Wine, Beaujolais’ Gang of Four (N. Hughes MW) ; Natural’s Will, The trailblazers of natural wine ; Raisin, Jules Chauvet est-il le parrain du vin naturel ?",
+    selon_livre: ["Rôles prêtés aux cinq pionniers (⚠️) : lecture de Lepeltier. Chauvet négociant-chimiste et mentor de Lapierre dès 1981 : concordant (Wine Spectator, World of Fine Wine, Natural’s Will) ; Néauport arrivé plus tard dans le groupe beaujolais ; Morel et Chapel cités seulement par Raisin (niveau 2b). Dossier de sources relu le 25/10/2026 : l’Oxford (entrée « natural wine ») confirme Chauvet, mentor de Lapierre à la fin des années 1970, et Néauport, consultant de référence ; Morel et Chapel n’y sont pas cités.","Datation « années 1980 » (⚠️) : cohérente avec la rencontre Chauvet-Lapierre en 1981 et le « Gang of Four » du début des années 1980, mais les sources lues montrent des racines antérieures au mouvement ; datation de Lepeltier."],
+    src: "Mille Vignes, P. Lepeltier, p. 332 ; Wine Spectator, Beaujolais Loses Top Winemaker Marcel Lapierre at 60 ; The World of Fine Wine, Beaujolais’ Gang of Four (N. Hughes MW) ; Natural’s Will, The trailblazers of natural wine ; Raisin, Jules Chauvet est-il le parrain du vin naturel ? ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 332
   },
   {
