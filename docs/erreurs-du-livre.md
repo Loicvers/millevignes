@@ -128,6 +128,7 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 127 : Silurien nommé d’après « la tribu gauloise des Silures » → les Silures sont une tribu du sud-est du pays de Galles (romano-britannique), d’où le nom donné par Murchison en 1835 (BGS, rapport RR07005 ; Geological Society of London).
 - p. 98 : Fukuoka présenté comme « microbiologiste » → les biographies lues parlent d’études de pathologie végétale, puis d’un poste d’inspecteur à la douane de Yokohama (Chelsea Green ; NYRB) ; microbiologie non confirmée.
 - p. 199 : terrasses du Lavaux aménagées par les moines « au Xe siècle » → les terrasses actuelles remontent au XIe siècle (UNESCO, fiche 1243 ; Office fédéral de la culture suisse, fiche Lavaux).
+- p. 94 : Du bon usage de la nature de Catherine et Raphaël Larrère daté de « 1998 » → première édition chez Aubier en 1997 (La Vie des idées, page de C. Larrère ; notice Agris/FAO ; Espaces Temps) ; 1998 correspond à une notice de libraire (coll. Alto), sans doute un retirage. À retirer de la section « Non confirmés ».
 
 ## Non confirmés
 - p. 130 : « pierre bleue » de Côte-de-Brouilly en diorite → retiré des erreurs le 22/10/2026 : la notice BRGM de la feuille Beaujeu (1/50 000, 1982) décrit des « métadiorites de Brouilly » ; les cahiers des charges (2021, 2024) parlent de porphyres sans nommer la diorite. Divergence non tranchée ; Juliénas (granite rose, schistes volcano-sédimentaires) reste non confirmé.
@@ -170,7 +171,6 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 91 : Restinclières « 53 ha », INRA « depuis 1990 » (≈ 50 ha ; 1990 = achat par le Département, INRA vers 1995).
 - p. 86 : oïdium et mildiou = « la quasi-totalité » des traitements fongicides → Ecophyto R&D (INRA, 2009, lu) y ajoute la pourriture grise : 17 à 20 % de l’IFT fongicide dans les essais bordelais. Nuance.
 - p. 92 : viticulture = 15,6 % des pesticides pour 3,2 % de la SAU (source de 2002 introuvable ; Sénat, 2012 : 14,4 % et 3,3 % ; Ecophyto R&D 2009, lu : environ 20 % en masse pour 3,7 % de la SAU ; unités différentes).
-- p. 94 : Larrère, Du bon usage de la nature « 1998 » (Aubier, 1997, une source) ; « Grand Partage » datant du début des années 1980.
 - p. 95 : carte bio 2020 : Provence 43,89 % (≈ 30 % pour PACA ailleurs), Champagne 6,15 % non recoupé ; France ≈ 137 400 ha, 17 %.
 - p. 96-97 : Pineau, La Corne de vache et le Microscope (2019 ; 2020 selon La Vie des idées) ; date de l’AVN ; S.A.I.N.S. (une source) ; définition du vin naturel chez Jullien (non lue).
 - p. 99-101 : Fosse-Sèche : 15 + 30 ha (p. 99) contre 15 + 18 ha (p. 101) ; Vignenvie (aucune source lue) ; Léon Barral présenté comme pionnier de l’intégration animale (rôle non attesté ; les sources citent des vaches).
@@ -227,6 +227,12 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 332 : séparation nature/culture née à Athènes au IVe siècle av. J.-C. → Lex.dk (d’après Descola) situe l’idée moderne de nature aux Lumières. Divergence.
 - p. 332 : « agriculture biologique, biodynamie puis permaculture » → à ne pas lire comme une chronologie (biodynamie 1924, organic farming 1940).
 - p. 172-173 : canal du Loing « 1723 » → travaux de 1719 à 1724, jonction de Buges ouverte en 1721 (Mérimée IA45000050 et IA45000056) ; 1723 introuvable, peut-être une date d’ouverture partielle.
+- p. 94 : Du bon usage de la nature de Catherine et Raphaël Larrère daté de « 1998 » → première édition chez Aubier en 1997 (La Vie des idées, page de C. Larrère ; notice Agris/FAO ; Espaces Temps) ; 1998 correspond à une notice de libraire (coll. Alto), sans doute un retirage. À retirer de la section « Non confirmés ».
+- p. 35 : Albert Seibel « 16 000 créations » → chiffre non recoupé : Wine Grapes numérote ses hybrides jusqu’à Seibel 10868 sans total, l’Oxford ne chiffre pas la série.
+- p. 116 : critères du CERVIM présentés comme cumulatifs (terrasses sur pentes de plus de 30 %, au-dessus de 500 m) → le décret italien du 30 juin 2020 (art. 3, texte lu sur FAOLEX) exige « au moins un » des critères (pente > 30 %, altitude > 500 m hors plateaux, terrasses, petites îles), comme l’Oxford ; règlement propre du CERVIM non lu.
+- p. 104 : vendanges avancées d’environ deux semaines en Bourgogne « depuis 1960-1970 » → Labbé et al. (Climate of the Past, 2019) situent le décrochage à partir de 1988 (Beaune, 13 jours plus tôt que la moyenne 1354-1987).
+- p. 166 : bodega La Concha de González Byass (Jerez) comptée parmi les « œuvres viticoles de Gustave Eiffel » → attribution contestée : l’Université de Navarre (Cátedra de Patrimonio, Bodegas históricas, 2018) et Cellar Tours la donnent à l’ingénieur britannique Joseph Coogan (1868-1872 selon Navarre), la Ville de Jerez à Eiffel ; non tranché.
+- p. 245 : « Aristote rajoute également huileux » dans le passage sur la dégustation selon Galien → présentation ambiguë : la liste à huit saveurs, huileux compris, est celle d’Aristote lui-même (De l’âme II, 10 ; De la sensation 4), antérieur de cinq siècles à Galien ; formulation, pas erreur de fait établie.
 
 ## Confirmés après vérification (le livre avait raison)
 - p. 18 : lambrusque protégée en France depuis 1995 (arrêté du 20 janvier 1982 modifié le 31 août 1995, annexe I).
