@@ -172,7 +172,7 @@ FICHES.push(
     ],
     status: "verified",
     to_check: [],
-    selon_livre: ["Majorité des nématodes du sol non pathogènes (prédateurs, décomposeurs) : repris du livre (p. 81), non recoupé Dossier de sources relu le 25/10/2026 : l’Oxford (entrée « nematodes ») confirme que beaucoup se nourrissent de bactéries ou de champignons et font partie de l’écosystème normal du vignoble, sans proportion."],
+    selon_livre: ["Majorité des nématodes du sol non pathogènes (prédateurs, décomposeurs) : repris du livre (p. 81), non recoupé. Dossier de sources relu le 25/10/2026 : l’Oxford (entrée « nematodes ») confirme que beaucoup se nourrissent de bactéries ou de champignons et font partie de l’écosystème normal du vignoble, sans proportion."],
     src: "Mille Vignes, P. Lepeltier, p. 81 ; FAO, Fanleaf degeneration ; INRAE, plaquette VACCIVINE (2021) ; Acta Agriculturae Slovenica, Xiphinema index ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 81
   },
@@ -193,7 +193,7 @@ FICHES.push(
     ],
     status: "verified",
     to_check: [],
-    selon_livre: ["Dates régionales divergentes : Bordeaux 1851 (livre) contre 1850 (Académie) ; Suisse 1852 contre 1851 ; Rioja 1853 contre 1854-1862 ; Requena 1854 contre 1855 (Geocrítica)","Dates espagnoles de 1852 : une seule source (Geocrítica, Université de Barcelone)","Voies terrestres et maritimes : non vérifiées dans les sources lues Dossier de sources relu le 25/10/2026 : Delmotte et al. (2021) et l’Oxford (entrée Madeira, arrivée en 1851) ne décrivent pas les voies de propagation.","Arrivée en France (serres près de Paris en 1847, tout le pays vers 1850) : Académie d’agriculture seule (deux textes du même colloque)"],
+    selon_livre: ["Dates régionales divergentes : Bordeaux 1851 (livre) contre 1850 (Académie) ; Suisse 1852 contre 1851 ; Rioja 1853 contre 1854-1862 ; Requena 1854 contre 1855 (Geocrítica)","Dates espagnoles de 1852 : une seule source (Geocrítica, Université de Barcelone)","Voies terrestres et maritimes : non vérifiées dans les sources lues. Dossier de sources relu le 25/10/2026 : Delmotte et al. (2021) et l’Oxford (entrée Madeira, arrivée en 1851) ne décrivent pas les voies de propagation.","Arrivée en France (serres près de Paris en 1847, tout le pays vers 1850) : Académie d’agriculture seule (deux textes du même colloque)"],
     src: "Mille Vignes, P. Lepeltier, p. 80 ; Académie d’agriculture de France, histoire de l’oïdium (2007) ; Wein.plus, William Tucker ; Delmotte et al., Des vignes, des invasions et des résistances (INRAE, 2021, hal-03206064) ; Geocrítica (Université de Barcelone), l’oïdium en Catalogne ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 80
   },
@@ -707,7 +707,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    selon_livre: ["Sulfites plus restreints dans le vin bio qu’en conventionnel : Agence Bio, source unique, non recoupé","Biodyvin : SO2 total de 80 mg/L en rouge sec et 105 mg/L en blanc ou rosé secs, cuivre de 4 kg/ha/an en moyenne sur sept ans : Réussir Vigne (2020), source unique, non recoupé Dossier de sources relu le 25/10/2026 : cuivre de 28 kg/ha sur sept ans, soit 4 kg/ha/an en moyenne (✅ Oxford, entrée « organic viticulture »), mais c’est la règle du bio, que Biodyvin reprend ; SO2 80 et 105 mg/L : lecture probable du hors-série RVF « Tout savoir sur les vins bios » (2023, colonnes mêlées par l’OCR), à confirmer.","Demeter et certification bio préalable ; durée de conversion de Biodyvin : sources divergentes, non retenus"],
+    selon_livre: ["Sulfites plus restreints dans le vin bio qu’en conventionnel : Agence Bio, source unique, non recoupé","Biodyvin : SO2 total de 80 mg/L en rouge sec et 105 mg/L en blanc ou rosé secs, cuivre de 4 kg/ha/an en moyenne sur sept ans : Réussir Vigne (2020), source unique, non recoupé. Dossier de sources relu le 25/10/2026 : cuivre de 28 kg/ha sur sept ans, soit 4 kg/ha/an en moyenne (✅ Oxford, entrée « organic viticulture »), mais c’est la règle du bio, que Biodyvin reprend ; SO2 80 et 105 mg/L : lecture probable du hors-série RVF « Tout savoir sur les vins bios » (2023, colonnes mêlées par l’OCR), à confirmer.","Demeter et certification bio préalable ; durée de conversion de Biodyvin : sources divergentes, non retenus"],
     src: "Agence Bio, affiche Label AB (2025) et Les chiffres 2012, chap. 5.3 ; sante.fr, Alimentation : comprendre le label bio ; Eurojuris, Règles spécifiques de production du vin biologique ; Demeter France, fiche technique Viticulture et vinification (2024) ; Biodyvin, page Biodyvin approval ; Réussir Vigne, Biodynamie : une démarche mais deux marques (2020) ; Millésime Bio, conférence BIO-Dynamie, les meilleurs labels environnementaux ? (W. Kiezer) ; complément hors livre, cf. Mille Vignes, P. Lepeltier, p. 95 ; Oxford Companion to Wine, 5e éd. (2023)",
     page: 95
   }
