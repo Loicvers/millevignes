@@ -334,7 +334,7 @@ FICHES.push(
     niveau: "Intermédiaire",
     geo: null,
     titre: "Couverts, adventices et engrais verts",
-    synth: "Certains cahiers des charges d’appellation imposent un couvert végétal : celui de Saumur-Champigny exige un couvert des tournières et un couvert maîtrisé de l’inter-rang (projets de 2015 et de 2018 lus), alors que Lussac-Saint-Émilion ou Pessac-Léognan n’en imposent pas explicitement. L’herbe concurrence la vigne pour l’eau et l’azote et peut accroître l’humidité (gel, pourriture). Lepeltier présente aussi les adventices comme bio-indicatrices (Gérard Ducerf) et les engrais verts : brassicacées et poacées décompactantes, fabacées fixatrices d’azote.",
+    synth: "Certains cahiers des charges d’appellation imposent un couvert végétal : celui de Saumur-Champigny exige un couvert des tournières et un couvert maîtrisé de l’inter-rang (cahier des charges homologué le 5 décembre 2025, lu), alors que Lussac-Saint-Émilion ou Pessac-Léognan n’en imposent pas explicitement. L’herbe concurrence la vigne pour l’eau et l’azote et peut accroître l’humidité (gel, pourriture). Lepeltier présente aussi les adventices comme bio-indicatrices (Gérard Ducerf) et les engrais verts : brassicacées et poacées décompactantes, fabacées fixatrices d’azote.",
     mnemo: "Le tapis vert de la cave à ciel ouvert : il nourrit le sol, mais boit aussi à la table de la vigne.",
     flash: { q: "Quelles familles d’engrais verts le livre cite-t-il ?", a: "Brassicacées (crucifères) et poacées (graminées) pour décompacter, fabacées pour fixer l’azote.", keys: [["brassicacées","crucifères"],["poacées","graminées"],["fabacées","légumineuses"]] },
     qcm: { q: "Quel inconvénient le livre attribue-t-il à l’herbe dans les rangs ?", opts: ["Elle concurrence la vigne pour l’eau et l’azote", "Elle acidifie le raisin", "Elle empêche la photosynthèse", "Elle fait fuir les auxiliaires"], good: 0 },
@@ -342,10 +342,10 @@ FICHES.push(
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Tous les cahiers des charges d’AOC français imposent un couvert végétal dans les vignes.", answer: false }, explanation: "Saumur-Champigny l’impose (tournières, inter-rang maîtrisé) ; Irouléguy impose seulement l’enherbement du contour des parcelles ; Lussac-Saint-Émilion et Pessac-Léognan n’ont pas d’obligation explicite." },
       { type: "mcq_multi", prompt: "Quelles familles le livre cite-t-il parmi les engrais verts ?", payload: { options: ["Brassicacées (crucifères)", "Poacées (graminées)", "Fabacées", "Orchidacées", "Éricacées"], answers: [0, 1, 2] }, explanation: "Les fabacées fixent l’azote ; brassicacées et poacées décompactent le sol." }
     ],
-    status: "needs_review",
-    to_check: ["Cahier des charges de Saumur-Champigny (⚠️) : obligation de couvert (tournières, inter-rang maîtrisé) identique dans les projets INAO de juin 2015 et de septembre 2018 ; le texte homologué en vigueur n’a pas été lu : à vérifier sur Légifrance ou INAO"],
+    status: "verified",
+    to_check: [],
     selon_livre: ["Ducerf, L’Encyclopédie des plantes bio-indicatrices : existence confirmée par des catalogues, contenu non lu","« Baragane » (poireau des vignes dans le Bordelais) : non confirmé ; Allium vineale s’appelle « ail des vignes »","Luzerne, vesce velue et avoine en jachère contre les nématodes du court-noué : non confirmés (la source lue cite le sainfoin et au moins 18 mois de repos)"],
-    src: "Mille Vignes, P. Lepeltier, p. 88-89 ; INAO, CDC Saumur-Champigny (PNO juin 2015) ; INAO, CDC Irouléguy ; INAO, CDC Lussac Saint-Émilion 2023 ; Kokopelli, Encyclopédie des plantes bio-indicatrices ; Farmknowledge, Allium vineale ; DRAAF Grand Est, fiche court-noué ; INAO, PNO CDC Saumur-Champigny modifié (septembre 2018)",
+    src: "Mille Vignes, P. Lepeltier, p. 88-89 ; INAO, CDC Saumur-Champigny (PNO juin 2015) ; INAO, CDC Irouléguy ; INAO, CDC Lussac Saint-Émilion 2023 ; Kokopelli, Encyclopédie des plantes bio-indicatrices ; Farmknowledge, Allium vineale ; DRAAF Grand Est, fiche court-noué ; INAO, PNO CDC Saumur-Champigny modifié (septembre 2018) ; Cahier des charges de l’AOC Saumur-Champigny homologué par arrêté du 5 décembre 2025 (BO-agri du 25/12/2025, lu le 25/10/2026)",
     page: 88
   },
   {
@@ -527,10 +527,10 @@ FICHES.push(
     ],
     schema: null,
     cours: null,
-    status: "needs_review",
-    to_check: ["Part nationale de 17 % en 2020 (⚠️) : seule source Réussir (données Agence Bio) ; Pleinchamp donne 10 % certifié et 14 % avec conversion fin 2019 (cohérent avec une hausse, mais pas la valeur 2020) ; statistiques Agence Bio 2020 à lire"],
+    status: "verified",
+    to_check: [],
     selon_livre: ["Languedoc-Roussillon : 17,15 % sur la carte contre 19 % (Occitanie, DRAAF) ; hectares divergents selon les sources","Divergence expliquée : Provence 43,89 % sur la carte du livre contre « proche de 30 % » pour PACA (Réussir, Agence Bio 2020), et Jura 32,81 % contre 29 % (périmètre départemental) : périmètres différents ; chiffres de la carte conservés, source nommée","Selon le livre (p. 95) : Corse 30,56 % et Champagne 6,15 % (carte) ; ordre de grandeur cohérent avec d’autres sources (Corse : environ un tiers du vignoble certifié bio en 2024, Corsenetinfos ; Champagne : 1,9 % en 2017 selon Pleinchamp, 8 % en 2023 selon l’Agence Bio, 704 ha entrés en conversion en 2020) mais non recoupé pour 2020","Selon L’Info Durable (2019) : 567 domaines et 10 249 ha en biodynamie certifiée fin 2019, soit environ 1,4 % du vignoble (calcul) ; chiffre 2020 non trouvé ; 8,2 % dans le Jura et 5,8 % en Alsace : carte du livre seule"],
-    src: "Mille Vignes, P. Lepeltier, p. 95 ; Réussir Vigne, chiffres de la viticulture bio en 2020 (Agence Bio) ; Réussir Vigne, bio 2020 en régions ; Decanter, Bordeaux organic vineyards (CIVB) ; DRAAF Bourgogne-Franche-Comté, viticulture ; DRAAF Occitanie, viticulture LR ; L’Info Durable, biodynamie (2019) ; Corsenetinfos, Agriculture bio : la Corse (23/09/2024) ; Agence Bio, dossier de presse 2023 (Champagne) ; Pleinchamp, Bulles bio en Champagne (2017) ; Pleinchamp, la crise sanitaire et les vins bio (2020, chiffres 2019)",
+    src: "Mille Vignes, P. Lepeltier, p. 95 ; Réussir Vigne, chiffres de la viticulture bio en 2020 (Agence Bio) ; Réussir Vigne, bio 2020 en régions ; Decanter, Bordeaux organic vineyards (CIVB) ; DRAAF Bourgogne-Franche-Comté, viticulture ; DRAAF Occitanie, viticulture LR ; L’Info Durable, biodynamie (2019) ; Corsenetinfos, Agriculture bio : la Corse (23/09/2024) ; Agence Bio, dossier de presse 2023 (Champagne) ; Pleinchamp, Bulles bio en Champagne (2017) ; Pleinchamp, la crise sanitaire et les vins bio (2020, chiffres 2019) ; Vitisphere, « Les surfaces de vignes en bio ont encore progressé en 2020 » (17 % du vignoble français conduit en bio, données Agence Bio)",
     page: 95
   }
 ,
@@ -663,10 +663,10 @@ FICHES.push(
       { type: "matching", prompt: "Associe chaque nom à son rôle dans la fiche.", payload: { pairs: [["Meredith Niles", "Étude de 2018 sur le pâturage à Marlborough"], ["Léon Barral", "Domaine de Faugères cité comme pionnier"]] } },
       { type: "short_answer", prompt: "Quel mot désigne le pâturage d’animaux dans la vigne ?", payload: { accepted: ["vitipastoralisme", "le vitipastoralisme", "viti-pastoralisme"] } }
     ],
-    status: "needs_review",
-    to_check: ["59 % (⚠️) : la synthèse et l’exercice disent que c’est une part de viticulteurs et non d’hectares, d’après une communication personnelle de Sustainable Winegrowing NZ citée dans l’étude ; le résumé (BU, UVM) ne donne pas ce chiffre et le texte intégral (Springer, doi 10.1007/s13593-017-0478-y) n’a pas pu être lu : à lire"],
+    status: "verified",
+    to_check: [],
     selon_livre: ["Surface néo-zélandaise : 37 000 ha selon Lepeltier, environ 42 000 ha (41 991 en 2023, 42 519 en 2024) selon New Zealand Winegrowers","Moutons : 27 millions selon Lepeltier, 23,6 millions au 30 juin 2024 selon Stats NZ (chiffre variable selon l’année)","Léon Barral : bovins (environ 60 vaches) d’après les sources lues ; statut de « pionnier » non attesté"],
-    src: "Mille Vignes, P. Lepeltier, p. 101 ; Niles, Garrett & Walsh (2018), Agronomy for Sustainable Development ; UVM ScholarWorks ; NZ Winegrowers, Vineyard report 2024 ; Stats NZ via Scoop ; Réussir Vigne ; Not Drinking Poison",
+    src: "Mille Vignes, P. Lepeltier, p. 101 ; Niles, Garrett & Walsh (2018), Agronomy for Sustainable Development ; UVM ScholarWorks ; NZ Winegrowers, Vineyard report 2024 ; Stats NZ via Scoop ; Réussir Vigne ; Not Drinking Poison ; Niles et al., « Ecological and economic benefits of integrating sheep into viticulture production », Agronomy for Sustainable Development (2018), texte intégral lu le 25/10/2026 (59 % des viticulteurs, d’après Sustainable Winegrowing NZ, communication personnelle, 2017)",
     page: 101
   },
   {
