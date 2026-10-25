@@ -1141,5 +1141,112 @@ FICHES.push(
     selon_livre: ["Divergence expliquée : une ou deux domestications. Dong et al. 2023 (3 525 accessions) : deux domestications simultanées vers 11 000 ans ; Magris et al. 2021 (204 génomes séquencés en entier, complétés par 1 241 vignes génotypées) et l’Oxford : un seul événement en Asie occidentale puis croisements avec les sauvages locaux ; accord sur l’origine orientale des cépages européens, pas d’arbitrage publié ; dates de modélisation dont les auteurs signalent l’écart avec l’archéologie.","Selon Dong et al. (Science 2023, p. 895-898) : les cépages de cuve européens descendent de la lignée d’Asie occidentale, avec 11 à 18 % d’ascendance sauvage occidentale, la lignée caucasienne ayant un rôle mineur ; l’Oxford Companion s’accorde sur une origine orientale suivie de croisements locaux, sans distinguer de lignées ni donner de chiffres."],
     src: "Dong et al., « Dual domestications and origin of traits in grapevine evolution », Science 379 (2023), p. 892-901 ; AZoLifeSciences, Largest-ever genetic analysis provides insight into domestications and origin of traits in grapevine (3 mars 2023) ; Magris et al., Nature Communications 12 (2021), texte intégral ; Oxford Companion to Wine, 5e éd. (2023), « origins of viniculture » ; cf. Mille Vignes, P. Lepeltier, p. 19-21",
     page: 20
+  },
+  {
+    id: 667,
+    theme: "Histoire",
+    sous: ["Antiquité"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Une domestication en Europe de l’Ouest ? L’hypothèse écartée par l’ADN",
+    synth: "En 2006, une étude fondée sur l’ADN des chloroplastes (Arroyo-García et al.) avait proposé un second berceau de la vigne cultivée en Méditerranée occidentale, notamment dans la péninsule Ibérique. Les génomes complets ne la confirment pas : Magris et al. (2021) ne trouvent aucun cépage d’ascendance purement sauvage occidentale, et les cépages ibériques ressemblent davantage aux raisins de table et aux vignes sauvages d’Orient qu’aux lambrusques de l’Ouest. Dong et al. (2023) et Freitas et al. (2021, cépages ibériques) aboutissent au même schéma : la vigne arrive d’Orient déjà domestiquée, puis se croise sur place avec les lambrusques locales, ce qui donne leur accent régional aux cépages d’Europe de l’Ouest.",
+    mnemo: "La vigne n’est pas née deux fois : elle a émigré. L’Europe de l’Ouest ne l’a pas inventée, elle l’a métissée avec ses lambrusques.",
+    flash: {"q":"Pourquoi les généticiens écartent-ils une domestication indépendante de la vigne en Europe de l’Ouest ?","a":"Aucun des cépages analysés n’a une ascendance purement sauvage occidentale : ils descendent de vignes domestiquées en Orient, puis croisées sur place avec les lambrusques locales.","keys":[["Orient","oriental","orientale","Asie"],["croisées","croisement","croisements","introgression","métissage","lambrusque","lambrusques","sauvage","sauvages"]]},
+    qcm: {"q":"Quelle hypothèse l’étude d’Arroyo-García et al. (2006), fondée sur l’ADN des chloroplastes, avait-elle avancée ?","opts":["Un second foyer de domestication en Méditerranée occidentale","Une domestication unique au Proche-Orient","Une domestication unique dans la vallée du Nil","Une domestication unique dans le Caucase"],"good":0,"expl":"Les génomes complets publiés depuis 2021 n’ont pas confirmé ce second foyer : l’empreinte sauvage occidentale des cépages vient de croisements après l’arrivée de la vigne cultivée, pas d’une domestication sur place."},
+    exos: [
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Les génomes complets confirment que la péninsule Ibérique a domestiqué sa propre vigne à partir des lambrusques locales.","answer":false},"explanation":"Les cépages ibériques ressemblent plus aux vignes d’Orient qu’aux lambrusques de l’Ouest : leur part sauvage locale vient de croisements après l’arrivée de la vigne cultivée."},
+      {"type":"ordering","prompt":"Remets dans l’ordre l’histoire des cépages d’Europe de l’Ouest selon la génétique récente.","payload":{"items":["Domestication de la lambrusque en Orient","Arrivée de la vigne cultivée en Europe de l’Ouest","Croisements avec les lambrusques locales","Sélection et bouturage des meilleurs pieds, qui deviennent des cépages régionaux"]},"explanation":"L’apport sauvage local vient après l’arrivée de la vigne domestiquée : c’est un métissage, pas une seconde naissance."},
+      {"type":"mcq_single","prompt":"Les cépages de la péninsule Ibérique sont génétiquement plus proches :","payload":{"options":["Des raisins de table et des vignes sauvages d’Orient","Des lambrusques d’Europe de l’Ouest seules","Des vignes américaines","Des vignes sauvages d’Asie de l’Est"],"answer":0},"explanation":"Ce résultat de Magris et al. (2021) est l’argument central contre un berceau ibérique : une vigne domestiquée sur place ressemblerait d’abord aux lambrusques de l’Ouest."}
+    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Divergence expliquée : un berceau occidental ? Arroyo-García et al. (Mol. Ecol. 15, 2006, ADN chloroplastique) proposaient au moins deux origines, Proche-Orient et Méditerranée occidentale ; Magris et al. (2021), Dong et al. (Science 2023) et Freitas et al. (Science Advances 2021) concluent tous à une domestication orientale suivie de croisements avec les sauvages d’Europe de l’Ouest.","Part du génome d’origine sauvage occidentale, chiffres non comparables entre études : Magris et al. (2021) détectent un apport sur 37,7 % des fenêtres du génome des cépages « alpins » ; Dong et al. (2023) estiment environ 11 à 18 % d’apport ancien pour plusieurs groupes de cépages, plus 25 à 30 % pour les cépages d’Europe de l’Ouest ; Freitas et al. (2021) 25 à 50 % pour un groupe de cépages ibériques.","Selon Magris et al. (2021) : ces croisements ont pu commencer en Europe du Sud dès l’époque grecque et romaine ; Freitas et al. (2021) les situent entre environ 2 900 et 500 ans avant aujourd’hui pour l’Ibérie."],
+    src: "Magris et al., « The genomes of 204 Vitis vinifera accessions reveal the origin of European wine grapes », Nature Communications 12 (2021), texte intégral ; Dong et al., « Dual domestications and origin of traits in grapevine evolution », Science 379 (2023), texte intégral ; Freitas et al., « Pervasive hybridization with local wild relatives in Western European grapevine varieties », Science Advances (2021) ; Arroyo-García et al., Molecular Ecology 15 (2006), résumé ; cf. Mille Vignes, P. Lepeltier, p. 20",
+    page: 20
+  },
+  {
+    id: 668,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Pointu",
+    geo: null,
+    titre: "France et Italie, réservoirs de la diversité des cépages européens",
+    synth: "D’après les génomes analysés par Magris et al. (2021), la France et l’Italie, premiers pays producteurs de vin, réunissent l’essentiel de la diversité génétique des cépages de cuve d’Europe de l’Ouest. L’Italie est la plus bigarrée : ses cépages mêlent toutes les composantes d’ascendance repérées, ce que les auteurs expliquent par sa position de carrefour commercial entre l’Orient et l’Occident et par l’étendue de son vignoble, du 36e au 46e parallèle, sous des climats très variés. L’Espagne et le Portugal reposent au contraire sur un patrimoine plus homogène. Le recensement de Wine Grapes (2012) va dans le même sens, avec 377 cépages d’origine italienne, 204 d’origine française et 84 d’origine espagnole, mais un nombre de cépages ne mesure pas à lui seul leur diversité génétique.",
+    mnemo: "L’Italie, c’est le marché aux épices de la vigne : une longue botte au milieu des routes entre Orient et Occident, où tous les sangs se mêlent.",
+    flash: {"q":"Quels pays concentrent la plus grande diversité génétique des cépages de cuve d’Europe de l’Ouest, selon Magris et al. (2021) ?","a":"La France et l’Italie, l’Italie étant la plus variée.","keys":[["France"],["Italie"]]},
+    qcm: {"q":"Comment Magris et al. expliquent-ils la grande diversité des cépages italiens ?","opts":["Un carrefour commercial entre Orient et Occident et un vignoble étalé sur dix degrés de latitude","Une domestication propre à la vallée du Pô","L’arrivée massive de cépages américains après le phylloxéra","Des programmes de croisements modernes au XXe siècle"],"good":0,"expl":"Les échanges ont apporté des cépages d’origines très différentes, et la variété des climats, du 36e au 46e parallèle, a permis à chacun de trouver sa place."},
+    exos: [
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le pays qui compte le plus de cépages a forcément la plus grande diversité génétique.","answer":false},"explanation":"Deux cépages peuvent être proches parents : leur nombre ne dit pas à lui seul leur éloignement génétique. C’est pourquoi on mesure la diversité dans l’ADN, pas dans les catalogues."},
+      {"type":"mcq_single","prompt":"Selon Magris et al. (2021), qu’est-ce qui distingue les cépages de la péninsule Ibérique de ceux d’Italie ?","payload":{"options":["Un patrimoine génétique plus homogène","Une domestication propre à la péninsule","Un nombre de cépages d’origine plus élevé","L’absence de toute vigne sauvage dans leur ascendance"],"answer":0},"explanation":"L’Italie mêle toutes les composantes d’ascendance repérées ; la péninsule Ibérique en garde surtout une, mélangée à une autre seulement dans le nord-ouest et les Pyrénées."}
+    ],
+    status: "needs_review",
+    to_check: ["France et Italie concentrent la plus grande diversité génétique des cépages de cuve d’Europe de l’Ouest, l’Italie en tête (⚠️) : Magris et al. (2021) seuls ; les recensements de Wine Grapes (lus via une note de l’université d’Adélaïde, niveau 2b) vont dans le même sens mais comptent des cépages, pas une diversité génétique ; Laucou et al. (2018) et Emanuelli et al. (2013) ne comparent pas les pays."],
+    selon_livre: ["Selon Magris et al. (2021) : les raisons de la diversité italienne (carrefour commercial, latitude de 36 à 46° N) sont une interprétation des auteurs, non recoupée.","Chiffres de Wine Grapes (377, 204, 84 cépages d’origine) : lus via la note « Wine brief 5 » (K. Anderson, université d’Adélaïde), pas dans l’ouvrage lui-même ; à confirmer dans Wine Grapes."],
+    src: "Magris et al., Nature Communications 12 (2021), texte intégral ; Robinson, Harding et Vouillamoz, Wine Grapes (2012), d’après K. Anderson, Wine brief 5, université d’Adélaïde ; Laucou et al., PLoS ONE 13 (2018) ; cf. Mille Vignes, P. Lepeltier, p. 20",
+    page: 20
+  },
+  {
+    id: 669,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Le cabernet franc, un cépage ancien à forte part sauvage",
+    synth: "Le cabernet franc, parent du cabernet-sauvignon et du merlot, est probablement originaire du Pays basque, où il a des liens de parenté avec de vieux cépages locaux (Wine Grapes, JancisRobinson.com). Son génome porte une part de vigne sauvage d’Europe de l’Ouest parmi les plus fortes des cépages étudiés par Magris et al. (2021), et il ressemble aux lambrusques qui poussent encore sur le versant atlantique des Pyrénées. Les auteurs le rangent, avec des cépages italiens comme l’aglianico ou le lambrusco di Sorbara, parmi des « variétés européennes primitives », le groupe des cépages à plus forte part de vigne sauvage. Le livre, lui, écrit qu’aucun cépage primitif n’a encore été retrouvé : les deux n’emploient pas forcément ce mot dans le même sens.",
+    mnemo: "Le cabernet franc a gardé un pied dans la forêt : un ancêtre basque, cousin des lambrusques pyrénéennes, devenu le père des grands rouges bordelais.",
+    flash: {"q":"Quelle particularité génétique Magris et al. (2021) relèvent-ils chez le cabernet franc ?","a":"Une forte part d’ascendance de vigne sauvage d’Europe de l’Ouest : il ressemble aux lambrusques encore présentes sur le versant atlantique des Pyrénées.","keys":[["sauvage","sauvages","lambrusque","lambrusques","sylvestris"],["Pyrénées","pyrénéennes","Pays basque","basque"]]},
+    qcm: {"q":"De quelle région le cabernet franc est-il probablement originaire ?","opts":["Du Pays basque","Du Médoc","De la vallée de la Loire","De Toscane"],"good":0,"expl":"La Loire et la rive droite bordelaise sont ses terres d’élection, pas son berceau : ses parentés ADN le rattachent à de vieux cépages basques."},
+    exos: [
+      {"type":"short_answer","prompt":"Sous quel nom Magris et al. (2021) regroupent-ils les cépages à forte part sauvage occidentale, comme le cabernet franc ou le lambrusco di Sorbara ?","payload":{"accepted":["variétés européennes primitives","variétés primitives","variétés européennes primitives (primitive European varieties)"]},"explanation":"Les auteurs y rangent aussi les formes hybrides que d’autres travaux appellent « vigne sauvage faux » : des vignes à mi-chemin entre la lambrusque et le cépage."},
+      {"type":"odd_one_out","prompt":"Lequel de ces groupes de vignes n’est pas rangé par Magris et al. (2021) parmi les variétés à forte part sauvage occidentale ?","payload":{"options":["Cabernet franc","Aglianico","Lambrusco di Sorbara","Les raisins de table d’Asie centrale"],"answer":3},"explanation":"Les raisins de table orientaux sont le pôle opposé : peu ou pas d’apport des lambrusques de l’Ouest, alors que les trois autres en portent beaucoup."}
+    ],
+    status: "needs_review",
+    to_check: ["Forte ascendance sauvage occidentale du cabernet franc et ressemblance avec les lambrusques du versant atlantique des Pyrénées (⚠️) : Magris et al. (2021) seuls, qui renvoient à Lavignac (Cépages du Sud-Ouest, 2001), non lu.","Origine basque du cabernet franc (⚠️) : JancisRobinson.com et Wine Grapes (relayé par The Drinks Business 2017) concordent, mais partagent une autrice (J. Robinson) et ne comptent que pour une source."],
+    selon_livre: ["Divergence expliquée : cépages « primitifs ». Le livre (p. 21) écrit qu’aucun cépage primitif n’a été retrouvé ; Magris et al. (2021) nomment « variétés européennes primitives » des cépages actuels à forte part sauvage (cabernet franc, aglianico, lambrusco di Sorbara…) ; Ferdière (RACF, 2023), citant Lacombe, parle aussi des cabernets comme de cépages primitifs.","Une origine navarraise est défendue localement (EVENA, d’après The Drinks Business 2017).","Descendants (✅) : cabernet-sauvignon = cabernet franc × sauvignon blanc (Bowers et Meredith 1997 ; JancisRobinson.com) ; merlot = cabernet franc × magdeleine noire des Charentes (Boursiquot et al. 2009, résumé, et sources de la fiche 33)."],
+    src: "Magris et al., Nature Communications 12 (2021), texte intégral ; Robinson, Harding et Vouillamoz, Wine Grapes (2012), d’après The Drinks Business (2017) ; JancisRobinson.com, Cabernet Franc ; Boursiquot et al., Australian Journal of Grape and Wine Research 15 (2009), résumé ; cf. Mille Vignes, P. Lepeltier, p. 21",
+    page: 21
+  },
+  {
+    id: 670,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Pointu",
+    geo: {"pays":"France","region":"Sud-Ouest","appel":null},
+    titre: "Les mansengs, une famille entre savagnin et vigne sauvage",
+    synth: "Les deux mansengs du piémont pyrénéen sont de la même famille : le gros manseng descend probablement du petit manseng (Oxford Companion), et Magris et al. (2021) confirment entre eux un lien direct de parent à enfant. Le petit manseng est aussi un proche parent du savagnin, le vieux cépage du Jura ; Magris et al. y voient un lien direct de parent à enfant. Dans leurs analyses, la famille des mansengs (gros et petit manseng, riesling bleu) se place à mi-chemin entre le couple pinot-savagnin et les vignes sauvages de France et d’Allemagne, et les auteurs jugent possible que le petit manseng soit né d’un croisement entre un cépage cultivé et une lambrusque.",
+    mnemo: "Les mansengs, un pied au château, un pied dans les bois : entre le savagnin cultivé et les lambrusques. Et le gros manseng est sans doute l’enfant du petit.",
+    flash: {"q":"Quel lien de parenté unit le petit et le gros manseng ?","a":"Le gros manseng descend probablement du petit manseng.","keys":[["descend","descendant","enfant","issu","parent"],["petit manseng"]]},
+    qcm: {"q":"Avec quel vieux cépage le petit manseng est-il étroitement apparenté ?","opts":["Le savagnin","Le cabernet franc","Le tannat","La syrah"],"good":0,"expl":"C’est le savagnin, cépage ancien du Jura, que les analyses ADN rapprochent du petit manseng, malgré la distance entre leurs vignobles."},
+    exos: [
+      {"type":"ordering","prompt":"Range ces vignes de la plus « sauvage » à la plus « cultivée », selon leur place dans les analyses de Magris et al. (2021).","payload":{"items":["Lambrusques de France et d’Allemagne","Famille des mansengs","Couple pinot-savagnin"]},"explanation":"Les mansengs sont au milieu, et c’est cette position intermédiaire qui intrigue : ni tout à fait cultivés, ni sauvages."},
+      {"type":"mcq_multi","prompt":"Quels cépages Magris et al. (2021) rangent-ils dans la famille des mansengs ?","payload":{"options":["Gros manseng","Petit manseng","Riesling bleu","Cabernet franc"],"answers":[0,1,2]},"explanation":"Le riesling bleu en fait partie malgré son nom : ce sont ses liens de parenté, pas son nom, qui le rattachent aux mansengs. Le cabernet franc est classé ailleurs, parmi les variétés européennes primitives."}
+    ],
+    status: "needs_review",
+    to_check: ["Origine du petit manseng par croisement entre un cépage cultivé et une vigne sauvage (⚠️) : hypothèse de Magris et al. (2021) seuls."],
+    selon_livre: ["Gros manseng descendant probable du petit manseng (✅ Oxford Companion, entrée Petit Manseng + Magris et al. 2021).","Savagnin et petit manseng : proche parenté (✅ JancisRobinson.com, « Pinot’s extraordinary pedigree » + Magris et al. 2021) ; lien direct parent-enfant selon Magris et al. seuls, sens non établi ; Wine Grapes, cité par la fiche cépage du petit manseng, le dit probablement descendant du savagnin."],
+    src: "Magris et al., Nature Communications 12 (2021), texte intégral ; Oxford Companion to Wine, 5e éd. (2023), « Petit Manseng » ; JancisRobinson.com, « Pinot’s extraordinary pedigree » ; cf. Mille Vignes, P. Lepeltier, p. 21",
+    page: 21
+  },
+  {
+    id: 671,
+    theme: "Cépages",
+    sous: ["Mutations"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "D’où viennent les raisins blancs ?",
+    synth: "La couleur de la peau du raisin est commandée par deux gènes voisins du chromosome 2, VvMYBA1 et VvMYBA2, qui déclenchent la fabrication des anthocyanes, les pigments rouges. Chez les cépages blancs, ces deux gènes sont inactivés : le premier par l’insertion d’un rétrotransposon (un fragment d’ADN mobile), le second par deux mutations ; il faut hériter de deux copies inactives pour obtenir un raisin blanc (Magris et al. 2021 ; Margaryan et al. 2015, d’après Kobayashi et al. 2004 et Azuma et al. 2008). Les 55 cépages blancs étudiés par Walker et al. (2007) portent tous la même version mutée de VvMYBA2, signe d’une origine commune. Recherchés par l’homme, ces raisins ont laissé une trace dans le génome : autour de ce locus, la diversité génétique des cépages a nettement diminué (Magris et al. 2021).",
+    mnemo: "Deux interrupteurs voisins allument la couleur ; un raisin blanc a ses deux interrupteurs coupés, sur les deux copies du chromosome.",
+    flash: {"q":"Pourquoi un raisin est-il blanc, génétiquement ?","a":"Les deux gènes régulateurs de la couleur, VvMYBA1 et VvMYBA2, sont inactivés par mutation sur les deux copies du chromosome 2 : la peau ne fabrique plus d’anthocyanes.","keys":[["MYBA","VvMYBA1","VvMYBA2","gène","gènes"],["anthocyanes","anthocyane","pigments","pigment"]]},
+    qcm: {"q":"Qu’est-ce qui inactive le gène VvMYBA1 chez les cépages blancs ?","opts":["L’insertion d’un rétrotransposon, un fragment d’ADN mobile","Une infection virale de la souche","Le greffage sur porte-greffe américain","Une carence du sol en fer"],"good":0,"expl":"Le blanc est héréditaire et se transmet par bouture comme par pépin : c’est une modification de l’ADN, pas un effet du milieu ou de la conduite."},
+    exos: [
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Il suffit qu’une seule des deux copies du locus de couleur soit mutée pour que le raisin soit blanc.","answer":false},"explanation":"Une seule copie fonctionnelle suffit à colorer la peau : le blanc n’apparaît que si les deux copies héritées sont inactives, ce qu’on appelle un caractère récessif."},
+      {"type":"short_answer","prompt":"Comment appelle-t-on les pigments rouges dont les cépages blancs ont perdu la fabrication ?","payload":{"accepted":["anthocyanes","anthocyane","les anthocyanes"]},"explanation":"Ce sont les mêmes pigments qui colorent le vin rouge pendant la macération des peaux ; sans eux, la peau reste jaune-vert."},
+      {"type":"mcq_single","prompt":"Que révèle la baisse de diversité génétique autour du locus de couleur chez les cépages ?","payload":{"options":["Une sélection humaine des raisins blancs","Une domestication en Europe de l’Ouest","Une contamination par des vignes américaines","Une mutation récente due au réchauffement"],"answer":0},"explanation":"Quand on retient avec insistance un caractère, les régions d’ADN voisines du gène sont emportées avec lui et s’uniformisent : c’est la signature génétique d’une sélection."}
+    ],
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Âge des allèles blancs : Walker et al. (2007) trouvent la même version mutée de VvMYBA2 chez les cépages blancs étudiés, d’où une origine commune ; Dong et al. (Science 2023, seuls) suggèrent que des allèles blancs existaient déjà chez des vignes sauvages avant la domestication (voir aussi la fiche sur les deux sous-espèces).","Mutation inverse : le raisin de table rouge ‘Ruby Okuyama’ est né d’une mutation de bourgeon du blanc ‘Italia’, par excision du rétrotransposon (note du MAFF japonais, 2004, seule lue)."],
+    src: "Walker et al., « White grapes arose through the mutation of two similar and adjacent regulatory genes », Plant Journal 49 (2007), résumé ; Kobayashi et al., Science 304 (2004), d’après la note du MAFF/NARO (2004) ; Margaryan et al., « Genetic analysis of the VvMybA1 gene in Armenian grapevines », Vitis 54 (2015) ; Magris et al., Nature Communications 12 (2021), texte intégral ; Dong et al., Science 379 (2023), texte intégral ; cf. Mille Vignes, P. Lepeltier, p. 21",
+    page: 21
   }
 );
