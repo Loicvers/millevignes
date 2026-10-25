@@ -46,20 +46,25 @@ function lexiqueExercises(lex, fiches) {
   });
 }
 
-// Ma cave (fichier privé) : « quelle bouteille illustre cette notion ? », un QCM par fiche reliée à une cuvée par un fait documenté.
-// vins : [{ cuvee, dom, liens: { <id fiche>: { k: "appel"|"cepage"|"notion", t: "sol:schiste", d: détail, s: "ok"|"warn" } } }]
-// shortcut: les leurres sont des cuvées documentées sur un autre fait de la même famille (sol, vinif…), pas une preuve qu'elles ne l'illustrent pas ; à revoir si une fausse correction est signalée.
+// Ma cave (fichier privé) : « ta bouteille X illustre quelle notion ? », un QCM par fiche reliée à une cuvée par un fait documenté.
+// vins : [{ cuvee, dom, couleur, liens: { <id fiche>: { k: "appel"|"cepage"|"notion", t: tag, d: détail, s: "ok"|"warn" } } }]
+// Leurres : fiches de techniques réservées à un autre style de vin (bulles, vins doux, rosé),
+// donc fausses à coup sûr pour cette bouteille — un fait non documenté ne peut pas rendre un leurre juste.
+const CAVE_STYLES = { bulles: [583, 636, 464, 404], doux: [635, 469, 346, 235], rose: [351] };
+function styleVin(c) { c = normalize(c); return /efferv|bulle|cremant/.test(c) ? "bulles" : /doux|vdn|liquoreux|moelleux/.test(c) ? "doux" : /^rose/.test(c) ? "rose" : /rouge/.test(c) ? "rouge" : c ? "blanc" : ""; }
 function caveExercises(vins, fiches) {
-  const nom = v => v.cuvee + " (" + v.dom + ")", fam = t => t.split(":")[0];
+  const byId = Object.fromEntries(fiches.map(f => [f.id, f]));
   return fiches.flatMap(f => {
-    const bons = vins.filter(v => v.liens && v.liens[f.id] && v.liens[f.id].k === "notion");
+    const bons = vins.filter(v => v.liens && v.liens[f.id] && v.liens[f.id].k === "notion" && styleVin(v.couleur || ""));
     if (!bons.length) return [];
-    const bon = shuffle(bons)[0], l = bon.liens[f.id];
-    const leurres = shuffle(vins.filter(v => !(v.liens && v.liens[f.id]) && Object.values(v.liens || {}).some(x => x.k === "notion" && fam(x.t) === fam(l.t)))).slice(0, 3);
+    const v = shuffle(bons)[0], l = v.liens[f.id], st = styleVin(v.couleur);
+    const exclus = { bulles: ["bulles"], doux: ["doux"], rose: ["rose"], rouge: [], blanc: [] }[st];
+    const leurres = shuffle(Object.entries(CAVE_STYLES).filter(([k]) => !exclus.includes(k)).flatMap(([, ids]) => ids)
+      .filter(id => byId[id] && id !== f.id && !v.liens[id]).map(id => byId[id].titre)).slice(0, 3);
     if (leurres.length < 3) return [];
-    const options = shuffle([bon, ...leurres]).map(nom);
-    return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave, quelle bouteille illustre : « " + f.titre + " » ?",
-      payload: { options, answer: options.indexOf(nom(bon)) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + nom(bon) + " : " + l.d, fiche: f }];
+    const options = shuffle([f.titre, ...leurres]);
+    return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave : « " + v.cuvee + " » (" + v.dom + ") illustre quelle notion ?",
+      payload: { options, answer: options.indexOf(f.titre) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + l.d, fiche: f }];
   });
 }
 

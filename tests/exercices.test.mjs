@@ -81,15 +81,19 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
   }
 });
 
-test("ma cave : un QCM par notion documentée, bonne réponse reliée, leurres de la même famille", () => {
+test("ma cave : QCM « quelle notion », leurres d'un autre style de vin", () => {
   vm.runInNewContext("this.cv=caveExercises", ctx);
-  const f = { id: 175, titre: "Schistes" }, g = { id: 170, titre: "Calcaire" };
-  const v = (cuvee, t, id, k = "notion") => ({ cuvee, dom: "D", liens: { [id]: { k, t, d: "x", s: "ok" } } });
-  const vins = [v("A", "sol:schiste", 175), v("B", "sol:calcaire", 170), v("C", "sol:calcaire", 170), v("E", "sol:calcaire", 170), v("F", "vinif:sur-lie", 241), v("G", "", 175, "appel")];
-  const ex = ctx.cv(vins, [f, g]);
-  assert.equal(ex.length, 1); // calcaire : un seul leurre de la famille sol → pas d'exercice
-  assert.equal(ex[0].payload.options[ex[0].payload.answer], "A (D)");
-  assert.ok(!ex[0].payload.options.some(o => /^[FG] /.test(o)));
+  const F = [175, 583, 636, 464, 404, 635, 469, 346, 235, 351].map(id => ({ id, titre: "T" + id }));
+  const vins = [
+    { cuvee: "Rouge", dom: "D", couleur: "rouge", liens: { 175: { k: "notion", t: "sol:schiste", d: "x", s: "ok" } } },
+    { cuvee: "Crémant", dom: "D", couleur: "effervescent blanc", liens: { 583: { k: "notion", t: "vinif:methode-traditionnelle", d: "y", s: "ok" } } },
+    { cuvee: "Inconnu", dom: "D", couleur: "", liens: { 469: { k: "notion", t: "vinif:vendanges-tardives", d: "z", s: "ok" } } },
+  ];
+  const ex = ctx.cv(vins, F);
+  assert.deepEqual(ex.map(e => e.id).sort(), ["cv-175", "cv-583"]); // couleur inconnue → pas d'exercice
+  const bulles = ex.find(e => e.id === "cv-583");
+  assert.equal(bulles.payload.options[bulles.payload.answer], "T583");
+  assert.ok(!bulles.payload.options.some(o => ["T636", "T464", "T404"].includes(o))); // pas d'autre technique de bulles en leurre
 });
 
 test("flashcard écrite : correction par mots-clés", () => {
