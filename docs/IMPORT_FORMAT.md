@@ -94,6 +94,7 @@ Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
   - au moins un fait ⚠️ → `"needs_review"` **et** `to_check` liste ces faits (obligatoire) ;
   - les faits ❌ ne figurent pas dans la notion ;
   - **double vérification réservée aux faits clés** (règle du 21/10/2026) : un fait qu'on répétera à un client ou en masterclass (définition, date ou chiffre central, réglementation, santé) reste dans `to_check` tant qu'il n'est pas ✅. Un détail secondaire que seul le livre (ou une source unique) appuie va dans `selon_livre` : affiché « Selon le livre, non recoupé », il ne compte pas comme dette et n'empêche pas `verified`. Reclasser des points existants : `node tools/trier-points.mjs tri.json` ;
+  - **divergence expliquée hors dette** (règle du 25/10/2026) : une divergence entre sources que la synthèse ou un exercice expose clairement au lecteur (les deux versions et leurs sources) sort de `to_check` et va dans `selon_livre`, sous la forme « Divergence expliquée : … ». Si la fiche ne l'expose pas encore, on l'écrit d'abord dans la synthèse ;
   - `"draft"` pour un brouillon, `"needs_update"` pour une donnée susceptible d'être périmée.
 - `divergences` (facultatif) : désaccords entre sources ou avec l'autrice, non tranchés.
 
