@@ -579,7 +579,7 @@ FICHES.push(
     src: "INAO, fiches Pomerol, Saint-Émilion grand cru (premier grand cru classé), Médoc et Haut-Médoc ; Decanter, Left and right bank Bordeaux explained ; Decanter, Merlot (grape guide) ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; wein.plus Lexikon, Merlot ; Etymonline, merlot ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 90-91 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; FranceAgriMer, Chiffres clés de la filière viti-vinicole 2025 (principaux cépages 2024, source DGDDI)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
-    jauge: {"style":"Bordeaux rive droite, rouge","acidite":2,"alcool":[4,5],"corps":[4,5],"a_verifier":["acidite","alcool","corps"],"src":"Plantgrape (IFV, INRAE, Institut Agro)","note":"Alcool jugé moyen par le WSET (L3). Corps jugé moyen par le WSET (L3). Le WSET (L3) décrit un merlot bordelais vendangé tôt ; Plantgrape correspond au style vendangé très mûr."},
+    jauge: {"style":"Bordeaux rive droite, rouge","acidite":2,"alcool":[4,5],"corps":[4,5],"a_verifier":["acidite","alcool","corps"],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016)","note":"Alcool jugé moyen par le WSET (L3). Corps jugé moyen par le WSET (L3). Le WSET (L3) décrit un merlot bordelais vendangé tôt ; Plantgrape correspond au style vendangé très mûr."},
 },
   {
     id: 498,
@@ -668,7 +668,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
     noms: [{"nom":"Tokay","ou":"Australie"},{"nom":"Sauvignon Vert","ou":"Californie"}],
-    jauge: {"style":"Bordeaux, blanc","acidite":[1,2],"tanins":null,"alcool":3,"aromes":2,"a_verifier":["acidite","alcool","aromes"],"src":"Plantgrape (IFV, INRAE, Institut Agro)","note":"Intensité aromatique jugée prononcée par le WSET (L3)."},
+    jauge: {"style":"Bordeaux, blanc","acidite":[1,2],"tanins":null,"alcool":3,"aromes":2,"a_verifier":["acidite","alcool","aromes"],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016)","note":"Intensité aromatique jugée prononcée par le WSET (L3)."},
   },
   {
     id: 606,
@@ -1345,7 +1345,7 @@ FICHES.push(
     src: "Wine Grapes (2012) ; Oxford Companion to Wine, 5e éd. (2023) ; WSET D3, Wines of the World (2024) ; WSET L3, Understanding Wines (2016) ; CMS Grape Markers 25.2 ; disciplinare Valpolicella DOC (DM 03.08.2023, reproduction AIS Italia)",
     source: "france",
     chapitre: "Cépages d’Italie",
-    jauge: {"style":"Valpolicella (hors Amarone), rouge","acidite":4,"tanins":[1,3],"a_verifier":["acidite","tanins"],"src":"Wine Grapes (2012)","note":"Le WSET D3 et le WSET L3 donnent une acidité élevée et des tanins bas à moyens pour la corvina dans l’assemblage du Valpolicella (assemblage, hors règle)."},
+    jauge: {"style":"Valpolicella (hors Amarone), rouge","acidite":5,"tanins":[1,3],"src":"WSET, Understanding Wines (2016) ; WSET D3, Wines of the World (2024) ; Wine Grapes (2012)","note":"Le WSET (L3) décrit le cépage lui-même : peau fine, couleur modérée, tanins bas à moyens, acidité élevée ; le WSET D3 dit la même chose de son apport dans l’assemblage. Wine Grapes situe l’acidité un cran plus bas (moyen+)."},
     noms: [{"nom":"Corvina Veronese","ou":"nom complet usuel"},{"nom":"Cruina","ou":"Valpolicella (nom dialectal)"}],
   },
   {
@@ -1414,7 +1414,7 @@ FICHES.push(
     src: "Wine Grapes (2012) ; Oxford Companion to Wine, 5e éd. (2023) ; WSET D3, Wines of the World (2024) ; WSET L3, Understanding Wines (2016) ; disciplinari Sicilia DOC (DM 27.08.2024) et Cerasuolo di Vittoria DOCG (DM 17.02.2020), reproductions AIS Italia ; Italian Wine Central, Sicilia DOC",
     source: "france",
     chapitre: "Cépages d’Italie",
-    jauge: {"style":"Sicilia DOC, rouge","acidite":3,"tanins":5,"corps":[3,5],"a_verifier":["corps"],"src":"WSET D3 (2024) ; WSET L3 (2016) ; Wine Grapes (2012)","note":"Tanins jugés moyens par le WSET L3."},
+    jauge: {"style":"Sicilia DOC, rouge","acidite":3,"tanins":5,"corps":[3,5],"a_verifier":["corps"],"src":"WSET D3 (2024) ; WSET L3 (2016) ; Wine Grapes (2012) ; WSET, Understanding Wines (2016)","note":"Tanins jugés moyens par le WSET L3."},
     noms: [{"nom":"Calabrese","ou":"Sicile (nom du registre italien)"},{"nom":"Calabrese d’Avola","ou":"Sicile"},{"nom":"Calabrese di Vittoria","ou":"Vittoria (Sicile)"}],
   },
   {
@@ -1529,7 +1529,7 @@ FICHES.push(
     src: "Wine Grapes (2012) ; Oxford Companion to Wine, 5e éd. (2023) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; CMS Grape Markers (2025) ; cahier des charges DOP Ribera del Duero (eAmbrosia, UE) ; Ibáñez, Muñoz Organero, Zinelabidine, de Andrés, Cabello, Martínez Zapater, Genetic Origin of the Grapevine Cultivar Tempranillo, Am. J. Enol. Vitic. 63(4) (2012), p. 549-553, résumé lu (Université de La Rioja) ; Tello et al., communication ICGWS 2023 (IVES Open Science) : tempranillo issu de benedicto × albillo mayor",
     source: "france",
     chapitre: "Cépages d’Espagne",
-    jauge: {"style":"Rioja et Ribera del Duero, rouge sec","acidite":4,"tanins":4,"alcool":[4,5],"corps":5,"a_verifier":["alcool","corps"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024)","note":"Style mixte Rioja et Ribera del Duero. Tanins jugés moyens en Rioja et élevés en Ribera del Duero par WSET, Understanding Wines (2016). L’alcool élevé et le corps plein viennent de la seule Ribera del Duero."},
+    jauge: {"style":"Rioja et Ribera del Duero, rouge sec","acidite":4,"tanins":4,"alcool":[4,5],"corps":5,"a_verifier":["alcool","corps"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016)","note":"Style mixte Rioja et Ribera del Duero. Tanins jugés moyens en Rioja et élevés en Ribera del Duero par WSET, Understanding Wines (2016). L’alcool élevé et le corps plein viennent de la seule Ribera del Duero."},
     noms: [{"nom":"Tinto fino / Tinta del país","ou":"Ribera del Duero"},{"nom":"Tinta de Toro","ou":"Toro (certains y voient un clone distinct)"},{"nom":"Cencibel","ou":"Castilla-La Mancha, Valdepeñas"},{"nom":"Ull de llebre","ou":"Catalogne, Penedès"},{"nom":"Tinta roriz","ou":"Portugal (Douro, Dão)"},{"nom":"Aragonez","ou":"Portugal (Alentejo)"}],
   },
   {
@@ -1598,7 +1598,7 @@ FICHES.push(
     src: "Wine Grapes (2012) ; Oxford Companion to Wine, 5e éd. (2023) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; cahier des charges DOP Rueda (eAmbrosia, UE) ; wein.plus, glossaire, Castellana Blanca (parente du godello et du verdejo)",
     source: "france",
     chapitre: "Cépages d’Espagne",
-    jauge: {"style":"Rueda, blanc sec","acidite":[3,4],"tanins":null,"alcool":3,"a_verifier":["alcool"],"src":"WSET D3, Wines of the World (2024) ; Wine Grapes (2012)","note":"Style protégé de l’oxydation jugé léger et très acide par WSET, Understanding Wines (2016). Corps non indiqué : les sources divergent selon le style."},
+    jauge: {"style":"Rueda, blanc sec","acidite":[3,4],"tanins":null,"alcool":3,"a_verifier":["alcool"],"src":"WSET D3, Wines of the World (2024) ; Wine Grapes (2012) ; WSET, Understanding Wines (2016)","note":"Style protégé de l’oxydation jugé léger et très acide par WSET, Understanding Wines (2016). Corps non indiqué : les sources divergent selon le style."},
     noms: [],
   },
   {
