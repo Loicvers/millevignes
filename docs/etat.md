@@ -3,14 +3,14 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 715 (dernier id : 717) · exercices : 3739
-- Vérifiées : 711 · à vérifier : 4 (4 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1758
+- Vérifiées : 714 · à vérifier : 1 (1 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1761
 - Niveaux : Fondamental 224 · Intermédiaire 377 · Pointu 114
 - Cours (Approfondir) : 67 · schémas : 100
 - Lexique : 81 termes · récits de chapitre : 82
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 56 | 1–671 | 16–38 | 53 | 8 | 11 |
+| 016-domestication.js | 56 | 1–671 | 16–38 | 56 | 8 | 11 |
 | 040-nature.js | 52 | 4–634 | 40–73 | 52 | 7 | 15 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 32 | 0 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 31 | 5 | 6 |
