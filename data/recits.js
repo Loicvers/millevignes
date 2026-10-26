@@ -1234,5 +1234,67 @@ const RECITS = [
   client: "« Un Côtes de Bordeaux ou un Bordeaux supérieur, c’est le bordeaux du quotidien, bien moins cher que les crus classés. »",
   filRouge: "Plus au sud-est, comment le Sud-Ouest garde-t-il ses cépages à lui, du tannat au gros manseng ?",
   src: "fiches 432, 433, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
+ },
+ {
+  chapitre: "Vallée du Rhône : panorama et appellations",
+  question: "Pourquoi dit-on qu’il y a deux Rhône, et qu’est-ce qui les relie ?",
+  fil: [
+   "Le Rhône, ce sont deux vignobles séparés par une cinquantaine de kilomètres presque sans vignes, entre Valence et Montélimar. Au nord, le climat est continental ; au sud, méditerranéen. Partout, un vent froid du nord assainit les vignes mais les malmène : échalas sur les pentes du nord, gobelets bas dans les plaines du sud.",
+   "<b>Le Nord.</b> La plupart des huit crus s’accrochent en terrasses, sur la rive droite, au rebord granitique du Massif central ; l’Hermitage et Crozes sont en face, sur la rive gauche. Ce sont Côte-Rôtie, Condrieu, Château-Grillet, Saint-Joseph, Crozes-Hermitage, Hermitage, Cornas et Saint-Péray. Ils ne couvrent que quelques milliers d’hectares. La syrah y est le seul cépage rouge ; les blancs sont de viognier, ou de marsanne et roussanne.",
+   "<b>Le Sud.</b> Plus vaste, il fait l’essentiel du volume, sur des sables, des calcaires, des argiles et des galets roulés. Les rouges y sont des assemblages menés par le grenache, avec la syrah, le mourvèdre et le cinsaut. Dix crus, dont Châteauneuf-du-Pape et Tavel, coiffent la pyramide depuis la promotion de Laudun en 2024.",
+   "<b>Une pyramide commune.</b> Côtes du Rhône, Côtes du Rhône Villages, Villages suivi d’un nom, puis les crus : à chaque étage, les rendements baissent.",
+   "<b>Une longue histoire.</b> Pline vante déjà le vin des Allobroges de Vienne ; les papes d’Avignon font connaître la vallée au XIVe siècle ; au XXe, le baron Le Roy, à Châteauneuf, pousse avec le sénateur Capus à la création des AOC.",
+   "<b>Aujourd’hui.</b> Selon Inter Rhône, environ 60 000 ha d’AOC en 2025, surtout du rouge, et un tiers des volumes à l’export : la Belgique en est le premier marché."
+  ],
+  defend: "Le Rhône réunit deux vignobles opposés, la syrah seule sur les coteaux du nord et les assemblages de grenache du sud, sous une même pyramide d’appellations.",
+  client: "« Au nord, la syrah sur des coteaux de granite ; au sud, le grenache en assemblage, plus chaud et plus rond. Les deux s’appellent Côtes du Rhône à la base, et ont leurs crus au sommet. »",
+  filRouge: "Sur ces coteaux du Nord, qu’est-ce qui distingue une Côte-Rôtie d’un Hermitage ou d’un Cornas ?",
+  src: "fiches 415, 416 et 684 à 689 du site (WSET D3, Oxford Companion, INAO, Inter Rhône, Mille Vignes p. 173 et 184)"
+ },
+ {
+  chapitre: "Rhône Nord : les crus septentrionaux",
+  question: "Comment huit petits crus, tous de syrah en rouge, arrivent-ils à être si différents ?",
+  fil: [
+   "Du nord au sud, les crus du Rhône Nord se succèdent sur des coteaux en terrasses, presque tous sur la rive droite, sur granite, schiste ou gneiss. La syrah y est le seul cépage rouge ; ce qui change, c’est la pente, la roche et ce qu’on lui associe.",
+   "<b>Côte-Rôtie.</b> Tout au nord, des pentes très raides de schiste et de gneiss. Un rouge de syrah où le viognier est admis jusqu’à 20 %, à condition d’être vinifié avec elle : une syrah élégante et parfumée.",
+   "<b>Condrieu et Château-Grillet.</b> Deux blancs 100 % viognier : Condrieu, une appellation de sept communes, du sec au doux ; Château-Grillet, une AOC d’un seul domaine d’environ 3,5 ha.",
+   "<b>Saint-Joseph.</b> Un long ruban de 26 communes sur la rive droite, surtout sur granite, surtout en rouge de syrah, avec un peu de blanc de marsanne et roussanne.",
+   "<b>Hermitage et Crozes-Hermitage.</b> Sur la rive gauche, autour de Tain : l’Hermitage, une seule colline tournée vers le sud, en rouge, en blanc et parfois en vin de paille ; Crozes, le plus grand cru du Nord, sur onze communes.",
+   "<b>Cornas et Saint-Péray.</b> Tout au sud : Cornas, rouge 100 % syrah dans un amphithéâtre granitique ; Saint-Péray, blanc de marsanne et roussanne, tranquille ou effervescent."
+  ],
+  defend: "Au Rhône Nord, un seul cépage rouge, la syrah, et huit lieux qui la font parler différemment, de la colline unique de l’Hermitage au long ruban de Saint-Joseph.",
+  client: "« Côte-Rôtie pour une syrah élégante et parfumée, Cornas pour une syrah pure, Condrieu pour découvrir le viognier en blanc. »",
+  filRouge: "Plus au sud, comment Châteauneuf-du-Pape peut-il assembler jusqu’à dix-huit cépages ?",
+  src: "fiches 415 et 434 à 438 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Rhône Sud : les crus méridionaux",
+  question: "Que partagent les crus du Sud, du châteauneuf-du-pape au tavel ?",
+  fil: [
+   "Au sud, le relief s’ouvre et le climat devient méditerranéen. Les crus y sont des assemblages menés par le grenache ; ils sont dix depuis la promotion de Laudun en 2024.",
+   "<b>Châteauneuf-du-Pape.</b> Cinq communes du Vaucluse, du rouge et du blanc, et 18 cépages possibles sans minimum imposé : le grenache domine dans les faits, pas par la règle. Son nom rappelle le château bâti pour les papes d’Avignon, et ses sols forment une mosaïque où les galets ne sont pas seuls.",
+   "<b>Au pied des Dentelles.</b> Gigondas, rouge de grenache autorisé en blanc depuis le millésime 2023, et Vacqueyras, en trois couleurs, partagent la crête calcaire des Dentelles de Montmirail.",
+   "<b>Les crus récents.</b> Beaumes-de-Venise rouge (2005), Vinsobres (2006), Rasteau rouge (2010) et Cairanne (2016) ont quitté le rang de village.",
+   "<b>Le Gard.</b> Tavel ne fait que du rosé, seul cru du Rhône dans ce cas ; Lirac, voisine, fait les trois couleurs.",
+   "<b>Les vins doux.</b> Muscat de Beaumes-de-Venise et Rasteau sont des vins doux naturels, mutés à l’alcool pour garder le sucre du raisin."
+  ],
+  defend: "Les crus du Sud sont des assemblages à dominante de grenache, chacun avec son identité : Châteauneuf et ses 18 cépages, Tavel et son rosé, les Dentelles et leurs coteaux.",
+  client: "« Châteauneuf, Gigondas, Vacqueyras : des rouges de grenache en assemblage, généreux. Et pour un rosé de cru, Tavel est le seul du Rhône entièrement voué au rosé. »",
+  filRouge: "Sous les crus, comment se lit la grande famille des Côtes du Rhône ?",
+  src: "fiches 416, 439 à 443 et 184 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes, géologie de Châteauneuf)"
+ },
+ {
+  chapitre: "Côtes du Rhône, villages et appellations satellites",
+  question: "Que garantit vraiment une étiquette de côtes-du-rhône, et comment monter en gamme sans passer aux crus ?",
+  fil: [
+   "Le côtes-du-rhône est la base de la pyramide, très vaste, et surtout produite au sud. Ses rouges et rosés du sud doivent compter du grenache et de la syrah ou du mourvèdre ; au nord de Montélimar, l’obligation de grenache disparaît, ce qui laisse la place à la syrah.",
+   "<b>Les villages.</b> Côtes du Rhône Villages couvre 95 communes, avec plus de grenache, de syrah et de mourvèdre, et un rendement plus bas, 44 hl/ha contre 51. Les 21 noms géographiques, comme Sablet, Séguret, Visan ou Plan de Dieu, montent encore d’un cran, à 41 hl/ha.",
+   "<b>La couronne.</b> Autour, des appellations voisines : Ventoux, Luberon, Grignan-les-Adhémar, Costières de Nîmes, Duché d’Uzès et Côtes du Vivarais, pour des rouges de grenache et de syrah.",
+   "<b>Le Diois.</b> À l’écart, autour de Die, la Clairette de Die ancestrale, bulle douce et légère au muscat, et le Crémant de Die, sec."
+  ],
+  defend: "Entre le côtes-du-rhône et les crus, les villages et leurs noms géographiques offrent un vrai palier : moins de rendement, plus d’exigences d’encépagement.",
+  client: "« Un côtes-du-rhône villages, surtout avec un nom de village, c’est déjà plus exigeant qu’un côtes-du-rhône simple : rendement plus bas et assemblage plus encadré. »",
+  filRouge: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
+  src: "fiches 444 à 446 et 689 du site (INAO, cahiers des charges ; Inter Rhône ; Oxford Companion ; WSET D3)"
  }
 ];

@@ -202,3 +202,8 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Web : Agreste Nouvelle-Aquitaine, Essentiel n° 80 (juin 2026) ; INAO, fiche AOC Bordeaux (1152, claret, 1936) ; Pleinchamp (11/08/2025).
 - Récits hors livre (12, Bourgogne et Bordeaux) : écrits à partir des fiches vérifiées du site.
 - Relecture indépendante (opus) : 16 corrections (gel de 1956 en hiver, oïdium 1852, recopie traduite de l’Oxford reformulée, chiffres de surface non comparables précisés, faits de récits absents des fiches retirés).
+
+## Cours de région — Vallée du Rhône (26/10/2026, cours de la fiche 415, fiches 684-689, 4 récits)
+- Dépôt de sources : WSET D3 (2024, ch. 7 en entier) ; Oxford Companion 5e (« Rhône », « Côte Rôtie ») ; Mille Vignes p. 173 et 184.
+- Web : Inter Rhône, Chiffres clés 2025 (livret de mai 2026 : surfaces, couleurs, export, cépages).
+- Relecture indépendante (opus) : 14 corrections (orientation des coteaux, rive gauche Hermitage/Crozes, chiffres Inter Rhône attribués, cinsaut, co-fermentation limitée à Côte-Rôtie, styles de récits absents des fiches retirés).
