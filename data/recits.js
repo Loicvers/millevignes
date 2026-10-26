@@ -1480,5 +1480,37 @@ const RECITS = [
   client: "« Pour la finesse, un fleurie ou un chiroubles ; pour un vin qui tient la table et la cave, un morgon ou un moulin-à-vent. »",
   filRouge: "Plus à l’est, au pied d’un autre massif, comment le Jura fait-il des vins que l’on ne trouve nulle part ailleurs ?",
   src: "fiches 406 et 472 à 475 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
+ },
+ {
+  chapitre: "Languedoc : panorama et appellations",
+  question: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
+  fil: [
+   "Le Languedoc dessine un arc d’environ 200 km le long du golfe du Lion, de Nîmes à la frontière espagnole, adossé aux Cévennes, au Larzac, à l’Espinouse, à la Montagne Noire et aux Corbières : un amphithéâtre ouvert sur la Méditerranée. Le climat est méditerranéen, avec des étés chauds et secs et 400 à 900 mm de pluie selon les secteurs, tombant en averses, surtout à l’automne. Le mistral souffle sur l’est, le cers et la tramontane sur l’ouest, et le vent marin, humide, vient de la mer ; à l’extrême ouest, Limoux et la Malepère subissent des influences atlantiques.",
+   "<b>Une mosaïque de sols.</b> Une coupe va de la plaine littorale aux piémonts et aux plateaux, puis aux montagnes (fiche 713) : alluvions près de la mer, calcaires au milieu, schistes au nord-ouest, comme à Faugères. Partout, des sols pauvres, caillouteux et bien drainés, qui limitent les rendements.",
+   "<b>Des assemblages avant tout.</b> En AOC Languedoc, les rouges sont des assemblages d’au moins deux cépages dont grenache, mourvèdre, syrah (et lledoner pelut) forment le socle, sans qu’aucun dépasse 80 % du vin : un 100 % carignan part donc en IGP ou en Vin de France. Les blancs s’appuient sur huit cépages principaux, dont le piquepoul blanc. L’IGP Pays d’Oc, elle, mise au contraire sur le vin de cépage (fiche 714).",
+   "<b>Une histoire de masse, puis de qualité.</b> Rome fonde Narbonne en 118 av. J.-C., les moines relancent la vigne, la plaine se couvre d’aramon, le phylloxéra, identifié en 1868, détruit le vignoble et la surproduction mène à la révolte de 1907. Les appellations arrivent par étapes (Frontignan 1936, Blanquette de Limoux 1938, Fitou 1948, Coteaux du Languedoc 1985), puis le vin de pays d’Oc, devenu IGP en 2009 (fiche 716).",
+   "<b>Une pyramide qui bouge.</b> L’AOC régionale Languedoc, puis des appellations plus précises (Pic Saint-Loup, Terrasses du Larzac, Saint-Chinian, Corbières, Limoux, Picpoul de Pinet…), et au-dessous des AOC l’IGP Pays d’Oc, la plus grande IGP régionale de France. Depuis 2026, l’AOC Languedoc ne compte plus que neuf dénominations complémentaires : Grés de Montpellier et Montpeyroux sont devenues des AOC à part entière. Pas de nombre de crus à réciter par cœur : on date toujours l’information (fiche 417).",
+   "<b>Le marché.</b> En Occitanie, la récolte 2022 se partage en volume entre environ 69 % d’IGP, 18 % d’AOP et 13 % de vins sans IG ; l’Occitanie est aussi la première région viticole bio de France. Le Languedoc garde l’image de la région au meilleur rapport qualité-prix de France et attire des investisseurs grâce à des terres relativement peu chères et de vieilles vignes (fiche 717)."
+  ],
+  defend: "Le Languedoc est un amphithéâtre de sols et de vents où l’on assemble plus qu’on ne choisit un cépage, avec une pyramide d’appellations qu’il faut toujours dater.",
+  client: "« Pour un vin de cépage simple à lire, une IGP Pays d’Oc ; pour un lieu précis, une appellation comme Pic Saint-Loup, Saint-Chinian, Corbières ou Limoux. Et la liste bouge encore : Grés de Montpellier et Montpeyroux viennent de devenir des appellations à part entière. »",
+  filRouge: "Faugères, Pic Saint-Loup, Corbières, Limoux : comment s’y retrouver parmi les crus et les dénominations du Languedoc ?",
+  src: "fiches 417, 476 à 480 et 712 à 717 du site (cahiers des charges, INAO ; WSET D3 ; Oxford Companion ; Agreste ; Agence Bio)"
+ },
+ {
+  chapitre: "Languedoc : crus et dénominations",
+  question: "Faugères, Pic Saint-Loup, Corbières, Limoux : comment s’y retrouver parmi les crus et les dénominations du Languedoc ?",
+  fil: [
+   "Plutôt qu’une liste à réciter, les appellations du Languedoc se retiennent par leurs lieux : chacune s’accroche à un paysage, une roche ou un cépage. Plusieurs étaient des dénominations de Coteaux du Languedoc avant de devenir des AOC à part entière : Picpoul de Pinet (décret du 23 septembre 2013), Terrasses du Larzac (décret du 17 octobre 2014) et Pic Saint-Loup (2017).",
+   "<b>Au nord de l’Hérault, la syrah et le Larzac.</b> Le Pic Saint-Loup couvre 17 communes et fait du rouge et du rosé, avec au moins 50 % de syrah dans le rouge. Les Terrasses du Larzac, sur 32 communes, ne font que du rouge, assemblé à trois cépages au moins sans qu’aucun dépasse 70 %.",
+   "<b>Les schistes de l’arrière-pays de Béziers.</b> Faugères tient en sept communes sur des sols exclusivement schisteux, en rouge, rosé et blanc. Saint-Chinian, plus vaste (20 communes), a deux visages, schistes et sols argilo-calcaires ; ses deux dénominations rouges, Berlou (au moins 30 % de carignan) et Roquebrun (au moins 25 % de syrah), visent un rendement de base de 40 hl/ha contre 45 pour l’appellation.",
+   "<b>Dans l’Aude, un cru par appellation.</b> Le Minervois a pour cœur Minervois-La Livinière, six communes en rouge seul, à 42 hl/ha contre 48. Les Corbières ont Corbières-Boutenac, un rouge sur dix communes où le carignan pèse au moins 30 % ; Fitou, reconnue en 1948 comme première AOC de rouge tranquille du Languedoc, réunit deux zones séparées par un plateau calcaire.",
+   "<b>Des blancs, des muscats et des bulles.</b> Le Picpoul de Pinet est un blanc sec de piquepoul blanc seul, autour de l’étang de Thau ; la Clairette du Languedoc est une clairette pure ; les muscats de l’Hérault, de muscat à petits grains, sont des vins doux naturels. À Limoux, les bulles reconnues en 1938 reposent sur le mauzac : au moins 90 % dans la blanquette, seul dans la méthode ancestrale ; le crémant (1990) est dominé par le chardonnay, et le Limoux blanc tranquille se vinifie et s’élève en fût.",
+   "<b>Ce qu’on retient.</b> Faugères, c’est le schiste pur ; Pic Saint-Loup, une syrah en vedette ; Boutenac et Fitou, le carignan assumé ; Limoux, le mauzac et les bulles. La liste des « crus » retenue par l’interprofession varie selon les années : on la date toujours (fiche 417)."
+  ],
+  defend: "Au Languedoc, un nom d’appellation renvoie à une roche, un cépage ou une méthode : le schiste à Faugères, le carignan à Boutenac, le mauzac à Limoux.",
+  client: "« Pour une syrah en vedette, Pic Saint-Loup ; pour du schiste, Faugères ; pour du carignan assumé, Boutenac ou Fitou ; pour des bulles, Limoux : blanquette pour la pomme verte sèche, crémant pour un style plus proche de la Champagne. »",
+  filRouge: "Plus au sud, au pied des Pyrénées, comment le Roussillon a-t-il bâti sa réputation sur les vins doux naturels ?",
+  src: "fiches 417 et 476 à 480 du site (sources principales : cahiers des charges, INAO ; WSET D3 ; Oxford Companion)"
  }
 ];
