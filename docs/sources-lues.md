@@ -191,3 +191,8 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Cépages d’Espagne : Ibáñez et al., Genetic Origin of the Grapevine Cultivar Tempranillo, AJEV 63(4) 2012, résumé (Université de La Rioja) ; Tello et al., ICGWS 2023 (IVES Open Science) ; MAPA, pliego de condiciones DO Bierzo (2021), apartado 3.c.1 (85 % cumulés de quatre cépages).
 - Service : Oxford Companion to the Body, entrée « humours » (Encyclopedia.com) ; Decanter, New 50-year-old Port category (19/11/2021, tawny et blanc).
 - France (Rhône, Loire) : Guide Hachette des vins, fiche région Vallée du Rhône (Sud méditerranéen) ; BO-agri, cahier des charges AOC Rosé de Loire (arrêté du 12 janvier 2024), lu par résumé ; Wine with Seth, Rosé de Loire.
+
+## Cours de région — Bourgogne (26/10/2026, cours de la fiche 385, fiches 672-677)
+- Dépôt de sources : WSET D3 (2024, ch. 3 Burgundy, lu en entier) ; Oxford Companion 5e (« Burgundy », « Côte d’Or », « Hautes-Côtes », « premature oxidation », « pièce », « toast », « Bordeaux » pour la barrique) ; WSET Understanding Wines (Hautes-Côtes) ; WSET L3 (manuel non officiel) ; Atlas du vin ; UNESCO (Climats) ; J.-P. Garcia (EUD, 2011).
+- Web : INAO, cahier des charges AOC Bourgogne (projet après le comité national du 18/06/2026, lu via extranet) ; DREAL Bourgogne-Franche-Comté, Les Climats de Bourgogne ; iDealwine (07/12/2017) ; Decanter (sponsorisé, 2021) ; Hérodote.net (Cîteaux) ; Beaune Tourisme (Cluny).
+- Relecture indépendante (opus) : 6 corrections appliquées (malolactique et bois neuf rouges/blancs, chemin de fer à source unique, trois dénominations, lien AOC/phylloxéra, détails du cours).
