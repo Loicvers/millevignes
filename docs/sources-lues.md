@@ -218,3 +218,9 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Dépôt de sources : WSET D4 (chapitre Champagne en entier) ; Oxford Companion 5e (« Champagne ») ; WSET L3 (manuel non officiel, légende de Dom Pérignon).
 - Web : Pleinchamp (22/01/2026, chiffres Comité Champagne 2025) ; L’Infodurable/AFP (02/10/2025) ; La Libre/Belga (29/04/2026, Belgique) ; UMC, « How winegrowers and houses do business together » (prix du raisin 1911-2004).
 - Relecture indépendante (opus) : corrections appliquées (fin des prix fixés 1990/2000 en divergence, « 12 mois sur lies » remplacé par la règle des 12 mois en bouteille, profils Montagne/Aube, libellé du schéma, attributions).
+
+## Cours de région — Alsace (26/10/2026, cours de la fiche 405, fiches 701-705, 2 récits)
+- Dépôt de sources : WSET D3 (2024, ch. 5 en entier) ; Oxford Companion 5e (« Alsace »).
+- Web : Vitisphere, « Sweetness levels now stated on Alsace wines » (04/11/2021) ; BKWine (mention de sucrosité) ; Réussir (02/12/2007, Benelux) ; INAO, cahier des charges AOC Alsace (ordonnance du 2 novembre 1945, AOC en 1962).
+- Relecture indépendante (opus) : 21 remarques, corrections appliquées (date de l’AOC 1945/1962, chiffres de marché attribués au CIVA 2021 via le WSET, QCM sucrosité limité aux vins tranquilles, étagement des sols reformulé et attribué à l’Oxford, récit VT/SGN corrigé, selon_livre de la fiche 405 mis à jour).
+- À trouver : chiffres CIVA récents (ventes France/export, marchés).

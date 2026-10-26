@@ -1418,5 +1418,36 @@ const RECITS = [
   client: "« Brut, c’est peu sucré ; brut nature, pas de sucre ajouté. Blanc de blancs, c’est du chardonnay en pratique ; RM, c’est un vigneron qui fait son propre champagne. »",
   filRouge: "Et en Alsace, que dit le nom d’un vin ?",
   src: "fiches 404, 463 à 466, 583 et 699 du site (INAO, cahier des charges ; WSET D4 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Alsace : panorama et appellations",
+  question: "Comment un vignoble aussi au nord fait-il des blancs aussi mûrs, et pourquoi ses vins portent-ils le nom d’un cépage ?",
+  fil: [
+   "L’Alsace est un vignoble septentrional, mais abrité : les Vosges arrêtent les pluies venues de l’ouest, et la plaine ne reçoit qu’environ 600 mm par an. Étés chauds, longue saison, fraîcheur gardée.",
+   "<b>Le relief commande.</b> Les grands vins viennent des coteaux au pied des Vosges ; la plaine, fertile, donne des vins plus simples. Sous les coteaux, une mosaïque de roches : granite, gneiss, grès, schistes, roches volcaniques, marnes et calcaires.",
+   "<b>Une histoire entre deux pays.</b> Française au XVIIe siècle, allemande en 1871, la région subit l’oïdium et le phylloxéra et replante des hybrides en plaine. Revenue à la France, elle reconquiert ses coteaux surtout à partir des années 1960.",
+   "<b>Des vins de cépage.</b> Presque tous blancs : riesling, gewurztraminer, pinot gris et muscat, les « nobles », avec le pinot blanc, le sylvaner et le pinot noir. Le cépage est sur l’étiquette, et depuis le millésime 2021, la sucrosité aussi.",
+   "<b>Trois appellations.</b> Alsace, avec ses dénominations géographiques et ses lieux-dits, alsace grand cru et crémant d’alsace. La bouteille flûte signe la région.",
+   "<b>Le marché.</b> Coopératives et maisons familiales pèsent lourd ; selon les chiffres du CIVA (2021), environ sept bouteilles sur dix se vendent en France, et la Belgique est le premier client à l’export."
+  ],
+  defend: "L’Alsace, c’est un vignoble du nord rendu sec et lumineux par les Vosges, qui parle cépage plutôt que lieu, et dont l’étiquette dit désormais aussi la douceur.",
+  client: "« En Alsace, regardez d’abord le cépage : riesling tendu, gewurztraminer parfumé, pinot gris ample. Puis la mention sec, demi-sec, moelleux ou doux : elle vous évite la surprise. »",
+  filRouge: "Et quand un lieu-dit précis s’ajoute au cépage, que promet la mention « grand cru » ?",
+  src: "fiches 405, 470, 471 et 701 à 705 du site (WSET D3, Oxford Companion, INAO, Vitisphere, CIVA via le WSET)"
+ },
+ {
+  chapitre: "Alsace : grands crus et mentions",
+  question: "Que garantissent vraiment « grand cru », « vendanges tardives » ou « sélection de grains nobles » sur une bouteille d’Alsace ?",
+  fil: [
+   "Deux précisions peuvent s’ajouter : le lieu, avec les grands crus, et la maturité, avec les mentions vendanges tardives et sélection de grains nobles, possibles en alsace comme en grand cru.",
+   "<b>51 grands crus.</b> Chacun est une appellation à part depuis 2011, délimitée sur un lieu-dit. Les cépages nobles y règnent ; le pinot noir n’est admis que sur le Hengst, le Kirchberg de Barr et le Vorbourg, et le Zotzenberg accepte le sylvaner.",
+   "<b>Une roche par cru.</b> Granite au Brand, grès vosgien au Kessler, roches volcaniques et sédimentaires au Rangen, dolomies au Geisberg : la mosaïque alsacienne se lit d’un grand cru à l’autre.",
+   "<b>Vendanges tardives et grains nobles.</b> Des raisins de cépages nobles, cueillis surmûris, sans enrichissement ; la sélection de grains nobles exige une richesse en sucre encore plus élevée à la vendange. La mention dit la richesse du raisin, pas le sucre du vin.",
+   "<b>Le crémant.</b> À côté, le crémant d’alsace, effervescent de seconde fermentation en bouteille, souvent à base de pinot blanc."
+  ],
+  defend: "En Alsace, « grand cru » désigne un lieu et une roche, pas un style ; VT et SGN désignent une maturité, pas un lieu.",
+  client: "« Grand cru, c’est un coteau précis, avec son sol : un riesling du Brand, sur granite, ne ressemble pas à celui du Kessler, sur grès. Vendanges tardives, c’est un raisin cueilli très mûr : souvent un vin plus riche, parfois doux. »",
+  filRouge: "Et en Bourgogne, où l’on nomme le lieu plutôt que le cépage, comment s’organise la hiérarchie ?",
+  src: "fiches 405, 467 à 471 et 702 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  }
 ];
