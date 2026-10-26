@@ -224,3 +224,10 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Web : Vitisphere, « Sweetness levels now stated on Alsace wines » (04/11/2021) ; BKWine (mention de sucrosité) ; Réussir (02/12/2007, Benelux) ; INAO, cahier des charges AOC Alsace (ordonnance du 2 novembre 1945, AOC en 1962).
 - Relecture indépendante (opus) : 21 remarques, corrections appliquées (date de l’AOC 1945/1962, chiffres de marché attribués au CIVA 2021 via le WSET, QCM sucrosité limité aux vins tranquilles, étagement des sols reformulé et attribué à l’Oxford, récit VT/SGN corrigé, selon_livre de la fiche 405 mis à jour).
 - À trouver : chiffres CIVA récents (ventes France/export, marchés).
+
+## Cours de région — Beaujolais (26/10/2026, cours de la fiche 406, fiches 706-711, 2 récits)
+- Dépôt de sources : WSET D3 (2024, ch. 4 en entier) ; Oxford Companion 5e (« Beaujolais », « carbonic maceration ») ; Mille Vignes p. 125 (Sigales), 221 (Flanzy), 294 (pot de 46 cl) ; Atlas du Vin (écarté : chiffres non fiables).
+- Officiel : BO-agri, cahier des charges AOC Beaujolais (arrêté du 2/09/2022 : milieu naturel, conduite, récolte, historique) ; BO-agri, annexe PCR4 Beaujolais – Crus du Beaujolais (2021-2022) ; ministère de l’Agriculture, CEP, Faits & Tendances n° 37 (2013).
+- Web : Decanter (25/06/2002, distillation ; 2016, perte de surfaces ; nécrologie Duboeuf, 2020) ; Réussir (11/11/2007 ; 06/03/2026, coopératives) ; J. Robinson (13/07/2013) ; BKWine (28/06/2024) ; Le Patriote Beaujolais (11/2025) ; Lyon Capitale (21/05/2019) ; Punch (crus et Bourgogne, via la relecture).
+- Relecture indépendante (opus) : 31 remarques, toutes appliquées (altitude 180-550 m sortie de la synthèse, perte de surface ramenée à environ 40 %, IIIe siècle et « années 1970 » en selon_livre, 4 exercices en doublon remplacés, réponses modèles « Explique » limitées aux faits de leur fiche, schéma retouché).
+- À trouver : chiffres Inter Beaujolais récents (marchés d’export par pays, place de la Belgique) ; pluviométrie annuelle d’une source officielle.

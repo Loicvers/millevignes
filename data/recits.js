@@ -1449,5 +1449,36 @@ const RECITS = [
   client: "« Grand cru, c’est un coteau précis, avec son sol : un riesling du Brand, sur granite, ne ressemble pas à celui du Kessler, sur grès. Vendanges tardives, c’est un raisin cueilli très mûr : souvent un vin plus riche, parfois doux. »",
   filRouge: "Et en Bourgogne, où l’on nomme le lieu plutôt que le cépage, comment s’organise la hiérarchie ?",
   src: "fiches 405, 467 à 471 et 702 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Beaujolais : panorama et appellations",
+  question: "Un seul cépage, le gamay : comment le Beaujolais tire-t-il de lui à la fois le nouveau du mois de novembre et des crus qui se gardent ?",
+  fil: [
+   "Le Beaujolais s’étire entre la plaine de la Saône et les monts du Beaujolais, qui l’abritent des vents d’ouest. Un climat de transition, des coteaux tournés vers l’est et le sud, et une menace : le gel de printemps sur un gamay qui débourre tôt.",
+   "<b>Deux sous-sols.</b> Au nord, des roches anciennes, granites, porphyres et schistes, aux sols acides et drainants : le domaine des crus et des villages. Au sud, des calcaires, ceux des pierres dorées, aux sols plus lourds : surtout l’AOC beaujolais.",
+   "<b>Une vigne basse, une vendange entière.</b> Le gobelet tient la vigne sur les pentes ; la plupart des raisins sont cueillis à la main, car la vinification la plus courante veut des grappes entières.",
+   "<b>Un curseur de vinification.</b> La semi-carbonique donne fruit et souplesse ; une cuvaison plus longue, ou une vinification « à la bourguignonne » avec égrappage et fût, donne des crus plus structurés.",
+   "<b>Une histoire en quatre temps.</b> Le gamay, banni de Bourgogne en 1395, reste roi au sud ; les vins partent à Lyon et à Paris ; le nouveau, autorisé en 1951, conquiert le monde ; puis vient la crise de surproduction du début des années 2000.",
+   "<b>Aujourd’hui.</b> Environ 40 % du vignoble a disparu en vingt ans ; le nouveau ne pèse plus qu’environ un quart de la production, et les crus séduisent comme une alternative moins chère à la Bourgogne."
+  ],
+  defend: "Le Beaujolais n’est pas un vin, mais un éventail : le même gamay donne un vin de fête ou un vin de garde selon la roche, la cuvaison et l’ambition du vigneron.",
+  client: "« Pour tous les jours, un beaujolais ou un villages, servi frais. Pour plus de matière, un cru. Le nouveau, c’est la fête de la récolte, le troisième jeudi de novembre, et seulement un quart de la production. »",
+  filRouge: "Parmi les dix crus, comment choisir entre un beaujolais fin et floral et un beaujolais de garde ?",
+  src: "fiches 406, 474, 475 et 706 à 711 du site (cahier des charges AOC Beaujolais, WSET D3, Oxford Companion, ministère de l’Agriculture, Decanter, Réussir)"
+ },
+ {
+  chapitre: "Beaujolais : les dix crus",
+  question: "Parmi les dix crus, comment choisir entre un beaujolais fin et floral et un beaujolais de garde ?",
+  fil: [
+   "Les dix crus sont tous rouges, tous de gamay, tous dans la moitié nord du vignoble, et chacun est une appellation à part.",
+   "<b>Au nord, le granite.</b> Saint-Amour, Juliénas, Chénas, Moulin-à-Vent et Fleurie reposent surtout sur un granite altéré en sable. Fleurie, sur granite rose, passe pour fin et floral ; Moulin-à-Vent, sur arènes roses, est le plus charpenté et le plus apte à la garde.",
+   "<b>Au sud, plus de variété.</b> Chiroubles, sur des sables maigres, est léger et floral ; Morgon, sur des schistes riches en manganèse comme ceux de la colline du Py, est plein et de garde ; Régnié est le dernier cru, reconnu en 1988 ; Brouilly et Côte de Brouilly entourent le mont Brouilly et sa « pierre bleue ».",
+   "<b>Autour des crus, le socle.</b> Beaujolais-Villages, au nord sur sols acides, peut ajouter le nom de sa commune ; l’AOC beaujolais couvre tout, jusqu’aux calcaires du sud.",
+   "<b>Le nouveau à part.</b> Vin de l’année en beaujolais ou beaujolais-villages, il sort le troisième jeudi de novembre ; les crus attendent le 1er février."
+  ],
+  defend: "Choisir un cru, c’est choisir une roche et un style : sables granitiques pour la finesse, schistes de Morgon ou arènes riches en fer et en manganèse de Moulin-à-Vent pour la garde.",
+  client: "« Pour la finesse, un fleurie ou un chiroubles ; pour un vin qui tient la table et la cave, un morgon ou un moulin-à-vent. »",
+  filRouge: "Plus à l’est, au pied d’un autre massif, comment le Jura fait-il des vins que l’on ne trouve nulle part ailleurs ?",
+  src: "fiches 406 et 472 à 475 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
  }
 ];
