@@ -213,3 +213,8 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Web : InterLoire, rapport d’activité (juin 2025) et communiqué export 2025 (mai 2026).
 - Relecture indépendante (opus) : corrections appliquées (date du grand cru de Quarts de Chaume 2011/2019 attribuée, Quincy et sauvignon gris, recopie de Lepeltier reformulée, chiffres InterLoire et dates historiques à source unique attribués, superlatif de l’Oxford attribué).
 - À vérifier un jour : le WSET D3 compte six dénominations pour l’AOC Touraine, la fiche 455 en compte cinq.
+
+## Cours de région — Champagne (26/10/2026, cours de la fiche 403, fiches 696-700, 3 récits)
+- Dépôt de sources : WSET D4 (chapitre Champagne en entier) ; Oxford Companion 5e (« Champagne ») ; WSET L3 (manuel non officiel, légende de Dom Pérignon).
+- Web : Pleinchamp (22/01/2026, chiffres Comité Champagne 2025) ; L’Infodurable/AFP (02/10/2025) ; La Libre/Belga (29/04/2026, Belgique) ; UMC, « How winegrowers and houses do business together » (prix du raisin 1911-2004).
+- Relecture indépendante (opus) : corrections appliquées (fin des prix fixés 1990/2000 en divergence, « 12 mois sur lies » remplacé par la règle des 12 mois en bouteille, profils Montagne/Aube, libellé du schéma, attributions).

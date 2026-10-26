@@ -1371,5 +1371,52 @@ const RECITS = [
   client: "« Sancerre n’est pas qu’un blanc : il existe aussi en rouge et en rosé de pinot noir. Et le Pouilly-Fumé, c’est du sauvignon de Loire, rien à voir avec le Pouilly-Fuissé de Bourgogne. »",
   filRouge: "Plus au sud-ouest, comment Bordeaux, à l’inverse de la Loire, a-t-il fait de l’assemblage sa signature ?",
   src: "fiches 456 à 458, 690 et 694 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Champagne : panorama et appellations",
+  question: "Comment un vignoble trop frais pour de grands vins tranquilles est-il devenu celui du plus célèbre des effervescents ?",
+  fil: [
+   "La Champagne est un vignoble de limite nord, juste au sud du 50e parallèle. Le raisin y mûrit mal pour un vin tranquille, mais il donne des vins de base légers et très acides, exactement ce que demande la prise de mousse en bouteille.",
+   "<b>La craie.</b> L’essentiel du vignoble repose sur une craie poreuse, ancien fond de mer, qui stocke l’eau et la rend en été. Sous Reims et Épernay, elle a été creusée en crayères et en caves. Tout au sud, la Côte des Bar, dans l’Aube, est sur les marnes kimméridgiennes, comme Chablis.",
+   "<b>Trois cépages, quatre grands secteurs.</b> Pinot noir, meunier et chardonnay se partagent le vignoble. La Montagne de Reims, la Vallée de la Marne, la Côte des Blancs et la Côte des Bar ont chacune leur cépage de prédilection.",
+   "<b>Un classement par village.</b> Une seule appellation pour les bulles, et 17 communes grands crus, 42 premiers crus, héritées de l’échelle des crus qui fixait autrefois le prix du raisin. Le rendement est réglé chaque année selon la récolte et le marché.",
+   "<b>L’assemblage.</b> Les années sont irrégulières : on assemble villages, cépages et vins de réserve pour un style constant. Le millésimé, lui, exprime une seule année.",
+   "<b>Vignerons et maisons.</b> Les vignerons possèdent environ 90 % des vignes, les maisons vendent la plupart des bouteilles. Les ventes reculent depuis 2023, et la Belgique reste l’un des cinq premiers marchés d’export."
+  ],
+  defend: "La Champagne a fait de ses handicaps des atouts : climat frais, craie, années irrégulières, compensés par l’assemblage et une organisation collective.",
+  client: "« Le champagne, c’est un vignoble frais sur la craie, où l’on assemble villages, cépages et années. Une maison vous donne un style constant ; un vigneron, avec RM sur l’étiquette, la signature de ses vignes. »",
+  filRouge: "Entre Montagne de Reims, Vallée de la Marne, Côte des Blancs et Côte des Bar, qu’est-ce qui change d’un secteur à l’autre ?",
+  src: "fiches 403, 404 et 696 à 700 du site (WSET D4, Oxford Companion, INAO, Comité Champagne via la presse)"
+ },
+ {
+  chapitre: "Champagne : secteurs et villages",
+  question: "Pourquoi un blanc de blancs de la Côte des Blancs ne ressemble-t-il pas à un champagne de la Côte des Bar ?",
+  fil: [
+   "Chaque grand secteur associe un sol et un cépage de prédilection, et les maisons puisent dans tous pour leurs assemblages.",
+   "<b>La Montagne de Reims.</b> Un massif boisé autour duquel les vignes forment un croissant. Le pinot noir domine, avec des grands crus comme Verzenay, Verzy, Mailly-Champagne, Bouzy ou Ambonnay ; à Bouzy et Ambonnay, une partie du pinot noir devient aussi du rouge tranquille.",
+   "<b>La Vallée de la Marne.</b> Le plus vaste secteur, pays du meunier, sur des argiles, des sables et du calcaire plutôt que sur la craie pure ; le pinot noir domine vers Aÿ, grand cru.",
+   "<b>La Côte des Blancs.</b> De Chouilly à Vertus, le chardonnay presque seul sur une craie qui affleure : six grands crus, de Chouilly au Mesnil-sur-Oger, et des blancs de blancs tendus.",
+   "<b>La Côte des Bar.</b> Dans l’Aube, sur des marnes et calcaires kimméridgiens, le pinot noir à plus de 80 % : des champagnes ronds et fruités, et le rosé tranquille des Riceys."
+  ],
+  defend: "En Champagne, le secteur dit le cépage et le sol : pinot noir sur la Montagne et dans l’Aube, meunier dans la Marne, chardonnay sur la craie de la Côte des Blancs.",
+  client: "« Pour un champagne fin et tendu, cherchez un blanc de blancs de la Côte des Blancs ; pour plus de rondeur et de fruit, un pinot noir de l’Aube ; pour plus d’ampleur et de structure, un pinot noir de la Montagne de Reims. »",
+  filRouge: "Une fois les raisins cueillis, comment passe-t-on du pressoir à la bouteille de champagne ?",
+  src: "fiches 459 à 462, 466 et 697 du site (INAO, cahier des charges ; WSET D4 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Champagne : élaboration et styles",
+  question: "Que révèlent vraiment les mots « brut », « blanc de blancs », « millésimé » ou « RM » sur une étiquette ?",
+  fil: [
+   "Le champagne se fait selon des règles chiffrées, du pressoir à la bouteille : c’est ce qui le distingue, plus encore que la seconde fermentation en bouteille, partagée avec d’autres effervescents.",
+   "<b>Le pressurage.</b> Des grappes entières, pressées par unités de 4 000 kg, le marc, avec un volume de jus limité et séparé en cuvée et en taille.",
+   "<b>L’assemblage et la prise de mousse.</b> Les vins clairs de plusieurs crus, cépages et années, vins de réserve compris, sont assemblés ; après le tirage, il reste au moins 12 mois en bouteille avant le dégorgement.",
+   "<b>Les styles.</b> Blanc de blancs, de raisins blancs ; blanc de noirs, de raisins noirs ; rosé d’assemblage ou de macération, l’assemblage dominant selon la presse spécialisée. Le non millésimé reconduit le style de la maison grâce aux réserves ; le millésimé exprime une année.",
+   "<b>L’étiquette.</b> Le dosage, du brut nature au doux, dit le sucre ajouté ; le code NM, RM, CM ou RC dit qui a élaboré le vin.",
+   "<b>Sans bulles.</b> Les coteaux champenois et le rosé des Riceys sont des vins tranquilles, rares, de la même aire."
+  ],
+  defend: "Le champagne est un vin de règles et d’assemblage : pressurage encadré, vins de réserve, longue maturation sur lies, et une étiquette qui dit le dosage et le producteur.",
+  client: "« Brut, c’est peu sucré ; brut nature, pas de sucre ajouté. Blanc de blancs, c’est du chardonnay en pratique ; RM, c’est un vigneron qui fait son propre champagne. »",
+  filRouge: "Et en Alsace, que dit le nom d’un vin ?",
+  src: "fiches 404, 463 à 466, 583 et 699 du site (INAO, cahier des charges ; WSET D4 ; Oxford Companion)"
  }
 ];
