@@ -694,13 +694,14 @@ function ecouter(textes,box,actions){
 }
 function showRecit(r,onGo){
   const box=el('div','ex decouverte recit');
-  box.innerHTML=`<div class="ex-head"><span>Récit du chapitre</span><span class="folio">Mille Vignes, p. ${r.pages}</span></div>
+  const livre=!!r.pages; // récit hors livre (France, cépages, monde) : pas de pages, sources dans r.src
+  box.innerHTML=`<div class="ex-head"><span>Récit du chapitre</span><span class="folio">${livre?`Mille Vignes, p. ${r.pages}`:'Hors livre'}</span></div>
     <h3>${r.chapitre}</h3><p class="lead"><b>La question.</b> ${r.question}</p>${r.fil.map(t=>`<p class="synth">${t}</p>`).join('')}
-    <p class="synth"><b>Ce qu’elle défend.</b> ${r.defend}</p>
+    <p class="synth"><b>${livre?'Ce qu’elle défend.':'À retenir.'}</b> ${r.defend}</p>
     <div class="mnemo"><span class="m-lbl">À dire à un client</span>${r.client}</div>
     <p class="synth"><b>Question fil rouge.</b> ${r.filRouge}</p>
     ${r.prudence?.length?`<details class="cours"><summary>Points de prudence (le livre corrigé)</summary>${r.prudence.map(t=>`<p>${t}</p>`).join('')}</details>`:''}
-    <div class="src">— D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}. Texte reformulé.</div>`;
+    <div class="src">— ${livre?`D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}`:`D’après ${r.src}`}. Texte reformulé.</div>`;
   const actions=el('div','ex-actions'),go=el('button','btn primary','Aux fiches du chapitre'),quit=el('button','btn later','Quitter la lecture');
   go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode('revision');};
   ecouter([r.chapitre,r.question,...r.fil,r.defend,r.filRouge],box,actions);

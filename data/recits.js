@@ -1,5 +1,6 @@
 // Récits de chapitre : le fil de l'argument de Lepeltier, affiché en tête de « Lire le chapitre ».
-// Clé : `chapitre` = titre exact dans data/mille-vignes-sommaire.json. Texte reformulé, vérifié contre le livre
+// Clé : `chapitre` = titre exact dans data/mille-vignes-sommaire.json, ou dans FRANCE_SOMMAIRE (fiches.js) pour un chapitre hors livre :
+// celui-ci n'a pas de `pages` mais un `src` (fiches et sources), et `defend` s'y affiche « À retenir ». Texte reformulé, vérifié contre le livre
 // et docs/erreurs-du-livre.md ; aucun exemple hors du livre ; le lien avec une bouteille de la cave reste « à associer ».
 const RECITS = [
  {
@@ -1056,5 +1057,182 @@ const RECITS = [
     "Le rôle de Morel et de Chapel dans les débuts du vin vivant n’est attesté que par un site de guide de vins nature ; la rencontre des cinq profils est une lecture de l’autrice.",
     "Tout ce chapitre est de l’opinion et de la thèse de Lepeltier (paradoxes, mythologie, révolution du palais) : à dire « pour Lepeltier »."
   ]
-}
+},
+ {
+  chapitre: "Bourgogne : panorama et appellations",
+  question: "Pourquoi la Bourgogne, avec deux cépages seulement, passe-t-elle pour la région la plus compliquée de France ?",
+  fil: [
+   "La Bourgogne couvre environ 30 000 hectares, de l’Yonne à la Saône-et-Loire, en cinq grands ensembles : Chablis et le Grand Auxerrois, la Côte de Nuits, la Côte de Beaune, la Côte chalonnaise et le Mâconnais. On la croit terre de pinot noir ; elle produit pourtant surtout du blanc, environ 60 % des volumes, contre 30 % de rouge et 10 % de crémant.",
+   "<b>Le ciel.</b> Le climat est de transition, entre océan et continent : l’été est court et variable, d’où deux cépages précoces, le chardonnay et le pinot noir. Gel de printemps, grêle, pluie aux vendanges : les millésimes sont très contrastés, et l’irrigation est interdite.",
+   "<b>La pente.</b> La Côte-d’Or est un rebord de faille, fait de calcaires et de marnes du Jurassique. Les meilleurs climats occupent le mi-coteau : le haut est trop maigre et venté, le bas trop riche et gélif. Au-dessus, les Hautes-Côtes, plus fraîches ; au pied, la dénomination Bourgogne Côte d’Or, créée en 2017.",
+   "<b>L’histoire.</b> Les abbayes de Cluny et de Cîteaux deviennent de grandes propriétaires, les ducs Valois font du vin un instrument de prestige et proscrivent le gamay en 1395. Puis la Révolution vend les vignes de l’Église et l’héritage égalitaire les émiette. Emblème du morcellement : le Clos de Vougeot, environ 50 ha, partagé à partir de 1889, compte aujourd’hui plus de 80 propriétaires. D’où le négociant-éleveur, à côté des domaines.",
+   "<b>La hiérarchie.</b> 84 AOC sur quatre étages : 7 régionales, 44 villages et 33 grands crus ; les premiers crus sont des climats classés à l’intérieur des villages. Plus on monte, plus la parcelle est précise et le volume rare : les grands crus pèsent environ 1 % de la production.",
+   "<b>Le chai.</b> Le pinot noir est trié, égrappé ou non, pigé, puis élevé en pièce de 228 litres ; le chardonnay est pressé aussitôt, puis fermenté et élevé en fût sur lies. Depuis le millésime 1996, l’oxydation prématurée des blancs (premox) rappelle que la garde n’est jamais acquise."
+  ],
+  defend: "En Bourgogne, on classe le lieu plutôt que le domaine : le climat, c’est-à-dire la parcelle, le producteur et le millésime comptent autant que le cépage.",
+  client: "« Deux cépages, des milliers de parcelles : plus le nom sur l’étiquette est précis, plus la parcelle est rare. Et comme le temps y est capricieux, l’année et le vigneron comptent autant que l’appellation. »",
+  filRouge: "Isolé au nord, loin de la Côte-d’Or, comment Chablis organise-t-il ses vins de chardonnay ?",
+  src: "fiches 385 à 390 et 672 à 677 du site (WSET D3, Oxford Companion, INAO, BIVB, DRAAF Bourgogne-Franche-Comté, UNESCO)"
+ },
+ {
+  chapitre: "Chablis et Grand Auxerrois",
+  question: "Comment se lit la hiérarchie d’un vignoble entièrement voué au chardonnay ?",
+  fil: [
+   "Chablis, dans l’Yonne, est un vignoble septentrional, exposé au gel. Ici, tout est blanc sec, et de chardonnay seul.",
+   "<b>Quatre étages.</b> Petit chablis, chablis, chablis premier cru (40 climats, regroupables sous 17 noms) et chablis grand cru. Plus on monte, plus le rendement de base baisse : 60 hl/ha pour les deux premiers, 58 pour le premier cru, 54 pour le grand cru.",
+   "<b>Un grand cru unique.</b> Contrairement à la Côte-d’Or, où chaque grand cru est une appellation, le grand cru de Chablis est une seule appellation, limitée à la commune de Chablis. L’étiquette peut la compléter par l’un de sept climats : Blanchot, Bougros, Les Clos, Grenouilles, Preuses, Valmur, Vaudésir.",
+   "<b>Le gel.</b> Vignoble du nord, Chablis redoute les gelées de printemps : on asperge ou on chauffe les parcelles. Le Kimméridgien, marne calcaire du Jurassique, fait sa réputation, même si l’aire n’a pas été tracée par la géologie seule (fiche 213).",
+   "<b>Autour de Chablis.</b> Le Grand Auxerrois garde ses singularités : Irancy, rouge de pinot noir où le césar est admis ; Saint-Bris, seul sauvignon de Bourgogne ; Vézelay, chardonnay devenu appellation à part entière ; et des Bourgogne à dénomination locale, comme Tonnerre, Épineuil, Chitry ou Côtes d’Auxerre."
+  ],
+  defend: "À Chablis, la hiérarchie se lit en quatre mots, petit chablis, chablis, premier cru, grand cru, et le grand cru est une appellation unique déclinée en sept climats.",
+  client: "« Chablis, c’est toujours du chardonnay en blanc sec. Du petit chablis au grand cru, on gagne en précision de lieu, et le rendement autorisé baisse. »",
+  filRouge: "Plus au sud, sur la Côte de Nuits, pourquoi le pinot noir règne-t-il presque seul ?",
+  src: "fiches 391, 392 et 213 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Côte de Nuits",
+  question: "Qu’est-ce qui fait d’un coteau de quelques centaines de mètres de large la capitale du pinot noir ?",
+  fil: [
+   "La Côte de Nuits est la moitié nord de la Côte-d’Or : un coteau étroit, de Marsannay, aux portes de Dijon, jusqu’à Corgoloin, entre les plateaux des Hautes-Côtes et la plaine. Le sous-sol y est plus calcaire qu’en Côte de Beaune, des combes y canalisent des vents frais, et le pinot noir règne : les blancs y sont rares.",
+   "<b>Les villages.</b> Du nord au sud : Marsannay, Fixin, Gevrey-Chambertin aux rouges puissants, Morey-Saint-Denis, Chambolle-Musigny aux rouges fins, Vougeot, Vosne-Romanée aux tanins veloutés, puis Nuits-Saint-Georges aux rouges robustes, qui n’a aucun grand cru.",
+   "<b>Les grands crus.</b> 24 des 33 grands crus de Bourgogne sont ici : 9 à Gevrey, 8 à Vosne et Flagey-Échezeaux, 4 à Morey, 2 à Chambolle, 1 à Vougeot. Ce sont des rouges ; seul le Musigny existe aussi, très rarement, en blanc.",
+   "<b>Les monopoles.</b> Un monopole est un climat qui n’a qu’un propriétaire : c’est un fait de propriété, pas un échelon de classement. Le Domaine de la Romanée-Conti possède ainsi en entier Romanée-Conti et La Tâche ; à Vosne, La Romanée, moins d’un hectare, est la plus petite AOC de France."
+  ],
+  defend: "La Côte de Nuits concentre l’élite du pinot noir : près de trois grands crus bourguignons sur quatre, et un style propre à chaque village.",
+  client: "« Gevrey pour la puissance, Chambolle pour la finesse, Vosne pour le velours : en Côte de Nuits, chaque village a sa signature. »",
+  filRouge: "Juste au sud, pourquoi la Côte de Beaune fait-elle à la fois les plus grands blancs et des rouges comme Pommard et Volnay ?",
+  src: "fiches 393 à 395 et 673 du site (INAO, cahiers des charges et fiches produit ; WSET D3 ; Oxford Companion ; Garcia 2011)"
+ },
+ {
+  chapitre: "Côte de Beaune",
+  question: "Comment une même côte peut-elle donner Pommard en rouge et Montrachet en blanc ?",
+  fil: [
+   "La Côte de Beaune prolonge la Côte de Nuits vers le sud, sur environ 25 km, de Ladoix-Serrigny aux Maranges. Les marnes y tiennent plus de place, les sols sont plus profonds, et presque tous les villages font les deux couleurs.",
+   "<b>Rouges et blancs.</b> Au nord, Aloxe-Corton, Pernand-Vergelesses, Savigny-lès-Beaune ; juste au sud de Beaune, Pommard aux rouges colorés et Volnay aux rouges fins, tous deux strictement rouges. Plus au sud, la réputation des blancs : Meursault, Puligny-Montrachet et Chassagne-Montrachet ; puis Saint-Aubin, Santenay et Maranges, en rouge comme en blanc.",
+   "<b>Huit grands crus sur deux sites.</b> La colline de Corton porte Corton, en rouge comme en blanc, Corton-Charlemagne et Charlemagne, en blanc. Autour de Puligny et de Chassagne, cinq grands crus blancs : Montrachet, Bâtard-Montrachet, Chevalier-Montrachet, Bienvenues-Bâtard-Montrachet et Criots-Bâtard-Montrachet. Beaune, Pommard, Volnay et Meursault n’en ont aucun.",
+   "<b>Beaune, capitale du commerce.</b> L’Hôtel-Dieu, fondé en 1443 par Nicolas Rolin et Guigone de Salins, vit de dons de vignes ; ses vins sont vendus aux enchères chaque troisième dimanche de novembre, au cœur des Trois Glorieuses."
+  ],
+  defend: "La Côte de Beaune est la côte des deux couleurs : les grands blancs au sud, des rouges réputés à Pommard et à Volnay, et Corton, qui n’est pas qu’un rouge.",
+  client: "« Pour un grand blanc de Bourgogne, regardez vers Meursault, Puligny et Chassagne ; pour un rouge fin, vers Volnay. »",
+  filRouge: "Au sud de la Côte-d’Or, comment la Côte chalonnaise organise-t-elle sa hiérarchie sans aucun grand cru ?",
+  src: "fiches 396 à 398 et 673 du site (INAO ; WSET D3 ; Oxford Companion ; UNESCO ; Hospices de Beaune)"
+ },
+ {
+  chapitre: "Côte chalonnaise",
+  question: "Que reste-t-il de la hiérarchie bourguignonne quand il n’y a plus de grand cru ?",
+  fil: [
+   "La Côte chalonnaise prolonge la Côte-d’Or vers le sud. On y compte cinq appellations communales, et la hiérarchie s’y arrête au premier cru.",
+   "<b>Du nord au sud.</b> Bouzeron, seule appellation communale de Bourgogne bâtie sur l’aligoté ; Rully, Mercurey et Givry, en blanc comme en rouge ; Montagny, blanc de chardonnay seul.",
+   "<b>Les premiers crus.</b> Leur nombre grimpe vers le sud : 23 à Rully, 32 à Mercurey, 38 à Givry, 49 à Montagny.",
+   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, est réservé au rouge par le cahier des charges homologué fin 2023."
+  ],
+  defend: "La Côte chalonnaise offre la hiérarchie bourguignonne sans son sommet : des villages et des premiers crus, en rouge comme en blanc, et l’aligoté de Bouzeron.",
+  client: "« Mercurey ou Givry pour un rouge, Rully ou Montagny pour un blanc, et Bouzeron pour découvrir l’aligoté. »",
+  filRouge: "Plus au sud encore, que devient le chardonnay dans le Mâconnais ?",
+  src: "fiche 399 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
+ },
+ {
+  chapitre: "Mâconnais",
+  question: "Comment le Mâconnais, terre de chardonnay, a-t-il gagné ses premiers crus ?",
+  fil: [
+   "Le Mâconnais est la partie la plus méridionale de la Bourgogne, et d’abord une terre de chardonnay.",
+   "<b>Mâcon.</b> L’AOC admet trois couleurs : le blanc de chardonnay, le rouge et le rosé de gamay et de pinot noir. Avec un nom de commune (Mâcon-Lugny, par exemple), le rouge n’est plus qu’au gamay, et la mention Villages est réservée au blanc.",
+   "<b>Les communales.</b> Viré-Clessé, qui a remplacé en 1999 les anciens Mâcon-Viré et Mâcon-Clessé, et Saint-Véran, créé en 1971 de part et d’autre de Pouilly-Fuissé : deux blancs de chardonnay.",
+   "<b>Les Pouilly.</b> Sous les roches calcaires de Solutré et de Vergisson, Pouilly-Fuissé devient en 2020 la première appellation du Mâconnais à obtenir des premiers crus : 22 climats. Pouilly-Loché et Pouilly-Vinzelles suivent, avec des cahiers des charges homologués en 2024."
+  ],
+  defend: "Le Mâconnais est la Bourgogne du chardonnay, et sa hiérarchie progresse encore : des premiers crus à Pouilly-Fuissé depuis 2020.",
+  client: "« Mâcon-Villages ou Saint-Véran pour entrer dans le Mâconnais, Pouilly-Fuissé et ses premiers crus pour monter d’un cran. »",
+  filRouge: "Juste au sud, pourquoi le gamay, proscrit en Bourgogne en 1395, est-il roi en Beaujolais ?",
+  src: "fiches 400, 401 et 672 du site (INAO, cahiers des charges et communiqués ; Decanter ; Oxford Companion)"
+ },
+ {
+  chapitre: "Bordeaux : panorama et appellations",
+  question: "Pourquoi Bordeaux, à la différence de la Bourgogne, assemble-t-il ses cépages et classe-t-il des châteaux plutôt que des parcelles ?",
+  fil: [
+   "Bordeaux est d’abord un port. En 1152, le mariage d’Aliénor d’Aquitaine et d’Henri Plantagenêt lance les échanges avec l’Angleterre, qui baptise « claret » ces vins clairs. Au XVIIe siècle, des ingénieurs hollandais assèchent les marais du Médoc, et des marchands étrangers installés aux Chartrons bâtissent la réputation des crus.",
+   "<b>Le ciel.</b> Le climat est océanique et modéré : l’Atlantique et le Gulf Stream, l’estuaire de la Gironde et la forêt des Landes adoucissent tout. Mais la pluie est irrégulière : à la floraison, elle fait couler le merlot ; aux vendanges, elle dilue et fait pourrir.",
+   "<b>Deux rives.</b> À l’ouest, la rive gauche, Médoc et Graves, repose sur des croupes de graves qui drainent vite : c’est la terre du cabernet-sauvignon, cépage tardif. À l’est, la rive droite, plus argileuse et plus fraîche, est le pays du merlot, plus précoce. Entre les deux fleuves, l’Entre-deux-Mers fait surtout du merlot et des blancs secs.",
+   "<b>L’assemblage.</b> Les cépages se complètent, la chair du merlot remplissant la charpente du cabernet, et ils ne craignent pas les mêmes aléas : assembler, c’est aussi s’assurer contre l’année.",
+   "<b>Le chai.</b> Dans les châteaux de qualité, le vin fermente en cuve, puis s’élève environ un an et demi à deux ans en barrique de 225 litres. L’assemblage de l’hiver sépare le grand vin du second vin.",
+   "<b>Les classements.</b> Bordeaux classe des châteaux, région par région : 1855 pour le Médoc et Sauternes, les Graves depuis 1959, Saint-Émilion révisé environ tous les dix ans, les crus bourgeois ; Pomerol n’a jamais été classé.",
+   "<b>Aujourd’hui.</b> Le vignoble se réduit : environ 91 500 ha en Gironde en 2025, après quelque 21 000 ha arrachés depuis 2023, tandis que les blancs, les rosés et les crémants progressent."
+  ],
+  defend: "Bordeaux s’explique par le commerce et l’assemblage : un port qui a fait naître ses grands crus, des cépages qui se complètent, et des châteaux classés plutôt que des parcelles.",
+  client: "« À Bordeaux, on assemble : cabernet-sauvignon sur la rive gauche pour la structure, merlot sur la rive droite pour la rondeur. Et c’est le nom du château qui compte, plus que celui de la parcelle. »",
+  filRouge: "Sur la rive gauche, comment le Médoc s’organise-t-il entre deux appellations régionales et six communales ?",
+  src: "fiches 411 à 413 et 678 à 683 du site (WSET D3, Oxford Companion, INAO, Agreste Nouvelle-Aquitaine, Mille Vignes p. 160 et 173)"
+ },
+ {
+  chapitre: "Médoc et Haut-Médoc",
+  question: "Comment une presqu’île de marais est-elle devenue le berceau des crus classés de 1855 ?",
+  fil: [
+   "Le Médoc est une presqu’île de la rive gauche de la Gironde, longtemps marécageuse, asséchée au XVIIe siècle. Des croupes de graves, buttes de graviers déposés par les rivières, y alternent avec des sols argilo-calcaires.",
+   "<b>Deux régionales.</b> Reconnues en 1936, l’AOC Médoc couvre le nord et l’AOC Haut-Médoc le sud, vers Bordeaux, malgré son nom. Ce sont des rouges où le cabernet-sauvignon est souvent majoritaire, avec le merlot, le cabernet franc et le petit verdot ; depuis 2025, l’AOC Médoc admet aussi des blancs secs.",
+   "<b>Six communales.</b> Margaux, Saint-Julien, Pauillac et Saint-Estèphe concentrent les crus classés de 1855 ; Listrac-Médoc et Moulis-en-Médoc, plus discrètes, n’en ont aucun.",
+   "<b>Les styles.</b> Margaux, la plus riche en crus classés (21), allie finesse et garde ; Saint-Julien (11 crus classés) l’harmonie ; Pauillac, aux trois premiers crus (Lafite-Rothschild, Latour, Mouton-Rothschild), la puissance ; Saint-Estèphe, la plus au nord, des vins corsés qui demandent du temps.",
+   "<b>Deux classements.</b> Celui de 1855, fondé sur les prix, n’a presque pas bougé ; celui des crus bourgeois, en trois niveaux, se rejoue tous les cinq ans, avec dégustation à l’aveugle."
+  ],
+  defend: "Le Médoc est la terre du cabernet-sauvignon sur graves, et sa hiérarchie se lit en deux régionales, six communales et deux classements, l’un figé, l’autre révisable.",
+  client: "« Margaux pour la finesse, Pauillac pour la puissance, Saint-Estèphe pour la charpente : sur la rive gauche, chaque commune a son caractère. »",
+  filRouge: "Au sud de Bordeaux, pourquoi les Graves font-elles aussi bien le rouge que le blanc sec ?",
+  src: "fiches 421 à 424, 3 et 679 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855 ; Alliance des Crus Bourgeois)"
+ },
+ {
+  chapitre: "Graves et Pessac-Léognan",
+  question: "Pourquoi la région qui a donné son nom à un sol a-t-elle vu naître une appellation à part, Pessac-Léognan ?",
+  fil: [
+   "Les Graves s’étirent sur la rive gauche de la Garonne, de Bordeaux à Langon, sur environ 55 km, bordées à l’ouest par la forêt de pins. Leur nom vient de leurs sols pauvres de graviers et de galets, qui drainent bien.",
+   "<b>Deux couleurs.</b> L’AOC Graves, reconnue en 1937, fait des rouges, menés par le cabernet-sauvignon et le merlot, et des blancs secs de sémillon, de sauvignon et de muscadelle ; en 2025, l’ancienne AOC Graves supérieures, pour les blancs moelleux, y a été absorbée.",
+   "<b>Pessac-Léognan.</b> En 1987, les producteurs du nord, aux portes de Bordeaux, obtiennent leur propre appellation, sur dix communes, en rouge et en blanc sec.",
+   "<b>Le classement des Graves.</b> Établi à la fin des années 1950, il compte 16 châteaux, tous en Pessac-Léognan, classés en rouge, en blanc ou dans les deux couleurs. Haut-Brion, seul cru de Graves classé en 1855, y figure en rouge."
+  ],
+  defend: "Les Graves sont la région bordelaise des grands rouges comme des grands blancs secs, et leur élite s’est regroupée en Pessac-Léognan.",
+  client: "« Pour un grand bordeaux blanc sec, pensez Pessac-Léognan : ses châteaux sont classés en rouge comme en blanc. »",
+  filRouge: "Un peu plus au sud, au bord du Ciron, comment naît un liquoreux comme le sauternes ?",
+  src: "fiches 425, 426 et 3 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
+ },
+ {
+  chapitre: "Sauternais et liquoreux",
+  question: "Comment une rivière froide et un champignon font-ils l’un des grands vins doux du monde ?",
+  fil: [
+   "L’AOC sauternes couvre cinq communes de la rive gauche de la Garonne : Sauternes, Barsac, Bommes, Fargues et Preignac. Le Ciron, petit affluent froid, y entretient des brumes matinales qui, suivies d’après-midi ensoleillés, favorisent la pourriture noble.",
+   "<b>La vendange.</b> Le champignon flétrit les grains et concentre leurs sucres. Les raisins sont cueillis à la main, par tries successives, en plusieurs passages.",
+   "<b>Les cépages.</b> Le sémillon domine, plus sensible à la pourriture noble ; sauvignon, sauvignon gris et muscadelle complètent. Barsac peut se vendre sous son nom ou sous celui de Sauternes.",
+   "<b>Le classement.</b> En 1855, Yquem est seul « premier cru supérieur », au-dessus des premiers et des deuxièmes crus ; partages de propriétés aidant, on compte aujourd’hui 27 crus classés.",
+   "<b>Les voisins.</b> Cérons, sur la même rive, et, face à Sauternes, Loupiac, Sainte-Croix-du-Mont et Cadillac font aussi des liquoreux, beaucoup plus confidentiels."
+  ],
+  defend: "Le sauternes est un vin de risque : il dépend de brumes, de soleil et de tries répétées, et le sémillon en est le cœur.",
+  client: "« Le sauternes vient de raisins touchés par une pourriture noble, cueillis à la main en plusieurs passages, au fil du botrytis : c’est un vin de patience et de risque. »",
+  filRouge: "De l’autre côté de la Dordogne, comment le merlot règne-t-il sur Saint-Émilion et Pomerol ?",
+  src: "fiches 427, 428 et 680 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855)"
+ },
+ {
+  chapitre: "Libournais : Saint-Émilion, Pomerol et satellites",
+  question: "Comment la rive droite a-t-elle fait du merlot sa signature ?",
+  fil: [
+   "Saint-Émilion s’étend sur la rive droite de la Dordogne, autour de sa cité médiévale : neuf communes et environ 5 400 à 5 500 ha. Un plateau calcaire domine la ville, prolongé par des coteaux argilo-calcaires, des graves vers Libourne et une plaine sableuse près du fleuve. Le merlot y domine, avec le cabernet franc.",
+   "<b>Un paysage classé.</b> La juridiction de Saint-Émilion est inscrite à l’UNESCO depuis 1999 comme paysage culturel viticole. Depuis 1984, il ne reste que deux appellations : Saint-Émilion et Saint-Émilion grand cru.",
+   "<b>Un classement révisable.</b> Créé en 1955 et révisé environ tous les dix ans par l’INAO, il compte dans son édition 2022 14 premiers grands crus classés et 71 grands crus classés. Ausone, Cheval Blanc puis Angélus s’en sont retirés.",
+   "<b>Pomerol.</b> Petite appellation d’environ 800 ha, sur argiles, graves et « crasse de fer », où le merlot règne ; Petrus en est le nom le plus célèbre, et aucun classement n’y existe.",
+   "<b>Les voisins.</b> Lalande-de-Pomerol au nord, Fronsac et Canon-Fronsac à l’ouest, et les quatre satellites de Saint-Émilion (Montagne, Lussac, Puisseguin, Saint-Georges) ne font que du rouge."
+  ],
+  defend: "La rive droite est le pays du merlot, sur argiles et calcaire, avec deux visages : Saint-Émilion, classé et révisé, et Pomerol, jamais classé.",
+  client: "« Saint-Émilion et Pomerol, c’est le merlot : des vins plus ronds que ceux du Médoc, où domine le cabernet. »",
+  filRouge: "Entre la Dordogne et la Garonne, que produit le grand plateau de l’Entre-deux-Mers ?",
+  src: "fiches 429 à 431 et 679 du site (INAO, cahiers des charges et classement ; UNESCO ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Entre-deux-Mers, Côtes et Bordeaux régionaux",
+  question: "Où se fait l’essentiel du bordeaux, celui qu’on boit au quotidien ?",
+  fil: [
+   "L’Entre-deux-Mers est le plateau compris entre la Dordogne et la Garonne : 133 communes de Gironde. Son AOC, reconnue en 1937, a longtemps été réservée aux blancs secs de sauvignon, de sémillon et de muscadelle ; depuis 2023, elle admet aussi des rouges, sous des règles strictes.",
+   "<b>Les Côtes de Bordeaux.</b> Créée en 2009, l’AOC réunit cinq terroirs dont le nom peut compléter l’appellation : Blaye, Cadillac, Castillon, Francs et Sainte-Foy. La base est rouge ; le blanc n’existe que sous certaines dénominations. Côtes de Bourg reste une appellation distincte.",
+   "<b>Les régionales.</b> Bordeaux, reconnu en 1936, couvre le rouge, le rosé, le clairet et le blanc ; Bordeaux supérieur fait du rouge et du blanc ; le crémant de Bordeaux, blanc ou rosé, date de 1990.",
+   "<b>Le cœur du volume.</b> Ces appellations régionales portent l’essentiel de la production, et ce sont elles que la crise touche le plus : on y arrache des vignes depuis 2023, et l’on y teste six cépages d’adaptation au climat depuis 2021."
+  ],
+  defend: "Le bordeaux du quotidien vient de l’Entre-deux-Mers, des Côtes et des appellations régionales : c’est là que la région se réinvente, entre arrachages, blancs, rosés et crémants.",
+  client: "« Un Côtes de Bordeaux ou un Bordeaux supérieur, c’est le bordeaux du quotidien, bien moins cher que les crus classés. »",
+  filRouge: "Plus au sud-est, comment le Sud-Ouest garde-t-il ses cépages à lui, du tannat au gros manseng ?",
+  src: "fiches 432, 433, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
+ }
 ];

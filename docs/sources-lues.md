@@ -196,3 +196,9 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Dépôt de sources : WSET D3 (2024, ch. 3 Burgundy, lu en entier) ; Oxford Companion 5e (« Burgundy », « Côte d’Or », « Hautes-Côtes », « premature oxidation », « pièce », « toast », « Bordeaux » pour la barrique) ; WSET Understanding Wines (Hautes-Côtes) ; WSET L3 (manuel non officiel) ; Atlas du vin ; UNESCO (Climats) ; J.-P. Garcia (EUD, 2011).
 - Web : INAO, cahier des charges AOC Bourgogne (projet après le comité national du 18/06/2026, lu via extranet) ; DREAL Bourgogne-Franche-Comté, Les Climats de Bourgogne ; iDealwine (07/12/2017) ; Decanter (sponsorisé, 2021) ; Hérodote.net (Cîteaux) ; Beaune Tourisme (Cluny).
 - Relecture indépendante (opus) : 6 corrections appliquées (malolactique et bois neuf rouges/blancs, chemin de fer à source unique, trois dénominations, lien AOC/phylloxéra, détails du cours).
+
+## Cours de région — Bordeaux (26/10/2026, cours de la fiche 411, fiches 678-683, récits)
+- Dépôt de sources : WSET D3 (2024, ch. 2 Bordeaux, lu en entier) ; Oxford Companion 5e (« Bordeaux » : histoire, géographie, climat, cépages, viticulture, vinification) ; Mille Vignes p. 160 et 173.
+- Web : Agreste Nouvelle-Aquitaine, Essentiel n° 80 (juin 2026) ; INAO, fiche AOC Bordeaux (1152, claret, 1936) ; Pleinchamp (11/08/2025).
+- Récits hors livre (12, Bourgogne et Bordeaux) : écrits à partir des fiches vérifiées du site.
+- Relecture indépendante (opus) : 16 corrections (gel de 1956 en hiver, oïdium 1852, recopie traduite de l’Oxford reformulée, chiffres de surface non comparables précisés, faits de récits absents des fiches retirés).
