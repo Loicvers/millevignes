@@ -207,3 +207,9 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Dépôt de sources : WSET D3 (2024, ch. 7 en entier) ; Oxford Companion 5e (« Rhône », « Côte Rôtie ») ; Mille Vignes p. 173 et 184.
 - Web : Inter Rhône, Chiffres clés 2025 (livret de mai 2026 : surfaces, couleurs, export, cépages).
 - Relecture indépendante (opus) : 14 corrections (orientation des coteaux, rive gauche Hermitage/Crozes, chiffres Inter Rhône attribués, cinsaut, co-fermentation limitée à Côte-Rôtie, styles de récits absents des fiches retirés).
+
+## Cours de région — Val de Loire (26/10/2026, cours de la fiche 409, fiches 690-695, 5 récits)
+- Dépôt de sources : WSET D3 (2024, ch. 6 en entier) ; Oxford Companion 5e (« Loire », « Anjou », « Sancerre ») ; Mille Vignes p. 137, 163 et 173 ; Jourjon, Morlat et Seguin (JIS Vigne Vin, 1991).
+- Web : InterLoire, rapport d’activité (juin 2025) et communiqué export 2025 (mai 2026).
+- Relecture indépendante (opus) : corrections appliquées (date du grand cru de Quarts de Chaume 2011/2019 attribuée, Quincy et sauvignon gris, recopie de Lepeltier reformulée, chiffres InterLoire et dates historiques à source unique attribués, superlatif de l’Oxford attribué).
+- À vérifier un jour : le WSET D3 compte six dénominations pour l’AOC Touraine, la fiche 455 en compte cinq.

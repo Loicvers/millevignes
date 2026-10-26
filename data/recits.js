@@ -1296,5 +1296,80 @@ const RECITS = [
   client: "« Un côtes-du-rhône villages, surtout avec un nom de village, c’est déjà plus exigeant qu’un côtes-du-rhône simple : rendement plus bas et assemblage plus encadré. »",
   filRouge: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
   src: "fiches 444 à 446 et 689 du site (INAO, cahiers des charges ; Inter Rhône ; Oxford Companion ; WSET D3)"
+ },
+ {
+  chapitre: "Val de Loire : panorama et appellations",
+  question: "Comment un seul fleuve peut-il réunir des vins aussi différents qu’un muscadet, un quarts-de-chaume et un sancerre ?",
+  fil: [
+   "La Loire n’est pas un vignoble mais une suite de vignobles le long du fleuve, du Pays nantais à l’Atlantique jusqu’au Centre-Loire. En la remontant, le climat passe de maritime à continental, et la roche change de monde.",
+   "<b>Deux mondes géologiques.</b> En aval, le Massif armoricain : gneiss, granite et gabbro au Pays nantais, schistes de l’Anjou noir. En amont, le Bassin parisien : la craie tendre du tuffeau à Saumur et en Touraine, où l’on creuse les caves et dont sont bâtis les châteaux ; puis les marnes, les calcaires et le silex de Sancerre et de Pouilly.",
+   "<b>Trois familles de cépages.</b> Le melon fait le muscadet ; le chenin et le cabernet franc règnent sur l’Anjou, Saumur et la Touraine ; le sauvignon et le pinot noir sur le Centre-Loire. Autour, une diversité rare : côt, gamay, grolleau, pineau d’Aunis, romorantin.",
+   "<b>Tous les styles.</b> Blancs très secs et liquoreux de tries, rosés secs ou tendres, rouges légers ou de garde, bulles de toutes méthodes : une variété que l’Oxford Companion juge sans égale en France.",
+   "<b>Un fleuve de commerce.</b> Avant le chemin de fer, la Loire portait le vin vers Paris, les Flandres et l’Angleterre. Le phylloxéra a durement frappé, et Sancerre s’est replanté en sauvignon.",
+   "<b>Aujourd’hui.</b> Une région de blancs et de rosés, où les bulles, menées par le crémant de Loire, portent la croissance de l’export."
+  ],
+  defend: "La Loire se comprend en remontant le fleuve : un climat de plus en plus continental, deux mondes géologiques et trois familles de cépages, pour une variété de styles exceptionnelle.",
+  client: "« Muscadet à Nantes, chenin et cabernet franc en Anjou et en Touraine, sauvignon à Sancerre : la Loire, c’est la fraîcheur, du blanc sec au liquoreux et aux bulles. »",
+  filRouge: "À l’embouchure, comment le muscadet s’est-il donné des crus ?",
+  src: "fiches 409, 410 et 690 à 695 du site (WSET D3, Oxford Companion, InterLoire, Mille Vignes p. 137, 163 et 173)"
+ },
+ {
+  chapitre: "Pays nantais",
+  question: "Que signifient vraiment « muscadet », « sur lie » et « cru communal » sur une étiquette ?",
+  fil: [
+   "Autour de Nantes, près de l’embouchure, le climat est maritime et humide, et le sous-sol appartient au Massif armoricain : gneiss, granite, gabbro.",
+   "<b>Un vin, pas un cépage.</b> Le muscadet vient du melon, seul cépage des trois appellations sous-régionales ; le Muscadet régional tolère un peu de chardonnay. Quatre AOC : Muscadet, Muscadet Sèvre et Maine, cœur du vignoble, Muscadet Coteaux de la Loire et Muscadet Côtes de Grandlieu.",
+   "<b>Sur lie.</b> La mention exige que le vin reste sur ses lies fines jusqu’au printemps qui suit la récolte, puis soit mis en bouteille sans soutirage : il y gagne en rondeur.",
+   "<b>Les crus communaux.</b> Clisson, Gorges, Le Pallet et quatre autres noms précisent l’origine dans le Sèvre et Maine, avec un rendement plus bas et un élevage sur lies bien plus long ; d’autres sont en cours de reconnaissance.",
+   "<b>Le Gros Plant.</b> Autre blanc sec et vif de la même zone, il repose sur la folle blanche."
+  ],
+  defend: "Le muscadet est un vin de melon, que l’élevage sur lies arrondit et que les crus communaux font monter en précision et en garde.",
+  client: "« Le muscadet, c’est le vin ; le melon, c’est le cépage ; le sur lie, c’est un vin resté sur ses levures, plus rond. Et un cru communal, c’est un muscadet de village, gardé longtemps sur ses lies. »",
+  filRouge: "En remontant vers Angers, comment l’Anjou passe-t-il du schiste au tuffeau, et du sec au liquoreux ?",
+  src: "fiches 447, 448, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 137)"
+ },
+ {
+  chapitre: "Anjou-Saumur",
+  question: "Comment un même secteur peut-il produire un chenin sec sur schiste, un liquoreux de tries et un rouge de cabernet franc sur tuffeau ?",
+  fil: [
+   "L’Anjou-Saumur est la charnière de la Loire : à l’ouest, les schistes de l’Anjou noir, sur le Massif armoricain ; à l’est, autour de Saumur, la craie tendre du tuffeau. Le chenin et le cabernet franc y dominent.",
+   "<b>Savennières.</b> Sur les schistes de la rive droite, au sud-ouest d’Angers, un chenin surtout sec ; deux lieux-dits ont leur propre AOC, Roche aux Moines et Coulée de Serrant, à très faible rendement.",
+   "<b>Les liquoreux.</b> Coteaux du Layon, Chaume, Bonnezeaux, Quarts de Chaume : des chenins surmûris, récoltés par tries successives. Plus l’aire se resserre, plus le rendement baisse et l’alcool naturel minimal monte.",
+   "<b>Saumur.</b> Sur le tuffeau, où l’on creuse aussi les caves : Saumur-Champigny, rouge de cabernet franc, et l’AOC Saumur, en blanc, rouge et bulles.",
+   "<b>La gamme angevine.</b> Anjou rouge, Anjou-Villages et Anjou Brissac pour les rouges ; Cabernet d’Anjou et Rosé d’Anjou, rosés tendres qui gardent du sucre ; Crémant de Loire pour les bulles."
+  ],
+  defend: "L’Anjou-Saumur rassemble presque tous les styles de la Loire autour de deux cépages, le chenin et le cabernet franc, sur deux roches, le schiste et le tuffeau.",
+  client: "« En Anjou, le chenin peut être sec, à Savennières, ou liquoreux, dans le Layon. Et attention : un Cabernet ou un Rosé d’Anjou n’est pas un rosé sec. »",
+  filRouge: "Juste en amont, comment la Touraine joue-t-elle avec le chenin de Vouvray et le cabernet franc de Chinon ?",
+  src: "fiches 449 à 452, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 163)"
+ },
+ {
+  chapitre: "Touraine",
+  question: "Que trouve-t-on derrière le nom de Touraine, entre le vouvray et le chinon ?",
+  fil: [
+   "La Touraine, autour de Tours, a un climat plus continental que l’Anjou, et ses coteaux reposent souvent sur le tuffeau, où l’on creuse les caves.",
+   "<b>Le chenin.</b> Vouvray et Montlouis-sur-Loire, deux voisins en amont de Tours : des chenins tranquilles, mousseux ou pétillants, du sec au doux ; on lit la mention sur l’étiquette.",
+   "<b>Le cabernet franc.</b> Chinon, Bourgueil et Saint-Nicolas-de-Bourgueil font des rouges de cabernet franc, avec un peu de cabernet sauvignon possible ; seul Chinon ajoute un blanc de chenin. Les sols vont du tuffeau aux graviers et aux sables.",
+   "<b>L’AOC Touraine.</b> Sur 143 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
+   "<b>Autour.</b> Cour-Cheverny, au romorantin seul, Jasnières et les Coteaux du Loir gardent des cépages et des styles à part."
+  ],
+  defend: "La Touraine est la Loire des contrastes : le chenin de Vouvray et de Montlouis, le cabernet franc de Chinon et de Bourgueil, et le sauvignon de l’AOC Touraine.",
+  client: "« Un vouvray peut être sec ou moelleux : regardez la mention. Pour un rouge, Chinon et Bourgueil, c’est le cabernet franc de Touraine. »",
+  filRouge: "Plus en amont encore, pourquoi le sauvignon de Sancerre et de Pouilly a-t-il conquis le monde ?",
+  src: "fiches 453 à 455, 690 et 692 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Centre-Loire",
+  question: "Qu’est-ce qui fait la différence entre deux sauvignons de Sancerre, ou entre Sancerre et Pouilly ?",
+  fil: [
+   "Le Centre-Loire a un climat continental et sa propre interprofession. Le sauvignon blanc y règne, avec le pinot noir pour les rouges et les rosés.",
+   "<b>Sancerre.</b> Quatorze communes du Cher ; un blanc de sauvignon seul, un rouge et un rosé de pinot noir seul. Le terroir se lit en trois sols : terres blanches (marnes kimméridgiennes), caillottes (calcaires) et silex. Historiquement planté de pinot noir, Sancerre s’est replanté en sauvignon après le phylloxéra.",
+   "<b>Les deux Pouilly.</b> Autour de Pouilly-sur-Loire, dans la Nièvre : le Pouilly-Fumé, de sauvignon seul, sur les mêmes familles de sols, et le Pouilly-sur-Loire, de chasselas, plus rare. À ne pas confondre avec le Pouilly-Fuissé mâconnais.",
+   "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant."
+  ],
+  defend: "Le Centre-Loire est la terre du sauvignon, et à Sancerre comme à Pouilly le sol, terres blanches, caillottes ou silex, change le vin d’une même colline.",
+  client: "« Sancerre n’est pas qu’un blanc : il existe aussi en rouge et en rosé de pinot noir. Et le Pouilly-Fumé, c’est du sauvignon de Loire, rien à voir avec le Pouilly-Fuissé de Bourgogne. »",
+  filRouge: "Plus au sud-ouest, comment Bordeaux, à l’inverse de la Loire, a-t-il fait de l’assemblage sa signature ?",
+  src: "fiches 456 à 458, 690 et 694 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  }
 ];
