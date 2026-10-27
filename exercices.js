@@ -26,8 +26,11 @@ function schemaExercise(f) {
 // Tire une étiquette à masquer : renvoie le SVG masqué, les options et l'index de la bonne réponse.
 function maskSchema(svg, labels, pick = shuffle(labels)) {
   const target = pick[0], options = shuffle(pick.slice(0, 4));
-  const esc = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return { svg: svg.replace(new RegExp(`(<text[^>]*font-weight="bold"[^>]*>)${esc}(</text>)`), "$1<tspan font-size=\"15\">?</tspan>$2"), options, answer: options.indexOf(target) };
+  // Les autres options sont masquées aussi (« … ») : sinon on répond par élimination en lisant le dessin.
+  const mask = (t, by) => { const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); svg = svg.replace(new RegExp(`(<text[^>]*font-weight="bold"[^>]*>)${esc}(</text>)`), `$1${by}$2`); };
+  options.filter(o => o !== target).forEach(o => mask(o, "<tspan opacity=\"0.5\">…</tspan>"));
+  mask(target, "<tspan font-size=\"15\">?</tspan>");
+  return { svg, options, answer: options.indexOf(target) };
 }
 
 // Lexique : fiches où le terme apparaît (titre, synthèse, astuce), pluriel compris. « ban (de vendanges) » → « ban ».

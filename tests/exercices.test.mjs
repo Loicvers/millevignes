@@ -80,6 +80,7 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
     const target = m.options[m.answer];
     assert.equal((m.svg.match(/font-weight="bold"[^>]*><tspan font-size="15">\?<\/tspan><\/text>/g) || []).length, 1, ex.id);
     assert.ok(!m.svg.includes(`>${target}</text>`), ex.id + " : l'étiquette masquée reste visible");
+    for (const o of m.options) assert.ok(!m.svg.includes(`>${o}</text>`), ex.id + " : option lisible sur le dessin (réponse par élimination)");
     assert.equal(grade({ type: "label_schema", payload: m }, m.answer), true);
   }
 });
