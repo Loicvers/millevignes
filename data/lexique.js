@@ -1156,5 +1156,44 @@ const LEXIQUE = [
   ],
   "status": "needs_review",
   "note": "À rapprocher de l’audit : le rancio sec figure déjà dans les fiches Roussillon ; vérifier le numéro exact des fiches avant d’ajouter les renvois. Définition d’Oxford ; le détail « sec catalan » est dans le manuel RVF Academy (p. 99)."
+ },
+ {
+  "terme": "bouturage",
+  "def": "Multiplication végétative par bouture : un fragment de sarment détaché du pied-mère est planté en terre, où il prend racine. Le nouveau pied est une copie génétique du pied-mère.",
+  "etym": "de bouture, dérivé de bouter, « pousser » (au XVe siècle, la bouture est « ce qui pousse »).",
+  "declic": "Bouter = pousser : on plante un bout de sarment coupé, il pousse tout seul.",
+  "src": [
+   "Académie française, 9e éd. (bouture)",
+   "fiche 34"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "marcottage",
+  "def": "Multiplication végétative par marcotte : un rameau encore relié à la plante mère est enfoui dans la terre, y forme des racines, puis il est séparé pour vivre seul. À la différence de la bouture, il reste nourri par le pied-mère tant qu’il s’enracine.",
+  "etym": "de marcotte (1532, « marcotte de vigne »), diminutif tiré du latin mergus, de mergere, « plonger » : on plonge le rameau en terre.",
+  "declic": "Mergere = plonger : on plonge le rameau en terre sans couper le cordon.",
+  "src": [
+   "TLFi via lalanguefrancaise.com (marcotte)",
+   "OQLF, Grand dictionnaire terminologique (marcotte)",
+   "fiche 34"
+  ],
+  "status": "verified",
+  "note": ""
+ },
+ {
+  "terme": "provignage",
+  "def": "Marcottage propre à la vigne : on couche en terre un sarment, voire le cep entier, pour obtenir une nouvelle souche, le provin. Méthode ancienne, déjà décrite par Columelle, très pratiquée avant le phylloxéra, surtout en terrain sec.",
+  "etym": "de provigner (XVIIe s.) et provin, du latin propago, « provin, rejeton ».",
+  "declic": "Propago = rejeton : le provin, c’est la vigne qui fait ses petits en se couchant.",
+  "src": [
+   "Académie française, 9e éd. (provignage)",
+   "Le Robert (provignage)",
+   "Larousse (provin)",
+   "Wein-Plus, glossaire (marcottage)"
+  ],
+  "status": "verified",
+  "note": "Columelle et usage avant le phylloxéra : Wein-Plus seul."
  }
 ];
