@@ -1101,7 +1101,7 @@ const RECITS = [
   defend: "La Côte de Nuits concentre l’élite du pinot noir : près de trois grands crus bourguignons sur quatre, et un style propre à chaque village.",
   client: "« Gevrey pour la puissance, Chambolle pour la finesse, Vosne pour le velours : en Côte de Nuits, chaque village a sa signature. »",
   filRouge: "Juste au sud, pourquoi la Côte de Beaune fait-elle à la fois les plus grands blancs et des rouges comme Pommard et Volnay ?",
-  src: "fiches 393 à 395 et 673 du site (INAO, cahiers des charges et fiches produit ; WSET D3 ; Oxford Companion ; Garcia 2011)"
+  src: "fiches 393 à 395, 673 et 724 à 732 (une par appellation communale) du site (INAO, cahiers des charges et fiches produit ; WSET D3 ; Oxford Companion ; Garcia 2011)"
  },
  {
   chapitre: "Côte de Beaune",
@@ -1115,7 +1115,7 @@ const RECITS = [
   defend: "La Côte de Beaune est la côte des deux couleurs : les grands blancs au sud, des rouges réputés à Pommard et à Volnay, et Corton, qui n’est pas qu’un rouge.",
   client: "« Pour un grand blanc de Bourgogne, regardez vers Meursault, Puligny et Chassagne ; pour un rouge fin, vers Volnay. »",
   filRouge: "Au sud de la Côte-d’Or, comment la Côte chalonnaise organise-t-elle sa hiérarchie sans aucun grand cru ?",
-  src: "fiches 396 à 398 et 673 du site (INAO ; WSET D3 ; Oxford Companion ; UNESCO ; Hospices de Beaune)"
+  src: "fiches 396 à 398, 673 et 733 à 750 (une par appellation communale) du site (INAO ; WSET D3 ; Oxford Companion ; UNESCO ; Hospices de Beaune)"
  },
  {
   chapitre: "Côte chalonnaise",

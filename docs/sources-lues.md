@@ -248,3 +248,9 @@ Ce qui a été réellement ouvert et lu, par section, pour ne pas refaire les re
 - Interprofession et presse : CIVR (chiffres 2017, sécheresse 2024), Journal de l’économie (2019, Belgique), presse locale.
 - Divergences relevées : tramontane 130 jours (cahiers) contre 200 jours (WSET) ; Maury sec 2011 contre 2012 (Oxford « Maury ») ; Lesquerde et Tautavel 1995 et 1997 (fiche 483, cahier) contre 1997 et 1996 (Oxford) ; murettes de Banyuls 5 000 km contre 3 000 km ; bio 29 % (Agreste 2020) contre 15 % (WSET) ; part des VDN 80 % contre 90 % (Atlas 2013) ; communes de l’IGP Côte Vermeille.
 - Bloqués ou à trouver : cahier homologué du Maury (y compris Maury sec) ; IGP Côte Vermeille ; Collioure en vigueur ; textes des lois de 1898-1899 (« loi Pams ») et de 1942 ; date de création du CIVR ; séries VDN après 2019 ; arrachages départementaux.
+
+## La France viticole — Bourgogne, appellations communales (27/10/2026)
+- Dépôt privé : Oxford Companion (5e éd., 2023, entrée de chaque village) ; WSET D3 (2024, p. 48-52) ; World Atlas of Wine (7e éd., 2013, p. 28-29, 58-60) ; Atlas du vin (p. 186-187) ; Coates, My Favorite Burgundies (2013) ; Morris, Bourgogne blanc (1988) ; Hugh Johnson’s Pocket Wine Book 2014 ; Académie du Vin (1992) ; Humbert (2011).
+- Officiels : cahiers des charges Volnay (homologué 20/02/2026), Meursault (4/06/2026), Saint-Romain (décret du 14/10/1947), Vosne-Romanée (2024), Nuits-Saint-Georges, Santenay (2010), projets Aloxe-Corton, Beaune, Pommard (2010), Ladoix (2026), Pernand-Vergelesses (via vins-bourgogne.fr) ; fiches produit INAO des villages ; INAO, comité national des 17-18/06/2026 (Marsannay premier cru).
+- Presse et interprofession relayée : Burgundy Report (données BIVB : surfaces, premiers crus).
+- Bloqués : BIVB (bourgogne-wines.com, robots), extranet INAO ; cahiers de Gevrey, Morey, Chambolle, Vougeot, Côte de Nuits-Villages, Chorey, Puligny, Maranges, Côte de Beaune-Villages non lus.
