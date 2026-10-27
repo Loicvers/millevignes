@@ -143,3 +143,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 27/10/2026 (soir) : « Légender le schéma » — les autres options sont aussi masquées (« … ») sur le dessin, on ne répond plus par élimination (test ajouté) ; boutons d'options en couleur du texte (bleu iOS supprimé). Cache mv-v55.
 - 27/10/2026 (soir) : QCM de la fiche domestication (Science 2023) — énoncé précisé : l’étude est nommée (Dong et al., 3 525 vignes), plusieurs études de Science pouvaient correspondre.
 - 27/10/2026 (soir) : lexique, trois entrées ajoutées — bouturage (Académie, fiche 34), marcottage (TLFi, OQLF, fiche 34), provignage (Académie, Le Robert, Larousse, Wein-Plus). Cache mv-v56.
+- 27/10/2026 (soir) : fiche « Table et cuve » — énoncés « l’étude de 2023 » remplacés par « Dong et al. (Science, 2023) », « cépages de cuve » par « cépages à vin » ; tous les boutons en couleur du texte (bleu iOS supprimé, dont Au hasard / Correct / Facile). Cache mv-v57.
