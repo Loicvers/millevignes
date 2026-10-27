@@ -43,6 +43,9 @@ test("correction de chaque type", () => {
   assert.equal(grade(ex.cloze, ["sucre", ""]), false);
   assert.equal(grade(ex.short_answer, " Veraison"), true);
   assert.equal(grade(ex.short_answer, "floraison"), false);
+  const pl = { type: "short_answer", payload: { accepted: ["variétés européennes primitives"] } };
+  assert.equal(grade(pl, "Variété européenne primitive"), true); // singulier accepté
+  assert.equal(grade(pl, "variétés européennes"), false);
   assert.equal(grade(ex.matching, ["Débourrement", "Véraison"]), true);
   assert.equal(grade(ex.matching, ["Véraison", "Débourrement"]), false);
   assert.equal(grade(ex.ordering, ["Débourrement", "Floraison", "Véraison", "Vendanges"]), true);

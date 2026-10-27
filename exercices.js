@@ -101,6 +101,9 @@ function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { co
 // "Le {{Pinot|pinot noir}} est…" → ["Le ", ["Pinot","pinot noir"], " est…"] (trous aux index impairs).
 function clozeParts(text) { return text.split(/\{\{([^{}]+)\}\}/).map((p, i) => i % 2 ? p.split("|") : p); }
 
+// Réponse tapée : singulier et pluriel valent pareil (« variété européenne primitive » = « variétés européennes primitives »).
+const libre = s => normalize(s).split(" ").map(w => w.length > 3 ? w.replace(/[sx]$/, "") : w).join(" ");
+
 const same = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
 
 // Vrai si la réponse est juste. null pour les cartes auto-évaluées.
@@ -110,8 +113,8 @@ function grade(ex, answer) {
     case "flashcard": case "flashcard_reverse": return null;
     case "mcq_single": case "odd_one_out": case "true_false": case "label_schema": return answer === p.answer;
     case "mcq_multi": return same([...answer].sort(), [...p.answers].sort());
-    case "short_answer": return p.accepted.some(a => normalize(a) === normalize(answer));
-    case "cloze": return clozeParts(p.text).filter((_, i) => i % 2).every((v, k) => v.some(a => normalize(a) === normalize(answer[k] || "")));
+    case "short_answer": return p.accepted.some(a => libre(a) === libre(answer));
+    case "cloze": return clozeParts(p.text).filter((_, i) => i % 2).every((v, k) => v.some(a => libre(a) === libre(answer[k] || "")));
     case "matching": return same(answer, p.pairs.map(x => x[1]));
     case "ordering": return same(answer, p.items);
   }

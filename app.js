@@ -585,7 +585,8 @@ function showExercise(){
     case 'mcq_multi':{
       const picked=new Set();
       choice(p.options,(i,b)=>{picked.has(i)?picked.delete(i):picked.add(i);b.classList.toggle('picked');b.setAttribute('aria-pressed',picked.has(i));});
-      submit(()=>[...picked]);break;}
+      const v=submit(()=>[...picked]),go=v.onclick; // après validation : bonnes réponses en vert, mauvais choix en rouge
+      v.onclick=()=>{go();body.querySelectorAll('.opt').forEach(o=>{const i=+o.dataset.i;o.disabled=true;if(p.answers.includes(i))o.classList.add('good');else if(picked.has(i))o.classList.add('bad');});};break;}
     case 'explain_client':{
       const inp=el('textarea','ex-input');inp.rows=5;inp.placeholder='Ta réponse, comme tu la dirais à un client';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const show=el('button','btn primary','Voir la réponse modèle');
