@@ -134,6 +134,17 @@ function grade(ex, answer) {
   throw new Error("Type d'exercice inconnu : " + ex.type);
 }
 
+// Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
+function suivante(p, quality, t) {
+  p = { ease: 2.3, interval: 0, due: 0, acquired: false, ...p };
+  if (quality === 'hard') { p.ease = Math.max(1.3, p.ease - 0.2); p.interval = 1; }
+  else if (quality === 'ok') p.interval = p.interval ? Math.round(p.interval * p.ease) : 1;
+  else { p.ease += 0.1; p.interval = p.interval ? Math.round(p.interval * p.ease * 1.3) : 2; }
+  p.due = t + p.interval * 86400000;
+  p.acquired = true;
+  return p;
+}
+
 // Séance : une notion (fiche) au plus par séance ; révisions échues d'abord, puis la suite des fiches commencées
 // (un exercice de plus, pas le même jour), puis de nouvelles fiches (quota par jour, 2 exercices chacune).
 // lues[ficheId] = horodatage de la lecture (1 pour les lectures d'avant le quota : jamais « aujourd'hui »).

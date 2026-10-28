@@ -30,13 +30,7 @@ const DAY=86400000;
 
 /* ============ RÉPÉTITION ESPACÉE (type SM-2 simplifié) ============ */
 function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
-  let p=prog[id]||{ease:2.3,interval:0,due:0,acquired:false};
-  if(quality==='hard'){p.ease=Math.max(1.3,p.ease-0.2);p.interval=1;}
-  else if(quality==='ok'){p.interval=p.interval?Math.round(p.interval*p.ease):1;}
-  else{p.ease=p.ease+0.1;p.interval=p.interval?Math.round(p.interval*p.ease*1.3):2;}
-  p.due=now()+p.interval*DAY;
-  p.acquired=true;
-  prog[id]=p;save();updateBadges();
+  prog[id]=suivante(prog[id],quality,now());save();updateBadges();
 }
 const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
 const isNew=e=>!prog[e.id];
