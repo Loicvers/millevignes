@@ -3,7 +3,9 @@ const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]),...le
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
 const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma',explain_client:'Explique à un client'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
-const SESSION_MAX=20,NEW_FICHES=5; // nouvelles fiches par jour
+const SKEY='mv_session_max',TAILLES=[10,20,40];
+let SESSION_MAX=(()=>{try{const n=+localStorage.getItem(SKEY);return TAILLES.includes(n)?n:20;}catch{return 20;}})();
+const NEW_FICHES=5; // nouvelles fiches par jour
 
 /* ============ PERSISTANCE (localStorage) ============ */
 // v2 : progression par exercice. La v1 (par fiche) est reprise une fois, puis laissée intacte.
@@ -619,8 +621,15 @@ function showPretest(f,suite){
   const head=el('div','ex-head',`Pré-test · notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`);
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier'));
   box.append(head,el('div','ex-prompt',q.q),el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
-  const body=el('div','ex-body');shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);b.onclick=suite;body.append(b);});
-  const actions=el('div','ex-actions'),nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=pass.onclick=suite;actions.append(nsp,pass);
+  const body=el('div','ex-body'),btns=[],actions=el('div','ex-actions');
+  // Correction sans note : l'essai prépare la lecture, mais une erreur non corrigée s'installerait.
+  const corriger=pick=>{
+    btns.forEach((b,i)=>{b.disabled=true;if(i===q.good)b.classList.add('good');else if(i===pick)b.classList.add('bad');});
+    if(q.expl)box.insertBefore(el('p','ex-mine',q.expl),actions);
+    const lire=el('button','btn primary','Lire la fiche');lire.onclick=suite;actions.replaceChildren(lire);
+  };
+  shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);btns[i]=b;b.onclick=()=>corriger(i);body.append(b);});
+  const nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
   box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);window.scrollTo(0,0);
 }
 function correctText(ex){
@@ -792,6 +801,9 @@ document.querySelector('.zoom-x').onclick=fermerZoom;
 const ptBtn=document.getElementById('pretestBtn');
 const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pretestOn()?'activé':'désactivé');
 ptBtn.onclick=()=>{try{localStorage.setItem(PTKEY,pretestOn()?'0':'1');}catch{}majPt();};majPt();
+const seBtn=document.getElementById('sessionSizeBtn');
+const majSe=()=>seBtn.textContent='Longueur d\'une séance : '+SESSION_MAX+' exercices';
+seBtn.onclick=()=>{SESSION_MAX=TAILLES[(TAILLES.indexOf(SESSION_MAX)+1)%TAILLES.length];try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majSe();updateBadges();};majSe();
 document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scrollTo(0,0);};
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
