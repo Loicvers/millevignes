@@ -14,6 +14,13 @@ pas seules à passer une fiche en ✅.
 **bloqué** = site inaccessible aux outils de Claude ou payant (demander un PDF ou une capture) ·
 **livre** = ouvrage papier, extrait à fournir si besoin.
 
+## Texte intégral disponible
+
+Dépôt privé `Loicvers/millevignes-sources` (voir `CLAUDE.md`). Les entrées ci-dessous marquées « dans millevignes-sources »
+sont lisibles en texte intégral (`./cherche.sh`). Le livre de Lepeltier lui-même y est (`mille-vignes/`), ainsi que l'Oxford
+Companion, les manuels WSET et les atlas, qui ne sont pas des références du livre. Les autres entrées « livre » et « bloqué »
+restent à fournir (PDF ou extrait).
+
 ## Coquilles d'OCR corrigées (scan p. 341-348)
 
 - « De l'cnologie à la viticulture » → *De l'œnologie à la viticulture* (Carbonneau et Escudier, 2017).
@@ -41,7 +48,7 @@ pas seules à passer une fiche en ✅.
 | Grassi et al. 2006, lambrusque (*Conservation Genetics*) | bloqué |
 | Wan et al., phylogénie du genre *Vitis* (*BMC Evol. Biol.*) | à tester (accès libre) |
 | Raimondi et al. 2020, généalogie du nebbiolo (*Scientific Reports*) | à tester (accès libre) |
-| Robinson, Harding et Vouillamoz 2012, *Wine Grapes* | livre |
+| Robinson, Harding et Vouillamoz 2012, *Wine Grapes* | livre ; **dans millevignes-sources : wine-grapes/** |
 | Galet, *Dictionnaire encyclopédique des cépages* (2015) et précis | livre |
 | Pulliat 1888, *Mille variétés de vignes* ; Odart 1845 ; Viala et Vermorel 1901 | lu (Pulliat) |
 | McGovern 2003, 2011, 2016 ; McGovern, Fleming et Katz 2015 | livre |
@@ -119,11 +126,11 @@ pas seules à passer une fiche en ✅.
 
 | Référence | État |
 |---|---|
-| Vaudour 2003, *Les Terroirs viticoles* (Dunod) | livre — attendu ; connu par le compte rendu de Nicod (*Annales de géographie*, 2004) et le résumé de thèse (2001), lus le 21/10/2026 |
+| Vaudour 2003, *Les Terroirs viticoles* (Dunod) | livre — attendu ; connu par le compte rendu de Nicod (*Annales de géographie*, 2004) et le résumé de thèse (2001), lus le 21/10/2026 ; **dans millevignes-sources : articles/ (Vaudour 2001, présentation de thèse ; Nicod 2004)** |
 | Atkinson 2011, « Terroir and the Côte de Nuits » (*Journal of Wine Research* 22) | bloqué (payant) — attendu |
 | Wittendal 2004, ACP des vignes de la Côte | à tester — attendu |
 | Garcia et al. 2020, les moines n'ont pas goûté la terre (*Crescentis* n° 3) | à tester (université de Bourgogne) |
-| Garcia 2011, le goût du lieu (*Cahiers d'histoire de la vigne et du vin*) | à tester |
+| Garcia 2011, le goût du lieu (*Cahiers d'histoire de la vigne et du vin*) | à tester ; **dans millevignes-sources : articles/ (JP Garcia, EUD 2011)** |
 | Garcia et al. 2010, vignoble gallo-romain de Gevrey (*Revue archéologique de l'Est*) | bloqué (OpenEdition) |
 | Garcia et al. 2014, construction des climats ; Garcia, Labbé et Quiquerez 2017 | à tester ; lus à la place : Garcia 2011 (EUD, halshs-00599282) et Garcia 2020 (*POUR* 237-238), 21/10/2026 |
 | Garcia et Jacquet 2020, trajectoire du terroir (in Yengué et Stengel) | livre |
@@ -134,17 +141,17 @@ pas seules à passer une fiche en ✅.
 | Vincent et Jacquet 2012, le Kimméridgien à Chablis (congrès des terroirs) | à tester |
 | Lucand 2019, étiquettes de Bourgogne (*Crescentis* n° 2) | à tester |
 | Wolikow et Jacquet (dir.) 2018, *Bourgogne(s) viticole(s)* | livre |
-| Dion 1934, 1990, 2010 ; Pitte (dir.) 2010 ; Delay et Chevallier 2015 (*Cybergeo*) | livre / bloqué ; Dion 1952 (*Annales de géographie*, Persée) lu le 21/10/2026 |
+| Dion 1934, 1990, 2010 ; Pitte (dir.) 2010 ; Delay et Chevallier 2015 (*Cybergeo*) | livre / bloqué ; Dion 1952 (*Annales de géographie*, Persée) lu le 21/10/2026 ; **dans millevignes-sources : articles/ (Dion 1952 ; comptes rendus de Dion 1959)** |
 | Parker 2017, *Le Goût de terroir* ; Hinnewinkel 2004 et 2010 ; Yengué et Stengel 2020 | livre |
 | Rouvellac 2013 (HDR) et 2020 (*Norois*) | 2013 lu (déposé le 21/10/2026, HAL tel-00933444) / 2020 bloqué |
 | Schirmer 2000 (*Annales de géographie*), 2018, 2020 ; Velasco-Graciet et Schirmer 2010 | bloqué / livre |
 | Parain 1955, maison vigneronne ; Royer 1980 | livre ; Parain connu par le compte rendu de Champier (*Revue de géographie de Lyon*, 1957), lu |
 | Dubrion 2011, routes du vin ; Minard 1860, carte des flux de vins | livre / domaine public |
 | Figeac-Monthus et Lachaud-Martin 2021, *Ville & Vin* ; Lachaud 2012 (Sauternais) | livre |
-| Bohling 2018, *The Sober Revolution* ; Colman 2010 ; Regan-Lefebvre 2022 ; Unwin 1991 | livre |
+| Bohling 2018, *The Sober Revolution* ; Colman 2010 ; Regan-Lefebvre 2022 ; Unwin 1991 | livre ; **dans millevignes-sources : ouvrages/ (Unwin 1996 ; pas la 1re éd. de 1991)** |
 | ICOMOS 2005 ; Luginbühl 2005 ; Rochard 2018 (UNESCO) ; Darnay 2017 (*Projets de paysage*) | à tester |
 | Boulanger-Fassier 2008 (*Géocarrefour*) ; Fassier-Boulanger 2014 | bloqué (OpenEdition) |
-| Lachiver 1997 ; Garrier 1998 ; Lecoutre 2017 et 2019 ; Nourrisson 2013 et 2017 | livre |
+| Lachiver 1997 ; Garrier 1998 ; Lecoutre 2017 et 2019 ; Nourrisson 2013 et 2017 | livre ; **dans millevignes-sources : ouvrages/ (Nourrisson 2013 seulement)** |
 | Château de Parnay, le clos d'entre les murs | à tester |
 | Interloire et al. 2013, terroirs d'Azay-le-Rideau | à tester |
 | Masnaghetti 2015 (Barolo MGA) ; Parra 2021 | livre (international) |
@@ -153,8 +160,8 @@ pas seules à passer une fiche en ✅.
 
 | Référence | État |
 |---|---|
-| Ribéreau-Gayon et al. 2020, *Traité d'œnologie* (2 tomes) ; Ribéreau-Gayon et Genevois 1947 | livre |
-| Ribéreau-Gayon 2011, histoire de l'œnologie à Bordeaux ; Peynaud 2012 ; Blouin et Peynaud 2012 | livre |
+| Ribéreau-Gayon et al. 2020, *Traité d'œnologie* (2 tomes) ; Ribéreau-Gayon et Genevois 1947 | livre ; **dans millevignes-sources : ouvrages/ (Handbook of Enology 1-2, l'édition anglaise ; pas le Traité 2020)** |
+| Ribéreau-Gayon 2011, histoire de l'œnologie à Bordeaux ; Peynaud 2012 ; Blouin et Peynaud 2012 | livre ; **dans millevignes-sources : ouvrages/ (Peynaud et Blouin, Le Goût du vin, 5e éd. 2013)** |
 | Pasteur 1866, *Études sur le vin* | domaine public (Gallica, bloqué) |
 | Legras 2018, domestication de *S. cerevisiae* | à tester |
 | Masneuf-Pomarède et Lucas 2021, micro-organismes de terroir (Cité du Vin) | à tester (vidéo) |

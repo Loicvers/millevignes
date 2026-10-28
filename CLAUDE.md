@@ -3,6 +3,8 @@
 Économiser les tokens : ne lire que ce dont la tâche a besoin.
 
 - **Ne jamais lire `data/base.json`** : il est dérivé (`node tools/migrate-fiches.mjs`), volumineux et non versionné (`.gitignore`). Les tests tournent aussi sur GitHub à chaque push.
+- Textes intégraux des sources (livre de Lepeltier, Oxford Companion, Wine Grapes, Peynaud, Dion…) : dépôt **privé** `Loicvers/millevignes-sources` (à cloner dans `../millevignes-sources`, puis `/add-dir`). Chercher avec `./cherche.sh "motif" [dossier]` (donne fichier, page et ligne) ; ne jamais ouvrir un fichier entier. **Ne jamais copier ce contenu dans ce dépôt** (droits). Une page marquée `[OCR]` : vérifier un chiffre sur l'original avant de le citer.
+- Citations du livre : `node tools/verifier-citations.mjs` contrôle chaque « Selon le livre (p. N) » contre le texte du livre (nombres et noms propres retrouvés sur les pages N-1 à N+1) ; à relancer après un lot. Informatif : il ne tourne pas sur GitHub (dépôt privé).
 - Erreurs du livre déjà relevées : `docs/erreurs-du-livre.md` (lire les pages du lot, compléter avant le push).
 - Sources citées par Lepeltier, classées par section avec leur état d'accès : `docs/bibliographie-lepeltier.md` (lire la section du lot avant la recherche).
 - Les fiches sont dans `fiches/<page>-<section>.js` (une section de Mille Vignes = un fichier, `FICHES.push(...)`). `fiches.js` ne contient que l'en-tête et les catalogues `SOUS` / `THEME_ORDER`.
