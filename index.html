@@ -17,8 +17,8 @@
     <h1 class="brand">L'Atelier des Mille Vignes<span class="sub">Base de révision œnologique</span></h1>
   </div>
   <div class="tabs" role="tablist" aria-label="Sections du site">
+    <button class="tab tab-main" role="tab" aria-selected="false" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
     <button class="tab on" role="tab" aria-selected="true" data-mode="revision">Fiches</button>
-    <button class="tab" role="tab" aria-selected="false" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
     <button class="tab" role="tab" aria-selected="false" data-mode="lexique">Lexique</button>
     <button class="tab" role="tab" aria-selected="false" data-mode="cartes">Cartes</button>
     <button class="tab" role="tab" aria-selected="false" data-mode="atelier">Masterclass</button>
@@ -64,12 +64,14 @@
 
 <footer class="wrap">
   L'Atelier des Mille Vignes — chaque fiche reformulée et créditée à sa source<br><br>
+  <details class="foot-set"><summary>Réglages et sauvegarde</summary>
   <div class="foot-save"><button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button>
   <button class="reset-all" id="suiviLink">Mon suivi</button>
   <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden></div>
   <div class="foot-save"><button class="reset-all" id="pretestBtn"></button></div>
   <div class="foot-save"><button class="reset-all" id="partBtn">Importer mes partenaires (fichier privé)</button><input type="file" id="partFile" accept="application/json,.json" hidden></div>
   <div class="foot-reset"><button class="reset-all danger" id="resetAll">Réinitialiser toute ma progression</button></div>
+  </details>
 </footer>
 <section id="support"></section>
 <div id="zoom" class="zoom" role="dialog" aria-label="Schéma agrandi" hidden><button class="btn zoom-x">Fermer ✕</button><div class="zoom-in"></div></div>
