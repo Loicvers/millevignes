@@ -148,6 +148,12 @@ function fusionnerListe(a, b, cle, n) {
   return [...vu.values()].sort((x, y) => x.t - y.t).slice(-n);
 }
 
+// Rythme pour une échéance : nouvelles fiches par jour pour avoir tout vu la veille au soir (jamais moins que le rythme de base).
+function rythme(restantes, t, echeance, base = 5) {
+  const jours = Math.max(1, Math.ceil((new Date(echeance + "T23:59:59").getTime() - t) / 86400000));
+  return Math.max(base, Math.ceil(restantes / jours));
+}
+
 // Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
 function suivante(p, quality, t) {
   p = { ease: 2.3, interval: 0, due: 0, acquired: false, ...p };

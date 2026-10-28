@@ -5,14 +5,14 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 748 (dernier id : 750) · exercices : 3894
 - Vérifiées : 748 · à vérifier : 0 (0 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1896
 - Niveaux : Fondamental 235 · Intermédiaire 399 · Pointu 114
-- Cours (Approfondir) : 68 · schémas : 101
+- Cours (Approfondir) : 82 · schémas : 101
 - Lexique : 84 termes · récits de chapitre : 84
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
 | 016-domestication.js | 56 | 1–671 | 16–38 | 56 | 8 | 11 |
 | 040-nature.js | 52 | 4–634 | 40–73 | 52 | 7 | 15 |
-| 076-ecologie.js | 32 | 97–522 | 76–101 | 32 | 0 | 3 |
+| 076-ecologie.js | 32 | 97–522 | 76–101 | 32 | 5 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 31 | 5 | 6 |
 | 124-geologie.js | 32 | 157–188 | 124–149 | 32 | 6 | 6 |
 | 150-terroir.js | 37 | 3–596 | 150–199 | 37 | 5 | 5 |
@@ -20,7 +20,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 244-degustation.js | 53 | 253–640 | 245–285 | 53 | 7 | 6 |
 | 288-service.js | 66 | 293–646 | 288–329 | 66 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
-| cepages.js | 76 | 372–666 | hors livre | 76 | 0 | 0 |
+| cepages.js | 76 | 372–666 | hors livre | 76 | 9 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 6 | 405–705 | hors livre | 6 | 1 | 2 |
 | fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |

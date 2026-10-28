@@ -178,6 +178,7 @@
   .foot-set>summary::-webkit-details-marker{display:none}
   .foot-set[open]>summary{margin-bottom:8px}
   .foot-save{display:flex;gap:6px 22px;justify-content:center;flex-wrap:wrap}
+  .ech input{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:3px;padding:2px 6px}
   .foot-reset{margin-top:44px;padding-top:18px;border-top:1px dotted var(--line)}
   .reset-all.danger{color:var(--wine-fg)}
   .reset-all{font-size:12px;color:var(--muted);background:none;border:none;cursor:pointer;text-decoration:underline;font-family:inherit}
@@ -294,10 +295,16 @@
   .lex-ph a{color:var(--muted)}
 
   /* Mode sombre : mêmes variables, valeurs éclaircies ; contrastes vérifiés (texte ≥ 4,5:1, texte blanc sur --wine ≥ 5,6:1). Hors impression. */
+  /* Choix manuel (Réglages) : data-theme sur <html> l'emporte sur le réglage de l'appareil. */
   @media screen and (prefers-color-scheme:dark){
-    :root{color-scheme:dark;--ink:#ece6da;--paper:#16130f;--paper2:#1f1b16;--line:#3a342c;--wine:#a8465a;--wine-soft:#b85a68;--wine-fg:#d98694;--gold:#d2b57c;--muted:#b3a998;--green:#8fb381;--warn:#e0a95a;--ink2:#d6cfc2;--field:#0f0d0a;--hover:#2a241d;--ok:#8fb381;--bad:#e29a9a}
-    .opt.good{background:#26331f;color:#cfe3c4}
-    .opt.bad{background:#3a1f21;color:#f0c4c4}
+    :root:not([data-theme=light]){color-scheme:dark;--ink:#ece6da;--paper:#16130f;--paper2:#1f1b16;--line:#3a342c;--wine:#a8465a;--wine-soft:#b85a68;--wine-fg:#d98694;--gold:#d2b57c;--muted:#b3a998;--green:#8fb381;--warn:#e0a95a;--ink2:#d6cfc2;--field:#0f0d0a;--hover:#2a241d;--ok:#8fb381;--bad:#e29a9a}
+    :root:not([data-theme=light]) .opt.good{background:#26331f;color:#cfe3c4}
+    :root:not([data-theme=light]) .opt.bad{background:#3a1f21;color:#f0c4c4}
+  }
+  @media screen{
+    :root[data-theme=dark]{color-scheme:dark;--ink:#ece6da;--paper:#16130f;--paper2:#1f1b16;--line:#3a342c;--wine:#a8465a;--wine-soft:#b85a68;--wine-fg:#d98694;--gold:#d2b57c;--muted:#b3a998;--green:#8fb381;--warn:#e0a95a;--ink2:#d6cfc2;--field:#0f0d0a;--hover:#2a241d;--ok:#8fb381;--bad:#e29a9a}
+    :root[data-theme=dark] .opt.good{background:#26331f;color:#cfe3c4}
+    :root[data-theme=dark] .opt.bad{background:#3a1f21;color:#f0c4c4}
   }
 
   @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

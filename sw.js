@@ -1,7 +1,7 @@
 // Cache des fichiers du site : le site s'ouvre hors ligne. Chaque fichier est servi depuis le cache puis
 // remis à jour en arrière-plan : la nouvelle version apparaît au rechargement suivant.
 // Ajouter ici tout nouveau fichier du site (un test compare cette liste à index.html).
-const CACHE = "mv-v66";
+const CACHE = "mv-1431b82e9f";
 const FICHIERS = [
   "./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
