@@ -134,6 +134,20 @@ function grade(ex, answer) {
   throw new Error("Type d'exercice inconnu : " + ex.type);
 }
 
+// Restauration d'une sauvegarde : fusion avec la progression du navigateur, sans rien perdre de récent.
+// Par exercice, on garde la réponse la plus récente (due - intervalle = date de la dernière réponse, comme dans planSession).
+function fusionner(cur, inc) {
+  const last = p => p.due - p.interval * 86400000, out = { ...cur };
+  for (const k in inc) if (!out[k] || last(inc[k]) > last(out[k])) out[k] = inc[k];
+  return out;
+}
+// Listes datées (journal, séances) : union sans doublon, par date, bornée aux n dernières entrées.
+function fusionnerListe(a, b, cle, n) {
+  const vu = new Map();
+  for (const x of [...a, ...b]) vu.set(cle(x), x);
+  return [...vu.values()].sort((x, y) => x.t - y.t).slice(-n);
+}
+
 // Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
 function suivante(p, quality, t) {
   p = { ease: 2.3, interval: 0, due: 0, acquired: false, ...p };
