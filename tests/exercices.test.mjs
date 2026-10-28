@@ -250,3 +250,17 @@ test("répétition espacée : difficile ramène à 1 jour, facilité plancher 1,
   assert.equal(ctx.sv({ ease: 1.4, interval: 10 }, "hard", t).ease, 1.3);
   assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "hard", t).interval, 1);
 });
+
+test("restauration : la fusion garde par exercice la réponse la plus récente et ne perd aucune entrée", () => {
+  vm.runInNewContext("this.fu=fusionner;this.fl=fusionnerListe", ctx);
+  const J = 86400000;
+  const cur = { a: { ease: 2.3, interval: 2, due: 10 * J }, b: { ease: 2.3, interval: 1, due: 5 * J } };   // a répondu au jour 8, b au jour 4
+  const inc = { a: { ease: 2.0, interval: 1, due: 6 * J }, b: { ease: 2.5, interval: 3, due: 9 * J }, c: { ease: 2.3, interval: 1, due: 3 * J } }; // a au jour 5, b au jour 6
+  const m = ctx.fu(cur, inc);
+  assert.equal(m.a.ease, 2.3, "a : la version du navigateur est plus récente");
+  assert.equal(m.b.ease, 2.5, "b : la sauvegarde est plus récente");
+  assert.ok(m.c, "c : absent du navigateur, ajouté");
+  const j = ctx.fl([{ e: "x", t: 1 }, { e: "y", t: 3 }], [{ e: "x", t: 1 }, { e: "z", t: 2 }], x => x.e + "|" + x.t, 3);
+  assert.equal(j.map(x => x.e).join(), "x,z,y", "union sans doublon, triée par date");
+  assert.equal(ctx.fl([{ t: 1 }, { t: 2 }], [{ t: 3 }], x => x.t, 2).length, 2, "bornée aux n dernières");
+});

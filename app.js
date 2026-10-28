@@ -129,7 +129,8 @@ function render(){
   if(mode==='suivi')return renderSuivi();
   if(mode==='cartes')return renderCartes();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
-  document.getElementById('filtSum').textContent=nf?`Filtrer (${nf} actif${nf>1?'s':''})`:'Filtrer';
+  const noms=[...activeThemes,...activeSubs,...activeNiv,...(activeGeo?[activeGeo.appel||activeGeo.region||activeGeo.pays]:[])].join(' · '); // le filtre actif se lit sans ouvrir le panneau
+  document.getElementById('filtSum').textContent=nf?`Filtrer : ${noms.length>42?noms.slice(0,41)+'…':noms}`:'Filtrer';
   const list=FICHES.filter(matches);
   document.getElementById('introLine').textContent= mode==='atelier'?'Compose ton programme : ajoute des fiches, note le vin servi et la durée, puis projette ou imprime le support.':'';
   renderProg();
@@ -766,12 +767,12 @@ function finish(ex,ok,fb,actions,body,crit){
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
   fb.tabIndex=-1;fb.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction
 }
-// Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 7 jours sans export.
-const SAVED_KEY='mv_saved_at';
+// Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 3 jours sans export, dans tous les onglets sauf pendant une séance.
+const SAVED_KEY='mv_saved_at',RAPPEL=3; // jours sans sauvegarde avant le bandeau
 function majBandeau(){
   let t=0;try{t=+localStorage.getItem(SAVED_KEY)||0;}catch{}
   const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
-  document.getElementById('saveBanner').hidden=!(mode==='revision'&&Object.keys(prog).length&&now()-depuis>7*DAY);
+  document.getElementById('saveBanner').hidden=!(mode!=='due'&&Object.keys(prog).length&&now()-depuis>RAPPEL*DAY);
 }
 // Pendant la Session du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
 function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Session du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
@@ -815,11 +816,11 @@ document.getElementById('importProg').onchange=async e=>{
   if(!ok){alert('Ce fichier n\'est pas une sauvegarde de progression Mille Vignes.');return;}
   if(data.version!==2)p=fromV1(p); // sauvegarde de l'ancien site (par fiche)
   const n=Object.keys(p).length,cur=Object.keys(prog).length;
-  if(!confirm(`Restaurer ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)} ?\nTa progression actuelle (${cur} exercice(s)) sera remplacée.`))return;
-  prog=p;save();
-  if(data.lues&&typeof data.lues==='object'){lues=data.lues;saveLues();}
-  if(Array.isArray(data.seances)){seances=data.seances;saveSeances();}
-  if(Array.isArray(data.journal)){journal=data.journal;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
+  if(!confirm(`Fusionner ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)}, avec ta progression actuelle (${cur} exercice(s)) ?\nPour chaque exercice, la réponse la plus récente est gardée.`))return;
+  prog=fusionner(prog,p);save();
+  if(data.lues&&typeof data.lues==='object'){for(const k in data.lues)lues[k]=Math.max(lues[k]||0,+data.lues[k]||0);saveLues();}
+  if(Array.isArray(data.seances)){seances=fusionnerListe(seances,data.seances,s=>s.t,200);saveSeances();}
+  if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal,j=>j.e+'|'+j.t,5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
   saveProg();updateBadges();render();
