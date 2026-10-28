@@ -611,8 +611,8 @@ function showExercise(){
     case 'ordering':{
       let items=shuffle(p.items);if(items.every((x,i)=>x===p.items[i]))items.reverse(); // jamais déjà dans l'ordre
       const list=el('ol','order');
-      const draw=()=>{list.innerHTML='';items.forEach((it,i)=>{const li=el('li','order-item');li.append(el('span',null,it));
-        const up=el('button','mini','↑'),dn=el('button','mini','↓');up.setAttribute('aria-label','Monter '+it);dn.setAttribute('aria-label','Descendre '+it);up.disabled=!i;dn.disabled=i===items.length-1;
+      const draw=()=>{list.innerHTML='';items.forEach((it,i)=>{const li=el('li','order-item');li.append(el('span',null,sansDate(it)));
+        const up=el('button','mini','↑'),dn=el('button','mini','↓');up.setAttribute('aria-label','Monter '+sansDate(it));dn.setAttribute('aria-label','Descendre '+sansDate(it));up.disabled=!i;dn.disabled=i===items.length-1;
         up.onclick=()=>{[items[i-1],items[i]]=[items[i],items[i-1]];draw();};dn.onclick=()=>{[items[i+1],items[i]]=[items[i],items[i+1]];draw();};li.append(up,dn);list.append(li);});};
       draw();body.append(list);submit(()=>items);break;}
   }

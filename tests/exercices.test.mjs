@@ -9,8 +9,8 @@ import { fichesFiles } from "../tools/migrate-fiches.mjs";
 const ctx = {};
 const scripts = [...fichesFiles(new URL("../fiches.js", import.meta.url).pathname), new URL("../exercices.js", import.meta.url).pathname];
 for (const f of scripts) vm.runInNewContext(readFileSync(f, "utf8"), ctx, { filename: f });
-vm.runInNewContext("this.api={FICHES,toExercises,grade,normalize,clozeParts,shuffle}", ctx);
-const { FICHES, toExercises, grade, normalize, clozeParts, shuffle } = ctx.api;
+vm.runInNewContext("this.api={FICHES,toExercises,grade,normalize,clozeParts,shuffle,sansDate,lexiqueExercises}", ctx);
+const { FICHES, toExercises, grade, normalize, clozeParts, shuffle, sansDate, lexiqueExercises } = ctx.api;
 const read = p => JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
 
 test("le site produit les mêmes exercices que data/base.json", () => {
@@ -220,4 +220,21 @@ test("suivi : « Explique à un client » compte dans le rappel sans aide (réus
   const J = [{ e: "x", t: 1, ok: null, c: [1, 1, 0], r: "ok" }, { e: "y", t: 2, ok: null, c: [1, 0, 0], r: "hard" }, { e: "z", t: 3, ok: null, c: [1, 1, 1], r: "easy" }];
   const r = JSON.parse(JSON.stringify(ctx.sv(J, () => "explain_client", {}, 10)));
   assert.deepEqual(r.libre, [2, 3]);
+});
+
+test("« Remettre dans l'ordre » : aucune date ne trahit l'ordre une fois masquée", () => {
+  assert.equal(sansDate("Parents du cabernet sauvignon (1997)"), "Parents du cabernet sauvignon");
+  assert.equal(sansDate("Règlement (UE) sur les pratiques"), "Règlement (UE) sur les pratiques");
+  const fuites = FICHES.flatMap(f => (f.exos || []).filter(e => e.type === "ordering" && e.payload.items.map(sansDate).filter(x => /\b(1\d{3}|20\d{2})\b/.test(x)).length >= 2).map(() => f.id));
+  assert.equal(fuites.join(", "), "");
+});
+
+test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un terme parent", () => {
+  const lex = [
+    { terme: "bouturage", def: "Multiplication par bouture.", declic: "" },
+    { terme: "clone", def: "Plants identiques.", declic: "Une bouture." },
+    { terme: "greffe", def: "Union.", declic: "" }, { terme: "vrille", def: "Organe.", declic: "" }, { terme: "moût", def: "Jus.", declic: "" }];
+  const ex = lexiqueExercises(lex, [{ titre: "bouturage clone", synth: "", mnemo: "" }])[0];
+  assert.equal(ex.prompt, "Lexique — quel terme correspond à : « Multiplication par …. » ?");
+  assert.ok(!ex.payload.options.includes("clone"));
 });

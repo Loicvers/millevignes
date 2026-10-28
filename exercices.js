@@ -40,11 +40,18 @@ function lexFiches(t, fiches) {
   const hit = s => res.some(r => r.test(normalize(s)));
   return fiches.filter(f => hit(f.titre + " " + f.synth + " " + f.mnemo)).sort((a, b) => hit(b.titre) - hit(a.titre)); // terme dans le titre d'abord
 }
+const mots = s => normalize(s).split(" ");
+// Racine du premier mot du terme (bouturage → boutur, greffe → greffe).
+const lexStem = t => { const w = normalize(t.terme).split(" ")[0]; return w.length <= 5 ? w : w.slice(0, Math.max(5, w.length - 3)); };
 // Un QCM par terme (définition → terme), rattaché à la première fiche qui l'emploie ; l'étymologie sert de correction.
 function lexiqueExercises(lex, fiches) {
   return lex.map(t => ({ t, f: lexFiches(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
-    const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t)).slice(0, 3).map(o => o.terme)]);
-    return { id: "lx-" + normalize(t.terme).replace(/ /g, "-"), type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + t.def + " » ?",
+    // Leurres : jamais un terme parent (l'un cite l'autre, ex. clone ↔ bouture), sinon deux réponses défendables.
+    const lie = o => [o.def + " " + o.declic, t.def + " " + t.declic].some((txt, i) => mots(txt).some(w => w.startsWith(lexStem(i ? o : t))));
+    const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t && !lie(o))).slice(0, 3).map(o => o.terme)]);
+    // La définition ne doit pas souffler la réponse (« par bouture » → bouturage) : mots de la même racine masqués.
+    const def = t.def.replace(/[\p{L}’'-]+/gu, w => mots(w).some(m => m.startsWith(lexStem(t))) ? "…" : w);
+    return { id: "lx-" + normalize(t.terme).replace(/ /g, "-"), type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + def + " » ?",
       payload: { options, answer: options.indexOf(t.terme) }, explanation: `Étymologie : ${t.etym} ${t.declic}`, fiche: f };
   });
 }
@@ -106,6 +113,9 @@ function clozeParts(text) { return text.split(/\{\{([^{}]+)\}\}/).map((p, i) => 
 
 // Réponse tapée : singulier et pluriel valent pareil (« variété européenne primitive » = « variétés européennes primitives »).
 const libre = s => normalize(s).split(" ").map(w => w.length > 3 ? w.replace(/[sx]$/, "") : w).join(" ");
+
+// « Remettre dans l'ordre » : la date entre parenthèses donnerait la réponse ; masquée à l'affichage, rendue à la correction.
+const sansDate = s => s.replace(/\s*\([^()]*(\b1\d{3}\b|\b20\d{2}\b|siècle|années)[^()]*\)/g, "").trim();
 
 const same = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
 

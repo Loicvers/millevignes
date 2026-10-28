@@ -6,7 +6,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Vérifiées : 748 · à vérifier : 0 (0 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 1896
 - Niveaux : Fondamental 235 · Intermédiaire 399 · Pointu 114
 - Cours (Approfondir) : 68 · schémas : 101
-- Lexique : 81 termes · récits de chapitre : 84
+- Lexique : 84 termes · récits de chapitre : 84
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
