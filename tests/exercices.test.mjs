@@ -238,3 +238,15 @@ test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un 
   assert.equal(ex.prompt, "Lexique — quel terme correspond à : « Multiplication par …. » ?");
   assert.ok(!ex.payload.options.includes("clone"));
 });
+
+test("répétition espacée : difficile ramène à 1 jour, facilité plancher 1,3, facile allonge plus que correct", () => {
+  vm.runInNewContext("this.sv=suivante", ctx);
+  const t = 1000, J = 86400000;
+  let p = ctx.sv(undefined, "ok", t);
+  assert.deepEqual([p.interval, p.ease, p.due, p.acquired], [1, 2.3, t + J, true]);
+  assert.equal(ctx.sv(p, "ok", t).interval, 2, "1 jour × 2,3 arrondi");
+  assert.equal(ctx.sv(undefined, "easy", t).interval, 2);
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t).interval, Math.round(10 * 2.4 * 1.3));
+  assert.equal(ctx.sv({ ease: 1.4, interval: 10 }, "hard", t).ease, 1.3);
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "hard", t).interval, 1);
+});
