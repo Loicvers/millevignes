@@ -5,7 +5,11 @@ const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mc
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
 const SKEY='mv_session_max',TAILLES=[10,20,40];
 let SESSION_MAX=(()=>{try{const n=+localStorage.getItem(SKEY);return TAILLES.includes(n)?n:20;}catch{return 20;}})();
-const NEW_FICHES=5; // nouvelles fiches par jour
+const NEW_FICHES=5; // nouvelles fiches par jour, sans échéance
+const ECHKEY='mv_echeance';let echeance='';try{echeance=localStorage.getItem(ECHKEY)||'';}catch{}
+// Avec une échéance, le rythme monte pour tout voir à temps, et la séance s'allonge d'autant (les révisions passent d'abord).
+const restantes=()=>{const vus=new Set(EXOS.filter(e=>prog[e.id]).map(e=>e.fiche));return FICHES.filter(f=>!vus.has(f)&&!lues[f.id]).length;};
+const rythmeDuJour=()=>echeance?rythme(restantes(),now(),echeance,NEW_FICHES):NEW_FICHES;
 
 /* ============ PERSISTANCE (localStorage) ============ */
 // v2 : progression par exercice. La v1 (par fiche) est reprise une fois, puis laissée intacte.
@@ -47,7 +51,7 @@ function etat(f){ // où en est la fiche, pour le sommaire
   return lues[f.id]?['lue','Lue']:['new','À découvrir'];
 }
 // Règles de séance : voir planSession() dans exercices.js.
-function buildQueue(pool){return planSession(pool,prog,lues,now(),{max:SESSION_MAX,newFiches:NEW_FICHES});}
+function buildQueue(pool){const n=rythmeDuJour();return planSession(pool,prog,lues,now(),{max:echeance?SESSION_MAX+2*n:SESSION_MAX,newFiches:n});}
 
 /* ============ ÉTAT FILTRES ============ */
 let mode="revision";
@@ -804,7 +808,14 @@ const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pre
 ptBtn.onclick=()=>{try{localStorage.setItem(PTKEY,pretestOn()?'0':'1');}catch{}majPt();};majPt();
 const seBtn=document.getElementById('sessionSizeBtn');
 const majSe=()=>seBtn.textContent='Longueur d\'une séance : '+SESSION_MAX+' exercices';
-seBtn.onclick=()=>{SESSION_MAX=TAILLES[(TAILLES.indexOf(SESSION_MAX)+1)%TAILLES.length];try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majSe();updateBadges();};majSe();
+seBtn.onclick=()=>{SESSION_MAX=TAILLES[(TAILLES.indexOf(SESSION_MAX)+1)%TAILLES.length];try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majSe();majEch();updateBadges();};majSe();
+const THEMES={'':'selon l\'appareil',light:'clair',dark:'sombre'},thBtn=document.getElementById('themeBtn');
+const majTh=()=>thBtn.textContent='Affichage : '+THEMES[document.documentElement.dataset.theme||''];
+thBtn.onclick=()=>{const k=Object.keys(THEMES),t=k[(k.indexOf(document.documentElement.dataset.theme||'')+1)%k.length];
+  if(t)document.documentElement.dataset.theme=t;else delete document.documentElement.dataset.theme;try{t?localStorage.setItem('mv_theme',t):localStorage.removeItem('mv_theme');}catch{}majTh();};majTh();
+const echIn=document.getElementById('echeance'),echInfo=document.getElementById('echeanceInfo');
+function majEch(){echIn.value=echeance;const n=rythmeDuJour();echInfo.textContent=echeance?`${restantes()} fiches à découvrir : ${n} nouvelles par jour, séance jusqu'à ${SESSION_MAX+2*n} exercices.`:`Sans échéance : ${NEW_FICHES} nouvelles fiches par jour.`;}
+echIn.onchange=()=>{echeance=echIn.value;try{echeance?localStorage.setItem(ECHKEY,echeance):localStorage.removeItem(ECHKEY);}catch{}majEch();updateBadges();};majEch();
 document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scrollTo(0,0);};
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();

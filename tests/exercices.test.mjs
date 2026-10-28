@@ -264,3 +264,18 @@ test("restauration : la fusion garde par exercice la réponse la plus récente e
   assert.equal(j.map(x => x.e).join(), "x,z,y", "union sans doublon, triée par date");
   assert.equal(ctx.fl([{ t: 1 }, { t: 2 }], [{ t: 3 }], x => x.t, 2).length, 2, "bornée aux n dernières");
 });
+
+test("échéance : rythme de nouvelles fiches pour tout voir à temps, jamais sous le rythme de base", () => {
+  vm.runInNewContext("this.ry=rythme", ctx);
+  const t = new Date("2026-10-28T10:00:00").getTime();
+  assert.equal(ctx.ry(748, t, "2026-12-31"), 12, "748 fiches en 65 jours");
+  assert.equal(ctx.ry(10, t, "2026-12-31"), 5, "plancher : le rythme de base");
+  assert.equal(ctx.ry(30, t, "2026-10-01"), 30, "échéance passée : tout de suite");
+});
+
+test("le nom du cache de sw.js correspond aux fichiers du site (sinon : node tools/sync-site.mjs)", async () => {
+  const { empreinte } = await import("../tools/sync-site.mjs");
+  const racine = new URL("../", import.meta.url);
+  const sw = readFileSync(new URL("sw.js", racine), "utf8");
+  assert.equal(sw.match(/const CACHE = "([^"]+)"/)[1], empreinte(sw, f => readFileSync(new URL(f, racine))));
+});

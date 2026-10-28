@@ -10,6 +10,7 @@
 <meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem("mv_theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 
@@ -69,7 +70,8 @@
   <div class="foot-save"><button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button>
   <button class="reset-all" id="suiviLink">Mon suivi</button>
   <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden></div>
-  <div class="foot-save"><button class="reset-all" id="pretestBtn"></button><button class="reset-all" id="sessionSizeBtn"></button></div>
+  <div class="foot-save"><button class="reset-all" id="pretestBtn"></button><button class="reset-all" id="sessionSizeBtn"></button><button class="reset-all" id="themeBtn"></button></div>
+  <div class="foot-save"><label class="ech">Échéance de révision <input type="date" id="echeance"></label> <span id="echeanceInfo"></span></div>
   <div class="foot-save"><button class="reset-all" id="partBtn">Importer mes partenaires (fichier privé)</button><input type="file" id="partFile" accept="application/json,.json" hidden></div>
   <div class="foot-reset"><button class="reset-all danger" id="resetAll">Réinitialiser toute ma progression</button></div>
   </details>
