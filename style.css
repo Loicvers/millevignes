@@ -79,6 +79,10 @@
   .sec:first-of-type{margin-top:0}
   .toc-sec{font-family:'Cormorant',serif;font-weight:600;font-size:27px;padding:6px 0 8px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;list-style:none;cursor:pointer}
   .toc-sec::-webkit-details-marker{display:none}
+  /* titres de la section et du chapitre ouverts collés en haut : on replie sans remonter */
+  .sec[open]>.toc-sec{position:sticky;top:var(--haut,0px);z-index:6;background:var(--paper);height:48px;box-sizing:border-box;white-space:nowrap}
+  .chap[open]>summary{position:sticky;top:calc(var(--haut,0px) + 48px);z-index:5;background:var(--paper)}
+  .sec,.chap{scroll-margin-top:var(--haut,0px)}
   .sec-t::before{content:"▸";display:inline-block;width:1em;color:var(--gold);font-family:'Inter';font-size:15px;vertical-align:3px}
   .sec[open]>.toc-sec .sec-t::before{content:"▾"}
   .sec-act{margin:0 0 6px}

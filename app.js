@@ -303,6 +303,7 @@ let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dép
 const TOUTES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>TOUTES.includes(c.partie)?c.partie:'Le livre';
 const partiesDuMode=()=>mode==='atelier'?TOUTES:['Le livre','Les cépages']; // France et monde : onglet Atlas (Masterclass garde tout pour composer ses programmes)
 let partie=(()=>{try{return localStorage.getItem('mv_partie')||'Le livre';}catch{return 'Le livre';}})();
+const recaler=d=>{if(d.getBoundingClientRect().top<0)d.scrollIntoView({block:'start'});}; // replié depuis son titre collé : on revient sur ce titre
 function navParties(){
   const nav=el('div','parties'),lex=mode==='lexique';nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie de la bibliothèque');
   const btn=(p,n,on,fn)=>{const b=el('button','partie'+(on?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',on);b.onclick=fn;nav.append(b);};
@@ -330,12 +331,12 @@ function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre}={}){
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
       if(!secOuverts)secOuverts=new Set([suite?(suite.c.section||suite.c.partie):nom]);
-      const sd=el('details','sec');sd.open=ordre?ouvrir:!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else secOuverts.delete(nom);};
+      const sd=el('details','sec');sd.open=ordre?ouvrir:!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else{secOuverts.delete(nom);recaler(sd);}};
       const h=el('summary','toc-sec');h.append(el('span','sec-t',nom),el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));
       const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
       const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h,sa);grid.append(sd);box=sd;}
-    const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else chapOuverts.delete(c.chapitre);};
+    const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else{chapOuverts.delete(c.chapitre);recaler(d);}};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
     const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
@@ -940,7 +941,8 @@ document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scroll
 const regBtn=document.getElementById('reglagesBtn'),regBox=document.getElementById('reglages');
 regBtn.onclick=()=>{regBox.hidden=!regBox.hidden;regBtn.setAttribute('aria-expanded',!regBox.hidden);if(!regBox.hidden)regBox.scrollIntoView({block:'nearest'});};
 // En-tête collant : le titre défile, les onglets restent en haut de l'écran
-const head=document.querySelector('header'),calerEntete=()=>{head.style.top=-document.querySelector('.head-inner').offsetHeight+'px';};
+const head=document.querySelector('header'),calerEntete=()=>{const t=document.querySelector('.head-inner').offsetHeight;head.style.top=-t+'px';
+  document.documentElement.style.setProperty('--haut',head.offsetHeight-t+'px');}; // --haut : ce qui reste collé en haut (onglets sur ordinateur, rien sur mobile où ils sont en bas)
 calerEntete();addEventListener('resize',calerEntete);
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
