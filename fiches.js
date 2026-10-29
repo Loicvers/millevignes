@@ -54,6 +54,7 @@ const REGIONS_FR = [
    L'ordre de cette liste est l'ordre de lecture ; ces chapitres viennent après ceux de Mille Vignes. */
 const FRANCE_SOMMAIRE = [
   { section: "France", chapitre: "La France viticole : vue d’ensemble" },
+  { section: "France", chapitre: "IGP et Vin de France" },
   { section: "Champagne", chapitre: "Champagne : panorama et appellations" },
   { section: "Champagne", chapitre: "Champagne : secteurs et villages" },
   { section: "Champagne", chapitre: "Champagne : élaboration et styles" },
@@ -98,7 +99,6 @@ const FRANCE_SOMMAIRE = [
   { section: "Corse", chapitre: "Corse : appellations" },
   { section: "Charentes", chapitre: "Charentes : pineau et vins de liqueur" },
   { section: "Lorraine", chapitre: "Lorraine : Côtes de Toul et Moselle" },
-  { section: "France", chapitre: "IGP et Vin de France" },
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages d’Alsace" },
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne" },
   { partie: "Les cépages", section: "Cépages", chapitre: "Cépages du Jura et de Savoie" },
