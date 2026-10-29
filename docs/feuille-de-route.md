@@ -39,7 +39,9 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 
 ## En attente de Loïc
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
-- Tests sur iPhone réel (mode sombre, échéance, sauvegarde) : non faits.
+
+## Fait
+- Tests sur iPhone réel (29/10) : mode sombre, ouverture sans réseau, sauvegarde vers iCloud Drive, restauration et échéance validés.
 
 ## Idées non retenues pour l'instant
 - Pineau, *La Corne de vache et le Microscope* (2019) : texte indisponible (29/10), recherche abandonnée ; la fiche du vin nature s'appuie sur d'autres sources, la notice suffit pour citer le livre.
