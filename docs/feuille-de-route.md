@@ -27,6 +27,12 @@
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
 
+## Refonte de la structure (proposée le 29/10, validée par Loïc)
+Quatre onglets autour des deux usages (réviser chaque jour, travailler devant un client) ; mêmes données et mêmes clés de stockage.
+- [x] Étape 1 — **Aujourd'hui** (accueil, remplace « Session du jour ») : séance du jour avec durée estimée, échéance (J-n, fiches vues, rythme), reprendre la lecture, examen blanc et points durs, suivi en bref.
+- [x] Étape 2 — **Atlas** (29/10) (remplace Cartes et les parties France et Monde de Fiches) : une ligne par région ou pays avec sa progression ; page de région avec carte et partenaires, S'entraîner / Examen blanc / Lire, et trois blocs (vignoble et appellations, cépages, dans le livre). Une région réunit ses fiches des trois parties (Bordeaux : 21 + 5 + 11).
+- [x] Étape 3 — **Bibliothèque** (29/10) (Livre, Cépages, Lexique) et barre à 4 onglets, éventuellement en bas d'écran sur mobile. Peut attendre janvier.
+
 ## Audit du 29/10 (reste à faire)
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
 - [x] Vrai/faux rééquilibré (29/10) : 152 → 258 vrais sur 641 (40 %) ; 106 énoncés faux réécrits en vrais à partir de leur explication et de la synthèse, sans fait nouveau (3 rédacteurs, relecture indépendante : 88 validés, 18 corrigés). Test : cliquet à 38 % sur l'existant, 35 à 65 % sur les nouvelles fiches (id > 750).

@@ -56,7 +56,7 @@ function etat(f){ // où en est la fiche, pour le sommaire
 function buildQueue(pool){const n=rythmeDuJour();return planSession(pool,prog,lues,now(),{max:echeance?SESSION_MAX+2*n:SESSION_MAX,newFiches:n});}
 
 /* ============ ÉTAT FILTRES ============ */
-let mode="revision";
+let mode="jour"; // accueil : Aujourd'hui
 let activeThemes=new Set(),activeSubs=new Set(),activeGeo=null,activeNiv=new Set(),ficheQuery=[];
 
 /* ============ GÉO arbre ============ */
@@ -116,9 +116,10 @@ let attente;document.getElementById('ficheSearch').oninput=e=>{clearTimeout(atte
 document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getElementById('ficheSearch').value='';activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
-document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
+function marquerOnglet(m){m={lexique:'revision',suivi:'jour'}[m]||m; // le lexique vit dans la Bibliothèque, le suivi dans Aujourd'hui
+  document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
+document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
 const grid=document.getElementById('grid');
@@ -135,6 +136,7 @@ function render(){
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
   if(mode==='suivi')return renderSuivi();
+  if(mode==='jour')return renderJour();
   if(mode==='cartes')return renderCartes();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0)+(ficheQuery.length?1:0);
   const noms=[...activeThemes,...activeSubs,...activeNiv,...(activeGeo?[activeGeo.appel||activeGeo.region||activeGeo.pays]:[]),...(ficheQuery.length?[`« ${ficheQuery.join(' ')} »`]:[])].join(' · '); // le filtre actif se lit sans ouvrir le panneau
@@ -156,6 +158,33 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
   renderToc(list,nf>0);
+}
+/* ============ AUJOURD'HUI (accueil : ce qu'il y a à faire, réuni sur un écran) ============ */
+function renderJour(){
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  grid.className='jour';grid.innerHTML='';
+  const carte=(titre,...enfants)=>{const c=el('section','jour-carte');c.append(el('h3',null,titre),...enfants);grid.append(c);return c;};
+  const bouton=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=()=>{fn();window.scrollTo(0,0);};return b;};
+  // Séance du jour ; durée estimée sur la médiane des dernières réponses (30 s sans historique)
+  const q=buildQueue(EXOS),ms=journal.slice(-300).map(j=>j.ms).filter(x=>x>0&&x<300000).sort((a,b)=>a-b),med=ms.length>=20?ms[ms.length>>1]:30000;
+  const min=Math.max(1,Math.round(q.length*med/60000));
+  carte('Séance du jour',el('p','jour-chiffre',q.length?`${q.length} exercice${q.length>1?'s':''} · environ ${min} min`:'Rien à revoir pour le moment'),
+    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Session du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'));
+  // Échéance
+  const vues=FICHES.filter(f=>etat(f)[0]!=='new').length,bar=el('span','chap-bar');bar.append(el('i'));bar.firstChild.style.width=100*vues/FICHES.length+'%';
+  if(echeance){const j=Math.round((new Date(echeance+'T12:00')-new Date(new Date().toDateString()+' 12:00'))/DAY); // jours de calendrier
+    carte('Échéance',el('p','jour-chiffre',`${new Date(echeance+'T12:00').toLocaleDateString('fr-FR',{day:'numeric',month:'long'})} · ${j>0?'J-'+j:j===0?'c’est aujourd’hui':'dépassée'}`),bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length} · ${restantes()} à découvrir, ${rythmeDuJour()} nouvelles par jour.`));}
+  else carte('Échéance',bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length}. Fixe une date dans les Réglages : le rythme se calcule pour tout voir à temps.`),bouton('Ouvrir les réglages',()=>document.getElementById('reglagesBtn').click()));
+  // Reprendre la lecture (première fiche pas encore vue, dans l'ordre du sommaire)
+  const suite=CHAPS&&CHAPS.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>etat(x.f)[0]==='new');
+  if(suite)carte('Reprendre la lecture',el('p','jour-note',`${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre),el('br'),bouton('Continuer',()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i)));
+  // S'évaluer : examen blanc et points durs
+  const der=examens[examens.length-1],durs=pointsDurs(EXOS,prog,journal),ev=carte('S’évaluer');
+  ev.append(el('p','jour-note',der?`Dernier examen blanc : ${Math.round(100*der.ok/der.n)} % (${new Date(der.t).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})}).`:'Pas encore d’examen blanc : 40 questions mélangées, sans aide, une minute chacune.'),
+    bouton('Examen blanc',()=>startExamen(EXOS)),' ',durs.length?bouton(`Mes points durs (${durs.length})`,()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))])):'');
+  // Suivi en bref
+  const r=suivi(journal,id=>EX_BY_ID[id]&&EX_BY_ID[id].type,prog,now()),pc=c=>c[1]>=5?Math.round(100*c[0]/c[1])+' %':'—';
+  carte('Mon suivi',el('p','jour-note',`Réussite immédiate ${pc(r.immediate)} · rappel sans aide ${pc(r.libre)} · ${r.retard.n} révision${r.retard.n>1?'s':''} en retard.`),bouton('Voir le détail',()=>setMode('suivi')));
 }
 /* ============ MON SUIVI (lit le journal, tout reste dans ce navigateur) ============ */
 function renderSuivi(){
@@ -185,20 +214,53 @@ function renderSuivi(){
 /* ============ CARTES (toutes les cartes de régions, pour situer un domaine devant un client) ============ */
 let carteQuery='';
 const CARTES=FICHES.filter(f=>f.source==='france'&&/viewBox="/.test(f.schema?.svg??'')).sort((a,b)=>!a.geo?.region?-1:!b.geo?.region?1:a.geo.region.localeCompare(b.geo.region,'fr')||a.id-b.id);
+/* ============ ATLAS (une page par région ou pays : cartes, puis toutes ses fiches) ============ */
+const LIEUX=lieux(FICHES,typeof FRANCE_SOMMAIRE!=='undefined'?FRANCE_SOMMAIRE:[]);
+let lieu=(()=>{try{return localStorage.getItem('mv_lieu')||'';}catch{return '';}})();
+const allerLieu=nom=>{lieu=nom;try{nom?localStorage.setItem('mv_lieu',nom):localStorage.removeItem('mv_lieu');}catch{}render();window.scrollTo(0,0);};
+const barre=(v,n)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'));b.firstChild.style.width=(n?100*v/n:0)+'%';return b;};
+const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`;
+function renderLieu(l){
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  grid.className='grid toc';grid.innerHTML='';
+  const vue=f=>etat(f)[0]!=='new',v=l.fiches.filter(vue).length,tete=el('div','lieu-tete');
+  const nav=el('div','lieu-nav'),ret=el('button','partie','← Atlas');ret.onclick=()=>allerLieu('');nav.append(ret);
+  LIEUX.forEach(x=>{const b=el('button','partie'+(x===l?' on':''),x.nom==='France'?'France (ensemble)':x.nom);b.setAttribute('aria-pressed',x===l);b.onclick=()=>allerLieu(x.nom);nav.append(b);});
+  // fiches dans l'ordre : vignoble (France ou monde), cépages, puis livre
+  const rang=c=>/France viticole|monde viticole/.test(c.partie)?0:c.partie==='Les cépages'?1:2;
+  const chaps=(CHAPS||[]).filter(c=>c.fiches.some(f=>l.fiches.includes(f))).sort((a,b)=>rang(a)-rang(b));
+  const ordre=chaps.flatMap(c=>c.fiches.filter(f=>l.fiches.includes(f))),pool=l.fiches.flatMap(f=>EXOS.filter(e=>e.fiche===f));
+  const act=el('div','chap-act'),bt=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=fn;act.append(b);};
+  bt('S’entraîner',()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),l.nom),'btn primary');
+  bt('Examen blanc',()=>startExamen(pool));bt('Tout lire',()=>lireChapitre(l.nom,ordre));
+  tete.append(nav,el('h2','lieu-t',l.nom==='France'?'La France viticole : vue d’ensemble':l.nom),el('p','jour-note',`${l.fiches.length} fiche${l.fiches.length>1?'s':''} · ${v} vue${v>1?'s':''}`),barre(v,l.fiches.length),act);
+  const cs=CARTES.filter(f=>l.france&&(l.nom==='France'?!f.geo?.region:f.geo?.region===l.nom)); // la première carte en vue, les autres repliées
+  cs.forEach((f,i)=>tete.insertAdjacentHTML('beforeend',i?'':carteHTML(f,null)+partenairesHTML(f)));
+  if(cs.length>1)tete.insertAdjacentHTML('beforeend',`<details class="cours"><summary>Autres cartes (${cs.length-1})</summary>${cs.slice(1).map(f=>carteHTML(f,null)).join('')}</details>`);
+  grid.append(tete);nav.querySelector('.on')?.scrollIntoView({inline:'center',block:'nearest'});
+  renderToc(l.fiches,true,{chaps,ouvrir:true});
+}
 function renderCartes(){
-  document.getElementById('introLine').textContent=partenaires.length?'Cherche un domaine, une commune, une appellation ou une région : la carte s’affiche avec le domaine en évidence. Touche une carte pour l’agrandir.':'Toutes les cartes des régions. Touche une carte pour l’agrandir. Importe tes partenaires (bas de page) pour les y voir.';
+  const l=lieu&&LIEUX.find(x=>x.nom===lieu);if(l)return renderLieu(l);
+  document.getElementById('introLine').textContent=partenaires.length?'Choisis une région ou un pays, ou cherche un domaine, une commune, une appellation : la carte s’affiche avec le domaine en évidence.':'Choisis une région ou un pays : sa carte, ses appellations, ses cépages et ce qu’en dit le livre. Importe tes partenaires (Réglages) pour les voir sur les cartes.';
   document.getElementById('progPanel').hidden=true;
   grid.className='lexique';grid.innerHTML='';
-  const q=el('input','ex-input');q.type='search';q.placeholder=partenaires.length?'Domaine, commune, appellation ou région':'Région ou appellation';q.setAttribute('aria-label','Chercher une carte');q.value=carteQuery;
+  const q=el('input','ex-input');q.type='search';q.placeholder=partenaires.length?'Domaine, commune, appellation ou région':'Région ou appellation';q.setAttribute('aria-label','Chercher dans l’atlas');q.value=carteQuery;
   const list=el('div');
   const draw=()=>{list.innerHTML='';const n=normalize(carteQuery);
+    if(!n){ // sans recherche : la liste des lieux, avec la progression de chacun
+      const vue=f=>etat(f)[0]!=='new';list.className='lieux';
+      [['France',LIEUX.filter(x=>x.france)],['Monde',LIEUX.filter(x=>!x.france)]].forEach(([t,ls])=>{list.append(el('h2','lieux-t',t));
+        ls.forEach(x=>{const v=x.fiches.filter(vue).length,b=el('button','lieu');b.append(el('span','lieu-n',x.nom==='France'?'Vue d’ensemble':x.nom),el('span','chap-m',`${v}/${x.fiches.length}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);list.append(b);});});
+      return;}
+    list.className='';
     const hits=n?partenaires.filter(p=>normalize([p.nom,p.commune,p.region,...(p.appellations||[])].join(' ')).includes(n)):[];
     const hl=new Set(hits.map(p=>p.nom));
     const vues=!n?CARTES:hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
     vues.forEach(f=>{const d=el('div','card lex');
       d.append(el('h3',null,f.schema.titre||f.geo?.region||'France'),el('p','src',f.schema.titre?(f.geo?.region||'France'):f.titre));
-      d.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`+(hits.length?'':partenairesHTML(f)));
-      const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);list.append(d);});
+      d.insertAdjacentHTML('beforeend',carteHTML(f,hl)+(hits.length?'':partenairesHTML(f)));
+      const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);const r=f.geo?.region&&LIEUX.find(x=>x.nom===f.geo.region);if(r){const g=el('button','chip','Page '+r.nom);g.onclick=()=>allerLieu(r.nom);d.append(' ',g);}list.append(d);});
     if(hits.length)list.prepend(el('p','suivi-note',hits.map(p=>p.nom+(p.commune?' ('+p.commune+')':'')+(p.appellations?.length?' — '+p.appellations.join(', '):'')).join(' ; ')));
     if(!vues.length)list.append(el('p','empty','Aucune carte ne correspond.'));};
   q.oninput=()=>{carteQuery=q.value;draw();};
@@ -220,6 +282,7 @@ function renderLexique(){
   document.getElementById('introLine').textContent='Les mots du métier, avec leur origine : retenir le sens d’un mot, c’est souvent retenir son étymologie.';
   document.getElementById('progPanel').hidden=true;
   grid.className='lexique';grid.innerHTML='';
+  if(CHAPS)grid.append(navParties());
   const q=el('input','ex-input');q.type='search';q.placeholder='Chercher un terme';q.setAttribute('aria-label','Chercher un terme');q.value=lexQuery;
   const list=el('div');
   const draw=()=>{list.innerHTML='';const n=normalize(lexQuery);
@@ -237,20 +300,26 @@ function renderLexique(){
   grid.append(q,list);draw();
 }
 let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dépliées (au départ : celle où l'on en est)
-const PARTIES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>PARTIES.includes(c.partie)?c.partie:'Le livre';
-let partie=(()=>{try{const p=localStorage.getItem('mv_partie');return PARTIES.includes(p)?p:'Le livre';}catch{return 'Le livre';}})();
-function renderToc(list,filtre){
+const TOUTES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>TOUTES.includes(c.partie)?c.partie:'Le livre';
+const partiesDuMode=()=>mode==='atelier'?TOUTES:['Le livre','Les cépages']; // France et monde : onglet Atlas (Masterclass garde tout pour composer ses programmes)
+let partie=(()=>{try{return localStorage.getItem('mv_partie')||'Le livre';}catch{return 'Le livre';}})();
+function navParties(){
+  const nav=el('div','parties'),lex=mode==='lexique';nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie de la bibliothèque');
+  const btn=(p,n,on,fn)=>{const b=el('button','partie'+(on?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',on);b.onclick=fn;nav.append(b);};
+  partiesDuMode().forEach(p=>btn(p,CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),!lex&&p===partie,()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;lex?setMode('revision'):render();}));
+  if(mode!=='atelier')btn('Lexique',LEXIQUE.length,lex,()=>setMode('lexique'));
+  return nav;
+}
+function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre}={}){
   grid.className='grid toc';
   const vue=f=>etat(f)[0]!=='new';
   // Une partie à la fois (livre, France, cépages, monde) ; une recherche ou un filtre montre tout.
-  const chaps=filtre?CHAPS:CHAPS.filter(c=>partieDe(c)===partie);
-  if(!filtre){const nav=el('div','parties');nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie du sommaire');
-    PARTIES.forEach(p=>{const n=CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),b=el('button','partie'+(p===partie?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));
-      b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',p===partie);b.onclick=()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;render();};nav.append(b);});
-    grid.append(nav);}
+  if(!partiesDuMode().includes(partie))partie='Le livre';
+  const chaps=ordre||(filtre?CHAPS:CHAPS.filter(c=>partieDe(c)===partie));
+  if(!filtre&&!ordre)grid.append(navParties());
   // Reprendre : première fiche pas encore vue, dans l'ordre du sommaire
   const suite=chaps.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>!vue(x.f));
-  if(!filtre&&suite&&mode!=='atelier'){
+  if(!filtre&&!ordre&&suite&&mode!=='atelier'){
     const r=el('div','resume');
     r.append(el('p',null,`Reprendre — ${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre));
     const b=el('button','btn primary','Continuer la lecture');b.onclick=()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i);r.append(b);grid.append(r);
@@ -261,12 +330,12 @@ function renderToc(list,filtre){
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
       if(!secOuverts)secOuverts=new Set([suite?(suite.c.section||suite.c.partie):nom]);
-      const sd=el('details','sec');sd.open=!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else secOuverts.delete(nom);};
+      const sd=el('details','sec');sd.open=ordre?ouvrir:!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else secOuverts.delete(nom);};
       const h=el('summary','toc-sec');h.append(el('span','sec-t',nom),el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));
       const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
       const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h,sa);grid.append(sd);box=sd;}
-    const d=el('details','chap');d.open=filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else chapOuverts.delete(c.chapitre);};
+    const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else chapOuverts.delete(c.chapitre);};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
     const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
@@ -555,11 +624,13 @@ document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement
 const RETRY_GAP=4; // exercices intercalés avant de reposer une erreur : assez pour ne pas répondre de mémoire immédiate
 let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),schemaVu=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
+let retour='jour'; // écran d'où part une séance ou une lecture, pour y revenir
 function startSession(q,title,dejaLues=[],exam=null){
+  if(mode!=='due')retour=mode;
   queue=q;examen=exam;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
   if(q.length&&!exam){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
-  mode='due';marquerOnglet('due');
+  mode='due';marquerOnglet('jour'); // la séance reste rattachée à l'onglet Aujourd'hui
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   showExercise();window.scrollTo(0,0);
@@ -587,7 +658,7 @@ function showBilanExamen(){
   if(faux.length){const d=el('details','cours');d.append(el('summary',null,`Mes erreurs (${faux.length})`));
     faux.forEach(e=>{const li=el('div','bilan-err');li.append(el('p',null,e.prompt+(e.payload.statement?' '+e.payload.statement:'')),el('p','fb-src','Réponse attendue : '+correctText(e)+' — fiche : '+e.fiche.titre));d.append(li);});box.append(d);
     const rv=el('button','btn primary','Revoir mes erreurs');rv.onclick=()=>startSession(faux,'Erreurs de l\'examen',[...new Set(faux.map(e=>e.fiche.id))]);box.append(rv,' ');}
-  const r=el('button','btn','Retour aux fiches');r.onclick=()=>setMode('revision');box.append(r);
+  const r=el('button','btn','Retour');r.onclick=()=>setMode(retour);box.append(r);
   grid.append(box);
 }
 function showExercise(){
@@ -598,7 +669,7 @@ function showExercise(){
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
     else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
       box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
-      const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
+      const again=el('button','btn','Retour');again.onclick=()=>setMode(retour);box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
@@ -714,14 +785,15 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
 }
 /* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
 function lireChapitre(titre,fiches,depart=0){
+  if(mode!=='due')retour=mode;
   mode='due';marquerOnglet(null);
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   const page=i=>{
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
       box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
-      const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
-    showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
+      const b=el('button','btn','Retour');b.onclick=()=>setMode(retour);box.append(b);grid.append(box);return;}
+    showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode(retour)});
   };
   const r=typeof RECITS!=='undefined'&&RECITS.find(x=>x.chapitre===titre);
   r?showRecit(r,()=>page(depart)):page(depart);window.scrollTo(0,0);
@@ -759,7 +831,7 @@ function showRecit(r,onGo){
     ${r.prudence?.length?`<details class="cours"><summary>Points de prudence (le livre corrigé)</summary>${r.prudence.map(t=>`<p>${t}</p>`).join('')}</details>`:''}
     <div class="src">— ${livre?`D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}`:`D’après ${r.src}`}. Texte reformulé.</div>`;
   const actions=el('div','ex-actions'),go=el('button','btn primary','Aux fiches du chapitre'),quit=el('button','btn later','Quitter la lecture');
-  go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode('revision');};
+  go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode(retour);};
   ecouter([r.chapitre,r.question,...r.fil,r.defend,r.filRouge],box,actions);
   actions.append(go,quit);box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);

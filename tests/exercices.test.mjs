@@ -321,3 +321,12 @@ test("chaque exercice corrigé a son explication (flashcards et « Explique à u
   const sans = FICHES.flatMap(toExercises).filter(e => !e.explanation && !["flashcard", "flashcard_reverse", "explain_client"].includes(e.type));
   assert.equal(sans.map(e => e.id).join(", "), "");
 });
+
+test("atlas : chaque région du sommaire a ses fiches, toutes parties réunies", () => {
+  vm.runInNewContext("this.li=lieux(FICHES,FRANCE_SOMMAIRE);this.regs=[...new Set(FRANCE_SOMMAIRE.filter(c=>!c.partie).map(c=>c.section))]", ctx);
+  const noms = ctx.li.map(l => l.nom).join("|");
+  for (const r of ctx.regs) assert.ok(noms.split("|").includes(r), `région sans fiches dans l'atlas (nom différent de geo.region ?) : ${r}`);
+  const bx = ctx.li.find(l => l.nom === "Bordeaux"), types = new Set(bx.fiches.map(f => f.source !== "france" ? "livre" : f.theme === "Cépages" ? "cépages" : "france"));
+  assert.equal([...types].sort().join(), "cépages,france,livre", "Bordeaux réunit ses fiches France, cépages et livre");
+  assert.equal(new Set(ctx.li.flatMap(l => l.fiches)).size, ctx.li.reduce((s, l) => s + l.fiches.length, 0), "une fiche dans un seul lieu");
+});
