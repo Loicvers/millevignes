@@ -38,7 +38,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - Biais léger des QCM : la bonne réponse est la plus longue dans 34 % des cas (25 % attendus).
 
 ## En attente de Loïc
-- Relecture humaine des 14 cours écrits le 28/10 (Écologie : fiches 97, 102, 107, 522, 121 ; cépages : 372, 376, 377, 378, 379, 380, 373, 374, 597).
+- Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
 - Tests sur iPhone réel (mode sombre, échéance, sauvegarde) : non faits.
 
 ## Idées non retenues pour l'instant
