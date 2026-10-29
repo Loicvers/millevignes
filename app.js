@@ -56,7 +56,7 @@ function etat(f){ // où en est la fiche, pour le sommaire
 function buildQueue(pool){const n=rythmeDuJour();return planSession(pool,prog,lues,now(),{max:echeance?SESSION_MAX+2*n:SESSION_MAX,newFiches:n});}
 
 /* ============ ÉTAT FILTRES ============ */
-let mode="revision";
+let mode="jour"; // accueil : Aujourd'hui
 let activeThemes=new Set(),activeSubs=new Set(),activeGeo=null,activeNiv=new Set(),ficheQuery=[];
 
 /* ============ GÉO arbre ============ */
@@ -117,8 +117,8 @@ document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getEleme
 
 /* ============ TABS ============ */
 function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
-document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==='due')startSession(buildQueue(EXOS),'Session du jour');else setMode(t.dataset.mode);};});
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
+document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
 const grid=document.getElementById('grid');
@@ -135,6 +135,7 @@ function render(){
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
   if(mode==='suivi')return renderSuivi();
+  if(mode==='jour')return renderJour();
   if(mode==='cartes')return renderCartes();
   const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0)+(ficheQuery.length?1:0);
   const noms=[...activeThemes,...activeSubs,...activeNiv,...(activeGeo?[activeGeo.appel||activeGeo.region||activeGeo.pays]:[]),...(ficheQuery.length?[`« ${ficheQuery.join(' ')} »`]:[])].join(' · '); // le filtre actif se lit sans ouvrir le panneau
@@ -156,6 +157,33 @@ function render(){
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
   if(!CHAPS){list.forEach(f=>grid.appendChild(card(f)));return;} // plan du livre pas (encore) chargé : liste simple
   renderToc(list,nf>0);
+}
+/* ============ AUJOURD'HUI (accueil : ce qu'il y a à faire, réuni sur un écran) ============ */
+function renderJour(){
+  document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
+  grid.className='jour';grid.innerHTML='';
+  const carte=(titre,...enfants)=>{const c=el('section','jour-carte');c.append(el('h3',null,titre),...enfants);grid.append(c);return c;};
+  const bouton=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=()=>{fn();window.scrollTo(0,0);};return b;};
+  // Séance du jour ; durée estimée sur la médiane des dernières réponses (30 s sans historique)
+  const q=buildQueue(EXOS),ms=journal.slice(-300).map(j=>j.ms).filter(x=>x>0&&x<300000).sort((a,b)=>a-b),med=ms.length>=20?ms[ms.length>>1]:30000;
+  const min=Math.max(1,Math.round(q.length*med/60000));
+  carte('Séance du jour',el('p','jour-chiffre',q.length?`${q.length} exercice${q.length>1?'s':''} · environ ${min} min`:'Rien à revoir pour le moment'),
+    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Session du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'));
+  // Échéance
+  const vues=FICHES.filter(f=>etat(f)[0]!=='new').length,bar=el('span','chap-bar');bar.append(el('i'));bar.firstChild.style.width=100*vues/FICHES.length+'%';
+  if(echeance){const j=Math.round((new Date(echeance+'T12:00')-new Date(new Date().toDateString()+' 12:00'))/DAY); // jours de calendrier
+    carte('Échéance',el('p','jour-chiffre',`${new Date(echeance+'T12:00').toLocaleDateString('fr-FR',{day:'numeric',month:'long'})} · ${j>0?'J-'+j:j===0?'c’est aujourd’hui':'dépassée'}`),bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length} · ${restantes()} à découvrir, ${rythmeDuJour()} nouvelles par jour.`));}
+  else carte('Échéance',bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length}. Fixe une date dans les Réglages : le rythme se calcule pour tout voir à temps.`),bouton('Ouvrir les réglages',()=>document.getElementById('reglagesBtn').click()));
+  // Reprendre la lecture (première fiche pas encore vue, dans l'ordre du sommaire)
+  const suite=CHAPS&&CHAPS.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>etat(x.f)[0]==='new');
+  if(suite)carte('Reprendre la lecture',el('p','jour-note',`${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre),el('br'),bouton('Continuer',()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i)));
+  // S'évaluer : examen blanc et points durs
+  const der=examens[examens.length-1],durs=pointsDurs(EXOS,prog,journal),ev=carte('S’évaluer');
+  ev.append(el('p','jour-note',der?`Dernier examen blanc : ${Math.round(100*der.ok/der.n)} % (${new Date(der.t).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})}).`:'Pas encore d’examen blanc : 40 questions mélangées, sans aide, une minute chacune.'),
+    bouton('Examen blanc',()=>startExamen(EXOS)),' ',durs.length?bouton(`Mes points durs (${durs.length})`,()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))])):'');
+  // Suivi en bref
+  const r=suivi(journal,id=>EX_BY_ID[id]&&EX_BY_ID[id].type,prog,now()),pc=c=>c[1]>=5?Math.round(100*c[0]/c[1])+' %':'—';
+  carte('Mon suivi',el('p','jour-note',`Réussite immédiate ${pc(r.immediate)} · rappel sans aide ${pc(r.libre)} · ${r.retard.n} révision${r.retard.n>1?'s':''} en retard.`),bouton('Voir le détail',()=>setMode('suivi')));
 }
 /* ============ MON SUIVI (lit le journal, tout reste dans ce navigateur) ============ */
 function renderSuivi(){
@@ -559,7 +587,7 @@ function startSession(q,title,dejaLues=[],exam=null){
   queue=q;examen=exam;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
   if(q.length&&!exam){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
-  mode='due';marquerOnglet('due');
+  mode='due';marquerOnglet('jour'); // la séance reste rattachée à l'onglet Aujourd'hui
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   showExercise();window.scrollTo(0,0);
@@ -598,7 +626,7 @@ function showExercise(){
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
     else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
       box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
-      const again=el('button','btn','Retour aux fiches');again.onclick=()=>setMode('revision');box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
+      const again=el('button','btn','Retour à l\'accueil');again.onclick=()=>setMode('jour');box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();

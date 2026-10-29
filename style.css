@@ -199,6 +199,12 @@
   .ex-head{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
   .ex-chrono{float:right;color:var(--wine-fg);font-variant-numeric:tabular-nums;letter-spacing:0}
   .bilan-themes,.bilan-err{text-align:left}
+  .jour{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .jour-carte{border:1px solid var(--line);border-radius:6px;padding:16px 18px;background:var(--paper)}
+  .jour-carte h3{font-family:'Cormorant',serif;font-size:22px;margin-bottom:6px}
+  .jour-chiffre{font-size:17px;font-weight:600;margin-bottom:10px}
+  .jour-note{font-size:14px;color:var(--muted);margin:6px 0 10px}
+  .jour-carte .chap-bar{display:block;margin:6px 0}
   .fiche-search{width:100%;margin-bottom:10px}
   .ex-warn{color:var(--warn);font-weight:600;margin-left:8px;white-space:nowrap}
   .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}

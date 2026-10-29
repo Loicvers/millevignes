@@ -20,8 +20,8 @@
     <button class="btn reg-btn" id="reglagesBtn" aria-expanded="false" aria-controls="reglages">Réglages</button>
   </div>
   <div class="tabs" role="tablist" aria-label="Sections du site">
-    <button class="tab tab-main" role="tab" aria-selected="false" data-mode="due">Session<span class="long"> du jour</span> <span class="badge" id="dueBadge">0</span></button>
-    <button class="tab on" role="tab" aria-selected="true" data-mode="revision">Fiches</button>
+    <button class="tab tab-main on" role="tab" data-mode="jour" aria-selected="true">Aujourd’hui <span class="badge" id="dueBadge">0</span></button>
+    <button class="tab" role="tab" aria-selected="false" data-mode="revision">Fiches</button>
     <button class="tab" role="tab" aria-selected="false" data-mode="lexique">Lexique</button>
     <button class="tab" role="tab" aria-selected="false" data-mode="cartes">Cartes</button>
     <button class="tab" role="tab" aria-selected="false" data-mode="atelier">Masterclass</button>
@@ -38,7 +38,7 @@
   <div class="foot-reset"><button class="reset-all danger" id="resetAll">Réinitialiser toute ma progression</button></div>
 </div></section>
 
-<div class="filters" id="filterBar">
+<div class="filters" id="filterBar" style="display:none">
   <div class="wrap">
     <input type="search" class="ex-input fiche-search" id="ficheSearch" placeholder="Chercher dans les fiches" aria-label="Chercher dans les fiches">
     <div class="filt-foot">
