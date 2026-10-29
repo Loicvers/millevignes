@@ -24,7 +24,7 @@
    ],
    "pos": [
     6,
-    -6,
+    -2,
     "start"
    ]
   }
@@ -49,15 +49,15 @@
     43.2
    ],
    "pos": [
-    -5,
-    10,
-    "end"
+    5,
+    9,
+    "start"
    ]
   }
  ],
  "zones": [
   {
-   "label": "Colombie-Britannique",
+   "label": "Colombie-Brit.",
    "admin1": [
     "British Columbia"
    ],
@@ -67,8 +67,8 @@
     "middle"
    ],
    "at": [
-    -124,
-    54
+    -119.5,
+    54.5
    ]
   },
   {
@@ -90,9 +90,10 @@
  "largeur": 320,
  "iso": "CA",
  "cadre": [
-  -128,
+  -134,
   41,
-  -74,
-  56
- ]
+  -68,
+  57
+ ],
+ "tol": 0.7
 }
