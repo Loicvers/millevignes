@@ -146,6 +146,7 @@ function render(){
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
   const hb=document.getElementById('hardBtn');hb.hidden=!durs.length;hb.textContent=`Mes points durs (${durs.length})`;
+  const xb=document.getElementById('examBtn');xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.onclick=()=>startExamen(pool);
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
@@ -535,19 +536,43 @@ document.addEventListener('keydown',e=>{
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!document.getElementById('proj').hidden)stopProjection();});
 
 /* ============ SESSION D'EXERCICES ============ */
+const RETRY_GAP=4; // exercices intercalés avant de reposer une erreur : assez pour ne pas répondre de mémoire immédiate
 let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),schemaVu=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
-function startSession(q,title,dejaLues=[]){
-  queue=q;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
-  if(q.length){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
+function startSession(q,title,dejaLues=[],exam=null){
+  queue=q;examen=exam;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
+  if(q.length&&!exam){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
   mode='due';marquerOnglet('due');
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   showExercise();window.scrollTo(0,0);
+  if(exam){const id=setInterval(()=>{const c=grid.querySelector('.ex-chrono');
+    if(!c||examen!==exam){clearInterval(id);return;} // examen quitté ou terminé
+    const r=exam.fin-now();if(r<=0){clearInterval(id);pos=queue.length;showExercise();return;}
+    c.textContent=chrono(r);},1000);}
+}
+/* Examen blanc : sans aide ni correction avant la fin, minuté, hors répétition espacée (voir planExamen dans exercices.js). */
+const EXAMEN_N=40,EXAMEN_MIN=40; // une minute par question, comme l'écrit du WSET 2 (50 QCM en 45 min)
+let examen=null;
+const chrono=ms=>{const s=Math.ceil(ms/1000);return `⏱ ${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;};
+function startExamen(pool){const q=planExamen(pool,EXAMEN_N);if(q.length)startSession(q,'Examen blanc',FICHES.map(f=>f.id),{fin:now()+EXAMEN_MIN*60e3,res:[]});}
+function showBilanExamen(){
+  const ex=examen,box=el('div','empty bilan');examen=null;
+  const ok=ex.res.filter(r=>r.ok).length,n=queue.length,pct=Math.round(100*ok/n);
+  box.append(el('h3',null,`Examen blanc : ${ok} sur ${n} (${pct} %)`),el('p',null,(ex.res.length<n?`Temps écoulé : ${n-ex.res.length} question(s) sans réponse, comptées fausses. `:'')+(pct>=55?'Au-dessus du seuil de réussite du WSET (55 %).':'Sous le seuil de réussite du WSET (55 %).')));
+  const th={};ex.res.forEach(r=>{const t=r.ex.fiche.theme||'Lexique';th[t]=th[t]||[0,0];th[t][1]++;if(r.ok)th[t][0]++;});
+  const ul=el('ul','bilan-themes');Object.entries(th).sort((a,b)=>a[1][0]/a[1][1]-b[1][0]/b[1][1]).forEach(([t,[o,m]])=>ul.append(el('li',null,`${t} : ${o}/${m}`)));box.append(ul);
+  const faux=ex.res.filter(r=>!r.ok).map(r=>r.ex);
+  if(faux.length){const d=el('details','cours');d.append(el('summary',null,`Mes erreurs (${faux.length})`));
+    faux.forEach(e=>{const li=el('div','bilan-err');li.append(el('p',null,e.prompt+(e.payload.statement?' '+e.payload.statement:'')),el('p','fb-src','Réponse attendue : '+correctText(e)+' — fiche : '+e.fiche.titre));d.append(li);});box.append(d);
+    const rv=el('button','btn primary','Revoir mes erreurs');rv.onclick=()=>startSession(faux,'Erreurs de l\'examen',[...new Set(faux.map(e=>e.fiche.id))]);box.append(rv,' ');}
+  const r=el('button','btn','Retour aux fiches');r.onclick=()=>setMode('revision');box.append(r);
+  grid.append(box);
 }
 function showExercise(){
   grid.className='session';grid.innerHTML='';
+  if(pos>=queue.length&&examen)return showBilanExamen();
   if(pos>=queue.length){
     const box=el('div','empty');
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
@@ -557,11 +582,12 @@ function showExercise(){
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
-  if(!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
+  if(!examen&&!decouvertes.has(f.id)&&aDecouvrir(f)){decouvertes.add(f.id);const n=queue.filter(e=>e.fiche===f).length;
     const lire=()=>showDecouverte(f,{head:`Nouvelle notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`,lead:`Lis-la tranquillement : ${n} exercice${n>1?'s':''} sur cette notion ensuite.`}); // apprendre avant d'être interrogé
     pretestOn()&&f.qcm?showPretest(f,lire):lire();return;}
   const box=el('div','ex');
   const head=el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`);
+  if(examen)head.append(el('span','ex-chrono',chrono(examen.fin-now())));
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
   box.append(el('div','ex-prompt',ex.prompt));
@@ -739,6 +765,7 @@ function schemaCorrection(f){
   return `<details class="cours"><summary>Voir le schéma</summary>${schemaHTML(f)}</details>`;
 }
 function finish(ex,ok,fb,actions,body,crit){
+  if(examen){examen.res.push({ex,ok});pos++;showExercise();window.scrollTo(0,0);return;} // ni correction ni note avant la fin
   body.querySelectorAll('button,input,select').forEach(x=>x.disabled=true);actions.innerHTML='';
   if(ok!==null){score.total++;if(ok)score.ok++;
     fb.className='fb '+(ok?'good':'bad');fb.append(el('strong',null,ok?'Bonne réponse.':'Pas tout à fait.'));
@@ -760,7 +787,7 @@ function finish(ex,ok,fb,actions,body,crit){
     rate(ex.id,q);entry.c=crit;entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}
     const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
   if(ex.retry){const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;} // seconde chance : déjà reprogrammé
-  if(ok===false)queue.push({...ex,retry:true}); // revient une fois en fin de séance, après la correction
+  if(ok===false)queue.splice(Math.min(pos+RETRY_GAP+1,queue.length),0,{...ex,retry:true}); // revient une fois un peu plus loin dans la séance, après la correction
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
   const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);

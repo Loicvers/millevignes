@@ -291,3 +291,28 @@ test("le nom du cache de sw.js correspond aux fichiers du site (sinon : node too
   const sw = readFileSync(new URL("sw.js", racine), "utf8");
   assert.equal(sw.match(/const CACHE = "([^"]+)"/)[1], empreinte(sw, f => readFileSync(new URL(f, racine))));
 });
+
+test("examen blanc : une question par fiche, types corrigés automatiquement, n au plus", () => {
+  vm.runInNewContext("this.pe=planExamen", ctx);
+  const pool = FICHES.flatMap(toExercises), q = ctx.pe(pool, 40);
+  assert.equal(q.length, 40);
+  assert.equal(new Set(q.map(e => e.fiche)).size, 40, "une seule question par fiche");
+  assert.ok(q.every(e => !["flashcard", "flashcard_reverse", "explain_client"].includes(e.type)), "pas d'auto-évaluation");
+  assert.equal(ctx.pe(pool.filter(e => e.fiche === FICHES[0]), 40).length, 1);
+});
+
+// Biais de réponse : « faux » partout ou « la plus longue » ne doivent pas suffire.
+// Fiches existantes : cliquet (ne pas empirer, à rééquilibrer au fil des lots) ; nouvelles fiches (id > 750) : seuils visés.
+const biais = fs => {
+  const ex = fs.flatMap(toExercises), qcm = ex.filter(e => e.type === "mcq_single"), vf = ex.filter(e => e.type === "true_false");
+  const longue = qcm.filter(e => { const l = e.payload.options.map(o => o.length); return l.indexOf(Math.max(...l)) === e.payload.answer; }).length;
+  return { qcm: qcm.length, longue: longue / qcm.length, vf: vf.length, vrais: vf.filter(e => e.payload.answer === true).length / vf.length };
+};
+test("QCM et vrai/faux : pas de biais de réponse exploitable", () => {
+  const tout = biais(FICHES);
+  assert.ok(tout.longue <= 0.55, `bonne réponse la plus longue : ${Math.round(100 * tout.longue)} % des QCM (cliquet 55 %)`);
+  assert.ok(tout.vrais >= 0.23, `vrais : ${Math.round(100 * tout.vrais)} % des vrai/faux (cliquet 23 %)`);
+  const neuves = biais(FICHES.filter(f => f.id > 750));
+  if (neuves.qcm >= 10) assert.ok(neuves.longue <= 0.35, `nouvelles fiches : bonne réponse la plus longue dans ${Math.round(100 * neuves.longue)} % des QCM (35 % au plus)`);
+  if (neuves.vf >= 10) assert.ok(neuves.vrais >= 0.35 && neuves.vrais <= 0.65, `nouvelles fiches : ${Math.round(100 * neuves.vrais)} % de vrais (35 à 65 %)`);
+});
