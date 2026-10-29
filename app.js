@@ -116,7 +116,8 @@ let attente;document.getElementById('ficheSearch').oninput=e=>{clearTimeout(atte
 document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getElementById('ficheSearch').value='';activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
+function marquerOnglet(m){m={lexique:'revision',suivi:'jour'}[m]||m; // le lexique vit dans la Bibliothèque, le suivi dans Aujourd'hui
+  document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
 function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
@@ -281,6 +282,7 @@ function renderLexique(){
   document.getElementById('introLine').textContent='Les mots du métier, avec leur origine : retenir le sens d’un mot, c’est souvent retenir son étymologie.';
   document.getElementById('progPanel').hidden=true;
   grid.className='lexique';grid.innerHTML='';
+  if(CHAPS)grid.append(navParties());
   const q=el('input','ex-input');q.type='search';q.placeholder='Chercher un terme';q.setAttribute('aria-label','Chercher un terme');q.value=lexQuery;
   const list=el('div');
   const draw=()=>{list.innerHTML='';const n=normalize(lexQuery);
@@ -301,16 +303,20 @@ let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dép
 const TOUTES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>TOUTES.includes(c.partie)?c.partie:'Le livre';
 const partiesDuMode=()=>mode==='atelier'?TOUTES:['Le livre','Les cépages']; // France et monde : onglet Atlas (Masterclass garde tout pour composer ses programmes)
 let partie=(()=>{try{return localStorage.getItem('mv_partie')||'Le livre';}catch{return 'Le livre';}})();
+function navParties(){
+  const nav=el('div','parties'),lex=mode==='lexique';nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie de la bibliothèque');
+  const btn=(p,n,on,fn)=>{const b=el('button','partie'+(on?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',on);b.onclick=fn;nav.append(b);};
+  partiesDuMode().forEach(p=>btn(p,CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),!lex&&p===partie,()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;lex?setMode('revision'):render();}));
+  if(mode!=='atelier')btn('Lexique',LEXIQUE.length,lex,()=>setMode('lexique'));
+  return nav;
+}
 function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre}={}){
   grid.className='grid toc';
   const vue=f=>etat(f)[0]!=='new';
   // Une partie à la fois (livre, France, cépages, monde) ; une recherche ou un filtre montre tout.
   if(!partiesDuMode().includes(partie))partie='Le livre';
   const chaps=ordre||(filtre?CHAPS:CHAPS.filter(c=>partieDe(c)===partie));
-  if(!filtre&&!ordre){const nav=el('div','parties');nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie du sommaire');
-    partiesDuMode().forEach(p=>{const n=CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),b=el('button','partie'+(p===partie?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));
-      b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',p===partie);b.onclick=()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;render();};nav.append(b);});
-    grid.append(nav);}
+  if(!filtre&&!ordre)grid.append(navParties());
   // Reprendre : première fiche pas encore vue, dans l'ordre du sommaire
   const suite=chaps.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>!vue(x.f));
   if(!filtre&&!ordre&&suite&&mode!=='atelier'){
@@ -618,7 +624,9 @@ document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement
 const RETRY_GAP=4; // exercices intercalés avant de reposer une erreur : assez pour ne pas répondre de mémoire immédiate
 let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),schemaVu=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
+let retour='jour'; // écran d'où part une séance ou une lecture, pour y revenir
 function startSession(q,title,dejaLues=[],exam=null){
+  if(mode!=='due')retour=mode;
   queue=q;examen=exam;pos=0;score={ok:0,total:0};sessionTitle=title;synthVue=new Set();schemaVu=new Set();decouvertes=new Set(dejaLues);
   if(q.length&&!exam){seances.push({t:now(),n:q.length,r:0,fin:0});saveSeances();}
   nouvelles=[...new Set(q.map(e=>e.fiche).filter(f=>!decouvertes.has(f.id)&&aDecouvrir(f)))];
@@ -650,7 +658,7 @@ function showBilanExamen(){
   if(faux.length){const d=el('details','cours');d.append(el('summary',null,`Mes erreurs (${faux.length})`));
     faux.forEach(e=>{const li=el('div','bilan-err');li.append(el('p',null,e.prompt+(e.payload.statement?' '+e.payload.statement:'')),el('p','fb-src','Réponse attendue : '+correctText(e)+' — fiche : '+e.fiche.titre));d.append(li);});box.append(d);
     const rv=el('button','btn primary','Revoir mes erreurs');rv.onclick=()=>startSession(faux,'Erreurs de l\'examen',[...new Set(faux.map(e=>e.fiche.id))]);box.append(rv,' ');}
-  const r=el('button','btn','Retour aux fiches');r.onclick=()=>setMode('revision');box.append(r);
+  const r=el('button','btn','Retour');r.onclick=()=>setMode(retour);box.append(r);
   grid.append(box);
 }
 function showExercise(){
@@ -661,7 +669,7 @@ function showExercise(){
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
     else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
       box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
-      const again=el('button','btn','Retour à l\'accueil');again.onclick=()=>setMode('jour');box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
+      const again=el('button','btn','Retour');again.onclick=()=>setMode(retour);box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
     grid.append(box);return;
   }
   const ex=queue[pos],p=ex.payload,f=ex.fiche;shownAt=now();
@@ -777,14 +785,15 @@ function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux 
 }
 /* ============ LIRE UN CHAPITRE (fiches en cours, sans exercice) ============ */
 function lireChapitre(titre,fiches,depart=0){
+  if(mode!=='due')retour=mode;
   mode='due';marquerOnglet(null);
   document.getElementById('filterBar').style.display='none';
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   const page=i=>{
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
       box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
-      const b=el('button','btn','Retour aux fiches');b.onclick=()=>setMode('revision');box.append(b);grid.append(box);return;}
-    showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode('revision')});
+      const b=el('button','btn','Retour');b.onclick=()=>setMode(retour);box.append(b);grid.append(box);return;}
+    showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode(retour)});
   };
   const r=typeof RECITS!=='undefined'&&RECITS.find(x=>x.chapitre===titre);
   r?showRecit(r,()=>page(depart)):page(depart);window.scrollTo(0,0);
@@ -822,7 +831,7 @@ function showRecit(r,onGo){
     ${r.prudence?.length?`<details class="cours"><summary>Points de prudence (le livre corrigé)</summary>${r.prudence.map(t=>`<p>${t}</p>`).join('')}</details>`:''}
     <div class="src">— ${livre?`D’après Pascaline Lepeltier, Mille Vignes, p. ${r.pages}`:`D’après ${r.src}`}. Texte reformulé.</div>`;
   const actions=el('div','ex-actions'),go=el('button','btn primary','Aux fiches du chapitre'),quit=el('button','btn later','Quitter la lecture');
-  go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode('revision');};
+  go.onclick=()=>{taire();onGo();window.scrollTo(0,0);};quit.onclick=()=>{taire();setMode(retour);};
   ecouter([r.chapitre,r.question,...r.fil,r.defend,r.filRouge],box,actions);
   actions.append(go,quit);box.append(actions);
   grid.className='session';grid.innerHTML='';grid.append(box);
