@@ -211,6 +211,16 @@ function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 
   return q;
 }
 
+// Atlas : un lieu par région française (dans l'ordre du sommaire, « France » = vue d'ensemble) puis par pays,
+// avec toutes ses fiches quelle que soit leur partie (France, cépages, livre) : réviser Bordeaux, c'est tout Bordeaux.
+function lieux(fiches, sommaire) {
+  const fr = f => f.geo?.pays === "France", sections = p => [...new Set(sommaire.filter(c => (c.partie || "La France viticole") === p).map(c => c.section))];
+  const out = sections("La France viticole").map(nom => ({ nom, france: true, fiches: fiches.filter(f => fr(f) && (nom === "France" ? !f.geo.region : f.geo.region === nom)) }));
+  const pays = sections("Le monde viticole"), autres = [...new Set(fiches.filter(f => f.geo?.pays && !fr(f) && !pays.includes(f.geo.pays)).map(f => f.geo.pays))].sort((a, b) => a.localeCompare(b, "fr"));
+  out.push(...[...pays, ...autres].map(nom => ({ nom, france: false, fiches: fiches.filter(f => f.geo?.pays === nom) })));
+  return out.filter(l => l.fiches.length);
+}
+
 // Examen blanc : n exercices corrigés automatiquement, une seule par fiche, fiches tirées au hasard (chaque thème pèse son poids dans le programme).
 const EXAMEN_TYPES = ["mcq_single", "mcq_multi", "true_false", "odd_one_out", "cloze", "short_answer", "matching", "ordering"];
 function planExamen(pool, n = 40) {
