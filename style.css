@@ -203,11 +203,15 @@
   .ex-head{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
   .ex-chrono{float:right;color:var(--wine-fg);font-variant-numeric:tabular-nums;letter-spacing:0}
   .bilan-themes,.bilan-err{text-align:left}
-  .lieux{display:grid;gap:6px}.lieux-t{font-family:'Cormorant',serif;font-size:26px;margin:14px 0 4px}
-  .lieu{display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer}
+  .lieux{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}.lieux-tt{display:flex;justify-content:space-between;align-items:baseline}.lieux-tt small{font-size:12px;color:var(--muted)}
+  .lieu-h{display:flex;justify-content:space-between;gap:6px;grid-column:1/-1}.lieu-c{color:var(--wine-fg);font-size:12px}
+  .lieu-gen{width:100%;margin-top:8px;border-style:dashed}.lieu-k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:20px 0 8px}
+  .lieu-rev{border:1px solid var(--line);border-radius:8px;background:var(--paper2);padding:4px 14px 6px}.lieu-rev .chap-bar{display:block}.lieu-rev .chap-act{margin-top:12px}
+  .lien{font:inherit;font-size:14px;background:none;border:0;padding:8px 0;min-height:44px;color:var(--wine-fg);cursor:pointer}
+  .lieu-pied{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;margin-top:16px}.lieux-t{font-family:'Cormorant',serif;font-size:26px;margin:14px 0 4px}
+  .lieu{display:grid;grid-template-columns:1fr auto;align-content:start;gap:2px 10px;text-align:left;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer}
   .lieu-n{font-weight:600}
   .lieu-tete{grid-column:1/-1;margin-bottom:10px}.lieu-t{font-family:'Cormorant',serif;font-size:30px;margin:12px 0 2px}
-  .lieu-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}.lieu-nav .partie{flex:none;white-space:nowrap}
   .jour{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
   .jour-carte{border:1px solid var(--line);border-radius:6px;padding:16px 18px;background:var(--paper)}
   .jour-carte h3{font-family:'Cormorant',serif;font-size:22px;margin-bottom:6px}
