@@ -316,3 +316,8 @@ test("QCM et vrai/faux : pas de biais de réponse exploitable", () => {
   if (neuves.qcm >= 10) assert.ok(neuves.longue <= 0.35, `nouvelles fiches : bonne réponse la plus longue dans ${Math.round(100 * neuves.longue)} % des QCM (35 % au plus)`);
   if (neuves.vf >= 10) assert.ok(neuves.vrais >= 0.35 && neuves.vrais <= 0.65, `nouvelles fiches : ${Math.round(100 * neuves.vrais)} % de vrais (35 à 65 %)`);
 });
+
+test("chaque exercice corrigé a son explication (flashcards et « Explique à un client » montrent déjà la réponse)", () => {
+  const sans = FICHES.flatMap(toExercises).filter(e => !e.explanation && !["flashcard", "flashcard_reverse", "explain_client"].includes(e.type));
+  assert.equal(sans.map(e => e.id).join(", "), "");
+});
