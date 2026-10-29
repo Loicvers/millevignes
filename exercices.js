@@ -37,12 +37,17 @@ function maskSchema(svg, labels, pick = shuffle(labels)) {
 function lexFiches(t, fiches) {
   const variants = t.terme.replace(/\(.*?\)/g, "").split("/").map(normalize).filter(Boolean);
   const res = variants.map(v => new RegExp(`(^| )${v}(s|x)?( |$)`));
-  const hit = s => res.some(r => r.test(normalize(s)));
-  return fiches.filter(f => hit(f.titre + " " + f.synth + " " + f.mnemo)).sort((a, b) => hit(b.titre) - hit(a.titre)); // terme dans le titre d'abord
+  const hit = s => res.some(r => r.test(s));
+  return fiches.filter(f => hit(texteNorm(f))).sort((a, b) => hit(normalize(b.titre)) - hit(normalize(a.titre))); // terme dans le titre d'abord
 }
-const mots = s => normalize(s).split(" ");
+// Mémorisés : lie() compare chaque paire de termes du lexique (84 × 84), le calcul serait refait des milliers de fois.
+const memo = fn => { const m = new Map(); return k => m.has(k) ? m.get(k) : (m.set(k, fn(k)), m.get(k)); };
+const mots = memo(s => normalize(s).split(" "));
+// Texte normalisé une fois par fiche : lexFiches le teste pour chaque terme (84 × 748 normalize coûtaient ≈ 1 s au chargement).
+const texteNorm = memo(f => normalize(f.titre + " " + f.synth + " " + f.mnemo));
 // Racine du premier mot du terme (bouturage → boutur, greffe → greffe).
-const lexStem = t => { const w = normalize(t.terme).split(" ")[0]; return w.length <= 5 ? w : w.slice(0, Math.max(5, w.length - 3)); };
+const racine = memo(terme => { const w = normalize(terme).split(" ")[0]; return w.length <= 5 ? w : w.slice(0, Math.max(5, w.length - 3)); });
+const lexStem = t => racine(t.terme);
 // Un QCM par terme (définition → terme), rattaché à la première fiche qui l'emploie ; l'étymologie sert de correction.
 function lexiqueExercises(lex, fiches) {
   return lex.map(t => ({ t, f: lexFiches(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
@@ -155,11 +160,13 @@ function rythme(restantes, t, echeance, base = 5) {
 }
 
 // Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
-function suivante(p, quality, t) {
+// fin (facultatif) = échéance : aucune révision ne tombe après elle (intervalle raccourci, au moins 1 jour).
+function suivante(p, quality, t, fin) {
   p = { ease: 2.3, interval: 0, due: 0, acquired: false, ...p };
   if (quality === 'hard') { p.ease = Math.max(1.3, p.ease - 0.2); p.interval = 1; }
   else if (quality === 'ok') p.interval = p.interval ? Math.round(p.interval * p.ease) : 1;
   else { p.ease += 0.1; p.interval = p.interval ? Math.round(p.interval * p.ease * 1.3) : 2; }
+  if (fin > t) p.interval = Math.max(1, Math.min(p.interval, Math.floor((fin - t) / 86400000)));
   p.due = t + p.interval * 86400000;
   p.acquired = true;
   return p;
@@ -192,7 +199,10 @@ function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 
   // Ordre du livre, puis les fiches hors livre (France) par id.
   const rang = f => f.page || (f.source === "france" ? 1e6 : 0);
   fresh.sort((a, b) => rang(a[0].fiche) - rang(b[0].fiche) || a[0].fiche.id - b[0].fiche.id);
-  for (const exos of fresh.slice(0, Math.max(0, newFiches - started))) {
+  // Livre et hors livre en alternance : la France ne doit pas attendre la fin du livre.
+  const livre = fresh.filter(x => x[0].fiche.page), hors = fresh.filter(x => !x[0].fiche.page);
+  const melees = livre.flatMap((x, i) => hors[i] ? [x, hors[i]] : [x]).concat(hors.slice(livre.length));
+  for (const exos of melees.slice(0, Math.max(0, newFiches - started))) {
     const first = exos.find(e => e.type === "flashcard") || exos[0];
     const pick = [first, ...exos.filter(e => e !== first && RESTITUER.includes(e.type)), ...exos.filter(e => e !== first)].slice(0, perNew);
     if (q.length + pick.length > max) break;

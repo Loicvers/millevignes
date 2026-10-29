@@ -27,6 +27,16 @@
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
 
+## Audit du 29/10 (reste à faire)
+Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
+- [ ] Vrai/faux déséquilibré : 152 vrais sur 641 (répondre « faux » partout donne 76 %). Rééquilibrer fichier par fichier, au fil des lots.
+- [ ] 143 exercices sans explication.
+- [ ] Une erreur n'est pas reposée dans la même séance (seulement le lendemain).
+- [ ] Recherche plein texte dans les fiches (Lexique et Cartes en ont une, pas Fiches).
+- [ ] Examen blanc minuté (format WSET, tout le programme mélangé, sans aide).
+- [ ] Design : en-tête trop haut sur mobile (≈ 30 % de l'écran), barre de filtres visible hors de l'onglet Fiches, largeurs incohérentes sur ordinateur, réglages cachés en pied de page.
+- Biais léger des QCM : la bonne réponse est la plus longue dans 34 % des cas (25 % attendus).
+
 ## En attente de Loïc
 - Pineau, *La Corne de vache et le Microscope* (2019) : texte à fournir (PDF ou accès OpenEdition).
 - Relecture humaine des 14 cours écrits le 28/10 (Écologie : fiches 97, 102, 107, 522, 121 ; cépages : 372, 376, 377, 378, 379, 380, 373, 374, 597).

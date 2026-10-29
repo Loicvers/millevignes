@@ -158,6 +158,7 @@ test("le service worker met en cache tous les fichiers locaux de index.html", ()
   const css = readFileSync(new URL("../style.css", import.meta.url), "utf8");
   needed.push(...[...css.matchAll(/url\(['"]?(fonts\/[^'")]+)/g)].map(m => m[1]), "style.css", "manifest.webmanifest", "data/mille-vignes-sommaire.json");
   for (const f of needed) assert.ok(listed.includes(f), `${f} absent de sw.js`);
+  assert.equal(new Set(listed).size, listed.length, "doublon dans sw.js : cache.addAll échoue (node tools/sync-site.mjs)");
   for (const f of listed) assert.ok(existsSync(new URL("../" + f, import.meta.url)), `${f} introuvable`);
 });
 
@@ -249,6 +250,17 @@ test("répétition espacée : difficile ramène à 1 jour, facilité plancher 1,
   assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t).interval, Math.round(10 * 2.4 * 1.3));
   assert.equal(ctx.sv({ ease: 1.4, interval: 10 }, "hard", t).ease, 1.3);
   assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "hard", t).interval, 1);
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t + 5.5 * J).interval, 5, "plafonné à l'échéance");
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t + J / 2).interval, 1, "au moins 1 jour");
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t - J).interval, 31, "échéance passée : sans effet");
+});
+
+test("séance : nouvelles fiches du livre et hors livre en alternance", () => {
+  vm.runInNewContext("this.ps=planSession", ctx);
+  const livre = FICHES.filter(f => f.page).slice(0, 3), hors = FICHES.filter(f => !f.page).slice(0, 3);
+  const q = ctx.ps([...livre, ...hors].flatMap(toExercises), {}, {}, Date.now(), { max: 40, newFiches: 4 });
+  const ordre = [...new Set(q.map(e => e.fiche))].map(f => !!f.page);
+  assert.deepEqual(ordre, [true, false, true, false]);
 });
 
 test("restauration : la fusion garde par exercice la réponse la plus récente et ne perd aucune entrée", () => {

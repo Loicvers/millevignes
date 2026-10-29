@@ -18,7 +18,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const html2 = html.replace(/(?:<script src="fiches\/[^"]+"><\/script>\n)+/, noms.map(f => `<script src="${f}"></script>`).join("\n") + "\n");
   if (html2 !== html) writeFileSync("index.html", html2);
   const sw = readFileSync("sw.js", "utf8");
-  let sw2 = sw.replace(/(?:"fiches\/[^"]+", ?)+/, noms.map(f => `"${f}"`).join(", ") + ", ");
+  // \s* : remplace toutes les lignes de fiches d'un coup (des doublons font échouer cache.addAll, donc le hors ligne).
+  let sw2 = sw.replace(/(?:"fiches\/[^"]+",\s*)+/, noms.map(f => `"${f}"`).join(", ") + ",\n  ");
   sw2 = sw2.replace(/const CACHE = "[^"]+"/, `const CACHE = "${empreinte(sw2)}"`);
   if (sw2 !== sw) writeFileSync("sw.js", sw2);
   console.log(`${noms.length} fichiers de fiches ; index.html ${html2 !== html ? "mis à jour" : "inchangé"} ; sw.js ${sw2 !== sw ? "mis à jour (nouveau cache)" : "inchangé"}.`);
