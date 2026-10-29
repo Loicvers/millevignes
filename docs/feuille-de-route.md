@@ -21,8 +21,8 @@
 2. **Relancer l'OCR** sur le PC avec `py outils/extraire_indra.py <pdf> <dossier>` (dépôt de sources), puis remplacer le texte et pousser :
    - [x] World Atlas of Wine 7e (fait le 29/10 : 201 pages, texte remplacé)
    - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)
-   - [ ] Jourjon, Morlat, Seguin 1991 (23/24 pages)
-   - [ ] Morris, Bourgogne blanc et Vins de Loire (option `--ocr` : couche texte d'un mauvais OCR)
+   - [x] Jourjon, Morlat, Seguin 1991 (fait le 29/10 : 24 pages)
+   - [x] Morris, Bourgogne blanc et Vins de Loire (faits le 29/10 avec `--ocr` : ordre de lecture et caractères nettement meilleurs)
 3. **Cours « Approfondir » des autres cépages** (9 sur 76 faits : chardonnay, pinot noir, cabernet-sauvignon, merlot, syrah, grenache noir, sauvignon blanc, chenin, riesling). Suivants logiques : gamay, cabernet franc, sémillon, gewurztraminer, viognier, mourvèdre, tempranillo, sangiovese, nebbiolo.
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
