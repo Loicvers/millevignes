@@ -29,6 +29,8 @@ const JKEY='mv_journal';let journal=[];try{journal=JSON.parse(localStorage.getIt
 function logAnswer(ex,ok){const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.r++;saveSeances();}const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}return j;}
 // Séances : {t: début, n: exercices prévus, r: réponses données, fin: 1 si menée à terme} ; sert à compter les séances abandonnées.
 const SEKEY='mv_seances';let seances=[];try{seances=JSON.parse(localStorage.getItem(SEKEY))||[];}catch{}
+const EXKEY='mv_examens';let examens=[];try{examens=JSON.parse(localStorage.getItem(EXKEY))||[];}catch{}
+function saveExamens(){examens=examens.slice(-100);try{localStorage.setItem(EXKEY,JSON.stringify(examens));}catch{}}
 function saveSeances(){seances=seances.slice(-200);try{localStorage.setItem(SEKEY,JSON.stringify(seances));}catch{}}
 function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
 function now(){return Date.now();}
@@ -55,7 +57,7 @@ function buildQueue(pool){const n=rythmeDuJour();return planSession(pool,prog,lu
 
 /* ============ ÉTAT FILTRES ============ */
 let mode="revision";
-let activeThemes=new Set(),activeSubs=new Set(),activeGeo=null,activeNiv=new Set();
+let activeThemes=new Set(),activeSubs=new Set(),activeGeo=null,activeNiv=new Set(),ficheQuery=[];
 
 /* ============ GÉO arbre ============ */
 const GEO={};
@@ -110,7 +112,8 @@ function selGeo(sel){
     if(activeGeo.appel?txt===activeGeo.appel&&n.classList.contains('geo-appel'):activeGeo.region?txt===activeGeo.region&&n.classList.contains('geo-region'):txt===activeGeo.pays&&n.classList.contains('geo-pays'))n.classList.add('on');});
   render();
 }
-document.getElementById('clearBtn').onclick=()=>{activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
+let attente;document.getElementById('ficheSearch').oninput=e=>{clearTimeout(attente);attente=setTimeout(()=>{ficheQuery=normalize(e.target.value).split(' ').filter(Boolean);render();},200);}; // rendu du sommaire ≈ 200 ms : on attend la fin de la frappe
+document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getElementById('ficheSearch').value='';activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
 function marquerOnglet(m){document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
@@ -120,6 +123,7 @@ document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{if(t.dataset.mode==
 /* ============ BIBLIOTHÈQUE ============ */
 const grid=document.getElementById('grid');
 function matches(f){
+  if(ficheQuery.length){const t=texteNorm(f);if(!ficheQuery.every(w=>t.includes(w)))return false;} // tous les mots, dans le titre, la synthèse ou l'astuce
   if(activeThemes.size&&!activeThemes.has(f.theme))return false;
   if(activeSubs.size){const fs=f.sous||[];if(![...activeSubs].some(s=>fs.includes(s)))return false;}
   if(activeNiv.size&&!activeNiv.has(f.niveau))return false;
@@ -132,8 +136,8 @@ function render(){
   if(mode==='lexique')return renderLexique();
   if(mode==='suivi')return renderSuivi();
   if(mode==='cartes')return renderCartes();
-  const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0);
-  const noms=[...activeThemes,...activeSubs,...activeNiv,...(activeGeo?[activeGeo.appel||activeGeo.region||activeGeo.pays]:[])].join(' · '); // le filtre actif se lit sans ouvrir le panneau
+  const nf=activeThemes.size+activeSubs.size+activeNiv.size+(activeGeo?1:0)+(ficheQuery.length?1:0);
+  const noms=[...activeThemes,...activeSubs,...activeNiv,...(activeGeo?[activeGeo.appel||activeGeo.region||activeGeo.pays]:[]),...(ficheQuery.length?[`« ${ficheQuery.join(' ')} »`]:[])].join(' · '); // le filtre actif se lit sans ouvrir le panneau
   document.getElementById('filtSum').textContent=nf?`Filtrer : ${noms.length>42?noms.slice(0,41)+'…':noms}`:'Filtrer';
   const list=FICHES.filter(matches);
   document.getElementById('introLine').textContent= mode==='atelier'?'Compose ton programme : ajoute des fiches, note le vin servi et la durée, puis projette ou imprime le support.':'';
@@ -173,6 +177,10 @@ function renderSuivi(){
   ];
   const h=el('h2','suivi-t','Mon suivi');grid.append(h,el('p','suivi-note','Chiffres indicatifs : un seul utilisateur, aucune preuve. Ils servent à te repérer, pas à te noter.'));
   rows.forEach(([l,v,d])=>{const c=el('div','suivi-row');c.append(el('div','suivi-l',l),el('div','suivi-v',v),el('p','suivi-d',d));grid.append(c);});
+  grid.append(el('h2','suivi-t','Examens blancs'));
+  if(!examens.length)grid.append(el('p','suivi-note','Pas encore d\'examen blanc : lance-le depuis l\'onglet Fiches.'));
+  examens.slice(-10).reverse().forEach(x=>{const faible=Object.entries(x.th||{}).filter(([,[,m]])=>m>=3).sort((a,b)=>a[1][0]/a[1][1]-b[1][0]/b[1][1])[0]; // thème le plus faible, sur 3 questions au moins
+    const c=el('div','suivi-row');c.append(el('div','suivi-l',new Date(x.t).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})),el('div','suivi-v',Math.round(100*x.ok/x.n)+' %'),el('p','suivi-d',`${x.ok} sur ${x.n}`+(faible?` — plus faible : ${faible[0]} (${faible[1][0]}/${faible[1][1]})`:'')));grid.append(c);});
 }
 /* ============ CARTES (toutes les cartes de régions, pour situer un domaine devant un client) ============ */
 let carteQuery='';
@@ -559,11 +567,15 @@ const chrono=ms=>{const s=Math.ceil(ms/1000);return `⏱ ${Math.floor(s/60)}:${S
 function startExamen(pool){const q=planExamen(pool,EXAMEN_N);if(q.length)startSession(q,'Examen blanc',FICHES.map(f=>f.id),{fin:now()+q.length*EXAMEN_MS,res:[]});}
 function showBilanExamen(){
   const ex=examen,box=el('div','empty bilan');examen=null;
-  const ok=ex.res.filter(r=>r.ok).length,n=queue.length,pct=Math.round(100*ok/n);
-  box.append(el('h3',null,`Examen blanc : ${ok} sur ${n} (${pct} %)`),el('p',null,(ex.res.length<n?`Temps écoulé : ${n-ex.res.length} question(s) sans réponse, comptées fausses. `:'')+(pct>=55?'Au-dessus du seuil de réussite du WSET (55 %).':'Sous le seuil de réussite du WSET (55 %).')));
+  const ok=ex.res.filter(r=>r.ok).length,n=queue.length,pct=Math.round(100*ok/n),avant=examens[examens.length-1];
+  box.append(el('h3',null,`Examen blanc : ${ok} sur ${n} (${pct} %)`),el('p',null,(ex.res.length<n?`Temps écoulé : ${n-ex.res.length} question(s) sans réponse, comptées fausses. `:'')+(pct>=55?'Au-dessus du seuil de réussite du WSET (55 %).':'Sous le seuil de réussite du WSET (55 %).')+(avant?` Examen précédent : ${Math.round(100*avant.ok/avant.n)} %.`:'')));
   const th={};ex.res.forEach(r=>{const t=r.ex.fiche.theme||'Lexique';th[t]=th[t]||[0,0];th[t][1]++;if(r.ok)th[t][0]++;});
   const ul=el('ul','bilan-themes');Object.entries(th).sort((a,b)=>a[1][0]/a[1][1]-b[1][0]/b[1][1]).forEach(([t,[o,m]])=>ul.append(el('li',null,`${t} : ${o}/${m}`)));box.append(ul);
+  examens.push({t:now(),n,ok,th});saveExamens();
   const faux=ex.res.filter(r=>!r.ok).map(r=>r.ex);
+  // 2. erreurs remises en révision (demain) ; pas sur une fiche jamais lue, qui garde sa découverte avant ses exercices
+  const arevoir=faux.filter(e=>!aDecouvrir(e.fiche));arevoir.forEach(e=>rate(e.id,'hard'));
+  if(arevoir.length)box.append(el('p',null,`${arevoir.length} erreur(s) sur des fiches déjà travaillées : à revoir dès demain dans la Session du jour.`));
   if(faux.length){const d=el('details','cours');d.append(el('summary',null,`Mes erreurs (${faux.length})`));
     faux.forEach(e=>{const li=el('div','bilan-err');li.append(el('p',null,e.prompt+(e.payload.statement?' '+e.payload.statement:'')),el('p','fb-src','Réponse attendue : '+correctText(e)+' — fiche : '+e.fiche.titre));d.append(li);});box.append(d);
     const rv=el('button','btn primary','Revoir mes erreurs');rv.onclick=()=>startSession(faux,'Erreurs de l\'examen',[...new Set(faux.map(e=>e.fiche.id))]);box.append(rv,' ');}
@@ -818,7 +830,7 @@ if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
 async function exportProg(){
   const nom='millevignes-progression-'+new Date().toISOString().slice(0,10)+'.json';
-  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,seances,programmes:store},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'millevignes',version:2,key:PKEY,saved_at:new Date().toISOString(),progress:prog,lues,journal,seances,examens,programmes:store},null,2)],{type:'application/json'});
   // Sur iPhone, le menu de partage permet « Enregistrer dans Fichiers » (iCloud Drive) ; ailleurs, téléchargement.
   const file=new File([blob],nom,{type:'application/json'});
   if(navigator.canShare&&navigator.canShare({files:[file]})){
@@ -858,6 +870,7 @@ document.getElementById('importProg').onchange=async e=>{
   prog=fusionner(prog,p);save();
   if(data.lues&&typeof data.lues==='object'){for(const k in data.lues)lues[k]=Math.max(lues[k]||0,+data.lues[k]||0);saveLues();}
   if(Array.isArray(data.seances)){seances=fusionnerListe(seances,data.seances,s=>s.t,200);saveSeances();}
+  if(Array.isArray(data.examens)){examens=fusionnerListe(examens,data.examens.filter(x=>x&&typeof x.t==='number'&&x.n>0&&typeof x.ok==='number'),x=>x.t,100);saveExamens();}
   if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal,j=>j.e+'|'+j.t,5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}

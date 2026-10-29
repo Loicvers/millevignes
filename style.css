@@ -192,6 +192,7 @@
   .ex-head{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
   .ex-chrono{float:right;color:var(--wine-fg);font-variant-numeric:tabular-nums;letter-spacing:0}
   .bilan-themes,.bilan-err{text-align:left}
+  .fiche-search{width:100%;margin-bottom:10px}
   .ex-warn{color:var(--warn);font-weight:600;margin-left:8px;white-space:nowrap}
   .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}
   .ex-statement,.ex-cloze{font-size:16px;margin-bottom:12px;line-height:2.2}

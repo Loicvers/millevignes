@@ -32,8 +32,8 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - [ ] Vrai/faux déséquilibré : 152 vrais sur 641 (répondre « faux » partout donne 76 %). Rééquilibrer fichier par fichier, au fil des lots. Test (29/10) : cliquet à 23 % de vrais sur l'existant, 35 à 65 % exigés sur les nouvelles fiches (id > 750).
 - [ ] Exercices sans explication propre : 983 sur 3 894 au recomptage du 29/10 (la synthèse de la fiche s'affiche à la place).
 - [x] Erreur reposée dans la même séance : 4 exercices plus loin (29/10 ; avant : en fin de séance).
-- [ ] Recherche plein texte dans les fiches (Lexique et Cartes en ont une, pas Fiches).
-- [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, une minute par question, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Hors répétition espacée ; résultats non conservés.
+- [x] Recherche plein texte dans les fiches (29/10) : champ en tête de l'onglet Fiches, tous les mots cherchés dans le titre, la synthèse et l'astuce ; se combine aux filtres, à « S'entraîner » et à l'examen blanc.
+- [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, une minute par question, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Résultats conservés (100 derniers, dans la sauvegarde) et affichés dans « Mon suivi » avec le thème le plus faible ; les erreurs sur des fiches déjà travaillées passent « à revoir demain » (pas celles des fiches jamais lues, qui gardent leur découverte).
 - [ ] Design : en-tête trop haut sur mobile (≈ 30 % de l'écran), barre de filtres visible hors de l'onglet Fiches, largeurs incohérentes sur ordinateur, réglages cachés en pied de page.
 - [ ] Biais des QCM : la bonne réponse est strictement la plus longue dans 49 % des cas (471 sur 958, recompté le 29/10 ; 25 % attendus). Test : cliquet à 50 % sur l'existant, 35 % au plus sur les nouvelles fiches. Rallonger les leurres au fil des lots.
 
