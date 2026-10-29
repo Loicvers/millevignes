@@ -2,6 +2,8 @@
 
 Économiser les tokens : ne lire que ce dont la tâche a besoin.
 
+**En début de session : lire `docs/feuille-de-route.md`** (objectif, décisions prises, priorités) ; la tenir à jour.
+
 - **Ne jamais lire `data/base.json`** : il est dérivé (`node tools/migrate-fiches.mjs`), volumineux et non versionné (`.gitignore`). Les tests tournent aussi sur GitHub à chaque push.
 - Textes intégraux des sources (livre de Lepeltier, Oxford Companion, Wine Grapes, Peynaud, Dion…) : dépôt **privé** `Loicvers/millevignes-sources` (à cloner dans `../millevignes-sources`, puis `/add-dir`). Chercher avec `./cherche.sh "motif" [dossier]` (donne fichier, page et ligne) ; ne jamais ouvrir un fichier entier. **Ne jamais copier ce contenu dans ce dépôt** (droits). Une page marquée `[OCR]` : vérifier un chiffre sur l'original avant de le citer.
 - Registre des sources (où est chaque document, niveau, fiabilité, usage ; WSET = niveau 2a, banques de questions = modèles d'exercices seulement) : `registre/sources-wset.md` dans le dépôt privé `millevignes-sources`. À tenir à jour à chaque ajout ou retrait de source ; ne pas le copier ici (il cite le Drive et les chemins du PC).
