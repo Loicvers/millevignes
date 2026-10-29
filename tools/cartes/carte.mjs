@@ -52,7 +52,7 @@ const centroid = mp => { // centre de la plus grande partie
 // Départements (ou pays) en fond, découpés au cadre ; en mode monde, le pays traité un peu plus foncé
 const bb = g => { const q = polys(g).flat(2); return q.some(([lon]) => lon > x0 - 5 && lon < x1 + 5) && q.some(([, lat]) => lat > y0 - 5 && lat < y1 + 5); };
 const deps = cfg.monde ? JSON.parse(fs.readFileSync(GEO + "/admin0.geojson")).features.filter(f => bb(f.geometry)) : JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features;
-const fondDe = fs1 => fs1.map(f => pc.intersection(polys(f.geometry), box)).filter(g => g.length).map(pathOf).join("");
+const fondDe = fs1 => cfg.contour ? pathOf(pc.intersection(pc.union(...fs1.map(f => polys(f.geometry))), box)) : fs1.map(f => pc.intersection(polys(f.geometry), box)).filter(g => g.length).map(pathOf).join(""); // contour : le seul pourtour, carte plus légère
 const fond = fondDe(deps.filter(f => !cfg.monde || f.properties.ISO_A2_EH !== cfg.iso)), fondPays = cfg.monde ? fondDe(deps.filter(f => f.properties.ISO_A2_EH === cfg.iso)) : "";
 
 // Fleuves : morceaux à l'intérieur du cadre

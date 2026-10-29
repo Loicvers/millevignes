@@ -1,0 +1,148 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Rome",
+   "label": "Rome",
+   "at": [
+    12.5,
+    41.9
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Milan",
+   "label": "Milan",
+   "at": [
+    9.19,
+    45.46
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [],
+ "zones": [
+  {
+   "label": "Piémont",
+   "admin1": [
+    "Piemonte"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Vénétie",
+   "admin1": [
+    "Veneto"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Toscane",
+   "admin1": [
+    "Toscana"
+   ],
+   "pos": [
+    -8,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Marches",
+   "admin1": [
+    "Marche"
+   ],
+   "trait": 1,
+   "pos": [
+    12,
+    -6,
+    "start"
+   ],
+   "at": [
+    13.2,
+    43.4
+   ]
+  },
+  {
+   "label": "Abruzzo",
+   "admin1": [
+    "Abruzzo"
+   ],
+   "trait": 1,
+   "pos": [
+    14,
+    -2,
+    "start"
+   ]
+  },
+  {
+   "label": "Campanie",
+   "admin1": [
+    "Campania"
+   ],
+   "pos": [
+    -6,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Pouilles",
+   "admin1": [
+    "Apulia"
+   ],
+   "pos": [
+    4,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Sicile",
+   "admin1": [
+    "Sicily"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  },
+  {
+   "label": "Sardaigne",
+   "admin1": [
+    "Sardegna"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "IT",
+ "cadre": [
+  6.4,
+  36.4,
+  19,
+  47.2
+ ]
+}

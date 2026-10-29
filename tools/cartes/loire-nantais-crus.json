@@ -1,0 +1,185 @@
+{
+ "deps": [
+  "44",
+  "49",
+  "85"
+ ],
+ "fleuves": [
+  "Loire"
+ ],
+ "cadre": [
+  -1.68,
+  47.03,
+  -1,
+  47.24
+ ],
+ "largeur": 330,
+ "villes": [
+  {
+   "nom": "Vallet",
+   "dep": "44",
+   "pos": [
+    -4,
+    11,
+    "end"
+   ]
+  }
+ ],
+ "textes": [],
+ "zones": [
+  {
+   "label": "Sèvre et Maine",
+   "deps": [
+    "44",
+    "49",
+    "85"
+   ],
+   "communes": [
+    "Aigrefeuille-sur-Maine",
+    "Basse-Goulaine",
+    "Le Bignon",
+    "La Chapelle-Heulin",
+    "Château-Thébaud",
+    "Clisson",
+    "Divatte-sur-Loire",
+    "Gétigné",
+    "Gorges",
+    "La Haie-Fouassière",
+    "Haute-Goulaine",
+    "Le Landreau",
+    "Le Loroux-Bottereau",
+    "Maisdon-sur-Sèvre",
+    "Monnières",
+    "Montbert",
+    "Mouzillon",
+    "Le Pallet",
+    "La Regrippière",
+    "Remouillé",
+    "Saint-Fiacre-sur-Maine",
+    "Saint-Hilaire-de-Clisson",
+    "Saint-Julien-de-Concelles",
+    "Saint-Lumine-de-Clisson",
+    "Les Sorinières",
+    "Vallet",
+    "Vertou",
+    "Cugand",
+    "Saint-Hilaire-de-Loulay"
+   ],
+   "at": [
+    -1.1,
+    47.2
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Clisson",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Clisson"
+   ],
+   "pos": [
+    -26,
+    26,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Gorges",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Gorges"
+   ],
+   "pos": [
+    8,
+    30,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Le Pallet",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Le Pallet"
+   ],
+   "pos": [
+    -26,
+    -10,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Château-Thébaud",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Château-Thébaud"
+   ],
+   "pos": [
+    -14,
+    34,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Goulaine",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Haute-Goulaine"
+   ],
+   "pos": [
+    -16,
+    -22,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Monnières – Saint-Fiacre",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Monnières",
+    "Saint-Fiacre-sur-Maine"
+   ],
+   "pos": [
+    16,
+    -30,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Mouzillon – Tillières",
+   "deps": [
+    "44"
+   ],
+   "communes": [
+    "Mouzillon"
+   ],
+   "pos": [
+    14,
+    30,
+    "start"
+   ],
+   "trait": true
+  }
+ ]
+}

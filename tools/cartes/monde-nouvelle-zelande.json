@@ -1,0 +1,92 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Wellington",
+   "label": "Wellington",
+   "at": [
+    174.78,
+    -41.29
+   ],
+   "pos": [
+    6,
+    6,
+    "start"
+   ]
+  },
+  {
+   "nom": "Auckland",
+   "label": "Auckland",
+   "at": [
+    174.76,
+    -36.85
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Martinborough",
+   "at": [
+    175.46,
+    -41.22
+   ],
+   "pos": [
+    5,
+    10,
+    "start"
+   ]
+  },
+  {
+   "label": "Central Otago",
+   "at": [
+    169.2,
+    -45.04
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Marlborough",
+   "admin1": [
+    "Marlborough District"
+   ],
+   "trait": 1,
+   "pos": [
+    -20,
+    -10,
+    "end"
+   ]
+  },
+  {
+   "label": "Hawke’s Bay",
+   "admin1": [
+    "Hawke's Bay"
+   ],
+   "trait": 1,
+   "pos": [
+    12,
+    0,
+    "start"
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "NZ",
+ "cadre": [
+  166,
+  -47.5,
+  179.5,
+  -34.5
+ ]
+}

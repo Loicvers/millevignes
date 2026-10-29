@@ -1,0 +1,58 @@
+{
+ "monde": true,
+ "fleuves": [
+  "Donau",
+  "Danube"
+ ],
+ "villes": [
+  {
+   "nom": "Budapest",
+   "label": "Budapest",
+   "at": [
+    19.08,
+    47.5
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Miskolc",
+   "label": "Miskolc",
+   "at": [
+    20.78,
+    48.1
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Tokaj",
+   "at": [
+    21.41,
+    48.12
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "HU",
+ "cadre": [
+  16,
+  45.5,
+  23,
+  49.5
+ ]
+}

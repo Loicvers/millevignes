@@ -1,0 +1,155 @@
+{
+ "monde": true,
+ "fleuves": [
+  "Duero",
+  "Ebro",
+  "Guadalquivir",
+  "Tajo"
+ ],
+ "villes": [
+  {
+   "nom": "Madrid",
+   "label": "Madrid",
+   "at": [
+    -3.7,
+    40.42
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Rías Baixas",
+   "at": [
+    -8.81,
+    42.51
+   ],
+   "pos": [
+    3,
+    13,
+    "start"
+   ]
+  },
+  {
+   "label": "Bierzo",
+   "at": [
+    -6.6,
+    42.55
+   ],
+   "pos": [
+    5,
+    -3,
+    "start"
+   ]
+  },
+  {
+   "label": "Toro",
+   "at": [
+    -5.39,
+    41.52
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Rueda",
+   "at": [
+    -4.96,
+    41.41
+   ],
+   "pos": [
+    -5,
+    12,
+    "end"
+   ]
+  },
+  {
+   "label": "Ribera del Duero",
+   "at": [
+    -4.1,
+    41.6
+   ],
+   "pos": [
+    5,
+    -5,
+    "start"
+   ]
+  },
+  {
+   "label": "Rioja",
+   "at": [
+    -2.5,
+    42.45
+   ],
+   "pos": [
+    5,
+    -5,
+    "start"
+   ]
+  },
+  {
+   "label": "Txakoli",
+   "at": [
+    -2.2,
+    43.3
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Priorat",
+   "at": [
+    0.8,
+    41.15
+   ],
+   "pos": [
+    -5,
+    8,
+    "end"
+   ]
+  },
+  {
+   "label": "Penedès",
+   "at": [
+    1.7,
+    41.35
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Jerez",
+   "at": [
+    -6.14,
+    36.69
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "ES",
+ "cadre": [
+  -9.8,
+  35.8,
+  4.5,
+  44.2
+ ]
+}

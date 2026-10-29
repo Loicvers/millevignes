@@ -1,0 +1,102 @@
+{
+ "monde": true,
+ "fleuves": [
+  "Columbia",
+  "Willamette",
+  "Snake"
+ ],
+ "villes": [
+  {
+   "nom": "Portland",
+   "label": "Portland",
+   "at": [
+    -122.68,
+    45.52
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Seattle",
+   "label": "Seattle",
+   "at": [
+    -122.33,
+    47.61
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Willamette",
+   "at": [
+    -123,
+    44.94
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Columbia Valley",
+   "at": [
+    -119.3,
+    46.2
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Oregon",
+   "admin1": [
+    "Oregon"
+   ],
+   "at": [
+    -120.5,
+    43.8
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Washington",
+   "admin1": [
+    "Washington"
+   ],
+   "at": [
+    -120.5,
+    47.8
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "US",
+ "cadre": [
+  -125,
+  42.8,
+  -116.5,
+  49.2
+ ]
+}

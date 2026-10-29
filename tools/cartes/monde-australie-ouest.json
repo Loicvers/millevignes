@@ -1,0 +1,42 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Perth",
+   "label": "Perth",
+   "at": [
+    115.86,
+    -31.95
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Margaret River",
+   "at": [
+    115.05,
+    -33.95
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "AU",
+ "cadre": [
+  113,
+  -36.5,
+  122,
+  -30.5
+ ]
+}

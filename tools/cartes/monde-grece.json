@@ -1,0 +1,79 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Athènes",
+   "label": "Athènes",
+   "at": [
+    23.73,
+    37.98
+   ],
+   "pos": [
+    6,
+    -3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Thessalonique",
+   "label": "Thessalonique",
+   "at": [
+    22.94,
+    40.64
+   ],
+   "pos": [
+    6,
+    -3,
+    "start"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Naoussa",
+   "at": [
+    22.07,
+    40.63
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Némée",
+   "at": [
+    22.66,
+    37.81
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Santorin",
+   "at": [
+    25.43,
+    36.4
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "GR",
+ "cadre": [
+  19.3,
+  34.6,
+  28.3,
+  41.8
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "monde": true,
+ "fleuves": [
+  "Olifants",
+  "Berg"
+ ],
+ "villes": [
+  {
+   "nom": "Le Cap",
+   "label": "Le Cap",
+   "at": [
+    18.42,
+    -33.92
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Swartland",
+   "at": [
+    18.73,
+    -33.46
+   ],
+   "pos": [
+    5,
+    -3,
+    "start"
+   ]
+  },
+  {
+   "label": "Stellenbosch",
+   "at": [
+    18.86,
+    -33.93
+   ],
+   "pos": [
+    5,
+    0,
+    "start"
+   ]
+  },
+  {
+   "label": "Constantia",
+   "at": [
+    18.42,
+    -34.02
+   ],
+   "pos": [
+    -5,
+    10,
+    "end"
+   ]
+  },
+  {
+   "label": "Elgin",
+   "at": [
+    19.04,
+    -34.15
+   ],
+   "pos": [
+    5,
+    6,
+    "start"
+   ]
+  },
+  {
+   "label": "Walker Bay",
+   "at": [
+    19.23,
+    -34.41
+   ],
+   "pos": [
+    5,
+    4,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Western Cape",
+   "admin1": [
+    "Western Cape"
+   ],
+   "at": [
+    20.6,
+    -33.2
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "ZA",
+ "cadre": [
+  17.2,
+  -35.2,
+  21.6,
+  -32.5
+ ]
+}
