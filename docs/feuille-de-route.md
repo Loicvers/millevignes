@@ -51,6 +51,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 
 ## Fait
 - Rhône par appellation (29/10) : 39 fiches au lieu de 21 (18 nouvelles, 9 recentrées), toutes vérifiées sur les cahiers des charges en vigueur ; Côtes du Vivarais et Clairette de Bellegarde sans cahier lu (absents du BO-agri).
+- Beaujolais par appellation (29/10) : 20 fiches au lieu de 11 (9 nouvelles, 3 recentrées), toutes vérifiées sur les cahiers des charges en vigueur.
 - Bordeaux par appellation (29/10) : 44 fiches au lieu de 22, une par appellation, toutes vérifiées (Lalande-de-Pomerol et Saint-Georges sur les fiches produit INAO).
 - Tests sur iPhone réel (29/10) : mode sombre, ouverture sans réseau, sauvegarde vers iCloud Drive, restauration et échéance validés.
 

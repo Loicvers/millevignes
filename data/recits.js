@@ -1471,15 +1471,15 @@ const RECITS = [
   question: "Parmi les dix crus, comment choisir entre un beaujolais fin et floral et un beaujolais de garde ?",
   fil: [
    "Les dix crus sont tous rouges, tous de gamay, tous dans la moitié nord du vignoble, et chacun est une appellation à part.",
-   "<b>Au nord, le granite.</b> Saint-Amour, Juliénas, Chénas, Moulin-à-Vent et Fleurie reposent surtout sur un granite altéré en sable. Fleurie, sur granite rose, passe pour fin et floral ; Moulin-à-Vent, sur arènes roses, est le plus charpenté et le plus apte à la garde.",
+   "<b>Au nord, le granite.</b> Saint-Amour, Juliénas, Chénas, Moulin-à-Vent et Fleurie reposent surtout sur un granite altéré en sable ; Saint-Amour est en Saône-et-Loire, et la commune de Chénas est partagée entre Chénas et Moulin-à-Vent. Fleurie, sur granite rose, passe pour fin et floral ; Moulin-à-Vent, sur arènes roses, est le plus charpenté et le plus apte à la garde.",
    "<b>Au sud, plus de variété.</b> Chiroubles, sur des sables maigres, est léger et floral ; Morgon, sur des schistes riches en manganèse comme ceux de la colline du Py, est plein et de garde ; Régnié est le dernier cru, reconnu en 1988 ; Brouilly et Côte de Brouilly entourent le mont Brouilly et sa « pierre bleue ».",
-   "<b>Autour des crus, le socle.</b> Beaujolais-Villages, au nord sur sols acides, peut ajouter le nom de sa commune ; l’AOC beaujolais couvre tout, jusqu’aux calcaires du sud.",
+   "<b>Autour des crus, le socle.</b> Beaujolais-Villages, mention du même cahier des charges que le beaujolais, couvre 38 communes du nord sur sols acides ; 30 communes peuvent aussi mettre leur nom à la suite de « Beaujolais » ; l’AOC beaujolais couvre les 88 communes, jusqu’aux calcaires du sud des Pierres Dorées, en rouge, rosé et blanc.",
    "<b>Le nouveau à part.</b> Vin de l’année en beaujolais ou beaujolais-villages, il sort le troisième jeudi de novembre ; les crus attendent le 1er février."
   ],
   defend: "Choisir un cru, c’est choisir une roche et un style : sables granitiques pour la finesse, schistes de Morgon ou arènes riches en fer et en manganèse de Moulin-à-Vent pour la garde.",
   client: "« Pour la finesse, un fleurie ou un chiroubles ; pour un vin qui tient la table et la cave, un morgon ou un moulin-à-vent. »",
   filRouge: "Plus à l’est, au pied d’un autre massif, comment le Jura fait-il des vins que l’on ne trouve nulle part ailleurs ?",
-  src: "fiches 406 et 472 à 475 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
+  src: "fiches 406, 472 à 475 et 791 à 799 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
  },
  {
   chapitre: "Languedoc : panorama et appellations",

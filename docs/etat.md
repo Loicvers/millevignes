@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 788 (dernier id : 790) · exercices : 4095
-- Vérifiées : 788 · à vérifier : 0 (0 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2067
-- Niveaux : Fondamental 241 · Intermédiaire 418 · Pointu 129
+- Fiches : 797 (dernier id : 799) · exercices : 4142
+- Vérifiées : 797 · à vérifier : 0 (0 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2109
+- Niveaux : Fondamental 242 · Intermédiaire 424 · Pointu 131
 - Cours (Approfondir) : 82 · schémas : 101
 - Lexique : 84 termes · récits de chapitre : 84
 
@@ -23,7 +23,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | cepages.js | 76 | 372–666 | hors livre | 76 | 9 | 0 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 6 | 405–705 | hors livre | 6 | 1 | 2 |
-| fr-beaujolais-appellations.js | 4 | 472–475 | hors livre | 4 | 0 | 1 |
+| fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 1 |
 | fr-beaujolais.js | 7 | 406–711 | hors livre | 7 | 1 | 2 |
 | fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 1 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
