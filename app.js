@@ -36,7 +36,7 @@ const DAY=86400000;
 
 /* ============ RÉPÉTITION ESPACÉE (type SM-2 simplifié) ============ */
 function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
-  prog[id]=suivante(prog[id],quality,now());save();updateBadges();
+  prog[id]=suivante(prog[id],quality,now(),echeance&&new Date(echeance+'T23:59:59').getTime());save();updateBadges();
 }
 const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
 const isNew=e=>!prog[e.id];
@@ -486,7 +486,7 @@ function printSupport(){
       const qz=el('section','sup-quiz');qz.append(el('h2',null,'Quiz'));const ol=el('ol');
       qs.forEach(ex=>{const li=el('li');const p=ex.payload;
         li.append(el('p','sup-q',ex.type==='true_false'?'Vrai ou faux : '+p.statement:ex.prompt+(ex.type==='mcq_multi'?' (plusieurs réponses)':'')));
-        if(p.options){const o=el('ol','sup-opts');p.options.forEach(x=>o.append(el('li',null,x)));li.append(o);}
+        if(p.options){const o=el('ol','sup-opts');shuffle(p.options).forEach(x=>o.append(el('li',null,x)));li.append(o);}
         else if(ex.type==='short_answer')li.append(el('p','sup-line','Réponse : ______________________________'));
         ol.append(li);});
       qz.append(ol);s.append(qz);
