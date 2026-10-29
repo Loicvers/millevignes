@@ -33,6 +33,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Étape 1 — **Aujourd'hui** (accueil, remplace « Session du jour ») : séance du jour avec durée estimée, échéance (J-n, fiches vues, rythme), reprendre la lecture, examen blanc et points durs, suivi en bref.
 - [x] Étape 2 — **Atlas** (29/10) (remplace Cartes et les parties France et Monde de Fiches) : une ligne par région ou pays avec sa progression ; page de région avec carte et partenaires, S'entraîner / Examen blanc / Lire, et trois blocs (vignoble et appellations, cépages, dans le livre). Une région réunit ses fiches des trois parties (Bordeaux : 21 + 5 + 11).
 - [x] Étape 3 — **Bibliothèque** (29/10) (Livre, Cépages, Lexique) et barre à 4 onglets, éventuellement en bas d'écran sur mobile. Peut attendre janvier.
+- [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
 
 ## Audit du 29/10 (reste à faire)
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.

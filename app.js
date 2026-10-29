@@ -207,7 +207,7 @@ function renderSuivi(){
   const h=el('h2','suivi-t','Mon suivi');grid.append(h,el('p','suivi-note','Chiffres indicatifs : un seul utilisateur, aucune preuve. Ils servent à te repérer, pas à te noter.'));
   rows.forEach(([l,v,d])=>{const c=el('div','suivi-row');c.append(el('div','suivi-l',l),el('div','suivi-v',v),el('p','suivi-d',d));grid.append(c);});
   grid.append(el('h2','suivi-t','Examens blancs'));
-  if(!examens.length)grid.append(el('p','suivi-note','Pas encore d\'examen blanc : lance-le depuis l\'onglet Fiches.'));
+  if(!examens.length)grid.append(el('p','suivi-note','Pas encore d\'examen blanc : lance-le depuis l\'onglet Aujourd’hui ou une page de l\'Atlas.'));
   examens.slice(-10).reverse().forEach(x=>{const faible=Object.entries(x.th||{}).filter(([,[,m]])=>m>=3).sort((a,b)=>a[1][0]/a[1][1]-b[1][0]/b[1][1])[0]; // thème le plus faible, sur 3 questions au moins
     const c=el('div','suivi-row');c.append(el('div','suivi-l',new Date(x.t).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})),el('div','suivi-v',Math.round(100*x.ok/x.n)+' %'),el('p','suivi-d',`${x.ok} sur ${x.n}`+(faible?` — plus faible : ${faible[0]} (${faible[1][0]}/${faible[1][1]})`:'')));grid.append(c);});
 }
@@ -220,49 +220,67 @@ let lieu=(()=>{try{return localStorage.getItem('mv_lieu')||'';}catch{return '';}
 const allerLieu=nom=>{lieu=nom;try{nom?localStorage.setItem('mv_lieu',nom):localStorage.removeItem('mv_lieu');}catch{}render();window.scrollTo(0,0);};
 const barre=(v,n)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'));b.firstChild.style.width=(n?100*v/n:0)+'%';return b;};
 const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`;
+const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
+const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
+// Tuile d'un lieu (accueil et recherche de l'atlas) ; ◉ : la région a une carte
+function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,b=el('button','lieu'),h=el('span','lieu-h');
+  h.append(el('span','lieu-n',x.nom));if(CARTES.some(f=>x.france&&f.geo?.region===x.nom)){const c=el('span','lieu-c','◉');c.title='Carte disponible';h.append(c);}
+  b.append(h,el('span','chap-m',`${plur(x.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);return b;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   grid.className='grid toc';grid.innerHTML='';
   const vue=f=>etat(f)[0]!=='new',v=l.fiches.filter(vue).length,tete=el('div','lieu-tete');
-  const nav=el('div','lieu-nav'),ret=el('button','partie','← Atlas');ret.onclick=()=>allerLieu('');nav.append(ret);
-  LIEUX.forEach(x=>{const b=el('button','partie'+(x===l?' on':''),x.nom==='France'?'France (ensemble)':x.nom);b.setAttribute('aria-pressed',x===l);b.onclick=()=>allerLieu(x.nom);nav.append(b);});
-  // fiches dans l'ordre : vignoble (France ou monde), cépages, puis livre
+  const ret=el('button','lien','← Atlas');ret.onclick=()=>allerLieu('');
+  // fiches en trois groupes : vignoble (France ou monde), cépages, puis livre
   const rang=c=>/France viticole|monde viticole/.test(c.partie)?0:c.partie==='Les cépages'?1:2;
+  const groupe=c=>[l.france?'Appellations':'Vignoble','Cépages','Dans le livre'][rang(c)];
   const chaps=(CHAPS||[]).filter(c=>c.fiches.some(f=>l.fiches.includes(f))).sort((a,b)=>rang(a)-rang(b));
   const ordre=chaps.flatMap(c=>c.fiches.filter(f=>l.fiches.includes(f))),pool=l.fiches.flatMap(f=>EXOS.filter(e=>e.fiche===f));
-  const act=el('div','chap-act'),bt=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=fn;act.append(b);};
+  tete.append(ret,el('h2','lieu-t',nomLieu(l)));
+  const cs=CARTES.filter(f=>l.france&&(l.nom==='France'?!f.geo?.region:f.geo?.region===l.nom)); // la première carte en vue, les autres repliées
+  if(cs.length){tete.append(el('p','lieu-k','La carte'));const w=el('div','lieu-carte');
+    w.insertAdjacentHTML('beforeend',carteHTML(cs[0],null)+partenairesHTML(cs[0]));
+    if(cs.length>1)w.insertAdjacentHTML('beforeend',`<details class="cours"><summary>Autres cartes (${cs.length-1})</summary>${cs.slice(1).map(f=>carteHTML(f,null)).join('')}</details>`);
+    tete.append(w);}
+  const rev=el('div','lieu-rev'),act=el('div','chap-act'),bt=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=fn;act.append(b);};
   bt('S’entraîner',()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),l.nom),'btn primary');
   bt('Examen blanc',()=>startExamen(pool));bt('Tout lire',()=>lireChapitre(l.nom,ordre));
-  tete.append(nav,el('h2','lieu-t',l.nom==='France'?'La France viticole : vue d’ensemble':l.nom),el('p','jour-note',`${l.fiches.length} fiche${l.fiches.length>1?'s':''} · ${v} vue${v>1?'s':''}`),barre(v,l.fiches.length),act);
-  const cs=CARTES.filter(f=>l.france&&(l.nom==='France'?!f.geo?.region:f.geo?.region===l.nom)); // la première carte en vue, les autres repliées
-  cs.forEach((f,i)=>tete.insertAdjacentHTML('beforeend',i?'':carteHTML(f,null)+partenairesHTML(f)));
-  if(cs.length>1)tete.insertAdjacentHTML('beforeend',`<details class="cours"><summary>Autres cartes (${cs.length-1})</summary>${cs.slice(1).map(f=>carteHTML(f,null)).join('')}</details>`);
-  grid.append(tete);nav.querySelector('.on')?.scrollIntoView({inline:'center',block:'nearest'});
-  renderToc(l.fiches,true,{chaps,ouvrir:true});
+  rev.append(el('p','jour-note',`${plur(l.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,l.fiches.length),act);
+  tete.append(el('p','lieu-k','Réviser'),rev,el('p','lieu-k','Les fiches'));
+  grid.append(tete);
+  renderToc(l.fiches,true,{chaps,groupe,ouvrir:nom=>nom===groupe(chaps[0])});
+  const i=LIEUX.indexOf(l),pied=el('div','lieu-pied'),aller=(x,t)=>{if(!x)return el('span');const b=el('button','lien',t);b.onclick=()=>allerLieu(x.nom);return b;};
+  pied.append(aller(LIEUX[i-1],'← '+(LIEUX[i-1]&&nomLieu(LIEUX[i-1]))),aller(LIEUX[i+1],(LIEUX[i+1]&&nomLieu(LIEUX[i+1]))+' →'));grid.append(pied);
 }
 function renderCartes(){
   const l=lieu&&LIEUX.find(x=>x.nom===lieu);if(l)return renderLieu(l);
   document.getElementById('introLine').textContent=partenaires.length?'Choisis une région ou un pays, ou cherche un domaine, une commune, une appellation : la carte s’affiche avec le domaine en évidence.':'Choisis une région ou un pays : sa carte, ses appellations, ses cépages et ce qu’en dit le livre. Importe tes partenaires (Réglages) pour les voir sur les cartes.';
   document.getElementById('progPanel').hidden=true;
   grid.className='lexique';grid.innerHTML='';
-  const q=el('input','ex-input');q.type='search';q.placeholder=partenaires.length?'Domaine, commune, appellation ou région':'Région ou appellation';q.setAttribute('aria-label','Chercher dans l’atlas');q.value=carteQuery;
+  const q=el('input','ex-input');q.type='search';q.placeholder=partenaires.length?'Domaine, commune, appellation, région ou pays':'Région, pays ou appellation';q.setAttribute('aria-label','Chercher dans l’atlas');q.value=carteQuery;
   const list=el('div');
   const draw=()=>{list.innerHTML='';const n=normalize(carteQuery);
-    if(!n){ // sans recherche : la liste des lieux, avec la progression de chacun
-      const vue=f=>etat(f)[0]!=='new';list.className='lieux';
-      [['France',LIEUX.filter(x=>x.france)],['Monde',LIEUX.filter(x=>!x.france)]].forEach(([t,ls])=>{list.append(el('h2','lieux-t',t));
-        ls.forEach(x=>{const v=x.fiches.filter(vue).length,b=el('button','lieu');b.append(el('span','lieu-n',x.nom==='France'?'Vue d’ensemble':x.nom),el('span','chap-m',`${v}/${x.fiches.length}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);list.append(b);});});
+    if(!n){ // sans recherche : les lieux en tuiles ; les pays à moins de 4 fiches en pastilles
+      list.className='lieux-acc';const fr=LIEUX.filter(x=>x.france),gen=fr.find(x=>x.nom==='France'),mo=LIEUX.filter(x=>!x.france);
+      const tuiles=ls=>{const g=el('div','lieux');ls.forEach(x=>g.append(tuile(x)));return g;};
+      const tf=el('div','lieux-tt');tf.append(el('h2','lieux-t','France'),el('small',null,'◉ carte disponible'));
+      list.append(tf,tuiles(fr.filter(x=>x!==gen)));
+      if(gen){const b=el('button','lieu lieu-gen');b.append(el('span','lieu-n',nomLieu(gen)),el('span','chap-m',String(gen.fiches.length)));b.onclick=()=>allerLieu(gen.nom);list.append(b);}
+      list.append(el('h2','lieux-t','Monde'),tuiles(mo.filter(x=>x.fiches.length>=4)));
+      const pt=mo.filter(x=>x.fiches.length<4);
+      if(pt.length){list.append(el('p','lieu-k','Autres pays'));const w=el('div','parties');pt.forEach(x=>{const b=el('button','partie',x.nom);b.append(el('small',null,' '+x.fiches.length));b.onclick=()=>allerLieu(x.nom);w.append(b);});list.append(w);}
       return;}
     list.className='';
-    const hits=n?partenaires.filter(p=>normalize([p.nom,p.commune,p.region,...(p.appellations||[])].join(' ')).includes(n)):[];
+    const ls=LIEUX.filter(x=>normalize(nomLieu(x)).includes(n));if(ls.length){const g=el('div','lieux');ls.forEach(x=>g.append(tuile(x)));list.append(g);}
+    const hits=partenaires.filter(p=>normalize([p.nom,p.commune,p.region,...(p.appellations||[])].join(' ')).includes(n));
     const hl=new Set(hits.map(p=>p.nom));
-    const vues=!n?CARTES:hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
+    const vues=hits.length?CARTES.filter(f=>hits.some(p=>p.points&&p.points[f.id])):CARTES.filter(f=>normalize([f.geo?.region,f.titre,f.schema.legende].join(' ')).includes(n));
     vues.forEach(f=>{const d=el('div','card lex');
       d.append(el('h3',null,f.schema.titre||f.geo?.region||'France'),el('p','src',f.schema.titre?(f.geo?.region||'France'):f.titre));
       d.insertAdjacentHTML('beforeend',carteHTML(f,hl)+(hits.length?'':partenairesHTML(f)));
       const b=el('button','chip','Lire la fiche');b.onclick=()=>lireChapitre(f.titre,[f]);d.append(b);const r=f.geo?.region&&LIEUX.find(x=>x.nom===f.geo.region);if(r){const g=el('button','chip','Page '+r.nom);g.onclick=()=>allerLieu(r.nom);d.append(' ',g);}list.append(d);});
     if(hits.length)list.prepend(el('p','suivi-note',hits.map(p=>p.nom+(p.commune?' ('+p.commune+')':'')+(p.appellations?.length?' — '+p.appellations.join(', '):'')).join(' ; ')));
-    if(!vues.length)list.append(el('p','empty','Aucune carte ne correspond.'));};
+    if(!vues.length&&!ls.length)list.append(el('p','empty','Aucune région ni carte ne correspond.'));};
   q.oninput=()=>{carteQuery=q.value;draw();};
   grid.append(q,list);draw();
 }
@@ -311,7 +329,7 @@ function navParties(){
   if(mode!=='atelier')btn('Lexique',LEXIQUE.length,lex,()=>setMode('lexique'));
   return nav;
 }
-function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre}={}){
+function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){ // groupe : chapitre → nom de bloc (page de région), comptes limités à list
   grid.className='grid toc';
   const vue=f=>etat(f)[0]!=='new';
   // Une partie à la fois (livre, France, cépages, monde) ; une recherche ou un filtre montre tout.
@@ -328,14 +346,14 @@ function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre}={}){
   let sec=null,box=grid;
   chaps.forEach(c=>{
     const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length&&(c.fiches.length||filtre))return;
-    const nom=c.section||c.partie;
-    if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
+    const nom=groupe?groupe(c):c.section||c.partie;
+    if(nom!==sec){sec=nom;const all=groupe?chaps.filter(x=>groupe(x)===nom).flatMap(x=>x.fiches).filter(f=>list.includes(f)):CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
       if(!secOuverts)secOuverts=new Set([suite?(suite.c.section||suite.c.partie):nom]);
-      const sd=el('details','sec');sd.open=ordre?ouvrir:!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else{secOuverts.delete(nom);recaler(sd);}};
-      const h=el('summary','toc-sec');h.append(el('span','sec-t',nom),el('small',null,`${all.filter(vue).length} sur ${all.length} fiches vues`));
+      const sd=el('details','sec');sd.open=ordre?(typeof ouvrir==='function'?ouvrir(nom):ouvrir):!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else{secOuverts.delete(nom);recaler(sd);}};
+      const h=el('summary','toc-sec');const nv=all.filter(vue).length;h.append(el('span','sec-t',nom),el('small',null,groupe?`${all.length} fiche${all.length>1?'s':''} · ${nv} vue${nv>1?'s':''}`:`${nv} sur ${all.length} fiches vues`));
       const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
-      const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h,sa);grid.append(sd);box=sd;}
+      const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h);if(!groupe)sd.append(sa);grid.append(sd);box=sd;}
     const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else{chapOuverts.delete(c.chapitre);recaler(d);}};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
