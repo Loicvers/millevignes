@@ -1,0 +1,158 @@
+{
+ "deps": [
+  "49",
+  "79",
+  "86",
+  "44"
+ ],
+ "fleuves": [
+  "Loire"
+ ],
+ "cadre": [
+  -1.12,
+  46.97,
+  -0.02,
+  47.58
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Chalonnes-sur-Loire",
+   "dep": "49",
+   "label": "Chalonnes",
+   "pos": [
+    -6,
+    10,
+    "end"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Coteaux du Layon",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Aubigné-sur-Layon",
+    "Beaulieu-sur-Layon",
+    "Bellevigne-en-Layon",
+    "Chalonnes-sur-Loire",
+    "Chaudefonds-sur-Layon",
+    "Cléré-sur-Layon",
+    "Lys-Haut-Layon",
+    "Passavant-sur-Layon",
+    "Rochefort-sur-Loire",
+    "Terranjou",
+    "Val-du-Layon"
+   ],
+   "at": [
+    -0.5,
+    47.17
+   ],
+   "pos": [
+    0,
+    40,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Savennières",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Bouchemaine",
+    "La Possonnière",
+    "Savennières"
+   ],
+   "pos": [
+    -30,
+    -2,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Roche aux Moines, Coulée de Serrant",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Savennières"
+   ],
+   "pos": [
+    0,
+    -34,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Chaume, Quarts de Chaume",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Rochefort-sur-Loire"
+   ],
+   "pos": [
+    -12,
+    24,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Coteaux de l'Aubance",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Brissac Loire Aubance",
+    "Denée",
+    "Les Garennes sur Loire",
+    "Mozé-sur-Louet",
+    "Mûrs-Erigné",
+    "Saint-Melaine-sur-Aubance",
+    "Soulaines-sur-Aubance"
+   ],
+   "pos": [
+    14,
+    -22,
+    "start"
+   ],
+   "trait": true
+  }
+ ],
+ "points": [
+  {
+   "at": [
+    -0.4811,
+    47.2678
+   ],
+   "label": "Bonnezeaux",
+   "pos": [
+    8,
+    14,
+    "start"
+   ]
+  }
+ ]
+}

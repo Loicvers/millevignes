@@ -1,0 +1,169 @@
+{
+ "deps": [
+  "37",
+  "41",
+  "49",
+  "72",
+  "86"
+ ],
+ "fleuves": [
+  "Loire",
+  "Cher",
+  "Vienne"
+ ],
+ "cadre": [
+  -0.5,
+  46.98,
+  1.3,
+  47.62
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Tours",
+   "dep": "37",
+   "pos": [
+    -8,
+    12,
+    "end"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Chinon",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Anché",
+    "Avoine",
+    "Avon-les-Roches",
+    "Beaumont-en-Véron",
+    "Brizay",
+    "Candes-Saint-Martin",
+    "Chinon",
+    "Cinais",
+    "Couziers",
+    "Cravant-les-Côteaux",
+    "Crouzilles",
+    "Huismes",
+    "L'Île-Bouchard",
+    "Lerné",
+    "Ligré",
+    "Panzoult",
+    "Rivière",
+    "La Roche-Clermault",
+    "Saint-Benoît-la-Forêt",
+    "Saint-Germain-sur-Vienne",
+    "Savigny-en-Véron",
+    "Sazilly",
+    "Seuilly",
+    "Tavant",
+    "Theneuil",
+    "Thizay"
+   ],
+   "pos": [
+    -6,
+    34,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Bourgueil",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Benais",
+    "Bourgueil",
+    "La Chapelle-sur-Loire",
+    "Chouzé-sur-Loire",
+    "Coteaux-sur-Loire",
+    "Restigné",
+    "Saint-Nicolas-de-Bourgueil"
+   ],
+   "pos": [
+    -14,
+    -22,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Saint-Nicolas-de-Bourgueil",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Saint-Nicolas-de-Bourgueil"
+   ],
+   "pos": [
+    12,
+    30,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Vouvray",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Chançay",
+    "Noizay",
+    "Parçay-Meslay",
+    "Reugny",
+    "Rochecorbon",
+    "Tours",
+    "Vernou-sur-Brenne",
+    "Vouvray"
+   ],
+   "pos": [
+    4,
+    -34,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Montlouis-sur-Loire",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Lussault-sur-Loire",
+    "Montlouis-sur-Loire",
+    "Saint-Martin-le-Beau"
+   ],
+   "pos": [
+    -4,
+    28,
+    "middle"
+   ],
+   "trait": true
+  }
+ ]
+}

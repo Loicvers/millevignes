@@ -1,0 +1,471 @@
+{
+ "deps": [
+  "37",
+  "41",
+  "49",
+  "72",
+  "86"
+ ],
+ "fleuves": [
+  "Loire",
+  "Cher"
+ ],
+ "cadre": [
+  0,
+  47.02,
+  1.95,
+  47.9
+ ],
+ "largeur": 380,
+ "villes": [
+  {
+   "nom": "Tours",
+   "dep": "37",
+   "pos": [
+    -6,
+    10,
+    "end"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Touraine",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Amboise",
+    "Anché",
+    "Artannes-sur-Indre",
+    "Athée-sur-Cher",
+    "Avoine",
+    "Avon-les-Roches",
+    "Azay-le-Rideau",
+    "Azay-sur-Cher",
+    "Beaumont-en-Véron",
+    "Benais",
+    "Bléré",
+    "Bossay-sur-Claise",
+    "Bourgueil",
+    "Brizay",
+    "Candes-Saint-Martin",
+    "Cangey",
+    "Chambray-lès-Tours",
+    "Chançay",
+    "Chanceaux-sur-Choisille",
+    "La Chapelle-sur-Loire",
+    "Chargé",
+    "Cheillé",
+    "Chemillé-sur-Indrois",
+    "Chenonceaux",
+    "Chinon",
+    "Chisseaux",
+    "Chouzé-sur-Loire",
+    "Cinais",
+    "Cinq-Mars-la-Pile",
+    "Civray-de-Touraine",
+    "Coteaux-sur-Loire",
+    "Couziers",
+    "Cravant-les-Côteaux",
+    "La Croix-en-Touraine",
+    "Crouzilles",
+    "Dierre",
+    "Draché",
+    "Épeigné-les-Bois",
+    "Esvres",
+    "Fondettes",
+    "Francueil",
+    "Genillé",
+    "Huismes",
+    "L'Île-Bouchard",
+    "Joué-lès-Tours",
+    "Langeais",
+    "Larçay",
+    "Lémeré",
+    "Lerné",
+    "Lignières-de-Touraine",
+    "Ligré",
+    "Limeray",
+    "Lussault-sur-Loire",
+    "Luynes",
+    "Luzillé",
+    "Marçay",
+    "Montlouis-sur-Loire",
+    "Montreuil-en-Touraine",
+    "Mosnes",
+    "Nazelles-Négron",
+    "Neuillé-le-Lierre",
+    "Noizay",
+    "Panzoult",
+    "Parçay-Meslay",
+    "Pocé-sur-Cisse",
+    "Pont-de-Ruan",
+    "Razines",
+    "Restigné",
+    "Reugny",
+    "Rigny-Ussé",
+    "Rivarennes",
+    "Rivière",
+    "La Roche-Clermault",
+    "Rochecorbon",
+    "Saché",
+    "Saint-Avertin",
+    "Saint-Benoît-la-Forêt",
+    "Saint-Étienne-de-Chigny",
+    "Saint-Germain-sur-Vienne",
+    "Saint-Martin-le-Beau",
+    "Saint-Nicolas-de-Bourgueil",
+    "Saint-Ouen-les-Vignes",
+    "Saint-Règle",
+    "Sainte-Maure-de-Touraine",
+    "Savigny-en-Véron",
+    "Savonnières",
+    "Sazilly",
+    "Seuilly",
+    "Souvigny-de-Touraine",
+    "Tavant",
+    "Theneuil",
+    "Thilouze",
+    "Thizay",
+    "Tours",
+    "Vallères",
+    "Véretz",
+    "Vernou-sur-Brenne",
+    "Villaines-les-Rochers",
+    "Vouvray",
+    "Angé",
+    "Blois",
+    "Chailles",
+    "Châteauvieux",
+    "Châtillon-sur-Cher",
+    "Chaumont-sur-Loire",
+    "Chémery",
+    "Chissay-en-Touraine",
+    "Choussy",
+    "Contres",
+    "Thenay",
+    "Couddes",
+    "Couffy",
+    "Faverolles-sur-Cher",
+    "Mareuil-sur-Cher",
+    "Méhers",
+    "Mesland",
+    "Meusnes",
+    "Monteaux",
+    "Monthou-sur-Bièvre",
+    "Monthou-sur-Cher",
+    "Montrichard Val de Cher",
+    "Noyers-sur-Cher",
+    "Oisly",
+    "Pontlevoy",
+    "Pouillé",
+    "Rilly-sur-Loire",
+    "Saint-Aignan",
+    "Saint-Georges-sur-Cher",
+    "Saint-Julien-de-Chédon",
+    "Saint-Romain-sur-Cher",
+    "Sassay",
+    "Seigy",
+    "Soings-en-Sologne",
+    "Thésée",
+    "Valaire",
+    "Valencisse",
+    "Vallières-les-Grandes",
+    "Valloire-sur-Cisse",
+    "Veuzain-sur-Loire"
+   ],
+   "at": [
+    0.65,
+    47.2
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Cheverny",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Candé-sur-Beuvron",
+    "Cellettes",
+    "Chambord",
+    "Cheverny",
+    "Chitenay",
+    "Feings",
+    "Fougères-sur-Bièvre",
+    "Ouchamps",
+    "Cormeray",
+    "Cour-Cheverny",
+    "Fresnes",
+    "Huisseau-sur-Cosson",
+    "Maslives",
+    "Monthou-sur-Bièvre",
+    "Les Montils",
+    "Montlivault",
+    "Mont-près-Chambord",
+    "Muides-sur-Loire",
+    "Saint-Claude-de-Diray",
+    "Saint-Dyé-sur-Loire",
+    "Saint-Laurent-Nouan",
+    "Sambin",
+    "Seur",
+    "Tour-en-Sologne",
+    "Vineuil"
+   ],
+   "pos": [
+    26,
+    6,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Cour-Cheverny",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Cellettes",
+    "Cheverny",
+    "Chitenay",
+    "Cormeray",
+    "Cour-Cheverny",
+    "Huisseau-sur-Cosson",
+    "Montlivault",
+    "Mont-près-Chambord",
+    "Saint-Claude-de-Diray",
+    "Tour-en-Sologne",
+    "Vineuil"
+   ],
+   "pos": [
+    22,
+    -34,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Amboise",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Amboise",
+    "Cangey",
+    "Chargé",
+    "Limeray",
+    "Mosnes",
+    "Nazelles-Négron",
+    "Pocé-sur-Cisse",
+    "Saint-Ouen-les-Vignes",
+    "Saint-Règle",
+    "Chaumont-sur-Loire",
+    "Rilly-sur-Loire"
+   ],
+   "pos": [
+    -14,
+    -22,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Azay-le-Rideau",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Artannes-sur-Indre",
+    "Azay-le-Rideau",
+    "Cheillé",
+    "Lignières-de-Touraine",
+    "Rivarennes",
+    "Saché",
+    "Thilouze",
+    "Vallères"
+   ],
+   "pos": [
+    4,
+    30,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Chenonceaux",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Athée-sur-Cher",
+    "Bléré",
+    "Chenonceaux",
+    "Chisseaux",
+    "Civray-de-Touraine",
+    "La Croix-en-Touraine",
+    "Dierre",
+    "Francueil",
+    "Angé",
+    "Châteauvieux",
+    "Châtillon-sur-Cher",
+    "Chissay-en-Touraine",
+    "Couffy",
+    "Faverolles-sur-Cher",
+    "Mareuil-sur-Cher",
+    "Meusnes",
+    "Monthou-sur-Cher",
+    "Montrichard Val de Cher",
+    "Noyers-sur-Cher",
+    "Pouillé",
+    "Saint-Aignan",
+    "Saint-Georges-sur-Cher",
+    "Saint-Julien-de-Chédon",
+    "Saint-Romain-sur-Cher",
+    "Seigy",
+    "Thésée"
+   ],
+   "pos": [
+    -6,
+    30,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Mesland",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Mesland",
+    "Monteaux",
+    "Valencisse",
+    "Valloire-sur-Cisse",
+    "Veuzain-sur-Loire"
+   ],
+   "pos": [
+    -14,
+    -26,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Oisly",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Chémery",
+    "Choussy",
+    "Contres",
+    "Thenay",
+    "Couddes",
+    "Méhers",
+    "Oisly",
+    "Sassay",
+    "Soings-en-Sologne",
+    "Saint-Romain-sur-Cher"
+   ],
+   "pos": [
+    24,
+    14,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Coteaux du Loir",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Bueil-en-Touraine",
+    "Saint-Aubin-le-Dépeint",
+    "Saint-Christophe-sur-le-Nais",
+    "Saint-Paterne-Racan",
+    "Villebourg",
+    "Beaumont-sur-Dême",
+    "Chahaignes",
+    "La Chartre-sur-le-Loir",
+    "Chenu",
+    "Dissay-sous-Courcillon",
+    "Flée",
+    "Lhomme",
+    "Loir en Vallée",
+    "Marçon",
+    "Montval-sur-Loir",
+    "Nogent-sur-Loir",
+    "Saint-Germain-d'Arcé",
+    "Saint-Pierre-de-Chevillé"
+   ],
+   "pos": [
+    -24,
+    -14,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Jasnières",
+   "deps": [
+    "37",
+    "41",
+    "49",
+    "72",
+    "86"
+   ],
+   "communes": [
+    "Lhomme",
+    "Loir en Vallée"
+   ],
+   "pos": [
+    24,
+    -24,
+    "start"
+   ],
+   "trait": true
+  }
+ ]
+}

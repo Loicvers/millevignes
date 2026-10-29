@@ -50,6 +50,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
 
 ## Fait
+- Schémas et cartes (29/10) : 101 → 247. Cartes de situation pour les appellations du Rhône, de la Loire et de Champagne et pour les 76 cépages, cartes des 14 pays, Lorraine et Charentes (voir le journal). Reste : relancer `partenaires.mjs` sur les nouvelles cartes (liste privée) ; vérifier sur BO-agri les cahiers récents de Sancerre, Menetou-Salon, Châteaumeillant.
 - Rhône par appellation (29/10) : 39 fiches au lieu de 21 (18 nouvelles, 9 recentrées), toutes vérifiées sur les cahiers des charges en vigueur ; Côtes du Vivarais et Clairette de Bellegarde sans cahier lu (absents du BO-agri).
 - Beaujolais par appellation (29/10) : 20 fiches au lieu de 11 (9 nouvelles, 3 recentrées), toutes vérifiées sur les cahiers des charges en vigueur.
 - Bordeaux par appellation (29/10) : 44 fiches au lieu de 22, une par appellation, toutes vérifiées (Lalande-de-Pomerol et Saint-Georges sur les fiches produit INAO).

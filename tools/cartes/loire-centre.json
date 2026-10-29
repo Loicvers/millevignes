@@ -1,0 +1,211 @@
+{
+ "deps": [
+  "18",
+  "36",
+  "45",
+  "58"
+ ],
+ "fleuves": [
+  "Loire",
+  "Cher"
+ ],
+ "cadre": [
+  1.8,
+  46.45,
+  3.3,
+  47.78
+ ],
+ "largeur": 300,
+ "villes": [
+  {
+   "nom": "Bourges",
+   "dep": "18",
+   "pos": [
+    6,
+    16,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Reuilly",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Chéry",
+    "Lazenay",
+    "Lury-sur-Arnon",
+    "Preuilly",
+    "Diou",
+    "Reuilly"
+   ],
+   "pos": [
+    -10,
+    26,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Quincy",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Brinay",
+    "Quincy"
+   ],
+   "pos": [
+    -2,
+    -20,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Menetou-Salon",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Aubinges",
+    "Humbligny",
+    "Menetou-Salon",
+    "Morogues",
+    "Parassy",
+    "Pigny",
+    "Quantilly",
+    "Saint-Céols",
+    "Soulangis",
+    "Vignoux-sous-les-Aix"
+   ],
+   "pos": [
+    -16,
+    36,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Sancerre",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Bannay",
+    "Bué",
+    "Crézancy-en-Sancerre",
+    "Menetou-Râtel",
+    "Ménétréol-sous-Sancerre",
+    "Montigny",
+    "Saint-Satur",
+    "Sainte-Gemme-en-Sancerrois",
+    "Sancerre",
+    "Sury-en-Vaux",
+    "Thauvenay",
+    "Veaugues",
+    "Verdigny",
+    "Vinon"
+   ],
+   "pos": [
+    -30,
+    -8,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Pouilly-Fumé, Pouilly-sur-Loire",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Garchy",
+    "Mesves-sur-Loire",
+    "Pouilly-sur-Loire",
+    "Saint-Andelain",
+    "Saint-Laurent-l'Abbaye",
+    "Saint-Martin-sur-Nohain",
+    "Tracy-sur-Loire"
+   ],
+   "pos": [
+    -44,
+    44,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Coteaux du Giennois",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Beaulieu-sur-Loire",
+    "Bonny-sur-Loire",
+    "Briare",
+    "Gien",
+    "Ousson-sur-Loire",
+    "Thou",
+    "Alligny-Cosne",
+    "La Celle-sur-Loire",
+    "Cosne-Cours-sur-Loire",
+    "Myennes",
+    "Neuvy-sur-Loire",
+    "Pougny",
+    "Saint-Loup",
+    "Saint-Père"
+   ],
+   "pos": [
+    -6,
+    -26,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Châteaumeillant",
+   "deps": [
+    "18",
+    "36",
+    "45",
+    "58"
+   ],
+   "communes": [
+    "Châteaumeillant",
+    "Saint-Maur",
+    "Vesdun",
+    "Champillet",
+    "Feusines",
+    "Néret",
+    "Urciers"
+   ],
+   "pos": [
+    18,
+    -16,
+    "start"
+   ],
+   "trait": true
+  }
+ ]
+}
