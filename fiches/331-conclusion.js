@@ -14,7 +14,7 @@ FICHES.push(
     exos: [
       {"type":"matching","prompt":"Relie chaque image traditionnelle du vin au paradoxe actuel que décrit le livre.","payload":{"pairs":[["Boisson populaire","Boisson de privilégiés"],["Patrimoine et fleuron économique français","Montré du doigt par les lobbys antialcool"],["Incarnation de la naturalité","Jamais aussi « hyperculturel »"],["Incarnation de l’enracinement des terroirs","Jamais autant mondialisé"]]},"explanation":"Chaque paire oppose l’image qu’on a du vin à sa réalité contemporaine ; aucune des quatre ne fonctionne sans son contraire, c’est ce qui fait un paradoxe."},
       {"type":"cloze","prompt":"Complète.","payload":{"text":"Le symposium « Act for Change » s’est tenu en {{juin}} 2022 à la Cité du {{Vin}} de {{Bordeaux}}."},"explanation":"C’est un symposium d’experts internationaux organisé en présentiel à Bordeaux, à la différence de la conférence « Green Wine Future », tenue en ligne le mois précédent."},
-      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"La conférence « Green Wine Future » de mai 2022 s’est limitée à la viticulture régénératrice et laissait de côté le greenwashing.","answer":false},"explanation":"Le programme ratissait large, de l’énergie et du carbone à l’œnotourisme, et traitait explicitement des dérives du marketing vert."}
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"La conférence « Green Wine Future » de mai 2022 traitait explicitement des dérives du marketing vert.","answer":true},"explanation":"Le programme ratissait large, de l’énergie et du carbone à l’œnotourisme, sans se limiter à la viticulture régénératrice."}
     ],
     schema: null,
     cours: null,
@@ -84,7 +84,7 @@ FICHES.push(
     qcm: {"q":"Que montre le recours à Descola dans la conclusion ?","opts":["La séparation nature/culture n’a rien d’universel et peut être déplacée","La nature est une réalité intangible, distincte de l’homme","Le vin nature est né chez les Grecs archaïques","La biodynamie est une science établie"],"good":0,"expl":"L’enjeu est de relativiser un cadre de pensée : si le partage est une manière de voir parmi d’autres, des vignerons peuvent légitimement le refonder."},
     exos: [
       {"type":"short_answer","prompt":"Quel anthropologue Lepeltier invoque-t-elle pour dire que la division nature/culture est plutôt l’exception que la règle ?","payload":{"accepted":["Descola","Philippe Descola"]},"explanation":"Le renvoi à l’anthropologie sert à montrer que le partage nature/culture est une construction historique, donc contestable."},
-      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Pour Lepeltier, le fait que ces vins sortent des AOC prouve d’abord qu’ils sont de moindre qualité.","answer":false},"explanation":"Elle souligne qu’ils sont célébrés par les dégustateurs : leur sortie dit plutôt que les règles d’organisation du territoire sont à repenser."}
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Pour Lepeltier, le fait que beaucoup de vins nature et de terroir sortent des AOC pousse à redéfinir le territoire.","answer":true},"explanation":"Elle souligne qu’ils sont célébrés par les dégustateurs : leur sortie ne dit pas leur moindre qualité mais que les règles d’organisation du territoire sont à repenser, en y incluant toutes les communautés vivantes."}
     ],
     schema: null,
     cours: null,

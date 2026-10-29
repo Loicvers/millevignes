@@ -29,7 +29,7 @@
 
 ## Audit du 29/10 (reste à faire)
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
-- [ ] Vrai/faux déséquilibré : 152 vrais sur 641 (répondre « faux » partout donne 76 %). Rééquilibrer fichier par fichier, au fil des lots. Test (29/10) : cliquet à 23 % de vrais sur l'existant, 35 à 65 % exigés sur les nouvelles fiches (id > 750).
+- [x] Vrai/faux rééquilibré (29/10) : 152 → 258 vrais sur 641 (40 %) ; 106 énoncés faux réécrits en vrais à partir de leur explication et de la synthèse, sans fait nouveau (3 rédacteurs, relecture indépendante : 88 validés, 18 corrigés). Test : cliquet à 38 % sur l'existant, 35 à 65 % sur les nouvelles fiches (id > 750).
 - [ ] Exercices sans explication propre : 983 sur 3 894 au recomptage du 29/10 (la synthèse de la fiche s'affiche à la place).
 - [x] Erreur reposée dans la même séance : 4 exercices plus loin (29/10 ; avant : en fin de séance).
 - [x] Recherche plein texte dans les fiches (29/10) : champ en tête de l'onglet Fiches, tous les mots cherchés dans le titre, la synthèse et l'astuce ; se combine aux filtres, à « S'entraîner » et à l'examen blanc.

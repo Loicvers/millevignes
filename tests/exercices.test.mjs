@@ -311,7 +311,7 @@ const biais = fs => {
 test("QCM et vrai/faux : pas de biais de réponse exploitable", () => {
   const tout = biais(FICHES);
   assert.ok(tout.longue <= 0.5, `bonne réponse la plus longue : ${Math.round(100 * tout.longue)} % des QCM (cliquet 50 %)`);
-  assert.ok(tout.vrais >= 0.23, `vrais : ${Math.round(100 * tout.vrais)} % des vrai/faux (cliquet 23 %)`);
+  assert.ok(tout.vrais >= 0.38, `vrais : ${Math.round(100 * tout.vrais)} % des vrai/faux (cliquet 38 %)`);
   const neuves = biais(FICHES.filter(f => f.id > 750));
   if (neuves.qcm >= 10) assert.ok(neuves.longue <= 0.35, `nouvelles fiches : bonne réponse la plus longue dans ${Math.round(100 * neuves.longue)} % des QCM (35 % au plus)`);
   if (neuves.vf >= 10) assert.ok(neuves.vrais >= 0.35 && neuves.vrais <= 0.65, `nouvelles fiches : ${Math.round(100 * neuves.vrais)} % de vrais (35 à 65 %)`);
