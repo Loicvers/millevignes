@@ -211,6 +211,14 @@ function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 
   return q;
 }
 
+// Examen blanc : n exercices corrigés automatiquement, une seule par fiche, fiches tirées au hasard (chaque thème pèse son poids dans le programme).
+const EXAMEN_TYPES = ["mcq_single", "mcq_multi", "true_false", "odd_one_out", "cloze", "short_answer", "matching", "ordering"];
+function planExamen(pool, n = 40) {
+  const par = new Map();
+  for (const e of pool) if (EXAMEN_TYPES.includes(e.type)) { if (!par.has(e.fiche)) par.set(e.fiche, []); par.get(e.fiche).push(e); }
+  return shuffle([...par.values()]).slice(0, n).map(es => shuffle(es)[0]);
+}
+
 // Points durs : exercices dont la facilité est basse (souvent « Difficile »), le plus fragile en tête.
 // Un exercice en sort après deux réussites d'affilée dans le journal (réussie = pas ratée, et pas notée « Au hasard »/« Difficile »).
 const reussie = j => j.ok === 1 ? j.r !== "hard" : j.ok === null && (j.r === "ok" || j.r === "easy");
