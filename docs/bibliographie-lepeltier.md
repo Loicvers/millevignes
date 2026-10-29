@@ -172,7 +172,7 @@ restent à fournir (PDF ou extrait).
 | IFV, élevage en barriques (fiche pratique) | à tester |
 | Stanziani 2003, falsification du vin 1880-1905 | bloqué (Cairn) |
 | Goode 2018, *Flawless* ; Goode 2021 ; Goode et Harrop 2007 ; Smith 2013 | livre |
-| Woolf 2018, *Amber Revolution* ; Feiring ; Legeron 2020 ; Morain 2019-2020 ; Pineau 2019 | livre (Pineau : couverture seule reçue, texte attendu) |
+| Woolf 2018, *Amber Revolution* ; Feiring ; Legeron 2020 ; Morain 2019-2020 ; Pineau 2019 | livre (Pineau : couverture seule, texte indisponible, abandonné le 29/10) |
 | Chauvet (communications et livres) ; Néauport ; Léglise 2002-2003 ; Lagorce 2021 | livre |
 | Foulonneau 2019 ; Navarre et Belly 2017 ; Godart et Saint-Lô 2019 | livre |
 | Liger-Belair 2020 ; Liger-Belair et Rochard 2008 ; Louapre 2013 | livre / à tester |

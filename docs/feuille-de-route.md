@@ -38,11 +38,11 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - Biais léger des QCM : la bonne réponse est la plus longue dans 34 % des cas (25 % attendus).
 
 ## En attente de Loïc
-- Pineau, *La Corne de vache et le Microscope* (2019) : texte à fournir (PDF ou accès OpenEdition).
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
 - Tests sur iPhone réel (mode sombre, échéance, sauvegarde) : non faits.
 
 ## Idées non retenues pour l'instant
+- Pineau, *La Corne de vache et le Microscope* (2019) : texte indisponible (29/10), recherche abandonnée ; la fiche du vin nature s'appuie sur d'autres sources, la notice suffit pour citer le livre.
 - Mesure de l'efficacité de la répétition espacée par type d'exercice : attendre d'avoir des semaines de journal.
 - Champ `sources` par fiche : chantier de saisie lourd.
 - Accessibilité au lecteur d'écran et navigation des onglets aux flèches : à tester sur appareil.
