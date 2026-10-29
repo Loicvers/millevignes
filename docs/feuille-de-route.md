@@ -14,6 +14,7 @@
 - Chargement à la demande des fiches et allègement des `selon_livre` : écartés (évaluation ≈ 120 ms, 1,3 Mo compressé, gain trop faible).
 - Sauvegarde : restauration par fusion (la réponse la plus récente gagne), pas de serveur ni de synchronisation par compte.
 - OCR : `indra-ocr` retenu à la place de Tesseract (essai du 28/10 sur le World Atlas p. 26 : chiffres et petits mots justes, ordre des colonnes parfois mêlé). Il tourne sur le PC de Loïc (Windows, PowerShell : `py "$HOME\Downloads\extraire_indra.py" "<pdf>" "<dossier resultats>"`, rien ne s'affiche avant la fin ; fichier renvoyé par l'envoi web de GitHub, Claude le range et le compare), pas dans le conteneur (modèles bloqués).
+- Réseau du conteneur (29/10) : BO-agri (info.agriculture.gouv.fr) autorisé, cahiers des charges lisibles (recherche plein texte, section I = date de reconnaissance) ; inao.gouv.fr toujours refusé par le proxy (à autoriser aussi sous www. et extranet.).
 - Dépôt de sources : écriture autorisée par Loïc (registre, outils) ; jamais de contenu des sources dans ce dépôt public.
 
 ## À faire, par priorité
@@ -48,6 +49,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
 
 ## Fait
+- Bordeaux par appellation (29/10) : 44 fiches au lieu de 22, une par appellation ; 2 restent à vérifier (Lalande-de-Pomerol, Saint-Georges-Saint-Émilion), faute de cahier des charges lisible.
 - Tests sur iPhone réel (29/10) : mode sombre, ouverture sans réseau, sauvegarde vers iCloud Drive, restauration et échéance validés.
 
 ## Idées non retenues pour l'instant

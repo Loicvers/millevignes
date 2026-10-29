@@ -1175,7 +1175,7 @@ const RECITS = [
   defend: "Le Médoc est la terre du cabernet-sauvignon sur graves, et sa hiérarchie se lit en deux régionales, six communales et deux classements, l’un figé, l’autre révisable.",
   client: "« Margaux pour la finesse, Pauillac pour la puissance, Saint-Estèphe pour la charpente : sur la rive gauche, chaque commune a son caractère. »",
   filRouge: "Au sud de Bordeaux, pourquoi les Graves font-elles aussi bien le rouge que le blanc sec ?",
-  src: "fiches 421 à 424, 3 et 679 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855 ; Alliance des Crus Bourgeois)"
+  src: "fiches 421 à 424, 751 à 754, 3 et 679 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855 ; Alliance des Crus Bourgeois)"
  },
  {
   chapitre: "Graves et Pessac-Léognan",
@@ -1204,7 +1204,7 @@ const RECITS = [
   defend: "Le sauternes est un vin de risque : il dépend de brumes, de soleil et de tries répétées, et le sémillon en est le cœur.",
   client: "« Le sauternes vient de raisins touchés par une pourriture noble, cueillis à la main en plusieurs passages, au fil du botrytis : c’est un vin de patience et de risque. »",
   filRouge: "De l’autre côté de la Dordogne, comment le merlot règne-t-il sur Saint-Émilion et Pomerol ?",
-  src: "fiches 427, 428 et 680 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855)"
+  src: "fiches 427, 428, 755 à 757 et 680 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Conseil des Grands Crus Classés en 1855)"
  },
  {
   chapitre: "Libournais : Saint-Émilion, Pomerol et satellites",
@@ -1219,7 +1219,7 @@ const RECITS = [
   defend: "La rive droite est le pays du merlot, sur argiles et calcaire, avec deux visages : Saint-Émilion, classé et révisé, et Pomerol, jamais classé.",
   client: "« Saint-Émilion et Pomerol, c’est le merlot : des vins plus ronds que ceux du Médoc, où domine le cabernet. »",
   filRouge: "Entre la Dordogne et la Garonne, que produit le grand plateau de l’Entre-deux-Mers ?",
-  src: "fiches 429 à 431 et 679 du site (INAO, cahiers des charges et classement ; UNESCO ; WSET D3 ; Oxford Companion)"
+  src: "fiches 429 à 431, 758 à 764 et 679 du site (INAO, cahiers des charges et classement ; UNESCO ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Entre-deux-Mers, Côtes et Bordeaux régionaux",
@@ -1233,7 +1233,7 @@ const RECITS = [
   defend: "Le bordeaux du quotidien vient de l’Entre-deux-Mers, des Côtes et des appellations régionales : c’est là que la région se réinvente, entre arrachages, blancs, rosés et crémants.",
   client: "« Un Côtes de Bordeaux ou un Bordeaux supérieur, c’est le bordeaux du quotidien, bien moins cher que les crus classés. »",
   filRouge: "Plus au sud-est, comment le Sud-Ouest garde-t-il ses cépages à lui, du tannat au gros manseng ?",
-  src: "fiches 432, 433, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
+  src: "fiches 432, 433, 765 à 772, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
  },
  {
   chapitre: "Vallée du Rhône : panorama et appellations",
