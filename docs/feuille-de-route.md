@@ -20,7 +20,7 @@
 1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura, Savoie, Provence, Corse, Sud-Ouest (une fiche chacune), puis Alsace, Champagne, Beaujolais. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
 2. **Relancer l'OCR** sur le PC avec `py outils/extraire_indra.py <pdf> <dossier>` (dépôt de sources), puis remplacer le texte et pousser :
    - [x] World Atlas of Wine 7e (fait le 29/10 : 201 pages, texte remplacé)
-   - [ ] WSET 2 (118 pages en OCR)
+   - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)
    - [ ] Jourjon, Morlat, Seguin 1991 (23/24 pages)
    - [ ] Morris, Bourgogne blanc et Vins de Loire (option `--ocr` : couche texte d'un mauvais OCR)
 3. **Cours « Approfondir » des autres cépages** (9 sur 76 faits : chardonnay, pinot noir, cabernet-sauvignon, merlot, syrah, grenache noir, sauvignon blanc, chenin, riesling). Suivants logiques : gamay, cabernet franc, sémillon, gewurztraminer, viognier, mourvèdre, tempranillo, sangiovese, nebbiolo.
