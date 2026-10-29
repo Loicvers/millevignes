@@ -29,12 +29,13 @@
 
 ## Audit du 29/10 (reste à faire)
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
-- [ ] Vrai/faux déséquilibré : 152 vrais sur 641 (répondre « faux » partout donne 76 %). Rééquilibrer fichier par fichier, au fil des lots. Test (29/10) : cliquet à 23 % de vrais sur l'existant, 35 à 65 % exigés sur les nouvelles fiches (id > 750).
-- [ ] Exercices sans explication propre : 983 sur 3 894 au recomptage du 29/10 (la synthèse de la fiche s'affiche à la place).
+- [x] Vrai/faux rééquilibré (29/10) : 152 → 258 vrais sur 641 (40 %) ; 106 énoncés faux réécrits en vrais à partir de leur explication et de la synthèse, sans fait nouveau (3 rédacteurs, relecture indépendante : 88 validés, 18 corrigés). Test : cliquet à 38 % sur l'existant, 35 à 65 % sur les nouvelles fiches (id > 750).
+- [x] Explications (29/10) : les 209 exercices corrigés qui n'en avaient pas (97 QCM, 13 QCM multiples, 29 appariements, 70 autres) en ont une, tirée de la synthèse de la fiche (198, relecture indépendante : 162 validées, 36 corrigées) ou des sources (11, livre, WSET D3, Oxford Companion). Les 750 flashcards n'en ont pas besoin (la réponse s'affiche). Test : aucun exercice corrigé sans explication.
+- [ ] Exercices dont un élément n'est pas dans la synthèse (relevés le 29/10) : fiche 70, « sa longueur » comme critère ampélographique de la grappe (le livre ne cite que forme et compacité) ; fiche du n45, paire « riparia aime les sols riches et frais ». À vérifier sur les sources.
 - [x] Erreur reposée dans la même séance : 4 exercices plus loin (29/10 ; avant : en fin de séance).
 - [x] Recherche plein texte dans les fiches (29/10) : champ en tête de l'onglet Fiches, tous les mots cherchés dans le titre, la synthèse et l'astuce ; se combine aux filtres, à « S'entraîner » et à l'examen blanc.
 - [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, une minute par question, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Résultats conservés (100 derniers, dans la sauvegarde) et affichés dans « Mon suivi » avec le thème le plus faible ; les erreurs sur des fiches déjà travaillées passent « à revoir demain » (pas celles des fiches jamais lues, qui gardent leur découverte).
-- [ ] Design : en-tête trop haut sur mobile (≈ 30 % de l'écran), barre de filtres visible hors de l'onglet Fiches, largeurs incohérentes sur ordinateur, réglages cachés en pied de page.
+- [x] Design (29/10) : en-tête réduit sur mobile (130 → 112 px, sous-titre masqué) et collant (le titre défile, les onglets restent) ; réglages remontés dans un panneau sous l'en-tête (bouton « Réglages ») ; sommaire des fiches par partie (Livre · France · Cépages · Monde), une recherche ou un filtre montrant tout. La barre de filtres ne s'affiche que dans Fiches et Masterclass (voulu : Masterclass s'en sert). Reste : largeurs sur ordinateur.
 - [ ] Biais des QCM : la bonne réponse est strictement la plus longue dans 49 % des cas (471 sur 958, recompté le 29/10 ; 25 % attendus). Test : cliquet à 50 % sur l'existant, 35 % au plus sur les nouvelles fiches. Rallonger les leurres au fil des lots.
 
 ## En attente de Loïc

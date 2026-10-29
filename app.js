@@ -237,18 +237,26 @@ function renderLexique(){
   grid.append(q,list);draw();
 }
 let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dépliées (au départ : celle où l'on en est)
+const PARTIES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>PARTIES.includes(c.partie)?c.partie:'Le livre';
+let partie=(()=>{try{const p=localStorage.getItem('mv_partie');return PARTIES.includes(p)?p:'Le livre';}catch{return 'Le livre';}})();
 function renderToc(list,filtre){
   grid.className='grid toc';
   const vue=f=>etat(f)[0]!=='new';
-  // Reprendre : première fiche pas encore vue, dans l'ordre du livre
-  const suite=CHAPS.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>!vue(x.f));
+  // Une partie à la fois (livre, France, cépages, monde) ; une recherche ou un filtre montre tout.
+  const chaps=filtre?CHAPS:CHAPS.filter(c=>partieDe(c)===partie);
+  if(!filtre){const nav=el('div','parties');nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie du sommaire');
+    PARTIES.forEach(p=>{const n=CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),b=el('button','partie'+(p===partie?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));
+      b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',p===partie);b.onclick=()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;render();};nav.append(b);});
+    grid.append(nav);}
+  // Reprendre : première fiche pas encore vue, dans l'ordre du sommaire
+  const suite=chaps.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>!vue(x.f));
   if(!filtre&&suite&&mode!=='atelier'){
     const r=el('div','resume');
     r.append(el('p',null,`Reprendre — ${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre));
     const b=el('button','btn primary','Continuer la lecture');b.onclick=()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i);r.append(b);grid.append(r);
   }
   let sec=null,box=grid;
-  CHAPS.forEach(c=>{
+  chaps.forEach(c=>{
     const fs=c.fiches.filter(f=>list.includes(f));if(!fs.length&&(c.fiches.length||filtre))return;
     const nom=c.section||c.partie;
     if(nom!==sec){sec=nom;const all=CHAPS.filter(x=>(x.section||x.partie)===nom).flatMap(x=>x.fiches);
@@ -856,6 +864,12 @@ const echIn=document.getElementById('echeance'),echInfo=document.getElementById(
 function majEch(){echIn.value=echeance;const n=rythmeDuJour();echInfo.textContent=echeance?`${restantes()} fiches à découvrir : ${n} nouvelles par jour, séance jusqu'à ${SESSION_MAX+2*n} exercices.`:`Sans échéance : ${NEW_FICHES} nouvelles fiches par jour.`;}
 echIn.onchange=()=>{echeance=echIn.value;try{echeance?localStorage.setItem(ECHKEY,echeance):localStorage.removeItem(ECHKEY);}catch{}majEch();updateBadges();};majEch();
 document.getElementById('suiviLink').onclick=()=>{setMode('suivi');window.scrollTo(0,0);};
+// Réglages : panneau sous l'en-tête (avant : replié dans le pied de page, introuvable sur mobile)
+const regBtn=document.getElementById('reglagesBtn'),regBox=document.getElementById('reglages');
+regBtn.onclick=()=>{regBox.hidden=!regBox.hidden;regBtn.setAttribute('aria-expanded',!regBox.hidden);if(!regBox.hidden)regBox.scrollIntoView({block:'nearest'});};
+// En-tête collant : le titre défile, les onglets restent en haut de l'écran
+const head=document.querySelector('header'),calerEntete=()=>{head.style.top=-document.querySelector('.head-inner').offsetHeight+'px';};
+calerEntete();addEventListener('resize',calerEntete);
 document.getElementById('exportProg').onclick=document.getElementById('saveNow').onclick=exportProg;
 document.getElementById('importBtn').onclick=()=>document.getElementById('importProg').click();
 document.getElementById('importProg').onchange=async e=>{
