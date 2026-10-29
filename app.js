@@ -146,7 +146,7 @@ function render(){
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
   const hb=document.getElementById('hardBtn');hb.hidden=!durs.length;hb.textContent=`Mes points durs (${durs.length})`;
-  const xb=document.getElementById('examBtn');xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.onclick=()=>startExamen(pool);
+  const xb=document.getElementById('examBtn');xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.disabled=!list.length;xb.onclick=()=>startExamen(pool);
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
@@ -553,10 +553,10 @@ function startSession(q,title,dejaLues=[],exam=null){
     c.textContent=chrono(r);},1000);}
 }
 /* Examen blanc : sans aide ni correction avant la fin, minuté, hors répétition espacée (voir planExamen dans exercices.js). */
-const EXAMEN_N=40,EXAMEN_MIN=40; // une minute par question, comme l'écrit du WSET 2 (50 QCM en 45 min)
+const EXAMEN_N=40,EXAMEN_MS=60e3; // une minute par question, comme l'écrit du WSET 2 (50 QCM en 45 min)
 let examen=null;
 const chrono=ms=>{const s=Math.ceil(ms/1000);return `⏱ ${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;};
-function startExamen(pool){const q=planExamen(pool,EXAMEN_N);if(q.length)startSession(q,'Examen blanc',FICHES.map(f=>f.id),{fin:now()+EXAMEN_MIN*60e3,res:[]});}
+function startExamen(pool){const q=planExamen(pool,EXAMEN_N);if(q.length)startSession(q,'Examen blanc',FICHES.map(f=>f.id),{fin:now()+q.length*EXAMEN_MS,res:[]});}
 function showBilanExamen(){
   const ex=examen,box=el('div','empty bilan');examen=null;
   const ok=ex.res.filter(r=>r.ok).length,n=queue.length,pct=Math.round(100*ok/n);

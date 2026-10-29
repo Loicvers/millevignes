@@ -33,9 +33,9 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - [ ] Exercices sans explication propre : 983 sur 3 894 au recomptage du 29/10 (la synthèse de la fiche s'affiche à la place).
 - [x] Erreur reposée dans la même séance : 4 exercices plus loin (29/10 ; avant : en fin de séance).
 - [ ] Recherche plein texte dans les fiches (Lexique et Cartes en ont une, pas Fiches).
-- [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, 40 min, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Hors répétition espacée ; résultats non conservés.
+- [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, une minute par question, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Hors répétition espacée ; résultats non conservés.
 - [ ] Design : en-tête trop haut sur mobile (≈ 30 % de l'écran), barre de filtres visible hors de l'onglet Fiches, largeurs incohérentes sur ordinateur, réglages cachés en pied de page.
-- [ ] Biais des QCM : la bonne réponse est la plus longue dans 54 % des cas (521 sur 958, recompté le 29/10 ; 25 % attendus). Test : cliquet à 55 % sur l'existant, 35 % au plus sur les nouvelles fiches. Rallonger les leurres au fil des lots.
+- [ ] Biais des QCM : la bonne réponse est strictement la plus longue dans 49 % des cas (471 sur 958, recompté le 29/10 ; 25 % attendus). Test : cliquet à 50 % sur l'existant, 35 % au plus sur les nouvelles fiches. Rallonger les leurres au fil des lots.
 
 ## En attente de Loïc
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
