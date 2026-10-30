@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 797 (dernier id : 799) · exercices : 4142
 - Vérifiées : 797 · à vérifier : 0 (0 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2109
 - Niveaux : Fondamental 242 · Intermédiaire 424 · Pointu 131
-- Cours (Approfondir) : 82 · schémas : 101
+- Cours (Approfondir) : 82 · schémas : 247
 - Lexique : 84 termes · récits de chapitre : 84
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -20,7 +20,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 244-degustation.js | 53 | 253–640 | 245–285 | 53 | 7 | 6 |
 | 288-service.js | 66 | 293–646 | 288–329 | 66 | 7 | 5 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
-| cepages.js | 76 | 372–666 | hors livre | 76 | 9 | 0 |
+| cepages.js | 76 | 372–666 | hors livre | 76 | 9 | 76 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 6 | 405–705 | hors livre | 6 | 1 | 2 |
 | fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 1 |
@@ -28,9 +28,9 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 1 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
 | fr-bourgogne.js | 50 | 385–750 | hors livre | 50 | 1 | 4 |
-| fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 0 |
+| fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 8 |
 | fr-champagne.js | 7 | 403–700 | hors livre | 7 | 1 | 2 |
-| fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 0 |
+| fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 1 |
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
@@ -38,12 +38,12 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-jura.js | 1 | 407–407 | hors livre | 1 | 0 | 1 |
 | fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
-| fr-loire-appellations.js | 12 | 447–458 | hors livre | 12 | 0 | 0 |
+| fr-loire-appellations.js | 12 | 447–458 | hors livre | 12 | 0 | 12 |
 | fr-loire.js | 8 | 409–695 | hors livre | 8 | 1 | 2 |
-| fr-lorraine.js | 1 | 576–576 | hors livre | 1 | 0 | 0 |
+| fr-lorraine.js | 1 | 576–576 | hors livre | 1 | 0 | 1 |
 | fr-provence-appellations.js | 3 | 489–491 | hors livre | 3 | 0 | 0 |
 | fr-provence.js | 1 | 419–419 | hors livre | 1 | 0 | 1 |
-| fr-rhone-appellations.js | 31 | 434–790 | hors livre | 31 | 0 | 0 |
+| fr-rhone-appellations.js | 31 | 434–790 | hors livre | 31 | 0 | 31 |
 | fr-rhone.js | 8 | 415–689 | hors livre | 8 | 1 | 3 |
 | fr-roussillon-appellations.js | 4 | 481–723 | hors livre | 4 | 0 | 0 |
 | fr-roussillon.js | 6 | 418–722 | hors livre | 6 | 1 | 2 |
@@ -51,17 +51,17 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 1 |
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
-| monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 0 |
-| monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 0 |
-| monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 0 |
-| monde-australie.js | 3 | 560–562 | hors livre | 3 | 0 | 0 |
-| monde-autriche.js | 2 | 536–537 | hors livre | 2 | 0 | 0 |
-| monde-canada.js | 1 | 556–556 | hors livre | 1 | 0 | 0 |
-| monde-chili.js | 1 | 557–557 | hors livre | 1 | 0 | 0 |
-| monde-espagne.js | 7 | 529–549 | hors livre | 7 | 0 | 0 |
-| monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 0 |
-| monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 0 |
-| monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 0 |
-| monde-italie.js | 7 | 539–593 | hors livre | 7 | 0 | 0 |
-| monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 0 |
-| monde-portugal.js | 6 | 526–551 | hors livre | 6 | 0 | 0 |
+| monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 1 |
+| monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 1 |
+| monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 1 |
+| monde-australie.js | 3 | 560–562 | hors livre | 3 | 0 | 2 |
+| monde-autriche.js | 2 | 536–537 | hors livre | 2 | 0 | 1 |
+| monde-canada.js | 1 | 556–556 | hors livre | 1 | 0 | 1 |
+| monde-chili.js | 1 | 557–557 | hors livre | 1 | 0 | 1 |
+| monde-espagne.js | 7 | 529–549 | hors livre | 7 | 0 | 1 |
+| monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 2 |
+| monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 1 |
+| monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 1 |
+| monde-italie.js | 7 | 539–593 | hors livre | 7 | 0 | 1 |
+| monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 1 |
+| monde-portugal.js | 6 | 526–551 | hors livre | 6 | 0 | 2 |

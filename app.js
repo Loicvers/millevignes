@@ -213,18 +213,20 @@ function renderSuivi(){
 }
 /* ============ CARTES (toutes les cartes de régions, pour situer un domaine devant un client) ============ */
 let carteQuery='';
-const CARTES=FICHES.filter(f=>f.source==='france'&&/viewBox="/.test(f.schema?.svg??'')).sort((a,b)=>!a.geo?.region?-1:!b.geo?.region?1:a.geo.region.localeCompare(b.geo.region,'fr')||a.id-b.id);
+// cartes de l'atlas : cartes de région ou de pays (avec titre) et schémas ; pas les cartes de situation des appellations et cépages (data-proj sans titre)
+const CARTES=FICHES.filter(f=>f.source==='france'&&/viewBox="/.test(f.schema?.svg??'')&&(f.schema.titre||!f.schema.svg.includes('data-proj'))).sort((a,b)=>!a.geo?.region?-1:!b.geo?.region?1:a.geo.region.localeCompare(b.geo.region,'fr')||a.id-b.id);
 /* ============ ATLAS (une page par région ou pays : cartes, puis toutes ses fiches) ============ */
 const LIEUX=lieux(FICHES,typeof FRANCE_SOMMAIRE!=='undefined'?FRANCE_SOMMAIRE:[]);
 let lieu=(()=>{try{return localStorage.getItem('mv_lieu')||'';}catch{return '';}})();
 const allerLieu=nom=>{lieu=nom;try{nom?localStorage.setItem('mv_lieu',nom):localStorage.removeItem('mv_lieu');}catch{}render();window.scrollTo(0,0);};
 const barre=(v,n)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'));b.firstChild.style.width=(n?100*v/n:0)+'%';return b;};
 const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`;
+const carteDe=(f,l)=>l.france?f.geo?.pays==='France'&&(l.nom==='France'?!f.geo.region:f.geo.region===l.nom):f.geo?.pays===l.nom;
 const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
 const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
 // Tuile d'un lieu (accueil et recherche de l'atlas) ; ◉ : la région a une carte
 function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,b=el('button','lieu'),h=el('span','lieu-h');
-  h.append(el('span','lieu-n',x.nom));if(CARTES.some(f=>x.france&&f.geo?.region===x.nom)){const c=el('span','lieu-c','◉');c.title='Carte disponible';h.append(c);}
+  h.append(el('span','lieu-n',x.nom));if(CARTES.some(f=>carteDe(f,x))){const c=el('span','lieu-c','◉');c.title='Carte disponible';h.append(c);}
   b.append(h,el('span','chap-m',`${plur(x.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);return b;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -237,7 +239,7 @@ function renderLieu(l){
   const chaps=(CHAPS||[]).filter(c=>c.fiches.some(f=>l.fiches.includes(f))).sort((a,b)=>rang(a)-rang(b));
   const ordre=chaps.flatMap(c=>c.fiches.filter(f=>l.fiches.includes(f))),pool=l.fiches.flatMap(f=>EXOS.filter(e=>e.fiche===f));
   tete.append(ret,el('h2','lieu-t',nomLieu(l)));
-  const cs=CARTES.filter(f=>l.france&&(l.nom==='France'?!f.geo?.region:f.geo?.region===l.nom)); // la première carte en vue, les autres repliées
+  const cs=CARTES.filter(f=>carteDe(f,l)); // la première carte en vue, les autres repliées
   if(cs.length){tete.append(el('p','lieu-k','La carte'));const w=el('div','lieu-carte');
     w.insertAdjacentHTML('beforeend',carteHTML(cs[0],null)+partenairesHTML(cs[0]));
     if(cs.length>1)w.insertAdjacentHTML('beforeend',`<details class="cours"><summary>Autres cartes (${cs.length-1})</summary>${cs.slice(1).map(f=>carteHTML(f,null)).join('')}</details>`);

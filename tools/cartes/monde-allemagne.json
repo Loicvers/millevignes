@@ -1,0 +1,134 @@
+{
+ "monde": true,
+ "fleuves": [
+  "Rhein",
+  "Rhine",
+  "Mosel",
+  "Main",
+  "Neckar"
+ ],
+ "villes": [
+  {
+   "nom": "Francfort",
+   "label": "Francfort",
+   "at": [
+    8.68,
+    50.11
+   ],
+   "pos": [
+    6,
+    -3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Stuttgart",
+   "label": "Stuttgart",
+   "at": [
+    9.18,
+    48.78
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Mosel",
+   "at": [
+    7.07,
+    49.92
+   ],
+   "pos": [
+    -5,
+    -3,
+    "end"
+   ]
+  },
+  {
+   "label": "Rheingau",
+   "at": [
+    7.93,
+    49.98
+   ],
+   "pos": [
+    -5,
+    -5,
+    "end"
+   ]
+  },
+  {
+   "label": "Nahe",
+   "at": [
+    7.87,
+    49.85
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Rheinhessen",
+   "at": [
+    8.11,
+    49.75
+   ],
+   "pos": [
+    5,
+    4,
+    "start"
+   ]
+  },
+  {
+   "label": "Pfalz",
+   "at": [
+    8.14,
+    49.35
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Baden",
+   "at": [
+    7.85,
+    48
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Franken",
+   "at": [
+    9.93,
+    49.79
+   ],
+   "pos": [
+    5,
+    -4,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "DE",
+ "cadre": [
+  5.8,
+  47.4,
+  11,
+  50.7
+ ],
+ "tol": 0.7
+}

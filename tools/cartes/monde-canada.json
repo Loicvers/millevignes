@@ -1,0 +1,99 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Vancouver",
+   "label": "Vancouver",
+   "at": [
+    -123.12,
+    49.28
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Toronto",
+   "label": "Toronto",
+   "at": [
+    -79.39,
+    43.66
+   ],
+   "pos": [
+    6,
+    -2,
+    "start"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Okanagan",
+   "at": [
+    -119.5,
+    49.7
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Niagara",
+   "at": [
+    -79.1,
+    43.2
+   ],
+   "pos": [
+    5,
+    9,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Colombie-Brit.",
+   "admin1": [
+    "British Columbia"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ],
+   "at": [
+    -119.5,
+    54.5
+   ]
+  },
+  {
+   "label": "Ontario",
+   "admin1": [
+    "Ontario"
+   ],
+   "pos": [
+    0,
+    3,
+    "middle"
+   ],
+   "at": [
+    -85,
+    50
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "CA",
+ "cadre": [
+  -134,
+  41,
+  -68,
+  57
+ ],
+ "tol": 0.7
+}

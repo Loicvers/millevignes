@@ -1,0 +1,46 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Funchal",
+   "label": "Funchal",
+   "at": [
+    -16.92,
+    32.65
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "points": [],
+ "zones": [
+  {
+   "label": "Madère",
+   "admin1": [
+    "Madeira"
+   ],
+   "pos": [
+    0,
+    -12,
+    "middle"
+   ],
+   "at": [
+    -17,
+    32.78
+   ]
+  }
+ ],
+ "largeur": 320,
+ "iso": "PT",
+ "cadre": [
+  -17.4,
+  32.5,
+  -16.6,
+  32.95
+ ],
+ "tol": 0.7
+}

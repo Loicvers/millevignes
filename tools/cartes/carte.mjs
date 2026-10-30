@@ -1,5 +1,8 @@
 // Carte de sous-régions à légender : zones = union de communes IGN, fleuves Natural Earth, villes repères.
-// Usage : node carte.mjs config.json > out.svg   (manquants signalés sur stderr)
+// Usage : node carte.mjs config.json ["Zone|Zone"] > out.svg   (manquants signalés sur stderr)
+// 2e argument (ou cfg.focus) : carte de situation, ces zones ou points en fort, les autres en grisé et sans gras (pas d’exercice « légender »).
+// Monde (cfg.monde) : fond = pays Natural Earth (admin0.geojson), zones = provinces (z.admin1, cherchées dans name, name_en et region, pays cfg.iso), cadre = cfg.cadre [O, S, E, N] ;
+// villes et points prennent alors at: [lon, lat].
 import fs from "fs";
 import { createRequire } from "module";
 // Données téléchargées dans GEO (défaut /tmp/geo) : c<dép>.geojson (communes, france-geojson), dep.geojson (départements simplifiés),
@@ -8,19 +11,22 @@ const GEO = process.env.GEO || "/tmp/geo";
 const pc = createRequire(GEO + "/")("polygon-clipping");
 
 const cfg = JSON.parse(fs.readFileSync(process.argv[2]));
+const focus = (process.argv[3] ?? cfg.focus)?.split("|"), fort = l => !focus || focus.includes(l);
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[-'’ ]+/g, " ").trim().replace(/^(la|le|les|l) /, "");
 const communes = {};
-for (const d of cfg.deps) for (const f of JSON.parse(fs.readFileSync(`${GEO}/c${d}.geojson`)).features) communes[d + ":" + norm(f.properties.nom)] = f.geometry;
+for (const d of cfg.deps ?? []) for (const f of JSON.parse(fs.readFileSync(`${GEO}/c${d}.geojson`)).features) communes[d + ":" + norm(f.properties.nom)] = f.geometry;
 const polys = g => g.type === "Polygon" ? [g.coordinates] : g.coordinates;
-const find = (name, ds = cfg.deps) => { if (name.includes("|")) [name, ds] = [name.split("|")[0], [name.split("|")[1]]]; // "Nom|dép" pour une commune homonyme
+const find = (name, ds = cfg.deps ?? []) => { if (name.includes("|")) [name, ds] = [name.split("|")[0], [name.split("|")[1]]]; // "Nom|dép" pour une commune homonyme
   for (const d of ds) { const g = communes[d + ":" + norm(name)]; if (g) return g; } console.error("MANQUANT", name); return null; };
 
 const terre = cfg.clipDep ? JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => cfg.clipDep.includes(f.properties.code)).map(f => polys(f.geometry)) : null;
 const depGeo = c => JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features.filter(f => c.includes(f.properties.code)).flatMap(f => polys(f.geometry));
-const zones = cfg.zones.map(z => { let geom = pc.union(...(z.communes ?? []).map(n => find(n, z.deps)).filter(Boolean).map(polys), ...(z.departements ? depGeo(z.departements).map(p => [p]) : [])); if (terre) geom = pc.intersection(geom, pc.union(...terre)); return { ...z, geom }; });
+const adm1 = cfg.zones.some(z => z.admin1) ? JSON.parse(fs.readFileSync(GEO + "/admin1.geojson")).features.filter(f => f.properties.iso_a2 === cfg.iso) : [];
+const admGeo = ns => ns.flatMap(n => { const fs1 = adm1.filter(f => [f.properties.name, f.properties.name_en, f.properties.region].includes(n)); if (!fs1.length) console.error("MANQUANT", n); return fs1.flatMap(f => polys(f.geometry)); });
+const zones = cfg.zones.map(z => { let geom = pc.union(...(z.communes ?? []).map(n => find(n, z.deps)).filter(Boolean).map(polys), ...(z.departements ? depGeo(z.departements).map(p => [p]) : []), ...(z.admin1 ? admGeo(z.admin1).map(p => [p]) : [])); if (terre) geom = pc.intersection(geom, pc.union(...terre)); return { ...z, geom }; });
 const pts = zones.flatMap(z => z.geom.flat(2));
-let [x0, y0, x1, y1] = [Math.min(...pts.map(p => p[0])), Math.min(...pts.map(p => p[1])), Math.max(...pts.map(p => p[0])), Math.max(...pts.map(p => p[1]))];
-const [mw, ms, me, mn] = cfg.marges ?? [0.12, 0.12, 0.12, 0.12]; x0 -= mw; x1 += me; y0 -= ms; y1 += mn;
+let [x0, y0, x1, y1] = cfg.cadre ?? [Math.min(...pts.map(p => p[0])), Math.min(...pts.map(p => p[1])), Math.max(...pts.map(p => p[0])), Math.max(...pts.map(p => p[1]))];
+const [mw, ms, me, mn] = cfg.marges ?? (cfg.cadre ? [0, 0, 0, 0] : [0.12, 0.12, 0.12, 0.12]); x0 -= mw; x1 += me; y0 -= ms; y1 += mn;
 const k = Math.cos((y0 + y1) / 2 * Math.PI / 180), W = cfg.largeur ?? 300, s = W / ((x1 - x0) * k), H = Math.round((y1 - y0) * s);
 const P = ([lon, lat]) => [+((lon - x0) * k * s).toFixed(1), +((y1 - lat) * s).toFixed(1)];
 const box = [[[x0, y0], [x1, y0], [x1, y1], [x0, y1], [x0, y0]]];
@@ -43,9 +49,11 @@ const centroid = mp => { // centre de la plus grande partie
   return [big.reduce((t, p) => t + p[0], 0) / big.length, big.reduce((t, p) => t + p[1], 0) / big.length];
 };
 
-// Départements en fond, découpés au cadre
-const deps = JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features;
-const fond = deps.map(f => pc.intersection(polys(f.geometry), box)).filter(g => g.length).map(pathOf).join("");
+// Départements (ou pays) en fond, découpés au cadre ; en mode monde, le pays traité un peu plus foncé
+const bb = g => { const q = polys(g).flat(2); return q.some(([lon]) => lon > x0 - 5 && lon < x1 + 5) && q.some(([, lat]) => lat > y0 - 5 && lat < y1 + 5); };
+const deps = cfg.monde ? JSON.parse(fs.readFileSync(GEO + "/admin0.geojson")).features.filter(f => bb(f.geometry)) : JSON.parse(fs.readFileSync(GEO + "/dep.geojson")).features;
+const fondDe = fs1 => cfg.contour ? pathOf(pc.intersection(pc.union(...fs1.map(f => polys(f.geometry))), box)) : fs1.map(f => pc.intersection(polys(f.geometry), box)).filter(g => g.length).map(pathOf).join(""); // contour : le seul pourtour, carte plus légère
+const fond = fondDe(deps.filter(f => !cfg.monde || f.properties.ISO_A2_EH !== cfg.iso)), fondPays = cfg.monde ? fondDe(deps.filter(f => f.properties.ISO_A2_EH === cfg.iso)) : "";
 
 // Fleuves : morceaux à l'intérieur du cadre
 const inB = ([lon, lat]) => lon > x0 && lon < x1 && lat > y0 && lat < y1;
@@ -59,21 +67,21 @@ const rivPath = riv.map(l => "M" + dp(l, 0.5).map(p => p.join(",")).join("L")).j
 
 // data-proj : lon,lat → x = (lon - x0)·k·s, y = (y1 - lat)·s (sert à placer les points partenaires).
 let svg = `<svg viewBox="0 0 ${W} ${H}" data-proj="${[x0, y1, k, s].map(v => +v.toFixed(6)).join(",")}" xmlns="http://www.w3.org/2000/svg">`;
-svg += `<g fill="currentColor" stroke="currentColor" stroke-opacity="${cfg.fondFort ? 0.45 : 0.2}" stroke-width="${cfg.fondFort ? 0.7 : 0.4}"><path fill-opacity="0.06" d="${fond}"/></g>`;
-svg += `<g fill="currentColor" style="stroke:var(--paper,#fff)" stroke-width="0.7" stroke-linejoin="round">` + zones.map((z, i) => `<path fill-opacity="${z.opacite ?? [0.3, 0.2, 0.36, 0.24, 0.32, 0.18, 0.28, 0.22][i % 8]}" d="${pathOf(z.geom)}"/>`).join("") + `</g>`;
+svg += `<g fill="currentColor" stroke="currentColor" stroke-opacity="${cfg.fondFort ? 0.45 : 0.2}" stroke-width="${cfg.fondFort ? 0.7 : 0.4}"><path fill-opacity="0.06" d="${fond}"/>${fondPays && `<path fill-opacity="0.13" d="${fondPays}"/>`}</g>`;
+svg += `<g fill="currentColor" style="stroke:var(--paper,#fff)" stroke-width="0.7" stroke-linejoin="round">` + zones.map((z, i) => `<path fill-opacity="${focus ? (fort(z.label) ? 0.62 : 0.08) : z.opacite ?? [0.3, 0.2, 0.36, 0.24, 0.32, 0.18, 0.28, 0.22][i % 8]}" d="${pathOf(z.geom)}"/>`).join("") + `</g>`;
 svg += `<g fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="0.8"><path d="${rivPath}"/></g><g fill="currentColor">`;
 for (const v of cfg.villes) {
-  const g = find(v.nom, v.dep ? [v.dep] : undefined); if (!g) continue; const [x, y] = centroid(polys(g)); const [dx, dy, a] = v.pos ?? [6, 3, "start"];
+  const g = v.at ?? find(v.nom, v.dep ? [v.dep] : undefined); if (!g) continue; const [x, y] = v.at ? P(v.at) : centroid(polys(g)); const [dx, dy, a] = v.pos ?? [6, 3, "start"];
   svg += `<rect x="${(x - 2).toFixed(1)}" y="${(y - 2).toFixed(1)}" width="4" height="4" fill="none" stroke="currentColor" stroke-width="1"/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" font-size="8" font-style="italic" opacity="0.75">${v.label ?? v.nom}</text>`;
 }
 for (const p of cfg.points ?? []) { // appellation non séparable à l’échelle communale : point sur sa commune
-  const g = find(p.nom, p.dep ? [p.dep] : undefined); if (!g) continue; const [x, y] = centroid(polys(g)); const [dx, dy, a] = p.pos ?? [5, 3, "start"];
-  svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" font-size="9" font-weight="bold">${p.label}</text>`;
+  const g = p.at ?? find(p.nom, p.dep ? [p.dep] : undefined); if (!g) continue; const [x, y] = p.at ? P(p.at) : centroid(polys(g)); const [dx, dy, a] = p.pos ?? [5, 3, "start"];
+  svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${fort(p.label) ? 2.6 : 1.6}"${fort(p.label) ? "" : ' opacity="0.5"'}/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" ${fort(p.label) ? 'font-size="9" font-weight="bold"' : 'font-size="7.5" opacity="0.6"'}>${p.label}</text>`;
 }
 for (const z of zones) {
   const [cx, cy] = z.at ? P(z.at) : centroid(z.geom), [dx, dy, a] = z.pos ?? [0, 3, "middle"]; // at : [lon, lat] quand le centre tombe sur une autre zone
   if (z.trait) svg += `<path d="M${cx.toFixed(1)},${cy.toFixed(1)}L${(cx + dx + (a === "start" ? -2 : a === "end" ? 2 : 0)).toFixed(1)},${(cy + dy - 3).toFixed(1)}" stroke="currentColor" stroke-width="0.6" stroke-opacity="0.7" fill="none"/><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="1.2"/>`;
-  svg += `<text x="${(cx + dx).toFixed(1)}" y="${(cy + dy).toFixed(1)}" text-anchor="${a}" font-size="9.5" font-weight="bold">${z.label}</text>`;
+  svg += `<text x="${(cx + dx).toFixed(1)}" y="${(cy + dy).toFixed(1)}" text-anchor="${a}" ${fort(z.label) ? 'font-size="9.5" font-weight="bold"' : 'font-size="7.5" opacity="0.6"'}>${z.label}</text>`;
 }
 for (const t of cfg.textes ?? []) { const [x, y] = P([t.lon, t.lat]); svg += `<text x="${x}" y="${y}" text-anchor="middle" ${t.gras ? 'font-size="9.5" font-weight="bold"' : 'font-size="7.5" font-style="italic" opacity="0.6"'}${t.rot ? ` transform="rotate(${t.rot} ${x} ${y})"` : ""}>${t.t}</text>`; }
 svg += `</g></svg>`;

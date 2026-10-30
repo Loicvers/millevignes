@@ -1,0 +1,104 @@
+{
+ "monde": true,
+ "fleuves": [],
+ "villes": [
+  {
+   "nom": "Santiago",
+   "label": "Santiago",
+   "at": [
+    -70.65,
+    -33.44
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Valparaíso",
+   "label": "Valparaíso",
+   "at": [
+    -71.62,
+    -33.05
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "points": [
+  {
+   "label": "Casablanca",
+   "at": [
+    -71.41,
+    -33.32
+   ],
+   "pos": [
+    -5,
+    0,
+    "end"
+   ]
+  },
+  {
+   "label": "Leyda",
+   "at": [
+    -71.5,
+    -33.6
+   ],
+   "pos": [
+    -5,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Maipo",
+   "at": [
+    -70.74,
+    -33.73
+   ],
+   "pos": [
+    5,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Cachapoal",
+   "at": [
+    -71,
+    -34.3
+   ],
+   "pos": [
+    5,
+    -3,
+    "start"
+   ]
+  },
+  {
+   "label": "Colchagua",
+   "at": [
+    -71.36,
+    -34.64
+   ],
+   "pos": [
+    5,
+    8,
+    "start"
+   ]
+  }
+ ],
+ "zones": [],
+ "largeur": 320,
+ "iso": "CL",
+ "cadre": [
+  -74,
+  -37,
+  -69,
+  -32
+ ],
+ "tol": 0.7
+}

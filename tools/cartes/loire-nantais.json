@@ -1,0 +1,249 @@
+{
+ "deps": [
+  "44",
+  "49",
+  "85"
+ ],
+ "fleuves": [
+  "Loire"
+ ],
+ "marges": [
+  0.1,
+  0.1,
+  0.1,
+  0.1
+ ],
+ "largeur": 330,
+ "villes": [
+  {
+   "nom": "Nantes",
+   "dep": "44",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Ancenis",
+   "dep": "44",
+   "pos": [
+    6,
+    12,
+    "start"
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Loire",
+   "lon": -1.95,
+   "lat": 47.27,
+   "rot": 8
+  }
+ ],
+ "zones": [
+  {
+   "label": "Gros Plant",
+   "deps": [
+    "44",
+    "49",
+    "85"
+   ],
+   "communes": [
+    "Aigrefeuille-sur-Maine",
+    "Basse-Goulaine",
+    "Le Bignon",
+    "La Chapelle-Heulin",
+    "Château-Thébaud",
+    "Clisson",
+    "Divatte-sur-Loire",
+    "Gétigné",
+    "Gorges",
+    "La Haie-Fouassière",
+    "Haute-Goulaine",
+    "Le Landreau",
+    "Le Loroux-Bottereau",
+    "Maisdon-sur-Sèvre",
+    "Monnières",
+    "Montbert",
+    "Mouzillon",
+    "Le Pallet",
+    "La Regrippière",
+    "Remouillé",
+    "Saint-Fiacre-sur-Maine",
+    "Saint-Hilaire-de-Clisson",
+    "Saint-Julien-de-Concelles",
+    "Saint-Lumine-de-Clisson",
+    "Les Sorinières",
+    "Vallet",
+    "Vertou",
+    "Cugand",
+    "Saint-Hilaire-de-Loulay",
+    "Ancenis",
+    "Saint-Géréon",
+    "La Boissière-du-Doré",
+    "Carquefou",
+    "Le Cellier",
+    "Couffé",
+    "Ligné",
+    "Mauves-sur-Loire",
+    "Oudon",
+    "La Remaudière",
+    "Thouaré-sur-Loire",
+    "Vair-sur-Loire",
+    "Mauges-sur-Loire",
+    "Orée d'Anjou",
+    "Bouaye",
+    "Brains",
+    "La Chevrolière",
+    "Corcoué-sur-Logne",
+    "Geneston",
+    "Legé",
+    "La Limouzinière",
+    "La Planche",
+    "Pont-Saint-Martin",
+    "Port-Saint-Père",
+    "Saint-Aignan-Grandlieu",
+    "Saint-Colomban",
+    "Sainte-Pazanne",
+    "Saint-Léger-les-Vignes",
+    "Saint-Lumine-de-Coutais",
+    "Saint-Mars-de-Coutais",
+    "Saint-Philbert-de-Grand-Lieu",
+    "Vieillevigne",
+    "Rocheservière",
+    "Saint-Philbert-de-Bouaine",
+    "La Bernerie-en-Retz",
+    "Chaumes-en-Retz",
+    "Les Moutiers-en-Retz",
+    "Saint-Hilaire-de-Chaléons",
+    "Villeneuve-en-Retz",
+    "Saint-Étienne-du-Bois"
+   ],
+   "at": [
+    -1.95,
+    46.97
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Sèvre et Maine",
+   "deps": [
+    "44",
+    "49",
+    "85"
+   ],
+   "communes": [
+    "Aigrefeuille-sur-Maine",
+    "Basse-Goulaine",
+    "Le Bignon",
+    "La Chapelle-Heulin",
+    "Château-Thébaud",
+    "Clisson",
+    "Divatte-sur-Loire",
+    "Gétigné",
+    "Gorges",
+    "La Haie-Fouassière",
+    "Haute-Goulaine",
+    "Le Landreau",
+    "Le Loroux-Bottereau",
+    "Maisdon-sur-Sèvre",
+    "Monnières",
+    "Montbert",
+    "Mouzillon",
+    "Le Pallet",
+    "La Regrippière",
+    "Remouillé",
+    "Saint-Fiacre-sur-Maine",
+    "Saint-Hilaire-de-Clisson",
+    "Saint-Julien-de-Concelles",
+    "Saint-Lumine-de-Clisson",
+    "Les Sorinières",
+    "Vallet",
+    "Vertou",
+    "Cugand",
+    "Saint-Hilaire-de-Loulay"
+   ],
+   "at": [
+    -1.3,
+    47.12
+   ],
+   "pos": [
+    10,
+    0,
+    "middle"
+   ]
+  },
+  {
+   "label": "Coteaux de la Loire",
+   "deps": [
+    "44",
+    "49"
+   ],
+   "communes": [
+    "Ancenis",
+    "Saint-Géréon",
+    "La Boissière-du-Doré",
+    "Carquefou",
+    "Le Cellier",
+    "Couffé",
+    "Ligné",
+    "Mauves-sur-Loire",
+    "Oudon",
+    "La Remaudière",
+    "Thouaré-sur-Loire",
+    "Vair-sur-Loire",
+    "Mauges-sur-Loire",
+    "Orée d'Anjou"
+   ],
+   "at": [
+    -1.2,
+    47.38
+   ],
+   "pos": [
+    -10,
+    -14,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côtes de Grandlieu",
+   "deps": [
+    "44",
+    "85"
+   ],
+   "communes": [
+    "Bouaye",
+    "Brains",
+    "La Chevrolière",
+    "Corcoué-sur-Logne",
+    "Geneston",
+    "Legé",
+    "La Limouzinière",
+    "La Planche",
+    "Pont-Saint-Martin",
+    "Port-Saint-Père",
+    "Saint-Aignan-Grandlieu",
+    "Saint-Colomban",
+    "Sainte-Pazanne",
+    "Saint-Léger-les-Vignes",
+    "Saint-Lumine-de-Coutais",
+    "Saint-Mars-de-Coutais",
+    "Saint-Philbert-de-Grand-Lieu",
+    "Vieillevigne",
+    "Rocheservière",
+    "Saint-Philbert-de-Bouaine"
+   ],
+   "pos": [
+    0,
+    12,
+    "middle"
+   ]
+  }
+ ]
+}

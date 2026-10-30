@@ -1,0 +1,102 @@
+{
+ "deps": [
+  "54",
+  "57"
+ ],
+ "fleuves": [
+  "Mosel"
+ ],
+ "marges": [
+  0.1,
+  0.06,
+  0.1,
+  0.06
+ ],
+ "largeur": 320,
+ "villes": [
+  {
+   "nom": "Toul",
+   "dep": "54",
+   "pos": [
+    -6,
+    -3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Metz",
+   "dep": "57",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Nancy",
+   "dep": "54",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Côtes de Toul",
+   "deps": [
+    "54"
+   ],
+   "communes": [
+    "Blénod-lès-Toul",
+    "Bruley",
+    "Bulligny",
+    "Charmes-la-Côte",
+    "Domgermain",
+    "Lucey",
+    "Mont-le-Vignoble",
+    "Pagney-derrière-Barine"
+   ],
+   "pos": [
+    28,
+    8,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Moselle",
+   "deps": [
+    "54",
+    "57"
+   ],
+   "communes": [
+    "Arnaville|54",
+    "Ancy-Dornot",
+    "Ars-sur-Moselle",
+    "Contz-les-Bains",
+    "Féy",
+    "Jussy",
+    "Haute-Kontz",
+    "Lessy",
+    "Lorry-Mardigny",
+    "Marange-Silvange",
+    "Marieulles",
+    "Novéant-sur-Moselle",
+    "Plappeville",
+    "Rozérieulles",
+    "Scy-Chazelles",
+    "Sierck-les-Bains",
+    "Vaux",
+    "Vic-sur-Seille"
+   ],
+   "pos": [
+    0,
+    -20,
+    "middle"
+   ]
+  }
+ ],
+ "textes": []
+}

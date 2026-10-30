@@ -1,0 +1,160 @@
+{
+ "deps": [],
+ "fleuves": [],
+ "marges": [
+  0.3,
+  0.3,
+  0.3,
+  0.3
+ ],
+ "largeur": 260,
+ "tol": 1.6,
+ "cadre": [
+  -4.9,
+  41.3,
+  9.7,
+  51.15
+ ],
+ "zones": [
+  {
+   "label": "Champagne",
+   "departements": [
+    "02",
+    "10",
+    "51"
+   ]
+  },
+  {
+   "label": "Alsace",
+   "departements": [
+    "67",
+    "68"
+   ]
+  },
+  {
+   "label": "Bourgogne",
+   "departements": [
+    "21",
+    "71",
+    "89"
+   ]
+  },
+  {
+   "label": "Beaujolais",
+   "departements": [
+    "69"
+   ],
+   "pos": [
+    -16,
+    -8,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Jura",
+   "departements": [
+    "39"
+   ],
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "label": "Savoie",
+   "departements": [
+    "73",
+    "74",
+    "01"
+   ],
+   "pos": [
+    8,
+    0,
+    "start"
+   ]
+  },
+  {
+   "label": "Loire",
+   "departements": [
+    "18",
+    "37",
+    "41",
+    "44",
+    "49",
+    "58"
+   ]
+  },
+  {
+   "label": "Bordeaux",
+   "departements": [
+    "33"
+   ],
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "label": "Sud-Ouest",
+   "departements": [
+    "24",
+    "32",
+    "46",
+    "47",
+    "64",
+    "81",
+    "82",
+    "12",
+    "31",
+    "65"
+   ]
+  },
+  {
+   "label": "Rhône",
+   "departements": [
+    "07",
+    "26",
+    "30",
+    "84"
+   ]
+  },
+  {
+   "label": "Languedoc",
+   "departements": [
+    "11",
+    "34"
+   ]
+  },
+  {
+   "label": "Roussillon",
+   "departements": [
+    "66"
+   ]
+  },
+  {
+   "label": "Provence",
+   "departements": [
+    "13",
+    "83",
+    "06"
+   ]
+  },
+  {
+   "label": "Corse",
+   "departements": [
+    "2A",
+    "2B"
+   ],
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "villes": [],
+ "contour": true
+}

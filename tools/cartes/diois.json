@@ -1,0 +1,122 @@
+{
+ "deps": [
+  "26"
+ ],
+ "fleuves": [
+  "Rhône"
+ ],
+ "cadre": [
+  4.75,
+  44.5,
+  5.8,
+  45.1
+ ],
+ "largeur": 330,
+ "villes": [
+  {
+   "nom": "Valence",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Crest",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Die",
+   "pos": [
+    2,
+    -6,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Montélimar",
+   "pos": [
+    6,
+    3,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Diois",
+   "deps": [
+    "26"
+   ],
+   "communes": [
+    "Aouste-sur-Sye",
+    "Aubenasson",
+    "Aurel",
+    "Barsac",
+    "Barnave",
+    "Beaufort-sur-Gervanne",
+    "Châtillon-en-Diois",
+    "Die",
+    "Espenel",
+    "Laval-d’Aix",
+    "Luc-en-Diois",
+    "Menglon",
+    "Mirabel-et-Blacons",
+    "Montclar-sur-Gervanne",
+    "Montlaur-en-Diois",
+    "Montmaur-en-Diois",
+    "Piégros-la-Clastre",
+    "Ponet-et-Saint-Auban",
+    "Pontaix",
+    "Poyols",
+    "Recoubeau-Jansac",
+    "Saillans",
+    "Saint-Benoît-en-Diois",
+    "Saint-Roman",
+    "Saint-Sauveur-en-Diois",
+    "Sainte-Croix",
+    "Solaure en Diois",
+    "Suze",
+    "Vercheny",
+    "Véronne",
+    "Treschenu-Creyers"
+   ],
+   "pos": [
+    -30,
+    -30,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Châtillon-en-Diois",
+   "deps": [
+    "26"
+   ],
+   "communes": [
+    "Barnave",
+    "Châtillon-en-Diois",
+    "Laval-d’Aix",
+    "Luc-en-Diois",
+    "Menglon",
+    "Montlaur-en-Diois",
+    "Montmaur-en-Diois",
+    "Poyols",
+    "Recoubeau-Jansac",
+    "Saint-Roman",
+    "Solaure en Diois",
+    "Treschenu-Creyers"
+   ],
+   "pos": [
+    -14,
+    46,
+    "end"
+   ],
+   "trait": true
+  }
+ ]
+}
