@@ -3,9 +3,9 @@
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
 - Fiches : 840 (dernier id : 842) · exercices : 4335
-- Vérifiées : 830 · à vérifier : 10 (14 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2099
+- Vérifiées : 830 · à vérifier : 10 (14 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2100
 - Niveaux : Fondamental 251 · Intermédiaire 452 · Pointu 137
-- Cours (Approfondir) : 106 · schémas : 269
+- Cours (Approfondir) : 155 · schémas : 269
 - Lexique : 84 termes · récits de chapitre : 90
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -20,7 +20,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 244-degustation.js | 53 | 253–640 | 245–285 | 53 | 7 | 6 |
 | 288-service.js | 79 | 293–812 | 288–329 | 76 | 13 | 9 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
-| cepages.js | 76 | 372–666 | hors livre | 76 | 27 | 76 |
+| cepages.js | 76 | 372–666 | hors livre | 76 | 76 | 76 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 6 | 405–705 | hors livre | 6 | 1 | 2 |
 | fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 1 |
