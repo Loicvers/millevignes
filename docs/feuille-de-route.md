@@ -47,6 +47,15 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - [x] Design (29/10) : en-tête réduit sur mobile (130 → 112 px, sous-titre masqué) et collant (le titre défile, les onglets restent) ; réglages remontés dans un panneau sous l'en-tête (bouton « Réglages ») ; sommaire des fiches par partie (Livre · France · Cépages · Monde), une recherche ou un filtre montrant tout. La barre de filtres ne s'affiche que dans Fiches et Masterclass (voulu : Masterclass s'en sert). Reste : largeurs sur ordinateur.
 - [x] Biais des QCM (30/10) : la bonne réponse était strictement la plus longue dans 46 % des QCM (472 sur 1019) ; les 230 où l'écart était le plus visible sont réécrits (leurres rallongés, parfois bonne réponse resserrée, aucun fait nouveau ; 5 rédacteurs, 2 relecteurs indépendants : 193 validés, 37 corrigés). Reste 23,7 % (hasard : 25 %). Test : cliquet à 25 % sur l'existant, 35 % au plus sur les nouvelles fiches.
 
+## Alsace : ce qui manque (lot du 30/10, PR #32 fusionnée)
+- [ ] **860 Klevener** : date d’introduction à Heiligenstein par Erhard (Ehret) Wantz, 1740 (Oxford) ou 1742 (klevener.fr, heywang-vins.fr : autorisation d’étendre la plantation sur l’Auboden après un litige devant le Conseil des échevins de Strasbourg ; acte non cité). Chercher une source historique (archives de Heiligenstein ou de Strasbourg, histoire du vignoble alsacien, ODG ou syndicat viticole).
+- [ ] **863 « Alsace cru » / premier cru** : état connu par Vitisphere seulement (27 mars et 4 août 2025). À trouver : avis du comité national de l’INAO, procédure nationale d’opposition (liste inao.gouv.fr/pno : rien pour l’Alsace au 27/10/2026), arrêté. Le dossier « cru » et « premier cru » de 2017 et les projets de cahier sont sur extranet.inao.gouv.fr, refusé par la session.
+- [ ] **861 pinot noir** : seule source fiable, l’Oxford (11 % du vignoble en 2019, en `selon_livre`). Il manque un chiffre primaire récent (CIVA, FranceAgriMer, douanes) ; Vinous (1 840 ha, 12 %, 2024) et le Figaro Vin (1 337 ha, 9,1 %) divergent et n’ont pas été ouverts. Le graphique du WSET D3 (CIVA 2021) est illisible dans le texte du dépôt de sources.
+- [ ] **Surfaces des grands crus** (864-866) : tirées d’une capture de la brochure du CIVA (Brochure_D13_Grands_Crus, version anglaise, p. 12). Il manque l’année de la brochure ; Kanzlerberg 3,23 ha (CIVA) contre 3,40 ha (cahier). Ranger la brochure dans le dépôt de sources et l’ajouter au registre.
+- [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée) pour les 4 nouvelles cartes (860, 861, 865, 866).
+- [ ] **CONTEXTE-PROJET** (Projet claude.ai) : reporter le lot Alsace (9 fiches 859-867, 7 vérifiées, 2 à vérifier ; 865 fiches au total).
+- Réseau : vinsalsace.com coupe la connexion depuis le conteneur (même autorisé) ; franceagrimer.fr, extranet.inao.gouv.fr, klevener.fr, v1.vinous.com non autorisés.
+
 ## En attente de Loïc
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
 
