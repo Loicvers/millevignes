@@ -1514,6 +1514,39 @@ const RECITS = [
   src: "fiches 492, 493, 814 à 817, 819 et 821 du site (cahiers des charges des AOC du Jura, BO-agri ; WSET D3 ; Oxford Companion)"
  },
  {
+  chapitre: "Savoie : panorama et appellations",
+  question: "Plus au sud, au pied des Alpes, comment la Savoie fait-elle d’îlots de vigne une région à part ?",
+  fil: [
+   "La Savoie ne repose que sur deux grandes appellations, mais elle les découpe finement : c’est le cépage, plus que le lieu, qui donne la clé de lecture.",
+   "<b>Le Vin de Savoie.</b> Il peut ajouter l’une de ses 16 dénominations géographiques, d’Abymes à Saint-Jeoire-Prieuré, et chacune fixe ses cépages ; Crépy, autrefois appellation distincte, en fait désormais partie.",
+   "<b>La Roussette de Savoie.</b> Un blanc tranquille d’altesse, la « roussette », avec quatre dénominations : Frangy, Marestel, Monterminod et Monthoux.",
+   "<b>Une carte par cépage.</b> La jacquère à Abymes, Apremont, Cruet, Montmélian et Saint-Jeoire-Prieuré ; le chasselas autour du Léman ; le gringet à Ayze ; la mondeuse noire seule à Arbin et Saint-Jean-de-la-Porte ; la roussanne seule à Chignin-Bergeron, où elle s’appelle « bergeron ».",
+   "<b>Des blancs vifs.</b> Jacquère et chasselas donnent des blancs légers, floraux et fruités, souvent perlants dans leur jeunesse lorsqu’ils restent sur lies fines.",
+   "<b>Des blancs de garde et des rouges.</b> L’altesse et la roussanne donnent des blancs plus amples, aptes à vieillir. En rouge, la mondeuse noire est poivrée, colorée et structurée ; gamay et pinot noir sont souples, peu tanniques ; le persan, rare, donne des vins sombres et tanniques."
+  ],
+  defend: "En Savoie, le nom ajouté à l’appellation dit presque toujours le cépage : apprendre les dénominations, c’est apprendre qui de la jacquère, du chasselas, de l’altesse, de la roussanne ou de la mondeuse est dans le verre.",
+  client: "« Pour un blanc vif à l’apéritif, une jacquère d’Apremont ou un chasselas du Léman ; pour un blanc qui se garde, une roussette ou un chignin-bergeron ; pour un rouge poivré, une mondeuse. »",
+  filRouge: "Seize dénominations, une roussette, un crémant, un Seyssel et un Bugey : comment lire une étiquette savoyarde ?",
+  src: "fiches 408 et 823 du site (cahiers des charges AOC Vin de Savoie et Roussette de Savoie, BO-agri ; Oxford Companion)"
+ },
+ {
+  chapitre: "Savoie : crus et appellations",
+  question: "Seize dénominations, une roussette, un crémant, un Seyssel et un Bugey : comment lire une étiquette savoyarde ?",
+  fil: [
+   "L’AOC Vin de Savoie, reconnue en 1973, peut ajouter une dénomination ; les seuils de cépage s’entendent pour l’encépagement de l’exploitation, non pour chaque bouteille.",
+   "<b>Le Léman et Ayze.</b> Crépy, Marignan, Marin et Ripaille font des blancs de chasselas, au moins 80 % de l’exploitation. Ayze, dans la vallée de l’Arve, mise sur le gringet, en blanc tranquille et en mousseux : le lac appelle le chasselas, l’Arve le gringet.",
+   "<b>La jacquère.</b> Abymes, Apremont, Cruet, Montmélian et Saint-Jeoire-Prieuré se distinguent moins par le cépage que par l’aire et le sol : Apremont et les Abymes reposent sur le chaos de l’éboulement du Granier, en 1248.",
+   "<b>Les rouges et le Chignin-Bergeron.</b> Arbin et Saint-Jean-de-la-Porte sont des rouges de mondeuse seule ; Chautagne, Chignin et Jongieux font du rouge (gamay, mondeuse, pinot noir) et du blanc de jacquère ; Chignin-Bergeron est un blanc de roussanne seule.",
+   "<b>La Roussette de Savoie.</b> Altesse seule ; ses quatre dénominations, Frangy, Marestel, Monterminod et Monthoux, demandent un rendement plus bas et un degré naturel plus élevé que l’appellation générale.",
+   "<b>Les bulles.</b> Le crémant de Savoie n’est pas une AOC à part mais une indication du Vin de Savoie : au moins 40 % de jacquère, vendange manuelle, 9 mois sur lies au moins. Seyssel, trois communes de part et d’autre du Rhône, fait un tranquille d’altesse ou de molette et un mousseux dominé par la molette.",
+   "<b>Le Bugey à part.</b> Dans l’Ain, il a ses propres AOC, Bugey et Roussette du Bugey ; Cerdon, Manicle et Montagnieu y sont des dénominations du Bugey, non du Vin de Savoie."
+  ],
+  defend: "Une étiquette savoyarde se lit en deux temps : l’appellation (Vin de Savoie, Roussette, Seyssel, Bugey), puis la dénomination, qui dit le lieu et presque toujours le cépage.",
+  client: "« Apremont, c’est de la jacquère ; Crépy, du chasselas ; Arbin, de la mondeuse ; Chignin-Bergeron, de la roussanne. Et pour les bulles : un crémant de Savoie, un Seyssel ou, côté Ain, un Cerdon rosé. »",
+  filRouge: "Comment un seul fleuve peut-il réunir des vins aussi différents qu’un muscadet, un quarts-de-chaume et un sancerre ?",
+  src: "fiches 494, 495 et 824 à 829 du site (cahiers des charges AOC Vin de Savoie, Roussette de Savoie et Seyssel, BO-agri ; Oxford Companion ; Biasini et al., IVES)"
+ },
+ {
   chapitre: "Languedoc : panorama et appellations",
   question: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
   fil: [

@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-828 fiches : 820 vérifiées, 8 à vérifier (12 points).
+828 fiches : 821 vérifiées, 7 à vérifier (10 points).
 Hors dette : 2094 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
@@ -24,10 +24,6 @@ Hors dette : 2094 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 822** (p.?) — Le milieu savoyard : des îlots de vigne sur les débris des Alpes
 - [ ] Fait (⚠️) : le rôle thermique des lacs (réchauffement estival) ne vient que de l’Atlas ; le cahier ne cite qu’un effet hydrique.
 - [ ] Fait (⚠️) : surface d’environ 2 100 ha en 2020, source unique (Oxford).
-- [ ] Fait (⚠️) : l’éboulement du Mont-Granier en 1248, sous les Abymes, n’est donné que par le cahier des charges ; aucune source de niveau 2a ne le documente.
-
-**Fiche 825** (p.?) — Vin de Savoie, les dénominations de jacquère : Abymes, Apremont, Cruet, Montmélian, Saint-Jeoire-Prieuré
-- [ ] Fait (⚠️) : l’éboulement du Granier en 1248 est donné par le seul cahier des charges ; aucune source de niveau 2a ne le documente.
 
 **Fiche 830** (p.?) — Bugey et Roussette du Bugey : deux AOC de l’Ain, Cerdon, Manicle et Montagnieu
 - [ ] Fait (⚠️) : le passage du Bugey de VDQS à AOC en 2009 vient d’Oxford et de l’Atlas, sans texte réglementaire lu.
