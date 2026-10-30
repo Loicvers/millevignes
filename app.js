@@ -21,18 +21,21 @@ function load(){
 }
 let prog=load();
 const LKEY='mv_lues';let lues={};try{lues=JSON.parse(localStorage.getItem(LKEY))||{};}catch{}
-function saveLues(){try{localStorage.setItem(LKEY,JSON.stringify(lues));}catch{}}
+function saveLues(){put(LKEY,lues);}
 try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist();}catch{}
 // prog[exId] = {ease, interval(jours), due(timestamp), acquired:bool}
 // Journal des réponses (mesure du rappel différé) : {e: exercice, t: date, ok: 1|0|null, ms: durée, r: note choisie}.
 const JKEY='mv_journal';let journal=[];try{journal=JSON.parse(localStorage.getItem(JKEY))||[];}catch{}
-function logAnswer(ex,ok){const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.r++;saveSeances();}const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}return j;}
+function logAnswer(ex,ok){const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.r++;saveSeances();}const j={e:ex.id,t:now(),ok:ok==null?null:+ok,ms:now()-shownAt};if(ex.retry)j.retry=1;journal.push(j);journal=journal.slice(-5000);put(JKEY,journal);return j;}
 // Séances : {t: début, n: exercices prévus, r: réponses données, fin: 1 si menée à terme} ; sert à compter les séances abandonnées.
 const SEKEY='mv_seances';let seances=[];try{seances=JSON.parse(localStorage.getItem(SEKEY))||[];}catch{}
 const EXKEY='mv_examens';let examens=[];try{examens=JSON.parse(localStorage.getItem(EXKEY))||[];}catch{}
-function saveExamens(){examens=examens.slice(-100);try{localStorage.setItem(EXKEY,JSON.stringify(examens));}catch{}}
-function saveSeances(){seances=seances.slice(-200);try{localStorage.setItem(SEKEY,JSON.stringify(seances));}catch{}}
-function save(){try{localStorage.setItem(PKEY,JSON.stringify(prog));}catch{alert('Impossible d\'enregistrer la progression dans ce navigateur. Pense à la sauvegarder (bas de page).');}}
+function saveExamens(){examens=examens.slice(-100);put(EXKEY,examens);}
+function saveSeances(){seances=seances.slice(-200);put(SEKEY,seances);}
+// Un échec d'enregistrement (stockage plein, navigation privée) est signalé une fois par ouverture, quelle que soit la donnée.
+let alerteStockage=false;
+function put(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch{if(!alerteStockage){alerteStockage=true;alert('Impossible d\'enregistrer dans ce navigateur (stockage plein ou navigation privée). Pense à sauvegarder ta progression (Réglages).');}}}
+function save(){put(PKEY,prog);}
 function now(){return Date.now();}
 const DAY=86400000;
 
@@ -897,14 +900,14 @@ function finish(ex,ok,fb,actions,body,crit){
   const entry=logAnswer(ex,ok);
   if(crit){ // auto-évaluation : le nombre de critères cochés donne la note (0-1 Difficile, 2 Correct, 3 Facile)
     const n=crit.reduce((a,x)=>a+x,0),q=n<2?'hard':n===2?'ok':'easy';
-    rate(ex.id,q);entry.c=crit;entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}
+    rate(ex.id,q);entry.c=crit;entry.r=q;put(JKEY,journal);
     const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
   if(ex.retry){const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;} // seconde chance : déjà reprogrammé
   if(ok===false)queue.splice(Math.min(pos+RETRY_GAP+1,queue.length),0,{...ex,retry:true}); // revient une fois un peu plus loin dans la séance, après la correction
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
-  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};btns.append(b);};
+  const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;put(JKEY,journal);next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);
-    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');entry.r='ok';try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
+    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');entry.r='ok';put(JKEY,journal);next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
     setTimeout(()=>b.focus());return;}
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
@@ -979,12 +982,12 @@ document.getElementById('importProg').onchange=async e=>{
   if(data.lues&&typeof data.lues==='object'){for(const k in data.lues)lues[k]=Math.max(lues[k]||0,+data.lues[k]||0);saveLues();}
   if(Array.isArray(data.seances)){seances=fusionnerListe(seances,data.seances,s=>s.t,200);saveSeances();}
   if(Array.isArray(data.examens)){examens=fusionnerListe(examens,data.examens.filter(x=>x&&typeof x.t==='number'&&x.n>0&&typeof x.ok==='number'),x=>x.t,100);saveExamens();}
-  if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal,j=>j.e+'|'+j.t,5000);try{localStorage.setItem(JKEY,JSON.stringify(journal));}catch{}}
+  if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal,j=>j.e+'|'+j.t,5000);put(JKEY,journal);}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}
   saveProg();updateBadges();render();
 };
-document.getElementById('resetAll').onclick=()=>{if((prompt('Cela efface toute ta progression de mémorisation, sans retour possible. Pense d\'abord à la sauvegarder.\n\nPour confirmer, tape EFFACER :')||'').trim()==='EFFACER'){prog={};save();lues={};saveLues();updateBadges();render();}};
+document.getElementById('resetAll').onclick=()=>{if((prompt('Cela efface toute ta progression (mémorisation, fiches lues, journal, séances, examens blancs), sans retour possible. Pense d\'abord à la sauvegarder.\n\nPour confirmer, tape EFFACER :')||'').trim()==='EFFACER'){prog={};save();lues={};saveLues();journal=[];put(JKEY,journal);seances=[];saveSeances();examens=[];saveExamens();updateBadges();render();}};
 
 // Import du fichier privé de partenaires préparé par Claude (jamais publié dans le dépôt).
 document.getElementById('partBtn').onclick=()=>document.getElementById('partFile').click();

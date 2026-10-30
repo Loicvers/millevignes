@@ -1,7 +1,7 @@
 # Feuille de route
 
 À lire en début de session, avec la fin de `docs/journal.md` (ce qui a été fait) et `docs/etat.md` (les chiffres).
-À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 29/10/2026.
+À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 30/10/2026.
 
 ## Objectif
 - Être prêt **le plus tôt possible**, première échéance le **31/12/2026**. Pas de diplôme précis visé pour l'instant.
@@ -36,6 +36,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
 
 ## Audit du 29/10 (reste à faire)
+- [x] Audit du code du 30/10 : cache hors ligne sans mise à jour en arrière-plan, échecs d'enregistrement signalés, « Effacer » complet. Reste de cet audit : biais des QCM et les deux exercices ci-dessous (fiche 70, n45), à traiter avec les sources.
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
 - [x] Vrai/faux rééquilibré (29/10) : 152 → 258 vrais sur 641 (40 %) ; 106 énoncés faux réécrits en vrais à partir de leur explication et de la synthèse, sans fait nouveau (3 rédacteurs, relecture indépendante : 88 validés, 18 corrigés). Test : cliquet à 38 % sur l'existant, 35 à 65 % sur les nouvelles fiches (id > 750).
 - [x] Explications (29/10) : les 209 exercices corrigés qui n'en avaient pas (97 QCM, 13 QCM multiples, 29 appariements, 70 autres) en ont une, tirée de la synthèse de la fiche (198, relecture indépendante : 162 validées, 36 corrigées) ou des sources (11, livre, WSET D3, Oxford Companion). Les 750 flashcards n'en ont pas besoin (la réponse s'affiche). Test : aucun exercice corrigé sans explication.
