@@ -79,6 +79,7 @@ for (const p of cfg.points ?? []) { // appellation non séparable à l’échell
   svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${fort(p.label) ? 2.6 : 1.6}"${fort(p.label) ? "" : ' opacity="0.5"'}/><text x="${(x + dx).toFixed(1)}" y="${(y + dy).toFixed(1)}" text-anchor="${a}" ${fort(p.label) ? 'font-size="9" font-weight="bold"' : 'font-size="7.5" opacity="0.6"'}>${p.label}</text>`;
 }
 for (const z of zones) {
+  if (z.discret && !(focus && fort(z.label))) continue; // discret : nom affiché seulement quand la zone est en fort
   const [cx, cy] = z.at ? P(z.at) : centroid(z.geom), [dx, dy, a] = z.pos ?? [0, 3, "middle"]; // at : [lon, lat] quand le centre tombe sur une autre zone
   if (z.trait) svg += `<path d="M${cx.toFixed(1)},${cy.toFixed(1)}L${(cx + dx + (a === "start" ? -2 : a === "end" ? 2 : 0)).toFixed(1)},${(cy + dy - 3).toFixed(1)}" stroke="currentColor" stroke-width="0.6" stroke-opacity="0.7" fill="none"/><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="1.2"/>`;
   svg += `<text x="${(cx + dx).toFixed(1)}" y="${(cy + dy).toFixed(1)}" text-anchor="${a}" ${fort(z.label) ? 'font-size="9.5" font-weight="bold"' : 'font-size="7.5" opacity="0.6"'}>${z.label}</text>`;
