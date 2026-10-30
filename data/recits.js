@@ -1236,6 +1236,37 @@ const RECITS = [
   src: "fiches 432, 433, 765 à 772, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
  },
  {
+  chapitre: "Sud-Ouest : panorama et appellations",
+  question: "Plus au sud-est, comment le Sud-Ouest garde-t-il ses cépages à lui, du tannat au gros manseng ?",
+  fil: [
+   "Le Sud-Ouest n’est pas une appellation mais une région d’usage : tous les vignobles du quart sud-ouest de la France, Bordeaux et Cognac exclus.",
+   "<b>Le haut-pays face à Bordeaux.</b> Les vins de l’amont descendaient la Garonne et ses affluents vers Bordeaux, qui les taxait et ne les laissait gagner la mer qu’après avoir vendu les siens : c’est le « privilège de Bordeaux », que le cahier de l’IGP Côtes de Gascogne situe en 1373. Le vignoble de l’amont a gardé ses propres cépages.",
+   "<b>Quatre ensembles.</b> Le Bergeracois et Duras ; la Garonne, avec le Marmandais, Buzet et le Brulhois ; le haut-pays, avec Cahors, Fronton, Gaillac et l’Aveyron ; la Gascogne et le piémont pyrénéen.",
+   "<b>De l’océan au piémont.</b> L’influence atlantique s’atténue vers l’intérieur ; au pied des Pyrénées, un foehn, vent chaud du sud, aide Jurançon et Madiran à mûrir.",
+   "<b>Des cépages maison.</b> Près de la Gironde dominent cabernets et merlot ; plus on remonte, plus on trouve tannat, mansengs, négrette ou mauzac. À Cahors, phylloxéra, concurrence bordelaise et gel de 1956 ont ramené le vignoble de près de 40 000 ha à moins d’un dixième.",
+   "<b>Une IGP de blancs.</b> L’IGP Côtes de Gascogne, née du recul de l’armagnac, couvre tout le Gers et produit surtout du blanc, sans imposer de cépage."
+  ],
+  defend: "Tenu longtemps à l’écart du port par Bordeaux, le Sud-Ouest a gardé une mosaïque de cépages locaux : c’est sa singularité.",
+  client: "« Le Sud-Ouest, c’est tout ce qui est à l’est et au sud de Bordeaux, avec ses propres cépages : tannat, mansengs, négrette, fer. »",
+  filRouge: "Cahors, Madiran, Jurançon, Gaillac, Bergerac : comment s’y retrouver dans la mosaïque des appellations du Sud-Ouest ?",
+  src: "fiches 414, 843 et 844 du site (cahier de l’IGP Côtes de Gascogne, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Sud-Ouest : appellations phares",
+  question: "Cahors, Madiran, Jurançon, Gaillac, Bergerac : comment s’y retrouver dans la mosaïque des appellations du Sud-Ouest ?",
+  fil: [
+   "Plus on s’éloigne de Bordeaux, plus les cépages sont locaux : c’est la clé de lecture.",
+   "<b>Le Bergeracois et Duras.</b> Mêmes cépages que Bordeaux, et un nom qui dit le style : Bergerac et Montravel pour les blancs secs, Côtes de Bergerac, Côtes de Montravel et Rosette pour les moelleux, Monbazillac, Saussignac et Haut-Montravel pour les liquoreux, Pécharmant pour le rouge.",
+   "<b>La Garonne.</b> Côtes du Marmandais et Buzet restent bordelaises ; le Brulhois y ajoute le tannat.",
+   "<b>Le haut-pays.</b> Malbec à Cahors (au moins 70 %), négrette à Fronton, duras, fer et prunelard à Gaillac, qui fait aussi des blancs doux et un mousseux de méthode ancestrale, fer à Marcillac et dans le reste de l’Aveyron.",
+   "<b>Gascogne et Pyrénées.</b> Tannat à Madiran, Saint-Mont et dans les rouges du Béarn ; mansengs à Jurançon ; tannat et cabernet franc à Irouléguy, au Pays basque. Le Floc de Gascogne, vin de liqueur muté à l’armagnac, partage l’aire de l’eau-de-vie."
+  ],
+  defend: "En aval, le Sud-Ouest parle bordelais ; en amont, chaque appellation a son cépage maison. Connaître le cépage, c’est déjà connaître le vin.",
+  client: "« Pour un rouge charpenté, un madiran ou un cahors ; pour un blanc doux, un jurançon ou un monbazillac ; pour l’original, un fronton de négrette ou un gaillac. »",
+  filRouge: "Pourquoi dit-on qu’il y a deux Rhône, et qu’est-ce qui les relie ?",
+  src: "fiches 484 à 488 et 845 à 858 du site (cahiers des charges des AOC du Sud-Ouest, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
   chapitre: "Vallée du Rhône : panorama et appellations",
   question: "Pourquoi dit-on qu’il y a deux Rhône, et qu’est-ce qui les relie ?",
   fil: [

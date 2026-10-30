@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-840 fiches : 830 vérifiées, 10 à vérifier (14 points).
-Hors dette : 2100 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+856 fiches : 845 vérifiées, 11 à vérifier (15 points).
+Hors dette : 2101 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -37,3 +37,6 @@ Hors dette : 2100 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 842** (p.?) — Pierrevert : les Alpes-de-Haute-Provence, entre Provence et Rhône
 - [ ] Fait (⚠️) : rattachement à la Provence ou au Rhône méridional (Oxford et l’Atlas du Vin : satellite du Rhône ; Pocket Wine Book 2014 de Hugh Johnson : Provence) : divergence non tranchée
 - [ ] Fait (⚠️) : le cahier a été lu dans la copie du décret 2011-1093 ; une modification postérieure n’est pas exclue
+
+**Fiche 844** (p.?) — IGP Côtes de Gascogne : des blancs libres de cépage, nés de l’armagnac
+- [ ] Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant

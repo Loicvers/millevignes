@@ -2,11 +2,11 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 840 (dernier id : 842) · exercices : 4335
-- Vérifiées : 830 · à vérifier : 10 (14 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2100
-- Niveaux : Fondamental 251 · Intermédiaire 452 · Pointu 137
-- Cours (Approfondir) : 155 · schémas : 269
-- Lexique : 84 termes · récits de chapitre : 90
+- Fiches : 856 (dernier id : 858) · exercices : 4412
+- Vérifiées : 845 · à vérifier : 11 (15 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2101
+- Niveaux : Fondamental 252 · Intermédiaire 464 · Pointu 140
+- Cours (Approfondir) : 155 · schémas : 282
+- Lexique : 84 termes · récits de chapitre : 92
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
@@ -49,8 +49,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-roussillon.js | 6 | 418–722 | hors livre | 6 | 1 | 2 |
 | fr-savoie-appellations.js | 9 | 494–830 | hors livre | 8 | 0 | 6 |
 | fr-savoie.js | 3 | 408–823 | hors livre | 2 | 0 | 1 |
-| fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
-| fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
+| fr-sud-ouest-appellations.js | 19 | 484–858 | hors livre | 19 | 0 | 14 |
+| fr-sud-ouest.js | 3 | 414–844 | hors livre | 2 | 0 | 1 |
 | monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 1 |
 | monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 1 |
 | monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 1 |
