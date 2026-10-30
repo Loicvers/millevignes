@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-865 fiches : 852 vérifiées, 13 à vérifier (18 points).
-Hors dette : 2107 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+865 fiches : 852 vérifiées, 13 à vérifier (17 points).
+Hors dette : 2108 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -42,8 +42,7 @@ Hors dette : 2107 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant
 
 **Fiche 860** (p.?) — Le Klevener de Heiligenstein
-- [ ] Introduction du cépage à Heiligenstein en 1740 par Erhard Wantz : Oxford seul ; d’autres textes, non vérifiables, donnent 1742
-- [ ] Acidité plus marquée que le gewurztraminer : Oxford seul (le caractère moins parfumé est recoupé par Wine Grapes et le Guide Hachette)
+- [ ] Introduction du cépage à Heiligenstein en 1740 par Erhard Wantz : Oxford seul ; des sites locaux, non vérifiables, donnent 1742
 
 **Fiche 863** (p.?) — Lieux-dits et projet de premiers crus : l’étage entre la commune et le grand cru
 - [ ] Projet « Alsace cru » puis premier cru (préférence de l’INAO, rendements et types de vin du projet) : presse spécialisée seule (Vitisphere, 27 mars et 4 août 2025), aucun texte de l’INAO publié
