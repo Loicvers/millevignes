@@ -18,7 +18,7 @@
 - Dépôt de sources : écriture autorisée par Loïc (registre, outils) ; jamais de contenu des sources dans ce dépôt public.
 
 ## À faire, par priorité
-1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura (fait le 30/10 : 11 fiches, cartes, récits ; 818 et 820 en attente des arrêtés), Savoie (fait le 30/10 : 13 fiches, cartes, récits ; 822 et 830 à vérifier), Provence (fait le 30/10 : 16 fiches, cartes, récits ; 832, 841, 842 à vérifier), Corse, Sud-Ouest (fait le 30/10 : 24 fiches, cartes, récits ; 844 à vérifier) (une fiche chacune), Alsace (fait le 30/10 : 9 fiches, cartes, récits ; 860 et 863 à vérifier), puis Champagne, Beaujolais. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
+1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura (fait le 30/10 : 11 fiches, cartes, récits ; 818 et 820 en attente des arrêtés), Savoie (fait le 30/10 : 13 fiches, cartes, récits ; 822 et 830 à vérifier), Provence (fait le 30/10 : 16 fiches, cartes, récits ; 832, 841, 842 à vérifier), Corse, Sud-Ouest (fait le 30/10 : 24 fiches, cartes, récits ; 844 à vérifier) (une fiche chacune), Alsace (fait le 30/10 : 9 fiches, cartes, récits ; 860 et 863 à vérifier), Beaujolais (fait le 29/10). Reste : voir « Régions : niveau de détail » ci-dessous. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
 2. **Relancer l'OCR** sur le PC avec `py outils/extraire_indra.py <pdf> <dossier>` (dépôt de sources), puis remplacer le texte et pousser :
    - [x] World Atlas of Wine 7e (fait le 29/10 : 201 pages, texte remplacé)
    - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)
@@ -27,6 +27,19 @@
 3. [x] **Cours « Approfondir » des cépages** : fait le 30/10, 76 sur 76 (les 49 derniers par blocs de 10, appuyés sur les fiches vérifiées et recontrôlés dans Wine Grapes, l’Oxford et les supports WSET du dépôt de sources, avec au plus deux compléments attribués par cours ; voir le journal).
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
+
+## Régions : niveau de détail (bilan du 30/10)
+Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou style, vérifiée sur le cahier des charges en vigueur, carte de situation par fiche d’appellation, récit de chaque chapitre, cours « Approfondir » de la région mis à jour).
+- [ ] **Corse** (3 fiches) : lot complet à faire (Patrimonio, Ajaccio, Vin de Corse et ses 5 dénominations, Muscat du Cap Corse, milieu, cépages et styles), cartes, récits des 2 chapitres (aucun), cours.
+- [ ] **Languedoc** (12) : appellations regroupées par 2 ou 3 (Pic Saint-Loup + Terrasses, Minervois + Corbières + Fitou…) ; manquent AOC Languedoc et ses dénominations (Grés de Montpellier, Pézenas, Clape, Cabardès, Malepère, Clairette…), crus séparés (Boutenac, La Livinière). Aucune carte sur les fiches d’appellation.
+- [ ] **Roussillon** (10) : 4 fiches d’appellation groupées (Banyuls + Collioure, Maury + Rivesaltes + Muscat…) ; à éclater, aucune carte.
+- [ ] **Val de Loire** (20) : 12 fiches pour une cinquantaine d’AOC (Touraine, Anjou, Centre-Loire groupés ; absents : Jasnières, Valençay, Orléans, Fiefs vendéens, Anjou-Villages Brissac, Côteaux du Loir…). Cartes en place.
+- [ ] **Bourgogne** (50) : Côte de Beaune 21 et Côte de Nuits 12, mais Chablis 2, Côte chalonnaise 1, Mâconnais 2 ; 4 cartes en tout.
+- [ ] **Bordeaux** (44) : détail atteint, cartes presque absentes (1 sur 35 fiches d’appellation).
+- [ ] **Cours de région** absents : Jura, Savoie, Provence, Sud-Ouest, Corse (Alsace fait le 30/10).
+- [ ] **Récits** absents : Corse (2), Charentes, Lorraine, France (2).
+- [ ] **Points à vérifier** des lots du 30/10 : 818, 820 (Jura), 822, 830 (Savoie), 832, 841, 842 (Provence), 844 (Sud-Ouest), 860, 863 (Alsace).
+- Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine pourrait passer à 2 fiches (Toul, Moselle).
 
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
 Quatre onglets autour des deux usages (réviser chaque jour, travailler devant un client) ; mêmes données et mêmes clés de stockage.
