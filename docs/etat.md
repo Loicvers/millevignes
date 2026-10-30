@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 810 (dernier id : 812) · exercices : 4200
 - Vérifiées : 807 · à vérifier : 3 (5 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2111
 - Niveaux : Fondamental 246 · Intermédiaire 432 · Pointu 132
-- Cours (Approfondir) : 82 · schémas : 247
+- Cours (Approfondir) : 88 · schémas : 251
 - Lexique : 84 termes · récits de chapitre : 84
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -18,7 +18,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | 150-terroir.js | 37 | 3–596 | 150–199 | 37 | 5 | 5 |
 | 203-vinification.js | 71 | 223–636 | 204–242 | 71 | 14 | 14 |
 | 244-degustation.js | 53 | 253–640 | 245–285 | 53 | 7 | 6 |
-| 288-service.js | 79 | 293–812 | 288–329 | 76 | 7 | 5 |
+| 288-service.js | 79 | 293–812 | 288–329 | 76 | 13 | 9 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | cepages.js | 76 | 372–666 | hors livre | 76 | 9 | 76 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
