@@ -177,7 +177,7 @@ FICHES.push(
     source: "france",
     chapitre: "Alsace : panorama et appellations",
     titre: "Les rouges et rosés d’Alsace : le règne du pinot noir",
-    synth: "En AOC alsace, rouges et rosés sont de pinot noir (les rosés peuvent s’appeler « Clairet » ou « Schillerwein ») ; seules des variétés d’essai, coliris, nebbiolo et syrah, sont admises en plus, sous convention, hors lieu-dit, sur 5 % au plus de l’exploitation et sans mention sur l’étiquette. Le plafond de rendement est de 60 hl/ha pour le rouge et de 75 pour le rosé, contre 80 pour le blanc simple. Le rouge exige au moins 177 g/l de sucre (11 % vol.) et le rosé 160 g/l (10 %). Le pinot noir peut aussi être vinifié en blanc, sous le nom « Pinot » ou « Klevner ». Les rouges peuvent porter une dénomination communale (Ottrott, Rodern, Saint-Hippolyte, Côte de Rouffach) ou un nom de lieu-dit, avec récolte manuelle pour ce dernier ; en grand cru, le rouge reste l’exception (fiche 467). Pour un client : un rouge d’Alsace, c’est du pinot noir, le seul cépage rouge qu’on lit sur l’étiquette.",
+    synth: "En AOC alsace, rouges et rosés sont de pinot noir (les rosés peuvent s’appeler « Clairet » ou « Schillerwein ») ; seules des variétés d’essai, coliris, nebbiolo et syrah, sont admises en plus, sous convention, hors lieu-dit, sur 5 % au plus de l’exploitation et sans mention sur l’étiquette. Le plafond de rendement est de 60 hl/ha pour le rouge et de 75 pour le rosé, contre 80 pour le blanc simple. Le rouge exige au moins 177 g/l de sucre (11 % vol.) et le rosé 160 g/l (10 %). Le pinot noir peut aussi être vinifié en blanc, sous le nom « Pinot » ou « Klevner ». Les rouges peuvent porter une dénomination communale (Ottrott, Rodern, Saint-Hippolyte, Côte de Rouffach) ou un nom de lieu-dit, avec récolte manuelle pour ce dernier ; en grand cru, le rouge reste l’exception (fiche 467). Selon l’Oxford, le pinot noir couvrait 11 % du vignoble alsacien en 2019, et le réchauffement lui donne plus de couleur et de goût. Pour un client : un rouge d’Alsace, c’est du pinot noir, le seul cépage rouge qu’on lit sur l’étiquette.",
     mnemo: "Un unique pied de vigne rouge au milieu d’un champ de blanches : un seul cépage rouge nommé sur l’étiquette : le pinot noir.",
     flash: {"q":"Quel cépage rouge l’étiquette d’un alsace rouge ou rosé peut-elle nommer ?","a":"Le pinot noir, qui donne aussi les rosés.","keys":[["pinot noir"]]},
     qcm: {"q":"Quel est le plafond de rendement d’un rosé d’AOC alsace ?","opts":["60 hl/ha","68 hl/ha","75 hl/ha","80 hl/ha"],"good":2,"expl":"60 est le plafond du rouge, 68 celui d’un blanc de lieu-dit et 80 celui du blanc simple : le rosé se glisse entre le rouge et le blanc."},
@@ -186,7 +186,7 @@ FICHES.push(
     cours: null,
     status: "verified",
     to_check: [],
-    selon_livre: [],
+    selon_livre: ["Part du pinot noir (11 % du vignoble en 2019) et effet du réchauffement sur sa couleur : Oxford seul ; le WSET D3 (2024) le range parmi les six premiers cépages par surface d’après le CIVA (2021), sans chiffre lisible ; les statistiques du CIVA n’ont pas pu être ouvertes"],
     src: "BO-agri, cahier des charges AOC Alsace (15 janv. 2026) ; Oxford Companion to Wine, 5e éd. (2023), art. Alsace ; WSET Level 4 D3 Wines of the World (août 2024), ch. 5 ; fiche 467 de ce site"
   },
   {
