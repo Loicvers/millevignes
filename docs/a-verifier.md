@@ -42,8 +42,8 @@ Hors dette : 2102 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant
 
 **Fiche 860** (p.?) — Le Klevener de Heiligenstein
-- [ ] Introduction du cépage à Heiligenstein en 1740 par Erhard Wantz : Oxford seul
-- [ ] Acidité plus marquée que le gewurztraminer : Oxford seul (le caractère moins parfumé est recoupé par Wine Grapes)
+- [ ] Introduction du cépage à Heiligenstein en 1740 par Erhard Wantz : Oxford seul ; d’autres textes, non vérifiables, donnent 1742
+- [ ] Acidité plus marquée que le gewurztraminer : Oxford seul (le caractère moins parfumé est recoupé par Wine Grapes et le Guide Hachette)
 
 **Fiche 863** (p.?) — Lieux-dits et projet de premiers crus : l’étage entre la commune et le grand cru
-- [ ] Projet d’échelon « Alsace cru » puis premier cru : état connu seulement par la presse spécialisée, aucune décision de l’INAO retrouvée ni cahier modifié
+- [ ] Projet « Alsace cru » puis premier cru (préférence de l’INAO, rendements et types de vin du projet) : presse spécialisée seule (Vitisphere, 27 mars et 4 août 2025), aucun texte de l’INAO publié
