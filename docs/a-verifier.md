@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-828 fiches : 821 vérifiées, 7 à vérifier (10 points).
-Hors dette : 2094 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+840 fiches : 830 vérifiées, 10 à vérifier (14 points).
+Hors dette : 2099 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -27,3 +27,13 @@ Hors dette : 2094 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 830** (p.?) — Bugey et Roussette du Bugey : deux AOC de l’Ain, Cerdon, Manicle et Montagnieu
 - [ ] Fait (⚠️) : le passage du Bugey de VDQS à AOC en 2009 vient d’Oxford et de l’Atlas, sans texte réglementaire lu.
+
+**Fiche 832** (p.?) — Le rosé de Provence : cépages, modes d’élaboration et tibouren
+- [ ] Origine du tibouren (⚠️) : identité génétique avec le rossese di Dolceacqua (Ligurie) selon l’Oxford Companion seul (l’Atlas, lu à l’OCR, va dans le même sens) ; à confirmer sur une source génétique primaire
+
+**Fiche 841** (p.?) — Les Baux-de-Provence : les Alpilles, sans herbicide sur le sol
+- [ ] Fait (⚠️) : tous les domaines seraient certifiés bio depuis la vendange 2023 (déclaration de l’ODG, niveau 2b, sans organisme certificateur ni source indépendante)
+
+**Fiche 842** (p.?) — Pierrevert : les Alpes-de-Haute-Provence, entre Provence et Rhône
+- [ ] Fait (⚠️) : rattachement à la Provence ou au Rhône méridional (Oxford et l’Atlas du Vin : satellite du Rhône ; Pocket Wine Book 2014 de Hugh Johnson : Provence) : divergence non tranchée
+- [ ] Fait (⚠️) : le cahier a été lu dans la copie du décret 2011-1093 ; une modification postérieure n’est pas exclue

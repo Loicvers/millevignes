@@ -1606,7 +1606,38 @@ const RECITS = [
   ],
   defend: "Au Roussillon, la question à poser est simple : le vin est-il muté ou non ? Banyuls, maury, rivesaltes et muscat de rivesaltes sont des VDN ; collioure, Maury sec, côtes-du-roussillon et l’IGP Côtes Catalanes sont des vins secs.",
   client: "« Pour un dessert au chocolat, un rimage de banyuls ; pour méditer, un banyuls grand cru ; pour un dessert aux fruits, un muscat de rivesaltes ; pour le repas, un collioure ou un côtes-du-roussillon Villages. »",
-  filRouge: "Plus à l’est, entre Rhône et Méditerranée, comment s’organisent les vins de Provence ?",
+  filRouge: "Pourquoi la Provence est-elle devenue la région du rosé, et que boit-on d’autre là-bas ?",
   src: "fiches 481 à 483 et 723 du site, avec 508 et 635 en renvoi (sources principales : cahiers des charges, INAO ; WSET D3 et D5 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Provence : panorama et appellations",
+  question: "Pourquoi la Provence est-elle devenue la région du rosé, et que boit-on d’autre là-bas ?",
+  fil: [
+   "La Provence est la première région française pour les rosés d’appellation : 40 à 45 % de la production nationale selon l’interprofession, sur environ 27 500 ha d’AOP. Les Phocéens, fondateurs de Marseille vers 600 av. J.-C., y ont apporté la vigne.",
+   "<b>Deux Provences.</b> L’une calcaire, à l’ouest et au nord ; l’autre cristalline, au sud-est, avec les Maures et l’Estérel ; entre les deux, une dépression aux sols rouges. Sainte-Victoire et la Sainte-Baume marquent le relief.",
+   "<b>Soleil et mistral.</b> Plus de 2 700 heures de soleil et 600 à 900 mm de pluie dans l’aire des Côtes de Provence. Le mistral assainit les vignes et limite les maladies, au risque de gêner la floraison.",
+   "<b>Cinq cépages pour les rouges et les rosés.</b> Grenache, cinsaut, syrah, mourvèdre et tibouren sont les principaux des Côtes de Provence ; le cabernet-sauvignon n’y est qu’accessoire.",
+   "<b>Des blancs de vermentino.</b> Le vermentino, appelé rolle, domine les blancs, avec la clairette, le sémillon et l’ugni blanc. La Londe en exige au moins la moitié dans son blanc.",
+   "<b>Bandol à part.</b> Sur ses restanques, le mourvèdre fait des rouges de garde, au moins 18 mois en bois."
+  ],
+  defend: "La Provence a fait du rosé sa signature, mais son relief, son soleil et son mistral portent aussi des rouges de mourvèdre et de syrah et des blancs de vermentino.",
+  client: "« La Provence, c’est d’abord le rosé, mais goûtez un rouge de Bandol, sur le mourvèdre, ou un blanc de rolle : la même lumière, d’autres vins. »",
+  filRouge: "Côtes de Provence, Bandol, Cassis, Palette : comment s’y retrouver entre les grandes et les petites appellations de Provence ?",
+  src: "fiches 419, 831 et 833 du site (cahiers des charges Côtes de Provence et Bandol, BO-agri ; CIVP ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Provence : appellations et dénominations",
+  question: "Côtes de Provence, Bandol, Cassis, Palette : comment s’y retrouver entre les grandes et les petites appellations de Provence ?",
+  fil: [
+   "La carte des appellations provençales se lit en trois cercles.",
+   "<b>Trois régionales.</b> Côtes de Provence (1977), une centaine de communes surtout dans le Var, 55 hl/ha ; Coteaux d’Aix-en-Provence (1985), la Provence calcaire de l’ouest, où la counoise est principale ; Coteaux Varois en Provence (1993), une enclave plus fraîche autour de Brignoles, avec des vignes jusqu’à 350-500 m.",
+   "<b>Cinq dénominations.</b> Cru Sainte-Victoire, Fréjus, La Londe, Pierrefeu et Notre-Dame des Anges s’ajoutent au nom de Côtes de Provence avec des règles plus serrées : 50 hl/ha, rouges élevés jusqu’au 15 août ou au 15 octobre, 20 % de tibouren au moins dans le rosé de Fréjus, la moitié de vermentino dans le blanc de La Londe.",
+   "<b>Bandol.</b> Huit communes autour de la ville, des restanques face à la mer, le mourvèdre roi et des rouges au moins 18 mois en bois, à 40 hl/ha.",
+   "<b>Les petites appellations.</b> Cassis, une seule commune et un blanc de clairette et de marsanne ; Palette, trois communes aux portes d’Aix, au moins 10 % de mourvèdre et des rouges 18 mois en bois ; Bellet, sur les coteaux de Nice, avec le braquet, la fuella nera et le vermentino. Les Baux-de-Provence et Pierrevert complètent la carte."
+  ],
+  defend: "Plus le cercle se resserre, plus les volumes baissent et plus le cahier se fait strict : des grandes régionales de rosé aux dénominations, puis à Bandol et aux appellations d’une ou trois communes.",
+  client: "« Pour un rosé sûr, un côtes-de-provence ; pour un secteur précis, une dénomination comme Sainte-Victoire ; pour un vin de caractère, un bandol rouge, un cassis blanc ou un palette. »",
+  filRouge: "Plus à l’est encore, sur l’île de Beauté, comment la Corse marie-t-elle cépages italiens et appellations françaises ?",
+  src: "fiches 489, 490, 491 et 834 à 840 du site (cahiers des charges des AOC de Provence, BO-agri ; WSET D3 ; Oxford Companion)"
  }
 ];
