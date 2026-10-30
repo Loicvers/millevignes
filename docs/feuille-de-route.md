@@ -25,6 +25,7 @@
    - [x] Jourjon, Morlat, Seguin 1991 (fait le 29/10 : 24 pages)
    - [x] Morris, Bourgogne blanc et Vins de Loire (faits le 29/10 avec `--ocr` : ordre de lecture et caractères nettement meilleurs)
 3. [x] **Cours « Approfondir » des cépages** : fait le 30/10, 76 sur 76 (les 49 derniers par blocs de 10, appuyés sur les fiches vérifiées et recontrôlés dans Wine Grapes, l’Oxford et les supports WSET du dépôt de sources, avec au plus deux compléments attribués par cours ; voir le journal).
+3b. [x] **Cours « Approfondir » de la vinification** : fait le 30/10, 71 sur 71 (voir le journal ; quelques fiches à reprendre : 231, 244, 342, 356, 357).
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
 
