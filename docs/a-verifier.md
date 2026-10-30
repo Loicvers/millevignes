@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-898 fiches : 883 vérifiées, 15 à vérifier (20 points).
-Hors dette : 2213 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+898 fiches : 884 vérifiées, 14 à vérifier (19 points).
+Hors dette : 2214 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -46,9 +46,6 @@ Hors dette : 2213 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 863** (p.?) — Lieux-dits et projet de premiers crus : l’étage entre la commune et le grand cru
 - [ ] Projet « Alsace cru » puis premier cru (préférence de l’INAO, rendements et types de vin du projet) : presse spécialisée seule (Vitisphere, 27 mars et 4 août 2025), aucun texte de l’INAO publié
-
-**Fiche 885** (p.?) — Touraine Noble Joué : le rosé sec de trois pinots aux portes de Tours
-- [ ] Cahier des charges en vigueur (arrêté du 27 octobre 2026, JORF du 29 octobre 2026) non lu : Légifrance et l’extranet de l’INAO sont bloqués ; pourcentages d’encépagement, rendement et teneur en sucres non vérifiés dans le texte
 
 **Fiche 891** (p.?) — Orléans et Orléans-Cléry : le vignoble le plus au nord de la Loire, meunier d’un côté, cabernet franc de l’autre
 - [ ] Orléans : cépages (chardonnay des blancs, meunier et pinot noir des rouges et rosés), nombre de communes (13) et rendements : cahier de 2011, remplacé par un nouveau cahier homologué par l’arrêté du 27 octobre 2026 (JORF du 29 octobre 2026), non lu

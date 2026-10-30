@@ -1384,13 +1384,13 @@ const RECITS = [
    "<b>Le chenin.</b> Vouvray et Montlouis-sur-Loire, deux voisins en amont de Tours : des chenins tranquilles, mousseux ou pétillants, du sec au doux ; on lit la mention sur l’étiquette.",
    "<b>Le cabernet franc.</b> Chinon, Bourgueil et Saint-Nicolas-de-Bourgueil font des rouges de cabernet franc, avec un peu de cabernet sauvignon possible ; seul Chinon ajoute un blanc de chenin. Les sols vont du tuffeau aux graviers et aux sables.",
    "<b>L’AOC Touraine.</b> Sur 138 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
-   "<b>Autour.</b> Cheverny assemble, Cour-Cheverny garde le romorantin seul ; Valençay et le Haut-Poitou misent sur le sauvignon en blanc.",
+   "<b>Autour.</b> Touraine Noble Joué, rosé sec de trois pinots au sud de Tours, est une AOC à part. Cheverny assemble, Cour-Cheverny garde le romorantin seul ; Valençay et le Haut-Poitou misent sur le sauvignon en blanc.",
    "<b>Au nord, le Loir.</b> Jasnières, chenin sur un seul coteau, les Coteaux du Loir et les Coteaux du Vendômois, où le pineau d’Aunis donne rouges poivrés et vins gris."
   ],
   defend: "La Touraine est la Loire des contrastes : le chenin de Vouvray et de Montlouis, le cabernet franc de Chinon et de Bourgueil, et le sauvignon de l’AOC Touraine.",
   client: "« Un vouvray peut être sec ou moelleux : regardez la mention. Pour un rouge, Chinon et Bourgueil, c’est le cabernet franc de Touraine. »",
   filRouge: "Plus en amont encore, pourquoi le sauvignon de Sancerre et de Pouilly a-t-il conquis le monde ?",
-  src: "fiches 453 à 455, 690, 692, 882 à 884, 886 à 890 et 892 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 453 à 455, 690, 692, 882 à 890 et 892 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Centre-Loire",
