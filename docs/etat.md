@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 856 (dernier id : 858) · exercices : 4412
 - Vérifiées : 845 · à vérifier : 11 (15 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2101
 - Niveaux : Fondamental 252 · Intermédiaire 464 · Pointu 140
-- Cours (Approfondir) : 155 · schémas : 282
+- Cours (Approfondir) : 155 · schémas : 293
 - Lexique : 84 termes · récits de chapitre : 92
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -23,7 +23,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | cepages.js | 76 | 372–666 | hors livre | 76 | 76 | 76 |
 | fr-alsace-appellations.js | 5 | 467–471 | hors livre | 5 | 0 | 0 |
 | fr-alsace.js | 6 | 405–705 | hors livre | 6 | 1 | 2 |
-| fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 1 |
+| fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 12 |
 | fr-beaujolais.js | 7 | 406–711 | hors livre | 7 | 1 | 2 |
 | fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 1 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
