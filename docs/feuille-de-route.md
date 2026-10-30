@@ -1,7 +1,7 @@
 # Feuille de route
 
 À lire en début de session, avec la fin de `docs/journal.md` (ce qui a été fait) et `docs/etat.md` (les chiffres).
-À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 29/10/2026.
+À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 30/10/2026.
 
 ## Objectif
 - Être prêt **le plus tôt possible**, première échéance le **31/12/2026**. Pas de diplôme précis visé pour l'instant.
@@ -36,15 +36,16 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
 
 ## Audit du 29/10 (reste à faire)
+- [x] Audit du code du 30/10 : cache hors ligne sans mise à jour en arrière-plan, échecs d'enregistrement signalés, « Effacer » complet. Le reste de cet audit (biais des QCM, fiches 70 et 78) est fait le même jour.
 Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance livre/France, plafond des intervalles à l'échéance.
 - [x] Vrai/faux rééquilibré (29/10) : 152 → 258 vrais sur 641 (40 %) ; 106 énoncés faux réécrits en vrais à partir de leur explication et de la synthèse, sans fait nouveau (3 rédacteurs, relecture indépendante : 88 validés, 18 corrigés). Test : cliquet à 38 % sur l'existant, 35 à 65 % sur les nouvelles fiches (id > 750).
 - [x] Explications (29/10) : les 209 exercices corrigés qui n'en avaient pas (97 QCM, 13 QCM multiples, 29 appariements, 70 autres) en ont une, tirée de la synthèse de la fiche (198, relecture indépendante : 162 validées, 36 corrigées) ou des sources (11, livre, WSET D3, Oxford Companion). Les 750 flashcards n'en ont pas besoin (la réponse s'affiche). Test : aucun exercice corrigé sans explication.
-- [ ] Exercices dont un élément n'est pas dans la synthèse (relevés le 29/10) : fiche 70, « sa longueur » comme critère ampélographique de la grappe (le livre ne cite que forme et compacité) ; fiche du n45, paire « riparia aime les sols riches et frais ». À vérifier sur les sources.
+- [x] Exercices dont un élément n'est pas dans la synthèse (relevés le 29/10) : fiche 70, « sa longueur » comme critère ampélographique de la grappe (le livre ne cite que forme et compacité) ; fiche du n45, paire « riparia aime les sols riches et frais ». Vérifié le 30/10 : la longueur n'est dans aucune source, remplacée par un leurre faux ; « sols riches et frais » est dans le Foëx et l'Oxford mais pas dans la synthèse, paire ramenée à « craint le calcaire (chlorose ferrique) ».
 - [x] Erreur reposée dans la même séance : 4 exercices plus loin (29/10 ; avant : en fin de séance).
 - [x] Recherche plein texte dans les fiches (29/10) : champ en tête de l'onglet Fiches, tous les mots cherchés dans le titre, la synthèse et l'astuce ; se combine aux filtres, à « S'entraîner » et à l'examen blanc.
 - [x] Examen blanc minuté (29/10) : 40 questions corrigées automatiquement, une par fiche, une minute par question, sans correction avant le bilan (score, seuil WSET 55 %, résultat par thème, « Revoir mes erreurs »). Résultats conservés (100 derniers, dans la sauvegarde) et affichés dans « Mon suivi » avec le thème le plus faible ; les erreurs sur des fiches déjà travaillées passent « à revoir demain » (pas celles des fiches jamais lues, qui gardent leur découverte).
 - [x] Design (29/10) : en-tête réduit sur mobile (130 → 112 px, sous-titre masqué) et collant (le titre défile, les onglets restent) ; réglages remontés dans un panneau sous l'en-tête (bouton « Réglages ») ; sommaire des fiches par partie (Livre · France · Cépages · Monde), une recherche ou un filtre montrant tout. La barre de filtres ne s'affiche que dans Fiches et Masterclass (voulu : Masterclass s'en sert). Reste : largeurs sur ordinateur.
-- [ ] Biais des QCM : la bonne réponse est strictement la plus longue dans 49 % des cas (471 sur 958, recompté le 29/10 ; 25 % attendus). Test : cliquet à 50 % sur l'existant, 35 % au plus sur les nouvelles fiches. Rallonger les leurres au fil des lots.
+- [x] Biais des QCM (30/10) : la bonne réponse était strictement la plus longue dans 46 % des QCM (472 sur 1019) ; les 230 où l'écart était le plus visible sont réécrits (leurres rallongés, parfois bonne réponse resserrée, aucun fait nouveau ; 5 rédacteurs, 2 relecteurs indépendants : 193 validés, 37 corrigés). Reste 23,7 % (hasard : 25 %). Test : cliquet à 25 % sur l'existant, 35 % au plus sur les nouvelles fiches.
 
 ## En attente de Loïc
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
