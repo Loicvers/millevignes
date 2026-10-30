@@ -1,0 +1,324 @@
+{
+ "deps": [
+  "67",
+  "68"
+ ],
+ "fleuves": [
+  "Rhin",
+  "Rhine",
+  "Rhein",
+  "Ill"
+ ],
+ "marges": [
+  0.25,
+  0.06,
+  0.55,
+  0.06
+ ],
+ "largeur": 240,
+ "zones": [
+  {
+   "label": "Bas-Rhin",
+   "deps": [
+    "67"
+   ],
+   "communes": [
+    "Marlenheim",
+    "Wangen",
+    "Traenheim",
+    "Westhoffen",
+    "Bergbieten",
+    "Dangolsheim",
+    "Balbronn",
+    "Avolsheim",
+    "Molsheim",
+    "Mutzig",
+    "Dorlisheim",
+    "Wolxheim",
+    "Rosheim",
+    "Bœrsch",
+    "Ottrott",
+    "Obernai",
+    "Bernardswiller",
+    "Heiligenstein",
+    "Barr",
+    "Gertwiller",
+    "Mittelbergheim",
+    "Andlau",
+    "Eichhoffen",
+    "Bernardvillé",
+    "Itterswiller",
+    "Nothalten",
+    "Blienschwiller",
+    "Dambach-la-Ville",
+    "Epfig",
+    "Scherwiller",
+    "Châtenois",
+    "Kintzheim",
+    "Orschwiller",
+    "Saint-Pierre",
+    "Stotzheim",
+    "Kirchheim",
+    "Odratzheim",
+    "Scharrachbergheim-Irmstett",
+    "Dahlenheim"
+   ],
+   "pos": [
+    -26,
+    0,
+    "end"
+   ]
+  },
+  {
+   "label": "Haut-Rhin",
+   "deps": [
+    "68"
+   ],
+   "communes": [
+    "Saint-Hippolyte",
+    "Rodern",
+    "Rorschwihr",
+    "Bergheim",
+    "Ribeauvillé",
+    "Hunawihr",
+    "Zellenberg",
+    "Riquewihr",
+    "Beblenheim",
+    "Mittelwihr",
+    "Bennwihr",
+    "Kaysersberg Vignoble",
+    "Ammerschwihr",
+    "Katzenthal",
+    "Niedermorschwihr",
+    "Ingersheim",
+    "Turckheim",
+    "Wintzenheim",
+    "Wettolsheim",
+    "Eguisheim",
+    "Husseren-les-Châteaux",
+    "Vœgtlinshoffen",
+    "Gueberschwihr",
+    "Pfaffenheim",
+    "Rouffach",
+    "Westhalten",
+    "Soultzmatt",
+    "Orschwihr",
+    "Bergholtz",
+    "Bergholtzzell",
+    "Guebwiller",
+    "Wuenheim",
+    "Thann",
+    "Vieux-Thann",
+    "Herrlisheim-près-Colmar",
+    "Obermorschwihr",
+    "Hattstatt",
+    "Steinbach",
+    "Uffholtz",
+    "Cernay",
+    "Colmar"
+   ],
+   "pos": [
+    -26,
+    0,
+    "end"
+   ]
+  },
+  {
+   "label": "Crus du Bas-Rhin",
+   "deps": [
+    "67"
+   ],
+   "communes": [
+    "Bergbieten",
+    "Wolxheim",
+    "Molsheim",
+    "Dahlenheim",
+    "Scharrachbergheim-Irmstett",
+    "Dambach-la-Ville",
+    "Andlau",
+    "Barr",
+    "Eichhoffen",
+    "Nothalten",
+    "Kintzheim",
+    "Marlenheim",
+    "Blienschwiller",
+    "Mittelbergheim"
+   ],
+   "pos": [
+    -30,
+    -6,
+    "end"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Crus du Haut-Rhin",
+   "deps": [
+    "68"
+   ],
+   "communes": [
+    "Bergheim",
+    "Turckheim",
+    "Eguisheim",
+    "Ingersheim",
+    "Katzenthal",
+    "Zellenberg",
+    "Kaysersberg Vignoble",
+    "Ribeauvillé",
+    "Rodern",
+    "Saint-Hippolyte",
+    "Gueberschwihr",
+    "Hattstatt",
+    "Vœgtlinshoffen",
+    "Wintzenheim",
+    "Ammerschwihr",
+    "Guebwiller",
+    "Mittelwihr",
+    "Beblenheim",
+    "Bennwihr",
+    "Wuenheim",
+    "Wettolsheim",
+    "Orschwihr",
+    "Thann",
+    "Vieux-Thann",
+    "Hunawihr",
+    "Riquewihr",
+    "Niedermorschwihr",
+    "Bergholtz",
+    "Pfaffenheim",
+    "Westhalten",
+    "Rouffach",
+    "Soultzmatt"
+   ],
+   "pos": [
+    0,
+    0,
+    "start"
+   ],
+   "discret": true,
+   "at": [
+    6.88,
+    47.83
+   ]
+  },
+  {
+   "label": "Klevener",
+   "deps": [
+    "67"
+   ],
+   "communes": [
+    "Bourgheim",
+    "Gertwiller",
+    "Goxwiller",
+    "Heiligenstein",
+    "Obernai"
+   ],
+   "pos": [
+    -26,
+    8,
+    "end"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Ottrott",
+   "deps": [
+    "67"
+   ],
+   "communes": [
+    "Ottrott",
+    "Obernai"
+   ],
+   "pos": [
+    -30,
+    -4,
+    "end"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Rodern",
+   "deps": [
+    "68"
+   ],
+   "communes": [
+    "Rodern",
+    "Saint-Hippolyte"
+   ],
+   "pos": [
+    -30,
+    0,
+    "end"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Saint-Hippolyte",
+   "deps": [
+    "68",
+    "67"
+   ],
+   "communes": [
+    "Saint-Hippolyte",
+    "Orschwiller"
+   ],
+   "pos": [
+    30,
+    0,
+    "start"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Côte de Rouffach",
+   "deps": [
+    "68"
+   ],
+   "communes": [
+    "Pfaffenheim",
+    "Rouffach",
+    "Westhalten"
+   ],
+   "pos": [
+    18,
+    2,
+    "start"
+   ],
+   "discret": true
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Strasbourg",
+   "dep": "67"
+  },
+  {
+   "nom": "Obernai",
+   "dep": "67"
+  },
+  {
+   "nom": "Colmar",
+   "dep": "68"
+  },
+  {
+   "nom": "Mulhouse",
+   "dep": "68"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Vosges",
+   "lon": 7.05,
+   "lat": 48.2,
+   "rot": -75,
+   "gras": true
+  },
+  {
+   "t": "Rhin",
+   "lon": 7.6,
+   "lat": 48.08,
+   "rot": -72,
+   "gras": true
+  }
+ ]
+}
