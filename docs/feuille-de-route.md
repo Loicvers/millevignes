@@ -24,7 +24,7 @@
    - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)
    - [x] Jourjon, Morlat, Seguin 1991 (fait le 29/10 : 24 pages)
    - [x] Morris, Bourgogne blanc et Vins de Loire (faits le 29/10 avec `--ocr` : ordre de lecture et caractères nettement meilleurs)
-3. **Cours « Approfondir » des autres cépages** (18 sur 76 faits : chardonnay, pinot noir, cabernet-sauvignon, merlot, syrah, grenache noir, sauvignon blanc, chenin, riesling ; le 30/10 : gamay, cabernet franc, sémillon, gewurztraminer, viognier, mourvèdre, tempranillo, sangiovese, nebbiolo). Suivants logiques : melon, aligoté, pinot gris, muscat, carignan, cinsault, malbec, tannat, savagnin.
+3. **Cours « Approfondir » des autres cépages** (27 sur 76 faits : chardonnay, pinot noir, cabernet-sauvignon, merlot, syrah, grenache noir, sauvignon blanc, chenin, riesling ; le 30/10 : gamay, cabernet franc, sémillon, gewurztraminer, viognier, mourvèdre, tempranillo, sangiovese, nebbiolo, puis melon, aligoté, pinot gris, muscats, carignan, cinsault, malbec, tannat, savagnin). Suivants : les autres cépages de `cepages.js` sans cours.
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
 
