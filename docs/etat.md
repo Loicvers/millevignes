@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 810 (dernier id : 812) · exercices : 4200
-- Vérifiées : 807 · à vérifier : 3 (5 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2112
-- Niveaux : Fondamental 246 · Intermédiaire 432 · Pointu 132
+- Fiches : 828 (dernier id : 830) · exercices : 4276
+- Vérifiées : 820 · à vérifier : 8 (12 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2095
+- Niveaux : Fondamental 248 · Intermédiaire 446 · Pointu 134
 - Cours (Approfondir) : 155 · schémas : 251
 - Lexique : 84 termes · récits de chapitre : 84
 
@@ -34,8 +34,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
-| fr-jura-appellations.js | 2 | 492–493 | hors livre | 2 | 0 | 0 |
-| fr-jura.js | 1 | 407–407 | hors livre | 1 | 0 | 1 |
+| fr-jura-appellations.js | 10 | 492–821 | hors livre | 8 | 0 | 0 |
+| fr-jura.js | 2 | 407–813 | hors livre | 2 | 0 | 1 |
 | fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
 | fr-loire-appellations.js | 12 | 447–458 | hors livre | 12 | 0 | 12 |
@@ -47,8 +47,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-rhone.js | 8 | 415–689 | hors livre | 8 | 1 | 3 |
 | fr-roussillon-appellations.js | 4 | 481–723 | hors livre | 4 | 0 | 0 |
 | fr-roussillon.js | 6 | 418–722 | hors livre | 6 | 1 | 2 |
-| fr-savoie-appellations.js | 2 | 494–495 | hors livre | 2 | 0 | 0 |
-| fr-savoie.js | 1 | 408–408 | hors livre | 1 | 0 | 1 |
+| fr-savoie-appellations.js | 9 | 494–830 | hors livre | 7 | 0 | 0 |
+| fr-savoie.js | 3 | 408–823 | hors livre | 2 | 0 | 1 |
 | fr-sud-ouest-appellations.js | 5 | 484–488 | hors livre | 5 | 0 | 1 |
 | fr-sud-ouest.js | 1 | 414–414 | hors livre | 1 | 0 | 1 |
 | monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 1 |
