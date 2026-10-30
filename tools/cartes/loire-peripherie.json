@@ -1,0 +1,270 @@
+{
+ "deps": [
+  "41",
+  "36",
+  "72",
+  "37",
+  "45",
+  "79",
+  "86"
+ ],
+ "fleuves": [
+  "Loire",
+  "Cher",
+  "Loir",
+  "Vienne"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Tours",
+   "dep": "37"
+  },
+  {
+   "nom": "Blois",
+   "dep": "41"
+  },
+  {
+   "nom": "Orléans",
+   "dep": "45"
+  },
+  {
+   "nom": "Poitiers",
+   "dep": "86"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Cheverny",
+   "discret": true,
+   "deps": [
+    "41"
+   ],
+   "communes": [
+    "Candé-sur-Beuvron",
+    "Cellettes",
+    "Chambord",
+    "Cheverny",
+    "Chitenay",
+    "Feings",
+    "Fougères-sur-Bièvre",
+    "Ouchamps",
+    "Cormeray",
+    "Cour-Cheverny",
+    "Fresnes",
+    "Huisseau-sur-Cosson",
+    "Maslives",
+    "Monthou-sur-Bièvre",
+    "Les Montils",
+    "Montlivault",
+    "Mont-près-Chambord",
+    "Muides-sur-Loire",
+    "Saint-Claude-de-Diray",
+    "Saint-Dyé-sur-Loire",
+    "Saint-Laurent-Nouan",
+    "Sambin",
+    "Seur",
+    "Tour-en-Sologne",
+    "Vineuil"
+   ]
+  },
+  {
+   "label": "Cour-Cheverny",
+   "discret": true,
+   "deps": [
+    "41"
+   ],
+   "communes": [
+    "Cellettes",
+    "Cheverny",
+    "Chitenay",
+    "Cormeray",
+    "Cour-Cheverny",
+    "Huisseau-sur-Cosson",
+    "Montlivault",
+    "Mont-près-Chambord",
+    "Saint-Claude-de-Diray",
+    "Tour-en-Sologne",
+    "Vineuil"
+   ]
+  },
+  {
+   "label": "Valençay",
+   "discret": true,
+   "deps": [
+    "36",
+    "41"
+   ],
+   "communes": [
+    "Chabris|36",
+    "Fontguenand|36",
+    "Luçay-le-Mâle|36",
+    "Lye|36",
+    "Menetou-sur-Nahon|36",
+    "Poulaines|36",
+    "Valençay|36",
+    "Val-Fouzon|36",
+    "La Vernelle|36",
+    "Veuil|36",
+    "Villentrois|36",
+    "Faverolles-en-Berry|36",
+    "Selles-sur-Cher|41"
+   ]
+  },
+  {
+   "label": "Jasnières",
+   "discret": true,
+   "deps": [
+    "72"
+   ],
+   "communes": [
+    "Lhomme",
+    "Loir en Vallée"
+   ]
+  },
+  {
+   "label": "Coteaux du Loir",
+   "discret": true,
+   "deps": [
+    "37",
+    "72"
+   ],
+   "communes": [
+    "Bueil-en-Touraine|37",
+    "Saint-Aubin-le-Dépeint|37",
+    "Saint-Christophe-sur-le-Nais|37",
+    "Saint-Paterne-Racan|37",
+    "Villebourg|37",
+    "Beaumont-sur-Dême|72",
+    "Chahaignes|72",
+    "La Chartre-sur-le-Loir|72",
+    "Chenu|72",
+    "Dissay-sous-Courcillon|72",
+    "Flée|72",
+    "Lhomme|72",
+    "Loir en Vallée|72",
+    "Marçon|72",
+    "Montval-sur-Loir|72",
+    "Nogent-sur-Loir|72",
+    "Saint-Germain-d’Arcé|72",
+    "Saint-Pierre-de-Chevillé|72"
+   ]
+  },
+  {
+   "label": "Coteaux du Vendômois",
+   "discret": true,
+   "deps": [
+    "41"
+   ],
+   "communes": [
+    "Artins",
+    "Azé",
+    "Couture-sur-Loir",
+    "Les Essarts",
+    "Fontaine-les-Coteaux",
+    "Houssay",
+    "Lavardin",
+    "Lunay",
+    "Marcilly-en-Beauce",
+    "Mazangé",
+    "Montoire-sur-le-Loir",
+    "Naveil",
+    "Les Roches-l’Évêque",
+    "Saint-Martin-des-Bois",
+    "Saint-Ouen",
+    "Saint-Rimay",
+    "Sougé",
+    "Ternay",
+    "Thoré-la-Rochette",
+    "Tréhet",
+    "Troo",
+    "Vendôme",
+    "Villavard",
+    "Villedieu-le-Château",
+    "Villerable",
+    "Villiersfaux",
+    "Villiers-sur-Loir"
+   ]
+  },
+  {
+   "label": "Orléans",
+   "discret": true,
+   "deps": [
+    "45"
+   ],
+   "communes": [
+    "Baule",
+    "Beaugency",
+    "Chécy",
+    "Cléry-Saint-André",
+    "Mardié",
+    "Mareau-aux-Prés",
+    "Meung-sur-Loire",
+    "Mézières-lez-Cléry",
+    "Olivet",
+    "Orléans",
+    "Saint-Ay",
+    "Saint-Hilaire-Saint-Mesmin",
+    "Saint-Jean-de-Braye"
+   ],
+   "pos": [
+    -14,
+    -4,
+    "end"
+   ]
+  },
+  {
+   "label": "Orléans-Cléry",
+   "discret": true,
+   "deps": [
+    "45"
+   ],
+   "communes": [
+    "Cléry-Saint-André",
+    "Mareau-aux-Prés",
+    "Mézières-lez-Cléry",
+    "Olivet",
+    "Saint-Hilaire-Saint-Mesmin"
+   ],
+   "pos": [
+    -6,
+    18,
+    "middle"
+   ]
+  },
+  {
+   "label": "Haut-Poitou",
+   "discret": true,
+   "deps": [
+    "79",
+    "86"
+   ],
+   "communes": [
+    "Doux|79",
+    "Amberre|86",
+    "Avanton|86",
+    "Beaumont Saint-Cyr|86",
+    "Chabournay|86",
+    "Champigny en Rochereau|86",
+    "Cherves|86",
+    "Chouppes|86",
+    "Cissé|86",
+    "Coussay|86",
+    "Craon|86",
+    "Cuhon|86",
+    "Dissay|86",
+    "Jaunay-Marigny|86",
+    "Lencloître|86",
+    "Maisonneuve|86",
+    "Massognes|86",
+    "Mirebeau|86",
+    "Neuville-de-Poitou|86",
+    "Saint-Georges-lès-Baillargeaux|86",
+    "Saint-Martin-la-Pallu|86",
+    "Thurageau|86",
+    "Vouzailles|86",
+    "Yversay|86"
+   ]
+  }
+ ]
+}

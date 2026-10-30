@@ -1,0 +1,327 @@
+{
+ "deps": [
+  "49",
+  "86",
+  "79",
+  "44"
+ ],
+ "fleuves": [
+  "Loire"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Angers",
+   "dep": "49"
+  },
+  {
+   "nom": "Saumur",
+   "dep": "49"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Anjou",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Brion-près-Thouet",
+    "Bouillé-Loretz",
+    "Mauzé-Thouarsais",
+    "Louzy",
+    "Saint-Cyr-la-Lande",
+    "Sainte-Verge",
+    "Saint-Martin-de-Mâcon",
+    "Saint-Martin-de-Sanzay",
+    "Thouars",
+    "Tourtenay",
+    "Val en Vignes",
+    "Allonnes",
+    "Angers",
+    "Antoigné",
+    "Artannes-sur-Thouet",
+    "Aubigné-sur-Layon",
+    "Beaulieu-sur-Layon",
+    "Bellevigne-en-Layon",
+    "Brézé",
+    "Chacé",
+    "Saint-Cyr-en-Bourg",
+    "Blaison-Saint-Sulpice",
+    "Bouchemaine",
+    "Brain-sur-Allonnes",
+    "Brissac Loire Aubance",
+    "Brossay",
+    "Cernusson",
+    "Chalonnes-sur-Loire",
+    "Champtocé-sur-Loire",
+    "Chaudefonds-sur-Layon",
+    "Cizay-la-Madeleine",
+    "Cléré-sur-Layon",
+    "Le Coudray-Macouard",
+    "Courchamps",
+    "Denée",
+    "Dénezé-sous-Doué",
+    "Distré",
+    "Doué-en-Anjou",
+    "Épieds",
+    "Fontevraud-l'Abbaye",
+    "Les Garennes sur Loire",
+    "Gennes-Val-de-Loire",
+    "Ingrandes",
+    "Louresse-Rochemenier",
+    "Lys-Haut-Layon",
+    "Mauges-sur-Loire",
+    "Montilliers",
+    "Montreuil-Bellay",
+    "Montsoreau",
+    "Mozé-sur-Louet",
+    "Mûrs-Erigné",
+    "Orée d'Anjou",
+    "Parnay",
+    "Passavant-sur-Layon",
+    "La Possonnière",
+    "Le Puy-Notre-Dame",
+    "Rochefort-sur-Loire",
+    "Rou-Marson",
+    "Sainte-Gemmes-sur-Loire",
+    "Saint-Georges-sur-Loire",
+    "Saint-Germain-des-Prés",
+    "Saint-Just-sur-Dive",
+    "Saint-Macaire-du-Bois",
+    "Saint-Melaine-sur-Aubance",
+    "Saumur",
+    "Savennières",
+    "Soulaines-sur-Aubance",
+    "Souzay-Champigny",
+    "Terranjou",
+    "Tuffalun",
+    "Turquant",
+    "Les Ulmes",
+    "Val-du-Layon",
+    "Varennes-sur-Loire",
+    "Varrains",
+    "Vaudelnay",
+    "Berrie",
+    "Curçay-sur-Dive",
+    "Glénouze",
+    "Pouançay",
+    "Ranton",
+    "Saint-Léger-de-Montbrillais",
+    "Ternay",
+    "Les Trois-Moutiers",
+    "Saix"
+   ],
+   "at": [
+    -0.75,
+    47.2
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Saumur",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Saint-Martin-de-Mâcon",
+    "Tourtenay",
+    "Artannes-sur-Thouet",
+    "Brézé",
+    "Chacé",
+    "Saint-Cyr-en-Bourg",
+    "Brossay",
+    "Cizay-la-Madeleine",
+    "Le Coudray-Macouard",
+    "Courchamps",
+    "Distré",
+    "Doué-en-Anjou",
+    "Épieds",
+    "Fontevraud-l'Abbaye",
+    "Montreuil-Bellay",
+    "Montsoreau",
+    "Parnay",
+    "Le Puy-Notre-Dame",
+    "Rou-Marson",
+    "Saint-Just-sur-Dive",
+    "Saumur",
+    "Souzay-Champigny",
+    "Turquant",
+    "Les Ulmes",
+    "Varrains",
+    "Vaudelnay",
+    "Berrie",
+    "Curçay-sur-Dive",
+    "Glénouze",
+    "Pouançay",
+    "Ranton",
+    "Saint-Léger-de-Montbrillais",
+    "Saix",
+    "Ternay",
+    "Les Trois-Moutiers"
+   ],
+   "at": [
+    -0.1,
+    47.1
+   ],
+   "pos": [
+    14,
+    24,
+    "middle"
+   ],
+   "trait": true,
+   "discret": true
+  },
+  {
+   "label": "Saumur-Champigny",
+   "deps": [
+    "49",
+    "79",
+    "86",
+    "44"
+   ],
+   "communes": [
+    "Montsoreau",
+    "Parnay",
+    "Saint-Cyr-en-Bourg",
+    "Souzay-Champigny",
+    "Turquant",
+    "Varrains",
+    "Chacé",
+    "Saumur"
+   ],
+   "pos": [
+    28,
+    -26,
+    "start"
+   ],
+   "trait": true,
+   "discret": true
+  },
+  {
+   "label": "Anjou-Coteaux de la Loire",
+   "discret": true,
+   "deps": [
+    "49"
+   ],
+   "communes": [
+    "Bouchemaine",
+    "Chalonnes-sur-Loire",
+    "Champtocé-sur-Loire",
+    "Ingrandes-Le Fresne sur Loire",
+    "Mauges-sur-Loire",
+    "La Possonnière",
+    "Saint-Georges-sur-Loire",
+    "Saint-Germain-des-Prés"
+   ]
+  },
+  {
+   "label": "Anjou Brissac",
+   "discret": true,
+   "deps": [
+    "49"
+   ],
+   "communes": [
+    "Brissac Loire Aubance",
+    "Denée",
+    "Les Garennes sur Loire",
+    "Mozé-sur-Louet",
+    "Mûrs-Erigné",
+    "Saint-Melaine-sur-Aubance",
+    "Soulaines-sur-Aubance"
+   ]
+  },
+  {
+   "label": "Bonnezeaux",
+   "discret": true,
+   "deps": [
+    "49"
+   ],
+   "communes": [
+    "Bellevigne-en-Layon"
+   ]
+  },
+  {
+   "label": "Saumur Puy-Notre-Dame",
+   "discret": true,
+   "deps": [
+    "49",
+    "86"
+   ],
+   "communes": [
+    "Brossay|49",
+    "Doué-en-Anjou|49",
+    "Épieds|49",
+    "Le Puy-Notre-Dame|49",
+    "Les Ulmes|49",
+    "Vaudelnay|49",
+    "Berrie|86",
+    "Pouançay|86",
+    "Saint-Léger-de-Montbrillais|86",
+    "Saix|86"
+   ],
+   "pos": [
+    -40,
+    4,
+    "end"
+   ]
+  },
+  {
+   "label": "Coteaux de Saumur",
+   "discret": true,
+   "deps": [
+    "49",
+    "79",
+    "86"
+   ],
+   "communes": [
+    "Saint-Martin-de-Mâcon|79",
+    "Tourtenay|79",
+    "Brézé|49",
+    "Chacé|49",
+    "Saint-Cyr-en-Bourg|49",
+    "Cizay-la-Madeleine|49",
+    "Le Coudray-Macouard|49",
+    "Courchamps|49",
+    "Distré|49",
+    "Doué-en-Anjou|49",
+    "Épieds|49",
+    "Fontevraud-l’Abbaye|49",
+    "Montsoreau|49",
+    "Parnay|49",
+    "Le Puy-Notre-Dame|49",
+    "Saumur|49",
+    "Souzay-Champigny|49",
+    "Turquant|49",
+    "Les Ulmes|49",
+    "Varrains|49",
+    "Vaudelnay|49",
+    "Berrie|86",
+    "Curçay-sur-Dive|86",
+    "Glénouze|86",
+    "Pouançay|86",
+    "Ranton|86",
+    "Saint-Léger-de-Montbrillais|86",
+    "Saix|86",
+    "Ternay|86",
+    "Les Trois-Moutiers|86"
+   ],
+   "pos": [
+    14,
+    30,
+    "start"
+   ]
+  }
+ ]
+}

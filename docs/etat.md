@@ -2,10 +2,10 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 865 (dernier id : 867) · exercices : 4457
-- Vérifiées : 852 · à vérifier : 13 (17 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2108
-- Niveaux : Fondamental 252 · Intermédiaire 469 · Pointu 144
-- Cours (Approfondir) : 157 · schémas : 297
+- Fiches : 898 (dernier id : 900) · exercices : 4606
+- Vérifiées : 882 · à vérifier : 16 (22 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2213
+- Niveaux : Fondamental 252 · Intermédiaire 481 · Pointu 165
+- Cours (Approfondir) : 157 · schémas : 328
 - Lexique : 84 termes · récits de chapitre : 92
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -38,7 +38,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-jura.js | 2 | 407–813 | hors livre | 2 | 0 | 1 |
 | fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
-| fr-loire-appellations.js | 12 | 447–458 | hors livre | 12 | 0 | 12 |
+| fr-loire-appellations.js | 45 | 447–900 | hors livre | 42 | 0 | 43 |
 | fr-loire.js | 8 | 409–695 | hors livre | 8 | 1 | 2 |
 | fr-lorraine.js | 1 | 576–576 | hors livre | 1 | 0 | 1 |
 | fr-provence-appellations.js | 12 | 489–842 | hors livre | 10 | 0 | 8 |

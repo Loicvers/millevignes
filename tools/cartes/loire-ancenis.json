@@ -1,0 +1,134 @@
+{
+ "deps": [
+  "44",
+  "49",
+  "85"
+ ],
+ "fleuves": [
+  "Loire"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Nantes",
+   "dep": "44"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Gros Plant",
+   "deps": [
+    "44",
+    "49",
+    "85"
+   ],
+   "communes": [
+    "Aigrefeuille-sur-Maine",
+    "Basse-Goulaine",
+    "Le Bignon",
+    "La Chapelle-Heulin",
+    "Château-Thébaud",
+    "Clisson",
+    "Divatte-sur-Loire",
+    "Gétigné",
+    "Gorges",
+    "La Haie-Fouassière",
+    "Haute-Goulaine",
+    "Le Landreau",
+    "Le Loroux-Bottereau",
+    "Maisdon-sur-Sèvre",
+    "Monnières",
+    "Montbert",
+    "Mouzillon",
+    "Le Pallet",
+    "La Regrippière",
+    "Remouillé",
+    "Saint-Fiacre-sur-Maine",
+    "Saint-Hilaire-de-Clisson",
+    "Saint-Julien-de-Concelles",
+    "Saint-Lumine-de-Clisson",
+    "Les Sorinières",
+    "Vallet",
+    "Vertou",
+    "Cugand",
+    "Saint-Hilaire-de-Loulay",
+    "Ancenis",
+    "Saint-Géréon",
+    "La Boissière-du-Doré",
+    "Carquefou",
+    "Le Cellier",
+    "Couffé",
+    "Ligné",
+    "Mauves-sur-Loire",
+    "Oudon",
+    "La Remaudière",
+    "Thouaré-sur-Loire",
+    "Vair-sur-Loire",
+    "Mauges-sur-Loire",
+    "Orée d'Anjou",
+    "Bouaye",
+    "Brains",
+    "La Chevrolière",
+    "Corcoué-sur-Logne",
+    "Geneston",
+    "Legé",
+    "La Limouzinière",
+    "La Planche",
+    "Pont-Saint-Martin",
+    "Port-Saint-Père",
+    "Saint-Aignan-Grandlieu",
+    "Saint-Colomban",
+    "Sainte-Pazanne",
+    "Saint-Léger-les-Vignes",
+    "Saint-Lumine-de-Coutais",
+    "Saint-Mars-de-Coutais",
+    "Saint-Philbert-de-Grand-Lieu",
+    "Vieillevigne",
+    "Rocheservière",
+    "Saint-Philbert-de-Bouaine",
+    "La Bernerie-en-Retz",
+    "Chaumes-en-Retz",
+    "Les Moutiers-en-Retz",
+    "Saint-Hilaire-de-Chaléons",
+    "Villeneuve-en-Retz",
+    "Saint-Étienne-du-Bois"
+   ],
+   "at": [
+    -1.95,
+    46.97
+   ],
+   "pos": [
+    0,
+    0,
+    "middle"
+   ],
+   "discret": true
+  },
+  {
+   "label": "Coteaux d'Ancenis",
+   "discret": true,
+   "deps": [
+    "44",
+    "49"
+   ],
+   "communes": [
+    "Ancenis|44",
+    "Saint-Géréon|44",
+    "Carquefou|44",
+    "Le Cellier|44",
+    "Couffé|44",
+    "Divatte-sur-Loire|44",
+    "Ligné|44",
+    "Loireauxence|44",
+    "Mauves-sur-Loire|44",
+    "Mésanger|44",
+    "Montrelais|44",
+    "Oudon|44",
+    "Thouaré-sur-Loire|44",
+    "Vair-sur-Loire|44",
+    "Mauges-sur-Loire|49",
+    "Orée d'Anjou|49"
+   ]
+  }
+ ]
+}

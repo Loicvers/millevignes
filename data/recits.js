@@ -1352,12 +1352,13 @@ const RECITS = [
    "<b>Un vin, pas un cépage.</b> Le muscadet vient du melon, seul cépage des trois appellations sous-régionales ; le Muscadet régional tolère un peu de chardonnay. Quatre AOC : Muscadet, Muscadet Sèvre et Maine, cœur du vignoble, Muscadet Coteaux de la Loire et Muscadet Côtes de Grandlieu.",
    "<b>Sur lie.</b> La mention exige que le vin reste sur ses lies fines jusqu’au printemps qui suit la récolte, puis soit mis en bouteille sans soutirage : il y gagne en rondeur.",
    "<b>Les crus communaux.</b> Clisson, Gorges, Le Pallet et quatre autres noms précisent l’origine dans le Sèvre et Maine, avec un rendement plus bas et un élevage sur lies bien plus long ; d’autres sont en cours de reconnaissance.",
-   "<b>Le Gros Plant.</b> Autre blanc sec et vif de la même zone, il repose sur la folle blanche."
+   "<b>Le Gros Plant.</b> Autre blanc sec et vif, sur une aire voisine du Muscadet, il repose sur la folle blanche et peut aussi porter la mention sur lie.",
+   "<b>Autour.</b> Les Coteaux d’Ancenis, en amont, font surtout des rouges et rosés de gamay et un blanc moelleux de pinot gris ; plus au sud, en Vendée, les Fiefs Vendéens portent toujours l’une de leurs cinq dénominations, de Brem à Vix."
   ],
   defend: "Le muscadet est un vin de melon, que l’élevage sur lies arrondit et que les crus communaux font monter en précision et en garde.",
   client: "« Le muscadet, c’est le vin ; le melon, c’est le cépage ; le sur lie, c’est un vin resté sur ses levures, plus rond. Et un cru communal, c’est un muscadet de village, gardé longtemps sur ses lies. »",
   filRouge: "En remontant vers Angers, comment l’Anjou passe-t-il du schiste au tuffeau, et du sec au liquoreux ?",
-  src: "fiches 447, 448, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 137)"
+  src: "fiches 447, 448, 690, 691 et 868 à 872 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 137)"
  },
  {
   chapitre: "Anjou-Saumur",
@@ -1367,12 +1368,13 @@ const RECITS = [
    "<b>Savennières.</b> Sur les schistes de la rive droite, au sud-ouest d’Angers, un chenin surtout sec ; deux lieux-dits ont leur propre AOC, Roche aux Moines et Coulée de Serrant, à très faible rendement.",
    "<b>Les liquoreux.</b> Coteaux du Layon, Chaume, Bonnezeaux, Quarts de Chaume : des chenins surmûris, récoltés par tries successives. Plus l’aire se resserre, plus le rendement baisse et l’alcool naturel minimal monte.",
    "<b>Saumur.</b> Sur le tuffeau, où l’on creuse aussi les caves : Saumur-Champigny, rouge de cabernet franc, et l’AOC Saumur, en blanc, rouge et bulles.",
-   "<b>La gamme angevine.</b> Anjou rouge, Anjou-Villages et Anjou Brissac pour les rouges ; Cabernet d’Anjou et Rosé d’Anjou, rosés tendres qui gardent du sucre ; Crémant de Loire pour les bulles."
+   "<b>La gamme angevine.</b> Anjou rouge, Anjou-Villages et Anjou Brissac pour les rouges ; Cabernet d’Anjou et Rosé d’Anjou, rosés tendres qui gardent du sucre, et Rosé de Loire, sec ; Crémant de Loire et Saumur mousseux pour les bulles. L’Anjou-Coteaux de la Loire est un chenin moelleux, l’Aubance un liquoreux plus discret que le Layon.",
+   "<b>Autour de Saumur.</b> Saumur Puy-Notre-Dame, dénomination de rouge de cabernet franc, et Coteaux de Saumur, chenin doux ; l’ancien Cabernet de Saumur est aujourd’hui un Saumur rosé."
   ],
   defend: "L’Anjou-Saumur rassemble presque tous les styles de la Loire autour de deux cépages, le chenin et le cabernet franc, sur deux roches, le schiste et le tuffeau.",
   client: "« En Anjou, le chenin peut être sec, à Savennières, ou liquoreux, dans le Layon. Et attention : un Cabernet ou un Rosé d’Anjou n’est pas un rosé sec. »",
   filRouge: "Juste en amont, comment la Touraine joue-t-elle avec le chenin de Vouvray et le cabernet franc de Chinon ?",
-  src: "fiches 449 à 452, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 163)"
+  src: "fiches 449 à 452, 690, 691 et 873 à 881 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 163)"
  },
  {
   chapitre: "Touraine",
@@ -1381,13 +1383,14 @@ const RECITS = [
    "La Touraine, autour de Tours, a un climat plus continental que l’Anjou, et ses coteaux reposent souvent sur le tuffeau, où l’on creuse les caves.",
    "<b>Le chenin.</b> Vouvray et Montlouis-sur-Loire, deux voisins en amont de Tours : des chenins tranquilles, mousseux ou pétillants, du sec au doux ; on lit la mention sur l’étiquette.",
    "<b>Le cabernet franc.</b> Chinon, Bourgueil et Saint-Nicolas-de-Bourgueil font des rouges de cabernet franc, avec un peu de cabernet sauvignon possible ; seul Chinon ajoute un blanc de chenin. Les sols vont du tuffeau aux graviers et aux sables.",
-   "<b>L’AOC Touraine.</b> Sur 143 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
-   "<b>Autour.</b> Cour-Cheverny, au romorantin seul, Jasnières et les Coteaux du Loir gardent des cépages et des styles à part."
+   "<b>L’AOC Touraine.</b> Sur 138 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
+   "<b>Autour.</b> Cheverny assemble, Cour-Cheverny garde le romorantin seul ; Valençay et le Haut-Poitou misent sur le sauvignon en blanc.",
+   "<b>Au nord, le Loir.</b> Jasnières, chenin sur un seul coteau, les Coteaux du Loir et les Coteaux du Vendômois, où le pineau d’Aunis donne rouges poivrés et vins gris."
   ],
   defend: "La Touraine est la Loire des contrastes : le chenin de Vouvray et de Montlouis, le cabernet franc de Chinon et de Bourgueil, et le sauvignon de l’AOC Touraine.",
   client: "« Un vouvray peut être sec ou moelleux : regardez la mention. Pour un rouge, Chinon et Bourgueil, c’est le cabernet franc de Touraine. »",
   filRouge: "Plus en amont encore, pourquoi le sauvignon de Sancerre et de Pouilly a-t-il conquis le monde ?",
-  src: "fiches 453 à 455, 690 et 692 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 453 à 455, 690, 692, 882 à 884, 886 à 890 et 892 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Centre-Loire",
@@ -1396,12 +1399,13 @@ const RECITS = [
    "Le Centre-Loire a un climat continental et sa propre interprofession. Le sauvignon blanc y règne, avec le pinot noir pour les rouges et les rosés.",
    "<b>Sancerre.</b> Quatorze communes du Cher ; un blanc de sauvignon seul, un rouge et un rosé de pinot noir seul. Le terroir se lit en trois sols : terres blanches (marnes kimméridgiennes), caillottes (calcaires) et silex. Historiquement planté de pinot noir, Sancerre s’est replanté en sauvignon après le phylloxéra.",
    "<b>Les deux Pouilly.</b> Autour de Pouilly-sur-Loire, dans la Nièvre : le Pouilly-Fumé, de sauvignon seul, sur les mêmes familles de sols, et le Pouilly-sur-Loire, de chasselas, plus rare. À ne pas confondre avec le Pouilly-Fuissé mâconnais.",
-   "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant."
+   "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant.",
+   "<b>Plus au sud.</b> Le long de l’Allier et de la Loire amont, le gamay domine : Saint-Pourçain, où le tressallier entre dans les blancs, Côtes d’Auvergne et ses cinq dénominations autour de Clermont-Ferrand."
   ],
   defend: "Le Centre-Loire est la terre du sauvignon, et à Sancerre comme à Pouilly le sol, terres blanches, caillottes ou silex, change le vin d’une même colline.",
   client: "« Sancerre n’est pas qu’un blanc : il existe aussi en rouge et en rosé de pinot noir. Et le Pouilly-Fumé, c’est du sauvignon de Loire, rien à voir avec le Pouilly-Fuissé de Bourgogne. »",
   filRouge: "Plus au sud-ouest, comment Bordeaux, à l’inverse de la Loire, a-t-il fait de l’assemblage sa signature ?",
-  src: "fiches 456 à 458, 690 et 694 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 456 à 458, 690, 694 et 893 à 899 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Champagne : panorama et appellations",

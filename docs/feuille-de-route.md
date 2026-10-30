@@ -32,10 +32,10 @@
 Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou style, vérifiée sur le cahier des charges en vigueur, carte de situation par fiche d’appellation, récit de chaque chapitre, cours « Approfondir » de la région mis à jour).
 - [ ] **Languedoc** (12) : appellations regroupées par 2 ou 3 (Pic Saint-Loup + Terrasses, Minervois + Corbières + Fitou…) ; manquent AOC Languedoc et ses dénominations (Grés de Montpellier, Pézenas, Clape, Cabardès, Malepère, Clairette…), crus séparés (Boutenac, La Livinière). Aucune carte sur les fiches d’appellation.
 - [ ] **Roussillon** (10) : 4 fiches d’appellation groupées (Banyuls + Collioure, Maury + Rivesaltes + Muscat…) ; à éclater, aucune carte.
-- [ ] **Val de Loire** (20) : 12 fiches pour une cinquantaine d’AOC (Touraine, Anjou, Centre-Loire groupés ; absents : Jasnières, Valençay, Orléans, Fiefs vendéens, Anjou-Villages Brissac, Côteaux du Loir…). Cartes en place.
+- [x] **Val de Loire** : fait le 30/10 (65 fiches, 33 nouvelles 868-900, 8 recentrées, cartes de situation, récits des 4 chapitres). Restent à vérifier 885 Touraine Noble Joué et 891 Orléans (cahiers du 27/10/2026 non publiés sur BO-agri), 900 Côte Roannaise (cahier introuvable) ; cours « Approfondir » de la région (409) à mettre à jour ; cahiers de Menetou-Salon, Châteaumeillant et Côtes du Forez (2011-2013) à revoir s’il en existe de plus récents.
 - [ ] **Bourgogne** (50) : Côte de Beaune 21 et Côte de Nuits 12, mais Chablis 2, Côte chalonnaise 1, Mâconnais 2 ; 4 cartes en tout.
 - [ ] **Bordeaux** (44) : détail atteint, cartes presque absentes (1 sur 35 fiches d’appellation).
-Ordre : Val de Loire, Languedoc, Roussillon, Bourgogne hors Côte d’Or, cartes de Bordeaux ; Corse en dernier (pas de vins corses à la cave).
+Ordre : Languedoc, Roussillon, Bourgogne hors Côte d’Or, cartes de Bordeaux ; Corse en dernier (pas de vins corses à la cave).
 - [ ] **Corse** (3 fiches) : lot complet à faire (Patrimonio, Ajaccio, Vin de Corse et ses 5 dénominations, Muscat du Cap Corse, milieu, cépages et styles), cartes, récits des 2 chapitres (aucun), cours.
 - [ ] **Cours de région** absents : Jura, Savoie, Provence, Sud-Ouest, Corse (Alsace fait le 30/10).
 - [ ] **Récits** absents : Corse (2), Charentes, Lorraine, France (2).
