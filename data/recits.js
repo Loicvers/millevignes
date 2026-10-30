@@ -1236,6 +1236,37 @@ const RECITS = [
   src: "fiches 432, 433, 765 à 772, 412 et 683 du site (INAO, cahiers des charges ; Agreste Nouvelle-Aquitaine ; Oxford Companion ; WSET D3)"
  },
  {
+  chapitre: "Sud-Ouest : panorama et appellations",
+  question: "Plus au sud-est, comment le Sud-Ouest garde-t-il ses cépages à lui, du tannat au gros manseng ?",
+  fil: [
+   "Le Sud-Ouest n’est pas une appellation mais une région d’usage : tous les vignobles du quart sud-ouest de la France, Bordeaux et Cognac exclus.",
+   "<b>Le haut-pays face à Bordeaux.</b> Les vins de l’amont descendaient la Garonne et ses affluents vers Bordeaux, qui les taxait et ne les laissait gagner la mer qu’après avoir vendu les siens : c’est le « privilège de Bordeaux », que le cahier de l’IGP Côtes de Gascogne situe en 1373. Le vignoble de l’amont a gardé ses propres cépages.",
+   "<b>Quatre ensembles.</b> Le Bergeracois et Duras ; la Garonne, avec le Marmandais, Buzet et le Brulhois ; le haut-pays, avec Cahors, Fronton, Gaillac et l’Aveyron ; la Gascogne et le piémont pyrénéen.",
+   "<b>De l’océan au piémont.</b> L’influence atlantique s’atténue vers l’intérieur ; au pied des Pyrénées, un foehn, vent chaud du sud, aide Jurançon et Madiran à mûrir.",
+   "<b>Des cépages maison.</b> Près de la Gironde dominent cabernets et merlot ; plus on remonte, plus on trouve tannat, mansengs, négrette ou mauzac. À Cahors, phylloxéra, concurrence bordelaise et gel de 1956 ont ramené le vignoble de près de 40 000 ha à moins d’un dixième.",
+   "<b>Une IGP de blancs.</b> L’IGP Côtes de Gascogne, née du recul de l’armagnac, couvre tout le Gers et produit surtout du blanc, sans imposer de cépage."
+  ],
+  defend: "Tenu longtemps à l’écart du port par Bordeaux, le Sud-Ouest a gardé une mosaïque de cépages locaux : c’est sa singularité.",
+  client: "« Le Sud-Ouest, c’est tout ce qui est à l’est et au sud de Bordeaux, avec ses propres cépages : tannat, mansengs, négrette, fer. »",
+  filRouge: "Cahors, Madiran, Jurançon, Gaillac, Bergerac : comment s’y retrouver dans la mosaïque des appellations du Sud-Ouest ?",
+  src: "fiches 414, 843 et 844 du site (cahier de l’IGP Côtes de Gascogne, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Sud-Ouest : appellations phares",
+  question: "Cahors, Madiran, Jurançon, Gaillac, Bergerac : comment s’y retrouver dans la mosaïque des appellations du Sud-Ouest ?",
+  fil: [
+   "Plus on s’éloigne de Bordeaux, plus les cépages sont locaux : c’est la clé de lecture.",
+   "<b>Le Bergeracois et Duras.</b> Mêmes cépages que Bordeaux, et un nom qui dit le style : Bergerac et Montravel pour les blancs secs, Côtes de Bergerac, Côtes de Montravel et Rosette pour les moelleux, Monbazillac, Saussignac et Haut-Montravel pour les liquoreux, Pécharmant pour le rouge.",
+   "<b>La Garonne.</b> Côtes du Marmandais et Buzet restent bordelaises ; le Brulhois y ajoute le tannat.",
+   "<b>Le haut-pays.</b> Malbec à Cahors (au moins 70 %), négrette à Fronton, duras, fer et prunelard à Gaillac, qui fait aussi des blancs doux et un mousseux de méthode ancestrale, fer à Marcillac et dans le reste de l’Aveyron.",
+   "<b>Gascogne et Pyrénées.</b> Tannat à Madiran, Saint-Mont et dans les rouges du Béarn ; mansengs à Jurançon ; tannat et cabernet franc à Irouléguy, au Pays basque. Le Floc de Gascogne, vin de liqueur muté à l’armagnac, partage l’aire de l’eau-de-vie."
+  ],
+  defend: "En aval, le Sud-Ouest parle bordelais ; en amont, chaque appellation a son cépage maison. Connaître le cépage, c’est déjà connaître le vin.",
+  client: "« Pour un rouge charpenté, un madiran ou un cahors ; pour un blanc doux, un jurançon ou un monbazillac ; pour l’original, un fronton de négrette ou un gaillac. »",
+  filRouge: "Pourquoi dit-on qu’il y a deux Rhône, et qu’est-ce qui les relie ?",
+  src: "fiches 484 à 488 et 845 à 858 du site (cahiers des charges des AOC du Sud-Ouest, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
   chapitre: "Vallée du Rhône : panorama et appellations",
   question: "Pourquoi dit-on qu’il y a deux Rhône, et qu’est-ce qui les relie ?",
   fil: [
@@ -1482,6 +1513,71 @@ const RECITS = [
   src: "fiches 406, 472 à 475 et 791 à 799 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
  },
  {
+  chapitre: "Jura : panorama et appellations",
+  question: "Plus à l’est, au pied d’un autre massif, comment le Jura fait-il des vins que l’on ne trouve nulle part ailleurs ?",
+  fil: [
+   "Le vignoble jurassien est une bande étroite et discontinue, large de quelques kilomètres, vers 250 à 450 m d’altitude : c’est le Revermont, au pied du premier plateau calcaire du massif, tourné vers la plaine de la Bresse.",
+   "<b>Un climat frais et humide.</b> Plus de 1000 mm de pluie par an, nettement plus qu’en Bourgogne, des hivers froids, mais des automnes relativement secs.",
+   "<b>Des marnes sous un rebord calcaire.</b> Les sols sont des marnes et des argiles du Trias et du Lias, sous un rebord de calcaire dur, avec des éboulis calcaires sur les coteaux.",
+   "<b>Cinq cépages.</b> Chardonnay et savagnin pour les blancs ; pinot noir, poulsard et trousseau pour les rouges et les rosés.",
+   "<b>Deux vins singuliers.</b> Le vin jaune, de savagnin, reste en fût sans ouillage jusqu’au 15 décembre de la 6e année suivant la récolte, dont au moins 60 mois sous voile, et se vend en clavelin de 62 cl à partir du 1er janvier de la 7e année. Le vin de paille vient de raisins séchés hors souche au moins six semaines, pressés très riches en sucre.",
+   "<b>Une poignée d’appellations.</b> Arbois, L’Étoile, Château-Chalon, Côtes du Jura et Crémant du Jura, auxquelles s’ajoute le macvin."
+  ],
+  defend: "Le Jura est un petit vignoble frais, sur marnes, qui doit sa singularité à deux façons de faire : laisser le savagnin vieillir sous voile pour le vin jaune, sécher les raisins pour le vin de paille.",
+  client: "« Le Jura, c’est le pays du vin jaune : du savagnin resté plus de six ans en fût, sous un voile de levures. Mais on y fait aussi des blancs frais, des rouges légers et un crémant. »",
+  filRouge: "Six appellations, deux mentions : comment s’y retrouver entre arbois, côtes-du-jura, château-chalon et vin jaune ?",
+  src: "fiches 407 et 813 du site (cahiers des charges des AOC du Jura, BO-agri ; WSET D3 ; Oxford Companion ; World Atlas of Wine)"
+ },
+ {
+  chapitre: "Jura : appellations et vin jaune",
+  question: "Six appellations, deux mentions : comment s’y retrouver entre arbois, côtes-du-jura, château-chalon et vin jaune ?",
+  fil: [
+   "Le Jura compte six AOC viticoles, qu’on range en trois étages.",
+   "<b>L’appellation régionale.</b> Les Côtes du Jura couvrent tout le vignoble, une bande d’environ 80 km de Saint-Amour au nord de Salins-les-Bains, en blanc, rouge et rosé, sans dénomination complémentaire.",
+   "<b>Trois appellations locales.</b> Arbois, au nord, reconnue en 1936, fait blancs, rouges, rosés, vin jaune et vin de paille ; la mention Pupillin y est réservée aux vins d’une seule commune, aux marnes très pentues favorables au poulsard. L’Étoile, de quatre communes, ne fait que des blancs. Château-Chalon, de quatre communes aussi, ne fait que du vin jaune.",
+   "<b>Deux spécialités sur toute l’aire.</b> Le crémant du Jura, reconnu en 1995, est le seul mousseux d’appellation. Le macvin du Jura est un vin de liqueur : un moût muté pendant les vendanges avec de l’eau-de-vie de marc de la même exploitation, puis élevé au moins 10 mois sous bois.",
+   "<b>Des mentions, pas des appellations.</b> Vin jaune et vin de paille s’ajoutent au nom d’une AOC. Le vin jaune existe en Arbois, Côtes du Jura, L’Étoile et Château-Chalon ; le vin de paille en Arbois, Côtes du Jura et L’Étoile, pas à Château-Chalon.",
+   "<b>Deux voies pour les blancs.</b> En fût ouillé ou en cuve, le blanc reste frais et fruité ; en fût non rempli, un voile peut se former et le style devient oxydatif. Côté rouges, le poulsard donne un vin très pâle aux tanins faibles, le trousseau et le pinot noir des vins plus structurés."
+  ],
+  defend: "Au Jura, le nom de l’appellation dit le lieu, la mention dit le style : un « arbois vin jaune » et un « château-chalon » sont tous deux des vins jaunes, mais seul Château-Chalon n’en fait pas d’autre.",
+  client: "« Château-Chalon, c’est uniquement du vin jaune. Un arbois ou un côtes-du-jura peut être un blanc frais, un blanc sous voile, un rouge léger, ou un vin jaune : regardez l’étiquette. »",
+  filRouge: "Plus au sud, au pied des Alpes, comment la Savoie fait-elle d’îlots de vigne une région à part ?",
+  src: "fiches 492, 493, 814 à 817, 819 et 821 du site (cahiers des charges des AOC du Jura, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Savoie : panorama et appellations",
+  question: "Plus au sud, au pied des Alpes, comment la Savoie fait-elle d’îlots de vigne une région à part ?",
+  fil: [
+   "La Savoie ne repose que sur deux grandes appellations, mais elle les découpe finement : c’est le cépage, plus que le lieu, qui donne la clé de lecture.",
+   "<b>Le Vin de Savoie.</b> Il peut ajouter l’une de ses 16 dénominations géographiques, d’Abymes à Saint-Jeoire-Prieuré, et chacune fixe ses cépages ; Crépy, autrefois appellation distincte, en fait désormais partie.",
+   "<b>La Roussette de Savoie.</b> Un blanc tranquille d’altesse, la « roussette », avec quatre dénominations : Frangy, Marestel, Monterminod et Monthoux.",
+   "<b>Une carte par cépage.</b> La jacquère à Abymes, Apremont, Cruet, Montmélian et Saint-Jeoire-Prieuré ; le chasselas autour du Léman ; le gringet à Ayze ; la mondeuse noire seule à Arbin et Saint-Jean-de-la-Porte ; la roussanne seule à Chignin-Bergeron, où elle s’appelle « bergeron ».",
+   "<b>Des blancs vifs.</b> Jacquère et chasselas donnent des blancs légers, floraux et fruités, souvent perlants dans leur jeunesse lorsqu’ils restent sur lies fines.",
+   "<b>Des blancs de garde et des rouges.</b> L’altesse et la roussanne donnent des blancs plus amples, aptes à vieillir. En rouge, la mondeuse noire est poivrée, colorée et structurée ; gamay et pinot noir sont souples, peu tanniques ; le persan, rare, donne des vins sombres et tanniques."
+  ],
+  defend: "En Savoie, le nom ajouté à l’appellation dit presque toujours le cépage : apprendre les dénominations, c’est apprendre qui de la jacquère, du chasselas, de l’altesse, de la roussanne ou de la mondeuse est dans le verre.",
+  client: "« Pour un blanc vif à l’apéritif, une jacquère d’Apremont ou un chasselas du Léman ; pour un blanc qui se garde, une roussette ou un chignin-bergeron ; pour un rouge poivré, une mondeuse. »",
+  filRouge: "Seize dénominations, une roussette, un crémant, un Seyssel et un Bugey : comment lire une étiquette savoyarde ?",
+  src: "fiches 408 et 823 du site (cahiers des charges AOC Vin de Savoie et Roussette de Savoie, BO-agri ; Oxford Companion)"
+ },
+ {
+  chapitre: "Savoie : crus et appellations",
+  question: "Seize dénominations, une roussette, un crémant, un Seyssel et un Bugey : comment lire une étiquette savoyarde ?",
+  fil: [
+   "L’AOC Vin de Savoie, reconnue en 1973, peut ajouter une dénomination ; les seuils de cépage s’entendent pour l’encépagement de l’exploitation, non pour chaque bouteille.",
+   "<b>Le Léman et Ayze.</b> Crépy, Marignan, Marin et Ripaille font des blancs de chasselas, au moins 80 % de l’exploitation. Ayze, dans la vallée de l’Arve, mise sur le gringet, en blanc tranquille et en mousseux : le lac appelle le chasselas, l’Arve le gringet.",
+   "<b>La jacquère.</b> Abymes, Apremont, Cruet, Montmélian et Saint-Jeoire-Prieuré se distinguent moins par le cépage que par l’aire et le sol : Apremont et les Abymes reposent sur le chaos de l’éboulement du Granier, en 1248.",
+   "<b>Les rouges et le Chignin-Bergeron.</b> Arbin et Saint-Jean-de-la-Porte sont des rouges de mondeuse seule ; Chautagne, Chignin et Jongieux font du rouge (gamay, mondeuse, pinot noir) et du blanc de jacquère ; Chignin-Bergeron est un blanc de roussanne seule.",
+   "<b>La Roussette de Savoie.</b> Altesse seule ; ses quatre dénominations, Frangy, Marestel, Monterminod et Monthoux, demandent un rendement plus bas et un degré naturel plus élevé que l’appellation générale.",
+   "<b>Les bulles.</b> Le crémant de Savoie n’est pas une AOC à part mais une indication du Vin de Savoie : au moins 40 % de jacquère, vendange manuelle, 9 mois sur lies au moins. Seyssel, trois communes de part et d’autre du Rhône, fait un tranquille d’altesse ou de molette et un mousseux dominé par la molette.",
+   "<b>Le Bugey à part.</b> Dans l’Ain, il a ses propres AOC, Bugey et Roussette du Bugey ; Cerdon, Manicle et Montagnieu y sont des dénominations du Bugey, non du Vin de Savoie."
+  ],
+  defend: "Une étiquette savoyarde se lit en deux temps : l’appellation (Vin de Savoie, Roussette, Seyssel, Bugey), puis la dénomination, qui dit le lieu et presque toujours le cépage.",
+  client: "« Apremont, c’est de la jacquère ; Crépy, du chasselas ; Arbin, de la mondeuse ; Chignin-Bergeron, de la roussanne. Et pour les bulles : un crémant de Savoie, un Seyssel ou, côté Ain, un Cerdon rosé. »",
+  filRouge: "Comment un seul fleuve peut-il réunir des vins aussi différents qu’un muscadet, un quarts-de-chaume et un sancerre ?",
+  src: "fiches 494, 495 et 824 à 829 du site (cahiers des charges AOC Vin de Savoie, Roussette de Savoie et Seyssel, BO-agri ; Oxford Companion ; Biasini et al., IVES)"
+ },
+ {
   chapitre: "Languedoc : panorama et appellations",
   question: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
   fil: [
@@ -1541,7 +1637,38 @@ const RECITS = [
   ],
   defend: "Au Roussillon, la question à poser est simple : le vin est-il muté ou non ? Banyuls, maury, rivesaltes et muscat de rivesaltes sont des VDN ; collioure, Maury sec, côtes-du-roussillon et l’IGP Côtes Catalanes sont des vins secs.",
   client: "« Pour un dessert au chocolat, un rimage de banyuls ; pour méditer, un banyuls grand cru ; pour un dessert aux fruits, un muscat de rivesaltes ; pour le repas, un collioure ou un côtes-du-roussillon Villages. »",
-  filRouge: "Plus à l’est, entre Rhône et Méditerranée, comment s’organisent les vins de Provence ?",
+  filRouge: "Pourquoi la Provence est-elle devenue la région du rosé, et que boit-on d’autre là-bas ?",
   src: "fiches 481 à 483 et 723 du site, avec 508 et 635 en renvoi (sources principales : cahiers des charges, INAO ; WSET D3 et D5 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Provence : panorama et appellations",
+  question: "Pourquoi la Provence est-elle devenue la région du rosé, et que boit-on d’autre là-bas ?",
+  fil: [
+   "La Provence est la première région française pour les rosés d’appellation : 40 à 45 % de la production nationale selon l’interprofession, sur environ 27 500 ha d’AOP. Les Phocéens, fondateurs de Marseille vers 600 av. J.-C., y ont apporté la vigne.",
+   "<b>Deux Provences.</b> L’une calcaire, à l’ouest et au nord ; l’autre cristalline, au sud-est, avec les Maures et l’Estérel ; entre les deux, une dépression aux sols rouges. Sainte-Victoire et la Sainte-Baume marquent le relief.",
+   "<b>Soleil et mistral.</b> Plus de 2 700 heures de soleil et 600 à 900 mm de pluie dans l’aire des Côtes de Provence. Le mistral assainit les vignes et limite les maladies, au risque de gêner la floraison.",
+   "<b>Cinq cépages pour les rouges et les rosés.</b> Grenache, cinsaut, syrah, mourvèdre et tibouren sont les principaux des Côtes de Provence ; le cabernet-sauvignon n’y est qu’accessoire.",
+   "<b>Des blancs de vermentino.</b> Le vermentino, appelé rolle, domine les blancs, avec la clairette, le sémillon et l’ugni blanc. La Londe en exige au moins la moitié dans son blanc.",
+   "<b>Bandol à part.</b> Sur ses restanques, le mourvèdre fait des rouges de garde, au moins 18 mois en bois."
+  ],
+  defend: "La Provence a fait du rosé sa signature, mais son relief, son soleil et son mistral portent aussi des rouges de mourvèdre et de syrah et des blancs de vermentino.",
+  client: "« La Provence, c’est d’abord le rosé, mais goûtez un rouge de Bandol, sur le mourvèdre, ou un blanc de rolle : la même lumière, d’autres vins. »",
+  filRouge: "Côtes de Provence, Bandol, Cassis, Palette : comment s’y retrouver entre les grandes et les petites appellations de Provence ?",
+  src: "fiches 419, 831 et 833 du site (cahiers des charges Côtes de Provence et Bandol, BO-agri ; CIVP ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Provence : appellations et dénominations",
+  question: "Côtes de Provence, Bandol, Cassis, Palette : comment s’y retrouver entre les grandes et les petites appellations de Provence ?",
+  fil: [
+   "La carte des appellations provençales se lit en trois cercles.",
+   "<b>Trois régionales.</b> Côtes de Provence (1977), une centaine de communes surtout dans le Var, 55 hl/ha ; Coteaux d’Aix-en-Provence (1985), la Provence calcaire de l’ouest, où la counoise est principale ; Coteaux Varois en Provence (1993), une enclave plus fraîche autour de Brignoles, avec des vignes jusqu’à 350-500 m.",
+   "<b>Cinq dénominations.</b> Cru Sainte-Victoire, Fréjus, La Londe, Pierrefeu et Notre-Dame des Anges s’ajoutent au nom de Côtes de Provence avec des règles plus serrées : 50 hl/ha, rouges élevés jusqu’au 15 août ou au 15 octobre, 20 % de tibouren au moins dans le rosé de Fréjus, la moitié de vermentino dans le blanc de La Londe.",
+   "<b>Bandol.</b> Huit communes autour de la ville, des restanques face à la mer, le mourvèdre roi et des rouges au moins 18 mois en bois, à 40 hl/ha.",
+   "<b>Les petites appellations.</b> Cassis, une seule commune et un blanc de clairette et de marsanne ; Palette, trois communes aux portes d’Aix, au moins 10 % de mourvèdre et des rouges 18 mois en bois ; Bellet, sur les coteaux de Nice, avec le braquet, la fuella nera et le vermentino. Les Baux-de-Provence et Pierrevert complètent la carte."
+  ],
+  defend: "Plus le cercle se resserre, plus les volumes baissent et plus le cahier se fait strict : des grandes régionales de rosé aux dénominations, puis à Bandol et aux appellations d’une ou trois communes.",
+  client: "« Pour un rosé sûr, un côtes-de-provence ; pour un secteur précis, une dénomination comme Sainte-Victoire ; pour un vin de caractère, un bandol rouge, un cassis blanc ou un palette. »",
+  filRouge: "Plus à l’est encore, sur l’île de Beauté, comment la Corse marie-t-elle cépages italiens et appellations françaises ?",
+  src: "fiches 489, 490, 491 et 834 à 840 du site (cahiers des charges des AOC de Provence, BO-agri ; WSET D3 ; Oxford Companion)"
  }
 ];

@@ -18,7 +18,7 @@
 - Dépôt de sources : écriture autorisée par Loïc (registre, outils) ; jamais de contenu des sources dans ce dépôt public.
 
 ## À faire, par priorité
-1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura, Savoie, Provence, Corse, Sud-Ouest (une fiche chacune), puis Alsace, Champagne, Beaujolais. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
+1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura (fait le 30/10 : 11 fiches, cartes, récits ; 818 et 820 en attente des arrêtés), Savoie (fait le 30/10 : 13 fiches, cartes, récits ; 822 et 830 à vérifier), Provence (fait le 30/10 : 16 fiches, cartes, récits ; 832, 841, 842 à vérifier), Corse, Sud-Ouest (fait le 30/10 : 24 fiches, cartes, récits ; 844 à vérifier) (une fiche chacune), puis Alsace, Champagne, Beaujolais. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
 2. **Relancer l'OCR** sur le PC avec `py outils/extraire_indra.py <pdf> <dossier>` (dépôt de sources), puis remplacer le texte et pousser :
    - [x] World Atlas of Wine 7e (fait le 29/10 : 201 pages, texte remplacé)
    - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)

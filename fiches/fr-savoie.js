@@ -38,9 +38,9 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Fait (⚠️) : le rôle thermique des lacs (réchauffement estival) ne vient que de l’Atlas ; le cahier ne cite qu’un effet hydrique.","Fait (⚠️) : surface d’environ 2 100 ha en 2020, source unique (Oxford).","Fait (⚠️) : l’éboulement du Mont-Granier en 1248, sous les Abymes, n’est donné que par le cahier des charges ; aucune source de niveau 2a ne le documente."],
+    to_check: ["Fait (⚠️) : le rôle thermique des lacs (réchauffement estival) ne vient que de l’Atlas ; le cahier ne cite qu’un effet hydrique.","Fait (⚠️) : surface d’environ 2 100 ha en 2020, source unique (Oxford)."],
     selon_livre: ["Divergence expliquée : pour les lacs, le cahier des charges parle de réserves d’eau qui renforcent l’humidité, alors que l’Atlas mondial du vin les dit réchauffeurs des vignes en été ; les deux versions sont données, attribuées."],
-    src: "BO-agri, cahier des charges AOC Vin de Savoie (arrêté du 14 juin 2023, JORF 22 juin 2023 ; BO-AGRI 6 juil. 2023), X-1° a ; Oxford Companion to Wine, 5e éd. (2023), entrée « Savoie » ; World Atlas of Wine, 7e éd. (2013), Savoie and Bugey ; Wine Grapes (2012), Jacquère"
+    src: "BO-agri, cahier des charges AOC Vin de Savoie (arrêté du 14 juin 2023, JORF 22 juin 2023 ; BO-AGRI 6 juil. 2023), X-1° a ; Oxford Companion to Wine, 5e éd. (2023), entrée « Savoie » ; World Atlas of Wine, 7e éd. (2013), Savoie and Bugey ; Wine Grapes (2012), Jacquère ; F. Biasini, C. Petit, A. Quiquerez, « L’histoire du Vin des Abymes sur les pentes reconquises du Mont Granier suite au glissement de 1248 », IVES Open Science (actes du Congrès des terroirs)"
   },
   {
     id: 823,
