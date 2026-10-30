@@ -67,7 +67,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - [ ] **863 « Alsace cru » / premier cru** : état connu par Vitisphere seulement (27 mars et 4 août 2025). À trouver : avis du comité national de l’INAO, procédure nationale d’opposition (liste inao.gouv.fr/pno : rien pour l’Alsace au 27/10/2026), arrêté. Le dossier « cru » et « premier cru » de 2017 et les projets de cahier sont sur extranet.inao.gouv.fr, refusé par la session.
 - [ ] **861 pinot noir** : seule source fiable, l’Oxford (11 % du vignoble en 2019, en `selon_livre`). Il manque un chiffre primaire récent (CIVA, FranceAgriMer, douanes) ; Vinous (1 840 ha, 12 %, 2024) et le Figaro Vin (1 337 ha, 9,1 %) divergent et n’ont pas été ouverts. Le graphique du WSET D3 (CIVA 2021) est illisible dans le texte du dépôt de sources.
 - [ ] **Surfaces des grands crus** (864-866) : tirées d’une capture de la brochure du CIVA (Brochure_D13_Grands_Crus, version anglaise, p. 12). Il manque l’année de la brochure ; Kanzlerberg 3,23 ha (CIVA) contre 3,40 ha (cahier). Ranger la brochure dans le dépôt de sources et l’ajouter au registre.
-- [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée) pour les 4 nouvelles cartes (860, 861, 865, 866).
+- [x] **Partenaires** (fait le 30/10 pour toutes les cartes) : relancer `tools/cartes/partenaires.mjs` (liste privée) pour les 4 nouvelles cartes (860, 861, 865, 866).
 - [ ] **CONTEXTE-PROJET** (Projet claude.ai) : reporter le lot Alsace (9 fiches 859-867, 7 vérifiées, 2 à vérifier ; 865 fiches au total).
 - Réseau : vinsalsace.com coupe la connexion depuis le conteneur (même autorisé) ; franceagrimer.fr, extranet.inao.gouv.fr, klevener.fr, v1.vinous.com non autorisés.
 
