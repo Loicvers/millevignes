@@ -1,0 +1,930 @@
+{
+ "deps": [
+  "34",
+  "11",
+  "30"
+ ],
+ "fleuves": [
+  "Aude",
+  "Hérault",
+  "Orb"
+ ],
+ "marges": [
+  0.12,
+  0.1,
+  0.5,
+  0.1
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Grès de Montpellier",
+   "communes": [
+    "Aumelas",
+    "Assas",
+    "Beaulieu",
+    "Boisseron",
+    "Campagne",
+    "Castelnau-le-Lez",
+    "Castries",
+    "Combaillaux",
+    "Cournonsec",
+    "Cournonterral",
+    "Saint-Christol",
+    "Vérargues",
+    "Garrigues",
+    "Gignac",
+    "Guzargues",
+    "Juvignac",
+    "Lavérune",
+    "Lunel",
+    "Lunel-Viel",
+    "Mauguio",
+    "Montagnac",
+    "Montbazin",
+    "Montpellier",
+    "Murviel-lès-Montpellier",
+    "Pignan",
+    "Plaissan",
+    "Poussan",
+    "Prades-le-Lez",
+    "Restinclières",
+    "Saturargues",
+    "Saint-Aunès",
+    "Saint-Bauzille-de-la-Sylve",
+    "Saint-Bauzille-de-Montmel",
+    "Saint-Clément-de-Rivière",
+    "Saint-Drézéry",
+    "Saint-Geniès-des-Mourgues",
+    "Saint-Georges-d'Orques",
+    "Saint-Pargoire",
+    "Saint-Pons-de-Mauchiens",
+    "Saint-Sériès",
+    "Saint-Vincent-de-Barbeyrargues",
+    "Sussargues",
+    "Vailhauquès",
+    "Vendémian",
+    "Villeneuve-lès-Maguelone",
+    "Villeveyrac"
+   ],
+   "deps": [
+    "34"
+   ],
+   "opacite": 0.14,
+   "pos": [
+    2,
+    24,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Pic Saint-Loup",
+   "deps": [
+    "34",
+    "30"
+   ],
+   "communes": [
+    "Assas",
+    "Cazevieille",
+    "Claret",
+    "Fontanès",
+    "Guzargues",
+    "Lauret",
+    "Les Matelles",
+    "Sainte-Croix-de-Quintillargues",
+    "Saint-Gély-du-Fesc",
+    "Saint-Jean-de-Cuculles",
+    "Saint-Mathieu-de-Tréviers",
+    "Sauteyrargues",
+    "Le Triadou",
+    "Vacquières",
+    "Valflaunès",
+    "Brouzet-lès-Quissac",
+    "Corconne"
+   ]
+  },
+  {
+   "label": "Terrasses du Larzac",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Aniane",
+    "Arboras",
+    "Argelliers",
+    "Le Bosc",
+    "Brissac",
+    "Causse-de-la-Selle",
+    "Ceyras",
+    "Gignac",
+    "Jonquières",
+    "Lagamas",
+    "Lauroux",
+    "Mérifons",
+    "Montoulieu",
+    "Montpeyroux",
+    "Moulès-et-Baucels",
+    "Murles",
+    "Octon",
+    "Pégairolles-de-Buèges",
+    "Pégairolles-de-l'Escalette",
+    "Poujols",
+    "Puéchabon",
+    "Saint-André-de-Buèges",
+    "Saint-André-de-Sangonis",
+    "Saint-Félix-de-Lodez",
+    "Saint-Guiraud",
+    "Saint-Jean-de-Buèges",
+    "Saint-Jean-de-Fos",
+    "Saint-Jean-de-la-Blaquière",
+    "Saint-Privat",
+    "Saint-Saturnin-de-Lucian",
+    "Soubès",
+    "Usclas-du-Bosc"
+   ],
+   "pos": [
+    -6,
+    14,
+    "end"
+   ]
+  },
+  {
+   "label": "Faugères",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Faugères",
+    "Autignac",
+    "Cabrerolles",
+    "Caussiniojouls",
+    "Fos",
+    "Laurens",
+    "Roquessels"
+   ]
+  },
+  {
+   "label": "Saint-Chinian",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Assignan",
+    "Babeau-Bouldoux",
+    "Berlou",
+    "Causses-et-Veyran",
+    "Cazedarnes",
+    "Cébazan",
+    "Cessenon-sur-Orb",
+    "Creissan",
+    "Cruzy",
+    "Ferrières-Poussarou",
+    "Murviel-lès-Béziers",
+    "Pierrerue",
+    "Prades-sur-Vernazobre",
+    "Puisserguier",
+    "Quarante",
+    "Roquebrun",
+    "Saint-Chinian",
+    "Saint-Nazaire-de-Ladarez",
+    "Vieussan",
+    "Villespassans"
+   ],
+   "pos": [
+    0,
+    16,
+    "middle"
+   ]
+  },
+  {
+   "label": "Minervois",
+   "deps": [
+    "34",
+    "11"
+   ],
+   "communes": [
+    "Aigues-Vives|11",
+    "Argeliers",
+    "Argens-Minervois",
+    "Azille",
+    "Badens",
+    "Bagnoles",
+    "Bize-Minervois",
+    "Blomac",
+    "Bouilhonnac",
+    "Cabrespine",
+    "Castelnau-d'Aude",
+    "Caunes-Minervois",
+    "Ginestas",
+    "Homps",
+    "Laure-Minervois",
+    "Limousis",
+    "Mailhac",
+    "Malves-en-Minervois",
+    "Marseillette",
+    "Mirepeisset",
+    "Paraza",
+    "Pépieux",
+    "Peyriac-Minervois",
+    "Pouzols-Minervois",
+    "Puichéric",
+    "La Redorte",
+    "Rieux-Minervois",
+    "Roquecourbe-Minervois",
+    "Roubia",
+    "Rustiques",
+    "Saint-Couat-d'Aude",
+    "Saint-Frichoux",
+    "Saint-Nazaire-d'Aude",
+    "Sainte-Valière",
+    "Sallèles-Cabardès",
+    "Salsigne",
+    "Tourouzelle",
+    "Trassanel",
+    "Trausse",
+    "Trèbes",
+    "Ventenac-en-Minervois",
+    "Villalier",
+    "Villarzel-Cabardès",
+    "Villegly",
+    "Villeneuve-Minervois",
+    "Agel",
+    "Aigne",
+    "Aigues-Vives|34",
+    "Azillanet",
+    "Beaufort",
+    "Cassagnoles",
+    "La Caunette",
+    "Cesseras",
+    "Félines-Minervois",
+    "La Livinière",
+    "Minerve",
+    "Montouliers",
+    "Olonzac",
+    "Oupia",
+    "Saint-Jean-de-Minervois",
+    "Siran"
+   ]
+  },
+  {
+   "label": "Corbières",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Albas",
+    "Arquettes-en-Val",
+    "Bages",
+    "Barbaira",
+    "Bizanet",
+    "Boutenac",
+    "Camplong-d'Aude",
+    "Canet",
+    "Capendu",
+    "Cascastel-des-Corbières",
+    "Caunettes-en-Val",
+    "Caves",
+    "Comigne",
+    "Conilhac-Corbières",
+    "Coustouge",
+    "Cruscades",
+    "Cucugnan",
+    "Davejean",
+    "Dernacueillette",
+    "Douzens",
+    "Duilhac-sous-Peyrepertuse",
+    "Durban-Corbières",
+    "Embres-et-Castelmaure",
+    "Escales",
+    "Fabrezan",
+    "Felines-Termenès",
+    "Ferrals-les-Corbières",
+    "Feuilla",
+    "Fitou",
+    "Floure",
+    "Fontcouverte",
+    "Fontiès-d'Aude",
+    "Fontjoncouse",
+    "Fraisse-des-Corbières",
+    "Gruissan",
+    "Jonquières",
+    "Labastide-en-Val",
+    "Lagrasse",
+    "Laroque-de-Fa",
+    "Leucate",
+    "Lézignan-Corbières",
+    "Luc-sur-Orbieu",
+    "Mayronnes",
+    "Maisons",
+    "Montbrun-des-Corbières",
+    "Montgaillard",
+    "Montirat",
+    "Montlaur",
+    "Montredon-des-Corbières",
+    "Montséret",
+    "Monze",
+    "Moux",
+    "Narbonne",
+    "Névian",
+    "Ornaisons",
+    "Padern",
+    "Palairac",
+    "La Palme",
+    "Paziols",
+    "Peyriac-de-Mer",
+    "Port-la-Nouvelle",
+    "Portel-des-Corbières",
+    "Pradelles-en-Val",
+    "Quintillan",
+    "Ribaute",
+    "Rieux-en-Val",
+    "Roquefort-des-Corbières",
+    "Rouffiac-des-Corbières",
+    "Saint-André-de-Roquelongue",
+    "Saint-Jean-de-Barrou",
+    "Saint-Laurent-de-la-Cabrerisse",
+    "Saint-Pierre-des-Champs",
+    "Serviès-en-Val",
+    "Sigean",
+    "Talairan",
+    "Taurize",
+    "Termes",
+    "Thézan-des-Corbières",
+    "Tournissan",
+    "Treilles",
+    "Tuchan",
+    "Vignevieille",
+    "Villar-en-Val",
+    "Villeneuve-les-Corbières",
+    "Villerouge-Termenès",
+    "Villesèque-des-Corbières",
+    "Villetritouls"
+   ]
+  },
+  {
+   "label": "Fitou",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Cascastel-des-Corbières",
+    "Caves",
+    "Fitou",
+    "Leucate",
+    "La Palme",
+    "Paziols",
+    "Treilles",
+    "Tuchan",
+    "Villeneuve-les-Corbières"
+   ]
+  },
+  {
+   "label": "Limoux",
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Ajac",
+    "Alet-les-Bains",
+    "Antugnac",
+    "Bouriège",
+    "Campagne-sur-Aude",
+    "Cassaignes",
+    "Castelreng",
+    "Cépie",
+    "Conilhac-de-la-Montagne",
+    "Couiza",
+    "Cournanel",
+    "Coustaussa",
+    "La Digne-d'Amont",
+    "La Digne-d'Aval",
+    "Espéraza",
+    "Fa",
+    "Festes-et-Saint-André",
+    "Gaja-et-Villedieu",
+    "Gardie",
+    "Ladern-sur-Lauquet",
+    "Limoux",
+    "Loupia",
+    "Luc-sur-Aude",
+    "Magrie",
+    "Malras",
+    "Montazels",
+    "Pauligne",
+    "Peyrolles",
+    "Pieusse",
+    "Pomas",
+    "Roquetaillade",
+    "Rouffiac-d'Aude",
+    "Saint-Couat-du-Razès",
+    "Saint-Hilaire",
+    "Saint-Polycarpe",
+    "La Serpent",
+    "Serres",
+    "Tourreilles",
+    "Villar-Saint-Anselme",
+    "Villebazy",
+    "Villelongue-d'Aude"
+   ]
+  },
+  {
+   "label": "Picpoul de Pinet",
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Pinet",
+    "Pomérols",
+    "Florensac",
+    "Castelnau-de-Guers",
+    "Mèze",
+    "Montagnac"
+   ],
+   "pos": [
+    4,
+    12,
+    "start"
+   ]
+  },
+  {
+   "label": "La Clape",
+   "communes": [
+    "Armissan",
+    "Fleury",
+    "Gruissan",
+    "Narbonne",
+    "Salles-d'Aude",
+    "Vinassan"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.36,
+   "pos": [
+    34,
+    -22,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Cabardès",
+   "communes": [
+    "Alzonne",
+    "Aragon",
+    "Conques-sur-Orbiel",
+    "Fournes-Cabardès",
+    "Fraisse-Cabardès",
+    "Les Ilhes",
+    "Lastours",
+    "Montolieu",
+    "Moussoulens",
+    "Pennautier",
+    "Pezens",
+    "Sainte-Eulalie",
+    "Ventenac-Cabardès",
+    "Villanière",
+    "Villardonnel",
+    "Villedubert",
+    "Villegailhenc",
+    "Villemoustaussou"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.3
+  },
+  {
+   "label": "Malepère",
+   "communes": [
+    "Alaigne",
+    "Alairac",
+    "Arzens",
+    "Bellegarde-du-Razès",
+    "Belvèze-du-Razès",
+    "Brézilhac",
+    "Brugairolles",
+    "Cailhau",
+    "Cailhavel",
+    "Cambieure",
+    "Carcassonne",
+    "La Cassaigne",
+    "Caux-et-Sauzens",
+    "Couffoulens",
+    "La Courtète",
+    "Donazac",
+    "Fanjeaux",
+    "Fenouillet-du-Razès",
+    "Ferran",
+    "La Force",
+    "Gramazie",
+    "Hounoux",
+    "Lasserre-de-Prouille",
+    "Laurac",
+    "Lauraguel",
+    "Lavalette",
+    "Malviès",
+    "Mazerolles-du-Razès",
+    "Montclar",
+    "Montgradail",
+    "Montréal",
+    "Preixan",
+    "Roullens",
+    "Routier",
+    "Saint-Martin-de-Villereglan",
+    "Villarzel-du-Razès",
+    "Villeneuve-lès-Montréal",
+    "Villesèquelande",
+    "Villesiscle"
+   ],
+   "deps": [
+    "11"
+   ],
+   "opacite": 0.2
+  },
+  {
+   "label": "Berlou",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Berlou",
+    "Cessenon-sur-Orb",
+    "Prades-sur-Vernazobre",
+    "Roquebrun",
+    "Vieussan"
+   ],
+   "pos": [
+    -8,
+    -6,
+    "end"
+   ]
+  },
+  {
+   "label": "Roquebrun",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Cessenon-sur-Orb",
+    "Roquebrun",
+    "Saint-Nazaire-de-Ladarez",
+    "Vieussan"
+   ],
+   "pos": [
+    8,
+    -10,
+    "start"
+   ]
+  },
+  {
+   "label": "La Livinière",
+   "discret": true,
+   "deps": [
+    "11",
+    "34"
+   ],
+   "communes": [
+    "Azille|11",
+    "Azillanet|34",
+    "Cesseras|34",
+    "Félines-Minervois|34",
+    "La Livinière|34",
+    "Siran|34"
+   ]
+  },
+  {
+   "label": "Boutenac",
+   "discret": true,
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Boutenac",
+    "Fabrezan",
+    "Ferrals-les-Corbières",
+    "Lézignan-Corbières",
+    "Luc-sur-Orbieu",
+    "Montséret",
+    "Ornaisons",
+    "Saint-André-de-Roquelongue",
+    "Saint-Laurent-de-la-Cabrerisse",
+    "Thézan-des-Corbières"
+   ]
+  },
+  {
+   "label": "Pézenas",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Adissan",
+    "Aspiran",
+    "Caux",
+    "Fontès",
+    "Fouzilhon",
+    "Gabian",
+    "Lieuran-Cabrières",
+    "Montesquieu",
+    "Neffiès",
+    "Nizas",
+    "Paulhan",
+    "Péret",
+    "Pézenas",
+    "Roujan",
+    "Vailhan"
+   ]
+  },
+  {
+   "label": "Cabrières",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Cabrières"
+   ],
+   "pos": [
+    -8,
+    -2,
+    "end"
+   ]
+  },
+  {
+   "label": "La Méjanelle",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Castelnau-le-Lez",
+    "Mauguio",
+    "Montpellier",
+    "Saint-Aunès"
+   ],
+   "pos": [
+    16,
+    10,
+    "start"
+   ]
+  },
+  {
+   "label": "Quatourze",
+   "discret": true,
+   "deps": [
+    "11"
+   ],
+   "communes": [
+    "Narbonne"
+   ],
+   "pos": [
+    8,
+    4,
+    "start"
+   ]
+  },
+  {
+   "label": "Saint-Christol",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Saint-Christol"
+   ],
+   "pos": [
+    22,
+    -8,
+    "start"
+   ]
+  },
+  {
+   "label": "Saint-Drézéry",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Castries",
+    "Saint-Drézéry",
+    "Sussargues"
+   ],
+   "pos": [
+    4,
+    -14,
+    "start"
+   ]
+  },
+  {
+   "label": "Saint-Georges-d'Orques",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Juvignac",
+    "Lavérune",
+    "Murviel-lès-Montpellier",
+    "Pignan",
+    "Saint-Georges-d'Orques"
+   ],
+   "pos": [
+    -4,
+    16,
+    "middle"
+   ]
+  },
+  {
+   "label": "Saint-Saturnin",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Arboras",
+    "Jonquières",
+    "Saint-Guiraud",
+    "Saint-Saturnin-de-Lucian"
+   ],
+   "pos": [
+    -6,
+    -8,
+    "end"
+   ]
+  },
+  {
+   "label": "Sommières",
+   "discret": true,
+   "deps": [
+    "30"
+   ],
+   "communes": [
+    "Aspères",
+    "Brouzet-lès-Quissac",
+    "Calvisson",
+    "Carnas",
+    "Crespian",
+    "Fontanès",
+    "Gailhan",
+    "Junas",
+    "Langlade",
+    "Lecques",
+    "Montmirat",
+    "Nîmes",
+    "Saint-Clément",
+    "Salinelles",
+    "Sardan",
+    "Sommières",
+    "Souvignargues",
+    "Vic-le-Fesq"
+   ],
+   "pos": [
+    -6,
+    -6,
+    "end"
+   ]
+  },
+  {
+   "label": "Montpeyroux",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Arboras",
+    "Montpeyroux",
+    "Lagamas",
+    "Saint-Jean-de-Fos"
+   ]
+  },
+  {
+   "label": "Clairette du Languedoc",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Adissan",
+    "Aspiran",
+    "Le Bosc",
+    "Cabrières",
+    "Ceyras",
+    "Fontès",
+    "Lieuran-Cabrières",
+    "Nizas",
+    "Paulhan",
+    "Péret",
+    "Saint-André-de-Sangonis"
+   ]
+  },
+  {
+   "label": "Muscat de Frontignan",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Frontignan",
+    "Vic-la-Gardiole"
+   ],
+   "pos": [
+    8,
+    12,
+    "start"
+   ]
+  },
+  {
+   "label": "Muscat de Lunel",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Vérargues",
+    "Lunel",
+    "Lunel-Viel",
+    "Saturargues"
+   ],
+   "pos": [
+    8,
+    -4,
+    "start"
+   ]
+  },
+  {
+   "label": "Muscat de Mireval",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Mireval",
+    "Vic-la-Gardiole"
+   ],
+   "pos": [
+    -8,
+    10,
+    "end"
+   ]
+  },
+  {
+   "label": "Muscat de Saint-Jean-de-Minervois",
+   "discret": true,
+   "deps": [
+    "34"
+   ],
+   "communes": [
+    "Saint-Jean-de-Minervois"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Montpellier",
+   "dep": "34",
+   "pos": [
+    6,
+    -5,
+    "start"
+   ]
+  },
+  {
+   "nom": "Béziers",
+   "dep": "34"
+  },
+  {
+   "nom": "Narbonne",
+   "dep": "11",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Carcassonne",
+   "dep": "11"
+  },
+  {
+   "nom": "Nîmes",
+   "dep": "30"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Aude",
+   "lon": 2.62,
+   "lat": 43.235,
+   "rot": -5
+  },
+  {
+   "t": "Méditerranée",
+   "lon": 3.75,
+   "lat": 43.25
+  }
+ ]
+}
