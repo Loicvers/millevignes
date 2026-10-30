@@ -25,7 +25,12 @@
   },
   {
    "nom": "Roanne",
-   "dep": "42"
+   "dep": "42",
+   "pos": [
+    6,
+    10,
+    "start"
+   ]
   }
  ],
  "zones": [
@@ -156,6 +161,29 @@
     "Saint-Thomas-la-Garde",
     "Sainte-Agathe-la-Bouteresse",
     "Trelins"
+   ]
+  },
+  {
+   "label": "Côte Roannaise",
+   "discret": true,
+   "deps": [
+    "42"
+   ],
+   "communes": [
+    "Ambierle",
+    "Bully",
+    "Changy",
+    "Le Crozet",
+    "Lentigny",
+    "La Pacaudière",
+    "Renaison",
+    "Saint-Alban-les-Eaux",
+    "Saint-André-d’Apchon",
+    "Saint-Haon-le-Châtel",
+    "Saint-Haon-le-Vieux",
+    "Saint-Jean-Saint-Maurice-sur-Loire",
+    "Villemontais",
+    "Villerest"
    ]
   }
  ]

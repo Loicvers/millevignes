@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-898 fiches : 882 vérifiées, 16 à vérifier (22 points).
+898 fiches : 883 vérifiées, 15 à vérifier (20 points).
 Hors dette : 2213 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
@@ -53,7 +53,3 @@ Hors dette : 2213 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 891** (p.?) — Orléans et Orléans-Cléry : le vignoble le plus au nord de la Loire, meunier d’un côté, cabernet franc de l’autre
 - [ ] Orléans : cépages (chardonnay des blancs, meunier et pinot noir des rouges et rosés), nombre de communes (13) et rendements : cahier de 2011, remplacé par un nouveau cahier homologué par l’arrêté du 27 octobre 2026 (JORF du 29 octobre 2026), non lu
 - [ ] Orléans-Cléry : cahier de 2011 ; une modification a été soumise à opposition au JORF du 28 juin 2026, texte non lu
-
-**Fiche 900** (p.?) — Côte Roannaise et Côtes du Forez : deux appellations de gamay, en rouge et en rosé, dans la Loire amont
-- [ ] Côte Roannaise : cahier des charges non consulté (introuvable au BO-agri, Légifrance bloqué) ; les 14 communes reposent sur la seule fiche INAO
-- [ ] Côtes du Forez : cahier de 2011 seul trouvé au BO-agri, vérifier l’absence de version plus récente

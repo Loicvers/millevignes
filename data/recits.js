@@ -1400,12 +1400,12 @@ const RECITS = [
    "<b>Sancerre.</b> Quatorze communes du Cher ; un blanc de sauvignon seul, un rouge et un rosé de pinot noir seul. Le terroir se lit en trois sols : terres blanches (marnes kimméridgiennes), caillottes (calcaires) et silex. Historiquement planté de pinot noir, Sancerre s’est replanté en sauvignon après le phylloxéra.",
    "<b>Les deux Pouilly.</b> Autour de Pouilly-sur-Loire, dans la Nièvre : le Pouilly-Fumé, de sauvignon seul, sur les mêmes familles de sols, et le Pouilly-sur-Loire, de chasselas, plus rare. À ne pas confondre avec le Pouilly-Fuissé mâconnais.",
    "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant.",
-   "<b>Plus au sud.</b> Le long de l’Allier et de la Loire amont, le gamay domine : Saint-Pourçain, où le tressallier entre dans les blancs, Côtes d’Auvergne et ses cinq dénominations autour de Clermont-Ferrand."
+   "<b>Plus au sud.</b> Le long de l’Allier et de la Loire amont, le gamay domine : Saint-Pourçain, où le tressallier entre dans les blancs, Côtes d’Auvergne et ses cinq dénominations autour de Clermont-Ferrand, Côte Roannaise et Côtes du Forez sur le granite."
   ],
   defend: "Le Centre-Loire est la terre du sauvignon, et à Sancerre comme à Pouilly le sol, terres blanches, caillottes ou silex, change le vin d’une même colline.",
   client: "« Sancerre n’est pas qu’un blanc : il existe aussi en rouge et en rosé de pinot noir. Et le Pouilly-Fumé, c’est du sauvignon de Loire, rien à voir avec le Pouilly-Fuissé de Bourgogne. »",
   filRouge: "Plus au sud-ouest, comment Bordeaux, à l’inverse de la Loire, a-t-il fait de l’assemblage sa signature ?",
-  src: "fiches 456 à 458, 690, 694 et 893 à 899 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 456 à 458, 690, 694 et 893 à 900 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Champagne : panorama et appellations",
