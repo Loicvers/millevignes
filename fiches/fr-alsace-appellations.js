@@ -135,7 +135,7 @@ FICHES.push(
     source: "france",
     chapitre: "Alsace : grands crus et mentions",
     titre: "De 1 à 51 : l’histoire des grands crus d’Alsace",
-    synth: "La catégorie naît en 1975 avec un seul lieu-dit, le Schlossberg. Un décret de 1983 reconnaît 25 nouveaux crus (26 en tout), un autre de 1992 en ajoute 24 (50 en tout), et le Kaefferkopf devient le 51e en 2007. Depuis le décret de 2011, chaque cru est une AOC à part entière, « Alsace grand cru » suivi de son nom, sous un cahier des charges commun ; avant, il n’existait qu’une AOC « Alsace grand cru » avec un lieu-dit. Ce que la mention promet : un lieu délimité, des cépages limités, la récolte manuelle, un rendement de base de 50 hl/ha en blanc et un élevage jusqu’au 1er novembre de l’année suivant la récolte. Pour un client : les grands crus sont une collection qui s’est construite en trois temps, pas une liste fixée d’un coup.",
+    synth: "La catégorie naît en 1975 avec un seul lieu-dit, le Schlossberg. Un décret de 1983 reconnaît 25 nouveaux crus (26 en tout), un autre de 1992 en ajoute 24 (50 en tout), et le Kaefferkopf devient le 51e en 2007. Depuis le décret de 2011, chaque cru est une AOC à part entière, « Alsace grand cru » suivi de son nom, sous un cahier des charges commun ; avant, il n’existait qu’une AOC « Alsace grand cru » avec un lieu-dit. Ce que la mention promet : un lieu délimité, des cépages limités, la récolte manuelle, un rendement de base de 50 hl/ha en blanc et un élevage jusqu’au 1er novembre de l’année suivant la récolte. En volume, les grands crus restent rares : environ 37 700 hl par an en moyenne de 2019 à 2023 selon l’INAO, soit à peine 4 % des vins d’AOC d’Alsace, crémant compris, ce que confirme l’Oxford. Pour un client : les grands crus sont une collection qui s’est construite en trois temps, pas une liste fixée d’un coup.",
     mnemo: "Un escalier de quatre paliers qui se lit comme un compteur : 1, 26, 50, 51, puis un coup de tampon en 2011 qui fait de chaque marche une appellation.",
     flash: {"q":"Combien de nouveaux grands crus le décret de 1992 reconnaît-il, et combien y en a-t-il alors en tout ?","a":"24 nouveaux crus, soit 50 en tout.","keys":[["24"],["50"]]},
     qcm: {"q":"Quel lieu-dit devient le 51e grand cru d’Alsace en 2007 ?","opts":["Le Kaefferkopf","Le Zotzenberg","Le Rangen","Le Hengst"],"good":0,"expl":"Le Kaefferkopf, à Ammerschwihr, est le dernier venu. Les trois autres sont des grands crus plus anciens : le Rangen et le Hengst datent de 1983, le Zotzenberg de 1992."},
@@ -145,7 +145,7 @@ FICHES.push(
     status: "verified",
     to_check: [],
     selon_livre: [],
-    src: "Cahier des charges des 51 AOC Alsace grand cru, BO Agri 15 janv. 2026 (décrets de 1975, 1983, 1992, 2007 ; décret 2011-1373 du 25 oct. 2011) ; Oxford Companion to Wine 5e (2023), « Alsace Grand Cru » ; WSET Level 4 D3 (août 2024), ch. 5"
+    src: "Cahier des charges des 51 AOC Alsace grand cru, BO Agri 15 janv. 2026 (décrets de 1975, 1983, 1992, 2007 ; décret 2011-1373 du 25 oct. 2011) ; Oxford Companion to Wine 5e (2023), « Alsace Grand Cru » ; WSET Level 4 D3 (août 2024), ch. 5 ; INAO, Mémento 2025, données statistiques et économiques de 2023, Grand Est (surfaces en production, volumes moyens 2019-2023) ; Oxford Companion to Wine, 5e éd. (2023), « Alsace »"
   },
   {
     id: 865,
