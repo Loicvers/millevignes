@@ -1482,6 +1482,38 @@ const RECITS = [
   src: "fiches 406, 472 à 475 et 791 à 799 du site (INAO, cahiers des charges ; BRGM ; Inter Beaujolais)"
  },
  {
+  chapitre: "Jura : panorama et appellations",
+  question: "Plus à l’est, au pied d’un autre massif, comment le Jura fait-il des vins que l’on ne trouve nulle part ailleurs ?",
+  fil: [
+   "Le vignoble jurassien est une bande étroite et discontinue, large de quelques kilomètres, vers 250 à 450 m d’altitude : c’est le Revermont, au pied du premier plateau calcaire du massif, tourné vers la plaine de la Bresse.",
+   "<b>Un climat frais et humide.</b> Plus de 1000 mm de pluie par an, nettement plus qu’en Bourgogne, des hivers froids, mais des automnes relativement secs.",
+   "<b>Des marnes sous un rebord calcaire.</b> Les sols sont des marnes et des argiles du Trias et du Lias, sous un rebord de calcaire dur, avec des éboulis calcaires sur les coteaux.",
+   "<b>Cinq cépages.</b> Chardonnay et savagnin pour les blancs ; pinot noir, poulsard et trousseau pour les rouges et les rosés.",
+   "<b>Deux vins singuliers.</b> Le vin jaune, de savagnin, reste en fût sans ouillage jusqu’au 15 décembre de la 6e année suivant la récolte, dont au moins 60 mois sous voile, et se vend en clavelin de 62 cl à partir du 1er janvier de la 7e année. Le vin de paille vient de raisins séchés hors souche au moins six semaines, pressés très riches en sucre.",
+   "<b>Une poignée d’appellations.</b> Arbois, L’Étoile, Château-Chalon, Côtes du Jura et Crémant du Jura, auxquelles s’ajoute le macvin."
+  ],
+  defend: "Le Jura est un petit vignoble frais, sur marnes, qui doit sa singularité à deux façons de faire : laisser le savagnin vieillir sous voile pour le vin jaune, sécher les raisins pour le vin de paille.",
+  client: "« Le Jura, c’est le pays du vin jaune : du savagnin resté plus de six ans en fût, sous un voile de levures. Mais on y fait aussi des blancs frais, des rouges légers et un crémant. »",
+  filRouge: "Six appellations, deux mentions : comment s’y retrouver entre arbois, côtes-du-jura, château-chalon et vin jaune ?",
+  src: "fiches 407 et 813 du site (cahiers des charges des AOC du Jura, BO-agri ; WSET D3 ; Oxford Companion ; World Atlas of Wine)"
+ },
+ {
+  chapitre: "Jura : appellations et vin jaune",
+  question: "Six appellations, deux mentions : comment s’y retrouver entre arbois, côtes-du-jura, château-chalon et vin jaune ?",
+  fil: [
+   "Le Jura compte six AOC viticoles, qu’on range en trois étages.",
+   "<b>L’appellation régionale.</b> Les Côtes du Jura couvrent tout le vignoble, une bande d’environ 80 km de Saint-Amour au nord de Salins-les-Bains, en blanc, rouge et rosé, sans dénomination complémentaire.",
+   "<b>Trois appellations locales.</b> Arbois, au nord, reconnue en 1936, fait blancs, rouges, rosés, vin jaune et vin de paille ; la mention Pupillin y est réservée aux vins d’une seule commune, aux marnes très pentues favorables au poulsard. L’Étoile, de quatre communes, ne fait que des blancs. Château-Chalon, de quatre communes aussi, ne fait que du vin jaune.",
+   "<b>Deux spécialités sur toute l’aire.</b> Le crémant du Jura, reconnu en 1995, est le seul mousseux d’appellation. Le macvin du Jura est un vin de liqueur : un moût muté pendant les vendanges avec de l’eau-de-vie de marc de la même exploitation, puis élevé au moins 10 mois sous bois.",
+   "<b>Des mentions, pas des appellations.</b> Vin jaune et vin de paille s’ajoutent au nom d’une AOC. Le vin jaune existe en Arbois, Côtes du Jura, L’Étoile et Château-Chalon ; le vin de paille en Arbois, Côtes du Jura et L’Étoile, pas à Château-Chalon.",
+   "<b>Deux voies pour les blancs.</b> En fût ouillé ou en cuve, le blanc reste frais et fruité ; en fût non rempli, un voile peut se former et le style devient oxydatif. Côté rouges, le poulsard donne un vin très pâle aux tanins faibles, le trousseau et le pinot noir des vins plus structurés."
+  ],
+  defend: "Au Jura, le nom de l’appellation dit le lieu, la mention dit le style : un « arbois vin jaune » et un « château-chalon » sont tous deux des vins jaunes, mais seul Château-Chalon n’en fait pas d’autre.",
+  client: "« Château-Chalon, c’est uniquement du vin jaune. Un arbois ou un côtes-du-jura peut être un blanc frais, un blanc sous voile, un rouge léger, ou un vin jaune : regardez l’étiquette. »",
+  filRouge: "Plus au sud, au pied des Alpes, comment la Savoie fait-elle d’îlots de vigne une région à part ?",
+  src: "fiches 492, 493, 814 à 817, 819 et 821 du site (cahiers des charges des AOC du Jura, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
   chapitre: "Languedoc : panorama et appellations",
   question: "Plus au sud-ouest, comment s’organisent les appellations du Languedoc ?",
   fil: [

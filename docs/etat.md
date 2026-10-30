@@ -5,8 +5,8 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 828 (dernier id : 830) · exercices : 4276
 - Vérifiées : 820 · à vérifier : 8 (12 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2094
 - Niveaux : Fondamental 248 · Intermédiaire 446 · Pointu 134
-- Cours (Approfondir) : 106 · schémas : 251
-- Lexique : 84 termes · récits de chapitre : 84
+- Cours (Approfondir) : 106 · schémas : 255
+- Lexique : 84 termes · récits de chapitre : 86
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
@@ -34,7 +34,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
 | fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
-| fr-jura-appellations.js | 10 | 492–821 | hors livre | 8 | 0 | 0 |
+| fr-jura-appellations.js | 10 | 492–821 | hors livre | 8 | 0 | 4 |
 | fr-jura.js | 2 | 407–813 | hors livre | 2 | 0 | 1 |
 | fr-languedoc-appellations.js | 5 | 476–480 | hors livre | 5 | 0 | 0 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
