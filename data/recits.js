@@ -1459,12 +1459,13 @@ const RECITS = [
    "<b>Une histoire entre deux pays.</b> Française au XVIIe siècle, allemande en 1871, la région subit l’oïdium et le phylloxéra et replante des hybrides en plaine. Revenue à la France, elle reconquiert ses coteaux surtout à partir des années 1960.",
    "<b>Des vins de cépage.</b> Presque tous blancs : riesling, gewurztraminer, pinot gris et muscat, les « nobles », avec le pinot blanc, le sylvaner et le pinot noir. Le cépage est sur l’étiquette, et depuis le millésime 2021, la sucrosité aussi.",
    "<b>Trois appellations.</b> Alsace, avec ses dénominations géographiques et ses lieux-dits, alsace grand cru et crémant d’alsace. La bouteille flûte signe la région.",
+   "<b>Commune, couleur, assemblage.</b> Treize dénominations communales précisent l’origine, avec des rendements plus bas : la plupart sont blanches, Ottrott, Rodern et Saint-Hippolyte sont rouges. Les rouges et rosés sont de pinot noir ; l’edelzwicker, lui, se passe de nom de cépage.",
    "<b>Le marché.</b> Coopératives et maisons familiales pèsent lourd ; selon les chiffres du CIVA (2021), environ sept bouteilles sur dix se vendent en France, et la Belgique est le premier client à l’export."
   ],
   defend: "L’Alsace, c’est un vignoble du nord rendu sec et lumineux par les Vosges, qui parle cépage plutôt que lieu, et dont l’étiquette dit désormais aussi la douceur.",
   client: "« En Alsace, regardez d’abord le cépage : riesling tendu, gewurztraminer parfumé, pinot gris ample. Puis la mention sec, demi-sec, moelleux ou doux : elle vous évite la surprise. »",
   filRouge: "Et quand un lieu-dit précis s’ajoute au cépage, que promet la mention « grand cru » ?",
-  src: "fiches 405, 470, 471 et 701 à 705 du site (WSET D3, Oxford Companion, INAO, Vitisphere, CIVA via le WSET)"
+  src: "fiches 405, 470, 471, 701 à 705, 859, 861 et 862 du site (WSET D3, Oxford Companion, INAO, Vitisphere, CIVA via le WSET)"
  },
  {
   chapitre: "Alsace : grands crus et mentions",
@@ -1472,6 +1473,8 @@ const RECITS = [
   fil: [
    "Deux précisions peuvent s’ajouter : le lieu, avec les grands crus, et la maturité, avec les mentions vendanges tardives et sélection de grains nobles, possibles en alsace comme en grand cru.",
    "<b>51 grands crus.</b> Chacun est une appellation à part depuis 2011, délimitée sur un lieu-dit. Les cépages nobles y règnent ; le pinot noir n’est admis que sur le Hengst, le Kirchberg de Barr et le Vorbourg, et le Zotzenberg accepte le sylvaner.",
+   "<b>De 1 à 51.</b> Le Schlossberg seul en 1975, 25 crus de plus en 1983, 24 en 1992, le Kaefferkopf en 2007 : 14 dans le Bas-Rhin, autour de Barr et d’Andlau, 37 dans le Haut-Rhin, de Bergheim à Thann.",
+   "<b>Un règlement commun.</b> Récolte à la main, 50 hl/ha de base en blanc, enrichissement bridé (interdit pour les rouges), élevage au moins jusqu’au 1er novembre de l’année suivante.",
    "<b>Une roche par cru.</b> Granite au Brand, grès vosgien au Kessler, roches volcaniques et sédimentaires au Rangen, dolomies au Geisberg : la mosaïque alsacienne se lit d’un grand cru à l’autre.",
    "<b>Vendanges tardives et grains nobles.</b> Des raisins de cépages nobles, cueillis surmûris, sans enrichissement ; la sélection de grains nobles exige une richesse en sucre encore plus élevée à la vendange. La mention dit la richesse du raisin, pas le sucre du vin.",
    "<b>Le crémant.</b> À côté, le crémant d’alsace, effervescent de seconde fermentation en bouteille, souvent à base de pinot blanc."
@@ -1479,7 +1482,7 @@ const RECITS = [
   defend: "En Alsace, « grand cru » désigne un lieu et une roche, pas un style ; VT et SGN désignent une maturité, pas un lieu.",
   client: "« Grand cru, c’est un coteau précis, avec son sol : un riesling du Brand, sur granite, ne ressemble pas à celui du Kessler, sur grès. Vendanges tardives, c’est un raisin cueilli très mûr : souvent un vin plus riche, parfois doux. »",
   filRouge: "Et en Bourgogne, où l’on nomme le lieu plutôt que le cépage, comment s’organise la hiérarchie ?",
-  src: "fiches 405, 467 à 471 et 702 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 405, 467 à 471, 702 et 864 à 867 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Beaujolais : panorama et appellations",
