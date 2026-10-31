@@ -1,0 +1,155 @@
+{
+ "deps": [
+  "33"
+ ],
+ "fleuves": [
+  "Dordogne",
+  "Isle"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Libourne",
+   "dep": "33"
+  },
+  {
+   "nom": "Castillon-la-Bataille",
+   "dep": "33"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Saint-Émilion",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Saint-Christophe-des-Bardes",
+    "Saint-Émilion",
+    "Saint-Étienne-de-Lisse",
+    "Saint-Hippolyte",
+    "Saint-Laurent-des-Combes",
+    "Saint-Pey-d'Armens",
+    "Saint-Sulpice-de-Faleyrens",
+    "Vignonet",
+    "Libourne"
+   ]
+  },
+  {
+   "label": "Pomerol",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Pomerol",
+    "Libourne",
+    "Lalande-de-Pomerol",
+    "Saint-Émilion",
+    "Les Artigues-de-Lussac",
+    "Lussac",
+    "Montagne",
+    "Néac"
+   ]
+  },
+  {
+   "label": "Lalande-de-Pomerol",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Lalande-de-Pomerol",
+    "Néac"
+   ]
+  },
+  {
+   "label": "Fronsac",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Fronsac",
+    "La Rivière",
+    "Saillans",
+    "Saint-Aignan",
+    "Saint-Germain-de-la-Rivière",
+    "Saint-Michel-de-Fronsac",
+    "Galgon"
+   ]
+  },
+  {
+   "label": "Canon-Fronsac",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Fronsac",
+    "Saint-Michel-de-Fronsac"
+   ]
+  },
+  {
+   "label": "Montagne-Saint-Émilion",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Montagne"
+   ]
+  },
+  {
+   "label": "Lussac-Saint-Émilion",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Lussac"
+   ]
+  },
+  {
+   "label": "Puisseguin-Saint-Émilion",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Puisseguin"
+   ]
+  },
+  {
+   "label": "Castillon Côtes de Bordeaux",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Belvès-de-Castillon",
+    "Castillon-la-Bataille",
+    "Gardegan-et-Tourtirac",
+    "Les Salles-de-Castillon",
+    "Puisseguin",
+    "Sainte-Colombe",
+    "Saint-Genès-de-Castillon",
+    "Saint-Magne-de-Castillon",
+    "Saint-Philippe-d’Aiguille"
+   ]
+  },
+  {
+   "label": "Francs Côtes de Bordeaux",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Francs",
+    "Saint-Cibard",
+    "Tayac"
+   ]
+  }
+ ]
+}

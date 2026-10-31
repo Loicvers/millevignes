@@ -1,0 +1,179 @@
+{
+ "deps": [
+  "33"
+ ],
+ "fleuves": [
+  "Garonne",
+  "Dordogne"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Bordeaux",
+   "dep": "33"
+  },
+  {
+   "nom": "Langon",
+   "dep": "33"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Graves",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Arbanats",
+    "Ayguemorte-les-Graves",
+    "Beautiran",
+    "Bègles",
+    "La Brède",
+    "Budos",
+    "Cabanac-et-Villagrains",
+    "Cadaujac",
+    "Canéjan",
+    "Castres-Gironde",
+    "Cérons",
+    "Cestas",
+    "Eysines",
+    "Gradignan",
+    "Guillos",
+    "Le Haillan",
+    "Illats",
+    "Isle-Saint-Georges",
+    "Landiras",
+    "Langon",
+    "Léogeats",
+    "Léognan",
+    "Martillac",
+    "Mazères",
+    "Mérignac",
+    "Pessac",
+    "Podensac",
+    "Portets",
+    "Pujols-sur-Ciron",
+    "Roaillan",
+    "Saint-Médard-d’Eyrans",
+    "Saint-Michel-de-Rieufret",
+    "Saint-Morillon",
+    "Saint-Pardon-de-Conques",
+    "Saint-Pierre-de-Mons",
+    "Saint-Selve",
+    "Saucats",
+    "Talence",
+    "Toulenne",
+    "Villenave-d’Ornon",
+    "Virelade",
+    "Coimères"
+   ]
+  },
+  {
+   "label": "Pessac-Léognan",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Cadaujac",
+    "Canéjan",
+    "Gradignan",
+    "Léognan",
+    "Martillac",
+    "Mérignac",
+    "Pessac",
+    "Saint-Médard-d’Eyrans",
+    "Talence",
+    "Villenave-d’Ornon"
+   ]
+  },
+  {
+   "label": "Sauternes",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Barsac",
+    "Bommes",
+    "Fargues",
+    "Preignac",
+    "Sauternes"
+   ]
+  },
+  {
+   "label": "Barsac",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Barsac"
+   ]
+  },
+  {
+   "label": "Cérons",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Cérons",
+    "Illats",
+    "Podensac"
+   ]
+  },
+  {
+   "label": "Loupiac",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Loupiac"
+   ]
+  },
+  {
+   "label": "Sainte-Croix-du-Mont",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Sainte-Croix-du-Mont"
+   ]
+  },
+  {
+   "label": "Cadillac",
+   "discret": true,
+   "deps": [
+    "33"
+   ],
+   "communes": [
+    "Baurech",
+    "Béguey",
+    "Cadillac",
+    "Capian",
+    "Cardan",
+    "Donzac",
+    "Gabarnac",
+    "Haux",
+    "Langoiran",
+    "Laroque",
+    "Lestiac-sur-Garonne",
+    "Monprimblanc",
+    "Omet",
+    "Paillet",
+    "Rions",
+    "Saint-Germain-de-Grave",
+    "Saint-Maixant",
+    "Semens",
+    "Tabanac",
+    "Le Tourne",
+    "Verdelais",
+    "Villenave-de-Rions"
+   ]
+  }
+ ]
+}
