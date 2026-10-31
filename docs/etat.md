@@ -2,11 +2,11 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 938 (dernier id : 940) · exercices : 4798
-- Vérifiées : 925 · à vérifier : 13 (17 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2358
-- Niveaux : Fondamental 253 · Intermédiaire 498 · Pointu 187
-- Cours (Approfondir) : 214 · schémas : 408
-- Lexique : 84 termes · récits de chapitre : 92
+- Fiches : 946 (dernier id : 948) · exercices : 4837
+- Vérifiées : 933 · à vérifier : 13 (17 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2386
+- Niveaux : Fondamental 252 · Intermédiaire 501 · Pointu 193
+- Cours (Approfondir) : 214 · schémas : 417
+- Lexique : 84 termes · récits de chapitre : 94
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
@@ -31,7 +31,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 8 |
 | fr-champagne.js | 7 | 403–700 | hors livre | 7 | 1 | 2 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 1 |
-| fr-corse-appellations.js | 2 | 496–497 | hors livre | 2 | 0 | 0 |
+| fr-corse-appellations.js | 10 | 496–948 | hors livre | 10 | 0 | 9 |
 | fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
 | fr-jura-appellations.js | 10 | 492–821 | hors livre | 8 | 0 | 4 |

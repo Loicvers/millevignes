@@ -1679,5 +1679,32 @@ const RECITS = [
   client: "« Pour un rosé sûr, un côtes-de-provence ; pour un secteur précis, une dénomination comme Sainte-Victoire ; pour un vin de caractère, un bandol rouge, un cassis blanc ou un palette. »",
   filRouge: "Plus à l’est encore, sur l’île de Beauté, comment la Corse marie-t-elle cépages italiens et appellations françaises ?",
   src: "fiches 489, 490, 491 et 834 à 840 du site (cahiers des charges des AOC de Provence, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Corse : panorama et appellations",
+  question: "Qu’est-ce qui rend le vignoble corse si différent du continent ?",
+  fil: [
+   "La Corse est une montagne plongée dans la Méditerranée : des sommets à plus de 2 000 m, des vallées aux mésoclimats variés, un été très sec, beaucoup de soleil et des vents constants, maestrale et libeccio en tête.",
+   "<b>Quatre sols.</b> Granite à l’ouest et au sud, schiste au Cap Corse et au nord-est, calcaire autour de Patrimonio et vers Bonifacio, alluvions sur la côte orientale plate.",
+   "<b>Une histoire en dents de scie.</b> La vigne arrive avec les Grecs de Phocée au VIe siècle av. J.-C. à Aléria, repart avec Pise puis Gênes, avant le rattachement à la France en 1768. Dans les années 1960, le vignoble de l’est se gonfle de vins de volume ; les arrachages des années 1980 le ramènent à des cépages de qualité.",
+   "<b>Trois cépages pour signature.</b> Le niellucciu, le sciaccarellu et le vermentinu dominent les appellations ; Patrimonio, reconnue en 1968, fut la première AOC de l’île (fiche 420)."
+  ],
+  defend: "La Corse est une île-montagne de granite et de schiste, très ensoleillée et ventée, qui a retrouvé ses cépages d’origine.",
+  client: "« Une île de soleil et de vent : en rouge, le niellucciu ou le sciaccarellu ; en blanc, le vermentinu. »",
+  filRouge: "Patrimonio, Ajaccio, Vin de Corse et ses villages : comment se lit la carte des appellations corses ?",
+  src: "fiches 420 et 948 du site (cahiers des charges de Patrimonio et d’Ajaccio, BO-agri ; Oxford Companion ; World Atlas of Wine)"
+ },
+ {
+  chapitre: "Corse : appellations",
+  question: "Patrimonio, Ajaccio, Vin de Corse et ses villages : comment se lit la carte des appellations corses ?",
+  fil: [
+   "<b>Deux AOC de cru.</b> Patrimonio, au fond du golfe de Saint-Florent, sur sept communes de calcaire et de schiste, met le niellucciu au premier plan des rouges et le vermentinu en blanc. Ajaccio, sur 36 communes de granite de la côte ouest, d’abord « Coteaux d’Ajaccio » (1971), fait la part belle au sciaccarellu en rouge.",
+   "<b>Une appellation régionale et cinq villages.</b> Vin de Corse couvre l’essentiel de l’île, en blanc, rouge et rosé. Cinq dénominations peuvent compléter son nom : Calvi en Balagne, Coteaux du Cap Corse sur le schiste du Cap, Porto-Vecchio au sud-est, Figari à l’extrême sud et Sartène au sud-ouest, chacune avec ses règles propres.",
+   "<b>Un vin doux naturel.</b> Le Muscat du Cap Corse, reconnu en 1997, est la seule AOC de vin doux naturel de l’île : muscat à petits grains seul, muté en cours de fermentation, sur 17 communes du Cap et du Nebbiu."
+  ],
+  defend: "La Corse se lit en trois étages : deux crus (Patrimonio, Ajaccio), une appellation régionale déclinée en cinq villages, et un muscat doux au Cap.",
+  client: "« Pour un rouge de caractère, Patrimonio ; pour un rouge de granite, Ajaccio ; pour finir le repas, un muscat du Cap Corse. »",
+  filRouge: "De retour sur le continent, que produisent les Charentes à côté du cognac ?",
+  src: "fiches 496, 497, 941 à 947 du site (cahiers des charges, BO-agri et Journal officiel ; Oxford Companion)"
  }
 ];
