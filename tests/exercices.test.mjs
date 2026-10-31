@@ -26,6 +26,11 @@ test("index.html charge chaque fichier de fiches/, dans l'ordre", () => {
   assert.deepEqual(tags, files);
 });
 
+test("aucun fichier de fiches/ vide (écrasement accidentel)", () => {
+  for (const f of fichesFiles(new URL("../fiches.js", import.meta.url).pathname).slice(1))
+    assert.match(readFileSync(f, "utf8"), /FICHES\.push\(/, f + " ne contient aucune fiche");
+});
+
 test("ids de fiches uniques", () => {
   const ids = FICHES.map(f => f.id);
   assert.equal(new Set(ids).size, ids.length);
