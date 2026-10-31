@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 946 (dernier id : 948) · exercices : 4837
 - Vérifiées : 939 · à vérifier : 7 (9 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2393
 - Niveaux : Fondamental 252 · Intermédiaire 501 · Pointu 193
-- Cours (Approfondir) : 218 · schémas : 425
+- Cours (Approfondir) : 219 · schémas : 425
 - Lexique : 84 termes · récits de chapitre : 94
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -32,7 +32,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-champagne.js | 7 | 403–700 | hors livre | 7 | 1 | 2 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 1 |
 | fr-corse-appellations.js | 10 | 496–948 | hors livre | 10 | 0 | 9 |
-| fr-corse.js | 1 | 420–420 | hors livre | 1 | 0 | 1 |
+| fr-corse.js | 1 | 420–420 | hors livre | 1 | 1 | 1 |
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
 | fr-jura-appellations.js | 10 | 492–821 | hors livre | 10 | 0 | 6 |
 | fr-jura.js | 2 | 407–813 | hors livre | 2 | 1 | 1 |
