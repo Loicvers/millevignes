@@ -1,0 +1,190 @@
+{
+ "deps": [
+  "03",
+  "63",
+  "42"
+ ],
+ "fleuves": [
+  "Loire",
+  "Allier"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Moulins",
+   "dep": "03"
+  },
+  {
+   "nom": "Clermont-Ferrand",
+   "dep": "63",
+   "pos": [
+    6,
+    -4,
+    "start"
+   ]
+  },
+  {
+   "nom": "Roanne",
+   "dep": "42",
+   "pos": [
+    6,
+    10,
+    "start"
+   ]
+  }
+ ],
+ "zones": [
+  {
+   "label": "Saint-Pourçain",
+   "discret": true,
+   "deps": [
+    "03"
+   ],
+   "communes": [
+    "Besson",
+    "Bransat",
+    "Bresnay",
+    "Cesset",
+    "Chantelle",
+    "Chareil-Cintrat",
+    "Châtel-de-Neuvre",
+    "Chemilly",
+    "Contigny",
+    "Deneuille-lès-Chantelle",
+    "Fleuriel",
+    "Fourilles",
+    "Louchy-Montfand",
+    "Meillard",
+    "Monétay-sur-Allier",
+    "Montord",
+    "Saint-Pourçain-sur-Sioule",
+    "Saulcet",
+    "Verneuil-en-Bourbonnais"
+   ]
+  },
+  {
+   "label": "Côtes d'Auvergne",
+   "discret": true,
+   "deps": [
+    "63"
+   ],
+   "communes": [
+    "Aubière",
+    "Aulhat-Flat",
+    "Authezat",
+    "Beaumont",
+    "Beauregard-Vendon",
+    "Billom",
+    "Blanzat",
+    "Boudes",
+    "Cébazat",
+    "Chadeleuf",
+    "Chalus",
+    "Chanonat",
+    "Chas",
+    "Châteaugay",
+    "Châtel-Guyon",
+    "Chauriat",
+    "Clermont-Ferrand",
+    "Corent",
+    "Cournon-d'Auvergne",
+    "Le Crest",
+    "Égliseneuve-près-Billom",
+    "Gimeaux",
+    "Glaine-Montaigut",
+    "Laps",
+    "Lempdes",
+    "Malauzat",
+    "Les Martres-de-Veyre",
+    "Ménétrol",
+    "Dallet",
+    "Mezel",
+    "Montpeyroux",
+    "Neschers",
+    "Orbeil",
+    "Orcet",
+    "Pérignat-lès-Sarliève",
+    "Pignols",
+    "Plauzat",
+    "Prompsat",
+    "Reignat",
+    "Riom",
+    "La Roche-Blanche",
+    "La Roche-Noire",
+    "Romagnat",
+    "Saint-Amant-Tallende",
+    "Saint-Bonnet-lès-Allier",
+    "Saint-Georges-sur-Allier",
+    "Saint-Hérent",
+    "Saint-Julien-de-Coppel",
+    "Saint-Maurice",
+    "Saint-Sandoux",
+    "Saint-Yvoine",
+    "Sauvagnat-Sainte-Marthe",
+    "La Sauvetat",
+    "Sayat",
+    "Tallende",
+    "Vassel",
+    "Vertaizon",
+    "Veyre-Monton",
+    "Vic-le-Comte",
+    "Volvic",
+    "Yssac-la-Tourette"
+   ],
+   "pos": [
+    -10,
+    75,
+    "middle"
+   ]
+  },
+  {
+   "label": "Côtes du Forez",
+   "discret": true,
+   "deps": [
+    "42"
+   ],
+   "communes": [
+    "Arthun",
+    "Boën-sur-Lignon",
+    "Bussy-Albieux",
+    "Champdieu",
+    "Écotay-l’Olme",
+    "Leigneux",
+    "Lézigneux",
+    "Marcilly-le-Châtel",
+    "Marcoux",
+    "Montbrison",
+    "Pralong",
+    "Saint-Germain-Laval",
+    "Saint-Georges-Haute-Ville",
+    "Saint-Sixte",
+    "Saint-Thomas-la-Garde",
+    "Sainte-Agathe-la-Bouteresse",
+    "Trelins"
+   ]
+  },
+  {
+   "label": "Côte Roannaise",
+   "discret": true,
+   "deps": [
+    "42"
+   ],
+   "communes": [
+    "Ambierle",
+    "Bully",
+    "Changy",
+    "Le Crozet",
+    "Lentigny",
+    "La Pacaudière",
+    "Renaison",
+    "Saint-Alban-les-Eaux",
+    "Saint-André-d’Apchon",
+    "Saint-Haon-le-Châtel",
+    "Saint-Haon-le-Vieux",
+    "Saint-Jean-Saint-Maurice-sur-Loire",
+    "Villemontais",
+    "Villerest"
+   ]
+  }
+ ]
+}

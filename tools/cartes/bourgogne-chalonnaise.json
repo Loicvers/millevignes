@@ -1,0 +1,156 @@
+{
+ "deps": [
+  "71"
+ ],
+ "fleuves": [
+  "Saône"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Chalon-sur-Saône",
+   "dep": "71",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  },
+  {
+   "nom": "Chagny",
+   "dep": "71"
+  },
+  {
+   "nom": "Buxy",
+   "dep": "71"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Côte chalonnaise",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Aluze",
+    "Barizey",
+    "Bissey-sous-Cruchaud",
+    "Bissy-sur-Fley",
+    "Bouzeron",
+    "Buxy",
+    "Cersot",
+    "Chagny",
+    "Chamilly",
+    "Chassey-le-Camp",
+    "Chenôves",
+    "Culles-les-Roches",
+    "Dennevy",
+    "Dracy-le-Fort",
+    "Fley",
+    "Fontaines",
+    "Genouilly",
+    "Givry",
+    "Jambles",
+    "Jully-lès-Buxy",
+    "Mellecey",
+    "Mercurey",
+    "Montagny-lès-Buxy",
+    "Moroges",
+    "Remigny",
+    "Rosey",
+    "Rully",
+    "Saint-Boil",
+    "Saint-Clément-sur-Guye",
+    "Saint-Denis-de-Vaux",
+    "Saint-Désert",
+    "Saint-Gilles",
+    "Saint-Jean-de-Vaux",
+    "Saint-Léger-sur-Dheune",
+    "Saint-Mard-de-Vaux",
+    "Saint-Martin-du-Tartre",
+    "Saint-Martin-sous-Montaigu",
+    "Saint-Maurice-des-Champs",
+    "Saint-Vallerin",
+    "Santilly",
+    "Sassangy",
+    "Saules",
+    "Sercy",
+    "Vaux-en-Pré"
+   ]
+  },
+  {
+   "label": "Côtes du Couchois",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Couches",
+    "Dracy-lès-Couches",
+    "Saint-Jean-de-Trézy",
+    "Saint-Maurice-lès-Couches",
+    "Saint-Pierre-de-Varennes",
+    "Saint-Sernin-du-Plain"
+   ]
+  },
+  {
+   "label": "Bouzeron",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Bouzeron",
+    "Chassey-le-Camp"
+   ]
+  },
+  {
+   "label": "Rully",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Chagny",
+    "Rully"
+   ]
+  },
+  {
+   "label": "Mercurey",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Mercurey",
+    "Saint-Martin-sous-Montaigu"
+   ]
+  },
+  {
+   "label": "Givry",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Dracy-le-Fort",
+    "Givry",
+    "Jambles"
+   ]
+  },
+  {
+   "label": "Montagny",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Buxy",
+    "Jully-lès-Buxy",
+    "Montagny-lès-Buxy",
+    "Saint-Vallerin"
+   ]
+  }
+ ]
+}

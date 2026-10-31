@@ -466,6 +466,20 @@
     "start"
    ],
    "trait": true
+  },
+  {
+   "label": "Touraine Noble Joué",
+   "discret": true,
+   "deps": [
+    "37"
+   ],
+   "communes": [
+    "Chambray-lès-Tours",
+    "Esvres",
+    "Joué-lès-Tours",
+    "Larçay",
+    "Saint-Avertin"
+   ]
   }
  ]
 }

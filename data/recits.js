@@ -1082,12 +1082,12 @@ const RECITS = [
    "<b>Quatre étages.</b> Petit chablis, chablis, chablis premier cru (40 climats, regroupables sous 17 noms) et chablis grand cru. Plus on monte, plus le rendement de base baisse : 60 hl/ha pour les deux premiers, 58 pour le premier cru, 54 pour le grand cru.",
    "<b>Un grand cru unique.</b> Contrairement à la Côte-d’Or, où chaque grand cru est une appellation, le grand cru de Chablis est une seule appellation, limitée à la commune de Chablis. L’étiquette peut la compléter par l’un de sept climats : Blanchot, Bougros, Les Clos, Grenouilles, Preuses, Valmur, Vaudésir.",
    "<b>Le gel.</b> Vignoble du nord, Chablis redoute les gelées de printemps : on asperge ou on chauffe les parcelles. Le Kimméridgien, marne calcaire du Jurassique, fait sa réputation, même si l’aire n’a pas été tracée par la géologie seule (fiche 213).",
-   "<b>Autour de Chablis.</b> Le Grand Auxerrois garde ses singularités : Irancy, rouge de pinot noir où le césar est admis ; Saint-Bris, seul sauvignon de Bourgogne ; Vézelay, chardonnay devenu appellation à part entière ; et des Bourgogne à dénomination locale, comme Tonnerre, Épineuil, Chitry ou Côtes d’Auxerre."
+   "<b>Autour de Chablis.</b> Le Grand Auxerrois garde ses singularités : Irancy, rouge de pinot noir où le césar et le pinot gris sont admis en accessoires ; Saint-Bris, seul sauvignon de Bourgogne ; Vézelay, chardonnay devenu appellation à part entière ; et des Bourgogne à dénomination locale, comme Tonnerre, Épineuil, Chitry ou Côtes d’Auxerre."
   ],
   defend: "À Chablis, la hiérarchie se lit en quatre mots, petit chablis, chablis, premier cru, grand cru, et le grand cru est une appellation unique déclinée en sept climats.",
   client: "« Chablis, c’est toujours du chardonnay en blanc sec. Du petit chablis au grand cru, on gagne en précision de lieu, et le rendement autorisé baisse. »",
   filRouge: "Plus au sud, sur la Côte de Nuits, pourquoi le pinot noir règne-t-il presque seul ?",
-  src: "fiches 391, 392 et 213 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 391, 392, 927 à 932 et 213 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Côte de Nuits",
@@ -1124,12 +1124,12 @@ const RECITS = [
    "La Côte chalonnaise prolonge la Côte-d’Or vers le sud. On y compte cinq appellations communales, et la hiérarchie s’y arrête au premier cru.",
    "<b>Du nord au sud.</b> Bouzeron, seule appellation communale de Bourgogne bâtie sur l’aligoté ; Rully, Mercurey et Givry, en blanc comme en rouge ; Montagny, blanc de chardonnay seul.",
    "<b>Les premiers crus.</b> Leur nombre grimpe vers le sud : 23 à Rully, 32 à Mercurey, 38 à Givry, 49 à Montagny.",
-   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, est réservé au rouge par le cahier des charges homologué fin 2023."
+   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, reste réservé au rouge dans le cahier du Bourgogne du 6 janvier 2026."
   ],
   defend: "La Côte chalonnaise offre la hiérarchie bourguignonne sans son sommet : des villages et des premiers crus, en rouge comme en blanc, et l’aligoté de Bouzeron.",
   client: "« Mercurey ou Givry pour un rouge, Rully ou Montagny pour un blanc, et Bouzeron pour découvrir l’aligoté. »",
   filRouge: "Plus au sud encore, que devient le chardonnay dans le Mâconnais ?",
-  src: "fiche 399 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
+  src: "fiches 399 et 933 à 937 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
  },
  {
   chapitre: "Mâconnais",
@@ -1143,7 +1143,7 @@ const RECITS = [
   defend: "Le Mâconnais est la Bourgogne du chardonnay, et sa hiérarchie progresse encore : des premiers crus à Pouilly-Fuissé depuis 2020.",
   client: "« Mâcon-Villages ou Saint-Véran pour entrer dans le Mâconnais, Pouilly-Fuissé et ses premiers crus pour monter d’un cran. »",
   filRouge: "Juste au sud, pourquoi le gamay, proscrit en Bourgogne en 1395, est-il roi en Beaujolais ?",
-  src: "fiches 400, 401 et 672 du site (INAO, cahiers des charges et communiqués ; Decanter ; Oxford Companion)"
+  src: "fiches 400, 401, 672 et 938 à 940 du site (INAO, cahiers des charges et communiqués ; Decanter ; Oxford Companion)"
  },
  {
   chapitre: "Bordeaux : panorama et appellations",
@@ -1352,12 +1352,13 @@ const RECITS = [
    "<b>Un vin, pas un cépage.</b> Le muscadet vient du melon, seul cépage des trois appellations sous-régionales ; le Muscadet régional tolère un peu de chardonnay. Quatre AOC : Muscadet, Muscadet Sèvre et Maine, cœur du vignoble, Muscadet Coteaux de la Loire et Muscadet Côtes de Grandlieu.",
    "<b>Sur lie.</b> La mention exige que le vin reste sur ses lies fines jusqu’au printemps qui suit la récolte, puis soit mis en bouteille sans soutirage : il y gagne en rondeur.",
    "<b>Les crus communaux.</b> Clisson, Gorges, Le Pallet et quatre autres noms précisent l’origine dans le Sèvre et Maine, avec un rendement plus bas et un élevage sur lies bien plus long ; d’autres sont en cours de reconnaissance.",
-   "<b>Le Gros Plant.</b> Autre blanc sec et vif de la même zone, il repose sur la folle blanche."
+   "<b>Le Gros Plant.</b> Autre blanc sec et vif, sur une aire voisine du Muscadet, il repose sur la folle blanche et peut aussi porter la mention sur lie.",
+   "<b>Autour.</b> Les Coteaux d’Ancenis, en amont, font surtout des rouges et rosés de gamay et un blanc moelleux de pinot gris ; plus au sud, en Vendée, les Fiefs Vendéens portent toujours l’une de leurs cinq dénominations, de Brem à Vix."
   ],
   defend: "Le muscadet est un vin de melon, que l’élevage sur lies arrondit et que les crus communaux font monter en précision et en garde.",
   client: "« Le muscadet, c’est le vin ; le melon, c’est le cépage ; le sur lie, c’est un vin resté sur ses levures, plus rond. Et un cru communal, c’est un muscadet de village, gardé longtemps sur ses lies. »",
   filRouge: "En remontant vers Angers, comment l’Anjou passe-t-il du schiste au tuffeau, et du sec au liquoreux ?",
-  src: "fiches 447, 448, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 137)"
+  src: "fiches 447, 448, 690, 691 et 868 à 872 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 137)"
  },
  {
   chapitre: "Anjou-Saumur",
@@ -1367,12 +1368,13 @@ const RECITS = [
    "<b>Savennières.</b> Sur les schistes de la rive droite, au sud-ouest d’Angers, un chenin surtout sec ; deux lieux-dits ont leur propre AOC, Roche aux Moines et Coulée de Serrant, à très faible rendement.",
    "<b>Les liquoreux.</b> Coteaux du Layon, Chaume, Bonnezeaux, Quarts de Chaume : des chenins surmûris, récoltés par tries successives. Plus l’aire se resserre, plus le rendement baisse et l’alcool naturel minimal monte.",
    "<b>Saumur.</b> Sur le tuffeau, où l’on creuse aussi les caves : Saumur-Champigny, rouge de cabernet franc, et l’AOC Saumur, en blanc, rouge et bulles.",
-   "<b>La gamme angevine.</b> Anjou rouge, Anjou-Villages et Anjou Brissac pour les rouges ; Cabernet d’Anjou et Rosé d’Anjou, rosés tendres qui gardent du sucre ; Crémant de Loire pour les bulles."
+   "<b>La gamme angevine.</b> Anjou rouge, Anjou-Villages et Anjou Brissac pour les rouges ; Cabernet d’Anjou et Rosé d’Anjou, rosés tendres qui gardent du sucre, et Rosé de Loire, sec ; Crémant de Loire et Saumur mousseux pour les bulles. L’Anjou-Coteaux de la Loire est un chenin moelleux, l’Aubance un liquoreux plus discret que le Layon.",
+   "<b>Autour de Saumur.</b> Saumur Puy-Notre-Dame, dénomination de rouge de cabernet franc, et Coteaux de Saumur, chenin doux ; l’ancien Cabernet de Saumur est aujourd’hui un Saumur rosé."
   ],
   defend: "L’Anjou-Saumur rassemble presque tous les styles de la Loire autour de deux cépages, le chenin et le cabernet franc, sur deux roches, le schiste et le tuffeau.",
   client: "« En Anjou, le chenin peut être sec, à Savennières, ou liquoreux, dans le Layon. Et attention : un Cabernet ou un Rosé d’Anjou n’est pas un rosé sec. »",
   filRouge: "Juste en amont, comment la Touraine joue-t-elle avec le chenin de Vouvray et le cabernet franc de Chinon ?",
-  src: "fiches 449 à 452, 690 et 691 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 163)"
+  src: "fiches 449 à 452, 690, 691 et 873 à 881 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion ; Mille Vignes p. 163)"
  },
  {
   chapitre: "Touraine",
@@ -1381,13 +1383,14 @@ const RECITS = [
    "La Touraine, autour de Tours, a un climat plus continental que l’Anjou, et ses coteaux reposent souvent sur le tuffeau, où l’on creuse les caves.",
    "<b>Le chenin.</b> Vouvray et Montlouis-sur-Loire, deux voisins en amont de Tours : des chenins tranquilles, mousseux ou pétillants, du sec au doux ; on lit la mention sur l’étiquette.",
    "<b>Le cabernet franc.</b> Chinon, Bourgueil et Saint-Nicolas-de-Bourgueil font des rouges de cabernet franc, avec un peu de cabernet sauvignon possible ; seul Chinon ajoute un blanc de chenin. Les sols vont du tuffeau aux graviers et aux sables.",
-   "<b>L’AOC Touraine.</b> Sur 143 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
-   "<b>Autour.</b> Cour-Cheverny, au romorantin seul, Jasnières et les Coteaux du Loir gardent des cépages et des styles à part."
+   "<b>L’AOC Touraine.</b> Sur 138 communes, du sauvignon en blanc, du côt et du cabernet franc en rouge, du gamay, des rosés et des bulles ; cinq dénominations précisent l’origine, comme Amboise ou Chenonceaux.",
+   "<b>Autour.</b> Touraine Noble Joué, rosé sec de trois pinots au sud de Tours, est une AOC à part. Cheverny assemble, Cour-Cheverny garde le romorantin seul ; Valençay et le Haut-Poitou misent sur le sauvignon en blanc.",
+   "<b>Au nord, le Loir.</b> Jasnières, chenin sur un seul coteau, les Coteaux du Loir et les Coteaux du Vendômois, où le pineau d’Aunis donne rouges poivrés et vins gris ; près d’Orléans, l’Orléans-Cléry est un rouge de cabernet franc seul."
   ],
   defend: "La Touraine est la Loire des contrastes : le chenin de Vouvray et de Montlouis, le cabernet franc de Chinon et de Bourgueil, et le sauvignon de l’AOC Touraine.",
   client: "« Un vouvray peut être sec ou moelleux : regardez la mention. Pour un rouge, Chinon et Bourgueil, c’est le cabernet franc de Touraine. »",
   filRouge: "Plus en amont encore, pourquoi le sauvignon de Sancerre et de Pouilly a-t-il conquis le monde ?",
-  src: "fiches 453 à 455, 690 et 692 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 453 à 455, 690, 692 et 882 à 892 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Centre-Loire",
@@ -1396,12 +1399,13 @@ const RECITS = [
    "Le Centre-Loire a un climat continental et sa propre interprofession. Le sauvignon blanc y règne, avec le pinot noir pour les rouges et les rosés.",
    "<b>Sancerre.</b> Quatorze communes du Cher ; un blanc de sauvignon seul, un rouge et un rosé de pinot noir seul. Le terroir se lit en trois sols : terres blanches (marnes kimméridgiennes), caillottes (calcaires) et silex. Historiquement planté de pinot noir, Sancerre s’est replanté en sauvignon après le phylloxéra.",
    "<b>Les deux Pouilly.</b> Autour de Pouilly-sur-Loire, dans la Nièvre : le Pouilly-Fumé, de sauvignon seul, sur les mêmes familles de sols, et le Pouilly-sur-Loire, de chasselas, plus rare. À ne pas confondre avec le Pouilly-Fuissé mâconnais.",
-   "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant."
+   "<b>Les voisins.</b> Menetou-Salon, Quincy, Reuilly, Coteaux du Giennois et Châteaumeillant jouent chacun leur carte : uniquement du blanc de sauvignon à Quincy, gamay à Gien et à Châteaumeillant.",
+   "<b>Plus au sud.</b> Le long de l’Allier et de la Loire amont, le gamay domine : Saint-Pourçain, où le tressallier entre dans les blancs, Côtes d’Auvergne et ses cinq dénominations autour de Clermont-Ferrand, Côte Roannaise et Côtes du Forez sur le granite."
   ],
   defend: "Le Centre-Loire est la terre du sauvignon, et à Sancerre comme à Pouilly le sol, terres blanches, caillottes ou silex, change le vin d’une même colline.",
   client: "« Sancerre n’est pas qu’un blanc : il existe aussi en rouge et en rosé de pinot noir. Et le Pouilly-Fumé, c’est du sauvignon de Loire, rien à voir avec le Pouilly-Fuissé de Bourgogne. »",
   filRouge: "Plus au sud-ouest, comment Bordeaux, à l’inverse de la Loire, a-t-il fait de l’assemblage sa signature ?",
-  src: "fiches 456 à 458, 690 et 694 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 456 à 458, 690, 694 et 893 à 900 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Champagne : panorama et appellations",
@@ -1588,13 +1592,13 @@ const RECITS = [
    "<b>Une mosaïque de sols.</b> Une coupe va de la plaine littorale aux piémonts et aux plateaux, puis aux montagnes (fiche 713) : alluvions près de la mer, calcaires au milieu, schistes au nord-ouest, comme à Faugères. Partout, des sols pauvres, caillouteux et bien drainés, qui limitent les rendements.",
    "<b>Des assemblages avant tout.</b> En AOC Languedoc, les rouges sont des assemblages d’au moins deux cépages dont grenache, mourvèdre, syrah (et lledoner pelut) forment le socle, sans qu’aucun dépasse 80 % du vin : un 100 % carignan part donc en IGP ou en Vin de France. Les blancs s’appuient sur huit cépages principaux, dont le piquepoul blanc. L’IGP Pays d’Oc, elle, mise au contraire sur le vin de cépage (fiche 714).",
    "<b>Une histoire de masse, puis de qualité.</b> Rome fonde Narbonne en 118 av. J.-C., les moines relancent la vigne, la plaine se couvre d’aramon, le phylloxéra, identifié en 1868, détruit le vignoble et la surproduction mène à la révolte de 1907. Les appellations arrivent par étapes (Frontignan 1936, Blanquette de Limoux 1938, Fitou 1948, Coteaux du Languedoc 1985), puis le vin de pays d’Oc, devenu IGP en 2009 (fiche 716).",
-   "<b>Une pyramide qui bouge.</b> L’AOC régionale Languedoc, puis des appellations plus précises (Pic Saint-Loup, Terrasses du Larzac, Saint-Chinian, Corbières, Limoux, Picpoul de Pinet…), et au-dessous des AOC l’IGP Pays d’Oc, la plus grande IGP régionale de France. Depuis 2026, l’AOC Languedoc ne compte plus que neuf dénominations complémentaires : Grés de Montpellier et Montpeyroux sont devenues des AOC à part entière. Pas de nombre de crus à réciter par cœur : on date toujours l’information (fiche 417).",
+   "<b>Une pyramide qui bouge.</b> L’AOC régionale Languedoc, puis des appellations plus précises (Pic Saint-Loup, Terrasses du Larzac, Saint-Chinian, Corbières, Limoux, Picpoul de Pinet…), et au-dessous des AOC l’IGP Pays d’Oc, la plus grande IGP régionale de France. Depuis 2026, l’AOC Languedoc ne compte plus que neuf dénominations complémentaires : Montpeyroux est devenue une AOC à part entière, deux ans après Grés de Montpellier (2024). Pas de nombre de crus à réciter par cœur : on date toujours l’information (fiche 417).",
    "<b>Le marché.</b> En Occitanie, la récolte 2022 se partage en volume entre environ 69 % d’IGP, 18 % d’AOP et 13 % de vins sans IG ; l’Occitanie est aussi la première région viticole bio de France. Le Languedoc garde l’image de la région au meilleur rapport qualité-prix de France et attire des investisseurs grâce à des terres relativement peu chères et de vieilles vignes (fiche 717)."
   ],
   defend: "Le Languedoc est un amphithéâtre de sols et de vents où l’on assemble plus qu’on ne choisit un cépage, avec une pyramide d’appellations qu’il faut toujours dater.",
   client: "« Pour un vin de cépage simple à lire, une IGP Pays d’Oc ; pour un lieu précis, une appellation comme Pic Saint-Loup, Saint-Chinian, Corbières ou Limoux. Et la liste bouge encore : Grés de Montpellier et Montpeyroux viennent de devenir des appellations à part entière. »",
   filRouge: "Faugères, Pic Saint-Loup, Corbières, Limoux : comment s’y retrouver parmi les crus et les dénominations du Languedoc ?",
-  src: "fiches 417, 476 à 480 et 712 à 717 du site (cahiers des charges, INAO ; WSET D3 ; Oxford Companion ; Agreste ; Agence Bio)"
+  src: "fiches 417, 476 à 480, 712 à 717 et 901 à 918 du site (cahiers des charges, INAO ; WSET D3 ; Oxford Companion ; Agreste ; Agence Bio)"
  },
  {
   chapitre: "Languedoc : crus et dénominations",
@@ -1603,7 +1607,9 @@ const RECITS = [
    "Plutôt qu’une liste à réciter, les appellations du Languedoc se retiennent par leurs lieux : chacune s’accroche à un paysage, une roche ou un cépage. Plusieurs étaient des dénominations de Coteaux du Languedoc avant de devenir des AOC à part entière : Picpoul de Pinet (décret du 23 septembre 2013), Terrasses du Larzac (décret du 17 octobre 2014) et Pic Saint-Loup (2017).",
    "<b>Au nord de l’Hérault, la syrah et le Larzac.</b> Le Pic Saint-Loup couvre 17 communes et fait du rouge et du rosé, avec au moins 50 % de syrah dans le rouge. Les Terrasses du Larzac, sur 32 communes, ne font que du rouge, assemblé à trois cépages au moins sans qu’aucun dépasse 70 %.",
    "<b>Les schistes de l’arrière-pays de Béziers.</b> Faugères tient en sept communes sur des sols exclusivement schisteux, en rouge, rosé et blanc. Saint-Chinian, plus vaste (20 communes), a deux visages, schistes et sols argilo-calcaires ; ses deux dénominations rouges, Berlou (au moins 30 % de carignan) et Roquebrun (au moins 25 % de syrah), visent un rendement de base de 40 hl/ha contre 45 pour l’appellation.",
-   "<b>Dans l’Aude, un cru par appellation.</b> Le Minervois a pour cœur Minervois-La Livinière, six communes en rouge seul, à 42 hl/ha contre 48. Les Corbières ont Corbières-Boutenac, un rouge sur dix communes où le carignan pèse au moins 30 % ; Fitou, reconnue en 1948 comme première AOC de rouge tranquille du Languedoc, réunit deux zones séparées par un plateau calcaire.",
+   "<b>Dans l’Aude, un cru par appellation.</b> Le Minervois a pour cœur La Livinière (ex-Minervois-La Livinière), six communes en rouge seul, à 42 hl/ha contre 48. Les Corbières ont Boutenac (ex-Corbières-Boutenac), un rouge sur dix communes où le carignan pèse au moins 30 % ; Fitou, reconnue en 1948 comme première AOC de rouge tranquille du Languedoc, réunit deux zones séparées par un plateau calcaire.",
+   "<b>Autour de Montpellier et de Narbonne.</b> Deux anciennes dénominations ont pris leur indépendance : Grés de Montpellier en 2024, Montpeyroux en 2026, toutes deux en rouge seul ; l’AOC Languedoc garde neuf dénominations, de Pézenas à Sommières. Près de Narbonne, La Clape, ancienne île calcaire devenue AOC en 2015, fait du rouge et du blanc, sans rosé.",
+   "<b>À l’ouest de Carcassonne, l’Atlantique rencontre la Méditerranée.</b> La Malepère bâtit son rouge sur le merlot ; le Cabardès, adossé à la Montagne Noire, impose à la fois des cépages atlantiques (cabernets, merlot) et méditerranéens.",
    "<b>Des blancs, des muscats et des bulles.</b> Le Picpoul de Pinet est un blanc sec de piquepoul blanc seul, autour de l’étang de Thau ; la Clairette du Languedoc est une clairette pure ; les muscats de l’Hérault, de muscat à petits grains, sont des vins doux naturels. À Limoux, les bulles reconnues en 1938 reposent sur le mauzac : au moins 90 % dans la blanquette, seul dans la méthode ancestrale ; le crémant (1990) est dominé par le chardonnay, et le Limoux blanc tranquille se vinifie et s’élève en fût.",
    "<b>Ce qu’on retient.</b> Faugères, c’est le schiste pur ; Pic Saint-Loup, une syrah en vedette ; Boutenac et Fitou, le carignan assumé ; Limoux, le mauzac et les bulles. La liste des « crus » retenue par l’interprofession varie selon les années : on la date toujours (fiche 417)."
   ],
@@ -1634,14 +1640,14 @@ const RECITS = [
   fil: [
    "Pour ne pas se perdre, on commence par une ligne de partage : d’un côté les vins doux naturels (VDN), dont la fermentation est arrêtée par un ajout d’alcool neutre qui garde une partie du sucre ; de l’autre les vins secs, non mutés. Le mutage se fait sur grains pour un rouge, sur moût pour un blanc ou un muscat ; l’élevage, protégé de l’air ou oxydatif, donne deux familles de goûts, le rancio venant du bois, de l’oxygène, de la chaleur et du temps (fiche 635).",
    "<b>Sur la Côte Vermeille, un même schiste, deux familles.</b> Le banyuls (AOC de 1936) est un VDN qui porte obligatoirement une mention : blanc, rosé, rimage, ambré ou traditionnel. Le rimage, rouge de grenache noir muté sur les grains, est élevé à l’abri de l’air pour garder son fruit ; l’ambré et le traditionnel vieillissent au contact de l’air. Le banyuls grand cru (1962) est un VDN rouge élevé en bois. Le collioure, lui, est un vin sec, non muté : rouge dès 1971, rosé en 1991, blanc en 2003 (fiche 481).",
-   "<b>Dans la vallée de l’Agly et la plaine, les autres VDN.</b> Le maury se limite à quatre communes et à ses schistes noirs ; il fait du blanc, du grenat, du tuilé et de l’ambré, et, depuis 2011, la même appellation couvre aussi un rouge sec. Le rivesaltes, AOC de 1936 sur une vaste aire à cheval sur les Pyrénées-Orientales et l’Aude, se décline en grenat, tuilé, ambré et rosé. Le muscat de rivesaltes, blanc, associe muscat à petits grains et muscat d’Alexandrie (fiches 482, 508).",
-   "<b>Les vins secs des Côtes du Roussillon.</b> Les Côtes du Roussillon (1977) font du rouge, du rosé et du blanc. Les Côtes du Roussillon Villages, uniquement rouges, couvrent 51 communes ou parties de communes et sont plus exigeants : 45 hl/ha et 12,5 % vol. minimum, contre 48 hl/ha et 12 %. Cinq noms de lieux peuvent s’y ajouter : Caramany et Latour-de-France (1977), Lesquerde (1995), Tautavel (1997) et Les Aspres (2017) (fiche 483).",
+   "<b>Dans la vallée de l’Agly et la plaine, les autres VDN.</b> Le maury se limite à quatre communes et à ses marnes schisteuses noires ; il fait du blanc, du grenat, du tuilé et de l’ambré, et, depuis 2011, la même appellation couvre aussi un rouge sec. Le rivesaltes, AOC de 1936 sur une vaste aire à cheval sur les Pyrénées-Orientales et l’Aude, se décline en grenat, tuilé, ambré et rosé. Le muscat de rivesaltes, blanc, associe muscat à petits grains et muscat d’Alexandrie (fiches 482, 508).",
+   "<b>Les vins secs des Côtes du Roussillon.</b> Les Côtes du Roussillon (1977) font du rouge, du rosé et du blanc. Les Côtes du Roussillon Villages, uniquement rouges, couvrent 51 communes ou parties de communes et sont plus exigeants : 45 hl/ha et 12,5 % vol. minimum, contre 48 hl/ha et 12 %. Cinq noms de lieux peuvent s’y ajouter : Caramany et Latour-de-France (1977), Lesquerde (1995), Tautavel (1997) et Les Aspres (2017) (fiches 483, 925, 926). Le Grand Roussillon (1957), plus vaste aire des VDN, reste surtout une appellation de repli (fiche 922).",
    "<b>Hors des grandes AOC.</b> L’IGP Côtes Catalanes couvre l’essentiel du vignoble du département et accueille les vignerons dont les cépages ou les proportions ne collent pas à une AOC. Elle brille en blanc de grenache gris ou de macabeu, en rouge de vieux carignans et en muscats secs. Autour de Maury, le haut de la vallée de l’Agly, sur schiste noir, est devenu le centre de l’activité récente du Roussillon sec (fiche 723)."
   ],
   defend: "Au Roussillon, la question à poser est simple : le vin est-il muté ou non ? Banyuls, maury, rivesaltes et muscat de rivesaltes sont des VDN ; collioure, Maury sec, côtes-du-roussillon et l’IGP Côtes Catalanes sont des vins secs.",
   client: "« Pour un dessert au chocolat, un rimage de banyuls ; pour méditer, un banyuls grand cru ; pour un dessert aux fruits, un muscat de rivesaltes ; pour le repas, un collioure ou un côtes-du-roussillon Villages. »",
   filRouge: "Pourquoi la Provence est-elle devenue la région du rosé, et que boit-on d’autre là-bas ?",
-  src: "fiches 481 à 483 et 723 du site, avec 508 et 635 en renvoi (sources principales : cahiers des charges, INAO ; WSET D3 et D5 ; Oxford Companion)"
+  src: "fiches 481 à 483, 723 et 919 à 926 du site, avec 508 et 635 en renvoi (sources principales : cahiers des charges, INAO ; WSET D3 et D5 ; Oxford Companion)"
  },
  {
   chapitre: "Provence : panorama et appellations",
@@ -1673,5 +1679,32 @@ const RECITS = [
   client: "« Pour un rosé sûr, un côtes-de-provence ; pour un secteur précis, une dénomination comme Sainte-Victoire ; pour un vin de caractère, un bandol rouge, un cassis blanc ou un palette. »",
   filRouge: "Plus à l’est encore, sur l’île de Beauté, comment la Corse marie-t-elle cépages italiens et appellations françaises ?",
   src: "fiches 489, 490, 491 et 834 à 840 du site (cahiers des charges des AOC de Provence, BO-agri ; WSET D3 ; Oxford Companion)"
+ },
+ {
+  chapitre: "Corse : panorama et appellations",
+  question: "Qu’est-ce qui rend le vignoble corse si différent du continent ?",
+  fil: [
+   "La Corse est une montagne plongée dans la Méditerranée : des sommets à plus de 2 000 m, des vallées aux mésoclimats variés, un été très sec, beaucoup de soleil et des vents constants, maestrale et libeccio en tête.",
+   "<b>Quatre sols.</b> Granite à l’ouest et au sud, schiste au Cap Corse et au nord-est, calcaire autour de Patrimonio et vers Bonifacio, alluvions sur la côte orientale plate.",
+   "<b>Une histoire en dents de scie.</b> La vigne arrive avec les Grecs de Phocée au VIe siècle av. J.-C. à Aléria, repart avec Pise puis Gênes, avant le rattachement à la France en 1768. Dans les années 1960, le vignoble de l’est se gonfle de vins de volume ; les arrachages des années 1980 le ramènent à des cépages de qualité.",
+   "<b>Trois cépages pour signature.</b> Le niellucciu, le sciaccarellu et le vermentinu dominent les appellations ; Patrimonio, reconnue en 1968, fut la première AOC de l’île (fiche 420)."
+  ],
+  defend: "La Corse est une île-montagne de granite et de schiste, très ensoleillée et ventée, qui a retrouvé ses cépages d’origine.",
+  client: "« Une île de soleil et de vent : en rouge, le niellucciu ou le sciaccarellu ; en blanc, le vermentinu. »",
+  filRouge: "Patrimonio, Ajaccio, Vin de Corse et ses villages : comment se lit la carte des appellations corses ?",
+  src: "fiches 420 et 948 du site (cahiers des charges de Patrimonio et d’Ajaccio, BO-agri ; Oxford Companion ; World Atlas of Wine)"
+ },
+ {
+  chapitre: "Corse : appellations",
+  question: "Patrimonio, Ajaccio, Vin de Corse et ses villages : comment se lit la carte des appellations corses ?",
+  fil: [
+   "<b>Deux AOC de cru.</b> Patrimonio, au fond du golfe de Saint-Florent, sur sept communes de calcaire et de schiste, met le niellucciu au premier plan des rouges et le vermentinu en blanc. Ajaccio, sur 36 communes de granite de la côte ouest, d’abord « Coteaux d’Ajaccio » (1971), fait la part belle au sciaccarellu en rouge.",
+   "<b>Une appellation régionale et cinq villages.</b> Vin de Corse couvre l’essentiel de l’île, en blanc, rouge et rosé. Cinq dénominations peuvent compléter son nom : Calvi en Balagne, Coteaux du Cap Corse sur le schiste du Cap, Porto-Vecchio au sud-est, Figari à l’extrême sud et Sartène au sud-ouest, chacune avec ses règles propres.",
+   "<b>Un vin doux naturel.</b> Le Muscat du Cap Corse, reconnu en 1997, est la seule AOC de vin doux naturel de l’île : muscat à petits grains seul, muté en cours de fermentation, sur 17 communes du Cap et du Nebbiu."
+  ],
+  defend: "La Corse se lit en trois étages : deux crus (Patrimonio, Ajaccio), une appellation régionale déclinée en cinq villages, et un muscat doux au Cap.",
+  client: "« Pour un rouge de caractère, Patrimonio ; pour un rouge de granite, Ajaccio ; pour finir le repas, un muscat du Cap Corse. »",
+  filRouge: "De retour sur le continent, que produisent les Charentes à côté du cognac ?",
+  src: "fiches 496, 497, 941 à 947 du site (cahiers des charges, BO-agri et Journal officiel ; Oxford Companion)"
  }
 ];
