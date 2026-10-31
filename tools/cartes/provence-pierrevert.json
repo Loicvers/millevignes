@@ -1,0 +1,163 @@
+{
+ "deps": [
+  "04",
+  "13",
+  "83",
+  "84"
+ ],
+ "fleuves": [
+  "Durance",
+  "Rhône",
+  "Rhne"
+ ],
+ "marges": [
+  0.1,
+  0.06,
+  0.25,
+  0.18
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Coteaux varois",
+   "deps": [
+    "83"
+   ],
+   "communes": [
+    "Barjols",
+    "Bras",
+    "Brignoles",
+    "Brue-Auriac",
+    "Camps-la-Source",
+    "La Celle",
+    "Châteauvert",
+    "Forcalqueiret",
+    "Garéoult",
+    "Méounes-lès-Montrieux",
+    "Nans-les-Pins",
+    "Néoules",
+    "Ollières",
+    "Pontevès",
+    "Rocbaron",
+    "La Roquebrussanne",
+    "Rougiers",
+    "Saint-Maximin-la-Sainte-Baume",
+    "Saint-Zacharie",
+    "Sainte-Anastasie-sur-Issole",
+    "Salernes",
+    "Seillons-Source-d'Argens",
+    "Signes",
+    "Tavernes",
+    "Tourves",
+    "Le Val",
+    "Varages",
+    "Villecroze"
+   ]
+  },
+  {
+   "label": "Coteaux d’Aix",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Aix-en-Provence",
+    "Alleins",
+    "Aurons",
+    "La Barben",
+    "Berre-l'Étang",
+    "Charleval",
+    "Châteauneuf-les-Martigues",
+    "Cornillon-Confoux",
+    "Coudoux",
+    "Éguilles",
+    "Ensuès-la-Redonne",
+    "Eygalières",
+    "Eyguières",
+    "La Fare-les-Oliviers",
+    "Gignac-la-Nerthe",
+    "Istres",
+    "Jouques",
+    "Lamanon",
+    "Lambesc",
+    "Lançon-Provence",
+    "Mallemort",
+    "Martigues",
+    "Meyrargues",
+    "Pélissanne",
+    "Peyrolles-en-Provence",
+    "Port-de-Bouc",
+    "Le Puy-Sainte-Réparade",
+    "Rognac",
+    "Rognes",
+    "Saint-Cannat",
+    "Saint-Chamas",
+    "Saint-Estève-Janson",
+    "Saint-Marc-Jaumegarde",
+    "Saint-Mitre-les-Remparts",
+    "Salon-de-Provence",
+    "Vauvenargues",
+    "Velaux",
+    "Venelles",
+    "Ventabren",
+    "Vernègues",
+    "Artigues",
+    "Rians"
+   ]
+  },
+  {
+   "label": "Pierrevert",
+   "deps": [
+    "04"
+   ],
+   "communes": [
+    "Corbières|04",
+    "Gréoux-les-Bains|04",
+    "Manosque|04",
+    "Montfuron|04",
+    "Pierrevert|04",
+    "Quinson|04",
+    "Saint-Laurent-du-Verdon|04",
+    "Saint-Martin-de-Brômes|04",
+    "Sainte-Tulle|04",
+    "Villeneuve|04",
+    "Volx|04"
+   ]
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Marseille",
+   "dep": "13"
+  },
+  {
+   "nom": "Aix-en-Provence",
+   "dep": "13",
+   "label": "Aix"
+  },
+  {
+   "nom": "Saint-Tropez",
+   "dep": "83"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Durance",
+   "lon": 5.25,
+   "lat": 43.73,
+   "rot": -15
+  },
+  {
+   "t": "Rhône",
+   "lon": 4.66,
+   "lat": 43.72,
+   "rot": 70
+  },
+  {
+   "t": "Méditerranée",
+   "lon": 5.75,
+   "lat": 43.07
+  }
+ ],
+ "points": []
+}
