@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-946 fiches : 938 vérifiées, 8 à vérifier (10 points).
-Hors dette : 2392 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+946 fiches : 939 vérifiées, 7 à vérifier (9 points).
+Hors dette : 2393 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -14,9 +14,6 @@ Hors dette : 2392 détails laissés « selon le livre » (champ `selon_livre`, n
 **Fiche 812** (p.319) — Plats belges au comptoir : moules, chicons, carbonnade
 - [ ] Moules avec muscadet, chablis, chardonnay non boisé (⚠️) : deux sources de niveau 2b (Dornenburg et Page, Johnson), aucune de niveau 2a
 - [ ] Carbonnade et vin (⚠️) : pas d’accord classique ; le raisonnement par composantes applique des règles générales
-
-**Fiche 832** (p.?) — Le rosé de Provence : cépages, modes d’élaboration et tibouren
-- [ ] Origine du tibouren (⚠️) : identité génétique avec le rossese di Dolceacqua (Ligurie) selon l’Oxford Companion (l’Atlas, lu à l’OCR, va dans le même sens). Source primaire repérée le 31/10/2026 : Torello Marinoni et coll., « Identification of grape cultivars from Liguria », Vitis 48(4), 175-183 (2009) : son tableau SSR range « Rossese (Dolceacqua) » sous « Rossese (I) / Tibouren (F) », mais une phrase « their SSR profiles were distinct » reste à lire dans le PDF (site de la revue bloqué depuis la session)
 
 **Fiche 841** (p.?) — Les Baux-de-Provence : les Alpilles, sans herbicide sur le sol
 - [ ] Fait (⚠️) : tous les domaines seraient certifiés bio depuis la vendange 2023 (dossier de presse de l’ODG, 2025 ; Le Figaro Vin, 18/01/2023, au futur et d’après l’ODG) ; aucune source indépendante (Agence Bio, INAO, certificateur) trouvée le 31/10/2026
