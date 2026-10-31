@@ -1,0 +1,185 @@
+{
+ "deps": [
+  "89"
+ ],
+ "fleuves": [
+  "Yonne",
+  "Serein",
+  "Armançon"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Auxerre",
+   "dep": "89"
+  },
+  {
+   "nom": "Chablis",
+   "dep": "89"
+  },
+  {
+   "nom": "Tonnerre",
+   "dep": "89"
+  },
+  {
+   "nom": "Joigny",
+   "dep": "89"
+  },
+  {
+   "nom": "Avallon",
+   "dep": "89"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Chablis",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Beine",
+    "Béru",
+    "Chablis",
+    "La Chapelle-Vaupelteigne",
+    "Chemilly-sur-Serein",
+    "Chichée",
+    "Collan",
+    "Courgis",
+    "Fleys",
+    "Fontenay-près-Chablis",
+    "Lignorelles",
+    "Ligny-le-Châtel",
+    "Maligny",
+    "Poilly-sur-Serein",
+    "Préhy",
+    "Villy",
+    "Viviers"
+   ]
+  },
+  {
+   "label": "Grands crus",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Chablis"
+   ]
+  },
+  {
+   "label": "Irancy",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Irancy",
+    "Vincelottes",
+    "Deux Rivières"
+   ]
+  },
+  {
+   "label": "Saint-Bris",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Chitry",
+    "Irancy",
+    "Quenne",
+    "Saint-Bris-le-Vineux",
+    "Vincelottes"
+   ]
+  },
+  {
+   "label": "Vézelay",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Asquins",
+    "Saint-Père",
+    "Tharoiseau",
+    "Vézelay"
+   ]
+  },
+  {
+   "label": "Chitry",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Chitry"
+   ]
+  },
+  {
+   "label": "Côtes d’Auxerre",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Augy",
+    "Auxerre",
+    "Quenne",
+    "Saint-Bris-le-Vineux",
+    "Vincelottes"
+   ]
+  },
+  {
+   "label": "Côte Saint-Jacques",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Joigny"
+   ]
+  },
+  {
+   "label": "Coulanges-la-Vineuse",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Charentenay",
+    "Coulanges-la-Vineuse",
+    "Escolives-Sainte-Camille",
+    "Jussy",
+    "Migé",
+    "Mouffy",
+    "Val-de-Mercy"
+   ]
+  },
+  {
+   "label": "Épineuil",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Épineuil"
+   ]
+  },
+  {
+   "label": "Tonnerre",
+   "discret": true,
+   "deps": [
+    "89"
+   ],
+   "communes": [
+    "Dannemoine",
+    "Épineuil",
+    "Junay",
+    "Molosmes",
+    "Tonnerre",
+    "Vézinnes"
+   ]
+  }
+ ]
+}

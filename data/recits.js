@@ -1082,12 +1082,12 @@ const RECITS = [
    "<b>Quatre étages.</b> Petit chablis, chablis, chablis premier cru (40 climats, regroupables sous 17 noms) et chablis grand cru. Plus on monte, plus le rendement de base baisse : 60 hl/ha pour les deux premiers, 58 pour le premier cru, 54 pour le grand cru.",
    "<b>Un grand cru unique.</b> Contrairement à la Côte-d’Or, où chaque grand cru est une appellation, le grand cru de Chablis est une seule appellation, limitée à la commune de Chablis. L’étiquette peut la compléter par l’un de sept climats : Blanchot, Bougros, Les Clos, Grenouilles, Preuses, Valmur, Vaudésir.",
    "<b>Le gel.</b> Vignoble du nord, Chablis redoute les gelées de printemps : on asperge ou on chauffe les parcelles. Le Kimméridgien, marne calcaire du Jurassique, fait sa réputation, même si l’aire n’a pas été tracée par la géologie seule (fiche 213).",
-   "<b>Autour de Chablis.</b> Le Grand Auxerrois garde ses singularités : Irancy, rouge de pinot noir où le césar est admis ; Saint-Bris, seul sauvignon de Bourgogne ; Vézelay, chardonnay devenu appellation à part entière ; et des Bourgogne à dénomination locale, comme Tonnerre, Épineuil, Chitry ou Côtes d’Auxerre."
+   "<b>Autour de Chablis.</b> Le Grand Auxerrois garde ses singularités : Irancy, rouge de pinot noir où le césar et le pinot gris sont admis en accessoires ; Saint-Bris, seul sauvignon de Bourgogne ; Vézelay, chardonnay devenu appellation à part entière ; et des Bourgogne à dénomination locale, comme Tonnerre, Épineuil, Chitry ou Côtes d’Auxerre."
   ],
   defend: "À Chablis, la hiérarchie se lit en quatre mots, petit chablis, chablis, premier cru, grand cru, et le grand cru est une appellation unique déclinée en sept climats.",
   client: "« Chablis, c’est toujours du chardonnay en blanc sec. Du petit chablis au grand cru, on gagne en précision de lieu, et le rendement autorisé baisse. »",
   filRouge: "Plus au sud, sur la Côte de Nuits, pourquoi le pinot noir règne-t-il presque seul ?",
-  src: "fiches 391, 392 et 213 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
+  src: "fiches 391, 392, 927 à 932 et 213 du site (INAO, cahiers des charges ; WSET D3 ; Oxford Companion)"
  },
  {
   chapitre: "Côte de Nuits",
@@ -1124,12 +1124,12 @@ const RECITS = [
    "La Côte chalonnaise prolonge la Côte-d’Or vers le sud. On y compte cinq appellations communales, et la hiérarchie s’y arrête au premier cru.",
    "<b>Du nord au sud.</b> Bouzeron, seule appellation communale de Bourgogne bâtie sur l’aligoté ; Rully, Mercurey et Givry, en blanc comme en rouge ; Montagny, blanc de chardonnay seul.",
    "<b>Les premiers crus.</b> Leur nombre grimpe vers le sud : 23 à Rully, 32 à Mercurey, 38 à Givry, 49 à Montagny.",
-   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, est réservé au rouge par le cahier des charges homologué fin 2023."
+   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, reste réservé au rouge dans le cahier du Bourgogne du 6 janvier 2026."
   ],
   defend: "La Côte chalonnaise offre la hiérarchie bourguignonne sans son sommet : des villages et des premiers crus, en rouge comme en blanc, et l’aligoté de Bouzeron.",
   client: "« Mercurey ou Givry pour un rouge, Rully ou Montagny pour un blanc, et Bouzeron pour découvrir l’aligoté. »",
   filRouge: "Plus au sud encore, que devient le chardonnay dans le Mâconnais ?",
-  src: "fiche 399 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
+  src: "fiches 399 et 933 à 937 du site (INAO, cahiers des charges ; Oxford Companion ; WSET D3)"
  },
  {
   chapitre: "Mâconnais",
@@ -1143,7 +1143,7 @@ const RECITS = [
   defend: "Le Mâconnais est la Bourgogne du chardonnay, et sa hiérarchie progresse encore : des premiers crus à Pouilly-Fuissé depuis 2020.",
   client: "« Mâcon-Villages ou Saint-Véran pour entrer dans le Mâconnais, Pouilly-Fuissé et ses premiers crus pour monter d’un cran. »",
   filRouge: "Juste au sud, pourquoi le gamay, proscrit en Bourgogne en 1395, est-il roi en Beaujolais ?",
-  src: "fiches 400, 401 et 672 du site (INAO, cahiers des charges et communiqués ; Decanter ; Oxford Companion)"
+  src: "fiches 400, 401, 672 et 938 à 940 du site (INAO, cahiers des charges et communiqués ; Decanter ; Oxford Companion)"
  },
  {
   chapitre: "Bordeaux : panorama et appellations",

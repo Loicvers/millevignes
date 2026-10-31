@@ -1,0 +1,181 @@
+{
+ "deps": [
+  "71"
+ ],
+ "fleuves": [
+  "Saône"
+ ],
+ "largeur": 340,
+ "villes": [
+  {
+   "nom": "Mâcon",
+   "dep": "71"
+  },
+  {
+   "nom": "Tournus",
+   "dep": "71"
+  }
+ ],
+ "zones": [
+  {
+   "label": "Mâcon",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Ameugny",
+    "Azé",
+    "Berzé-la-Ville",
+    "Berzé-le-Châtel",
+    "Bissy-la-Mâconnaise",
+    "Bissy-sous-Uxelles",
+    "Blanot",
+    "Boyer",
+    "Bray",
+    "Bresse-sur-Grosne",
+    "Burgy",
+    "Burnand",
+    "Bussières",
+    "Chaintré",
+    "Champagny-sous-Uxelles",
+    "Chânes",
+    "Chapaize",
+    "La Chapelle-sous-Brancion",
+    "Charbonnières",
+    "Chardonnay",
+    "Charnay-lès-Mâcon",
+    "Chasselas",
+    "Château",
+    "Chevagny-les-Chevrières",
+    "Chissey-lès-Mâcon",
+    "Clessé",
+    "Cortambert",
+    "Cortevaix",
+    "Crêches-sur-Saône",
+    "Cruzille",
+    "Curtil-sous-Burnand",
+    "Davayé",
+    "Étrigny",
+    "Farges-lès-Mâcon",
+    "Fleurville",
+    "Fuissé",
+    "Grevilly",
+    "Hurigny",
+    "Igé",
+    "Jalogny",
+    "Jugy",
+    "Lacrost",
+    "Laives",
+    "Laizé",
+    "Leynes",
+    "Lournand",
+    "Lugny",
+    "Mâcon",
+    "Malay",
+    "Mancey",
+    "Martailly-lès-Brancion",
+    "Milly-Lamartine",
+    "Montbellet",
+    "Montceaux-Ragny",
+    "Nanton",
+    "Ozenay",
+    "Péronne",
+    "Pierreclos",
+    "Plottes",
+    "Préty",
+    "Prissé",
+    "La Roche-Vineuse",
+    "Royer",
+    "Saint-Albain",
+    "Saint-Gengoux-de-Scissé",
+    "Saint-Gengoux-le-National",
+    "Saint-Martin-Belle-Roche",
+    "Saint-Maurice-de-Satonnay",
+    "Saint-Vérand",
+    "La Salle",
+    "Salornay-sur-Guye",
+    "Savigny-sur-Grosne",
+    "Sennecey-le-Grand",
+    "Senozan",
+    "Serrières",
+    "Sigy-le-Châtel",
+    "Sologny",
+    "Solutré-Pouilly",
+    "Tournus",
+    "Uchizy",
+    "Vergisson",
+    "Vers",
+    "Verzé",
+    "Le Villars",
+    "La Vineuse-sur-Frégande",
+    "Vinzelles",
+    "Viré",
+    "Bonnay",
+    "Saint-Ythaire"
+   ]
+  },
+  {
+   "label": "Viré-Clessé",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Clessé",
+    "Laizé",
+    "Montbellet",
+    "Viré"
+   ]
+  },
+  {
+   "label": "Saint-Véran",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Chânes",
+    "Chasselas",
+    "Davayé",
+    "Leynes",
+    "Prissé",
+    "Saint-Vérand",
+    "Solutré-Pouilly"
+   ]
+  },
+  {
+   "label": "Pouilly-Fuissé",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Chaintré",
+    "Fuissé",
+    "Solutré-Pouilly",
+    "Vergisson"
+   ]
+  },
+  {
+   "label": "Pouilly-Loché",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Mâcon"
+   ]
+  },
+  {
+   "label": "Pouilly-Vinzelles",
+   "discret": true,
+   "deps": [
+    "71"
+   ],
+   "communes": [
+    "Vinzelles"
+   ]
+  }
+ ]
+}
