@@ -41,8 +41,8 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 - [ ] **Cours de région** : Jura, Savoie, Provence, Sud-Ouest écrits le 31/10 ; reste à écrire Corse ; à mettre à jour Loire, Languedoc, Roussillon, Bourgogne (Alsace fait le 30/10). Voir priorité 1b.
 - [ ] **Récits** absents : Charentes, Lorraine, France (2) (Corse faite le 31/10).
 - [ ] **Points à vérifier** des lots du 30/10 : 818, 820, 822, 830, 842 levés le 31/10 (818 corrigée : nouveau cahier de L’Étoile du 2 sept. 2026). 832 levée grâce à Plantgrape. Restent 841 (Baux tout bio : ODG seule), 844 (cépages de Gascogne : pas de chiffres), 860, 863 (Alsace).
-- [ ] **Cartes manquantes** : Grand Roussillon (922, liste confirmée, carte non posée), Saint-Georges-Saint-Émilion (764), Crémant de Loire (880), rosés d’Anjou (879) ; Crémant du Jura (820) et Macvin (821) : aire de 97 communes, la config `jura.json` n’en a que 57 (à compléter d’après le cahier des Côtes du Jura de 2022 ; Bréry et Saint-Jean-d’Étreux en plus pour le crémant). Posées le 31/10 : 829, 835, 842, 849, 851, 857.
-- [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée, sur le PC) pour les 6 cartes du 31/10 (829, 835, 842, 849, 851, 857).
+- [ ] **Cartes manquantes** : Grand Roussillon (922, liste confirmée, carte non posée), Saint-Georges-Saint-Émilion (764), Crémant de Loire (880), rosés d’Anjou (879). Posées le 31/10 : 820, 821, 829, 835, 842, 849, 851, 857.
+- [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée, sur le PC) pour les 8 cartes du 31/10 (820, 821, 829, 835, 842, 849, 851, 857).
 - [ ] **Cahiers récents à relire dès parution au BO-agri** : dix cahiers de Touraine du 27/10/2026 (fiches 455, 882-892), Crémant de Bourgogne du 02/09/2026 (390) ; date de Vin de Corse (497, 1972 ou 1976).
 - [x] **Partenaires** recalculés le 31/10 sur toutes les cartes (liste reconstituée à partir du fichier de sortie ; fichier rendu à Loïc).
 - Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine pourrait passer à 2 fiches (Toul, Moselle).
