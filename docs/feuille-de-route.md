@@ -1,7 +1,7 @@
 # Feuille de route
 
 À lire en début de session, avec la fin de `docs/journal.md` (ce qui a été fait) et `docs/etat.md` (les chiffres).
-À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 30/10/2026.
+À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 31/10/2026.
 
 ## Objectif
 - Être prêt **le plus tôt possible**, première échéance le **31/12/2026**. Pas de diplôme précis visé pour l'instant.
@@ -18,7 +18,8 @@
 - Dépôt de sources : écriture autorisée par Loïc (registre, outils) ; jamais de contenu des sources dans ce dépôt public.
 
 ## À faire, par priorité
-1. **Lots France sur les régions peu couvertes** (en cours de développement de son côté) : Jura (fait le 30/10 : 11 fiches, cartes, récits ; 818 et 820 en attente des arrêtés), Savoie (fait le 30/10 : 13 fiches, cartes, récits ; 822 et 830 à vérifier), Provence (fait le 30/10 : 16 fiches, cartes, récits ; 832, 841, 842 à vérifier), Corse, Sud-Ouest (fait le 30/10 : 24 fiches, cartes, récits ; 844 à vérifier) (une fiche chacune), Alsace (fait le 30/10 : 9 fiches, cartes, récits ; 860 et 863 à vérifier), Beaujolais (fait le 29/10). Reste : voir « Régions : niveau de détail » ci-dessous. Source principale : WSET D3 2024 (dépôt de sources). Skill `lot-mille-vignes`.
+1. [x] **Lots France : une fiche par appellation dans toutes les régions** (fait du 29 au 31/10 : Bordeaux, Rhône, Beaujolais, Alsace, Jura, Savoie, Provence, Sud-Ouest, Val de Loire, Languedoc, Roussillon, Bourgogne hors Côte d’Or, Corse ; cartes de Bordeaux). Détail et restes : « Régions : niveau de détail » ci-dessous. Skill `lot-mille-vignes`.
+1b. **Cours « Approfondir » de région** à écrire ou mettre à jour avec les nouvelles fiches (prochaine étape proposée) : Loire (409), Languedoc (417), Roussillon (418), Bourgogne (385), Jura, Savoie, Provence, Sud-Ouest, Corse.
 2. **Relancer l'OCR** sur le PC avec `py outils/extraire_indra.py <pdf> <dossier>` (dépôt de sources), puis remplacer le texte et pousser :
    - [x] World Atlas of Wine 7e (fait le 29/10 : 201 pages, texte remplacé)
    - [x] WSET 2 (fait le 29/10 : 118 pages, texte presque identique à l'ancien OCR, un peu plus propre)
@@ -29,18 +30,20 @@
 4. **Monde** : 1 à 4 fiches par pays ; à développer selon le temps restant après la France.
 5. **Plus de fiches « Pointu »** (114 sur 748) si l'objectif devient un diplôme (WSET 3 ou 4).
 
-## Régions : niveau de détail (bilan du 30/10)
+## Régions : niveau de détail (bilan du 30/10, mis à jour le 31/10)
 Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou style, vérifiée sur le cahier des charges en vigueur, carte de situation par fiche d’appellation, récit de chaque chapitre, cours « Approfondir » de la région mis à jour).
 - [x] **Languedoc** : fait le 30/10 (35 fiches, 18 nouvelles 901-918, 5 recentrées, 21 cartes de situation, récit des crus complété), toutes vérifiées. Grés de Montpellier (2024) et Montpeyroux (2026) sont devenues des AOC à part ; La Livinière et Boutenac ont perdu « Minervois- » et « Corbières- » (cahiers de 2022). Reste : cours « Approfondir » de la région (417) à revoir avec les nouvelles fiches ; Terrasses du Larzac, modification en opposition (JORF du 25 juillet 2026) non lue.
 - [x] **Roussillon** : fait le 31/10 (18 fiches, 8 nouvelles 919-926, 3 recentrées, 10 cartes, récit complété), toutes vérifiées sur les cahiers en vigueur ; Banyuls grand cru, Maury et Grand Roussillon lus dans les recueils BO-agri de 2011. Reste : cours de la région (418).
 - [x] **Val de Loire** : fait le 30/10 (65 fiches, 33 nouvelles 868-900, 8 recentrées, cartes de situation, récits des 4 chapitres). 885 Touraine Noble Joué et 891 Orléans vérifiées le 30/10 sur les cahiers de 2011 ; leurs cahiers du 27/10/2026 (et ceux de Bourgueil, Coteaux du Loir, Cour-Cheverny, Jasnières, Montlouis, Saint-Nicolas, Touraine, Valençay, homologués le même jour, JO du 29/10) sont annoncés au BO-agri mais pas encore en ligne : relire les fiches correspondantes quand ils paraîtront ; 900 Côte Roannaise vérifiée le 30/10 (cahier de 2011 au JO transmis par Loïc) ; cours « Approfondir » de la région (409) à mettre à jour ; cahiers de Menetou-Salon, Châteaumeillant et Côtes du Forez (2011-2013) à revoir s’il en existe de plus récents.
 - [x] **Bourgogne hors Côte d’Or** : fait le 31/10 (14 nouvelles fiches 927-940, 5 recentrées : 391 Chablis, 392 Irancy, 399 Côte chalonnaise, 400 Mâcon, 401 Pouilly-Fuissé ; 19 cartes, récits), toutes vérifiées. Reste : cours de la région (385) ; Crémant de Bourgogne (390) à relire sur le cahier du 2 septembre 2026.
 - [x] **Bordeaux** : cartes de situation posées le 31/10 sur 30 fiches d’appellation (31 avec 421), d’après les listes de communes des cahiers en vigueur (configs `bordeaux-sud`, `bordeaux-libournais`, `bordeaux-gironde`, et `medoc`). Sans carte : 424 (hiérarchie), 764 Saint-Georges (commune absorbée par Montagne), 771 Bordeaux, 772 Crémant. Listes de Saint-Julien et Saint-Georges prises sur les fiches INAO (cahiers introuvables au BO-agri).
-Ordre : toutes les régions prévues sont faites (31/10) ; restent les cours de région et les récits listés ci-dessous.
 - [x] **Corse** : fait le 31/10 (13 fiches, 8 nouvelles 941-948, 2 recentrées : 496 Patrimonio, 497 Vin de Corse ; 9 cartes ; récits des 2 chapitres), toutes vérifiées. Reste : date de reconnaissance de Vin de Corse (1972 en section I, 1976 en section X : décret à lire).
-- [ ] **Cours de région** absents : Jura, Savoie, Provence, Sud-Ouest, Corse (Alsace fait le 30/10).
+- [ ] **Cours de région** : à écrire pour Jura, Savoie, Provence, Sud-Ouest, Corse ; à mettre à jour pour Loire, Languedoc, Roussillon, Bourgogne (Alsace fait le 30/10). Voir priorité 1b.
 - [ ] **Récits** absents : Charentes, Lorraine, France (2) (Corse faite le 31/10).
 - [ ] **Points à vérifier** des lots du 30/10 : 818, 820 (Jura), 822, 830 (Savoie), 832, 841, 842 (Provence), 844 (Sud-Ouest), 860, 863 (Alsace).
+- [ ] **Cartes manquantes** : Grand Roussillon (922, liste confirmée, carte non posée), Saint-Georges-Saint-Émilion (764), Crémant de Loire (880), rosés d’Anjou (879).
+- [ ] **Cahiers récents à relire dès parution au BO-agri** : dix cahiers de Touraine du 27/10/2026 (fiches 455, 882-892), Crémant de Bourgogne du 02/09/2026 (390) ; date de Vin de Corse (497, 1972 ou 1976).
+- [x] **Partenaires** recalculés le 31/10 sur toutes les cartes (liste reconstituée à partir du fichier de sortie ; fichier rendu à Loïc).
 - Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine pourrait passer à 2 fiches (Toul, Moselle).
 
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
