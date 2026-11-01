@@ -145,7 +145,7 @@ jauge: { style: "Alsace, vin sec", acidite: 5, tanins: null, alcool: 3, corps: 3
 - `note` (facultatif) : une phrase sur une divergence entre sources ou une précision de style, affichée sous la jauge.
 - Critère absent du champ : aucune source ne le documente ; il n’est pas affiché (jamais estimé).
 - `style` : le vin décrit (région et style typiques), car la structure change selon le lieu et la vinification.
-- Un niveau n'est posé que s'il s'appuie sur une source ; deux sources concordantes sinon le critère va dans `a_verifier` (⚠ affiché). Divergence : le niveau de la source la plus récente, l'écart noté dans `selon_livre` ou un exercice.
+- Un niveau n'est posé que s'il s'appuie sur une source ; deux sources concordantes sinon le critère va dans `a_verifier` (⚠ affiché). Divergence (règle du 01/11/2026) : deux sources concordantes contre une seule l'emportent, même sur une plus récente ; deux sources isolées à un niveau d'écart donnent la fourchette `[a, b]` ; à plus d'un niveau, celui de la plus récente, critère dans `a_verifier`. L'écart est toujours noté dans `note`. Une source absente du dépôt de sources (Plantgrape…) n'est pas une source fausse : on ne retire pas un niveau qu'elle appuie sans source contraire.
 - Exercices tirés des jauges (`ordering`, `mcq_single`…) : seulement sur des critères hors `a_verifier`, entre cépages au même style comparable.
 
 ## Exercices — 11 types
