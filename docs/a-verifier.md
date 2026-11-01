@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-966 fiches : 957 vérifiées, 9 à vérifier (11 points).
+966 fiches : 958 vérifiées, 8 à vérifier (10 points).
 Hors dette : 2448 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
@@ -15,14 +15,11 @@ Hors dette : 2448 détails laissés « selon le livre » (champ `selon_livre`, n
 - [ ] Moules avec muscadet, chablis, chardonnay non boisé (⚠️) : deux sources de niveau 2b (Dornenburg et Page, Johnson), aucune de niveau 2a
 - [ ] Carbonnade et vin (⚠️) : pas d’accord classique ; le raisonnement par composantes applique des règles générales
 
-**Fiche 841** (p.?) — Les Baux-de-Provence : les Alpilles, sans herbicide sur le sol
-- [ ] Fait (⚠️) : tous les domaines seraient certifiés bio depuis la vendange 2023 (dossier de presse de l’ODG, 2025 ; Le Figaro Vin, 18/01/2023, au futur et d’après l’ODG) ; aucune source indépendante (Agence Bio, INAO, certificateur) trouvée le 31/10/2026
-
 **Fiche 844** (p.?) — IGP Côtes de Gascogne : des blancs libres de cépage, nés de l’armagnac
 - [ ] Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant ; aucun chiffre de surface par cépage trouvé le 31/10/2026 (Syndicat des Côtes de Gascogne, FranceAgriMer) ; une source de presse non lue ferait du gros manseng le deuxième cépage planté
 
 **Fiche 860** (p.?) — Le Klevener de Heiligenstein
-- [ ] Introduction du cépage à Heiligenstein en 1740 par Erhard Wantz : Oxford seul ; des sites locaux, non vérifiables, donnent 1742
+- [ ] Introduction du cépage à Heiligenstein par Erhard Wantz : 1740 (Oxford) contre 1742 (RVF, klevener.fr, abcduvin, domaines) ; l’acte du Conseil des échevins de Strasbourg n’est cité nulle part
 
 **Fiche 863** (p.?) — Lieux-dits et projet de premiers crus : l’étage entre la commune et le grand cru
 - [ ] Projet « Alsace cru » puis premier cru (préférence de l’INAO, rendements et types de vin du projet) : presse spécialisée seule (Vitisphere, 27 mars et 4 août 2025), aucun texte de l’INAO publié
