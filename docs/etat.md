@@ -2,7 +2,7 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 946 (dernier id : 948) · exercices : 4837
+- Fiches : 946 (dernier id : 948) · exercices : 4985
 - Vérifiées : 939 · à vérifier : 7 (9 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2393
 - Niveaux : Fondamental 252 · Intermédiaire 501 · Pointu 193
 - Cours (Approfondir) : 219 · schémas : 429
