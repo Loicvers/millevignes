@@ -49,14 +49,14 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 
 ## À faire depuis une session sur le PC de Loïc (réseau du conteneur trop restreint, 01/11)
 Hôtes refusés dans le cloud : legifrance.gouv.fr, extranet.inao.gouv.fr, wikipedia, vinsalsace.com, franceagrimer.fr, decanter.com, reussir.fr. Ouvrir la session dans Claude Desktop (onglet Claude Code, dossier local `millevignes`), avec Claude in Chrome si besoin.
-- [ ] Touraine : les dix cahiers du 27/10/2026 (JORF du 29/10) ; relire 455, 882-889, 891.
-- [ ] Bourgogne passe-tout-grains (954) et Bourgogne mousseux (955) : cahier plus récent que 2013 et 2011 ?
-- [ ] Vin de Corse (497) : lire le décret du 2 avril 1976 (et celui du 22 décembre 1972 cité en section I).
-- [ ] Corton (965) : mention de climat sur le blanc (cahier : rouge seulement ; Johnson, Morris citent un Corton-Vergennes blanc).
-- [ ] Terrasses du Larzac (902) : homologation de la modification de juillet 2026.
-- [ ] Gevrey : modifications en opposition (Chambertin, JORF 28/06/2026 ; Charmes, JORF 03/07/2026), homologuées ?
-- [ ] Alsace : 860 (1740 ou 1742), 861 (chiffre CIVA récent du pinot noir), 863 (procédure « premier cru »), 864-866 (année de la brochure CIVA).
-- [ ] 841 Baux tout bio (Agence Bio, certificateurs), 844 cépages des Côtes de Gascogne (IDAC, Agreste).
+- [ ] Touraine : les dix cahiers du 27/10/2026 (JORF n° 253 du 29/10) ; relire 455, 882-889, 891. Au 01/11, le BO-agri répond « en cours de publication » (Orléans-Cléry homologué en plus, JORF n° 254 du 30/10).
+- [ ] Bourgogne passe-tout-grains (954) et Bourgogne mousseux (955) : cahier plus récent que 2013 et 2011 ? 01/11 : rien au JORF pour l’un ni l’autre (954 confirmé par Légifrance, version du 28/01/2013) ; reste la section II du cahier Bourgogne réhomologué le 27/10/2026 (954) et une confirmation INAO (955).
+- [x] Vin de Corse (497) : 1976 confirmé par les visas du décret du 6 mars 2003 ; 1972 = décret de délimitation de l’aire des « Vins de Corse » par communes (titre au JO), suivi d’un décret du 24/09/1974 ; textes de 1972-1976 en fac-similé, non relus (01/11).
+- [x] Corton (965) : cahier de 2011 toujours en vigueur (aucune homologation depuis le décret 2011-1390, dernier avis d’opposition en 2010) ; le Corton-Vergennes blanc reste un usage hors cahier (01/11).
+- [x] Terrasses du Larzac (902) : avis d’opposition au JORF n° 172 du 25/07/2026, pas d’homologation au 01/11.
+- [x] Gevrey : avis d’opposition pour les neuf grands crus (JORF n° 150, 152, 154, 157 des 28/06, 01/07, 03/07, 07/07/2026), aucune homologation au 01/11.
+- [ ] Alsace : 860 (1740 ou 1742 : fait le 01/11, PR #41, acte toujours introuvable), 861 (chiffre CIVA récent du pinot noir), 863 (procédure « premier cru »), 864-866 (année de la brochure CIVA).
+- [ ] 841 Baux tout bio (fait le 01/11, PR #41 : ODG et Terre de Vins), 844 cépages des Côtes de Gascogne (IDAC, Agreste).
 - [ ] Cartes de situation des nouvelles fiches (949 Moselle, 950-968) et `partenaires.mjs`.
 
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
