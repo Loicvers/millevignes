@@ -47,6 +47,18 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 - [x] **Partenaires** recalculés le 31/10 sur toutes les cartes (liste reconstituée à partir du fichier de sortie ; fichier rendu à Loïc).
 - Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine : 2 fiches depuis le 01/11 (576 Côtes de Toul, 949 Moselle, sur les cahiers de 2026).
 
+## À faire depuis une session sur le PC de Loïc (réseau du conteneur trop restreint, 01/11)
+Hôtes refusés dans le cloud : legifrance.gouv.fr, extranet.inao.gouv.fr, wikipedia, vinsalsace.com, franceagrimer.fr, decanter.com, reussir.fr. Ouvrir la session dans Claude Desktop (onglet Claude Code, dossier local `millevignes`), avec Claude in Chrome si besoin.
+- [ ] Touraine : les dix cahiers du 27/10/2026 (JORF du 29/10) ; relire 455, 882-889, 891.
+- [ ] Bourgogne passe-tout-grains (954) et Bourgogne mousseux (955) : cahier plus récent que 2013 et 2011 ?
+- [ ] Vin de Corse (497) : lire le décret du 2 avril 1976 (et celui du 22 décembre 1972 cité en section I).
+- [ ] Corton (965) : mention de climat sur le blanc (cahier : rouge seulement ; Johnson, Morris citent un Corton-Vergennes blanc).
+- [ ] Terrasses du Larzac (902) : homologation de la modification de juillet 2026.
+- [ ] Gevrey : modifications en opposition (Chambertin, JORF 28/06/2026 ; Charmes, JORF 03/07/2026), homologuées ?
+- [ ] Alsace : 860 (1740 ou 1742), 861 (chiffre CIVA récent du pinot noir), 863 (procédure « premier cru »), 864-866 (année de la brochure CIVA).
+- [ ] 841 Baux tout bio (Agence Bio, certificateurs), 844 cépages des Côtes de Gascogne (IDAC, Agreste).
+- [ ] Cartes de situation des nouvelles fiches (949 Moselle, 950-968) et `partenaires.mjs`.
+
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
 Quatre onglets autour des deux usages (réviser chaque jour, travailler devant un client) ; mêmes données et mêmes clés de stockage.
 - [x] Étape 1 — **Aujourd'hui** (accueil, remplace « Session du jour ») : séance du jour avec durée estimée, échéance (J-n, fiches vues, rythme), reprendre la lecture, examen blanc et points durs, suivi en bref.

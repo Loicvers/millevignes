@@ -2,9 +2,9 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 947 (dernier id : 949) · exercices : 4993
-- Vérifiées : 940 · à vérifier : 7 (9 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2394
-- Niveaux : Fondamental 252 · Intermédiaire 502 · Pointu 193
+- Fiches : 966 (dernier id : 968) · exercices : 5114
+- Vérifiées : 957 · à vérifier : 9 (11 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2448
+- Niveaux : Fondamental 253 · Intermédiaire 510 · Pointu 203
 - Cours (Approfondir) : 219 · schémas : 429
 - Lexique : 84 termes · récits de chapitre : 107
 
@@ -24,10 +24,10 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-alsace-appellations.js | 10 | 467–867 | hors livre | 9 | 2 | 2 |
 | fr-alsace.js | 10 | 405–862 | hors livre | 9 | 1 | 4 |
 | fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 12 |
-| fr-beaujolais.js | 7 | 406–711 | hors livre | 7 | 1 | 2 |
-| fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 32 |
+| fr-beaujolais.js | 8 | 406–950 | hors livre | 8 | 1 | 2 |
+| fr-bordeaux-appellations.js | 36 | 421–968 | hors livre | 36 | 0 | 32 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
-| fr-bourgogne.js | 64 | 385–940 | hors livre | 64 | 1 | 23 |
+| fr-bourgogne.js | 79 | 385–967 | hors livre | 77 | 1 | 23 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 8 |
 | fr-champagne.js | 7 | 403–700 | hors livre | 7 | 1 | 2 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 1 |
@@ -36,7 +36,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-france.js | 3 | 402–573 | hors livre | 3 | 0 | 1 |
 | fr-jura-appellations.js | 10 | 492–821 | hors livre | 10 | 0 | 6 |
 | fr-jura.js | 2 | 407–813 | hors livre | 2 | 1 | 1 |
-| fr-languedoc-appellations.js | 23 | 476–918 | hors livre | 23 | 0 | 21 |
+| fr-languedoc-appellations.js | 24 | 476–952 | hors livre | 24 | 0 | 21 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
 | fr-loire-appellations.js | 45 | 447–900 | hors livre | 45 | 0 | 45 |
 | fr-loire.js | 8 | 409–695 | hors livre | 8 | 1 | 2 |
@@ -49,7 +49,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-roussillon.js | 6 | 418–722 | hors livre | 6 | 1 | 2 |
 | fr-savoie-appellations.js | 9 | 494–830 | hors livre | 9 | 0 | 7 |
 | fr-savoie.js | 3 | 408–823 | hors livre | 3 | 1 | 1 |
-| fr-sud-ouest-appellations.js | 19 | 484–858 | hors livre | 19 | 0 | 17 |
+| fr-sud-ouest-appellations.js | 20 | 484–951 | hors livre | 20 | 0 | 17 |
 | fr-sud-ouest.js | 3 | 414–844 | hors livre | 2 | 1 | 1 |
 | monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 1 |
 | monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 1 |

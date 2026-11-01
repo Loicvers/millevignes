@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-947 fiches : 940 vérifiées, 7 à vérifier (9 points).
-Hors dette : 2394 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+966 fiches : 957 vérifiées, 9 à vérifier (11 points).
+Hors dette : 2448 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -26,3 +26,9 @@ Hors dette : 2394 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 863** (p.?) — Lieux-dits et projet de premiers crus : l’étage entre la commune et le grand cru
 - [ ] Projet « Alsace cru » puis premier cru (préférence de l’INAO, rendements et types de vin du projet) : presse spécialisée seule (Vitisphere, 27 mars et 4 août 2025), aucun texte de l’INAO publié
+
+**Fiche 954** (p.?) — Bourgogne Passe-tout-grains : l’assemblage obligatoire de pinot noir et de gamay
+- [ ] Version du cahier (⚠️) : seul le cahier modifié par le décret 2013-86 du 24/01/2013 (publié au BO-agri le 24/01/2013) a été retrouvé ; les cahiers Bourgogne et Bourgogne aligoté ont été réhomologués fin 2023, aucune version plus récente du Passe-tout-grains n’a été trouvée au BO-agri le 01/11/2026. À confirmer à l’INAO.
+
+**Fiche 955** (p.?) — Bourgogne mousseux : le mousseux rouge de Bourgogne, reconnu en 1943
+- [ ] Version du cahier (⚠️) : seule la version homologuée par le décret 2011-1492 du 09/11/2011 (publiée au BO-agri le 09/11/2011) a été retrouvée ; aucune version plus récente trouvée au BO-agri le 01/11/2026 (le Crémant de Bourgogne, lui, a été réhomologué le 02/09/2026). À confirmer à l’INAO.
