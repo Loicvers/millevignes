@@ -1706,5 +1706,184 @@ const RECITS = [
   client: "« Pour un rouge de caractère, Patrimonio ; pour un rouge de granite, Ajaccio ; pour finir le repas, un muscat du Cap Corse. »",
   filRouge: "De retour sur le continent, que produisent les Charentes à côté du cognac ?",
   src: "fiches 496, 497, 941 à 947 du site (cahiers des charges, BO-agri et Journal officiel ; Oxford Companion)"
+ },
+ {
+  chapitre: "La France viticole : vue d’ensemble",
+  question: "Trois climats, trois étages d’appellations : comment se repérer dans le vignoble français ?",
+  fil: [
+   "<b>Trois climats.</b> Le vignoble français se partage entre le climat océanique, le climat continental et le climat méditerranéen. Le Rhône Sud, le Languedoc-Roussillon et la Provence relèvent du dernier.",
+   "<b>Une pyramide.</b> La réglementation range les vins en trois étages. L’AOP : un terroir délimité, un lien étroit avec les facteurs naturels et humains. L’IGP : un lien plus lâche, une zone plus vaste. En bas, le vin sans indication géographique.",
+   "<b>Des ordres de grandeur.</b> En 2024, selon FranceAgriMer, les surfaces en production se répartissent ainsi : AOP 404 300 ha (environ 55 %), IGP 200 300 ha (environ 27 %), vin sans IG 38 700 ha (environ 5 %). Le reste, environ 12 %, est destiné aux eaux-de-vie comme le cognac et l’armagnac. Le vignoble couvre quelque 740 000 ha en 2025 d’après l’OIV, et il recule d’année en année."
+  ],
+  defend: "Trois climats donnent le cadre naturel ; la pyramide AOP, IGP, vin sans IG donne le cadre réglementaire. AOP = une origine précise et des règles serrées ; IGP = une zone plus large, plus de liberté.",
+  client: "« Une AOP, c’est une origine précise et des règles serrées ; une IGP, une zone plus large et plus de liberté. »",
+  filRouge: "Que change-t-il concrètement de passer de l’AOP à l’IGP, puis au Vin de France ?",
+  src: "fiche 402 du site (sources principales : FranceAgriMer, OIV, Oxford Companion)"
+ },
+ {
+  chapitre: "IGP et Vin de France",
+  question: "IGP, Vin de France : que permettent-ils de plus que l’AOP ?",
+  fil: [
+   "<b>Des règles plus souples.</b> Les IGP couvrent des aires plus larges que les AOC, avec moins de règles et des rendements plus élevés : 120 hl/ha en Côtes de Gascogne, contre 60 hl/ha pour les blancs et gris des Côtes de Toul.",
+   "<b>Les grandes IGP.</b> Le Pays d’Oc couvre le Languedoc-Roussillon et reste de loin la première IGP de France, surtout en vins de cépage : merlot, cabernet-sauvignon, chardonnay, syrah. Les Côtes de Gascogne couvrent tout le Gers et des communes des Landes et du Lot-et-Garonne, avec une majorité de blancs et le colombard comme cépage majeur. Le Val de Loire s’étend sur quatorze départements, la Méditerranée sur la Provence, la Corse, la Drôme et l’Ardèche, le Comté Tolosan sur douze départements du Sud-Ouest.",
+   "<b>Le Vin de France.</b> C’est un vin sans indication géographique, successeur du vin de table : raisins récoltés et vinifiés en France, aucun nom de lieu sur l’étiquette. Depuis 2009, il peut afficher le cépage et le millésime si 85 % au moins du volume en provient. Treize cépages, dont le riesling et le savagnin, ne peuvent pas être mentionnés.",
+   "<b>Pourquoi y recourir ?</b> Des vignerons d’appellation y passent pour utiliser des cépages ou des assemblages que leur cahier des charges n’admet pas, pour expérimenter, ou parce que l’agrément de l’appellation leur a été refusé."
+  ],
+  defend: "Trois portes de plus en plus larges : l’AOP est un portillon, l’IGP un portail de ferme, le Vin de France une route sans barrière, où le nom d’un lieu reste pourtant interdit.",
+  client: "« Une étiquette Vin de France ou IGP n’est pas forcément un aveu de faiblesse : c’est parfois la liberté d’un vigneron qui sort du cahier des charges. »",
+  filRouge: "Avec les règles en tête, voyons une première grande région d’appellations : que dit la Champagne ?",
+  src: "fiches 572, 573 du site (sources principales : cahiers des charges, DGCCRF, FranceAgriMer, WSET)"
+ },
+ {
+  chapitre: "Charentes : pineau et vins de liqueur",
+  question: "Pineau des Charentes, floc, macvin : en quoi un vin de liqueur diffère-t-il d’un vin doux naturel ?",
+  fil: [
+   "<b>Le pineau des Charentes.</b> C’est un vin de liqueur : on mute du moût de raisin avec de l’eau-de-vie AOC Cognac d’au moins 60 % vol., élevée en fût de chêne et rassise. Le moût doit dépasser 170 g/L de sucre au mutage, et le vin fini titre entre 16 et 22 % vol. Il existe en blanc, en rosé et en rouge.",
+   "<b>Pas un vin doux naturel.</b> L’alcool ajouté est l’eau-de-vie de la région, non un alcool neutre. Le blanc demande 18 mois d’élevage au moins, dont 12 en chêne. Pour « vieux » et « très vieux », le cahier des charges en vigueur exige plus de 7 et plus de 12 ans en bois de chêne.",
+   "<b>Chacun son eau-de-vie.</b> Le floc de Gascogne, vin de liqueur gascon, est muté à l’armagnac, en blanc ou en rosé, de 16 à 18 % vol. Le macvin du Jura suit la même logique avec un marc du Jura. Les vins doux naturels (rivesaltes, banyuls, muscat de Beaumes-de-Venise) reçoivent au contraire un alcool vinique neutre d’au moins 96 % vol., à raison de 5 à 10 % du volume du moût."
+  ],
+  defend: "Pineau, floc, macvin : chaque vin boit l’eau-de-vie de sa maison. Le vin doux naturel reçoit un alcool neutre. Ce choix de l’alcool sert de repère au comptoir.",
+  client: "« Le pineau, c’est du moût de raisin muté au cognac de la région ; un vin doux naturel, lui, est muté à l’alcool neutre. »",
+  filRouge: "Plus au nord-est, que produit la Lorraine, loin des grands noms ?",
+  src: "fiches 574, 575 du site (sources principales : cahiers des charges, INAO, règlement (UE) 1308/2013, Oxford Companion)"
+ },
+ {
+  chapitre: "Lorraine : Côtes de Toul et Moselle",
+  question: "Deux petites AOC du nord-est : que faut-il savoir des Côtes de Toul et de la Moselle ?",
+  fil: [
+   "<b>Les Côtes de Toul.</b> Huit communes de Meurthe-et-Moselle, reconnues en AOC en 1998 après un VDQS de 1951. On y fait du blanc (auxerrois, aubin), du rouge de pinot noir et surtout du vin gris, qui associe obligatoirement gamay et pinot noir, chacun à 85 % au plus et le pinot noir à 10 % au moins : le « gris de Toul ».",
+   "<b>Un coteau abrité.</b> Il regarde le sud et le sud-est, à l’abri des vents dominants, sur des sols argilo-calcaires et caillouteux : des atouts précieux pour un vignoble septentrional.",
+   "<b>La Moselle.</b> Elle produit des blancs, rouges et rosés. Les blancs reposent d’abord sur l’auxerrois, le müller-thurgau et le pinot gris, les rouges et rosés sur le pinot noir. Le vignoble se répartit en trois secteurs : Metz, Vic-sur-Seille et Sierck-les-Bains."
+  ],
+  defend: "La Lorraine compte deux AOC : les Côtes de Toul, qui font surtout du vin gris de gamay et de pinot noir, et la Moselle, dont les blancs reposent d’abord sur l’auxerrois.",
+  client: "« Un gris de Toul, c’est un vin de gamay et de pinot noir, né d’un coteau tourné vers le sud et le sud-est. »",
+  filRouge: "Les régions étant parcourues, quels cépages font leur identité ? Commençons par les Cépages d’Alsace.",
+  src: "fiche 576 du site (sources principales : cahiers des charges, INAO)"
+ },
+ {
+  chapitre: "Cépages d’Alsace",
+  question: "Pourquoi le vignoble alsacien se lit-il d’abord par ses cépages ?",
+  fil: [
+   "<b>Quatre cépages nobles.</b> Riesling, gewurztraminer, pinot gris et muscat sont, en règle générale, les seuls admis en alsace grand cru blanc, en vendanges tardives et en sélection de grains nobles. Les exceptions se comptent : le sylvaner au seul Zotzenberg, un assemblage à riesling dominant à l’Altenberg de Bergheim, un assemblage à gewurztraminer dominant au Kaefferkopf.",
+   "<b>Trois blancs à reconnaître au nez.</b> Le riesling est tendu : acidité élevée, citron, fleurs, pierre, longue garde, parfois une note de pétrole avec l’âge. Le gewurztraminer est exubérant : litchi, rose, corps ample, acidité moyenne à faible, robe dorée à cuivrée. Le pinot gris est riche : robe dorée, texture souvent huileuse, miel et gingembre, acidité faible à moyenne.",
+   "<b>Deux discrets au quotidien.</b> Le sylvaner est sec, frais et désaltérant, avec ses agrumes et son herbe fraîche ; ses meilleurs coteaux sont autour de Mittelbergheim. Sous l’étiquette « Pinot blanc » se cachent le pinot blanc et l’auxerrois, deux blancs ronds et souples, au nez de pomme et de pêche, à boire jeunes ; ils entrent dans le crémant d’Alsace, mais pas dans les grands crus.",
+   "<b>Un fil pour ne pas se tromper.</b> Le pinot gris est une mutation de couleur du pinot noir, et le gewurztraminer la forme aromatique du savagnin : deux cépages que l’on retrouvera ailleurs."
+  ],
+  defend: "L’Alsace se lit par quatre cépages nobles (riesling, gewurztraminer, pinot gris, muscat) et des blancs discrets (le sylvaner, le pinot blanc et l’auxerrois).",
+  client: "« Pour un blanc sec et tendu, un riesling ; pour un vin ample qui sent le litchi, un gewurztraminer ; pour tous les jours, un sylvaner ou un pinot blanc. »",
+  filRouge: "Que deviennent le pinot noir et le chardonnay en Bourgogne, dans le Beaujolais et en Champagne ?",
+  src: "fiches 375, 506, 507, 597, 598 et 599 du site (sources principales : cahiers des charges, Wine Grapes, Oxford Companion, WSET)"
+ },
+ {
+  chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
+  question: "Que deviennent le pinot noir et le chardonnay en Bourgogne, dans le Beaujolais et en Champagne ?",
+  fil: [
+   "<b>Une même famille.</b> Chardonnay, aligoté et gamay sont nés du croisement du pinot et du gouais blanc : le gamay vient du pinot noir, le chardonnay et l’aligoté du pinot. Le meunier, lui, est une variante du pinot noir. Quatre cépages, une seule parenté.",
+   "<b>Le chardonnay, une toile.</b> Peu typé de lui-même, il prend l’empreinte du climat et de la cave : pomme et citron en climat frais, fruits tropicaux en climat chaud, notes beurrées et toastées avec le fût. Il est le cépage unique du Chablis et celui de la plupart des blancs de blancs de Champagne. L’aligoté, son frère, est le second blanc de Bourgogne : vif, citronné, à boire jeune, c’est la base du kir bourguignon ; Bouzeron en fait une appellation communale.",
+   "<b>Le pinot noir, la finesse.</b> Sa pellicule est fine : peu de couleur, des tanins modestes, un vin qui dit le millésime. En Bourgogne, un Gevrey-Chambertin est plus puissant, un Volnay plus fin. En Champagne, il occupe 38 % du vignoble, contre 31 % pour le meunier et 31 % pour le chardonnay.",
+   "<b>Le gamay et le meunier, le fruit.</b> Le gamay donne le Beaujolais, des vins simples aux dix crus : framboise, cerise, peu de tanin ; les beaujolais d’entrée de gamme passent souvent par la macération carbonique. Le meunier domine la Vallée de la Marne, grâce à son débourrement tardif, et apporte du fruit et de la souplesse à l’assemblage ; le duvet blanc sous ses feuilles le trahit."
+  ],
+  defend: "Chardonnay, aligoté, gamay et meunier sont de la même famille que le pinot : le chardonnay épouse son milieu, le pinot noir est fin et sensible au climat, le gamay et le meunier donnent le fruit.",
+  client: "« Si vous aimez le fruit croquant et peu de tanin, prenez un beaujolais ; pour la finesse, un pinot noir de Bourgogne ; pour un blanc tendu, un chablis. »",
+  filRouge: "Plus à l’est, quels cépages rares font la singularité du Jura et de la Savoie ?",
+  src: "fiches 372, 376, 499, 514 et 601 du site (sources principales : Wine Grapes, Oxford Companion, cahiers des charges, INAO, Comité Champagne)"
+ },
+ {
+  chapitre: "Cépages du Jura et de Savoie",
+  question: "Plus à l’est, quels cépages rares font la singularité du Jura et de la Savoie ?",
+  fil: [
+   "<b>Le Jura, trois cépages de caractère.</b> Le savagnin est un cépage ancien, le même que le traminer et que le gewurztraminer à baies roses. Il fait le vin jaune, élevé au moins 60 mois sous voile de levures, sans mutage, au caractère oxydatif qui rappelle le sherry ; à Château-Chalon, c’est le seul vin produit. Les deux rouges autochtones s’opposent : le poulsard (ploussard à Pupillin) est pâle, léger, vif, couleur pelure d’oignon ; le trousseau, le bastardo du Portugal, est plus coloré, plus chaud, plus structuré et apte à vieillir.",
+   "<b>La Savoie, des blancs de montagne.</b> La jacquère, cépage blanc le plus répandu, donne des blancs secs, légers, frais, peu aromatiques, à boire jeunes ; Apremont et Abymes en sont les crus les plus expressifs. L’altesse, ou roussette, est plus riche : fleurs blanches, miel, amande, bonne acidité, quelques années de garde ; elle est seule dans la Roussette de Savoie.",
+   "<b>Un blanc du Léman, un rouge de caractère.</b> Le chasselas, né sur les rives du Léman, règne sur Crépy, Marignan, Marin et Ripaille, et fait seul le Pouilly-sur-Loire : des blancs légers, souples, discrets, de soif. En rouge, la mondeuse noire est à l’opposé du poulsard : robe profonde, tanins marqués, fruits rouges et poivre, violette avec l’âge, vin de garde.",
+   "<b>Comment s’y retrouver.</b> Au Jura, le savagnin pour l’oxydatif, le poulsard pour le pâle, le trousseau pour le charpenté. En Savoie, la jacquère pour la soif, l’altesse pour la garde, la mondeuse pour le rouge de structure."
+  ],
+  defend: "Le Jura et la Savoie se lisent par leurs cépages : savagnin, poulsard et trousseau d’un côté ; jacquère, altesse, chasselas et mondeuse de l’autre.",
+  client: "« Pour découvrir, un vin jaune de savagnin ; pour un rouge léger, un poulsard ; pour un blanc de montagne, une jacquère ; pour un rouge de garde, une mondeuse. »",
+  filRouge: "Dans le Val de Loire, quels cépages font le sancerre, le vouvray, le muscadet et les rouges pâles ?",
+  src: "fiches 509, 600, 603, 604, 619, 620 et 621 du site (sources principales : Wine Grapes, Oxford Companion, cahiers des charges, Plantgrape, WSET)"
+ },
+ {
+  chapitre: "Cépages du Val de Loire",
+  question: "Dans le Val de Loire, quels cépages font le sancerre, le vouvray, le muscadet et les rouges pâles ?",
+  fil: [
+   "<b>Des blancs d’appellation, un cépage par appellation.</b> Le sauvignon blanc fait les blancs de Sancerre, Pouilly-Fumé, Reuilly, Menetou-Salon et Quincy ; à Pouilly-Fumé, il est seul, sur silex, marnes et calcaires. Le chenin est le cépage d’Anjou-Touraine : seul à Vouvray et à Savennières, il donne du sec au liquoreux et aux bulles. Le melon est le cépage du muscadet, à l’embouchure de la Loire. Le romorantin est seul à Cour-Cheverny.",
+   "<b>Un blanc tendu, un blanc léger.</b> Le romorantin se reconnaît à son acidité marquée et mûrit difficilement. Le melon donne un blanc sec et léger, discret, citron, pomme verte, touche saline, que l’élevage sur lies arrondit. Le chenin, lui, se décline en sec, demi-sec, moelleux, liquoreux et effervescent.",
+   "<b>Des rouges clairs.</b> Le pineau d’Aunis donne des vins à la robe claire, au corps léger et au nez nettement poivré : Coteaux du Loir, Coteaux du Vendômois. Le grolleau fait des vins pâles, légers et souples, et il est le cépage principal du Rosé d’Anjou. Dans ce chapitre, la Loire se lit donc par ses blancs, chacun lié à son cépage, et par ses rouges ou rosés légers.",
+   "<b>Le geste du caviste.</b> Quand un client demande « un blanc de Loire », une seule question suffit : sec et vif (sauvignon, melon, romorantin) ou plus riche et changeant (chenin) ?"
+  ],
+  defend: "En Loire, chaque appellation blanche a son cépage (sauvignon, chenin, melon, romorantin), et les rouges et rosés sont clairs et légers (pineau d’Aunis, grolleau).",
+  client: "« Un blanc sec et vif ? Sauvignon à Sancerre ou melon en muscadet. Un blanc plus riche, du sec au moelleux ? Un chenin, à Vouvray ou à Savennières. »",
+  filRouge: "À Bordeaux et dans les Charentes, comment les cépages s’assemblent-ils ?",
+  src: "fiches 373, 374, 511, 602, 622 et 623 du site (sources principales : INAO, cahiers des charges, Wine Grapes, Oxford Companion)"
+ },
+ {
+  chapitre: "Cépages de Bordeaux et des Charentes",
+  question: "À Bordeaux et dans les Charentes, comment les cépages s’assemblent-ils ?",
+  fil: [
+   "<b>Les rouges s’assemblent.</b> Sur la rive gauche, dans le Médoc et le Haut-Médoc, le cabernet-sauvignon est majoritaire, sur des graves : couleur, tanins, garde, cassis, avec le fût cèdre et vanille. Sur la rive droite, à Pomerol et à Saint-Émilion, le merlot domine : souple, ample, aux tanins soyeux. Le cabernet franc, parent du cabernet-sauvignon et du merlot, est le cabernet le plus planté de la rive droite, où on l’appelle bouchet. Le petit verdot n’entre souvent qu’en pointe : couleur, tanins fermes, épices.",
+   "<b>Les blancs aussi.</b> Le sémillon est le grand blanc de Bordeaux : base des liquoreux de Sauternes et de Barsac, il apporte du corps au sauvignon dans les blancs secs de Graves et de Pessac-Léognan. La muscadelle joue presque toujours les seconds rôles : un parfum floral, vaguement muscaté, malgré un nom qui ne la lie pas aux muscats.",
+   "<b>Aux Charentes, des cépages à distiller.</b> L’ugni blanc occupe la quasi-totalité du vignoble de l’AOC Cognac : acidité vive, faible degré, profil neutre, un bon vin à distiller. Le colombard, né du chenin et du gouais blanc, est devenu le cépage majeur des Côtes de Gascogne. La folle blanche, jadis grand cépage des eaux-de-vie, est aujourd’hui surtout le gros plant du Pays nantais.",
+   "<b>Ce qui relie le tout.</b> À Bordeaux, on assemble. Aux Charentes, le cépage s’efface derrière l’alambic."
+  ],
+  defend: "Bordeaux, c’est l’art de l’assemblage : cabernet-sauvignon et merlot en rouge, sémillon et sauvignon en blanc. Les Charentes ajoutent des blancs vifs, faits pour la distillation.",
+  client: "« À gauche de la Gironde, la charpente du cabernet ; à droite, la rondeur du merlot ; et pour un blanc doux, un sauternes de sémillon. »",
+  filRouge: "En remontant la Garonne et la Dordogne, quels cépages sont propres au Sud-Ouest ?",
+  src: "fiches 377, 378, 498, 510, 605, 606, 607, 608 et 610 du site (sources principales : INAO, cahiers des charges, Wine Grapes, Oxford Companion, WSET, BNIC)"
+ },
+ {
+  chapitre: "Cépages du Sud-Ouest",
+  question: "En remontant la Garonne et la Dordogne, quels cépages sont propres au Sud-Ouest ?",
+  fil: [
+   "<b>Des rouges sombres et tanniques.</b> Le malbec, appelé côt en France et auxerrois à Cahors, est le cépage très largement dominant de Cahors : vins sombres, tanniques, de garde. Le tannat est le cépage principal du Madiran, à 60 % au moins : très coloré, riche en tanins, puissant, plus rond qu’autrefois. Le duras, rouge profond, charpenté et épicé, est un cépage du Tarn, à Gaillac et non à Duras.",
+   "<b>Des rouges plus souples ou plus rustiques.</b> La négrette est le cépage de Fronton : sombre et tendre, violette et fruits, à boire plutôt jeune. Le fer servadou, aux trois noms (mansois, braucol, pinenc), a un tanin ferme, une note poivrée et domine à Marcillac, avec au moins 90 % de l’encépagement.",
+   "<b>Des blancs de piémont et de bulles.</b> Les deux mansengs font le Jurançon : le gros manseng, productif, donne des secs vifs ; le petit manseng, passerillé, donne les grands doux, aux abricots, coing et miel. Le mauzac, de Gaillac et de Limoux, a la peau de pomme pour signature ; il est la base de la Blanquette de Limoux et de la méthode ancestrale.",
+   "<b>Le fil.</b> Des cépages qui voyagent peu : la négrette et le duras restent presque chez eux, les mansengs sont rares ailleurs ; le malbec est parti pour l’Argentine, le tannat pour l’Uruguay. Chaque appellation a son cépage, un nom parfois différent d’une appellation à l’autre : côt, auxerrois, malbec ; fer, mansois, braucol, pinenc."
+  ],
+  defend: "Le Sud-Ouest est le pays des cépages locaux : malbec, tannat, négrette, fer servadou, duras en rouge ; mansengs et mauzac en blanc.",
+  client: "« Pour un rouge qui a du corps, un cahors ou un madiran ; pour un blanc doux d’abricot, un jurançon de petit manseng. »",
+  filRouge: "Dans la Vallée du Rhône, quels cépages font les rouges du nord et les blancs parfumés ?",
+  src: "fiches 500, 501, 512, 609, 611, 617 et 618 du site (sources principales : cahiers des charges, Wine Grapes, Oxford Companion, WSET)"
+ },
+ {
+  chapitre: "Cépages de la Vallée du Rhône",
+  question: "Dans la Vallée du Rhône, quels cépages font les rouges du nord et les blancs parfumés ?",
+  fil: [
+   "<b>Un rouge, la syrah.</b> Croisement de deux cépages français, la dureza et la mondeuse blanche, la syrah n’a rien de persan : le lien avec Shiraz relève de la légende. Elle fait les grands rouges du Rhône nord : cornas et saint-joseph rouge reposent sur elle, l’hermitage peut y ajouter jusqu’à 15 % de marsanne ou de roussanne, la côte-rôtie du viognier, plafonné à 20 %.",
+   "<b>Deux blancs de corps et de finesse.</b> Marsanne et roussanne sont liées par une relation parent-enfant. La marsanne apporte corps, richesse et poids ; la roussanne, plus d’acidité, de finesse et de parfum (fleurs, tisane, herbes), mais elle est plus délicate à cultiver. Elles font ensemble les blancs d’Hermitage, de Crozes-Hermitage, de Saint-Joseph et de Saint-Péray.",
+   "<b>Un blanc parfumé.</b> Le viognier est seul à Condrieu et à Château-Grillet : fleurs blanches, abricot, acidité faible, alcool élevé. Presque disparu au XXe siècle, il est revenu dans le Rhône, le Sud, la Californie et l’Australie.",
+   "<b>Le lien.</b> Le viognier est apparenté à la mondeuse blanche, mère de la syrah : le Rhône nord est une affaire de famille, où le blanc parfumé vient même se glisser dans le rouge."
+  ],
+  defend: "Le Rhône nord tient en quatre cépages : la syrah en rouge, la marsanne et la roussanne en blanc, le viognier pour le parfum.",
+  client: "« Pour un rouge d’épices, une syrah de Cornas ou de Saint-Joseph ; pour un blanc parfumé d’abricot, un condrieu de viognier. »",
+  filRouge: "Plus au sud, comment le soleil méditerranéen façonne-t-il le grenache, le carignan, le mourvèdre et les blancs du Midi ?",
+  src: "fiches 379, 504 et 505 du site (sources principales : cahiers des charges, Inter Rhône, Wine Grapes, Oxford Companion)"
+ },
+ {
+  chapitre: "Cépages du Midi méditerranéen",
+  question: "Plus au sud, comment le soleil méditerranéen façonne-t-il le grenache, le carignan, le mourvèdre et les blancs du Midi ?",
+  fil: [
+   "<b>Des rouges venus d’Espagne.</b> Le grenache noir, le carignan et le mourvèdre ont une origine probablement espagnole. Le grenache, deuxième cépage rouge du bassin Languedoc-Roussillon derrière la syrah, est le cépage principal des vins doux naturels du Roussillon (Banyuls, Maury, Rivesaltes) : il donne des rosés ou des rouges ronds, mûrs, confiturés. Le carignan, jadis cépage de masse, est devenu le cépage des vieilles vignes. Le mourvèdre, tardif, règne à Bandol et apporte de la structure : rouge coloré, tannique, fruits noirs, garrigue, puis cuir et gibier.",
+   "<b>Un rouge de fruit.</b> Le cinsault, discret mais utile, a la peau claire, peu de tanins, un alcool modéré : il apporte du fruit rouge aux assemblages et fait des rosés légers et frais.",
+   "<b>Des blancs frais ou amples.</b> Le grenache blanc est le grenache noir en blanc : ample, riche en alcool, peu acide, vite oxydé. La clairette est pâle, discrète et simple ; elle fait la Clairette de Die brut. Le bourboulenc, tardif, est le pilier des blancs de La Clape, avec une note iodée. Le piquepoul blanc est seul à Picpoul de Pinet : nerveux, citronné, classique avec les huîtres. Le macabeu, floral et discret, est un blanc du Roussillon et l’un des trois blancs du cava.",
+   "<b>Le parfum des vins doux.</b> « Muscat » désigne un ensemble de plus de 200 variétés ; le muscat blanc à petits grains, le plus fin, est le seul cépage des muscats de Frontignan, de Mireval, de Lunel, de Saint-Jean-de-Minervois, du Cap Corse et de Beaumes-de-Venise, tous des vins doux naturels."
+  ],
+  defend: "Le Midi réunit des rouges d’origine espagnole (grenache, carignan, mourvèdre), le cinsault pour le fruit, des blancs frais ou amples, et les muscats des vins doux.",
+  client: "« Le grenache pour la rondeur, le mourvèdre pour la structure, le carignan de vieilles vignes, qui donnent ses meilleurs vins ; en blanc, un picpoul avec les huîtres. »",
+  filRouge: "Dans l’île de Beauté, quels cépages ont un double en Italie ?",
+  src: "fiches 380, 381, 502, 503, 508, 612, 613, 614, 615 et 616 du site (sources principales : Wine Grapes, Oxford Companion, cahiers des charges, DRAAF Occitanie, WSET)"
+ },
+ {
+  chapitre: "Cépages de Corse",
+  question: "Dans l’île de Beauté, quels cépages ont un double en Italie ?",
+  fil: [
+   "<b>Un grand rouge au nord.</b> Le niellucciu (nielluccio) est le grand cépage rouge de Corse et l’emblème de Patrimonio. Il est identique au sangiovese toscan et serait arrivé d’Italie à l’époque génoise ou pisane. Il donne des rouges puissants, charpentés, tanniques, qui gagnent à vieillir, et des rosés frais et fruités.",
+   "<b>Un rouge clair au sud-ouest.</b> Le sciaccarellu est le cépage de référence autour d’Ajaccio et de Sartène ; son ADN est identique à celui du mammolo toscan. Ses rouges sont clairs, peu tanniques, avec du poivre, des épices et des fruits rouges ; ses rosés, pâles et fins, sont sa grande spécialité.",
+   "<b>Un blanc à deux noms.</b> Le vermentinu est le même cépage que le rolle provençal. Il fait les blancs de Patrimonio et de Corse Figari : pâle, floral, aux agrumes et à l’amande, avec une finale saline.",
+   "<b>Le point commun.</b> Deux rouges, un blanc, et à chaque fois un nom corse ou provençal pour un cépage connu en Italie : l’île se lit par ses cépages, leur nom changeant d’une rive à l’autre."
+  ],
+  defend: "La Corse se résume en trois cépages : niellucciu au nord, sciaccarellu au sud-ouest, vermentinu en blanc ; deux rouges ont leur double en Toscane.",
+  client: "« Un rouge puissant ? Niellucciu à Patrimonio. Un rouge clair et poivré ? Sciaccarellu à Ajaccio. En blanc, du vermentinu. »",
+  filRouge: "Passons les Alpes : quels sont les cépages d’Italie ?",
+  src: "fiches 513, 624 et 625 du site (sources principales : Wine Grapes, Oxford Companion, INAO, Plantgrape)"
  }
 ];
