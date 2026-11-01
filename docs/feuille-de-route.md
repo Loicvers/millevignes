@@ -45,7 +45,7 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 - [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée, sur le PC) pour les 12 cartes des 31/10 et 01/11 (764, 820, 821, 829, 835, 842, 849, 851, 857, 879, 880, 922).
 - [ ] **Cahiers récents à relire dès parution au BO-agri** : dix cahiers de Touraine du 27/10/2026 (fiches 455, 882-892 ; non publiés au 01/11, Légifrance et extranet INAO refusés par le réseau) ; Terrasses du Larzac (902, modification en opposition au JORF du 25/07/2026, pas d’homologation trouvée au 01/11). Faits le 01/11 : Crémant de Bourgogne (390, cahier du 02/09/2026, fiche à jour) ; Vin de Corse (497, AOC du décret du 2 avril 1976) ; Menetou-Salon, Châteaumeillant, Côtes du Forez (pas de cahier plus récent trouvé).
 - [x] **Partenaires** recalculés le 31/10 sur toutes les cartes (liste reconstituée à partir du fichier de sortie ; fichier rendu à Loïc).
-- Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine pourrait passer à 2 fiches (Toul, Moselle).
+- Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine : 2 fiches depuis le 01/11 (576 Côtes de Toul, 949 Moselle, sur les cahiers de 2026).
 
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
 Quatre onglets autour des deux usages (réviser chaque jour, travailler devant un client) ; mêmes données et mêmes clés de stockage.
