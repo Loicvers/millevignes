@@ -150,12 +150,13 @@ function render(){
   document.getElementById('shown').textContent=list.length;
   document.getElementById('acq').textContent=EXOS.filter(e=>prog[e.id]).length;
   const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
-  const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;sb.hidden=!nf; // le bouton global ne sert que sur une sélection : sinon, la Session du jour fait le même travail
+  const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;sb.hidden=!nf||mode==='atelier'; // le bouton global ne sert que sur une sélection : sinon, la Séance du jour fait le même travail
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
-  const hb=document.getElementById('hardBtn');hb.hidden=!durs.length;hb.textContent=`Mes points durs (${durs.length})`;
-  const xb=document.getElementById('examBtn');xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.disabled=!list.length;xb.onclick=()=>startExamen(pool);
+  const hb=document.getElementById('hardBtn');hb.hidden=!durs.length||mode==='atelier';hb.textContent=`Mes points durs (${durs.length})`;
+  const xb=document.getElementById('examBtn');xb.hidden=mode==='atelier'; // Masterclass compose un programme, on n'y révise pas
+  xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.disabled=!list.length;xb.onclick=()=>startExamen(pool);
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
   if(!list.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><h3>Aucune fiche ne correspond</h3><p>Ajuste les filtres ou réinitialise.</p></div>`;return;}
@@ -172,12 +173,12 @@ function renderJour(){
   const q=buildQueue(EXOS),ms=journal.slice(-300).map(j=>j.ms).filter(x=>x>0&&x<300000).sort((a,b)=>a-b),med=ms.length>=20?ms[ms.length>>1]:30000;
   const min=Math.max(1,Math.round(q.length*med/60000));
   carte('Séance du jour',el('p','jour-chiffre',q.length?`${q.length} exercice${q.length>1?'s':''} · environ ${min} min`:'Rien à revoir pour le moment'),
-    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Session du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'));
+    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Séance du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'));
   // Échéance
   const vues=FICHES.filter(f=>etat(f)[0]!=='new').length,bar=el('span','chap-bar');bar.append(el('i'));bar.firstChild.style.width=100*vues/FICHES.length+'%';
   if(echeance){const j=Math.round((new Date(echeance+'T12:00')-new Date(new Date().toDateString()+' 12:00'))/DAY); // jours de calendrier
     carte('Échéance',el('p','jour-chiffre',`${new Date(echeance+'T12:00').toLocaleDateString('fr-FR',{day:'numeric',month:'long'})} · ${j>0?'J-'+j:j===0?'c’est aujourd’hui':'dépassée'}`),bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length} · ${restantes()} à découvrir, ${rythmeDuJour()} nouvelles par jour.`));}
-  else carte('Échéance',bar,el('p','jour-note',`${vues} fiches vues sur ${FICHES.length}. Fixe une date dans les Réglages : le rythme se calcule pour tout voir à temps.`),bouton('Ouvrir les réglages',()=>document.getElementById('reglagesBtn').click()));
+  else carte('Échéance',...(vues?[bar]:[]),el('p','jour-note',`${vues} fiches vues sur ${FICHES.length}. Fixe une date dans les Réglages : le rythme se calcule pour tout voir à temps.`),bouton('Ouvrir les réglages',()=>document.getElementById('reglagesBtn').click()));
   // Reprendre la lecture (première fiche pas encore vue, dans l'ordre du sommaire)
   const suite=CHAPS&&CHAPS.flatMap(c=>c.fiches.map((f,i)=>({c,f,i}))).find(x=>etat(x.f)[0]==='new');
   if(suite)carte('Reprendre la lecture',el('p','jour-note',`${suite.c.chapitre}, fiche ${suite.i+1} sur ${suite.c.fiches.length}`),el('b',null,suite.f.titre),el('br'),bouton('Continuer',()=>lireChapitre(suite.c.chapitre,suite.c.fiches,suite.i)));
@@ -187,7 +188,7 @@ function renderJour(){
     bouton('Examen blanc',()=>startExamen(EXOS)),' ',durs.length?bouton(`Mes points durs (${durs.length})`,()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))])):'');
   // Suivi en bref
   const r=suivi(journal,id=>EX_BY_ID[id]&&EX_BY_ID[id].type,prog,now()),pc=c=>c[1]>=5?Math.round(100*c[0]/c[1])+' %':'—';
-  carte('Mon suivi',el('p','jour-note',`Réussite immédiate ${pc(r.immediate)} · rappel sans aide ${pc(r.libre)} · ${r.retard.n} révision${r.retard.n>1?'s':''} en retard.`),bouton('Voir le détail',()=>setMode('suivi')));
+  carte('Mon suivi',el('p','jour-note',!journal.length?'Fais ta première séance : tes taux de réussite apparaîtront ici.':`Réussite immédiate ${pc(r.immediate)} · rappel sans aide ${pc(r.libre)} · ${r.retard.n} révision${r.retard.n>1?'s':''} en retard.`),bouton('Voir le détail',()=>setMode('suivi')));
 }
 /* ============ MON SUIVI (lit le journal, tout reste dans ce navigateur) ============ */
 function renderSuivi(){
@@ -358,7 +359,7 @@ function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){
       const h=el('summary','toc-sec');const nv=all.filter(vue).length;h.append(el('span','sec-t',nom),el('small',null,groupe?`${all.length} fiche${all.length>1?'s':''} · ${nv} vue${nv>1?'s':''}`:`${nv} sur ${all.length} fiches vues`));
       const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
-      const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h);if(!groupe)sd.append(sa);grid.append(sd);box=sd;}
+      const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h);if(!groupe&&mode!=='atelier')sd.append(sa);grid.append(sd);box=sd;}
     const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else{chapOuverts.delete(c.chapitre);recaler(d);}};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
@@ -678,7 +679,7 @@ function showBilanExamen(){
   const faux=ex.res.filter(r=>!r.ok).map(r=>r.ex);
   // 2. erreurs remises en révision (demain) ; pas sur une fiche jamais lue, qui garde sa découverte avant ses exercices
   const arevoir=faux.filter(e=>!aDecouvrir(e.fiche));arevoir.forEach(e=>rate(e.id,'hard'));
-  if(arevoir.length)box.append(el('p',null,`${arevoir.length} erreur(s) sur des fiches déjà travaillées : à revoir dès demain dans la Session du jour.`));
+  if(arevoir.length)box.append(el('p',null,`${arevoir.length} erreur(s) sur des fiches déjà travaillées : à revoir dès demain dans la Séance du jour.`));
   if(faux.length){const d=el('details','cours');d.append(el('summary',null,`Mes erreurs (${faux.length})`));
     faux.forEach(e=>{const li=el('div','bilan-err');li.append(el('p',null,e.prompt+(e.payload.statement?' '+e.payload.statement:'')),el('p','fb-src','Réponse attendue : '+correctText(e)+' — fiche : '+e.fiche.titre));d.append(li);});box.append(d);
     const rv=el('button','btn primary','Revoir mes erreurs');rv.onclick=()=>startSession(faux,'Erreurs de l\'examen',[...new Set(faux.map(e=>e.fiche.id))]);box.append(rv,' ');}
@@ -815,7 +816,7 @@ function lireChapitre(titre,fiches,depart=0){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;document.getElementById('saveBanner').hidden=true;
   const page=i=>{
     if(i>=fiches.length){grid.className='session';grid.innerHTML='';const box=el('div','empty');
-      box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Session du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
+      box.append(el('h3',null,'Chapitre lu'),el('p',null,fiches.length?`${fiches.length} fiche(s). Ses exercices t'attendent dans la Séance du jour.`:'Les fiches et exercices de ce chapitre arriveront avec son lot.'));
       const b=el('button','btn','Retour');b.onclick=()=>setMode(retour);box.append(b);grid.append(box);return;}
     showDecouverte(fiches[i],{head:`${titre} · fiche ${i+1} sur ${fiches.length}`,btnLbl:i+1<fiches.length?'Fiche suivante':'Terminer le chapitre',onGo:()=>page(i+1),onPrev:i?()=>page(i-1):null,onQuit:()=>setMode(retour)});
   };
@@ -921,8 +922,8 @@ function majBandeau(){
   const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
   document.getElementById('saveBanner').hidden=!(mode!=='due'&&Object.keys(prog).length&&now()-depuis>RAPPEL*DAY);
 }
-// Pendant la Session du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
-function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Session du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
+// Pendant la Séance du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
+function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
 
 updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
