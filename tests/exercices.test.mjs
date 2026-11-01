@@ -77,7 +77,7 @@ test("les pastilles d'une fiche (status, to_check) passent dans data/base.json",
 test("légender le schéma : étiquettes uniques, une seule masquée, corrigé juste", () => {
   vm.runInNewContext("this.sx={schemaExercise,maskSchema}", ctx);
   const { schemaExercise, maskSchema } = ctx.sx;
-  const exos = FICHES.flatMap(schemaExercise);
+  const exos = FICHES.flatMap(f => schemaExercise(f, FICHES));
   assert.ok(exos.length >= 10);
   // Chaque étiquette tour à tour (un tirage au hasard laissait passer un cas sur N).
   for (const ex of exos) for (const t of ex.payload.labels) {
@@ -87,6 +87,19 @@ test("légender le schéma : étiquettes uniques, une seule masquée, corrigé j
     assert.ok(!m.svg.includes(`>${target}</text>`), ex.id + " : l'étiquette masquée reste visible");
     for (const o of m.options) assert.ok(!m.svg.includes(`>${o}</text>`), ex.id + " : option lisible sur le dessin (réponse par élimination)");
     assert.equal(grade({ type: "label_schema", payload: m }, m.answer), true);
+  }
+});
+
+test("carte de situation : 4 propositions de la même région, réponse masquée", () => {
+  vm.runInNewContext("this.sx={schemaExercise,maskSchema}", ctx);
+  const { schemaExercise, maskSchema } = ctx.sx;
+  const sit = FICHES.flatMap(f => schemaExercise(f, FICHES)).filter(e => e.payload.leurres);
+  assert.ok(sit.length >= 80, String(sit.length));
+  for (const ex of sit) {
+    const m = maskSchema(ex.fiche.schema.svg, ex.payload.labels, [ex.payload.labels[0], ...ex.payload.leurres]);
+    assert.equal(m.options.length, 4, ex.id);
+    assert.equal(m.options[m.answer], ex.payload.labels[0], ex.id);
+    for (const o of m.options) assert.ok(!m.svg.includes(`>${o}</text>`), ex.id + " : " + o + " lisible sur la carte");
   }
 });
 

@@ -218,6 +218,8 @@
   .jour-chiffre{font-size:17px;font-weight:600;margin-bottom:10px}
   .jour-note{font-size:14px;color:var(--muted);margin:6px 0 10px}
   .jour-carte .chap-bar{display:block;margin:6px 0}
+  @media(min-width:960px){.jour{grid-template-columns:repeat(3,1fr)}.jour-carte:first-child{grid-column:span 2}} /* 5 cartes : 2 lignes pleines */
+  #introLine,#progPanel{max-width:760px;margin-left:auto;margin-right:auto} /* même largeur que le sommaire */
   .fiche-search{width:100%;margin-bottom:10px}
   .ex-warn{color:var(--warn);font-weight:600;margin-left:8px;white-space:nowrap}
   .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}
