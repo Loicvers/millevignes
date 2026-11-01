@@ -14,14 +14,27 @@ function toExercises(f) {
 
 // « Légender le schéma » : produit à la volée depuis les étiquettes en gras (1 à 3 mots, présentes une seule fois).
 // Hors de data/base.json : il dépend du dessin, pas d'un contenu rédigé.
-function schemaExercise(f) {
-  if (!f.schema) return [];
+function schemaLabels(f) {
   const all = [...f.schema.svg.matchAll(/<text[^>]*font-weight="bold"[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
   // Une étiquette écrite ailleurs sur le dessin (ex. la ville de Bergerac sous l'AOC Bergerac) donnerait la réponse : écartée.
   const txt = [...f.schema.svg.matchAll(/<text[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
-  const labels = [...new Set(all)].filter(t => txt.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 4);
-  if (labels.length < 3) return [];
-  return [{ id: notionId(f.id) + "-sc", type: "label_schema", prompt: "Quel terme a été effacé du schéma (le « ? ») ?", payload: { labels }, fiche: f }];
+  return [...new Set(all)].filter(t => txt.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 4);
+}
+// Carte de situation : une seule appellation en fort, les voisines en grisé.
+const estSituation = f => f.schema && /en fort/.test(f.schema.legende || "") && schemaLabels(f).length === 1 && (f.schema.svg.match(/<text[^>]*font-weight="bold"/g) || []).length === 1;
+function schemaExercise(f, fiches = []) {
+  if (!f.schema) return [];
+  const labels = schemaLabels(f);
+  if (labels.length >= 3) return [{ id: notionId(f.id) + "-sc", type: "label_schema", prompt: "Quel terme a été effacé du schéma (le « ? ») ?", payload: { labels }, fiche: f }];
+  // Situation : « où est-ce ? », leurres = appellations de la même région ayant aussi leur carte de situation.
+  if (!estSituation(f) || !f.geo || !f.geo.region) return [];
+  const proj = g => (g.schema.svg.match(/data-proj="([^"]*)"/) || [])[1];
+  const noms = gs => [...new Set(gs.map(g => schemaLabels(g)[0]))].filter(t => t !== labels[0] && !f.schema.svg.includes(`>${t}</text>`)); // une ville du même nom sur la carte trahirait le leurre
+  const region = fiches.filter(g => g !== f && g.geo && g.geo.region === f.geo.region && estSituation(g));
+  // Leurres pris sur la même carte (zones grisées voisines) ; sinon dans la région, plus faciles à écarter.
+  const meme = noms(region.filter(g => proj(g) === proj(f))), leurres = meme.length >= 3 ? meme : noms(region);
+  if (leurres.length < 3) return [];
+  return [{ id: notionId(f.id) + "-sit", type: "label_schema", prompt: "Quelle appellation est en fort sur cette carte ?", payload: { labels, leurres }, fiche: f }];
 }
 // Tire une étiquette à masquer : renvoie le SVG masqué, les options et l'index de la bonne réponse.
 function maskSchema(svg, labels, pick = shuffle(labels)) {

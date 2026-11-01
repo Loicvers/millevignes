@@ -1,5 +1,5 @@
 /* ============ DONNÉES ============ */
-const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f)]),...lexiqueExercises(LEXIQUE,FICHES)];
+const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f,FICHES)]),...lexiqueExercises(LEXIQUE,FICHES)];
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
 const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma',explain_client:'Explique à un client'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
@@ -719,7 +719,7 @@ function showExercise(){
         if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));
         if(k&&k.ok!==null){const m=el('p','ex-keys');m.append(el('b',null,`Mots-clés retrouvés : ${k.found.length} sur ${k.keys.length}`));if(k.missing.length)m.append(' — manquants : '+k.missing.join(', '));body.append(m);}
         finish(ex,k?k.ok:null,fb,actions,body);};actions.append(show);break;}
-    case 'label_schema':Object.assign(p,maskSchema(f.schema.svg,p.labels));body.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(p.svg)}</figure>`); // puis comme un QCM
+    case 'label_schema':Object.assign(p,maskSchema(f.schema.svg,p.labels,p.leurres&&[p.labels[0],...shuffle(p.leurres)]));body.insertAdjacentHTML('beforeend',`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(p.svg)}</figure>`); // puis comme un QCM
     case 'mcq_single':case 'odd_one_out':
       choice(p.options,(i,b)=>{finish(ex,grade(ex,i),fb,actions,body);b.classList.add(i===p.answer?'good':'bad');body.querySelector(`[data-i="${p.answer}"]`).classList.add('good');});break;
     case 'true_false':
