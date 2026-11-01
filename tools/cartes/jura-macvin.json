@@ -1,0 +1,154 @@
+{
+ "deps": [
+  "39"
+ ],
+ "fleuves": [
+  "Doubs"
+ ],
+ "marges": [
+  0.3,
+  0.04,
+  0.3,
+  0.04
+ ],
+ "largeur": 220,
+ "zones": [
+  {
+   "label": "Macvin du Jura",
+   "deps": [
+    "39"
+   ],
+   "communes": [
+    "Abergement-le-Grand",
+    "Abergement-le-Petit",
+    "Aiglepierre",
+    "Arbois",
+    "Arlay",
+    "Arsures",
+    "Augea",
+    "Aumont",
+    "Balanod",
+    "Baume-les-Messieurs",
+    "Beaufort",
+    "Orbagna",
+    "Bersaillin",
+    "Blois-sur-Seille",
+    "Brainans",
+    "Buvilly",
+    "Cesancey",
+    "Chailleuse",
+    "Champagne-sur-Loue",
+    "Chapelle-sur-Furieuse",
+    "Château-Chalon",
+    "Chevreaux",
+    "Chille",
+    "Chilly-le-Vignoble",
+    "Conliège",
+    "Courbouzon",
+    "Cousance",
+    "Cramans",
+    "Cuisia",
+    "Darbonnay",
+    "Digna",
+    "Domblans",
+    "Étoile",
+    "Frébuans",
+    "Frontenay",
+    "Gevingey",
+    "Gizia",
+    "Grange-de-Vaivre",
+    "Grozon",
+    "Ladoye-sur-Seille",
+    "Lavigny",
+    "Lons-le-Saunier",
+    "Louverot",
+    "Macornay",
+    "Mantry",
+    "Marnoz",
+    "Mathenay",
+    "Maynal",
+    "Menétru-le-Vignoble",
+    "Mesnay",
+    "Messia-sur-Sorne",
+    "Miéry",
+    "Moiron",
+    "Molamboz",
+    "Monay",
+    "Montagna-le-Reconduit",
+    "Montaigu",
+    "Montain",
+    "Montholier",
+    "Montigny-lès-Arsures",
+    "Montmorot",
+    "Mouchard",
+    "Nevy-sur-Seille",
+    "Pagnoz",
+    "Pannessières",
+    "Passenans",
+    "Perrigny",
+    "Pin",
+    "Plainoiseau",
+    "Planches-près-Arbois",
+    "Poligny",
+    "Port-Lesney",
+    "Pretin",
+    "Pupillin",
+    "Quintigny",
+    "Revigny",
+    "Rotalier",
+    "Ruffey-sur-Seille",
+    "Saint-Amour",
+    "Saint-Cyr-Montmalin",
+    "Saint-Didier",
+    "Saint-Lamain",
+    "Saint-Lothain",
+    "Sainte-Agnès",
+    "Salins-les-Bains",
+    "Sellières",
+    "Toulouse-le-Château",
+    "Tourmont",
+    "Trenal",
+    "Trois Châteaux",
+    "Vadans",
+    "Val-Sonnette",
+    "Vaux-sur-Poligny",
+    "Vernantois",
+    "Vernois",
+    "Villeneuve-sous-Pymont",
+    "Villette-lès-Arbois",
+    "Voiteur"
+   ],
+   "opacite": 0.16,
+   "pos": [
+    22,
+    34,
+    "start"
+   ],
+   "trait": true
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Lons-le-Saunier",
+   "dep": "39",
+   "pos": [
+    0,
+    16,
+    "middle"
+   ]
+  },
+  {
+   "nom": "Poligny",
+   "dep": "39",
+   "pos": [
+    8,
+    3,
+    "start"
+   ]
+  },
+  {
+   "nom": "Dole",
+   "dep": "39"
+  }
+ ]
+}

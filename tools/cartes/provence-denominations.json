@@ -1,0 +1,276 @@
+{
+ "deps": [
+  "83",
+  "13",
+  "06"
+ ],
+ "fleuves": [
+  "Durance",
+  "Rhône",
+  "Rhne"
+ ],
+ "marges": [
+  0.1,
+  0.08,
+  0.72,
+  0.06
+ ],
+ "largeur": 360,
+ "zones": [
+  {
+   "label": "Côtes de Provence",
+   "deps": [
+    "83",
+    "13",
+    "06"
+   ],
+   "communes": [
+    "Villars-sur-Var",
+    "Allauch",
+    "Bouc-Bel-Air",
+    "Ceyreste",
+    "Châteauneuf-le-Rouge",
+    "La Ciotat",
+    "Cuges-les-Pins",
+    "Meyreuil",
+    "Mimet",
+    "Peynier",
+    "Puyloubier",
+    "Roquefort-la-Bédoule",
+    "Rousset",
+    "Simiane-Collongue",
+    "Le Tholonet",
+    "Trets",
+    "Les Arcs",
+    "Bagnols-en-Forêt",
+    "Besse-sur-Issole",
+    "Bormes-les-Mimosas",
+    "Cabasse",
+    "Callas",
+    "Le Cannet-des-Maures",
+    "Carcès",
+    "Carnoules",
+    "Carqueiranne",
+    "Cavalaire-sur-Mer",
+    "Cogolin",
+    "Collobrières",
+    "Correns",
+    "Cotignac",
+    "La Crau",
+    "La Croix-Valmer",
+    "Cuers",
+    "Draguignan",
+    "Entrecasteaux",
+    "La Farlède",
+    "Figanières",
+    "Flassans-sur-Issole",
+    "Flayosc",
+    "Fréjus",
+    "La Garde",
+    "La Garde-Freinet",
+    "Gassin",
+    "Gonfaron",
+    "Grimaud",
+    "Hyères",
+    "La Londe-les-Maures",
+    "Lorgues",
+    "Le Luc",
+    "Les Mayons",
+    "Montfort-sur-Argens",
+    "La Môle",
+    "La Motte",
+    "Le Muy",
+    "Pierrefeu-du-Var",
+    "Pignans",
+    "Le Plan-de-la-Tour",
+    "Pourcieux",
+    "Pourrières",
+    "Le Pradet",
+    "Puget-sur-Argens",
+    "Puget-Ville",
+    "Ramatuelle",
+    "Roquebrune-sur-Argens",
+    "Saint-Antonin-du-Var",
+    "Sainte-Maxime",
+    "Saint-Paul-en-Forêt",
+    "Saint-Raphaël",
+    "Saint-Tropez",
+    "Seillans",
+    "Six-Fours-les-Plages",
+    "Solliès-Pont",
+    "Taradeau",
+    "Le Thoronet",
+    "Trans-en-Provence",
+    "La Valette-du-Var",
+    "Vidauban"
+   ]
+  },
+  {
+   "label": "Sainte-Victoire",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Châteauneuf-le-Rouge|13",
+    "Meyreuil|13",
+    "Peynier|13",
+    "Puyloubier|13",
+    "Rousset|13",
+    "Le Tholonet|13",
+    "Trets|13",
+    "Pourcieux|83",
+    "Pourrières|83"
+   ],
+   "pos": [
+    0,
+    -16,
+    "middle"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Fréjus",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Fréjus|83",
+    "La Motte|83",
+    "Le Muy|83",
+    "Puget-sur-Argens|83",
+    "Roquebrune-sur-Argens|83",
+    "Saint-Raphaël|83",
+    "Callas|83",
+    "Trans-en-Provence|83"
+   ],
+   "pos": [
+    22,
+    -14,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "La Londe",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Hyères|83",
+    "La Londe-les-Maures|83",
+    "Bormes-les-Mimosas|83",
+    "La Crau|83"
+   ],
+   "pos": [
+    30,
+    22,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Pierrefeu",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Cuers|83",
+    "Pierrefeu-du-Var|83",
+    "Puget-Ville|83",
+    "Solliès-Pont|83",
+    "La Garde|83",
+    "La Farlède|83",
+    "La Valette-du-Var|83",
+    "Carqueiranne|83",
+    "Le Pradet|83",
+    "La Crau|83",
+    "Carnoules|83",
+    "Collobrières|83"
+   ],
+   "pos": [
+    46,
+    6,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Notre-Dame des Anges",
+   "deps": [
+    "13",
+    "83"
+   ],
+   "communes": [
+    "Les Mayons|83",
+    "Les Arcs|83",
+    "Le Cannet-des-Maures|83",
+    "Carnoules|83",
+    "La Garde-Freinet|83",
+    "Gonfaron|83",
+    "Le Luc|83",
+    "Pignans|83",
+    "Taradeau|83",
+    "Vidauban|83"
+   ],
+   "pos": [
+    -4,
+    -50,
+    "middle"
+   ],
+   "trait": true
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Marseille",
+   "dep": "13"
+  },
+  {
+   "nom": "Aix-en-Provence",
+   "dep": "13",
+   "label": "Aix"
+  },
+  {
+   "nom": "Nice",
+   "dep": "06",
+   "pos": [
+    6,
+    8,
+    "start"
+   ]
+  },
+  {
+   "nom": "Toulon",
+   "dep": "83",
+   "pos": [
+    -6,
+    3,
+    "end"
+   ]
+  }
+ ],
+ "textes": [
+  {
+   "t": "Durance",
+   "lon": 5.25,
+   "lat": 43.73,
+   "rot": -15
+  },
+  {
+   "t": "Rhône",
+   "lon": 4.66,
+   "lat": 43.72,
+   "rot": 70
+  },
+  {
+   "t": "Méditerranée",
+   "lon": 5.75,
+   "lat": 43.07
+  }
+ ],
+ "points": []
+}

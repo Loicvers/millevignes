@@ -1,0 +1,263 @@
+{
+ "deps": [
+  "73",
+  "74",
+  "01",
+  "38"
+ ],
+ "fleuves": [
+  "Rhône",
+  "Rhne",
+  "Isère"
+ ],
+ "marges": [
+  0.15,
+  0.08,
+  0.15,
+  0.08
+ ],
+ "largeur": 300,
+ "zones": [
+  {
+   "label": "Léman",
+   "deps": [
+    "74"
+   ],
+   "communes": [
+    "Loisin",
+    "Ballaison",
+    "Douvaine",
+    "Marin",
+    "Thonon-les-Bains",
+    "Sciez",
+    "Publier",
+    "Massongy"
+   ]
+  },
+  {
+   "label": "Ayze",
+   "deps": [
+    "74"
+   ],
+   "communes": [
+    "Ayse",
+    "Marignier",
+    "Bonneville"
+   ]
+  },
+  {
+   "label": "Frangy et Seyssel",
+   "deps": [
+    "74",
+    "01"
+   ],
+   "communes": [
+    "Frangy",
+    "Seyssel",
+    "Corbonod",
+    "Desingy",
+    "Musièges",
+    "Vanzy"
+   ]
+  },
+  {
+   "label": "Chautagne",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Ruffieux",
+    "Serrières-en-Chautagne",
+    "Motz",
+    "Chindrieux",
+    "Vions"
+   ]
+  },
+  {
+   "label": "Jongieux",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Jongieux",
+    "Billième",
+    "Lucey",
+    "Yenne",
+    "Saint-Jean-de-Chevelu"
+   ]
+  },
+  {
+   "label": "Apremont et Abymes",
+   "deps": [
+    "73",
+    "38"
+   ],
+   "communes": [
+    "Les Marches",
+    "Myans",
+    "Apremont",
+    "Chapareillan",
+    "Saint-Baldoph"
+   ],
+   "pos": [
+    -22,
+    10,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Combe de Savoie",
+   "deps": [
+    "73"
+   ],
+   "communes": [
+    "Arbin",
+    "Cruet",
+    "Saint-Jean-de-la-Porte",
+    "Saint-Jeoire-Prieuré",
+    "Fréterive",
+    "Montmélian",
+    "Francin",
+    "Chignin",
+    "Saint-Pierre-d'Albigny"
+   ],
+   "pos": [
+    24,
+    8,
+    "start"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Bugey",
+   "deps": [
+    "01"
+   ],
+   "communes": [
+    "Cerdon",
+    "Montagnieu",
+    "Vongnes",
+    "Flaxieu",
+    "Virieu-le-Grand",
+    "Belley",
+    "Groslée-Saint-Benoit",
+    "Culoz",
+    "Béon",
+    "Talissieu",
+    "Ambérieu-en-Bugey",
+    "Vaux-en-Bugey",
+    "Lagnieu",
+    "Seillonnaz"
+   ],
+   "pos": [
+    -18,
+    4,
+    "end"
+   ],
+   "trait": true
+  },
+  {
+   "label": "Crémant de Savoie",
+   "deps": [
+    "38",
+    "73",
+    "74"
+   ],
+   "communes": [
+    "Chapareillan|38",
+    "Apremont|73",
+    "Arbin|73",
+    "Barby|73",
+    "Billième|73",
+    "Le Bourget-du-Lac|73",
+    "Brison-Saint-Innocent|73",
+    "Challes-les-Eaux|73",
+    "Chanaz|73",
+    "Chignin|73",
+    "Chindrieux|73",
+    "Cruet|73",
+    "Entrelacs|73",
+    "Fréterive|73",
+    "Jongieux|73",
+    "Lucey|73",
+    "Montmélian|73",
+    "Motz|73",
+    "Myans|73",
+    "Francin|73",
+   "Les Marches|73",
+    "Ruffieux|73",
+    "Saint-Alban-Leysse|73",
+    "Saint-Baldoph|73",
+    "Saint-Jean-de-Chevelu|73",
+    "Saint-Jean-de-la-Porte|73",
+    "Saint-Jeoire-Prieuré|73",
+    "Saint-Pierre-d'Albigny|73",
+    "Serrières-en-Chautagne|73",
+    "Yenne|73",
+    "Ballaison|74",
+    "Bassy|74",
+    "Challonges|74",
+    "Chaumont|74",
+    "Chessenaz|74",
+    "Clarafond-Arcine|74",
+    "Desingy|74",
+    "Douvaine|74",
+    "Franclens|74",
+    "Frangy|74",
+    "Loisin|74",
+    "Marin|74",
+    "Massongy|74",
+    "Musièges|74",
+    "Publier|74",
+    "Sciez|74",
+    "Thonon-les-Bains|74",
+    "Usinens|74",
+    "Vanzy|74",
+    "Ville-la-Grand|74"
+   ],
+   "opacite": 0.3
+  }
+ ],
+ "villes": [
+  {
+   "nom": "Chambéry",
+   "dep": "73"
+  },
+  {
+   "nom": "Annecy",
+   "dep": "74"
+  },
+  {
+   "nom": "Thonon-les-Bains",
+   "dep": "74",
+   "label": "Thonon"
+  }
+ ],
+ "textes": [
+  {
+   "t": "Rhône",
+   "lon": 5.93,
+   "lat": 46.13,
+   "rot": -50
+  },
+  {
+   "t": "lac du Bourget",
+   "lon": 5.875,
+   "lat": 45.72,
+   "rot": 78
+  },
+  {
+   "t": "lac Léman",
+   "lon": 6.42,
+   "lat": 46.44,
+   "rot": 0
+  },
+  {
+   "t": "Isère",
+   "lon": 6.3,
+   "lat": 45.62,
+   "rot": 35
+  }
+ ]
+}
