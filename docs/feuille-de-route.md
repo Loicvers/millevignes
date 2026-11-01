@@ -43,7 +43,7 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 - [ ] **Points à vérifier** des lots du 30/10 : 818, 820, 822, 830, 842 levés le 31/10 (818 corrigée : nouveau cahier de L’Étoile du 2 sept. 2026). 832 levée grâce à Plantgrape. Restent 841 (Baux tout bio : ODG seule), 844 (cépages de Gascogne : pas de chiffres), 860, 863 (Alsace).
 - [x] **Cartes manquantes** : toutes posées (01/11 : 764, 879, 880, 922 ; 31/10 : 820, 821, 829, 835, 842, 849, 851, 857).
 - [ ] **Partenaires** : relancer `tools/cartes/partenaires.mjs` (liste privée, sur le PC) pour les 12 cartes des 31/10 et 01/11 (764, 820, 821, 829, 835, 842, 849, 851, 857, 879, 880, 922).
-- [ ] **Cahiers récents à relire dès parution au BO-agri** : dix cahiers de Touraine du 27/10/2026 (fiches 455, 882-892), Crémant de Bourgogne du 02/09/2026 (390) ; date de Vin de Corse (497, 1972 ou 1976).
+- [ ] **Cahiers récents à relire dès parution au BO-agri** : dix cahiers de Touraine du 27/10/2026 (fiches 455, 882-892 ; non publiés au 01/11, Légifrance et extranet INAO refusés par le réseau) ; Terrasses du Larzac (902, modification en opposition au JORF du 25/07/2026, pas d’homologation trouvée au 01/11). Faits le 01/11 : Crémant de Bourgogne (390, cahier du 02/09/2026, fiche à jour) ; Vin de Corse (497, AOC du décret du 2 avril 1976) ; Menetou-Salon, Châteaumeillant, Côtes du Forez (pas de cahier plus récent trouvé).
 - [x] **Partenaires** recalculés le 31/10 sur toutes les cartes (liste reconstituée à partir du fichier de sortie ; fichier rendu à Loïc).
 - Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine pourrait passer à 2 fiches (Toul, Moselle).
 
