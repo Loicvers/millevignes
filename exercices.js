@@ -34,7 +34,7 @@ function schemaExercise(f, fiches = []) {
   // Leurres pris sur la même carte (zones grisées voisines) ; sinon dans la région, plus faciles à écarter.
   const meme = noms(region.filter(g => proj(g) === proj(f))), leurres = meme.length >= 3 ? meme : noms(region);
   if (leurres.length < 3) return [];
-  return [{ id: notionId(f.id) + "-sit", type: "label_schema", prompt: "Quelle appellation est en fort sur cette carte ?", payload: { labels, leurres }, fiche: f }];
+  return [{ id: notionId(f.id) + "-sit", type: "label_schema", prompt: "Quelle appellation est en foncé (le « ? ») sur cette carte ?", payload: { labels, leurres }, fiche: f }];
 }
 // Tire une étiquette à masquer : renvoie le SVG masqué, les options et l'index de la bonne réponse.
 function maskSchema(svg, labels, pick = shuffle(labels)) {
