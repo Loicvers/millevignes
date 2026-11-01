@@ -63,7 +63,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Gewurztraminer ; INAO, projet de cahier des charges AOC Alsace (comité national du 12 juin 2025) ; JancisRobinson.com, Gewurztraminer ; wein.plus, glossaire, Gewürztraminer et Savagnin Rose ; WSET, Understanding Wines (2016), chap. Alsace ; WSET L3, support de cours Module 4 (2022) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages d’Alsace",
-    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":2,"tanins":null,"alcool":5,"corps":5,"aromes":5,"a_verifier":["acidite"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Acidité jugée basse par Oxford ; moyenne par Plantgrape."},
+    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":[2,3],"tanins":null,"alcool":5,"corps":5,"aromes":5,"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Acidité : moyenne-moins à moyenne (CMS), basse à moyenne (WSET D3, Understanding Wines) ; basse selon Oxford, moyenne selon Plantgrape."},
   },
   {
     id: 507,
@@ -86,7 +86,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages d’Alsace",
     noms: [{"nom":"Pinot Grigio","ou":"Italie"},{"nom":"Grauburgunder","ou":"Allemagne, Autriche"},{"nom":"Ruländer","ou":"Baden (Allemagne), Autriche"},{"nom":"Malvoisie","ou":"Savoie, Val de Loire, Val d’Aoste, Valais"},{"nom":"Szürkebarát","ou":"Hongrie"}],
-    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":3,"tanins":null,"alcool":5,"corps":5,"aromes":4,"a_verifier":["acidite"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Acidité jugée moyenne-plus par Oxford ; basse à moyenne-moins par Wine Grapes. Intensité aromatique jugée moyenne-moins par Oxford ; moyenne par le WSET (D3)."},
+    jauge: {"style":"Alsace, blanc sec à demi-sec","acidite":3,"tanins":null,"alcool":5,"corps":5,"aromes":[3,4],"a_verifier":["aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Acidité : moyenne à moyenne-plus (CMS), moyenne (D3) ; moyenne-plus selon Oxford, basse à moyenne-moins selon Wine Grapes. Intensité aromatique : moyenne pour le D3, plus haute à l'origine (« heady perfume » chez Wine Grapes en style mûr)."},
   },
   {
     id: 598,
@@ -109,7 +109,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages d’Alsace",
     noms: [{"nom":"Silvaner","ou":"Allemagne"},{"nom":"Johannisberg","ou":"Suisse (Valais)"},{"nom":"Gros Rhin","ou":"Suisse"}],
-    jauge: {"style":"Alsace, blanc sec","acidite":4,"tanins":null,"alcool":3,"corps":[3,4],"aromes":1,"a_verifier":["alcool","corps","aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Intensité aromatique jugée moyenne-moins à moyenne par Oxford."},
+    jauge: {"style":"Alsace, blanc sec","acidite":4,"tanins":null,"alcool":3,"corps":[3,4],"aromes":[1,2],"a_verifier":["alcool","corps","aromes"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Arômes discrets selon Oxford et Wine Grapes (« aromatically discreet », « not particularly aromatic », surtout en Franconie). Oxford : acidité naturelle élevée, un peu moins que le riesling ; en Alsace, assez ample et d'une bonne acidité."},
   },
   {
     id: 599,
@@ -132,7 +132,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages d’Alsace",
     noms: [{"nom":"Weissburgunder","ou":"Allemagne, Autriche — pinot blanc"},{"nom":"Pinot Bianco","ou":"Italie — pinot blanc"},{"nom":"Clevner","ou":"Alsace — pinot blanc"},{"nom":"Auxerrois de Laquenexy","ou":"Moselle — auxerrois"}],
-    jauge: {"style":"Alsace, blanc sec","tanins":null,"alcool":3,"corps":2,"aromes":1,"a_verifier":["corps","aromes"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Corps jugé léger par le WSET (L3) ; moyen par Wine Grapes. Intensité aromatique jugée moyenne-moins par Oxford et Plantgrape. Acidité omise : moyenne pour le pinot blanc, basse pour l'auxerrois."},
+    jauge: {"style":"Alsace, blanc sec","tanins":null,"alcool":3,"corps":[1,2],"aromes":1,"a_verifier":["corps"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Pinot blanc : arômes faibles, acidité et alcool moyens (D3) ; léger, simple, non aromatique (Understanding Wines, Level 3) ; corps moyen selon Wine Grapes. Auxerrois : acidité basse. Acidité omise : moyenne pour le pinot blanc, basse pour l'auxerrois."},
   },
 {
     id: 372,
@@ -152,7 +152,7 @@ FICHES.push(
     src: "Bowers et al., Historical Genetics: The Parentage of Chardonnay, Gamay, and Other Wine Grapes of Northeastern France, Science 285 (1999), p. 1562-1565 ; Plantgrape (IFV/INRAE/Institut Agro), fiche Chardonnay B ; INAO, fiches Chablis premier cru Les Épinottes et Côte de Vaubarousse ; Comité Champagne, Fiche Vigne Champagne (2024) ; JancisRobinson.com, Chardonnay ; J. Robinson (dir.), The Oxford Companion to Wine (2006), « Mâcon-Villages » ; Burgundy Report, All about Chardonnay (2017) ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 74 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; Wine Folly, Chardonnay wine guide ; open-exam-prep.com, guide de révision WSET niveau 2 : chardonnay (site non officiel)",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
-    jauge: {"style":"Bourgogne, blanc sec","acidite":5,"tanins":null,"alcool":[3,4],"corps":4,"aromes":3,"a_verifier":["aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Intensité aromatique jugée prononcée par Plantgrape. Acidité la plus haute à Chablis ; le corps va de moyen à Chablis à plein pour les meilleurs Côte de Beaune."},
+    jauge: {"style":"Bourgogne, blanc sec","acidite":[4,5],"tanins":null,"alcool":[3,4],"corps":[3,4],"aromes":3,"a_verifier":["aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro) ; WSET Level 3 (Book)","note":"Chablis : corps moyen (CMS) à léger-moyen (D3), acidité élevée ; Côte d'Or : corps moyen à moyen-plus (D3), moyen à plein (CMS). Intensité aromatique moyenne (D3, Chablis) ; prononcée selon Plantgrape."},
   },
 {
     id: 376,
@@ -196,7 +196,7 @@ FICHES.push(
     src: "J. Robinson, J. Harding, J. Vouillamoz, Wine Grapes (2012); BO-agri, cahier des charges AOC Bourgogne Aligoté (homologué 11/12/2023); INAO, fiche AOC Bouzeron; JancisRobinson.com, Aligoté; Guide Hachette des Vins, Bourgogne aligoté; Vinatis, Aligoté; Oxford Companion to Wine, 5e éd. (2023), entrées « Aligoté » et « Bouzeron »; WSET D3, Wines of the World (2024); cf. Mille Vignes, P. Lepeltier, p. 31",
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
-    jauge: {"style":"Bourgogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"a_verifier":["corps"],"src":"Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012)"},
+    jauge: {"style":"Bourgogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"a_verifier":["corps"],"src":"Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; WSET Level 3 (Book)","note":"Neutre au nez, acidité élevée, alcool comparativement bas (Understanding Wines, Level 3, Wine Grapes)."},
   },
   {
     id: 499,
@@ -219,7 +219,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bourgogne, du Beaujolais et de Champagne",
     noms: [{"nom":"Gamay Noir à Jus Blanc","ou":"nom officiel"}],
-    jauge: {"style":"Beaujolais, rouge","acidite":4,"tanins":2,"alcool":3,"corps":[1,2],"aromes":3,"a_verifier":["aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Corps jugé moyen par le Grape Markers du CMS. Les crus (Morgon, Moulin-à-Vent) sont plus structurés."},
+    jauge: {"style":"Beaujolais, rouge","acidite":4,"tanins":[2,3],"alcool":3,"corps":[1,2],"aromes":3,"a_verifier":["aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Corps : léger à moyen-moins (D3, Beaujolais-Villages), léger (Understanding Wines, Beaujolais) ; moyen pour le Grape Markers du CMS. Les crus (Morgon, Moulin-à-Vent) sont plus structurés."},
   },
   {
     id: 514,
@@ -264,7 +264,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages du Jura et de Savoie",
     noms: [{"nom":"Traminer","ou":"Allemagne"},{"nom":"Heida","ou":"Haut-Valais (Suisse)"},{"nom":"Païen","ou":"Bas-Valais (Suisse)"},{"nom":"Fromenteau","ou":"Franche-Comté"}],
-    jauge: {"style":"Jura, blanc sec ouillé (hors vin jaune)","acidite":5,"tanins":null,"alcool":3,"corps":3,"aromes":2,"a_verifier":["alcool","corps","aromes"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023)","note":"Corps jugé moyen-plus à plein par Wine Grapes."},
+    jauge: {"style":"Jura, blanc sec ouillé (hors vin jaune)","acidite":5,"tanins":null,"alcool":3,"corps":3,"aromes":2,"a_verifier":["alcool","corps","aromes"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023)","note":"Arômes : moyens-moins pour le D3 ; Oxford parle d'arômes floraux et citronnés souvent exubérants. Corps jugé moyen-plus à plein par Wine Grapes."},
   },
   {
     id: 620,
@@ -421,7 +421,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages du Val de Loire",
     noms: [{"nom":"Blanc Fumé","ou":"Sancerre, Pouilly (Loire)"},{"nom":"Fumé Blanc","ou":"Californie"},{"nom":"Muskat-Silvaner","ou":"Autriche, Allemagne"}],
-    jauge: {"style":"Centre-Loire (Sancerre, Pouilly-Fumé), blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":3,"aromes":5,"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012)"},
+    jauge: {"style":"Centre-Loire (Sancerre, Pouilly-Fumé), blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":3,"aromes":5,"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; WSET Level 3 (Book)"},
   },
   {
     id: 374,
@@ -442,7 +442,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages du Val de Loire",
     noms: [{"nom":"Steen","ou":"Afrique du Sud"}],
-    jauge: {"style":"Anjou-Saumur, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":[3,5],"aromes":3,"a_verifier":["corps","aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012)","note":"Le vouvray sec est plus léger (corps léger à moyen) ; le savennières, plus ample."},
+    jauge: {"style":"Anjou-Saumur, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":[3,5],"aromes":3,"a_verifier":["corps","aromes"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012)","note":"Le vouvray sec est plus léger (corps léger à moyen) ; le savennières, plus ample et plus alcoolisé. Understanding Wines dit le chenin non aromatique, le D3 lui donne une intensité moyenne."},
   },
   {
     id: 511,
@@ -465,7 +465,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages du Val de Loire",
     noms: [{"nom":"Melon de Bourgogne","ou":"nom complet"}],
-    jauge: {"style":"Muscadet, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":1,"aromes":1,"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Alcool jugé bas à moyen-moins par le WSET (D3)."},
+    jauge: {"style":"Muscadet, blanc sec","acidite":5,"tanins":null,"alcool":3,"corps":1,"aromes":1,"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Alcool jugé bas à moyen-moins par le WSET (D3) ; moyen (Understanding Wines) et moyen à moyen-plus (CMS) retenus."},
   },
   {
     id: 602,
@@ -531,7 +531,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages du Val de Loire",
     noms: [{"nom":"Groslot","ou":"Anjou, Touraine"}],
-    jauge: {"style":"Touraine et Anjou, rouge léger","acidite":[4,5],"alcool":1,"corps":[1,2],"a_verifier":["acidite","alcool"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Niveaux du rouge ; le grolleau sert surtout au rosé d'Anjou, que les sources ne décrivent qu'en assemblage."},
+    jauge: {"style":"Touraine et Anjou, rouge léger","acidite":[4,5],"alcool":1,"corps":1,"a_verifier":["acidite","alcool"],"src":"Oxford Companion to Wine (2023) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Niveaux du rouge ; le grolleau sert surtout au rosé d'Anjou, que les sources ne décrivent qu'en assemblage."},
   },
 {
     id: 377,
@@ -553,7 +553,7 @@ FICHES.push(
     src: "INAO, fiches Médoc, Haut-Médoc et Pessac-Léognan ; Decanter, Left and right bank Bordeaux explained ; Virginia Tech, Enology Notes 132 (méthoxypyrazines) ; wein.plus Lexikon, Cabernet Sauvignon ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 88-89 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; FranceAgriMer, Chiffres clés de la filière viti-vinicole 2025 (principaux cépages 2024, source DGDDI)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
-    jauge: {"style":"Médoc, rouge","acidite":4,"tanins":5,"a_verifier":["acidite"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Corps omis : le WSET (L3) le dit moyen à plein, mais Plantgrape note qu’il manque de corps quand il est vinifié seul, sans merlot."},
+    jauge: {"style":"Médoc, rouge","acidite":4,"tanins":5,"alcool":[3,4],"corps":4,"aromes":5,"a_verifier":["aromes"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro) ; CMS Grape Markers (2025)","note":"Acidité : moyenne-plus (CMS), élevée pour le cépage dans l'assemblage (D3). Corps moyen-plus pour les communales du Haut-Médoc (D3), moyen à plein (CMS) ; Plantgrape note qu'il manque de corps vinifié seul, sans merlot."},
 },
 {
     id: 378,
@@ -578,7 +578,7 @@ FICHES.push(
     src: "INAO, fiches Pomerol, Saint-Émilion grand cru (premier grand cru classé), Médoc et Haut-Médoc ; Decanter, Left and right bank Bordeaux explained ; Decanter, Merlot (grape guide) ; FranceAgriMer, Chiffres clés filière viti-vinicole 2025 ; wein.plus Lexikon, Merlot ; Etymonline, merlot ; D’après École du Vin de France, Le Grand Cours de dégustation (Hachette), p. 90-91 ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Oxford Companion to Wine, 5e éd. (2023) ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; FranceAgriMer, Chiffres clés de la filière viti-vinicole 2025 (principaux cépages 2024, source DGDDI) ; CMS, Grape Markers (2025), p. 7 ; WSET, D3 Wines of the World (2024), « Bordeaux – Saint-Émilion AOC », p. 23, et « Pomerol AOC », p. 24 ; Wine Grapes (2012), « Merlot » ; Oxford Companion to Wine, 5e éd. (2023), « Merlot »",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
-    jauge: {"style":"Bordeaux rive droite, rouge","acidite":2,"alcool":[4,5],"corps":[4,5],"a_verifier":["acidite","alcool","corps"],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016)","note":"Alcool jugé moyen par le WSET (L3). Corps jugé moyen par le WSET (L3). Le WSET (L3) décrit un merlot bordelais vendangé tôt ; Plantgrape correspond au style vendangé très mûr."},
+    jauge: {"style":"Bordeaux rive droite, rouge","acidite":4,"tanins":4,"alcool":[4,5],"corps":[4,5],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016) ; CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024)","note":"Niveaux du merlot mûr de rive droite (CMS, D3) ; Plantgrape le donne peu acide. Understanding Wines décrit aussi un merlot bordelais vendangé tôt : corps et alcool moyens, acidité plus vive."},
 },
   {
     id: 498,
@@ -601,7 +601,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
     noms: [{"nom":"Breton","ou":"Val de Loire"},{"nom":"Bouchy","ou":"Madiran, Béarn"}],
-    jauge: {"style":"Loire (Chinon, Bourgueil), rouge","acidite":5,"tanins":3,"alcool":[3,4],"corps":3,"aromes":4,"a_verifier":["alcool"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Plus léger sur les sables, plus corsé sur les coteaux."},
+    jauge: {"style":"Loire (Chinon, Bourgueil), rouge","acidite":5,"tanins":3,"alcool":[3,4],"corps":3,"aromes":4,"a_verifier":["alcool"],"src":"CMS Grape Markers (2025) ; WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016)","note":"Plus léger sur les sables, plus corsé sur les coteaux."},
   },
   {
     id: 610,
@@ -644,7 +644,7 @@ FICHES.push(
     src: "WSET, Understanding Wines (2016) ; Falstaff, Grape varieties: Semillon ; Château Berne, Guide cépages : sémillon blanc ; MasterClass, Semillon wine guide ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
-    jauge: {"style":"Bordeaux, blanc sec (le sauternes n'est décrit qu'en assemblage)","acidite":3,"tanins":null,"alcool":3,"corps":3,"aromes":1,"a_verifier":["alcool","corps"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; Plantgrape (IFV, INRAE, Institut Agro)"},
+    jauge: {"style":"Bordeaux, blanc sec (le sauternes n'est décrit qu'en assemblage)","acidite":[3,4],"tanins":null,"alcool":3,"corps":3,"aromes":1,"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; Plantgrape (IFV, INRAE, Institut Agro) ; CMS Grape Markers (2025)","note":"Acidité : moyenne à moyenne-plus pour le cépage, moyenne dans les blancs secs de Bordeaux (D3) ; moyenne-plus (CMS)."},
   },
 {
     id: 605,
@@ -667,7 +667,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
     noms: [{"nom":"Tokay","ou":"Australie"},{"nom":"Sauvignon Vert","ou":"Californie"}],
-    jauge: {"style":"Bordeaux, blanc","acidite":[1,2],"tanins":null,"alcool":3,"aromes":2,"a_verifier":["acidite","alcool","aromes"],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016)","note":"Intensité aromatique jugée prononcée par le WSET (L3)."},
+    jauge: {"style":"Bordeaux, blanc","acidite":[1,2],"tanins":null,"alcool":3,"aromes":5,"a_verifier":["acidite","alcool"],"src":"Plantgrape (IFV, INRAE, Institut Agro) ; WSET, Understanding Wines (2016) ; WSET Level 3 (Book)","note":"Cépage d'appoint des blancs bordelais. Arômes prononcés (Understanding Wines, Level 3) contre faibles pour Plantgrape ; acidité et alcool ne viennent que de Plantgrape (absent du dépôt)."},
   },
   {
     id: 606,
@@ -690,7 +690,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
     noms: [{"nom":"Trebbiano Toscano","ou":"Italie"},{"nom":"Procanico","ou":"Ombrie"},{"nom":"Tália","ou":"Portugal"}],
-    jauge: {"style":"Charentes et Gascogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"a_verifier":["acidite","corps"],"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)"},
+    jauge: {"style":"Charentes et Gascogne, blanc sec","acidite":5,"tanins":null,"corps":1,"aromes":1,"src":"WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro) ; Oxford Companion to Wine (2023)","note":"Vin de base de la distillation (Charentes) ; les côtes-de-gascogne sont légers, aux arômes de pomme verte."},
   },
   {
     id: 607,
@@ -713,7 +713,7 @@ FICHES.push(
     source: "france",
     chapitre: "Cépages de Bordeaux et des Charentes",
     noms: [{"nom":"French Colombard","ou":"Californie"}],
-    jauge: {"style":"Côtes de Gascogne, blanc sec","acidite":4,"tanins":null,"aromes":1,"a_verifier":["aromes"],"src":"WSET D3, Wines of the World (2024) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Intensité aromatique jugée moyenne-moins par Wine Grapes ; moyenne-plus par Plantgrape."},
+    jauge: {"style":"Côtes de Gascogne, blanc sec","acidite":4,"tanins":null,"aromes":1,"src":"WSET D3, Wines of the World (2024) ; Plantgrape (IFV, INRAE, Institut Agro) ; Oxford Companion to Wine (2023) ; Wine Grapes (2012)","note":"Acidité : moyenne à moyenne-plus (D3), vive (« crisp ») selon Oxford. Plantgrape lui donne des arômes moyens-plus ; D3, Oxford et Wine Grapes le disent neutre."},
   },
   {
     id: 608,
@@ -779,7 +779,7 @@ FICHES.push(
     src: "Plantgrape (IFV/INRAE/Institut Agro), fiche Tannat N ; INAO, cahiers des charges AOC Madiran (BO-Agri 2015, 2017 et arrêté du 26 novembre 2025), Irouléguy et Tursan ; JancisRobinson.com, Tannat ; WSET, Understanding Wines (2016) ; eAmbrosia, document unique AOP Cahors ; wein.plus Magazine, Tannat, the tamed powerhouse from France’s southwest ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012)",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
-    jauge: {"style":"Sud-Ouest (Madiran), rouge","acidite":4,"tanins":5,"corps":[4,5],"a_verifier":["acidite","corps"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Les madirans modernes ont des tanins plus mûrs et plus souples qu'autrefois."},
+    jauge: {"style":"Sud-Ouest (Madiran), rouge","acidite":[4,5],"tanins":5,"corps":5,"a_verifier":["acidite","corps"],"src":"WSET D3, Wines of the World (2024) ; Oxford Companion to Wine (2023) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Niveaux du madiran d'élevage (D3) ; les madirans modernes ont des tanins plus mûrs et plus souples qu'autrefois. Acidité moyenne-plus pour Plantgrape, élevée pour le D3 (marquée pour Wine Grapes)."},
   },
   {
     id: 512,
@@ -801,7 +801,7 @@ FICHES.push(
     src: "INAO, fiches AOP Jurançon ; Guide Hachette des vins, Cépages : le gros manseng et le petit manseng ; Vinatis, Mansengs ; WSET, Understanding Wines (2016) ; cf. Mille Vignes, P. Lepeltier, p. 31 ; Wine Grapes (Robinson, Harding, Vouillamoz, 2012) ; WSET, D3 Wines of the World (2024), « South West France – Jurançon », p. 146 ; WSET, Understanding Wines (2016), « South West France », p. 84 ; Wine Grapes (2012), « Petit Manseng » et « Gros Manseng » ; Oxford Companion to Wine, 5e éd. (2023), « Gros Manseng »",
     source: "france",
     chapitre: "Cépages du Sud-Ouest",
-    jauge: {"style":"Jurançon moelleux (petit manseng)","acidite":5,"tanins":null,"aromes":4,"src":"WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Intensité aromatique jugée prononcée par le WSET (L3) ; moyenne par le WSET (D3). Niveaux du petit manseng en moelleux ; aucune source ne chiffre le gros manseng (jurançon sec)."},
+    jauge: {"style":"Jurançon moelleux (petit manseng)","acidite":5,"tanins":null,"aromes":5,"src":"WSET D3, Wines of the World (2024) ; WSET, Understanding Wines (2016) ; Wine Grapes (2012) ; Plantgrape (IFV, INRAE, Institut Agro)","note":"Niveaux du petit manseng en moelleux ; aucune source ne chiffre le gros manseng (jurançon sec). Arômes prononcés pour les jurançons doux (Understanding Wines) ; le D3 dit le cépage modérément aromatique, et ses chiffres d'alcool et de corps portent sur les vendanges tardives (liquoreux), non retenus.","a_verifier":["aromes"]},
   },
   {
     id: 609,
