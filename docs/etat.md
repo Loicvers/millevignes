@@ -5,7 +5,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 - Fiches : 946 (dernier id : 948) · exercices : 4837
 - Vérifiées : 939 · à vérifier : 7 (9 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2393
 - Niveaux : Fondamental 252 · Intermédiaire 501 · Pointu 193
-- Cours (Approfondir) : 219 · schémas : 425
+- Cours (Approfondir) : 219 · schémas : 429
 - Lexique : 84 termes · récits de chapitre : 107
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
@@ -25,7 +25,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-alsace.js | 10 | 405–862 | hors livre | 9 | 1 | 4 |
 | fr-beaujolais-appellations.js | 13 | 472–799 | hors livre | 13 | 0 | 12 |
 | fr-beaujolais.js | 7 | 406–711 | hors livre | 7 | 1 | 2 |
-| fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 31 |
+| fr-bordeaux-appellations.js | 35 | 421–772 | hors livre | 35 | 0 | 32 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
 | fr-bourgogne.js | 64 | 385–940 | hors livre | 64 | 1 | 23 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 8 |
@@ -38,14 +38,14 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-jura.js | 2 | 407–813 | hors livre | 2 | 1 | 1 |
 | fr-languedoc-appellations.js | 23 | 476–918 | hors livre | 23 | 0 | 21 |
 | fr-languedoc.js | 7 | 417–717 | hors livre | 7 | 1 | 2 |
-| fr-loire-appellations.js | 45 | 447–900 | hors livre | 45 | 0 | 43 |
+| fr-loire-appellations.js | 45 | 447–900 | hors livre | 45 | 0 | 45 |
 | fr-loire.js | 8 | 409–695 | hors livre | 8 | 1 | 2 |
 | fr-lorraine.js | 1 | 576–576 | hors livre | 1 | 0 | 1 |
 | fr-provence-appellations.js | 12 | 489–842 | hors livre | 11 | 0 | 10 |
 | fr-provence.js | 4 | 419–833 | hors livre | 4 | 1 | 1 |
 | fr-rhone-appellations.js | 31 | 434–790 | hors livre | 31 | 0 | 31 |
 | fr-rhone.js | 8 | 415–689 | hors livre | 8 | 1 | 3 |
-| fr-roussillon-appellations.js | 12 | 481–926 | hors livre | 12 | 0 | 10 |
+| fr-roussillon-appellations.js | 12 | 481–926 | hors livre | 12 | 0 | 11 |
 | fr-roussillon.js | 6 | 418–722 | hors livre | 6 | 1 | 2 |
 | fr-savoie-appellations.js | 9 | 494–830 | hors livre | 9 | 0 | 7 |
 | fr-savoie.js | 3 | 408–823 | hors livre | 3 | 1 | 1 |
