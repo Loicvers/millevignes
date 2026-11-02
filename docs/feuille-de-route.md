@@ -69,8 +69,8 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 ## Revue du design du 02/11 (branche design-corrections)
 - [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.
 - [x] VoiceOver (vérifié sans iPhone : axe-core, arbre d'accessibilité, focus) : focus sur la question, question en titre, onglet lu avec son nombre, légende des schémas. À tester sur l'iPhone (protocole envoyé à Loïc).
-- [ ] Maquette à valider par Loïc : Réglages en liste (sauvegarde, révision, affichage, données), onglet Aujourd'hui élargi sur mobile, chiffres alignés dans les nombres en serif, étymologie du lexique à la taille de la définition, pré-test « Voir la réponse » / « Lire la fiche ».
-- [ ] Atlas : marqueur « carte disponible » à revoir (seuls France, Chypre, Croatie, Égypte et Royaume-Uni n'ont pas de carte).
+- [x] Maquette validée par Loïc et appliquée (02/11) : Réglages en liste (sauvegarde avec date de la dernière, révision, affichage, données ; longueur et thème en boutons groupés, pré-test en interrupteur), onglet Aujourd'hui élargi sur mobile, chiffres alignés, étymologie du lexique à la taille de la définition, pré-test « Voir la réponse » / « Lire la fiche ».
+- [x] Atlas : marqueur « ◉ carte disponible » retiré (toutes les tuiles ont une carte ; les pays sans carte sont dans « Autres pays »).
 - Mode sombre : gardé (Loïc, 02/11).
 
 ## Audit du code du 02/11 (branche audit-corrections)

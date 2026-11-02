@@ -231,9 +231,9 @@ const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-
 const carteDe=(f,l)=>l.france?f.geo?.pays==='France'&&(l.nom==='France'?!f.geo.region:f.geo.region===l.nom):f.geo?.pays===l.nom;
 const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
 const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
-// Tuile d'un lieu (accueil et recherche de l'atlas) ; ◉ : la région a une carte
+// Tuile d’un lieu (accueil et recherche de l’atlas) ; « sans carte » sur les rares lieux qui n’en ont pas
 function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,b=el('button','lieu'),h=el('span','lieu-h');
-  h.append(el('span','lieu-n',x.nom));if(CARTES.some(f=>carteDe(f,x))){const c=el('span','lieu-c','◉');c.title='Carte disponible';h.append(c);}
+  h.append(el('span','lieu-n',x.nom));if(!CARTES.some(f=>carteDe(f,x)))h.append(el('span','lieu-c','sans carte'));
   b.append(h,el('span','chap-m',`${plur(x.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);return b;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -272,7 +272,7 @@ function renderCartes(){
     if(!n){ // sans recherche : les lieux en tuiles ; les pays à moins de 4 fiches en pastilles
       list.className='lieux-acc';const fr=LIEUX.filter(x=>x.france),gen=fr.find(x=>x.nom==='France'),mo=LIEUX.filter(x=>!x.france);
       const tuiles=ls=>{const g=el('div','lieux');ls.forEach(x=>g.append(tuile(x)));return g;};
-      const tf=el('div','lieux-tt');tf.append(el('h2','lieux-t','France'),el('small',null,'◉ carte disponible'));
+      const tf=el('div','lieux-tt');tf.append(el('h2','lieux-t','France'));
       list.append(tf,tuiles(fr.filter(x=>x!==gen)));
       if(gen){const b=el('button','lieu lieu-gen');b.append(el('span','lieu-n',nomLieu(gen)),el('span','chap-m',String(gen.fiches.length)));b.onclick=()=>allerLieu(gen.nom);list.append(b);}
       list.append(el('h2','lieux-t','Monde'),tuiles(mo.filter(x=>x.fiches.length>=4)));
@@ -316,7 +316,7 @@ function renderLexique(){
     [...LEXIQUE].sort((a,b)=>a.terme.localeCompare(b.terme,'fr')).filter(t=>!n||normalize(t.terme+' '+t.def).includes(n)).forEach(t=>{
       const d=el('div','card lex');
       d.append(el('h3',null,t.terme),el('p','synth',t.def));const ph=lexPhoto(t);if(ph)d.append(ph);
-      if(t.etym){const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
+      if(t.etym){const e=el('p','lex-etym');e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
       const fs=fichesDuTerme(t,FICHES);
@@ -843,7 +843,7 @@ function showPretest(f,suite){
     const lire=el('button','btn primary','Lire la fiche');lire.onclick=suite;actions.replaceChildren(lire);
   };
   shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);btns[i]=b;b.onclick=()=>corriger(i);body.append(b);});
-  const nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
+  const nsp=el('button','btn','Voir la réponse'),pass=el('button','btn','Lire la fiche');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
   box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);question.focus({preventScroll:true});window.scrollTo(0,0);
 }
 function correctText(ex){
@@ -991,6 +991,8 @@ function majBandeau(){
   let t=0;try{t=+localStorage.getItem(SAVED_KEY)||0;}catch{}
   const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
   document.getElementById('saveBanner').hidden=!(mode!=='due'&&Object.keys(prog).length&&now()-depuis>RAPPEL*DAY);
+  const j=t&&Math.floor((new Date().setHours(0,0,0,0)-new Date(t).setHours(0,0,0,0))/DAY); // jours de calendrier
+  document.getElementById('savedInfo').textContent=!t?'Jamais sauvegardée dans ce navigateur':`Dernière sauvegarde : ${j===0?'aujourd’hui':j===1?'hier':`il y a ${j} jours`}`;
 }
 // Pendant la Séance du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
 function updateBadges(){const n=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;
@@ -1018,16 +1020,12 @@ async function exportProg(){
 }
 function dl(blob,nom){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=nom;a.click();URL.revokeObjectURL(a.href);}
 document.querySelector('.zoom-x').onclick=fermerZoom;
-const ptBtn=document.getElementById('pretestBtn');
-const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pretestOn()?'activé':'désactivé');
-ptBtn.onclick=()=>{try{localStorage.setItem(PTKEY,pretestOn()?'0':'1');}catch{}majPt();};majPt();
-const seBtn=document.getElementById('sessionSizeBtn');
-const majSe=()=>seBtn.textContent='Longueur d\'une séance : '+SESSION_MAX+' exercices';
-seBtn.onclick=()=>{SESSION_MAX=TAILLES[(TAILLES.indexOf(SESSION_MAX)+1)%TAILLES.length];try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majSe();majEch();updateBadges();};majSe();
-const THEMES={'':'selon l\'appareil',light:'clair',dark:'sombre'},thBtn=document.getElementById('themeBtn');
-const majTh=()=>thBtn.textContent='Affichage : '+THEMES[document.documentElement.dataset.theme||''];
-thBtn.onclick=()=>{const k=Object.keys(THEMES),t=k[(k.indexOf(document.documentElement.dataset.theme||'')+1)%k.length];
-  if(t)document.documentElement.dataset.theme=t;else delete document.documentElement.dataset.theme;try{t?localStorage.setItem('mv_theme',t):localStorage.removeItem('mv_theme');}catch{}majTh();};majTh();
+// Réglages : longueur de séance et thème en boutons groupés (aria-pressed), pré-test en interrupteur.
+const segment=(id,val,choisir)=>{const g=document.getElementById(id),maj=()=>g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v===String(val())));
+  g.onclick=e=>{const x=e.target.closest('button');if(x){choisir(x.dataset.v);maj();}};maj();};
+segment('sessionSize',()=>SESSION_MAX,v=>{SESSION_MAX=+v;try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majEch();updateBadges();});
+segment('themeSeg',()=>document.documentElement.dataset.theme||'',t=>{if(t)document.documentElement.dataset.theme=t;else delete document.documentElement.dataset.theme;try{t?localStorage.setItem('mv_theme',t):localStorage.removeItem('mv_theme');}catch{}});
+const ptSw=document.getElementById('pretestSw');ptSw.checked=pretestOn();ptSw.onchange=()=>{try{localStorage.setItem(PTKEY,ptSw.checked?'1':'0');}catch{}};
 const echIn=document.getElementById('echeance'),echInfo=document.getElementById('echeanceInfo');
 function majEch(){echIn.value=echeance;const n=rythmeDuJour();echInfo.textContent=echeance?`${restantes()} fiches à découvrir : ${n} nouvelles par jour, séance jusqu'à ${SESSION_MAX+2*n} exercices.`:`Sans échéance : ${NEW_FICHES} nouvelles fiches par jour.`;}
 echIn.onchange=()=>{echeance=echIn.value;try{echeance?localStorage.setItem(ECHKEY,echeance):localStorage.removeItem(ECHKEY);}catch{}majEch();updateBadges();};majEch();
