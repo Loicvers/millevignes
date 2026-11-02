@@ -48,6 +48,7 @@ Référence : les lots Rhône, Alsace, Sud-Ouest (une fiche par appellation ou s
 - Champagne (15 : 4 secteurs, styles, 3 AOC), Charentes et Lorraine : niveau suffisant pour l’objectif ; Lorraine : 2 fiches depuis le 01/11 (576 Côtes de Toul, 949 Moselle, sur les cahiers de 2026).
 
 ## À faire depuis une session sur le PC de Loïc (réseau du conteneur trop restreint, 01/11)
+- [ ] Relecture du 02/11, points à lire sur Légifrance ou l'extranet INAO : 46 (décret du 30 septembre 1957 : Maréchal Foch recommandé dans l'Ain ? « ou l'Yonne » retiré, absent du décret de 1955) ; 960 (cahier du Chambertin, projet de modification 2026) ; 427 (projet de cahier Sauternes/Barsac adopté le 27/11/2025) ; 536 (ouverture du Kamptal DAC à d'autres cépages en 2024, source BMLUK).
 Hôtes refusés dans le cloud : legifrance.gouv.fr, extranet.inao.gouv.fr, wikipedia, vinsalsace.com, franceagrimer.fr, decanter.com, reussir.fr. Ouvrir la session dans Claude Desktop (onglet Claude Code, dossier local `millevignes`), avec Claude in Chrome si besoin.
 - [ ] Touraine : les dix cahiers du 27/10/2026 (JORF n° 253 du 29/10) ; relire 455, 882-889, 891. Au 01/11, le BO-agri répond « en cours de publication » (Orléans-Cléry homologué en plus, JORF n° 254 du 30/10).
 - [ ] Bourgogne passe-tout-grains (954) et Bourgogne mousseux (955) : cahier plus récent que 2013 et 2011 ? 01/11 : rien au JORF pour l’un ni l’autre (954 confirmé par Légifrance, version du 28/01/2013) ; reste la section II du cahier Bourgogne réhomologué le 27/10/2026 (954) et une confirmation INAO (955).
@@ -65,6 +66,14 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Étape 2 — **Atlas** (29/10) (remplace Cartes et les parties France et Monde de Fiches) : une ligne par région ou pays avec sa progression ; page de région avec carte et partenaires, S'entraîner / Examen blanc / Lire, et trois blocs (vignoble et appellations, cépages, dans le livre). Une région réunit ses fiches des trois parties (Bordeaux : 21 + 5 + 11).
 - [x] Étape 3 — **Bibliothèque** (29/10) (Livre, Cépages, Lexique) et barre à 4 onglets, éventuellement en bas d'écran sur mobile. Peut attendre janvier.
 - [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
+
+## Pédagogie et contenu (revue du 02/11, validée par Loïc ; branche pedagogie-contenu)
+- [x] **Un calendrier par fiche** : chaque réponse repart de l'état de la fiche (son dernier exercice répondu) ; une fiche échue pose un exercice jamais posé, sinon le moins récent ; les nouvelles fiches du jour ont leurs places dans la séance. Simulation du 02/11 au 31/12 (test) : une séance par jour (≈ 35 min) suffit à voir les 967 fiches ; tout suivre, révisions comprises : de 45 min en novembre à 2 h 20 fin décembre. Avant : 690 fiches vues au 31/12 et des séances de 600 exercices la dernière semaine.
+- [x] **Plafond des intervalles à l'échéance retiré** (décision du 29/10 annulée) : il faisait revenir presque toutes les fiches le dernier jour (jusqu'à 983 exercices).
+- [x] Cartes de situation : leurres pris sur la même carte, leur nom masqué (84 cartes sur 106, contre 49 sur 88).
+- Fiches « Pointu » (203) : elles restent dans le rythme de l'échéance (Loïc, 02/11).
+- [x] Relecture de 31 fiches tirées au hasard (≈ 260 faits, sous-agents, sources du dépôt privé et cahiers des charges) : 76 % justes, 2 erreurs (208 UNESCO, 544 Marsala), 14 % d'imprécisions, 8 % invérifiables ; appellations françaises sans erreur. Corrigées le 02/11 : 208, 544, 50, 238, 140, 110, 225, 616, 506, 535, 561, 285, 287, 29, 427, 722, 485, 789, 960, 614, 530, 46.
+- Leçons de la relecture : relire aussi les explications d'exercices (Marsala, leurre sylvaner) ; un exercice qui contredit le livre sur la foi d'une seule source dit qui affirme quoi (« Selon X… ») ; dater les chiffres (« vers 2020 », pas « aujourd'hui »).
 
 ## Revue du design du 02/11 (branche design-corrections)
 - [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.

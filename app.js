@@ -41,16 +41,17 @@ const DAY=86400000;
 
 /* ============ RÉPÉTITION ESPACÉE (type SM-2 simplifié) ============ */
 function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
-  prog[id]=suivante(prog[id],quality,now(),echeance&&new Date(echeance+'T23:59:59').getTime());save();updateBadges();
+  prog[id]=noterFiche(id,prog,quality,now());save();updateBadges(); // calendrier par fiche (exercices.js)
 }
-const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
+// Fiche à revoir : l'échéance de son dernier exercice répondu (un calendrier par fiche, voir planSession).
+const ficheDue=f=>{let d=null;for(const e of exosDe(f))if(/^mv-/.test(e.id)&&prog[e.id]&&(!d||quand(prog[e.id])>quand(d)))d=prog[e.id];return !!d&&d.due<=now();};
 const isNew=e=>!prog[e.id];
 // Révisions dues mélangées, puis les nouveautés dans l'ordre du livre, groupées par fiche, flashcard en tête.
 const ficheNeuve=f=>exosDe(f).every(isNew);
 const aDecouvrir=f=>ficheNeuve(f)&&!lues[f.id]; // déjà lue (séance ou lecture de chapitre) : on passe directement aux exercices
 function etat(f){ // où en est la fiche, pour le sommaire
-  const mine=exosDe(f),due=mine.filter(isDue).length;
-  if(due)return['due',`${due} à revoir`];
+  const mine=exosDe(f);
+  if(ficheDue(f))return['due','À revoir'];
   if(mine.length&&mine.every(e=>prog[e.id]))return['done','Travaillée'];
   if(mine.some(e=>prog[e.id]))return['part','Commencée'];
   return lues[f.id]?['lue','Lue']:['new','À découvrir'];
@@ -517,8 +518,7 @@ function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
   const mine=exosDe(f);
   const geoTag=f.geo?`<span class="tag geo">${f.geo.appel||f.geo.region||f.geo.pays}</span>`:'';
-  const nDue=mine.filter(isDue).length;
-  const dueTag=nDue?`<span class="tag due">${nDue} à revoir</span>`:'';
+  const dueTag=ficheDue(f)?'<span class="tag due">à revoir</span>':'';
   const chk=f.to_check||[];
   const statTag=f.status==='verified'?'<span class="tag ok">✓ vérifiée</span>':chk.length?'<span class="tag warn">⚠ à vérifier</span>':'';
   const chkList=chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
