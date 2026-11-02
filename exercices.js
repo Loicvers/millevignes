@@ -73,12 +73,22 @@ function lexiqueExercises(lex, fiches) {
   return lex.map(t => ({ t, f: fichesDuTerme(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
     // Leurres : jamais un terme parent (l'un cite l'autre, ex. clone ↔ bouture), sinon deux réponses défendables.
     const lie = o => [o.def + " " + o.declic, t.def + " " + t.declic].some((txt, i) => mots(txt).some(w => w.startsWith(lexStem(i ? o : t))));
-    const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t && !lie(o))).slice(0, 3).map(o => o.terme)]);
+    const leurres = shuffle(lex.filter(o => o !== t && !lie(o))).slice(0, 3);
     // La définition ne doit pas souffler la réponse (« par bouture » → bouturage) : mots de la même racine masqués.
     const def = t.def.replace(/[\p{L}’'-]+/gu, w => mots(w).some(m => m.includes(lexStem(t))) ? "…" : w); // « méthoxypyrazines » soufflait « pyrazines »
-    return { id: "lx-" + normalize(t.terme).replace(/ /g, "-"), type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + def + " » ?",
-      payload: { options, answer: options.indexOf(t.terme) }, explanation: `Étymologie : ${t.etym} ${t.declic}`, fiche: f };
-  });
+    const id = "lx-" + normalize(t.terme).replace(/ /g, "-"), explanation = `Étymologie : ${t.etym} ${t.declic}`;
+    // Deux trous et plus, la définition devient illisible (« Union d’un … et d’un … ») : on donne le terme, on demande sa définition,
+    // par sa première phrase sans aucun mot du terme (sinon la bonne option se repère) ; à défaut (greffe → greffon), pas de question.
+    if ((def.match(/…/g) || []).length >= 2) {
+      const phrases = o => o.def.split(/(?<=[.!?])\s/), racines = [lexStem(t), ...mots(t.terme).filter(w => w.length >= 4).map(racine)];
+      const juste = phrases(t).find(p => !mots(p).some(m => racines.some(r => m.includes(r))));
+      if (!juste) return null;
+      const options = shuffle([juste, ...leurres.map(o => phrases(o)[0])]);
+      return { id, type: "mcq_single", prompt: "Lexique — que désigne « " + t.terme + " » ?", payload: { options, answer: options.indexOf(juste) }, explanation, fiche: f };
+    }
+    const options = shuffle([t, ...leurres].map(o => o.terme));
+    return { id, type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + def + " » ?", payload: { options, answer: options.indexOf(t.terme) }, explanation, fiche: f };
+  }).filter(Boolean);
 }
 
 // Ma cave (fichier privé) : « ta bouteille X illustre quelle notion ? », un QCM par fiche reliée à une cuvée par un fait documenté.

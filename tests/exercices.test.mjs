@@ -329,6 +329,21 @@ test("les questions ne renvoient pas à leur fiche", () => {
   assert.deepEqual([...trous], [], "texte à trous qui répète la consigne « Complète »");
 });
 
+// Retour de l'iPhone : « Union d’un … et d’un … pour former un seul plant » était illisible.
+test("lexique : jamais plus d'un trou ; sinon le terme est donné et sa définition demandée, sans le trahir", () => {
+  vm.runInNewContext(readFileSync(new URL("../data/lexique.js", import.meta.url), "utf8"), ctx);
+  vm.runInNewContext("this.lexTout=lexiqueExercises(LEXIQUE,[{titre:'x',synth:LEXIQUE.map(t=>t.terme).join(' '),mnemo:''}])", ctx);
+  const tous = [...ctx.lexTout];
+  assert.deepEqual(tous.filter(e => (e.prompt.match(/…/g) || []).length >= 2).map(e => e.id), []);
+  const inverses = tous.filter(e => /que désigne/.test(e.prompt));
+  assert.ok(inverses.length >= 10, "questions inversées : " + inverses.length);
+  for (const e of inverses) {
+    const terme = e.prompt.match(/« (.+) »/)[1], juste = normalize(e.payload.options[e.payload.answer]);
+    for (const w of normalize(terme).split(" ").filter(w => w.length >= 4)) assert.ok(!juste.includes(w.slice(0, 5)), `${e.id} : « ${w} » dans la bonne option`);
+  }
+  assert.ok(!tous.some(e => e.id === "lx-greffe"), "greffe : aucune phrase sans greffon ni porte-greffe, pas de question");
+});
+
 test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un terme parent", () => {
   const lex = [
     { terme: "bouturage", def: "Multiplication par bouture.", declic: "" },
