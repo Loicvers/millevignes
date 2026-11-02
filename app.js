@@ -121,7 +121,9 @@ document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getEleme
 /* ============ TABS ============ */
 function marquerOnglet(m){m={lexique:'revision',cave:'revision',suivi:'jour'}[m]||m; // le lexique et ma cave vivent dans la Bibliothèque, le suivi dans Aujourd'hui
   document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='cave'||m==='suivi'||m==='cartes'?'none':'block';render();}
+function setMode(m){
+  if(examen&&mode==='due'&&pos<queue.length&&!confirm('Quitter l’examen blanc ? Les réponses données ne seront pas comptées.'))return; // un toucher sur les onglets effaçait l'examen sans prévenir
+  examen=null;taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='cave'||m==='suivi'||m==='cartes'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -155,8 +157,8 @@ function render(){
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
-  const hb=document.getElementById('hardBtn');hb.hidden=!durs.length||mode==='atelier';hb.textContent=`Mes points durs (${durs.length})`;
-  const xb=document.getElementById('examBtn');xb.hidden=mode==='atelier'; // Masterclass compose un programme, on n'y révise pas
+  const hb=document.getElementById('hardBtn');hb.hidden=!nf||!durs.length||mode==='atelier';hb.textContent=`Mes points durs (${durs.length})`;
+  const xb=document.getElementById('examBtn');xb.hidden=!nf||mode==='atelier'; // sans filtre : comme sur Aujourd'hui ; Masterclass compose un programme, on n'y révise pas
   xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.disabled=!list.length;xb.onclick=()=>startExamen(pool);
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
@@ -767,6 +769,7 @@ function showExercise(){
   const box=el('div','ex');
   const head=el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`);
   if(examen)head.append(el('span','ex-chrono',chrono(examen.fin-now())));
+  const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
   box.append(el('div','ex-prompt',ex.prompt));
@@ -955,10 +958,13 @@ function finish(ex,ok,fb,actions,body,crit){
   const expl=ex.explanation||(!synthVue.has(ex.fiche.id)&&ex.fiche.synth);
   if(!ex.explanation)synthVue.add(ex.fiche.id);
   if(crit){const n=crit.reduce((a,x)=>a+x,0);fb.prepend(el('strong',null,`${n} critère${n>1?'s':''} sur 3.`));}
-  if(expl)fb.append(el('p','fb-expl',expl));
-  fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
+  // Boutons (notation, Suivant) juste après le verdict et l'explication ; synthèse, source et approfondissement ensuite
+  // (avant : sous toute la synthèse, il fallait défiler pour noter chaque flashcard).
+  const plus=el('div','fb fb-plus');actions.after(plus);
+  if(expl)(ex.explanation?fb:plus).append(el('p','fb-expl',expl));
+  plus.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
-  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
+  plus.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
@@ -976,7 +982,7 @@ function finish(ex,ok,fb,actions,body,crit){
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
-  fb.tabIndex=-1;fb.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction
+  const cible=fb.childNodes.length?fb:body.querySelector('.ex-answer')||fb;cible.tabIndex=-1;cible.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction ou à la réponse
 }
 // Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 3 jours sans export, dans tous les onglets sauf pendant une séance.
 const SAVED_KEY='mv_saved_at',RAPPEL=3; // jours sans sauvegarde avant le bandeau
@@ -1064,6 +1070,17 @@ document.getElementById('partFile').onchange=async e=>{
   partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
   majCave();fitCache.clear();render();
 };
+
+/* ============ TYPOGRAPHIE ============ */
+// Espace insécable avant ? ! : ; % » et après « : la ponctuation ne passe plus seule à la ligne (« (65 » puis « %) »).
+// Appliquée à l'affichage, à tout texte ajouté à la page ; les schémas, listes déroulantes et champs ne sont pas touchés.
+const INSEC=/(«) | (?=[?!:;%»])/g;
+function insecables(n){
+  if(n.nodeType===1){const w=document.createTreeWalker(n,NodeFilter.SHOW_TEXT);while(w.nextNode())insecables(w.currentNode);return;}
+  if(n.nodeType!==3||!n.nodeValue.includes(' ')||n.parentElement?.closest('svg,option,textarea,script,style'))return;
+  const v=n.nodeValue.replace(INSEC,(m,g)=>g?g+' ':' ');if(v!==n.nodeValue)n.nodeValue=v;
+}
+insecables(document.body);new MutationObserver(rs=>rs.forEach(r=>r.addedNodes.forEach(insecables))).observe(document.body,{childList:true,subtree:true});
 
 /* ============ MOTS DU LEXIQUE DANS LES TEXTES ============ */
 // Souligne la première occurrence de chaque terme du lexique dans les textes de lecture ; un toucher ouvre sa définition.
