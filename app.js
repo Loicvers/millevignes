@@ -339,8 +339,10 @@ function carteVin(v,byId,ouvert){
   if(v.questions?.length){const q=el('details','vin-q');q.append(el('summary',null,`Questions (${v.questions.length})`));v.questions.forEach(x=>{const p=el('p');p.append(el('b',null,x.q+' '),String(x.r));q.append(p);});d.append(q);}
   const fs=[...(byId[SOL_VERRE]&&solsDe(v).length?[byId[SOL_VERRE]]:[]),...Object.keys(v.liens||{}).map(id=>byId[id]).filter(Boolean)]; // vin dont le sol est connu : d'abord la synthèse sol → vin
   if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre(v.cuvee,[f]);w.append(b);});d.append(w);}
-  const srcs=(v.sources||[]).filter(x=>/^https?:\/\//.test(x.url||'')); // fichier importé : pas de javascript: ni autre schéma en lien
-  srcs.forEach(x=>{const p=el('p','src'),a=el('a',null,(x.type||'source')+' · '+x.url.replace(/^https?:\/\/(www\.)?/,'').slice(0,70));a.href=x.url;a.target='_blank';a.rel='noopener';p.append(a);d.append(p);});
+  const srcs=(v.sources||[]).filter(x=>x&&typeof x.url==='string'&&x.url);
+  srcs.forEach(x=>{const p=el('p','src'),t=(x.type||'source')+' · '+x.url.replace(/^https?:\/\/(www\.)?/,'').slice(0,70);
+    if(/^https?:\/\//.test(x.url)){const a=el('a',null,t);a.href=x.url;a.target='_blank';a.rel='noopener';p.append(a);}else p.textContent=t; // fichier importé : lien seulement en http(s) ; sinon (tarif, photo) en texte
+    d.append(p);});
   if(!srcs.length)d.append(el('p','src','Aucune source : fiche à demander au domaine.'));
   return d;
 }
