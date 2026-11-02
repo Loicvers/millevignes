@@ -313,7 +313,13 @@ test("échéance : rythme de nouvelles fiches pour tout voir à temps, jamais so
   const t = new Date("2026-10-28T10:00:00").getTime();
   assert.equal(ctx.ry(748, t, "2026-12-31"), 12, "748 fiches en 65 jours");
   assert.equal(ctx.ry(10, t, "2026-12-31"), 5, "plancher : le rythme de base");
-  assert.equal(ctx.ry(30, t, "2026-10-01"), 30, "échéance passée : tout de suite");
+  assert.equal(ctx.ry(30, t, "2026-10-01"), 5, "échéance passée : rythme de base, pas toutes les fiches restantes chaque jour");
+  assert.equal(ctx.ry(30, new Date("2026-12-31T09:00:00").getTime(), "2026-12-31"), 30, "jour de l'échéance : ce qui reste");
+});
+
+test("data/lexique-fiches.js est à jour (sinon : node tools/sync-site.mjs)", async () => {
+  const { lexiqueFiches } = await import("../tools/sync-site.mjs");
+  assert.equal(readFileSync(new URL("../data/lexique-fiches.js", import.meta.url), "utf8"), lexiqueFiches());
 });
 
 test("le nom du cache de sw.js correspond aux fichiers du site (sinon : node tools/sync-site.mjs)", async () => {

@@ -1,7 +1,7 @@
 # Feuille de route
 
 À lire en début de session, avec la fin de `docs/journal.md` (ce qui a été fait) et `docs/etat.md` (les chiffres).
-À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 31/10/2026.
+À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 02/11/2026.
 
 ## Objectif
 - Être prêt **le plus tôt possible**, première échéance le **31/12/2026**. Pas de diplôme précis visé pour l'instant.
@@ -65,6 +65,15 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Étape 2 — **Atlas** (29/10) (remplace Cartes et les parties France et Monde de Fiches) : une ligne par région ou pays avec sa progression ; page de région avec carte et partenaires, S'entraîner / Examen blanc / Lire, et trois blocs (vignoble et appellations, cépages, dans le livre). Une région réunit ses fiches des trois parties (Bordeaux : 21 + 5 + 11).
 - [x] Étape 3 — **Bibliothèque** (29/10) (Livre, Cépages, Lexique) et barre à 4 onglets, éventuellement en bas d'écran sur mobile. Peut attendre janvier.
 - [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
+
+## Audit du code du 02/11 (branche audit-corrections)
+- [x] Échéance passée : rythme de base (avant : toutes les fiches restantes chaque jour, séance de 1 855 exercices).
+- [x] Lenteurs : exercices rangés par fiche une fois (`exosDe`), fiches du lexique calculées par `sync-site.mjs` (`data/lexique-fiches.js`), étiquettes des schémas mémorisées. Mesuré sur processeur ralenti ×4 : ouverture 5,2 → 2,6 s, Bibliothèque 2,3 → 0,13 s, Masterclass 1,9 → 0,15 s, Lexique 1,7 → 0,14 s ; affichage identique.
+- [x] Test du parcours réel (`tests/parcours.test.mjs` : séance, sauvegarde, effacement, double restauration), sauté sans Playwright (GitHub).
+- [x] Import de lots JSON jamais utilisé supprimé (`tools/validate.mjs`, `merge()`) ; « En fait, j'avais juste » retire la seconde chance de la séance.
+- [ ] Cartes : 2,4 Mo des 12,2 Mo de fiches sont des contours copiés d'une fiche à l'autre ; fiches ≈ 3 Mo compressés (et non 1,3). Fond de carte partagé : après le 31/12.
+- [x] Migrations de la v1 (`fromV1`, `mv_programme`) supprimées (02/11) : le site ne sert que sur un téléphone, sans données v1 (Loïc) ; une sauvegarde doit être en version 2.
+- [ ] Revues proposées, non faites : design (captures de chaque écran), pédagogie (statistiques et échantillon d'exercices), contenu (échantillon de fiches contrôlé dans le dépôt de sources).
 
 ## Audit du 29/10 (reste à faire)
 - [x] Audit du code du 30/10 : cache hors ligne sans mise à jour en arrière-plan, échecs d'enregistrement signalés, « Effacer » complet. Le reste de cet audit (biais des QCM, fiches 70 et 78) est fait le même jour.

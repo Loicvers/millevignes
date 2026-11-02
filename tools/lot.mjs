@@ -124,24 +124,5 @@ export function validate(lot, base = lot) {
   return errors;
 }
 
-// Fusionne un lot valide dans la base sans rien écraser en silence.
-// Règle : id absent → créé ; contenu identique → inchangé ; content_version supérieure → mis à jour ; sinon → conflit (base conservée).
-export function merge(base, lot) {
-  const out = structuredClone(base);
-  const report = { created: [], updated: [], unchanged: [], conflicts: [] };
-  for (const kind of ["sources", "notions", "exercises"]) {
-    out[kind] ??= [];
-    for (const item of lot[kind] ?? []) {
-      const i = out[kind].findIndex(x => x.id === item.id);
-      if (i < 0) { out[kind].push(item); report.created.push(item.id); continue; }
-      const cur = out[kind][i];
-      if (JSON.stringify(cur) === JSON.stringify(item)) report.unchanged.push(item.id);
-      else if (item.content_version > cur.content_version) { out[kind][i] = item; report.updated.push(item.id); }
-      else report.conflicts.push(item.id);
-    }
-  }
-  return { base: out, report };
-}
-
 // Normalisation pour comparer les réponses saisies : casse, accents, espaces et ligatures.
 export const normalize = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[^a-z0-9]+/g, " ").trim();

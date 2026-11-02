@@ -29,7 +29,7 @@ node tools/sync-site.mjs
 ```bash
 node tools/migrate-fiches.mjs && node --test
 ```
-Le premier aligne `index.html` et `sw.js` sur les fichiers et renouvelle le cache (sinon les appareils gardent
+Le premier aligne `index.html` et `sw.js` sur les fichiers, précalcule les fiches du lexique (`data/lexique-fiches.js`) et renouvelle le cache (sinon les appareils gardent
 l'ancienne version) ; le second régénère `data/base.json` et lance les tests, qui tournent aussi sur GitHub à chaque push.
 Chiffres du projet : `node tools/etat.mjs` (écrit `docs/etat.md`).
 

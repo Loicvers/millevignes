@@ -1,6 +1,10 @@
 /* ============ DONNÉES ============ */
 const EXOS=[...FICHES.flatMap(f=>[...toExercises(f),...schemaExercise(f,FICHES)]),...lexiqueExercises(LEXIQUE,FICHES)];
 const EX_BY_ID=Object.fromEntries(EXOS.map(e=>[e.id,e]));
+// Exercices de chaque fiche, rangés une fois (les chercher dans EXOS pour chaque fiche : des millions de comparaisons par écran). À refaire si EXOS change (majCave).
+const EXOS_DE=new Map(),exosDe=f=>EXOS_DE.get(f)||[];
+function indexerExos(){EXOS_DE.clear();for(const e of EXOS){if(!EXOS_DE.has(e.fiche))EXOS_DE.set(e.fiche,[]);EXOS_DE.get(e.fiche).push(e);}}
+indexerExos();
 const TYPE_LBL={flashcard:'Flashcard',flashcard_reverse:'Flashcard inversée',mcq_single:'QCM',mcq_multi:'QCM — plusieurs réponses',true_false:'Vrai ou faux',cloze:'Texte à trous',short_answer:'Réponse courte',matching:'Associer',ordering:'Remettre dans l\'ordre',odd_one_out:'Trouver l\'intrus',label_schema:'Légender le schéma',explain_client:'Explique à un client'};
 const NIVEAUX=["Fondamental","Intermédiaire","Pointu"];
 const SKEY='mv_session_max',TAILLES=[10,20,40];
@@ -12,13 +16,9 @@ const restantes=()=>{const vus=new Set(EXOS.filter(e=>prog[e.id]).map(e=>e.fiche
 const rythmeDuJour=()=>echeance?rythme(restantes(),now(),echeance,NEW_FICHES):NEW_FICHES;
 
 /* ============ PERSISTANCE (localStorage) ============ */
-// v2 : progression par exercice. La v1 (par fiche) est reprise une fois, puis laissée intacte.
-const PKEY="mv_progress_v2",PKEY_V1="mv_progress_v1";
-function fromV1(v1){const p={};for(const k in v1){p[notionId(k)+'-01']={...v1[k]};p[notionId(k)+'-02']={...v1[k]};}return p;}
-function load(){
-  try{const v2=localStorage.getItem(PKEY);if(v2)return JSON.parse(v2);const v1=localStorage.getItem(PKEY_V1);return v1?fromV1(JSON.parse(v1)):{};}
-  catch{return {};}
-}
+// Progression par exercice (v2).
+const PKEY="mv_progress_v2";
+function load(){try{return JSON.parse(localStorage.getItem(PKEY))||{};}catch{return {};}}
 let prog=load();
 const LKEY='mv_lues';let lues={};try{lues=JSON.parse(localStorage.getItem(LKEY))||{};}catch{}
 function saveLues(){put(LKEY,lues);}
@@ -46,10 +46,10 @@ function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
 const isDue=e=>prog[e.id]&&prog[e.id].due<=now();
 const isNew=e=>!prog[e.id];
 // Révisions dues mélangées, puis les nouveautés dans l'ordre du livre, groupées par fiche, flashcard en tête.
-const ficheNeuve=f=>EXOS.every(e=>e.fiche!==f||isNew(e));
+const ficheNeuve=f=>exosDe(f).every(isNew);
 const aDecouvrir=f=>ficheNeuve(f)&&!lues[f.id]; // déjà lue (séance ou lecture de chapitre) : on passe directement aux exercices
 function etat(f){ // où en est la fiche, pour le sommaire
-  const mine=EXOS.filter(e=>e.fiche===f),due=mine.filter(isDue).length;
+  const mine=exosDe(f),due=mine.filter(isDue).length;
   if(due)return['due',`${due} à revoir`];
   if(mine.length&&mine.every(e=>prog[e.id]))return['done','Travaillée'];
   if(mine.some(e=>prog[e.id]))return['part','Commencée'];
@@ -150,7 +150,7 @@ function render(){
   renderProg();
   document.getElementById('shown').textContent=list.length;
   document.getElementById('acq').textContent=EXOS.filter(e=>prog[e.id]).length;
-  const pool=list.flatMap(f=>EXOS.filter(e=>e.fiche===f));
+  const pool=list.flatMap(f=>exosDe(f));
   const sb=document.getElementById('sessionBtn');sb.textContent=`S'entraîner sur ces ${list.length} fiche(s)`;sb.disabled=!list.length;sb.hidden=!nf||mode==='atelier'; // le bouton global ne sert que sur une sélection : sinon, la Séance du jour fait le même travail
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
@@ -242,7 +242,7 @@ function renderLieu(l){
   const rang=c=>/France viticole|monde viticole/.test(c.partie)?0:c.partie==='Les cépages'?1:2;
   const groupe=c=>[l.france?'Appellations':'Vignoble','Cépages','Dans le livre'][rang(c)];
   const chaps=(CHAPS||[]).filter(c=>c.fiches.some(f=>l.fiches.includes(f))).sort((a,b)=>rang(a)-rang(b));
-  const ordre=chaps.flatMap(c=>c.fiches.filter(f=>l.fiches.includes(f))),pool=l.fiches.flatMap(f=>EXOS.filter(e=>e.fiche===f));
+  const ordre=chaps.flatMap(c=>c.fiches.filter(f=>l.fiches.includes(f))),pool=l.fiches.flatMap(f=>exosDe(f));
   tete.append(ret,el('h2','lieu-t',nomLieu(l)));
   const cs=CARTES.filter(f=>carteDe(f,l)); // la première carte en vue, les autres repliées
   if(cs.length){tete.append(el('p','lieu-k','La carte'));const w=el('div','lieu-carte');
@@ -317,7 +317,7 @@ function renderLexique(){
       if(t.etym){const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
-      const fs=lexFiches(t,FICHES).slice(0,6);
+      const fs=fichesDuTerme(t,FICHES);
       if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre('Lexique : '+t.terme,[f]);w.append(b);});d.append(w);}
       list.append(d);});
     if(!list.children.length)list.append(el('p','empty',LEXIQUE.length?'Aucun terme ne correspond.':'Lexique en préparation.'));};
@@ -398,14 +398,14 @@ function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){
       if(!secOuverts)secOuverts=new Set([suite?(suite.c.section||suite.c.partie):nom]);
       const sd=el('details','sec');sd.open=ordre?(typeof ouvrir==='function'?ouvrir(nom):ouvrir):!!filtre||secOuverts.has(nom);sd.ontoggle=()=>{if(sd.open)secOuverts.add(nom);else{secOuverts.delete(nom);recaler(sd);}};
       const h=el('summary','toc-sec');const nv=all.filter(vue).length;h.append(el('span','sec-t',nom),el('small',null,groupe?`${all.length} fiche${all.length>1?'s':''} · ${nv} vue${nv>1?'s':''}`:`${nv} sur ${all.length} fiches vues`));
-      const sp=all.filter(f=>list.includes(f)).flatMap(f=>EXOS.filter(e=>e.fiche===f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
+      const sp=all.filter(f=>list.includes(f)).flatMap(f=>exosDe(f)),st=el('button','btn','S\'entraîner sur cette section');st.disabled=!sp.length;
       st.onclick=()=>startSession(buildQueue(sp).length?buildQueue(sp):shuffle(sp).slice(0,SESSION_MAX),'Section : '+nom);
       const sa=el('div','chap-act sec-act');sa.append(st);sd.append(h);if(!groupe&&mode!=='atelier')sd.append(sa);grid.append(sd);box=sd;}
     const d=el('details','chap');d.open=ordre?false:filtre||chapOuverts.has(c.chapitre);d.ontoggle=()=>{if(d.open){chapOuverts.add(c.chapitre);remplir();}else{chapOuverts.delete(c.chapitre);recaler(d);}};
     const sm=el('summary'),nv=fs.filter(vue).length;
     sm.append(el('span','chap-t',c.chapitre),el('span','chap-m',(c.page?`p. ${c.page} · `:'')+(fs.length?`${nv}/${fs.length}`:'récit seul')));
     const bar=el('span','chap-bar');bar.setAttribute('aria-hidden','true');bar.append(el('i'));bar.firstChild.style.width=(fs.length?100*nv/fs.length:0)+'%';sm.append(bar);
-    const inn=el('div','chap-in'),act=el('div','chap-act'),pool=fs.flatMap(f=>EXOS.filter(e=>e.fiche===f));
+    const inn=el('div','chap-in'),act=el('div','chap-act'),pool=fs.flatMap(f=>exosDe(f));
     const lire=el('button','btn','Lire le chapitre');lire.onclick=()=>lireChapitre(c.chapitre,fs);
     const tr=el('button','btn','S\'entraîner sur ce chapitre');tr.disabled=!pool.length;
     tr.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Chapitre : '+c.chapitre);
@@ -446,7 +446,7 @@ function fitSvg(svg){
 const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
 // Mes vins (champ vins des partenaires) : encadré « Dans ma cave » des fiches et QCM « quelle bouteille illustre… », retirés puis recalculés à chaque import.
 const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom,reg:p.region})));
-function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of [...caveExercises(vinsDe(),FICHES),...caveQuestions(vinsDe(),FICHES)]){EXOS.push(e);EX_BY_ID[e.id]=e;}}
+function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of [...caveExercises(vinsDe(),FICHES),...caveQuestions(vinsDe(),FICHES)]){EXOS.push(e);EX_BY_ID[e.id]=e;}indexerExos();}
 try{majCave();}catch(e){console.error(e);} // un fichier privé mal formé ne doit pas bloquer le site
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
@@ -513,7 +513,7 @@ document.addEventListener('keydown',e=>{const f=e.target.classList&&e.target.cla
 const selonHTML=f=>f.selon_livre?.length?`<details class="selon-livre"><summary>${f.source==='france'||/cf\. Mille Vignes|complément hors livre/.test(f.src)?'Source unique, non recoupé':'Selon le livre, non recoupé'} (${f.selon_livre.length})</summary><ul>${f.selon_livre.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'';
 function card(f){
   const c=document.createElement('div');c.className='card'+(f.theme==='Géographie viticole'?' t-geo':'');
-  const mine=EXOS.filter(e=>e.fiche===f);
+  const mine=exosDe(f);
   const geoTag=f.geo?`<span class="tag geo">${f.geo.appel||f.geo.region||f.geo.pays}</span>`:'';
   const nDue=mine.filter(isDue).length;
   const dueTag=nDue?`<span class="tag due">${nDue} à revoir</span>`:'';
@@ -565,10 +565,7 @@ function cleanProg(p){
 }
 let store=(()=>{
   try{const s=JSON.parse(localStorage.getItem(PRKEY));if(s&&s.progs&&s.progs[s.cur]){for(const k in s.progs)s.progs[k]=cleanProg(s.progs[k])||blankProg();return s;}}catch{}
-  const k=newKey(),s={cur:k,progs:{[k]:blankProg()}};
-  try{const old=JSON.parse(localStorage.getItem('mv_programme')); // version précédente : un seul programme {titre, ids}
-    if(old&&Array.isArray(old.ids))s.progs[k]=cleanProg({titre:old.titre,items:old.ids.map(id=>({id,duree:10}))});}catch{}
-  return s;
+  const k=newKey();return {cur:k,progs:{[k]:blankProg()}};
 })();
 const P=()=>store.progs[store.cur];
 function saveProg(){try{localStorage.setItem(PRKEY,JSON.stringify(store));}catch{alert('Impossible d\'enregistrer le programme dans ce navigateur.');}}
@@ -642,7 +639,7 @@ function importFromHash(){
 /* ----- support imprimé : fiches, vin et grille de dégustation, quiz, corrigé ----- */
 const PRINTABLE=['mcq_single','odd_one_out','mcq_multi','true_false','short_answer'];
 function quizFor(fs){ // une question par fiche à tour de rôle, 10 au plus
-  const pools=fs.map(f=>shuffle(EXOS.filter(e=>e.fiche===f&&PRINTABLE.includes(e.type)))),out=[];
+  const pools=fs.map(f=>shuffle(exosDe(f).filter(e=>PRINTABLE.includes(e.type)))),out=[];
   for(let r=0;out.length<10&&pools.some(p=>p[r]);r++)pools.forEach(p=>{if(p[r]&&out.length<10)out.push(p[r]);});
   return out;
 }
@@ -970,11 +967,11 @@ function finish(ex,ok,fb,actions,body,crit){
     rate(ex.id,q);entry.c=crit;entry.r=q;put(JKEY,journal);
     const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;}
   if(ex.retry){const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);setTimeout(()=>b.focus());return;} // seconde chance : déjà reprogrammé
-  if(ok===false)queue.splice(Math.min(pos+RETRY_GAP+1,queue.length),0,{...ex,retry:true}); // revient une fois un peu plus loin dans la séance, après la correction
+  const reprise=ok===false&&{...ex,retry:true};if(reprise)queue.splice(Math.min(pos+RETRY_GAP+1,queue.length),0,reprise); // revient une fois un peu plus loin dans la séance, après la correction
   const before=prog[ex.id];if(ok!==false)rate(ex.id,'ok'); // enregistré tout de suite ; le bouton choisi remplace ce « Correct » provisoire
   const add=(q,t,s)=>{const b=el('button','srs-btn srs-'+q,t);b.append(el('span','sub2',s));b.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,q);entry.r=q;put(JKEY,journal);next();};btns.append(b);};
   if(ok===false){rate(ex.id,'hard');const b=el('button','btn primary','Suivant');b.onclick=next;actions.append(b);
-    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');entry.r='ok';put(JKEY,journal);next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
+    if(ex.type.startsWith('flashcard')){const o=el('button','btn','En fait, j’avais juste');o.onclick=()=>{if(before)prog[ex.id]=before;else delete prog[ex.id];rate(ex.id,'ok');entry.r='ok';put(JKEY,journal);const i=queue.indexOf(reprise);if(i>pos)queue.splice(i,1);next();};actions.append(o);} // correction par mots-clés : le doute profite à l'élève
     setTimeout(()=>b.focus());return;}
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
@@ -1039,10 +1036,9 @@ document.getElementById('importBtn').onclick=()=>document.getElementById('import
 document.getElementById('importProg').onchange=async e=>{
   const file=e.target.files[0];e.target.value='';if(!file)return;
   let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
-  let p=data&&data.app==='millevignes'&&data.progress;
+  const p=data&&data.app==='millevignes'&&data.version===2&&data.progress;
   const ok=p&&typeof p==='object'&&Object.values(p).every(v=>v&&typeof v.due==='number'&&typeof v.interval==='number'&&typeof v.ease==='number');
   if(!ok){alert('Ce fichier n\'est pas une sauvegarde de progression Mille Vignes.');return;}
-  if(data.version!==2)p=fromV1(p); // sauvegarde de l'ancien site (par fiche)
   const n=Object.keys(p).length,cur=Object.keys(prog).length;
   if(!confirm(`Fusionner ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)}, avec ta progression actuelle (${cur} exercice(s)) ?\nPour chaque exercice, la réponse la plus récente est gardée.`))return;
   prog=fusionner(prog,p);save();

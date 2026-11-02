@@ -1,7 +1,6 @@
 # FORMAT D'UN LOT — schema_version 1
 
 *Gabarit de production des fiches pour le Projet claude.ai. Remplace `STRUCTURE-FICHE-v2.md` et `fiche-modele-complete.js`.*
-*Contrôle : `node tools/validate.mjs mon-lot.json` (affiche les erreurs, ou l'aperçu de l'import).*
 
 **Circuit actuel** : les fiches sont dans `fiches/<page>-<section>.js` (une section du livre par fichier, ajout par `FICHES.push(...)` ; `fiches.js` garde l'en-tête et les catalogues). Claude ajoute les fiches (champs du site) et leurs exercices supplémentaires dans `exos`, au format des exercices décrit ci-dessous, pose les pastilles (`status`, `to_check`), puis lance `node tools/migrate-fiches.mjs && node --test` et pousse sur GitHub. `data/base.json` est un fichier dérivé et non versionné, à ne jamais modifier ni lire : il sert à la validation (GitHub relance les contrôles à chaque push).
 
@@ -28,7 +27,7 @@ Apostrophes typographiques (’) dans les textes. Catalogue des sous-thèmes : `
 
 **Pastilles** : la migration reprend `status` et `to_check` tels quels ; le site affiche « ✓ vérifiée » ou « ⚠ à vérifier » avec la liste dépliable. Une fiche sans `status` est marquée « à revoir » par défaut. Les divergences avec le livre vont dans la synthèse et/ou un exercice vrai/faux.
 
-Le format « lot JSON » ci-dessous sert aux imports futurs dans l'application. On n'édite rien à la main.
+Le format « lot JSON » ci-dessous est celui de `data/base.json`, que `validate()` (`tools/lot.mjs`) contrôle à chaque migration ; les exercices de `exos` le suivent. On n'édite rien à la main.
 Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
 
 ```json
@@ -47,7 +46,7 @@ Exemple complet couvrant les 11 types : `tests/fixtures/lot-exemple.json`.
   - notion Mille Vignes : `mv-0013`, `mv-0014`… (dérivé de l'id de la fiche : fiche 22 → `mv-0022`) ;
   - exercice : id de la notion + numéro, `mv-0013-01`, `mv-0013-02`… ;
   - source : nom court, `src-wine-grapes-2012`, `src-inao-cdc-margaux`.
-- **content_version** : `1` à la création. Pour corriger un élément déjà importé, renvoyer le même id avec `content_version` + 1. Même id + même version + contenu différent = **conflit**, la base n'est pas modifiée.
+- **content_version** : `1`.
 - Une source déjà dans la base (ex. `mille-vignes`) est citée par son id, pas redéclarée.
 - Contenu **reformulé**, jamais recopié. Ne pas inventer de page, date ou URL : laisser `null`.
 
