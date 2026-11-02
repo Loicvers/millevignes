@@ -21,6 +21,10 @@ test("parcours : une séance s'enregistre, se sauvegarde et se restaure sans per
     await essai.goto(new URL("../index.html", import.meta.url).href);
     const sansQuestion = await essai.evaluate(() => EXOS.slice(0, 40).filter(e => { startSession([e], "test", [e.fiche.id]); const q = document.querySelector("#grid .ex-prompt"); return !q || !q.textContent.trim(); }).map(e => e.id));
     assert.deepEqual(sansQuestion, [], "exercices sans question affichée");
+    // un exercice marqué avec_fiche montre le titre et le schéma de sa fiche au-dessus de la question
+    const avecFiche = await essai.evaluate(() => { const e = EXOS.find(x => x.fiche.schema); startSession([{ ...e, avec_fiche: true }], "test", [e.fiche.id]);
+      return !!document.querySelector("#grid .ex-fiche figure.schema") && document.querySelector("#grid .ex-fiche").compareDocumentPosition(document.querySelector("#grid .ex-prompt")) === Node.DOCUMENT_POSITION_FOLLOWING; });
+    assert.ok(avecFiche, "fiche affichée au-dessus de la question");
     await page.goto(new URL("../index.html", import.meta.url).href);
     await page.click("text=Commencer la séance");
     // Découverte, pré-test, exercices : « Correct » s'il est proposé, sinon une option, sinon le bouton principal.
