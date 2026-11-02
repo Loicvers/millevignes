@@ -95,6 +95,17 @@ function caveExercises(vins, fiches) {
       payload: { options, answer: options.indexOf(f.titre) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + l.d, fiche: f }];
   });
 }
+// Questions de révision écrites pour chaque vin (champ questions) : flashcards rattachées à la fiche de l'appellation (sinon à la première fiche liée).
+// Id tiré du domaine et de la cuvée : la mémorisation survit à un nouvel import du même fichier.
+function caveQuestions(vins, fiches) {
+  const byId = Object.fromEntries(fiches.map(f => [f.id, f]));
+  return vins.flatMap(v => {
+    const ids = Object.keys(v.liens || {}), f = byId[ids.find(id => v.liens[id].k === "appel")] || byId[ids.find(id => byId[id])];
+    if (!f) return [];
+    const base = "cv-q-" + normalize(v.dom + " " + v.cuvee).replace(/ /g, "-");
+    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " » (" + v.dom + ") : " + q.q, payload: { answer: q.r }, fiche: f }));
+  });
+}
 
 // Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
 // Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.

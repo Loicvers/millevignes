@@ -119,9 +119,9 @@ let attente;document.getElementById('ficheSearch').oninput=e=>{clearTimeout(atte
 document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getElementById('ficheSearch').value='';activeThemes.clear();activeSubs.clear();activeNiv.clear();activeGeo=null;document.querySelectorAll('.chip').forEach(c=>c.classList.remove('on'));document.querySelectorAll('.geo-node').forEach(n=>n.classList.remove('on'));subPanel.classList.remove('show');render();};
 
 /* ============ TABS ============ */
-function marquerOnglet(m){m={lexique:'revision',suivi:'jour'}[m]||m; // le lexique vit dans la Bibliothèque, le suivi dans Aujourd'hui
+function marquerOnglet(m){m={lexique:'revision',cave:'revision',suivi:'jour'}[m]||m; // le lexique et ma cave vivent dans la Bibliothèque, le suivi dans Aujourd'hui
   document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='suivi'||m==='cartes'?'none':'block';render();}
+function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='cave'||m==='suivi'||m==='cartes'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -138,6 +138,7 @@ function render(){
   majBandeau();
   if(mode==='due')return;
   if(mode==='lexique')return renderLexique();
+  if(mode==='cave')return renderCave();
   if(mode==='suivi')return renderSuivi();
   if(mode==='jour')return renderJour();
   if(mode==='cartes')return renderCartes();
@@ -323,16 +324,54 @@ function renderLexique(){
   q.oninput=()=>{lexQuery=q.value;draw();};
   grid.append(q,list);draw();
 }
+/* ============ MA CAVE (vins du fichier privé de partenaires) ============ */
+let caveQuery='';
+const CAVE_CHAMPS=[['Cépages',v=>(v.cepages||[]).map(c=>c.nom+(c.pct?` ${c.pct} %`:'')).join(', ')],['Sol',v=>v.sol],['Vignes',v=>[v.vignes,v.rendement].filter(Boolean).join(' ; ')],
+  ['Culture',v=>v.culture],['Vendange',v=>v.vendange],['Vinification',v=>v.vinification],['Élevage',v=>v.elevage],['Analyse',v=>[v.alcool,v.sucres].filter(Boolean).join(' · ')],
+  ['Dégustation',v=>v.degustation],['Service',v=>[v.service,v.garde&&'garde '+v.garde].filter(Boolean).join(' · ')],['Accords',v=>v.accords]];
+function carteVin(v,byId,ouvert){
+  const d=el('details','card lex vin');d.open=ouvert;
+  const s=el('summary');s.append(el('b',null,v.cuvee),el('span','vin-sub',' '+[v.appellation,v.couleur,v.millesime_fiche&&'fiche '+v.millesime_fiche].filter(Boolean).join(' · ')));d.append(s);
+  // Valeur en .synth (termes du lexique soulignés), libellé hors .synth : « Élevage » ne doit pas se souligner sur chaque vin.
+  CAVE_CHAMPS.forEach(([k,f])=>{const t=f(v);if(t){const p=el('p','vin-l');p.append(el('b',null,k+' : '),el('span','synth',String(t)));d.append(p);}});
+  if(v.incertitudes)d.append(el('p','vin-warn','⚠ '+v.incertitudes));
+  if(v.a_dire?.length){const m=el('div','mnemo'),ul=el('ul');m.append(el('span','m-lbl','À dire au client'),ul);v.a_dire.forEach(x=>ul.append(el('li',null,String(x))));d.append(m);}
+  if(v.questions?.length){const q=el('details','vin-q');q.append(el('summary',null,`Questions (${v.questions.length})`));v.questions.forEach(x=>{const p=el('p');p.append(el('b',null,x.q+' '),String(x.r));q.append(p);});d.append(q);}
+  const fs=Object.keys(v.liens||{}).map(id=>byId[id]).filter(Boolean);
+  if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre(v.cuvee,[f]);w.append(b);});d.append(w);}
+  const srcs=(v.sources||[]).filter(x=>/^https?:\/\//.test(x.url||'')); // fichier importé : pas de javascript: ni autre schéma en lien
+  srcs.forEach(x=>{const p=el('p','src'),a=el('a',null,(x.type||'source')+' · '+x.url.replace(/^https?:\/\/(www\.)?/,'').slice(0,70));a.href=x.url;a.target='_blank';a.rel='noopener';p.append(a);d.append(p);});
+  if(!srcs.length)d.append(el('p','src','Aucune source : fiche à demander au domaine.'));
+  return d;
+}
+function renderCave(){
+  document.getElementById('introLine').textContent='Tes vins, d’après les fiches techniques des domaines : l’essentiel, quoi dire au client, et les fiches qu’ils illustrent.';
+  document.getElementById('progPanel').hidden=true;
+  grid.className='cave';grid.innerHTML='';
+  if(CHAPS)grid.append(navParties());
+  const q=el('input','ex-input');q.type='search';q.placeholder='Chercher un domaine, une cuvée, un cépage';q.setAttribute('aria-label','Chercher dans ma cave');q.value=caveQuery;
+  const list=el('div'),byId=Object.fromEntries(FICHES.map(f=>[f.id,f]));
+  const draw=()=>{list.innerHTML='';const n=normalize(caveQuery);
+    const vins=vinsDe().filter(v=>!n||normalize([v.dom,v.reg,v.cuvee,v.appellation,v.couleur,...(v.cepages||[]).map(c=>c.nom)].join(' ')).includes(n));
+    const parDom={};vins.forEach(v=>(parDom[v.dom]??=[]).push(v));
+    Object.entries(parDom).forEach(([dom,l])=>{const h=el('h3','cave-dom',dom);h.append(el('small',null,' · '+(l[0].reg||'')));list.append(h);l.forEach(v=>list.append(carteVin(v,byId,!!n&&vins.length<=3)));});
+    if(!list.children.length)list.append(el('p','empty',vinsDe().length?'Aucun vin ne correspond.':'Importe ton fichier de partenaires (Réglages) pour voir tes vins.'));};
+  q.oninput=()=>{caveQuery=q.value;draw();};
+  grid.append(q,list);draw();
+}
+// « Dans ma cave » d'une fiche : le nom du vin ouvre sa fiche dans Ma cave.
+document.addEventListener('click',e=>{const b=e.target.closest('.vers-cave');if(b){caveQuery=b.dataset.cuvee;setMode('cave');window.scrollTo(0,0);}});
 let CHAPS=null;const chapOuverts=new Set();let secOuverts=null; // sections dépliées (au départ : celle où l'on en est)
 const TOUTES=['Le livre','La France viticole','Les cépages','Le monde viticole'],partieDe=c=>TOUTES.includes(c.partie)?c.partie:'Le livre';
 const partiesDuMode=()=>mode==='atelier'?TOUTES:['Le livre','Les cépages']; // France et monde : onglet Atlas (Masterclass garde tout pour composer ses programmes)
 let partie=(()=>{try{return localStorage.getItem('mv_partie')||'Le livre';}catch{return 'Le livre';}})();
 const recaler=d=>{if(d.getBoundingClientRect().top<0)d.scrollIntoView({block:'start'});}; // replié depuis son titre collé : on revient sur ce titre
 function navParties(){
-  const nav=el('div','parties'),lex=mode==='lexique';nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie de la bibliothèque');
+  const nav=el('div','parties'),lex=mode==='lexique'||mode==='cave';nav.setAttribute('role','group');nav.setAttribute('aria-label','Partie de la bibliothèque');
   const btn=(p,n,on,fn)=>{const b=el('button','partie'+(on?' on':''),p.replace(/^(Le |La |Les )/,'').replace(/^./,x=>x.toUpperCase()));b.append(el('small',null,' '+n));b.setAttribute('aria-pressed',on);b.onclick=fn;nav.append(b);};
   partiesDuMode().forEach(p=>btn(p,CHAPS.filter(c=>partieDe(c)===p).reduce((s,c)=>s+c.fiches.length,0),!lex&&p===partie,()=>{partie=p;try{localStorage.setItem('mv_partie',p);}catch{}secOuverts=null;lex?setMode('revision'):render();}));
-  if(mode!=='atelier')btn('Lexique',LEXIQUE.length,lex,()=>setMode('lexique'));
+  if(mode!=='atelier')btn('Lexique',LEXIQUE.length,mode==='lexique',()=>setMode('lexique'));
+  if(mode!=='atelier'&&vinsDe().length)btn('Ma cave',vinsDe().length,mode==='cave',()=>setMode('cave'));
   return nav;
 }
 function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){ // groupe : chapitre → nom de bloc (page de région), comptes limités à list
@@ -404,8 +443,8 @@ function fitSvg(svg){
 /* ============ MES PARTENAIRES (fichier privé importé, gardé dans ce navigateur seulement) ============ */
 const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(localStorage.getItem(PAKEY))||[];}catch{}
 // Mes vins (champ vins des partenaires) : encadré « Dans ma cave » des fiches et QCM « quelle bouteille illustre… », retirés puis recalculés à chaque import.
-const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom})));
-function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of caveExercises(vinsDe(),FICHES)){EXOS.push(e);EX_BY_ID[e.id]=e;}}
+const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom,reg:p.region})));
+function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of [...caveExercises(vinsDe(),FICHES),...caveQuestions(vinsDe(),FICHES)]){EXOS.push(e);EX_BY_ID[e.id]=e;}}
 try{majCave();}catch(e){console.error(e);} // un fichier privé mal formé ne doit pas bloquer le site
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
@@ -421,7 +460,7 @@ function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en av
 // Une appellation du partenaire relève de la fiche si elle commence par son nom (« Saint-Émilion grand cru » → Saint-Émilion, « Mâcon-Péronne » → Mâcon ; « Haut-Médoc » ≠ Médoc, « Graves de Vayres » ≠ Graves).
 const memeAppel=(a,appel)=>{const x=normalize(a),y=normalize(appel);return x===y||(x.startsWith(y+' ')&&!/^(de|du|des|d) /.test(x.slice(y.length+1)));};
 // Fiche d'appellation : mes domaines de cette appellation ; fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
-const caveHTML=f=>{const l=vinsDe().filter(v=>v.liens&&v.liens[f.id]);return l.length?`<details class="mnemo partenaires-liste" open><summary class="m-lbl">Dans ma cave (${l.length})</summary>${l.map(v=>{const x=v.liens[f.id];return `<b>${escH(v.cuvee)}</b> — ${escH(v.dom)}${x.d?' : '+escH(x.d)+(x.s==='ok'?' ✅':' ⚠️'):''}`;}).join('<br>')}</details>`:'';};
+const caveHTML=f=>{const l=vinsDe().filter(v=>v.liens&&v.liens[f.id]);return l.length?`<details class="mnemo partenaires-liste" open><summary class="m-lbl">Dans ma cave (${l.length})</summary>${l.map(v=>{const x=v.liens[f.id];return `<button class="vers-cave" data-cuvee="${escH(v.cuvee)}">${escH(v.cuvee)}</button> — ${escH(v.dom)}${x.d?' : '+escH(x.d)+(x.s==='ok'?' ✅':' ⚠️'):''}`;}).join('<br>')}</details>`:'';};
 // Fiche cépage : pas de liste des partenaires de la région (ils ne cultivent pas forcément ce cépage) ; « Dans ma cave » reste, car lié à la fiche.
 const partenairesHTML=f=>{const cave=caveHTML(f);if(cave)return cave;if(f.theme==='Cépages')return '';const g=f.geo||{};const l=g.appel?partenaires.filter(p=>(p.appellations||[]).some(a=>memeAppel(a,g.appel))):g.region?partenaires.filter(p=>p.region===g.region):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<details class="mnemo partenaires-liste"${g.appel?' open':''}><summary class="m-lbl">${g.appel?'Dans ma cave':'Mes partenaires'} (${l.length})</summary>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</details>`:'';};
 // Jauge de structure sur 5 (grille WSET : faible, moyen-, moyen, moyen+, élevé) ; ⚠ sur un critère non recoupé.
@@ -996,7 +1035,7 @@ document.getElementById('partFile').onchange=async e=>{
   const file=e.target.files[0];e.target.value='';if(!file)return;
   let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
   const l=data&&data.app==='millevignes-partenaires'&&Array.isArray(data.partenaires)&&data.partenaires;
-  const ok=l&&l.every(p=>p&&typeof p.nom==='string'&&p.nom.length<=120&&(!p.points||Object.values(p.points).every(v=>Array.isArray(v)&&v.length===2&&v.every(Number.isFinite)))&&(!p.vins||Array.isArray(p.vins)&&p.vins.every(v=>v&&typeof v.cuvee==='string'&&v.liens&&typeof v.liens==='object')));
+  const ok=l&&l.every(p=>p&&typeof p.nom==='string'&&p.nom.length<=120&&(!p.points||Object.values(p.points).every(v=>Array.isArray(v)&&v.length===2&&v.every(Number.isFinite)))&&(!p.vins||Array.isArray(p.vins)&&p.vins.every(v=>v&&typeof v.cuvee==='string'&&v.liens&&typeof v.liens==='object'&&(!v.questions||Array.isArray(v.questions)&&v.questions.every(x=>x&&typeof x.q==='string'&&typeof x.r==='string'))&&(!v.a_dire||Array.isArray(v.a_dire))&&(!v.sources||Array.isArray(v.sources)))));
   if(!ok){alert('Ce fichier n\'est pas un fichier de partenaires Mille Vignes.');return;}
   if(!confirm(`Importer ${l.length} partenaire(s) ? Ils restent dans ce navigateur seulement et remplacent la liste actuelle (${partenaires.length}).`))return;
   partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
