@@ -501,7 +501,7 @@ const jaugeHTML=f=>{const j=f.jauge;if(!j)return '';const av=j.a_verifier||[];
   return `<div class="jauge"><span class="m-lbl">Structure typique</span>${Object.keys(JAUGE_LBL).filter(k=>j[k]!=null).map(lig).join('')}${j.note?`<small class="j-s">${j.note}</small>`:''}<small class="j-s">${j.style} — ${j.src}</small></div>`;};
 // Autres noms du cépage (pays ou région où ils s'emploient).
 const nomsHTML=f=>f.noms?.length?`<p class="noms"><span class="m-lbl">Autres noms</span> ${f.noms.map(n=>`<b>${n.nom}</b> (${n.ou})`).join(', ')}</p>`:'';
-const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
+const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Schéma : ${escH(f.schema.legende)}. Agrandir">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}
@@ -772,9 +772,9 @@ function showExercise(){
   const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
-  box.append(el('div','ex-prompt',ex.prompt));
+  const question=el('div','ex-prompt',ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
-  box.append(body,fb,actions);grid.append(box);
+  box.append(body,fb,actions);grid.append(box);question.focus({preventScroll:true}); // lecteur d'écran : la question, pas le haut de page
   const submit=(answer,label='Valider')=>{const b=el('button','btn primary',label);b.onclick=()=>finish(ex,grade(ex,answer()),fb,actions,body);actions.append(b);return b;};
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
   switch(ex.type){
@@ -833,7 +833,8 @@ function showPretest(f,suite){
   const box=el('div','ex'),q=f.qcm;
   const head=el('div','ex-head',`Pré-test · notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`);
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier'));
-  box.append(head,el('div','ex-prompt',q.q),el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
+  const question=el('div','ex-prompt',q.q);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;
+  box.append(head,question,el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
   const body=el('div','ex-body'),btns=[],actions=el('div','ex-actions');
   // Correction sans note : l'essai prépare la lecture, mais une erreur non corrigée s'installerait.
   const corriger=pick=>{
@@ -843,7 +844,7 @@ function showPretest(f,suite){
   };
   shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);btns[i]=b;b.onclick=()=>corriger(i);body.append(b);});
   const nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
-  box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);window.scrollTo(0,0);
+  box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);question.focus({preventScroll:true});window.scrollTo(0,0);
 }
 function correctText(ex){
   const p=ex.payload;
@@ -992,7 +993,8 @@ function majBandeau(){
   document.getElementById('saveBanner').hidden=!(mode!=='due'&&Object.keys(prog).length&&now()-depuis>RAPPEL*DAY);
 }
 // Pendant la Séance du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
-function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
+function updateBadges(){const n=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;
+  document.getElementById('dueBadge').textContent=n;document.querySelector('.tab-main').setAttribute('aria-label',`Aujourd’hui, ${n} exercice${n>1?'s':''}`);} // lu « Aujourd’hui 48 » sans dire 48 quoi
 
 updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
