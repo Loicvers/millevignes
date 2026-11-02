@@ -319,7 +319,9 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
 
 // En séance, une question paraît seule, sans le titre ni la synthèse de sa fiche (relecture des 5 119 questions, 02/11).
 test("les questions ne renvoient pas à leur fiche", () => {
-  const textes = FICHES.flatMap(f => [f.flash?.q, f.qcm?.q, ...(f.exos || []).flatMap(e => [e.prompt, e.payload?.statement, e.payload?.text])]
+  // Exception : un exercice marqué avec_fiche montre sa fiche (titre et schéma) au-dessus de la question ; il lui faut un schéma.
+  assert.deepEqual([...FICHES.filter(f => (f.exos || []).some(e => e.avec_fiche) && !f.schema).map(f => f.id)], [], "avec_fiche sans schéma à montrer");
+  const textes = FICHES.flatMap(f => [f.flash?.q, f.qcm?.q, ...(f.exos || []).filter(e => !e.avec_fiche).flatMap(e => [e.prompt, e.payload?.statement, e.payload?.text])]
     .filter(Boolean).map(t => [f.id, t]));
   const renvoi = /\b(dans (la|cette) fiche|ce passage|ci-dessus|de la frise|du schéma|d’après le schéma|le schéma(?! du livre))\b/i;
   assert.deepEqual([...textes.filter(([, t]) => renvoi.test(t))], []);

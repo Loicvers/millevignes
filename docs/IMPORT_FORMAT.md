@@ -177,6 +177,8 @@ Champs communs :
 - Pas de correction automatique du texte. Le nombre de critères cochés donne la note : 0-1 Difficile, 2 Correct, 3 Facile. Le texte saisi n'est pas conservé ; le journal garde les critères cochés (`c: [1,0,1]`).
 
 Bonnes pratiques :
+- **chaque question se comprend seule** : en séance, elle paraît sans le titre ni la synthèse de sa fiche, mêlée à celles des autres fiches. Elle nomme donc ce dont elle parle (le cépage, l'appellation, l'étude et son année, la technique…) au lieu de « cette concentration », « ces techniques », « la région », « l'appellation », « le cahier des charges », « l'étude » ; jamais « dans la fiche », « ce passage », « ci-dessus », « le schéma ». Nommer le sujet ne doit pas souffler la réponse : passer alors par une périphrase. Un texte à trous ne recommence pas par « Complète » (la consigne l'affiche déjà). Les « ces » qui renvoient aux options affichées restent permis (« Lequel de ces cépages… »). Contrôlé en partie par `tests/exercices.test.mjs` ; le reste relève de la relecture du lot.
+- **exception, `avec_fiche: true`** (exercice de `exos`, fiche avec `schema`) : la question s'appuie sur sa fiche, que la séance montre au-dessus d'elle (« Fiche : <titre> » et le schéma ou la carte) ; elle peut alors écrire « d'après la carte », « sur le schéma ». Vérifier que le schéma ne donne pas la réponse.
 - **varier** : viser 4 à 6 exercices par notion, de types différents ;
 - index **base 0** ; écrire les options dans un ordre quelconque (le site les mélange à l'affichage) ;
 - distracteurs **plausibles**, jamais absurdes ;

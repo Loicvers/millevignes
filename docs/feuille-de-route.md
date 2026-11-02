@@ -79,6 +79,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Réponses : nombres en lettres ou en chiffres, réponse courte entourée d'autres mots, champs sans correction automatique d'iOS ; lexique sans indice ni soulignements répétés ; synthèses en paragraphes, tableaux sans débordement (PR #51).
 - Cartes de mémorisation : la correction automatique par mots-clés est gardée (Loïc, 02/11) ; l'autoévaluation proposée n'est pas retenue.
 - [x] **Questions qui se comprennent seules** (validé par Loïc, 02/11) : en séance, une question apparaît sans le titre de sa fiche ; les 5 119 questions relues par sous-agents, 165 réécrites (« cette concentration », « ces techniques », « la région », « le cahier »…), relues avant application ; un test bloque les renvois à « la fiche », « ce passage », « le schéma ».
+- [x] Règle « chaque question se comprend seule » dans `docs/IMPORT_FORMAT.md`, avec l'exception `avec_fiche: true` : la séance montre le titre et le schéma de la fiche au-dessus de la question (choix de Loïc, 02/11).
 
 ## Revue du design du 02/11 (branche design-corrections)
 - [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.
