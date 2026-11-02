@@ -758,7 +758,7 @@ FICHES.push(
     src: "Mille Vignes, P. Lepeltier, p. 149 ; Vaudour, Les terroirs viticoles (La Vigne/Dunod, 2003) ; Nicod, compte rendu, Annales de géographie 113 (637), 2004, p. 336 ; Vaudour, présentation de thèse (C. R. Acad. Agric. Fr., 2002) ; Vaudour et al., Zonage Côtes-du-Rhône (IVES)",
     page: 149
   },
-  {
+{
     "id": 969,
     "theme": "Géologie-Terroir",
     "sous": [
@@ -971,9 +971,95 @@ FICHES.push(
                   "« Salinité volcanique » non établie",
                   "Drainage : D ; signature : T"
                 ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Lœss",
+                  "Dépôt de vent poreux et perméable ; les racines y pénètrent ; se réchauffe vite ; plus ou moins calcaire selon le site",
+                  "Enracinement facile",
+                  "Aucun style démontré ; il recouvre souvent une autre roche (gneiss, roches volcaniques)",
+                  "Sol : D ; style : aucune donnée"
+                ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Grès",
+                  "Sable cimenté : sols pauvres, légèrement acides, drainants ; réputés résister au phylloxéra",
+                  "Vigueur contenue",
+                  "Aucun style démontré ; « grès = vins élégants » relève de la tradition",
+                  "Sol : D ; style : T"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Limons, alluvions",
+                  "Dépôts de rivière : fertiles, de texture très variable d’un mètre à l’autre",
+                  "Vigueur souvent irrégulière, à maîtriser ; excellents seulement s’ils sont caillouteux et drainants",
+                  "Alluvions caillouteuses (Médoc, Marlborough) : grands vins ; plaines fertiles : vins plus simples",
+                  "Fertilité : D ; « grands vins » : O"
+                ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Terra rossa",
+                  "Argile rouge résiduelle du calcaire : drainante, aérée, nutriments suffisants",
+                  "Bonne alimentation sur le calcaire dessous",
+                  "La couleur rouge n’apporte rien à la vigne ; la qualité de Coonawarra doit aussi au climat frais",
+                  "Drainage : D ; « couleur » : T"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Albariza",
+                  "Marne blanche très riche en microfossiles calcaires : stocke l’eau de l’hiver et la rend pendant l’été sec",
+                  "Palomino fino alimenté malgré la sécheresse",
+                  "Les finos et manzanillas les plus délicats viennent des meilleures albarizas (observation régionale)",
+                  "Eau : D ; finesse : O"
+                ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Galestro, alberese",
+                  "Galestro : argile écailleuse et marneuse, drainante mais fraîche ; alberese : marne pâle plus calcaire",
+                  "Pas de donnée propre",
+                  "Aucun lien établi avec le style du sangiovese",
+                  "Définition : D ; effet : aucune donnée"
+                ]
               }
             ]
           }
+        },
+        {
+          "h": "Où le goûter",
+          "blocs": [
+            {
+              "imp": "important",
+              "txt": "Le sol dominant d’une appellation est un repère, jamais un goût garanti. Pour comparer, goûter côte à côte deux vins d’un même cépage nés sur deux sols différents."
+            },
+            {
+              "imp": "utile",
+              "txt": "Calcaire, marne : Chablis, Côte-d’Or, plateau de Saint-Émilion. Craie, tuffeau : Côte des Blancs, Saumur, Chinon, sud de l’Angleterre. Argile : Pomerol, Saint-Émilion côté Pomerol. Sable : Colares, Camargue, safres de Châteauneuf-du-Pape."
+            },
+            {
+              "imp": "utile",
+              "txt": "Graves, galets : Médoc, Pessac-Léognan, Châteauneuf-du-Pape, Gimblett Gravels. Schiste, ardoise : Moselle, Anjou noir, Faugères, Priorat, Douro. Granite : crus du Beaujolais, Cornas, Condrieu, Brand en Alsace. Gneiss : Wachau, Muscadet (Goulaine, Le Pallet), Caramany."
+            },
+            {
+              "imp": "utile",
+              "txt": "Silex : Sancerre, Pouilly-Fumé. Volcanique : Santorin, Etna, Tokaj, Lanzarote, Rangen de Thann. Lœss : Kamptal, Kremstal, Tokaj, Kaiserstuhl, Columbia Valley. Grès : Kessler à Guebwiller, Heiligenstein au Kamptal, Courthézon à Châteauneuf-du-Pape."
+            },
+            {
+              "imp": "utile",
+              "txt": "Limons, alluvions : Médoc et Marlborough (caillouteuses), benches d’Oakville et de Rutherford dans la Napa. Terra rossa : Coonawarra, Wrattonbully, Istrie. Albariza : Jerez (Macharnudo, Balbaina, Carrascal), Sanlúcar de Barrameda. Galestro, alberese : Chianti Classico, Montalcino, Chianti Rufina."
+            }
+          ],
+          "table": null
         },
         {
           "h": "Pourquoi on ne goûte pas la roche",
@@ -1008,16 +1094,17 @@ FICHES.push(
           "txt": "Les descripteurs de terroir (pierre à fusil, craie, ardoise) se vendent bien au client, à condition de les présenter comme des images."
         }
       ],
-      "src": "Oxford Companion to Wine, 5e éd. 2023 (soil and wine quality, soil water, soil acidity, flint, chalk, limestone, gravel, schist, minerality) ; van Leeuwen, Roby et de Rességuier, Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286 ; fiches 171, 181, 182, 183, 290, 291."
+      "src": "Oxford Companion to Wine, 5e éd. 2023 (soil and wine quality, soil water, soil acidity, flint, chalk, limestone, gravel, schist, minerality, loess, sandstone, alluvium, terra rossa, albariza, galestro, alberese, sherry) ; van Leeuwen, Roby et de Rességuier, Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286 ; fiches 171, 181, 182, 183, 290, 291."
     },
     "status": "verified",
     "to_check": [],
     "selon_livre": [
       "Divergence expliquée : chaleur des galets, schistes et basaltes. Lepeltier (p. 143) l’affirme ; l’Oxford Companion reste prudent (« is thought to », « reportedly ») et juge le lien couleur-température « loin d’être simple » ; la fiche le présente comme débattu.",
       "Tainturier 1763 et le goût de pierre à fusil comme défaut : cité par J.-P. Garcia 2011, non relu dans le texte original.",
-      "Champagne : l’Oxford Companion (chalk) note que les meilleurs vignobles reposent surtout sur des argiles et que seules les racines profondes atteignent la craie ; la fiche ne reprend pas « craie pure »."
+      "Champagne : l’Oxford Companion (chalk) note que les meilleurs vignobles reposent surtout sur des argiles et que seules les racines profondes atteignent la craie ; la fiche ne reprend pas « craie pure ».",
+      "Lepeltier ne traite ni le lœss, ni le grès comme sol viticole, ni l’albariza, ni le galestro : ces lignes reposent sur l’Oxford Companion et les fiches du site. Kitterlé sur grès : seul l’Atlas (lu en OCR) l’affirme, non repris."
     ],
-    "src": "Oxford Companion to Wine, 5e éd. 2023 (entrées soil and wine quality, soil water, soil acidity, flint, minerality) ; van Leeuwen et al., Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286",
+    "src": "Oxford Companion to Wine, 5e éd. 2023 (entrées soil and wine quality, soil water, soil acidity, flint, minerality, loess, sandstone, alluvium, terra rossa, albariza, galestro) ; van Leeuwen et al., Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286",
     "page": 143
   }
 );

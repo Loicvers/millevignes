@@ -463,22 +463,22 @@ const memeAppel=(a,appel)=>{const x=normalize(a),y=normalize(appel);return x===y
 // Fiche « Du sol au verre » : mes vins rangés par sol (champ sols du fichier privé ; à défaut, fiches de roches liées),
 // et pour chaque sol absent de ma cave, où le goûter (exemples du tableau de la fiche 969).
 const SOL_VERRE=969,SOL_LIGNES=[
-  ['calcaire','Calcaire, marne',[170,213],'Côte-d’Or, Chablis, plateau de Saint-Émilion, Coonawarra'],
+  ['calcaire','Calcaire, marne',[170,213],'Chablis, Côte-d’Or, plateau de Saint-Émilion'],
   ['craie','Craie, tuffeau',[169],'Côte des Blancs, Saumur, Chinon, Vouvray, sud de l’Angleterre'],
-  ['argile','Argile',[],'Pomerol, Saint-Émilion (côtes et pied de côtes)'],
+  ['argile','Argile',[],'Pomerol, Saint-Émilion côté Pomerol'],
   ['sable','Sable',[],'Colares, sables de Camargue, safres de Châteauneuf-du-Pape'],
   ['graves','Graves, galets',[171],'Médoc, Pessac-Léognan, Châteauneuf-du-Pape, Gimblett Gravels'],
   ['schiste','Schiste, ardoise',[175],'Moselle, Anjou noir, Faugères, Priorat, Douro, Banyuls'],
-  ['granite','Granite',[163],'Crus du Beaujolais, Cornas, Condrieu, Muscadet Clisson'],
-  ['gneiss','Gneiss',[176],'Côte-Rôtie, Wachau, Muscadet (Goulaine, Le Pallet)'],
+  ['granite','Granite',[163],'crus du Beaujolais, Cornas, Condrieu, Brand (Alsace)'],
+  ['gneiss','Gneiss',[176],'Wachau, Muscadet (Goulaine, Le Pallet), Caramany'],
   ['silex','Silex',[291],'Sancerre, Pouilly-Fumé'],
-  ['volcanique','Volcanique',[164],'Etna, Santorin, Lanzarote, Tokaj, Soave, Kaiserstuhl'],
-  ['loess','Lœss',[],'Wachau, Kremstal, Kamptal, Kaiserstuhl'],
-  ['gres','Grès',[],'Alsace (grès des Vosges)'],
-  ['alluvions','Limons, alluvions',[],'plaines et terrasses récentes des fleuves'],
-  ['terra-rossa','Terra rossa',[],'Coonawarra, Istrie'],
-  ['albariza','Albariza',[],'Jerez (Xérès)'],
-  ['galestro','Galestro, alberese',[],'Chianti Classico']];
+  ['volcanique','Volcanique',[164],'Santorin, Etna, Tokaj, Lanzarote, Rangen de Thann'],
+  ['loess','Lœss',[],'Kamptal, Kremstal, Tokaj, Kaiserstuhl, Columbia Valley'],
+  ['gres','Grès',[],'Kessler (Guebwiller), Heiligenstein (Kamptal), Courthézon (Châteauneuf-du-Pape)'],
+  ['alluvions','Limons, alluvions',[],'Médoc et Marlborough (caillouteuses), benches de la Napa'],
+  ['terra-rossa','Terra rossa',[],'Coonawarra, Wrattonbully, Istrie'],
+  ['albariza','Albariza',[],'Jerez (Macharnudo, Balbaina), Sanlúcar de Barrameda'],
+  ['galestro','Galestro, alberese',[],'Chianti Classico, Montalcino, Chianti Rufina']];
 const vinBtn=v=>`<button class="vers-cave" data-cuvee="${escH(v.cuvee)}">${escH(v.cuvee)}</button> (${escH(v.dom)})`;
 const solsDe=v=>v.sols||SOL_LIGNES.filter(([,,ids])=>ids.some(id=>v.liens?.[id])).map(([k])=>k); // ancien fichier sans sols : d'après les fiches de roches
 const caveSolHTML=()=>{const vs=vinsDe();if(!vs.length)return '';
