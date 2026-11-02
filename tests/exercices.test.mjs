@@ -307,10 +307,41 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "les tanins"), false);
   const k = ctx.rk("Cent pour cent merlot.", "Merlot 100%");
   assert.equal(k.missing.length, 0); assert.equal(k.ok, true);
+  // Un exemple entre parenthèses (Clos de Vougeot) n'est pas un mot-clé exigé.
+  const clos = FICHES.find(f => f.id === 387).flash;
+  const kc = ctx.rk(clos.a, "Le clos est entouré d’un mur. Le monopole est cultivé par un seul propriétaire", clos.keys);
+  assert.deepEqual([...kc.missing], []); assert.equal(kc.ok, true);
   const lex = [{ terme: "pyrazines (méthoxypyrazines)", def: "Molécules dont les méthoxypyrazines sont les plus connues.", declic: "" },
     { terme: "greffe", def: "Union.", declic: "" }, { terme: "vrille", def: "Organe.", declic: "" }, { terme: "moût", def: "Jus.", declic: "" }];
   const ex = lexiqueExercises(lex, [{ titre: "pyrazines", synth: "", mnemo: "" }])[0];
   assert.ok(!/pyrazi/i.test(ex.prompt), ex.prompt);
+});
+
+// En séance, une question paraît seule, sans le titre ni la synthèse de sa fiche (relecture des 5 119 questions, 02/11).
+test("les questions ne renvoient pas à leur fiche", () => {
+  // Exception : un exercice marqué avec_fiche montre sa fiche (titre et schéma) au-dessus de la question ; il lui faut un schéma.
+  assert.deepEqual([...FICHES.filter(f => (f.exos || []).some(e => e.avec_fiche) && !f.schema).map(f => f.id)], [], "avec_fiche sans schéma à montrer");
+  const textes = FICHES.flatMap(f => [f.flash?.q, f.qcm?.q, ...(f.exos || []).filter(e => !e.avec_fiche).flatMap(e => [e.prompt, e.payload?.statement, e.payload?.text])]
+    .filter(Boolean).map(t => [f.id, t]));
+  const renvoi = /\b(dans (la|cette) fiche|ce passage|ci-dessus|de la frise|du schéma|d’après le schéma|le schéma(?! du livre))\b/i;
+  assert.deepEqual([...textes.filter(([, t]) => renvoi.test(t))], []);
+  const trous = FICHES.flatMap(f => (f.exos || []).filter(e => e.type === "cloze" && /^Complète/.test(e.payload.text)).map(() => f.id));
+  assert.deepEqual([...trous], [], "texte à trous qui répète la consigne « Complète »");
+});
+
+// Retour de l'iPhone : « Union d’un … et d’un … pour former un seul plant » était illisible.
+test("lexique : jamais plus d'un trou ; sinon le terme est donné et sa définition demandée, sans le trahir", () => {
+  vm.runInNewContext(readFileSync(new URL("../data/lexique.js", import.meta.url), "utf8"), ctx);
+  vm.runInNewContext("this.lexTout=lexiqueExercises(LEXIQUE,[{titre:'x',synth:LEXIQUE.map(t=>t.terme).join(' '),mnemo:''}])", ctx);
+  const tous = [...ctx.lexTout];
+  assert.deepEqual(tous.filter(e => (e.prompt.match(/…/g) || []).length >= 2).map(e => e.id), []);
+  const inverses = tous.filter(e => /que désigne/.test(e.prompt));
+  assert.ok(inverses.length >= 10, "questions inversées : " + inverses.length);
+  for (const e of inverses) {
+    const terme = e.prompt.match(/« (.+) »/)[1], juste = normalize(e.payload.options[e.payload.answer]);
+    for (const w of normalize(terme).split(" ").filter(w => w.length >= 4)) assert.ok(!juste.includes(w.slice(0, 5)), `${e.id} : « ${w} » dans la bonne option`);
+  }
+  assert.ok(!tous.some(e => e.id === "lx-greffe"), "greffe : aucune phrase sans greffon ni porte-greffe, pas de question");
 });
 
 test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un terme parent", () => {

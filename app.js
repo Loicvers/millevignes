@@ -509,7 +509,8 @@ const jaugeHTML=f=>{const j=f.jauge;if(!j)return '';const av=j.a_verifier||[];
   return `<div class="jauge"><span class="m-lbl">Structure typique</span>${Object.keys(JAUGE_LBL).filter(k=>j[k]!=null).map(lig).join('')}${j.note?`<small class="j-s">${j.note}</small>`:''}<small class="j-s">${j.style} — ${j.src}</small></div>`;};
 // Autres noms du cépage (pays ou région où ils s'emploient).
 const nomsHTML=f=>f.noms?.length?`<p class="noms"><span class="m-lbl">Autres noms</span> ${f.noms.map(n=>`<b>${n.nom}</b> (${n.ou})`).join(', ')}</p>`:'';
-const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Schéma : ${escH(f.schema.legende)}. Agrandir">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
+const figureHTML=f=>f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Schéma : ${escH(f.schema.legende)}. Agrandir">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'';
+const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+figureHTML(f);
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}
@@ -781,6 +782,8 @@ function showExercise(){
   const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
+  // Question marquée avec_fiche (docs/IMPORT_FORMAT.md) : elle s'appuie sur sa fiche, montrée au-dessus (titre, schéma ou carte).
+  if(ex.avec_fiche){const fi=el('div','ex-fiche');fi.append(el('p','ex-fiche-t','Fiche : '+f.titre));fi.insertAdjacentHTML('beforeend',figureHTML(f));box.append(fi);}
   // Longue question (définition du lexique) : plus petite.
   const question=el('div','ex-prompt'+(ex.prompt.length>140?' long':''),ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
