@@ -59,7 +59,7 @@ FICHES.push(
     schema: null,
     cours: null,
     status: "needs_review",
-    to_check: ["Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant ; aucun chiffre de surface par cépage trouvé le 31/10/2026 (Syndicat des Côtes de Gascogne, FranceAgriMer) ; une source de presse non lue ferait du gros manseng le deuxième cépage planté"],
+    to_check: ["Cépages blancs dominants (⚠️) : Oxford (colombard, ugni blanc) et WSET (colombard, sauvignon, chardonnay) divergent ; le cahier ne désigne aucun cépage dominant ; aucun chiffre de surface par cépage trouvé le 31/10/2026 (Syndicat des Côtes de Gascogne, FranceAgriMer) ; seule une source de presse donne des parts : Vitisphere (29/03/2019) attribue 75 % des surfaces au colombard et 20 % au gros manseng (environ 140 ha plantés par an selon le président de la section Côtes de Gascogne), sans citer sa source pour les pourcentages ni parler de l’ugni blanc ; chiffres de 2019, à ne pas donner comme actuels"],
     selon_livre: ["Divergence expliquée : pour les cépages blancs vedettes, l’Oxford Companion cite colombard et ugni blanc, le WSET colombard, sauvignon et chardonnay ; la fiche donne les deux versions, attribuées, sans trancher."],
     src: "BO-agri, cahier des charges IGP Côtes de Gascogne (arrêté du 1er sept. 2025, BO-AGRI n°37 du 11 sept. 2025), sections 1, 3, 4, 5, 6, 8 ; Oxford Companion to Wine, 5e éd. (2023), entrées « Gascony », « Colombard » ; WSET Level 4 D3 Wines of the World (2024), ch. 9 South West France"
   }
