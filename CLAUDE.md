@@ -11,7 +11,7 @@
 - Erreurs du livre déjà relevées : `docs/erreurs-du-livre.md` (lire les pages du lot, compléter avant le push).
 - Sources citées par Lepeltier, classées par section avec leur état d'accès : `docs/bibliographie-lepeltier.md` (lire la section du lot avant la recherche).
 - Les fiches sont dans `fiches/<page>-<section>.js` (une section de Mille Vignes = un fichier, `FICHES.push(...)`). `fiches.js` ne contient que l'en-tête et les catalogues `SOUS` / `THEME_ORDER`.
-- Pour ajouter un lot, ouvrir **seulement** le fichier de la section concernée. Section inconnue → créer `fiches/<page de début de section>-<section>.js` puis lancer `node tools/sync-site.mjs`. **Après tout changement du site** (fiches, app.js, style.css, exercices.js…) : `node tools/sync-site.mjs` (balises `<script>`, liste de `sw.js`, nom du cache = empreinte des fichiers ; un test échoue s'il est oublié).
+- Pour ajouter un lot, ouvrir **seulement** le fichier de la section concernée. Section inconnue → créer `fiches/<page de début de section>-<section>.js` puis lancer `node tools/sync-site.mjs`. **Après tout changement du site** (fiches, app.js, style.css, exercices.js…) : `node tools/sync-site.mjs` (balises `<script>`, liste de `sw.js`, fiches du lexique dans `data/lexique-fiches.js`, nom du cache = empreinte des fichiers ; un test échoue s'il est oublié).
 - Dernier id utilisé, sans rien ouvrir : `grep -ho "^    id: [0-9]*" fiches/*.js | sort -t: -k2 -n | tail -1`
 - Fiches déjà en place sur des pages données : `grep -n "page: 1[89]\b" fiches/*.js` puis lire seulement ces blocs.
 - Format des exercices et contrôles : `docs/IMPORT_FORMAT.md`. Ne pas relire `docs/AUDIT_INITIAL.md` (historique).

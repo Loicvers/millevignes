@@ -12,14 +12,16 @@ function toExercises(f) {
   ].map(e => ({ ...e, fiche: f }));
 }
 
+// Mémorisés : lie() compare chaque paire de termes du lexique (84 × 84), estSituation() chaque paire de fiches d'une région.
+const memo = fn => { const m = new Map(); return k => m.has(k) ? m.get(k) : (m.set(k, fn(k)), m.get(k)); };
 // « Légender le schéma » : produit à la volée depuis les étiquettes en gras (1 à 3 mots, présentes une seule fois).
 // Hors de data/base.json : il dépend du dessin, pas d'un contenu rédigé.
-function schemaLabels(f) {
+const schemaLabels = memo(f => {
   const all = [...f.schema.svg.matchAll(/<text[^>]*font-weight="bold"[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
   // Une étiquette écrite ailleurs sur le dessin (ex. la ville de Bergerac sous l'AOC Bergerac) donnerait la réponse : écartée.
   const txt = [...f.schema.svg.matchAll(/<text[^>]*>([^<]+)<\/text>/g)].map(m => m[1].trim());
   return [...new Set(all)].filter(t => txt.filter(x => x === t).length === 1 && t.split(/\s+/).length <= 4);
-}
+});
 // Carte de situation : une seule appellation en fort, les voisines en grisé.
 const estSituation = f => f.schema && /en fort/.test(f.schema.legende || "") && schemaLabels(f).length === 1 && (f.schema.svg.match(/<text[^>]*font-weight="bold"/g) || []).length === 1;
 function schemaExercise(f, fiches = []) {
@@ -53,17 +55,21 @@ function lexFiches(t, fiches) {
   const hit = s => res.some(r => r.test(s));
   return fiches.filter(f => hit(texteNorm(f))).sort((a, b) => hit(normalize(b.titre)) - hit(normalize(a.titre))); // terme dans le titre d'abord
 }
-// Mémorisés : lie() compare chaque paire de termes du lexique (84 × 84), le calcul serait refait des milliers de fois.
-const memo = fn => { const m = new Map(); return k => m.has(k) ? m.get(k) : (m.set(k, fn(k)), m.get(k)); };
 const mots = memo(s => normalize(s).split(" "));
 // Texte normalisé une fois par fiche : lexFiches le teste pour chaque terme (84 × 748 normalize coûtaient ≈ 1 s au chargement).
 const texteNorm = memo(f => normalize(f.titre + " " + f.synth + " " + f.mnemo));
 // Racine du premier mot du terme (bouturage → boutur, greffe → greffe).
 const racine = memo(terme => { const w = normalize(terme).split(" ")[0]; return w.length <= 5 ? w : w.slice(0, Math.max(5, w.length - 3)); });
 const lexStem = t => racine(t.terme);
+// Les 6 premières fiches d'un terme, lues dans data/lexique-fiches.js (écrit par tools/sync-site.mjs : 84 termes × 967 fiches
+// coûtaient plus d'une seconde à chaque ouverture sur téléphone) ; calculées ici pour un terme absent du fichier.
+function fichesDuTerme(t, fiches) {
+  const ids = typeof LEXIQUE_FICHES !== "undefined" && LEXIQUE_FICHES[t.terme];
+  return ids ? ids.map(id => fiches.find(f => f.id === id)).filter(Boolean) : lexFiches(t, fiches).slice(0, 6);
+}
 // Un QCM par terme (définition → terme), rattaché à la première fiche qui l'emploie ; l'étymologie sert de correction.
 function lexiqueExercises(lex, fiches) {
-  return lex.map(t => ({ t, f: lexFiches(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
+  return lex.map(t => ({ t, f: fichesDuTerme(t, fiches)[0] })).filter(x => x.f).map(({ t, f }) => {
     // Leurres : jamais un terme parent (l'un cite l'autre, ex. clone ↔ bouture), sinon deux réponses défendables.
     const lie = o => [o.def + " " + o.declic, t.def + " " + t.declic].some((txt, i) => mots(txt).some(w => w.startsWith(lexStem(i ? o : t))));
     const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t && !lie(o))).slice(0, 3).map(o => o.terme)]);
@@ -178,9 +184,10 @@ function fusionnerListe(a, b, cle, n) {
 }
 
 // Rythme pour une échéance : nouvelles fiches par jour pour avoir tout vu la veille au soir (jamais moins que le rythme de base).
+// Échéance passée : rythme de base (sinon toutes les fiches restantes chaque jour, une séance de plus de 1 000 exercices).
 function rythme(restantes, t, echeance, base = 5) {
-  const jours = Math.max(1, Math.ceil((new Date(echeance + "T23:59:59").getTime() - t) / 86400000));
-  return Math.max(base, Math.ceil(restantes / jours));
+  const reste = new Date(echeance + "T23:59:59").getTime() - t;
+  return reste > 0 ? Math.max(base, Math.ceil(restantes / Math.ceil(reste / 86400000))) : base;
 }
 
 // Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.

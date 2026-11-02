@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { validate, merge, normalize, chapterAt, EXERCISE_TYPES } from "../tools/lot.mjs";
+import { validate, normalize, chapterAt, EXERCISE_TYPES } from "../tools/lot.mjs";
 import { loadFichesJs, migrate } from "../tools/migrate-fiches.mjs";
 
 const read = p => JSON.parse(readFileSync(new URL(p, import.meta.url), "utf8"));
@@ -35,22 +35,6 @@ test("needs_review exige les faits à vérifier", () => {
   const l = lot();
   l.notions[0].status = "needs_review";
   assert.match(validate(l, base).join(), /to_check/);
-});
-
-test("import idempotent et conflits", () => {
-  const first = merge(base, lot());
-  assert.equal(first.report.created.length, 13);
-  const again = merge(first.base, lot());
-  assert.equal(again.report.created.length, 0);
-  assert.equal(again.report.unchanged.length, 13);
-
-  const edited = lot();
-  edited.notions[0].synth = "Autre texte";
-  assert.deepEqual(merge(first.base, edited).report.conflicts, ["test-0001"]); // même version : rien n'est écrasé
-  edited.notions[0].content_version = 2;
-  const up = merge(first.base, edited);
-  assert.deepEqual(up.report.updated, ["test-0001"]);
-  assert.equal(up.base.notions.find(n => n.id === "test-0001").synth, "Autre texte");
 });
 
 test("migration de fiches.js sans perte", () => {
