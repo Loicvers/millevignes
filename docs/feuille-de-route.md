@@ -66,6 +66,13 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Étape 3 — **Bibliothèque** (29/10) (Livre, Cépages, Lexique) et barre à 4 onglets, éventuellement en bas d'écran sur mobile. Peut attendre janvier.
 - [x] Atlas plus lisible (29/10, maquette validée) : accueil en tuiles, page de région en trois blocs (carte, réviser, fiches groupées avec les comptes de la région), région précédente / suivante.
 
+## Revue du design du 02/11 (branche design-corrections)
+- [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.
+- [x] VoiceOver (vérifié sans iPhone : axe-core, arbre d'accessibilité, focus) : focus sur la question, question en titre, onglet lu avec son nombre, légende des schémas. À tester sur l'iPhone (protocole envoyé à Loïc).
+- [ ] Maquette à valider par Loïc : Réglages en liste (sauvegarde, révision, affichage, données), onglet Aujourd'hui élargi sur mobile, chiffres alignés dans les nombres en serif, étymologie du lexique à la taille de la définition, pré-test « Voir la réponse » / « Lire la fiche ».
+- [ ] Atlas : marqueur « carte disponible » à revoir (seuls France, Chypre, Croatie, Égypte et Royaume-Uni n'ont pas de carte).
+- Mode sombre : gardé (Loïc, 02/11).
+
 ## Audit du code du 02/11 (branche audit-corrections)
 - [x] Échéance passée : rythme de base (avant : toutes les fiches restantes chaque jour, séance de 1 855 exercices).
 - [x] Lenteurs : exercices rangés par fiche une fois (`exosDe`), fiches du lexique calculées par `sync-site.mjs` (`data/lexique-fiches.js`), étiquettes des schémas mémorisées. Mesuré sur processeur ralenti ×4 : ouverture 5,2 → 2,6 s, Bibliothèque 2,3 → 0,13 s, Masterclass 1,9 → 0,15 s, Lexique 1,7 → 0,14 s ; affichage identique.

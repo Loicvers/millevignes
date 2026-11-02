@@ -21,6 +21,7 @@
   .partie.on{background:var(--wine);border-color:var(--wine);color:#fff}.partie.on small{color:inherit;opacity:.8}
   .head-inner{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:18px;flex-wrap:wrap}
   :focus-visible{outline:2px solid var(--wine-fg);outline-offset:2px}
+  .ex-prompt:focus,.ex-answer:focus,.fb:focus{outline:none} /* focus posé par le script pour le lecteur d'écran : pas de cadre sur un texte */
   .brand{font-family:'Cormorant',serif;font-weight:600;font-size:30px;letter-spacing:.5px;line-height:1}
   .brand .sub{display:block;font-family:'Inter';font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:7px}
 
