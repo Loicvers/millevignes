@@ -101,6 +101,11 @@ test("carte de situation : 4 propositions de la même région, réponse masquée
     assert.equal(m.options[m.answer], ex.payload.labels[0], ex.id);
     for (const o of m.options) assert.ok(!m.svg.includes(`>${o}</text>`), ex.id + " : " + o + " lisible sur la carte");
   }
+  // Leurres pris sur la même carte (zones voisines masquées) : sinon on les écarte sans rien situer (Margaux contre Graves, Cérons…).
+  vm.runInNewContext("this.sl=schemaLabels", ctx);
+  const proj = f => (f.schema.svg.match(/data-proj="([^"]*)"/) || [])[1], carte = new Map(sit.map(e => [ctx.sl(e.fiche)[0], proj(e.fiche)]));
+  const meme = sit.filter(e => e.payload.leurres.every(l => carte.get(l) === proj(e.fiche))).length;
+  assert.ok(meme >= 0.75 * sit.length, `${meme} sur ${sit.length} seulement avec des leurres de la même carte`);
 });
 
 test("ma cave : QCM « quelle notion », leurres d'un autre style de vin", () => {
@@ -155,30 +160,62 @@ test("flash.keys : chaque point a des variantes réelles, et la réponse attendu
   }
 });
 
-test("séance : une fiche au plus, échues d'abord, quota de nouvelles fiches, 2 exercices pour une nouvelle", () => {
+test("séance : un calendrier par fiche, exercice jamais posé d'abord, places réservées aux nouvelles fiches", () => {
   vm.runInNewContext("this.ps=planSession", ctx);
   const DAY = 86400000, t = new Date(2026, 9, 20, 12).getTime();
-  const fiches = FICHES.slice(0, 12), pool = fiches.flatMap(toExercises);
-  const [a, b] = fiches, ea = pool.filter(e => e.fiche === a), eb = pool.filter(e => e.fiche === b);
+  const fiches = FICHES.filter(f => (f.exos || []).length >= 2).slice(0, 30), pool = fiches.flatMap(toExercises);
+  const ex = f => pool.filter(e => e.fiche === f), [a, b, c] = fiches, [ea, eb, ec] = [a, b, c].map(ex);
   const prog = {
-    [ea[0].id]: { ease: 2.3, interval: 1, due: t - DAY, acquired: true },     // échus : un seul de la fiche a
-    [ea[1].id]: { ease: 2.3, interval: 1, due: t - 2 * DAY, acquired: true },
-    [eb[0].id]: { ease: 2.3, interval: 2, due: t + DAY, acquired: true },      // fiche b : vue il y a un jour → suite
+    [ea[0].id]: { ease: 2.3, interval: 5, due: t - 2 * DAY, acquired: true },  // ancienne réponse
+    [ea[1].id]: { ease: 2.3, interval: 1, due: t - DAY, acquired: true },      // dernière réponse de la fiche a : échue
+    [eb[0].id]: { ease: 2.3, interval: 2, due: t + DAY, acquired: true },      // fiche b pas échue : rien (plus d'exercice neuf chaque jour)
+    [ec[0].id]: { ease: 2.3, interval: 1, due: t - 5 * DAY, acquired: true },  // ancienne réponse échue de la fiche c…
+    [ec[1].id]: { ease: 2.3, interval: 10, due: t + 8 * DAY, acquired: true }, // …mais sa dernière réponse ne l'est pas : rien
   };
-  const q = ctx.ps(pool, prog, {}, t, { max: 20, newFiches: 3 });
-  const per = id => q.filter(e => e.fiche.id === id).length;
-  assert.equal(q[0].id, ea[1].id, "l'échue la plus en retard d'abord");
-  assert.equal(per(a.id), 1);
-  assert.equal(per(b.id), 1); assert.ok(!prog[q.find(e => e.fiche === b).id], "suite : un exercice neuf");
-  const neuves = [...new Set(q.map(e => e.fiche))].filter(f => f !== a && f !== b);
+  const q = ctx.ps(pool, prog, {}, t, { max: 20, newFiches: 3 }), de = f => q.filter(e => e.fiche === f);
+  assert.deepEqual([...de(a).map(e => e.id)], [ea[2].id], "fiche a : un seul exercice, un jamais posé");
+  assert.equal(de(b).length + de(c).length, 0);
+  const neuves = [...new Set(q.map(e => e.fiche))].filter(f => f !== a);
   assert.equal(neuves.length, 3);
-  for (const f of neuves) { const mine = q.filter(e => e.fiche === f); assert.equal(mine.length, 2); assert.equal(mine[0].type, "flashcard"); }
-  // fiche b répondue il y a une heure : pas de suite le même jour ; quota déjà pris par les fiches commencées aujourd'hui
-  prog[eb[0].id] = { ease: 2.3, interval: 1, due: t - 3600000 + DAY, acquired: true };
-  const q2 = ctx.ps(pool, prog, { [a.id]: t - 3600000, [b.id]: t - 3600000 }, t, { max: 20, newFiches: 3 });
-  assert.equal(q2.filter(e => e.fiche === b).length, 0);
-  assert.equal(new Set(q2.filter(e => e.fiche !== a && e.fiche !== b).map(e => e.fiche)).size, 1);
+  for (const f of neuves) { const mine = de(f); assert.equal(mine.length, 2); assert.equal(mine[0].type, "flashcard"); }
+  // fiche toute vue : l'exercice le moins récemment posé
+  const p2 = Object.fromEntries(ea.map((e, i) => [e.id, { ease: 2.3, interval: 1, due: t - (i === 1 ? 3 : 1) * DAY, acquired: true }]));
+  assert.equal(ctx.ps(ea, p2, {}, t, { max: 5, newFiches: 0 })[0].id, ea[1].id);
+  // 20 fiches échues, séance de 10 : les 3 nouvelles gardent leurs 6 places, les 4 révisions les plus en retard prennent le reste
+  const p3 = Object.fromEntries(fiches.slice(0, 20).map((f, i) => [ex(f)[0].id, { ease: 2.3, interval: 1, due: t - (i + 1) * 3600000, acquired: true }]));
+  const q3 = ctx.ps(pool, p3, {}, t, { max: 10, newFiches: 3 });
+  assert.equal(q3.length, 10);
+  assert.deepEqual(new Set(q3.slice(0, 4).map(e => e.fiche)), new Set(fiches.slice(16, 20)));
+  assert.equal(q3.slice(4).filter(e => !p3[e.id] && !fiches.slice(0, 20).includes(e.fiche)).length, 6);
+  // quota déjà pris par les fiches commencées aujourd'hui
+  const q4 = ctx.ps(pool, prog, { [a.id]: t - 3600000, [b.id]: t - 3600000 }, t, { max: 20, newFiches: 3 });
+  assert.equal(new Set(q4.filter(e => e.fiche !== a).map(e => e.fiche)).size, 1);
   assert.ok(ctx.ps(pool, prog, {}, t, { max: 3, newFiches: 5 }).length <= 3, "plafond de séance");
+});
+
+test("calendrier par fiche : une réponse repart de l'état de la fiche ; le lexique garde le sien", () => {
+  vm.runInNewContext("this.nf=noterFiche", ctx);
+  const t = 1e12, J = 86400000;
+  const prog = { "mv-0001-01": { ease: 2.3, interval: 12, due: t, acquired: true }, "mv-0001-02": { ease: 2.3, interval: 1, due: t - 20 * J, acquired: true } };
+  assert.equal(ctx.nf("mv-0001-03", prog, "ok", t).interval, Math.round(12 * 2.3), "exercice jamais posé : 12 jours × 2,3, pas 1 jour");
+  assert.equal(ctx.nf("mv-0001-sit", prog, "hard", t).interval, 1);
+  assert.equal(ctx.nf("lx-cepage", prog, "ok", t).interval, 1);
+});
+
+test("calendrier jusqu'à l'échéance : une séance par jour suffit à voir toutes les fiches (simulation du 02/11 au 31/12)", () => {
+  vm.runInNewContext("this.sim={planSession,noterFiche,rythme,schemaExercise,lexiqueExercises}", ctx);
+  const { planSession, noterFiche, rythme, schemaExercise } = ctx.sim, DAY = 86400000;
+  const pool = FICHES.flatMap(f => [...toExercises(f), ...schemaExercise(f, FICHES)]), prog = {}, lues = {};
+  let s = 7; const r = () => (s = (s * 16807) % 2147483647) / 2147483647; // élève fictif : 80 % de réussite en révision
+  let pire = 0;
+  for (let t = new Date("2026-11-02T09:00").getTime(); t <= new Date("2026-12-31T09:00").getTime(); t += DAY) {
+    const vues = new Set(pool.filter(e => prog[e.id]).map(e => e.fiche)), n = rythme(FICHES.filter(f => !vues.has(f)).length, t, "2026-12-31");
+    const q = planSession(pool, prog, lues, t, { max: 20 + 2 * n, newFiches: n }); pire = Math.max(pire, q.length);
+    for (const e of q) { lues[e.fiche.id] ??= t; const x = r(); prog[e.id] = noterFiche(e.id, prog, x < .2 ? "hard" : x < .92 ? "ok" : "easy", t); }
+  }
+  const vues = new Set(pool.filter(e => prog[e.id]).map(e => e.fiche)).size;
+  assert.equal(vues, FICHES.length, `${vues} fiches vues sur ${FICHES.length} au 31/12`);
+  assert.ok(pire <= 80, `séance de ${pire} exercices`);
 });
 
 test("le service worker met en cache tous les fichiers locaux de index.html", () => {
@@ -281,9 +318,7 @@ test("répétition espacée : difficile ramène à 1 jour, facilité plancher 1,
   assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t).interval, Math.round(10 * 2.4 * 1.3));
   assert.equal(ctx.sv({ ease: 1.4, interval: 10 }, "hard", t).ease, 1.3);
   assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "hard", t).interval, 1);
-  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t + 5.5 * J).interval, 5, "plafonné à l'échéance");
-  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t + J / 2).interval, 1, "au moins 1 jour");
-  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t - J).interval, 31, "échéance passée : sans effet");
+  assert.equal(ctx.sv({ ease: 2.3, interval: 10 }, "easy", t, t + 5.5 * J).interval, 31, "pas de plafond à l'échéance (tout revenait le dernier jour)");
 });
 
 test("séance : nouvelles fiches du livre et hors livre en alternance", () => {

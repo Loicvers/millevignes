@@ -31,9 +31,9 @@ function schemaExercise(f, fiches = []) {
   // Situation : « où est-ce ? », leurres = appellations de la même région ayant aussi leur carte de situation.
   if (!estSituation(f) || !f.geo || !f.geo.region) return [];
   const proj = g => (g.schema.svg.match(/data-proj="([^"]*)"/) || [])[1];
-  const noms = gs => [...new Set(gs.map(g => schemaLabels(g)[0]))].filter(t => t !== labels[0] && !f.schema.svg.includes(`>${t}</text>`)); // une ville du même nom sur la carte trahirait le leurre
+  const noms = gs => [...new Set(gs.map(g => schemaLabels(g)[0]))].filter(t => t !== labels[0]); // un leurre écrit sur la carte y est masqué (maskSchema)
   const region = fiches.filter(g => g !== f && g.geo && g.geo.region === f.geo.region && estSituation(g));
-  // Leurres pris sur la même carte (zones grisées voisines) ; sinon dans la région, plus faciles à écarter.
+  // Leurres pris sur la même carte (zones voisines, leur nom masqué) ; sinon dans la région, plus faciles à écarter sans rien situer.
   const meme = noms(region.filter(g => proj(g) === proj(f))), leurres = meme.length >= 3 ? meme : noms(region);
   if (leurres.length < 3) return [];
   return [{ id: notionId(f.id) + "-sit", type: "label_schema", prompt: "Quelle appellation est en foncé (le « ? ») sur cette carte ?", payload: { labels, leurres }, fiche: f }];
@@ -41,10 +41,11 @@ function schemaExercise(f, fiches = []) {
 // Tire une étiquette à masquer : renvoie le SVG masqué, les options et l'index de la bonne réponse.
 function maskSchema(svg, labels, pick = shuffle(labels)) {
   const target = pick[0], options = shuffle(pick.slice(0, 4));
-  // Les autres options sont masquées aussi (« … ») : sinon on répond par élimination en lisant le dessin.
-  const mask = (t, by) => { const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); svg = svg.replace(new RegExp(`(<text[^>]*font-weight="bold"[^>]*>)${esc}(</text>)`), `$1${by}$2`); };
+  // Les autres options sont masquées partout (« … », étiquette en gras ou nom d'une zone voisine) : sinon on répond par élimination
+  // en lisant le dessin. La réponse, en gras, devient « ? ».
+  const mask = (t, by, gras) => { const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); svg = svg.replace(new RegExp(`(<text[^>]*${gras ? 'font-weight="bold"[^>]*' : ""}>)${esc}(</text>)`, gras ? "" : "g"), `$1${by}$2`); };
   options.filter(o => o !== target).forEach(o => mask(o, "<tspan opacity=\"0.5\">…</tspan>"));
-  mask(target, "<tspan font-size=\"15\">?</tspan>");
+  mask(target, "<tspan font-size=\"15\">?</tspan>", true);
   return { svg, options, answer: options.indexOf(target) };
 }
 
@@ -172,8 +173,8 @@ function grade(ex, answer) {
 // Restauration d'une sauvegarde : fusion avec la progression du navigateur, sans rien perdre de récent.
 // Par exercice, on garde la réponse la plus récente (due - intervalle = date de la dernière réponse, comme dans planSession).
 function fusionner(cur, inc) {
-  const last = p => p.due - p.interval * 86400000, out = { ...cur };
-  for (const k in inc) if (!out[k] || last(inc[k]) > last(out[k])) out[k] = inc[k];
+  const out = { ...cur };
+  for (const k in inc) if (!out[k] || quand(inc[k]) > quand(out[k])) out[k] = inc[k];
   return out;
 }
 // Listes datées (journal, séances) : union sans doublon, par date, bornée aux n dernières entrées.
@@ -190,56 +191,59 @@ function rythme(restantes, t, echeance, base = 5) {
   return reste > 0 ? Math.max(base, Math.ceil(restantes / Math.ceil(reste / 86400000))) : base;
 }
 
-// Répétition espacée (type SM-2 simplifié) : état d'un exercice après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
-// fin (facultatif) = échéance : aucune révision ne tombe après elle (intervalle raccourci, au moins 1 jour).
-function suivante(p, quality, t, fin) {
+// Date d'une réponse (rate() pose due = réponse + intervalle) et groupe d'un exercice : sa fiche (le lexique et la cave à part).
+const quand = p => p.due - (p.interval || 0) * 86400000;
+const groupeId = id => (id.match(/^mv-\d+/) || [id])[0];
+// Dernier exercice répondu de chaque groupe : il porte l'état de la fiche (facilité, intervalle, échéance).
+function derniersEtats(prog) { const m = new Map(); for (const id in prog) { const g = groupeId(id), a = m.get(g); if (!a || quand(prog[id]) > quand(prog[a])) m.set(g, id); } return m; }
+// Une réponse repart de l'état de la fiche, pas de celui de l'exercice : un exercice jamais posé d'une fiche connue ne la ramène pas à 1 jour.
+function noterFiche(id, prog, quality, t) { const d = derniersEtats(prog).get(groupeId(id)); return suivante(d && prog[d], quality, t); }
+
+// Répétition espacée (type SM-2 simplifié) : état après une réponse 'hard' | 'ok' | 'easy' donnée au temps t.
+// Pas de plafond à l'échéance : il faisait revenir presque toutes les fiches le dernier jour (simulation du 02/11).
+function suivante(p, quality, t) {
   p = { ease: 2.3, interval: 0, due: 0, acquired: false, ...p };
   if (quality === 'hard') { p.ease = Math.max(1.3, p.ease - 0.2); p.interval = 1; }
   else if (quality === 'ok') p.interval = p.interval ? Math.round(p.interval * p.ease) : 1;
   else { p.ease += 0.1; p.interval = p.interval ? Math.round(p.interval * p.ease * 1.3) : 2; }
-  if (fin > t) p.interval = Math.max(1, Math.min(p.interval, Math.floor((fin - t) / 86400000)));
   p.due = t + p.interval * 86400000;
   p.acquired = true;
   return p;
 }
 
-// Séance : une notion (fiche) au plus par séance ; révisions échues d'abord, puis la suite des fiches commencées
-// (un exercice de plus, pas le même jour), puis de nouvelles fiches (quota par jour, 2 exercices chacune).
+// Séance : une notion (fiche) au plus par séance, un seul calendrier par fiche (celui de son dernier exercice répondu).
+// Fiche échue : un exercice jamais posé d'abord, sinon le moins récemment posé (avant : chaque exercice avait son calendrier
+// et un exercice neuf s'ajoutait chaque jour, si bien qu'une fiche revenait presque tous les jours ; simulation du 02/11).
+// Les nouvelles fiches du jour (2 exercices chacune) ont leurs places ; les révisions prennent le reste, les plus en retard d'abord.
 // lues[ficheId] = horodatage de la lecture (1 pour les lectures d'avant le quota : jamais « aujourd'hui »).
 const RESTITUER = ["flashcard", "cloze", "short_answer", "flashcard_reverse", "ordering"];
 function planSession(pool, prog, lues, t, { max = 20, newFiches = 5, perNew = 2 } = {}) {
-  const DAY = 86400000, dayStart = new Date(t).setHours(0, 0, 0, 0);
-  const last = p => p.due - p.interval * DAY; // rate() pose due = réponse + intervalle
-  const key = e => /^mv-/.test(e.id) ? e.fiche.id : e.id; // le lexique compte à part
-  const groups = new Map();
-  for (const e of pool) { const k = key(e); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); }
-  const due = [], suite = [], fresh = [];
+  const dayStart = new Date(t).setHours(0, 0, 0, 0), groups = new Map();
+  for (const e of pool) { const k = /^mv-/.test(e.id) ? e.fiche.id : e.id; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); } // le lexique et la cave comptent à part
+  const due = [], fresh = [];
   let started = 0;
   for (const [k, exos] of groups) {
-    const seen = exos.filter(e => prog[e.id]);
-    if (seen.length && lues[k] >= dayStart) started++;
-    const d = seen.filter(e => prog[e.id].due <= t).sort((a, b) => prog[a.id].due - prog[b.id].due);
-    if (d.length) due.push(d[0]);
-    else if (seen.length) {
-      const next = exos.find(e => !prog[e.id]);
-      if (next && t - Math.max(...seen.map(e => last(prog[e.id]))) > DAY / 2) suite.push(next);
-    } else fresh.push(exos);
+    const vus = exos.filter(e => prog[e.id]);
+    if (!vus.length) { fresh.push(exos); continue; }
+    if (lues[k] >= dayStart) started++;
+    const d = vus.reduce((a, e) => quand(prog[e.id]) > quand(prog[a.id]) ? e : a);
+    if (prog[d.id].due <= t) due.push([prog[d.id].due, exos.find(e => !prog[e.id]) || vus.reduce((a, e) => quand(prog[e.id]) < quand(prog[a.id]) ? e : a)]);
   }
-  const q = shuffle(due).slice(0, max);
-  for (const e of suite) if (q.length < max) q.push(e);
   // Ordre du livre, puis les fiches hors livre (France) par id.
   const rang = f => f.page || (f.source === "france" ? 1e6 : 0);
   fresh.sort((a, b) => rang(a[0].fiche) - rang(b[0].fiche) || a[0].fiche.id - b[0].fiche.id);
   // Livre et hors livre en alternance : la France ne doit pas attendre la fin du livre.
   const livre = fresh.filter(x => x[0].fiche.page), hors = fresh.filter(x => !x[0].fiche.page);
   const melees = livre.flatMap((x, i) => hors[i] ? [x, hors[i]] : [x]).concat(hors.slice(livre.length));
+  const neuves = [];
   for (const exos of melees.slice(0, Math.max(0, newFiches - started))) {
     const first = exos.find(e => e.type === "flashcard") || exos[0];
-    const pick = [first, ...exos.filter(e => e !== first && RESTITUER.includes(e.type)), ...exos.filter(e => e !== first)].slice(0, perNew);
-    if (q.length + pick.length > max) break;
-    q.push(...new Set(pick));
+    const pick = [...new Set([first, ...exos.filter(e => e !== first && RESTITUER.includes(e.type)), ...exos.filter(e => e !== first)].slice(0, perNew))];
+    if (neuves.length + pick.length > max) break;
+    neuves.push(...pick);
   }
-  return q;
+  const revues = due.sort((a, b) => a[0] - b[0]).slice(0, max - neuves.length).map(x => x[1]);
+  return [...shuffle(revues), ...neuves];
 }
 
 // Atlas : un lieu par région française (dans l'ordre du sommaire, « France » = vue d'ensemble) puis par pays,
@@ -267,7 +271,8 @@ function pointsDurs(pool, prog, journal) {
   const fin = new Map(); // id → les deux dernières réponses, réussies ou non
   for (const j of journal) fin.set(j.e, [...(fin.get(j.e) || []), reussie(j)].slice(-2));
   const sorti = id => { const d = fin.get(id) || []; return d.length === 2 && d.every(Boolean); };
-  return pool.filter(e => prog[e.id] && prog[e.id].ease < 2.3 && !sorti(e.id))
+  const derniers = derniersEtats(prog); // une fiche une fois : son dernier exercice porte sa facilité
+  return pool.filter(e => prog[e.id] && derniers.get(groupeId(e.id)) === e.id && prog[e.id].ease < 2.3 && !sorti(e.id))
     .sort((a, b) => prog[a.id].ease - prog[b.id].ease);
 }
 
@@ -296,5 +301,5 @@ function suivi(journal, typeOf, prog, t) {
   const d = seances.filter(x => x.length > 1).map(x => x[x.length - 1].t - x[0].t + (x[0].ms || 0)).sort((a, b) => a - b);
   const mediane = d.length ? (d[(d.length - 1) >> 1] + d[d.length >> 1]) / 2 : null;
   return { immediate: imm, libre, j7, j28, mediane, nSeances: d.length,
-    retard: { n: Object.values(prog).filter(p => p.due <= t).length, vieux: Object.values(prog).filter(p => t - p.due > 7 * DAY).length } };
+    retard: (a => ({ n: a.filter(p => p.due <= t).length, vieux: a.filter(p => t - p.due > 7 * DAY).length }))([...derniersEtats(prog).values()].map(id => prog[id])) }; // par fiche
 }
