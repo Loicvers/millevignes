@@ -1195,5 +1195,21 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "Columelle et usage avant le phylloxéra : Wein-Plus seul."
+ },
+ {
+  "terme": "foxé / foxée (goût)",
+  "def": "Odeur et saveur très typées des raisins et des vins de vignes américaines, surtout Vitis labrusca et ses hybrides (concord, niagara, isabelle, clinton…). On la décrit comme musquée, entre confiture de framboise ou fraise des bois et fourrure animale ; le terme est presque toujours péjoratif. Molécule principale : l’anthranilate de méthyle (repéré dès 1920), avec la 2-aminoacétophénone (dominante dans le niagara) et d’autres composés. Tous les hybrides ne sont pas foxés (seyval, norton, baco noir en sont exempts), et un vinifera greffé sur porte-greffe américain ne le devient pas.",
+  "etym": "de l’anglais foxy, de fox, renard ; Vitis labrusca s’appelle fox grape, « raisin de renard », aux États-Unis.",
+  "declic": "Fox = renard : le goût sauvage du raisin de renard américain.",
+  "src": [
+   "Oxford Companion to Wine, 5e éd. (2023), entrées « foxy », « Vitis labrusca », « Baco »",
+   "Peynaud et Blouin, Le Goût du vin, 5e éd. (2013), chapitres sur les arômes et le vocabulaire",
+   "Ribéreau-Gayon et al., Handbook of Enology, vol. 1, 2e éd. (anthranilate de méthyle)",
+   "G. Foëx, Cours complet de viticulture (fox grape, V. labrusca)",
+   "Mille Vignes, P. Lepeltier, p. 35 et 49",
+   "fiches 42 et 72"
+  ],
+  "status": "verified",
+  "note": "Description aromatique : Lepeltier parle de musc, rose et confiture ; Peynaud de confiture de framboise ; l’Oxford de fourrure animale et fraise des bois. Les trois se complètent."
  }
 ];
