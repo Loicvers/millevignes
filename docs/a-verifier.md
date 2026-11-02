@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-966 fiches : 958 vérifiées, 8 à vérifier (10 points).
-Hors dette : 2448 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+967 fiches : 959 vérifiées, 8 à vérifier (10 points).
+Hors dette : 2452 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.

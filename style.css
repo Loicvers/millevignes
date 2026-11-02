@@ -185,6 +185,7 @@
   .cave{max-width:760px;margin:0 auto}.cave>input{width:100%;margin-bottom:14px}.cave-dom{margin:22px 0 8px}.cave-dom small{font-weight:400;color:var(--muted)}
   .card.vin summary{cursor:pointer}.vin-sub{color:var(--muted);font-size:13.5px}.vin-l{margin:6px 0;font-size:14.5px}.vin-l .synth{margin:0}.vin-warn{font-size:13.5px;color:var(--gold)}.vin-q{margin:8px 0}.vin-q summary{cursor:pointer;font-weight:600}
   .vers-cave{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;text-decoration:underline dotted;cursor:pointer}
+  .sol-vide{color:var(--muted)}
   .empty h3{font-family:'Cormorant',serif;font-size:26px;color:var(--ink);margin-bottom:8px}
 
   footer.wrap{border-top:1px solid var(--line);padding-top:24px;padding-bottom:24px;font-size:12px;color:var(--muted);text-align:center}

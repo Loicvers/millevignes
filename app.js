@@ -337,7 +337,7 @@ function carteVin(v,byId,ouvert){
   if(v.incertitudes)d.append(el('p','vin-warn','⚠ '+v.incertitudes));
   if(v.a_dire?.length){const m=el('div','mnemo'),ul=el('ul');m.append(el('span','m-lbl','À dire au client'),ul);v.a_dire.forEach(x=>ul.append(el('li',null,String(x))));d.append(m);}
   if(v.questions?.length){const q=el('details','vin-q');q.append(el('summary',null,`Questions (${v.questions.length})`));v.questions.forEach(x=>{const p=el('p');p.append(el('b',null,x.q+' '),String(x.r));q.append(p);});d.append(q);}
-  const fs=Object.keys(v.liens||{}).map(id=>byId[id]).filter(Boolean);
+  const fs=[...(byId[SOL_VERRE]&&solsDe(v).length?[byId[SOL_VERRE]]:[]),...Object.keys(v.liens||{}).map(id=>byId[id]).filter(Boolean)]; // vin dont le sol est connu : d'abord la synthèse sol → vin
   if(fs.length){const w=el('div','lex-f');fs.forEach(f=>{const b=el('button','chip',f.titre);b.onclick=()=>lireChapitre(v.cuvee,[f]);w.append(b);});d.append(w);}
   const srcs=(v.sources||[]).filter(x=>x&&typeof x.url==='string'&&x.url);
   srcs.forEach(x=>{const p=el('p','src'),t=(x.type||'source')+' · '+x.url.replace(/^https?:\/\/(www\.)?/,'').slice(0,70);
@@ -462,7 +462,32 @@ function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en av
 // Une appellation du partenaire relève de la fiche si elle commence par son nom (« Saint-Émilion grand cru » → Saint-Émilion, « Mâcon-Péronne » → Mâcon ; « Haut-Médoc » ≠ Médoc, « Graves de Vayres » ≠ Graves).
 const memeAppel=(a,appel)=>{const x=normalize(a),y=normalize(appel);return x===y||(x.startsWith(y+' ')&&!/^(de|du|des|d) /.test(x.slice(y.length+1)));};
 // Fiche d'appellation : mes domaines de cette appellation ; fiche de région : ses partenaires ; carte sans région (France) : tous ceux qui y ont un point, car la carte ne porte pas les noms.
-const caveHTML=f=>{const l=vinsDe().filter(v=>v.liens&&v.liens[f.id]);return l.length?`<details class="mnemo partenaires-liste" open><summary class="m-lbl">Dans ma cave (${l.length})</summary>${l.map(v=>{const x=v.liens[f.id];return `<button class="vers-cave" data-cuvee="${escH(v.cuvee)}">${escH(v.cuvee)}</button> — ${escH(v.dom)}${x.d?' : '+escH(x.d)+(x.s==='ok'?' ✅':' ⚠️'):''}`;}).join('<br>')}</details>`:'';};
+// Fiche « Du sol au verre » : mes vins rangés par sol (champ sols du fichier privé ; à défaut, fiches de roches liées),
+// et pour chaque sol absent de ma cave, où le goûter (exemples du tableau de la fiche 969).
+const SOL_VERRE=969,SOL_LIGNES=[
+  ['calcaire','Calcaire, marne',[170,213],'Chablis, Côte-d’Or, plateau de Saint-Émilion'],
+  ['craie','Craie, tuffeau',[169],'Côte des Blancs, Saumur, Chinon, Vouvray, sud de l’Angleterre'],
+  ['argile','Argile',[],'Pomerol, Saint-Émilion côté Pomerol'],
+  ['sable','Sable',[],'Colares, sables de Camargue, safres de Châteauneuf-du-Pape'],
+  ['graves','Graves, galets',[171],'Médoc, Pessac-Léognan, Châteauneuf-du-Pape, Gimblett Gravels'],
+  ['schiste','Schiste, ardoise',[175],'Moselle, Anjou noir, Faugères, Priorat, Douro, Banyuls'],
+  ['granite','Granite',[163],'crus du Beaujolais, Cornas, Condrieu, Brand (Alsace)'],
+  ['gneiss','Gneiss',[176],'Wachau, Muscadet (Goulaine, Le Pallet), Caramany'],
+  ['silex','Silex',[291],'Sancerre, Pouilly-Fumé'],
+  ['volcanique','Volcanique',[164],'Santorin, Etna, Tokaj, Lanzarote, Rangen de Thann'],
+  ['loess','Lœss',[],'Kamptal, Kremstal, Tokaj, Kaiserstuhl, Columbia Valley'],
+  ['gres','Grès',[],'Kessler (Guebwiller), Heiligenstein (Kamptal), Courthézon (Châteauneuf-du-Pape)'],
+  ['alluvions','Limons, alluvions',[],'Médoc et Marlborough (caillouteuses), benches de la Napa'],
+  ['terra-rossa','Terra rossa',[],'Coonawarra, Wrattonbully, Istrie'],
+  ['albariza','Albariza',[],'Jerez (Macharnudo, Balbaina), Sanlúcar de Barrameda'],
+  ['galestro','Galestro, alberese',[],'Chianti Classico, Montalcino, Chianti Rufina']];
+const vinBtn=v=>`<button class="vers-cave" data-cuvee="${escH(v.cuvee)}">${escH(v.cuvee)}</button> (${escH(v.dom)})`;
+const solsDe=v=>v.sols||SOL_LIGNES.filter(([,,ids])=>ids.some(id=>v.liens?.[id])).map(([k])=>k); // ancien fichier sans sols : d'après les fiches de roches
+const caveSolHTML=()=>{const vs=vinsDe();if(!vs.length)return '';
+  const b=SOL_LIGNES.map(([k,nom,,ex])=>{const l=vs.filter(v=>solsDe(v).includes(k));
+    return l.length?`<p><b>${nom} (${l.length})</b> : ${l.map(vinBtn).join(', ')}</p>`:`<p class="sol-vide"><b>${nom}</b> : pas encore dans ma cave. À goûter : ${escH(ex)}.</p>`;});
+  return `<details class="mnemo partenaires-liste"><summary class="m-lbl">Dans ma cave, par sol</summary>${b.join('')}</details>`;};
+const caveHTML=f=>{if(f.id===SOL_VERRE)return caveSolHTML();const l=vinsDe().filter(v=>v.liens&&v.liens[f.id]);return l.length?`<details class="mnemo partenaires-liste" open><summary class="m-lbl">Dans ma cave (${l.length})</summary>${l.map(v=>{const x=v.liens[f.id];return `<button class="vers-cave" data-cuvee="${escH(v.cuvee)}">${escH(v.cuvee)}</button> — ${escH(v.dom)}${x.d?' : '+escH(x.d)+(x.s==='ok'?' ✅':' ⚠️'):''}`;}).join('<br>')}</details>`:'';};
 // Fiche cépage : pas de liste des partenaires de la région (ils ne cultivent pas forcément ce cépage) ; « Dans ma cave » reste, car lié à la fiche.
 const partenairesHTML=f=>{const cave=caveHTML(f);if(cave)return cave;if(f.theme==='Cépages')return '';const g=f.geo||{};const l=g.appel?partenaires.filter(p=>(p.appellations||[]).some(a=>memeAppel(a,g.appel))):g.region?partenaires.filter(p=>p.region===g.region):partenaires.filter(p=>p.points&&p.points[f.id]);return l.length?`<details class="mnemo partenaires-liste"${g.appel?' open':''}><summary class="m-lbl">${g.appel?'Dans ma cave':'Mes partenaires'} (${l.length})</summary>${l.map(p=>escH(p.nom)+(p.commune?' ('+escH(p.commune)+')':'')+(p.appellations&&p.appellations.length?' — '+p.appellations.map(escH).join(', '):'')).join(' ; ')}</details>`:'';};
 // Jauge de structure sur 5 (grille WSET : faible, moyen-, moyen, moyen+, élevé) ; ⚠ sur un critère non recoupé.
