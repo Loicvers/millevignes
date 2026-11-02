@@ -13,6 +13,7 @@ Ne pas les reprendre dans les fiches. Ne figurent ici que des faits vérifiables
 - p. 26 : liste OIV des descripteurs de 2009 présentée comme la référence → 3e édition adoptée en 2023.
 - p. 27 : souche de Saint-Suliac (magdeleine noire des Charentes) découverte « en 1992 » → entrée dans la collection de Vassal en 1996 (Boursiquot et al., 2009, texte intégral ; Bécédia).
 - p. 27 : gouais blanc « 63 descendants » → près de 120 selon Lacombe (2013), dont 63 aux deux parents connus.
+- p. 42 : courson et baguette taillés dans le « bois de deux ans, ou bois de taille » → ce sont des sarments de la saison précédente, donc du bois d’un an, insérés sur le bois de deux ans (Oxford Companion to Wine, 5e éd., entrées « spur » et « cane » ; Foëx, Cours complet de viticulture : la crossette garde un fragment de bois de deux ans à la base du sarment).
 - p. 29 : époques de maturité de Pulliat → dans Mille variétés de vignes (3e éd., 1888), le savagnin est en 2e époque (livre : 1re), le grenache en 2e tardive (livre : 3e, mais Le Vignoble, t. III, 1878-1879, le met bien en 3e), le mourvèdre en 3e (livre : 4e).
 - p. 29 : classement de Pulliat « de 1879 » → la méthode des époques est exposée dès le tome I du Vignoble (Mas et Pulliat, 1874-1875) ; 1879 est l'année où s'achève l'ouvrage.
 - p. 35 : six cépages interdits « par une loi de 1935 » → loi du 24 décembre 1934 (décret d'application en 1935).
