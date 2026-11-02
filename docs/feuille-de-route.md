@@ -78,7 +78,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 ## Retours de l'iPhone (02/11 ; PR #51, puis branche questions-autonomes)
 - [x] Réponses : nombres en lettres ou en chiffres, réponse courte entourée d'autres mots, champs sans correction automatique d'iOS ; lexique sans indice ni soulignements répétés ; synthèses en paragraphes, tableaux sans débordement (PR #51).
 - Cartes de mémorisation : la correction automatique par mots-clés est gardée (Loïc, 02/11) ; l'autoévaluation proposée n'est pas retenue.
-- [ ] **Questions qui se comprennent seules** (validé par Loïc, 02/11) : en séance, une question apparaît sans le titre de sa fiche ; relecture des 5 119 questions par sous-agents, réécriture de celles qui renvoient à un sujet non nommé (« cette concentration », « ces techniques »), relue avant application.
+- [x] **Questions qui se comprennent seules** (validé par Loïc, 02/11) : en séance, une question apparaît sans le titre de sa fiche ; les 5 119 questions relues par sous-agents, 165 réécrites (« cette concentration », « ces techniques », « la région », « le cahier »…), relues avant application ; un test bloque les renvois à « la fiche », « ce passage », « le schéma ».
 
 ## Revue du design du 02/11 (branche design-corrections)
 - [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.

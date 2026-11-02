@@ -313,6 +313,16 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
   assert.ok(!/pyrazi/i.test(ex.prompt), ex.prompt);
 });
 
+// En séance, une question paraît seule, sans le titre ni la synthèse de sa fiche (relecture des 5 119 questions, 02/11).
+test("les questions ne renvoient pas à leur fiche", () => {
+  const textes = FICHES.flatMap(f => [f.flash?.q, f.qcm?.q, ...(f.exos || []).flatMap(e => [e.prompt, e.payload?.statement, e.payload?.text])]
+    .filter(Boolean).map(t => [f.id, t]));
+  const renvoi = /\b(dans (la|cette) fiche|ce passage|ci-dessus|de la frise|du schéma|d’après le schéma|le schéma(?! du livre))\b/i;
+  assert.deepEqual([...textes.filter(([, t]) => renvoi.test(t))], []);
+  const trous = FICHES.flatMap(f => (f.exos || []).filter(e => e.type === "cloze" && /^Complète/.test(e.payload.text)).map(() => f.id));
+  assert.deepEqual([...trous], [], "texte à trous qui répète la consigne « Complète »");
+});
+
 test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un terme parent", () => {
   const lex = [
     { terme: "bouturage", def: "Multiplication par bouture.", declic: "" },
