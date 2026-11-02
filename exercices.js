@@ -75,7 +75,7 @@ function lexiqueExercises(lex, fiches) {
     const lie = o => [o.def + " " + o.declic, t.def + " " + t.declic].some((txt, i) => mots(txt).some(w => w.startsWith(lexStem(i ? o : t))));
     const options = shuffle([t.terme, ...shuffle(lex.filter(o => o !== t && !lie(o))).slice(0, 3).map(o => o.terme)]);
     // La définition ne doit pas souffler la réponse (« par bouture » → bouturage) : mots de la même racine masqués.
-    const def = t.def.replace(/[\p{L}’'-]+/gu, w => mots(w).some(m => m.startsWith(lexStem(t))) ? "…" : w);
+    const def = t.def.replace(/[\p{L}’'-]+/gu, w => mots(w).some(m => m.includes(lexStem(t))) ? "…" : w); // « méthoxypyrazines » soufflait « pyrazines »
     return { id: "lx-" + normalize(t.terme).replace(/ /g, "-"), type: "mcq_single", prompt: "Lexique — quel terme correspond à : « " + def + " » ?",
       payload: { options, answer: options.indexOf(t.terme) }, explanation: `Étymologie : ${t.etym} ${t.declic}`, fiche: f };
   });
@@ -98,7 +98,7 @@ function caveExercises(vins, fiches) {
       .filter(id => byId[id] && id !== f.id && !v.liens[id]).map(id => byId[id].titre)).slice(0, 3);
     if (leurres.length < 3) return [];
     const options = shuffle([f.titre, ...leurres]);
-    return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave : « " + v.cuvee + " » (" + v.dom + ") illustre quelle notion ?",
+    return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave, « " + v.cuvee + " », de " + v.dom + ", illustre quelle notion ?",
       payload: { options, answer: options.indexOf(f.titre) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + l.d, fiche: f }];
   });
 }
@@ -110,7 +110,7 @@ function caveQuestions(vins, fiches) {
     const ids = Object.keys(v.liens || {}), f = byId[ids.find(id => v.liens[id].k === "appel")] || byId[ids.find(id => byId[id])];
     if (!f) return [];
     const base = "cv-q-" + normalize(v.dom + " " + v.cuvee).replace(/ /g, "-");
-    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " » (" + v.dom + ") : " + q.q, payload: { answer: q.r }, fiche: f }));
+    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " », de " + v.dom + " : " + q.q, payload: { answer: q.r }, fiche: f }));
   });
 }
 
@@ -120,7 +120,7 @@ function caveQuestions(vins, fiches) {
 // seuls ces points comptent, ce qui évite d'exiger des détails que la question ne demande pas.
 const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon alors ainsi encore autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois le la de du et en un au a l d".split(" "));
 function flashKeys(answer, mine, groups) {
-  const toks = s => normalize(s).split(" ").filter(w => w && !MOTS_VIDES.has(w));
+  const toks = s => chiffres(s).split(" ").filter(w => w && !MOTS_VIDES.has(w));
   const words = s => toks(s).filter(w => /^\d+$/.test(w) || w.length >= 4);
   const stem = w => w.slice(0, Math.min(5, w.length - 1));
   const mineT = toks(mine);
@@ -148,7 +148,11 @@ function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { co
 function clozeParts(text) { return text.split(/\{\{([^{}]+)\}\}/).map((p, i) => i % 2 ? p.split("|") : p); }
 
 // Réponse tapée : singulier et pluriel valent pareil (« variété européenne primitive » = « variétés européennes primitives »).
-const libre = s => normalize(s).split(" ").map(w => w.length > 3 ? w.replace(/[sx]$/, "") : w).join(" ");
+// Nombres : en lettres ou en chiffres groupés, ils valent pareil (« cent » = « 100 », « 20 000 » = « 20000 » ; retours de l'iPhone, 02/11).
+const NOMBRES = { deux: "2", trois: "3", quatre: "4", cinq: "5", six: "6", sept: "7", huit: "8", dix: "10", onze: "11", douze: "12", quinze: "15", vingt: "20", trente: "30", quarante: "40", cinquante: "50", soixante: "60", cent: "100", mille: "1000" };
+// Groupes de milliers séparés par une espace (pas par une virgule : « 420, 520 et 620 » reste trois nombres).
+const chiffres = s => normalize(String(s).replace(/\b(\d{1,3})((?:[ \u00a0\u202f]\d{3})+)\b/g, (m, a, b) => a + b.replace(/\D/g, ""))).split(" ").map(w => NOMBRES[w] || w).join(" ");
+const libre = s => chiffres(s).split(" ").map(w => w.length > 3 ? w.replace(/[sx]$/, "") : w).join(" ");
 
 // « Remettre dans l'ordre » : la date entre parenthèses donnerait la réponse ; masquée à l'affichage, rendue à la correction.
 const sansDate = s => s.replace(/\s*\([^()]*(\b1\d{3}\b|\b20\d{2}\b|siècle|années)[^()]*\)/g, "").trim();
@@ -162,7 +166,7 @@ function grade(ex, answer) {
     case "flashcard": case "flashcard_reverse": return null;
     case "mcq_single": case "odd_one_out": case "true_false": case "label_schema": return answer === p.answer;
     case "mcq_multi": return same([...answer].sort(), [...p.answers].sort());
-    case "short_answer": return p.accepted.some(a => libre(a) === libre(answer));
+    case "short_answer": { const y = libre(answer); return p.accepted.some(a => { const x = libre(a); return x === y || (y.split(" ").length <= 8 && (" " + y + " ").includes(" " + x + " ")); }); } // « Les anthocyanes et… » contient la réponse
     case "cloze": return clozeParts(p.text).filter((_, i) => i % 2).every((v, k) => v.some(a => libre(a) === libre(answer[k] || "")));
     case "matching": return same(answer, p.pairs.map(x => x[1]));
     case "ordering": return same(answer, p.items);

@@ -235,8 +235,8 @@
   #introLine,#progPanel{max-width:760px;margin-left:auto;margin-right:auto} /* même largeur que le sommaire */
   .fiche-search{width:100%;margin-bottom:10px}
   .ex-warn{color:var(--warn);font-weight:600;margin-left:8px;white-space:nowrap}
-  .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}
-  .ex-statement,.ex-cloze{font-size:16px;margin-bottom:12px;line-height:2.2}
+  .ex-prompt{font-family:'Cormorant',serif;font-size:24px;font-weight:600;line-height:1.2;margin-bottom:16px}.ex-prompt.long{font-size:19px;line-height:1.35}
+  .ex-statement{font-size:18px;margin-bottom:12px;line-height:1.5}.ex-cloze{font-size:16px;margin-bottom:12px;line-height:2.2} /* vrai/faux : interligne de texte, pas celui des cases à remplir */
   .ex-answer{background:var(--ink);color:var(--paper);padding:14px;border-radius:3px;font-size:15px;margin-bottom:12px}
   .ex-input{font-family:inherit;font-size:16px;padding:9px 10px;border:1px solid var(--line);border-radius:3px;background:var(--field);color:var(--ink);min-height:44px;width:100%}
   .ex-input.blank{width:9em;min-height:44px;padding:4px 8px;margin:0 3px}

@@ -298,6 +298,20 @@ test("« Remettre dans l'ordre » : aucune date ne trahit l'ordre une fois masqu
   assert.equal(fuites.join(", "), "");
 });
 
+test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, définition du lexique sans indice", () => {
+  vm.runInNewContext("this.rk=flashKeys", ctx);
+  assert.equal(grade({ type: "cloze", payload: { text: "plus de {{20 000}} semis" } }, ["20000"]), true, "20000 = 20 000");
+  assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "Les anthocyanes et plus précisément"), true);
+  assert.equal(grade({ type: "short_answer", payload: { accepted: ["trois"] } }, "3"), true);
+  assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "les tanins"), false);
+  const k = ctx.rk("Cent pour cent merlot.", "Merlot 100%");
+  assert.equal(k.missing.length, 0); assert.equal(k.ok, true);
+  const lex = [{ terme: "pyrazines (méthoxypyrazines)", def: "Molécules dont les méthoxypyrazines sont les plus connues.", declic: "" },
+    { terme: "greffe", def: "Union.", declic: "" }, { terme: "vrille", def: "Organe.", declic: "" }, { terme: "moût", def: "Jus.", declic: "" }];
+  const ex = lexiqueExercises(lex, [{ titre: "pyrazines", synth: "", mnemo: "" }])[0];
+  assert.ok(!/pyrazi/i.test(ex.prompt), ex.prompt);
+});
+
 test("lexique : la définition ne souffle pas le terme et aucun leurre n'est un terme parent", () => {
   const lex = [
     { terme: "bouturage", def: "Multiplication par bouture.", declic: "" },

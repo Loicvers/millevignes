@@ -772,7 +772,8 @@ function showExercise(){
   const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
-  const question=el('div','ex-prompt',ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
+  // Longue question (définition du lexique) : plus petite.
+  const question=el('div','ex-prompt'+(ex.prompt.length>140?' long':''),ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
   box.append(body,fb,actions);grid.append(box);question.focus({preventScroll:true}); // lecteur d'écran : la question, pas le haut de page
   const submit=(answer,label='Valider')=>{const b=el('button','btn primary',label);b.onclick=()=>finish(ex,grade(ex,answer()),fb,actions,body);actions.append(b);return b;};
@@ -1091,13 +1092,14 @@ const LEX_RE=new RegExp(`(?<!\\p{L})(${LEX_FORMES.map(([f])=>f.replace(/[.*+?^${
 const lexDe=m=>{const n=normalize(m);return (LEX_FORMES.find(([f])=>n===normalize(f)||n===normalize(f)+'s'||n===normalize(f)+'x')||[])[1];};
 function lexMarquer(zone){
   if(!LEXIQUE.length||zone.closest?.('.lexique'))return;
+  const vus=new Set([...zone.querySelectorAll('.lx')].map(s=>s.dataset.terme)); // un terme souligné une fois par écran (avant : dans chaque paragraphe et case de tableau)
   zone.querySelectorAll(LEX_SEL).forEach(bloc=>{
     if(bloc.dataset.lx||bloc.closest('.lexique'))return;bloc.dataset.lx=1;
-    const vus=new Set(),w=document.createTreeWalker(bloc,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,summary,.lx,svg')?2:1}),noeuds=[];
+    const w=document.createTreeWalker(bloc,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,summary,.lx,svg')?2:1}),noeuds=[];
     while(w.nextNode())noeuds.push(w.currentNode);
     noeuds.forEach(n=>{
       const txt=n.nodeValue,frag=document.createDocumentFragment();let i=0,touche=false;
-      for(const m of txt.matchAll(LEX_RE)){const t=lexDe(m[0]);if(!t||vus.has(t))continue;vus.add(t);touche=true;
+      for(const m of txt.matchAll(LEX_RE)){const t=lexDe(m[0]);if(!t||vus.has(t.terme))continue;vus.add(t.terme);touche=true;
         frag.append(txt.slice(i,m.index));const s=el('span','lx',m[0]);s.tabIndex=0;s.setAttribute('role','button');s.dataset.terme=t.terme;frag.append(s);i=m.index+m[0].length;}
       if(touche){frag.append(txt.slice(i));n.replaceWith(frag);}
     });
