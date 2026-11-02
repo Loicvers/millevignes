@@ -15,6 +15,12 @@ test("parcours : une séance s'enregistre, se sauvegarde et se restaure sans per
     const erreurs = [];
     page.on("pageerror", e => erreurs.push(e.message));
     page.on("dialog", d => d.accept(d.type() === "prompt" ? "EFFACER" : undefined));
+    // Chaque écran d'exercice montre sa question (un commentaire mal placé l'avait fait disparaître, 02/11). Contexte à part :
+    // ces 40 séances lancées dans la même milliseconde se fondraient à la restauration (fusion par horodatage).
+    const essai = await (await navigateur.newContext()).newPage();
+    await essai.goto(new URL("../index.html", import.meta.url).href);
+    const sansQuestion = await essai.evaluate(() => EXOS.slice(0, 40).filter(e => { startSession([e], "test", [e.fiche.id]); const q = document.querySelector("#grid .ex-prompt"); return !q || !q.textContent.trim(); }).map(e => e.id));
+    assert.deepEqual(sansQuestion, [], "exercices sans question affichée");
     await page.goto(new URL("../index.html", import.meta.url).href);
     await page.click("text=Commencer la séance");
     // Découverte, pré-test, exercices : « Correct » s'il est proposé, sinon une option, sinon le bouton principal.

@@ -420,7 +420,9 @@ function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){
 function coursHTML(c){
   if(!c)return '';
   const b=x=>`<p class="imp-${x.imp}">${x.txt}</p>`;
-  const tab=t=>t?`<table>${t.caption?`<caption>${t.caption}</caption>`:''}<tr>${t.head.map(h=>`<th>${h}</th>`).join('')}</tr>${t.rows.map(r=>`<tr class="imp-${r.imp}">${r.cells.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table>`:'';
+  // Colonnes égales (style.css) ; à 4 colonnes et plus, trop étroites sur un téléphone : le tableau défile de côté.
+  const tab=t=>{if(!t)return '';const large=t.head.length>3;const h=`<table${large?` style="min-width:${t.head.length*100}px"`:''}>${t.caption?`<caption>${t.caption}</caption>`:''}<tr>${t.head.map(h=>`<th>${h}</th>`).join('')}</tr>${t.rows.map(r=>`<tr class="imp-${r.imp}">${r.cells.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('')}</table>`;
+    return large?`<div class="tab-defil" role="region" tabindex="0" aria-label="${escH(t.caption||'Tableau')}, défile de côté">${h}</div>`:h;};
   return `<details class="cours"><summary>Approfondir</summary>
     ${c.lede?`<p class="lede">${c.lede}</p>`:''}${c.essentiel?`<p class="ess">${c.essentiel}</p>`:''}
     ${c.frise?`<ul>${c.frise.map(x=>`<li><b>${x.date}</b> — ${x.txt}</li>`).join('')}</ul>`:''}
@@ -451,6 +453,11 @@ const PAKEY='mv_partenaires';let partenaires=[];try{partenaires=JSON.parse(local
 const vinsDe=()=>partenaires.flatMap(p=>(p.vins||[]).map(v=>({...v,dom:p.nom,reg:p.region})));
 function majCave(){for(let i=EXOS.length-1;i>=0;i--)if(EXOS[i].id.startsWith('cv-')){delete EX_BY_ID[EXOS[i].id];EXOS.splice(i,1);}for(const e of [...caveExercises(vinsDe(),FICHES),...caveQuestions(vinsDe(),FICHES)]){EXOS.push(e);EX_BY_ID[e.id]=e;}indexerExos();}
 try{majCave();}catch(e){console.error(e);} // un fichier privé mal formé ne doit pas bloquer le site
+// Synthèses écrites d'un bloc (médiane 800 signes) : un paragraphe tous les 250 signes environ, en fin de phrase (retours de l'iPhone, 02/11).
+// Fin de phrase : mot d'au moins 3 lettres, chiffre, ) ou » avant le point ; majuscule ou « après (pas « J. Robinson », « V. vinifera »).
+const FIN_PHRASE=/(?<=(?:\p{L}{3}|\d|[)»])[.!?]) (?=[\p{Lu}«])/u;
+const paras=s=>{const ph=String(s).split(FIN_PHRASE);let h=ph[0],n=ph[0].length,reste=String(s).length-n;
+  for(const x of ph.slice(1)){const coupe=n>=250&&reste>=150;h+=(coupe?' <span class="br"></span>':' ')+x;n=coupe?x.length:n+x.length+1;reste-=x.length+1;}return h;};
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 // Points des partenaires posés sur la carte d'une fiche, sans nom (trop serrés sur la carte de France) : nom au survol, liste sous la fiche.
 function avecPartenaires(f,svg,hl){ // hl : noms des partenaires à mettre en avant (onglet Cartes), nom écrit sur la carte
@@ -527,7 +534,7 @@ function card(f){
   c.innerHTML=`
     <div class="card-tags"><span class="tag theme">${f.theme}</span>${geoTag}<span class="tag niv">${f.niveau}</span>${dueTag}</div>
     <button class="card-toggle" aria-expanded="false"><h3>${f.titre}</h3><span class="fstat s-${etat(f)[0]}">${etat(f)[1]}</span></button>
-    <p class="synth">${f.synth}</p>
+    <p class="synth">${paras(f.synth)}</p>
     <div class="card-body"></div>`;
   // Le corps (schéma, approfondissement, flashcard…) ne se construit qu'à la première ouverture de la carte.
   const tg=c.querySelector('.card-toggle'),corps=c.querySelector('.card-body');let bati=false;
@@ -651,7 +658,7 @@ function printSupport(){
   pr.items.forEach((it,i)=>{const f=FICHE_BY_ID[it.id],a=el('article','sup-fiche');
     a.append(el('h2',null,`${i+1}. ${f.titre}`));
     if(it.vin)a.append(el('p','sup-vin','Vin servi : '+it.vin));
-    a.insertAdjacentHTML('beforeend',`<p>${f.synth}</p>${schemaHTML(f)}`+
+    a.insertAdjacentHTML('beforeend',`<p>${paras(f.synth)}</p>${schemaHTML(f)}`+
       (it.contenu!=='synth'?`<p><b>Astuce mémo : </b>${f.mnemo}</p>`:'')+
       (it.contenu==='essentiel'?`<ul class="sup-ess">${essentiels(f).map(x=>`<li>${x}</li>`).join('')}</ul>`:'')+
       (it.vin?`<table class="sup-grille">${['Œil','Nez','Bouche','Mes notes'].map(x=>`<tr><th>${x}</th><td></td></tr>`).join('')}</table>`:'')+
@@ -688,7 +695,7 @@ function drawSlide(){
   if(s.k==='fiche'){
     box.append(el('p','proj-kicker',`Fiche ${n} sur ${P().items.length}${s.it.duree?' · '+s.it.duree+' min':''}`),el('h2',null,f.titre));
     if(s.it.vin)box.append(el('p','proj-vin','Dans le verre : '+s.it.vin));
-    box.insertAdjacentHTML('beforeend',`<p class="proj-synth">${f.synth}</p>${schemaHTML(f)}`);
+    box.insertAdjacentHTML('beforeend',`<p class="proj-synth">${paras(f.synth)}</p>${schemaHTML(f)}`);
   }else{
     box.append(el('p','proj-kicker','Question au public'));box.insertAdjacentHTML('beforeend',`<h2>${f.flash.q}</h2>`);
     const ans=el('div','proj-ans');ans.innerHTML=f.flash.a;ans.hidden=true;
@@ -714,6 +721,8 @@ document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement
 const RETRY_GAP=4; // exercices intercalés avant de reposer une erreur : assez pour ne pas répondre de mémoire immédiate
 let shownAt=0,queue=[],pos=0,score={ok:0,total:0},sessionTitle='',synthVue=new Set(),schemaVu=new Set(),decouvertes=new Set(),nouvelles=[]; // fiches dont la synthèse a déjà servi de correction dans la séance
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
+// Champ de réponse corrigée : ni correction automatique ni soulignement d'iOS (« gouais », « malvidine » ne sont pas des fautes).
+const saisie=n=>{n.spellcheck=false;n.setAttribute('autocorrect','off');n.setAttribute('autocomplete','off');return n;};
 let retour='jour'; // écran d'où part une séance ou une lecture, pour y revenir
 function startSession(q,title,dejaLues=[],exam=null){
   if(mode!=='due')retour=mode;
@@ -772,14 +781,15 @@ function showExercise(){
   const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
-  const question=el('div','ex-prompt',ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
+  // Longue question (définition du lexique) : plus petite.
+  const question=el('div','ex-prompt'+(ex.prompt.length>140?' long':''),ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
   box.append(body,fb,actions);grid.append(box);question.focus({preventScroll:true}); // lecteur d'écran : la question, pas le haut de page
   const submit=(answer,label='Valider')=>{const b=el('button','btn primary',label);b.onclick=()=>finish(ex,grade(ex,answer()),fb,actions,body);actions.append(b);return b;};
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
   switch(ex.type){
     case 'flashcard':case 'flashcard_reverse':{
-      const inp=el('textarea','ex-input');inp.rows=2;inp.placeholder='Ta réponse : elle sera corrigée par mots-clés (facultatif)';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
+      const inp=saisie(el('textarea','ex-input'));inp.rows=2;inp.placeholder='Ta réponse : elle sera corrigée par mots-clés (facultatif)';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const show=el('button','btn primary','Voir la réponse');show.onclick=()=>{show.remove();const mine=inp.value.trim();inp.remove();
         const k=mine?flashKeys(p.answer,mine,p.keys):null;
         if(mine)body.append(el('p','ex-mine','Ta réponse : '+mine));body.append(el('div','ex-answer',p.answer));
@@ -807,11 +817,11 @@ function showExercise(){
         const v=el('button','btn primary','Valider');v.onclick=()=>finish(ex,null,fb,actions,body,boxes.map(c=>+c.checked));actions.append(v);boxes[0].focus();};
       actions.append(show);break;}
     case 'short_answer':{
-      const inp=el('input','ex-input');inp.placeholder='Ta réponse';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
+      const inp=saisie(el('input','ex-input'));inp.placeholder='Ta réponse';inp.setAttribute('aria-label','Ta réponse');body.append(inp);
       const b=submit(()=>inp.value);inp.onkeydown=e=>{if(e.key==='Enter')b.click();};setTimeout(()=>inp.focus());break;}
     case 'cloze':{
       const inputs=[],line=el('p','ex-cloze');
-      clozeParts(p.text).forEach((part,i)=>{if(i%2){const inp=el('input','ex-input blank');inp.setAttribute('aria-label','Trou '+(inputs.length+1));inputs.push(inp);line.append(inp);}else line.append(part);});
+      clozeParts(p.text).forEach((part,i)=>{if(i%2){const inp=saisie(el('input','ex-input blank'));inp.setAttribute('aria-label','Trou '+(inputs.length+1));inputs.push(inp);line.append(inp);}else line.append(part);});
       body.append(line);const b=submit(()=>inputs.map(x=>x.value));inputs.forEach(x=>x.onkeydown=e=>{if(e.key==='Enter')b.click();});break;}
     case 'matching':{
       const rights=shuffle(p.pairs.map(x=>x[1])),sels=[];
@@ -863,7 +873,7 @@ function correctText(ex){
 function showDecouverte(f,{head='Nouvelle notion',lead='',btnLbl='J\'ai lu, aux exercices',onGo=()=>showExercise(),onPrev=null,onQuit=null}={}){
   const box=el('div','ex decouverte');
   box.innerHTML=`<div class="ex-head"><span>${head}</span>${f.page?`<span class="folio">Mille Vignes, p. ${f.page}</span>`:''}</div>
-    <h3>${f.titre}</h3><p class="synth">${f.synth}</p>${schemaHTML(f)}
+    <h3>${f.titre}</h3><p class="synth">${paras(f.synth)}</p>${schemaHTML(f)}
     <div class="mnemo"><span class="m-lbl">Astuce mémo</span>${f.mnemo}</div>${coursHTML(f.cours)}
     <div class="src">— ${f.src}</div>${lead?`<p class="lead">${lead}</p>`:''}`;
   const actions=el('div','ex-actions'),go=el('button','btn primary',btnLbl),nav=(lbl,fn,cls='btn')=>{const b=el('button',cls,lbl);b.onclick=()=>{fn();window.scrollTo(0,0);};actions.append(b);};
@@ -1091,13 +1101,14 @@ const LEX_RE=new RegExp(`(?<!\\p{L})(${LEX_FORMES.map(([f])=>f.replace(/[.*+?^${
 const lexDe=m=>{const n=normalize(m);return (LEX_FORMES.find(([f])=>n===normalize(f)||n===normalize(f)+'s'||n===normalize(f)+'x')||[])[1];};
 function lexMarquer(zone){
   if(!LEXIQUE.length||zone.closest?.('.lexique'))return;
+  const vus=new Set([...zone.querySelectorAll('.lx')].map(s=>s.dataset.terme)); // un terme souligné une fois par écran (avant : dans chaque paragraphe et case de tableau)
   zone.querySelectorAll(LEX_SEL).forEach(bloc=>{
     if(bloc.dataset.lx||bloc.closest('.lexique'))return;bloc.dataset.lx=1;
-    const vus=new Set(),w=document.createTreeWalker(bloc,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,summary,.lx,svg')?2:1}),noeuds=[];
+    const w=document.createTreeWalker(bloc,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('a,button,summary,.lx,svg')?2:1}),noeuds=[];
     while(w.nextNode())noeuds.push(w.currentNode);
     noeuds.forEach(n=>{
       const txt=n.nodeValue,frag=document.createDocumentFragment();let i=0,touche=false;
-      for(const m of txt.matchAll(LEX_RE)){const t=lexDe(m[0]);if(!t||vus.has(t))continue;vus.add(t);touche=true;
+      for(const m of txt.matchAll(LEX_RE)){const t=lexDe(m[0]);if(!t||vus.has(t.terme))continue;vus.add(t.terme);touche=true;
         frag.append(txt.slice(i,m.index));const s=el('span','lx',m[0]);s.tabIndex=0;s.setAttribute('role','button');s.dataset.terme=t.terme;frag.append(s);i=m.index+m[0].length;}
       if(touche){frag.append(txt.slice(i));n.replaceWith(frag);}
     });
