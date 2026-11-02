@@ -757,5 +757,267 @@ FICHES.push(
     selon_livre: ["Libellés des quatre sens (« agro-culturale », « terroir-matière », etc.) : reformulés d’après le livre, non recoupés.","Selon le livre (p. 149) : typologie en quatre sens (matière, espace, conscience, slogan) attribuée à Vaudour ; non retrouvée dans les textes de Vaudour lus (résumé de thèse 2002, compte rendu de Nicod 2004) ; à ne pas confondre avec les quatre registres d’un article de 1996-98 (milieu exploité, plante, matière première, vin)"],
     src: "Mille Vignes, P. Lepeltier, p. 149 ; Vaudour, Les terroirs viticoles (La Vigne/Dunod, 2003) ; Nicod, compte rendu, Annales de géographie 113 (637), 2004, p. 336 ; Vaudour, présentation de thèse (C. R. Acad. Agric. Fr., 2002) ; Vaudour et al., Zonage Côtes-du-Rhône (IVES)",
     page: 149
+  },
+  {
+    "id": 969,
+    "theme": "Géologie-Terroir",
+    "sous": [
+      "Sols"
+    ],
+    "niveau": "Intermédiaire",
+    "geo": null,
+    "titre": "Du sol au verre : ce que chaque sol change vraiment dans le vin",
+    "synth": "Un sol agit sur le vin par trois voies mesurées : l’eau qu’il donne à la vigne, l’azote qu’il libère et la chaleur des racines. Un manque d’eau modéré arrête tôt la pousse, donne des baies plus petites, plus de couleur et moins d’acide malique : c’est le grand résultat de Seguin et van Leeuwen. La roche elle-même ne passe pas dans le verre : le silex n’a ni goût ni odeur, et l’acidité d’un sol n’a aucun rapport avec celle du vin (Oxford Companion). Chaque sol se lit donc par ce qu’il fait de l’eau et de la vigueur, et les « goûts de terroir » (pierre à fusil, ardoise, craie) sont des images de dégustation.",
+    "mnemo": "Le sol est le robinet et le thermostat de la vigne, pas son épice : il dose l’eau et la chaleur, il ne sale pas le vin.",
+    "flash": {
+      "q": "Par quelle voie principale un sol influence-t-il la qualité du vin ?",
+      "a": "Par l’alimentation en eau de la vigne : un déficit hydrique modéré donne de petites baies, plus de couleur et de tanins.",
+      "keys": [
+        [
+          "eau",
+          "hydrique"
+        ]
+      ]
+    },
+    "qcm": {
+      "q": "Que dit l’Oxford Companion du lien entre l’acidité d’un sol et celle du vin ?",
+      "opts": [
+        "Un sol acide donne un vin acide",
+        "Un sol calcaire donne un vin plus acide",
+        "Il n’y a pas de rapport établi",
+        "Un sol acide donne un vin plus alcoolisé"
+      ],
+      "good": 2,
+      "expl": "L’Oxford Companion (entrée soil acidity) précise que l’acidité du sol ne dit rien de celle du vin : le calcaire agit par l’eau et la structure du sol, pas par le goût."
+    },
+    "exos": [
+      {
+        "type": "true_false",
+        "prompt": "Vrai ou faux ?",
+        "payload": {
+          "statement": "Le goût de pierre à fusil d’un sancerre vient du silex dissous dans le vin.",
+          "answer": false
+        },
+        "explanation": "Le silex est inerte, sans goût ni odeur. Les notes de pierre à fusil viennent de composés soufrés formés au fil de la fermentation, et l’odeur du silex frotté elle-même vient d’impuretés soufrées (Oxford Companion, flint ; Lepeltier p. 285)."
+      },
+      {
+        "type": "matching",
+        "prompt": "Associe chaque sol à ce qu’il fait surtout de l’eau.",
+        "payload": {
+          "pairs": [
+            [
+              "Craie",
+              "Draine et garde une réserve que les racines vont chercher"
+            ],
+            [
+              "Graves",
+              "Drainent vite : l’eau vient de la profondeur"
+            ],
+            [
+              "Argile lourde",
+              "Retient beaucoup, mais une part reste liée et inaccessible"
+            ],
+            [
+              "Sable",
+              "Retient peu d’eau et peu de nutriments"
+            ]
+          ]
+        },
+        "explanation": "C’est par l’eau que les sols se distinguent le plus nettement (Oxford Companion, soil water ; fiche 183)."
+      },
+      {
+        "type": "mcq_single",
+        "prompt": "Pourquoi un sol caillouteux est-il plus chaud qu’un sol meuble et humide ?",
+        "payload": {
+          "options": [
+            "Les cailloux produisent de la chaleur",
+            "Il retient moins d’eau, et l’eau demande beaucoup d’énergie pour se réchauffer",
+            "Il est toujours plus sombre",
+            "Il contient plus de calcium"
+          ],
+          "answer": 1
+        },
+        "explanation": "Un sol humide est un sol froid : l’eau a une forte capacité calorifique (Oxford Companion, soil and wine quality). Que les galets « rendent la chaleur la nuit » au point de changer le vin reste débattu (fiche 171)."
+      }
+    ],
+    "schema": null,
+    "cours": {
+      "lede": "Calcaire, schiste ou silex : l’étiquette du sol fait rêver, mais la vigne ne boit pas la roche. Elle boit de l’eau, plus ou moins, et c’est là que tout se joue.",
+      "frise": null,
+      "essentiel": "Le sol agit surtout par l’eau, puis par l’azote et la température des racines. La roche ne passe pas dans le verre : les « goûts de terroir » sont des images, pas des minéraux dissous.",
+      "sections": [
+        {
+          "h": "Les trois voies démontrées",
+          "blocs": [
+            {
+              "imp": "essentiel",
+              "txt": "L’eau : la qualité suit le régime hydrique plus que la richesse du sol. Un déficit modéré arrête tôt la pousse des rameaux, donne des baies plus petites, plus d’anthocyanes, moins d’acide malique (Seguin dès 1969, synthèse en 1986 ; van Leeuwen 2018 ; fiche 182). Trop sévère, il bloque la maturité ; pour les blancs aromatiques (thiols du sauvignon), un fort manque d’eau est défavorable."
+            },
+            {
+              "imp": "important",
+              "txt": "L’azote : seul élément nutritif dont l’effet est net. Un apport modéré est l’optimum, plus bas pour les rouges que pour les blancs ; trop d’azote donne vigueur, ombre et botrytis ; trop peu, des fermentations difficiles (Oxford Companion, soil and wine quality ; fiche 181)."
+            },
+            {
+              "imp": "important",
+              "txt": "La chaleur : un sol sec et caillouteux se réchauffe vite, car l’eau demande beaucoup d’énergie pour chauffer. L’effet compte surtout en climat frais, pour un cépage qui mûrit tard (van Leeuwen 2018)."
+            }
+          ],
+          "table": null
+        },
+        {
+          "h": "Sol par sol",
+          "blocs": [
+            {
+              "imp": "utile",
+              "txt": "Niveau de preuve : D = démontré ; O = observé mais discuté ; T = tradition ou idée reçue."
+            }
+          ],
+          "table": {
+            "caption": "Ce que chaque sol règle, et ce qu’on peut en attendre dans le vin",
+            "head": [
+              "Sol",
+              "Ce qu’il règle",
+              "Effet sur la vigne",
+              "Ce qu’on attend dans le vin",
+              "Preuve"
+            ],
+            "rows": [
+              {
+                "imp": "essentiel",
+                "cells": [
+                  "Calcaire, marne",
+                  "Drainage par les fissures ; la marne retient mieux l’eau ; sol bien structuré",
+                  "Vigueur contenue ; en climat chaud et sol très mince, stress excessif",
+                  "Fraîcheur et tension souvent citées, mais aucun lien démontré entre calcaire et acidité du vin",
+                  "Eau : D/O ; goût : T"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Craie, tuffeau",
+                  "Poreuse : draine et garde une réserve que les racines vont chercher",
+                  "Alimentation en eau régulière, vigueur faible",
+                  "Régularité d’un millésime à l’autre ; le « crayeux » est un mot de dégustation",
+                  "Eau : D ; style : O/T"
+                ]
+              },
+              {
+                "imp": "essentiel",
+                "cells": [
+                  "Argile",
+                  "Retient beaucoup d’eau, dont une part reste liée ; réserve de nutriments (potassium)",
+                  "Argiles lourdes : manque d’eau précoce (Pomerol) ; profondes et mal drainées : trop de vigueur",
+                  "Rouges denses et colorés par le manque d’eau ; trop de potassium peut faire monter le pH du vin",
+                  "Eau : D ; cépage : O"
+                ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Sable",
+                  "Retient peu d’eau et de nutriments ; résiste au phylloxéra",
+                  "Vigueur très variable selon la profondeur",
+                  "Aucun style démontré",
+                  "Eau, phylloxéra : D ; style : aucune donnée"
+                ]
+              },
+              {
+                "imp": "essentiel",
+                "cells": [
+                  "Graves, galets",
+                  "Drainage excellent ; l’eau vient de la profondeur ; sol chaud car sec",
+                  "Stress modéré, vigueur faible, millésimes plus réguliers",
+                  "Rouges structurés de cabernet (Médoc) ; chaleur rendue la nuit : débattue",
+                  "Eau : D ; chaleur : O"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Schiste, ardoise",
+                  "Feuillets où racines et eau s’infiltrent ; sol mince et sombre",
+                  "Vigueur modérée ; maturité aidée en climat frais",
+                  "« Goût d’ardoise » : une image ; effet passant par l’eau et la chaleur",
+                  "Eau : D/O ; chaleur : O ; goût : T"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Granite, gneiss",
+                  "Roches massives, eau par les fissures ; arènes sableuses drainantes ; sols acides et pauvres",
+                  "Vigueur contenue",
+                  "Aucun « style granite » démontré ; l’acidité du sol ne passe pas au vin",
+                  "Sol : D ; goût : T"
+                ]
+              },
+              {
+                "imp": "important",
+                "cells": [
+                  "Silex",
+                  "Cailloux inertes : drainage, nutriments limités",
+                  "Pas de donnée propre",
+                  "Pierre à fusil = composés soufrés de fermentation, pas le silex",
+                  "Lien littéral : T"
+                ]
+              },
+              {
+                "imp": "utile",
+                "cells": [
+                  "Volcanique",
+                  "Souvent très drainant et sombre",
+                  "Variable selon la roche et l’âge",
+                  "« Salinité volcanique » non établie",
+                  "Drainage : D ; signature : T"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "h": "Pourquoi on ne goûte pas la roche",
+          "blocs": [
+            {
+              "imp": "essentiel",
+              "txt": "Les roches n’ont ni goût ni odeur ; la vigne n’absorbe que des ions dissous, en petite quantité, et rejette le sodium. Le vin ne contient que 1 à 2 g/L de minéraux, surtout du potassium, le reste sous le seuil de perception (Lepeltier p. 285 ; Oxford Companion, minerality ; fiche 290)."
+            },
+            {
+              "imp": "important",
+              "txt": "La « minéralité » est une perception réelle, liée à l’acidité, aux composés soufrés et à la réduction, mais sa cause chimique n’est pas établie (fiche 291)."
+            },
+            {
+              "imp": "culture",
+              "txt": "En 1763, l’abbé Tainturier voyait dans le goût de pierre à fusil un défaut dû aux cailloux du sol ; l’image s’est ensuite retournée en éloge."
+            }
+          ],
+          "table": null
+        }
+      ],
+      "synthese": [
+        {
+          "imp": "essentiel",
+          "txt": "Pour lire un sol, demande-toi ce qu’il fait de l’eau : drainage, réserve, profondeur des racines."
+        },
+        {
+          "imp": "important",
+          "txt": "Le climat pèse plus que le sol à l’échelle d’une région ; le sol départage les parcelles d’un même lieu."
+        },
+        {
+          "imp": "important",
+          "txt": "Les descripteurs de terroir (pierre à fusil, craie, ardoise) se vendent bien au client, à condition de les présenter comme des images."
+        }
+      ],
+      "src": "Oxford Companion to Wine, 5e éd. 2023 (soil and wine quality, soil water, soil acidity, flint, chalk, limestone, gravel, schist, minerality) ; van Leeuwen, Roby et de Rességuier, Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286 ; fiches 171, 181, 182, 183, 290, 291."
+    },
+    "status": "verified",
+    "to_check": [],
+    "selon_livre": [
+      "Divergence expliquée : chaleur des galets, schistes et basaltes. Lepeltier (p. 143) l’affirme ; l’Oxford Companion reste prudent (« is thought to », « reportedly ») et juge le lien couleur-température « loin d’être simple » ; la fiche le présente comme débattu.",
+      "Tainturier 1763 et le goût de pierre à fusil comme défaut : cité par J.-P. Garcia 2011, non relu dans le texte original.",
+      "Champagne : l’Oxford Companion (chalk) note que les meilleurs vignobles reposent surtout sur des argiles et que seules les racines profondes atteignent la craie ; la fiche ne reprend pas « craie pure »."
+    ],
+    "src": "Oxford Companion to Wine, 5e éd. 2023 (entrées soil and wine quality, soil water, soil acidity, flint, minerality) ; van Leeuwen et al., Soil-related terroir factors, OENO One 2018 ; Mille Vignes, P. Lepeltier, p. 142-144 et 284-286",
+    "page": 143
   }
 );
