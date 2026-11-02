@@ -75,6 +75,11 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Relecture de 31 fiches tirées au hasard (≈ 260 faits, sous-agents, sources du dépôt privé et cahiers des charges) : 76 % justes, 2 erreurs (208 UNESCO, 544 Marsala), 14 % d'imprécisions, 8 % invérifiables ; appellations françaises sans erreur. Corrigées le 02/11 : 208, 544, 50, 238, 140, 110, 225, 616, 506, 535, 561, 285, 287, 29, 427, 722, 485, 789, 960, 614, 530, 46.
 - Leçons de la relecture : relire aussi les explications d'exercices (Marsala, leurre sylvaner) ; un exercice qui contredit le livre sur la foi d'une seule source dit qui affirme quoi (« Selon X… ») ; dater les chiffres (« vers 2020 », pas « aujourd'hui »).
 
+## Retours de l'iPhone (02/11 ; PR #51, puis branche questions-autonomes)
+- [x] Réponses : nombres en lettres ou en chiffres, réponse courte entourée d'autres mots, champs sans correction automatique d'iOS ; lexique sans indice ni soulignements répétés ; synthèses en paragraphes, tableaux sans débordement (PR #51).
+- Cartes de mémorisation : la correction automatique par mots-clés est gardée (Loïc, 02/11) ; l'autoévaluation proposée n'est pas retenue.
+- [ ] **Questions qui se comprennent seules** (validé par Loïc, 02/11) : en séance, une question apparaît sans le titre de sa fiche ; relecture des 5 119 questions par sous-agents, réécriture de celles qui renvoient à un sujet non nommé (« cette concentration », « ces techniques »), relue avant application.
+
 ## Revue du design du 02/11 (branche design-corrections)
 - [x] Corrections : notation sous la réponse, quitter un examen (confirmation), espaces insécables, projection en fond encre en mode sombre, Bibliothèque sans Examen blanc ni Points durs hors sélection, cibles de 44 px.
 - [x] VoiceOver (vérifié sans iPhone : axe-core, arbre d'accessibilité, focus) : focus sur la question, question en titre, onglet lu avec son nombre, légende des schémas. À tester sur l'iPhone (protocole envoyé à Loïc).
