@@ -71,7 +71,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] **Un calendrier par fiche** : chaque réponse repart de l'état de la fiche (son dernier exercice répondu) ; une fiche échue pose un exercice jamais posé, sinon le moins récent ; les nouvelles fiches du jour ont leurs places dans la séance. Simulation du 02/11 au 31/12 (test) : une séance par jour (≈ 35 min) suffit à voir les 967 fiches ; tout suivre, révisions comprises : de 45 min en novembre à 2 h 20 fin décembre. Avant : 690 fiches vues au 31/12 et des séances de 600 exercices la dernière semaine.
 - [x] **Plafond des intervalles à l'échéance retiré** (décision du 29/10 annulée) : il faisait revenir presque toutes les fiches le dernier jour (jusqu'à 983 exercices).
 - [x] Cartes de situation : leurres pris sur la même carte, leur nom masqué (84 cartes sur 106, contre 49 sur 88).
-- [ ] Fiches « Pointu » (203) : les sortir du rythme de l'échéance (≈ 20 % de charge en moins) ? Non tranché.
+- Fiches « Pointu » (203) : elles restent dans le rythme de l'échéance (Loïc, 02/11).
 - [x] Relecture de 31 fiches tirées au hasard (≈ 260 faits, sous-agents, sources du dépôt privé et cahiers des charges) : 76 % justes, 2 erreurs (208 UNESCO, 544 Marsala), 14 % d'imprécisions, 8 % invérifiables ; appellations françaises sans erreur. Corrigées le 02/11 : 208, 544, 50, 238, 140, 110, 225, 616, 506, 535, 561, 285, 287, 29, 427, 722, 485, 789, 960, 614, 530, 46.
 - Leçons de la relecture : relire aussi les explications d'exercices (Marsala, leurre sylvaner) ; un exercice qui contredit le livre sur la foi d'une seule source dit qui affirme quoi (« Selon X… ») ; dater les chiffres (« vers 2020 », pas « aujourd'hui »).
 
