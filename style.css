@@ -132,7 +132,7 @@
   .sub-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px}
   .sub-tag{font-size:12px;color:var(--gold);border:1px solid var(--gold);padding:1px 7px;border-radius:30px}
   .card h3{font-family:'Cormorant',serif;font-weight:600;font-size:23px;line-height:1.15;margin-bottom:9px}
-  .synth{font-size:14.5px;color:var(--ink2);margin-bottom:14px}
+  .synth{font-size:14.5px;color:var(--ink2);margin-bottom:14px}.br{display:block;height:.6em}.card:not(.open):not(.lex) .synth .br{display:none}
   .mnemo{background:var(--paper2);border-left:3px solid var(--gold);padding:10px 12px;font-size:13.5px;border-radius:0 3px 3px 0;margin-bottom:14px}
   .mnemo .m-lbl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-bottom:3px}
   .tag.ok{color:var(--ok);border:1px solid var(--ok)}
@@ -155,8 +155,8 @@
   .cours{margin:0 0 14px;font-size:13.5px}
   .cours summary{cursor:pointer;color:var(--wine-fg);font-weight:600}
   .cours .lede{font-style:italic}.cours .ess{border-left:3px solid var(--wine);padding:6px 10px;background:var(--paper2)}
-  .cours h4{margin:12px 0 4px;font-size:14px}.cours table{border-collapse:collapse;width:100%;font-size:12.5px}
-  .cours td,.cours th{border:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}
+  .cours h4{margin:12px 0 4px;font-size:14px}.cours table{border-collapse:collapse;width:100%;font-size:12.5px;table-layout:fixed}
+  .tab-defil{overflow-x:auto}.cours td,.cours th{border:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top;overflow-wrap:break-word;hyphens:auto}
   .cours .imp-essentiel{font-weight:600}.cours .imp-culture{color:var(--muted)}
   .ex-mine{color:var(--muted);font-size:14px;margin-bottom:8px}
   .schema figcaption{font-size:12px;color:var(--muted);margin-top:6px}

@@ -303,6 +303,7 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
   assert.equal(grade({ type: "cloze", payload: { text: "plus de {{20 000}} semis" } }, ["20000"]), true, "20000 = 20 000");
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "Les anthocyanes et plus précisément"), true);
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["trois"] } }, "3"), true);
+  assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "Anthocyanes (malvidine)"), true, "précision entre parenthèses");
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "les tanins"), false);
   const k = ctx.rk("Cent pour cent merlot.", "Merlot 100%");
   assert.equal(k.missing.length, 0); assert.equal(k.ok, true);
