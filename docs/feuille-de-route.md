@@ -72,7 +72,7 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Test du parcours réel (`tests/parcours.test.mjs` : séance, sauvegarde, effacement, double restauration), sauté sans Playwright (GitHub).
 - [x] Import de lots JSON jamais utilisé supprimé (`tools/validate.mjs`, `merge()`) ; « En fait, j'avais juste » retire la seconde chance de la séance.
 - [ ] Cartes : 2,4 Mo des 12,2 Mo de fiches sont des contours copiés d'une fiche à l'autre ; fiches ≈ 3 Mo compressés (et non 1,3). Fond de carte partagé : après le 31/12.
-- [ ] Migrations de la v1 (`fromV1`, `mv_programme`, app.js) : à supprimer si aucun appareil ni aucune sauvegarde n'est encore en v1 (à confirmer par Loïc).
+- [x] Migrations de la v1 (`fromV1`, `mv_programme`) supprimées (02/11) : le site ne sert que sur un téléphone, sans données v1 (Loïc) ; une sauvegarde doit être en version 2.
 - [ ] Revues proposées, non faites : design (captures de chaque écran), pédagogie (statistiques et échantillon d'exercices), contenu (échantillon de fiches contrôlé dans le dépôt de sources).
 
 ## Audit du 29/10 (reste à faire)

@@ -16,13 +16,9 @@ const restantes=()=>{const vus=new Set(EXOS.filter(e=>prog[e.id]).map(e=>e.fiche
 const rythmeDuJour=()=>echeance?rythme(restantes(),now(),echeance,NEW_FICHES):NEW_FICHES;
 
 /* ============ PERSISTANCE (localStorage) ============ */
-// v2 : progression par exercice. La v1 (par fiche) est reprise une fois, puis laissée intacte.
-const PKEY="mv_progress_v2",PKEY_V1="mv_progress_v1";
-function fromV1(v1){const p={};for(const k in v1){p[notionId(k)+'-01']={...v1[k]};p[notionId(k)+'-02']={...v1[k]};}return p;}
-function load(){
-  try{const v2=localStorage.getItem(PKEY);if(v2)return JSON.parse(v2);const v1=localStorage.getItem(PKEY_V1);return v1?fromV1(JSON.parse(v1)):{};}
-  catch{return {};}
-}
+// Progression par exercice (v2).
+const PKEY="mv_progress_v2";
+function load(){try{return JSON.parse(localStorage.getItem(PKEY))||{};}catch{return {};}}
 let prog=load();
 const LKEY='mv_lues';let lues={};try{lues=JSON.parse(localStorage.getItem(LKEY))||{};}catch{}
 function saveLues(){put(LKEY,lues);}
@@ -569,10 +565,7 @@ function cleanProg(p){
 }
 let store=(()=>{
   try{const s=JSON.parse(localStorage.getItem(PRKEY));if(s&&s.progs&&s.progs[s.cur]){for(const k in s.progs)s.progs[k]=cleanProg(s.progs[k])||blankProg();return s;}}catch{}
-  const k=newKey(),s={cur:k,progs:{[k]:blankProg()}};
-  try{const old=JSON.parse(localStorage.getItem('mv_programme')); // version précédente : un seul programme {titre, ids}
-    if(old&&Array.isArray(old.ids))s.progs[k]=cleanProg({titre:old.titre,items:old.ids.map(id=>({id,duree:10}))});}catch{}
-  return s;
+  const k=newKey();return {cur:k,progs:{[k]:blankProg()}};
 })();
 const P=()=>store.progs[store.cur];
 function saveProg(){try{localStorage.setItem(PRKEY,JSON.stringify(store));}catch{alert('Impossible d\'enregistrer le programme dans ce navigateur.');}}
@@ -1043,10 +1036,9 @@ document.getElementById('importBtn').onclick=()=>document.getElementById('import
 document.getElementById('importProg').onchange=async e=>{
   const file=e.target.files[0];e.target.value='';if(!file)return;
   let data;try{data=JSON.parse(await file.text());}catch{alert('Fichier illisible : ce n\'est pas un JSON valide.');return;}
-  let p=data&&data.app==='millevignes'&&data.progress;
+  const p=data&&data.app==='millevignes'&&data.version===2&&data.progress;
   const ok=p&&typeof p==='object'&&Object.values(p).every(v=>v&&typeof v.due==='number'&&typeof v.interval==='number'&&typeof v.ease==='number');
   if(!ok){alert('Ce fichier n\'est pas une sauvegarde de progression Mille Vignes.');return;}
-  if(data.version!==2)p=fromV1(p); // sauvegarde de l'ancien site (par fiche)
   const n=Object.keys(p).length,cur=Object.keys(prog).length;
   if(!confirm(`Fusionner ${n} exercice(s) suivi(s), sauvegardés le ${(data.saved_at||'?').slice(0,10)}, avec ta progression actuelle (${cur} exercice(s)) ?\nPour chaque exercice, la réponse la plus récente est gardée.`))return;
   prog=fusionner(prog,p);save();
