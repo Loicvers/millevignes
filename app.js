@@ -121,7 +121,9 @@ document.getElementById('clearBtn').onclick=()=>{ficheQuery=[];document.getEleme
 /* ============ TABS ============ */
 function marquerOnglet(m){m={lexique:'revision',cave:'revision',suivi:'jour'}[m]||m; // le lexique et ma cave vivent dans la Bibliothèque, le suivi dans Aujourd'hui
   document.querySelectorAll('.tab').forEach(x=>{const on=x.dataset.mode===m;x.classList.toggle('on',on);x.setAttribute('aria-selected',on);});}
-function setMode(m){taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='cave'||m==='suivi'||m==='cartes'?'none':'block';render();}
+function setMode(m){
+  if(examen&&mode==='due'&&pos<queue.length&&!confirm('Quitter l’examen blanc ? Les réponses données ne seront pas comptées.'))return; // un toucher sur les onglets effaçait l'examen sans prévenir
+  examen=null;taire();mode=m;marquerOnglet(m);updateBadges();document.getElementById('filterBar').style.display=m==='due'||m==='jour'||m==='lexique'||m==='cave'||m==='suivi'||m==='cartes'?'none':'block';render();}
 document.querySelectorAll('.tab').forEach(t=>{t.onclick=()=>{setMode(t.dataset.mode);};});
 
 /* ============ BIBLIOTHÈQUE ============ */
@@ -155,8 +157,8 @@ function render(){
   sb.onclick=()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),'Session ciblée');
   // Points durs : voir pointsDurs() (exercices.js) ; deux réussites d'affilée les font sortir.
   const durs=pointsDurs(pool,prog,journal);
-  const hb=document.getElementById('hardBtn');hb.hidden=!durs.length||mode==='atelier';hb.textContent=`Mes points durs (${durs.length})`;
-  const xb=document.getElementById('examBtn');xb.hidden=mode==='atelier'; // Masterclass compose un programme, on n'y révise pas
+  const hb=document.getElementById('hardBtn');hb.hidden=!nf||!durs.length||mode==='atelier';hb.textContent=`Mes points durs (${durs.length})`;
+  const xb=document.getElementById('examBtn');xb.hidden=!nf||mode==='atelier'; // sans filtre : comme sur Aujourd'hui ; Masterclass compose un programme, on n'y révise pas
   xb.textContent=nf?`Examen blanc sur ces fiches`:'Examen blanc';xb.disabled=!list.length;xb.onclick=()=>startExamen(pool);
   hb.onclick=()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))]);
   grid.className='grid';grid.innerHTML='';
@@ -229,9 +231,9 @@ const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-
 const carteDe=(f,l)=>l.france?f.geo?.pays==='France'&&(l.nom==='France'?!f.geo.region:f.geo.region===l.nom):f.geo?.pays===l.nom;
 const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
 const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
-// Tuile d'un lieu (accueil et recherche de l'atlas) ; ◉ : la région a une carte
+// Tuile d’un lieu (accueil et recherche de l’atlas) ; « sans carte » sur les rares lieux qui n’en ont pas
 function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,b=el('button','lieu'),h=el('span','lieu-h');
-  h.append(el('span','lieu-n',x.nom));if(CARTES.some(f=>carteDe(f,x))){const c=el('span','lieu-c','◉');c.title='Carte disponible';h.append(c);}
+  h.append(el('span','lieu-n',x.nom));if(!CARTES.some(f=>carteDe(f,x)))h.append(el('span','lieu-c','sans carte'));
   b.append(h,el('span','chap-m',`${plur(x.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);return b;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
@@ -270,7 +272,7 @@ function renderCartes(){
     if(!n){ // sans recherche : les lieux en tuiles ; les pays à moins de 4 fiches en pastilles
       list.className='lieux-acc';const fr=LIEUX.filter(x=>x.france),gen=fr.find(x=>x.nom==='France'),mo=LIEUX.filter(x=>!x.france);
       const tuiles=ls=>{const g=el('div','lieux');ls.forEach(x=>g.append(tuile(x)));return g;};
-      const tf=el('div','lieux-tt');tf.append(el('h2','lieux-t','France'),el('small',null,'◉ carte disponible'));
+      const tf=el('div','lieux-tt');tf.append(el('h2','lieux-t','France'));
       list.append(tf,tuiles(fr.filter(x=>x!==gen)));
       if(gen){const b=el('button','lieu lieu-gen');b.append(el('span','lieu-n',nomLieu(gen)),el('span','chap-m',String(gen.fiches.length)));b.onclick=()=>allerLieu(gen.nom);list.append(b);}
       list.append(el('h2','lieux-t','Monde'),tuiles(mo.filter(x=>x.fiches.length>=4)));
@@ -314,7 +316,7 @@ function renderLexique(){
     [...LEXIQUE].sort((a,b)=>a.terme.localeCompare(b.terme,'fr')).filter(t=>!n||normalize(t.terme+' '+t.def).includes(n)).forEach(t=>{
       const d=el('div','card lex');
       d.append(el('h3',null,t.terme),el('p','synth',t.def));const ph=lexPhoto(t);if(ph)d.append(ph);
-      if(t.etym){const e=el('p',null);e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
+      if(t.etym){const e=el('p','lex-etym');e.append(el('b',null,'Étymologie : '),t.etym);d.append(e);}
       const m=el('div','mnemo');m.append(el('span','m-lbl','Déclic'),t.declic);d.append(m);
       const st=el('p','src',(t.status==='verified'?'✓ vérifiée':'⚠ à vérifier'+(t.note?' — '+t.note:''))+' · '+t.src.join(' ; '));d.append(st);
       const fs=fichesDuTerme(t,FICHES);
@@ -499,7 +501,7 @@ const jaugeHTML=f=>{const j=f.jauge;if(!j)return '';const av=j.a_verifier||[];
   return `<div class="jauge"><span class="m-lbl">Structure typique</span>${Object.keys(JAUGE_LBL).filter(k=>j[k]!=null).map(lig).join('')}${j.note?`<small class="j-s">${j.note}</small>`:''}<small class="j-s">${j.style} — ${j.src}</small></div>`;};
 // Autres noms du cépage (pays ou région où ils s'emploient).
 const nomsHTML=f=>f.noms?.length?`<p class="noms"><span class="m-lbl">Autres noms</span> ${f.noms.map(n=>`<b>${n.nom}</b> (${n.ou})`).join(', ')}</p>`:'';
-const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir le schéma">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
+const schemaHTML=f=>nomsHTML(f)+jaugeHTML(f)+(f.schema?`<figure class="schema" tabindex="0" role="button" aria-label="Schéma : ${escH(f.schema.legende)}. Agrandir">${fitSvg(avecPartenaires(f,f.schema.svg))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`:'');
 /* Toucher un schéma l'ouvre en grand (défilement et pincement possibles) ; Échap ou le bouton le referment. */
 let zoomOpener=null;
 function fermerZoom(){const z=document.getElementById('zoom');if(!z||z.hidden)return false;z.hidden=true;document.body.style.overflow=document.getElementById('proj').hidden?'':'hidden';zoomOpener&&zoomOpener.focus({preventScroll:true});return true;}
@@ -767,11 +769,12 @@ function showExercise(){
   const box=el('div','ex');
   const head=el('div','ex-head',`${sessionTitle} · ${pos+1}/${queue.length} · ${TYPE_LBL[ex.type]}`);
   if(examen)head.append(el('span','ex-chrono',chrono(examen.fin-now())));
+  const quitter=el('button','lien ex-quit',examen?'← Quitter l’examen':'← Quitter la séance');quitter.onclick=()=>setMode(retour);grid.append(quitter); // au-dessus de la carte, comme « ← Atlas »
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier')); // la maîtrise (notes) et la fiabilité (statut) restent deux informations séparées
   box.append(head);
-  box.append(el('div','ex-prompt',ex.prompt));
+  const question=el('div','ex-prompt',ex.prompt);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;box.append(question);
   const body=el('div','ex-body'),actions=el('div','ex-actions'),fb=el('div','fb');fb.setAttribute('aria-live','polite');
-  box.append(body,fb,actions);grid.append(box);
+  box.append(body,fb,actions);grid.append(box);question.focus({preventScroll:true}); // lecteur d'écran : la question, pas le haut de page
   const submit=(answer,label='Valider')=>{const b=el('button','btn primary',label);b.onclick=()=>finish(ex,grade(ex,answer()),fb,actions,body);actions.append(b);return b;};
   const choice=(opts,onPick)=>shuffle(opts.map((o,i)=>i)).forEach(i=>{const b=el('button','opt',opts[i]);b.dataset.i=i;b.onclick=()=>onPick(i,b);body.append(b);});
   switch(ex.type){
@@ -830,7 +833,8 @@ function showPretest(f,suite){
   const box=el('div','ex'),q=f.qcm;
   const head=el('div','ex-head',`Pré-test · notion ${nouvelles.indexOf(f)+1} sur ${nouvelles.length}`);
   if(f.status!=='verified')head.append(el('span','ex-warn','⚠ fiche à vérifier'));
-  box.append(head,el('div','ex-prompt',q.q),el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
+  const question=el('div','ex-prompt',q.q);question.setAttribute('role','heading');question.setAttribute('aria-level','2');question.tabIndex=-1;
+  box.append(head,question,el('p','ex-mine','Pas de note : essayer avant de lire prépare la mémoire, même si tu te trompes.'));
   const body=el('div','ex-body'),btns=[],actions=el('div','ex-actions');
   // Correction sans note : l'essai prépare la lecture, mais une erreur non corrigée s'installerait.
   const corriger=pick=>{
@@ -839,8 +843,8 @@ function showPretest(f,suite){
     const lire=el('button','btn primary','Lire la fiche');lire.onclick=suite;actions.replaceChildren(lire);
   };
   shuffle(q.opts.map((_,i)=>i)).forEach(i=>{const b=el('button','opt',q.opts[i]);btns[i]=b;b.onclick=()=>corriger(i);body.append(b);});
-  const nsp=el('button','btn','Je ne sais pas encore'),pass=el('button','btn','Passer');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
-  box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);window.scrollTo(0,0);
+  const nsp=el('button','btn','Voir la réponse'),pass=el('button','btn','Lire la fiche');nsp.onclick=()=>corriger(-1);pass.onclick=suite;actions.append(nsp,pass);
+  box.append(body,actions);grid.className='session';grid.innerHTML='';grid.append(box);question.focus({preventScroll:true});window.scrollTo(0,0);
 }
 function correctText(ex){
   const p=ex.payload;
@@ -955,10 +959,13 @@ function finish(ex,ok,fb,actions,body,crit){
   const expl=ex.explanation||(!synthVue.has(ex.fiche.id)&&ex.fiche.synth);
   if(!ex.explanation)synthVue.add(ex.fiche.id);
   if(crit){const n=crit.reduce((a,x)=>a+x,0);fb.prepend(el('strong',null,`${n} critère${n>1?'s':''} sur 3.`));}
-  if(expl)fb.append(el('p','fb-expl',expl));
-  fb.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
+  // Boutons (notation, Suivant) juste après le verdict et l'explication ; synthèse, source et approfondissement ensuite
+  // (avant : sous toute la synthèse, il fallait défiler pour noter chaque flashcard).
+  const plus=el('div','fb fb-plus');actions.after(plus);
+  if(expl)(ex.explanation?fb:plus).append(el('p','fb-expl',expl));
+  plus.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
-  fb.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
+  plus.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
   const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
@@ -976,7 +983,7 @@ function finish(ex,ok,fb,actions,body,crit){
   if(ok===null)add('hard','Difficile','revoir demain');else add('hard','Au hasard','revoir demain'); // réussite par chance : pas une maîtrise
   add('ok','Correct','à intervalle');add('easy','Facile','espacer');
   actions.append(el('div','srs-lbl','Comment l\'as-tu retenue ?'),btns);
-  fb.tabIndex=-1;fb.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction
+  const cible=fb.childNodes.length?fb:body.querySelector('.ex-answer')||fb;cible.tabIndex=-1;cible.focus({preventScroll:true}); // le bouton « Voir la réponse » a disparu : le focus va à la correction ou à la réponse
 }
 // Safari efface le stockage d'un site non visité depuis 7 jours : on rappelle la sauvegarde après 3 jours sans export, dans tous les onglets sauf pendant une séance.
 const SAVED_KEY='mv_saved_at',RAPPEL=3; // jours sans sauvegarde avant le bandeau
@@ -984,9 +991,12 @@ function majBandeau(){
   let t=0;try{t=+localStorage.getItem(SAVED_KEY)||0;}catch{}
   const depuis=t||(journal[0]&&journal[0].t)||now(); // jamais sauvegardé : on compte depuis la première réponse
   document.getElementById('saveBanner').hidden=!(mode!=='due'&&Object.keys(prog).length&&now()-depuis>RAPPEL*DAY);
+  const j=t&&Math.floor((new Date().setHours(0,0,0,0)-new Date(t).setHours(0,0,0,0))/DAY); // jours de calendrier
+  document.getElementById('savedInfo').textContent=!t?'Jamais sauvegardée dans ce navigateur':`Dernière sauvegarde : ${j===0?'aujourd’hui':j===1?'hier':`il y a ${j} jours`}`;
 }
 // Pendant la Séance du jour, le badge compte ce qu'il reste dans la séance en cours (comme le « 1/9 » de l'en-tête) ; sinon, ce que planifierait une nouvelle séance.
-function updateBadges(){document.getElementById('dueBadge').textContent=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;}
+function updateBadges(){const n=mode==='due'&&sessionTitle==='Séance du jour'&&pos<queue.length?queue.length-pos-1:buildQueue(EXOS).length;
+  document.getElementById('dueBadge').textContent=n;document.querySelector('.tab-main').setAttribute('aria-label',`Aujourd’hui, ${n} exercice${n>1?'s':''}`);} // lu « Aujourd’hui 48 » sans dire 48 quoi
 
 updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
@@ -1010,16 +1020,12 @@ async function exportProg(){
 }
 function dl(blob,nom){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=nom;a.click();URL.revokeObjectURL(a.href);}
 document.querySelector('.zoom-x').onclick=fermerZoom;
-const ptBtn=document.getElementById('pretestBtn');
-const majPt=()=>ptBtn.textContent='Pré-test avant les nouvelles fiches : '+(pretestOn()?'activé':'désactivé');
-ptBtn.onclick=()=>{try{localStorage.setItem(PTKEY,pretestOn()?'0':'1');}catch{}majPt();};majPt();
-const seBtn=document.getElementById('sessionSizeBtn');
-const majSe=()=>seBtn.textContent='Longueur d\'une séance : '+SESSION_MAX+' exercices';
-seBtn.onclick=()=>{SESSION_MAX=TAILLES[(TAILLES.indexOf(SESSION_MAX)+1)%TAILLES.length];try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majSe();majEch();updateBadges();};majSe();
-const THEMES={'':'selon l\'appareil',light:'clair',dark:'sombre'},thBtn=document.getElementById('themeBtn');
-const majTh=()=>thBtn.textContent='Affichage : '+THEMES[document.documentElement.dataset.theme||''];
-thBtn.onclick=()=>{const k=Object.keys(THEMES),t=k[(k.indexOf(document.documentElement.dataset.theme||'')+1)%k.length];
-  if(t)document.documentElement.dataset.theme=t;else delete document.documentElement.dataset.theme;try{t?localStorage.setItem('mv_theme',t):localStorage.removeItem('mv_theme');}catch{}majTh();};majTh();
+// Réglages : longueur de séance et thème en boutons groupés (aria-pressed), pré-test en interrupteur.
+const segment=(id,val,choisir)=>{const g=document.getElementById(id),maj=()=>g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v===String(val())));
+  g.onclick=e=>{const x=e.target.closest('button');if(x){choisir(x.dataset.v);maj();}};maj();};
+segment('sessionSize',()=>SESSION_MAX,v=>{SESSION_MAX=+v;try{localStorage.setItem(SKEY,SESSION_MAX);}catch{}majEch();updateBadges();});
+segment('themeSeg',()=>document.documentElement.dataset.theme||'',t=>{if(t)document.documentElement.dataset.theme=t;else delete document.documentElement.dataset.theme;try{t?localStorage.setItem('mv_theme',t):localStorage.removeItem('mv_theme');}catch{}});
+const ptSw=document.getElementById('pretestSw');ptSw.checked=pretestOn();ptSw.onchange=()=>{try{localStorage.setItem(PTKEY,ptSw.checked?'1':'0');}catch{}};
 const echIn=document.getElementById('echeance'),echInfo=document.getElementById('echeanceInfo');
 function majEch(){echIn.value=echeance;const n=rythmeDuJour();echInfo.textContent=echeance?`${restantes()} fiches à découvrir : ${n} nouvelles par jour, séance jusqu'à ${SESSION_MAX+2*n} exercices.`:`Sans échéance : ${NEW_FICHES} nouvelles fiches par jour.`;}
 echIn.onchange=()=>{echeance=echIn.value;try{echeance?localStorage.setItem(ECHKEY,echeance):localStorage.removeItem(ECHKEY);}catch{}majEch();updateBadges();};majEch();
@@ -1064,6 +1070,17 @@ document.getElementById('partFile').onchange=async e=>{
   partenaires=l;try{localStorage.setItem(PAKEY,JSON.stringify(l));}catch{alert('Impossible d\'enregistrer les partenaires dans ce navigateur.');}
   majCave();fitCache.clear();render();
 };
+
+/* ============ TYPOGRAPHIE ============ */
+// Espace insécable avant ? ! : ; % » et après « : la ponctuation ne passe plus seule à la ligne (« (65 » puis « %) »).
+// Appliquée à l'affichage, à tout texte ajouté à la page ; les schémas, listes déroulantes et champs ne sont pas touchés.
+const INSEC=/(«) | (?=[?!:;%»])/g;
+function insecables(n){
+  if(n.nodeType===1){const w=document.createTreeWalker(n,NodeFilter.SHOW_TEXT);while(w.nextNode())insecables(w.currentNode);return;}
+  if(n.nodeType!==3||!n.nodeValue.includes(' ')||n.parentElement?.closest('svg,option,textarea,script,style'))return;
+  const v=n.nodeValue.replace(INSEC,(m,g)=>g?g+' ':' ');if(v!==n.nodeValue)n.nodeValue=v;
+}
+insecables(document.body);new MutationObserver(rs=>rs.forEach(r=>r.addedNodes.forEach(insecables))).observe(document.body,{childList:true,subtree:true});
 
 /* ============ MOTS DU LEXIQUE DANS LES TEXTES ============ */
 // Souligne la première occurrence de chaque terme du lexique dans les textes de lecture ; un toucher ouvre sa définition.

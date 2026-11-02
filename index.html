@@ -26,15 +26,25 @@
     <button class="tab" role="tab" aria-selected="false" data-mode="atelier">Masterclass</button>
   </div>
 </header>
-<section class="reglages" id="reglages" hidden><div class="wrap">
-  <h2 class="reg-t">Réglages et sauvegarde</h2>
-  <div class="foot-save"><button class="reset-all" id="exportProg">Sauvegarder ma progression et mes programmes</button>
-  <button class="reset-all" id="suiviLink">Mon suivi</button>
-  <button class="reset-all" id="importBtn">Restaurer une sauvegarde</button><input type="file" id="importProg" accept="application/json,.json" hidden></div>
-  <div class="foot-save"><button class="reset-all" id="pretestBtn"></button><button class="reset-all" id="sessionSizeBtn"></button><button class="reset-all" id="themeBtn"></button></div>
-  <div class="foot-save"><label class="ech">Échéance de révision <input type="date" id="echeance"></label> <span id="echeanceInfo"></span></div>
-  <div class="foot-save"><button class="reset-all" id="partBtn">Importer mes partenaires (fichier privé)</button><input type="file" id="partFile" accept="application/json,.json" hidden></div>
-  <div class="foot-reset"><button class="reset-all danger" id="resetAll">Réinitialiser toute ma progression</button></div>
+<section class="reglages" id="reglages" aria-labelledby="regT" hidden><div class="wrap reg">
+  <h2 class="reg-t" id="regT">Réglages et sauvegarde</h2>
+  <div class="reg-g"><h3 class="reg-gt">Sauvegarde</h3>
+    <div class="reg-l"><span>Ma progression et mes programmes<small id="savedInfo"></small></span><button class="btn primary" id="exportProg">Sauvegarder</button></div>
+    <div class="reg-l"><span>Restaurer une sauvegarde<small>La réponse la plus récente est gardée</small></span><button class="btn" id="importBtn">Choisir…</button><input type="file" id="importProg" accept="application/json,.json" hidden></div>
+  </div>
+  <div class="reg-g"><h3 class="reg-gt">Révision</h3>
+    <div class="reg-l"><label for="echeance">Échéance<small id="echeanceInfo"></small></label><input type="date" id="echeance" class="ex-input reg-date"></div>
+    <div class="reg-l"><span id="lgL">Longueur d’une séance</span><div class="seg" id="sessionSize" role="group" aria-labelledby="lgL"><button type="button" data-v="10">10</button><button type="button" data-v="20">20</button><button type="button" data-v="40">40</button></div></div>
+    <div class="reg-l"><label for="pretestSw">Pré-test avant les nouvelles fiches</label><input type="checkbox" role="switch" id="pretestSw" class="sw"></div>
+  </div>
+  <div class="reg-g"><h3 class="reg-gt">Affichage</h3>
+    <div class="reg-l"><span id="thL">Thème</span><div class="seg" id="themeSeg" role="group" aria-labelledby="thL"><button type="button" data-v="">Auto</button><button type="button" data-v="light">Clair</button><button type="button" data-v="dark">Sombre</button></div></div>
+  </div>
+  <div class="reg-g"><h3 class="reg-gt">Mes données</h3>
+    <div class="reg-l"><span>Mon suivi<small>Réussite, rappel, examens blancs</small></span><button class="btn" id="suiviLink">Ouvrir</button></div>
+    <div class="reg-l"><span>Mes partenaires<small>Fichier privé, gardé dans ce navigateur</small></span><button class="btn" id="partBtn">Importer…</button><input type="file" id="partFile" accept="application/json,.json" hidden></div>
+  </div>
+  <div class="reg-danger"><button class="btn danger" id="resetAll">Réinitialiser toute ma progression</button></div>
 </div></section>
 
 <div class="filters" id="filterBar" style="display:none">
