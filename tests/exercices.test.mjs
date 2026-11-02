@@ -118,6 +118,19 @@ test("ma cave : QCM « quelle notion », leurres d'un autre style de vin", () =>
   assert.ok(!bulles.payload.options.some(o => ["T636", "T464", "T404"].includes(o))); // pas d'autre technique de bulles en leurre
 });
 
+test("ma cave : questions du vin en flashcards, rattachées à la fiche d'appellation", () => {
+  vm.runInNewContext("this.cq=caveQuestions", ctx);
+  const F = [{ id: 1, titre: "Sol" }, { id: 2, titre: "Appellation" }];
+  const vins = [
+    { cuvee: "Oiseau Rare", dom: "Mas Amiel", liens: { 1: { k: "notion" }, 2: { k: "appel" } }, questions: [{ q: "Quel sol ?", r: "Le schiste." }, { q: "Quel cépage ?", r: "Le grenache." }] },
+    { cuvee: "Sans lien", dom: "D", liens: {}, questions: [{ q: "?", r: "!" }] },
+  ];
+  const ex = ctx.cq(vins, F);
+  assert.deepEqual(ex.map(e => e.id), ["cv-q-mas-amiel-oiseau-rare-0", "cv-q-mas-amiel-oiseau-rare-1"]); // sans fiche liée : pas d'exercice
+  assert.equal(ex[0].fiche.id, 2);
+  assert.equal(ex[1].payload.answer, "Le grenache.");
+});
+
 test("flashcard écrite : correction par mots-clés", () => {
   vm.runInNewContext("this.fk=flashKeys", ctx);
   const a = "Le baco blanc (baco 22 A), dans l’AOC Armagnac.";
