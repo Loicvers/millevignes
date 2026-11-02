@@ -1211,5 +1211,21 @@ const LEXIQUE = [
   ],
   "status": "verified",
   "note": "Description aromatique : Lepeltier parle de musc, rose et confiture ; Peynaud de confiture de framboise ; l’Oxford de fourrure animale et fraise des bois. Les trois se complètent."
+ },
+ {
+  "terme": "racine adventive",
+  "def": "Racine qui naît là où la plante n’en forme pas d’ordinaire : sur une tige, un sarment ou une branche, et non sur une racine existante. C’est le cas de toutes les vignes plantées par bouture ou marcotte : la bouture n’a pas de racine primaire (radicule), ses racines partent de la base du sarment, surtout au niveau des nœuds. Seule une vigne née d’un pépin démarre sur une racine primaire.",
+  "etym": "de adventif (XIIe s., « étranger »), réfection de l’ancien français aventiz, emprunté au latin adventicius, « qui vient du dehors » ; même famille qu’adventice. Anglais : adventitious root.",
+  "declic": "Adventive = venue d’ailleurs : la racine pousse sur le sarment, pas sur une racine.",
+  "src": [
+   "Académie française, 9e éd. (adventif)",
+   "OQLF, Grand dictionnaire terminologique (racine adventive)",
+   "G. Foëx, Cours complet de viticulture (bouturage : racines adventives, nœuds et empattement)",
+   "Oxford Companion to Wine, 5e éd. (2023), entrées « cuttings » et « propagation »",
+   "Mille Vignes, P. Lepeltier, p. 41 (pépin et bouture)",
+   "fiches 9 et 56"
+  ],
+  "status": "verified",
+  "note": "Lepeltier dit que le semis donne une racine pivotante et la bouture des racines plus traçantes ; le terme « adventive » n’apparaît pas dans le livre."
  }
 ];
