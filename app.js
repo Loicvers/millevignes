@@ -44,10 +44,15 @@ const DAY=86400000;
 
 /* ============ RÉPÉTITION ESPACÉE (type SM-2 simplifié) ============ */
 function rate(id,quality){ // quality: 'hard'|'ok'|'easy'
-  prog[id]=noterFiche(id,prog,quality,now());save();updateBadges(); // calendrier par fiche (exercices.js)
+  prog[id]=noterFiche(id,prog,quality,now());save(); // calendrier par fiche (exercices.js) ; le badge est recalculé au passage à l'exercice suivant, pas à chaque note
 }
 // Fiche à revoir : l'échéance de son dernier exercice répondu (un calendrier par fiche, voir planSession).
-const ficheDue=f=>{let d=null;for(const e of exosDe(f))if(/^mv-/.test(e.id)&&prog[e.id]&&(!d||quand(prog[e.id])>quand(d)))d=prog[e.id];return !!d&&d.due<=now();};
+const etatFiche=f=>{let d=null;for(const e of exosDe(f))if(/^mv-/.test(e.id)&&prog[e.id]&&(!d||quand(prog[e.id])>quand(d)))d=prog[e.id];return d;};
+const ficheDue=f=>{const d=etatFiche(f);return !!d&&d.due<=now();};
+const vue=f=>etat(f)[0]!=='new';
+// Fiche maîtrisée (barre de l'Atlas et sceau) : rien à revoir, et tous ses exercices répondus, ou deux au moins avec un rendez-vous à 7 jours ou plus
+// (avant : tous répondus ; à un exercice par révision, près de trois semaines par fiche, sceau hors de portée avant l'échéance).
+const maitrisee=f=>{const mine=exosDe(f),vus=mine.filter(e=>prog[e.id]).length,d=etatFiche(f);return !!d&&d.due>now()&&(vus===mine.length||(vus>=2&&d.interval>=7));};
 const isNew=e=>!prog[e.id];
 // Révisions dues mélangées, puis les nouveautés dans l'ordre du livre, groupées par fiche, flashcard en tête.
 const ficheNeuve=f=>exosDe(f).every(isNew);
@@ -194,7 +199,7 @@ function renderJour(){
   // S'évaluer : examen blanc et points durs
   const der=examens[examens.length-1],durs=pointsDurs(EXOS,prog,journal),ev=carte('S’évaluer');
   ev.append(el('p','jour-note',der?`Dernier examen blanc : ${Math.round(100*der.ok/der.n)} % (${new Date(der.t).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})}).`:'Pas encore d’examen blanc : 40 questions mélangées, sans aide, une minute chacune.'),
-    bouton('Examen blanc',()=>startExamen(EXOS)),' ',durs.length?bouton(`Mes points durs (${durs.length})`,()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))])):'',' ',bouton('Sprint 3 min',()=>startSprint()),
+    bouton('Examen blanc',()=>startExamen(EXOS)),' ',durs.length?bouton(`Mes points durs (${durs.length})`,()=>startSession(durs.slice(0,SESSION_MAX),'Mes points durs',[...new Set(durs.map(e=>e.fiche.id))])):'',' ',sprintPool(EXOS).length>=10?bouton('Sprint 3 min',()=>startSprint()):'',
     el('p','jour-note',jeux.sprint?`Sprint : questions rapides sur tes fiches vues, hors révision. Record : ${jeux.sprint.ok} bonnes réponses.`:'Sprint : trois minutes de questions rapides sur tes fiches vues, hors révision.'));
   // Suivi en bref
   const r=suivi(journal,id=>EX_BY_ID[id]&&EX_BY_ID[id].type,prog,now()),pc=c=>c[1]>=5?Math.round(100*c[0]/c[1])+' %':'—';
@@ -237,13 +242,13 @@ const LIEUX=lieux(FICHES,typeof FRANCE_SOMMAIRE!=='undefined'?FRANCE_SOMMAIRE:[]
 let lieu=(()=>{try{return localStorage.getItem('mv_lieu')||'';}catch{return '';}})();
 const allerLieu=nom=>{lieu=nom;try{nom?localStorage.setItem('mv_lieu',nom):localStorage.removeItem('mv_lieu');}catch{}render();window.scrollTo(0,0);};
 const barre=(v,n,m=0)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'),el('i','m'));b.firstChild.style.width=(n?100*v/n:0)+'%';b.lastChild.style.width=(n?100*m/n:0)+'%';return b;}; // vues en clair, maîtrisées (travaillées, rien à revoir) par-dessus
-const maitrise=fs=>fs.filter(f=>etat(f)[0]==='done').length,etatLieu=(n,v,m)=>`${plur(n,'fiche')} · ${plur(v,'vue')}${m?` · ${m} maîtrisée${m>1?'s':''}`:''}`;
+const maitrise=fs=>fs.filter(maitrisee).length,etatLieu=(n,v,m)=>`${plur(n,'fiche')} · ${plur(v,'vue')}${m?` · ${m} maîtrisée${m>1?'s':''}`:''}`;
 const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`;
 const carteDe=(f,l)=>l.france?f.geo?.pays==='France'&&(l.nom==='France'?!f.geo.region:f.geo.region===l.nom):f.geo?.pays===l.nom;
 const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
 const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
 // Tuile d’un lieu (accueil et recherche de l’atlas) ; « sans carte » sur les rares lieux qui n’en ont pas
-function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,m=maitrise(x.fiches),b=el('button','lieu'),h=el('span','lieu-h');
+function tuile(x){const v=x.fiches.filter(vue).length,m=maitrise(x.fiches),b=el('button','lieu'),h=el('span','lieu-h');
   h.append(el('span','lieu-n',x.nom));if(!CARTES.some(f=>carteDe(f,x)))h.append(el('span','lieu-c','sans carte'));
   if(m===x.fiches.length){b.classList.add('maitrise');b.insertAdjacentHTML('beforeend',sceau(x.nom,m));} // toutes les fiches travaillées, rien à revoir : le sceau, daté du jour où on l'a vu
   b.append(h,el('span','chap-m',m===x.fiches.length?`${plur(x.fiches.length,'fiche')} · toutes maîtrisées`:etatLieu(x.fiches.length,v,m)),barre(v,x.fiches.length,m));b.onclick=()=>allerLieu(x.nom);return b;}
@@ -265,7 +270,7 @@ function tampon(n){const id='tp'+(++uidSvg),d=new Date().toLocaleDateString('fr-
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   grid.className='grid toc';grid.innerHTML='';
-  const vue=f=>etat(f)[0]!=='new',v=l.fiches.filter(vue).length,tete=el('div','lieu-tete');
+  const v=l.fiches.filter(vue).length,tete=el('div','lieu-tete');
   const ret=el('button','lien','← Atlas');ret.onclick=()=>allerLieu('');
   // fiches en trois groupes : vignoble (France ou monde), cépages, puis livre
   const rang=c=>/France viticole|monde viticole/.test(c.partie)?0:c.partie==='Les cépages'?1:2;
@@ -281,7 +286,7 @@ function renderLieu(l){
   const rev=el('div','lieu-rev'),act=el('div','chap-act'),bt=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=fn;act.append(b);};
   bt('S’entraîner',()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),l.nom),'btn primary');
   bt('Examen blanc',()=>startExamen(pool));bt('Tout lire',()=>lireChapitre(l.nom,ordre));
-  if(cartesJeu(l).length)bt('Cartes à toucher',()=>jouerCartes(l));bt('Sprint 3 min',()=>startSprint(pool));
+  if(cartesJeu(l).length)bt('Cartes à toucher',()=>jouerCartes(l));if(sprintPool(pool).length>=10)bt('Sprint 3 min',()=>startSprint(pool));
   const m=maitrise(l.fiches);rev.append(el('p','jour-note',etatLieu(l.fiches.length,v,m)),barre(v,l.fiches.length,m),act);
   tete.append(el('p','lieu-k','Réviser'),rev,el('p','lieu-k','Les fiches'));
   grid.append(tete);
@@ -305,7 +310,7 @@ function renderCartes(){
       if(gen){const b=el('button','lieu lieu-gen');b.append(el('span','lieu-n',nomLieu(gen)),el('span','chap-m',String(gen.fiches.length)));b.onclick=()=>allerLieu(gen.nom);list.append(b);}
       list.append(el('h2','lieux-t','Monde'),tuiles(mo.filter(x=>x.fiches.length>=4)));
       const tous=[...fr.filter(x=>x!==gen),...mo.filter(x=>x.fiches.length>=4)],sc=tous.filter(x=>maitrise(x.fiches)===x.fiches.length).length;
-      list.append(el('p','jour-note',(sc>1?`${sc} régions sur ${tous.length} portent leur sceau`:sc?`1 région sur ${tous.length} porte son sceau`:`Aucune région sur ${tous.length} ne porte encore son sceau`)+' : toutes les fiches travaillées, rien à revoir.'));
+      list.append(el('p','jour-note',(sc>1?`${sc} régions sur ${tous.length} portent leur sceau`:sc?`1 région sur ${tous.length} porte son sceau`:`Aucune région sur ${tous.length} ne porte encore son sceau`)+' : toutes les fiches sans rien à revoir, mémorisées à une semaine au moins.'));
       const pt=mo.filter(x=>x.fiches.length<4);
       if(pt.length){list.append(el('p','lieu-k','Autres pays'));const w=el('div','parties');pt.forEach(x=>{const b=el('button','partie',x.nom);b.append(el('small',null,' '+x.fiches.length));b.onclick=()=>allerLieu(x.nom);w.append(b);});list.append(w);}
       return;}
@@ -412,7 +417,6 @@ function navParties(){
 }
 function renderToc(list,filtre,{chaps:ordre=null,ouvrir=filtre,groupe=null}={}){ // groupe : chapitre → nom de bloc (page de région), comptes limités à list
   grid.className='grid toc';
-  const vue=f=>etat(f)[0]!=='new';
   // Une partie à la fois (livre, France, cépages, monde) ; une recherche ou un filtre montre tout.
   if(!partiesDuMode().includes(partie))partie='Le livre';
   const chaps=ordre||(filtre?CHAPS:CHAPS.filter(c=>partieDe(c)===partie));
@@ -785,7 +789,7 @@ function showBilanExamen(){
   examens.push({t:now(),n,ok,th});saveExamens();
   const faux=ex.res.filter(r=>!r.ok).map(r=>r.ex);
   // 2. erreurs remises en révision (demain) ; pas sur une fiche jamais lue, qui garde sa découverte avant ses exercices
-  const arevoir=faux.filter(e=>!aDecouvrir(e.fiche));arevoir.forEach(e=>rate(e.id,'hard'));
+  const arevoir=faux.filter(e=>!aDecouvrir(e.fiche));arevoir.forEach(e=>rate(e.id,'hard'));updateBadges();
   if(arevoir.length)box.append(el('p',null,`${arevoir.length} erreur(s) sur des fiches déjà travaillées : à revoir dès demain dans la Séance du jour.`));
   blocErreurs(faux,box);
   const r=el('button','btn','Retour');r.onclick=()=>setMode(retour);box.append(r);
@@ -799,14 +803,15 @@ function blocErreurs(faux,box){ // erreurs d'un examen ou d'un sprint, avec la b
 /* ============ JEUX (hors calendrier de révision ; records dans jeux) ============ */
 // Sprint : trois minutes de questions à un seul toucher sur des fiches déjà vues, sans correction avant la fin (moteur de l'examen blanc).
 const SPRINT_MS=180e3,SPRINT_TYPES=['mcq_single','true_false','odd_one_out','label_schema'];
+const sprintPool=pool=>pool.filter(e=>SPRINT_TYPES.includes(e.type)&&/^mv-/.test(e.id)&&vue(e.fiche)); // exercices des fiches vues (ni lexique ni cave) ; le bouton n'apparaît qu'à 10 questions
 function startSprint(pool=EXOS){
-  const q=shuffle(pool.filter(e=>SPRINT_TYPES.includes(e.type)&&/^mv-/.test(e.id)&&etat(e.fiche)[0]!=='new')).slice(0,150); // exercices des fiches (ni lexique ni cave)
-  if(q.length<10){alert('Travaille d’abord quelques fiches : le sprint ne pose que des questions sur des fiches déjà vues.');return;}
+  const q=shuffle(sprintPool(pool)).slice(0,150);
+  if(q.length<10)return;
   startSession(q,'Sprint',FICHES.map(f=>f.id),{fin:now()+SPRINT_MS,res:[],sprint:true});
 }
 function showBilanSprint(ex,box){
-  const ok=ex.res.filter(r=>r.ok).length,n=ex.res.length,rec=jeux.sprint,mieux=!rec||ok>rec.ok;
-  box.append(el('h3',null,`Sprint : ${ok} bonne${ok>1?'s':''} réponse${ok>1?'s':''} sur ${n} en 3 minutes`),el('p',null,!rec?'Premier sprint : c’est ton record.':mieux?`Nouveau record (avant : ${rec.ok} sur ${rec.n}).`:`Record : ${rec.ok} sur ${rec.n}.`));
+  const ok=ex.res.filter(r=>r.ok).length,n=ex.res.length,rec=jeux.sprint,mieux=n>0&&(!rec||ok>rec.ok); // sans réponse (temps écoulé, téléphone posé) : rien d'enregistré
+  box.append(el('h3',null,`Sprint : ${ok} bonne${ok>1?'s':''} réponse${ok>1?'s':''} sur ${n} en 3 minutes`),el('p',null,!n?'Aucune réponse : rien d’enregistré.':!rec?'Premier sprint : c’est ton record.':mieux?`Nouveau record (avant : ${rec.ok} sur ${rec.n}).`:`Record : ${rec.ok} sur ${rec.n}.`));
   if(mieux){jeux.sprint={ok,n,t:now()};saveJeux();}
   blocErreurs(ex.res.filter(r=>!r.ok).map(r=>r.ex),box);
   const a=el('button','btn','Refaire un sprint');a.onclick=()=>startSprint();const r=el('button','btn','Retour');r.onclick=()=>setMode(retour);box.append(a,' ',r);
@@ -827,8 +832,8 @@ const question=(box,t)=>{const q=el('div','ex-prompt',t);q.setAttribute('role','
 const zonesDe=f=>[...f.schema.svg.matchAll(/data-z="([^"]*)"/g)].map(m=>m[1].replace(/&quot;/g,'"'));
 function cartesJeu(l){const vues=new Set();return FICHES.filter(f=>f.schema&&f.geo&&carteDe(f,l)&&zonesDe(f).length>=3).filter(f=>{const k=zonesDe(f).join('|');return !vues.has(k)&&vues.add(k);});} // cartes de situation comprises (hors CARTES, qui ne garde que les cartes nommées)
 // Noms des zones cachés (le toucher doit se faire de mémoire) ; le nom de la bonne zone réapparaît à la correction.
-function cacherZones(svg,zones){const esc=t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  zones.forEach(z=>{svg=svg.replace(new RegExp(`<text([^>]*)>${esc(z)}</text>`,'g'),`<text$1 data-nom="${escH(z)}" visibility="hidden">${z}</text>`);}); // noms écrits tels quels par carte.mjs
+function cacherZones(svg,zones){
+  zones.forEach(z=>{svg=svg.replace(new RegExp(`<text([^>]*)>${escRe(z)}</text>`,'g'),`<text$1 data-nom="${escH(z)}" visibility="hidden">${z}</text>`);}); // noms écrits tels quels par carte.mjs
   return svg;}
 function jouerCartes(l){
   const cartes=cartesJeu(l);if(!cartes.length)return;
@@ -1103,7 +1108,7 @@ function finish(ex,ok,fb,actions,body,crit){
   plus.append(el('p','fb-src',`Fiche : ${ex.fiche.titre}${ex.fiche.page?' — p. '+ex.fiche.page:''}`));
   const chk=ex.fiche.status!=='verified'&&ex.fiche.to_check||[];
   plus.insertAdjacentHTML('beforeend',(chk.length?`<details class="to-check"><summary>Points à vérifier (${chk.length})</summary><ul>${chk.map(t=>`<li>${t}</li>`).join('')}</ul></details>`:'')+selonHTML(ex.fiche)+schemaCorrection(ex.fiche)+coursHTML(ex.fiche.cours));
-  const next=()=>{pos++;showExercise();window.scrollTo(0,0);};
+  const next=()=>{pos++;updateBadges();showExercise();window.scrollTo(0,0);};
   const btns=el('div','srs-btns');
   const entry=logAnswer(ex,ok);
   if(crit){ // auto-évaluation : le nombre de critères cochés donne la note (0-1 Difficile, 2 Correct, 3 Facile)
@@ -1139,7 +1144,7 @@ updateBadges();render();importFromHash();
 if('serviceWorker' in navigator&&location.protocol.startsWith('http')){
   // Nouvelle version du site installée : recharger tout de suite (sauf pendant une séance d'exercices) au lieu d'attendre l'ouverture suivante.
   const avant=navigator.serviceWorker.controller;let fait=false;
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(avant&&!fait&&mode!=='due'){fait=true;location.reload();}});
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(avant&&!fait&&mode!=='due'&&mode!=='jeu'&&document.getElementById('proj').hidden){fait=true;location.reload();}}); // ni pendant un jeu ni pendant une projection
   navigator.serviceWorker.register('sw.js').then(r=>r.update()).catch(()=>{});
 }
 /* ============ SAUVEGARDE / RESTAURATION DE LA PROGRESSION ============ */
@@ -1188,7 +1193,7 @@ document.getElementById('importProg').onchange=async e=>{
   if(data.lues&&typeof data.lues==='object'){for(const k in data.lues)lues[k]=Math.max(lues[k]||0,+data.lues[k]||0);saveLues();}
   if(Array.isArray(data.seances)){seances=fusionnerListe(seances,data.seances,s=>s.t,200);saveSeances();}
   if(Array.isArray(data.examens)){examens=fusionnerListe(examens,data.examens.filter(x=>x&&typeof x.t==='number'&&x.n>0&&typeof x.ok==='number'),x=>x.t,100);saveExamens();}
-  if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal,j=>j.e+'|'+j.t,5000);put(JKEY,journal);}
+  if(Array.isArray(data.journal)){journal=fusionnerListe(journal,data.journal.filter(j=>j&&typeof j.e==='string'&&typeof j.t==='number'),j=>j.e+'|'+j.t,5000);put(JKEY,journal);} // entrée abîmée écartée, comme pour les examens
   const jx=data.jeux;if(jx&&typeof jx==='object'){ // records : le meilleur des deux
     const best=(a,b,k,n)=>!b||typeof b[k]!=='number'||typeof b[n]!=='number'||!b[n]?a:!a||b[k]/b[n]>a[k]/a[n]?b:a;
     jeux.sprint=best(jeux.sprint,jx.sprint,'ok','n');jeux.vins=best(jeux.vins,jx.vins,'pts','max');

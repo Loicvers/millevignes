@@ -30,7 +30,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (lex !== lexAvant) writeFileSync("data/lexique-fiches.js", lex); // avant l'empreinte : le fichier est dans le cache
   const noms = readdirSync("fiches").filter(f => f.endsWith(".js")).sort().map(f => `fiches/${f}`);
   const html = readFileSync("index.html", "utf8");
-  const html2 = html.replace(/(?:<script src="fiches\/[^"]+"><\/script>\n)+/, noms.map(f => `<script src="${f}"></script>`).join("\n") + "\n");
+  const html2 = html.replace(/(?:<script defer src="fiches\/[^"]+"><\/script>\n)+/, noms.map(f => `<script defer src="${f}"></script>`).join("\n") + "\n");
   if (html2 !== html) writeFileSync("index.html", html2);
   const sw = readFileSync("sw.js", "utf8");
   // \s* : remplace toutes les lignes de fiches d'un coup (des doublons font échouer cache.addAll, donc le hors ligne).

@@ -21,7 +21,7 @@ test("le site produit les mêmes exercices que data/base.json", () => {
 
 test("index.html charge chaque fichier de fiches/, dans l'ordre", () => {
   const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
-  const tags = [...html.matchAll(/<script src="(fiches\/[^"]+)"><\/script>/g)].map(m => m[1]);
+  const tags = [...html.matchAll(/<script defer src="(fiches\/[^"]+)"><\/script>/g)].map(m => m[1]);
   const files = fichesFiles(new URL("../fiches.js", import.meta.url).pathname).slice(1).map(f => "fiches/" + f.split("/").pop());
   assert.deepEqual(tags, files);
 });
@@ -226,7 +226,7 @@ test("le service worker met en cache tous les fichiers locaux de index.html", ()
   const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
   const sw = readFileSync(new URL("../sw.js", import.meta.url), "utf8");
   const listed = [...sw.matchAll(/"([^"]+\.(?:js|json|css|woff2|png|webmanifest|html))"/g)].map(m => m[1]);
-  const needed = [...html.matchAll(/<script src="([^"]+)"/g)].map(m => m[1]);
+  const needed = [...html.matchAll(/<script defer src="([^"]+)"/g)].map(m => m[1]);
   const css = readFileSync(new URL("../style.css", import.meta.url), "utf8");
   needed.push(...[...css.matchAll(/url\(['"]?(fonts\/[^'")]+)/g)].map(m => m[1]), "style.css", "manifest.webmanifest", "data/mille-vignes-sommaire.json");
   for (const f of needed) assert.ok(listed.includes(f), `${f} absent de sw.js`);

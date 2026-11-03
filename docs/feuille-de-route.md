@@ -88,6 +88,18 @@ Quatre onglets autour des deux usages (réviser chaque jour, travailler devant u
 - [x] Atlas : marqueur « ◉ carte disponible » retiré (toutes les tuiles ont une carte ; les pays sans carte sont dans « Autres pays »).
 - Mode sombre : gardé (Loïc, 02/11).
 
+## Audit du code du 03/11 (branche audit-03-11)
+- [x] Rechargement automatique d'une nouvelle version bloqué pendant un jeu et pendant une projection (avant : seulement pendant une séance).
+- [x] Sprint sans aucune réponse : plus de record « 0 sur 0 ».
+- [x] Fiche maîtrisée (barre de l'Atlas, sceau) : rien à revoir et tous les exercices répondus, ou deux au moins avec un rendez-vous à 7 jours ou plus (avant : tous répondus, soit trois semaines par fiche, sceau hors de portée avant le 31/12). `maitrisee()` dans app.js.
+- [x] Restauration : entrées de journal abîmées écartées (une entrée vide faisait planter la fusion à mi-chemin).
+- [x] Test Playwright des trois jeux (sprint, cartes à toucher, Devine le vin : records, vins sans fiche, jumeaux).
+- [x] Bouton « Sprint 3 min » seulement à 10 questions possibles (Aujourd'hui et pages de région).
+- [x] Badge Aujourd'hui recalculé au passage à l'exercice suivant et à la fin du bilan d'examen, plus à chaque note.
+- [x] `defer` sur les 61 balises `<script>` : l'en-tête s'affiche avant le chargement des fiches (`sync-site.mjs` et tests alignés).
+- [x] Doublons : `vue()` et `escRe()` partagés.
+- Piste non faite : liste des erreurs en fin de séance ordinaire (le bloc existe pour l'examen et le sprint).
+
 ## Audit du code du 02/11 (branche audit-corrections)
 - [x] Échéance passée : rythme de base (avant : toutes les fiches restantes chaque jour, séance de 1 855 exercices).
 - [x] Lenteurs : exercices rangés par fiche une fois (`exosDe`), fiches du lexique calculées par `sync-site.mjs` (`data/lexique-fiches.js`), étiquettes des schémas mémorisées. Mesuré sur processeur ralenti ×4 : ouverture 5,2 → 2,6 s, Bibliothèque 2,3 → 0,13 s, Masterclass 1,9 → 0,15 s, Lexique 1,7 → 0,14 s ; affichage identique.
@@ -121,7 +133,7 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 ## Couche jeu (proposée et validée par Loïc le 03/11 ; branche couche-jeu)
 Le site est déjà une PWA avec répétition espacée, séance du jour, examen blanc et Atlas : pas d'appli native (compte Apple payant, Xcode ou Capacitor, validation à chaque mise à jour, aucun gain pédagogique). On ajoute une couche de jeu fine, inspirée de Duolingo, Anki, Quizlet, Lichess et Seterra, sans cœurs, gemmes, ligues ni mascotte : le jeu doit faire revenir, pas faire cliquer plus vite.
 - [x] 1. **Série de jours** sur Aujourd'hui (`serie()` dans exercices.js, testée) : jours d'affilée avec une séance terminée ou un examen blanc ; un jour manqué par semaine est pardonné (« gel », ce qui fait durer les séries d'après les données publiées par Trophy en 2026) ; une séance abandonnée ne compte pas.
-- [x] 2. **Maîtrise par région** dans l'Atlas : tuile et page de région affichent « N fiches · vues · maîtrisées » (maîtrisée = travaillée, rien à revoir), barre à deux tons (vues en clair, maîtrisées en plein), tuile « maîtrisé » quand toutes le sont.
+- [x] 2. **Maîtrise par région** dans l'Atlas : tuile et page de région affichent « N fiches · vues · maîtrisées » (maîtrisée = rien à revoir et, depuis le 03/11, tous les exercices répondus ou deux au moins avec un rendez-vous à 7 jours ou plus), barre à deux tons (vues en clair, maîtrisées en plein), tuile « maîtrisé » quand toutes le sont.
 - [x] 3. **Sprint de trois minutes** (03/11) : QCM, vrai/faux, intrus et schémas des fiches déjà vues, chrono, score courant en tête, record ; moteur de l'examen blanc, sans correction avant la fin ni note dans le calendrier. Sur Aujourd'hui et chaque page de région.
 - [x] 4. **Cartes à toucher** (03/11) : « Où est X ? », noms masqués, réponse en touchant la zone ; une carte par jeu de zones dans la région (cartes de situation comprises), record par région. Zones marquées `data-z` par `tools/cartes/zoner.mjs` (301 cartes, 57 jeux de zones ; carte.mjs ne l'écrivait pas) : à relancer après chaque nouvelle carte. Jeu à part, pas un type d'exercice de la révision.
 - [x] 5. **« Devine le vin »** (03/11) : depuis Ma cave, huit cuvées à retrouver parmi quatre, indices dévoilés un à un (couleur, région, cépages, sol, appellation, élevage, domaine), points = indices restants, record.
