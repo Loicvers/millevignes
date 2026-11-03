@@ -120,10 +120,16 @@ function caveQuestions(vins, fiches) {
     const ids = Object.keys(v.liens || {}), f = byId[ids.find(id => v.liens[id].k === "appel")] || byId[ids.find(id => byId[id])];
     if (!f) return [];
     const base = "cv-q-" + normalize(v.dom + " " + v.cuvee).replace(/ /g, "-");
-    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " », de " + v.dom + " : " + q.q, payload: { answer: q.r }, fiche: f }));
+    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " », de " + v.dom + " : " + q.q, payload: { answer: q.r, keys: q.keys || pointPrincipal(q.r) }, fiche: f }));
   });
 }
 
+// Questions de cave : la réponse commence par le point demandé, la suite justifie (« La rive droite, en coteaux… »).
+// Seuls les mots-clés de ce début (avant , ; : ( —) sont exigés ; undefined si aucun (correction sur toute la réponse).
+function pointPrincipal(r) {
+  const g = chiffres(String(r).split(/[,;:(—]/)[0]).split(" ").filter(w => w && !MOTS_VIDES.has(w) && (/^\d+$/.test(w) || w.length >= 4)).map(w => [w]);
+  return g.length ? g : undefined;
+}
 // Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
 // Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.
 // flash.keys (facultatif) : points attendus, chacun avec ses variantes acceptées, ex. [["Asie","asiatique"],["40"]] ;

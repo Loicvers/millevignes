@@ -134,6 +134,10 @@ test("ma cave : questions du vin en flashcards, rattachées à la fiche d'appell
   assert.deepEqual(ex.map(e => e.id), ["cv-q-mas-amiel-oiseau-rare-0", "cv-q-mas-amiel-oiseau-rare-1"]); // sans fiche liée : pas d'exercice
   assert.equal(ex[0].fiche.id, 2);
   assert.equal(ex[1].payload.answer, "Le grenache.");
+  vm.runInNewContext("this.fk=flashKeys", ctx);
+  const [q] = ctx.cq([{ cuvee: "C", dom: "D", liens: { 2: { k: "appel" } }, questions: [{ q: "Quelle rive ?", r: "La rive droite, en coteaux exposés sud-ouest." }] }], F);
+  assert.equal(ctx.fk(q.payload.answer, "Rive droite", q.payload.keys).ok, true); // la justification n'est pas exigée
+  assert.equal(ctx.fk(q.payload.answer, "Rive gauche", q.payload.keys).ok, false);
 });
 
 test("flashcard écrite : correction par mots-clés", () => {
