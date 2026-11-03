@@ -1027,7 +1027,8 @@ FICHES.push(
     exos: [
       { type: "cloze", prompt: "Complète.", payload: { text: "Une VIFA est limitée à {{5}} % de l’encépagement et {{10}} % de l’assemblage." }, explanation: "Ces plafonds limitent l’expérimentation à une petite part du vin, et le nom de la VIFA ne peut pas figurer sur l’étiquette : l’AOC teste sans changer son identité." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les six VIFA admises à Bordeaux en 2021 (arinarnoa, castets, marselan, touriga nacional, alvarinho, liliorila) ont été choisies pour leur adaptation au climat.", answer: true }, explanation: "Ce ne sont pas des cépages résistants aux maladies : le critère retenu est l’adaptation au climat." },
-      { type: "odd_one_out", prompt: "Lequel n’est pas une VIFA de Bordeaux (2021) ?", payload: { options: ["Marselan", "Touriga nacional", "Arinarnoa", "Floreal"], answer: 3 }, explanation: "Le floreal est une variété ResDur, pas l’une des six VIFA bordelaises de 2021." }
+      { type: "odd_one_out", prompt: "Lequel n’est pas une VIFA de Bordeaux (2021) ?", payload: { options: ["Marselan", "Touriga nacional", "Arinarnoa", "Floreal"], answer: 3 }, explanation: "Le floreal est une variété ResDur, pas l’une des six VIFA bordelaises de 2021." },
+      { type: "mcq_single", prompt: "Le voltis est VIFA en Champagne. Qu’est-ce que ce sigle dit de lui ?", payload: { options: ["Qu’il est né d’un croisement résistant aux maladies", "Qu’il a le droit d’entrer à l’essai dans l’AOC", "Que son génome a été modifié en laboratoire"], answer: 1 }, explanation: "VIFA est un statut accordé par l’INAO, pas une origine : la résistance du voltis vient de sa sélection, et un autre cépage peut être VIFA pour son adaptation au climat." }
     ],
     status: "verified",
     to_check: [],
@@ -1048,7 +1049,8 @@ FICHES.push(
     exos: [
       { type: "mcq_multi", prompt: "Lesquels de ces PiWi sont blancs ?", payload: { options: ["Regent", "Rondo", "Solaris", "Muscaris"], answers: [2, 3] }, explanation: "Regent et rondo sont les PiWi rouges les plus connus ; solaris et muscaris sont blancs. Comme les autres PiWi, ils sont surtout plantés en Allemagne, en Suisse, en Autriche et dans le nord et l’est de l’Europe." },
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon une revue de 2024 (IVES Technical Reviews), plus de 130 variétés résistantes sont inscrites dans au moins un catalogue européen.", answer: false }, explanation: "Chiffre de Lepeltier non confirmé : une revue de 2024 (IVES Technical Reviews) en compte 66 inscrites dans au moins un catalogue européen." },
-      { type: "short_answer", prompt: "Dans quelle langue est formé le mot PiWi ?", payload: { accepted: ["allemand", "l’allemand", "en allemand"] }, explanation: "PiWi abrège Pilzwiderstandsfähig, « résistant aux champignons » ; le mot évite « hybride », qui a mauvaise presse." }
+      { type: "short_answer", prompt: "Depuis quelle année le solaris, le muscaris et le souvignier gris sont-ils classés en France ?", payload: { accepted: ["2017", "en 2017", "depuis 2017"] }, explanation: "Ils sont classés par l’arrêté du 19 avril 2017, qui ouvre la France aux PiWi venus d’Allemagne et de Suisse." },
+      { type: "matching", prompt: "Le champ, le papier ou le labo : associe chaque notion à ce qu’elle désigne.", payload: { pairs: [["PiWi", "Une famille de cépages nés de croisements et résistants aux champignons"], ["VIFA", "Une autorisation d’essai d’un cépage dans une AOC"], ["CRISPR", "Une technique qui modifie un gène précis de la vigne"]] }, explanation: "Trois catégories différentes : une famille de cépages, un statut administratif, un outil de laboratoire. Un même cépage peut cumuler les deux premières, comme le voltis en Champagne." }
     ],
     status: "verified",
     to_check: [],
@@ -1070,7 +1072,8 @@ FICHES.push(
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "La vigne transgénique au nanocorps de camélidé est commercialisée en Europe.", answer: false }, explanation: "C’est un travail de recherche, sans visée commerciale." },
       { type: "matching", prompt: "Associe chaque technique à sa définition.", payload: { pairs: [["Sélection classique", "Croiser puis trier des pépins"], ["Transgenèse", "Ajouter un gène d’un autre organisme"], ["Édition du génome", "Modifier précisément un gène existant"]] }, explanation: "La transgenèse ajoute un gène étranger, l’édition (CRISPR) modifie un gène existant sans rien ajouter : c’est cette différence qui sépare le régime OGM des nouvelles techniques génomiques." },
-      { type: "cloze", prompt: "Complète.", payload: { text: "Le court-noué est causé par un {{virus}} transmis par des {{nématodes}}." }, explanation: "Le GFLV est transmis par le nématode Xiphinema index." }
+      { type: "cloze", prompt: "Complète.", payload: { text: "Le court-noué est causé par un {{virus}} transmis par des {{nématodes}}." }, explanation: "Le GFLV est transmis par le nématode Xiphinema index." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Les cépages PiWi comme le solaris sont obtenus par édition du génome (CRISPR).", answer: false }, explanation: "Les PiWi naissent de croisements puis de sélections, qui apportent les gènes de résistance de vignes américaines ou asiatiques ; CRISPR retouche un gène dans une vigne existante, sans croisement." }
     ],
     status: "verified",
     to_check: [],
