@@ -177,7 +177,9 @@ function renderJour(){
   const q=buildQueue(EXOS),ms=journal.slice(-300).map(j=>j.ms).filter(x=>x>0&&x<300000).sort((a,b)=>a-b),med=ms.length>=20?ms[ms.length>>1]:30000;
   const min=Math.max(1,Math.round(q.length*med/60000));
   carte('Séance du jour',el('p','jour-chiffre',q.length?`${q.length} exercice${q.length>1?'s':''} · environ ${min} min`:'Rien à revoir pour le moment'),
-    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Séance du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'));
+    q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Séance du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'),
+    el('p','jour-note',(s=>!s.n?'Chaque jour d’affilée avec une séance terminée compte dans ta série ; un jour manqué par semaine est pardonné.':
+      `Série : ${plur(s.n,'jour')} · ${s.fait?'séance d’aujourd’hui faite.':s.gel?'hier manqué et pardonné : termine une séance aujourd’hui pour la garder.':'termine une séance aujourd’hui pour la garder.'}`)(serie(seances,examens,now()))));
   // Échéance
   const vues=FICHES.filter(f=>etat(f)[0]!=='new').length,bar=el('span','chap-bar');bar.append(el('i'));bar.firstChild.style.width=100*vues/FICHES.length+'%';
   if(echeance){const j=Math.round((new Date(echeance+'T12:00')-new Date(new Date().toDateString()+' 12:00'))/DAY); // jours de calendrier
@@ -227,15 +229,17 @@ const CARTES=FICHES.filter(f=>f.source==='france'&&/viewBox="/.test(f.schema?.sv
 const LIEUX=lieux(FICHES,typeof FRANCE_SOMMAIRE!=='undefined'?FRANCE_SOMMAIRE:[]);
 let lieu=(()=>{try{return localStorage.getItem('mv_lieu')||'';}catch{return '';}})();
 const allerLieu=nom=>{lieu=nom;try{nom?localStorage.setItem('mv_lieu',nom):localStorage.removeItem('mv_lieu');}catch{}render();window.scrollTo(0,0);};
-const barre=(v,n)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'));b.firstChild.style.width=(n?100*v/n:0)+'%';return b;};
+const barre=(v,n,m=0)=>{const b=el('span','chap-bar');b.setAttribute('aria-hidden','true');b.append(el('i'),el('i','m'));b.firstChild.style.width=(n?100*v/n:0)+'%';b.lastChild.style.width=(n?100*m/n:0)+'%';return b;}; // vues en clair, maîtrisées (travaillées, rien à revoir) par-dessus
+const maitrise=fs=>fs.filter(f=>etat(f)[0]==='done').length,etatLieu=(n,v,m)=>`${plur(n,'fiche')} · ${plur(v,'vue')}${m?` · ${m} maîtrisée${m>1?'s':''}`:''}`;
 const carteHTML=(f,hl)=>`<figure class="schema" tabindex="0" role="button" aria-label="Agrandir la carte">${fitSvg(avecPartenaires(f,f.schema.svg,hl))}<figcaption>${f.schema.legende} — ${f.schema.src}</figcaption></figure>`;
 const carteDe=(f,l)=>l.france?f.geo?.pays==='France'&&(l.nom==='France'?!f.geo.region:f.geo.region===l.nom):f.geo?.pays===l.nom;
 const nomLieu=x=>x.nom==='France'?'Thèmes généraux sur la France':x.nom;
 const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
 // Tuile d’un lieu (accueil et recherche de l’atlas) ; « sans carte » sur les rares lieux qui n’en ont pas
-function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,b=el('button','lieu'),h=el('span','lieu-h');
+function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,m=maitrise(x.fiches),b=el('button','lieu'),h=el('span','lieu-h');
   h.append(el('span','lieu-n',x.nom));if(!CARTES.some(f=>carteDe(f,x)))h.append(el('span','lieu-c','sans carte'));
-  b.append(h,el('span','chap-m',`${plur(x.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,x.fiches.length));b.onclick=()=>allerLieu(x.nom);return b;}
+  if(m===x.fiches.length)b.classList.add('maitrise'),h.append(el('span','lieu-c','maîtrisé')); // toutes les fiches travaillées, rien à revoir
+  b.append(h,el('span','chap-m',etatLieu(x.fiches.length,v,m)),barre(v,x.fiches.length,m));b.onclick=()=>allerLieu(x.nom);return b;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   grid.className='grid toc';grid.innerHTML='';
@@ -255,7 +259,7 @@ function renderLieu(l){
   const rev=el('div','lieu-rev'),act=el('div','chap-act'),bt=(t,fn,cls='btn')=>{const b=el('button',cls,t);b.onclick=fn;act.append(b);};
   bt('S’entraîner',()=>startSession(buildQueue(pool).length?buildQueue(pool):shuffle(pool).slice(0,SESSION_MAX),l.nom),'btn primary');
   bt('Examen blanc',()=>startExamen(pool));bt('Tout lire',()=>lireChapitre(l.nom,ordre));
-  rev.append(el('p','jour-note',`${plur(l.fiches.length,'fiche')} · ${plur(v,'vue')}`),barre(v,l.fiches.length),act);
+  const m=maitrise(l.fiches);rev.append(el('p','jour-note',etatLieu(l.fiches.length,v,m)),barre(v,l.fiches.length,m),act);
   tete.append(el('p','lieu-k','Réviser'),rev,el('p','lieu-k','Les fiches'));
   grid.append(tete);
   renderToc(l.fiches,true,{chaps,groupe,ouvrir:nom=>nom===groupe(chaps[0])});

@@ -1,7 +1,7 @@
 # Feuille de route
 
 À lire en début de session, avec la fin de `docs/journal.md` (ce qui a été fait) et `docs/etat.md` (les chiffres).
-À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 02/11/2026.
+À tenir à jour : cocher ce qui est fait, ajouter les décisions nouvelles. Mise à jour : 03/11/2026.
 
 ## Objectif
 - Être prêt **le plus tôt possible**, première échéance le **31/12/2026**. Pas de diplôme précis visé pour l'instant.
@@ -117,6 +117,16 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 - [x] **Partenaires** (fait le 30/10 pour toutes les cartes) : relancer `tools/cartes/partenaires.mjs` (liste privée) pour les 4 nouvelles cartes (860, 861, 865, 866).
 - [ ] **CONTEXTE-PROJET** (Projet claude.ai) : reporter le lot Alsace (9 fiches 859-867, 7 vérifiées, 2 à vérifier ; 865 fiches au total).
 - Réseau : vinsalsace.com coupe la connexion depuis le conteneur (même autorisé) ; franceagrimer.fr, extranet.inao.gouv.fr, klevener.fr, v1.vinous.com non autorisés.
+
+## Couche jeu (proposée et validée par Loïc le 03/11 ; branche couche-jeu)
+Le site est déjà une PWA avec répétition espacée, séance du jour, examen blanc et Atlas : pas d'appli native (compte Apple payant, Xcode ou Capacitor, validation à chaque mise à jour, aucun gain pédagogique). On ajoute une couche de jeu fine, inspirée de Duolingo, Anki, Quizlet, Lichess et Seterra, sans cœurs, gemmes, ligues ni mascotte : le jeu doit faire revenir, pas faire cliquer plus vite.
+- [x] 1. **Série de jours** sur Aujourd'hui (`serie()` dans exercices.js, testée) : jours d'affilée avec une séance terminée ou un examen blanc ; un jour manqué par semaine est pardonné (« gel », ce qui fait durer les séries d'après les données publiées par Trophy en 2026) ; une séance abandonnée ne compte pas.
+- [x] 2. **Maîtrise par région** dans l'Atlas : tuile et page de région affichent « N fiches · vues · maîtrisées » (maîtrisée = travaillée, rien à revoir), barre à deux tons (vues en clair, maîtrisées en plein), tuile « maîtrisé » quand toutes le sont.
+- [ ] 3. **Sprint de trois minutes** : flashcards des fiches déjà vues, chrono, score et record, hors calendrier de révision (moteur de l'examen blanc).
+- [ ] 4. **Cartes à toucher** : « où est X ? », réponse en touchant la zone du SVG des cartes de situation (nouveau type d'exercice).
+- [ ] 5. **« Devine le vin »** depuis Ma cave : trois indices progressifs (région, cépage, sol) pour retrouver la cuvée.
+- [ ] 6. Fin de séance qui récompense (récapitulatif, série) : secondaire.
+- Serveur (notifications) : Loïc ouvert à l'idée (03/11) ; implications exposées (hébergement, clés, abonnement push à conserver, message générique faute de données hors téléphone) ; alternative sans serveur : automatisation iOS qui ouvre l'app chaque matin. Décision en attente.
 
 ## En attente de Loïc
 - Relecture humaine des 14 cours écrits le 28/10 : facultative. Deux relecteurs IA indépendants les ont relus le 29/10 et les anomalies sont corrigées (voir le journal).
