@@ -60,6 +60,11 @@ Hôtes refusés dans le cloud : legifrance.gouv.fr, extranet.inao.gouv.fr, wikip
 - [ ] 841 Baux tout bio (fait le 01/11, PR #41 : ODG et Terre de Vins), 844 cépages des Côtes de Gascogne (IDAC, Agreste).
 - [ ] Cartes de situation des nouvelles fiches (949 Moselle, 950-968) et `partenaires.mjs`.
 
+## Masterclass : modèles d'une heure (03/11, validés par Loïc ; branche modeles-masterclass)
+- [x] Catalogue `data/masterclasses.js` : dix séances « du verre à la leçon » (question, une seule variable entre les verres, phrase à retenir, 4 fiches vérifiées à 12 min, quiz). Bouton « Partir d'un modèle » dans l'onglet Masterclass : crée le programme, vins à inscrire depuis la cave. Dans l'ordre, les dix forment le cours initiatique (5 de base : climat, élevage, sucre, tanin, temps ; 5 d'ouverture : bulles, sol, nature, cépages, service). Test : fiches existantes et vérifiées, 4 à 6 par modèle.
+- Contenu mince à étoffer : « Jeune ou vieux » (aucune fiche sur le potentiel de garde, le modèle s'appuie sur arômes tertiaires, élevage, bouchage, conservation) ; « Chaud, froid, carafé » (16 fiches Service, fiche 368 « Aérer ou décanter » sans cours).
+- Hors app : la communication sur l'alcool est encadrée en Belgique, à vérifier avant d'annoncer le cours.
+
 ## Refonte de la structure (proposée le 29/10, validée par Loïc)
 Quatre onglets autour des deux usages (réviser chaque jour, travailler devant un client) ; mêmes données et mêmes clés de stockage.
 - [x] Étape 1 — **Aujourd'hui** (accueil, remplace « Session du jour ») : séance du jour avec durée estimée, échéance (J-n, fiches vues, rythme), reprendre la lecture, examen blanc et points durs, suivi en bref.

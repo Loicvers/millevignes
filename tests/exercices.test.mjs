@@ -475,3 +475,15 @@ test("atlas : chaque région du sommaire a ses fiches, toutes parties réunies",
   assert.equal([...types].sort().join(), "cépages,france,livre", "Bordeaux réunit ses fiches France, cépages et livre");
   assert.equal(new Set(ctx.li.flatMap(l => l.fiches)).size, ctx.li.reduce((s, l) => s + l.fiches.length, 0), "une fiche dans un seul lieu");
 });
+
+test("modèles de masterclass : fiches vérifiées existantes, 4 à 6 par modèle, une heure avec les verres", () => {
+  vm.runInNewContext(readFileSync(new URL("../data/masterclasses.js", import.meta.url), "utf8") + ";this.MC=MASTERCLASSES", ctx);
+  const byId = Object.fromEntries(FICHES.map(f => [f.id, f]));
+  assert.ok(ctx.MC.length >= 10);
+  for (const m of ctx.MC) {
+    assert.ok(m.titre && m.question && m.lecon && m.vins, m.titre);
+    assert.ok(m.fiches.length >= 4 && m.fiches.length <= 6, m.titre + " : 4 à 6 fiches");
+    for (const id of m.fiches) assert.equal(byId[id]?.status, "verified", `${m.titre} : fiche ${id} absente ou non vérifiée`);
+    assert.equal(new Set(m.fiches).size, m.fiches.length, m.titre + " : fiche en double");
+  }
+});

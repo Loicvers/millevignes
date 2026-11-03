@@ -280,6 +280,7 @@
   .prog .ex-input{margin-bottom:12px}.prog .hint{font-size:14px;color:var(--muted)}
   .prog-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
   .btn.add{margin-top:12px}.btn.add.in{border-color:var(--wine);color:var(--wine-fg);background:var(--paper2)}
+  .modeles{margin:0 0 14px}.modele{padding:10px 0;border-top:1px solid var(--line)}.modele-t{font-weight:600;margin-bottom:2px}.modele .jour-note{margin-bottom:8px}
   .prog-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.prog-bar select{flex:1;min-width:200px;width:auto}
   .prog-list{list-style:none;padding:0}.prog-item{margin-bottom:10px}.prog-item .order-item{margin-bottom:0;border-radius:3px 3px 0 0}
   .prog-opts{display:grid;grid-template-columns:2fr 90px 1.2fr;gap:8px;border:1px solid var(--line);border-top:none;padding:8px;border-radius:0 0 3px 3px;background:var(--paper2)}

@@ -633,6 +633,12 @@ function renderProg(){
   bDel.onclick=()=>{if(!confirm(`Supprimer le programme « ${pr.titre||'Sans titre'} » ?`))return;delete store.progs[store.cur];
     store.cur=Object.keys(store.progs)[0]||(k=>(store.progs[k]=blankProg(),k))(newKey());saveProg();render();};
   bar.append(sel,bNew,bDup,bDel);box.append(bar);
+  // Modèles d'une heure (data/masterclasses.js) : un toucher crée le programme, vins à inscrire depuis la cave
+  if(typeof MASTERCLASSES!=='undefined'){const md=el('details','cours modeles');md.append(el('summary',null,`Partir d'un modèle d'une heure (${MASTERCLASSES.length})`));
+    MASTERCLASSES.forEach((m,i)=>{const d=el('div','modele'),b=el('button','btn',`Créer « ${m.titre} »`);
+      d.append(el('p','modele-t',`${i+1}. ${m.titre} — ${m.question}`),el('p','jour-note',`${m.fiches.length} fiches · à retenir : ${m.lecon} · Verres : ${m.vins}`),b);
+      b.onclick=()=>{const k=newKey();store.progs[k]=cleanProg({titre:m.titre,quiz:true,items:m.fiches.map(id=>({id,vin:'',duree:12,contenu:FICHE_BY_ID[id]?.cours?'essentiel':'astuce'}))});store.cur=k;saveProg();render();};
+      md.append(d);});box.append(md);}
   const t=el('input','ex-input');t.placeholder='Titre de la masterclass';t.setAttribute('aria-label','Titre de la masterclass');t.value=pr.titre;
   t.oninput=()=>{pr.titre=t.value;saveProg();sel.selectedOptions[0].text=(t.value||'Sans titre')+` (${pr.items.length})`;};box.append(t);
   if(!pr.items.length){box.append(el('p','hint','Aucune fiche pour l\'instant : touche « Ajouter au programme » sur les fiches ci-dessous.'));return;}
