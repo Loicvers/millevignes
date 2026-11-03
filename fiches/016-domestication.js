@@ -1103,6 +1103,68 @@ FICHES.push(
     page: 36
   },
   {
+    id: 970,
+    theme: "Cépages",
+    sous: ["Origine & parenté"],
+    niveau: "Intermédiaire",
+    geo: null,
+    titre: "Récap : des hybrides aux variétés résistantes, PiWi, VIFA et CRISPR",
+    synth: "Ces mots se rangent en trois catégories. Le champ : la manière dont un cépage naît, par croisement de deux vinifera, par hybridation de deux espèces, puis par rétrocroisements (introgression) pour ne garder que les gènes de résistance ; les hybrides producteurs directs (HPD) de l’après-phylloxéra, les variétés ResDur de l’INRAE et les PiWi en sont issus. Le papier : les statuts, comme la loi de 1934 qui interdit six hybrides, la VIFA qui autorise un essai en AOC, ou le règlement européen NGT. Le labo : les techniques qui modifient directement l’ADN, la transgenèse (OGM) et l’édition du génome (CRISPR). À part, le porte-greffe ne donne que les racines : le raisin vient du greffon vinifera.",
+    mnemo: "Le champ, le papier, le labo : « Comment est-il né ? » (champ ou labo), « A-t-il le droit ? » (papier).",
+    flash: { q: "PiWi, VIFA, CRISPR : à quelle catégorie appartient chacun ?", a: "PiWi : le champ (famille de cépages nés de croisements) ; VIFA : le papier (autorisation d’essai en AOC) ; CRISPR : le labo (édition d’un gène).", keys: [["champ","croisement","cépage"],["papier","statut","autorisation"],["labo","laboratoire","gène","technique"]] },
+    qcm: { q: "Le voltis est à la fois…", opts: ["Un OGM et une VIFA", "Une variété ResDur et une VIFA en Champagne", "Un HPD interdit et un PiWi", "Un porte-greffe et une variété ResDur"], good: 1, expl: "Né des croisements du programme ResDur de l’INRAE, il a ensuite reçu le statut VIFA en Champagne : une naissance au champ, puis un droit sur le papier." },
+    exos: [
+      { type: "matching", prompt: "Associe chaque exemple à sa notion.", payload: { pairs: [["Noah", "Hybride producteur direct interdit"], ["3309 C", "Porte-greffe"], ["Floreal", "Variété ResDur de l’INRAE"], ["Marselan à Bordeaux", "VIFA d’adaptation au climat"]] }, explanation: "Le noah fait partie des six cépages de la loi de 1934 ; le 3309 C de Couderc ne fournit que les racines ; le marselan n’est pas résistant, Bordeaux l’a admis pour le climat." },
+      { type: "ordering", prompt: "Range ces étapes dans l’ordre chronologique.", payload: { items: ["Loi interdisant six hybrides", "Alain Bouquet croise vinifera et Muscadinia", "Inscription au catalogue des variétés ResDur", "Le voltis entre dans le cahier des charges de la Champagne", "Application du règlement européen NGT"] }, explanation: "1934, 1974, 2018, 2022, 2028 : on passe de l’interdiction des hybrides à leur retour sous forme de variétés résistantes, avant que l’Europe n’encadre l’édition du génome." },
+      { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Une variété ResDur comme l’artaban est un OGM.", answer: false }, explanation: "Ses gènes de résistance viennent de croisements et de rétrocroisements, sans manipulation de l’ADN ; son génome reste à plus de 95 % vinifera." }
+    ],
+    cours: {
+      lede: "Hybride, PiWi, ResDur, VIFA, CRISPR : on mélange ces mots parce qu’ils ne sont pas de même nature. Certains disent comment un cépage est né, d’autres ce qu’il a le droit de faire.",
+      frise: [
+        { date: "1863", txt: "Le phylloxéra apparaît dans le Gard : greffe ou hybrides producteurs directs." },
+        { date: "1934", txt: "Loi interdisant six hybrides : clinton, herbemont, isabelle, jacquez, noah, othello." },
+        { date: "1974", txt: "Alain Bouquet (INRA) croise vinifera et Muscadinia : gènes Run1 et Rpv1." },
+        { date: "2017", txt: "Arrêté classant en France des PiWi : solaris, muscaris, souvignier gris." },
+        { date: "2018", txt: "Artaban, vidoc, floreal et voltis inscrits au catalogue (ResDur)." },
+        { date: "2022", txt: "Le voltis entre en VIFA dans le cahier des charges de la Champagne." },
+        { date: "2028", txt: "Application du règlement européen NGT (2026/1388) sur l’édition du génome." }
+      ],
+      essentiel: "Deux questions suffisent : comment le cépage est-il né (au champ par croisement, ou au labo par modification de l’ADN) ? Et a-t-il le droit d’être planté ou d’entrer en AOC (le papier) ?",
+      sections: [
+        { h: "Le champ : comment naît le cépage", blocs: [
+          { imp: "essentiel", txt: "Croisement : deux vinifera (petit bouschet = aramon × teinturier du Cher). Hybridation : deux espèces différentes (concord, baco blanc)." },
+          { imp: "important", txt: "Introgression : on recroise l’hybride avec des vinifera sur plusieurs générations pour ne garder que le gène utile ; les variétés résistantes modernes sont à plus de 95 % vinifera." },
+          { imp: "important", txt: "Un seul gène de résistance (monogénique) peut être contourné par le champignon, c’est arrivé pour Run1 ; d’où le pyramidage, qui cumule plusieurs gènes (ResDur : deux contre le mildiou, deux contre l’oïdium)." }
+        ], table: { caption: "Les familles nées au champ", head: ["Notion", "Ce que c’est", "Exemples"], rows: [
+          { imp: "important", cells: ["HPD", "Hybride planté sans greffe après le phylloxéra, souvent foxé", "Noah, clinton, jacquez"] },
+          { imp: "essentiel", cells: ["ResDur", "Programme INRAE de variétés à résistance polygénique", "Artaban, vidoc (rouges), floreal, voltis (blancs)"] },
+          { imp: "essentiel", cells: ["PiWi", "Nom européen des variétés résistantes aux champignons", "Solaris, muscaris, souvignier gris, regent"] },
+          { imp: "utile", cells: ["Porte-greffe", "Racines américaines sous un greffon vinifera", "3309 C, 101-14 Mgt, 41 B"] }
+        ] } },
+        { h: "Le papier : ce que le cépage a le droit de faire", blocs: [
+          { imp: "important", txt: "Loi du 24 décembre 1934 : six hybrides interdits, toujours non classables comme cépages à vin." },
+          { imp: "essentiel", txt: "VIFA : essai d’un cépage dans une AOC, au plus 5 % des vignes, 10 % de l’assemblage, pendant 10 ans, sans nom sur l’étiquette. Il peut être résistant (voltis en Champagne) ou seulement adapté au climat (marselan, touriga nacional à Bordeaux)." },
+          { imp: "important", txt: "Règlement NGT (2026/1388) : allège les règles pour les plantes éditées équivalentes aux variétés classiques, applicable le 17 juillet 2028, exclues du bio." }
+        ], table: null },
+        { h: "Le labo : on touche directement l’ADN", blocs: [
+          { imp: "essentiel", txt: "Transgenèse (OGM) : on ajoute un gène d’un autre organisme, comme le porte-greffe à anticorps de camélidé contre le court-noué, resté au stade de la recherche." },
+          { imp: "essentiel", txt: "Édition du génome (CRISPR) : on modifie un gène précis de la vigne sans rien ajouter d’étranger ; appliquée à la vigne dès 2016." }
+        ], table: null }
+      ],
+      synthese: [
+        { imp: "essentiel", txt: "PiWi et ResDur : des cépages nés au champ, pas des OGM." },
+        { imp: "essentiel", txt: "VIFA : un statut, pas un type de cépage." },
+        { imp: "essentiel", txt: "CRISPR : une technique de labo, encadrée en Europe par le règlement NGT." },
+        { imp: "culture", txt: "Le voltis cumule le champ et le papier : variété ResDur devenue VIFA en Champagne." }
+      ],
+      src: "Synthèse des fiches 38 à 51 (sources détaillées sur chaque fiche) : INRAE et IFV (ResDur), PIWI International, arrêté du 19 avril 2017, loi du 24 décembre 1934, directive INAO VIFA (2021), cahier des charges AOC Champagne (2022), règlement (UE) 2026/1388. Cf. Mille Vignes, p. 34-36."
+    },
+    status: "verified",
+    to_check: [],
+    src: "Synthèse des fiches 38 à 51 : INRAE, IFV, PIWI International, INAO, arrêté du 19 avril 2017, loi du 24 décembre 1934, règlement (UE) 2026/1388. Cf. Mille Vignes, p. 34-36",
+    page: 36
+  },
+  {
     id: 53,
     theme: "Cépages",
     sous: ["Origine & parenté"],
