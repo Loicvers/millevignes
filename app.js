@@ -637,7 +637,7 @@ function renderProg(){
   if(typeof MASTERCLASSES!=='undefined'){const md=el('details','cours modeles');md.append(el('summary',null,`Partir d'un modèle d'une heure (${MASTERCLASSES.length})`));
     MASTERCLASSES.forEach((m,i)=>{const d=el('div','modele'),b=el('button','btn',`Créer « ${m.titre} »`);
       d.append(el('p','modele-t',`${i+1}. ${m.titre} — ${m.question}`),el('p','jour-note',`${m.fiches.length} fiches · à retenir : ${m.lecon} · Verres : ${m.vins}`),b);
-      b.onclick=()=>{const k=newKey();store.progs[k]=cleanProg({titre:m.titre,quiz:true,items:m.fiches.map(id=>({id,vin:'',duree:12,contenu:FICHE_BY_ID[id]?.cours?'essentiel':'astuce'}))});store.cur=k;saveProg();render();};
+      b.onclick=()=>{const k=newKey();store.progs[k]=cleanProg({titre:m.titre,quiz:true,items:m.fiches.map(id=>({id,vin:'',duree:m.duree||12,contenu:FICHE_BY_ID[id]?.cours?'essentiel':'astuce'}))});store.cur=k;saveProg();render();};
       md.append(d);});box.append(md);}
   const t=el('input','ex-input');t.placeholder='Titre de la masterclass';t.setAttribute('aria-label','Titre de la masterclass');t.value=pr.titre;
   t.oninput=()=>{pr.titre=t.value;saveProg();sel.selectedOptions[0].text=(t.value||'Sans titre')+` (${pr.items.length})`;};box.append(t);
@@ -737,7 +737,10 @@ function drawSlide(){
   if(s.k==='fiche'){
     box.append(el('p','proj-kicker',`Fiche ${n} sur ${P().items.length}${s.it.duree?' · '+s.it.duree+' min':''}`),el('h2',null,f.titre));
     if(s.it.vin)box.append(el('p','proj-vin','Dans le verre : '+s.it.vin));
-    box.insertAdjacentHTML('beforeend',`<p class="proj-synth">${paras(f.synth)}</p>${schemaHTML(f)}`);
+    // Mode affiche (Loïc, 03/11) : trois points courts ou l'astuce, le schéma ; le texte complet reste replié, c'est l'orateur qui présente.
+    const retenir=(f.cours?.synthese||[]).filter(b=>b.imp==='essentiel').map(b=>b.txt); // « À retenir » d'abord : plus court, sans redite
+    const mots=(retenir.length?retenir:essentiels(f)).filter(t=>t.length<=140).slice(0,3),pts=mots.length?mots:[f.mnemo];
+    box.insertAdjacentHTML('beforeend',`<ul class="proj-mots">${pts.map(t=>`<li>${t}</li>`).join('')}</ul>${schemaHTML(f)}<details class="proj-texte"><summary>Le texte</summary><p class="proj-synth">${paras(f.synth)}</p></details>`);
   }else{
     box.append(el('p','proj-kicker','Question au public'));box.insertAdjacentHTML('beforeend',`<h2>${f.flash.q}</h2>`);
     const ans=el('div','proj-ans');ans.innerHTML=f.flash.a;ans.hidden=true;

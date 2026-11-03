@@ -293,6 +293,7 @@
   .proj h2{font-family:'Cormorant',serif;font-weight:600;font-size:clamp(30px,5vw,64px);line-height:1.1;margin-bottom:3vh}
   .proj-vin{font-size:clamp(17px,2vw,26px);color:#cbb48a;margin-bottom:2vh}
   .proj-synth{font-size:clamp(17px,2.1vw,28px);line-height:1.5;max-width:60ch}
+  .proj-mots{font-size:clamp(20px,2.6vw,34px);line-height:1.35;max-width:44ch;margin:14px 0 18px;padding-left:1em}.proj-mots li{margin:10px 0}.proj-slide figure.schema svg{max-height:46vh;width:auto;max-width:100%}.proj-texte{margin-top:14px}.proj-texte summary{cursor:pointer;opacity:.7;font-size:16px}
   .proj .schema{background:var(--paper);max-width:640px;margin-top:3vh}
   .proj-ans{font-size:clamp(20px,2.6vw,34px);line-height:1.4;border-left:4px solid #cbb48a;padding-left:20px;margin-top:3vh}
   .proj .btn.primary{margin-top:2vh;font-size:16px}

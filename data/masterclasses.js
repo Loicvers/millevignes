@@ -2,6 +2,10 @@
 // Chaque modèle devient un programme de l'onglet Masterclass (fiches vérifiées, 12 min par fiche dégustation comprise, quiz) ;
 // les vins servis restent à inscrire depuis la cave. Dans l'ordre, les dix forment le cours initiatique (5 de base, 5 d'ouverture).
 const MASTERCLASSES = [
+  { titre: "Les 8 clés", question: "Qu'est-ce qui fait le vin, la nature ou l'homme ?", duree: 7,
+    vins: "Trois vins qui montrent chacun une clé : un cépage marqué, un terroir lisible, un vin élevé ou vieilli.",
+    lecon: "Quatre clés naturelles (cépage, terroir, climat, météo), quatre clés humaines (viticulture, vinification, élevage, vieillissement).",
+    fiches: [23, 182, 129, 131, 518, 243, 242, 272] }, // séance d'introduction, déjà donnée par Loïc (présentation du 03/11)
   { titre: "Chaud ou froid ?", question: "Peut-on lire le climat dans le verre ?",
     vins: "Un même cépage sous un climat frais et un climat chaud (sauvignon de Loire et du Languedoc, ou syrah du Nord et du Sud).",
     lecon: "L'acidité dit le froid, l'alcool et le fruit mûr disent le chaud.", fiches: [129, 141, 133, 372] },

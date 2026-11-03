@@ -62,6 +62,9 @@ Hôtes refusés dans le cloud : legifrance.gouv.fr, extranet.inao.gouv.fr, wikip
 
 ## Masterclass : modèles d'une heure (03/11, validés par Loïc ; branche modeles-masterclass)
 - [x] Catalogue `data/masterclasses.js` : dix séances « du verre à la leçon » (question, une seule variable entre les verres, phrase à retenir, 4 fiches vérifiées à 12 min, quiz). Bouton « Partir d'un modèle » dans l'onglet Masterclass : crée le programme, vins à inscrire depuis la cave. Dans l'ordre, les dix forment le cours initiatique (5 de base : climat, élevage, sucre, tanin, temps ; 5 d'ouverture : bulles, sol, nature, cépages, service). Test : fiches existantes et vérifiées, 4 à 6 par modèle.
+- [x] Modèle d'ouverture « Les 8 clés » (03/11) : la séance déjà donnée par Loïc (présentation Gamma du 03/11 : cépage, terroir, climat, météo, viticulture, vinification, élevage, vieillissement), une fiche par clé à 7 min.
+- [x] Projection en mode affiche (validé par Loïc, 03/11) : titre, trois points courts (puces « À retenir » du cours, sinon les essentiels, sinon l'astuce), schéma plafonné à la moitié de l'écran, texte complet replié derrière « Le texte ». C'est l'orateur qui présente ; les diapositives de Loïc (Gamma, fond bleu nuit, une idée et une image par diapositive) sont la référence.
+- [x] Deck Gamma d'essai « Chaud ou froid ? » généré depuis le modèle 1 dans le Gamma de Loïc (plan gratuit : 10 diapositives au plus par deck). Les neuf autres sur son feu vert.
 - Contenu mince à étoffer : « Jeune ou vieux » (aucune fiche sur le potentiel de garde, le modèle s'appuie sur arômes tertiaires, élevage, bouchage, conservation) ; « Chaud, froid, carafé » (16 fiches Service, fiche 368 « Aérer ou décanter » sans cours).
 - Hors app : la communication sur l'alcool est encadrée en Belgique, à vérifier avant d'annoncer le cours.
 
