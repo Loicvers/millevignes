@@ -136,7 +136,7 @@ function pointPrincipal(r) {
 // seuls ces points comptent, ce qui évite d'exiger des détails que la question ne demande pas.
 const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon alors ainsi encore autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois le la de du et en un au a l d".split(" "));
 function flashKeys(answer, mine, groups) {
-  const toks = s => chiffres(s).split(" ").filter(w => w && !MOTS_VIDES.has(w));
+  const toks = s => chiffres(s).replace(/(\d)([a-z])/g, "$1 $2").replace(/([a-z])(\d)/g, "$1 $2").split(" ").filter(w => w && !MOTS_VIDES.has(w)); // « 9gevrey » = « 9 gevrey »
   const words = s => toks(s).filter(w => /^\d+$/.test(w) || w.length >= 4);
   const stem = w => w.slice(0, Math.min(5, w.length - 1));
   const mineT = toks(mine);
@@ -146,7 +146,11 @@ function flashKeys(answer, mine, groups) {
   if (groups) {
     // Variante de plusieurs mots : mots consécutifs et dans l'ordre (« sucre monte » ≠ « sucre baisse… monte »).
     const seq = w => w.length > 0 && mineT.some((_, i) => w.every((k, j) => i + j < mineT.length && match(k, mineT[i + j])));
-    const ok = g => g.some(alt => seq(toks(alt)));
+    // « 9 Gevrey » ou « Gevrey 9 » : on suit le sens que l'élève a choisi, pour que « 4 chambolle 2 morey » ne lise pas « chambolle 2 ».
+    const sens = a => { const t = toks(a); return t.length < 2 ? null : /^\d+$/.test(t[0]) ? "avant" : /^\d+$/.test(t[t.length - 1]) ? "apres" : null; };
+    const hits = d => groups.filter(g => g.some(a => sens(a) === d && seq(toks(a)))).length;
+    const [av, ap] = [hits("avant"), hits("apres")], exclu = av > ap ? "apres" : ap > av ? "avant" : null;
+    const ok = g => g.some(alt => (!exclu || sens(alt) !== exclu) && seq(toks(alt)));
     const keys = groups.map(g => g[0]), found = groups.filter(ok).map(g => g[0]);
     return { keys, found, missing: keys.filter(k => !found.includes(k)), ok: found.length / keys.length >= 2 / 3 };
   }

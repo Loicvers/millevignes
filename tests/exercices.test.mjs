@@ -311,6 +311,11 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "les tanins"), false);
   const k = ctx.rk("Cent pour cent merlot.", "Merlot 100%");
   assert.equal(k.missing.length, 0); assert.equal(k.ok, true);
+  // Commune + nombre (fiche des grands crus de la Côte de Nuits) : chiffre collé, et sens de lecture suivi.
+  const cn = FICHES.find(f => /^Combien de grands crus en Côte de Nuits/.test(f.flash?.q || "")).flash;
+  const kn = ctx.rk(cn.a, "24 9gevrey 8 vosnes 1 vougeot 4 chambolle 2 morey", cn.keys);
+  assert.equal(kn.missing.join(" | "), "Morey 4 | Chambolle 2");
+  assert.equal(ctx.rk(cn.a, "24 : Gevrey 9, Morey 4, Chambolle 2, Vougeot 1, Vosne 8", cn.keys).missing.length, 0);
   // Un exemple entre parenthèses (Clos de Vougeot) n'est pas un mot-clé exigé.
   const clos = FICHES.find(f => f.id === 387).flash;
   const kc = ctx.rk(clos.a, "Le clos est entouré d’un mur. Le monopole est cultivé par un seul propriétaire", clos.keys);
