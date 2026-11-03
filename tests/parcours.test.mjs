@@ -60,3 +60,51 @@ test("parcours : une séance s'enregistre, se sauvegarde et se restaure sans per
     await navigateur.close();
   }
 });
+
+test("jeux : sprint, cartes à toucher et Devine le vin se jouent sans erreur ; records et cas limites", { skip: !chromium && "Playwright absent" }, async () => {
+  const navigateur = await chromium.launch();
+  try {
+    const page = await navigateur.newPage();
+    const erreurs = [];
+    page.on("pageerror", e => erreurs.push(e.message));
+    await page.goto(new URL("../index.html", import.meta.url).href);
+    // Beaujolais entièrement travaillé, et une cave de 5 vins jouables dont deux jumeaux (mêmes indices) et deux vins sans fiche
+    await page.evaluate(() => { const D = 86400000, t = Date.now(), p = {};
+      LIEUX.find(x => x.nom === "Beaujolais").fiches.forEach(f => exosDe(f).forEach(e => { p[e.id] = { ease: 2.5, interval: 10, due: t + 5 * D, acquired: true }; }));
+      localStorage.setItem("mv_progress_v2", JSON.stringify(p));
+      const vin = (cuvee, cep, sol, app) => ({ cuvee, couleur: "rouge", cepages: [{ nom: cep }], sol, appellation: app, questions: [] });
+      localStorage.setItem("mv_partenaires", JSON.stringify([{ nom: "Domaine A", region: "Beaujolais", vins: [vin("Morgon Côte du Py", "gamay", "schiste", "Morgon"), vin("Morgon Charmes", "gamay", "schiste", "Morgon"), { cuvee: "Sans fiche", questions: [] }] },
+        { nom: "Domaine B", region: "", vins: [{ cuvee: "Rien", questions: [] }, vin("Fleurie", "gamay", "granite", "Fleurie"), vin("Brouilly", "gamay", "granite", "Brouilly"), vin("Chénas", "gamay", "granite", "Chénas")] }])); });
+    await page.reload();
+    // Sprint : une réponse, temps écoulé → bilan et record ; un second sprint sans réponse n'écrase pas le record
+    await page.evaluate(() => { setMode("jour"); startSprint(); });
+    await page.click(".ex-body .opt");
+    await page.evaluate(() => { examen.fin = Date.now() - 1; });
+    await page.waitForSelector(".bilan h3");
+    assert.match(await page.textContent(".bilan h3"), /^Sprint\s: \d bonne réponse sur 1/);
+    assert.equal(await page.evaluate(() => jeux.sprint.n), 1);
+    await page.evaluate(() => { startSprint(); examen.fin = Date.now() - 1; });
+    await page.waitForSelector(".bilan h3");
+    assert.equal(await page.evaluate(() => jeux.sprint.n), 1, "un sprint sans réponse n'est pas un record");
+    // Cartes à toucher : toucher une zone donne un verdict, la bonne zone est marquée
+    await page.evaluate(() => { setMode("cartes"); allerLieu("Beaujolais"); });
+    await page.click("text=Cartes à toucher");
+    const cartes = await page.evaluate(() => { const z = document.querySelector(".jeu-carte path[data-z]"); z.dispatchEvent(new MouseEvent("click", { bubbles: true })); return { fb: document.querySelector(".fb").textContent, cible: !!document.querySelector(".jeu-carte path.cible") }; });
+    assert.match(cartes.fb, /Bonne réponse|Pas là/); assert.ok(cartes.cible);
+    // Devine le vin : 4 options, jamais un vin sans fiche, jamais les deux jumeaux ensemble quand l'un est la réponse
+    await page.evaluate(() => setMode("cave"));
+    await page.click("text=Devine le vin");
+    for (let i = 0; i < 5; i++) {
+      const opts = await page.$$eval(".ex-body .opt", os => os.map(o => o.textContent));
+      assert.equal(opts.length, 4); assert.ok(!opts.some(o => /Sans fiche|Rien/.test(o)), "vin sans fiche écarté");
+      await page.click(".ex-body .opt");
+      const fb = await page.textContent(".fb");
+      if (/Bonne réponse|C’était Morgon/.test(fb)) assert.ok(!(opts.includes("Morgon Côte du Py") && opts.includes("Morgon Charmes")), "jumeaux jamais face à face");
+      await page.click(".ex-actions .btn.primary");
+    }
+    assert.match(await page.textContent(".ex h3"), /^Devine le vin\s: \d+ points? sur \d+/);
+    assert.deepEqual(erreurs, []);
+  } finally {
+    await navigateur.close();
+  }
+});

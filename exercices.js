@@ -43,7 +43,7 @@ function maskSchema(svg, labels, pick = shuffle(labels)) {
   const target = pick[0], options = shuffle(pick.slice(0, 4));
   // Les autres options sont masquées partout (« … », étiquette en gras ou nom d'une zone voisine) : sinon on répond par élimination
   // en lisant le dessin. La réponse, en gras, devient « ? ».
-  const mask = (t, by, gras) => { const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); svg = svg.replace(new RegExp(`(<text[^>]*${gras ? 'font-weight="bold"[^>]*' : ""}>)${esc}(</text>)`, gras ? "" : "g"), `$1${by}$2`); };
+  const mask = (t, by, gras) => { svg = svg.replace(new RegExp(`(<text[^>]*${gras ? 'font-weight="bold"[^>]*' : ""}>)${escRe(t)}(</text>)`, gras ? "" : "g"), `$1${by}$2`); };
   options.filter(o => o !== target).forEach(o => mask(o, "<tspan opacity=\"0.5\">…</tspan>"));
   mask(target, "<tspan font-size=\"15\">?</tspan>", true);
   return { svg, options, answer: options.indexOf(target) };
@@ -161,6 +161,8 @@ function flashKeys(answer, mine, groups) {
 // Identique à normalize() de tools/lot.mjs (vérifié par les tests).
 function normalize(s) { return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[^a-z0-9]+/g, " ").trim(); }
 
+// Texte à chercher tel quel dans une expression régulière (noms de zones, étiquettes).
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 // Fisher-Yates : mélange équitable (sort(random) ne l'est pas).
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
