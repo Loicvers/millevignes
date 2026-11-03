@@ -375,7 +375,7 @@ function renderCave(){
     if(!list.children.length)list.append(el('p','empty',vinsDe().length?'Aucun vin ne correspond.':'Importe ton fichier de partenaires (Réglages) pour voir tes vins.'));};
   q.oninput=()=>{caveQuery=q.value;draw();};
   grid.append(q);
-  if(vinsDe().length>=4){const j=el('button','btn','Devine le vin');j.onclick=()=>{jouerVins();window.scrollTo(0,0);};grid.append(el('p','cave-jeu',jeux.vins?`Record : ${jeux.vins.pts} points sur ${jeux.vins.max}. `:'Retrouve une cuvée à partir d’indices : moins tu en lis, plus tu marques. '),j);}
+  if(vinsJouables().length>=4){const j=el('button','btn','Devine le vin');j.onclick=()=>{jouerVins();window.scrollTo(0,0);};grid.append(el('p','cave-jeu',jeux.vins?`Record : ${jeux.vins.pts} points sur ${jeux.vins.max}. `:'Retrouve une cuvée à partir d’indices : moins tu en lis, plus tu marques. '),j);}
   grid.append(list);draw();
 }
 // « Dans ma cave » d'une fiche : le nom du vin ouvre sa fiche dans Ma cave.
@@ -836,16 +836,18 @@ function jouerCartes(l){
   etape();window.scrollTo(0,0);
 }
 // Devine le vin : une cuvée de la cave à retrouver parmi quatre, indices dévoilés un à un ; points = indices restants + 1 si juste.
+const indicesVin=v=>[['Couleur',v.couleur],['Région',v.reg],['Cépages',CAVE_CHAMPS[0][1](v)],['Sol',v.sol],['Appellation',v.appellation],['Élevage',v.elevage],['Domaine',v.dom]].filter(([,x])=>x);
+const vinsJouables=()=>vinsDe().filter(v=>indicesVin(v).length>=3); // un vin sans fiche technique n'a rien à deviner
 function jouerVins(){
-  const vins=vinsDe();if(vins.length<4)return;
+  const vins=vinsJouables();if(vins.length<4)return;
   const tours=shuffle(vins).slice(0,8);let i=0,pts=0,max=0;
-  const indices=v=>[['Couleur',v.couleur],['Région',v.reg],['Cépages',CAVE_CHAMPS[0][1](v)],['Sol',v.sol],['Appellation',v.appellation],['Élevage',v.elevage],['Domaine',v.dom]].filter(([,x])=>x);
+  const indices=indicesVin,cle=v=>JSON.stringify(indices(v).map(([,x])=>x)); // deux cuvées aux mêmes indices : jamais l'une en leurre de l'autre
   const etape=()=>{const box=ecranJeu();
     if(i>=tours.length){const rec=jeux.vins,mieux=!rec||pts/max>rec.pts/rec.max;
       box.append(el('h3',null,`Devine le vin : ${pts} point${pts>1?'s':''} sur ${max}`),el('p',null,!rec?'Première partie : c’est ton record.':mieux?`Nouveau record (avant : ${rec.pts} sur ${rec.max}).`:`Record : ${rec.pts} sur ${rec.max}.`));
       if(mieux){jeux.vins={pts,max,t:now()};saveJeux();}
       finJeu(box,jouerVins);return;}
-    const v=tours[i],ind=indices(v),opts=shuffle([v,...shuffle(vins.filter(x=>x!==v)).slice(0,3)]);let k=1;max+=ind.length;
+    const v=tours[i],ind=indices(v),opts=shuffle([v,...shuffle(vins.filter(x=>x!==v&&cle(x)!==cle(v))).slice(0,3)]);let k=1;max+=ind.length;
     const nom=o=>o.cuvee+(opts.filter(x=>x.cuvee===o.cuvee).length>1?' · '+o.dom:''); // même nom de cuvée chez deux domaines : on précise
     box.append(el('div','ex-head',`Devine le vin · ${i+1}/${tours.length} · ${pts} pt${pts>1?'s':''}`));
     question(box,'Quelle est cette cuvée de ta cave ?');
