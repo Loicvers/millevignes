@@ -122,10 +122,10 @@ Corrigé le 29/10 : hors ligne, quiz imprimé, lenteur au chargement, alternance
 Le site est déjà une PWA avec répétition espacée, séance du jour, examen blanc et Atlas : pas d'appli native (compte Apple payant, Xcode ou Capacitor, validation à chaque mise à jour, aucun gain pédagogique). On ajoute une couche de jeu fine, inspirée de Duolingo, Anki, Quizlet, Lichess et Seterra, sans cœurs, gemmes, ligues ni mascotte : le jeu doit faire revenir, pas faire cliquer plus vite.
 - [x] 1. **Série de jours** sur Aujourd'hui (`serie()` dans exercices.js, testée) : jours d'affilée avec une séance terminée ou un examen blanc ; un jour manqué par semaine est pardonné (« gel », ce qui fait durer les séries d'après les données publiées par Trophy en 2026) ; une séance abandonnée ne compte pas.
 - [x] 2. **Maîtrise par région** dans l'Atlas : tuile et page de région affichent « N fiches · vues · maîtrisées » (maîtrisée = travaillée, rien à revoir), barre à deux tons (vues en clair, maîtrisées en plein), tuile « maîtrisé » quand toutes le sont.
-- [ ] 3. **Sprint de trois minutes** : flashcards des fiches déjà vues, chrono, score et record, hors calendrier de révision (moteur de l'examen blanc).
-- [ ] 4. **Cartes à toucher** : « où est X ? », réponse en touchant la zone du SVG des cartes de situation (nouveau type d'exercice).
-- [ ] 5. **« Devine le vin »** depuis Ma cave : trois indices progressifs (région, cépage, sol) pour retrouver la cuvée.
-- [ ] 6. Fin de séance qui récompense (récapitulatif, série) : secondaire.
+- [x] 3. **Sprint de trois minutes** (03/11) : QCM, vrai/faux, intrus et schémas des fiches déjà vues, chrono, score courant en tête, record ; moteur de l'examen blanc, sans correction avant la fin ni note dans le calendrier. Sur Aujourd'hui et chaque page de région.
+- [x] 4. **Cartes à toucher** (03/11) : « Où est X ? », noms masqués, réponse en touchant la zone ; une carte par jeu de zones dans la région (cartes de situation comprises), record par région. Zones marquées `data-z` par `tools/cartes/zoner.mjs` (301 cartes, 57 jeux de zones ; carte.mjs ne l'écrivait pas) : à relancer après chaque nouvelle carte. Jeu à part, pas un type d'exercice de la révision.
+- [x] 5. **« Devine le vin »** (03/11) : depuis Ma cave, huit cuvées à retrouver parmi quatre, indices dévoilés un à un (couleur, région, cépages, sol, appellation, élevage, domaine), points = indices restants, record.
+- [x] 6. Fin de séance (03/11) : fiches découvertes et série du jour sous le score. Records des jeux dans Mon suivi, la sauvegarde et l'effacement (`mv_jeux`).
 - Serveur (notifications) : Loïc ouvert à l'idée (03/11) ; implications exposées (hébergement, clés, abonnement push à conserver, message générique faute de données hors téléphone) ; alternative sans serveur : automatisation iOS qui ouvre l'app chaque matin. Décision en attente.
 
 ## En attente de Loïc
