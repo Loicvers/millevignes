@@ -98,8 +98,8 @@ test("jeux : sprint, cartes à toucher et Devine le vin se jouent sans erreur ; 
       const opts = await page.$$eval(".ex-body .opt", os => os.map(o => o.textContent));
       assert.equal(opts.length, 4); assert.ok(!opts.some(o => /Sans fiche|Rien/.test(o)), "vin sans fiche écarté");
       await page.click(".ex-body .opt");
-      const fb = await page.textContent(".fb");
-      if (/Bonne réponse|C’était Morgon/.test(fb)) assert.ok(!(opts.includes("Morgon Côte du Py") && opts.includes("Morgon Charmes")), "jumeaux jamais face à face");
+      const fb = await page.textContent(".fb"), cible = /Bonne réponse/.test(fb) ? opts[0] : (fb.match(/C’était (.+?)\.$/) || [])[1]; // on clique toujours la première option
+      if (/^Morgon/.test(cible || "")) assert.ok(!(opts.includes("Morgon Côte du Py") && opts.includes("Morgon Charmes")), "jumeaux jamais face à face : " + cible);
       await page.click(".ex-actions .btn.primary");
     }
     assert.match(await page.textContent(".ex h3"), /^Devine le vin\s: \d+ points? sur \d+/);
