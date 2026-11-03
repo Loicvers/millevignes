@@ -181,8 +181,8 @@ function renderJour(){
   const min=Math.max(1,Math.round(q.length*med/60000));
   carte('Séance du jour',el('p','jour-chiffre',q.length?`${q.length} exercice${q.length>1?'s':''} · environ ${min} min`:'Rien à revoir pour le moment'),
     q.length?bouton('Commencer la séance',()=>startSession(buildQueue(EXOS),'Séance du jour'),'btn primary'):el('p','jour-note','Tout est planifié plus tard : lis un chapitre ou passe un examen blanc.'),
-    el('p','jour-note',(s=>!s.n?'Chaque jour d’affilée avec une séance terminée compte dans ta série ; un jour manqué par semaine est pardonné.':
-      `Série : ${plur(s.n,'jour')} · ${s.fait?'séance d’aujourd’hui faite.':s.gel?'hier manqué et pardonné : termine une séance aujourd’hui pour la garder.':'termine une séance aujourd’hui pour la garder.'}`)(serie(seances,examens,now()))));
+    (s=>ligneGrappe(s,!s.n?'Chaque jour d’affilée avec une séance terminée ajoute un grain ; un jour manqué par semaine est pardonné.':
+      s.fait?'La séance d’aujourd’hui est faite.':s.gel?'Hier manqué et pardonné, un grain pâle. La séance d’aujourd’hui ajoute le grain du bas.':'La séance d’aujourd’hui ajoute le grain du bas.'))(serie(seances,examens,now())));
   // Échéance
   const vues=FICHES.filter(f=>etat(f)[0]!=='new').length,bar=el('span','chap-bar');bar.append(el('i'));bar.firstChild.style.width=100*vues/FICHES.length+'%';
   if(echeance){const j=Math.round((new Date(echeance+'T12:00')-new Date(new Date().toDateString()+' 12:00'))/DAY); // jours de calendrier
@@ -245,8 +245,23 @@ const plur=(n,m)=>`${n} ${m}${n>1?'s':''}`;
 // Tuile d’un lieu (accueil et recherche de l’atlas) ; « sans carte » sur les rares lieux qui n’en ont pas
 function tuile(x){const vue=f=>etat(f)[0]!=='new',v=x.fiches.filter(vue).length,m=maitrise(x.fiches),b=el('button','lieu'),h=el('span','lieu-h');
   h.append(el('span','lieu-n',x.nom));if(!CARTES.some(f=>carteDe(f,x)))h.append(el('span','lieu-c','sans carte'));
-  if(m===x.fiches.length)b.classList.add('maitrise'),h.append(el('span','lieu-c','maîtrisé')); // toutes les fiches travaillées, rien à revoir
-  b.append(h,el('span','chap-m',etatLieu(x.fiches.length,v,m)),barre(v,x.fiches.length,m));b.onclick=()=>allerLieu(x.nom);return b;}
+  if(m===x.fiches.length){b.classList.add('maitrise');b.insertAdjacentHTML('beforeend',sceau(x.nom,m));} // toutes les fiches travaillées, rien à revoir : le sceau, daté du jour où on l'a vu
+  b.append(h,el('span','chap-m',m===x.fiches.length?`${plur(x.fiches.length,'fiche')} · toutes maîtrisées`:etatLieu(x.fiches.length,v,m)),barre(v,x.fiches.length,m));b.onclick=()=>allerLieu(x.nom);return b;}
+/* ============ CARNET TAMPONNÉ (grappe des 7 jours, sceau de région, tampon de séance) : SVG en currentColor, bordeaux ============ */
+let uidSvg=0;
+const dateCourte=t=>new Date(t).toLocaleDateString('fr-FR',{day:'numeric',month:'short',year:'numeric'}).toUpperCase().replace(/\.$/,'');
+// Un grain par jour, du plus ancien (en haut) à aujourd'hui (en bas) : plein = séance faite, pointillé = jour pardonné, vide = à faire ou manqué.
+function grappe(jours){const P=[[17,24],[32,22],[47,24],[24,37],[40,37],[32,50],[32,65]];
+  const g=jours.map((j,i)=>{const [x,y]=P[i],r=7;return j==='fait'?`<circle cx="${x}" cy="${y}" r="${r}" fill="currentColor"/>`:j==='gel'?`<circle cx="${x}" cy="${y}" r="${r}" fill="var(--paper)" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"/>`:`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="currentColor" stroke-width="2" opacity="${j==='auj'?.6:.3}"/>`;}).join('');
+  const lbl=`Grappe des sept derniers jours : ${jours.filter(j=>j==='fait').length} séances faites`;
+  return `<svg class="grappe" width="64" height="76" viewBox="0 0 64 76" role="img" aria-label="${lbl}"><path d="M32 2 C33 8 30 12 32 16" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/><path d="M32 6 C26 4 22 6 20 10 C25 11 29 10 32 6 Z" fill="var(--green)"/>${g}</svg>`;}
+function ligneGrappe(s,texte){const row=el('div','grappe-row');row.insertAdjacentHTML('beforeend',grappe(s.jours));const p=el('p','jour-note');p.append(el('b',null,s.n?`Série : ${plur(s.n,'jour')}. `:''),texte);row.append(p);return row;}
+// Sceau rond d'une région maîtrisée, à la manière d'une appellation ; la date est celle où le sceau a été vu la première fois.
+function sceau(nom,n){const t=(jeux.sceaux??={})[nom]||(jeux.sceaux[nom]=now(),saveJeux(),jeux.sceaux[nom]),id='sc'+(++uidSvg);
+  return `<svg class="sceau" width="84" height="84" viewBox="0 0 84 84" role="img" aria-label="Sceau : région maîtrisée le ${new Date(t).toLocaleDateString('fr-FR',{day:'numeric',month:'long'})}"><circle cx="42" cy="42" r="38" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="42" cy="42" r="32" fill="none" stroke="currentColor" stroke-width="1"/><path id="${id}" d="M42 42 m-27 0 a27 27 0 1 1 54 0 a27 27 0 1 1 -54 0" fill="none"/><text font-size="7.6" font-weight="600" letter-spacing="1.1" fill="currentColor"><textPath href="#${id}" startOffset="2%">RÉGION MAÎTRISÉE · ${dateCourte(t)} ·</textPath></text><text x="42" y="47" text-anchor="middle" font-family="Cormorant,serif" font-size="19" font-weight="600" fill="currentColor">${n}/${n}</text></svg>`;}
+// Tampon de fin de séance : se pose une fois (animation courte, aucune si l'appareil demande moins de mouvement).
+function tampon(n){const id='tp'+(++uidSvg),d=new Date().toLocaleDateString('fr-FR',{day:'numeric',month:'long'}).toUpperCase();
+  return `<svg class="tampon" width="150" height="150" viewBox="0 0 150 150" role="img" aria-label="Tampon : séance faite, ${plur(n,'jour')} de suite"><circle cx="75" cy="75" r="68" fill="none" stroke="currentColor" stroke-width="3.5"/><circle cx="75" cy="75" r="57" fill="none" stroke="currentColor" stroke-width="1.2"/><path id="${id}" d="M75 75 m-48 0 a48 48 0 1 1 96 0 a48 48 0 1 1 -96 0" fill="none"/><text font-size="12" font-weight="600" letter-spacing="2" fill="currentColor"><textPath href="#${id}" startOffset="3%">SÉANCE FAITE · ${d} ·</textPath></text><text x="75" y="70" text-anchor="middle" font-family="Cormorant,serif" font-size="40" font-weight="600" fill="currentColor">${n}</text><text x="75" y="92" text-anchor="middle" font-size="10" font-weight="600" letter-spacing="1.5" fill="currentColor">${n>1?'JOURS':'JOUR'} DE SUITE</text></svg>`;}
 function renderLieu(l){
   document.getElementById('introLine').textContent='';document.getElementById('progPanel').hidden=true;
   grid.className='grid toc';grid.innerHTML='';
@@ -289,6 +304,8 @@ function renderCartes(){
       list.append(tf,tuiles(fr.filter(x=>x!==gen)));
       if(gen){const b=el('button','lieu lieu-gen');b.append(el('span','lieu-n',nomLieu(gen)),el('span','chap-m',String(gen.fiches.length)));b.onclick=()=>allerLieu(gen.nom);list.append(b);}
       list.append(el('h2','lieux-t','Monde'),tuiles(mo.filter(x=>x.fiches.length>=4)));
+      const tous=[...fr.filter(x=>x!==gen),...mo.filter(x=>x.fiches.length>=4)],sc=tous.filter(x=>maitrise(x.fiches)===x.fiches.length).length;
+      list.append(el('p','jour-note',(sc>1?`${sc} régions sur ${tous.length} portent leur sceau`:sc?`1 région sur ${tous.length} porte son sceau`:`Aucune région sur ${tous.length} ne porte encore son sceau`)+' : toutes les fiches travaillées, rien à revoir.'));
       const pt=mo.filter(x=>x.fiches.length<4);
       if(pt.length){list.append(el('p','lieu-k','Autres pays'));const w=el('div','parties');pt.forEach(x=>{const b=el('button','partie',x.nom);b.append(el('small',null,' '+x.fiches.length));b.onclick=()=>allerLieu(x.nom);w.append(b);});list.append(w);}
       return;}
@@ -869,8 +886,12 @@ function showExercise(){
     const box=el('div','empty');
     if(!queue.length){box.append(el('h3',null,'Rien à revoir pour le moment'),el('p',null,'Tous les exercices sont planifiés plus tard. Reviens demain, ou entraîne-toi sur une fiche depuis l\'onglet Fiches.'));}
     else{const sc=seances[seances.length-1];if(sc&&!sc.fin){sc.fin=1;saveSeances();}
-      box.append(el('h3',null,'Session terminée'),el('p',null,score.total?`${score.ok} bonne(s) réponse(s) sur ${score.total} exercice(s) corrigé(s).`:`${queue.length} carte(s) revue(s).`));
-      const s=serie(seances,examens,now());box.append(el('p','jour-note',(nouvelles.length?`${nouvelles.length} nouvelle${nouvelles.length>1?'s':''} fiche${nouvelles.length>1?'s':''} découverte${nouvelles.length>1?'s':''} · `:'')+`série : ${plur(s.n,'jour')}.`));
+      const s=serie(seances,examens,now()),carte=el('div','fin-carte');box.classList.add('fin');carte.insertAdjacentHTML('beforeend',tampon(s.n));
+      carte.append(el('h3',null,'Séance terminée'));
+      if(score.total){const sc=el('p','fin-score',String(score.ok));sc.append(el('span',null,` / ${score.total}`));carte.append(sc,el('p','jour-note',score.ok>1?'bonnes réponses':'bonne réponse'));}
+      else carte.append(el('p','fin-score',String(queue.length)),el('p','jour-note',queue.length>1?'cartes revues':'carte revue'));
+      carte.append(ligneGrappe(s,'Le grain du jour est posé.'+(nouvelles.length?` ${nouvelles.length} nouvelle${nouvelles.length>1?'s':''} fiche${nouvelles.length>1?'s':''} découverte${nouvelles.length>1?'s':''}.`:'')));
+      box.append(carte);
       const again=el('button','btn','Retour');again.onclick=()=>setMode(retour);box.append(again);const sv=el('button','btn','Mon suivi');sv.onclick=()=>{setMode('suivi');window.scrollTo(0,0);};box.append(' ',sv);}
     grid.append(box);return;
   }
@@ -1172,6 +1193,7 @@ document.getElementById('importProg').onchange=async e=>{
     const best=(a,b,k,n)=>!b||typeof b[k]!=='number'||typeof b[n]!=='number'||!b[n]?a:!a||b[k]/b[n]>a[k]/a[n]?b:a;
     jeux.sprint=best(jeux.sprint,jx.sprint,'ok','n');jeux.vins=best(jeux.vins,jx.vins,'pts','max');
     if(jx.cartes&&typeof jx.cartes==='object'){jeux.cartes??={};for(const l in jx.cartes)jeux.cartes[l]=best(jeux.cartes[l],jx.cartes[l],'ok','n');}
+    if(jx.sceaux&&typeof jx.sceaux==='object'){jeux.sceaux??={};for(const l in jx.sceaux)if(typeof jx.sceaux[l]==='number')jeux.sceaux[l]=Math.min(jeux.sceaux[l]||Infinity,jx.sceaux[l]);} // sceau : la date la plus ancienne
     saveJeux();}
   const ps=data.programmes&&data.programmes.progs; // sauvegardes récentes : les programmes de masterclass s'ajoutent à ceux du navigateur
   if(ps&&typeof ps==='object')for(const k in ps){const c=cleanProg(ps[k]);if(c)store.progs[k]=c;}

@@ -284,7 +284,10 @@ test("suivi : le rappel sans aide lit la note des flashcards non saisies, et lai
 
 test("série de jours : séances terminées et examens, hier pardonné une fois par semaine, séance abandonnée ignorée", () => {
   vm.runInNewContext("this.se=serie", ctx);
-  const DAY = 86400000, t0 = new Date("2026-11-10T12:00").getTime(), S = (j, fin = 1) => ({ t: t0 - j * DAY, fin }), r = (s, x = []) => JSON.parse(JSON.stringify(ctx.se(s, x, t0)));
+  const DAY = 86400000, t0 = new Date("2026-11-10T12:00").getTime(), S = (j, fin = 1) => ({ t: t0 - j * DAY, fin }), r = (s, x = []) => { const { jours, ...o } = JSON.parse(JSON.stringify(ctx.se(s, x, t0))); return o; };
+  const jours = (s) => JSON.parse(JSON.stringify(ctx.se(s, [], t0).jours));
+  assert.deepEqual(jours([S(0), S(2), S(3), S(4)]), ["rien", "rien", "fait", "fait", "fait", "gel", "fait"]); // la grappe : 7 derniers jours, hier pardonné
+  assert.deepEqual(jours([S(1)]), ["rien", "rien", "rien", "rien", "rien", "fait", "auj"]);
   assert.deepEqual(r([]), { n: 0, fait: false, gel: false });
   assert.deepEqual(r([S(0), S(1), S(2)]), { n: 3, fait: true, gel: false });                       // 3 jours, dont aujourd'hui
   assert.deepEqual(r([S(1), S(2)]), { n: 2, fait: false, gel: false });                             // aujourd'hui reste à faire, la série tient

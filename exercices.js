@@ -308,12 +308,15 @@ function serie(seances, examens, t) {
   const faits = new Set([...seances.filter(s => s.fin).map(s => s.t), ...examens.map(x => x.t)].map(jour));
   const auj = jour(t), fait = faits.has(auj);
   let d = fait ? auj : auj - 1, n = 0, gel = null;
+  const gels = new Set();
   for (;;) {
     if (faits.has(d)) { n++; d--; continue; }
-    if (n + (fait ? 0 : 1) > 0 && faits.has(d - 1) && (gel === null || gel - d >= 7)) { gel = d; d--; continue; } // jour manqué pardonné (hier compte comme encadré si la série continue)
+    if (n + (fait ? 0 : 1) > 0 && faits.has(d - 1) && (gel === null || gel - d >= 7)) { gel = d; gels.add(d); d--; continue; } // jour manqué pardonné (hier compte comme encadré si la série continue)
     break;
   }
-  return { n, fait, gel: !fait && gel === auj - 1 }; // gel : hier est le jour pardonné, la séance d'aujourd'hui sauve la série
+  // jours : les 7 derniers jours, du plus ancien à aujourd'hui (la grappe) : fait, gel (pardonné), auj (aujourd'hui, à faire) ou rien
+  const jours = Array.from({ length: 7 }, (_, i) => { const j = auj - 6 + i; return faits.has(j) ? "fait" : gels.has(j) ? "gel" : j === auj ? "auj" : "rien"; });
+  return { n, fait, gel: !fait && gel === auj - 1, jours }; // gel : hier est le jour pardonné, la séance d'aujourd'hui sauve la série
 }
 // « Mon suivi » : indicateurs tirés du journal des réponses (indicatifs : un seul utilisateur).
 // Les seconds essais (retry) ne comptent pas. Réussie / ratée / inconnue (flashcard jamais notée).
