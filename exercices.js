@@ -300,6 +300,21 @@ function pointsDurs(pool, prog, journal) {
     .sort((a, b) => prog[a.id].ease - prog[b.id].ease);
 }
 
+// Série de jours : jours de calendrier d'affilée avec une séance terminée ou un examen blanc, jusqu'à aujourd'hui (ou hier si la séance du jour reste à faire).
+// Un jour manqué est pardonné (« gel ») s'il est encadré de jours faits et qu'aucun autre gel n'a servi dans les 7 jours précédents : une seule journée vide ne casse pas la série.
+// shortcut: lit les 200 dernières séances conservées, donc une série de plus de 200 jours est tronquée ; stocker les jours à part si ça arrive.
+function serie(seances, examens, t) {
+  const DAY = 86400000, jour = x => Math.floor((x - new Date(x).getTimezoneOffset() * 60000) / DAY);
+  const faits = new Set([...seances.filter(s => s.fin).map(s => s.t), ...examens.map(x => x.t)].map(jour));
+  const auj = jour(t), fait = faits.has(auj);
+  let d = fait ? auj : auj - 1, n = 0, gel = null;
+  for (;;) {
+    if (faits.has(d)) { n++; d--; continue; }
+    if (n + (fait ? 0 : 1) > 0 && faits.has(d - 1) && (gel === null || gel - d >= 7)) { gel = d; d--; continue; } // jour manqué pardonné (hier compte comme encadré si la série continue)
+    break;
+  }
+  return { n, fait, gel: !fait && gel === auj - 1 }; // gel : hier est le jour pardonné, la séance d'aujourd'hui sauve la série
+}
 // « Mon suivi » : indicateurs tirés du journal des réponses (indicatifs : un seul utilisateur).
 // Les seconds essais (retry) ne comptent pas. Réussie / ratée / inconnue (flashcard jamais notée).
 const issue = j => Array.isArray(j.c) ? j.c.reduce((a, x) => a + x, 0) >= 2 : // « Explique à un client » : au moins 2 critères cochés

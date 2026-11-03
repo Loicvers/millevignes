@@ -105,8 +105,8 @@
   .chap-t::before{content:"▸";display:inline-block;width:1.1em;color:var(--gold);font-family:'Inter';font-size:13px;vertical-align:2px}
   .chap[open] .chap-t::before{content:"▾"}
   .chap-m{font-size:13px;color:var(--muted);white-space:nowrap}
-  .chap-bar{grid-column:1/-1;height:3px;background:var(--paper2);border-radius:2px;margin-top:8px;overflow:hidden}
-  .chap-bar i{display:block;height:100%;background:var(--wine)}
+  .chap-bar{grid-column:1/-1;position:relative;height:3px;background:var(--paper2);border-radius:2px;margin-top:8px;overflow:hidden}
+  .chap-bar i{position:absolute;left:0;top:0;height:100%;background:var(--wine);opacity:.45}.chap-bar i.m{opacity:1} /* vues en clair, maîtrisées en plein */
   .chap-in{padding:2px 0 18px}
   .chap-act{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 12px}
   .chap .card{padding:12px 14px;margin-bottom:6px}
@@ -223,7 +223,11 @@
   .lien{font:inherit;font-size:14px;background:none;border:0;padding:8px 0;min-height:44px;color:var(--wine-fg);cursor:pointer}
   .lieu-pied{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;margin-top:16px}.lieux-t{font-family:'Cormorant',serif;font-size:26px;margin:14px 0 4px}
   .lieu{display:grid;grid-template-columns:1fr auto;align-content:start;gap:2px 10px;text-align:left;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer}
-  .lieu-n{font-weight:600}
+  /* Jeux : zones à toucher (toutes au même ton, la touchée en vert ou rouge, la bonne en foncé), indices du vin */
+  .jeu-carte path[data-z]{cursor:pointer;fill-opacity:.22;transition:fill-opacity .15s}.jeu-carte path[data-z]:hover,.jeu-carte path[data-z]:focus-visible{fill-opacity:.42;outline:none}
+  .jeu-carte path.cible{fill-opacity:.75}.jeu-carte path.ok{fill:var(--ok);fill-opacity:.8}.jeu-carte path.ko{fill:var(--bad);fill-opacity:.6}
+  .indices{margin:4px 0 14px;padding-left:20px;line-height:1.5}.cave-jeu{margin:12px 0 6px;color:var(--muted)}
+  .lieu-n{font-weight:600}.lieu .chap-m{white-space:normal}.lieu.maitrise{border-color:var(--wine)}.lieu.maitrise .lieu-c{color:var(--wine-fg);font-weight:600}
   .lieu-tete{grid-column:1/-1;margin-bottom:10px}.lieu-t{font-family:'Cormorant',serif;font-size:30px;margin:12px 0 2px}
   .jour{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
   .jour-carte{border:1px solid var(--line);border-radius:6px;padding:16px 18px;background:var(--paper)}

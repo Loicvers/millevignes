@@ -282,6 +282,21 @@ test("suivi : le rappel sans aide lit la note des flashcards non saisies, et lai
   assert.deepEqual(r.libre, [3, 4]);
 });
 
+test("série de jours : séances terminées et examens, hier pardonné une fois par semaine, séance abandonnée ignorée", () => {
+  vm.runInNewContext("this.se=serie", ctx);
+  const DAY = 86400000, t0 = new Date("2026-11-10T12:00").getTime(), S = (j, fin = 1) => ({ t: t0 - j * DAY, fin }), r = (s, x = []) => JSON.parse(JSON.stringify(ctx.se(s, x, t0)));
+  assert.deepEqual(r([]), { n: 0, fait: false, gel: false });
+  assert.deepEqual(r([S(0), S(1), S(2)]), { n: 3, fait: true, gel: false });                       // 3 jours, dont aujourd'hui
+  assert.deepEqual(r([S(1), S(2)]), { n: 2, fait: false, gel: false });                             // aujourd'hui reste à faire, la série tient
+  assert.deepEqual(r([S(2), S(3)]), { n: 2, fait: false, gel: true });                              // hier manqué : pardonné, aujourd'hui sauve la série
+  assert.deepEqual(r([S(3), S(4)]), { n: 0, fait: false, gel: false });                             // deux jours manqués : cassée
+  assert.deepEqual(r([S(0), S(2), S(3), S(4)]), { n: 4, fait: true, gel: false });                  // un trou au milieu, pardonné
+  assert.deepEqual(r([S(0), S(2), S(3), S(5), S(6)]), { n: 3, fait: true, gel: false });            // deux trous dans la même semaine : le second casse
+  assert.deepEqual(r([S(0), S(2), S(3), S(4), S(5), S(6), S(7), S(8), S(10)]), { n: 9, fait: true, gel: false }); // trous à 7 jours d'écart : les deux pardonnés
+  assert.deepEqual(r([S(0, 0), S(1)]), { n: 1, fait: false, gel: false });                          // séance abandonnée aujourd'hui : ne compte pas
+  assert.deepEqual(r([S(1)], [{ t: t0 }]), { n: 2, fait: true, gel: false });                       // examen blanc du jour : compte
+});
+
 test("aucun identifiant d'exercice existant ne disparaît (la progression en dépend)", () => {
   const avant = read("./ids-exercices.json"), now = new Set(FICHES.flatMap(toExercises).map(e => e.id));
   const perdus = avant.filter(id => !now.has(id));
