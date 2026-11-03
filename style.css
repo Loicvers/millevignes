@@ -227,7 +227,17 @@
   .jeu-carte path[data-z]{cursor:pointer;fill-opacity:.22;transition:fill-opacity .15s}.jeu-carte path[data-z]:hover,.jeu-carte path[data-z]:focus-visible{fill-opacity:.42;outline:none}
   .jeu-carte path.cible{fill-opacity:.75}.jeu-carte path.ok{fill:var(--ok);fill-opacity:.8}.jeu-carte path.ko{fill:var(--bad);fill-opacity:.6}
   .indices{margin:4px 0 14px;padding-left:20px;line-height:1.5}.cave-jeu{margin:12px 0 6px;color:var(--muted)}
-  .lieu-n{font-weight:600}.lieu .chap-m{white-space:normal}.lieu.maitrise{border-color:var(--wine)}.lieu.maitrise .lieu-c{color:var(--wine-fg);font-weight:600}
+  .lieu-n{font-weight:600}.lieu .chap-m{white-space:normal}.lieu.maitrise{border-color:var(--wine);position:relative;overflow:hidden;min-height:112px}.lieu.maitrise .chap-m,.lieu.maitrise .lieu-h{padding-right:62px}
+  /* Carnet tamponné : grappe, sceau et tampon en bordeaux ; encre qui se mélange au papier en mode clair seulement */
+  .grappe-row{display:flex;align-items:center;gap:14px;margin-top:6px;text-align:left}.grappe-row .jour-note{margin:0}.grappe{flex:none;color:var(--wine-fg)}
+  .sceau{position:absolute;right:-6px;top:-4px;color:var(--wine-fg);transform:rotate(-12deg);opacity:.9;mix-blend-mode:multiply;font-family:'Inter',sans-serif;pointer-events:none}
+  .fin{padding-top:40px}.fin-carte{position:relative;width:min(300px,100%);margin:0 auto 18px;padding:88px 20px 24px;border:1px solid var(--line);border-radius:6px;background:var(--field);color:var(--ink)}
+  .fin-carte h3{font-family:'Cormorant',serif;font-size:32px;font-weight:600;line-height:1.1;margin:0}
+  .fin-score{font-family:'Cormorant',serif;font-size:56px;font-weight:600;line-height:1;margin:14px 0 0;font-variant-numeric:lining-nums}.fin-score span{font-size:26px;color:var(--muted)}
+  .fin-carte .grappe-row{justify-content:center;margin-top:18px}
+  .tampon{position:absolute;width:122px;height:122px;right:-18px;top:-28px;color:var(--wine-fg);transform:rotate(-14deg);opacity:.88;mix-blend-mode:multiply;font-family:'Inter',sans-serif;animation:pose .35s cubic-bezier(.2,1.4,.4,1)}
+  @keyframes pose{from{transform:rotate(-20deg) scale(1.6);opacity:0}to{transform:rotate(-14deg) scale(1);opacity:.88}}
+  :root[data-theme=dark] .sceau,:root[data-theme=dark] .tampon{mix-blend-mode:normal}
   .lieu-tete{grid-column:1/-1;margin-bottom:10px}.lieu-t{font-family:'Cormorant',serif;font-size:30px;margin:12px 0 2px}
   .jour{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
   .jour-carte{border:1px solid var(--line);border-radius:6px;padding:16px 18px;background:var(--paper)}
@@ -348,6 +358,7 @@
     :root:not([data-theme=light]){color-scheme:dark;--ink:#ece6da;--paper:#16130f;--paper2:#1f1b16;--line:#3a342c;--wine:#a8465a;--wine-soft:#b85a68;--wine-fg:#d98694;--gold:#d2b57c;--muted:#b3a998;--green:#8fb381;--warn:#e0a95a;--ink2:#d6cfc2;--field:#0f0d0a;--hover:#2a241d;--ok:#8fb381;--bad:#e29a9a}
     :root:not([data-theme=light]) .opt.good{background:#26331f;color:#cfe3c4}
     :root:not([data-theme=light]) .opt.bad{background:#3a1f21;color:#f0c4c4}
+    :root:not([data-theme=light]) .sceau,:root:not([data-theme=light]) .tampon{mix-blend-mode:normal}
   }
   @media screen{
     :root[data-theme=dark]{color-scheme:dark;--ink:#ece6da;--paper:#16130f;--paper2:#1f1b16;--line:#3a342c;--wine:#a8465a;--wine-soft:#b85a68;--wine-fg:#d98694;--gold:#d2b57c;--muted:#b3a998;--green:#8fb381;--warn:#e0a95a;--ink2:#d6cfc2;--field:#0f0d0a;--hover:#2a241d;--ok:#8fb381;--bad:#e29a9a}
