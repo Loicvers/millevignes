@@ -50,7 +50,7 @@
   .filt-label .dot{width:6px;height:6px;border-radius:50%}
   .chips{display:flex;flex-wrap:wrap;gap:6px}
   .chip{font-size:12.5px;border:1px solid #8f8676;background:var(--paper);padding:5px 11px;border-radius:40px;cursor:pointer;color:var(--ink);transition:all .15s;font-family:inherit}
-  .chip:hover{border-color:var(--gold)}
+  @media (hover:hover){.chip:hover{border-color:var(--gold)}}
   .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   .sub-panel{margin-top:10px;padding-top:10px;border-top:1px dotted var(--line);display:none}
   .sub-panel.show{display:block}
@@ -63,7 +63,7 @@
   .geo-node .tw{display:inline-block;width:14px;color:var(--muted)}
   .geo-pays{font-weight:600}.geo-region{padding-left:16px}.geo-appel{padding-left:34px;color:var(--wine-soft)}
   .geo-appel.on,.geo-region.on{color:var(--wine-fg);font-weight:600}
-  .geo-appel:hover,.geo-region:hover,.geo-pays:hover{color:var(--wine-fg)}
+  @media (hover:hover){.geo-appel:hover,.geo-region:hover,.geo-pays:hover{color:var(--wine-fg)}}
   .geo-hidden{display:none}
 
   .filt-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
@@ -174,7 +174,7 @@
   .q{font-size:13.5px;font-weight:600;margin-bottom:9px}
   button{color:inherit} /* iOS colore les boutons en bleu par défaut */
   .opt{display:block;width:100%;text-align:left;font-family:inherit;color:inherit;font-size:13px;padding:8px 11px;margin-bottom:6px;border:1px solid var(--line);background:var(--paper);border-radius:3px;cursor:pointer;transition:all .12s}
-  .opt:hover{border-color:var(--gold)}
+  @media (hover:hover){.opt:hover{border-color:var(--gold)}}
   .opt.good{background:#e7efe4;border-color:var(--green);color:#2f4226}
   .opt.bad{background:#f2e2e2;border-color:#a85a5a;color:#6e2a2a}
   .opt:disabled{cursor:default}
@@ -186,9 +186,9 @@
   .srs-btns{display:flex;gap:6px}
   .srs-btn{flex:1;font-family:inherit;font-size:12px;font-weight:600;padding:9px 4px;border-radius:3px;border:1px solid var(--line);cursor:pointer;background:var(--paper);transition:all .12s}
   .srs-btn .sub2{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:2px}
-  .srs-hard:hover{background:#f2e2e2;border-color:#a85a5a}
-  .srs-ok:hover{background:var(--hover);border-color:var(--gold)}
-  .srs-easy:hover{background:#e7efe4;border-color:var(--green)}
+  @media (hover:hover){.srs-hard:hover{background:#f2e2e2;border-color:#a85a5a}}
+  @media (hover:hover){.srs-ok:hover{background:var(--hover);border-color:var(--gold)}}
+  @media (hover:hover){.srs-easy:hover{background:#e7efe4;border-color:var(--green)}}
   .srs-done{font-size:12px;color:var(--green);text-align:center;font-weight:600}
 
   .empty{text-align:center;padding:70px 20px;color:var(--muted)}
@@ -205,7 +205,7 @@
   .foot-set[open]>summary{margin-bottom:8px}
 
   .btn{font-family:inherit;font-size:13px;font-weight:600;padding:10px 14px;min-height:44px;border-radius:3px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink)}
-  .btn:hover{border-color:var(--gold)}.btn:disabled{opacity:.5;cursor:default}
+  @media (hover:hover){.btn:hover{border-color:var(--gold)}}.btn:disabled{opacity:.5;cursor:default}
   .btn.primary{background:var(--wine);border-color:var(--wine);color:#fff}
   .btn.train{margin:4px 0 12px}
   .session{max-width:680px;margin:0 auto}
