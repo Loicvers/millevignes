@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Initiation à l'œnologie</title>
+<style>
+@font-face{font-family:'Cormorant';font-style:normal;font-weight:400 600;src:url(../../fonts/cormorant.woff2) format('woff2')}
+@font-face{font-family:'Cormorant';font-style:italic;font-weight:400;src:url(../../fonts/cormorant-italic.woff2) format('woff2')}
+:root{
+  --wine:#5b1a24;--wine2:#7a2c38;--rose:#d4a3ab;--rose2:#ecd3d6;
+  --gold:#a8843a;--gold2:#e2c680;--olive:#5c7a4f;--olive2:#b4c69c;
+  --slate:#456e8a;--slate2:#b3c8d4;--ink:#1a1612;--muted:#625a4e;
+  --cream:#f7f2e9;--line:#d8d0c2;--brown:#8a5a2b;
+}
+@page{size:A4;margin:18mm 20mm 20mm 20mm}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:10.5pt}
+body{font-family:'Inter',sans-serif;color:var(--ink);line-height:1.5;font-size:1rem;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+p{margin:0 0 7pt}
+strong{font-weight:600}
+em{font-style:italic}
+a{color:var(--slate);text-decoration:none;border-bottom:1px solid var(--slate2)}
+h1,h2,h3{font-family:'Cormorant',serif;font-weight:600;line-height:1.15;break-after:avoid}
+h1{font-size:30pt;color:var(--wine);margin:0 0 18pt;padding-bottom:8pt;border-bottom:1.5px solid var(--wine);letter-spacing:.01em}
+h1 small{display:block;font-family:'Inter';font-weight:600;font-size:8.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10pt}
+h2{font-size:19pt;color:var(--wine);margin:18pt 0 7pt}
+h3{font-size:14pt;color:var(--wine2);margin:13pt 0 4pt}
+h2+h3{margin-top:4pt}
+ul,ol{margin:0 0 7pt 15pt}
+li{margin:0 0 2.5pt;padding-left:3pt}
+ul{list-style:none;margin-left:12pt}
+ul li{position:relative;padding-left:12pt}
+ul li::before{content:'';position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+ol li::marker{color:var(--wine);font-weight:600}
+.part{break-before:page}
+.note{position:relative;background:var(--cream);padding:7pt 11pt 7pt 14pt;margin:8pt 0 10pt;border-left:3px solid var(--wine);font-size:.95rem;break-inside:avoid}
+.note strong{color:var(--wine)}
+table{width:100%;border-collapse:collapse;break-inside:avoid;margin:5pt 0 9pt;font-size:.93rem;line-height:1.38}
+th{text-align:left;font-weight:600;color:var(--wine);padding:5pt 8pt 5pt 0;border-bottom:1.5px solid var(--wine);vertical-align:bottom}
+td{padding:5pt 8pt 5pt 0;border-bottom:1px solid var(--line);vertical-align:top}
+tr{break-inside:avoid}
+td:first-child,th:first-child{padding-left:0}
+.fiche td{height:44pt}
+table.lex{break-inside:auto}
+table.lex thead{display:table-header-group}
+.fiche th:last-child,.fiche td:last-child{width:46%}
+.src{font-size:.95rem}
+.src li{margin-bottom:3pt}
+.fig{background:var(--cream);border-radius:4px;padding:12pt 14pt 10pt;margin:8pt 0 11pt;break-inside:avoid}
+.fig h4{font-family:'Inter';font-weight:600;font-size:11.5pt;color:var(--ink);margin:0 0 1pt;line-height:1.25}
+.fig .sub{font-size:8.8pt;color:var(--muted);margin:0 0 6pt}
+.fig svg{display:block;width:100%;height:auto;font-family:'Inter';}
+.fig .cap{font-size:8.3pt;color:var(--muted);margin:5pt 0 0;line-height:1.35}
+.fig .tn{font-size:10.5px;font-weight:600;fill:var(--ink)}
+.fig .tx{font-size:9.2px;fill:var(--muted)}
+.fig .tw{font-size:10px;font-weight:600;fill:#fff}
+.fig .tk{font-size:10px;font-weight:600;fill:var(--ink)}
+.fig .ld{stroke:#9a8f80;stroke-width:.8;fill:none}
+.fig .dot{fill:var(--wine)}
+/* couverture */
+.cover{height:257mm;display:flex;flex-direction:column;break-after:page;position:relative}
+.cover .brand{font-size:9pt;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-top:6mm}
+.cover .title{font-family:'Cormorant',serif;font-weight:600;font-size:54pt;line-height:1;color:var(--wine);margin:14mm 0 8mm}
+.cover .tag{font-size:11.5pt;color:var(--muted);padding-bottom:5mm;border-bottom:1px solid var(--gold)}
+.cover .art{flex:1;display:flex;align-items:center;justify-content:center;margin:6mm 0}
+.cover .art svg{width:138mm;height:auto}
+.cover .foot{border-top:1px solid var(--line);padding-top:5mm;display:flex;justify-content:space-between;align-items:flex-end}
+.cover .foot b{display:block;font-size:12.5pt;font-weight:600;color:var(--ink)}
+.cover .foot span{font-size:9.5pt;color:var(--muted)}
+.cover .foot .date{font-family:'Cormorant';font-size:15pt;color:var(--wine)}
+.intro{margin-top:4mm}
+</style>
+</head>
+<body>
+
+<!-- ============ COUVERTURE ============ -->
+<section class="cover">
+  <div class="brand">Une Autre Clé du Paradis</div>
+  <div class="title">Initiation<br>à l'œnologie</div>
+  <div class="tag">Déguster avec méthode · Comprendre la vigne et le chai · Décrypter une étiquette</div>
+  <div class="art">
+    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="bowlclip"><path d="M326 36 C330 86 352 126 350 168 C348 218 318 252 268 254 C218 252 188 218 186 168 C184 126 206 86 210 36 Z"/></clipPath>
+        <linearGradient id="wineg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a3445"/><stop offset="1" stop-color="#4e1420"/></linearGradient>
+        <radialGradient id="grape" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8c3a50"/><stop offset="1" stop-color="#4a1225"/></radialGradient>
+      </defs>
+      <circle cx="300" cy="180" r="150" fill="#f3ece0"/>
+      <!-- sarment et vrille -->
+      <path d="M40 268 C90 236 130 196 176 160 C196 144 214 134 236 128" fill="none" stroke="#6b4a2a" stroke-width="3" stroke-linecap="round"/>
+      <path d="M236 128 c12 -4 22 2 20 12 c-2 10 -16 10 -16 2 c0 -6 8 -8 10 -2" fill="none" stroke="#6b4a2a" stroke-width="2" stroke-linecap="round"/>
+      <!-- feuille -->
+      <g transform="translate(150 108) rotate(-22) scale(.78)">
+        <path d="M0 -100 C18 -86 30 -66 26 -46 C46 -72 74 -80 94 -68 C92 -50 76 -34 50 -26 C72 -18 86 0 84 22 C64 28 46 22 32 10 C36 34 28 56 12 68 C6 62 2 58 0 58 C-2 58 -6 62 -12 68 C-28 56 -36 34 -32 10 C-46 22 -64 28 -84 22 C-86 0 -72 -18 -50 -26 C-76 -34 -92 -50 -94 -68 C-74 -80 -46 -72 -26 -46 C-30 -66 -18 -86 0 -100 Z" fill="#6d8a55" stroke="#4d6a3c" stroke-width="2.4" stroke-linejoin="round"/>
+        <g fill="none" stroke="#4d6a3c" stroke-width="1.6" stroke-linecap="round" opacity=".85">
+          <path d="M0 58 L0 -90"/><path d="M0 40 L84 -62"/><path d="M0 40 L-84 -62"/><path d="M0 50 L76 16"/><path d="M0 50 L-76 16"/>
+          <path d="M0 -40 L24 -56 M0 -40 L-24 -56 M0 4 L26 -8 M0 4 L-26 -8"/>
+        </g>
+      </g>
+      <!-- grappe -->
+      <path d="M176 160 L182 176" stroke="#6b4a2a" stroke-width="3" stroke-linecap="round"/>
+      <g fill="url(#grape)" stroke="#3f0f1e" stroke-width="1">
+        <circle cx="158" cy="190" r="13"/><circle cx="184" cy="186" r="13"/><circle cx="210" cy="192" r="13"/>
+        <circle cx="146" cy="212" r="13"/><circle cx="172" cy="210" r="13"/><circle cx="198" cy="214" r="13"/><circle cx="222" cy="216" r="12"/>
+        <circle cx="158" cy="234" r="13"/><circle cx="184" cy="234" r="13"/><circle cx="210" cy="238" r="12"/>
+        <circle cx="170" cy="256" r="12"/><circle cx="196" cy="258" r="12"/>
+        <circle cx="183" cy="278" r="11"/>
+      </g>
+      <g fill="#fff" opacity=".32"><circle cx="154" cy="185" r="3.2"/><circle cx="180" cy="181" r="3.2"/><circle cx="168" cy="205" r="3.2"/><circle cx="194" cy="209" r="3.2"/><circle cx="154" cy="229" r="3.2"/><circle cx="206" cy="233" r="3.2"/><circle cx="166" cy="251" r="3"/><circle cx="179" cy="273" r="2.8"/></g>
+      <!-- verre -->
+      <g transform="translate(60 0)">
+        <g clip-path="url(#bowlclip)">
+          <rect x="170" y="150" width="200" height="120" fill="url(#wineg)"/>
+          <ellipse cx="268" cy="150" rx="83" ry="8" fill="#a64c60"/>
+        </g>
+        <path d="M210 36 C206 86 184 126 186 168 C188 218 218 252 268 254 C318 252 348 218 350 168 C352 126 330 86 326 36" fill="none" stroke="#2a2420" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M210 36 L326 36" stroke="#2a2420" stroke-width="1.2" opacity=".5"/>
+        <path d="M268 254 L268 306" stroke="#2a2420" stroke-width="2.6"/>
+        <path d="M212 312 C212 305 324 305 324 312 C324 319 212 319 212 312 Z" fill="#e9e2d4" stroke="#2a2420" stroke-width="2.4"/>
+        <path d="M216 60 C206 100 204 140 212 176" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".6"/>
+      </g>
+    </svg>
+  </div>
+  <div class="foot">
+    <div><b>Support participant</b><span>Cours, atelier étiquette, fiche de dégustation et lexique</span></div>
+    <div class="date">Novembre 2026</div>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<p class="intro">Ce support accompagne une soirée d'initiation : d'abord apprendre à déguster, ensuite comprendre comment la vigne et le chai font le goût du vin. Il remplace l'ancien polycopié, corrigé sur les points dépassés et complété (rosés, effervescents, défauts, familles d'arômes, étiquette, lexique).</p>
+<h2>Mode d'emploi</h2>
+<ul>
+<li><strong>Le diaporama</strong> sert en séance ; ce document se garde et se relit.</li>
+<li>Chaque illustration est originale. L'étiquette de l'atelier est fictive.</li>
+<li>Les chiffres et règles ont été vérifiés dans des sources de référence (listées à la fin). Quand les sources ne disent pas la même chose, le texte le signale.</li>
+<li>Encadré <strong>Idée reçue</strong> : ce que disaient les anciens manuels et qu'on ne dit plus.</li>
+</ul>
+
+<!-- ============ PARTIE 1 ============ -->
+<section class="part">
+<h1><small>Partie 1</small>Déguster</h1>
+
+<h2>Pourquoi déguster ?</h2>
+<p>Seule la dégustation juge la qualité d'un vin. Une analyse de laboratoire mesure l'alcool, l'acidité ou le sucre, mais deux vins aux chiffres presque identiques peuvent être, l'un un vin courant, l'autre un grand cru. L'analyse aide la dégustation ; elle ne la remplace pas.</p>
+
+<h2>Préparer une dégustation</h2>
+<ul>
+<li><strong>Le lieu</strong> : une pièce claire, à la lumière du jour ou sous un éclairage qui ne change pas les couleurs ; un fond blanc (nappe, feuille) ; aucune odeur parasite (parfum, tabac, fleurs, cuisine).</li>
+<li><strong>Le moment</strong> : la tradition des professionnels place la dégustation en fin de matinée, avant le repas. Évitez café, chocolat, fromage, alcools forts ou cigarette juste avant. Un morceau de pain neutre ne gêne pas.</li>
+<li><strong>Le verre</strong> : voir l'illustration ci-dessous.</li>
+<li><strong>L'ordre</strong> : du plus léger au plus puissant, du sec au doux, du blanc au rouge, du jeune au vieux.</li>
+</ul>
+
+<!-- FIG verre -->
+<div class="fig">
+<h4>Le bon verre : il concentre les arômes</h4>
+<p class="sub">Forme tulipe, cristallin fin, incolore, tenu par la tige ou le pied</p>
+<svg viewBox="0 0 640 262" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="g2"><path d="M166 18 C160 70 158 120 176 158 C190 186 224 196 250 196 C276 196 310 186 324 158 C342 120 340 70 334 18 Z"/></clipPath></defs>
+  <!-- arômes -->
+  <g stroke="var(--gold)" stroke-width="1.4" fill="none" stroke-dasharray="3 4" stroke-linecap="round">
+    <path d="M232 126 L232 40"/><path d="M250 126 L250 34"/><path d="M268 126 L268 40"/>
+  </g>
+  <g fill="var(--gold)"><path d="M232 30 l-5 10 h10z"/><path d="M250 24 l-5 10 h10z"/><path d="M268 30 l-5 10 h10z"/></g>
+  <!-- vin -->
+  <g clip-path="url(#g2)"><rect x="150" y="128" width="200" height="80" fill="#7a2c38"/><ellipse cx="250" cy="128" rx="72" ry="7" fill="#a04a5a"/></g>
+  <!-- verre -->
+  <path d="M166 18 C160 70 158 120 176 158 C190 186 224 196 250 196 C276 196 310 186 324 158 C342 120 340 70 334 18" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M166 18 L334 18" stroke="var(--ink)" stroke-width="1" opacity=".5"/>
+  <path d="M250 196 L250 232" stroke="var(--ink)" stroke-width="2.2"/>
+  <path d="M206 236 C206 231 294 231 294 236 C294 241 206 241 206 236 Z" fill="#fff" stroke="var(--ink)" stroke-width="2"/>
+  <!-- repères -->
+  <g class="ld"><path d="M334 24 L390 24"/><path d="M330 90 L390 90"/><path d="M322 128 L390 128"/><path d="M252 214 L390 214"/><path d="M294 236 L360 236 L360 250 L390 250"/></g>
+  <g class="dot"><circle cx="334" cy="24" r="3"/><circle cx="330" cy="90" r="3"/><circle cx="322" cy="128" r="3"/><circle cx="252" cy="214" r="3"/><circle cx="294" cy="236" r="3"/></g>
+  <g>
+    <text x="398" y="22" class="tn">Bord fin et resserré</text><text x="398" y="35" class="tx">les arômes se concentrent vers le nez</text>
+    <text x="398" y="88" class="tn">Calice en tulipe, incolore</text><text x="398" y="101" class="tx">on juge la robe, on fait tourner sans renverser</text>
+    <text x="398" y="126" class="tn">Servir peu : au tiers environ</text><text x="398" y="139" class="tx">jusqu'à la partie la plus large</text>
+    <text x="398" y="212" class="tn">Tige</text><text x="398" y="225" class="tx">la main ne réchauffe pas le vin</text>
+    <text x="398" y="248" class="tn">Pied</text><text x="398" y="261" class="tx">pour faire tourner le vin à plat sur la table</text>
+  </g>
+</svg>
+</div>
+
+<h2>À quelle température servir ?</h2>
+<p>Trop froid, le vin se ferme et ses tanins durcissent ; trop chaud, l'alcool ressort. Ce sont des repères : le goût du convive passe avant.</p>
+<table>
+<tr><th>Type de vin</th><th>Température de service</th></tr>
+<tr><td>Liquoreux</td><td>6 à 8 °C</td></tr>
+<tr><td>Effervescents</td><td>6 à 10 °C</td></tr>
+<tr><td>Blancs et rosés légers</td><td>7 à 10 °C</td></tr>
+<tr><td>Blancs puissants, boisés</td><td>10 à 13 °C</td></tr>
+<tr><td>Rouges légers (ex. beaujolais)</td><td>13 à 18 °C</td></tr>
+<tr><td>Rouges moyens à corsés</td><td>15 à 18 °C</td></tr>
+</table>
+<p>Repères du WSET. La Bourgogne (BIVB) sert ses blancs un peu plus chauds : 10 à 12 °C pour un blanc vif comme l'aligoté, 12 à 14 °C pour les autres. Pour le champagne, le Comité Champagne conseille 8 à 10 °C.</p>
+<p>Astuce : l'eau glacée refroidit bien plus vite que l'air. Un seau moitié eau, moitié glace rafraîchit une bouteille en une trentaine de minutes.</p>
+
+<h2>Les sens du dégustateur</h2>
+<p><strong>La vue.</strong> Premier contact : limpidité, éclat, intensité et teinte de la robe, puis les « larmes » qui coulent sur la paroi quand on fait tourner le verre. Un vin trouble ou voilé signale souvent un problème (sauf vin volontairement non filtré).</p>
+<p><strong>L'odorat.</strong> C'est le sens le plus riche. On sent le vin deux fois : en humant le verre (voie directe, l'« odeur ») puis en bouche, quand le vin réchauffé libère ses parfums vers l'arrière-gorge (voie rétronasale, l'« arôme de bouche »). Nous avons environ 400 types de récepteurs olfactifs, et deux personnes diffèrent sur près d'un tiers d'entre eux : nous ne sentons pas tous la même chose. L'odorat s'entraîne et se mémorise.</p>
+
+<!-- FIG deux voies -->
+<div class="fig">
+<h4>On sent le vin deux fois</h4>
+<p class="sub">Par le nez (voie directe) puis par la bouche (voie rétronasale)</p>
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+  <!-- profil -->
+  <path d="M250 212 C236 170 212 150 206 112 C200 70 232 22 288 20 C344 18 384 54 382 108 C381 140 364 150 356 170 C352 184 356 200 360 212" fill="#fbf8f2" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/>
+  <!-- nez, lèvres -->
+  <path d="M214 118 C206 124 200 136 206 142 C212 146 220 142 224 146" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M226 158 C236 160 246 158 252 156" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+  <!-- cavité nasale / bulbe -->
+  <ellipse cx="282" cy="92" rx="30" ry="12" fill="var(--gold2)" stroke="var(--gold)" stroke-width="1.5"/>
+  <text x="282" y="95.5" text-anchor="middle" class="tk" style="font-size:8.5px">zone olfactive</text>
+  <!-- bouche / arrière-gorge -->
+  <path d="M232 160 C262 166 296 162 316 150" fill="none" stroke="var(--rose)" stroke-width="7" stroke-linecap="round"/>
+  <!-- verre -->
+  <g transform="translate(120 100) scale(.62)">
+    <path d="M0 0 C-4 40 -2 70 10 86 C18 98 36 102 50 102 C64 102 82 98 90 86 C102 70 104 40 100 0" fill="none" stroke="var(--ink)" stroke-width="3"/>
+    <path d="M6 56 C14 56 86 56 94 56 C96 70 90 102 50 102 C10 102 4 70 6 56 Z" fill="#7a2c38"/>
+    <path d="M50 102 L50 132 M24 136 C24 130 76 130 76 136 C76 142 24 142 24 136" fill="#fff" stroke="var(--ink)" stroke-width="3"/>
+  </g>
+  <!-- voie directe -->
+  <path d="M178 96 C196 80 230 72 256 86" fill="none" stroke="var(--slate)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#ah1)"/>
+  <!-- voie rétronasale -->
+  <path d="M312 150 C330 134 320 112 300 102" fill="none" stroke="var(--wine)" stroke-width="2.2" stroke-dasharray="5 4" stroke-linecap="round" marker-end="url(#ah2)"/>
+  <defs>
+    <marker id="ah1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--slate)"/></marker>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--wine)"/></marker>
+  </defs>
+  <!-- légendes -->
+  <g transform="translate(420 40)">
+    <line x1="0" y1="8" x2="26" y2="8" stroke="var(--slate)" stroke-width="2.5"/>
+    <text x="34" y="12" class="tn">Voie directe (orthonasale)</text>
+    <text x="0" y="32" class="tx">On hume le verre : c'est l'« odeur »,</text>
+    <text x="0" y="45" class="tx">le premier et le deuxième nez.</text>
+  </g>
+  <g transform="translate(420 130)">
+    <line x1="0" y1="8" x2="26" y2="8" stroke="var(--wine)" stroke-width="2.5" stroke-dasharray="5 4"/>
+    <text x="34" y="12" class="tn">Voie rétronasale</text>
+    <text x="0" y="32" class="tx">Le vin réchauffé en bouche libère</text>
+    <text x="0" y="45" class="tx">ses parfums vers l'arrière-gorge :</text>
+    <text x="0" y="58" class="tx">c'est l'« arôme de bouche ».</text>
+  </g>
+</svg>
+</div>
+
+<p><strong>Le goût.</strong> La langue ne perçoit que des saveurs : sucré, acide, amer, salé et umami.</p>
+<div class="note"><strong>Idée reçue.</strong> La « carte de la langue » (le sucré à la pointe, l'amer au fond…) est fausse. Toutes les zones de la langue perçoivent toutes les saveurs ; seule la sensibilité varie un peu. Et il y a cinq saveurs, pas quatre : l'umami (le goût du glutamate), isolé au Japon par Kikunae Ikeda au début du XXe siècle, a été reconnu comme saveur de base à la fin du siècle.</div>
+
+<!-- FIG langue -->
+<div class="fig">
+<h4>La langue n'a pas de carte : cinq saveurs, partout</h4>
+<p class="sub">La « carte de la langue » des anciens manuels est une idée fausse</p>
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+  <path id="tongue" d="M100 30 C130 18 170 16 200 30 C236 48 240 110 226 150 C214 186 190 206 165 212 C140 206 116 186 104 150 C90 110 94 48 100 30 Z" fill="#e7a9b0" stroke="#b8707a" stroke-width="2"/>
+  <path d="M165 60 C166 100 166 150 165 200" fill="none" stroke="#c98a93" stroke-width="1.5"/>
+  <g id="dots"></g>
+  <text x="165" y="226" text-anchor="middle" class="tk" style="font-size:9.5px">Chaque zone perçoit les cinq saveurs</text>
+  <g transform="translate(300 28)">
+    <g><circle cx="7" cy="0" r="6" fill="#c9a23c"/><text x="22" y="4" class="tn">Sucré</text><text x="22" y="17" class="tx">sucres résiduels ; l'alcool et le glycérol arrondissent</text></g>
+    <g transform="translate(0 40)"><circle cx="7" cy="0" r="6" fill="var(--slate)"/><text x="22" y="4" class="tn">Acide</text><text x="22" y="17" class="tx">fraîcheur, salivation (acides tartrique, malique, lactique)</text></g>
+    <g transform="translate(0 80)"><circle cx="7" cy="0" r="6" fill="var(--olive)"/><text x="22" y="4" class="tn">Amer</text><text x="22" y="17" class="tx">certains polyphénols ; finale de vins tanniques</text></g>
+    <g transform="translate(0 120)"><circle cx="7" cy="0" r="6" fill="var(--wine)"/><text x="22" y="4" class="tn">Salé</text><text x="22" y="17" class="tx">rare et discret dans le vin</text></g>
+    <g transform="translate(0 160)"><circle cx="7" cy="0" r="6" fill="var(--brown)"/><text x="22" y="4" class="tn">Umami</text><text x="22" y="17" class="tx">5e saveur, isolée par K. Ikeda au début du XXe siècle</text></g>
+    <text x="0" y="200" class="tx" style="font-style:italic">Astringence, chaleur, piquant du gaz : des sensations tactiles, pas des saveurs.</text>
+  </g>
+</svg>
+<script>
+(function(){
+  var cols=['#c9a23c','#456e8a','#5c7a4f','#5b1a24','#8a5a2b'], g=document.getElementById('dots');
+  var seed=7; function rnd(){seed=(seed*9301+49297)%233280;return seed/233280;}
+  var tongue=document.getElementById('tongue');
+  var n=0, tries=0;
+  while(n<70 && tries<3000){
+    tries++;
+    var x=94+rnd()*148, y=22+rnd()*186;
+    var p=tongue.ownerSVGElement.createSVGPoint(); p.x=x; p.y=y;
+    if(!tongue.isPointInFill(p)) continue;
+    // marge intérieure
+    var ok=true; [[x-7,y],[x+7,y],[x,y-7],[x,y+7]].forEach(function(q){var pp=tongue.ownerSVGElement.createSVGPoint();pp.x=q[0];pp.y=q[1];if(!tongue.isPointInFill(pp))ok=false;});
+    if(!ok) continue;
+    var c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('cx',x.toFixed(1)); c.setAttribute('cy',y.toFixed(1)); c.setAttribute('r','3.2'); c.setAttribute('fill',cols[n%5]); c.setAttribute('opacity','.9');
+    g.appendChild(c); n++;
+  }
+})();
+</script>
+</div>
+
+<p><strong>Le toucher.</strong> En bouche, on sent la température, la viscosité, le volume, le piquant du gaz, la chaleur de l'alcool et l'astringence des tanins (la bouche qui « sèche »). Ce sont des sensations tactiles, pas des saveurs.</p>
+<p><strong>L'ouïe.</strong> Elle sert peu, sauf pour les bulles des effervescents… et pour trinquer.</p>
+
+<h2>La méthode : regarder, sentir, goûter, conclure</h2>
+<p>Toutes les grilles sérieuses suivent le même ordre ; celle du WSET, utilisée dans le monde entier, tient en quatre blocs : aspect, nez, bouche, conclusions.</p>
+
+<!-- FIG méthode -->
+<div class="fig">
+<h4>Déguster avec méthode : regarder, sentir, goûter, conclure</h4>
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg">
+  <g id="steps"></g>
+  <text x="320" y="162" text-anchor="middle" class="tx" style="font-style:italic">Noter tout de suite, avec des mots précis : la mémoire des sensations est courte.</text>
+</svg>
+<script>
+(function(){
+  var S=[['L\'œil','#5b1a24',['Limpidité, éclat','Intensité de la robe','Teinte, reflets','Larmes (alcool, sucre)']],
+         ['Le nez','#a8843a',['1er nez, sans agiter','Agiter : deuxième nez','Intensité, netteté','Familles d\'arômes']],
+         ['La bouche','#5c7a4f',['Attaque','Milieu : acidité, sucre,','tanins, alcool, corps','Finale et longueur']],
+         ['Conclure','#456e8a',['Équilibre, harmonie','Qualité','Potentiel de garde','Accords, service']]];
+  var g=document.getElementById('steps'), w=142, gap=24, h='';
+  S.forEach(function(s,i){
+    var x=i*(w+gap);
+    h+='<rect x="'+x+'" y="8" width="'+w+'" height="130" rx="4" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<rect x="'+x+'" y="8" width="'+w+'" height="34" rx="4" fill="'+s[1]+'"/><rect x="'+x+'" y="30" width="'+w+'" height="12" fill="'+s[1]+'"/>';
+    h+='<circle cx="'+(x+20)+'" cy="25" r="10" fill="#fff"/><text x="'+(x+20)+'" y="29" text-anchor="middle" style="font-size:11px;font-weight:600" fill="'+s[1]+'">'+(i+1)+'</text>';
+    h+='<text x="'+(x+38)+'" y="29.5" class="tw" style="font-size:12px">'+s[0]+'</text>';
+    s[2].forEach(function(t,j){h+='<text x="'+(x+14)+'" y="'+(64+j*19)+'" style="font-size:9.6px" fill="#1a1612">'+t+'</text>';});
+    if(i<3){var ax=x+w+4;h+='<path d="M'+ax+' 73 L'+(ax+gap-8)+' 73" stroke="#a8843a" stroke-width="1.6"/><path d="M'+(ax+gap-12)+' 68 L'+(ax+gap-6)+' 73 L'+(ax+gap-12)+' 78" fill="none" stroke="#a8843a" stroke-width="1.6"/>';}
+  });
+  g.innerHTML=h;
+})();
+</script>
+</div>
+
+<h3>L'œil</h3>
+<ol>
+<li><strong>Limpidité et éclat</strong> : de trouble à cristallin ; de terne à brillant.</li>
+<li><strong>Intensité</strong> : de pâle à profonde. Elle se juge selon le type de vin : un pinot noir est naturellement plus clair qu'une syrah.</li>
+<li><strong>Teinte</strong> : regardez le bord du disque, verre incliné sur fond blanc. C'est là qu'on voit l'âge.</li>
+<li><strong>Larmes</strong> : abondantes et lentes, elles signalent un vin riche en alcool ou en sucre.</li>
+</ol>
+
+<!-- FIG robe -->
+<div class="fig">
+<h4>La robe raconte l'âge du vin</h4>
+<p class="sub">Regarder le disque et surtout le bord, verre incliné sur fond blanc</p>
+<svg viewBox="0 0 640 215" xmlns="http://www.w3.org/2000/svg">
+  <g id="robes"></g>
+</svg>
+<script>
+(function(){
+  var R=[['Rouges',[['violacé','#4a0f3a'],['rubis','#8c1a35'],['grenat','#7d2630'],['tuilé','#8d3f2c'],['brique, ambré','#9c6240']],'jeune → évolué : le bleu disparaît, l\'orangé gagne le bord'],
+         ['Blancs',[['reflets verts','#eef0cf'],['citron, paille','#f1e59a'],['doré','#e9c74f'],['vieil or, ambré','#d7a338'],['brun (madérisé)','#b7722a']],'jeune → évolué : la robe fonce et se dore']];
+  var h='';
+  R.forEach(function(r,i){
+    var y=40+i*105;
+    h+='<text x="0" y="'+(y+5)+'" class="tn" style="font-size:12px">'+r[0]+'</text>';
+    r[1].forEach(function(s,j){
+      var cx=150+j*105;
+      h+='<ellipse cx="'+cx+'" cy="'+y+'" rx="34" ry="24" fill="'+s[1]+'" stroke="#1a1612" stroke-opacity=".15"/>';
+      h+='<text x="'+cx+'" y="'+(y+42)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+s[0]+'</text>';
+    });
+    h+='<path d="M116 '+(y+58)+' L604 '+(y+58)+'" stroke="#9a8f80" stroke-width="1"/><path d="M598 '+(y+54)+' L606 '+(y+58)+' L598 '+(y+62)+'" fill="#9a8f80"/>';
+    h+='<text x="604" y="'+(y+72)+'" text-anchor="end" class="tx">'+r[2]+'</text>';
+  });
+  document.getElementById('robes').innerHTML=h;
+})();
+</script>
+</div>
+
+<h3>Le nez</h3>
+<ol>
+<li><strong>Premier nez</strong>, verre immobile : les arômes les plus volatils. Le vin est-il net, sans défaut ?</li>
+<li><strong>Deuxième nez</strong>, après avoir fait tourner le vin : l'air libère les arômes plus discrets.</li>
+<li><strong>Intensité</strong> (de discret à puissant), puis <strong>qualité</strong> (de simple à complexe, de commun à racé).</li>
+<li><strong>Familles d'arômes</strong> : voir plus loin.</li>
+</ol>
+<p>Un vin peut être « fermé » : il sent peu, puis s'ouvre à l'air. Revenir sur les verres en fin de séance.</p>
+
+<h3>La bouche</h3>
+<ol>
+<li><strong>Attaque</strong> : la première impression, de fuyante à franche.</li>
+<li><strong>Milieu de bouche</strong> : acidité, sucre, alcool, tanins (pour les rouges), corps.</li>
+<li><strong>Finale et longueur</strong> : combien de temps les arômes restent après avoir avalé ou recraché. On compte en secondes, appelées <strong>caudalies</strong>. Attention : une acidité ou une amertume qui dure n'est pas de la longueur ; seule compte la persistance des arômes.</li>
+</ol>
+
+<h3>L'équilibre</h3>
+<p>Un blanc sec se joue sur deux forces : l'acidité (fraîcheur) et le moelleux (alcool, glycérol, sucre éventuel). Trop d'acidité : vert, dur, mordant. Pas assez : plat, mou. Pour un rouge, une troisième force s'ajoute, les tanins : acidité et tanins durcissent ensemble, le moelleux les enrobe.</p>
+
+<!-- FIG équilibre -->
+<div class="fig">
+<h4>L'équilibre en bouche</h4>
+<p class="sub">Blanc : deux forces qui se répondent. Rouge : une troisième s'ajoute, les tanins.</p>
+<svg viewBox="0 0 640 215" xmlns="http://www.w3.org/2000/svg">
+  <!-- balance blanc -->
+  <g transform="translate(40 0)">
+    <path d="M40 150 L200 150" stroke="var(--ink)" stroke-width="2"/>
+    <path d="M120 150 L120 118" stroke="var(--ink)" stroke-width="2"/>
+    <path d="M108 150 L132 150 L120 128 Z" fill="var(--ink)"/>
+    <path d="M40 150 L40 92 M200 150 L200 92" stroke="var(--ink)" stroke-width="1.4"/>
+    <circle cx="40" cy="64" r="30" fill="var(--slate)"/><text x="40" y="68" text-anchor="middle" class="tw" style="font-size:10.5px">Acidité</text>
+    <circle cx="200" cy="64" r="30" fill="var(--gold)"/><text x="200" y="68" text-anchor="middle" class="tw" style="font-size:10.5px">Moelleux</text>
+    <text x="40" y="22" text-anchor="middle" class="tx">fraîcheur, nervosité</text>
+    <text x="200" y="22" text-anchor="middle" class="tx">alcool, glycérol, sucre</text>
+    <text x="120" y="176" text-anchor="middle" class="tn" style="font-size:11px;letter-spacing:.08em">VIN BLANC</text>
+    <text x="120" y="192" text-anchor="middle" class="tx">Trop d'acidité : vert, dur. Pas assez : plat, mou.</text>
+  </g>
+  <!-- triangle rouge -->
+  <g transform="translate(360 0)">
+    <path d="M120 40 L30 150 L210 150 Z" fill="var(--rose2)" stroke="var(--wine)" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="120" cy="40" r="28" fill="var(--wine)"/><text x="120" y="44" text-anchor="middle" class="tw" style="font-size:10.5px">Tanins</text>
+    <circle cx="30" cy="150" r="28" fill="var(--slate)"/><text x="30" y="154" text-anchor="middle" class="tw" style="font-size:10.5px">Acidité</text>
+    <circle cx="210" cy="150" r="28" fill="var(--gold)"/><text x="210" y="154" text-anchor="middle" class="tw" style="font-size:10.5px">Moelleux</text>
+    <text x="120" y="118" text-anchor="middle" class="tn" style="font-size:11px;letter-spacing:.08em">VIN ROUGE</text>
+    <text x="160" y="16" text-anchor="middle" class="tx">astringence, structure</text>
+    <text x="120" y="194" text-anchor="middle" class="tx">Acidité et tanins durcissent ensemble ; le moelleux les enrobe.</text>
+  </g>
+</svg>
+</div>
+
+<h3>Rouges, blancs, rosés, effervescents : ce qui change</h3>
+<table>
+<tr><th style="width:22%">Vin</th><th>À regarder en priorité</th></tr>
+<tr><td>Rouge</td><td>Couleur et bord du disque ; <strong>force</strong> des tanins (de lisse à âpre) et surtout leur <strong>grain</strong> (soyeux, velouté, ou rêche, grossier).</td></tr>
+<tr><td>Blanc</td><td>Éclat et reflets ; netteté et intensité du nez ; équilibre acidité-moelleux. Sa longueur se lit plus facilement, sans tanins pour la masquer.</td></tr>
+<tr><td>Rosé</td><td>Teinte (de pâle à soutenue), fraîcheur, fruit. Un rosé pâle n'est pas forcément meilleur : la couleur dit surtout la méthode.</td></tr>
+<tr><td>Effervescent</td><td>Finesse et persistance des bulles ; la mousse en bouche (crémeuse ou agressive) ; le dosage en sucre (brut, extra-brut…).</td></tr>
+</table>
+
+<h3>Les textures en bouche</h3>
+<p>Les tanins se décrivent souvent avec des mots de tissus (soie, satin, velours, suède) ou de matières (talc, craie, sable fin, papier de verre). <em>La Revue du vin de France</em> propose ainsi de ranger les textures en grandes familles, des plus agréables (souple, charnu, enrobant) aux plus dures (asséchant, rugueux, vert).</p>
+
+<h2>Les arômes</h2>
+<h3>D'où viennent-ils ?</h3>
+<p>Un vin contient de l'ordre de mille composés volatils, dont la plupart restent sous le seuil de perception. On les classe selon leur origine :</p>
+<ul>
+<li><strong>Primaires</strong> : le raisin (le cassis du cabernet-sauvignon, le pamplemousse du sauvignon blanc).</li>
+<li><strong>Secondaires</strong> : la vinification et ses fermentations (la banane d'un vin primeur, le beurre de la malolactique).</li>
+<li><strong>Tertiaires</strong> : l'élevage puis le vieillissement en bouteille (cuir, sous-bois, truffe, fruits secs).</li>
+</ul>
+<div class="note"><strong>Deux écoles.</strong> La tradition française range les arômes de fermentation en secondaires et le bois en tertiaires. Le WSET compte les arômes de fermentation avec les primaires et met le fût, la malolactique et les lies en secondaires. Aucune n'a tort : il faut savoir laquelle on utilise.</div>
+
+<!-- FIG origine arômes -->
+<div class="fig">
+<h4>D'où viennent les arômes ?</h4>
+<p class="sub">Classement par origine. Attention : écoles française et WSET ne rangent pas tout pareil.</p>
+<svg viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg">
+  <g id="orig"></g>
+  <rect x="0" y="152" width="640" height="40" rx="3" fill="#fff" stroke="var(--gold)" stroke-width="1"/>
+  <text x="12" y="169" class="tn" style="font-size:9.5px">Deux usages :</text>
+  <text x="86" y="169" class="tx">la tradition française (et Mille Vignes) met les arômes de fermentation en secondaires et le fût en tertiaires ;</text>
+  <text x="86" y="183" class="tx">le WSET range la fermentation avec les primaires et le fût en secondaires.</text>
+</svg>
+<script>
+(function(){
+  var C=[['Primaires','le raisin','#5c7a4f',['Fruits, fleurs, végétal,','épices du cépage','ex. cassis, rose, poivron,','agrumes, poivre']],
+         ['Secondaires','la vinification','#a8843a',['Fermentation : levure, brioche,','banane (amylique)','Malolactique : beurre','Fût (WSET) : vanille, toasté']],
+         ['Tertiaires','l\'élevage et le temps','#8a5a2b',['Évolution : fruits secs, cuir,','sous-bois, champignon, miel,','truffe, tabac','Oxydatif : noix, caramel']]];
+  var h='',w=200,gap=20;
+  C.forEach(function(c,i){var x=i*(w+gap);
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="140" rx="4" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="40" rx="4" fill="'+c[2]+'"/><rect x="'+x+'" y="28" width="'+w+'" height="12" fill="'+c[2]+'"/>';
+    h+='<text x="'+(x+12)+'" y="18" class="tw" style="font-size:12px">'+c[0]+'</text><text x="'+(x+12)+'" y="32" fill="#fff" style="font-size:9px" opacity=".9">'+c[1]+'</text>';
+    c[3].forEach(function(t,j){h+='<text x="'+(x+12)+'" y="'+(62+j*19)+'" style="font-size:9.6px" fill="#1a1612">'+t+'</text>';});
+  });
+  document.getElementById('orig').innerHTML=h;
+})();
+</script>
+</div>
+
+<h3>Les familles d'arômes</h3>
+<p>Pour nommer une odeur, cherchez d'abord sa famille, puis précisez. Émile Peynaud et Jacques Blouin proposent dix séries, faciles à retenir car elles suivent à peu près la vie du vin : végétale, florale, fruitée, éthérée, chimique, balsamique, boisée, épicée, empyreumatique (brûlée), animale. On peut les regrouper en quatre grandes familles.</p>
+
+<!-- FIG roue -->
+<div class="fig">
+<h4>Ranger les odeurs en familles</h4>
+<p class="sub">Dix séries, regroupées en quatre grandes familles, à peu près dans l'ordre où elles apparaissent dans la vie d'un vin</p>
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg">
+  <g id="wheel" transform="translate(150 135)"></g>
+  <g id="wleg" transform="translate(320 14)"></g>
+</svg>
+<p class="cap">D'après la classification en dix séries d'É. Peynaud et J. Blouin (<em>Le Goût du vin</em>) ; exemples choisis pour le cours.</p>
+<script>
+(function(){
+  // séries dans l'ordre horaire depuis le haut
+  var F=[['Le raisin','#5c7a4f',[['Végétale','herbe coupée, poivron, foin'],['Florale','violette, rose, acacia'],['Fruitée','rouges, noirs, agrumes, secs']]],
+         ['La fermentation','#a8843a',[['Éthérée','levure, banane, bonbon'],['Chimique','soufre, vernis, iode']]],
+         ['Le bois et le feu','#8a5a2b',[['Boisée','chêne, vanille, cèdre'],['Balsamique','pin, résine, encens'],['Épicée','poivre, girofle, réglisse'],['Brûlée','empyreumatique : grillé, fumé, café, cacao']]],
+         ['Le temps','#5b1a24',[['Animale','cuir, gibier, musc']]]];
+  var series=[];F.forEach(function(f){f[2].forEach(function(s){series.push({n:s[0],c:f[1]});});});
+  var N=series.length, R1=56, R2=108, R3=116, R4=124, h='';
+  function pt(r,a){a=(a-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
+  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0);var L=(a1-a0)>180?1:0;
+    return 'M'+p0[0].toFixed(2)+' '+p0[1].toFixed(2)+' A'+r2+' '+r2+' 0 '+L+' 1 '+p1[0].toFixed(2)+' '+p1[1].toFixed(2)+' L'+p2[0].toFixed(2)+' '+p2[1].toFixed(2)+' A'+r1+' '+r1+' 0 '+L+' 0 '+p3[0].toFixed(2)+' '+p3[1].toFixed(2)+' Z';}
+  var step=360/N;
+  series.forEach(function(s,i){var a0=i*step,a1=a0+step,m=pt((R1+R2)/2,a0+step/2);
+    // teinte un peu plus claire pour la série, famille pleine à l'extérieur
+    h+='<path d="'+arc(R1,R2,a0+0.6,a1-0.6)+'" fill="'+s.c+'" opacity="'+(0.72+0.07*(i%3))+'"/>';
+    h+='<text x="'+m[0].toFixed(1)+'" y="'+(m[1]+3.5).toFixed(1)+'" text-anchor="middle" style="font-size:9.3px;font-weight:600" fill="#fff">'+s.n+'</text>';
+  });
+  var k=0;F.forEach(function(f){var n=f[2].length,a0=k*step,a1=(k+n)*step;k+=n;h+='<path d="'+arc(R3,R4,a0+1.2,a1-1.2)+'" fill="'+f[1]+'"/>';});
+  h+='<circle r="'+(R1-4)+'" fill="#fff" stroke="#d8d0c2"/><text y="-2" text-anchor="middle" style="font-size:12px;font-weight:600" fill="#1a1612">Nommer</text><text y="13" text-anchor="middle" class="tx">par famille</text>';
+  document.getElementById('wheel').innerHTML=h;
+  var l='',y=0;
+  F.forEach(function(f){l+='<rect x="0" y="'+(y-2)+'" width="3" height="'+(14+f[2].length*13)+'" fill="'+f[1]+'"/><text x="12" y="'+(y+9)+'" style="font-size:10.5px;font-weight:600" fill="'+f[1]+'">'+f[0]+'</text>';y+=14;
+    f[2].forEach(function(s){l+='<text x="12" y="'+(y+9)+'" style="font-size:9px;font-weight:600" fill="#1a1612">'+s[0]+' :</text><text x="80" y="'+(y+9)+'" class="tx">'+s[1]+'</text>';y+=13;});y+=14;});
+  document.getElementById('wleg').innerHTML=l;
+})();
+</script>
+</div>
+
+<p>Trois conseils :</p>
+<ul>
+<li><strong>Restez simple</strong> : « fruits rouges » vaut mieux qu'une variété de cerise impossible à partager.</li>
+<li><strong>Entraînez-vous par famille</strong> : une famille à la fois, avec de vrais produits (fruits, épices, fleurs, bois).</li>
+<li><strong>Une odeur dépend de sa dose</strong> : les notes animales peuvent être agréables à petite dose et devenir un défaut quand elles dominent.</li>
+</ul>
+
+<h2>Les défauts à reconnaître</h2>
+<p>Un défaut se repère d'abord au nez. Les seuils varient beaucoup d'une personne à l'autre : certains ne perçoivent pas un goût de bouchon qui gêne leur voisin.</p>
+
+<!-- FIG défauts -->
+<div class="fig">
+<h4>Cinq défauts à savoir reconnaître</h4>
+<p class="sub">Un défaut se repère d'abord au nez ; certains ne gênent que certaines personnes</p>
+<svg viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg"><g id="def"></g></svg>
+<script>
+(function(){
+  var D=[['Goût de bouchon','TCA (trichloroanisole)','#8a5a2b',['carton mouillé, cave humide,','fruit éteint']],
+         ['Oxydation','trop d\'air','#a8843a',['fruit perdu, caramel, café ;','robe brunie']],
+         ['Réduction','composés soufrés','#456e8a',['œuf pourri, chou ;','s\'atténue parfois à l\'aération']],
+         ['Brettanomyces','levure d\'altération','#5c7a4f',['écurie, cuir,','médicinal (pansement)']],
+         ['Acidité volatile','bactéries acétiques','#5b1a24',['vinaigre ; colle, dissolvant','(acétate d\'éthyle)']]];
+  var w=120,gap=10,h='';
+  D.forEach(function(d,i){var x=i*(w+gap);
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="146" rx="4" fill="#fff" stroke="#d8d0c2"/><rect x="'+x+'" y="0" width="'+w+'" height="5" fill="'+d[2]+'"/><rect x="'+x+'" y="0" width="'+w+'" height="2.5" rx="0" fill="'+d[2]+'"/>';
+    h+='<text x="'+(x+10)+'" y="30" style="font-size:10.5px;font-weight:600" fill="#1a1612">'+d[0]+'</text>';
+    h+='<text x="'+(x+10)+'" y="45" style="font-size:8.6px;font-weight:600" fill="'+d[2]+'">'+d[1]+'</text>';
+    h+='<text x="'+(x+10)+'" y="76" style="font-size:8.6px;font-weight:600" fill="#625a4e">Au nez :</text>';
+    d[3].forEach(function(t,j){h+='<text x="'+(x+10)+'" y="'+(91+j*13)+'" style="font-size:8.8px" fill="#1a1612">'+t+'</text>';});
+  });
+  document.getElementById('def').innerHTML=h;
+})();
+</script>
+</div>
+
+<table>
+<tr><th style="width:20%">Défaut</th><th style="width:38%">Cause</th><th>Indices</th></tr>
+<tr><td>Goût de bouchon</td><td>TCA (trichloroanisole) et molécules voisines, venant du liège mais aussi parfois du bois du chai</td><td>Carton mouillé, cave humide ; le fruit est éteint</td></tr>
+<tr><td>Oxydation</td><td>Trop d'air</td><td>Robe brunie, fruit perdu, notes de caramel ou de café</td></tr>
+<tr><td>Réduction</td><td>Composés soufrés, faute d'air</td><td>Œuf pourri, chou ; peut s'atténuer en carafe</td></tr>
+<tr><td>Brettanomyces</td><td>Levure d'altération, souvent en élevage sous bois</td><td>Écurie, cuir, médicinal</td></tr>
+<tr><td>Acidité volatile</td><td>Bactéries acétiques</td><td>Vinaigre ; à forte dose, colle ou dissolvant (acétate d'éthyle)</td></tr>
+</table>
+</section>
+
+<!-- ============ PARTIE 2 ============ -->
+<section class="part">
+<h1><small>Partie 2</small>De la vigne au vin</h1>
+
+<h2>La vigne</h2>
+<p>Le genre <em>Vitis</em> compte une soixantaine d'espèces (davantage selon les bases botaniques récentes). Une seule fait la quasi-totalité du vin du monde : <strong><em>Vitis vinifera</em></strong>, la vigne européenne, domestiquée il y a plusieurs millénaires. Les espèces américaines donnent des vins au goût dit « foxé » (fraise, bonbon), peu apprécié.</p>
+<p>Dans <em>Vitis vinifera</em>, on distingue des milliers de <strong>cépages</strong> (variétés). Un vin issu d'un seul cépage est un vin de cépage ; plusieurs cépages complémentaires donnent un vin d'<strong>assemblage</strong>.</p>
+
+<h3>La crise du XIXe siècle</h3>
+<p>Trois fléaux venus d'Amérique ont failli détruire le vignoble européen :</p>
+<table>
+<tr><th>Fléau</th><th>Nature</th><th>Arrivée en France</th><th>Parade</th></tr>
+<tr><td>Oïdium</td><td>Champignon</td><td>1847</td><td>Le soufre</td></tr>
+<tr><td>Phylloxéra</td><td>Insecte (puceron) qui attaque les racines</td><td>1863</td><td>Greffer sur des porte-greffes américains</td></tr>
+<tr><td>Mildiou</td><td>Champignon (au sens large)</td><td>1878</td><td>La bouillie bordelaise (cuivre), en 1885</td></tr>
+</table>
+<div class="note"><strong>Idée reçue.</strong> Le greffage ne protège pas des maladies à champignons, comme l'oïdium ou le mildiou. Il protège du <strong>phylloxéra</strong> : les racines américaines résistent à l'insecte, le greffon garde le cépage européen. Oïdium et mildiou se traitent toujours au soufre et au cuivre (ou par des cépages résistants).</div>
+
+<h3>Conduire la vigne</h3>
+<p>Laissée à elle-même, la vigne grimpe aux arbres ou s'étale en buisson et donne beaucoup de bois et peu de bons raisins. Le vigneron choisit donc la densité de plantation, l'orientation des rangs, la <strong>taille</strong> et le <strong>palissage</strong> (fils de fer qui guident la végétation). Dans les appellations, le cahier des charges encadre ces choix.</p>
+<ul>
+<li><strong>Gobelet</strong> : quelques bras courts, sans palissage (Beaujolais, sud de la France).</li>
+<li><strong>Guyot</strong> : une baguette longue renouvelée chaque année, simple ou double (Bourgogne, Bordeaux, Loire…).</li>
+<li><strong>Cordon de Royat</strong> : un bras horizontal permanent taillé court (Champagne, entre autres).</li>
+</ul>
+<p>Les vieilles vignes, aux racines profondes, donnent souvent moins de raisins mais plus concentrés. La mention « vieilles vignes » n'a pourtant aucune définition légale.</p>
+
+<h2>Le terroir</h2>
+<p>Le terroir, c'est la rencontre en un lieu d'un sol, d'un sous-sol, d'une pente, d'un climat, d'une plante (cépage et porte-greffe) et du travail des hommes. Ce n'est pas seulement la chimie du sol.</p>
+<ul>
+<li><strong>L'eau compte plus que la richesse du sol.</strong> Dans le Médoc, Gérard Seguin a montré que le sol agit surtout en réglant l'alimentation en eau de la vigne. Un manque d'eau modéré en été arrête la pousse des rameaux, donne de petites baies et concentre sucres et couleur.</li>
+<li><strong>Un sol pauvre et drainant</strong> limite la vigueur et les rendements : les arômes et la couleur ne sont pas dilués. Les racines descendent profond et trouvent de l'eau même en été sec.</li>
+<li><strong>La pente</strong> draine les pluies et capte mieux le soleil ; beaucoup de grands vignobles sont sur des coteaux.</li>
+<li><strong>Des cailloux qui stockent la chaleur</strong> : les galets roulés de Châteauneuf-du-Pape en sont l'exemple classique.</li>
+</ul>
+<div class="note"><strong>Idée reçue.</strong> « Ce vin sent la pierre parce qu'il pousse sur la pierre. » Aucune étude n'a montré qu'une odeur passe directement du sol au vin ; le sol agit surtout par l'eau, la chaleur et la vigueur qu'il donne à la vigne.</div>
+
+<h2>Le climat</h2>
+<p>La vigne démarre sa croissance au-dessus d'environ 10 °C (le « zéro de végétation »). Il lui faut assez de chaleur pour mûrir, un hiver pour se reposer, et idéalement une maturation lente et complète. Trop de chaleur donne des vins lourds, moins frais.</p>
+
+<!-- FIG globe -->
+<div class="fig">
+<h4>Où pousse la vigne ?</h4>
+<p class="sub">Deux bandes tempérées, de part et d'autre de l'équateur, qui glissent vers les pôles</p>
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="globe"><circle cx="170" cy="125" r="108"/></clipPath>
+  <radialGradient id="gg" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#eef3f6"/><stop offset="1" stop-color="#cfdde6"/></radialGradient></defs>
+  <circle cx="170" cy="125" r="108" fill="url(#gg)"/>
+  <g clip-path="url(#globe)">
+    <!-- latitudes : y = 125 - 108*sin(lat) -->
+    <rect x="40" y="41" width="260" height="29" fill="var(--wine)" opacity=".72"/>  <!-- 30N-50N : 125-108*.5=71 ; 125-108*.766=42 -->
+    <rect x="40" y="26" width="260" height="15" fill="var(--rose)" opacity=".75"/>  <!-- 50N-60N : 125-108*.866=31.5 ; arrondi -->
+    <rect x="40" y="179" width="260" height="15.5" fill="var(--wine)" opacity=".72"/> <!-- 30S-40S : 179 ; 194.4 -->
+    <g stroke="#7f95a5" stroke-width=".8" stroke-dasharray="3 3"><path d="M40 71 L300 71"/><path d="M40 41 L300 41"/><path d="M40 179 L300 179"/><path d="M40 194 L300 194"/></g>
+    <path d="M40 125 L300 125" stroke="#4a6070" stroke-width="1.2"/>
+    <!-- méridiens -->
+    <g fill="none" stroke="#9fb3c0" stroke-width=".7"><ellipse cx="170" cy="125" rx="36" ry="108"/><ellipse cx="170" cy="125" rx="76" ry="108"/><path d="M170 17 L170 233"/></g>
+  </g>
+  <circle cx="170" cy="125" r="108" fill="none" stroke="#4a6070" stroke-width="1.4"/>
+  <g class="tx" style="font-weight:600;fill:#1a1612;font-size:9px">
+    <text x="284" y="29">60° N</text><text x="284" y="45">50° N</text><text x="284" y="75">30° N</text><text x="284" y="129">équateur</text><text x="284" y="183">30° S</text><text x="284" y="198">40° S</text>
+  </g>
+  <g transform="translate(360 36)">
+    <rect x="0" y="0" width="14" height="14" fill="var(--wine)" opacity=".72"/><text x="22" y="11" class="tn">Bandes classiques</text>
+    <text x="22" y="26" class="tx">environ 30° à 50° N et 30° à 40° S</text>
+    <rect x="0" y="48" width="14" height="14" fill="var(--rose)" opacity=".75"/><text x="22" y="59" class="tn">Nouveaux vignobles du nord</text>
+    <text x="22" y="74" class="tx">Angleterre, Belgique, Suède, Norvège : plus de chaleur</text>
+    <text x="22" y="87" class="tx">et cépages adaptés au froid, mais gel et pluie restent</text>
+    <text x="22" y="100" class="tx">des risques</text>
+    <path d="M0 122 L270 122" stroke="var(--line)"/>
+    <text x="0" y="142" class="tx">Ce qui compte vraiment : assez de chaleur pour mûrir,</text>
+    <text x="0" y="155" class="tx">un hiver pour la dormance, et une maturation lente</text>
+    <text x="0" y="168" class="tx">et complète.</text>
+  </g>
+</svg>
+</div>
+
+<ul>
+<li><strong>Bandes classiques</strong> : environ 30° à 50° de latitude nord ; 30° à 40° sud (25° à 45° selon d'autres auteurs).</li>
+<li><strong>Vers le nord</strong> : Angleterre, Belgique, Suède, Norvège. La Belgique a ses appellations, dont en Wallonie l'AOP Côtes de Sambre et Meuse, l'AOP Crémant de Wallonie et l'AOP Vin mousseux de qualité de Wallonie.</li>
+<li><strong>Le froid d'hiver</strong> : la vigne au repos résiste à de fortes gelées, de l'ordre de -15 à -25 °C selon le cépage et l'état du bois. Au printemps, un bourgeon débourré gèle dès quelques degrés sous zéro : c'est le gel de printemps qui fait les dégâts (2017 et 2021 en France).</li>
+</ul>
+
+<h3>Le millésime</h3>
+<p>Chaque année a sa météo : c'est l'effet millésime. Il faut de l'eau au printemps pour la pousse, mais un temps sec, chaud et ensoleillé pendant la maturation et les vendanges. La pluie sur des raisins mûrs les gonfle, les dilue et favorise la pourriture.</p>
+
+<h3>Le changement climatique</h3>
+<p>En trente ans, les vendanges ont avancé de deux à trois semaines dans la plupart des régions. À Beaune, elles commencent en moyenne vers le 15 septembre sur 1988-2018, contre le 28 septembre sur les six siècles précédents. Conséquences : vins plus riches en alcool, moins acides, et nouveaux vignobles plus au nord.</p>
+
+<h2>Une année à la vigne</h2>
+
+<!-- FIG année -->
+<div class="fig">
+<h4>Une année à la vigne (hémisphère nord)</h4>
+<p class="sub">Stades de la plante à l'intérieur, travaux du vigneron à l'extérieur</p>
+<svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg"><g id="year" transform="translate(320 165)"></g></svg>
+<p class="cap">Les dates bougent avec le climat : en 30 ans, les vendanges ont avancé de 2 à 3 semaines dans la plupart des régions.</p>
+<script>
+(function(){
+  var M=['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'];
+  var season=['#d9d2e3','#d9d2e3','#b4c69c','#b4c69c','#b4c69c','#e2d58a','#e2d58a','#e2d58a','#d9a86a','#d9a86a','#d9d2e3','#d9d2e3'];
+  var R1=92,R2=124,h='';
+  function pt(r,a){a=(a-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
+  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0);
+    return 'M'+p0[0].toFixed(2)+' '+p0[1].toFixed(2)+' A'+r2+' '+r2+' 0 0 1 '+p1[0].toFixed(2)+' '+p1[1].toFixed(2)+' L'+p2[0].toFixed(2)+' '+p2[1].toFixed(2)+' A'+r1+' '+r1+' 0 0 0 '+p3[0].toFixed(2)+' '+p3[1].toFixed(2)+' Z';}
+  M.forEach(function(m,i){var a0=i*30,a1=a0+30,c=pt((R1+R2)/2,a0+15);
+    h+='<path d="'+arc(R1,R2,a0,a1)+'" fill="'+season[i]+'" stroke="#fff" stroke-width="1.5"/>';
+    h+='<text x="'+c[0].toFixed(1)+'" y="'+(c[1]+3.5).toFixed(1)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+m+'</text>';});
+  h+='<circle r="'+(R1-2)+'" fill="#fff"/>';
+  // stades (intérieur) : [texte, angle, rayon]
+  var inner=[['Dormance',0],['Débourrement',97],['Floraison',172],['Véraison',218],['Maturité',262],['Chute des feuilles',318]];
+  inner.forEach(function(s){var p=pt(R1-20,s[1]),q=pt(R1-6,s[1]);
+    h+='<circle cx="'+q[0].toFixed(1)+'" cy="'+q[1].toFixed(1)+'" r="3" fill="#5b1a24"/>';
+    // le texte s'étend vers le centre
+    var anchor=Math.abs(p[0])<14?'middle':(p[0]<0?'start':'end');
+    h+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+3.5).toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:8.6px;font-weight:600" fill="#5b1a24">'+s[0]+'</text>';});
+  // travaux (extérieur)
+  var outer=[['Taille (déc. à mars)',15],['Travail du sol, palissage',100],['Ébourgeonnage, épamprage',140],['Relevage, rognage',178],['Vendange en vert, effeuillage',218],['Vendanges',262],['Buttage, entretien',322]];
+  outer.forEach(function(s){var p=pt(R2+4,s[1]),q=pt(R2+16,s[1]),t=pt(R2+22,s[1]);
+    h+='<path d="M'+p[0].toFixed(1)+' '+p[1].toFixed(1)+' L'+q[0].toFixed(1)+' '+q[1].toFixed(1)+'" stroke="#9a8f80" stroke-width=".8"/>';
+    var anchor=Math.abs(t[0])<20?'middle':(t[0]<0?'end':'start');var dy=t[1]<-100?-2:(t[1]>100?9:3.5);
+    h+='<text x="'+t[0].toFixed(1)+'" y="'+(t[1]+dy).toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:9.3px;font-weight:600" fill="#1a1612">'+s[0]+'</text>';});
+  document.getElementById('year').innerHTML=h;
+})();
+</script>
+</div>
+
+<table>
+<tr><th style="width:20%">Période</th><th style="width:42%">La plante</th><th>Le vigneron</th></tr>
+<tr><td>Décembre à mars</td><td>Repos (dormance), puis « pleurs » de sève aux plaies de taille</td><td>Taille ; la Saint-Vincent (22 janvier) en est la fête traditionnelle</td></tr>
+<tr><td>Mars-avril</td><td><strong>Débourrement</strong> : les bourgeons s'ouvrent ; risque de gel</td><td>Travail du sol, palissage</td></tr>
+<tr><td>Mai</td><td>Pousse rapide des rameaux</td><td>Ébourgeonnage, épamprage (on retire les pousses inutiles), traitements</td></tr>
+<tr><td>Juin</td><td><strong>Floraison</strong> puis <strong>nouaison</strong> (la fleur devient petit grain) ; la pluie et le froid peuvent faire « couler » les fleurs</td><td>Relevage et accolage des rameaux, rognage</td></tr>
+<tr><td>Juillet-août</td><td>Les grains grossissent, puis <strong>véraison</strong> : ils changent de couleur</td><td>Vendange en vert si trop de grappes, effeuillage</td></tr>
+<tr><td>Fin août à octobre</td><td><strong>Maturité</strong>, puis vendanges</td><td>Contrôle de maturité, vendanges</td></tr>
+<tr><td>Novembre</td><td>Chute des feuilles, retour au repos</td><td>Buttage, entretien</td></tr>
+</table>
+<p>Les viticulteurs repèrent ces étapes par des stades notés de A à P (échelle de Baggiolini) ou par des codes chiffrés (échelle BBCH).</p>
+
+<h2>La maturation du raisin</h2>
+
+<!-- FIG baie -->
+<div class="fig">
+<h4>Dans une baie de raisin</h4>
+<p class="sub">Chaque partie apporte autre chose au vin</p>
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+  <defs><radialGradient id="pulp" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#e4ebbf"/><stop offset="1" stop-color="#c7d48f"/></radialGradient></defs>
+  <!-- pédicelle -->
+  <path d="M190 10 C188 24 190 34 192 40" stroke="#5c7a4f" stroke-width="7" stroke-linecap="round"/>
+  <path d="M184 40 L200 40" stroke="#4d6a3c" stroke-width="2"/>
+  <!-- pellicule -->
+  <circle cx="190" cy="126" r="86" fill="#5b1a24"/>
+  <circle cx="190" cy="126" r="76" fill="url(#pulp)"/>
+  <!-- pinceau / faisceaux -->
+  <path d="M190 52 L190 200" stroke="#9fae70" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- pépins -->
+  <path d="M174 108 C166 118 166 136 174 148 C182 136 182 118 174 108 Z" fill="#6b4a2a"/>
+  <path d="M206 108 C198 118 198 136 206 148 C214 136 214 118 206 108 Z" fill="#6b4a2a"/>
+  <!-- reflet -->
+  <path d="M132 100 C136 80 150 64 168 58" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+  <!-- repères -->
+  <g class="ld"><path d="M196 30 L400 30"/><path d="M270 80 L400 80"/><path d="M256 140 L400 140"/><path d="M212 160 L400 196"/></g>
+  <g class="dot"><circle cx="196" cy="30" r="3"/><circle cx="270" cy="80" r="3" fill="#fff" stroke="var(--wine)" stroke-width="1.5"/><circle cx="256" cy="140" r="3"/><circle cx="212" cy="160" r="3"/></g>
+  <text x="408" y="28" class="tn">Pédicelle (et rafle)</text><text x="408" y="41" class="tx">tanins verts et rugueux si on garde la rafle</text>
+  <text x="408" y="78" class="tn">Pellicule (peau)</text><text x="408" y="91" class="tx">anthocyanes (couleur), tanins fins, arômes,</text><text x="408" y="104" class="tx">levures (pruine)</text>
+  <text x="408" y="138" class="tn">Pulpe (jus)</text><text x="408" y="151" class="tx">eau, sucres, acides tartrique et malique</text>
+  <text x="408" y="194" class="tn">Pépins</text><text x="408" y="207" class="tx">tanins plus durs, huiles : à ne pas écraser</text>
+</svg>
+</div>
+
+<p>La baie vit trois phases : une <strong>phase herbacée</strong> (de la nouaison à la véraison : baie verte, dure, acide), la <strong>maturation</strong> (de la véraison à la maturité : elle grossit, s'assouplit, se colore et stocke du sucre), puis parfois la <strong>surmaturation</strong> (laissée sur pied, elle se concentre : passerillage, ou pourriture noble due à <em>Botrytis cinerea</em>). Entre la floraison et la maturité, il s'écoule environ cent jours, un peu plus ou un peu moins selon le cépage, le lieu et le style visé.</p>
+
+<!-- FIG courbes -->
+<div class="fig">
+<h4>La maturation : le sucre monte, l'acidité baisse</h4>
+<p class="sub">Allure générale des courbes (pas d'échelle chiffrée : elle varie selon cépage et millésime)</p>
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- zones -->
+  <rect x="220" y="20" width="220" height="190" fill="var(--rose2)" opacity=".7"/>
+  <text x="70" y="34" class="tx">Phase herbacée : baie verte et dure</text>
+  <text x="232" y="34" class="tx">Maturation : la baie grossit et se colore</text>
+  <!-- axes -->
+  <path d="M60 210 L600 210" stroke="var(--ink)" stroke-width="1.2"/>
+  <path d="M60 210 L60 20" stroke="var(--ink)" stroke-width="1.2"/>
+  <g stroke="#9a8f80" stroke-width=".8" stroke-dasharray="2 3"><path d="M220 210 L220 20"/><path d="M440 210 L440 20"/></g>
+  <!-- sucres -->
+  <path d="M60 196 C140 196 190 190 220 176 C270 150 320 96 380 70 C420 54 470 46 520 42 C560 38 590 34 600 32" fill="none" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- acidité -->
+  <path d="M60 130 C110 112 170 80 220 62 C270 76 320 112 380 142 C420 160 470 170 520 178 C560 184 590 190 600 194" fill="none" stroke="var(--slate)" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- couleur -->
+  <path d="M60 206 L220 206 C260 190 300 150 380 124 C420 110 470 102 520 100 C560 99 590 100 600 100" fill="none" stroke="var(--wine)" stroke-width="2.4" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <g style="font-size:9.6px;font-weight:600">
+    <text x="520" y="26" text-anchor="end" fill="var(--gold)">Sucres</text>
+    <text x="596" y="213" text-anchor="end" fill="var(--slate)" dy="-6">Acidité (surtout malique)</text>
+    <text x="520" y="90" text-anchor="end" fill="var(--wine)">Couleur (raisins noirs)</text>
+  </g>
+  <g style="font-size:9.5px;font-weight:600;fill:#1a1612">
+    <text x="60" y="228" text-anchor="middle">Nouaison</text><text x="220" y="228" text-anchor="middle">Véraison</text><text x="440" y="228" text-anchor="middle">Maturité</text><text x="580" y="228" text-anchor="middle">Surmaturité</text>
+  </g>
+  <text x="320" y="246" text-anchor="middle" class="tx">La date de vendange se fixe en suivant ces courbes (prélèvements de baies, réfractomètre, dosage de l'acidité) et en goûtant les baies.</text>
+</svg>
+</div>
+
+<ul>
+<li><strong>Les sucres montent.</strong> À maturité, le moût contient couramment de 170 à 250 g de sucres par litre. Repère utile : environ <strong>17 g/L de sucre donnent 1 % vol. d'alcool</strong>.</li>
+<li><strong>L'acidité baisse.</strong> L'acide tartrique varie peu ; l'acide malique, lui, se dégrade d'autant plus que l'été est chaud. Un été frais donne des vins plus acides.</li>
+<li><strong>La couleur et les tanins se construisent.</strong> Les anthocyanes (pigments) s'accumulent dans la pellicule des raisins noirs, et il faut de la lumière pour qu'ils se forment. Les tanins se trouvent dans la pellicule, les pépins (une grande part, variable selon le cépage) et la rafle ; la pulpe en contient très peu.</li>
+</ul>
+<div class="note"><strong>Correction.</strong> L'ancien support donnait « 65 % des polyphénols dans les pépins, 22 % dans la rafle, 1 % dans la pulpe » : ces chiffres oublient la pellicule et ne se retrouvent dans aucune source. Le <em>Handbook of Enology</em> donne plutôt 20 à 55 % pour les pépins selon le cépage.</div>
+
+<h2>Les vendanges</h2>
+<h3>Choisir la date</h3>
+<p>La date dépend du vin visé (on attend plus longtemps pour un liquoreux que pour un blanc sec ou une base d'effervescent), de l'état sanitaire des raisins et de la météo annoncée. Vendanger trop tôt donne des vins verts ; trop tard, des vins lourds, ou des raisins abîmés par la pluie.</p>
+<h3>Suivre la maturité</h3>
+<p>Quelques semaines avant la récolte, le vigneron prélève régulièrement des baies au hasard sur toute la parcelle, des deux côtés du rang. Il mesure :</p>
+<ol>
+<li>le <strong>sucre</strong> (réfractomètre ou densité du jus), donc le degré probable ;</li>
+<li>l'<strong>acidité</strong> ;</li>
+<li>le <strong>poids des baies</strong> ;</li>
+<li>et il <strong>goûte</strong> : peau qui se détache, pépins qui brunissent, tanins qui ne sont plus verts.</li>
+</ol>
+<h3>Le ban des vendanges</h3>
+<p>Au Moyen Âge, le seigneur fixait le jour à partir duquel on pouvait vendanger. Pour les vins d'appellation en France, la date de début reste aujourd'hui fixée par un arrêté du préfet, sur proposition de l'INAO et des syndicats d'appellation (ODG). Beaucoup de villages en ont gardé une fête.</p>
+<h3>À la main ou à la machine ?</h3>
+<p>La vendange manuelle permet de trier dès la vigne et garde les grappes entières (indispensable pour certaines méthodes, comme la macération carbonique ou les vins de Champagne). La machine secoue le pied pour détacher les baies : elle est rapide et permet de récolter la nuit, au frais.</p>
+
+<h2>Les fermentations</h2>
+
+<!-- FIG fermentations -->
+<div class="fig">
+<h4>Deux fermentations, deux micro-organismes</h4>
+<svg viewBox="0 0 640 232" xmlns="http://www.w3.org/2000/svg"><g id="ferm"></g></svg>
+<script>
+(function(){
+  var F=[['Fermentation alcoolique','levures (Saccharomyces cerevisiae surtout)','#a8843a',['Sucres','du moût'],['Alcool + CO₂','+ chaleur, arômes'],
+          ['Produit aussi glycérol, esters, acides','Dégage de la chaleur : on régule','la température des cuves','Fin : sucres (presque) épuisés = vin sec','Un arrêt laisse du sucre : risque','d\'acidité volatile']],
+         ['Fermentation malolactique','bactéries lactiques (Oenococcus oeni)','#456e8a',['Acide','malique'],['Acide lactique','+ CO₂'],
+          ['Baisse l\'acidité, assouplit le vin','Peut donner une note beurrée','(diacétyle)','Habituelle en rouge','Au choix en blanc et rosé :','souvent bloquée pour garder la fraîcheur']]];
+  var w=304,gap=32,h='';
+  F.forEach(function(f,i){var x=i*(w+gap);
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="228" rx="4" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="44" rx="4" fill="'+f[2]+'"/><rect x="'+x+'" y="30" width="'+w+'" height="14" fill="'+f[2]+'"/>';
+    h+='<text x="'+(x+14)+'" y="20" class="tw" style="font-size:12.5px">'+f[0]+'</text><text x="'+(x+14)+'" y="35" fill="#fff" style="font-size:8.8px" opacity=".9">'+f[1]+'</text>';
+    // réaction
+    var bx=x+18,by=60;
+    h+='<rect x="'+bx+'" y="'+by+'" width="100" height="44" rx="4" fill="#f7f2e9" stroke="'+f[2]+'" stroke-width="1.2"/>';
+    h+='<text x="'+(bx+50)+'" y="'+(by+19)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+f[3][0]+'</text><text x="'+(bx+50)+'" y="'+(by+33)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+f[3][1]+'</text>';
+    h+='<path d="M'+(bx+108)+' '+(by+22)+' L'+(bx+148)+' '+(by+22)+'" stroke="'+f[2]+'" stroke-width="1.8"/><path d="M'+(bx+142)+' '+(by+16)+' L'+(bx+150)+' '+(by+22)+' L'+(bx+142)+' '+(by+28)+'" fill="none" stroke="'+f[2]+'" stroke-width="1.8"/>';
+    h+='<rect x="'+(bx+158)+'" y="'+by+'" width="112" height="44" rx="4" fill="#f7f2e9" stroke="'+f[2]+'" stroke-width="1.2"/>';
+    h+='<text x="'+(bx+214)+'" y="'+(by+19)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+f[4][0]+'</text><text x="'+(bx+214)+'" y="'+(by+33)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+f[4][1]+'</text>';
+    f[5].forEach(function(t,j){var cont=(j==2||j==5)&&i==0||(j==2||j==5)&&i==1;
+      var bullet=!(t.startsWith('la ')||t.startsWith('(')||t.startsWith('d\'')||t.startsWith('souvent'));
+      if(bullet)h+='<circle cx="'+(x+20)+'" cy="'+(126+j*17)+'" r="2" fill="'+f[2]+'"/>';
+      h+='<text x="'+(x+28)+'" y="'+(129+j*17)+'" style="font-size:9.3px" fill="#1a1612">'+t+'</text>';});
+  });
+  document.getElementById('ferm').innerHTML=h;
+})();
+</script>
+</div>
+
+<ul>
+<li><strong>La fermentation alcoolique</strong> : des levures transforment le sucre du moût en alcool et en gaz carbonique. Elles produisent aussi du glycérol, des esters et d'autres arômes. Elle chauffe la cuve : le vinificateur doit en maîtriser la température. Si elle s'arrête trop tôt, le sucre restant expose le vin aux bactéries et à l'acidité volatile. Les levures peuvent être celles du raisin et du chai (« indigènes ») ou des levures sélectionnées ajoutées.</li>
+<li><strong>La fermentation malolactique</strong> : des bactéries lactiques (surtout <em>Oenococcus oeni</em>) transforment l'acide malique, vif, en acide lactique, plus doux. Le vin perd de l'acidité, s'arrondit, peut prendre une note beurrée et devient plus stable. Habituelle en rouge, elle est au choix en blanc et en rosé : on la bloque souvent pour garder la fraîcheur.</li>
+</ul>
+<p><strong>Températures de fermentation</strong>, à titre de repère : de 12 à 22 °C pour les blancs (plus frais pour garder le fruit), environ 12 à 16 °C pour les rosés de pressurage, de 20 à 32 °C pour les rouges (plus chaud pour extraire davantage).</p>
+
+<h2>Trois chemins de vinification</h2>
+<p>Tout se joue sur le moment où l'on sépare le jus des peaux, car c'est la peau qui donne couleur et tanins. Le jus de presque tous les raisins noirs est incolore : on peut faire du blanc avec du raisin noir (le pinot noir des champagnes blancs).</p>
+
+<!-- FIG trois chemins -->
+<div class="fig">
+<h4>Trois chemins de vinification</h4>
+<p class="sub">Ce qui change tout : quand on sépare le jus des peaux</p>
+<svg viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg"><g id="paths"></g>
+<text x="0" y="232" class="tx">Rouge : macération pendant la fermentation. Blanc : pressurage avant. Rosé : contact bref avec les peaux.</text></svg>
+<script>
+(function(){
+  var P=[['Rouge','#5b1a24','#fff',[['Éraflage,','foulage'],['Cuve : fermentation','+ macération'],['Écoulage','(vin de goutte)'],['Pressurage du marc','(vin de presse)'],['Malolactique,','élevage']]],
+         ['Rosé','#e4a9b2','#5b1a24',[['Raisins noirs',''],['Pressurage direct','ou saignée'],['Débourbage',''],['Fermentation à','basse température'],['Élevage court','']]],
+         ['Blanc','#d9b545','#1a1612',[['Raisins blancs','(parfois noirs)'],['Pressurage direct,','en douceur'],['Débourbage',''],['Fermentation du','jus seul'],['Élevage (cuve,','fût, lies)']]]];
+  var h='',bw=92,gap=10,x0=86;
+  P.forEach(function(p,i){var y=i*74;
+    h+='<rect x="0" y="'+y+'" width="72" height="56" rx="4" fill="'+p[1]+'"/><text x="36" y="'+(y+33)+'" text-anchor="middle" style="font-size:12px;font-weight:600" fill="'+p[2]+'">'+p[0]+'</text>';
+    p[3].forEach(function(s,j){var x=x0+j*(bw+gap+8);
+      h+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="56" rx="3" fill="#fff" stroke="'+p[1]+'" stroke-width="1.2"/>';
+      var two=s[1]!=='';
+      h+='<text x="'+(x+bw/2)+'" y="'+(y+(two?26:32))+'" text-anchor="middle" style="font-size:8.8px;font-weight:600" fill="#1a1612">'+s[0]+'</text>';
+      if(two)h+='<text x="'+(x+bw/2)+'" y="'+(y+38)+'" text-anchor="middle" style="font-size:8.8px" fill="#1a1612">'+s[1]+'</text>';
+      if(j<4){var ax=x+bw+2;h+='<path d="M'+ax+' '+(y+28)+' L'+(ax+gap+4)+' '+(y+28)+'" stroke="#9a8f80" stroke-width="1.2"/><path d="M'+(ax+gap+1)+' '+(y+24)+' L'+(ax+gap+5)+' '+(y+28)+' L'+(ax+gap+1)+' '+(y+32)+'" fill="none" stroke="#9a8f80" stroke-width="1.2"/>';}
+    });
+  });
+  document.getElementById('paths').innerHTML=h;
+})();
+</script>
+</div>
+
+<h3>En rouge</h3>
+<ol>
+<li>Tri, <strong>éraflage</strong> (on retire la rafle, aux tanins rugueux ; certains la gardent en partie) et <strong>foulage</strong> (on fait éclater les baies).</li>
+<li>Un peu de <strong>SO₂</strong> protège de l'oxydation et des microbes.</li>
+<li><strong>Cuvaison</strong> : le jus fermente avec les peaux et les pépins. Le gaz fait monter les parties solides en un <strong>chapeau de marc</strong>, qu'on travaille pour extraire couleur et tanins.</li>
+<li><strong>Écoulage</strong> : le jus libre donne le <strong>vin de goutte</strong> ; le marc pressé donne le <strong>vin de presse</strong>, plus tannique. On les assemble ou non.</li>
+<li><strong>Malolactique</strong>, puis élevage.</li>
+</ol>
+
+<!-- FIG chapeau -->
+<div class="fig">
+<h4>Extraire en rouge : le chapeau de marc</h4>
+<p class="sub">Le gaz carbonique fait remonter peaux et pépins ; on le travaille pour extraire couleur et tanins</p>
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+  <defs><clipPath id="tank"><rect x="120" y="20" width="180" height="208" rx="10"/></clipPath></defs>
+  <g clip-path="url(#tank)">
+    <rect x="120" y="20" width="180" height="208" fill="#ece6da"/>
+    <rect x="120" y="92" width="180" height="140" fill="#7a2c38"/>
+    <rect x="120" y="58" width="180" height="34" fill="#4a1420"/>
+    <g fill="#8e3f4d"><circle cx="150" cy="70" r="3"/><circle cx="178" cy="80" r="2.5"/><circle cx="210" cy="66" r="3"/><circle cx="240" cy="82" r="2.5"/><circle cx="268" cy="70" r="3"/><circle cx="196" cy="86" r="2"/><circle cx="286" cy="84" r="2.5"/></g>
+    <g fill="#fff" opacity=".55"><circle cx="150" cy="200" r="2"/><circle cx="172" cy="160" r="2.5"/><circle cx="200" cy="190" r="2"/><circle cx="230" cy="130" r="2"/><circle cx="256" cy="176" r="2.5"/><circle cx="280" cy="150" r="2"/><circle cx="212" cy="110" r="2"/><circle cx="160" cy="118" r="2"/><circle cx="246" cy="214" r="2"/></g>
+  </g>
+  <rect x="120" y="20" width="180" height="208" rx="10" fill="none" stroke="var(--ink)" stroke-width="2"/>
+  <!-- pigeage -->
+  <path d="M176 12 L176 54" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/><path d="M160 54 L192 54" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
+  <!-- remontage -->
+  <path d="M300 200 L330 200 L330 40 L246 40" fill="none" stroke="var(--slate)" stroke-width="2"/>
+  <path d="M252 34 L244 40 L252 46" fill="none" stroke="var(--slate)" stroke-width="2"/>
+  <g fill="none" stroke="var(--slate)" stroke-width="1.4"><path d="M236 46 L230 58"/><path d="M242 48 L242 58"/><path d="M248 46 L254 58"/></g>
+  <circle cx="330" cy="200" r="9" fill="#fff" stroke="var(--slate)" stroke-width="2"/><text x="330" y="203.5" text-anchor="middle" style="font-size:9px;font-weight:600" fill="var(--slate)">P</text>
+  <text x="210" y="79" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#fff">chapeau de marc</text>
+  <text x="210" y="170" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#fff">jus en fermentation</text>
+  <g transform="translate(390 30)">
+    <rect x="0" y="0" width="3" height="28" fill="var(--slate)"/><text x="12" y="12" class="tn">Remontage</text><text x="12" y="25" class="tx">on pompe le jus du bas et on arrose le chapeau</text>
+    <rect x="0" y="48" width="3" height="28" fill="var(--gold)"/><text x="12" y="60" class="tn">Pigeage</text><text x="12" y="73" class="tx">on enfonce le chapeau dans le jus</text>
+    <rect x="0" y="96" width="3" height="28" fill="var(--wine)"/><text x="12" y="108" class="tn">Délestage</text><text x="12" y="121" class="tx">on vide le jus, le marc s'égoutte, puis on le renvoie</text>
+    <rect x="0" y="144" width="3" height="28" fill="#9a8f80"/><text x="12" y="156" class="tn">Durée de cuvaison</text><text x="12" y="169" class="tx">de quelques jours à plusieurs semaines selon le style</text>
+    <text x="0" y="200" style="font-size:9.3px;font-weight:600" fill="var(--wine)">Trop extraire = tanins durs et astringents.</text>
+  </g>
+</svg>
+</div>
+
+<p>La <strong>chaptalisation</strong> (ajout de sucre au moût pour gagner en degré) est strictement encadrée par l'Union européenne : la hausse permise dépend de la zone viticole (au plus 3 % vol. dans les zones les plus fraîches, 1,5 % dans les plus chaudes) et elle est interdite dans certaines régions.</p>
+
+<h3>En blanc</h3>
+<ol>
+<li><strong>Pressurage</strong> immédiat et doux, à l'abri de l'air : le moût de blanc s'oxyde facilement, et une presse trop forte donne de l'amertume.</li>
+<li><strong>Débourbage</strong> : on laisse reposer le jus au frais pour éliminer les bourbes, sans le rendre parfaitement limpide.</li>
+<li><strong>Fermentation</strong> en cuve thermorégulée (la grande majorité des blancs secs) ou en fût (Bourgogne, grands blancs), à température fraîche pour préserver les arômes.</li>
+<li>Malolactique au choix, élevage parfois <strong>sur lies</strong> avec <strong>bâtonnage</strong> (on remet les lies en suspension) : plus de gras et de volume. C'est la tradition des meilleurs muscadets.</li>
+</ol>
+<p>Variante : une courte <strong>macération pelliculaire</strong> (quelques heures de contact jus-peaux avant pressurage) donne plus d'arômes et moins d'acidité.</p>
+
+<h3>En rosé</h3>
+<ul>
+<li><strong>Pressurage direct</strong> : des raisins noirs pressés comme pour un blanc ; la couleur vient du bref contact dans le pressoir. Rosé pâle, léger.</li>
+<li><strong>Saignée</strong> : les raisins macèrent quelques heures en cuve comme pour un rouge, puis on tire une partie du jus. Rosé plus coloré et plus vineux.</li>
+</ul>
+<p>Mélanger du vin rouge et du vin blanc ? En Europe, le champagne rosé est le seul vin de qualité fait ainsi ; les rosés tranquilles d'appellation sont vinifiés par pressurage ou saignée.</p>
+
+<h2>Les effervescents</h2>
+
+<!-- FIG bulles -->
+<div class="fig">
+<h4>Trois façons de faire des bulles</h4>
+<p class="sub">Toujours le même principe : du CO₂ de fermentation piégé dans le vin</p>
+<svg viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg"><g id="bulles"></g>
+<text x="0" y="232" style="font-size:9.3px;font-weight:600" fill="#1a1612">Mousseux : au moins 3 bars de pression à 20 °C. Pétillant : entre 1 et 2,5 bars.</text></svg>
+<script>
+(function(){
+  var B=[['Méthode traditionnelle','2e fermentation en bouteille','#5b1a24','bottle',['Vin de base + liqueur de tirage','Vieillissement sur lies','Remuage, dégorgement','Ex. champagne, crémants, cava']],
+         ['Méthode ancestrale','fermentation finie en bouteille','#a8843a','bottle',['Mise en bouteille avant la fin','de la fermentation','Souvent un peu sucré','Ex. Clairette de Die, pét\'nat']],
+         ['Cuve close','2e fermentation en grande cuve fermée','#456e8a','tank',['Rapide, garde le fruit','Mise en bouteille sous pression','Arômes primaires mis en avant','Ex. prosecco']]];
+  var w=200,gap=20,h='';
+  B.forEach(function(b,i){var x=i*(w+gap);
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="214" rx="4" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="42" rx="4" fill="'+b[2]+'"/><rect x="'+x+'" y="30" width="'+w+'" height="12" fill="'+b[2]+'"/>';
+    h+='<text x="'+(x+12)+'" y="19" class="tw" style="font-size:11.5px">'+b[0]+'</text><text x="'+(x+12)+'" y="33" fill="#fff" style="font-size:8.6px" opacity=".9">'+b[1]+'</text>';
+    var cx=x+w/2, top=56;
+    if(b[3]=='bottle'){
+      h+='<path d="M'+(cx-7)+' '+top+' h14 v16 c0 10 13 14 13 30 v40 c0 4 -3 6 -6 6 h-28 c-3 0 -6 -2 -6 -6 v-40 c0 -16 13 -20 13 -30 z" fill="'+b[2]+'" opacity=".9"/>';
+      h+='<rect x="'+(cx-8)+'" y="'+(top-2)+'" width="16" height="6" rx="1" fill="#1a1612"/>';
+      h+='<g fill="#fff" opacity=".7"><circle cx="'+(cx-6)+'" cy="'+(top+70)+'" r="1.6"/><circle cx="'+(cx+5)+'" cy="'+(top+58)+'" r="1.4"/><circle cx="'+(cx+1)+'" cy="'+(top+82)+'" r="1.2"/><circle cx="'+(cx-3)+'" cy="'+(top+50)+'" r="1.2"/></g>';
+    } else {
+      h+='<rect x="'+(cx-22)+'" y="'+(top+6)+'" width="44" height="84" rx="10" fill="'+b[2]+'" opacity=".9"/>';
+      h+='<rect x="'+(cx-22)+'" y="'+(top+6)+'" width="44" height="84" rx="10" fill="none" stroke="#1a1612" stroke-width="1.2"/>';
+      h+='<path d="M'+(cx-22)+' '+(top+30)+' h44 M'+(cx-22)+' '+(top+66)+' h44" stroke="#1a1612" stroke-width="1" opacity=".5"/>';
+      h+='<g fill="#fff" opacity=".7"><circle cx="'+(cx-8)+'" cy="'+(top+72)+'" r="1.6"/><circle cx="'+(cx+6)+'" cy="'+(top+52)+'" r="1.4"/><circle cx="'+(cx+2)+'" cy="'+(top+80)+'" r="1.2"/><circle cx="'+(cx-5)+'" cy="'+(top+40)+'" r="1.2"/></g>';
+    }
+    b[4].forEach(function(t,j){h+='<text x="'+(x+12)+'" y="'+(168+j*13)+'" style="font-size:8.9px" fill="#1a1612">'+t+'</text>';});
+  });
+  document.getElementById('bulles').innerHTML=h;
+})();
+</script>
+</div>
+
+<ul>
+<li><strong>Méthode traditionnelle</strong> : un vin de base reçoit une liqueur de tirage (sucre et levures) et refermente en bouteille ; vieillissement sur lies, remuage, dégorgement, dosage. Champagne, crémants, cava.</li>
+<li><strong>Méthode ancestrale</strong> : on met en bouteille avant la fin de la première fermentation, qui s'achève dans la bouteille. Clairette de Die, Limoux, « pét'nat ».</li>
+<li><strong>Cuve close</strong> : la seconde fermentation se fait dans une grande cuve fermée ; le vin est mis en bouteille sous pression. Rapide, elle garde le fruit. Prosecco.</li>
+</ul>
+<p>Un <strong>mousseux</strong> a au moins 3 bars de pression à 20 °C ; un <strong>pétillant</strong>, entre 1 et 2,5 bars.</p>
+
+<h2>L'élevage</h2>
+<p>Entre la fin des fermentations et la mise en bouteille, le vin est trouble, brut, encore gazeux. L'élevage l'affine : sa couleur se stabilise, il s'assouplit, il se clarifie, et son bouquet commence à se former. Il dure de quelques semaines pour un vin primeur à deux ans ou plus pour un grand vin de garde.</p>
+
+<!-- FIG cuve ou fût -->
+<div class="fig">
+<h4>L'élevage : cuve ou fût ?</h4>
+<p class="sub">Le contenant change ce que le vin reçoit pendant qu'il s'affine</p>
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- cuve -->
+  <g transform="translate(0 0)">
+    <rect x="0" y="0" width="300" height="196" rx="4" fill="#fff" stroke="#d8d0c2"/>
+    <rect x="28" y="30" width="80" height="130" rx="10" fill="#dfe3e6" stroke="#1a1612" stroke-width="1.6"/>
+    <rect x="28" y="56" width="80" height="104" rx="10" fill="#d9b545" opacity=".9"/>
+    <rect x="28" y="56" width="80" height="12" fill="#d9b545"/>
+    <rect x="28" y="30" width="80" height="130" rx="10" fill="none" stroke="#1a1612" stroke-width="1.6"/>
+    <path d="M22 160 h92" stroke="#1a1612" stroke-width="2"/>
+    <text x="130" y="42" class="tn" style="font-size:11.5px">Cuve (inox, béton…)</text>
+    <text x="130" y="60" class="tx">Neutre : peu d'oxygène,</text><text x="130" y="73" class="tx">pas d'arôme apporté</text>
+    <text x="130" y="91" class="tx">Garde le fruit et la fraîcheur</text>
+    <text x="130" y="128" class="tx" style="font-weight:600;fill:#1a1612">Idéal pour les vins à boire jeunes</text><text x="130" y="141" class="tx" style="font-weight:600;fill:#1a1612">et les cépages aromatiques.</text>
+  </g>
+  <!-- fût -->
+  <g transform="translate(340 0)">
+    <rect x="0" y="0" width="300" height="196" rx="4" fill="#fff" stroke="#d8d0c2"/>
+    <path d="M30 40 C26 70 26 120 30 150 L108 150 C112 120 112 70 108 40 Z" fill="#b8793a" stroke="#1a1612" stroke-width="1.6"/>
+    <g stroke="#1a1612" stroke-width="1" opacity=".5"><path d="M45 40 C42 70 42 120 45 150"/><path d="M60 40 C58 70 58 120 60 150"/><path d="M78 40 C80 70 80 120 78 150"/><path d="M93 40 C96 70 96 120 93 150"/></g>
+    <g stroke="#3a2a1a" stroke-width="4"><path d="M27 60 L111 60"/><path d="M26 84 L112 84"/><path d="M26 108 L112 108"/><path d="M27 130 L111 130"/></g>
+    <circle cx="69" cy="95" r="4" fill="#3a2a1a"/>
+    <!-- O2 -->
+    <path d="M6 100 C12 94 18 92 24 94" fill="none" stroke="var(--slate)" stroke-width="1.6" marker-end="url(#o2a)"/>
+    <text x="2" y="90" style="font-size:9px;font-weight:600" fill="var(--slate)">O₂</text>
+    <defs><marker id="o2a" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="var(--slate)"/></marker></defs>
+    <text x="130" y="42" class="tn" style="font-size:11.5px">Fût de chêne</text>
+    <text x="130" y="60" class="tx">Un peu d'oxygène entre lentement :</text><text x="130" y="73" class="tx">tanins plus souples, couleur stable</text>
+    <text x="130" y="91" class="tx">Neuf : vanille, toasté</text>
+    <text x="130" y="128" class="tx" style="font-weight:600;fill:#1a1612">Plus le fût est petit et neuf,</text><text x="130" y="141" class="tx" style="font-weight:600;fill:#1a1612">plus il marque le vin.</text>
+  </g>
+</svg>
+</div>
+
+<h3>Cuve ou fût ?</h3>
+<ul>
+<li><strong>La cuve</strong> (inox, béton, ciment, parfois amphore) est neutre : elle garde le fruit et la fraîcheur.</li>
+<li><strong>Le fût de chêne</strong> laisse entrer très lentement un peu d'oxygène, qui assouplit les tanins et stabilise la couleur. Neuf, il apporte des arômes (vanille, toasté, épices selon la chauffe du bois) et des tanins. Plus il est petit et neuf, plus il marque le vin ; il s'épuise en quelques années.</li>
+</ul>
+<p>Le bois doit rester au service du vin : trop de fût neuf masque le fruit et rend les vins semblables.</p>
+
+<h3>Les soins de l'élevage</h3>
+<table>
+<tr><th style="width:30%">Opération</th><th>À quoi ça sert</th></tr>
+<tr><td>Soutirage</td><td>Transvaser le vin pour le séparer de ses dépôts (lies) ; il l'aère un peu</td></tr>
+<tr><td>Ouillage</td><td>Remplir les fûts pour compenser l'évaporation et éviter l'air</td></tr>
+<tr><td>Bâtonnage</td><td>Remettre les lies fines en suspension : plus de gras (surtout en blanc)</td></tr>
+<tr><td>Collage</td><td>Ajouter une colle (protéines d'œuf, de lait, végétales, ou bentonite) qui entraîne les particules et adoucit les tanins</td></tr>
+<tr><td>Filtration</td><td>Rendre le vin limpide et stable avant la mise</td></tr>
+<tr><td>Stabilisation tartrique</td><td>Éviter les petits cristaux en bouteille (sans effet sur le goût)</td></tr>
+<tr><td>Sulfitage</td><td>Le SO₂ protège de l'oxydation et des microbes ; seul le SO₂ « libre » protège vraiment</td></tr>
+</table>
+<p>Les dépôts en bouteille (cristaux de tartre, dépôt des vieux rouges) sont naturels et sans danger : on carafe le vin pour les laisser au fond.</p>
+
+<h3>Oxygène : allié et ennemi</h3>
+<p>Un élevage <strong>réducteur</strong> (peu d'air) protège les arômes fragiles mais peut donner des odeurs soufrées. Un élevage <strong>oxydatif</strong> (un peu d'air) assouplit et stabilise. Trop d'air, et c'est l'oxydation.</p>
+</section>
+
+<!-- ============ ATELIER ============ -->
+<section class="part">
+<h1><small>Atelier</small>Décrypter une étiquette et une fiche technique</h1>
+<p>Une étiquette obéit à des règles européennes précises ; une fiche technique, elle, est libre. Savoir lire les deux, c'est savoir ce que le producteur est obligé de dire, ce qu'il choisit de dire, et ce que les chiffres révèlent du vin.</p>
+
+<h2>Déroulé (30 à 45 minutes)</h2>
+<ol>
+<li>Par groupes de trois, chaque groupe reçoit une bouteille (un AOP, un IGP, un Vin de France, un effervescent, un vin importé hors UE…).</li>
+<li>Repérer et entourer les mentions obligatoires, puis les mentions facultatives.</li>
+<li>Lire la fiche technique du même vin et répondre aux questions ci-dessous.</li>
+<li>Mise en commun : chaque groupe présente « son » vin en une minute, puis on le goûte pour confronter l'étiquette au verre.</li>
+</ol>
+
+<!-- FIG étiquette -->
+<div class="fig">
+<h4>Décrypter une étiquette</h4>
+<p class="sub">Étiquette fictive. Rouge : mentions obligatoires. Doré : mentions facultatives encadrées.</p>
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="bw"><circle r="7.5" fill="#5b1a24"/></g>
+    <g id="bg"><circle r="7.5" fill="#a8843a"/></g>
+  </defs>
+  <!-- étiquette principale -->
+  <rect x="0" y="0" width="230" height="290" rx="3" fill="#fffdf8" stroke="#1a1612" stroke-width="1.4"/>
+  <rect x="8" y="8" width="214" height="274" fill="none" stroke="#a8843a" stroke-width=".8"/>
+  <text x="115" y="40" text-anchor="middle" style="font-size:12px;font-weight:500;letter-spacing:.1em" fill="#1a1612">2022</text>
+  <text x="115" y="86" text-anchor="middle" style="font-family:Cormorant,serif;font-size:21px;font-weight:600" fill="#5b1a24">Château des Ateliers</text>
+  <path d="M85 96 C100 90 130 90 145 96" fill="none" stroke="#a8843a" stroke-width="1"/>
+  <text x="115" y="132" text-anchor="middle" style="font-size:13px;font-weight:600;letter-spacing:.12em" fill="#1a1612">SAINT-CHINIAN</text>
+  <text x="115" y="147" text-anchor="middle" style="font-size:8px;letter-spacing:.04em" fill="#1a1612">Appellation Saint-Chinian Contrôlée</text>
+  <text x="115" y="180" text-anchor="middle" style="font-size:9.5px" fill="#1a1612">Syrah – Grenache</text>
+  <text x="115" y="194" text-anchor="middle" style="font-size:9px;font-style:italic" fill="#625a4e">Vieilles vignes</text>
+  <text x="115" y="232" text-anchor="middle" style="font-size:8.5px;font-weight:600" fill="#1a1612">Mis en bouteille au château</text>
+  <text x="115" y="246" text-anchor="middle" style="font-size:8px" fill="#1a1612">Produit de France</text>
+  <text x="18" y="274" style="font-size:9px;font-weight:600" fill="#1a1612">14 % vol.</text>
+  <text x="212" y="274" text-anchor="end" style="font-size:9px;font-weight:600" fill="#1a1612">75 cl</text>
+  <!-- pastilles étiquette -->
+  <g style="font-size:8.5px;font-weight:600" fill="#fff" text-anchor="middle">
+    <use href="#bg" x="78" y="37"/><text x="78" y="40">6</text>
+    <use href="#bg" x="30" y="83"/><text x="30" y="86">8</text>
+    <use href="#bw" x="30" y="129"/><text x="30" y="132">2</text>
+    <use href="#bg" x="54" y="177"/><text x="54" y="180">7</text>
+    <use href="#bg" x="68" y="191"/><text x="68" y="194">9</text>
+    <use href="#bw" x="36" y="229"/><text x="36" y="232">3</text>
+    <use href="#bw" x="66" y="243"/><text x="66" y="246">4</text>
+    <use href="#bw" x="70" y="271"/><text x="70" y="274">1</text>
+    <use href="#bw" x="162" y="271"/><text x="162" y="274">5</text>
+  </g>
+  <!-- contre-étiquette -->
+  <g transform="translate(250 0)">
+    <rect x="0" y="0" width="130" height="290" rx="3" fill="#fffdf8" stroke="#1a1612" stroke-width="1.4"/>
+    <text x="10" y="22" class="tx" style="font-size:7.5px">Rouge de garrigue,</text><text x="10" y="32" class="tx" style="font-size:7.5px">fruits noirs, épices.</text><text x="10" y="42" class="tx" style="font-size:7.5px">Servir à 16-17 °C.</text>
+    <text x="10" y="66" style="font-size:7.8px;font-weight:600" fill="#1a1612">Contient des sulfites</text>
+    <text x="10" y="88" style="font-size:7.3px" fill="#1a1612">E (100 ml) : 328 kJ / 79 kcal</text>
+    <!-- QR -->
+    <g transform="translate(10 100)" fill="#1a1612">
+      <rect x="0" y="0" width="40" height="40" fill="#fff" stroke="#1a1612" stroke-width=".8"/>
+      <rect x="3" y="3" width="10" height="10"/><rect x="5" y="5" width="6" height="6" fill="#fff"/><rect x="7" y="7" width="2" height="2"/>
+      <rect x="27" y="3" width="10" height="10"/><rect x="29" y="5" width="6" height="6" fill="#fff"/><rect x="31" y="7" width="2" height="2"/>
+      <rect x="3" y="27" width="10" height="10"/><rect x="5" y="29" width="6" height="6" fill="#fff"/><rect x="7" y="31" width="2" height="2"/>
+      <g><rect x="16" y="4" width="2" height="2"/><rect x="20" y="4" width="2" height="2"/><rect x="18" y="8" width="4" height="2"/><rect x="16" y="12" width="2" height="2"/><rect x="22" y="12" width="2" height="2"/>
+      <rect x="4" y="16" width="2" height="2"/><rect x="8" y="16" width="4" height="2"/><rect x="14" y="16" width="2" height="2"/><rect x="18" y="16" width="2" height="2"/><rect x="24" y="16" width="4" height="2"/><rect x="32" y="16" width="2" height="2"/>
+      <rect x="6" y="20" width="2" height="2"/><rect x="12" y="20" width="2" height="2"/><rect x="16" y="20" width="4" height="2"/><rect x="24" y="20" width="2" height="2"/><rect x="30" y="20" width="4" height="2"/>
+      <rect x="16" y="24" width="2" height="2"/><rect x="20" y="24" width="2" height="2"/><rect x="26" y="24" width="2" height="2"/><rect x="34" y="24" width="2" height="2"/>
+      <rect x="18" y="28" width="4" height="2"/><rect x="24" y="28" width="2" height="2"/><rect x="30" y="28" width="2" height="2"/>
+      <rect x="16" y="32" width="2" height="2"/><rect x="22" y="32" width="4" height="2"/><rect x="28" y="32" width="2" height="2"/><rect x="34" y="32" width="2" height="2"/></g>
+    </g>
+    <text x="56" y="116" style="font-size:7px;font-weight:600" fill="#1a1612">Ingrédients</text><text x="56" y="126" style="font-size:7px;font-weight:600" fill="#1a1612">et nutrition</text>
+    <!-- femme enceinte -->
+    <g transform="translate(30 182)">
+      <circle r="17" fill="none" stroke="#1a1612" stroke-width="1.8"/>
+      <circle cx="0" cy="-9" r="3" fill="#1a1612"/>
+      <path d="M-2 -5 C-6 -2 -6 6 -4 11 L4 11 C6 4 8 -1 3 -4 Z" fill="#1a1612"/>
+      <path d="M-12 -12 L12 12" stroke="#1a1612" stroke-width="1.8"/>
+    </g>
+    <text x="54" y="185" style="font-size:7px" fill="#625a4e">(France)</text>
+    <text x="10" y="252" style="font-size:7.8px;font-weight:600" fill="#1a1612">L 22-0412</text>
+    <text x="10" y="272" style="font-size:7px" fill="#625a4e">Château des Ateliers, France</text>
+    <g style="font-size:8.5px;font-weight:600" fill="#fff" text-anchor="middle">
+      <use href="#bw" x="116" y="63"/><text x="116" y="66">10</text>
+      <use href="#bw" x="116" y="85"/><text x="116" y="88">11</text>
+      <use href="#bw" x="116" y="120"/><text x="116" y="123">12</text>
+      <use href="#bw" x="116" y="182"/><text x="116" y="185">13</text>
+      <use href="#bw" x="116" y="249"/><text x="116" y="252">14</text>
+    </g>
+  </g>
+  <!-- liste -->
+  <g id="leg" transform="translate(406 6)"></g>
+</svg>
+<p class="cap">Les mentions obligatoires doivent se lire ensemble, sans tourner la bouteille (sauf lot, allergènes, importateur).</p>
+<script>
+(function(){
+  var L=[['Titre alcoométrique (± 0,5 % vol.)',1],['Appellation : AOP / AOC',1],['Embouteilleur (ou formule « au château »)',1],['Pays de provenance',1],['Volume nominal',1],
+         ['Millésime : ≥ 85 % de l\'année',0],['Cépages (85 % si un seul nommé)',0],['« Château » : réservé aux AOP',0],['« Vieilles vignes » : aucune définition légale',0],
+         ['Allergènes : sulfites (> 10 mg/L)',1],['Énergie, seule sur l\'étiquette',1],['QR : ingrédients et nutrition, sans pub',1],['Logo femme enceinte (France)',1],['Numéro de lot',1]];
+  var h='';L.forEach(function(l,i){var y=i*19;
+    h+='<circle cx="8" cy="'+(y+8)+'" r="7.5" fill="'+(l[1]?'#5b1a24':'#a8843a')+'"/><text x="8" y="'+(y+11)+'" text-anchor="middle" style="font-size:8.5px;font-weight:600" fill="#fff">'+(i+1)+'</text>';
+    h+='<text x="22" y="'+(y+11.5)+'" style="font-size:8.8px" fill="#1a1612">'+l[0]+'</text>';});
+  document.getElementById('leg').innerHTML=h;
+})();
+</script>
+</div>
+
+<h2>Les mentions obligatoires</h2>
+<table>
+<tr><th style="width:44%">Mention</th><th>Ce qu'il faut savoir</th></tr>
+<tr><td>Catégorie (« vin », « vin mousseux »…)</td><td>Peut être omise pour un AOP ou un IGP qui affiche son nom d'appellation</td></tr>
+<tr><td>Appellation ou indication géographique</td><td>« Appellation d'origine protégée » ou « contrôlée » + nom ; « indication géographique protégée » ou « vin de pays » + nom</td></tr>
+<tr><td>Titre alcoométrique</td><td>En % vol., par unité ou demi-unité ; tolérance de ± 0,5 % vol. sur le chiffre affiché</td></tr>
+<tr><td>Provenance</td><td>Le pays (« Produit de France »)</td></tr>
+<tr><td>Embouteilleur</td><td>Nom et commune (« mis en bouteille par… ») ; pour un vin importé, l'importateur</td></tr>
+<tr><td>Volume nominal</td><td>75 cl, 37,5 cl, 150 cl…</td></tr>
+<tr><td>Allergènes</td><td>« Contient des sulfites » au-delà de 10 mg/L ; aussi l'œuf ou le lait s'ils ont servi au collage</td></tr>
+<tr><td>Numéro de lot</td><td>Souvent précédé d'un « L »</td></tr>
+<tr><td>Teneur en sucre</td><td>Obligatoire seulement pour les effervescents (brut nature, extra-brut, brut, extra-sec, sec, demi-sec, doux)</td></tr>
+<tr><td>Énergie + ingrédients et nutrition</td><td>Voir ci-dessous</td></tr>
+</table>
+<p>Les mentions principales doivent pouvoir se lire ensemble, sans tourner la bouteille ; elles peuvent être sur la contre-étiquette. Le lot, les allergènes et l'importateur peuvent figurer ailleurs.</p>
+
+<h3>Nouveau depuis le 8 décembre 2023 : ingrédients et nutrition</h3>
+<p>Les vins produits depuis cette date (en pratique, surtout à partir du millésime 2024) doivent donner la liste des ingrédients et une déclaration nutritionnelle. Sur la bouteille, seule la <strong>valeur énergétique</strong> est obligatoire (par exemple « E (100 ml) : 328 kJ / 79 kcal »), avec les allergènes ; le reste peut passer par un <strong>QR code</strong>. Ce QR doit mener directement à la page du vin, être signalé comme « ingrédients » ou « nutrition », et ne contenir ni publicité ni suivi des visiteurs.</p>
+
+<h3>Le logo « femme enceinte »</h3>
+<p>Obligatoire sur les bouteilles vendues en France (ou une phrase équivalente). Nous n'avons pas trouvé d'obligation équivalente en Belgique : à vérifier avant d'en parler comme d'une règle.</p>
+
+<h2>Les mentions facultatives encadrées</h2>
+<table>
+<tr><th style="width:44%">Mention</th><th>La règle</th></tr>
+<tr><td>Millésime</td><td>Au moins 85 % de raisins de l'année (100 % en Champagne)</td></tr>
+<tr><td>Cépage</td><td>Un seul cépage nommé : au moins 85 % ; plusieurs : 100 % des cépages cités, par ordre d'importance</td></tr>
+<tr><td>« Mis en bouteille au château / au domaine »</td><td>Réservé aux AOP et IGP ; raisins de l'exploitation, vinifiés et mis en bouteille sur place</td></tr>
+<tr><td>« Château », « clos », « cru »</td><td>Réservés aux vins d'appellation</td></tr>
+<tr><td>« Grand cru », « premier cru », « cru classé »</td><td>Seulement si le cahier des charges de l'appellation le prévoit</td></tr>
+<tr><td>« Vieilles vignes »</td><td><strong>Aucune définition légale</strong> : le producteur doit seulement pouvoir la justifier. L'OIV a proposé en 2024 un repère non obligatoire : 35 ans et plus</td></tr>
+<tr><td>« Élevé en fût de chêne » (AOP/IGP en France)</td><td>Au moins 6 mois sous bois pour au moins la moitié du vin (règle française, une seule source vérifiée)</td></tr>
+<tr><td>Médailles</td><td>Seulement celles des concours reconnus par le ministère</td></tr>
+<tr><td>Bio</td><td>Logo européen (eurofeuille) obligatoire dès qu'on revendique le bio ; logo AB facultatif</td></tr>
+</table>
+
+<h2>AOP, IGP, Vin de France</h2>
+<p>En France, du plus encadré au plus libre :</p>
+<ol>
+<li><strong>AOP / AOC</strong> : une aire délimitée, des cépages, des rendements, des méthodes fixés par un cahier des charges contrôlé (INAO).</li>
+<li><strong>IGP</strong> (ex-« vins de pays ») : une zone plus large, des règles plus souples.</li>
+<li><strong>Vin de France</strong> : vin sans indication géographique, qui a remplacé l'ancien « vin de table » depuis la réforme européenne appliquée le 1er août 2009. Il peut afficher cépage et millésime.</li>
+</ol>
+<div class="note">Un « Vin de France » n'est pas forcément un petit vin : certains vignerons y vinifient librement, hors des règles d'une appellation.</div>
+
+<h2>Lire une fiche technique</h2>
+<p>Une fiche technique n'est pas réglementée : elle informe, mais elle vend aussi. On y trouve souvent :</p>
+<ul>
+<li><strong>La vigne</strong> : cépages (et leurs pourcentages), sol, exposition, âge des vignes, culture (bio, biodynamie), rendement en hl/ha, date et mode de vendange.</li>
+<li><strong>Le chai</strong> : levures, durée de cuvaison, température, malolactique, élevage (contenant, durée, part de bois neuf), collage, filtration.</li>
+<li><strong>Les chiffres</strong> : degré, sucres résiduels, acidité totale, pH, SO₂ total.</li>
+<li><strong>Le service</strong> : potentiel de garde, température, accords.</li>
+</ul>
+
+<h3>Faire parler les chiffres</h3>
+<table>
+<tr><th style="width:30%">Chiffre</th><th>Comment le lire</th></tr>
+<tr><td>Sucres résiduels (g/L)</td><td>Un vin tranquille peut s'appeler « sec » jusqu'à 4 g/L (9 g/L si son acidité est assez forte), « demi-sec » jusqu'à 12 g/L (ou 18 g/L) ; l'acidité masque une partie du sucre</td></tr>
+<tr><td>Acidité totale (g/L)</td><td><strong>Vérifiez l'unité</strong> : la France l'exprime souvent en équivalent acide sulfurique (H₂SO₄), d'autres pays en acide tartrique. Pour convertir : tartrique = H₂SO₄ × 1,53 (3,85 g/L H₂SO₄ ≈ 5,9 g/L tartrique)</td></tr>
+<tr><td>pH</td><td>Plus il est bas, plus le vin est acide et stable ; le SO₂ y protège mieux</td></tr>
+<tr><td>Rendement (hl/ha)</td><td>À comparer au maximum de l'appellation : nettement en dessous, souvent plus de concentration</td></tr>
+<tr><td>Degré</td><td>À relier au climat, au millésime, au cépage</td></tr>
+</table>
+
+<h3>Questions pour l'atelier</h3>
+<ol>
+<li>Quelles mentions obligatoires trouvez-vous ? Lesquelles manquent ou sont hors du même champ de vision ?</li>
+<li>Le vin est-il AOP, IGP ou Vin de France ? Qu'est-ce que cela permet ou interdit ?</li>
+<li>Le millésime et le cépage affichés garantissent-ils que tout le vin vient de cette année et de ce cépage ?</li>
+<li>Repérez une mention flatteuse sans définition légale.</li>
+<li>D'après la fiche, ce vin a-t-il fait sa malolactique ? A-t-il vu du bois neuf ? Qu'attendez-vous dans le verre ?</li>
+<li>L'acidité est-elle donnée en H₂SO₄ ou en tartrique ? Convertissez.</li>
+<li>Après dégustation : l'étiquette et la fiche tenaient-elles leurs promesses ?</li>
+</ol>
+<p><em>Pistes de réponse : 3. Non : 85 % au moins suffisent (sauf règle plus stricte de l'appellation). 4. « Vieilles vignes », « grand vin » (hors cahier des charges), « cuvée prestige »…</em></p>
+</section>
+
+<!-- ============ LEXIQUE ============ -->
+<section class="part">
+<h1>Lexique</h1>
+<p>Les mots du cours, du plus courant au plus technique, par ordre alphabétique.</p>
+<table class="lex">
+<thead><tr><th style="width:30%">Mot</th><th>Définition</th></tr></thead>
+<tbody>
+<tr><td>Acidité volatile</td><td>Surtout l'acide acétique ; un peu parfume le vin, trop le rend « piqué » (vinaigre, vernis)</td></tr>
+<tr><td>Anthocyanes</td><td>Pigments rouges des peaux de raisins noirs ; ils font la couleur des rouges et se lient aux tanins en vieillissant</td></tr>
+<tr><td>Assemblage</td><td>Mélange de cépages, parcelles, cuves ou millésimes pour un vin plus complet ou plus régulier</td></tr>
+<tr><td>Astringence</td><td>Bouche qui sèche et râpe, causée par les tanins ; une sensation tactile, pas une saveur</td></tr>
+<tr><td>Attaque</td><td>Première impression du vin en bouche</td></tr>
+<tr><td>Bâtonnage</td><td>Remise en suspension des lies fines dans le fût ou la cuve, pour plus de rondeur</td></tr>
+<tr><td>Barrique</td><td>Fût de chêne de 225 litres (modèle bordelais)</td></tr>
+<tr><td>Botrytis / pourriture noble</td><td>Champignon qui, avec humidité puis temps sec, concentre les baies (liquoreux) ; avec une humidité persistante, c'est la pourriture grise, un défaut</td></tr>
+<tr><td>Bouquet</td><td>L'ensemble des arômes d'un vin évolué</td></tr>
+<tr><td>Brettanomyces</td><td>Levure d'altération : écurie, cuir, pansement</td></tr>
+<tr><td>Caudalie</td><td>Unité de longueur en bouche : une seconde de persistance des arômes</td></tr>
+<tr><td>Cépage</td><td>Variété de vigne cultivée (chardonnay, syrah…)</td></tr>
+<tr><td>Chapeau de marc</td><td>Peaux et pépins remontés en surface pendant la fermentation d'un rouge</td></tr>
+<tr><td>Chaptalisation</td><td>Ajout de sucre au moût pour gagner en degré ; ne rend pas le vin plus doux</td></tr>
+<tr><td>Clone</td><td>Plants tous issus d'un même pied-mère, donc identiques</td></tr>
+<tr><td>Collage</td><td>Clarification par une colle (œuf, gélatine, bentonite…) qui entraîne les particules au fond</td></tr>
+<tr><td>Coulure</td><td>Chute des fleurs ou des jeunes baies à la floraison, souvent par temps froid et humide</td></tr>
+<tr><td>Cuvaison</td><td>Séjour du moût avec les peaux et les pépins en cuve (vinification en rouge)</td></tr>
+<tr><td>Débourbage</td><td>Élimination des bourbes du jus de blanc avant fermentation</td></tr>
+<tr><td>Débourrement</td><td>Ouverture des bourgeons au printemps</td></tr>
+<tr><td>Dégorgement</td><td>Expulsion du dépôt de levures du col d'un effervescent de méthode traditionnelle</td></tr>
+<tr><td>Disque</td><td>Surface du vin vue du dessus ; son bord renseigne sur l'âge</td></tr>
+<tr><td>Dosage</td><td>Sucre ajouté après le dégorgement, qui fixe le style d'un effervescent (brut, demi-sec…)</td></tr>
+<tr><td>Élevage</td><td>Soins donnés au vin entre la fin des fermentations et la mise en bouteille</td></tr>
+<tr><td>Foulage, éraflage</td><td>Éclater les baies ; séparer les baies de la rafle</td></tr>
+<tr><td>Foxé</td><td>Goût musqué typique des vignes américaines (<em>Vitis labrusca</em>)</td></tr>
+<tr><td>Gras</td><td>Sensation de rondeur, de douceur onctueuse (alcool, glycérol, lies)</td></tr>
+<tr><td>Larmes (ou jambes)</td><td>Coulures sur la paroi du verre ; abondantes si le vin est riche en alcool ou en sucre</td></tr>
+<tr><td>Lies</td><td>Dépôt de levures mortes après la fermentation ; les lies fines enrichissent le vin</td></tr>
+<tr><td>Longueur, finale</td><td>Persistance des arômes après avoir avalé ou recraché</td></tr>
+<tr><td>Macération carbonique</td><td>Raisins entiers en cuve sous gaz carbonique : rouges souples et très fruités (Beaujolais)</td></tr>
+<tr><td>Mildiou</td><td>Maladie venue d'Amérique, qui aime la pluie ; traitée au cuivre</td></tr>
+<tr><td>Millésime</td><td>Année de récolte</td></tr>
+<tr><td>Moût</td><td>Jus de raisin non fermenté</td></tr>
+<tr><td>Mutage</td><td>Arrêt de la fermentation par ajout d'alcool, pour garder du sucre (vins doux naturels)</td></tr>
+<tr><td>Oïdium</td><td>Maladie à champignon (poudre grise) ; traitée au soufre</td></tr>
+<tr><td>Ouillage</td><td>Remplissage des fûts pour compenser l'évaporation</td></tr>
+<tr><td>Passerillage</td><td>Raisins desséchés sur pied ou sur claies, qui concentrent leurs sucres</td></tr>
+<tr><td>Phylloxéra</td><td>Puceron américain qui tue les racines de la vigne européenne ; parade : le greffage</td></tr>
+<tr><td>Pigeage, remontage</td><td>Enfoncer le chapeau de marc dans le jus ; arroser le chapeau avec le jus du bas de cuve</td></tr>
+<tr><td>Polyphénols</td><td>Famille des tanins et des anthocyanes</td></tr>
+<tr><td>Porte-greffe</td><td>Racines (d'origine américaine) sur lesquelles on greffe le cépage</td></tr>
+<tr><td>Pressurage</td><td>Presser le raisin (blanc, rosé) ou le marc (rouge) pour en tirer le jus ou le vin</td></tr>
+<tr><td>Rafle</td><td>Charpente de la grappe, riche en tanins</td></tr>
+<tr><td>Réduction</td><td>Odeurs soufrées d'un vin qui a manqué d'air (œuf, chou) ; s'estompent parfois à l'aération</td></tr>
+<tr><td>Rendement</td><td>Quantité produite par hectare, en hectolitres (hl/ha)</td></tr>
+<tr><td>Robe</td><td>La couleur du vin et son aspect</td></tr>
+<tr><td>Saignée</td><td>Rosé obtenu en tirant une partie du jus d'une cuve de rouge</td></tr>
+<tr><td>SO₂ (sulfites)</td><td>Protège de l'oxydation et des microbes ; seule sa part « libre » protège</td></tr>
+<tr><td>Soutirage</td><td>Transvaser le vin pour le séparer de ses dépôts</td></tr>
+<tr><td>Tanins</td><td>Composés des peaux, pépins, rafle et bois, qui donnent structure et astringence</td></tr>
+<tr><td>TCA</td><td>Molécule du goût de bouchon (carton mouillé)</td></tr>
+<tr><td>Véraison</td><td>Changement de couleur des baies, début de la maturation</td></tr>
+</tbody>
+</table>
+</section>
+
+<!-- ============ ANNEXES ============ -->
+<section class="part">
+<h1>Annexes</h1>
+<h2>Le vocabulaire en échelles</h2>
+<p>Pour chaque critère, placez le vin sur une échelle plutôt que de chercher un mot rare.</p>
+<table>
+<tr><th style="width:28%">Critère</th><th style="width:30%">De…</th><th>…à</th></tr>
+<tr><td>Limpidité</td><td>trouble, voilé</td><td>limpide, cristallin</td></tr>
+<tr><td>Éclat</td><td>terne, mat</td><td>brillant, étincelant</td></tr>
+<tr><td>Intensité de la robe</td><td>pâle, légère</td><td>soutenue, profonde</td></tr>
+<tr><td>Intensité du nez</td><td>discret, fermé</td><td>expressif, puissant</td></tr>
+<tr><td>Qualité du nez</td><td>simple, ordinaire</td><td>fin, élégant, racé</td></tr>
+<tr><td>Attaque</td><td>fuyante</td><td>franche, ample</td></tr>
+<tr><td>Acidité</td><td>plate, molle</td><td>vive, nerveuse… puis verte, mordante</td></tr>
+<tr><td>Corps (structure)</td><td>fluet, léger</td><td>étoffé, charpenté, massif</td></tr>
+<tr><td>Force des tanins</td><td>lisses, fondus</td><td>fermes, durs, âpres</td></tr>
+<tr><td>Grain des tanins</td><td>grossier, rêche</td><td>velouté, soyeux</td></tr>
+<tr><td>Longueur</td><td>courte, fugace</td><td>longue, persistante</td></tr>
+</table>
+
+<div style="break-inside:avoid">
+<h2>Fiche de dégustation</h2>
+<p>À copier pour chaque vin.</p>
+<table class="fiche">
+<tr><th style="width:16%">Rubrique</th><th style="width:38%">Repères</th><th>Mes notes</th></tr>
+<tr><td>Vin</td><td>Appellation, producteur, millésime, prix</td><td></td></tr>
+<tr><td>Œil</td><td>Limpidité, éclat, intensité, teinte, larmes</td><td></td></tr>
+<tr><td>Nez</td><td>Netteté, intensité, familles d'arômes, évolution à l'air</td><td></td></tr>
+<tr><td>Bouche</td><td>Attaque ; sucre, acidité, tanins, alcool, corps ; texture</td><td></td></tr>
+<tr><td>Finale</td><td>Longueur (caudalies), arômes de bouche</td><td></td></tr>
+<tr><td>Conclusion</td><td>Équilibre, qualité, garde, accords, température</td><td></td></tr>
+<tr><td>Note</td><td>/20 ou /10, avec une phrase pour la justifier</td><td></td></tr>
+</table>
+</div>
+
+<h2>Sources</h2>
+<p>Les faits de ce support ont été recoupés dans au moins deux sources quand c'était possible ; les points où les sources divergent sont signalés dans le texte.</p>
+<ul class="src">
+<li>Pascaline Lepeltier, <em>Mille Vignes</em>.</li>
+<li>Émile Peynaud et Jacques Blouin, <em>Le Goût du vin</em>, 5e éd., Dunod, 2013 (dix séries d'odeurs).</li>
+<li>Jancis Robinson et Julia Harding (dir.), <em>The Oxford Companion to Wine</em>, 5e éd., 2023.</li>
+<li>Ribéreau-Gayon et al., <em>Handbook of Enology</em>, vol. 1 et 2.</li>
+<li>WSET, manuels des niveaux 2 et 3 et du diplôme (températures, grille de dégustation, vinification).</li>
+<li><em>La Revue du vin de France</em>, Collection n° 2, « Les clés pour apprendre à déguster », mai 2024 (textures, vocabulaire).</li>
+<li>Labbé et al., 2019, dates de vendanges à Beaune (via l'<em>Oxford Companion</em>).</li>
+<li>Règlement délégué (UE) 2019/33 (étiquetage, mentions sec / demi-sec, millésime, cépage) et règlement (UE) 2021/2117 (ingrédients et nutrition).</li>
+<li>DGCCRF : <a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/etiquetage-des-vins-savoir-lire-les-etiquettes">Étiquetage des vins : savoir lire les étiquettes</a> ; <a href="https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-liste-ingredients-nutritionnelle-des-vins.pdf">guide ingrédients et nutrition</a>.</li>
+<li>Ministère de l'Agriculture, <a href="https://info.agriculture.gouv.fr/boagri/instruction-C2009-3113/telechargement">instruction C2009-3113</a> (vins sans indication géographique, réforme appliquée au 1er août 2009) ; <a href="https://www.franceagrimer.fr/les-vins-sans-indication-geographique-vsig">FranceAgriMer, vins sans IG</a>.</li>
+<li>Vignerons de Wallonie, <a href="https://www.vigneronsdewallonie.be/wp-content/uploads/2026/05/DOC-20260504-WA0005.-1.pdf">liste des AOP et IGP wallonnes</a>.</li>
+<li>Bureau interprofessionnel des vins de Bourgogne et Comité Champagne (températures de service).</li>
+</ul>
+<p>Illustrations originales, créées pour ce cours ; l'étiquette de l'atelier est fictive.</p>
+</section>
+</body>
+</html>
