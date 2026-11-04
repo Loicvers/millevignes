@@ -10,7 +10,7 @@
   --wine:#5b1a24;--wine2:#7a2c38;--rose:#d4a3ab;--rose2:#ecd3d6;
   --gold:#a8843a;--gold2:#e2c680;--olive:#5c7a4f;--olive2:#b4c69c;
   --slate:#456e8a;--slate2:#b3c8d4;--ink:#1a1612;--muted:#625a4e;
-  --cream:#f7f2e9;--line:#d8d0c2;--brown:#8a5a2b;
+  --cream:#faf3e0;--line:#d8d0c2;--brown:#8a5a2b;
 }
 @page{size:A4;margin:18mm 20mm 20mm 20mm}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -37,10 +37,18 @@ ol li::marker{color:var(--wine);font-weight:600}
 .note strong{color:var(--wine)}
 table{width:100%;border-collapse:collapse;break-inside:avoid;margin:5pt 0 9pt;font-size:.93rem;line-height:1.38}
 th{text-align:left;font-weight:600;color:var(--wine);padding:5pt 8pt 5pt 0;border-bottom:1.5px solid var(--wine);vertical-align:bottom}
-td{padding:5pt 8pt 5pt 0;border-bottom:1px solid var(--line);vertical-align:top}
+td{padding:4.2pt 8pt 4.2pt 0;border-bottom:1px solid var(--line);vertical-align:top}
 tr{break-inside:avoid}
 td:first-child,th:first-child{padding-left:0}
 .fiche td{height:44pt}
+.fa h2{margin-top:0}.fa h3{margin:7pt 0 1pt;font-size:13pt}
+.fa-head{display:flex;align-items:baseline;gap:6pt;font-size:.93rem;margin:5pt 0}
+.fa-line{flex:1;display:inline-block;min-width:60pt;border-bottom:1px solid var(--line);height:.9em;vertical-align:baseline}
+.fa-line.s{flex:0 0 60pt;min-width:60pt}
+.fa-row{display:grid;grid-template-columns:78pt 1fr;gap:8pt;align-items:baseline;padding:2.4pt 0;border-bottom:1px solid var(--line);font-size:.88rem;line-height:1.42}
+.fa-row b{font-weight:600;color:var(--wine)}
+.fa-row span span.fa-line{display:inline-block;vertical-align:baseline}
+.fa-notes{margin-top:7pt;height:30pt;border:1px solid var(--line);border-radius:3px;break-inside:avoid}
 table.lex{break-inside:auto}
 table.lex thead{display:table-header-group}
 .fiche th:last-child,.fiche td:last-child{width:46%}
@@ -56,13 +64,14 @@ table.lex thead{display:table-header-group}
 .fig .tw{font-size:10px;font-weight:600;fill:#fff}
 .fig .tk{font-size:10px;font-weight:600;fill:var(--ink)}
 .fig .ld{stroke:#9a8f80;stroke-width:.8;fill:none}
+.fig image{mask:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%);-webkit-mask:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%)}
 .fig .dot{fill:var(--wine)}
 /* couverture */
 .cover{height:257mm;display:flex;flex-direction:column;break-after:page;position:relative}
 .cover .brand{font-size:9pt;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold);margin-top:6mm}
 .cover .title{font-family:'Cormorant',serif;font-weight:600;font-size:54pt;line-height:1;color:var(--wine);margin:14mm 0 8mm}
 .cover .tag{font-size:11.5pt;color:var(--muted);padding-bottom:5mm;border-bottom:1px solid var(--gold)}
-.cover .art{flex:1;display:flex;align-items:center;justify-content:center;margin:6mm 0}
+.cover .art{flex:1;display:flex;align-items:center;justify-content:center;margin:4mm 0;background:var(--cream);border-radius:4px}
 .cover .art svg{width:138mm;height:auto}
 .cover .foot{border-top:1px solid var(--line);padding-top:5mm;display:flex;justify-content:space-between;align-items:flex-end}
 .cover .foot b{display:block;font-size:12.5pt;font-weight:600;color:var(--ink)}
@@ -78,49 +87,7 @@ table.lex thead{display:table-header-group}
   <div class="brand">Une Autre Clé du Paradis</div>
   <div class="title">Initiation<br>à l'œnologie</div>
   <div class="tag">Déguster avec méthode · Comprendre la vigne et le chai · Décrypter une étiquette</div>
-  <div class="art">
-    <svg viewBox="0 0 560 340" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="bowlclip"><path d="M326 36 C330 86 352 126 350 168 C348 218 318 252 268 254 C218 252 188 218 186 168 C184 126 206 86 210 36 Z"/></clipPath>
-        <linearGradient id="wineg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a3445"/><stop offset="1" stop-color="#4e1420"/></linearGradient>
-        <radialGradient id="grape" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8c3a50"/><stop offset="1" stop-color="#4a1225"/></radialGradient>
-      </defs>
-      <circle cx="300" cy="180" r="150" fill="#f3ece0"/>
-      <!-- sarment et vrille -->
-      <path d="M40 268 C90 236 130 196 176 160 C196 144 214 134 236 128" fill="none" stroke="#6b4a2a" stroke-width="3" stroke-linecap="round"/>
-      <path d="M236 128 c12 -4 22 2 20 12 c-2 10 -16 10 -16 2 c0 -6 8 -8 10 -2" fill="none" stroke="#6b4a2a" stroke-width="2" stroke-linecap="round"/>
-      <!-- feuille -->
-      <g transform="translate(150 108) rotate(-22) scale(.78)">
-        <path d="M0 -100 C18 -86 30 -66 26 -46 C46 -72 74 -80 94 -68 C92 -50 76 -34 50 -26 C72 -18 86 0 84 22 C64 28 46 22 32 10 C36 34 28 56 12 68 C6 62 2 58 0 58 C-2 58 -6 62 -12 68 C-28 56 -36 34 -32 10 C-46 22 -64 28 -84 22 C-86 0 -72 -18 -50 -26 C-76 -34 -92 -50 -94 -68 C-74 -80 -46 -72 -26 -46 C-30 -66 -18 -86 0 -100 Z" fill="#6d8a55" stroke="#4d6a3c" stroke-width="2.4" stroke-linejoin="round"/>
-        <g fill="none" stroke="#4d6a3c" stroke-width="1.6" stroke-linecap="round" opacity=".85">
-          <path d="M0 58 L0 -90"/><path d="M0 40 L84 -62"/><path d="M0 40 L-84 -62"/><path d="M0 50 L76 16"/><path d="M0 50 L-76 16"/>
-          <path d="M0 -40 L24 -56 M0 -40 L-24 -56 M0 4 L26 -8 M0 4 L-26 -8"/>
-        </g>
-      </g>
-      <!-- grappe -->
-      <path d="M176 160 L182 176" stroke="#6b4a2a" stroke-width="3" stroke-linecap="round"/>
-      <g fill="url(#grape)" stroke="#3f0f1e" stroke-width="1">
-        <circle cx="158" cy="190" r="13"/><circle cx="184" cy="186" r="13"/><circle cx="210" cy="192" r="13"/>
-        <circle cx="146" cy="212" r="13"/><circle cx="172" cy="210" r="13"/><circle cx="198" cy="214" r="13"/><circle cx="222" cy="216" r="12"/>
-        <circle cx="158" cy="234" r="13"/><circle cx="184" cy="234" r="13"/><circle cx="210" cy="238" r="12"/>
-        <circle cx="170" cy="256" r="12"/><circle cx="196" cy="258" r="12"/>
-        <circle cx="183" cy="278" r="11"/>
-      </g>
-      <g fill="#fff" opacity=".32"><circle cx="154" cy="185" r="3.2"/><circle cx="180" cy="181" r="3.2"/><circle cx="168" cy="205" r="3.2"/><circle cx="194" cy="209" r="3.2"/><circle cx="154" cy="229" r="3.2"/><circle cx="206" cy="233" r="3.2"/><circle cx="166" cy="251" r="3"/><circle cx="179" cy="273" r="2.8"/></g>
-      <!-- verre -->
-      <g transform="translate(60 0)">
-        <g clip-path="url(#bowlclip)">
-          <rect x="170" y="150" width="200" height="120" fill="url(#wineg)"/>
-          <ellipse cx="268" cy="150" rx="83" ry="8" fill="#a64c60"/>
-        </g>
-        <path d="M210 36 C206 86 184 126 186 168 C188 218 218 252 268 254 C318 252 348 218 350 168 C352 126 330 86 326 36" fill="none" stroke="#2a2420" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M210 36 L326 36" stroke="#2a2420" stroke-width="1.2" opacity=".5"/>
-        <path d="M268 254 L268 306" stroke="#2a2420" stroke-width="2.6"/>
-        <path d="M212 312 C212 305 324 305 324 312 C324 319 212 319 212 312 Z" fill="#e9e2d4" stroke="#2a2420" stroke-width="2.4"/>
-        <path d="M216 60 C206 100 204 140 212 176" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".6"/>
-      </g>
-    </svg>
-  </div>
+  <div class="art"><img src="img/couverture.jpg" alt="" style="width:156mm;height:auto;mask:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%);-webkit-mask:radial-gradient(ellipse 50% 50% at 50% 50%,#000 70%,transparent 100%)"></div>
   <div class="foot">
     <div><b>Support participant</b><span>Cours, atelier étiquette, fiche de dégustation et lexique</span></div>
     <div class="date">Novembre 2026</div>
@@ -157,22 +124,9 @@ table.lex thead{display:table-header-group}
 <h4>Le bon verre : il concentre les arômes</h4>
 <p class="sub">Forme tulipe, cristallin fin, incolore, tenu par la tige ou le pied</p>
 <svg viewBox="0 0 640 262" xmlns="http://www.w3.org/2000/svg">
-  <defs><clipPath id="g2"><path d="M166 18 C160 70 158 120 176 158 C190 186 224 196 250 196 C276 196 310 186 324 158 C342 120 340 70 334 18 Z"/></clipPath></defs>
-  <!-- arômes -->
-  <g stroke="var(--gold)" stroke-width="1.4" fill="none" stroke-dasharray="3 4" stroke-linecap="round">
-    <path d="M232 126 L232 40"/><path d="M250 126 L250 34"/><path d="M268 126 L268 40"/>
-  </g>
-  <g fill="var(--gold)"><path d="M232 30 l-5 10 h10z"/><path d="M250 24 l-5 10 h10z"/><path d="M268 30 l-5 10 h10z"/></g>
-  <!-- vin -->
-  <g clip-path="url(#g2)"><rect x="150" y="128" width="200" height="80" fill="#7a2c38"/><ellipse cx="250" cy="128" rx="72" ry="7" fill="#a04a5a"/></g>
-  <!-- verre -->
-  <path d="M166 18 C160 70 158 120 176 158 C190 186 224 196 250 196 C276 196 310 186 324 158 C342 120 340 70 334 18" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M166 18 L334 18" stroke="var(--ink)" stroke-width="1" opacity=".5"/>
-  <path d="M250 196 L250 232" stroke="var(--ink)" stroke-width="2.2"/>
-  <path d="M206 236 C206 231 294 231 294 236 C294 241 206 241 206 236 Z" fill="#fff" stroke="var(--ink)" stroke-width="2"/>
-  <!-- repères -->
-  <g class="ld"><path d="M334 24 L390 24"/><path d="M330 90 L390 90"/><path d="M322 128 L390 128"/><path d="M252 214 L390 214"/><path d="M294 236 L360 236 L360 250 L390 250"/></g>
-  <g class="dot"><circle cx="334" cy="24" r="3"/><circle cx="330" cy="90" r="3"/><circle cx="322" cy="128" r="3"/><circle cx="252" cy="214" r="3"/><circle cx="294" cy="236" r="3"/></g>
+  <image href="img/verre.jpg" x="90" y="0" width="250" height="250"/>
+  <g class="ld"><path d="M236.5 28.8 L390 24"/><path d="M246.2 80.6 L390 90"/><path d="M246.2 95.7 L390 128"/><path d="M215.5 158.7 L390 214"/><path d="M241.4 206.3 L360 236 L360 250 L390 250"/></g>
+  <g class="dot"><circle cx="236.5" cy="28.8" r="3"/><circle cx="246.2" cy="80.6" r="3"/><circle cx="246.2" cy="95.7" r="3"/><circle cx="215.5" cy="158.7" r="3"/><circle cx="241.4" cy="206.3" r="3"/></g>
   <g>
     <text x="398" y="22" class="tn">Bord fin et resserré</text><text x="398" y="35" class="tx">les arômes se concentrent vers le nez</text>
     <text x="398" y="88" class="tn">Calice en tulipe, incolore</text><text x="398" y="101" class="tx">on juge la robe, on fait tourner sans renverser</text>
@@ -205,39 +159,23 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>On sent le vin deux fois</h4>
 <p class="sub">Par le nez (voie directe) puis par la bouche (voie rétronasale)</p>
-<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
-  <!-- profil -->
-  <path d="M250 212 C236 170 212 150 206 112 C200 70 232 22 288 20 C344 18 384 54 382 108 C381 140 364 150 356 170 C352 184 356 200 360 212" fill="#fbf8f2" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/>
-  <!-- nez, lèvres -->
-  <path d="M214 118 C206 124 200 136 206 142 C212 146 220 142 224 146" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
-  <path d="M226 158 C236 160 246 158 252 156" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
-  <!-- cavité nasale / bulbe -->
-  <ellipse cx="282" cy="92" rx="30" ry="12" fill="var(--gold2)" stroke="var(--gold)" stroke-width="1.5"/>
-  <text x="282" y="95.5" text-anchor="middle" class="tk" style="font-size:8.5px">zone olfactive</text>
-  <!-- bouche / arrière-gorge -->
-  <path d="M232 160 C262 166 296 162 316 150" fill="none" stroke="var(--rose)" stroke-width="7" stroke-linecap="round"/>
-  <!-- verre -->
-  <g transform="translate(120 100) scale(.62)">
-    <path d="M0 0 C-4 40 -2 70 10 86 C18 98 36 102 50 102 C64 102 82 98 90 86 C102 70 104 40 100 0" fill="none" stroke="var(--ink)" stroke-width="3"/>
-    <path d="M6 56 C14 56 86 56 94 56 C96 70 90 102 50 102 C10 102 4 70 6 56 Z" fill="#7a2c38"/>
-    <path d="M50 102 L50 132 M24 136 C24 130 76 130 76 136 C76 142 24 142 24 136" fill="#fff" stroke="var(--ink)" stroke-width="3"/>
-  </g>
-  <!-- voie directe -->
-  <path d="M178 96 C196 80 230 72 256 86" fill="none" stroke="var(--slate)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#ah1)"/>
-  <!-- voie rétronasale -->
-  <path d="M312 150 C330 134 320 112 300 102" fill="none" stroke="var(--wine)" stroke-width="2.2" stroke-dasharray="5 4" stroke-linecap="round" marker-end="url(#ah2)"/>
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="ah1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--slate)"/></marker>
     <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--wine)"/></marker>
   </defs>
-  <!-- légendes -->
+  <image href="img/tete.jpg" x="130" y="0" width="250" height="250"/>
+  <ellipse cx="235.0" cy="67.1" rx="22" ry="9" fill="var(--gold2)" fill-opacity=".75" stroke="var(--gold)" stroke-width="1.2"/>
+  <text x="235.0" y="70.1" text-anchor="middle" class="tk" style="font-size:7.5px">zone olfactive</text>
+  <path d="M120 150 C136 134 150 118 173.9 111.4 C193.9 87.4 205.0 93.1 227.0 79.1" fill="none" stroke="var(--slate)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#ah1)"/>
+  <path d="M221.8 142.7 C261.8 140.7 278.9 134.7 274.9 94.7 C268.9 66.7 265.0 97.1 247.0 81.1" fill="none" stroke="var(--wine)" stroke-width="2.2" stroke-dasharray="5 4" stroke-linecap="round" marker-end="url(#ah2)"/>
   <g transform="translate(420 40)">
     <line x1="0" y1="8" x2="26" y2="8" stroke="var(--slate)" stroke-width="2.5"/>
     <text x="34" y="12" class="tn">Voie directe (orthonasale)</text>
     <text x="0" y="32" class="tx">On hume le verre : c'est l'« odeur »,</text>
     <text x="0" y="45" class="tx">le premier et le deuxième nez.</text>
   </g>
-  <g transform="translate(420 130)">
+  <g transform="translate(420 140)">
     <line x1="0" y1="8" x2="26" y2="8" stroke="var(--wine)" stroke-width="2.5" stroke-dasharray="5 4"/>
     <text x="34" y="12" class="tn">Voie rétronasale</text>
     <text x="0" y="32" class="tx">Le vin réchauffé en bouche libère</text>
@@ -254,11 +192,11 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>La langue n'a pas de carte : cinq saveurs, partout</h4>
 <p class="sub">La « carte de la langue » des anciens manuels est une idée fausse</p>
-<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
-  <path id="tongue" d="M100 30 C130 18 170 16 200 30 C236 48 240 110 226 150 C214 186 190 206 165 212 C140 206 116 186 104 150 C90 110 94 48 100 30 Z" fill="#e7a9b0" stroke="#b8707a" stroke-width="2"/>
-  <path d="M165 60 C166 100 166 150 165 200" fill="none" stroke="#c98a93" stroke-width="1.5"/>
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+  <image href="img/langue.jpg" x="40" y="0" width="230" height="230"/>
+  <polygon id="tongue" points="130,60 184,52 204,100 192,190 155,215 118,190 106,100" fill="none" stroke="none"/>
   <g id="dots"></g>
-  <text x="165" y="226" text-anchor="middle" class="tk" style="font-size:9.5px">Chaque zone perçoit les cinq saveurs</text>
+  <text x="155" y="238" text-anchor="middle" class="tk" style="font-size:9.5px">Chaque zone perçoit les cinq saveurs</text>
   <g transform="translate(300 28)">
     <g><circle cx="7" cy="0" r="6" fill="#c9a23c"/><text x="22" y="4" class="tn">Sucré</text><text x="22" y="17" class="tx">sucres résiduels ; l'alcool et le glycérol arrondissent</text></g>
     <g transform="translate(0 40)"><circle cx="7" cy="0" r="6" fill="var(--slate)"/><text x="22" y="4" class="tn">Acide</text><text x="22" y="17" class="tx">fraîcheur, salivation (acides tartrique, malique, lactique)</text></g>
@@ -272,19 +210,16 @@ table.lex thead{display:table-header-group}
 (function(){
   var cols=['#c9a23c','#456e8a','#5c7a4f','#5b1a24','#8a5a2b'], g=document.getElementById('dots');
   var seed=7; function rnd(){seed=(seed*9301+49297)%233280;return seed/233280;}
-  var tongue=document.getElementById('tongue');
-  var n=0, tries=0;
-  while(n<70 && tries<3000){
+  var tongue=document.getElementById('tongue'), n=0, tries=0, placed=[];
+  while(n<60 && tries<4000){
     tries++;
-    var x=94+rnd()*148, y=22+rnd()*186;
+    var x=100+rnd()*110, y=50+rnd()*170;
     var p=tongue.ownerSVGElement.createSVGPoint(); p.x=x; p.y=y;
     if(!tongue.isPointInFill(p)) continue;
-    // marge intérieure
-    var ok=true; [[x-7,y],[x+7,y],[x,y-7],[x,y+7]].forEach(function(q){var pp=tongue.ownerSVGElement.createSVGPoint();pp.x=q[0];pp.y=q[1];if(!tongue.isPointInFill(pp))ok=false;});
-    if(!ok) continue;
+    if(placed.some(function(q){return (q[0]-x)*(q[0]-x)+(q[1]-y)*(q[1]-y)<64;})) continue;
     var c=document.createElementNS('http://www.w3.org/2000/svg','circle');
-    c.setAttribute('cx',x.toFixed(1)); c.setAttribute('cy',y.toFixed(1)); c.setAttribute('r','3.2'); c.setAttribute('fill',cols[n%5]); c.setAttribute('opacity','.9');
-    g.appendChild(c); n++;
+    c.setAttribute('cx',x.toFixed(1)); c.setAttribute('cy',y.toFixed(1)); c.setAttribute('r','3'); c.setAttribute('fill',cols[n%5]); c.setAttribute('stroke','#fff'); c.setAttribute('stroke-width','.8');
+    g.appendChild(c); placed.push([x,y]); n++;
   }
 })();
 </script>
@@ -637,69 +572,6 @@ table.lex thead{display:table-header-group}
 
 <h2>Une année à la vigne</h2>
 
-<!-- FIG année -->
-<div class="fig">
-<h4>Une année à la vigne : les 16 stades-repères, de A à P</h4>
-<p class="sub">Échelle de Baillod et Baggiolini (hémisphère nord) : du bourgeon d'hiver à la chute des feuilles, en passant par la fleur et le fruit</p>
-<svg viewBox="0 0 640 500" xmlns="http://www.w3.org/2000/svg"><g id="stades" transform="translate(320 250)"></g></svg>
-<p class="cap">Dessins originaux, d'après les stades décrits dans <em>Mille Vignes</em> (p. 62). Les dates bougent avec le climat : en 30 ans, les vendanges ont avancé de 2 à 3 semaines dans la plupart des régions.</p>
-<script>
-(function(){
-  var INK='#1a1612', BOIS='#7a5230', VERT='#6d8a55', VERT2='#9ab57a', VIN='#5b1a24', OR='#d9b545', CREME='#f3ecdf';
-  // primitives : chaque dessin tient dans un carré de 44 px centré sur (0,0)
-  function cane(h){return '<path d="M0 '+h+' L0 '+(-h)+'" stroke="'+BOIS+'" stroke-width="4" stroke-linecap="round"/>';}
-  function bud(col,w){return '<path d="M0 -4 C'+(-w)+' 0 '+(-w)+' 10 0 14 C'+w+' 10 '+w+' 0 0 -4 Z" fill="'+col+'" stroke="'+INK+'" stroke-width="1"/>';}
-  function leaf(x,y,s,rot,col){col=col||VERT;return '<g transform="translate('+x+' '+y+') rotate('+rot+') scale('+s+')"><path d="M0 0 C-6 -3 -9 -9 -6 -14 C-3 -12 -1 -13 0 -16 C1 -13 3 -12 6 -14 C9 -9 6 -3 0 0 Z" fill="'+col+'" stroke="'+INK+'" stroke-width="1.1" stroke-linejoin="round"/><path d="M0 0 L0 -13" stroke="'+INK+'" stroke-width=".7" opacity=".7"/></g>';}
-  function shoot(){return '<path d="M0 22 C0 10 2 0 0 -14" stroke="'+VERT+'" stroke-width="2.4" fill="none" stroke-linecap="round"/>';}
-  function cluster(x,y,s,cols,gap){ // grappe conique de 10 baies ; cols : couleur par baie
-    var pos=[[0,0],[-1,1],[1,1],[-2,2],[0,2],[2,2],[-1,3],[1,3],[0,4],[0,5]],h='';
-    pos.forEach(function(p,i){h+='<circle cx="'+(x+p[0]*gap*s)+'" cy="'+(y+p[1]*gap*s)+'" r="'+(2.6*s)+'" fill="'+(cols[i%cols.length])+'" stroke="'+INK+'" stroke-width=".8"/>';});
-    return h;}
-  function tige(x,y){return '<path d="M'+x+' '+y+' L'+x+' '+(y-10)+' L0 '+(y-18)+'" stroke="'+VERT+'" stroke-width="1.6" fill="none"/>';}
-  var S=[
-    ['A','Bourgeon d\'hiver', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'</g>'],
-    ['B','Bourgeon dans le coton', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'<ellipse cx="0" cy="-3" rx="5" ry="6" fill="'+CREME+'" stroke="'+INK+'" stroke-width=".8" stroke-dasharray="1.5 1.5"/></g>'],
-    ['C','Pointe verte', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'<path d="M0 -4 C-3 -8 -2 -13 0 -16 C2 -13 3 -8 0 -4 Z" fill="'+VERT2+'" stroke="'+INK+'" stroke-width="1"/></g>'],
-    ['D','Sortie des feuilles', cane(18)+'<g transform="translate(6 -4)">'+leaf(-4,0,.55,-40)+leaf(4,0,.55,40)+leaf(0,-2,.6,0)+'</g>'],
-    ['E','Feuilles étalées', shoot()+leaf(-8,8,.8,-70)+leaf(9,0,.8,70)+leaf(-8,-6,.8,-50)+leaf(2,-14,.85,10)],
-    ['F','Grappes visibles', shoot()+leaf(9,2,.8,70)+leaf(-8,-8,.8,-50)+leaf(2,-14,.85,10)+cluster(-7,8,.5,[VERT2],4.2)],
-    ['G','Grappes séparées', shoot()+leaf(-9,-10,.8,-50)+leaf(2,-14,.85,10)+cluster(-8,4,.5,[VERT2],4.2)+cluster(9,8,.5,[VERT2],4.2)],
-    ['H','Boutons floraux séparés', tige(0,-6)+cluster(0,-4,.72,[VERT2],5.4)],
-    ['I','Floraison', tige(0,-6)+cluster(0,-4,.9,[CREME],5.2)+'<g stroke="'+OR+'" stroke-width=".9"><path d="M-3 -2 l-3 -3 M3 -2 l3 -3 M0 10 l0 -4 M-7 8 l-3 2 M7 8 l3 2"/></g>'],
-    ['J','Nouaison', tige(0,-6)+cluster(0,-4,.95,[VERT2],5.9)],
-    ['K','Petits pois', tige(0,-8)+cluster(0,-6,1.1,[VERT2],5.2)],
-    ['L','Fermeture de la grappe', tige(0,-8)+cluster(0,-6,1.2,[VERT],4.4)],
-    ['M','Véraison', tige(0,-8)+cluster(0,-6,1.2,[VERT,'#9b4a66',VERT,'#7a2c4f',VERT2,'#9b4a66',VERT,'#5b1a24',VERT2,'#7a2c4f'],4.4)],
-    ['N','Maturité', tige(0,-8)+cluster(0,-6,1.25,['#6a2238','#4a1225'],4.4)],
-    ['O','Aoûtement', '<path d="M-4 22 L-2 -18" stroke="'+BOIS+'" stroke-width="4" stroke-linecap="round"/><g stroke="'+INK+'" stroke-width="1" opacity=".6"><path d="M-6 8 h5 M-6 -4 h5 M-5 -14 h5"/></g>'+leaf(8,-2,.85,60,OR)],
-    ['P','Chute des feuilles', cane(18)+'<g stroke="'+INK+'" stroke-width="1" opacity=".6"><path d="M-2 8 h4 M-2 -4 h4"/></g>'+leaf(12,2,.8,120,'#c47a3a')+leaf(-12,12,.7,-150,OR)]
-  ];
-  var N=S.length, R=166, RL=206, h='';
-  function pt(r,a){a=(a-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
-  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0),L=(a1-a0)>180?1:0;
-    return 'M'+p0[0].toFixed(1)+' '+p0[1].toFixed(1)+' A'+r2+' '+r2+' 0 '+L+' 1 '+p1[0].toFixed(1)+' '+p1[1].toFixed(1)+' L'+p2[0].toFixed(1)+' '+p2[1].toFixed(1)+' A'+r1+' '+r1+' 0 '+L+' 0 '+p3[0].toFixed(1)+' '+p3[1].toFixed(1)+' Z';}
-  var step=360/N, a0=-step/2; // A juste à droite du haut, P juste à gauche
-  // saisons : hiver = P et A, printemps = B à H, été = I à N, automne = O
-  var seasons=[['Hiver',-1,1,'#d9d2e3'],['Printemps',1,8,'#c9d8b1'],['Été',8,14,'#ead98f'],['Automne',14,15,'#e0b07a']];
-  seasons.forEach(function(s){var b=a0+s[1]*step+1,e=a0+s[2]*step-1;h+='<path d="'+arc(128,138,b,e)+'" fill="'+s[3]+'"/>';
-    var m=pt(97,(b+e)/2);h+='<text x="'+m[0].toFixed(1)+'" y="'+(m[1]+4).toFixed(1)+'" text-anchor="middle" style="font-size:10px;font-weight:600;letter-spacing:.08em" fill="#625a4e">'+s[0].toUpperCase()+'</text>';});
-  // cercle de fond + flèche du sens
-  h+='<circle r="'+R+'" fill="none" stroke="#d8d0c2" stroke-width="1"/>';
-  S.forEach(function(s,i){var a=a0+i*step+step/2, p=pt(R,a), q=pt(RL,a);
-    h+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="25" fill="#fff" stroke="#d8d0c2"/>';
-    h+='<g transform="translate('+p[0].toFixed(1)+' '+p[1].toFixed(1)+')">'+s[2]+'</g>';
-    var anchor=Math.abs(q[0])<30?'middle':(q[0]<0?'end':'start'), dy=q[1]<-150?-4:(q[1]>150?12:4);
-    var lx=q[0], ly=q[1]+dy; if(anchor==='middle'){ly=q[1]<0?q[1]-4:q[1]+12;}
-    h+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:9.3px" fill="'+INK+'"><tspan style="font-weight:600" fill="'+VIN+'">'+s[0]+'</tspan> '+s[1]+'</text>';
-  });
-  // centre
-  h+='<text y="-8" text-anchor="middle" style="font-family:Cormorant,serif;font-size:19px;font-weight:600" fill="'+VIN+'">Le cycle</text><text y="12" text-anchor="middle" style="font-family:Cormorant,serif;font-size:19px;font-weight:600" fill="'+VIN+'">de la vigne</text>';
-  h+='<text y="34" text-anchor="middle" style="font-size:8.6px" fill="#625a4e">de la dormance à la dormance</text>';
-  document.getElementById('stades').innerHTML=h;
-})();
-</script>
-</div>
-
 <table>
 <tr><th style="width:20%">Période</th><th style="width:42%">La plante</th><th>Le vigneron</th></tr>
 <tr><td>Décembre à mars</td><td>Repos (dormance), puis « pleurs » de sève aux plaies de taille</td><td>Taille ; la Saint-Vincent (22 janvier) en est la fête traditionnelle</td></tr>
@@ -710,7 +582,38 @@ table.lex thead{display:table-header-group}
 <tr><td>Fin août à octobre</td><td><strong>Maturité</strong>, puis vendanges</td><td>Contrôle de maturité, vendanges</td></tr>
 <tr><td>Novembre</td><td>Chute des feuilles, retour au repos</td><td>Buttage, entretien</td></tr>
 </table>
-<p>Les viticulteurs repèrent ces étapes par des stades notés de A à P (échelle de Baggiolini) ou par des codes chiffrés (échelle BBCH).</p>
+<p>Les viticulteurs repèrent ces étapes par des stades notés de A à P (échelle de Baggiolini) ou par des codes chiffrés (échelle BBCH) : voir l'infographie ci-après.</p>
+
+<!-- FIG année -->
+<div class="fig">
+<h4>Une année à la vigne : les 16 stades-repères, de A à P</h4>
+<p class="sub">Échelle de Baillod et Baggiolini (hémisphère nord) : du bourgeon d'hiver à la chute des feuilles, en passant par la fleur et le fruit</p>
+<svg viewBox="0 0 740 620" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="cst"><circle r="46"/></clipPath></defs><g id="stades" transform="translate(370 310)"></g></svg>
+<p class="cap">D'après les stades décrits dans <em>Mille Vignes</em> (p. 62). Les dates bougent avec le climat : en 30 ans, les vendanges ont avancé de 2 à 3 semaines dans la plupart des régions.</p>
+<script>
+(function(){
+  var INK='#1a1612', VIN='#5b1a24';
+  var S=[['A','Bourgeon d\'hiver'],['B','Bourgeon dans le coton'],['C','Pointe verte'],['D','Sortie des feuilles'],['E','Feuilles étalées'],['F','Grappes visibles'],['G','Grappes séparées'],['H','Boutons floraux séparés'],['I','Floraison'],['J','Nouaison'],['K','Petits pois'],['L','Fermeture de la grappe'],['M','Véraison'],['N','Maturité'],['O','Aoûtement'],['P','Chute des feuilles']];
+  var N=S.length, R=200, RL=262, h='';
+  function pt(r,a){a=(a-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
+  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0),L=(a1-a0)>180?1:0;
+    return 'M'+p0[0].toFixed(1)+' '+p0[1].toFixed(1)+' A'+r2+' '+r2+' 0 '+L+' 1 '+p1[0].toFixed(1)+' '+p1[1].toFixed(1)+' L'+p2[0].toFixed(1)+' '+p2[1].toFixed(1)+' A'+r1+' '+r1+' 0 '+L+' 0 '+p3[0].toFixed(1)+' '+p3[1].toFixed(1)+' Z';}
+  var step=360/N, a0=-step/2;
+  var seasons=[['Hiver',-1,1,'#d9d2e3'],['Printemps',1,8,'#c9d8b1'],['Été',8,14,'#ead98f'],['Automne',14,15,'#e0b07a']];
+  seasons.forEach(function(s){var b=a0+s[1]*step+1,e=a0+s[2]*step-1;h+='<path d="'+arc(138,148,b,e)+'" fill="'+s[3]+'"/>';
+    var m=pt(118,(b+e)/2);h+='<text x="'+m[0].toFixed(1)+'" y="'+(m[1]+4).toFixed(1)+'" text-anchor="middle" style="font-size:10px;font-weight:600;letter-spacing:.08em" fill="#625a4e">'+s[0].toUpperCase()+'</text>';});
+  h+='<circle r="'+R+'" fill="none" stroke="#d8d0c2" stroke-width="1"/>';
+  S.forEach(function(s,i){var a=a0+i*step+step/2, p=pt(R,a), q=pt(RL,a);
+    h+='<g transform="translate('+p[0].toFixed(1)+' '+p[1].toFixed(1)+')"><circle r="47" fill="#fff" stroke="#d8d0c2"/><image href="img/stade-'+s[0]+'.jpg" x="-46" y="-46" width="92" height="92" clip-path="url(#cst)" style="mask:none;-webkit-mask:none"/></g>';
+    var anchor=Math.abs(q[0])<40?'middle':(q[0]<0?'end':'start'), ly=q[1]+(q[1]<-200?-4:(q[1]>200?12:4));
+    h+='<text x="'+q[0].toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:9.6px" fill="'+INK+'"><tspan style="font-weight:600" fill="'+VIN+'">'+s[0]+'</tspan> '+s[1]+'</text>';
+  });
+  h+='<text y="-8" text-anchor="middle" style="font-family:Cormorant,serif;font-size:20px;font-weight:600" fill="'+VIN+'">Le cycle</text><text y="13" text-anchor="middle" style="font-family:Cormorant,serif;font-size:20px;font-weight:600" fill="'+VIN+'">de la vigne</text>';
+  h+='<text y="36" text-anchor="middle" style="font-size:8.6px" fill="#625a4e">de la dormance à la dormance</text>';
+  document.getElementById('stades').innerHTML=h;
+})();
+</script>
+</div>
 
 <h2>La maturation du raisin</h2>
 
@@ -718,28 +621,14 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>Dans une baie de raisin</h4>
 <p class="sub">Chaque partie apporte autre chose au vin</p>
-<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
-  <defs><radialGradient id="pulp" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#e4ebbf"/><stop offset="1" stop-color="#c7d48f"/></radialGradient></defs>
-  <!-- pédicelle -->
-  <path d="M190 10 C188 24 190 34 192 40" stroke="#5c7a4f" stroke-width="7" stroke-linecap="round"/>
-  <path d="M184 40 L200 40" stroke="#4d6a3c" stroke-width="2"/>
-  <!-- pellicule -->
-  <circle cx="190" cy="126" r="86" fill="#5b1a24"/>
-  <circle cx="190" cy="126" r="76" fill="url(#pulp)"/>
-  <!-- pinceau / faisceaux -->
-  <path d="M190 52 L190 200" stroke="#9fae70" stroke-width="1" stroke-dasharray="3 3"/>
-  <!-- pépins -->
-  <path d="M174 108 C166 118 166 136 174 148 C182 136 182 118 174 108 Z" fill="#6b4a2a"/>
-  <path d="M206 108 C198 118 198 136 206 148 C214 136 214 118 206 108 Z" fill="#6b4a2a"/>
-  <!-- reflet -->
-  <path d="M132 100 C136 80 150 64 168 58" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".5"/>
-  <!-- repères -->
-  <g class="ld"><path d="M196 30 L400 30"/><path d="M270 80 L400 80"/><path d="M256 140 L400 140"/><path d="M212 160 L400 196"/></g>
-  <g class="dot"><circle cx="196" cy="30" r="3"/><circle cx="270" cy="80" r="3" fill="#fff" stroke="var(--wine)" stroke-width="1.5"/><circle cx="256" cy="140" r="3"/><circle cx="212" cy="160" r="3"/></g>
+<svg viewBox="0 0 640 262" xmlns="http://www.w3.org/2000/svg">
+  <image href="img/baie.jpg" x="60" y="0" width="260" height="260"/>
+  <g class="ld"><path d="M197.1 38.1 L400 30"/><path d="M240.8 132.0 L400 90"/><path d="M222.5 109.2 L400 150"/><path d="M202.2 144.7 L400 206"/></g>
+  <g class="dot"><circle cx="197.1" cy="38.1" r="3"/><circle cx="240.8" cy="132.0" r="3"/><circle cx="222.5" cy="109.2" r="3"/><circle cx="202.2" cy="144.7" r="3"/></g>
   <text x="408" y="28" class="tn">Pédicelle (et rafle)</text><text x="408" y="41" class="tx">tanins verts et rugueux si on garde la rafle</text>
-  <text x="408" y="78" class="tn">Pellicule (peau)</text><text x="408" y="91" class="tx">anthocyanes (couleur), tanins fins, arômes,</text><text x="408" y="104" class="tx">levures (pruine)</text>
-  <text x="408" y="138" class="tn">Pulpe (jus)</text><text x="408" y="151" class="tx">eau, sucres, acides tartrique et malique</text>
-  <text x="408" y="194" class="tn">Pépins</text><text x="408" y="207" class="tx">tanins plus durs, huiles : à ne pas écraser</text>
+  <text x="408" y="88" class="tn">Pellicule (peau)</text><text x="408" y="101" class="tx">anthocyanes (couleur), tanins fins, arômes,</text><text x="408" y="114" class="tx">levures (pruine)</text>
+  <text x="408" y="148" class="tn">Pulpe (jus)</text><text x="408" y="161" class="tx">eau, sucres, acides tartrique et malique</text>
+  <text x="408" y="204" class="tn">Pépins</text><text x="408" y="217" class="tx">tanins plus durs, huiles : à ne pas écraser</text>
 </svg>
 </div>
 
@@ -883,25 +772,10 @@ table.lex thead{display:table-header-group}
 <h4>Extraire en rouge : le chapeau de marc</h4>
 <p class="sub">Le gaz carbonique fait remonter peaux et pépins ; on le travaille pour extraire couleur et tanins</p>
 <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
-  <defs><clipPath id="tank"><rect x="120" y="20" width="180" height="208" rx="10"/></clipPath></defs>
-  <g clip-path="url(#tank)">
-    <rect x="120" y="20" width="180" height="208" fill="#ece6da"/>
-    <rect x="120" y="92" width="180" height="140" fill="#7a2c38"/>
-    <rect x="120" y="58" width="180" height="34" fill="#4a1420"/>
-    <g fill="#8e3f4d"><circle cx="150" cy="70" r="3"/><circle cx="178" cy="80" r="2.5"/><circle cx="210" cy="66" r="3"/><circle cx="240" cy="82" r="2.5"/><circle cx="268" cy="70" r="3"/><circle cx="196" cy="86" r="2"/><circle cx="286" cy="84" r="2.5"/></g>
-    <g fill="#fff" opacity=".55"><circle cx="150" cy="200" r="2"/><circle cx="172" cy="160" r="2.5"/><circle cx="200" cy="190" r="2"/><circle cx="230" cy="130" r="2"/><circle cx="256" cy="176" r="2.5"/><circle cx="280" cy="150" r="2"/><circle cx="212" cy="110" r="2"/><circle cx="160" cy="118" r="2"/><circle cx="246" cy="214" r="2"/></g>
-  </g>
-  <rect x="120" y="20" width="180" height="208" rx="10" fill="none" stroke="var(--ink)" stroke-width="2"/>
-  <!-- pigeage -->
-  <path d="M176 12 L176 54" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/><path d="M160 54 L192 54" stroke="var(--gold)" stroke-width="3" stroke-linecap="round"/>
-  <!-- remontage -->
-  <path d="M300 200 L330 200 L330 40 L246 40" fill="none" stroke="var(--slate)" stroke-width="2"/>
-  <path d="M252 34 L244 40 L252 46" fill="none" stroke="var(--slate)" stroke-width="2"/>
-  <g fill="none" stroke="var(--slate)" stroke-width="1.4"><path d="M236 46 L230 58"/><path d="M242 48 L242 58"/><path d="M248 46 L254 58"/></g>
-  <circle cx="330" cy="200" r="9" fill="#fff" stroke="var(--slate)" stroke-width="2"/><text x="330" y="203.5" text-anchor="middle" style="font-size:9px;font-weight:600" fill="var(--slate)">P</text>
-  <text x="210" y="79" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#fff">chapeau de marc</text>
-  <text x="210" y="170" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#fff">jus en fermentation</text>
-  <g transform="translate(390 30)">
+  <image href="img/chapeau.jpg" x="20" y="0" width="240" height="240"/>
+  <rect x="94.0" y="50.59375" width="92" height="15" rx="2" fill="#fff" fill-opacity=".85"/><text x="140.0" y="61.59375" text-anchor="middle" class="tk" style="font-size:9px">chapeau de marc</text>
+  <rect x="90.0" y="137.3125" width="100" height="15" rx="2" fill="#fff" fill-opacity=".85"/><text x="140.0" y="148.3125" text-anchor="middle" class="tk" style="font-size:9px">jus en fermentation</text>
+  <g transform="translate(300 30)">
     <rect x="0" y="0" width="3" height="28" fill="var(--slate)"/><text x="12" y="12" class="tn">Remontage</text><text x="12" y="25" class="tx">on pompe le jus du bas et on arrose le chapeau</text>
     <rect x="0" y="48" width="3" height="28" fill="var(--gold)"/><text x="12" y="60" class="tn">Pigeage</text><text x="12" y="73" class="tx">on enfonce le chapeau dans le jus</text>
     <rect x="0" y="96" width="3" height="28" fill="var(--wine)"/><text x="12" y="108" class="tn">Délestage</text><text x="12" y="121" class="tx">on vide le jus, le marc s'égoutte, puis on le renvoie</text>
@@ -935,30 +809,19 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>Trois façons de faire des bulles</h4>
 <p class="sub">Toujours le même principe : du CO₂ de fermentation piégé dans le vin</p>
-<svg viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg"><g id="bulles"></g>
-<text x="0" y="232" style="font-size:9.3px;font-weight:600" fill="#1a1612">Mousseux : au moins 3 bars de pression à 20 °C. Pétillant : entre 1 et 2,5 bars.</text></svg>
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg"><image href="img/bulles.jpg" x="-10" y="-10" width="190" height="190"/><g id="bulles" transform="translate(172 0)"></g>
+<text x="0" y="192" style="font-size:9.3px;font-weight:600" fill="#1a1612">Mousseux : au moins 3 bars de pression à 20 °C. Pétillant : entre 1 et 2,5 bars.</text></svg>
 <script>
 (function(){
   var B=[['Méthode traditionnelle','2e fermentation en bouteille','#5b1a24','bottle',['Vin de base + liqueur de tirage','Vieillissement sur lies','Remuage, dégorgement','Ex. champagne, crémants, cava']],
          ['Méthode ancestrale','fermentation finie en bouteille','#a8843a','bottle',['Mise en bouteille avant la fin','de la fermentation','Souvent un peu sucré','Ex. Clairette de Die, pét\'nat']],
-         ['Cuve close','2e fermentation en grande cuve fermée','#456e8a','tank',['Rapide, garde le fruit','Mise en bouteille sous pression','Arômes primaires mis en avant','Ex. prosecco']]];
-  var w=200,gap=20,h='';
+         ['Cuve close','2e fermentation en cuve fermée','#456e8a','tank',['Rapide, garde le fruit','Mise en bouteille sous pression','Arômes primaires mis en avant','Ex. prosecco']]];
+  var w=148,gap=12,h='';
   B.forEach(function(b,i){var x=i*(w+gap);
-    h+='<rect x="'+x+'" y="0" width="'+w+'" height="214" rx="4" fill="#fff" stroke="#d8d0c2"/>';
-    h+='<rect x="'+x+'" y="0" width="'+w+'" height="42" rx="4" fill="'+b[2]+'"/><rect x="'+x+'" y="30" width="'+w+'" height="12" fill="'+b[2]+'"/>';
-    h+='<text x="'+(x+12)+'" y="19" class="tw" style="font-size:11.5px">'+b[0]+'</text><text x="'+(x+12)+'" y="33" fill="#fff" style="font-size:8.6px" opacity=".9">'+b[1]+'</text>';
-    var cx=x+w/2, top=56;
-    if(b[3]=='bottle'){
-      h+='<path d="M'+(cx-7)+' '+top+' h14 v16 c0 10 13 14 13 30 v40 c0 4 -3 6 -6 6 h-28 c-3 0 -6 -2 -6 -6 v-40 c0 -16 13 -20 13 -30 z" fill="'+b[2]+'" opacity=".9"/>';
-      h+='<rect x="'+(cx-8)+'" y="'+(top-2)+'" width="16" height="6" rx="1" fill="#1a1612"/>';
-      h+='<g fill="#fff" opacity=".7"><circle cx="'+(cx-6)+'" cy="'+(top+70)+'" r="1.6"/><circle cx="'+(cx+5)+'" cy="'+(top+58)+'" r="1.4"/><circle cx="'+(cx+1)+'" cy="'+(top+82)+'" r="1.2"/><circle cx="'+(cx-3)+'" cy="'+(top+50)+'" r="1.2"/></g>';
-    } else {
-      h+='<rect x="'+(cx-22)+'" y="'+(top+6)+'" width="44" height="84" rx="10" fill="'+b[2]+'" opacity=".9"/>';
-      h+='<rect x="'+(cx-22)+'" y="'+(top+6)+'" width="44" height="84" rx="10" fill="none" stroke="#1a1612" stroke-width="1.2"/>';
-      h+='<path d="M'+(cx-22)+' '+(top+30)+' h44 M'+(cx-22)+' '+(top+66)+' h44" stroke="#1a1612" stroke-width="1" opacity=".5"/>';
-      h+='<g fill="#fff" opacity=".7"><circle cx="'+(cx-8)+'" cy="'+(top+72)+'" r="1.6"/><circle cx="'+(cx+6)+'" cy="'+(top+52)+'" r="1.4"/><circle cx="'+(cx+2)+'" cy="'+(top+80)+'" r="1.2"/><circle cx="'+(cx-5)+'" cy="'+(top+40)+'" r="1.2"/></g>';
-    }
-    b[4].forEach(function(t,j){h+='<text x="'+(x+12)+'" y="'+(168+j*13)+'" style="font-size:8.9px" fill="#1a1612">'+t+'</text>';});
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="168" rx="4" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<rect x="'+x+'" y="0" width="'+w+'" height="46" rx="4" fill="'+b[2]+'"/><rect x="'+x+'" y="34" width="'+w+'" height="12" fill="'+b[2]+'"/>';
+    h+='<text x="'+(x+10)+'" y="19" class="tw" style="font-size:10.5px">'+b[0]+'</text><text x="'+(x+10)+'" y="33" fill="#fff" style="font-size:8px" opacity=".9">'+b[1]+'</text>';
+    b[4].forEach(function(t,j){h+='<text x="'+(x+10)+'" y="'+(70+j*15)+'" style="font-size:8.6px" fill="#1a1612">'+t+'</text>';});
   });
   document.getElementById('bulles').innerHTML=h;
 })();
@@ -976,38 +839,23 @@ table.lex thead{display:table-header-group}
 <p>Entre la fin des fermentations et la mise en bouteille, le vin est trouble, brut, encore gazeux. L'élevage l'affine : sa couleur se stabilise, il s'assouplit, il se clarifie, et son bouquet commence à se former. Il dure de quelques semaines pour un vin primeur à deux ans ou plus pour un grand vin de garde.</p>
 
 <!-- FIG cuve ou fût -->
-<div class="fig">
-<h4>L'élevage : cuve ou fût ?</h4>
-<p class="sub">Le contenant change ce que le vin reçoit pendant qu'il s'affine</p>
-<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- cuve -->
-  <g transform="translate(0 0)">
-    <rect x="0" y="0" width="300" height="196" rx="4" fill="#fff" stroke="#d8d0c2"/>
-    <rect x="28" y="30" width="80" height="130" rx="10" fill="#dfe3e6" stroke="#1a1612" stroke-width="1.6"/>
-    <rect x="28" y="56" width="80" height="104" rx="10" fill="#d9b545" opacity=".9"/>
-    <rect x="28" y="56" width="80" height="12" fill="#d9b545"/>
-    <rect x="28" y="30" width="80" height="130" rx="10" fill="none" stroke="#1a1612" stroke-width="1.6"/>
-    <path d="M22 160 h92" stroke="#1a1612" stroke-width="2"/>
-    <text x="130" y="42" class="tn" style="font-size:11.5px">Cuve (inox, béton…)</text>
-    <text x="130" y="60" class="tx">Neutre : peu d'oxygène,</text><text x="130" y="73" class="tx">pas d'arôme apporté</text>
-    <text x="130" y="91" class="tx">Garde le fruit et la fraîcheur</text>
-    <text x="130" y="128" class="tx" style="font-weight:600;fill:#1a1612">Idéal pour les vins à boire jeunes</text><text x="130" y="141" class="tx" style="font-weight:600;fill:#1a1612">et les cépages aromatiques.</text>
+<div class="fig" style="padding:10pt 14pt 8pt;margin:6pt 0 8pt">
+<svg viewBox="0 0 640 156" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect x="0" y="0" width="300" height="152" rx="4" fill="#fff" stroke="#d8d0c2"/>
+    <image href="img/cuve.jpg" x="8" y="10" width="132" height="132"/>
+    <text x="150" y="34" class="tn" style="font-size:11.5px">Cuve (inox, béton…)</text>
+    <text x="150" y="52" class="tx">Neutre : peu d'oxygène,</text><text x="150" y="65" class="tx">pas d'arôme apporté</text>
+    <text x="150" y="83" class="tx">Garde le fruit et la fraîcheur</text>
+    <text x="150" y="112" class="tx" style="font-weight:600;fill:#1a1612">Idéal pour les vins à boire jeunes</text><text x="150" y="125" class="tx" style="font-weight:600;fill:#1a1612">et les cépages aromatiques.</text>
   </g>
-  <!-- fût -->
   <g transform="translate(340 0)">
-    <rect x="0" y="0" width="300" height="196" rx="4" fill="#fff" stroke="#d8d0c2"/>
-    <path d="M30 40 C26 70 26 120 30 150 L108 150 C112 120 112 70 108 40 Z" fill="#b8793a" stroke="#1a1612" stroke-width="1.6"/>
-    <g stroke="#1a1612" stroke-width="1" opacity=".5"><path d="M45 40 C42 70 42 120 45 150"/><path d="M60 40 C58 70 58 120 60 150"/><path d="M78 40 C80 70 80 120 78 150"/><path d="M93 40 C96 70 96 120 93 150"/></g>
-    <g stroke="#3a2a1a" stroke-width="4"><path d="M27 60 L111 60"/><path d="M26 84 L112 84"/><path d="M26 108 L112 108"/><path d="M27 130 L111 130"/></g>
-    <circle cx="69" cy="95" r="4" fill="#3a2a1a"/>
-    <!-- O2 -->
-    <path d="M6 100 C12 94 18 92 24 94" fill="none" stroke="var(--slate)" stroke-width="1.6" marker-end="url(#o2a)"/>
-    <text x="2" y="90" style="font-size:9px;font-weight:600" fill="var(--slate)">O₂</text>
-    <defs><marker id="o2a" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="var(--slate)"/></marker></defs>
-    <text x="130" y="42" class="tn" style="font-size:11.5px">Fût de chêne</text>
-    <text x="130" y="60" class="tx">Un peu d'oxygène entre lentement :</text><text x="130" y="73" class="tx">tanins plus souples, couleur stable</text>
-    <text x="130" y="91" class="tx">Neuf : vanille, toasté</text>
-    <text x="130" y="128" class="tx" style="font-weight:600;fill:#1a1612">Plus le fût est petit et neuf,</text><text x="130" y="141" class="tx" style="font-weight:600;fill:#1a1612">plus il marque le vin.</text>
+    <rect x="0" y="0" width="300" height="152" rx="4" fill="#fff" stroke="#d8d0c2"/>
+    <image href="img/fut.jpg" x="8" y="10" width="132" height="132"/>
+    <text x="150" y="34" class="tn" style="font-size:11.5px">Fût de chêne</text>
+    <text x="150" y="52" class="tx">Un peu d'oxygène entre lentement :</text><text x="150" y="65" class="tx">tanins plus souples, couleur stable</text>
+    <text x="150" y="83" class="tx">Neuf : vanille, toasté</text>
+    <text x="150" y="112" class="tx" style="font-weight:600;fill:#1a1612">Plus le fût est petit et neuf,</text><text x="150" y="125" class="tx" style="font-weight:600;fill:#1a1612">plus il marque le vin.</text>
   </g>
 </svg>
 </div>
@@ -1300,20 +1148,38 @@ table.lex thead{display:table-header-group}
 <tr><td>Longueur</td><td>courte, fugace</td><td>longue, persistante</td></tr>
 </table>
 
-<div style="break-inside:avoid">
-<h2>Fiche de dégustation</h2>
-<p>À copier pour chaque vin.</p>
-<table class="fiche">
-<tr><th style="width:16%">Rubrique</th><th style="width:38%">Repères</th><th>Mes notes</th></tr>
-<tr><td>Vin</td><td>Appellation, producteur, millésime, prix</td><td></td></tr>
-<tr><td>Œil</td><td>Limpidité, éclat, intensité, teinte, larmes</td><td></td></tr>
-<tr><td>Nez</td><td>Netteté, intensité, familles d'arômes, évolution à l'air</td><td></td></tr>
-<tr><td>Bouche</td><td>Attaque ; sucre, acidité, tanins, alcool, corps ; texture</td><td></td></tr>
-<tr><td>Finale</td><td>Longueur (caudalies), arômes de bouche</td><td></td></tr>
-<tr><td>Conclusion</td><td>Équilibre, qualité, garde, accords, température</td><td></td></tr>
-<tr><td>Note</td><td>/20 ou /10, avec une phrase pour la justifier</td><td></td></tr>
-</table>
-</div>
+<section class="fa" style="break-before:page">
+<h2>Fiche d'analyse de dégustation</h2>
+<p>Cochez ce que vous percevez, dans l'ordre de la méthode ; une case par critère suffit.</p>
+<div class="fa-head"><span>Vin</span><span class="fa-line"></span><span>Millésime</span><span class="fa-line s"></span><span>Prix</span><span class="fa-line s"></span></div>
+<div class="fa-head"><span>Appellation</span><span class="fa-line"></span><span>Cépage(s)</span><span class="fa-line"></span></div>
+<h3>L'œil</h3>
+<div class="fa-row"><b>Limpidité</b><span>☐ trouble ☐ voilé ☐ limpide ☐ cristallin</span></div>
+<div class="fa-row"><b>Intensité</b><span>☐ pâle ☐ moyenne ☐ profonde</span></div>
+<div class="fa-row"><b>Teinte</b><span>Rouge : ☐ violacé ☐ rubis ☐ grenat ☐ tuilé · Blanc : ☐ reflets verts ☐ citron ☐ doré ☐ ambré · Rosé : ☐ pâle ☐ saumon ☐ soutenu</span></div>
+<div class="fa-row"><b>Larmes · bulles</b><span>☐ rares ☐ abondantes · effervescent : ☐ bulles fines ☐ grossières ☐ persistantes</span></div>
+<h3>Le nez</h3>
+<div class="fa-row"><b>Netteté</b><span>☐ net ☐ défaut (lequel : <span class="fa-line s"></span>)</span></div>
+<div class="fa-row"><b>Intensité</b><span>☐ discret ☐ moyen ☐ puissant · après agitation : ☐ s'ouvre ☐ ne change pas</span></div>
+<div class="fa-row"><b>Familles</b><span>☐ végétale ☐ florale ☐ fruitée ☐ éthérée ☐ chimique ☐ balsamique ☐ boisée ☐ épicée ☐ brûlée ☐ animale</span></div>
+<div class="fa-row"><b>Arômes précis</b><span class="fa-line"></span></div>
+<div class="fa-row"><b>Évolution</b><span>☐ jeune (primaires) ☐ en évolution (secondaires) ☐ évolué (tertiaires)</span></div>
+<h3>La bouche</h3>
+<div class="fa-row"><b>Attaque</b><span>☐ fuyante ☐ franche ☐ ample</span></div>
+<div class="fa-row"><b>Sucre</b><span>☐ sec ☐ demi-sec ☐ moelleux ☐ liquoreux</span></div>
+<div class="fa-row"><b>Acidité</b><span>☐ molle ☐ moyenne ☐ vive ☐ mordante</span></div>
+<div class="fa-row"><b>Tanins (rouges)</b><span>force : ☐ faibles ☐ moyens ☐ puissants · grain : ☐ soyeux ☐ veloutés ☐ rêches ☐ grossiers</span></div>
+<div class="fa-row"><b>Alcool · corps</b><span>☐ léger ☐ moyen ☐ chaud · corps : ☐ fluet ☐ moyen ☐ charpenté</span></div>
+<div class="fa-row"><b>Texture</b><span>☐ souple ☐ charnu ☐ enrobant ☐ asséchant ☐ rugueux</span></div>
+<div class="fa-row"><b>Finale</b><span>☐ courte ☐ moyenne ☐ longue · caudalies : <span class="fa-line s"></span> · arômes de bouche : <span class="fa-line s"></span></span></div>
+<h3>Conclure</h3>
+<div class="fa-row"><b>Équilibre</b><span>☐ déséquilibré (par : <span class="fa-line s"></span>) ☐ équilibré ☐ harmonieux</span></div>
+<div class="fa-row"><b>Qualité</b><span>☐ simple ☐ bon ☐ très bon ☐ exceptionnel</span></div>
+<div class="fa-row"><b>Garde</b><span>☐ à boire ☐ peut attendre ☐ à garder · température de service : <span class="fa-line s"></span></span></div>
+<div class="fa-row"><b>Accords</b><span class="fa-line"></span></div>
+<div class="fa-row"><b>Note et phrase</b><span><span class="fa-line s"></span> /20 · <span class="fa-line"></span></span></div>
+<div class="fa-notes"></div>
+</section>
 
 <h2>Sources</h2>
 <p>Les faits de ce support ont été recoupés dans au moins deux sources quand c'était possible ; les points où les sources divergent sont signalés dans le texte.</p>
