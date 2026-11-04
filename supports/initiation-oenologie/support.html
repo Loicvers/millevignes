@@ -209,6 +209,39 @@ table.lex thead{display:table-header-group}
 </div>
 
 <p><strong>Le toucher.</strong> En bouche, on sent la température, la viscosité, le volume, le piquant du gaz, la chaleur de l'alcool et l'astringence des tanins (la bouche qui « sèche »). Ce sont des sensations tactiles, pas des saveurs.</p>
+
+<!-- FIG durée des sensations -->
+<div class="fig">
+<h4>En bouche, le sucré s'efface, l'acide et l'amer durent</h4>
+<p class="sub">Intensité ressentie au fil des secondes après la mise en bouche : allure générale, sans échelle chiffrée</p>
+<svg viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg">
+  <!-- zones -->
+  <g style="font-size:8.6px;font-weight:600;fill:#625a4e">
+    <text x="90" y="16" text-anchor="middle">ATTAQUE</text><text x="250" y="16" text-anchor="middle">MILIEU DE BOUCHE</text><text x="440" y="16" text-anchor="middle">FINALE</text>
+  </g>
+  <g stroke="#9a8f80" stroke-width=".8" stroke-dasharray="2 3"><path d="M150 22 L150 190"/><path d="M350 22 L350 190"/></g>
+  <!-- axes -->
+  <path d="M50 190 L540 190" stroke="var(--ink)" stroke-width="1.2"/><path d="M50 190 L50 22" stroke="var(--ink)" stroke-width="1.2"/>
+  <g style="font-size:8.8px;fill:#1a1612"><text x="50" y="204" text-anchor="middle">0</text><text x="132" y="204" text-anchor="middle">10</text><text x="214" y="204" text-anchor="middle">20</text><text x="296" y="204" text-anchor="middle">30</text><text x="378" y="204" text-anchor="middle">40</text><text x="460" y="204" text-anchor="middle">50</text><text x="540" y="204" text-anchor="middle">60 s</text></g>
+  <text x="300" y="222" text-anchor="middle" class="tx">Temps après la mise en bouche (secondes)</text>
+  <text transform="translate(38 106) rotate(-90)" text-anchor="middle" class="tx">Intensité ressentie</text>
+  <!-- courbes -->
+  <path d="M50 188 C60 40 74 30 86 34 C104 42 124 110 150 150 C176 180 200 188 230 189" fill="none" stroke="#c9a23c" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M50 188 C64 110 84 84 112 80 C160 76 220 90 280 108 C340 126 420 150 540 172" fill="none" stroke="#456e8a" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M50 188 C70 170 100 134 150 118 C210 100 280 96 350 100 C420 104 490 116 540 128" fill="none" stroke="#5c7a4f" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M50 188 C80 182 120 160 170 140 C230 118 300 108 370 112 C440 116 500 130 540 142" fill="none" stroke="#8a5a2b" stroke-width="2.2" stroke-dasharray="6 4" stroke-linecap="round"/>
+  <path d="M50 188 C70 160 96 136 130 134 C190 132 250 142 320 154 C400 168 480 180 540 184" fill="none" stroke="#7a2c38" stroke-width="2" stroke-dasharray="2 3" stroke-linecap="round"/>
+  <!-- légendes -->
+  <g style="font-size:9.6px;font-weight:600">
+    <text x="92" y="28" fill="#c9a23c">Sucré</text>
+    <text x="548" y="131" fill="#5c7a4f">Amer</text>
+    <text x="548" y="146" fill="#8a5a2b">Astringent</text>
+    <text x="548" y="176" fill="#456e8a">Acide</text>
+    <text x="548" y="189" fill="#7a2c38">Chaud (alcool)</text>
+  </g>
+</svg>
+<p class="cap">Le sucré domine les premières secondes puis s'efface ; l'acidité, l'amertume et l'astringence s'installent plus tard et persistent : ce sont elles qui font la finale. D'après le graphique de <em>La Revue du vin de France</em>, Collection n° 2, mai 2024, p. 29 (adapté de Sokolowsky et al. 2015, Pineau et al. 2009, Obrist et al. 2014).</p>
+</div>
 <p><strong>L'ouïe.</strong> Elle sert peu, sauf pour les bulles des effervescents… et pour trinquer.</p>
 
 <h2>La méthode : regarder, sentir, goûter, conclure</h2>
@@ -254,7 +287,7 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>La robe raconte l'âge du vin</h4>
 <p class="sub">Regarder le disque et surtout le bord, verre incliné sur fond blanc</p>
-<svg viewBox="0 0 640 215" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 640 224" xmlns="http://www.w3.org/2000/svg">
   <g id="robes"></g>
 </svg>
 <script>
@@ -301,7 +334,7 @@ table.lex thead{display:table-header-group}
 <div class="fig">
 <h4>L'équilibre en bouche</h4>
 <p class="sub">Blanc : deux forces qui se répondent. Rouge : une troisième s'ajoute, les tanins.</p>
-<svg viewBox="0 0 640 215" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 640 224" xmlns="http://www.w3.org/2000/svg">
   <!-- balance blanc -->
   <g transform="translate(40 0)">
     <path d="M40 150 L200 150" stroke="var(--ink)" stroke-width="2"/>
