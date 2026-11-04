@@ -639,36 +639,63 @@ table.lex thead{display:table-header-group}
 
 <!-- FIG année -->
 <div class="fig">
-<h4>Une année à la vigne (hémisphère nord)</h4>
-<p class="sub">Stades de la plante à l'intérieur, travaux du vigneron à l'extérieur</p>
-<svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg"><g id="year" transform="translate(320 165)"></g></svg>
-<p class="cap">Les dates bougent avec le climat : en 30 ans, les vendanges ont avancé de 2 à 3 semaines dans la plupart des régions.</p>
+<h4>Une année à la vigne : les 16 stades-repères, de A à P</h4>
+<p class="sub">Échelle de Baillod et Baggiolini (hémisphère nord) : du bourgeon d'hiver à la chute des feuilles, en passant par la fleur et le fruit</p>
+<svg viewBox="0 0 640 500" xmlns="http://www.w3.org/2000/svg"><g id="stades" transform="translate(320 250)"></g></svg>
+<p class="cap">Dessins originaux, d'après les stades décrits dans <em>Mille Vignes</em> (p. 62). Les dates bougent avec le climat : en 30 ans, les vendanges ont avancé de 2 à 3 semaines dans la plupart des régions.</p>
 <script>
 (function(){
-  var M=['Jan','Fév','Mar','Avr','Mai','Juin','Juil','Août','Sep','Oct','Nov','Déc'];
-  var season=['#d9d2e3','#d9d2e3','#b4c69c','#b4c69c','#b4c69c','#e2d58a','#e2d58a','#e2d58a','#d9a86a','#d9a86a','#d9d2e3','#d9d2e3'];
-  var R1=92,R2=124,h='';
+  var INK='#1a1612', BOIS='#7a5230', VERT='#6d8a55', VERT2='#9ab57a', VIN='#5b1a24', OR='#d9b545', CREME='#f3ecdf';
+  // primitives : chaque dessin tient dans un carré de 44 px centré sur (0,0)
+  function cane(h){return '<path d="M0 '+h+' L0 '+(-h)+'" stroke="'+BOIS+'" stroke-width="4" stroke-linecap="round"/>';}
+  function bud(col,w){return '<path d="M0 -4 C'+(-w)+' 0 '+(-w)+' 10 0 14 C'+w+' 10 '+w+' 0 0 -4 Z" fill="'+col+'" stroke="'+INK+'" stroke-width="1"/>';}
+  function leaf(x,y,s,rot,col){col=col||VERT;return '<g transform="translate('+x+' '+y+') rotate('+rot+') scale('+s+')"><path d="M0 0 C-6 -3 -9 -9 -6 -14 C-3 -12 -1 -13 0 -16 C1 -13 3 -12 6 -14 C9 -9 6 -3 0 0 Z" fill="'+col+'" stroke="'+INK+'" stroke-width="1.1" stroke-linejoin="round"/><path d="M0 0 L0 -13" stroke="'+INK+'" stroke-width=".7" opacity=".7"/></g>';}
+  function shoot(){return '<path d="M0 22 C0 10 2 0 0 -14" stroke="'+VERT+'" stroke-width="2.4" fill="none" stroke-linecap="round"/>';}
+  function cluster(x,y,s,cols,gap){ // grappe conique de 10 baies ; cols : couleur par baie
+    var pos=[[0,0],[-1,1],[1,1],[-2,2],[0,2],[2,2],[-1,3],[1,3],[0,4],[0,5]],h='';
+    pos.forEach(function(p,i){h+='<circle cx="'+(x+p[0]*gap*s)+'" cy="'+(y+p[1]*gap*s)+'" r="'+(2.6*s)+'" fill="'+(cols[i%cols.length])+'" stroke="'+INK+'" stroke-width=".8"/>';});
+    return h;}
+  function tige(x,y){return '<path d="M'+x+' '+y+' L'+x+' '+(y-10)+' L0 '+(y-18)+'" stroke="'+VERT+'" stroke-width="1.6" fill="none"/>';}
+  var S=[
+    ['A','Bourgeon d\'hiver', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'</g>'],
+    ['B','Bourgeon dans le coton', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'<ellipse cx="0" cy="-3" rx="5" ry="6" fill="'+CREME+'" stroke="'+INK+'" stroke-width=".8" stroke-dasharray="1.5 1.5"/></g>'],
+    ['C','Pointe verte', cane(18)+'<g transform="translate(5 -2)">'+bud(BOIS,5)+'<path d="M0 -4 C-3 -8 -2 -13 0 -16 C2 -13 3 -8 0 -4 Z" fill="'+VERT2+'" stroke="'+INK+'" stroke-width="1"/></g>'],
+    ['D','Sortie des feuilles', cane(18)+'<g transform="translate(6 -4)">'+leaf(-4,0,.55,-40)+leaf(4,0,.55,40)+leaf(0,-2,.6,0)+'</g>'],
+    ['E','Feuilles étalées', shoot()+leaf(-8,8,.8,-70)+leaf(9,0,.8,70)+leaf(-8,-6,.8,-50)+leaf(2,-14,.85,10)],
+    ['F','Grappes visibles', shoot()+leaf(9,2,.8,70)+leaf(-8,-8,.8,-50)+leaf(2,-14,.85,10)+cluster(-7,8,.5,[VERT2],4.2)],
+    ['G','Grappes séparées', shoot()+leaf(-9,-10,.8,-50)+leaf(2,-14,.85,10)+cluster(-8,4,.5,[VERT2],4.2)+cluster(9,8,.5,[VERT2],4.2)],
+    ['H','Boutons floraux séparés', tige(0,-6)+cluster(0,-4,.72,[VERT2],5.4)],
+    ['I','Floraison', tige(0,-6)+cluster(0,-4,.9,[CREME],5.2)+'<g stroke="'+OR+'" stroke-width=".9"><path d="M-3 -2 l-3 -3 M3 -2 l3 -3 M0 10 l0 -4 M-7 8 l-3 2 M7 8 l3 2"/></g>'],
+    ['J','Nouaison', tige(0,-6)+cluster(0,-4,.95,[VERT2],5.9)],
+    ['K','Petits pois', tige(0,-8)+cluster(0,-6,1.1,[VERT2],5.2)],
+    ['L','Fermeture de la grappe', tige(0,-8)+cluster(0,-6,1.2,[VERT],4.4)],
+    ['M','Véraison', tige(0,-8)+cluster(0,-6,1.2,[VERT,'#9b4a66',VERT,'#7a2c4f',VERT2,'#9b4a66',VERT,'#5b1a24',VERT2,'#7a2c4f'],4.4)],
+    ['N','Maturité', tige(0,-8)+cluster(0,-6,1.25,['#6a2238','#4a1225'],4.4)],
+    ['O','Aoûtement', '<path d="M-4 22 L-2 -18" stroke="'+BOIS+'" stroke-width="4" stroke-linecap="round"/><g stroke="'+INK+'" stroke-width="1" opacity=".6"><path d="M-6 8 h5 M-6 -4 h5 M-5 -14 h5"/></g>'+leaf(8,-2,.85,60,OR)],
+    ['P','Chute des feuilles', cane(18)+'<g stroke="'+INK+'" stroke-width="1" opacity=".6"><path d="M-2 8 h4 M-2 -4 h4"/></g>'+leaf(12,2,.8,120,'#c47a3a')+leaf(-12,12,.7,-150,OR)]
+  ];
+  var N=S.length, R=166, RL=206, h='';
   function pt(r,a){a=(a-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
-  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0);
-    return 'M'+p0[0].toFixed(2)+' '+p0[1].toFixed(2)+' A'+r2+' '+r2+' 0 0 1 '+p1[0].toFixed(2)+' '+p1[1].toFixed(2)+' L'+p2[0].toFixed(2)+' '+p2[1].toFixed(2)+' A'+r1+' '+r1+' 0 0 0 '+p3[0].toFixed(2)+' '+p3[1].toFixed(2)+' Z';}
-  M.forEach(function(m,i){var a0=i*30,a1=a0+30,c=pt((R1+R2)/2,a0+15);
-    h+='<path d="'+arc(R1,R2,a0,a1)+'" fill="'+season[i]+'" stroke="#fff" stroke-width="1.5"/>';
-    h+='<text x="'+c[0].toFixed(1)+'" y="'+(c[1]+3.5).toFixed(1)+'" text-anchor="middle" style="font-size:9.5px;font-weight:600" fill="#1a1612">'+m+'</text>';});
-  h+='<circle r="'+(R1-2)+'" fill="#fff"/>';
-  // stades (intérieur) : [texte, angle, rayon]
-  var inner=[['Dormance',0],['Débourrement',97],['Floraison',172],['Véraison',218],['Maturité',262],['Chute des feuilles',318]];
-  inner.forEach(function(s){var p=pt(R1-20,s[1]),q=pt(R1-6,s[1]);
-    h+='<circle cx="'+q[0].toFixed(1)+'" cy="'+q[1].toFixed(1)+'" r="3" fill="#5b1a24"/>';
-    // le texte s'étend vers le centre
-    var anchor=Math.abs(p[0])<14?'middle':(p[0]<0?'start':'end');
-    h+='<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+3.5).toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:8.6px;font-weight:600" fill="#5b1a24">'+s[0]+'</text>';});
-  // travaux (extérieur)
-  var outer=[['Taille (déc. à mars)',15],['Travail du sol, palissage',100],['Ébourgeonnage, épamprage',140],['Relevage, rognage',178],['Vendange en vert, effeuillage',218],['Vendanges',262],['Buttage, entretien',322]];
-  outer.forEach(function(s){var p=pt(R2+4,s[1]),q=pt(R2+16,s[1]),t=pt(R2+22,s[1]);
-    h+='<path d="M'+p[0].toFixed(1)+' '+p[1].toFixed(1)+' L'+q[0].toFixed(1)+' '+q[1].toFixed(1)+'" stroke="#9a8f80" stroke-width=".8"/>';
-    var anchor=Math.abs(t[0])<20?'middle':(t[0]<0?'end':'start');var dy=t[1]<-100?-2:(t[1]>100?9:3.5);
-    h+='<text x="'+t[0].toFixed(1)+'" y="'+(t[1]+dy).toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:9.3px;font-weight:600" fill="#1a1612">'+s[0]+'</text>';});
-  document.getElementById('year').innerHTML=h;
+  function arc(r1,r2,a0,a1){var p0=pt(r2,a0),p1=pt(r2,a1),p2=pt(r1,a1),p3=pt(r1,a0),L=(a1-a0)>180?1:0;
+    return 'M'+p0[0].toFixed(1)+' '+p0[1].toFixed(1)+' A'+r2+' '+r2+' 0 '+L+' 1 '+p1[0].toFixed(1)+' '+p1[1].toFixed(1)+' L'+p2[0].toFixed(1)+' '+p2[1].toFixed(1)+' A'+r1+' '+r1+' 0 '+L+' 0 '+p3[0].toFixed(1)+' '+p3[1].toFixed(1)+' Z';}
+  var step=360/N, a0=-step/2; // A juste à droite du haut, P juste à gauche
+  // saisons : hiver = P et A, printemps = B à H, été = I à N, automne = O
+  var seasons=[['Hiver',-1,1,'#d9d2e3'],['Printemps',1,8,'#c9d8b1'],['Été',8,14,'#ead98f'],['Automne',14,15,'#e0b07a']];
+  seasons.forEach(function(s){var b=a0+s[1]*step+1,e=a0+s[2]*step-1;h+='<path d="'+arc(128,138,b,e)+'" fill="'+s[3]+'"/>';
+    var m=pt(97,(b+e)/2);h+='<text x="'+m[0].toFixed(1)+'" y="'+(m[1]+4).toFixed(1)+'" text-anchor="middle" style="font-size:10px;font-weight:600;letter-spacing:.08em" fill="#625a4e">'+s[0].toUpperCase()+'</text>';});
+  // cercle de fond + flèche du sens
+  h+='<circle r="'+R+'" fill="none" stroke="#d8d0c2" stroke-width="1"/>';
+  S.forEach(function(s,i){var a=a0+i*step+step/2, p=pt(R,a), q=pt(RL,a);
+    h+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="25" fill="#fff" stroke="#d8d0c2"/>';
+    h+='<g transform="translate('+p[0].toFixed(1)+' '+p[1].toFixed(1)+')">'+s[2]+'</g>';
+    var anchor=Math.abs(q[0])<30?'middle':(q[0]<0?'end':'start'), dy=q[1]<-150?-4:(q[1]>150?12:4);
+    var lx=q[0], ly=q[1]+dy; if(anchor==='middle'){ly=q[1]<0?q[1]-4:q[1]+12;}
+    h+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'" text-anchor="'+anchor+'" style="font-size:9.3px" fill="'+INK+'"><tspan style="font-weight:600" fill="'+VIN+'">'+s[0]+'</tspan> '+s[1]+'</text>';
+  });
+  // centre
+  h+='<text y="-8" text-anchor="middle" style="font-family:Cormorant,serif;font-size:19px;font-weight:600" fill="'+VIN+'">Le cycle</text><text y="12" text-anchor="middle" style="font-family:Cormorant,serif;font-size:19px;font-weight:600" fill="'+VIN+'">de la vigne</text>';
+  h+='<text y="34" text-anchor="middle" style="font-size:8.6px" fill="#625a4e">de la dormance à la dormance</text>';
+  document.getElementById('stades').innerHTML=h;
 })();
 </script>
 </div>
