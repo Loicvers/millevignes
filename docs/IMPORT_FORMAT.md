@@ -159,7 +159,7 @@ Champs communs :
 | type | payload | exemple |
 |---|---|---|
 | `flashcard` | `{ "answer": "…" }` | prompt = recto, answer = verso |
-| `flashcard_reverse` | `{ "answer": "…" }` | même notion, sens inverse (prompt = la réponse de la flashcard) |
+| `flashcard_reverse` | `{ "answer": "…" }` | même notion, sens inverse (prompt = la réponse de la flashcard) ; corrigée sur le terme avant la première virgule ou parenthèse, sauf `keys` explicites |
 | `mcq_single` | `{ "options": [≥3], "answer": index }` | une bonne réponse |
 | `mcq_multi` | `{ "options": [≥3], "answers": [index…] }` | plusieurs bonnes réponses |
 | `true_false` | `{ "statement": "…", "answer": true/false }` | justification dans `explanation` |

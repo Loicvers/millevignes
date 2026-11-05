@@ -327,6 +327,9 @@ test("retours de l'iPhone : nombres, réponse courte avec d'autres mots, défini
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["trois"] } }, "3"), true);
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "Anthocyanes (malvidine)"), true, "précision entre parenthèses");
   assert.equal(grade({ type: "short_answer", payload: { accepted: ["anthocyanes"] } }, "les tanins"), false);
+  vm.runInNewContext("this.pp=pointPrincipal", ctx);
+  const v = ctx.rk("La véraison (stade M de Baggiolini).", "La veraison", ctx.pp("La véraison (stade M de Baggiolini)."));
+  assert.equal(v.ok, true, "flashcard inversée : la précision entre parenthèses n'est pas exigée");
   const k = ctx.rk("Cent pour cent merlot.", "Merlot 100%");
   assert.equal(k.missing.length, 0); assert.equal(k.ok, true);
   // Commune + nombre (fiche des grands crus de la Côte de Nuits) : chiffre collé, et sens de lecture suivi.
