@@ -47,9 +47,9 @@ const imp = i => `<i class="imp ${i}" title="${IMP[i] || ''}"></i>`;
 const NIV5 = ['faible', 'moyen-', 'moyen', 'moyen+', 'élevé'];
 const JL = { acidite: 'Acidité', tanins: 'Tanins', alcool: 'Alcool', corps: 'Corps', aromes: 'Arômes' };
 
-const coursHTML = c => !c ? '' : `<div class="cours">
-  ${c.lede ? `<p class="lede">${e(c.lede)}</p>` : ''}
-  ${c.essentiel ? `<div class="note"><b>L'essentiel</b> ${e(c.essentiel)}</div>` : ''}
+const coursHTML = (c, vu = '') => !c ? '' : `<div class="cours"><p class="appro">Approfondir</p>
+  ${c.lede && !vu.includes(c.lede) ? `<p class="lede">${e(c.lede)}</p>` : ''}
+  ${c.essentiel && !vu.includes(c.essentiel) ? `<div class="note"><b>L'essentiel</b> ${e(c.essentiel)}</div>` : ''}
   ${c.frise?.length ? `<table class="frise"><tbody>${c.frise.map(x => `<tr><th>${e(x.date)}</th><td>${e(x.txt)}</td></tr>`).join('')}</tbody></table>` : ''}
   ${(c.sections || []).map(s => `<h4>${e(s.h)}</h4>
     ${s.blocs?.length ? `<ul class="blocs">${s.blocs.map(b => `<li>${imp(b.imp)}${e(b.txt)}</li>`).join('')}</ul>` : ''}
@@ -69,7 +69,8 @@ const jaugeHTML = j => {
     ${j.note ? `<p class="src">${e(j.note)}</p>` : ''}<p class="src">${e(j.src)}</p></div>`;
 };
 
-const ficheHTML = f => `<article class="fiche">
+// tete : fiche dont l'accroche, l'essentiel et la carte sont déjà en couverture.
+const ficheHTML = (f, tete) => `<article class="fiche">
   <div class="meta"><span>n° ${e(f.id)}</span><span class="niv n${NIV[f.niveau]}">${e(f.niveau)}</span>
     <span>${f.status === 'verified' ? '✅ vérifiée' : '⚠️ à revoir'}</span>${f.geo?.appel ? `<span>${e(f.geo.appel)}</span>` : ''}</div>
   <h3>${e(f.titre)}</h3>
@@ -77,8 +78,8 @@ const ficheHTML = f => `<article class="fiche">
   ${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
   ${f.noms?.length ? `<p><b class="lbl">Autres noms</b> ${f.noms.map(n => `<b>${e(n.nom)}</b> (${e(n.ou)})`).join(', ')}</p>` : ''}
   ${jaugeHTML(f.jauge)}
-  ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}${f.schema.src ? ` — ${e(f.schema.src)}` : ''}</figcaption></figure>` : ''}
-  ${coursHTML(f.cours)}
+  ${f.schema && f !== tete ? `<figure class="${estCep(f) ? 'mini' : ''}">${f.schema.svg}<figcaption>${e(f.schema.legende)}${f.schema.src ? ` — ${e(f.schema.src)}` : ''}</figcaption></figure>` : ''}
+  ${coursHTML(f.cours, f === tete ? f.cours.lede + f.cours.essentiel : '')}
   ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
   ${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
   <p class="src">Sources : ${e(f.src)}</p></article>`;
@@ -87,7 +88,7 @@ const L = 'ABCDEF';
 function autoTest(fs_) {
   let n = 0; const q = [], a = [];
   for (const f of fs_) {
-    if (f.flash?.q) { n++; q.push(`<li value="${n}">${e(f.flash.q)} <span class="ref">(n° ${f.id})</span></li>`); a.push(`<li value="${n}">${e(f.flash.a)}</li>`); }
+    if (f.flash?.q) { n++; q.push(`<li value="${n}">${e(f.flash.q)} <span class="ref">(n° ${f.id})</span><span class="ecrire"></span><span class="ecrire"></span></li>`); a.push(`<li value="${n}">${e(f.flash.a)}</li>`); }
     if (f.qcm?.q) { n++;
       q.push(`<li value="${n}">${e(f.qcm.q)} <span class="ref">(n° ${f.id})</span><ol class="opts">${f.qcm.opts.map((o, i) => `<li>${L[i]}. ${e(o)}</li>`).join('')}</ol></li>`);
       a.push(`<li value="${n}"><b>${L[f.qcm.good]}. ${e(f.qcm.opts[f.qcm.good])}</b>${f.qcm.expl ? ` — ${e(f.qcm.expl)}` : ''}</li>`); }
@@ -116,7 +117,7 @@ ul,ol{margin:0 0 5pt 13pt}
 .muted{color:var(--muted)}
 .src{font-size:7.6pt;color:var(--muted);line-height:1.35}
 .fiche{border-top:1px solid var(--line);padding-top:7pt;margin-top:10pt}
-.meta{display:flex;gap:9pt;font-size:7.8pt;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.meta{break-after:avoid;display:flex;gap:9pt;font-size:7.8pt;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
 .niv{color:#fff;padding:0 4pt;border-radius:2px}.n0{background:var(--olive)}.n1{background:var(--slate)}.n2{background:var(--wine)}
 .synth{font-size:1.02rem}
 .note,.astuce,.warn,.jauge{background:var(--cream);padding:5pt 9pt;margin:5pt 0 7pt;border-left:3px solid var(--wine);break-inside:avoid}
@@ -124,7 +125,8 @@ ul,ol{margin:0 0 5pt 13pt}
 .warn{border-left-color:#c0392b;background:#fbecea;font-size:.9rem}.warn.soft{border-left-color:var(--gold);background:#f6f1e6}
 .lbl{color:var(--wine)}
 .lede{font-family:'Cormorant';font-style:italic;font-size:13pt;color:var(--wine2)}
-.cours{margin-top:6pt;padding:6pt 0 2pt 9pt;border-left:1px dashed var(--line)}
+.cours{margin-top:6pt;padding:2pt 0 2pt 9pt;border-left:2px solid var(--line)}
+.appro{break-after:avoid;font-size:7.8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt}
 ul.blocs{list-style:none;margin-left:0}ul.blocs li{margin:0 0 3pt;padding-left:13pt;position:relative}
 .imp{position:absolute;left:0;top:.42em;width:7px;height:7px;border-radius:50%;display:inline-block}
 td .imp{position:static;margin-right:4pt;vertical-align:middle}
@@ -134,18 +136,23 @@ caption{text-align:left;font-weight:600;color:var(--wine);margin-bottom:2pt}
 th{text-align:left;font-weight:600;color:var(--wine);padding:2.5pt 6pt 2.5pt 0;border-bottom:1.2px solid var(--wine);vertical-align:top}
 td{padding:2.5pt 6pt 2.5pt 0;border-bottom:1px solid var(--line);vertical-align:top}
 tr{break-inside:avoid}
+.frise,.tab,.jauge,figure,.note,.astuce{break-inside:avoid}
 .frise th{border-bottom:1px solid var(--line);white-space:nowrap;width:1%}
 .jauge table{width:auto;margin:3pt 0}.jauge th{border:0;padding-right:10pt}.jauge td{border:0}
 .pts{color:var(--wine);letter-spacing:1px}.pts b{color:#c79aa1;font-weight:400}.pts i{color:#e3dccf;font-style:normal}
 figure{margin:6pt auto 8pt;break-inside:avoid;text-align:center}
-figure svg{display:block;margin:0 auto;width:100%;max-width:130mm;max-height:150mm;height:auto;color:var(--ink);overflow:visible}
+figure svg{display:block;margin:0 auto;width:100%;max-width:110mm;max-height:78mm;height:auto;color:var(--ink);overflow:visible}
+figure.mini svg{max-height:55mm}
+figure.couv svg{max-height:105mm}
+figure.couv{margin:2mm 0 4mm}
 figcaption{font-size:7.6pt;color:var(--muted);margin-top:3pt;text-align:left}
 .qs{margin-left:18pt}.qs>li{margin:0 0 6pt;break-inside:avoid}.opts{list-style:none;margin:2pt 0 0 8pt}.ref{font-size:7.5pt;color:var(--muted)}
 .ans>li{margin-bottom:4pt}
-.cover{height:255mm;display:flex;flex-direction:column;break-after:page}
+.ecrire{display:block;height:15pt;border-bottom:1px dotted var(--muted)}
+.cover{min-height:262mm;display:flex;flex-direction:column;break-after:page}
 .cover .brand{font-size:8.5pt;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--gold)}
-.cover h1{font-size:52pt;margin:16mm 0 5mm}
-.cover .tag{font-family:'Cormorant';font-style:italic;font-size:15pt;color:var(--wine2);padding-bottom:5mm;border-bottom:1px solid var(--gold);margin-bottom:6mm}
+.cover h1{font-size:46pt;margin:8mm 0 3mm}
+.cover .tag{font-family:'Cormorant';font-style:italic;font-size:15pt;color:var(--wine2);padding-bottom:5mm;border-bottom:1px solid var(--gold);margin-bottom:4mm}
 .cover table{font-size:9.5pt}.cover td:last-child{text-align:right;color:var(--muted)}
 .cover .leg{margin-top:auto;font-size:8.3pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4mm}
 .cover .leg span{margin-right:12pt;white-space:nowrap}.cover .leg .imp{position:static;margin-right:3pt;vertical-align:middle}`;
@@ -153,7 +160,10 @@ figcaption{font-size:7.6pt;color:var(--muted);margin-top:3pt;text-align:left}
 // Même recadrage que fitSvg (app.js) : élargit le viewBox aux étiquettes qui débordent.
 const fit = `for(const s of document.querySelectorAll('figure svg')){const v=s.viewBox.baseVal;if(!v||!v.width)continue;
   try{const b=s.getBBox(),x0=Math.min(v.x,Math.floor(b.x-4)),y0=Math.min(v.y,Math.floor(b.y-4)),x1=Math.max(v.x+v.width,Math.ceil(b.x+b.width+4)),y1=Math.max(v.y+v.height,Math.ceil(b.y+b.height+4));
-  s.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].join(' '))}catch{}}`;
+  s.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].join(' '))}catch{}}
+// Couverture sur une seule page : on réduit la carte jusqu'à ce que tout tienne (hauteur utile A4 ≈ 265 mm).
+const c=document.querySelector('.cover'),m=c.querySelector('figure.couv svg');
+c.style.minHeight='0';for(let h=105;m&&h>40&&c.scrollHeight>258*96/25.4;h-=5)m.style.maxHeight=h+'mm';c.style.minHeight='';`;
 
 const date = new Date().toLocaleDateString('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' });
 const regions = ['France', ...REGIONS_FR.slice().sort((a, b) =>
@@ -161,7 +171,8 @@ const regions = ['France', ...REGIONS_FR.slice().sort((a, b) =>
   .map((r, i) => [i, r]).filter(([, r]) => !seules.length || seules.includes(r));
 
 const browser = await chromium.launch();
-const page = await browser.newPage();
+const page = await browser.newPage({ viewport: { width: 680, height: 1000 } }); // 180 mm : largeur utile A4, pour mesurer comme à l'impression
+await page.emulateMedia({ media: 'print' });
 const bilan = [];
 for (const [i, r] of regions) {
   const fs_ = FICHES.filter(f => dans(f, r)).sort(tri);
@@ -169,12 +180,13 @@ for (const [i, r] of regions) {
   const regionales = fs_.filter(f => !estCep(f)), cepages = fs_.filter(estCep);
   const chaps = [...new Set(regionales.map(f => f.chapitre))];
   const test = autoTest(fs_);
-  const lede = regionales.find(f => f.cours?.lede)?.cours.lede || '';
+  const tete = regionales.find(f => f.cours?.lede);
   const nv = fs_.filter(f => f.status === 'verified').length;
   const titre = r === 'France' ? 'La France viticole' : r;
   const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(titre)} — fiches de révision</title><style>${css}</style></head><body>
   <section class="cover"><div class="brand">L'Atelier des Mille Vignes · Fiches de révision</div><h1>${e(titre)}</h1>
-    <p class="tag">${e(lede)}</p>
+    ${tete ? `<p class="tag">${e(tete.cours.lede)}</p>${tete.cours.essentiel ? `<div class="note"><b>L'essentiel</b> ${e(tete.cours.essentiel)}</div>` : ''}
+      ${tete.schema ? `<figure class="couv">${tete.schema.svg}<figcaption>${e(tete.schema.legende)}${tete.schema.src ? ` — ${e(tete.schema.src)}` : ''}</figcaption></figure>` : ''}` : ''}
     <table><thead><tr><th>Sommaire</th><th></th></tr></thead><tbody>
       ${chaps.map(c => `<tr><td>${e(c)}</td><td>${regionales.filter(f => f.chapitre === c).length} fiches</td></tr>`).join('')}
       ${cepages.length ? `<tr><td>Les cépages</td><td>${cepages.length} fiches</td></tr>` : ''}
@@ -183,8 +195,8 @@ for (const [i, r] of regions) {
       <p><span><i class="imp essentiel"></i>Essentiel</span><span><i class="imp important"></i>Important</span><span><i class="imp utile"></i>Utile</span><span><i class="imp culture"></i>Culture</span>
       <span><b class="niv n0">Fondamental</b> comptoir</span><span><b class="niv n1">Intermédiaire</b> masterclass</span><span><b class="niv n2">Pointu</b> expert</span></p>
       <p>Contenu reformulé à partir des sources citées sous chaque fiche ; les n° renvoient aux fiches du site.</p></div></section>
-  ${chaps.map((c, k) => `<section class="${k ? '' : 'part'}"><h2 class="${k ? 'chap' : ''}">${e(c)}</h2>${regionales.filter(f => f.chapitre === c).map(ficheHTML).join('')}</section>`).join('')}
-  ${cepages.length ? `<section class="part"><h2>Les cépages</h2>${cepages.map(ficheHTML).join('')}</section>` : ''}
+  ${chaps.map((c, k) => `<section class="${k ? '' : 'part'}"><h2 class="${k ? 'chap' : ''}">${e(c)}</h2>${regionales.filter(f => f.chapitre === c).map(f => ficheHTML(f, tete)).join('')}</section>`).join('')}
+  ${cepages.length ? `<section class="part"><h2>Les cépages</h2>${cepages.map(f => ficheHTML(f)).join('')}</section>` : ''}
   ${test.html}</body></html>`;
   const nom = `${String(i).padStart(2, '0')}-${r.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z]+/g, '-')}`;
   const tmp = path.join(out, nom + '.html');
