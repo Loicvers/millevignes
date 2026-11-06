@@ -278,3 +278,5 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 04/11/2026 : support Initiation : verre INAO (figure et couverture), langue sobre, graphique « le sucré s'efface, l'acide et l'amer durent » d'après la RVF (Collection n° 2, p. 29) ; 30 pages.
 - 2026-11-05 : corrections d'exercices — roussette (énoncé ne donne plus la réponse, synonyme « roussette » retiré), chloroplaste (question demande aussi le processus), Galet (explication : organes végétatifs vs fructifères).
 - 2026-11-05 : flashcards inversées corrigées sur le seul terme demandé (précision entre parenthèses non exigée, ex. véraison / stade M de Baggiolini) ; mots-clés explicites pour la carte GFV.
+
+- 06/11/2026 : supports papier par région (`supports/revision-regions/build.mjs`) : un PDF A4 par région compilé depuis les fiches (cours, fiches, cartes, pastilles, cépages, auto-test et corrigé) ; 17 PDF, PDF non versionnés (à régénérer après chaque lot).
