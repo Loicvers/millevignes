@@ -280,3 +280,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 - 2026-11-05 : flashcards inversées corrigées sur le seul terme demandé (précision entre parenthèses non exigée, ex. véraison / stade M de Baggiolini) ; mots-clés explicites pour la carte GFV.
 
 - 06/11/2026 : supports papier par région (`supports/revision-regions/build.mjs`) : un PDF A4 par région compilé depuis les fiches (cours, fiches, cartes, pastilles, cépages, auto-test et corrigé) ; 17 PDF, PDF non versionnés (à régénérer après chaque lot).
+- 06/11/2026 : supports papier : ajout du PDF Vinification (section du livre p. 203-243 par chapitre, avec les récits de chapitre, + compléments vinification/élevage des autres fichiers) ; récits de chapitre aussi en tête des chapitres régionaux.

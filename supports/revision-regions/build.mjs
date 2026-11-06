@@ -1,5 +1,5 @@
-// Supports papier de révision, un PDF A4 par région française, compilés depuis les fiches du dépôt (rien n'est réécrit à la main).
-// node supports/revision-regions/build.mjs [dossier de sortie] [Région…]   (Playwright résolu via NODE_PATH, comme initiation-oenologie/build.mjs)
+// Supports papier de révision, un PDF A4 par région française et par section du livre (Vinification), compilés depuis les fiches du dépôt (rien n'est réécrit à la main).
+// node supports/revision-regions/build.mjs [dossier de sortie] [Région… | Vinification]   (Playwright résolu via NODE_PATH, comme initiation-oenologie/build.mjs)
 // Contenu : cours « Approfondir », fiches (synthèse, astuce, cartes, pastilles, sources), cépages (jauge, autres noms), auto-test et corrigé.
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -17,9 +17,20 @@ fs.mkdirSync(out, { recursive: true });
 const ctx = vm.createContext({ window: {} });
 vm.runInContext(fs.readFileSync(path.join(root, 'fiches.js'), 'utf8'), ctx);
 for (const f of fs.readdirSync(path.join(root, 'fiches')).sort())
-  if (f.startsWith('fr-') || f === 'cepages.js') vm.runInContext(fs.readFileSync(path.join(root, 'fiches', f), 'utf8'), ctx);
+  if (f.endsWith('.js')) vm.runInContext(fs.readFileSync(path.join(root, 'fiches', f), 'utf8'), ctx);
 const { FICHES, REGIONS_FR, FRANCE_SOMMAIRE } = vm.runInContext('({FICHES,REGIONS_FR,FRANCE_SOMMAIRE})', ctx);
 
+const TOC = JSON.parse(fs.readFileSync(path.join(root, 'data/mille-vignes-sommaire.json'), 'utf8')).sort((a, b) => a.page - b.page);
+// Récits de chapitre (data/recits.js, texte du dépôt, avec ses <b>) : le fil de l'argument en tête de chaque chapitre.
+const rctx = vm.createContext({});
+vm.runInContext(fs.readFileSync(path.join(root, 'data/recits.js'), 'utf8') + ';this.R=RECITS', rctx);
+const RECIT = new Map(rctx.R.map(x => [x.chapitre, x]));
+const recitHTML = x => !x ? '' : `<div class="recit"><p class="appro">Le fil du chapitre</p>
+  ${x.question ? `<p class="lede">${e(x.question)}</p>` : ''}${(x.fil || []).map(t => `<p>${t}</p>`).join('')}
+  ${x.defend ? `<p><b class="lbl">${x.pages ? 'Ce qu’elle défend.' : 'À retenir.'}</b> ${x.defend}</p>` : ''}
+  ${x.client ? `<p><b class="lbl">Au client.</b> <i>${x.client}</i></p>` : ''}
+  ${x.filRouge ? `<p><b class="lbl">Question fil rouge.</b> ${x.filRouge}</p>` : ''}</div>`;
+const tocDe = f => f.page ? TOC.filter(c => c.page <= f.page).at(-1) : null; // chapitre du livre qui contient la page
 const ordreChap = new Map(FRANCE_SOMMAIRE.map((c, i) => [c.chapitre, i]));
 const NIV = { Fondamental: 0, 'Intermédiaire': 1, Pointu: 2 };
 // Chapitres de cépages → régions où la fiche est utile (une fiche sans geo.region n'irait sinon nulle part).
@@ -71,7 +82,7 @@ const jaugeHTML = j => {
 
 // tete : fiche dont l'accroche, l'essentiel et la carte sont déjà en couverture.
 const ficheHTML = (f, tete) => `<article class="fiche">
-  <div class="meta"><span>n° ${e(f.id)}</span><span class="niv n${NIV[f.niveau]}">${e(f.niveau)}</span>
+  <div class="meta"><span>n° ${e(f.id)}</span>${f.page ? `<span>Mille Vignes p. ${e(f.page)}</span>` : ''}<span class="niv n${NIV[f.niveau]}">${e(f.niveau)}</span>
     <span>${f.status === 'verified' ? '✅ vérifiée' : '⚠️ à revoir'}</span>${f.geo?.appel ? `<span>${e(f.geo.appel)}</span>` : ''}</div>
   <h3>${e(f.titre)}</h3>
   <p class="synth">${e(f.synth)}</p>
@@ -125,6 +136,7 @@ ul,ol{margin:0 0 5pt 13pt}
 .warn{border-left-color:#c0392b;background:#fbecea;font-size:.9rem}.warn.soft{border-left-color:var(--gold);background:#f6f1e6}
 .lbl{color:var(--wine)}
 .lede{font-family:'Cormorant';font-style:italic;font-size:13pt;color:var(--wine2)}
+.recit{background:var(--cream);padding:7pt 11pt;margin:4pt 0 10pt;border-top:2px solid var(--gold)}.recit p{margin-bottom:4pt}
 .cours{margin-top:6pt;padding:2pt 0 2pt 9pt;border-left:2px solid var(--line)}
 .appro{break-after:avoid;font-size:7.8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt}
 ul.blocs{list-style:none;margin-left:0}ul.blocs li{margin:0 0 3pt;padding-left:13pt;position:relative}
@@ -163,42 +175,52 @@ const fit = `for(const s of document.querySelectorAll('figure svg')){const v=s.v
   s.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].join(' '))}catch{}}
 // Couverture sur une seule page : on réduit la carte jusqu'à ce que tout tienne (hauteur utile A4 ≈ 265 mm).
 const c=document.querySelector('.cover'),m=c.querySelector('figure.couv svg');
-c.style.minHeight='0';for(let h=105;m&&h>40&&c.scrollHeight>258*96/25.4;h-=5)m.style.maxHeight=h+'mm';c.style.minHeight='';`;
+c.style.minHeight='0';for(let h=105;m&&h>40&&c.scrollHeight>264*96/25.4;h-=5)m.style.maxHeight=h+'mm';c.style.minHeight='';`;
 
 const date = new Date().toLocaleDateString('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' });
 const regions = ['France', ...REGIONS_FR.slice().sort((a, b) =>
-  FRANCE_SOMMAIRE.findIndex(c => c.section === a) - FRANCE_SOMMAIRE.findIndex(c => c.section === b))]
-  .map((r, i) => [i, r]).filter(([, r]) => !seules.length || seules.includes(r));
+  FRANCE_SOMMAIRE.findIndex(c => c.section === a) - FRANCE_SOMMAIRE.findIndex(c => c.section === b))];
+// Un support = un nom de fichier, un titre, des groupes (chapitres) de fiches, et la fiche de tête dont la couverture reprend l'accroche.
+const supports = regions.map((r, i) => {
+  const fs_ = FICHES.filter(f => dans(f, r)).sort(tri);
+  const regionales = fs_.filter(f => !estCep(f)), cepages = fs_.filter(estCep);
+  return { nom: `${String(i).padStart(2, '0')}-${r.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]+/g, '-')}`, cle: r,
+    titre: r === 'France' ? 'La France viticole' : r, tete: regionales.find(f => f.cours?.lede),
+    groupes: [...[...new Set(regionales.map(f => f.chapitre))].map(c => ({ h: c, fiches: regionales.filter(f => f.chapitre === c) })),
+      { h: 'Les cépages', fiches: cepages, sansTete: true }] };
+});
+{ // Section Vinification du livre, dans l'ordre des pages, puis les fiches de vinification et d'élevage rangées ailleurs (régions, autres sections).
+  const parPage = (a, b) => a.page - b.page || +a.id - +b.id;
+  const livre = FICHES.filter(f => tocDe(f)?.section === 'Vinification').sort(parPage);
+  const ailleurs = FICHES.filter(f => !livre.includes(f) && ['Vinification', 'Élevage'].includes(f.theme)).sort((a, b) => (a.page || 9999) - (b.page || 9999) || tri(a, b));
+  supports.push({ nom: '20-Vinification', cle: 'Vinification', titre: 'Vinification', groupes: [
+    ...[...new Set(livre.map(f => tocDe(f).chapitre))].map(c => ({ h: c, p: TOC.find(t => t.chapitre === c).page, fiches: livre.filter(f => tocDe(f).chapitre === c) })),
+    { h: 'Compléments : vinification et élevage dans les autres chapitres et les régions', fiches: ailleurs }] });
+}
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 680, height: 1000 } }); // 180 mm : largeur utile A4, pour mesurer comme à l'impression
 await page.emulateMedia({ media: 'print' });
 const bilan = [];
-for (const [i, r] of regions) {
-  const fs_ = FICHES.filter(f => dans(f, r)).sort(tri);
+for (const { nom, cle, titre, tete, groupes: gs } of supports) {
+  if (seules.length && !seules.includes(cle)) continue;
+  const groupes = gs.filter(g => g.fiches.length), fs_ = groupes.flatMap(g => g.fiches);
   if (!fs_.length) continue;
-  const regionales = fs_.filter(f => !estCep(f)), cepages = fs_.filter(estCep);
-  const chaps = [...new Set(regionales.map(f => f.chapitre))];
   const test = autoTest(fs_);
-  const tete = regionales.find(f => f.cours?.lede);
   const nv = fs_.filter(f => f.status === 'verified').length;
-  const titre = r === 'France' ? 'La France viticole' : r;
   const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(titre)} — fiches de révision</title><style>${css}</style></head><body>
   <section class="cover"><div class="brand">L'Atelier des Mille Vignes · Fiches de révision</div><h1>${e(titre)}</h1>
     ${tete ? `<p class="tag">${e(tete.cours.lede)}</p>${tete.cours.essentiel ? `<div class="note"><b>L'essentiel</b> ${e(tete.cours.essentiel)}</div>` : ''}
       ${tete.schema ? `<figure class="couv">${tete.schema.svg}<figcaption>${e(tete.schema.legende)}${tete.schema.src ? ` — ${e(tete.schema.src)}` : ''}</figcaption></figure>` : ''}` : ''}
     <table><thead><tr><th>Sommaire</th><th></th></tr></thead><tbody>
-      ${chaps.map(c => `<tr><td>${e(c)}</td><td>${regionales.filter(f => f.chapitre === c).length} fiches</td></tr>`).join('')}
-      ${cepages.length ? `<tr><td>Les cépages</td><td>${cepages.length} fiches</td></tr>` : ''}
+      ${groupes.map(g => `<tr><td>${e(g.h)}${g.p ? ` <span class="muted">(p. ${g.p})</span>` : ''}${!tete && RECIT.get(g.h)?.question ? `<br><i class="muted">${e(RECIT.get(g.h).question)}</i>` : ''}</td><td>${g.fiches.length} fiches</td></tr>`).join('')}
       <tr><td>Auto-test et corrigé</td><td>${test.n} questions</td></tr></tbody></table>
     <div class="leg"><p><b>${fs_.length} fiches</b> · ${nv} ✅ vérifiées${fs_.length - nv ? ` · ${fs_.length - nv} ⚠️ à revoir` : ''} · édition du ${date}</p>
       <p><span><i class="imp essentiel"></i>Essentiel</span><span><i class="imp important"></i>Important</span><span><i class="imp utile"></i>Utile</span><span><i class="imp culture"></i>Culture</span>
       <span><b class="niv n0">Fondamental</b> comptoir</span><span><b class="niv n1">Intermédiaire</b> masterclass</span><span><b class="niv n2">Pointu</b> expert</span></p>
       <p>Contenu reformulé à partir des sources citées sous chaque fiche ; les n° renvoient aux fiches du site.</p></div></section>
-  ${chaps.map((c, k) => `<section class="${k ? '' : 'part'}"><h2 class="${k ? 'chap' : ''}">${e(c)}</h2>${regionales.filter(f => f.chapitre === c).map(f => ficheHTML(f, tete)).join('')}</section>`).join('')}
-  ${cepages.length ? `<section class="part"><h2>Les cépages</h2>${cepages.map(f => ficheHTML(f)).join('')}</section>` : ''}
+  ${groupes.map((g, k) => `<section class="${!k || g.sansTete ? 'part' : ''}"><h2 class="${!k || g.sansTete ? '' : 'chap'}">${e(g.h)}${g.p ? ` <span class="muted">· p. ${g.p}</span>` : ''}</h2>${recitHTML(RECIT.get(g.h))}${g.fiches.map(f => ficheHTML(f, g.sansTete ? null : tete)).join('')}</section>`).join('')}
   ${test.html}</body></html>`;
-  const nom = `${String(i).padStart(2, '0')}-${r.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^A-Za-z]+/g, '-')}`;
   const tmp = path.join(out, nom + '.html');
   fs.writeFileSync(tmp, html);
   await page.goto('file://' + tmp, { waitUntil: 'load' });
