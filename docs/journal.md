@@ -281,3 +281,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 
 - 06/11/2026 : supports papier par région (`supports/revision-regions/build.mjs`) : un PDF A4 par région compilé depuis les fiches (cours, fiches, cartes, pastilles, cépages, auto-test et corrigé) ; 17 PDF, PDF non versionnés (à régénérer après chaque lot).
 - 06/11/2026 : supports papier : ajout du PDF Vinification (section du livre p. 203-243 par chapitre, avec les récits de chapitre, + compléments vinification/élevage des autres fichiers) ; récits de chapitre aussi en tête des chapitres régionaux.
+- 2026-11-08 : outil `tools/cave-site.mjs` (fiches de Ma cave → CSV pour le site / la boutique).
