@@ -17,7 +17,8 @@ const COLONNES = [
 const description = v => COLONNES.slice(6).map(([k, f]) => [k, f(v)]).filter(([, t]) => t).map(([k, t]) => `${k} : ${t}.`).join(" ").replace(/\.\./g, ".");
 const cell = x => `"${String(x ?? "").replace(/"/g, '""')}"`;
 
-export function csvCave(partenaires) {
+export function csvCave(fichier) {
+  const partenaires = Array.isArray(fichier) ? fichier : fichier.partenaires; // format importé par l'appli : { app, version, partenaires }
   const vins = partenaires.flatMap(p => (p.vins || []).map(v => ({ ...v, dom: p.nom, reg: p.region })));
   const lignes = vins.map(v => [...COLONNES.map(([, f]) => f(v)), description(v)].map(cell).join(","));
   return "﻿" + [[...COLONNES.map(([k]) => k), "Description"].map(cell).join(","), ...lignes].join("\r\n") + "\r\n"; // BOM : accents corrects dans Excel

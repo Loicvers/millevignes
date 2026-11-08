@@ -11,3 +11,7 @@ test("CSV de la cave : une ligne par vin, champs internes exclus, guillemets éc
   assert.match(l[1], /Cépages : Chenin 100 %\. Accords : poisson\./);
   assert.doesNotMatch(csv, /secret|doute/);
 });
+
+test("CSV de la cave : accepte le fichier tel qu’importé dans l’appli", () => {
+  assert.equal(csvCave({ app: "millevignes-partenaires", partenaires: [{ nom: "D", vins: [{ cuvee: "C" }] }] }).trim().split("\r\n").length, 2);
+});
