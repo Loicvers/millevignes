@@ -1124,7 +1124,7 @@ const RECITS = [
    "La Côte chalonnaise prolonge la Côte-d’Or vers le sud. On y compte cinq appellations communales, et la hiérarchie s’y arrête au premier cru.",
    "<b>Du nord au sud.</b> Bouzeron, seule appellation communale de Bourgogne bâtie sur l’aligoté ; Rully, Mercurey et Givry, en blanc comme en rouge ; Montagny, blanc de chardonnay seul.",
    "<b>Les premiers crus.</b> Leur nombre grimpe vers le sud : 23 à Rully, 32 à Mercurey, 38 à Givry, 49 à Montagny.",
-   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, reste réservé au rouge dans le cahier du Bourgogne du 6 janvier 2026."
+   "<b>Les régionales.</b> Bourgogne Côte Chalonnaise s’écrit dans les trois couleurs ; Bourgogne Côtes du Couchois, autour de Couches, longtemps réservé au rouge, s’ouvre au blanc avec le millésime 2026."
   ],
   defend: "La Côte chalonnaise offre la hiérarchie bourguignonne sans son sommet : des villages et des premiers crus, en rouge comme en blanc, et l’aligoté de Bouzeron.",
   client: "« Mercurey ou Givry pour un rouge, Rully ou Montagny pour un blanc, et Bouzeron pour découvrir l’aligoté. »",

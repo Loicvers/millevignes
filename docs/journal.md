@@ -281,3 +281,4 @@ Une ligne datée par session (ce qui a changé, décisions). Les chiffres à jou
 
 - 06/11/2026 : supports papier par région (`supports/revision-regions/build.mjs`) : un PDF A4 par région compilé depuis les fiches (cours, fiches, cartes, pastilles, cépages, auto-test et corrigé) ; 17 PDF, PDF non versionnés (à régénérer après chaque lot).
 - 06/11/2026 : supports papier : ajout du PDF Vinification (section du livre p. 203-243 par chapitre, avec les récits de chapitre, + compléments vinification/élevage des autres fichiers) ; récits de chapitre aussi en tête des chapitres régionaux.
+- 10/11/2026 : Bourgogne Côtes du Couchois ouvert au blanc (texte signé le 29/10/2026, premier millésime 2026 ; projet INAO du 18/06/2026, presse 5-10/11/2026) : fiches 399 et AOC Bourgogne corrigées (synthèse, vrai/faux, appariement Couchois → Tonnerre), récit Côte chalonnaise ; les deux fiches en « à vérifier » jusqu’à la publication au JORF/BO-agri.

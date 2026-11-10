@@ -1,8 +1,11 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-967 fiches : 959 vérifiées, 8 à vérifier (10 points).
+968 fiches : 958 vérifiées, 10 à vérifier (12 points).
 Hors dette : 2453 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+
+**Fiche 399** (p.?) — Côte chalonnaise : cinq villages sans grand cru, deux dénominations du Bourgogne et le crémant
+- [ ] Couchois blanc ⚠️ : texte signé le 29 octobre 2026 (presse, Syndicat des Bourgognes) ; numéro et publication au JORF/BO-agri pas encore vus au 10 novembre 2026
 
 **Fiche 806** (p.319) — Artichaut et asperge : deux légumes piégeux
 - [ ] Explication de la difficulté de l’asperge (⚠️) : le WSET invoque l’umami sans sel, Harrington l’acidité naturelle du légume, qu’il propose de masquer par du gras ou du sucre ; deux explications, non départagées.
@@ -29,3 +32,6 @@ Hors dette : 2453 détails laissés « selon le livre » (champ `selon_livre`, n
 
 **Fiche 955** (p.?) — Bourgogne mousseux : le mousseux rouge de Bourgogne, reconnu en 1943
 - [ ] Version du cahier (⚠️) : seule la version homologuée par le décret 2011-1492 du 09/11/2011 (publiée au BO-agri le 09/11/2011) a été retrouvée ; aucune version plus récente trouvée au BO-agri le 01/11/2026 (le Crémant de Bourgogne, lui, a été réhomologué le 02/09/2026). Au JORF, aucun avis d’opposition ni arrêté pour « Bourgogne mousseux » du 28/06 au 01/11/2026 ; la recherche Légifrance par titre ne retrouve que le décret du 9 février 1981 (appellation réservée aux rouges après 1985), pas même le décret de 2011 : elle ne prouve rien pour les années 2012-2026. À confirmer à l’INAO : sa page produit (vue le 01/11/2026) renvoie, sous le lien du cahier, au fichier du Crémant de Bourgogne (AOC_BourgogneCremant_201204.pdf), pas à celui du Bourgogne mousseux.
+
+**Fiche 957** (p.?) — AOC Bourgogne : la régionale, ses 14 dénominations et la mention « gamay »
+- [ ] Couchois blanc ⚠️ : texte signé le 29 octobre 2026 (presse, Syndicat des Bourgognes) ; numéro et publication au JORF/BO-agri pas encore vus au 10 novembre 2026

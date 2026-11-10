@@ -2,16 +2,16 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 967 (dernier id : 969) · exercices : 5119
-- Vérifiées : 959 · à vérifier : 8 (10 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2453
-- Niveaux : Fondamental 253 · Intermédiaire 511 · Pointu 203
-- Cours (Approfondir) : 220 · schémas : 429
-- Lexique : 85 termes · récits de chapitre : 107
+- Fiches : 968 (dernier id : 970) · exercices : 5129
+- Vérifiées : 958 · à vérifier : 10 (12 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2453
+- Niveaux : Fondamental 253 · Intermédiaire 512 · Pointu 203
+- Cours (Approfondir) : 221 · schémas : 430
+- Lexique : 86 termes · récits de chapitre : 107
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
-| 016-domestication.js | 56 | 1–671 | 16–38 | 56 | 8 | 11 |
-| 040-nature.js | 52 | 4–634 | 40–73 | 52 | 7 | 15 |
+| 016-domestication.js | 57 | 1–970 | 16–38 | 57 | 9 | 11 |
+| 040-nature.js | 52 | 4–634 | 40–73 | 52 | 7 | 16 |
 | 076-ecologie.js | 32 | 97–522 | 76–101 | 32 | 5 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 31 | 5 | 6 |
 | 124-geologie.js | 33 | 157–969 | 124–149 | 33 | 7 | 6 |
@@ -27,7 +27,7 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-beaujolais.js | 8 | 406–950 | hors livre | 8 | 1 | 2 |
 | fr-bordeaux-appellations.js | 36 | 421–968 | hors livre | 36 | 0 | 32 |
 | fr-bordeaux.js | 9 | 411–683 | hors livre | 9 | 1 | 2 |
-| fr-bourgogne.js | 79 | 385–967 | hors livre | 77 | 1 | 23 |
+| fr-bourgogne.js | 79 | 385–967 | hors livre | 75 | 1 | 23 |
 | fr-champagne-appellations.js | 8 | 459–466 | hors livre | 8 | 0 | 8 |
 | fr-champagne.js | 7 | 403–700 | hors livre | 7 | 1 | 2 |
 | fr-charentes.js | 2 | 574–575 | hors livre | 2 | 0 | 1 |
