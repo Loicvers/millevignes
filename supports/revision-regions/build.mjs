@@ -1,5 +1,5 @@
-// Supports papier de révision, un PDF A4 par région française et par section du livre (Vinification), compilés depuis les fiches du dépôt (rien n'est réécrit à la main).
-// node supports/revision-regions/build.mjs [dossier de sortie] [Région… | Vinification]   (Playwright résolu via NODE_PATH, comme initiation-oenologie/build.mjs)
+// Supports papier de révision : un PDF A4 par région française, par section du livre, et pour les cépages et le monde viticole, compilés depuis les fiches du dépôt (rien n'est réécrit à la main).
+// node supports/revision-regions/build.mjs [dossier de sortie] [Région… | Section du livre… | Les cépages | Le monde viticole]   (Playwright résolu via NODE_PATH, comme initiation-oenologie/build.mjs)
 // Contenu : cours « Approfondir », fiches (synthèse, astuce, cartes, pastilles, sources), cépages (jauge, autres noms), auto-test et corrigé.
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -189,14 +189,25 @@ const supports = regions.map((r, i) => {
     groupes: [...[...new Set(regionales.map(f => f.chapitre))].map(c => ({ h: c, fiches: regionales.filter(f => f.chapitre === c) })),
       { h: 'Les cépages', fiches: cepages, sansTete: true }] };
 });
-{ // Section Vinification du livre, dans l'ordre des pages, puis les fiches de vinification et d'élevage rangées ailleurs (régions, autres sections).
-  const parPage = (a, b) => a.page - b.page || +a.id - +b.id;
-  const livre = FICHES.filter(f => tocDe(f)?.section === 'Vinification').sort(parPage);
-  const ailleurs = FICHES.filter(f => !livre.includes(f) && ['Vinification', 'Élevage'].includes(f.theme)).sort((a, b) => (a.page || 9999) - (b.page || 9999) || tri(a, b));
-  supports.push({ nom: '20-Vinification', cle: 'Vinification', titre: 'Vinification', groupes: [
-    ...[...new Set(livre.map(f => tocDe(f).chapitre))].map(c => ({ h: c, p: TOC.find(t => t.chapitre === c).page, fiches: livre.filter(f => tocDe(f).chapitre === c) })),
-    { h: 'Compléments : vinification et élevage dans les autres chapitres et les régions', fiches: ailleurs }] });
-}
+// Sections du livre, dans l'ordre des pages (récit en tête de chaque chapitre) ; la Vinification reçoit en plus les fiches
+// de vinification et d'élevage rangées ailleurs (régions, autres sections).
+const parPage = (a, b) => a.page - b.page || +a.id - +b.id;
+const sectionDe = f => tocDe(f) && (tocDe(f).section || tocDe(f).partie);
+const nomDe = (n, t) => `${n}-${t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]+/g, '-')}`;
+[...new Set(TOC.map(t => t.section || t.partie))].forEach(sec => {
+  const livre = FICHES.filter(f => sectionDe(f) === sec).sort(parPage);
+  if (!livre.length) return;
+  const groupes = [...new Set(livre.map(f => tocDe(f).chapitre))].map(c => ({ h: c, p: TOC.find(t => t.chapitre === c).page, fiches: livre.filter(f => tocDe(f).chapitre === c) }));
+  if (sec === 'Vinification') groupes.push({ h: 'Compléments : vinification et élevage dans les autres chapitres et les régions',
+    fiches: FICHES.filter(f => !livre.includes(f) && ['Vinification', 'Élevage'].includes(f.theme)).sort((a, b) => (a.page || 9999) - (b.page || 9999) || tri(a, b)) });
+  supports.push({ nom: nomDe(20 + supports.filter(x => x.livre).length, sec), cle: sec, livre: true, titre: sec, groupes });
+});
+// Parties hors livre du site : cépages (par région d'élection) et monde viticole (par pays), dans l'ordre de FRANCE_SOMMAIRE.
+[['Les cépages', 40], ['Le monde viticole', 41]].forEach(([partie, n]) => {
+  const chaps = FRANCE_SOMMAIRE.filter(c => c.partie === partie);
+  const groupes = chaps.map(c => ({ h: c.chapitre, fiches: FICHES.filter(f => f.source === 'france' && f.chapitre === c.chapitre).sort(tri) }));
+  supports.push({ nom: nomDe(n, partie), cle: partie, titre: partie, groupes });
+});
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 680, height: 1000 } }); // 180 mm : largeur utile A4, pour mesurer comme à l'impression
