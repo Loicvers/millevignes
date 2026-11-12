@@ -10,8 +10,11 @@ const { chromium } = createRequire(import.meta.url)('playwright');
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(dir, '../..');
-const out = path.resolve(process.argv[2] || path.join(dir, 'pdf'));
-const seules = process.argv.slice(3);
+// --synthese : synthèse d'examen (l'essentiel de chaque fiche sur deux colonnes, sans exercices ni lexique) au lieu du support complet.
+const SYNTH = process.argv.includes('--synthese');
+const args = process.argv.filter(a => a !== '--synthese');
+const out = path.resolve(args[2] || path.join(dir, 'pdf'));
+const seules = args.slice(3);
 fs.mkdirSync(out, { recursive: true });
 
 const ctx = vm.createContext({ window: {} });
@@ -112,6 +115,25 @@ const ficheHTML = (f, tete) => `<article class="fiche">
   <p class="src">Sources : ${e(f.src)}</p></article>`;
 
 const avert = []; // anomalies relevées pendant la génération, affichées à la fin
+// Synthèse d'examen d'une fiche : points « essentiel » du cours (sinon la synthèse), lignes essentielles et importantes des tableaux,
+// astuce, carte réduite, jauge et autres noms des cépages, faits ⚠️.
+function ficheCourte(f) {
+  const c = f.cours || {}, pts = [];
+  const ajoute = t => { if (t && !pts.includes(t)) pts.push(t); };
+  ajoute(c.essentiel);
+  (c.sections || []).forEach(s => (s.blocs || []).filter(b => b.imp === 'essentiel').forEach(b => ajoute(b.txt)));
+  (c.synthese || []).filter(b => b.imp === 'essentiel').forEach(b => ajoute(b.txt));
+  const tabs = (c.sections || []).filter(s => s.table?.rows.some(x => ['essentiel', 'important'].includes(x.imp))).map(s => `<table class="tab">${s.table.caption ? `<caption>${e(s.table.caption)}</caption>` : ''}
+    <thead><tr>${s.table.head.map(h => `<th>${e(h)}</th>`).join('')}</tr></thead>
+    <tbody>${s.table.rows.filter(x => ['essentiel', 'important'].includes(x.imp)).map(x => `<tr>${x.cells.map((v, i) => `<td>${i ? '' : imp(x.imp)}${e(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>`).join('');
+  return `<article class="fc"><h3>${e(f.titre)} <span class="ref">n° ${e(f.id)}${f.page ? ` · p. ${e(f.page)}` : ''}</span></h3>
+    ${f.schema ? `<figure class="mini">${f.schema.svg}</figure>` : ''}
+    ${pts.length ? `<ul class="blocs">${pts.map(t => `<li>${imp('essentiel')}${e(t)}</li>`).join('')}</ul>` : `<p>${e(f.synth)}</p>`}
+    ${tabs}${f.noms?.length ? `<p><b class="lbl">Autres noms</b> ${f.noms.map(n => `${e(n.nom)} (${e(n.ou)})`).join(', ')}</p>` : ''}${jaugeHTML(f.jauge)}
+    ${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
+    ${f.to_check?.length ? `<p class="warnc">⚠️ À vérifier : ${f.to_check.map(e).join(' ; ')}</p>` : ''}</article>`;
+}
+
 const L = 'ABCDEFGHIJ';
 // Mélange déterministe (même PDF à chaque génération) qui ne laisse jamais l'ordre d'origine, pour les listes à remettre en ordre ou à relier.
 const melange = (arr, graine) => {
@@ -195,6 +217,13 @@ ul,ol{margin:0 0 5pt 13pt}
 .lede{font-family:'Cormorant';font-style:italic;font-size:13pt;color:var(--wine2)}
 .lex{columns:2;column-gap:8mm}.lexe{break-inside:avoid;margin:0 0 8pt;padding-bottom:6pt;border-bottom:1px solid var(--line)}.lexe h3{font-size:13pt;margin:0 0 2pt}
 .lexe figure{margin:0 0 4pt}.lexe img{width:100%;max-height:55mm;object-fit:cover;display:block;border-radius:2px}.lexe figcaption{font-size:6.8pt}
+.syn h2.chap{font-size:16pt;margin-top:10pt;break-before:auto}.syn section+section{margin-top:6pt}
+.synh{border-bottom:2px solid var(--wine);padding-bottom:6pt;margin-bottom:6pt}.synh h1{font-size:30pt;margin:2pt 0 3pt}.synh .brand{font-size:7.5pt;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.cols{columns:2;column-gap:7mm;column-rule:1px solid var(--line)}
+.fc{break-inside:auto;padding:0 0 6pt;margin:0 0 6pt;border-bottom:1px solid var(--line);font-size:.9rem}
+.fc h3{font-size:12pt;margin:0 0 3pt;break-after:avoid}.fc .ref{font-family:'Inter';font-size:6.8pt;font-weight:400;color:var(--muted)}
+.fc ul.blocs li{margin-bottom:2pt}.fc .astuce{margin:3pt 0;padding:3pt 7pt}.fc table{font-size:.86em;margin:3pt 0}.fc .jauge{margin:3pt 0;padding:3pt 7pt}
+.fc figure.mini svg{max-height:45mm}.fc figure{margin:2pt auto 4pt}.warnc{font-size:.85em;color:#a03224}
 .recit{background:var(--cream);padding:7pt 11pt;margin:4pt 0 10pt;border-top:2px solid var(--gold)}.recit p{margin-bottom:4pt}
 .cours{margin-top:6pt;padding:2pt 0 2pt 9pt;border-left:2px solid var(--line)}
 .appro{break-after:avoid;font-size:7.8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt}
@@ -239,8 +268,9 @@ const fit = `for(const s of document.querySelectorAll('figure svg')){const v=s.v
   try{const b=s.getBBox(),x0=Math.min(v.x,Math.floor(b.x-4)),y0=Math.min(v.y,Math.floor(b.y-4)),x1=Math.max(v.x+v.width,Math.ceil(b.x+b.width+4)),y1=Math.max(v.y+v.height,Math.ceil(b.y+b.height+4));
   s.setAttribute('viewBox',[x0,y0,x1-x0,y1-y0].join(' '))}catch{}}
 // Couverture sur une seule page : on réduit la carte jusqu'à ce que tout tienne (hauteur utile A4 ≈ 265 mm).
-const c=document.querySelector('.cover'),m=c.querySelector('figure.couv svg');
-c.style.minHeight='0';for(let h=105;m&&h>40&&c.scrollHeight>264*96/25.4;h-=5)m.style.maxHeight=h+'mm';c.style.minHeight='';`;
+const c=document.querySelector('.cover'),m=c?.querySelector('figure.couv svg');
+if(c){
+c.style.minHeight='0';for(let h=105;m&&h>40&&c.scrollHeight>264*96/25.4;h-=5)m.style.maxHeight=h+'mm';c.style.minHeight='';}`;
 
 const date = new Date().toLocaleDateString('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' });
 const regions = ['France', ...REGIONS_FR.slice().sort((a, b) =>
@@ -284,7 +314,11 @@ for (const { nom, cle, titre, tete, groupes: gs } of supports) {
   if (!fs_.length) continue;
   const test = autoTest(groupes), lex = lexiqueHTML(new Set(fs_.map(f => +f.id)));
   const nv = fs_.filter(f => f.status === 'verified').length;
-  const html = `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(titre)} — fiches de révision</title><style>${css}</style></head><body>
+  const html = SYNTH ? `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(titre)} — synthèse d'examen</title><style>${css}</style></head><body class="syn">
+  <header class="synh"><div class="brand">L'Atelier des Mille Vignes · Synthèse d'examen</div><h1>${e(titre)}</h1>
+    <p class="muted">L'essentiel des ${fs_.length} fiches : points essentiels des cours, lignes clés des tableaux, astuces et cartes. Le détail, les exercices et le lexique sont dans le support complet ; les n° renvoient aux fiches. Édition du ${date}.</p></header>
+  ${groupes.map(g => `<section><h2 class="chap">${e(g.h)}${g.p ? ` <span class="muted">· p. ${g.p}</span>` : ''}</h2>${RECIT.get(g.h)?.question ? `<p class="lede">${e(RECIT.get(g.h).question)}</p>` : ''}<div class="cols">${g.fiches.map(ficheCourte).join('')}</div></section>`).join('')}
+  </body></html>` : `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(titre)} — fiches de révision</title><style>${css}</style></head><body>
   <section class="cover"><div class="brand">L'Atelier des Mille Vignes · Fiches de révision</div><h1>${e(titre)}</h1>
     ${tete ? `<p class="tag">${e(tete.cours.lede)}</p>${tete.cours.essentiel ? `<div class="note"><b>L'essentiel</b> ${e(tete.cours.essentiel)}</div>` : ''}
       ${tete.schema ? `<figure class="couv">${tete.schema.svg}<figcaption>${e(tete.schema.legende)}${tete.schema.src ? ` — ${e(tete.schema.src)}` : ''}</figcaption></figure>` : ''}` : ''}
@@ -310,16 +344,17 @@ for (const { nom, cle, titre, tete, groupes: gs } of supports) {
     for (const el of document.querySelectorAll('body *')) if (el.getBoundingClientRect().right > W && !el.closest('svg')) { out.push('déborde : ' + (el.closest('article')?.querySelector('h3')?.textContent || el.tagName).slice(0, 60)); break; }
     const t = document.body.innerText.match(/\b(undefined|NaN|null)\b|\[object/); if (t) out.push('texte cassé : ' + t[0]);
     for (const i of document.images) if (!i.naturalWidth) out.push('image manquante : ' + i.alt);
-    if (document.querySelector('.cover').scrollHeight > 264 * 96 / 25.4) out.push('couverture sur 2 pages');
+    if (document.querySelector('.cover')?.scrollHeight > 264 * 96 / 25.4) out.push('couverture sur 2 pages');
     return out;
   });
   avert.push(...pb.map(x => `${nom} : ${x}`));
-  await page.pdf({ path: path.join(out, nom + '.pdf'), format: 'A4', printBackground: true, displayHeaderFooter: true,
+  const fichier = nom + (SYNTH ? '-synthese' : '') + '.pdf';
+  await page.pdf({ path: path.join(out, fichier), format: 'A4', printBackground: true, displayHeaderFooter: true,
     headerTemplate: '<span></span>',
-    footerTemplate: `<div style="width:100%;text-align:center;font-family:sans-serif;font-size:7pt;color:#625a4e;padding-bottom:3mm">${e(titre)} · Fiches de révision · <span class="pageNumber"></span>/<span class="totalPages"></span></div>`,
+    footerTemplate: `<div style="width:100%;text-align:center;font-family:sans-serif;font-size:7pt;color:#625a4e;padding-bottom:3mm">${e(titre)} · ${SYNTH ? 'Synthèse d’examen' : 'Fiches de révision'} · <span class="pageNumber"></span>/<span class="totalPages"></span></div>`,
     margin: { top: '14mm', right: '15mm', bottom: '16mm', left: '15mm' } });
   fs.unlinkSync(tmp);
-  bilan.push(`${nom}.pdf : ${fs_.length} fiches, ${test.n} questions`);
+  bilan.push(`${fichier} : ${fs_.length} fiches${SYNTH ? '' : `, ${test.n} questions`}`);
 }
 await browser.close();
 console.log(bilan.join('\n'));
