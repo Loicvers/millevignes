@@ -360,7 +360,7 @@ function cahierHTML(def, notesAvant) {
       ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null, synthese: def.pedago ? null : f.cours.synthese }) : ''}
       ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       ${f.selon_livre?.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
-    <section class="ex"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
+    <section class="ex" data-notion="${k + 1}"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
       ${P.schema ? `<p><b class="lbl">Je complète.</b> ${e(P.schema.titre)}</p><table class="sch">${P.schema.lignes.map(([q]) => `<tr><td>${e(q)}</td><td></td></tr>`).join('')}</table>` : ''}
       <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>
       ${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.q)}</p>${lignes(2)}` : ''}

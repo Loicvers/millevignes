@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M40 10 V125 H400" stroke="#625a4e" fill="none"/>
+  <text x="44" y="20" font-size="10" fill="#625a4e">acide malique</text><text x="400" y="140" text-anchor="end" font-size="10" fill="#625a4e">temps</text>
+  <path d="M45 25 C140 30 200 100 280 116 L330 119" stroke="#5b1a24" stroke-width="2.5" fill="none"/>
+  <path d="M40 119 H400" stroke="#a8843a" stroke-dasharray="4 3"/><text x="398" y="113" text-anchor="end" font-size="10" fill="#a8843a">≈ 0,1 g/l</text>
+  <path d="M330 60 V119" stroke="#5b1a24" stroke-width="1.5"/><text x="330" y="54" text-anchor="middle" font-weight="700" fill="#5b1a24">soutirer + sulfiter</text>
+  <g font-size="10.5">
+    <text x="420" y="30" font-weight="700" fill="#5c7a4f">Ce qui l'aide</text><text x="420" y="45">tiède, autour de 20 °C</text><text x="420" y="59">pH pas trop bas</text><text x="420" y="73">peu ou pas de SO2</text>
+    <text x="420" y="96" font-weight="700" fill="#5b1a24">Ce qui la freine</text><text x="420" y="111">froid, SO2 fort</text><text x="420" y="125">alcool vers 13-14 % vol.</text>
+  </g>
+  <text x="44" y="152" font-size="10" fill="#625a4e">Attendre après l'arrêt expose à l'acidité volatile et aux altérations.</text>
+</svg>

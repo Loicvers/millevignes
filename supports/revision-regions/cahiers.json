@@ -200,6 +200,187 @@
       344,
       231,
       343
-    ]
+    ],
+    "pedago": {
+      "230": {
+        "ouverture": "Le vigneron peut-il « diriger » ses levures ? Note trois choses qu'il pourrait régler dans la cuve.",
+        "illus": [
+          {
+            "svg": "leviers.svg",
+            "legende": "Les quatre leviers du vigneron : il ne dirige pas les levures, il crée les conditions de leur travail. Illustration de la cuve : support d'initiation de la cave."
+          }
+        ],
+        "schema": {
+          "titre": "Les quatre leviers du vigneron",
+          "lignes": [
+            [
+              "Oxygène",
+              "une dizaine de mg/l (10 à 20 selon l'IFV) pour que la levure se multiplie ; aérer dans la première moitié"
+            ],
+            [
+              "Température",
+              "éviter les chocs thermiques ; ne pas ensemencer sous 15 °C"
+            ],
+            [
+              "SO2",
+              "trie au début ; l'excès bloque ; jamais en même temps que l'inoculation"
+            ],
+            [
+              "Azote et vitamines",
+              "nourrissent la population de levures"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client s'étonne : « Le vigneron aère sa cuve ? Je croyais que l'air était l'ennemi du vin. »",
+          "a": "La levure a besoin d'une dizaine de mg/l d'oxygène pour se multiplier (10 à 20 selon l'IFV) : on aère donc dans la première moitié de la fermentation. C'est le moût en fermentation qu'on aère, pas le vin fini."
+        },
+        "cave": "À ta prochaine visite chez un partenaire, par exemple au Château de Montmirail, demande comment il règle la température de ses cuves et s'il aère pendant la fermentation. Note ses réponses en face des quatre leviers."
+      },
+      "585": {
+        "ouverture": "Qui fermente le plus chaud, à ton avis : un blanc ou un rouge ? Pourquoi ?",
+        "illus": [
+          {
+            "svg": "thermo.svg",
+            "legende": "Frais pour les blancs et les rosés, nettement plus chaud pour les rouges, danger vers 35 °C. Les plages chiffrées divergent selon les sources : voir « Sources » en fin de cahier."
+          }
+        ],
+        "schema": {
+          "titre": "Blanc ou rouge : je complète",
+          "lignes": [
+            [
+              "Blanc ou rosé : au chaud ou au frais ?",
+              "au frais"
+            ],
+            [
+              "Trop froid, le blanc…",
+              "vire au bonbon acidulé (poire) et capte mal le fruit du cépage"
+            ],
+            [
+              "Rouge : pourquoi plus chaud ?",
+              "la chaleur aide à extraire couleur, arômes et tanins"
+            ],
+            [
+              "Au-delà d'environ 35 °C…",
+              "les levures risquent de mourir et la fermentation de s'arrêter"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client trouve à un blanc un goût de « bonbon acidulé à la poire » qui masque le cépage. Quelle piste lui donner ?",
+          "a": "Une fermentation très froide : trop froid, un blanc vire au bonbon acidulé (poire) et capte mal le fruit du cépage ; trop chaud, il le perd."
+        },
+        "cave": "Demande à Florian André (Château de Manissy) à quelle température il fait fermenter son Tavel et son Châteauneuf-du-Pape, et dans quelles cuves. Note l'écart et relie-le à la page de gauche."
+      },
+      "344": {
+        "ouverture": "Une fermentation s'arrête alors qu'il reste du sucre. Le plus dangereux, à ton avis : le sucre qui reste, ou autre chose ?",
+        "illus": [
+          {
+            "svg": "arret.svg",
+            "legende": "Une fermentation qui s'arrête : la densité ne bouge plus pendant 24 à 48 h alors qu'il reste du sucre (schéma de principe)."
+          }
+        ],
+        "schema": {
+          "titre": "Les causes qui s'additionnent (quatre parmi six)",
+          "lignes": [
+            [
+              "Température",
+              "excès ou chocs thermiques"
+            ],
+            [
+              "Nourriture",
+              "carence en azote assimilable"
+            ],
+            [
+              "Air",
+              "absence d'oxygène"
+            ],
+            [
+              "Alcool",
+              "sucre élevé, puis alcool qui monte"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un ami vigneron : « Ma cuve ne bouge plus depuis deux jours, il reste du sucre. » Que lui dis-tu de vérifier, et quel est le vrai risque ?",
+          "a": "C'est un arrêt (densité immobile 24 à 48 h), où plusieurs causes s'additionnent souvent : température, azote, oxygène, alcool, acides gras, levures « killer ». Pour relancer : écorces de levure, un peu d'air et d'azote au début de la reprise, puis un levain acclimaté introduit par étapes. Le vrai risque : les bactéries lactiques qui attaquent le sucre restant et font monter l'acidité volatile."
+        },
+        "cave": "Ton Alsace vendanges tardives (Burghart-Spettel) garde du sucre. Arrêt subi ou voulu ? Note ton hypothèse : la réponse viendra au fascicule 3 (garder du sucre)."
+      },
+      "231": {
+        "ouverture": "Levure du commerce ou levure « du lieu » : laquelle choisirais-tu pour ta propre cuvée, et pourquoi ?",
+        "illus": [
+          {
+            "svg": "balance.svg",
+            "legende": "Le débat des levures : sécurité et régularité d'un côté, signature du lieu de l'autre."
+          }
+        ],
+        "schema": {
+          "titre": "Les deux camps",
+          "lignes": [
+            [
+              "Levures sélectionnées : l'argument",
+              "sécurité et régularité (pureté, reproductibilité, selon l'IFV)"
+            ],
+            [
+              "Levures indigènes : l'argument",
+              "signature du lieu et du millésime (vignerons « nature », N. Joly)"
+            ],
+            [
+              "Part des fermentations spontanées qui finissent mal (IFV)",
+              "environ 30 %"
+            ],
+            [
+              "Pourquoi aucun camp n'est pur ?",
+              "le matériel et l'air du chai ensemencent même un moût sulfité ; des souches indigènes complètent les levures ajoutées"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « Les levures indigènes, c'est forcément meilleur ? »",
+          "a": "C'est un débat autant technique qu'idéologique. Pour leurs défenseurs, les indigènes portent la signature du lieu et du millésime ; l'IFV juge la fermentation spontanée plus risquée (environ 30 % finissent difficilement). Et aucun camp n'est pur : l'air et le matériel du chai ensemencent aussi les cuves."
+        },
+        "cave": "Reprends la réponse notée au fascicule 1 (levures ajoutées ou non). Classe les domaines partenaires que tu connais en « indigènes », « sélectionnées » ou « je ne sais pas », et pose la question aux autres à ta prochaine commande."
+      },
+      "343": {
+        "ouverture": "La malolactique démarre-t-elle mieux dans un vin froid ou tiède ? Très sulfité ou peu ?",
+        "illus": [
+          {
+            "svg": "malo.svg",
+            "legende": "Conduire la malolactique : on suit l'acide malique, puis on soutire et on sulfite quand il est tombé vers 0,1 g/l (schéma de principe)."
+          }
+        ],
+        "schema": {
+          "titre": "Les conditions de la malolactique",
+          "lignes": [
+            [
+              "Température favorable",
+              "tiède, autour de 20 °C"
+            ],
+            [
+              "pH",
+              "pas trop bas"
+            ],
+            [
+              "SO2",
+              "faible ou absent"
+            ],
+            [
+              "L'alcool devient gênant vers…",
+              "13-14 % vol."
+            ],
+            [
+              "Quand l'arrêter ?",
+              "acide malique vers 0,1 g/l ou moins : on soutire et on sulfite"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « Pourquoi ne pas lancer la malo en même temps que les levures, pour gagner du temps ? »",
+          "a": "C'est possible : c'est la co-inoculation, plus rapide. Mais si la fermentation alcoolique s'enraye, les bactéries attaquent le sucre et font de l'acidité volatile."
+        },
+        "cave": "Ton Savigny-lès-Beaune rouge (Domaine Decelle) a-t-il fait sa malolactique ? Pour un rouge, c'est la pratique courante. Vérifie-le sur la fiche technique, puis goûte-le à côté d'un blanc vif de ta cave et compare l'acidité."
+      }
+    }
   }
 ]

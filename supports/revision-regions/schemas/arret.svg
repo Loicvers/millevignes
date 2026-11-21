@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 182" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M40 10 V140 H550" stroke="#625a4e" fill="none"/>
+  <text x="46" y="12" font-size="10" fill="#625a4e">densité</text><text x="550" y="156" text-anchor="end" font-size="10" fill="#625a4e">jours</text>
+  <path d="M45 22 C120 26 160 60 220 90 S300 112 330 114" stroke="#5b1a24" stroke-width="2.5" fill="none"/>
+  <path d="M330 114 H470" stroke="#5b1a24" stroke-width="2.5" fill="none"/>
+  <path d="M330 114 C380 125 420 132 520 136" stroke="#5c7a4f" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>
+  <path d="M360 30 H390" stroke="#5c7a4f" stroke-width="1.5" stroke-dasharray="5 4"/><text x="396" y="34" font-size="10" fill="#5c7a4f">fermentation normale, jusqu'au sec</text>
+  <path d="M330 100 V96 H470 V100" stroke="#a8843a" fill="none"/><text x="400" y="90" text-anchor="middle" font-weight="700" fill="#a8843a">plus rien ne bouge 24 à 48 h = arrêt</text>
+  <text x="60" y="118" font-size="10" fill="#625a4e">le sucre se transforme</text>
+  <text x="44" y="164" font-size="10" fill="#5b1a24"><tspan font-weight="700">Relancer :</tspan> écorces de levure, un peu d'air et d'azote au début de la reprise,</text><text x="44" y="178" font-size="10" fill="#5b1a24">puis un levain acclimaté, introduit par étapes.</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 190" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <image href="img:cuve.jpg" x="205" y="5" width="150" height="180"/>
+  <g stroke="#a8843a" stroke-width="1.2"><path d="M180 45 H240"/><path d="M180 140 H240"/><path d="M320 45 H380"/><path d="M320 140 H380"/></g>
+  <g fill="#a8843a"><circle cx="240" cy="45" r="2.6"/><circle cx="240" cy="140" r="2.6"/><circle cx="320" cy="45" r="2.6"/><circle cx="320" cy="140" r="2.6"/></g>
+  <g text-anchor="end">
+    <text x="174" y="41" font-weight="700" fill="#5b1a24">Oxygène</text><text x="174" y="55">une dizaine de mg/l pour</text><text x="174" y="68">que la levure se multiplie</text>
+    <text x="174" y="136" font-weight="700" fill="#5b1a24">Température</text><text x="174" y="150">pas de chocs thermiques ;</text><text x="174" y="163">ensemencer au-dessus de 15 °C</text>
+  </g>
+  <g>
+    <text x="386" y="41" font-weight="700" fill="#5b1a24">SO2</text><text x="386" y="55">trie au début ; l'excès bloque ;</text><text x="386" y="68">pas avec l'inoculation</text>
+    <text x="386" y="136" font-weight="700" fill="#5b1a24">Azote et vitamines</text><text x="386" y="150">nourrissent la population</text>
+  </g>
+</svg>

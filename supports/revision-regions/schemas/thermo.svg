@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#456e8a"/><stop offset=".55" stop-color="#a8843a"/><stop offset="1" stop-color="#5b1a24"/></linearGradient></defs>
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Plus froid</text><text x="560" y="14" text-anchor="end" font-weight="700" fill="#5b1a24">Plus chaud</text>
+  <rect x="0" y="24" width="560" height="22" rx="11" fill="url(#g)"/>
+  <path d="M470 18 V58" stroke="#1a1612" stroke-width="2" stroke-dasharray="4 3"/><text x="470" y="72" text-anchor="middle" font-weight="700">≈ 35 °C</text>
+  <rect x="40" y="84" width="200" height="74" rx="6" fill="#eef2f5" stroke="#456e8a"/>
+  <text x="140" y="102" text-anchor="middle" font-weight="700" fill="#456e8a">Blanc et rosé : au frais</text>
+  <text x="140" y="119" text-anchor="middle" font-size="10">trop froid : bonbon acidulé (poire)</text><text x="140" y="133" text-anchor="middle" font-size="10">trop chaud : le fruit se perd</text><text x="140" y="147" text-anchor="middle" font-size="10">cuve inox, facile à refroidir</text>
+  <rect x="262" y="84" width="160" height="74" rx="6" fill="#f3e3e3" stroke="#5b1a24"/>
+  <text x="342" y="102" text-anchor="middle" font-weight="700" fill="#5b1a24">Rouge : plus chaud</text>
+  <text x="342" y="119" text-anchor="middle" font-size="10">pour extraire couleur,</text><text x="342" y="133" text-anchor="middle" font-size="10">arômes et tanins</text><text x="342" y="147" text-anchor="middle" font-size="10">pigeage ou remontages</text>
+  <text x="470" y="98" text-anchor="middle" font-size="10" font-weight="700" fill="#5b1a24">Danger</text><text x="470" y="112" text-anchor="middle" font-size="10">levures qui</text><text x="470" y="126" text-anchor="middle" font-size="10">meurent, arrêt</text>
+</svg>
