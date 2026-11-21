@@ -382,5 +382,195 @@
         "cave": "Ton Savigny-lès-Beaune rouge (Domaine Decelle) a-t-il fait sa malolactique ? Pour un rouge, c'est la pratique courante. Vérifie-le sur la fiche technique, puis goûte-le à côté d'un blanc vif de ta cave et compare l'acidité."
       }
     }
+  },
+  {
+    "nom": "cahier-vinification-03-du-raisin-a-la-cuve",
+    "titre": "Du raisin à la cuve",
+    "serie": "Vinification · fascicule 3",
+    "recit": "Les composants du raisin",
+    "fiches": [
+      225,
+      357,
+      226,
+      525,
+      578
+    ],
+    "pedago": {
+      "225": {
+        "ouverture": "Quand il fait très chaud, un raisin devient-il plus acide ou moins acide ? Pourquoi, à ton avis ?",
+        "illus": [
+          {
+            "svg": "acides.svg",
+            "legende": "Tartrique et malique pendant la maturation : le malique « fond au soleil », le tartrique reste ; le potassium fait monter le pH."
+          }
+        ],
+        "schema": {
+          "titre": "Les acides du raisin",
+          "lignes": [
+            [
+              "Les deux acides dominants",
+              "le tartrique et le malique (en moyenne 90 % des acides)"
+            ],
+            [
+              "Le troisième acide du moût, très minoritaire",
+              "le citrique"
+            ],
+            [
+              "À la maturation, surtout par temps chaud…",
+              "le malique baisse, le tartrique reste à peu près stable"
+            ],
+            [
+              "Le potassium…",
+              "se lie aux acides, les neutralise et fait monter le pH"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « Pourquoi les vins des années chaudes paraissent-ils moins vifs ? »",
+          "a": "Le malique baisse à la maturation, surtout par temps chaud, alors que le tartrique reste à peu près stable : avec le réchauffement, l'acidité repose sur le tartrique. Le potassium, en neutralisant les acides, fait aussi monter le pH."
+        },
+        "cave": "Goûte côte à côte ton Chablis (Château de Fleys) et ton Condrieu (Domaine Martin Clerc). Lequel te paraît le plus vif ? Note ton impression et relie-la au malique, la « pomme verte qui fond au soleil »."
+      },
+      "357": {
+        "ouverture": "Un vin blanc élevé en fût contient du tanin. D'où peut-il venir, alors qu'on n'a pas fait macérer les peaux ?",
+        "illus": [
+          {
+            "svg": "baie-familles.svg",
+            "legende": "Qui est où dans la baie : la peau, les pépins, la pulpe, et le tanin que le raisin n'a jamais. Illustration de la baie : support d'initiation de la cave."
+          }
+        ],
+        "schema": {
+          "titre": "Je nomme la famille",
+          "lignes": [
+            [
+              "Pigments rouges de la peau",
+              "les anthocyanes"
+            ],
+            [
+              "Pigments jaunes, même dans les raisins blancs",
+              "les flavonols"
+            ],
+            [
+              "Abondants dans les pépins, base des tanins condensés",
+              "les flavan-3-ols (catéchines)"
+            ],
+            [
+              "Le tanin que le raisin n'a jamais",
+              "les tanins hydrolysables (ellagitannins), venus du chêne ou des tanins œnologiques"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Au pressoir, un moût de blanc brunit vite. Un stagiaire te demande pourquoi.",
+          "a": "Ce sont les acides phénols : incolores et sans saveur propre, mais très oxydables, ils font brunir les moûts blancs."
+        },
+        "cave": "Choisis deux rouges de ta cave dont la fiche technique précise l'élevage, l'un en fût de chêne, l'autre en cuve. Goûte-les et décris le grain de leurs tanins : seul le premier a reçu les ellagitannins du chêne."
+      },
+      "226": {
+        "ouverture": "Un raisin assez sucré est-il forcément « mûr » ? Note ta réponse.",
+        "illus": [
+          {
+            "svg": "horloges.svg",
+            "legende": "Sucre, tanins, arômes : la maturité des sucres arrive la première, la peau et les arômes mettent plus de temps ; la chaleur accentue l'écart."
+          }
+        ],
+        "schema": {
+          "titre": "Polyphénols et arômes : je complète",
+          "lignes": [
+            [
+              "Où sont les anthocyanes ?",
+              "dans la pellicule ; les pépins n'en ont pas"
+            ],
+            [
+              "D'où viennent beaucoup de tanins ?",
+              "de la pellicule et des pépins"
+            ],
+            [
+              "Comment se libèrent les arômes liés aux sucres ?",
+              "lentement, par hydrolyse acide, plus vite à pH bas"
+            ],
+            [
+              "Quelle horloge sonne en premier ?",
+              "le sucre"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « Avec la chaleur, on vendange de plus en plus tôt. Est-ce un problème ? »",
+          "a": "Le sucre arrive à maturité le premier, mais la peau et les arômes mettent plus de temps : vendanger au sucre seul ne garantit ni tanins mûrs ni arômes. La chaleur accentue l'écart : dans un essai à +1,5 °C, des précurseurs de thiols du sauvignon blanc chutent nettement."
+        },
+        "cave": "Goûte ton Muscat de Rivesaltes (Domaine Deprade Jorda). Les muscats sont particulièrement riches en terpènes, des arômes liés au raisin. Note trois arômes que tu perçois."
+      },
+      "525": {
+        "ouverture": "Machine ou main : laquelle choisirais-tu pour un Sauternes ? Et pour un Champagne ? Pourquoi ?",
+        "illus": [
+          {
+            "svg": "vendange.svg",
+            "legende": "Machine ou main : ce que chaque mode permet, et ce que les appellations imposent."
+          }
+        ],
+        "schema": {
+          "titre": "Machine, main et appellations",
+          "lignes": [
+            [
+              "Machine : un atout, une limite",
+              "rapide quand le temps menace ; non sélective, donc tri à l'arrivée"
+            ],
+            [
+              "Pourquoi la main en Sauternes ?",
+              "pour la pourriture noble : récolte manuelle par tries successives"
+            ],
+            [
+              "Champagne : la main est-elle exigée ?",
+              "non, mais tout moyen qui ne récolte pas des grappes entières est interdit, ce qui écarte la machine"
+            ],
+            [
+              "Où la main est-elle imposée ?",
+              "Côte-Rôtie, Sauternes, crémants d'Alsace et de Bourgogne"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « La vendange à la machine, c'est pour les vins bas de gamme, non ? »",
+          "a": "Pas forcément. La machine est rapide et utile quand le temps menace, mais non sélective : elle impose un tri à l'arrivée. La main permet le tri à la vigne, et certaines appellations l'imposent (Côte-Rôtie, Sauternes, crémants d'Alsace et de Bourgogne)."
+        },
+        "cave": "Ton Côte-Rôtie (Domaine Martin Clerc) et ton Crémant d'Alsace (Burghart-Spettel) sont vendangés à la main, comme l'imposent leurs cahiers des charges. Cherche dans ta cave une cuvée dont la fiche technique mentionne une vendange à la machine."
+      },
+      "578": {
+        "ouverture": "Quand on foule le raisin, pourquoi évite-t-on d'écraser les pépins, à ton avis ?",
+        "illus": [
+          {
+            "svg": "reception.svg",
+            "legende": "Les quatre gestes de la réception, vus comme une douane avant l'entrée en cuve."
+          }
+        ],
+        "schema": {
+          "titre": "Les quatre gestes de la réception",
+          "lignes": [
+            [
+              "Tri",
+              "écarte baies pourries ou non mûres et débris (table ou trieur optique)"
+            ],
+            [
+              "Éraflage",
+              "sépare les baies des rafles ; facultatif"
+            ],
+            [
+              "Foulage",
+              "éclate les baies et libère le jus, sans écraser les pépins"
+            ],
+            [
+              "Sulfitage",
+              "protège de l'oxydation et des microbes : quelques grammes par hectolitre"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un stagiaire veut fouler fort le raisin « pour tout extraire ». Que lui dis-tu ?",
+          "a": "Le foulage éclate les baies, libère le jus et facilite l'extraction de la pellicule, mais il doit épargner les pépins : leurs huiles amères et leur tanin rendraient le vin astringent."
+        },
+        "cave": "Le cahier des charges de Châteauneuf-du-Pape rend le tri obligatoire, à la vigne ou au chai. À ta prochaine commande au Château de Manissy, demande où et comment le domaine trie sa vendange."
+      }
+    }
   }
 ]

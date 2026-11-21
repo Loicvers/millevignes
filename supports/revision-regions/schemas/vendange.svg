@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <rect x="0" y="0" width="270" height="130" rx="8" fill="#faf3e0" stroke="#a8843a"/><rect x="290" y="0" width="270" height="130" rx="8" fill="#f3e3e3" stroke="#5b1a24"/>
+  <text x="135" y="20" text-anchor="middle" font-weight="700" font-size="12" fill="#a8843a">Machine : on secoue le cep</text>
+  <g fill="#5b1a24"><circle cx="30" cy="50" r="6"/><circle cx="48" cy="58" r="6"/><circle cx="36" cy="70" r="6"/><circle cx="58" cy="44" r="6"/></g><path d="M72 62 q10 -14 22 0 q-10 12 -22 0z" fill="#5c7a4f"/>
+  <text x="105" y="48">baies sans rafles,</text><text x="105" y="62">mais aussi feuilles,</text><text x="105" y="76">insectes, baies abîmées</text>
+  <text x="14" y="100">+ rapide, utile quand le temps menace</text><text x="14" y="118">– non sélective : tri à l'arrivée</text>
+  <text x="425" y="20" text-anchor="middle" font-weight="700" font-size="12" fill="#5b1a24">Main : on cueille au panier</text>
+  <g fill="#5b1a24"><path d="M330 36 V42" stroke="#5c7a4f" stroke-width="2"/><circle cx="324" cy="48" r="6"/><circle cx="336" cy="48" r="6"/><circle cx="330" cy="58" r="6"/><circle cx="318" cy="58" r="6"/><circle cx="342" cy="58" r="6"/><circle cx="324" cy="68" r="6"/><circle cx="336" cy="68" r="6"/><circle cx="330" cy="78" r="6"/></g>
+  <text x="360" y="48">grappes entières,</text><text x="360" y="62">tri à la vigne</text>
+  <text x="304" y="100">+ pourriture noble, grappes entières</text><text x="304" y="118">– plus lente et plus chère</text>
+  <text x="280" y="150" text-anchor="middle" font-size="10" fill="#5b1a24">Main imposée : Côte-Rôtie, Sauternes, crémants d'Alsace et de Bourgogne · Champagne : grappes entières obligatoires</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <g text-anchor="middle">
+    <rect x="0" y="10" width="112" height="78" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="56" y="30" font-weight="700" font-size="12" fill="#5b1a24">Tri</text><text x="56" y="47">écarte pourri,</text><text x="56" y="60">vert et débris</text><text x="56" y="80" font-size="9.5" fill="#625a4e" font-style="italic">les passeports</text>
+    <rect x="137" y="10" width="112" height="78" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="193" y="30" font-weight="700" font-size="12" fill="#5b1a24">Éraflage</text><text x="193" y="47">sépare baies</text><text x="193" y="60">et rafles ; facultatif</text><text x="193" y="80" font-size="9.5" fill="#625a4e" font-style="italic">les bagages</text>
+    <rect x="274" y="10" width="112" height="78" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="330" y="30" font-weight="700" font-size="12" fill="#5b1a24">Foulage</text><text x="330" y="47">éclate les baies,</text><text x="330" y="60">épargne les pépins</text><text x="330" y="80" font-size="9.5" fill="#625a4e" font-style="italic">les valises</text>
+    <rect x="411" y="10" width="112" height="78" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="467" y="30" font-weight="700" font-size="12" fill="#5b1a24">Sulfitage</text><text x="467" y="47">contre oxydation</text><text x="467" y="60">et microbes</text><text x="467" y="80" font-size="9.5" fill="#625a4e" font-style="italic">le vaccin</text>
+  </g>
+  <g stroke="#5b1a24" stroke-width="1.6" marker-end="url(#f)"><path d="M114 49 H135"/><path d="M251 49 H272"/><path d="M388 49 H409"/><path d="M525 49 H556"/></g>
+  <text x="280" y="112" text-anchor="middle" font-size="10" fill="#625a4e">La vendange passe la « douane » avant d'entrer en cuve : quatre gestes qui jouent sur la netteté, l'extraction et la tenue à l'oxygène.</text>
+</svg>

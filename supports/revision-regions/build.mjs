@@ -345,10 +345,15 @@ function cahierHTML(def, notesAvant) {
     if (f.qcm?.q) items.push([`${e(f.qcm.q)}${opts(f.qcm.opts)}`, `<b>${L[f.qcm.good]}. ${e(f.qcm.opts[f.qcm.good])}</b>${expl(f.qcm.expl)}`]);
     (f.exos || []).forEach((x, j) => { const r = exoPapier(x, +f.id * 31 + j); if (r) items.push(r); });
     const P = def.pedago?.[f.id] || {}; // volet pédagogique du cahier : avant de lire, schéma à compléter, cas pratique, dans ma cave
+    // Cahier pédagogique : les sections du cours qui ne parlent que des sources (réserves, divergences, chiffres d'une seule source) passent en fin de cahier.
+    const NOTE_SOURCES = /nuancer|réserves|divergen|seuils indicatifs|ce que dit le livre/i;
+    const secs = (f.cours?.sections || []).filter(x => !(def.pedago && NOTE_SOURCES.test(x.h)));
+    const notesSrc = (f.cours?.sections || []).filter(x => def.pedago && NOTE_SOURCES.test(x.h));
     corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.schema ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
       <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}
       ${def.pedago && f.cours?.synthese?.length ? `<p><b class="lbl">Avec mes mots : ce qu'il fallait retenir.</b> ${f.cours.synthese.map(b => e(b.txt)).join(' · ')}</p>` : ''}`);
     srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
+      ${notesSrc.map(x => `<p class="src"><b>${e(x.h)}.</b> ${x.blocs.map(b => e(b.txt)).join(' ')}</p>`).join('')}
       <p class="src">Fiche : ${e(f.src)}</p>${f.cours?.src ? `<p class="src">Cours : ${e(f.cours.src)}</p>` : ''}`);
     const tete = `Notion ${k + 1} sur ${N} · ${e(f.niveau)}${f.page ? ` · Mille Vignes p. ${e(f.page)}` : ''} · fiche n° ${e(f.id)}`;
     return `${notesAvant.has(k) ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}
@@ -357,9 +362,9 @@ function cahierHTML(def, notesAvant) {
       ${f.cours?.sections?.length && P.illus ? '' : `<p class="synth">${e(f.synth)}</p>`}${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
       ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}</figcaption></figure>` : ''}
       ${(P.illus || []).map(illus).join('')}
-      ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null, synthese: def.pedago ? null : f.cours.synthese }) : ''}
+      ${f.cours ? coursHTML({ ...f.cours, sections: secs, lede: null, essentiel: null, src: null, synthese: def.pedago ? null : f.cours.synthese }) : ''}
       ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
-      ${f.selon_livre?.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
+      ${f.selon_livre?.length || notesSrc.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
     <section class="ex" data-notion="${k + 1}"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
       ${P.schema ? `<p><b class="lbl">Je complète.</b> ${e(P.schema.titre)}</p><table class="sch">${P.schema.lignes.map(([q]) => `<tr><td>${e(q)}</td><td></td></tr>`).join('')}</table>` : ''}
       <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>

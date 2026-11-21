@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <image href="img:baie.jpg" x="205" y="0" width="160" height="160"/>
+  <g stroke="#a8843a" stroke-width="1.1" fill="none"><path d="M178 34 H230 L250 70"/><path d="M178 122 H262 L278 92"/><path d="M392 40 H325 L310 62"/><path d="M392 120 H350"/></g>
+  <g fill="#a8843a"><circle cx="250" cy="70" r="2.5"/><circle cx="278" cy="92" r="2.5"/><circle cx="310" cy="62" r="2.5"/></g>
+  <g text-anchor="end">
+    <text x="174" y="20" font-weight="700" fill="#5b1a24">Peau</text><text x="174" y="34">anthocyanes (rouge), flavonols</text><text x="174" y="47">(jaune), tanins condensés,</text><text x="174" y="60">resvératrol (Handbook)</text>
+    <text x="174" y="118" font-weight="700" fill="#5b1a24">Pépins</text><text x="174" y="132">catéchines : beaucoup</text><text x="174" y="145">de tanins condensés</text>
+  </g>
+  <g>
+    <text x="398" y="30" font-weight="700" fill="#5b1a24">Pulpe</text><text x="398" y="44">acides phénols, incolores</text><text x="398" y="57">et très oxydables</text>
+    <text x="398" y="110" font-weight="700" fill="#5b1a24">Jamais dans le raisin</text><text x="398" y="124">ellagitannins : viennent du</text><text x="398" y="137">chêne ou des tanins</text><text x="398" y="150">œnologiques</text>
+  </g>
+</svg>
