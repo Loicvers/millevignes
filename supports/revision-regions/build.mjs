@@ -1,18 +1,21 @@
 // Supports papier de révision : un PDF A4 par région française, par section du livre, et pour les cépages et le monde viticole, compilés depuis les fiches du dépôt (rien n'est réécrit à la main).
 // node supports/revision-regions/build.mjs [dossier de sortie] [Région… | Section du livre… | Les cépages | Le monde viticole]   (Playwright résolu via NODE_PATH, comme initiation-oenologie/build.mjs)
+// node supports/revision-regions/build.mjs [dossier] --cahier [nom du cahier…]   cahiers d'exercices par thème définis dans cahiers.json
 // Contenu : cours « Approfondir », fiches (synthèse, astuce, cartes, pastilles, sources), cépages (jauge, autres noms), auto-test et corrigé.
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { execFileSync } from 'node:child_process';
 const { chromium } = createRequire(import.meta.url)('playwright');
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(dir, '../..');
 // --synthese : synthèse d'examen (l'essentiel de chaque fiche sur deux colonnes, sans exercices ni lexique) au lieu du support complet.
 const SYNTH = process.argv.includes('--synthese');
-const args = process.argv.filter(a => a !== '--synthese');
+const CAHIER = process.argv.includes('--cahier'); // cahiers d'exercices par thème (cahiers.json)
+const args = process.argv.filter(a => a !== '--synthese' && a !== '--cahier');
 const out = path.resolve(args[2] || path.join(dir, 'pdf'));
 const seules = args.slice(3);
 fs.mkdirSync(out, { recursive: true });
@@ -304,11 +307,79 @@ const nomDe = (n, t) => `${n}-${t.normalize('NFD').replace(/[\u0300-\u036f]/g, '
   supports.push({ nom: nomDe(n, partie), cle: partie, titre: partie, groupes });
 });
 
+// --cahier : cahiers d'exercices par thème (cahiers.json), à imprimer en recto verso. Chaque notion commence sur une page de gauche :
+// « Je lis » à gauche, « Je m'entraîne » en regard, corrigé à la fin. Une page de notes est intercalée quand une notion tomberait à droite.
+const CAHIERS = JSON.parse(fs.readFileSync(path.join(dir, 'cahiers.json'), 'utf8'));
+const cssCahier = `
+html{font-size:10.4pt}
+.cah .bandeau{font-size:7.6pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt}
+.cah h2{font-size:22pt;margin:0 0 5pt}.cah h3.rubr{font-size:15pt;margin:0 0 5pt}
+.cah .synth{font-size:1.04em}
+.cah section.lire,.cah section.ex,.cah section.notes,.cah section.corr,.cah section.page{break-before:page}
+.cah section.ex{min-height:262mm;display:flex;flex-direction:column}
+.cah .qs{margin-left:16pt}.cah .qs>li{margin:0 0 8pt;break-inside:avoid}
+.cah .zone{flex:1;min-height:30mm;margin-top:4pt;background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(7.5mm - 1px),#b9b0a2 calc(7.5mm - 1px),#b9b0a2 7.5mm)}
+.cah section.notes .zone{min-height:245mm}
+.cah .revu{margin-top:5pt;font-size:8.6pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4pt}
+.cah .suivi td,.cah .suivi th{font-size:9pt;padding:3pt 4pt}.cah .suivi td.c{text-align:center;width:14mm}
+.cah .mode li{margin:0 0 5pt}
+.cah .srcs h3{font-size:11pt;margin:6pt 0 2pt}
+.cah .corr ol{columns:2;column-gap:8mm;column-rule:1px solid var(--line);font-size:.9rem}`;
+
+function cahierHTML(def, notesAvant) {
+  const fiches = def.fiches.map(id => FICHES.find(f => +f.id === id) || (avert.push(`${def.nom} : fiche ${id} introuvable`), null)).filter(Boolean);
+  const R = RECIT.get(def.recit), N = fiches.length, corr = [], srcs = [];
+  const notion = (f, k) => {
+    const items = [];
+    if (f.flash?.q) items.push([`${e(f.flash.q)}${lignes(2)}`, `<b>${e(f.flash.a)}</b>`]);
+    if (f.qcm?.q) items.push([`${e(f.qcm.q)}${opts(f.qcm.opts)}`, `<b>${L[f.qcm.good]}. ${e(f.qcm.opts[f.qcm.good])}</b>${expl(f.qcm.expl)}`]);
+    (f.exos || []).forEach((x, j) => { const r = exoPapier(x, +f.id * 31 + j); if (r) items.push(r); });
+    corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3><ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>`);
+    srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
+      <p class="src">Fiche : ${e(f.src)}</p>${f.cours?.src ? `<p class="src">Cours : ${e(f.cours.src)}</p>` : ''}`);
+    const tete = `Notion ${k + 1} sur ${N} · ${e(f.niveau)}${f.page ? ` · Mille Vignes p. ${e(f.page)}` : ''} · fiche n° ${e(f.id)}`;
+    return `${notesAvant.has(k) ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}
+    <section class="lire" data-notion="${k + 1}"><div class="bandeau">${tete} · Je lis</div><h2>${e(f.titre)}</h2>
+      <p class="synth">${e(f.synth)}</p>${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
+      ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}</figcaption></figure>` : ''}
+      ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null }) : ''}
+      ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
+      ${f.selon_livre?.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
+    <section class="ex"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
+      <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>
+      <p><b class="lbl">Avec mes mots.</b> Résume la notion en deux phrases, comme à un client.</p>${lignes(3)}
+      <p class="muted" style="margin-top:6pt">Mes notes</p><div class="zone"></div>
+      <p class="revu">Corrigé en fin de cahier · Revu le ……… ☐ Je sais ☐ À revoir</p></section>`;
+  };
+  const corps = fiches.map(notion).join('');
+  return { N, html: `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${e(def.titre)} — cahier d'exercices</title><style>${css}${cssCahier}</style></head><body class="cah">
+  <section class="cover"><div class="brand">L'Atelier des Mille Vignes · Cahier d'exercices</div><h1>${e(def.titre)}</h1>
+    <p class="tag">${e(def.serie)}${R?.question ? ` · ${e(R.question)}` : ''}</p>
+    <table class="suivi"><thead><tr><th>Notion</th><th>Niveau</th><th class="c">Lu</th><th class="c">Exercices</th><th class="c">Revu</th></tr></thead><tbody>
+      ${fiches.map((f, k) => `<tr><td>${k + 1}. ${e(f.titre)}</td><td>${e(f.niveau)}</td><td class="c">☐</td><td class="c">☐</td><td class="c">☐</td></tr>`).join('')}</tbody></table>
+    <div class="leg"><p><b>${N} notions</b> · ${fiches.filter(f => f.status === 'verified').length} fiches ✅ vérifiées · édition du ${date}</p>
+      <p><span><i class="imp essentiel"></i>Essentiel</span><span><i class="imp important"></i>Important</span><span><i class="imp utile"></i>Utile</span><span><i class="imp culture"></i>Culture</span>
+      <span><b class="niv n0">Fondamental</b> comptoir</span><span><b class="niv n1">Intermédiaire</b> masterclass</span><span><b class="niv n2">Pointu</b> expert</span></p>
+      <p>Contenu reformulé à partir des sources citées sous chaque notion ; les n° renvoient aux fiches du site.</p></div></section>
+  <section class="page mode"><h2>Mode d'emploi</h2><ol>
+    <li><b>Une notion = une double page.</b> À gauche, je lis, crayon en main : je souligne, j'annote dans les marges.</li>
+    <li><b>À droite, je m'entraîne</b> sans regarder la page de gauche, puis je résume la notion en deux phrases.</li>
+    <li><b>Je corrige</b> avec le corrigé en fin de cahier et je note mes erreurs dans « Mes notes ».</li>
+    <li><b>Je coche</b> le tableau de suivi de la couverture, et je reviens plus tard sur les notions « À revoir ».</li>
+    <li><b>L'application prend le relais</b> : les mêmes fiches (n° en tête de page) reviennent en séance, en répétition espacée.</li></ol>
+    <p class="muted">Rythme conseillé : une ou deux notions par jour, le cahier en une semaine.</p></section>
+  <section class="page">${recitHTML(R)}${R?.filRouge ? `<p><b class="lbl">Avant de commencer.</b> Réponds en une phrase, puis relis-toi à la fin du cahier : ${e(R.filRouge)}</p>${lignes(4)}` : ''}</section>
+  ${corps}
+  <section class="corr"><h2>Corrigé</h2>${corr.join('')}</section>
+  <section class="page srcs"><h2>Sources</h2><p class="muted">Ce que dit chaque source, ses limites et les divergences tranchées, notion par notion.</p>${srcs.join('')}</section>
+  </body></html>` };
+}
+
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 680, height: 1000 } }); // 180 mm : largeur utile A4, pour mesurer comme à l'impression
 await page.emulateMedia({ media: 'print' });
 const bilan = [];
-for (const { nom, cle, titre, tete, groupes: gs } of supports) {
+for (const { nom, cle, titre, tete, groupes: gs } of CAHIER ? [] : supports) {
   if (seules.length && !seules.includes(cle)) continue;
   const groupes = gs.filter(g => g.fiches.length), fs_ = groupes.flatMap(g => g.fiches);
   if (!fs_.length) continue;
@@ -356,6 +427,42 @@ for (const { nom, cle, titre, tete, groupes: gs } of supports) {
   fs.unlinkSync(tmp);
   bilan.push(`${fichier} : ${fs_.length} fiches${SYNTH ? '' : `, ${test.n} questions`}`);
 }
+const bilanNotes = [];
+for (const def of CAHIER ? CAHIERS : []) {
+  if (seules.length && !seules.includes(def.nom)) continue;
+  // Passes successives : on repère dans le PDF la page de chaque « Je lis » et on intercale une page de notes quand elle tombe à droite (page impaire).
+  const notesAvant = new Set(), tmp = path.join(out, def.nom + '.html'), fichier = path.join(out, def.nom + '.pdf');
+  let ok = false, nbp = 0;
+  for (let passe = 0; passe < def.fiches.length + 2 && !ok; passe++) {
+    const { N, html } = cahierHTML(def, notesAvant);
+    fs.writeFileSync(tmp, html);
+    await page.goto('file://' + tmp, { waitUntil: 'load' });
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(fit);
+    // Une page « Je lis » tient sur une page : on réduit sa police (jusqu'à 9 pt) tant qu'elle déborde ; sinon elle passe sur deux pages.
+    const serrees = await page.evaluate(() => [...document.querySelectorAll('section.lire')].filter(sec => {
+      const H = 262 * 96 / 25.4;
+      for (let pt = 10.4; pt >= 9 && sec.scrollHeight > H; pt -= 0.2) sec.style.fontSize = pt + 'pt';
+      if (sec.scrollHeight <= H) return false;
+      sec.style.fontSize = ''; return true; }).map(sec => sec.dataset.notion)); // trop longue : sur deux pages, à taille normale
+    if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${serrees.join(', ')} lue(s) sur deux pages`);
+    const casse = await page.evaluate(() => document.body.innerText.match(/\b(undefined|NaN|null)\b|\[object/)?.[0]);
+    if (casse) avert.push(`${def.nom} : texte cassé « ${casse} »`);
+    await page.pdf({ path: fichier, format: 'A4', printBackground: true, displayHeaderFooter: true, headerTemplate: '<span></span>',
+      footerTemplate: `<div style="width:100%;text-align:center;font-family:sans-serif;font-size:7pt;color:#625a4e;padding-bottom:3mm">${e(def.titre)} · Cahier d’exercices · <span class="pageNumber"></span></div>`,
+      margin: { top: '14mm', right: '15mm', bottom: '16mm', left: '15mm' } });
+    const pages = execFileSync('pdftotext', ['-layout', fichier, '-'], { encoding: 'utf8' }).split('\f');
+    nbp = pages.length - (pages.at(-1).trim() ? 0 : 1);
+    ok = true;
+    for (let k = 0; k < N; k++) {
+      const p = pages.findIndex(t => { t = t.replace(/\s/g, '').toUpperCase(); return t.includes(`NOTION${k + 1}SUR${N}`) && t.includes('JELIS'); }) + 1;
+      if (p % 2 === 1 && !notesAvant.has(k)) { notesAvant.add(k); ok = false; break; }
+    }
+  }
+  if (!ok) avert.push(`${def.nom} : alignement des doubles pages non atteint`);
+  fs.unlinkSync(tmp);
+  bilan.push(`${path.basename(fichier)} : ${def.fiches.length} notions, ${nbp} pages, ${notesAvant.size} page(s) de notes intercalée(s)`);
+}
 await browser.close();
-console.log(bilan.join('\n'));
+console.log([...bilan, ...bilanNotes].join('\n'));
 console.log(avert.length ? `\n⚠️ ${avert.length} anomalie(s) :\n` + [...new Set(avert)].join('\n') : '\nAucune anomalie relevée.');

@@ -1,0 +1,16 @@
+[
+  {
+    "nom": "cahier-vinification-01-fermentations-levures",
+    "titre": "Les fermentations (1) : du sucre à l'alcool",
+    "serie": "Vinification · fascicule 1",
+    "recit": "Du raisin au vin, une écologie microbienne",
+    "fiches": [223, 224, 228, 229, 342]
+  },
+  {
+    "nom": "cahier-vinification-02-fermentations-conduite",
+    "titre": "Les fermentations (2) : conduire la fermentation",
+    "serie": "Vinification · fascicule 2",
+    "recit": "Du raisin au vin, une écologie microbienne",
+    "fiches": [230, 585, 344, 231, 343]
+  }
+]
