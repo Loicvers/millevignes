@@ -1,0 +1,159 @@
+{
+  "6": {
+    "ouverture": "La vigne vierge et la vigne du vin sont-elles de la même famille ? Devine.",
+    "illus": [],
+    "schema": {
+      "titre": "Situer la vigne",
+      "lignes": [
+        [
+          "Famille de la vigne",
+          "les Vitacées"
+        ],
+        [
+          "Ordre de cette famille",
+          "les Vitales"
+        ],
+        [
+          "Clade plus large, qui compte aussi le rosier",
+          "les Rosidés"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Combien y a-t-il d'espèces de vigne ? »",
+      "a": "Le genre Vitis en compte une soixantaine selon les flores, davantage selon les bases actuelles (83 dans POWO). Mais pour l'Europe et le Proche-Orient, le livre n'en retient qu'une : V. vinifera."
+    },
+    "cave": "Choisis un vin de ta cave et écris de tête la place de sa vigne, du clade à l'espèce."
+  },
+  "9": {
+    "ouverture": "Comment une plante sans tronc rigide fait-elle pour monter vers la lumière ? Devine.",
+    "illus": [
+      {
+        "photo": "photos/vrille.jpg",
+        "legende": "Une vrille enroulée autour d'un fil de palissage.",
+        "credit": "Photo : W. Carter, CC0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Anatomie d'une liane",
+      "lignes": [
+        [
+          "Tissu qui forme du bois et épaissit le cep",
+          "le cambium"
+        ],
+        [
+          "Organe d'accroche, issu d'une inflorescence transformée",
+          "la vrille"
+        ],
+        [
+          "Chair du fruit, et partie qui contient l'embryon",
+          "la pulpe ; le pépin (la graine)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le livre parle d'une racine pivotante. Est-ce le cas des vignes de nos domaines ? »",
+      "a": "La racine primaire existe chez une plante née d'un semis. Les vignes cultivées, elles, sont multipliées par bouture ou par greffe : elles ont des racines adventives."
+    },
+    "cave": "Demande à un vigneron partenaire (par exemple au Château Haut-Maurac, en Médoc) comment ses vignes ont été multipliées : bouture, greffe ?"
+  },
+  "10": {
+    "ouverture": "Pour lire le génome de la vigne, vaut-il mieux partir d'un cépage planté au vignoble ou d'une lignée de laboratoire ? Devine.",
+    "illus": [],
+    "schema": {
+      "titre": "Le génome de la vigne",
+      "lignes": [
+        [
+          "Année du séquençage",
+          "2007"
+        ],
+        [
+          "Nom de la lignée choisie, et ce qui la rend simple à lire",
+          "PN40024, quasi homozygote (neuf générations d'autofécondation)"
+        ],
+        [
+          "Surnom donné à ce génome, car il est resté très ancestral",
+          "« fossile vivant » des plantes à fleurs"
+        ],
+        [
+          "Deux familles de gènes très étoffées",
+          "les terpènes (arômes) et les stilbènes (resvératrol)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Qu'a appris le séquençage de la vigne sur les arômes du vin ? »",
+      "a": "Il a montré des familles de gènes très étoffées pour les terpènes, liés aux arômes, et pour les stilbènes, comme le resvératrol. Cela éclaire la richesse aromatique et phénolique du vin."
+    },
+    "cave": "Goûte un vin de ta cave et note trois arômes que tu reconnais. Pense à ce que le génome suggère : la vigne dispose de nombreux gènes de terpènes, ce qui éclaire la richesse aromatique du vin."
+  },
+  "12": {
+    "ouverture": "Une feuille de vigne fossile a été trouvée en Champagne. A-t-elle plutôt quelques milliers, quelques millions ou plus de cinquante millions d'années ? Devine.",
+    "illus": [
+      {
+        "svg": "dom01-frise.svg",
+        "legende": "Où se place la feuille de Sézanne parmi les plus anciens témoins de la famille de la vigne."
+      }
+    ],
+    "schema": {
+      "titre": "La feuille de Sézanne",
+      "lignes": [
+        [
+          "Nom attribué au fossile",
+          "Vitis sezannensis"
+        ],
+        [
+          "Lieu de la découverte",
+          "les travertins de Sézanne (Marne), en Champagne"
+        ],
+        [
+          "Époque, selon le livre",
+          "fin du Paléocène (Thanétien supérieur), 56 millions d'années"
+        ],
+        [
+          "Deux réserves à garder en tête",
+          "des graines de Vitacées indiennes sont plus anciennes ; le rattachement au genre Vitis reste à confirmer"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Si la plus vieille feuille de vigne est champenoise, la vigne est donc née en Champagne ? »",
+      "a": "On ne peut pas le conclure. Le livre y voit le plus vieux fossile connu de feuille de vigne, mais des graines de Vitacées trouvées en Inde sont plus anciennes, et le rattachement de la feuille au genre Vitis reste à confirmer."
+    },
+    "cave": "En servant le Champagne Petit-Triolet, prépare une histoire de vingt secondes sur la feuille de Sézanne. Garde les bonnes nuances : « attribuée à la vigne » et « selon le livre »."
+  },
+  "11": {
+    "ouverture": "Sur une soixantaine d'espèces de Vitis dans le monde, combien en trouve-t-on en Europe et au Proche-Orient ? Devine.",
+    "illus": [],
+    "schema": {
+      "titre": "Sous-genres et bassins",
+      "lignes": [
+        [
+          "Sous-genre à 40 chromosomes, du sud-est des États-Unis",
+          "Muscadinia (dont V. rotundifolia)"
+        ],
+        [
+          "Sous-genre à 38 chromosomes, de loin le plus important",
+          "Euvitis"
+        ],
+        [
+          "Bassin le plus riche en espèces, intéressant pour le froid",
+          "l'Extrême-Orient asiatique (le plus riche selon le livre ; les décomptes varient selon les auteurs)"
+        ],
+        [
+          "Bassin d'espèces coévoluées avec les futurs ravageurs",
+          "l'Amérique du Nord"
+        ],
+        [
+          "Bassin à une seule espèce",
+          "l'Europe et le Proche-Orient : V. vinifera"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mes vins viennent-ils de plusieurs espèces de vigne ? »",
+      "a": "Les cépages classiques sont tous issus d'une seule espèce, V. vinifera, la seule d'Europe et du Proche-Orient. Les espèces américaines servent surtout de racines résistantes au phylloxéra, les asiatiques de source de tenue au froid."
+    },
+    "cave": "Prends deux bouteilles de ta cave et relève le cépage sur chaque étiquette. Écris la phrase que tu diras à un client curieux pour expliquer l'espèce de vigne dont ils viennent."
+  }
+}

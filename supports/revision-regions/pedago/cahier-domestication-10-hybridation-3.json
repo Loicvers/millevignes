@@ -1,0 +1,177 @@
+{
+  "50": {
+    "ouverture": "PiWi vient de l'allemand. Contre quels ennemis de la vigne un cépage « résistant » est-il censé tenir, à ton avis ?",
+    "illus": [
+      {
+        "svg": "dom10-piwi.svg",
+        "legende": "Le sigle PiWi se décompose en deux mots allemands."
+      }
+    ],
+    "schema": {
+      "titre": "PiWi, en quatre repères",
+      "lignes": [
+        [
+          "PiWi est l'abréviation de…",
+          "Pilzwiderstandsfähig, « résistant aux champignons »"
+        ],
+        [
+          "Le nom qu'on préfère aujourd'hui à « hybride »",
+          "variétés résistantes (ou PiWi)"
+        ],
+        [
+          "Où ils sont surtout plantés",
+          "Allemagne, Suisse, Autriche, nord et est de l'Europe"
+        ],
+        [
+          "Date de l'arrêté qui classe solaris, muscaris et souvignier gris en France",
+          "19 avril 2017"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi parle-t-on de PiWi et plus d'hybrides ? »",
+      "a": "Le mot « hybride » a mauvaise presse. On parle aujourd'hui de variétés résistantes, ou de PiWi, abréviation allemande de « résistant aux champignons »."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron partenaire ce qu'il pense des cépages résistants : en a-t-il déjà goûté ? Note sa réponse, et rappelle-lui que solaris, muscaris et souvignier gris sont classés en France depuis 2017."
+  },
+  "51": {
+    "ouverture": "Ajouter un gène venu d'un autre être vivant, ou corriger un gène que la vigne a déjà : est-ce, selon toi, le même geste ?",
+    "illus": [
+      {
+        "svg": "dom10-transgenese-crispr.svg",
+        "legende": "Transgenèse : un gène étranger s'ajoute. CRISPR : un gène de la vigne est modifié, sans rien d'étranger."
+      }
+    ],
+    "schema": {
+      "titre": "Du labo à la loi",
+      "lignes": [
+        [
+          "Ajouter un gène d'un autre organisme",
+          "la transgenèse (OGM)"
+        ],
+        [
+          "Modifier un gène précis sans rien ajouter d'étranger",
+          "l'édition du génome (CRISPR)"
+        ],
+        [
+          "Sigle européen des « nouvelles techniques génomiques »",
+          "NGT (règlement 2026/1388)"
+        ],
+        [
+          "Ce que le règlement NGT prévoit pour le bio",
+          "les plantes éditées en sont exclues"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « La France interdit toute culture d'OGM, donc la question ne se pose pas pour la vigne ? »",
+      "a": "Lepeltier écrit que la France interdit toute culture d'OGM, mais la loi de 2014 vise le maïs. Pour la vigne, l'essai de porte-greffes transgéniques de Colmar a été arraché en 2010, et la vigne à anticorps de camélidé est restée un travail de recherche."
+    },
+    "cave": "Prends un vin bio de ta cave. En deux phrases, explique à un client imaginaire la différence entre transgenèse et CRISPR, puis ajoute ce que le règlement NGT dit du bio."
+  },
+  "52": {
+    "ouverture": "Si tous les ceps d'un vignoble sont des boutures de la même vigne, que risque-t-il de manquer face aux maladies, selon certains vignerons ?",
+    "illus": [
+      {
+        "svg": "dom10-bouture-pepin.svg",
+        "legende": "La bouture reproduit la mère ; le pépin donne une vigne nouvelle."
+      }
+    ],
+    "schema": {
+      "titre": "Les semeurs de pépins",
+      "lignes": [
+        [
+          "Le vigneron californien de Popelouchum",
+          "Randall Grahm"
+        ],
+        [
+          "La vigneronne du Trentin qui sème aussi du teroldego",
+          "Elisabetta Foradori"
+        ],
+        [
+          "Le vieux clone de syrah dont Grahm a semé les pépins",
+          "la sérine"
+        ],
+        [
+          "Ce que Grahm veut obtenir plutôt qu'un clone champion",
+          "une population diverse"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi risquer des semis, alors qu'on tient un bon clone ? »",
+      "a": "Certains vignerons attribuent une part des maladies actuelles à l'appauvrissement génétique dû à la bouture. Ils veulent de la diversité plutôt qu'un clone champion. À Cirò, une étude de 2015 a trouvé quelques sélections qui combinent meilleure qualité et adaptation locale."
+    },
+    "cave": "Demande à un vigneron de ta cave comment il renouvelle ses vieilles vignes (sélection massale, clones, autre) et ce qu'il en pense. Note sa réponse et compare-la à la démarche de Foradori."
+  },
+  "970": {
+    "ouverture": "Hybride, PiWi, VIFA, CRISPR : si tu devais ranger ces mots dans des tiroirs, selon quelles questions les trierais-tu ?",
+    "illus": [
+      {
+        "svg": "dom10-champ-papier-labo.svg",
+        "legende": "Presque chaque mot répond à une de ces trois questions ; le porte-greffe reste à part."
+      }
+    ],
+    "schema": {
+      "titre": "Je range dans le bon tiroir",
+      "lignes": [
+        [
+          "La loi de 1934 sur six hybrides",
+          "le papier (un statut)"
+        ],
+        [
+          "Une variété ResDur de l'INRAE",
+          "le champ (croisements, rétrocroisements)"
+        ],
+        [
+          "La transgenèse",
+          "le labo (on ajoute un gène étranger)"
+        ],
+        [
+          "Un porte-greffe",
+          "à part : il ne donne que les racines, le raisin vient du greffon vinifera"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Une VIFA, c'est un cépage résistant, non ? »",
+      "a": "Non : c'est un statut, pas un type de cépage. Il autorise l'essai d'un cépage dans une AOC. Ce cépage peut être résistant, comme le voltis en Champagne, ou seulement adapté au climat, comme le marselan à Bordeaux."
+    },
+    "cave": "Une VIFA ne figure pas sur l'étiquette. Demande à un vigneron bordelais de ta cave si son appellation admet des cépages d'adaptation au climat, et s'il en a déjà planté."
+  },
+  "53": {
+    "ouverture": "Le nebbiolo et la barbera sont piémontais. Que peut apprendre une analyse ADN sur un cépage ancien, au-delà de son nom ?",
+    "illus": [
+      {
+        "svg": "dom10-etude-turin.svg",
+        "legende": "L'étude de Turin en quatre repères."
+      }
+    ],
+    "schema": {
+      "titre": "L'étude de Turin (2020)",
+      "lignes": [
+        [
+          "Revue qui l'a publiée",
+          "Scientific Reports"
+        ],
+        [
+          "Régions couvertes",
+          "Piémont, Aoste, Ligurie, Lombardie"
+        ],
+        [
+          "Ce qu'elle révèle sur les parents disparus",
+          "on les reconstitue à partir de leurs descendants"
+        ],
+        [
+          "Ce qu'on sait des parents du nebbiolo",
+          "ils restent inconnus"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « À quoi bon retracer l'origine d'un cépage ? »",
+      "a": "Retracer l'origine d'un cépage aide à valoriser le couple variété-terroir. Cela justifie aussi la conservation de la diversité ampélographique."
+    },
+    "cave": "Sur la fiche technique d'un vin de ta cave, note un cépage et ce que tu sais de son origine, ou « je ne sais pas »."
+  }
+}

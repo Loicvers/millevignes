@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Deux gestes au labo : ajouter ou corriger</text><text x="560" y="14" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <text x="0" y="50" font-weight="700">Transgenèse</text><text x="0" y="64" font-size="10" fill="#625a4e">on ajoute</text>
+  <text x="0" y="116" font-weight="700">Édition (CRISPR)</text><text x="0" y="130" font-size="10" fill="#625a4e">on corrige sur place</text>
+  <g stroke="#d8d0c2" fill="#faf3e0">
+    <rect x="150" y="34" width="40" height="28" rx="4"/><rect x="194" y="34" width="40" height="28" rx="4"/><rect x="238" y="34" width="40" height="28" rx="4"/><rect x="282" y="34" width="40" height="28" rx="4"/><rect x="326" y="34" width="40" height="28" rx="4"/>
+    <rect x="150" y="100" width="40" height="28" rx="4"/><rect x="194" y="100" width="40" height="28" rx="4"/><rect x="282" y="100" width="40" height="28" rx="4"/><rect x="326" y="100" width="40" height="28" rx="4"/><rect x="238" y="100" width="40" height="28" rx="4" fill="#456e8a" stroke="#456e8a"/>
+    <rect x="378" y="34" width="56" height="28" rx="4" fill="#a8843a" stroke="#a8843a"/>
+  </g>
+  <text x="406" y="80" text-anchor="middle" font-size="10" fill="#625a4e">gène d'un autre organisme</text>
+  <text x="258" y="146" text-anchor="middle" font-size="10" fill="#625a4e">un gène précis modifié, rien d'étranger ajouté</text>
+</svg>

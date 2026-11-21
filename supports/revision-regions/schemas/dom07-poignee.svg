@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 120">
+  <text x="20" y="20" font-weight="700" fill="#5b1a24">Schéma de principe : ce qui existe, ce qui est planté en France</text>
+  <rect x="20" y="34" width="520" height="26" fill="#faf3e0" stroke="#d8d0c2" stroke-width="1.2"/>
+  <text x="30" y="51" fill="#625a4e">environ 6 000 cépages de V. vinifera distincts (estimation de Lepeltier)</text>
+  <rect x="20" y="72" width="364" height="26" fill="#5b1a24"/>
+  <rect x="384" y="72" width="156" height="26" fill="#faf3e0" stroke="#d8d0c2" stroke-width="1.2"/>
+  <text x="30" y="89" fill="#faf3e0" font-weight="700">une dizaine de variétés</text>
+  <text x="394" y="89" fill="#625a4e">le reste du vignoble</text>
+  <text x="20" y="113" fill="#625a4e" font-size="10">Les dix premières variétés couvrent environ 70 % du vignoble français (largeurs indicatives, sans échelle).</text>
+</svg>

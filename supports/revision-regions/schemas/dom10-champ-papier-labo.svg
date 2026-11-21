@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Trois tiroirs pour ne plus tout mélanger</text>
+  <g stroke="#d8d0c2" fill="#faf3e0">
+    <rect x="0" y="28" width="175" height="92" rx="6" stroke="#5c7a4f"/>
+    <rect x="192" y="28" width="175" height="92" rx="6" stroke="#a8843a"/>
+    <rect x="385" y="28" width="175" height="92" rx="6" stroke="#456e8a"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="87" y="50" font-weight="700" font-size="13" fill="#5c7a4f">Le champ</text><text x="87" y="68" font-style="italic">Comment est-il né ?</text><text x="87" y="88" font-size="10" fill="#625a4e">croisement, hybridation,</text><text x="87" y="102" font-size="10" fill="#625a4e">rétrocroisements</text>
+    <text x="279" y="50" font-weight="700" font-size="13" fill="#a8843a">Le papier</text><text x="279" y="68" font-style="italic">A-t-il le droit ?</text><text x="279" y="88" font-size="10" fill="#625a4e">lois, statuts d'essai,</text><text x="279" y="102" font-size="10" fill="#625a4e">règlement européen</text>
+    <text x="472" y="50" font-weight="700" font-size="13" fill="#456e8a">Le labo</text><text x="472" y="68" font-style="italic">Touche-t-on à l'ADN ?</text><text x="472" y="88" font-size="10" fill="#625a4e">transgenèse (OGM),</text><text x="472" y="102" font-size="10" fill="#625a4e">édition du génome</text>
+  </g>
+</svg>

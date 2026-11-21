@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 110" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Une hybridation à la main</text>
+  <g fill="#faf3e0" stroke="#a8843a" stroke-width="1.2"><rect x="0" y="26" width="160" height="46" rx="8"/><rect x="200" y="26" width="160" height="46" rx="8"/><rect x="400" y="26" width="160" height="46" rx="8"/></g>
+  <g text-anchor="middle"><text x="80" y="44" font-weight="700" fill="#5b1a24">1. Castrer</text><text x="80" y="60" font-size="10">la fleur mère</text>
+  <text x="280" y="44" font-weight="700" fill="#5b1a24">2. Coller le pollen</text><text x="280" y="60" font-size="10">celui du père, au pinceau</text>
+  <text x="480" y="44" font-weight="700" fill="#5b1a24">3. Coiffer</text><text x="480" y="60" font-size="10">la grappe d'un sac</text></g>
+  <g stroke="#1a1612" stroke-width="1.2" fill="#1a1612"><path d="M164 49 H190"/><path d="M190 49 l-6 -4 v8 z"/><path d="M364 49 H390"/><path d="M390 49 l-6 -4 v8 z"/></g>
+  <text x="280" y="98" text-anchor="middle" font-size="10" fill="#625a4e">puis : semer les pépins viables, attendre des années avant de juger chaque plant</text>
+</svg>

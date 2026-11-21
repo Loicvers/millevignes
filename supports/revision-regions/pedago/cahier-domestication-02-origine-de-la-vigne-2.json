@@ -1,0 +1,137 @@
+{
+  "7": {
+    "ouverture": "Dans la nature, un pied de vigne sauvage donne-t-il toujours des raisins ? Devine, puis lis.",
+    "illus": [
+      {
+        "photo": "photos/lambrusque.jpg",
+        "legende": "Lambrusque (vigne sauvage) grimpée dans la cime d’un arbre.",
+        "credit": "Photo : Stefan Lefnaer, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Les deux visages de V. vinifera",
+      "lignes": [
+        [
+          "Nom de la forme sauvage",
+          "la sylvestris (la lambrusque)"
+        ],
+        [
+          "Sexe des pieds de la forme sauvage (typiquement)",
+          "dioïque : pieds mâles et pieds femelles séparés"
+        ],
+        [
+          "Sexe des fleurs de la forme cultivée (typiquement)",
+          "hermaphrodite"
+        ],
+        [
+          "Depuis quand la lambrusque est-elle protégée en France ?",
+          "1995"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « La vigne sauvage, c’est la même plante que celle de mes cépages ? »",
+      "a": "C’est la même espèce, Vitis vinifera, en deux formes. La lambrusque est la forme sauvage, typiquement dioïque ; la forme cultivée, typiquement hermaphrodite, est domestiquée depuis le Néolithique et a donné toute la diversité des cépages."
+    },
+    "cave": "Prends une bouteille de ta cave et relève son cépage sur la contre-étiquette. Explique-le en une phrase à voix haute : ce cépage appartient à la forme cultivée de V. vinifera, pas à la lambrusque."
+  },
+  "8": {
+    "ouverture": "La vigne a-t-elle été domestiquée une seule fois ou plusieurs ? Parie, puis vérifie : les chercheurs sont-ils d’accord ?",
+    "schema": {
+      "titre": "Un foyer ou deux : qui dit quoi ?",
+      "lignes": [
+        [
+          "Le livre (p. 18-19)",
+          "une large zone, du Caucase au Proche-Orient"
+        ],
+        [
+          "Magris et al., 2021",
+          "un seul événement, en Asie occidentale"
+        ],
+        [
+          "Dong et al., Science 2023",
+          "deux domestications presque simultanées : Asie occidentale et Caucase"
+        ],
+        [
+          "Où sont les plus anciennes traces de vin ?",
+          "dans des jarres de Géorgie, vers 6000 av. J.-C."
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Alors, le vin est né en Géorgie ? »",
+      "a": "Les plus anciennes traces chimiques de vin connues viennent de jarres de Géorgie, vers 6000 av. J.-C. Mais la plus ancienne preuve n’est pas forcément le premier vin : d’autres sites restent à fouiller, et les chercheurs débattent encore du ou des foyers de domestication."
+    },
+    "cave": "Choisis un vin de ta cave. En moins d’une minute, raconte à voix haute l’origine de la vigne à un client imaginaire, sans jargon, en disant honnêtement que les chercheurs ne sont pas tous d’accord."
+  },
+  "20": {
+    "ouverture": "Pour planter de la vigne dans un pays très froid, quelle qualité chercherais-tu chez une espèce sauvage ? Devine, puis lis.",
+    "illus": [
+      {
+        "svg": "dom02-amurensis.svg",
+        "legende": "Du bassin de l’Amour aux cépages du nord : trois descendants de V. amurensis."
+      }
+    ],
+    "schema": {
+      "titre": "V. amurensis en quatre repères",
+      "lignes": [
+        [
+          "Son berceau",
+          "le bassin de l’Amour (Russie, Chine)"
+        ],
+        [
+          "Son atout",
+          "la résistance au grand froid : de l’ordre de −40 °C selon plusieurs articles (−45 °C pour le livre ; un essai mesure environ −31 °C sur rameaux)"
+        ],
+        [
+          "Ce qui la rend utile aux sélectionneurs",
+          "elle s’hybride facilement"
+        ],
+        [
+          "Trois cépages issus de ses croisements",
+          "rondo, solaris, cabernet severny"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce solaris résiste à −40 °C, c’est ça ? »",
+      "a": "Non. Le solaris descend d’un croisement avec V. amurensis, l’espèce la plus résistante au froid (de l’ordre de −40 °C selon plusieurs articles, −45 °C pour le livre, un seul essai mesuré trouvant environ −31 °C). Mais la tenue au froid d’un cépage n’est pas celle de l’espèce : pour le cabernet severny, par exemple, Wine Grapes parle d’environ −25 °C."
+    },
+    "cave": "Parcours les fiches techniques de quelques-uns de tes domaines partenaires : y trouves-tu du solaris, du rondo ou du cabernet severny ? Note ce que tu vois, même si la réponse est « aucun »."
+  },
+  "21": {
+    "ouverture": "Un virus de la vigne voyage-t-il tout seul dans le sol ? Qui, à ton avis, le transporte ?",
+    "illus": [
+      {
+        "svg": "dom02-muscadine.svg",
+        "legende": "Le nématode transmet le virus ; la muscadine lui résiste, d’où son intérêt pour les porte-greffes."
+      }
+    ],
+    "schema": {
+      "titre": "Le court-noué et la muscadine",
+      "lignes": [
+        [
+          "Le virus du court-noué",
+          "le GFLV"
+        ],
+        [
+          "Qui le transmet ?",
+          "le nématode Xiphinema index"
+        ],
+        [
+          "Atout de la muscadine (Muscadinia rotundifolia)",
+          "elle résiste à ce nématode"
+        ],
+        [
+          "Un porte-greffe issu de ses croisements",
+          "le O39-16 (Almeria × M. rotundifolia, UC Davis)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un vigneron te dit : « Mon porte-greffe vient de la muscadine, je suis tranquille pour le court-noué ? »",
+      "a": "Pas complètement. Les porte-greffes issus de la muscadine, comme le O39-16, sont tolérants : ils résistent au nématode qui pique les racines et limitent les pertes de nouaison, mais ils n’empêchent pas à coup sûr le virus de passer."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta liste (par exemple au Clos de Garaud, en Ventoux) quel porte-greffe il a choisi et pourquoi. Note si le court-noué fait partie de sa réponse."
+  }
+}

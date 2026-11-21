@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Les quatre groupes de Lacombe (2012), selon le livre</text>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="0" y="28" width="125" height="50" rx="6"/><rect x="145" y="28" width="125" height="50" rx="6" stroke="#625a4e" stroke-dasharray="4 3"/><rect x="290" y="28" width="125" height="50" rx="6" stroke="#5b1a24"/><rect x="435" y="28" width="125" height="50" rx="6"/></g>
+  <g text-anchor="middle" font-weight="700"><text x="62" y="49" fill="#5c7a4f">Lambrusques</text><text x="207" y="49" fill="#625a4e">Primitifs</text><text x="352" y="49" fill="#5b1a24">Anciens</text><text x="497" y="49" fill="#456e8a">Récents</text></g>
+  <g text-anchor="middle" font-size="10"><text x="62" y="66">vignes sauvages</text><text x="207" y="66">jamais retrouvés</text><text x="352" y="66">ex. savagnin</text><text x="497" y="66">cépages actuels</text></g>
+  <g stroke="#a8843a" stroke-width="1.5" fill="#a8843a"><path d="M127 53 H141"/><path d="M272 53 H286"/><path d="M417 53 H431"/><path d="M141 53 l-4 -3 v6 z"/><path d="M286 53 l-4 -3 v6 z"/><path d="M431 53 l-4 -3 v6 z"/></g>
+  <text x="290" y="100" font-size="10" fill="#625a4e">pépin d’Orléans (vers 1100) = savagnin blanc actuel</text>
+  <text x="290" y="116" font-size="10" fill="#625a4e">grâce au bouturage</text>
+  <text x="207" y="100" text-anchor="middle" font-size="10" fill="#625a4e">« selon le livre »</text>
+</svg>

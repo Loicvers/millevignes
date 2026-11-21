@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <g text-anchor="middle">
+    <rect x="0" y="8" width="170" height="52" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="85" y="28" font-weight="700" fill="#5b1a24">Asie occidentale</text><text x="85" y="46">lignée « table »</text>
+    <rect x="0" y="90" width="170" height="52" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="85" y="110" font-weight="700" fill="#5b1a24">Caucase</text><text x="85" y="128">lignée « cuve »</text>
+    <rect x="300" y="8" width="260" height="52" rx="6" fill="#faf3e0" stroke="#5c7a4f"/><text x="430" y="28" font-weight="700" fill="#5c7a4f">Cépages de cuve d'Europe</text><text x="430" y="46">croisés avec les sauvages de l'Ouest</text>
+    <rect x="300" y="90" width="260" height="52" rx="6" fill="#faf3e0" stroke="#625a4e" stroke-dasharray="4 3"/><text x="430" y="110" font-weight="700" fill="#625a4e">Reste surtout sur place</text><text x="430" y="128" fill="#625a4e">rôle limité en Europe</text>
+  </g>
+  <path d="M172 34 H298" stroke="#5b1a24" stroke-width="1.8" marker-end="url(#f)"/>
+  <text x="235" y="26" text-anchor="middle" font-size="10" fill="#625a4e">par l'Anatolie</text>
+  <path d="M172 116 H298" stroke="#625a4e" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#f)"/>
+  <text x="280" y="162" text-anchor="middle" font-size="10" fill="#625a4e">Schéma de principe d'après Dong et al. (2023) : une étude, pas un consensus.</text>
+</svg>

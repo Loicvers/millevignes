@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Bouture ou pépin : copie ou nouvel original</text><text x="560" y="14" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <text x="0" y="40" font-weight="700">Bouture</text><text x="290" y="40" font-weight="700">Pépin</text>
+  <g stroke="#d8d0c2" fill="#faf3e0">
+    <rect x="0" y="54" width="80" height="34" rx="5"/>
+    <rect x="150" y="54" width="36" height="34" rx="5" fill="#5b1a24" stroke="#5b1a24"/><rect x="192" y="54" width="36" height="34" rx="5" fill="#5b1a24" stroke="#5b1a24"/><rect x="234" y="54" width="36" height="34" rx="5" fill="#5b1a24" stroke="#5b1a24"/>
+    <rect x="290" y="54" width="80" height="34" rx="5"/>
+    <rect x="440" y="54" width="36" height="34" rx="5" fill="#a8843a" stroke="#a8843a"/><rect x="482" y="54" width="36" height="34" rx="5" fill="#456e8a" stroke="#456e8a"/><rect x="524" y="54" width="36" height="34" rx="5" fill="#5c7a4f" stroke="#5c7a4f"/>
+  </g>
+  <g stroke="#625a4e" stroke-width="1.5" fill="none"><path d="M84 71 H146"/><path d="M374 71 H436"/></g>
+  <g text-anchor="middle" font-size="10.5"><text x="40" y="75">vigne mère</text><text x="330" y="75">vigne mère</text></g>
+  <text x="210" y="112" text-anchor="middle" font-size="10" fill="#625a4e">clones : la photocopie</text>
+  <text x="500" y="112" text-anchor="middle" font-size="10" fill="#625a4e">plants tous différents : diversité</text>
+  <text x="0" y="140" font-size="9.5" fill="#625a4e">Chaque couleur figure un patrimoine génétique distinct.</text>
+</svg>

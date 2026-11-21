@@ -1,0 +1,214 @@
+{
+  "17": {
+    "ouverture": "Dans une jarre antique vide, comment un chimiste pourrait-il deviner si le vin était rouge ou blanc ?",
+    "illus": [
+      {
+        "svg": "dom04-syringique.svg",
+        "legende": "De la malvidine du raisin noir à l’acide syringique : la trace chimique qui signe un vin rouge, et les limites de sa lecture."
+      }
+    ],
+    "schema": {
+      "titre": "Les premières couleurs : je complète",
+      "lignes": [
+        [
+          "Selon le livre, que montrent les fresques de l’Ancien Empire ?",
+          "des grappes toutes noires"
+        ],
+        [
+          "Pigment du raisin noir dont la dégradation laisse une trace",
+          "la malvidine (une anthocyane)"
+        ],
+        [
+          "Marqueur chimique d’un vin rouge",
+          "l’acide syringique"
+        ],
+        [
+          "Pourquoi la méthode est-elle discutée ?",
+          "l’acide syringique se forme aussi dans d’autres plantes et les sols, et son absence ne prouve pas un blanc"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « A-t-on vraiment su que le vin de Toutânkhamon était rouge ? »",
+      "a": "Pour un résidu de la tombe, oui : Maria Rosa Guasch-Jané y a identifié de l’acide syringique en 2004, signature des pigments du raisin noir. Pour les autres amphores, en 2006, la conclusion « blanc » repose sur l’absence de ce marqueur : c’est une inférence, et la méthode reste discutée."
+    },
+    "cave": "Verse un rouge de ta cave et un blanc dans deux verres. Note leurs couleurs, puis explique à voix haute à un proche comment un chimiste lirait cette même différence au fond d’une jarre antique."
+  },
+  "18": {
+    "ouverture": "Un cépage cultivé aujourd’hui peut-il être identique à celui que cultivaient les vignerons du Moyen Âge ? Comment ?",
+    "illus": [
+      {
+        "svg": "dom04-groupes.svg",
+        "legende": "Les quatre groupes distingués par Thierry Lacombe ; le groupe des primitifs n’a jamais été retrouvé, selon le livre."
+      }
+    ],
+    "schema": {
+      "titre": "Cépages primitifs, anciens et récents : je complète",
+      "lignes": [
+        [
+          "Selon le livre, qui a distingué quatre groupes, et en quelle année ?",
+          "Thierry Lacombe (INRAE), en 2012"
+        ],
+        [
+          "Le groupe sauvage, au départ",
+          "les lambrusques"
+        ],
+        [
+          "Le groupe jamais retrouvé, selon le livre",
+          "les cépages primitifs"
+        ],
+        [
+          "Ce qui permet à des cépages anciens de nous accompagner encore",
+          "la multiplication végétative (bouturage)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le savagnin d’aujourd’hui est-il vraiment le même qu’au Moyen Âge ? »",
+      "a": "D’après l’étude de Ramos-Madrigal et al. (2019), un pépin d’un site médiéval d’Orléans, daté d’environ 1100, a la même signature génétique que le savagnin blanc actuel. La vigne se multiplie par bouture : chaque pied est un clone, donc le cépage se transmet à l’identique."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave comment il remplace un pied manquant dans une vieille vigne. Relie sa réponse à la multiplication végétative : que gagne-t-on à bouturer plutôt qu’à semer un pépin ?"
+  },
+  "19": {
+    "ouverture": "Presque tous les cépages ont des fleurs capables de se féconder seules. Que se passerait-il avec une vigne aux fleurs seulement femelles ?",
+    "illus": [
+      {
+        "photo": "photos/millerandage.jpg",
+        "legende": "Grappe millerandée : des baies de tailles très inégales.",
+        "credit": "Photo : Olivier Lemoine (Photo-Terroir.fr), CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Le maratheftiko : je complète",
+      "lignes": [
+        [
+          "Son pays d’origine",
+          "Chypre (cépage rouge autochtone)"
+        ],
+        [
+          "Ses fleurs sont…",
+          "fonctionnellement femelles : une exception chez V. vinifera"
+        ],
+        [
+          "Voisin traditionnel, selon certains guides",
+          "le mavro (d’autres pollinisateurs sont utilisés aujourd’hui)"
+        ],
+        [
+          "Conséquences selon le livre, même pollinisé",
+          "grappes irrégulières (millerandage) et faibles rendements"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi plante-t-on le maratheftiko mélangé à un autre cépage, et pas seul sur une parcelle ? »",
+      "a": "Ses fleurs sont fonctionnellement femelles : il doit être fécondé par le pollen d’une autre variété qui fleurit en même temps, traditionnellement le mavro selon certains guides. Même ainsi, selon le livre, il donne souvent des grappes irrégulières et de faibles rendements."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave s’il a déjà vu du millerandage dans ses vignes et ce que cela a changé pour sa récolte. Compare avec ce que tu sais du maratheftiko."
+  },
+  "669": {
+    "ouverture": "Le cabernet franc est un parent du cabernet-sauvignon et du merlot. Est-ce, selon toi, un cépage très ancien ou récent ? Pourquoi ?",
+    "illus": [
+      {
+        "photo": "photos/lambrusque.jpg",
+        "legende": "Une lambrusque, vigne sauvage européenne, grimpée dans un arbre.",
+        "credit": "Photo : Stefan Lefnaer, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Le cabernet franc : mes repères",
+      "lignes": [
+        [
+          "Région d’origine probable",
+          "le Pays basque"
+        ],
+        [
+          "Ses deux enfants célèbres",
+          "le cabernet-sauvignon et le merlot"
+        ],
+        [
+          "Particularité de son génome (Magris et al., 2021)",
+          "une forte part de vigne sauvage d’Europe de l’Ouest"
+        ],
+        [
+          "Deux autres cépages rangés dans le même groupe",
+          "l’aglianico et le lambrusco di Sorbara"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le livre dit qu’aucun cépage primitif n’a été retrouvé, mais j’ai lu que le cabernet franc en était un. Qui a raison ? »",
+      "a": "Les deux n’emploient pas forcément le mot dans le même sens. Magris et al. (2021) appellent « variétés européennes primitives » des cépages actuels à forte part de vigne sauvage, dont le cabernet franc. Le livre, lui, écrit qu’aucun cépage « primitif » n’a encore été retrouvé."
+    },
+    "cave": "Choisis un vin du Domaine des Amandiers (Saumur-Champigny) ou du Château Jean Faure (Saint-Émilion). Cherche sur sa fiche technique si le cabernet franc y entre et pour quelle part, puis résume en une phrase ses origines probables à un client."
+  },
+  "670": {
+    "ouverture": "Le savagnin vit dans le Jura, le petit manseng au pied des Pyrénées. Peuvent-ils être parents ?",
+    "illus": [
+      {
+        "svg": "dom04-mansengs.svg",
+        "legende": "Les mansengs, à mi-chemin entre les lambrusques et le couple pinot-savagnin dans les analyses de Magris et al. (2021)."
+      }
+    ],
+    "schema": {
+      "titre": "Les mansengs : je complète",
+      "lignes": [
+        [
+          "Lien entre gros manseng et petit manseng",
+          "le gros manseng descend probablement du petit"
+        ],
+        [
+          "Lien entre petit manseng et savagnin",
+          "le petit manseng descend probablement du savagnin"
+        ],
+        [
+          "Place de la famille dans les analyses de Magris et al.",
+          "à mi-chemin entre pinot-savagnin et vignes sauvages"
+        ],
+        [
+          "Hypothèse de ces auteurs sur la naissance du petit manseng",
+          "un croisement entre un cépage cultivé et une lambrusque"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le gros manseng et le petit manseng, c’est le même cépage en deux tailles ? »",
+      "a": "Non, ce sont deux cépages distincts de la même famille. Le gros manseng descend probablement du petit manseng (Oxford Companion, Wine Grapes), et Magris et al. (2021) trouvent entre eux un lien direct de parent à enfant."
+    },
+    "cave": "Prends un vin du Sud-Ouest de ta cave (par exemple du Château Moulin Caresse) et lis sa fiche technique : un manseng y figure-t-il ? Quelle que soit la réponse, entraîne-toi à raconter la famille des mansengs en trente secondes à un proche."
+  },
+  "671": {
+    "ouverture": "Chez un raisin blanc, la plante a-t-elle gagné quelque chose ou perdu quelque chose par rapport à un raisin rouge ?",
+    "illus": [
+      {
+        "svg": "dom04-couleur.svg",
+        "legende": "Schéma de principe : un raisin blanc a hérité de deux copies inactives des gènes de couleur ; une seule copie active suffit à colorer la peau."
+      }
+    ],
+    "schema": {
+      "titre": "D’où vient le blanc : je complète",
+      "lignes": [
+        [
+          "Les deux gènes voisins qui commandent la couleur",
+          "VvMYBA1 et VvMYBA2, sur le chromosome 2"
+        ],
+        [
+          "Ce qu’ils déclenchent dans la peau",
+          "la fabrication des anthocyanes"
+        ],
+        [
+          "Chez un cépage blanc, ces gènes sont…",
+          "inactivés : le premier par un rétrotransposon, le second par deux mutations"
+        ],
+        [
+          "Trace de la sélection humaine autour de ce locus",
+          "une baisse de la diversité génétique des cépages"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un raisin blanc, c’est un raisin rouge qui a perdu sa couleur ? »",
+      "a": "En quelque sorte : chez les cépages blancs, les gènes VvMYBA1 et VvMYBA2 sont inactivés, donc la peau ne fabrique plus d’anthocyanes. Ce caractère se transmet : il faut hériter de deux copies inactives pour obtenir un raisin blanc."
+    },
+    "cave": "Choisis un vin blanc de ta cave dont la fiche technique indique un cépage blanc, et un rouge. Explique en deux phrases à un proche pourquoi la peau des raisins du premier ne fabrique pas d’anthocyanes."
+  }
+}

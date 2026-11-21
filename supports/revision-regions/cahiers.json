@@ -706,5 +706,142 @@
       232,
       584
     ]
+  },
+  {
+    "nom": "cahier-domestication-01-origine-de-la-vigne-1",
+    "titre": "L'origine de la vigne (1)",
+    "serie": "Domestication · fascicule 1",
+    "recit": "L’origine de la vigne",
+    "fiches": [
+      6,
+      9,
+      10,
+      12,
+      11
+    ]
+  },
+  {
+    "nom": "cahier-domestication-02-origine-de-la-vigne-2",
+    "titre": "L'origine de la vigne (2)",
+    "serie": "Domestication · fascicule 2",
+    "recit": "L’origine de la vigne",
+    "fiches": [
+      7,
+      8,
+      20,
+      21
+    ]
+  },
+  {
+    "nom": "cahier-domestication-03-domestication-1",
+    "titre": "Homo sapiens domestique la vigne (1)",
+    "serie": "Domestication · fascicule 3",
+    "recit": "Homo sapiens domestique Vitis vinifera",
+    "fiches": [
+      13,
+      14,
+      15,
+      16,
+      595,
+      667,
+      668
+    ]
+  },
+  {
+    "nom": "cahier-domestication-04-domestication-2",
+    "titre": "Homo sapiens domestique la vigne (2)",
+    "serie": "Domestication · fascicule 4",
+    "recit": "Homo sapiens domestique Vitis vinifera",
+    "fiches": [
+      17,
+      18,
+      19,
+      669,
+      670,
+      671
+    ]
+  },
+  {
+    "nom": "cahier-domestication-05-le-cepage-un-concept",
+    "titre": "Le cépage, un concept",
+    "serie": "Domestication · fascicule 5",
+    "recit": "Le cépage, un concept",
+    "fiches": [
+      22,
+      23,
+      24,
+      25,
+      28,
+      26
+    ]
+  },
+  {
+    "nom": "cahier-domestication-06-classer-les-cepages",
+    "titre": "Nommer et classer les cépages",
+    "serie": "Domestication · fascicule 6",
+    "recit": "La classification des cépages",
+    "fiches": [
+      27,
+      29,
+      1,
+      33,
+      30,
+      31,
+      32
+    ]
+  },
+  {
+    "nom": "cahier-domestication-07-des-cepages-a-foison",
+    "titre": "Des cépages à foison",
+    "serie": "Domestication · fascicule 7",
+    "recit": "Des cépages à foison",
+    "fiches": [
+      2,
+      34,
+      35,
+      36,
+      37
+    ]
+  },
+  {
+    "nom": "cahier-domestication-08-hybridation-1",
+    "titre": "L'hybridation (1)",
+    "serie": "Domestication · fascicule 8",
+    "recit": "L’hybridation : passé, présent et futur de la vigne",
+    "fiches": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "nom": "cahier-domestication-09-hybridation-2",
+    "titre": "L'hybridation (2)",
+    "serie": "Domestication · fascicule 9",
+    "recit": "L’hybridation : passé, présent et futur de la vigne",
+    "fiches": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  {
+    "nom": "cahier-domestication-10-hybridation-3",
+    "titre": "L'hybridation (3)",
+    "serie": "Domestication · fascicule 10",
+    "recit": "L’hybridation : passé, présent et futur de la vigne",
+    "fiches": [
+      50,
+      51,
+      52,
+      970,
+      53
+    ]
   }
 ]

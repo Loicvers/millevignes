@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 136" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="150" y="6" width="260" height="28" rx="6" fill="#faf3e0" stroke="#a8843a" stroke-width="1.2"/>
+  <text x="280" y="24" text-anchor="middle" font-weight="700" fill="#5b1a24">un seul cépage, un seul profil ADN</text>
+  <g stroke="#a8843a" stroke-width="1.2"><path d="M280 34 V44"/><path d="M74 44 H486"/><path d="M74 44 V58"/><path d="M212 44 V58"/><path d="M350 44 V58"/><path d="M486 44 V58"/></g>
+  <g fill="#fff" stroke="#456e8a" stroke-width="1.2">
+    <rect x="12" y="58" width="124" height="68" rx="6"/><rect x="150" y="58" width="124" height="68" rx="6"/>
+    <rect x="288" y="58" width="124" height="68" rx="6"/><rect x="426" y="58" width="124" height="68" rx="6"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="74" y="88" font-weight="700" fill="#5b1a24">Tribidrag</text><text x="74" y="110" fill="#625a4e" font-size="10">nom historique</text>
+    <text x="212" y="80" font-weight="700" fill="#5b1a24">Crljenak</text><text x="212" y="94" font-weight="700" fill="#5b1a24">kaštelanski</text><text x="212" y="112" fill="#625a4e" font-size="10">Kaštela, Dalmatie</text>
+    <text x="350" y="88" font-weight="700" fill="#5b1a24">Primitivo</text><text x="350" y="110" fill="#625a4e" font-size="10">Pouilles</text>
+    <text x="488" y="88" font-weight="700" fill="#5b1a24">Zinfandel</text><text x="488" y="110" fill="#625a4e" font-size="10">Californie</text>
+  </g>
+</svg>

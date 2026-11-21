@@ -1,0 +1,228 @@
+{
+  "13": {
+    "ouverture": "Comment peut-on savoir, huit mille ans après, qu'une jarre a contenu du vin ? Devine ce que les chimistes y cherchent.",
+    "illus": [],
+    "schema": {
+      "titre": "Les preuves du vin ancien",
+      "lignes": [
+        [
+          "La molécule qui signe le raisin dans les tessons",
+          "l'acide tartrique"
+        ],
+        [
+          "Lieu et date de la plus ancienne preuve chimique connue",
+          "Géorgie, vers 6000-5800 av. J.-C."
+        ],
+        [
+          "Ce que les analyses n'ont pas trouvé dans les jarres géorgiennes",
+          "de résine"
+        ],
+        [
+          "Ce que livre le site d'Areni-1 (Arménie), vers 4000 av. J.-C.",
+          "une installation de vinification : aire de foulage, jarres, restes de raisin"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Donc le vin a été inventé en Géorgie ? »",
+      "a": "Pas forcément. La Géorgie livre la plus ancienne preuve chimique connue, vers 6000-5800 av. J.-C. Mais Patrick McGovern lui-même juge impossible de désigner la région pionnière : d'autres sites restent à fouiller."
+    },
+    "cave": "Sur les fiches techniques de trois vins de ta cave, regarde dans quel contenant le vin est élevé (cuve, fût, autre). Si l'information manque, note la question à poser au vigneron à la prochaine commande."
+  },
+  "14": {
+    "ouverture": "Qui est venu en premier : le vigneron qui cultive la vigne, ou l'homme qui goûte un raisin fermenté tout seul ? Donne ton avis.",
+    "illus": [
+      {
+        "photo": "photos/lambrusque.jpg",
+        "legende": "Lambrusque, la vigne sauvage, grimpée dans un arbre.",
+        "credit": "Photo : Stefan Lefnaer, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "L'hypothèse de McGovern",
+      "lignes": [
+        [
+          "Ce qui précéderait la domestication, selon McGovern",
+          "l'envie de boire : des cueilleurs goûtent des raisins sauvages restés fermenter"
+        ],
+        [
+          "Preuve archéologique ?",
+          "aucune : aucun récipient paléolithique ne nous est parvenu"
+        ],
+        [
+          "Effet de la mutation d'ADH4 sur l'éthanol",
+          "sa dégradation est environ 40 fois plus efficace"
+        ],
+        [
+          "Le défi des premiers buveurs",
+          "conserver ce jus, qui tourne vite au vinaigre"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Les chasseurs-cueilleurs buvaient donc déjà du vin ? »",
+      "a": "C'est une hypothèse de Patrick McGovern, pas un fait établi : aucun récipient paléolithique ne nous est parvenu. Notre lignée était toutefois équipée pour l'alcool, grâce à une mutation de l'ADH4 vieille d'environ 10 millions d'années."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire ce qui, selon lui, protège un vin du vinaigre. Note sa réponse : c'est le défi que les premiers buveurs ont dû relever."
+  },
+  "15": {
+    "ouverture": "Plante-t-on facilement une vigne sauvage pour être sûr de récolter des raisins ? Devine ce qui pourrait poser problème.",
+    "illus": [
+      {
+        "svg": "dom03-sexes.svg",
+        "legende": "Selon l'hypothèse hermaphrodite : du couple obligatoire au pied qui se suffit, le repérage des hermaphrodites, puis leur multiplication en clones."
+      }
+    ],
+    "schema": {
+      "titre": "L'hypothèse hermaphrodite : pourquoi l'hermaphrodisme change tout",
+      "lignes": [
+        [
+          "Sexes de la vigne sauvage (sylvestris)",
+          "typiquement dioïque : pieds mâles et pieds femelles séparés"
+        ],
+        [
+          "Atout d'un pied hermaphrodite",
+          "il peut s'autoféconder : récolte plus sûre"
+        ],
+        [
+          "Comment fixer un bon pied à l'identique",
+          "par multiplication végétative (bouturage, marcottage) : chaque rejeton est un clone"
+        ],
+        [
+          "Origine génétique des hermaphrodites (études de 2020 et 2021)",
+          "de rares recombinaisons dans la région du sexe (au moins deux événements indépendants selon l'étude de 2021)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi ne plante-t-on pas des pépins pour faire une vigne ? »",
+      "a": "Un pépin brasse les gènes : il ne reproduit pas le pied mère. Une bouture ou une marcotte donne au contraire un clone, ce qui permet de garder à l'identique un bon pied, par exemple un hermaphrodite."
+    },
+    "cave": "Prends un vin de ta cave dont l'étiquette nomme le cépage. Prépare deux phrases pour expliquer à un client pourquoi ce cépage peut traverser les siècles à peu près inchangé."
+  },
+  "16": {
+    "ouverture": "Les cépages de la Méditerranée sont-ils nés sur place ou venus d'ailleurs ? Devine, et dis ce qui a pu les diversifier.",
+    "illus": [],
+    "schema": {
+      "titre": "Du Caucase à la Méditerranée",
+      "lignes": [
+        [
+          "Zone des centres primaires, selon le livre",
+          "du Caucase au Proche-Orient (Géorgie, Zagros, Mésopotamie, Croissant fertile)"
+        ],
+        [
+          "Où naissent les centres secondaires",
+          "autour de la Méditerranée"
+        ],
+        [
+          "Effet des croisements avec les vignes sauvages locales",
+          "ils diversifient les variétés"
+        ],
+        [
+          "Nombre de foyers de domestication",
+          "les généticiens ne s'accordent pas : un (Magris et al. 2021, Oxford Companion) ou deux (Dong et al. 2023)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « La vigne cultivée est donc née une seule fois ? »",
+      "a": "Les généticiens ne sont pas d'accord. Magris et al. (2021) et l'Oxford Companion retiennent un seul foyer en Asie occidentale ; Dong et al. (2023) en voient deux, en Asie occidentale et au Caucase. Les études s'accordent en revanche sur l'origine orientale des cépages européens."
+    },
+    "cave": "Prends un vin de ta cave, par exemple le Saint-Chinian du Château Fonsalade. Prépare une phrase pour un client : la vigne vient d'Orient, et en Méditerranée ses croisements avec les lambrusques locales ont diversifié les variétés."
+  },
+  "595": {
+    "ouverture": "Raisin de table ou raisin de cuve : lequel, à ton avis, a donné la plupart de nos cépages à vin d'Europe ?",
+    "illus": [
+      {
+        "svg": "dom03-lignees.svg",
+        "legende": "Selon Dong et al. (2023), deux lignées, un paradoxe : la lignée « table » d'Asie occidentale, croisée en route, est à l'origine de la plupart de nos cépages de cuve."
+      }
+    ],
+    "schema": {
+      "titre": "L'étude de Science (2023)",
+      "lignes": [
+        [
+          "Domestications décrites, et âge estimé",
+          "deux, contemporaines, il y a environ 11 000 ans"
+        ],
+        [
+          "Lignées d'Asie occidentale et du Caucase : rattachées à…",
+          "le raisin de table, et le raisin de cuve"
+        ],
+        [
+          "Lignée dont descendent surtout les cépages de cuve européens",
+          "celle d'Asie occidentale, arrivée par l'Anatolie et croisée avec les sauvages de l'Ouest"
+        ],
+        [
+          "Position d'autres travaux, dont l'Oxford Companion",
+          "une domestication unique au Proche-Orient : le débat reste ouvert"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les raisins de cuve du Caucase ont donc donné nos vins ? »",
+      "a": "Pas d'après l'étude de Dong et al. (2023) : la lignée caucasienne est restée assez locale. La plupart de nos cépages de cuve descendent de la lignée d'Asie occidentale, dite de table, croisée avec les vignes sauvages d'Europe de l'Ouest. D'autres travaux défendent une domestication unique : le débat reste ouvert."
+    },
+    "cave": "Choisis un vin de ta cave, par exemple le Médoc du Château Haut-Maurac. Entraîne-toi à dire en trente secondes d'où viennent les cépages de cuve européens selon l'étude de 2023, en précisant que les dates viennent de modèles génétiques, pas de fouilles."
+  },
+  "667": {
+    "ouverture": "La vigne a-t-elle été domestiquée une seconde fois en Europe de l'Ouest, à partir des lambrusques locales ? Donne ton avis.",
+    "illus": [],
+    "schema": {
+      "titre": "L'hypothèse écartée",
+      "lignes": [
+        [
+          "Ce que proposait l'étude de 2006 (ADN des chloroplastes)",
+          "un second berceau en Méditerranée occidentale, notamment dans la péninsule Ibérique"
+        ],
+        [
+          "Ce que ne trouvent pas les génomes complets (Magris et al., 2021)",
+          "aucun cépage d'ascendance purement sauvage occidentale"
+        ],
+        [
+          "Cépages ibériques : plus proches de…",
+          "raisins de table et vignes sauvages d'Orient"
+        ],
+        [
+          "Schéma retenu pour l'Ouest",
+          "vigne domestiquée en Orient, puis croisée sur place avec les lambrusques"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les cépages ibériques viennent donc de vignes sauvages du pays ? »",
+      "a": "Pas d'après les génomes complets : ils ressemblent davantage aux raisins de table et aux vignes sauvages d'Orient qu'aux lambrusques de l'Ouest. La vigne arrive d'Orient déjà domestiquée ; les lambrusques locales s'y mêlent ensuite par croisement, ce qui donne leur accent régional."
+    },
+    "cave": "Prends un vin de ta cave, par exemple le Saint-Émilion du Château Jean Faure. Écris en deux phrases ce que tu répondrais à un client qui croit que son cépage est né dans la région du vin."
+  },
+  "668": {
+    "ouverture": "France, Italie, Espagne : quel pays a, selon toi, les cépages les plus variés sur le plan génétique ?",
+    "illus": [],
+    "schema": {
+      "titre": "Où est la diversité ? (Magris et al., 2021)",
+      "lignes": [
+        [
+          "Pays réunissant l'essentiel de la diversité des cépages de cuve d'Europe de l'Ouest",
+          "la France et l'Italie, l'Italie étant la plus bigarrée"
+        ],
+        [
+          "Explication avancée par Magris et al. pour l'Italie",
+          "carrefour commercial entre Orient et Occident ; vignoble du 36e au 46e parallèle"
+        ],
+        [
+          "Espagne et Portugal",
+          "un patrimoine plus homogène"
+        ],
+        [
+          "Limite d'un simple décompte de cépages",
+          "un nombre de cépages ne mesure pas à lui seul leur diversité génétique"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi les cépages italiens sont-ils si variés ? »",
+      "a": "Magris et al. (2021) l'expliquent par la position de carrefour commercial de l'Italie entre l'Orient et l'Occident, et par un vignoble étendu du 36e au 46e parallèle, sous des climats très variés. C'est une interprétation des auteurs, qui n'a pas été recoupée."
+    },
+    "cave": "Prends trois vins de régions différentes de ta cave, par exemple ceux du Château de Fleys, du Château de Montmirail et du Mas Amiel. Note le nombre de cépages de chacun, puis rappelle-toi pourquoi ce nombre ne mesure pas la diversité génétique."
+  }
+}

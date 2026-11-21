@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 130">
+  <line x1="30" y1="55" x2="530" y2="55" stroke="#a8843a" stroke-width="1.6"/>
+  <g fill="#a8843a"><circle cx="40" cy="55" r="4"/><circle cx="150" cy="55" r="4"/><circle cx="270" cy="55" r="4"/><circle cx="390" cy="55" r="4"/><circle cx="505" cy="55" r="4"/></g>
+  <g text-anchor="middle" font-weight="700" fill="#5b1a24"><text x="40" y="42">1779</text><text x="150" y="42">1809</text><text x="270" y="42">1876</text><text x="390" y="42">1949</text><text x="490" y="42">2022-2032</text></g>
+  <g text-anchor="middle" font-size="10" fill="#1a1612">
+    <text x="40" y="76">Rozier,</text><text x="40" y="89">près de Béziers</text>
+    <text x="150" y="76">Premier catalogue</text><text x="150" y="89">du Luxembourg</text>
+    <text x="270" y="76">Montpellier :</text><text x="270" y="89">face au phylloxéra</text>
+    <text x="390" y="76">Installation à Vassal,</text><text x="390" y="89">Marseillan (sables)</text>
+    <text x="500" y="102">Transfert à Pech Rouge,</text><text x="500" y="115">Gruissan (Aude)</text>
+  </g>
+</svg>

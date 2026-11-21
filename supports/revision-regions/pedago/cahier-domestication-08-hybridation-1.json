@@ -1,0 +1,203 @@
+{
+  "38": {
+    "ouverture": "Croiser deux Vitis vinifera, est-ce de l'hybridation ? À ton avis, que change le mot « interspécifique » ?",
+    "illus": [],
+    "schema": {
+      "titre": "Croiser, hybrider, introgresser : je complète",
+      "lignes": [
+        [
+          "Part de chaque parent dans un hybride interspécifique",
+          "à parts égales (moitié-moitié)"
+        ],
+        [
+          "Pourquoi rétrocroiser l'hybride ?",
+          "pour obtenir un individu proche d'un parent, qui garde quelques gènes de l'autre espèce"
+        ],
+        [
+          "Part de l'autre espèce après chaque rétrocroisement",
+          "divisée par deux : 50 %, 25 %, 12,5 %…"
+        ],
+        [
+          "Qui a introduit dès 1974 des gènes de Muscadinia rotundifolia ?",
+          "Alain Bouquet (INRA Montpellier)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Une variété résistante aux maladies, c'est un OGM ou un hybride américain ? »",
+      "a": "Ni l'un ni l'autre. Une variété ResDur est un vinifera presque pur (plus de 95 % du génome), croisé puis trié par rétrocroisements pour garder des gènes de résistance, et plusieurs à la fois."
+    },
+    "cave": "Champagne Petit-Triolet est en appellation Champagne, où l'on essaie le voltis (première récolte en 2025, décision attendue en 2033). À ta prochaine commande, demande au domaine ce qu'il pense des variétés résistantes."
+  },
+  "39": {
+    "ouverture": "Pour que la fleur de vigne reçoive le pollen du père choisi, et celui-là seulement, que faut-il lui faire avant et après ? Devine.",
+    "illus": [
+      {
+        "svg": "dom08-trois-c.svg",
+        "legende": "Les trois gestes de l'hybrideur, puis la patience."
+      }
+    ],
+    "schema": {
+      "titre": "L'hybridation à la main : je complète",
+      "lignes": [
+        [
+          "Les trois outils de l'hybrideur",
+          "pince, ciseaux, pinceau"
+        ],
+        [
+          "Quand intervient-on sur la fleur mère ?",
+          "juste avant la floraison"
+        ],
+        [
+          "Pourquoi ensacher la grappe ?",
+          "pour éviter tout pollen étranger"
+        ],
+        [
+          "Que devient le pépin ?",
+          "seuls ceux qui ont un embryon germent ; il faut plusieurs années avant de juger le semis"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi ne goûte-t-on pas tout de suite le résultat d'un croisement ? »",
+      "a": "Une baie contient au plus quatre pépins et seuls ceux qui ont un embryon germent. Il faut ensuite plusieurs années de culture avant de juger les plants, et chaque pépin donne un résultat imprévisible."
+    },
+    "cave": "À ta prochaine dégustation de raisin de table, ou lors d'une vendange chez un vigneron partenaire, ouvre une baie et compte ses pépins. Tu ne devrais jamais en trouver plus de quatre."
+  },
+  "40": {
+    "ouverture": "Au XIXe siècle, les vignes européennes plantées aux États-Unis dépérissent, alors que les vignes locales survivent. Quelle idée cela peut-il donner à un viticulteur ?",
+    "illus": [
+      {
+        "svg": "dom08-concord.svg",
+        "legende": "Le concord, longtemps cru labrusca pur, contient environ un quart à un tiers de vinifera (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Premiers hybrides : je complète",
+      "lignes": [
+        [
+          "Qui décrit dès 1790 le croisement de deux variétés par pollinisation mutuelle ?",
+          "l'Anglais William Speechly, dans son traité sur la culture de la vigne"
+        ],
+        [
+          "Combien de temps entre les semis du concord et ses premiers fruits ?",
+          "semés en 1843, premiers fruits en 1849 : environ six ans"
+        ],
+        [
+          "Ce que la génétique trouve dans le concord",
+          "environ un quart à un tiers de vinifera"
+        ],
+        [
+          "Le delaware, lui aussi pris pour une vigne indigène",
+          "d'ascendance en partie vinifera (part non chiffrée)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le concord, c'est bien un cépage purement américain ? »",
+      "a": "On l'a longtemps cru labrusca pur, mais la génétique y trouve environ un quart à un tiers de vinifera : c'est un hybride. Le delaware, lui aussi pris pour une vigne indigène, aurait une ascendance en partie vinifera (part non chiffrée)."
+    },
+    "cave": "Passe en revue quelques étiquettes de ta cave : y vois-tu un hybride américain, comme le concord ou le delaware ? Note ce que tu trouves."
+  },
+  "41": {
+    "ouverture": "Louis Bouschet croise l'aramon avec un teinturier. Qu'est-ce qu'un teinturier, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les Bouschet : je complète",
+      "lignes": [
+        [
+          "Où naît le petit bouschet ?",
+          "au domaine de la Calmette, à Mauguio (Hérault), selon Wine Grapes"
+        ],
+        [
+          "Pourquoi croiser l'aramon avec un teinturier ?",
+          "pour donner de la couleur aux vins pâles d'aramon"
+        ],
+        [
+          "Quel type de croisement est-ce ?",
+          "intraspécifique (vinifera × vinifera)"
+        ],
+        [
+          "Date de l'alicante bouschet",
+          "1855 selon Wine Grapes et Pl@ntGrape ; entre 1865 et 1885 selon l'Oxford Companion"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « L'alicante bouschet, c'est un hybride américain, non ? »",
+      "a": "Non : ses parents sont deux vinifera, c'est un croisement à l'intérieur de l'espèce. Henri Bouschet l'a obtenu en croisant le petit bouschet (aramon noir × teinturier du Cher) avec le grenache noir. Sa date varie selon les sources."
+    },
+    "cave": "Louis Bouschet a créé le petit bouschet à Mauguio (Hérault), selon Wine Grapes. À ta prochaine commande au Château Fonsalade (Saint-Chinian), demande si l'alicante bouschet ou un autre teinturier a sa place dans la région."
+  },
+  "42": {
+    "ouverture": "Le phylloxéra tue les vinifera franches de pied, mais pas les vignes américaines. Quelles solutions imagines-tu ?",
+    "illus": [
+      {
+        "photo": "photos/greffe.jpg",
+        "legende": "Une greffe : le greffon vinifera s'emboîte dans le porte-greffe, qui fournit les racines.",
+        "credit": "Photo : Epop, domaine public, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Greffer ou planter un HPD : je complète",
+      "lignes": [
+        [
+          "Greffe : qui fournit les racines, qui fournit le raisin ?",
+          "racines : porte-greffe américain ou hybride ; raisin : greffon vinifera"
+        ],
+        [
+          "HPD : où est la greffe ?",
+          "il n'y en a pas : l'hybride, planté sans greffe, fournit racines et raisin"
+        ],
+        [
+          "Pourquoi ne pas planter simplement des vignes américaines ?",
+          "beaucoup supportent mal les sols calcaires français"
+        ],
+        [
+          "Quelle voie domine dès le début du XXe siècle ?",
+          "la greffe ; vers 1950, l'État pousse en outre à éliminer les HPD"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi la greffe l'a-t-elle emporté sur les hybrides producteurs directs ? »",
+      "a": "Les HPD produisent beaucoup, mais leurs vins ont souvent le goût « foxé », surtout dû à l'anthranilate de méthyle des V. labrusca. La greffe domine dès le début du XXe siècle, et vers 1950 l'État pousse à éliminer les HPD."
+    },
+    "cave": "À ta prochaine commande chez le Château Moulin Caresse (Bergerac), demande sur quels porte-greffes sont plantées ses vignes, et pourquoi ce choix."
+  },
+  "43": {
+    "ouverture": "Pourquoi une loi interdirait-elle des cépages très plantés ? Donne deux raisons possibles.",
+    "illus": [
+      {
+        "svg": "dom08-six-interdits.svg",
+        "legende": "De la loi de 1934 à aujourd'hui : l'interdiction de classer ces cépages à vin tient toujours."
+      }
+    ],
+    "schema": {
+      "titre": "Les six interdits : je complète",
+      "lignes": [
+        [
+          "Date de la loi",
+          "24 décembre 1934"
+        ],
+        [
+          "Date donnée par Lepeltier, et pourquoi",
+          "1935 : année du décret d'application"
+        ],
+        [
+          "Depuis 1987, l'interdiction est reprise par…",
+          "le droit européen (interdiction de les classer comme cépages à vin)"
+        ],
+        [
+          "Ce que dit un producteur cévenol cité par la presse (2026) des douanes",
+          "qu'elles accepteraient « boisson à base de jus de raisin fermenté » ; aucun texte officiel retrouvé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Lepeltier date l'interdiction de 1935, ma fiche dit 1934. Qui a raison ? »",
+      "a": "Les deux datent un acte différent : la loi est du 24 décembre 1934, et un décret d'application suit en 1935."
+    },
+    "cave": "Parcours la liste des cépages de ta cave et cherche les six noms interdits. Prépare une phrase pour expliquer à un client pourquoi on n'en trouve pas sur les étiquettes."
+  }
+}

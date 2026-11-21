@@ -472,7 +472,7 @@ for (const def of CAHIER ? CAHIERS : []) {
       for (let pt = 10.4; pt >= (sec.matches('.ex') ? 8.4 : 9) && sec.scrollHeight > H; pt -= 0.2) sec.style.fontSize = pt + 'pt'; // exercices : jusqu'à 8,4 pt
       if (sec.scrollHeight <= H) return false;
       sec.style.fontSize = ''; return true; }).map(sec => sec.dataset.notion)); // trop longue : sur deux pages, à taille normale
-    if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${serrees.join(', ')} sur deux pages (lecture ou exercices)`);
+    if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${[...new Set(serrees)].join(', ')} sur deux pages (lecture ou exercices)`);
     const casse = await page.evaluate(() => document.body.innerText.match(/\b(undefined|NaN|null)\b|\[object/)?.[0]);
     if (casse) avert.push(`${def.nom} : texte cassé « ${casse} »`);
     await page.pdf({ path: fichier, format: 'A4', printBackground: true, displayHeaderFooter: true, headerTemplate: '<span></span>',

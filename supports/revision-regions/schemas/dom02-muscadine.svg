@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Le chemin du court-noué, et où la muscadine barre la route</text>
+  <g stroke="#a8843a" stroke-width="1.5" fill="none"><path d="M130 52 H170"/><path d="M300 52 H340"/><path d="M470 52 H490"/></g>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="0" y="32" width="130" height="40" rx="6"/><rect x="170" y="32" width="130" height="40" rx="6"/><rect x="340" y="32" width="130" height="40" rx="6"/></g>
+  <rect x="490" y="32" width="70" height="40" rx="6" fill="#5b1a24"/>
+  <g text-anchor="middle"><text x="65" y="49" font-weight="700">Nématode</text><text x="65" y="63">Xiphinema index</text>
+  <text x="235" y="49" font-weight="700">Virus</text><text x="235" y="63">GFLV</text>
+  <text x="405" y="49" font-weight="700">Vigne</text><text x="405" y="63">contaminée</text>
+  <text x="525" y="56" fill="#faf3e0" font-weight="700">court-noué</text></g>
+  <path d="M150 28 L150 76" stroke="#456e8a" stroke-width="3"/>
+  <rect x="0" y="92" width="560" height="38" rx="6" fill="#faf3e0" stroke="#456e8a"/>
+  <text x="12" y="108" font-weight="700" fill="#456e8a">Muscadinia rotundifolia</text><text x="12" y="122" font-size="10">40 chromosomes (Vitis : 38) ; résiste au nématode ; hybrides à 39 chromosomes, très peu fertiles</text>
+</svg>

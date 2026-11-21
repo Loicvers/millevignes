@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 145" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <path d="M30 34 H530" stroke="#625a4e" stroke-width="1.5"/>
+  <g fill="#5b1a24"><circle cx="70" cy="34" r="4"/><circle cx="175" cy="34" r="4"/><circle cx="280" cy="34" r="4"/><circle cx="385" cy="34" r="4"/><circle cx="490" cy="34" r="4"/></g>
+  <g text-anchor="middle">
+    <text x="70" y="19" font-weight="700" fill="#5b1a24" font-size="12">1953</text>
+    <text x="70" y="56">trois catégories :</text><text x="70" y="69">recommandés,</text><text x="70" y="82">autorisés,</text><text x="70" y="95">tolérés</text>
+    <text x="175" y="19" font-weight="700" fill="#5b1a24" font-size="12">1955</text>
+    <text x="175" y="56">classement par</text><text x="175" y="69">listes</text><text x="175" y="82">départementales</text>
+    <text x="280" y="19" font-weight="700" fill="#5b1a24" font-size="12">1957</text>
+    <text x="280" y="56">refonte des</text><text x="280" y="69">listes</text>
+    <text x="385" y="19" font-weight="700" fill="#5b1a24" font-size="12">vers 1958-60</text>
+    <text x="385" y="56">environ</text><text x="385" y="69">400 000 ha</text><text x="385" y="82">d'hybrides</text>
+    <text x="490" y="19" font-weight="700" fill="#5b1a24" font-size="12">1968</text>
+    <text x="490" y="56">23,3 % des</text><text x="490" y="69">surfaces</text><text x="490" y="82">(cadastre)</text>
+  </g>
+  <path d="M30 108 H530" stroke="#d8d0c2"/>
+  <text x="280" y="125" text-anchor="middle" fill="#625a4e">Pendant ce temps, le froid adopte : rondo (Tchécoslovaquie, puis Geisenheim), cayuga blanc (Cornell, 1972)</text>
+  <text x="280" y="139" text-anchor="middle" font-size="9.5" fill="#625a4e">frise non à l'échelle</text>
+</svg>

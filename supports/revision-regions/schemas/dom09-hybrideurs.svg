@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 135" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="40" y="16" font-weight="700" fill="#5b1a24">Fin du XIXe siècle → milieu du XXe : dizaines de milliers d'HPD</text>
+  <path d="M40 24 H440" stroke="#a8843a" stroke-width="1.5"/>
+  <path d="M40 20 V28 M440 20 V28" stroke="#a8843a" stroke-width="1.5"/>
+  <path d="M30 70 H530" stroke="#625a4e" stroke-width="1.5"/>
+  <g fill="#5b1a24"><circle cx="136" cy="70" r="4"/><circle cx="205" cy="70" r="4"/><circle cx="483" cy="70" r="4"/></g>
+  <g stroke="#d8d0c2"><path d="M136 66 V55"/><path d="M205 74 V85"/><path d="M483 66 V55"/></g>
+  <text x="136" y="40" text-anchor="middle" font-weight="700" fill="#5b1a24">1898</text>
+  <text x="136" y="52" text-anchor="middle">baco blanc</text>
+  <text x="205" y="98" text-anchor="middle" font-weight="700" fill="#5b1a24">1911</text>
+  <text x="205" y="111" text-anchor="middle">maréchal foch</text>
+  <text x="483" y="40" text-anchor="middle" font-weight="700" fill="#5b1a24">1963</text>
+  <text x="483" y="52" text-anchor="middle">chambourcin (commercialisé)</text>
+  <text x="280" y="128" text-anchor="middle" font-size="10" fill="#625a4e">frise à l'échelle des années</text>
+</svg>

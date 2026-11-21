@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M110 138 L62 128 L30 105 L60 98 L48 52 L84 66 L110 20 L136 66 L172 52 L160 98 L190 105 L158 128 Z" fill="#faf3e0" stroke="#5c7a4f" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M110 138 V152" stroke="#5c7a4f" stroke-width="2"/>
+  <g stroke="#a8843a" stroke-width="1.2"><path d="M110 138 L110 20"/><path d="M110 138 L48 52"/><path d="M110 138 L172 52"/><path d="M110 138 L30 105"/><path d="M110 138 L190 105"/></g>
+  <path d="M145.1 89.3 A60 60 0 0 1 165.4 115.1" fill="none" stroke="#5b1a24" stroke-width="1.6"/>
+  <path d="M172 52 L208 38" stroke="#625a4e" stroke-width="0.8"/>
+  <path d="M164 104 L208 104" stroke="#625a4e" stroke-width="0.8"/>
+  <text x="214" y="40" fill="#1a1612">longueur d'une nervure</text>
+  <text x="214" y="108" fill="#5b1a24">angle entre deux nervures</text>
+  <text x="214" y="152" fill="#625a4e" font-size="10">schéma de principe d'une feuille</text>
+  <text x="385" y="30" font-weight="700" fill="#5c7a4f">Plus fiables</text>
+  <text x="385" y="45" font-size="10.5">bourgeonnement, rameaux,</text><text x="385" y="58" font-size="10.5">feuille adulte : le « visage »</text>
+  <text x="385" y="92" font-weight="700" fill="#625a4e">Plus variables</text>
+  <text x="385" y="107" font-size="10.5">fleurs, grappes, baies</text><text x="385" y="120" font-size="10.5" fill="#625a4e">(selon Lepeltier)</text>
+</svg>

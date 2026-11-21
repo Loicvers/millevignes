@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 124" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="280" y="16" text-anchor="middle" fill="#625a4e" font-size="10">Viala et Vermorel : 7 volumes, 1901-1910 (largeurs à l'échelle des chiffres)</text>
+  <text x="92" y="48" text-anchor="end" font-weight="700">Noms</text>
+  <rect x="100" y="30" width="450" height="26" rx="4" fill="#d8d0c2"/>
+  <text x="325" y="48" text-anchor="middle" font-weight="700">environ 24 000 noms</text>
+  <text x="92" y="86" text-anchor="end" font-weight="700">Cépages</text>
+  <rect x="100" y="68" width="97.5" height="26" rx="4" fill="#5b1a24"/>
+  <text x="206" y="86" font-weight="700" fill="#5b1a24">environ 5 200 cépages</text>
+  <text x="280" y="116" text-anchor="middle" fill="#625a4e" font-size="10">un même cépage porte souvent plusieurs noms</text>
+</svg>

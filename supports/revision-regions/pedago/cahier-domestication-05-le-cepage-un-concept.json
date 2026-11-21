@@ -1,0 +1,212 @@
+{
+  "22": {
+    "ouverture": "Le mot « cépage » est-il aussi ancien que la vigne cultivée, ou bien plus récent ? Devine à quel siècle on en trouve les premières traces.",
+    "illus": [
+      {
+        "svg": "dom05-mot-cepage.svg",
+        "legende": "Du mot de poète au mot de savant : quelques jalons du vocabulaire de la vigne."
+      }
+    ],
+    "schema": {
+      "titre": "Le mot et son histoire",
+      "lignes": [
+        [
+          "Ce que désigne d'abord « cépage » chez Baïf (1573)",
+          "un branchage de vigne"
+        ],
+        [
+          "Ce que les dictionnaires enregistrent en 1867",
+          "le sens de « variété de ceps » (Larousse du XIXe siècle)"
+        ],
+        [
+          "Qui baptise l'ampélographie en 1661",
+          "Sachs"
+        ],
+        [
+          "Qui sort le mot de l'usage vigneron avec son Ampélographie",
+          "le comte Odart (1845)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Cépage, c'est un très vieux mot, non ? Les Romains l'employaient déjà ? »",
+      "a": "Les agronomes antiques distinguaient déjà les vignes (Pline en cite une cinquantaine), mais le mot « cépage » n'apparaît que chez Baïf, en 1573, au sens de branchage de vigne. Selon une étude historique, il reste rare et flou jusqu'au XIXe siècle."
+    },
+    "cave": "Prends trois bouteilles de ta cave et relève sur l'étiquette ou la fiche technique si un cépage est nommé. Le mot « cépage » y figure-t-il, ou seulement le nom du cépage ? Note aussi si le nom te paraît renvoyer à un lieu : la fiche rappelle qu'un nom de lieu ne prouve pas l'origine."
+  },
+  "23": {
+    "ouverture": "Pinot, pinot noir, pinot noir 115 : lequel de ces trois noms est le plus large, lequel le plus précis ? Devine, puis lis.",
+    "illus": [
+      {
+        "svg": "dom05-trois-echelles.svg",
+        "legende": "Cépage, variété, clone : l'exemple du grenache."
+      }
+    ],
+    "schema": {
+      "titre": "Cépage, variété, clone",
+      "lignes": [
+        [
+          "Ensemble de clones assez proches pour porter le même nom",
+          "un cépage"
+        ],
+        [
+          "Descendance végétative d'un pied sélectionné, repérée par un numéro",
+          "un clone"
+        ],
+        [
+          "Pinot gris et pinot blanc, par rapport au pinot noir",
+          "des mutations de couleur (même profil ADN)"
+        ],
+        [
+          "Qui agrée un clone sous un numéro, après sélection de pieds sains par l'IFV et ses partenaires",
+          "FranceAgriMer"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « J'ai lu « pinot noir 115 » sur une fiche technique. C'est un autre cépage que le pinot noir ? »",
+      "a": "Non : 115 est le numéro d'un clone, la descendance végétative d'un pied de pinot noir sélectionné. Le pinot noir est une variété du cépage pinot, et le clone 115 reste un pinot noir."
+    },
+    "cave": "À ta prochaine commande, demande à l'un de tes vignerons partenaires s'il sait quels clones, repérés par un numéro, sont plantés dans ses parcelles. Note sa réponse : sait-il distinguer cépage, variété et clone dans sa façon de les nommer ?"
+  },
+  "24": {
+    "ouverture": "Un même cépage peut-il porter quatre noms différents selon les pays ? Comment prouver que deux noms désignent le même cépage ?",
+    "illus": [
+      {
+        "svg": "dom05-quatre-passeports.svg",
+        "legende": "Un cépage, quatre noms : schéma de principe, pas une carte de son voyage."
+      }
+    ],
+    "schema": {
+      "titre": "L'enquête sur le zinfandel",
+      "lignes": [
+        [
+          "Ce qui a prouvé l'identité de deux noms",
+          "le profil ADN, identique"
+        ],
+        [
+          "L'équipe qui cherche l'origine du zinfandel en Dalmatie",
+          "Carole Meredith (UC Davis), avec Ivan Pejić et Edi Maletić (Zagreb)"
+        ],
+        [
+          "Le rôle du plavac mali",
+          "un parent du zinfandel, pas le même cépage"
+        ],
+        [
+          "Comment le cépage gagne la Californie",
+          "arrivé sur la côte Est par les pépinières austro-hongroises, puis en Californie avec la ruée vers l'or"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le zinfandel, c'est un cépage américain, non ? Et pourquoi ressemble-t-il au primitivo ? »",
+      "a": "On l'a longtemps cru américain. Dès la fin des années 1960 on le rapproche du primitivo des Pouilles, puis on confirme qu'il s'agit du même cépage. Son origine est croate : en Dalmatie, le crljenak kaštelanski a un ADN identique, et le nom historique est tribidrag."
+    },
+    "cave": "Si tu en trouves un de chaque, goûte côte à côte un zinfandel et un primitivo, sachant que c'est un seul cépage. Note ce qui les rapproche et ce qui les sépare, et demande-toi ce que cela t'apprend sur la place du cépage dans le goût d'un vin."
+  },
+  "25": {
+    "ouverture": "Vers 1900, pourquoi a-t-on éprouvé le besoin de recenser les cépages dans un traité de plusieurs volumes, avec des centaines de planches en couleurs ?",
+    "illus": [
+      {
+        "svg": "dom05-24000-noms.svg",
+        "legende": "Beaucoup plus de noms que de cépages : de nombreux noms sont des synonymes."
+      }
+    ],
+    "schema": {
+      "titre": "L'Ampélographie de Viala et Vermorel",
+      "lignes": [
+        [
+          "Les deux auteurs",
+          "Pierre Viala (scientifique) et Victor Vermorel (industriel)"
+        ],
+        [
+          "Ce qui rend le recensement urgent",
+          "après le phylloxéra, hybrides et porte-greffes se multiplient"
+        ],
+        [
+          "Pourquoi tant de noms pour les cépages décrits",
+          "un même cépage porte souvent plusieurs noms (synonymes)"
+        ],
+        [
+          "Sa limite",
+          "il manque de critères décisifs pour identifier un plant sur le terrain"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Viala et Vermorel parlent de 24 000 noms : il y avait vraiment 24 000 cépages ? »",
+      "a": "Non. Le traité décrit environ 5 200 cépages, mais il les range sous quelque 24 000 noms : un même cépage en porte souvent plusieurs, d'où l'écart."
+    },
+    "cave": "Sur la fiche technique d'un vin de ta cave, relève le ou les noms de cépages cités. Un de ces noms te semble-t-il en avoir d'autres ? Pose la question au vigneron à la prochaine commande : quel nom utilise-t-il, et pourquoi ?"
+  },
+  "28": {
+    "ouverture": "Un même cépage a souvent plusieurs noms. Si tu devais en choisir un seul comme nom de référence, sur quelle règle t'appuierais-tu ?",
+    "illus": [
+      {
+        "svg": "dom05-prime-name.svg",
+        "legende": "Trois manières de nommer, aucune nomenclature unique."
+      }
+    ],
+    "schema": {
+      "titre": "Qui fixe le nom d'un cépage ?",
+      "lignes": [
+        [
+          "La liste de l'OIV",
+          "des synonymes, sans hiérarchie"
+        ],
+        [
+          "Le catalogue français",
+          "une « dénomination principale »"
+        ],
+        [
+          "Le « prime name » de Wine Grapes",
+          "le nom le plus courant dans le pays d'origine"
+        ],
+        [
+          "Ce que prouve un nom de lieu dans un nom de cépage",
+          "rien : il ne garantit pas l'origine"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Sur une carte je lis zinfandel, sur une autre primitivo, ailleurs tribidrag. Lequel est le vrai nom ? »",
+      "a": "C'est le même cépage. Il n'existe pas de nomenclature unique : pour Wine Grapes, le nom de référence est le nom le plus courant dans le pays d'origine, ici tribidrag, même si l'on continue de dire zinfandel dans le monde."
+    },
+    "cave": "Prends un vin de ta cave et regarde le nom de cépage inscrit sur l'étiquette ou la fiche technique. Cherche dans le catalogue français quelle est sa dénomination principale et s'il a des synonymes. Le nom lu est-il le même ?"
+  },
+  "26": {
+    "ouverture": "Pour reconnaître un cépage, regarderais-tu plutôt la grappe, la baie ou la feuille ? Devine pourquoi, puis lis.",
+    "illus": [
+      {
+        "svg": "dom05-feuille.svg",
+        "legende": "Ce que mesure l'ampélométrie : des longueurs de nervures et des angles."
+      }
+    ],
+    "schema": {
+      "titre": "L'ampélographie de Galet",
+      "lignes": [
+        [
+          "Avec qui Galet codifie un vocabulaire précis",
+          "Henri Agnel"
+        ],
+        [
+          "L'organe le plus parlant, vrai « visage » de la vigne",
+          "la feuille adulte"
+        ],
+        [
+          "Ce que mesure l'ampélométrie",
+          "les longueurs de nervures et les angles de la feuille"
+        ],
+        [
+          "Les trois éditions de la liste OIV des descripteurs",
+          "1983, 2009, 2023"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi ne pas reconnaître un cépage à sa grappe, tout simplement ? »",
+      "a": "Selon Lepeltier, Galet juge les organes végétatifs (bourgeonnement, rameaux, feuille adulte) plus fiables que les grappes, dont l'aspect varie davantage. La feuille adulte, le vrai « visage » de la vigne, est même mesurée par l'ampélométrie."
+    },
+    "cave": "Lors d'une visite chez un vigneron partenaire, par exemple au Château de Fleys, demande à voir une feuille adulte de vigne et compte ses lobes. Note le nom du cépage de la parcelle, puis compare avec la grille de la fiche (feuille entière, trois, cinq ou sept lobes)."
+  }
+}

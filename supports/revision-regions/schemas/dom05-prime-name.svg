@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <g fill="#faf3e0" stroke="#a8843a" stroke-width="1.2">
+    <rect x="10" y="8" width="170" height="78" rx="6"/><rect x="195" y="8" width="170" height="78" rx="6"/><rect x="380" y="8" width="170" height="78" rx="6"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="95" y="28" font-weight="700" fill="#5b1a24">Liste de l'OIV</text>
+    <text x="95" y="48" font-size="10.5">liste de synonymes</text><text x="95" y="62" font-size="10.5">sans hiérarchie</text>
+    <text x="280" y="28" font-weight="700" fill="#5b1a24">Catalogue français</text>
+    <text x="280" y="48" font-size="10.5">une « dénomination</text><text x="280" y="62" font-size="10.5">principale » par cépage</text>
+    <text x="465" y="28" font-weight="700" fill="#5b1a24">Wine Grapes (2012)</text>
+    <text x="465" y="48" font-size="10.5">« prime name » : nom le plus</text><text x="465" y="62" font-size="10.5">courant dans le pays d'origine</text>
+    <text x="280" y="110" fill="#625a4e" font-size="10">pas de nomenclature unique : trois façons de choisir un nom</text>
+  </g>
+</svg>

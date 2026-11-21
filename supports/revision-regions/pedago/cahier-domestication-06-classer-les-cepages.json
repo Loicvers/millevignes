@@ -1,0 +1,242 @@
+{
+  "27": {
+    "ouverture": "Deux étiquettes aux noms différents peuvent-elles cacher le même cépage ? Comment le prouver ?",
+    "illus": [
+      {
+        "svg": "dom06-identifier.svg",
+        "legende": "Décrire, mesurer, lire l'ADN : trois façons de reconnaître un cépage, chacune corrigeant la précédente."
+      }
+    ],
+    "schema": {
+      "titre": "Trois façons d'identifier un cépage",
+      "lignes": [
+        [
+          "Limite de la description (Viala et Vermorel)",
+          "subjective, avec des noms multiples"
+        ],
+        [
+          "Limite de la mesure (ampélométrie, descripteurs OIV)",
+          "elle dépend du milieu et de l'opérateur"
+        ],
+        [
+          "Pourquoi l'empreinte SSR est plus fiable que l'aspect de la plante",
+          "elle est indépendante du milieu"
+        ],
+        [
+          "Ce que l'ADN donne, et ce qu'il ne donne pas",
+          "l'identité du cépage, pas un nom unique"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client voit deux cépages aux noms différents sur deux étiquettes et demande s'il peut s'agir du même.",
+      "a": "Oui, c'est possible : il n'existe pas de nomenclature mondiale unique, et certains noms trompent (l'auxerrois de Cahors est le côt). L'ADN est ce qui le prouve, car il établit l'identité du plant sans imposer de nom."
+    },
+    "cave": "Choisis un vin de ta cave dont l'étiquette cite un cépage. Note le nom exact, puis cherche si sa fiche technique ou une autre source l'appelle autrement. Tu vérifies par toi-même qu'un cépage peut porter plusieurs noms."
+  },
+  "29": {
+    "ouverture": "Un pépiniériste te vend un « clone agréé ». Qu'est-ce qui est garanti en premier, à ton avis : le goût du vin ou la santé du plant ?",
+    "illus": [
+      {
+        "svg": "dom06-clone.svg",
+        "legende": "La carte d'identité d'un clone agréé : variété inscrite au catalogue, numéro d'agrément, certificat sanitaire."
+      }
+    ],
+    "schema": {
+      "titre": "Du catalogue au clone",
+      "lignes": [
+        [
+          "Que peut planter un vigneron français ?",
+          "seulement des variétés inscrites au catalogue officiel"
+        ],
+        [
+          "Qui mène la sélection clonale ?",
+          "l'IFV"
+        ],
+        [
+          "Objectif premier de cette sélection",
+          "sanitaire : pas de virus graves (court-noué, enroulement)"
+        ],
+        [
+          "Ce dont Lepeltier s'inquiète",
+          "d'une diversité intra-variétale rétrécie"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « 47 clones de pinot noir agréés : la diversité doit être énorme ! »",
+      "a": "Pas forcément. Le livre en compte 47 (48 en 2026), mais c'est une sélection menée d'abord pour la santé du plant. Lepeltier s'inquiète d'une diversité intra-variétale ainsi rétrécie."
+    },
+    "cave": "À ta prochaine commande, pose cette question au Domaine Pernot Père & Fils (Gevrey-Chambertin) : « Vos plants de pinot noir sont-ils des clones agréés ? » Note sa réponse."
+  },
+  "1": {
+    "ouverture": "À volume de jus égal, une petite baie ou une grosse baie donne-t-elle le plus de couleur au vin ? Pourquoi ?",
+    "illus": [
+      {
+        "svg": "dom06-petite-baie.svg",
+        "legende": "Petite baie : plus de peau et de pépins par rapport au jus, donc couleur intense et tanins fermes."
+      }
+    ],
+    "schema": {
+      "titre": "Cabernet sauvignon : repères",
+      "lignes": [
+        [
+          "Rang parmi les cépages de cuve du monde",
+          "1er (environ 341 000 ha en 2015, OIV)"
+        ],
+        [
+          "Rang en France",
+          "6e"
+        ],
+        [
+          "Pourquoi couleur intense et tanins fermes ?",
+          "petites baies riches en pépins et en peau par rapport au jus"
+        ],
+        [
+          "Note végétale s'il est récolté trop tôt",
+          "poivron vert, qui s'efface à bonne maturité"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client trouve un cabernet sauvignon « poivronné » et se demande s'il est défectueux.",
+      "a": "Pas nécessairement : récolté trop tôt, le cabernet sauvignon marque des notes végétales de poivron vert, qui s'effacent à bonne maturité. Cela évoque plutôt un raisin récolté avant sa maturité."
+    },
+    "cave": "Goûte ton Médoc (Château Haut-Maurac) ou un vin des Domaines Fabre (Haut-Médoc, Margaux). Vérifie sur la fiche technique si le cabernet sauvignon est cité et en quelle proportion, puis note la couleur et la fermeté des tanins."
+  },
+  "33": {
+    "ouverture": "Un cépage disparu des vignes peut-il être le parent de cépages très connus ? Si tu as un exemple en tête, note-le.",
+    "illus": [
+      {
+        "svg": "dom06-magdeleine.svg",
+        "legende": "De la souche bretonne au test de parenté : comment on a retrouvé la mère du merlot."
+      }
+    ],
+    "schema": {
+      "titre": "La mère du merlot",
+      "lignes": [
+        [
+          "Qui l'a identifiée, et en quelle année ?",
+          "l'équipe de Jean-Michel Boursiquot, en 2009"
+        ],
+        [
+          "Où a-t-on retrouvé le même génotype (2004-2007) ?",
+          "dans quatre villages des Charentes"
+        ],
+        [
+          "Un autre de ses enfants, avec le prunelard",
+          "le côt"
+        ],
+        [
+          "Pourquoi la dit-on « patrimoniale » ?",
+          "disparue des vignes, mais clé dans les généalogies"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « On a retrouvé la mère du merlot : elle protège donc de la flavescence dorée ? »",
+      "a": "Non : aucune vigne n'est réellement indemne. Le merlot est peu sensible, et un poster de l'INRAE (2025, résultat préliminaire) suggère que sa mère transmet cette moindre sensibilité. C'est une piste, pas une immunité."
+    },
+    "cave": "Sur la fiche technique de ton Saint-Émilion (Château Jean Faure) ou de ton Lalande-de-Pomerol (Vignobles Borderie), regarde si le merlot et le cabernet franc sont cités ensemble. Si oui, tu as dans le même assemblage le merlot et son père, le cabernet franc."
+  },
+  "30": {
+    "ouverture": "Pour classer les cépages selon leur date de maturité, il faut un repère. Prendrais-tu un cépage très tardif ou un cépage précoce ? Pourquoi ?",
+    "illus": [],
+    "schema": {
+      "titre": "Pulliat en quatre questions",
+      "lignes": [
+        [
+          "Que mûrit avant le chasselas ?",
+          "les précoces, surtout des raisins de table"
+        ],
+        [
+          "Dans quel ouvrage expose-t-il d'abord sa méthode ?",
+          "Le Vignoble, tome I (1874-1875)"
+        ],
+        [
+          "À quoi sert ce classement ?",
+          "à choisir un cépage selon le climat"
+        ],
+        [
+          "Sa limite",
+          "il est artificiel : il ne dit rien des parentés"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon livre met le mourvèdre en 4e époque, un vieux traité en 3e. Lequel dit vrai ? »",
+      "a": "Les sources divergent : Lepeltier le range en 4e époque, Pulliat (1888) en 3e, comme Foëx. Retiens plutôt l'ordre général, le mourvèdre est parmi les derniers à mûrir, que le numéro d'époque."
+    },
+    "cave": "À ta prochaine commande, demande au Château de Montmirail (Gigondas) dans quel ordre il vendange ses cépages. Compare sa réponse à l'ordre de Pulliat et note les écarts."
+  },
+  "31": {
+    "ouverture": "Un raisin de table à gros grains a plus de chances de venir d'Arménie ou d'Europe de l'Ouest ? Pourquoi, à ton avis ?",
+    "illus": [
+      {
+        "svg": "dom06-proles.svg",
+        "legende": "Les trois proles de Negrul (1946), de l'ouest vers l'est."
+      }
+    ],
+    "schema": {
+      "titre": "Les trois proles : je complète",
+      "lignes": [
+        [
+          "Orientalis : type de raisins",
+          "grosses baies, surtout raisins de table"
+        ],
+        [
+          "Pontica : usage",
+          "cépages de cuve ou mixtes"
+        ],
+        [
+          "Occidentalis : grappes et usage",
+          "petites grappes de baies juteuses, cépages de cuve"
+        ],
+        [
+          "Hypothèse que ce schéma conforte",
+          "un berceau transcaucasien de la viticulture"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Un proles, c'est une région ou un cépage ? »",
+      "a": "Ni l'un ni l'autre : c'est un grand groupe écologique et géographique de cépages, défini par Negrul en 1946. Il sert à situer l'origine géographique d'un cépage."
+    },
+    "cave": "Prends ton Alsace (Domaine Burghart-Spettel) et lis le cépage sur l'étiquette. S'il s'agit d'un riesling ou d'un pinot, tu as un occidentalis dans le verre : note ce que « baies juteuses, cépage de cuve » t'évoque en bouche."
+  },
+  "32": {
+    "ouverture": "« Noiriens », « carmenets », « sérines » : ce sont des familles de cépages. À ton avis, d'où viennent ces noms ?",
+    "illus": [
+      {
+        "svg": "dom06-familles.svg",
+        "legende": "De Negrul à Bisson : des 3 proles aux 16 groupes de cépages français."
+      }
+    ],
+    "schema": {
+      "titre": "Les groupes de cépages français",
+      "lignes": [
+        [
+          "Qu'est-ce qu'un sortotype ?",
+          "une famille de cépages nés et évolués dans un même milieu"
+        ],
+        [
+          "Comment les 16 groupes se répartissent-ils ?",
+          "douze groupes numérotés et quatre rattachés"
+        ],
+        [
+          "Comment chaque groupe est-il nommé ?",
+          "d'après son cépage le plus représentatif"
+        ],
+        [
+          "Très localisé, ou dispersé avec les hommes ?",
+          "mansiens et noiriens très localisés ; carmenets dispersés"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les carmenets, c'est une appellation ? »",
+      "a": "Non : c'est un des 16 groupes de cépages français proposés par Bisson, nommé d'après son cépage le plus représentatif, le cabernet franc. Un groupe réunit des cépages apparentés, nés dans un même milieu."
+    },
+    "cave": "Prends trois vins de ta cave. Pour chacun, note le cépage lu sur l'étiquette ou la fiche technique et cherche s'il est le chef d'un groupe (pinot, syrah, cabernet franc, savagnin, petit manseng)."
+  }
+}

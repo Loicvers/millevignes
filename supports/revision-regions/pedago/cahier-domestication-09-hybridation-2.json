@@ -1,0 +1,204 @@
+{
+  "44": {
+    "ouverture": "Au XIXe siècle, qui crée les hybrides : des instituts publics ou des particuliers ? Et combien en obtient-on en tout, à ton avis : quelques centaines ou des dizaines de milliers ?",
+    "illus": [
+      {
+        "svg": "dom09-hybrideurs.svg",
+        "legende": "Trois hybrides de la frise : leurs dates de création ou de commercialisation, de la fin du XIXe siècle à 1963."
+      }
+    ],
+    "schema": {
+      "titre": "Les hybrideurs en chiffres et en lieux",
+      "lignes": [
+        [
+          "Nombre d'hybrides de Seibel, selon le livre (et selon Medarus)",
+          "plus de 16 000 selon le livre ; plus de 15 000 selon Medarus"
+        ],
+        [
+          "Nombre de ses hybrides mis au commerce",
+          "plus de 2 000"
+        ],
+        [
+          "Ville où travaille Kuhlmann",
+          "Colmar"
+        ],
+        [
+          "Seul ancien hybride encore admis en AOC, et laquelle",
+          "le baco blanc, en AOC Armagnac (selon Wine Grapes)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client t'assure que les hybrides ont tous disparu des appellations. Il s'étonne que tu lui parles de baco blanc dans l'Armagnac.",
+      "a": "Le baco blanc (ou baco 22 A, folle blanche × noah) figure toujours dans l'encépagement de l'AOC Armagnac. Selon Wine Grapes, c'est le seul hybride admis en AOC. Son parent, le noah, fait pourtant partie des six hybrides interdits en 1934."
+    },
+    "cave": "Prends un vin AOC de ta cave, par exemple le Chablis du Château de Fleys. Cherche le cahier des charges de l'appellation sur le site de l'INAO et relève la liste des cépages : y a-t-il un hybride ? Compare avec l'Armagnac, où le baco blanc reste admis."
+  },
+  "45": {
+    "ouverture": "Une vigne greffée est faite de deux parties soudées. À ton avis, laquelle donne les racines et laquelle donne le raisin ?",
+    "illus": [
+      {
+        "photo": "photos/greffe.jpg",
+        "legende": "Une greffe : le greffon vinifera s'emboîte dans le porte-greffe, qui fournit les racines.",
+        "credit": "Photo : Epop, domaine public, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Je lis une étiquette de porte-greffe",
+      "lignes": [
+        [
+          "Partie de la vigne que fournit le porte-greffe",
+          "les racines"
+        ],
+        [
+          "Le B de « 41 B » renvoie à…",
+          "V. berlandieri, pas à un obtenteur"
+        ],
+        [
+          "Obtenteurs du 101-14 Mgt",
+          "Millardet et de Grasset"
+        ],
+        [
+          "Porte-greffe adapté aux sols calcaires",
+          "le 41 B (chasselas × berlandieri, 1882)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire demande : « Pourquoi un vigneron planterait-il du 41 B plutôt que du 3309 C sur un sol calcaire ? »",
+      "a": "Le 41 B est croisé avec V. berlandieri, qui le rend adapté aux sols calcaires. Il est issu de chasselas × berlandieri (Millardet et de Grasset, 1882). Le 3309 C (riparia × rupestris, Couderc) reste très planté, mais il ne vise pas ce cas précis."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Domaine des Amandiers, à Saumur-Champigny) quel porte-greffe il a planté sur une parcelle et pourquoi. Déchiffre la lettre ou le sigle qu'il te donne : obtenteur ou espèce ?"
+  },
+  "46": {
+    "ouverture": "Vers 1958-1960, les hybrides couvraient-ils moins de 10 %, environ 30 % ou plus de la moitié du vignoble français ?",
+    "illus": [
+      {
+        "svg": "dom09-decrets.svg",
+        "legende": "Du classement de 1953 au cadastre de 1968 : frise non à l'échelle, avec les surfaces d'hybrides."
+      }
+    ],
+    "schema": {
+      "titre": "Les repères du déclin",
+      "lignes": [
+        [
+          "Les trois catégories du décret de 1953",
+          "recommandés, autorisés, provisoirement tolérés (planter ces derniers est interdit)"
+        ],
+        [
+          "Surface d'hybrides vers 1958-1960",
+          "environ 400 000 ha (chiffre courant, sans source officielle primaire)"
+        ],
+        [
+          "Part des surfaces en 1968 (cadastre viticole)",
+          "23,3 %"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les hybrides ont été interdits d'un coup dans les années 1950. »",
+      "a": "Non, le recul est progressif. Le décret de 1953 classe les cépages et interdit de planter les « provisoirement tolérés ». En 1957, certains départements recommandent encore des hybrides, comme le Maréchal Foch dans l'Ain. Le cadastre de 1968 leur attribue encore 23,3 % des surfaces."
+    },
+    "cave": "Demande à un vigneron de ta cave si des hybrides ont déjà été plantés chez lui ou dans sa région. Note sa réponse."
+  },
+  "47": {
+    "ouverture": "Pour doter la vigne européenne d'une résistance à l'oïdium et au mildiou, où peut-on aller chercher les gènes ?",
+    "illus": [],
+    "schema": {
+      "titre": "Qui protège de quoi, et comment ?",
+      "lignes": [
+        [
+          "Parent sauvage croisé avec V. vinifera dès 1974",
+          "Muscadinia rotundifolia"
+        ],
+        [
+          "Gène contre l'oïdium ; gène contre le mildiou",
+          "Run1 ; Rpv1"
+        ],
+        [
+          "Limite d'une résistance monogénique",
+          "le champignon peut la contourner (déjà arrivé pour Run1)"
+        ],
+        [
+          "Stratégie de Schneider (INRA Colmar)",
+          "le pyramidage : cumuler plusieurs gènes de résistance"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire a lu Lepeltier (p. 36) : « Run1 protège du mildiou, Rpv1 de l'oïdium. » Qui a raison, le livre ou la fiche ?",
+      "a": "La fiche. Run1 protège de l'oïdium et Rpv1 du mildiou. Le texte du livre est inversé, mais la légende de son propre schéma (p. 37) est juste. Astuce : RUN renvoie à Uncinula, l'ancien nom du champignon de l'oïdium ; RPV à Plasmopara viticola, l'agent du mildiou."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Domaine Burghart-Spettel, en Alsace) s'il a déjà goûté ou planté une variété résistante aux maladies, et pourquoi. Note sa réponse et dis si elle parle d'un seul gène ou de plusieurs."
+  },
+  "48": {
+    "ouverture": "Que veut dire « ResDur », à ton avis ? Et qu'est-ce qui doit être « durable » dans la résistance ?",
+    "illus": [
+      {
+        "svg": "dom09-resdur.svg",
+        "legende": "Les trois vagues de variétés ResDur, de 2018 à 2026 : rouge, blanc, ou couleur non précisée dans la fiche."
+      }
+    ],
+    "schema": {
+      "titre": "ResDur en bref",
+      "lignes": [
+        [
+          "Gènes cumulés contre le mildiou",
+          "Rpv1 + Rpv3"
+        ],
+        [
+          "Gènes cumulés contre l'oïdium",
+          "Run1 + Ren3"
+        ],
+        [
+          "Observatoire qui mesure la baisse des traitements",
+          "OSCAR ; environ 80 à 90 %"
+        ],
+        [
+          "Part du génome qui reste vinifera",
+          "plus de 95 %"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Une variété ResDur donne-t-elle un vin sans aucun traitement ? »",
+      "a": "Pas tout à fait. Ces variétés cumulent deux gènes contre le mildiou et deux contre l'oïdium. OSCAR mesure environ 80 à 90 % de traitements fongicides en moins, mais un ou deux restent conseillés, notamment contre le black-rot et pour préserver les gènes."
+    },
+    "cave": "Demande à un vigneron de ta cave (Domaine des Amandiers, par exemple) s'il a déjà essayé voltis ou artaban. Note sa réponse."
+  },
+  "49": {
+    "ouverture": "Une AOC fixe la liste de ses cépages. Peut-elle tester un nouveau cépage face au changement climatique ? À quelles conditions, imagines-tu ?",
+    "illus": [
+      {
+        "svg": "dom09-voltis.svg",
+        "legende": "L'essai du voltis en Champagne : des années à l'échelle, de l'arrêté de 2022 à la décision attendue en 2033."
+      }
+    ],
+    "schema": {
+      "titre": "Les VIFA en un coup d'œil",
+      "lignes": [
+        [
+          "Plafond de la VIFA dans l'encépagement de l'exploitation",
+          "5 %"
+        ],
+        [
+          "Plafond de la VIFA dans l'assemblage",
+          "10 %"
+        ],
+        [
+          "Le nom de la VIFA sur l'étiquette ?",
+          "non, il n'y figure pas"
+        ],
+        [
+          "Durée de la convention d'essai",
+          "dix ans"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client demande : « Une appellation peut donc planter n'importe quel nouveau cépage, du moment qu'il résiste au climat ? »",
+      "a": "Non. Depuis la directive INAO de 2018 (révisée en 2021), une AOC ne peut accueillir une VIFA qu'à titre expérimental. Elle est plafonnée à 5 % de l'encépagement de l'exploitation et 10 % de l'assemblage, elle n'est pas nommée sur l'étiquette, et l'essai se fait par convention de dix ans."
+    },
+    "cave": "Cherche dans le cahier des charges de l'AOC Champagne (Champagne Petit-Triolet) la mention du voltis, puis dans celui d'une appellation bordelaise de ta cave (par exemple le Médoc de Château Haut-Maurac) vérifie s'il comprend ou non les variétés d'adaptation admises à Bordeaux en 2021. Note ce que tu trouves."
+  }
+}

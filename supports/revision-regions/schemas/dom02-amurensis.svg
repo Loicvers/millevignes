@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">V. amurensis et ses descendants</text><text x="560" y="14" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe, simplifié</text>
+  <rect x="0" y="52" width="120" height="44" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+  <text x="60" y="70" text-anchor="middle" font-weight="700">V. amurensis</text><text x="60" y="85" text-anchor="middle" font-size="10" fill="#625a4e">bassin de l'Amour</text>
+  <g stroke="#a8843a" stroke-width="1.4" fill="none"><path d="M120 74 H155"/><path d="M155 45 V107"/><path d="M155 45 H190"/><path d="M155 107 H190"/><path d="M340 45 H370"/><path d="M370 30 V50"/><path d="M370 30 H400"/><path d="M370 50 H400"/></g>
+  <rect x="190" y="28" width="150" height="34" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  <text x="265" y="43" text-anchor="middle">Zarya Severa</text><text x="265" y="56" text-anchor="middle" font-size="10" fill="#625a4e">croisement avec amurensis</text>
+  <rect x="190" y="90" width="150" height="34" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  <text x="265" y="105" text-anchor="middle">hybrides</text><text x="265" y="118" text-anchor="middle" font-size="10" fill="#625a4e">vinifera × amurensis</text>
+  <path d="M340 107 H400" stroke="#a8843a" stroke-width="1.4"/>
+  <g font-weight="700" fill="#5b1a24"><text x="408" y="34">Rondo</text><text x="408" y="54">Solaris</text><text x="408" y="111">Cabernet severny</text></g>
+  <text x="280" y="144" text-anchor="middle" font-size="10" fill="#625a4e">Leur tenue au froid n'est pas celle de l'espèce.</text>
+</svg>

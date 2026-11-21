@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <g font-weight="700" fill="#5b1a24" font-size="12"><text x="20" y="18">ResDur 1</text><text x="205" y="18">ResDur 2</text><text x="390" y="18">ResDur 3</text></g>
+  <g fill="#625a4e" font-size="10"><text x="20" y="31">inscrite le 3 janvier 2018</text><text x="205" y="31">fin 2021-début 2022</text><text x="390" y="31">arrêté du 14 février 2026</text></g>
+  <g stroke="#d8d0c2"><path d="M20 38 H170"/><path d="M205 38 H355"/><path d="M390 38 H540"/></g>
+  <g fill="#5b1a24"><circle cx="26" cy="52" r="4.5"/><circle cx="26" cy="68" r="4.5"/><circle cx="396" cy="116" r="4.5"/><circle cx="396" cy="132" r="4.5"/></g>
+  <g fill="#faf3e0" stroke="#a8843a" stroke-width="1.5"><circle cx="26" cy="84" r="4"/><circle cx="26" cy="100" r="4"/><circle cx="396" cy="52" r="4"/><circle cx="396" cy="68" r="4"/><circle cx="396" cy="84" r="4"/><circle cx="396" cy="100" r="4"/></g>
+  <g fill="#625a4e"><circle cx="211" cy="52" r="4"/><circle cx="211" cy="68" r="4"/><circle cx="211" cy="84" r="4"/><circle cx="211" cy="100" r="4"/><circle cx="211" cy="116" r="4"/></g>
+  <g>
+    <text x="38" y="56">artaban</text><text x="38" y="72">vidoc</text><text x="38" y="88">floreal</text><text x="38" y="104">voltis</text>
+    <text x="223" y="56">coliris</text><text x="223" y="72">lilaro</text><text x="223" y="88">sirano</text><text x="223" y="104">selenor</text><text x="223" y="120">opalor</text>
+    <text x="408" y="56">elaris</text><text x="408" y="72">florisia</text><text x="408" y="88">orellis</text><text x="408" y="104">serelis</text><text x="408" y="120">taranis</text><text x="408" y="136">valpesia</text>
+  </g>
+  <g font-size="10" fill="#625a4e">
+    <text x="20" y="153">rouge : point plein · blanc : point clair · gris : couleur non précisée dans la fiche</text>
+  </g>
+</svg>

@@ -1,0 +1,172 @@
+{
+  "2": {
+    "ouverture": "Pinot noir, pinot gris, pinot blanc : pourquoi portent-ils le même nom, à ton avis ?",
+    "illus": [
+      {
+        "svg": "dom07-pinot.svg",
+        "legende": "La famille du pinot : trois couleurs d'un même cépage, un meunier à part, et des enfants nés du croisement avec le gouais blanc (non dessinés)."
+      }
+    ],
+    "schema": {
+      "titre": "Le pinot : je complète",
+      "lignes": [
+        [
+          "Pinot noir, gris, blanc : leur profil ADN",
+          "identique (variétés d'un seul cépage)"
+        ],
+        [
+          "Ce qui les distingue",
+          "une mutation de la couleur"
+        ],
+        [
+          "Le meunier, génétiquement",
+          "une chimère : seule la couche cellulaire externe a muté"
+        ],
+        [
+          "Pinot × gouais blanc : quelques enfants",
+          "chardonnay, gamay, aligoté, melon, auxerrois"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client lit « 47 clones de pinot noir agréés en France » et s'étonne : « Ça fait 47 cépages ? »",
+      "a": "Non. Un clone est une copie d'un même pied, à de rares mutations près : ce sont 47 clones agréés d'un seul cépage, le pinot noir."
+    },
+    "cave": "Sur la fiche technique d'un de tes vins de Bourgogne (par exemple chez Pernot Père & Fils ou Decelle & Fils), repère le cépage, et le clone s'il est indiqué. Puis explique à voix haute, en une phrase, ce qu'est une mutation de couleur."
+  },
+  "34": {
+    "ouverture": "Qu'est-ce qui sépare un pépin d'une bouture, pour la plante qui en naîtra ?",
+    "illus": [],
+    "schema": {
+      "titre": "Pépin ou bouture : je complète",
+      "lignes": [
+        [
+          "Le pépin : quelle voie ?",
+          "la voie sexuée"
+        ],
+        [
+          "Ce que donne un pépin",
+          "un individu unique, donc un nouveau cépage"
+        ],
+        [
+          "Ce que donnent bouture et marcotte",
+          "des clones, génome copié à l'identique"
+        ],
+        [
+          "Délai du semis avant les premiers raisins",
+          "2 à 3 ans"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi plante-t-on des boutures plutôt que des pépins ? »",
+      "a": "La bouture copie le pied choisi : on sait ce qu'on obtient, et vite. Le pépin est une loterie, lente et incertaine. Le semis revient pourtant aujourd'hui pour créer des variétés résistantes."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron partenaire d'où viennent ses plants, et comment il les renouvelle. Note sa réponse et compare-la à ce que tu viens d'apprendre."
+  },
+  "35": {
+    "ouverture": "Avant le phylloxéra, comment pouvait-on renouveler une vigne sans acheter de plants ?",
+    "illus": [
+      {
+        "svg": "dom07-marcotte-provin.svg",
+        "legende": "Schéma de principe : à gauche un sarment couché et enterré, à droite la souche entière."
+      }
+    ],
+    "schema": {
+      "titre": "Marcotte et provin : je complète (distinction de Lepeltier ; certains glossaires confondent les deux mots)",
+      "lignes": [
+        [
+          "Marcottage : on enterre…",
+          "un sarment encore relié au pied mère"
+        ],
+        [
+          "Provignage : on couche et on enterre…",
+          "la souche entière"
+        ],
+        [
+          "Densités obtenues",
+          "plusieurs dizaines de milliers de pieds par hectare"
+        ],
+        [
+          "Qui décrivait déjà ces techniques ?",
+          "Columelle"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi couchait-on des sarments plutôt que d'acheter des plants ? »",
+      "a": "C'était peu coûteux, cela donnait de fortes densités de pieds et cela permettait de garder les meilleurs pieds de vignes alors complantées de nombreux cépages."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire s'il connaît l'âge de ses vignes et comment elles ont été renouvelées. Note si le mot marcotte ou provin revient."
+  },
+  "36": {
+    "ouverture": "Combien de cépages existent, à ton avis ? Et combien en faut-il pour couvrir l'essentiel du vignoble français ?",
+    "illus": [
+      {
+        "svg": "dom07-poignee.svg",
+        "legende": "Beaucoup de cépages existent, une dizaine domine le vignoble français."
+      }
+    ],
+    "schema": {
+      "titre": "Beaucoup de cépages, peu de plantés",
+      "lignes": [
+        [
+          "V. vinifera distinctes, selon Lepeltier",
+          "environ 6 000"
+        ],
+        [
+          "Part du vignoble français couverte par les dix premières variétés",
+          "environ 70 %"
+        ],
+        [
+          "Variétés existantes, selon Wine Grapes",
+          "environ 10 000"
+        ],
+        [
+          "Date de standardisation des AOC, une des causes citées",
+          "à partir de 1935"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « S'il existe des milliers de cépages, pourquoi retrouve-t-on toujours les mêmes dans mon verre ? »",
+      "a": "Une dizaine de variétés couvre environ 70 % du vignoble français. Lepeltier cite la qualité et la régularité de ces cépages, mais aussi l'industrialisation, l'uniformisation des goûts et la standardisation des AOC à partir de 1935."
+    },
+    "cave": "Relève les cépages de cinq vins de ta cave, de régions différentes. Combien de noms différents obtiens-tu ? Y en a-t-il un que tu ne connaissais pas ? Compare avec les quelque 6 000 cépages estimés par Lepeltier."
+  },
+  "37": {
+    "ouverture": "Où conserverais-tu des milliers de vignes différentes, et que craindrais-tu pour elles ?",
+    "illus": [
+      {
+        "svg": "dom07-vassal.svg",
+        "legende": "Cinq dates pour suivre les collections de vignes, de Rozier à Pech Rouge."
+      }
+    ],
+    "schema": {
+      "titre": "Vassal : je complète",
+      "lignes": [
+        [
+          "La collection est lancée en 1876 par…",
+          "l'école d'agriculture de Montpellier"
+        ],
+        [
+          "Installée en 1949 à…",
+          "Vassal, à Marseillan"
+        ],
+        [
+          "Atout du site",
+          "des sables où la vigne peut vivre sans greffe"
+        ],
+        [
+          "Menace actuelle, et nouveau site",
+          "la montée de la mer et le sel ; Pech Rouge, à Gruissan"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Combien de cépages comptait la collection du Luxembourg ? »",
+      "a": "Les sources divergent : environ 1 300 selon Lepeltier, 1 498 variétés en 1842 et 1 924 en 1848 selon le Sénat. Mieux vaut donner la source avec le chiffre."
+    },
+    "cave": "Situe sur une carte Marseillan et Gruissan, puis le Mas du Novi (Languedoc Grès de Montpellier) : le site de Vassal et le nouveau sont-ils proches de ce domaine ? Note les distances à vol d'oiseau."
+  }
+}
