@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 98" font-family="Inter, sans-serif" font-size="10" fill="#1a1612">
+  <defs><marker id="m07g" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#625a4e"/></marker></defs>
+  <text x="8" y="23" font-weight="700" fill="#5b1a24">Rouge</text><text x="8" y="36" font-size="9" fill="#625a4e">sur grains</text>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="100" y="8" width="120" height="34" rx="5"/><rect x="250" y="8" width="120" height="34" rx="5" stroke="#a8843a" stroke-width="1.5"/><rect x="400" y="8" width="150" height="34" rx="5"/></g>
+  <g text-anchor="middle"><text x="160" y="22">Fermentation</text><text x="160" y="35">sur les peaux</text>
+  <text x="310" y="22" fill="#a8843a" font-weight="700">ALCOOL</text><text x="310" y="35">mutage</text>
+  <text x="475" y="22">Peaux au contact,</text><text x="475" y="35">puis pressage</text></g>
+  <g stroke="#625a4e" marker-end="url(#m07g)"><path d="M221 25 H247"/><path d="M371 25 H397"/></g>
+  <text x="8" y="63" font-weight="700" fill="#456e8a">Blanc, muscat</text><text x="8" y="76" font-size="9" fill="#625a4e">sur moût</text>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="100" y="48" width="120" height="34" rx="5"/><rect x="250" y="48" width="120" height="34" rx="5"/><rect x="400" y="48" width="150" height="34" rx="5" stroke="#a8843a" stroke-width="1.5"/></g>
+  <g text-anchor="middle"><text x="160" y="62">Pressage</text><text x="160" y="75">d'abord</text>
+  <text x="310" y="62">Fermentation</text><text x="310" y="75">sans peaux</text>
+  <text x="475" y="62" fill="#a8843a" font-weight="700">ALCOOL</text><text x="475" y="75">mutage</text></g>
+  <g stroke="#625a4e" marker-end="url(#m07g)"><path d="M221 65 H247"/><path d="M371 65 H397"/></g>
+  <text x="550" y="95" text-anchor="end" font-size="8.5" fill="#625a4e">schéma de principe</text>
+</svg>

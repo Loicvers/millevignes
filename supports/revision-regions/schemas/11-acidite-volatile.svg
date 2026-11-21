@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 110" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <g text-anchor="middle">
+    <rect x="0" y="2" width="120" height="36" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="60" y="17">on élimine</text><text x="60" y="30">le CO2</text>
+    <rect x="146" y="2" width="120" height="36" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="206" y="17">distillation</text><text x="206" y="30">à la vapeur</text>
+    <rect x="292" y="2" width="120" height="36" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="352" y="25">titrage</text>
+    <rect x="438" y="2" width="122" height="36" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="499" y="17">on retranche SO2</text><text x="499" y="30">et acide sorbique</text>
+    <rect x="0" y="54" width="110" height="30" rx="6" fill="#faf3e0" stroke="#456e8a"/><text x="55" y="73">meq/l</text>
+    <rect x="195" y="54" width="150" height="30" rx="6" fill="#faf3e0" stroke="#456e8a"/><text x="270" y="73">g/l d'acide acétique</text>
+    <rect x="410" y="54" width="150" height="30" rx="6" fill="#faf3e0" stroke="#456e8a"/><text x="485" y="73">g/l d'acide sulfurique</text>
+    <text x="152" y="63" font-weight="700" fill="#5b1a24">×&#160;0,06</text>
+  </g>
+  <g stroke="#5b1a24" stroke-width="1.6" marker-end="url(#f)"><path d="M122 20 H142"/><path d="M268 20 H288"/><path d="M414 20 H434"/><path d="M112 69 H191"/></g>
+  <text x="280" y="102" text-anchor="middle" fill="#625a4e" font-style="italic" font-size="10">on convertit dans une même unité avant de comparer</text>
+</svg>

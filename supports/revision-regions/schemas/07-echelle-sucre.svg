@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="20" y="16" font-weight="700" fill="#5b1a24">Vin tranquille de l'UE : sucre résiduel (g/l)</text>
+  <rect x="20" y="30" width="34" height="28" fill="#faf3e0" stroke="#456e8a"/>
+  <rect x="54" y="30" width="68" height="28" fill="#faf3e0" stroke="#5c7a4f"/>
+  <rect x="122" y="30" width="276" height="28" fill="#faf3e0" stroke="#a8843a"/>
+  <rect x="398" y="30" width="142" height="28" fill="#faf3e0" stroke="#5b1a24"/>
+  <g text-anchor="middle" font-weight="700"><text x="37" y="48" font-size="10" fill="#456e8a">sec</text><text x="88" y="48" font-size="10.5" fill="#5c7a4f">demi-sec</text><text x="260" y="48" fill="#a8843a">moelleux</text><text x="469" y="48" fill="#5b1a24">doux</text></g>
+  <g stroke="#625a4e"><path d="M20 58 V64"/><path d="M54 58 V64"/><path d="M122 58 V64"/><path d="M398 58 V64"/></g>
+  <g font-size="10" fill="#625a4e" text-anchor="middle"><text x="20" y="77">0</text><text x="54" y="77">4</text><text x="122" y="77">12</text><text x="398" y="77">45</text></g>
+  <text x="540" y="77" text-anchor="end" font-size="10" fill="#625a4e">45 et plus →</text>
+  <text x="20" y="102" font-size="10.5">Plafonds relevés si l'acidité est assez haute :</text>
+  <text x="20" y="117" font-size="10.5">le sec jusqu'à 9 g/l, le demi-sec jusqu'à 18 g/l (conditions : voir le tableau).</text>
+  <text x="540" y="134" text-anchor="end" font-size="10" fill="#625a4e">largeurs à l'échelle des seuils</text>
+</svg>

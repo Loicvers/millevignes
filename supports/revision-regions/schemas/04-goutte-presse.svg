@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 118" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#faf3e0"/><stop offset="1" stop-color="#5b1a24"/></linearGradient></defs>
+  <text x="0" y="14" font-weight="700" fill="#a8843a">Vin de goutte</text>
+  <text x="280" y="14" text-anchor="middle" font-weight="700" fill="#625a4e">Vin de presse</text>
+  <text x="560" y="14" text-anchor="end" font-weight="700" fill="#5b1a24">Fin du pressurage</text>
+  <rect x="0" y="24" width="560" height="26" rx="4" fill="url(#g)" stroke="#d8d0c2"/>
+  <path d="M0 66 H548" stroke="#625a4e" stroke-width="1.2"/><path d="M548 62 l8 4 l-8 4z" fill="#625a4e"/>
+  <text x="0" y="86">s'écoule sans pression</text>
+  <text x="560" y="86" text-anchor="end">plus coloré, plus tannique</text>
+  <text x="280" y="112" text-anchor="middle" font-size="10" fill="#625a4e">schéma de principe : la progression n'est pas chiffrée</text>
+</svg>

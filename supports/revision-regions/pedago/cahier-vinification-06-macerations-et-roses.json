@@ -1,0 +1,187 @@
+{
+  "236": {
+    "ouverture": "Un vin blanc couleur abricot, sans colorant : à ton avis, comment l'obtenir ?",
+    "illus": [],
+    "schema": {
+      "titre": "Deux macérations à ne pas confondre",
+      "lignes": [
+        [
+          "Carbonique : dans quel état et sous quel gaz ?",
+          "grappes entières, sous CO2"
+        ],
+        [
+          "Carbonique : où fermente-t-on, et avec quoi ?",
+          "dans les baies, sans levures"
+        ],
+        [
+          "Vin orange : quel raisin, quel traitement ?",
+          "raisin blanc macéré avec ses peaux, comme un rouge"
+        ],
+        [
+          "Jarre géorgienne enterrée, dont la méthode est inscrite à l'UNESCO depuis 2013",
+          "le qvevri"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Votre vin orange, c'est un mélange de blanc et de rouge ? »",
+      "a": "Non : c'est un vin blanc dont le jus a macéré avec les peaux, comme on le fait pour un rouge. C'est de là que vient sa couleur d'abricot. La Géorgie le fait traditionnellement en jarres enterrées, les qvevri."
+    },
+    "cave": "Goûte un Régnié (Domaine Coste-Lapalus) et un Morgon (Château de Monternot), deux crus de gamay. Note la couleur, le fruit et les tanins. À la prochaine commande, demande au vigneron comment ses raisins entrent en cuve."
+  },
+  "577": {
+    "ouverture": "Si on laisse des grappes entières dans la cuve, d'où peut venir le gaz carbonique qui les entoure ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les grappes entières, méthode par méthode",
+      "lignes": [
+        [
+          "Carbonique : d'où vient le CO2 ?",
+          "il est apporté : les grappes intactes baignent dedans"
+        ],
+        [
+          "Semi-carbonique : d'où vient le CO2 ?",
+          "des baies écrasées au fond, qui fermentent"
+        ],
+        [
+          "Vendange entière partielle : que devient la grappe ?",
+          "elle s'écrase peu à peu aux pigeages"
+        ],
+        [
+          "Condition pour garder des rafles",
+          "qu'elles soient mûres, brunes et aoûtées"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Une macération carbonique, ça donne un vin plus foncé, non ? »",
+      "a": "Pas forcément. En macération carbonique pure, la couleur est vive, mais pas plus intense qu'en vinification classique, et les tanins sont peu présents. En revanche, le nez très fruité peut effacer un peu le cépage."
+    },
+    "cave": "Chez Pernot Père & Fils (Gevrey-Chambertin, Vosne-Romanée), pose la question à la prochaine commande : le pinot noir est-il égrappé ou garde-t-on une part de grappes entières ? Note la réponse sur ta fiche du domaine."
+  },
+  "709": {
+    "ouverture": "Un beaujolais nouveau et un cru de Beaujolais viennent du même cépage : qu'est-ce qui peut les rendre aussi différents ?",
+    "illus": [
+      {
+        "svg": "06-curseur.svg",
+        "legende": "Le curseur du vigneron : chacun place son vin quelque part (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Le curseur beaujolais",
+      "lignes": [
+        [
+          "Cuvaison courte, grappes entières",
+          "vin fruité et souple, à boire jeune"
+        ],
+        [
+          "Cuvaison allant jusqu'à deux ou trois semaines",
+          "cru plus structuré"
+        ],
+        [
+          "Égrappage, foulage, parfois fût",
+          "vin plus coloré, corsé et tannique"
+        ],
+        [
+          "Par qui la méthode a-t-elle été étudiée, et quand ?",
+          "par Michel Flanzy, dans les années 1930 (à Narbonne selon l'Oxford)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un beaujolais, c'est toujours léger et fruité ? »",
+      "a": "Pas toujours. Plus la cuvaison est courte, plus le vin est souple et fruité. Un cru macère plus longtemps et gagne en structure, et certains vignerons égrappent et élèvent en fût, comme en Bourgogne."
+    },
+    "cave": "Demande la fiche technique de ton Saint-Amour (Domaine Hamet-Spay) ou de ton Régnié (Domaine Coste-Lapalus) : la durée de cuvaison y figure-t-elle ? Si oui, place le vin sur le curseur du schéma."
+  },
+  "715": {
+    "ouverture": "Le carignan est riche en acidité et en tanins durs : comment un vigneron peut-il adoucir ce cépage ?",
+    "illus": [],
+    "schema": {
+      "titre": "Vinifier en Languedoc",
+      "lignes": [
+        [
+          "Pourquoi les vins dits « carboniques » sont-ils presque toujours semi-carboniques ?",
+          "on ne peut pas remplir une cuve de baies uniquement entières"
+        ],
+        [
+          "Âge des vignes pour un carignan vraiment qualitatif",
+          "50 ans et plus, à rendement réduit"
+        ],
+        [
+          "Rendement de base du rosé en AOC Languedoc",
+          "54 hl/ha (50 pour le rouge)"
+        ],
+        [
+          "Contenant délaissé dans les années 1990, et qui revient",
+          "le béton"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Ce languedoc est élevé en barrique, n'est-ce pas ? »",
+      "a": "Pas forcément. En Languedoc, l'élevage reste souvent hors du bois : cuve inox, béton, parfois œufs ou amphores. Barriques et demi-muids se répandent surtout sur les cuvées ambitieuses. La fiche technique du domaine donne la réponse."
+    },
+    "cave": "Sur la fiche technique de ton Saint-Chinian (Château Fonsalade) ou de ton Grès de Montpellier (Mas du Novi), relève le contenant d'élevage : cuve, béton, fût ? Compare avec ce que dit la fiche, sans rien supposer."
+  },
+  "351": {
+    "ouverture": "Deux rosés, l'un très pâle, l'autre bien plus coloré : qu'est-ce qui, dans la cave, explique la différence ?",
+    "illus": [],
+    "schema": {
+      "titre": "Faire un rosé",
+      "lignes": [
+        [
+          "Pressurage direct : comment traite-t-on les raisins noirs ?",
+          "pressés comme pour un blanc, contact très court"
+        ],
+        [
+          "Saignée : que fait-on après la macération ?",
+          "on soutire une partie du jus"
+        ],
+        [
+          "Rosé le plus coloré et le plus vineux",
+          "celui de saignée"
+        ],
+        [
+          "Risque d'une macération trop longue",
+          "amertume et astringence"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce rosé est plus foncé que l'autre, il est moins bon ? »",
+      "a": "Non, c'est une question de méthode. Plus le jus reste au contact des peaux, plus le rosé est coloré et vineux. Un rosé pâle vient plutôt d'un pressurage direct, léger, à boire jeune."
+    },
+    "cave": "Goûte côte à côte un Tavel (Château de Manissy) et un Rosé de Loire (Vignoble Tony Rousseau). Compare les robes et la structure, puis demande à chaque vigneron : pressurage direct ou saignée ?"
+  },
+  "464": {
+    "ouverture": "Sur une étiquette de champagne, « blanc de noirs » : de quelle couleur sont les raisins, et de quelle couleur est le jus ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les mentions du champagne",
+      "lignes": [
+        [
+          "Blanc de blancs",
+          "des raisins blancs seulement"
+        ],
+        [
+          "Blanc de noirs",
+          "des raisins noirs seulement (pinot noir, meunier)"
+        ],
+        [
+          "Les trois voies du rosé",
+          "pressurage direct, macération ou saignée, assemblage"
+        ],
+        [
+          "Rosé d'assemblage : mélange fait…",
+          "avant le tirage"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce champagne rosé, c'est forcément de la saignée ? »",
+      "a": "Non. Le cahier des charges admet trois voies, dont l'assemblage de blanc et de rouge avant le tirage. D'après la presse spécialisée, la plupart des rosés sont des assemblages, la saignée donnant plutôt une robe plus soutenue."
+    },
+    "cave": "Lis l'étiquette d'un Champagne Petit-Triolet : y a-t-il une mention « blanc de blancs », « blanc de noirs » ou « rosé » ? Pour un rosé, demande quelle voie a été suivie."
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "235": {
+    "ouverture": "Les levures adorent le sucre et le transforment en alcool. Pourtant, un vin doux en contient encore : qu'est-ce qui a pu les empêcher d'en venir à bout ?",
+    "illus": [],
+    "schema": {
+      "titre": "Garder le sucre : je complète",
+      "lignes": [
+        [
+          "Raisin qui sèche avant la vendange, sur la vigne",
+          "le passerillage sur souche"
+        ],
+        [
+          "Champignon qui concentre le raisin par temps sec",
+          "Botrytis cinerea (pourriture noble)"
+        ],
+        [
+          "Ce que le mutage ajoute pour stopper les levures",
+          "de l'alcool"
+        ],
+        [
+          "Seuil du « doux » pour un vin tranquille dans l'UE",
+          "45 g/l"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vin doux, c'est du sucre qu'on a ajouté, non ? »",
+      "a": "Pas dans les cas vus ici : le sucre d'un vin sucré est celui du raisin. Soit le raisin a été concentré (séché, touché par la pourriture noble ou gelé), soit on a arrêté la fermentation, en ajoutant de l'alcool ou par le froid ou la filtration, ce qui laisse du sucre non transformé. La Süssreserve ajoute du moût : c'est encore du sucre de raisin."
+    },
+    "cave": "Compare le sucre résiduel du Muscat de Rivesaltes (Deprade Jorda) et du Layon (Tony Rousseau)."
+  },
+  "346": {
+    "ouverture": "Un même champignon peut donner un grand vin liquoreux ou une vendange pourrie. À ton avis, qu'est-ce qui fait la différence ?",
+    "illus": [
+      {
+        "svg": "07-noble-grise.svg",
+        "legende": "Un champignon, deux destins : c'est le temps qui décide."
+      }
+    ],
+    "schema": {
+      "titre": "Botrytis : je complète",
+      "lignes": [
+        [
+          "Temps qui donne la pourriture noble",
+          "alternance d'humidité et de sécheresse"
+        ],
+        [
+          "Sort du sucre en pourriture grise",
+          "il est consommé, sans concentration"
+        ],
+        [
+          "Effet sur le pH du moût",
+          "il monte (acides tartrique et malique consommés)"
+        ],
+        [
+          "Enzyme sécrétée, cause de la casse oxydasique",
+          "la laccase, d'où un sulfitage renforcé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « J'ai vu des raisins couverts de moisissure grise. C'est la fameuse pourriture noble ? »",
+      "a": "Pas forcément. Le champignon est le même, Botrytis cinerea, mais tout dépend du temps. Avec une alternance d'humidité et de sécheresse, la baie se dessèche et concentre son sucre : c'est la noble. Avec une humidité persistante, un feutre gris qui sent le moisi consomme le sucre : c'est la grise."
+    },
+    "cave": "À ta prochaine commande au Vignoble Tony Rousseau, demande comment il aborde une fin d'été humide avant la vendange de ses Coteaux du Layon : qu'observe-t-il dans les raisins, et que trie-t-il ?"
+  },
+  "469": {
+    "ouverture": "Sur une étiquette d'Alsace, « vendanges tardives » ou « sélection de grains nobles » : ces mots décrivent-ils le raisin à la vendange, ou le vin dans la bouteille ? Devine.",
+    "illus": [
+      {
+        "svg": "07-raisin-bouteille.svg",
+        "legende": "La mention parle du raisin, pas du sucre qui reste dans la bouteille."
+      }
+    ],
+    "schema": {
+      "titre": "VT et SGN : je complète",
+      "lignes": [
+        [
+          "Où existent ces mentions ?",
+          "AOC alsace et alsace grand cru"
+        ],
+        [
+          "Récolte et enrichissement",
+          "à la main, aucun enrichissement"
+        ],
+        [
+          "Deux informations obligatoires sur l'étiquette",
+          "le millésime et le cépage"
+        ],
+        [
+          "Ce que la mention décrit",
+          "la richesse du raisin à la vendange"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « C'est une sélection de grains nobles : donc forcément très sucré en bouche ? »",
+      "a": "Pas forcément. La mention dit que le raisin était très riche en sucre à la vendange, avec une exigence plus haute qu'en vendanges tardives. Elle ne dit pas le sucre qui reste dans la bouteille : pour le savoir, il faut la fiche technique ou goûter."
+    },
+    "cave": "Le Domaine Burghart-Spettel propose un Alsace vendanges tardives. Sur l'étiquette, repère la mention, le millésime et le cépage. Puis relève le sucre résiduel sur la fiche technique : c'est lui, et non la mention, qui annonce la douceur en bouche."
+  },
+  "582": {
+    "ouverture": "Sans ajouter d'alcool, comment pourrais-tu garder du sucre dans un vin ? Propose deux idées.",
+    "illus": [
+      {
+        "svg": "07-arret-ou-reserve.svg",
+        "legende": "Deux voies sans alcool ajouté : stopper la fermentation en route, ou sucrer un vin sec avec du moût mis de côté."
+      }
+    ],
+    "schema": {
+      "titre": "Arrêt ou Süssreserve : je complète",
+      "lignes": [
+        [
+          "Trois moyens physiques d'arrêter une fermentation",
+          "le froid, la filtration, la centrifugation"
+        ],
+        [
+          "De quoi dépend le degré final d'un vin arrêté ?",
+          "du moment de l'arrêt"
+        ],
+        [
+          "La Süssreserve, c'est…",
+          "du moût non fermenté, ajouté à un vin sec avant la mise"
+        ],
+        [
+          "Pays surtout associé à cette pratique",
+          "l'Allemagne"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Süssreserve et mutage, ce n'est pas la même chose ? »",
+      "a": "Non. Le mutage ajoute de l'alcool pour stopper la fermentation en cours. La Süssreserve est du moût de raisin non fermenté, ajouté après coup à un vin déjà sec : elle sucre, elle n'arrête rien, et aucun alcool n'est ajouté."
+    },
+    "cave": "Prends la fiche technique d'un vin légèrement doux de ta cave (par exemple le Cabernet d'Anjou du Vignoble Tony Rousseau, au moins 10 g/l selon son cahier des charges) et relève l'alcool et le sucre résiduel. À ta prochaine commande, demande au vigneron comment la douceur est obtenue."
+  },
+  "588": {
+    "ouverture": "Un vin très vif et un vin peu acide contiennent le même sucre, 10 g/l. Lequel te paraîtra le plus doux ? Devine.",
+    "illus": [
+      {
+        "svg": "07-echelle-sucre.svg",
+        "legende": "Les quatre mentions de l'UE pour un vin tranquille, à l'échelle des seuils de sucre."
+      }
+    ],
+    "schema": {
+      "titre": "Lire la douceur : je complète",
+      "lignes": [
+        [
+          "Unité du sucre résiduel",
+          "le gramme par litre (g/l)"
+        ],
+        [
+          "Mention d'un tranquille à partir de 45 g/l",
+          "doux"
+        ],
+        [
+          "Condition pour qu'un sec monte à 9 g/l",
+          "acidité totale pas inférieure de plus de 2 g/l au sucre"
+        ],
+        [
+          "« Sec » sur un effervescent",
+          "17 à 32 g/l, mention obligatoire"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce blanc me paraît sec en bouche, mais l'étiquette dit demi-sec. Il y a une erreur ? »",
+      "a": "Pas forcément. L'acidité et le sucre se masquent en bouche : un vin vif peut paraître plus sec qu'il n'est. La mention, elle, suit le sucre mesuré en g/l, et la règle européenne tient aussi compte de l'acidité."
+    },
+    "cave": "Prends les fiches techniques d'un blanc sec de ta cave (par exemple le Chablis du Château de Fleys) et d'un vin doux (le Coteaux du Layon du Vignoble Tony Rousseau). Relève le sucre résiduel de chacun, puis la mention que la règle européenne permet."
+  },
+  "635": {
+    "ouverture": "Pour muter un vin rouge, ajouterais-tu l'alcool au contact des peaux ou après les avoir enlevées ? Qu'est-ce que cela changerait ?",
+    "illus": [
+      {
+        "svg": "07-sur-grains-sur-moute.svg",
+        "legende": "Selon la couleur, le mutage se fait avant ou après l’enlèvement des peaux."
+      }
+    ],
+    "schema": {
+      "titre": "Vins doux naturels : je complète",
+      "lignes": [
+        [
+          "Alcool du mutage en Banyuls et Rivesaltes",
+          "au moins 96 % vol., à 5 à 10 % du volume du moût"
+        ],
+        [
+          "Deux familles d'élevage",
+          "à l'abri de l'air (fruit) ou oxydatif (noix, fruits secs)"
+        ],
+        [
+          "Méthode du muscat de Rivesaltes",
+          "pressé d'abord, fermenté sans peaux, puis muté sur moût"
+        ],
+        [
+          "Origine du goût de rancio",
+          "bois, oxygène, chaleur et temps"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Un livre parle de 5 à 25 % d'alcool pour le mutage, le cahier des charges de Rivesaltes de 5 à 10 %. Qui a raison ? »",
+      "a": "Les deux, mais pour des périmètres différents. Le cahier des charges de Rivesaltes (et de Banyuls) fixe 5 à 10 % du volume du moût en alcool pur. La fourchette large du livre couvre l'ensemble des vins mutés, porto compris, avec des alcools de 77 à 96 %."
+    },
+    "cave": "Goûte le Muscat de Rivesaltes (Domaine Deprade Jorda) et le Maury (Mas Amiel). Note ce que tu retrouves en bouche : fruit frais, noix, fruits secs. Demande ensuite aux vignerons si le mutage se fait sur grains ou sur moût, et comment le vin est élevé."
+  },
+  "815": {
+    "ouverture": "Un raisin qui sèche perd de l'eau. Que devient sa teneur en sucre ? À ton avis, jusqu'où peut-elle monter (en g/l) ?",
+    "illus": [
+      {
+        "svg": "07-paille.svg",
+        "legende": "Du raisin séché hors de la vigne au vin élevé longtemps."
+      }
+    ],
+    "schema": {
+      "titre": "Le vin de paille : je complète",
+      "lignes": [
+        [
+          "Séchage hors souche, au moins",
+          "six semaines, sans chauffer l'air"
+        ],
+        [
+          "Sucre des raisins au pressurage",
+          "320 à 420 g/L"
+        ],
+        [
+          "Alcool total minimal du vin",
+          "19 % vol."
+        ],
+        [
+          "Cépages admis en Arbois et Côtes du Jura",
+          "chardonnay, poulsard, savagnin, trousseau"
+        ],
+        [
+          "Où n'en trouve-t-on pas ?",
+          "à Château-Chalon"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le vin de paille, c'est une spécialité de Château-Chalon, non ? »",
+      "a": "Non : il existe en Arbois, Côtes du Jura et L'Étoile, mais pas à Château-Chalon. Et à L'Étoile, le trousseau n'est pas admis."
+    },
+    "cave": "Aucun de tes domaines partenaires n'est du Jura. Goûte à la place l'Alsace vendanges tardives du Domaine Burghart-Spettel et note ce qui évoque la concentration (richesse, douceur). Si un vin de paille passe un jour entre tes mains, compare-le avec lui."
+  }
+}

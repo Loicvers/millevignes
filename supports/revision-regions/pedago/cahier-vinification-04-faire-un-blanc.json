@@ -1,0 +1,142 @@
+{
+  "350": {
+    "ouverture": "Pourquoi un jus de blanc sera-t-il plus clair si l'on presse des raisins entiers plutôt que foulés au préalable ? Devine.",
+    "illus": [
+      {
+        "svg": "04-avant-fermentation.svg",
+        "legende": "Du raisin au jus de blanc : douceur au pressoir, protection de l'air jusqu'au débourbage."
+      }
+    ],
+    "schema": {
+      "titre": "Préparer le jus d'un blanc",
+      "lignes": [
+        [
+          "Pressurage lent sur raisins entiers : le jus est…",
+          "peu chargé en particules et en phénols"
+        ],
+        [
+          "Foulage : plus de jus, mais un moût…",
+          "plus trouble, moins acide et plus oxydable"
+        ],
+        [
+          "Macération pelliculaire : sur quels raisins et dans quelles conditions ?",
+          "sains et mûrs, au froid, sans oxygène"
+        ],
+        [
+          "Trois mesures qui se combinent contre l'oxydation",
+          "sulfitage, refroidissement, gaz inerte"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi certains vignerons laissent-ils tremper les peaux dans le jus d'un blanc ? »",
+      "a": "Pour gagner en arômes et en corps. Mais c'est un pari : on ne le tente que sur des raisins sains et mûrs, au froid et à l'abri de l'oxygène. Les durées varient selon les sources, il n'y a pas de recette unique."
+    },
+    "cave": "Ouvre la fiche technique d'un blanc de ta cave (Chablis du Château de Fleys, Sancerre du Domaine La Villaudière…) et cherche comment le raisin a été pressé. Rien n'est indiqué ? Note la question à poser au vigneron à la prochaine commande."
+  },
+  "586": {
+    "ouverture": "Faut-il toujours protéger un jus de raisin blanc de l'oxygène ? Réponds en une phrase, même au hasard.",
+    "illus": [
+      {
+        "svg": "04-deux-voies.svg",
+        "legende": "Deux philosophies face à l'oxygène, puis le même passage obligé : le débourbage."
+      }
+    ],
+    "schema": {
+      "titre": "Oxygène et débourbage",
+      "lignes": [
+        [
+          "Protection : les trois moyens",
+          "SO2, froid, gaz inerte (CO2, azote ou argon)"
+        ],
+        [
+          "Hyperoxydation : que deviennent les phénols oxydables ?",
+          "ils brunissent, précipitent et partent avec les bourbes"
+        ],
+        [
+          "Débourbage où un gaz entraîne les particules en surface",
+          "la flottation"
+        ],
+        [
+          "Rôle des enzymes pectolytiques",
+          "dégrader les pectines et accélérer la clarification"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vigneron m'a dit qu'il oxyde volontairement son jus de blanc. Il n'abîme pas son vin ? »",
+      "a": "Non, c'est de l'hyperoxydation : on apporte beaucoup d'oxygène avant le débourbage. Les phénols oxydables brunissent, précipitent et sont éliminés avec les bourbes, ce qui rend le vin plus stable à l'oxydation ensuite. L'autre école, la protection, écarte l'oxygène pour garder le fruit."
+    },
+    "cave": "À la prochaine commande, demande au vigneron d'un de tes blancs (Château Moulin Caresse en Montravel, Domaine La Villaudière en Sancerre…) s'il protège son moût de l'oxygène ou s'il l'hyperoxyde avant le débourbage. Note sa réponse à côté de tes impressions de dégustation."
+  },
+  "579": {
+    "ouverture": "On presse un marc de raisin. Le jus de la fin ressemble-t-il à celui du début ? Qu'est-ce qui, selon toi, change ?",
+    "illus": [
+      {
+        "svg": "04-goutte-presse.svg",
+        "legende": "Du vin de goutte au vin de presse : couleur et tanin augmentent au fil du pressurage."
+      }
+    ],
+    "schema": {
+      "titre": "Goutte, presse, pressoirs",
+      "lignes": [
+        [
+          "Ce qui s'écoule sans aucune pression",
+          "le vin de goutte"
+        ],
+        [
+          "Au fil du pressurage, le vin de presse devient…",
+          "plus coloré et plus tannique"
+        ],
+        [
+          "Plateau qui descend sur un panier",
+          "le pressoir vertical (modèle traditionnel)"
+        ],
+        [
+          "Rouge ou blanc : quand presse-t-on ?",
+          "rouge après la fermentation ; blanc avant (pressurage direct)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Comment fonctionne un pressoir pneumatique, et que veut dire pressurage doux ? »",
+      "a": "Une membrane se gonfle dans un cylindre perforé et la pression monte progressivement. Le pressurage doux vaut pour les deux types de pressoir : remplissage par gravité, peu de rebêches."
+    },
+    "cave": "À la prochaine commande, demande au vigneron d'un de tes rouges (Château Haut-Maurac en Médoc, Château Jean Faure en Saint-Émilion grand cru classé…) s'il ajoute du vin de presse au vin de goutte, et comment il en décide. Note aussi le type de pressoir."
+  },
+  "581": {
+    "ouverture": "Un blanc sec « de fût » et un blanc sec « d'inox » : qu'est-ce qui change d'abord en bouche, avant même les arômes ?",
+    "illus": [
+      {
+        "svg": "04-curseur-style.svg",
+        "legende": "Les trois choix qui fixent le style d'un blanc sec : du vif au rond, en tendances."
+      }
+    ],
+    "schema": {
+      "titre": "Les choix qui fixent le style",
+      "lignes": [
+        [
+          "Fermentation fraîche (fourchette variable selon les sources) : effet sur le fruit",
+          "il est mieux gardé"
+        ],
+        [
+          "Fermentation plus chaude : ce qui se passe",
+          "davantage de composés volatils s'évaporent"
+        ],
+        [
+          "Fût, surtout avec des lies : apport",
+          "texture et bois fondu"
+        ],
+        [
+          "Malolactique faite ou évitée",
+          "faite : acidité adoucie, crémeux ; évitée : vivacité et fruit"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un chardonnay, c'est toujours beurré, non ? »",
+      "a": "Non. Le toucher crémeux, parfois beurré, vient de la malolactique, qui adoucit l'acidité ; évitée, elle laisse vivacité et fruit. Ce sont des tendances : le cépage et le vigneron peuvent les infléchir."
+    },
+    "cave": "Goûte côte à côte ton Chablis (Château de Fleys) et ton Meursault (Domaine Manuel Olivier). Note lequel te semble le plus vif et lequel le plus rond, formule une hypothèse (inox ou fût, malolactique ?), puis vérifie sur leurs fiches techniques."
+  }
+}

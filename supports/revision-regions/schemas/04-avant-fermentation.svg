@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 112" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <g fill="#faf3e0" stroke="#a8843a"><rect x="0" y="0" width="118" height="46" rx="6"/><rect x="147" y="0" width="118" height="46" rx="6"/><rect x="294" y="0" width="118" height="46" rx="6"/><rect x="441" y="0" width="118" height="46" rx="6"/></g>
+  <g text-anchor="middle"><text x="59" y="20">Raisins entiers,</text><text x="59" y="34">pas foulés</text>
+  <text x="206" y="20">Pressurage lent,</text><text x="206" y="34">pneumatique</text>
+  <text x="353" y="20">Jus clair, peu</text><text x="353" y="34">phénolique</text>
+  <text x="500" y="20">Débourbage, puis</text><text x="500" y="34">fermentation</text></g>
+  <g stroke="#a8843a" stroke-width="1.5" fill="none"><path d="M120 23 H145"/><path d="M267 23 H292"/><path d="M414 23 H439"/></g>
+  <g fill="#a8843a"><path d="M145 19 l6 4 l-6 4z"/><path d="M292 19 l6 4 l-6 4z"/><path d="M439 19 l6 4 l-6 4z"/></g>
+  <rect x="0" y="62" width="560" height="30" rx="6" fill="#e6eef3" stroke="#456e8a"/>
+  <text x="280" y="81" text-anchor="middle" fill="#456e8a" font-weight="700">Contre l'oxydation, tout du long : sulfitage + froid + gaz inerte</text>
+  <text x="280" y="108" text-anchor="middle" font-size="10" fill="#625a4e">schéma de principe</text>
+</svg>

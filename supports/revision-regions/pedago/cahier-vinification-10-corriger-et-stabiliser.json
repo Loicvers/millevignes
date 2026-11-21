@@ -1,0 +1,206 @@
+{
+  "352": {
+    "ouverture": "Un moût manque de sucre. Quelles façons imagines-tu de relever le degré du futur vin ? Note-en deux ou trois avant de lire.",
+    "illus": [
+      {
+        "svg": "10-enrichir.svg",
+        "legende": "Trois voies pour relever le degré : deux ajoutent un produit, une retire de l'eau (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Relever le degré d'un moût",
+      "lignes": [
+        [
+          "Ajouter du saccharose, à sec, en début de fermentation",
+          "la chaptalisation"
+        ],
+        [
+          "Ajouter un mélange glucose-fructose purifié",
+          "le moût concentré rectifié (plus cher)"
+        ],
+        [
+          "Retirer de l'eau du moût",
+          "osmose inverse ou évaporation sous vide"
+        ],
+        [
+          "Ce que la concentration concentre en plus du sucre",
+          "acides, tannins et défauts"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client lit « moût concentré » sur la fiche d'un vin du Midi : « C'est du sucre ajouté, non ? »",
+      "a": "Oui, c'est un ajout de sucres, mais pas de saccharose. Dans le Midi, la chaptalisation est en principe interdite : on recourt aux moûts concentrés. Le moût concentré rectifié est un mélange de glucose et de fructose purifié, et le surplus de degré possible dépend de la zone viticole."
+    },
+    "cave": "Demande à ton vigneron du Roussillon (Domaine Deprade Jorda) si ses moûts sont enrichis, et comment. Note la réponse : sucre, moût concentré rectifié ou concentration ?"
+  },
+  "353": {
+    "ouverture": "Un moût est trop acide. Quel genre de produit y ajouterais-tu pour le corriger, et quel effet secondaire pourrais-tu craindre ?",
+    "illus": [
+      {
+        "svg": "10-acidite.svg",
+        "legende": "Les sels de désacidification n'attaquent que l'acide tartrique, pas le malique (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Corriger l'acidité",
+      "lignes": [
+        [
+          "Pour acidifier, on utilise surtout",
+          "l'acide tartrique, jamais les acides minéraux forts"
+        ],
+        [
+          "Pour désacidifier, deux produits",
+          "carbonate de calcium, bicarbonate de potassium"
+        ],
+        [
+          "L'acide qu'ils ne touchent pas",
+          "l'acide malique, dont les sels restent solubles (sauf procédé du double sel de calcium)"
+        ],
+        [
+          "Si l'on retire trop d'acide tartrique",
+          "le pH monte"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Si un vin est trop acide, on le neutralise avec un peu de craie, et c'est réglé ? »",
+      "a": "Le carbonate de calcium neutralise bien l'acidité en faisant précipiter le tartrate, mais il n'agit que sur l'acide tartrique, pas sur le malique. En retirer trop fait monter le pH, et un risque de précipité calcique tardif existe. Ces opérations sont plafonnées, et l'on n'acidifie pas et ne désacidifie pas le même produit."
+    },
+    "cave": "Sur la fiche technique d'un de tes vins du Médoc (Château Haut-Maurac) ou de Saint-Chinian (Château Fonsalade), cherche l'acidité totale et le pH s'ils sont indiqués. Si ce n'est pas le cas, note la question à poser au domaine : corrige-t-il l'acidité, et dans quel sens ?"
+  },
+  "359": {
+    "ouverture": "Tu trouves de petits cristaux au fond d'une bouteille de blanc sortie du frigo. Est-ce un défaut du vin ? Donne ton avis avant de lire.",
+    "schema": {
+      "titre": "Les cristaux de tartre",
+      "lignes": [
+        [
+          "Cristaux qui se déposent dès que le froid saisit le vin",
+          "le bitartrate de potassium"
+        ],
+        [
+          "Tartrate qui se forme lentement, parfois des mois après la mise",
+          "le tartrate de calcium"
+        ],
+        [
+          "Trois inhibiteurs cités",
+          "acide métatartrique, CMC, mannoprotéines"
+        ],
+        [
+          "Procédé qui retire les ions",
+          "l'électrodialyse"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Il y a des petits cristaux dans ma bouteille. Le vin a-t-il tourné ? »",
+      "a": "Le plus souvent, des cristaux de bitartrate de potassium, que le froid fait tomber (parfois du tartrate de calcium, formé lentement après la mise). Ils ne changent rien au goût : c'est un défaut d'aspect. C'est pour cela que le vigneron stabilise le vin avant la mise, par le froid, par un inhibiteur ou par électrodialyse."
+    },
+    "cave": "Place deux bouteilles de blanc de ta cave au réfrigérateur plusieurs jours (par exemple ton Viré-Clessé du Domaine Guillemin et ton Alsace du Domaine Burghart-Spettel). Regarde le fond : cristaux ou non ? Ne conclus rien sur le traitement subi, mais note la question à poser au vigneron."
+  },
+  "360": {
+    "ouverture": "Une bouteille de blanc limpide passe un après-midi dans un coffre de voiture au soleil. À ton avis, que peut-il se passer dans le verre ?",
+    "illus": [
+      {
+        "svg": "10-casse.svg",
+        "legende": "La chaleur fait floculer les protéines du raisin ; la bentonite les retire avant la mise (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "La casse protéique",
+      "lignes": [
+        [
+          "Ce qui flocule dans le vin",
+          "les protéines du raisin"
+        ],
+        [
+          "Ce qui les fait floculer",
+          "la chaleur (camion, entrepôt, étagère ensoleillée)"
+        ],
+        [
+          "Produit de traitement",
+          "la bentonite, argile chargée négativement"
+        ],
+        [
+          "Risque d'un excès de ce produit",
+          "arômes (thiols du sauvignon) et matière ternis"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « J'ai oublié mon blanc dans la voiture cet été : il est devenu trouble. Est-il dangereux ? »",
+      "a": "Ce trouble est sans danger, mais inacceptable à la vente. Il vient de protéines du raisin qui floconnent sous l'effet de la chaleur, comme un blanc d'œuf à la poêle. Pour l'éviter, le vigneron teste le vin à chaud puis le traite à la bentonite, dont il règle la dose par essais."
+    },
+    "cave": "Ton Sancerre ou ton Pouilly-Fumé (Domaine La Villaudière) : demande au vigneron s'il fait un test de stabilité à la chaleur avant la mise, et comment il règle sa dose de bentonite. Note sa réponse."
+  },
+  "361": {
+    "ouverture": "Pourquoi un rouge très tannique peut-il sembler plus souple après un collage ? Qu'est-ce qui a disparu, à ton avis ?",
+    "illus": [
+      {
+        "svg": "10-collage.svg",
+        "legende": "La colle floconne, entraîne particules et tanins, puis se dépose (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Choisir sa colle",
+      "lignes": [
+        [
+          "Colle pour un rouge structuré",
+          "l'albumine d'œuf"
+        ],
+        [
+          "Colle pour un blanc peu tannique",
+          "la colle de poisson"
+        ],
+        [
+          "Colle qui rafraîchit un blanc oxydé",
+          "la caséine"
+        ],
+        [
+          "Effet d'un collage sur un rouge",
+          "il s'assouplit : tanins réactifs emportés"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente végétalienne : « Ce vin est-il végétalien ? »",
+      "a": "Cela dépend de la colle choisie. Albumine d'œuf, caséine (lait), colle de poisson et gélatine ont une origine animale ; le PVPP est un polymère synthétique. L'œuf et le lait, classés allergènes, touchent à l'étiquetage. Le plus sûr est de poser la question au producteur."
+    },
+    "cave": "Prends l'étiquette d'une bouteille de ta cave (un Saint-Émilion du Château Jean Faure, par exemple) et cherche une mention d'œuf ou de lait. Puis note la question au vigneron : colle-t-il ses vins, et avec quelle colle ?"
+  },
+  "362": {
+    "ouverture": "Filtrer un vin, est-ce seulement le rendre brillant ? Écris ce que, selon toi, un filtre retient et ce qu'il laisse passer.",
+    "illus": [
+      {
+        "svg": "10-filtration.svg",
+        "legende": "Du vin trouble à la mise : filtre en profondeur, puis membrane ; tangentielle et centrifugeuse en variantes (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "Filtrer ou centrifuger",
+      "lignes": [
+        [
+          "Ce que la filtration retient",
+          "les particules, pas les substances solubles instables"
+        ],
+        [
+          "Filtre à lit poreux",
+          "terre de diatomées ou plaques de cellulose"
+        ],
+        [
+          "Étape qui retient levures et bactéries avant la mise",
+          "la membrane"
+        ],
+        [
+          "Appareil qui sépare lies et levures sans média filtrant",
+          "la centrifugeuse à assiettes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « On dit que filtrer appauvrit un vin. C'est vrai ? »",
+      "a": "C'est un débat ouvert. Bien conduite (sans air, filtres rincés, peu de passages), la filtration ne mérite souvent pas ce reproche. Mais certains médias retiennent des macromolécules qui portent le volume et fixent les arômes, et une étude relève des pertes d'esters sur une membrane tangentielle. Cela dépend du vin et du matériel."
+    },
+    "cave": "Pour un vin de ta cave (Morgon du Château de Monternot ou Crémant d'Alsace du Domaine Burghart-Spettel), demande au vigneron s'il filtre avant la mise et, si oui, par quel procédé, ou s'il centrifuge. Compare ensuite sa réponse à ta fiche."
+  }
+}

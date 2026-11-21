@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M40 12 V104 H330" fill="none" stroke="#625a4e" stroke-width="1.2"/>
+  <text x="32" y="20" text-anchor="end" font-size="10" fill="#625a4e">température</text>
+  <text x="330" y="122" text-anchor="end" font-size="10" fill="#625a4e">temps</text>
+  <path d="M40 98 L100 28 H160 L230 98 H320" fill="none" stroke="#a8843a" stroke-width="2.4"/>
+  <path d="M40 98 L100 28 H125 L127 98 H320" fill="none" stroke="#5b1a24" stroke-width="2.4" stroke-dasharray="5 3" transform="translate(0 4)"/>
+  <g>
+    <text x="350" y="38" font-weight="700" fill="#a8843a">Thermovinification</text>
+    <text x="350" y="52" font-size="10">chauffage rapide, puis</text><text x="350" y="65" font-size="10">refroidissement avant fermentation</text>
+    <text x="350" y="92" font-weight="700" fill="#5b1a24">Flash-détente (pointillés)</text>
+    <text x="350" y="106" font-size="10">même principe, mais le retour</text><text x="350" y="119" font-size="10">se fait sous vide, presque d'un coup</text>
+  </g>
+  <text x="40" y="136" font-size="10" fill="#625a4e">schéma de principe : aucune température n'est indiquée</text>
+</svg>

@@ -311,6 +311,8 @@ const nomDe = (n, t) => `${n}-${t.normalize('NFD').replace(/[\u0300-\u036f]/g, '
 // --cahier : cahiers d'exercices par thème (cahiers.json), à imprimer en recto verso. Chaque notion commence sur une page de gauche :
 // « Je lis » à gauche, « Je m'entraîne » en regard, corrigé à la fin. Une page de notes est intercalée quand une notion tomberait à droite.
 const CAHIERS = JSON.parse(fs.readFileSync(path.join(dir, 'cahiers.json'), 'utf8'));
+// Volet pédagogique d'un cahier : dans cahiers.json (champ pedago) ou dans pedago/<nom>.json.
+for (const c of CAHIERS) { const f = path.join(dir, 'pedago', c.nom + '.json'); if (!c.pedago && fs.existsSync(f) && (!seules.length || seules.includes(c.nom))) c.pedago = JSON.parse(fs.readFileSync(f, 'utf8')); }
 const cssCahier = `
 html{font-size:10.4pt}
 .cah .bandeau{font-size:7.6pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3pt}
@@ -359,7 +361,7 @@ function cahierHTML(def, notesAvant) {
     return `${notesAvant.has(k) ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}
     <section class="lire" data-notion="${k + 1}"><div class="bandeau">${tete} · Je lis</div><h2>${e(f.titre)}</h2>
       ${P.ouverture ? `<div class="ouv"><b>Avant de lire</b> ${e(P.ouverture)}${lignes(1)}</div>` : ''}
-      ${f.cours?.sections?.length && P.illus ? '' : `<p class="synth">${e(f.synth)}</p>`}${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
+      ${f.cours?.sections?.length && def.pedago ? '' : `<p class="synth">${e(f.synth)}</p>`}${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
       ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}</figcaption></figure>` : ''}
       ${(P.illus || []).map(illus).join('')}
       ${f.cours ? coursHTML({ ...f.cours, sections: secs, lede: null, essentiel: null, src: null, synthese: def.pedago ? null : f.cours.synthese }) : ''}
@@ -467,7 +469,7 @@ for (const def of CAHIER ? CAHIERS : []) {
     // Une page « Je lis » (ou « Je m'entraîne ») tient sur une page : on réduit sa police (jusqu'à 9 pt) tant qu'elle déborde ; sinon elle passe sur deux pages.
     const serrees = await page.evaluate(() => [...document.querySelectorAll('section.lire, section.ex')].filter(sec => {
       const H = 262 * 96 / 25.4;
-      for (let pt = 10.4; pt >= 9 && sec.scrollHeight > H; pt -= 0.2) sec.style.fontSize = pt + 'pt';
+      for (let pt = 10.4; pt >= (sec.matches('.ex') ? 8.4 : 9) && sec.scrollHeight > H; pt -= 0.2) sec.style.fontSize = pt + 'pt'; // exercices : jusqu'à 8,4 pt
       if (sec.scrollHeight <= H) return false;
       sec.style.fontSize = ''; return true; }).map(sec => sec.dataset.notion)); // trop longue : sur deux pages, à taille normale
     if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${serrees.join(', ')} sur deux pages (lecture ou exercices)`);

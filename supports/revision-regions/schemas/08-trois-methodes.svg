@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="280" y="14" text-anchor="middle" font-size="10" fill="#625a4e">Où naît la bulle ? (schéma de principe)</text>
+  <!-- traditionnelle -->
+  <path d="M93 34 H107 V56 Q120 62 120 74 V108 Q120 114 114 114 H86 Q80 114 80 108 V74 Q80 62 93 56 Z" fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5"/>
+  <rect x="82" y="66" width="36" height="46" fill="#e8d9a8" opacity="0.7"/>
+  <g fill="#456e8a"><circle cx="92" cy="80" r="2"/><circle cx="104" cy="74" r="2"/><circle cx="100" cy="92" r="2"/><circle cx="90" cy="102" r="2"/><circle cx="109" cy="104" r="2"/></g>
+  <!-- ancestrale -->
+  <path d="M273 34 H287 V56 Q300 62 300 74 V108 Q300 114 294 114 H266 Q260 114 260 108 V74 Q260 62 273 56 Z" fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5"/>
+  <rect x="262" y="88" width="36" height="24" fill="#e8d9a8" opacity="0.7"/>
+  <g fill="#456e8a"><circle cx="272" cy="98" r="2"/><circle cx="284" cy="94" r="2"/><circle cx="278" cy="106" r="2"/></g>
+  <!-- cuve close -->
+  <rect x="415" y="40" width="90" height="74" rx="10" fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5"/>
+  <path d="M460 40 V30" stroke="#5b1a24" stroke-width="1.5"/>
+  <path d="M430 114 V122 M490 114 V122" stroke="#5b1a24" stroke-width="1.5"/>
+  <g fill="#456e8a"><circle cx="435" cy="62" r="2"/><circle cx="455" cy="56" r="2"/><circle cx="478" cy="68" r="2"/><circle cx="445" cy="84" r="2"/><circle cx="468" cy="92" r="2"/><circle cx="488" cy="100" r="2"/><circle cx="430" cy="102" r="2"/></g>
+  <g text-anchor="middle">
+    <text x="100" y="138" font-weight="700" fill="#5b1a24">Traditionnelle</text><text x="100" y="152" font-size="10" fill="#625a4e">dans la bouteille</text>
+    <text x="280" y="138" font-weight="700" fill="#5b1a24">Ancestrale</text><text x="280" y="152" font-size="10" fill="#625a4e">bouteille, fermentation à finir</text>
+    <text x="460" y="138" font-weight="700" fill="#5b1a24">Cuve close</text><text x="460" y="152" font-size="10" fill="#625a4e">dans une grande cuve fermée</text>
+  </g>
+</svg>

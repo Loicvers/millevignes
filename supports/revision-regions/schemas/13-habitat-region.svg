@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Habitat ou région : qui fait varier la flore ?</text><text x="560" y="14" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <g font-size="10.5" font-weight="700" text-anchor="middle" fill="#625a4e"><text x="200" y="38">Région A</text><text x="290" y="38">Région B</text><text x="380" y="38">Région C</text></g>
+  <g font-weight="700"><text x="0" y="68">Sol</text><text x="0" y="96">Écorce</text><text x="0" y="124">Fruit</text></g>
+  <g stroke="#d8d0c2"><path d="M60 77 H420"/><path d="M60 105 H420"/></g>
+  <g fill="#a8843a"><circle cx="200" cy="64" r="10"/><circle cx="290" cy="64" r="10"/><circle cx="380" cy="64" r="10"/></g>
+  <g fill="#456e8a"><circle cx="200" cy="92" r="10"/><circle cx="290" cy="92" r="10"/><circle cx="380" cy="92" r="10"/></g>
+  <g fill="#5b1a24"><circle cx="200" cy="120" r="10"/><circle cx="290" cy="120" r="10"/><circle cx="380" cy="120" r="10"/></g>
+  <g font-size="10" fill="#1a1612"><text x="450" y="64">Selon une thèse</text><text x="450" y="78">d'Auckland : la</text><text x="450" y="92">couleur suit</text><text x="450" y="106" font-weight="700" fill="#5b1a24">l'habitat</text><text x="450" y="120">plus que la région.</text></g>
+</svg>

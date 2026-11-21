@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <g text-anchor="middle">
+    <rect x="0" y="8" width="330" height="48" rx="6" fill="#faf3e0" stroke="#456e8a"/><text x="165" y="28" font-weight="700" font-size="12" fill="#456e8a">À l'étage : par voie électronique (QR code)</text><text x="165" y="44">déclaration nutritionnelle complète, liste des ingrédients</text>
+    <rect x="0" y="66" width="330" height="48" rx="6" fill="#5b1a24"/><text x="165" y="86" font-weight="700" font-size="12" fill="#faf3e0">Au rez-de-chaussée : sur l'étiquette</text><text x="165" y="102" fill="#faf3e0">la valeur énergétique</text>
+    <rect x="360" y="8" width="200" height="106" rx="6" fill="#faf3e0" stroke="#a8843a"/><text x="460" y="28" font-weight="700" font-size="12" fill="#5b1a24">Les allergènes</text><text x="460" y="48">ont déjà leur mention propre</text><text x="460" y="68" font-size="10" fill="#625a4e">sulfites, œuf, lait :</text><text x="460" y="82" font-size="10" fill="#625a4e">chacun avec sa condition</text>
+  </g>
+</svg>

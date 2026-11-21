@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <text x="108" y="14" font-weight="700" font-size="12" fill="#456e8a">Côté fruit et vivacité</text>
+  <text x="352" y="14" font-weight="700" font-size="12" fill="#5b1a24">L'autre choix</text>
+  <g font-weight="700" fill="#a8843a"><text x="0" y="46">Température</text><text x="0" y="78">Contenant</text><text x="0" y="110">Malolactique</text></g>
+  <g fill="#e6eef3" stroke="#456e8a"><rect x="100" y="28" width="236" height="26" rx="5"/><rect x="100" y="60" width="236" height="26" rx="5"/><rect x="100" y="92" width="236" height="26" rx="5"/></g>
+  <g fill="#f3e3e3" stroke="#5b1a24"><rect x="344" y="28" width="216" height="26" rx="5"/><rect x="344" y="60" width="216" height="26" rx="5"/><rect x="344" y="92" width="216" height="26" rx="5"/></g>
+  <text x="110" y="45">fraîche : le fruit est mieux gardé</text><text x="354" y="45">plus chaude : volatils perdus</text>
+  <text x="110" y="77">inox à température contrôlée</text><text x="354" y="77">fût, surtout avec des lies</text>
+  <text x="110" y="109">évitée : vivacité et fruit</text><text x="354" y="109">faite : acidité adoucie, crémeux, parfois beurré</text>
+  <text x="280" y="135" text-anchor="middle" font-size="10" fill="#625a4e">des tendances : le cépage et le vigneron peuvent les infléchir</text>
+</svg>

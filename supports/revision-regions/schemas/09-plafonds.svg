@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <g font-weight="700" fill="#5b1a24" text-anchor="end"><text x="140" y="34">Conventionnel</text><text x="140" y="66">Bio</text><text x="140" y="98">Demeter</text><text x="140" y="130">Vin méthode nature</text></g>
+  <rect x="150" y="18" width="380" height="24" fill="#5b1a24"/>
+  <rect x="150" y="50" width="280" height="24" fill="#5b1a24"/>
+  <rect x="150" y="82" width="170" height="24" fill="#5b1a24"/>
+  <rect x="150" y="114" width="55" height="24" fill="#5c7a4f"/>
+  <text x="215" y="130" fill="#625a4e">vise le minimum</text>
+  <text x="280" y="155" text-anchor="middle" fill="#625a4e" font-size="10">schéma de principe : longueurs indicatives, SO2 total maximal, vins secs</text>
+</svg>

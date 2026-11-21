@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 84" font-family="Inter, sans-serif" font-size="10" fill="#1a1612">
+  <defs><marker id="m07p" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#625a4e"/></marker></defs>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="8" y="8" width="92" height="40" rx="5"/><rect x="128" y="8" width="120" height="40" rx="5" stroke="#a8843a" stroke-width="1.5"/><rect x="276" y="8" width="92" height="40" rx="5"/><rect x="396" y="8" width="150" height="40" rx="5"/></g>
+  <g text-anchor="middle">
+    <text x="54" y="25">Récolte</text><text x="54" y="38">à la main</text>
+    <text x="188" y="25" font-weight="700" fill="#a8843a">Séchage hors souche</text><text x="188" y="38">paille ou claies</text>
+    <text x="322" y="25">Pressurage</text><text x="322" y="38">raisin concentré</text>
+    <text x="471" y="25">Élevage long,</text><text x="471" y="38">puis mise en marché</text>
+  </g>
+  <g stroke="#625a4e" marker-end="url(#m07p)"><path d="M101 28 H125"/><path d="M249 28 H273"/><path d="M369 28 H393"/></g>
+  <text x="280" y="68" text-anchor="middle" font-size="9.5" fill="#625a4e">schéma de principe : quatre temps du vin de paille</text>
+</svg>

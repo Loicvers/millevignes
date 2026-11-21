@@ -305,7 +305,7 @@
           "q": "Un ami vigneron : « Ma cuve ne bouge plus depuis deux jours, il reste du sucre. » Que lui dis-tu de vérifier, et quel est le vrai risque ?",
           "a": "C'est un arrêt (densité immobile 24 à 48 h), où plusieurs causes s'additionnent souvent : température, azote, oxygène, alcool, acides gras, levures « killer ». Pour relancer : écorces de levure, un peu d'air et d'azote au début de la reprise, puis un levain acclimaté introduit par étapes. Le vrai risque : les bactéries lactiques qui attaquent le sucre restant et font monter l'acidité volatile."
         },
-        "cave": "Ton Alsace vendanges tardives (Burghart-Spettel) garde du sucre. Arrêt subi ou voulu ? Note ton hypothèse : la réponse viendra au fascicule 3 (garder du sucre)."
+        "cave": "Ton Alsace vendanges tardives (Burghart-Spettel) garde du sucre. Arrêt subi ou voulu ? Note ton hypothèse : la réponse viendra au fascicule 7 (les vins sucrés)."
       },
       "231": {
         "ouverture": "Levure du commerce ou levure « du lieu » : laquelle choisirais-tu pour ta propre cuvée, et pourquoi ?",
@@ -572,5 +572,139 @@
         "cave": "Le cahier des charges de Châteauneuf-du-Pape rend le tri obligatoire, à la vigne ou au chai. À ta prochaine commande au Château de Manissy, demande où et comment le domaine trie sa vendange."
       }
     }
+  },
+  {
+    "nom": "cahier-vinification-04-faire-un-blanc",
+    "titre": "Faire un blanc",
+    "serie": "Vinification · fascicule 4",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      350,
+      586,
+      579,
+      581
+    ]
+  },
+  {
+    "nom": "cahier-vinification-05-faire-un-rouge",
+    "titre": "Faire un rouge",
+    "serie": "Vinification · fascicule 5",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      243,
+      347,
+      348,
+      587,
+      349
+    ]
+  },
+  {
+    "nom": "cahier-vinification-06-macerations-et-roses",
+    "titre": "Macérations particulières et rosés",
+    "serie": "Vinification · fascicule 6",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      236,
+      577,
+      709,
+      715,
+      351,
+      464
+    ]
+  },
+  {
+    "nom": "cahier-vinification-07-vins-sucres",
+    "titre": "Les vins sucrés",
+    "serie": "Vinification · fascicule 7",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      235,
+      582,
+      346,
+      469,
+      635,
+      815,
+      588
+    ]
+  },
+  {
+    "nom": "cahier-vinification-08-bulles",
+    "titre": "Les bulles",
+    "serie": "Vinification · fascicule 8",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      237,
+      583,
+      636,
+      463,
+      471
+    ]
+  },
+  {
+    "nom": "cahier-vinification-09-soufre-et-pratiques",
+    "titre": "Le soufre et les pratiques autorisées",
+    "serie": "Vinification · fascicule 9",
+    "recit": "Le siècle des œnologues",
+    "fiches": [
+      245,
+      591,
+      345,
+      354,
+      246
+    ]
+  },
+  {
+    "nom": "cahier-vinification-10-corriger-et-stabiliser",
+    "titre": "Corriger et stabiliser",
+    "serie": "Vinification · fascicule 10",
+    "recit": "Le siècle des œnologues",
+    "fiches": [
+      352,
+      353,
+      359,
+      360,
+      361,
+      362
+    ]
+  },
+  {
+    "nom": "cahier-vinification-11-elevage-assemblage-bouteille",
+    "titre": "Élevage, assemblage et mise en bouteille",
+    "serie": "Vinification · fascicule 11",
+    "recit": "L’alchimie de l’élevage",
+    "fiches": [
+      580,
+      681,
+      589,
+      592,
+      247
+    ]
+  },
+  {
+    "nom": "cahier-vinification-12-vinifier-en-region",
+    "titre": "Vinifier en région",
+    "serie": "Vinification · fascicule 12",
+    "recit": "La vinification, artisanat, art et science",
+    "fiches": [
+      675,
+      687,
+      693,
+      816,
+      233
+    ]
+  },
+  {
+    "nom": "cahier-vinification-13-vins-a-part",
+    "titre": "Vins à part : nature, terroir microbien, sans alcool",
+    "serie": "Vinification · fascicule 13",
+    "recit": "Quel vin pour demain ?",
+    "fiches": [
+      121,
+      122,
+      339,
+      340,
+      232,
+      584
+    ]
   }
 ]

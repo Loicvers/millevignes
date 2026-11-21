@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M70 12 V104 H380" fill="none" stroke="#625a4e" stroke-width="1.2"/>
+  <text x="62" y="20" text-anchor="end" font-size="10" fill="#625a4e">température</text>
+  <text x="380" y="122" text-anchor="end" font-size="10" fill="#625a4e">temps de cuvaison</text>
+  <path d="M70 40 H380" stroke="#d8d0c2" stroke-dasharray="3 3"/>
+  <text x="62" y="44" text-anchor="end" font-size="10" fill="#625a4e">30 °C</text>
+  <path d="M70 70 H380" stroke="#d8d0c2" stroke-dasharray="3 3"/>
+  <text x="62" y="74" text-anchor="end" font-size="10" fill="#625a4e">25 °C</text>
+  <path d="M70 90 L130 72 H200 L225 90" fill="none" stroke="#456e8a" stroke-width="2.4"/>
+  <path d="M70 92 L130 70 L220 44 H350" fill="none" stroke="#5b1a24" stroke-width="2.4"/>
+  <g>
+    <text x="400" y="52" font-weight="700" fill="#5b1a24">Vin de garde</text>
+    <text x="400" y="66" font-size="10">cuvaison longue, jusqu'à</text><text x="400" y="79" font-size="10">30 °C environ</text>
+    <text x="400" y="104" font-weight="700" fill="#456e8a">Vin à boire jeune</text>
+    <text x="400" y="118" font-size="10">cuvaison courte, vers 25 °C</text>
+  </g>
+  <text x="70" y="136" font-size="10" fill="#625a4e">schéma de principe : les courbes sont indicatives</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <g text-anchor="middle">
+    <rect x="0" y="8" width="100" height="22" rx="5" fill="#faf3e0" stroke="#a8843a"/><text x="50" y="23">cépages</text>
+    <rect x="0" y="36" width="100" height="22" rx="5" fill="#faf3e0" stroke="#a8843a"/><text x="50" y="51">parcelles</text>
+    <rect x="0" y="64" width="100" height="22" rx="5" fill="#faf3e0" stroke="#a8843a"/><text x="50" y="79">cuves, fûts</text>
+    <rect x="0" y="92" width="100" height="22" rx="5" fill="#faf3e0" stroke="#a8843a"/><text x="50" y="107">fractions de presse</text>
+    <rect x="130" y="92" width="100" height="22" rx="5" fill="#faf3e0" stroke="#a8843a"/><text x="180" y="107">millésimes</text>
+    <rect x="270" y="30" width="130" height="62" rx="8" fill="#5b1a24"/><text x="335" y="56" font-weight="700" font-size="12" fill="#faf3e0">Assemblage</text><text x="335" y="73" fill="#faf3e0">après la fermentation</text><text x="335" y="85" fill="#faf3e0" font-size="9.5">ou pendant l'élevage</text>
+    <rect x="440" y="30" width="120" height="62" rx="8" fill="#faf3e0" stroke="#a8843a"/><text x="500" y="56" font-weight="700" fill="#5b1a24">Un vin plus</text><text x="500" y="71" font-weight="700" fill="#5b1a24">équilibré ou</text><text x="500" y="86" font-weight="700" fill="#5b1a24">plus régulier</text>
+  </g>
+  <g stroke="#5b1a24" stroke-width="1.6" marker-end="url(#f)"><path d="M104 61 H266"/><path d="M404 61 H436"/></g>
+  <text x="180" y="30" text-anchor="middle" fill="#625a4e" font-style="italic" font-size="10">les composants possibles</text>
+</svg>

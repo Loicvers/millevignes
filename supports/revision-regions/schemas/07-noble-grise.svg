@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 165" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="10" y="46" width="120" height="40" rx="6" fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5"/>
+  <text x="70" y="64" text-anchor="middle" font-weight="700" fill="#5b1a24">Botrytis</text><text x="70" y="78" text-anchor="middle" font-size="10" fill="#625a4e">cinerea</text>
+  <path d="M130 56 C150 56 150 28 170 28" stroke="#5c7a4f" stroke-width="2" fill="none"/>
+  <path d="M130 76 C150 76 150 104 170 104" stroke="#625a4e" stroke-width="2" fill="none"/>
+  <rect x="170" y="8" width="380" height="42" rx="6" fill="#faf3e0" stroke="#5c7a4f" stroke-width="1.5"/>
+  <text x="180" y="25" font-weight="700" fill="#5c7a4f">Humide puis sec, en alternance : pourriture noble</text>
+  <text x="180" y="41" font-size="10">baie desséchée, sucre concentré</text>
+  <rect x="170" y="84" width="380" height="42" rx="6" fill="#faf3e0" stroke="#625a4e" stroke-width="1.5"/>
+  <text x="180" y="101" font-weight="700" fill="#625a4e">Humidité persistante : pourriture grise</text>
+  <text x="180" y="117" font-size="10">feutre gris, odeur de moisi, sucre consommé</text>
+  <text x="10" y="146" font-size="10" fill="#625a4e">Dans les deux cas, le champignon produit du glycérol et de l'acide gluconique</text>
+  <text x="10" y="160" font-size="10" fill="#625a4e">et sécrète une laccase.</text>
+</svg>

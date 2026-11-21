@@ -1,0 +1,172 @@
+{
+  "675": {
+    "ouverture": "Un domaine de Bourgogne élève son vin en « pièces » : à ton avis, combien de litres contient une pièce bourguignonne ?",
+    "illus": [],
+    "schema": {
+      "titre": "Rouge ou blanc : le geste typique",
+      "lignes": [
+        [
+          "Cépage rouge et son sort à la réception",
+          "le pinot noir, trié puis égrappé en totalité, en partie ou pas du tout"
+        ],
+        [
+          "Rouge : en quoi fermente-t-il ?",
+          "petites cuves ouvertes, avec pigeages et remontages"
+        ],
+        [
+          "Blanc : avant de fermenter, puis où il vieillit",
+          "pressé sans macération et débourbé, puis fût sur lies fines"
+        ],
+        [
+          "Contenance de la pièce bourguignonne",
+          "228 litres"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le pinot noir est-il toujours égrappé ? »",
+      "a": "Il n'y a pas de recette unique en Bourgogne : selon les maisons, le pinot noir est égrappé en totalité, en partie ou pas du tout. C'est un choix de style : le plus simple est de poser la question au domaine."
+    },
+    "cave": "Demande au Domaine Pernot Père & Fils et au Domaine Decelle & Fils s'ils égrappent leur pinot noir, et note les réponses."
+  },
+  "687": {
+    "ouverture": "Un cépage s'oxyde vite et perd sa couleur, un autre tend à se réduire. Lequel mettrais-tu au béton, lequel au bois ?",
+    "illus": [
+      {
+        "svg": "12-contenants-rhone.svg",
+        "legende": "Trois contenants du Rhône : le béton domine, à côté de l'inox et des foudres ; les petits fûts surtout pour la syrah et le mourvèdre."
+      }
+    ],
+    "schema": {
+      "titre": "Le bon contenant pour le bon cépage (selon le WSET pour les deux premières lignes)",
+      "lignes": [
+        [
+          "Grenache : sa faiblesse",
+          "il s'oxyde et perd vite sa couleur"
+        ],
+        [
+          "Syrah : sa tendance",
+          "la réduction"
+        ],
+        [
+          "Contenant du grenache",
+          "béton ou inox"
+        ],
+        [
+          "Contenant de la syrah et du mourvèdre",
+          "surtout les petits fûts, avec peu de bois neuf"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon Gigondas a-t-il vieilli en fût de chêne ? »",
+      "a": "Ça dépend du cépage : dans le Rhône, le grenache reste plutôt en béton ou en inox, alors que la syrah et le mourvèdre passent davantage en petits fûts, où le bois neuf reste en général minoritaire. Pour une cuvée précise, la fiche technique du domaine tranche."
+    },
+    "cave": "Ton Gigondas du Château de Montmirail, ton Gigondas de la Bastide Saint-Vincent et ton Saint-Joseph du Domaine de Boisseyt : relis leurs fiches techniques et note, pour chacun, le contenant d'élevage et les cépages ; vérifie si la tendance « grenache en cuve, syrah en bois » s'y retrouve."
+  },
+  "693": {
+    "ouverture": "Un seul vignoble peut-il donner des bulles, un liquoreux et un rouge de garde ? Cite le vin qui t'étonnerait le plus.",
+    "illus": [
+      {
+        "svg": "12-styles-loire.svg",
+        "legende": "La Loire tient tout l'éventail des styles."
+      }
+    ],
+    "schema": {
+      "titre": "La Loire, région aux mille styles",
+      "lignes": [
+        [
+          "Les blancs, traditionnellement : contenant et bois",
+          "contenant neutre, sans bois neuf"
+        ],
+        [
+          "Ce qu'on évite pour garder fruit et acidité",
+          "la fermentation malolactique"
+        ],
+        [
+          "Les liquoreux : le raisin et la cueillette",
+          "surmûri, parfois botrytisé, cueilli par tries"
+        ],
+        [
+          "Cabernet franc : du vin de bistrot au vin de garde",
+          "la durée de macération"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Je cherche un vin de Loire doux, mais pas lourd. Par où commencer ? »",
+      "a": "Les liquoreux du Layon et de Vouvray naissent de raisins surmûris, parfois botrytisés, cueillis par tries successives."
+    },
+    "cave": "Tony Rousseau propose en Loire des appellations très différentes : Anjou, Coteaux du Layon Saint-Lambert-du-Lattay, Bonnezeaux, Cabernet d'Anjou, Crémant de Loire. Goûte-en trois et classe-les du plus sec au plus doux, puis du plus léger au plus concentré."
+  },
+  "816": {
+    "ouverture": "Deux fûts de blanc dans le même chai : l'un est rempli à ras bord, l'autre non. Que va-t-il se passer à la surface du second ?",
+    "illus": [
+      {
+        "svg": "12-ouille-voile.svg",
+        "legende": "Même chai, deux logiques : le fût rempli garde le vin frais, le fût non rempli permet au voile de se former."
+      }
+    ],
+    "schema": {
+      "titre": "Jura : deux voies, deux couleurs",
+      "lignes": [
+        [
+          "Blanc : fût rempli",
+          "style frais et fruité (ouillé)"
+        ],
+        [
+          "Blanc : fût non rempli",
+          "voile possible, style oxydatif"
+        ],
+        [
+          "Rouge très pâle, tanins faibles",
+          "le poulsard, parfois en macération carbonique"
+        ],
+        [
+          "Rouges plus structurés",
+          "trousseau et pinot noir, macération plus longue"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce blanc du Jura a un goût oxydatif : il est abîmé ? »",
+      "a": "Pas forcément : un blanc jurassien élevé en fût non rempli peut développer un voile et un style oxydatif, qui peut expliquer ces arômes. C'est un style, à distinguer du vin jaune, qui suit des règles précises."
+    },
+    "cave": "Aucun domaine partenaire n'est dans le Jura : choisis chez ton fournisseur un blanc du Jura ouillé et un blanc sous voile, ou demande à un caviste d'en ouvrir un de chaque ; goûte-les côte à côte et note ce qui change (fraîcheur, fruit, notes oxydatives)."
+  },
+  "233": {
+    "ouverture": "Qu'est-ce qui pousse sur un vin quand on laisse un peu d'air dans le fût, et à quoi ça sert ?",
+    "illus": [
+      {
+        "svg": "12-alcool-voile.svg",
+        "legende": "Plus le vin est alcoolisé, moins le voile se forme : c'est ce qui sépare le fino de l'oloroso."
+      }
+    ],
+    "schema": {
+      "titre": "Sous voile ou au contact de l'air",
+      "lignes": [
+        [
+          "Le voile (flor)",
+          "couche de levures qui isole le vin de l'air et lui donne des arômes propres"
+        ],
+        [
+          "Vin jaune : élevage et format",
+          "plus de six ans en fût non complètement rempli, clavelin de 62 cl"
+        ],
+        [
+          "Jeune vin du fino : fortification",
+          "vers 15-15,5 % vol."
+        ],
+        [
+          "Oloroso",
+          "fortifié vers 17,5-18 %, vieilli sans voile"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Fino et oloroso, c'est le même xérès, non ? »",
+      "a": "Non : le fino vieillit sous voile, protégé de l'air par la flor, après une fortification modérée vers 15-15,5 % vol. L'oloroso est fortifié plus haut, vers 17,5-18 %, ce qui empêche le voile : il vieillit au contact de l'air."
+    },
+    "cave": "Relis la fiche technique de ton Maury (Mas Amiel) et note son degré d'alcool. Compare-le aux repères du schéma : le fino (15-15,5 %) et l'oloroso (17,5-18 %)."
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="280" y="14" text-anchor="middle" font-size="10" fill="#625a4e">Du dépôt au goulot (schéma de principe, bouteille la tête en bas)</text>
+  <g fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5">
+    <path d="M90 30 Q90 24 96 24 H124 Q130 24 130 30 V70 Q130 78 117 84 V108 H103 V84 Q90 78 90 70 Z"/>
+    <path d="M270 30 Q270 24 276 24 H304 Q310 24 310 30 V70 Q310 78 297 84 V108 H283 V84 Q270 78 270 70 Z"/>
+    <path d="M450 30 Q450 24 456 24 H484 Q490 24 490 30 V70 Q490 78 477 84 V108 H463 V84 Q450 78 450 70 Z"/>
+  </g>
+  <rect x="451" y="25" width="38" height="20" fill="#e8d9a8" opacity="0.7"/>
+  <g fill="#a8843a">
+    <circle cx="94" cy="40" r="2"/><circle cx="96" cy="58" r="2"/><circle cx="126" cy="46" r="2"/><circle cx="124" cy="64" r="2"/><circle cx="100" cy="72" r="2"/>
+    <circle cx="288" cy="92" r="2.2"/><circle cx="292" cy="98" r="2.2"/><circle cx="296" cy="92" r="2.2"/><circle cx="290" cy="104" r="2.2"/><circle cx="295" cy="103" r="2.2"/>
+    
+  </g>
+  <g stroke="#a8843a" stroke-width="1.2" fill="none"><path d="M150 66 H250"/><path d="M330 66 H430"/></g>
+  <g fill="#a8843a"><path d="M250 62 L258 66 L250 70 Z"/><path d="M430 62 L438 66 L430 70 Z"/></g>
+  <g text-anchor="middle">
+    <text x="110" y="128" font-weight="700" fill="#5b1a24">Sur lattes</text><text x="110" y="142" font-size="10" fill="#625a4e">lies sur le flanc</text>
+    <text x="290" y="128" font-weight="700" fill="#5b1a24">Remuage</text><text x="290" y="142" font-size="10" fill="#625a4e">lies rassemblées au goulot</text>
+    <text x="470" y="128" font-weight="700" fill="#5b1a24">Dégorgement</text><text x="470" y="142" font-size="10" fill="#625a4e">lies expulsées, puis dosage</text>
+  </g>
+</svg>

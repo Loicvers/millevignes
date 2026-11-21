@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <rect x="0" y="0" width="270" height="104" rx="8" fill="#eef3ea" stroke="#5c7a4f"/><rect x="290" y="0" width="270" height="104" rx="8" fill="#f3e3e3" stroke="#5b1a24"/>
+  <text x="135" y="20" text-anchor="middle" font-weight="700" font-size="12" fill="#5c7a4f">Protection</text>
+  <text x="14" y="44">On écarte l'oxygène</text><text x="14" y="62">SO2, froid, gaz inerte sur le jus</text><text x="14" y="88" fill="#5c7a4f" font-weight="700">Fruit et fraîcheur gardés</text>
+  <text x="425" y="20" text-anchor="middle" font-weight="700" font-size="12" fill="#5b1a24">Hyperoxydation</text>
+  <text x="304" y="44">On apporte beaucoup d'oxygène d'abord</text><text x="304" y="62">phénols bruns, précipités, éliminés</text><text x="304" y="88" fill="#5b1a24" font-weight="700">Vin plus stable à l'oxydation</text>
+  <path d="M135 106 V118 M425 106 V118" stroke="#a8843a" stroke-width="1.5"/>
+  <rect x="0" y="118" width="560" height="26" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+  <text x="280" y="135" text-anchor="middle">Dans les deux cas, ensuite : débourbage (statique, flottation ou centrifugation)</text>
+</svg>

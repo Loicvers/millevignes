@@ -1,0 +1,170 @@
+{
+  "243": {
+    "ouverture": "Pour faire un vin rouge, on presse le raisin d'abord ou on le laisse fermenter d'abord ? Et pour un blanc ?",
+    "illus": [
+      {
+        "photo": "../initiation-oenologie/img/chapeau.jpg",
+        "legende": "Une cuve de rouge en cours de cuvaison : les peaux sont restées avec le jus. Illustration : support d'initiation de la cave.",
+        "credit": ""
+      }
+    ],
+    "schema": {
+      "titre": "Rouge ou blanc ?",
+      "lignes": [
+        [
+          "Le jus fermente avec les peaux",
+          "en rouge (cuvaison)"
+        ],
+        [
+          "Le raisin est pressé avant de fermenter",
+          "en blanc (pressurage direct)"
+        ],
+        [
+          "Le jus est débourbé avant la fermentation",
+          "en blanc"
+        ],
+        [
+          "Le marc est pressé après l'écoulage",
+          "en rouge (vin de presse)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une stagiaire : « Pourquoi dit-on qu'un blanc se presse avant de fermenter et un rouge après ? »",
+      "a": "En rouge, les peaux restent avec le jus pendant la fermentation : le vin s'écoule (vin de goutte), puis on presse le marc. En blanc, on presse tout de suite, on débourbe le jus, et il fermente sans les peaux."
+    },
+    "cave": "Prends un rouge de Saint-Émilion (Château Jean Faure) et un blanc de Chablis (Château de Fleys). Au prochain contact, demande la durée de cuvaison du rouge et le mode de pressurage du blanc, et note les réponses sur ta fiche."
+  },
+  "347": {
+    "ouverture": "Pendant la fermentation d'un rouge, les peaux et les pépins remontent à la surface. Pourquoi, à ton avis, et est-ce un problème ?",
+    "illus": [
+      {
+        "photo": "photos/pigeage-et-remontage.jpg",
+        "legende": "Pigeage à la main sur une fermentation en fût.",
+        "credit": "Photo : Ryan O'Connell, CC BY-SA 2.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Trois gestes, trois images",
+      "lignes": [
+        [
+          "Du jus pompé en bas de cuve arrose le chapeau",
+          "le remontage"
+        ],
+        [
+          "Le chapeau est enfoncé dans le jus",
+          "le pigeage"
+        ],
+        [
+          "La cuve est vidée de son jus, le marc s'affaisse, puis le jus revient par le haut",
+          "le délestage"
+        ],
+        [
+          "Ce qui pousse le chapeau vers le haut",
+          "le gaz carbonique de la fermentation"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon vigneron dit qu'il ne faut pas trop travailler le chapeau. Pourquoi ? »",
+      "a": "Ces gestes renouvellent le liquide au contact du marc, homogénéisent la cuve et rapprochent le vin de goutte du vin de presse : c'est utile pour l'extraction. Mais, selon le Handbook of Enology, abusés, ils risquent de donner des tanins durs et astringents."
+    },
+    "cave": "Pose cette question à ton vigneron de Gevrey-Chambertin (Domaine Pernot Père & Fils) à la prochaine commande : « Quel geste utilisez-vous sur le chapeau, et à quelle fréquence ? » Note sa réponse sans la juger."
+  },
+  "348": {
+    "ouverture": "Un rouge à boire dans l'année et un rouge à garder dix ans : fermentent-ils à la même température, pendant la même durée ?",
+    "illus": [
+      {
+        "svg": "05-thermostat.svg",
+        "legende": "Primeur ou vin de garde : le style se règle au thermomètre et au calendrier."
+      }
+    ],
+    "schema": {
+      "titre": "Primeur ou garde",
+      "lignes": [
+        [
+          "Cuvaison courte (une dizaine de jours au plus), vers 25 °C",
+          "vin à boire jeune"
+        ],
+        [
+          "Cuvaison jusqu'à deux ou trois semaines, jusqu'à 30 °C environ",
+          "vin de garde"
+        ],
+        [
+          "Ce que garde la fermentation tempérée",
+          "le fruit et la souplesse"
+        ],
+        [
+          "Risque d'une longue cuvaison à chaud sur une vendange moyenne",
+          "la rusticité (selon le Handbook)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Pourquoi ce rouge est-il plus tannique et plus charpenté que celui-là ? »",
+      "a": "Cela peut venir du réglage de cuvaison : plus longue et plus chaude pour un vin de garde, qui gagne en tanins et en matière, plus courte et tempérée pour un vin à boire jeune, qui garde fruit et souplesse."
+    },
+    "cave": "Goûte côte à côte un Médoc (Château Haut-Maurac) et un Saint-Joseph (Domaine de Boisseyt). Note la couleur, le fruit et la structure des tanins, puis demande à chaque domaine, à la prochaine commande, quelle durée de cuvaison il pratique."
+  },
+  "587": {
+    "ouverture": "Peut-on faire macérer des peaux dans un jus qui ne fermente pas encore ? Et que reste-t-il à en tirer une fois la fermentation finie ?",
+    "illus": [],
+    "schema": {
+      "titre": "Deux macérations hors fermentation",
+      "lignes": [
+        [
+          "Raisins foulés tenus à basse température, sans fermentation",
+          "la macération préfermentaire à froid (cold soak)"
+        ],
+        [
+          "Vin laissé sur ses peaux une fois les sucres consommés",
+          "la macération post-fermentaire"
+        ],
+        [
+          "Ce que le cold soak extrait surtout",
+          "couleur et arômes"
+        ],
+        [
+          "Ce qu'un excès de post-fermentaire donne",
+          "amertume et astringence"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce rouge simple est-il passé longtemps sur ses peaux après la fermentation ? »",
+      "a": "C'est plutôt rare : on réserve cette macération aux vins de garde, comme un bordeaux, et on l'évite pour les rouges faciles à boire jeunes, car un excès donne amertume et astringence."
+    },
+    "cave": "Vérifie sur la fiche technique d'un rouge de garde de ta cave (par exemple Margaux, Domaines Fabre) si une macération avant ou après fermentation est mentionnée. Si rien n'est écrit, note la question à poser au domaine."
+  },
+  "349": {
+    "ouverture": "Si la vendange est touchée par la pourriture grise, comment sauver la couleur du vin rouge ? Une idée, même farfelue.",
+    "illus": [
+      {
+        "svg": "05-choc-thermique.svg",
+        "legende": "Le choc thermique : chauffer vite, puis refroidir vite."
+      }
+    ],
+    "schema": {
+      "titre": "Chauffer puis refroidir",
+      "lignes": [
+        [
+          "Vendange chauffée rapidement, puis refroidie avant la fermentation",
+          "la thermovinification"
+        ],
+        [
+          "Chauffage très rapide, puis passage sous vide",
+          "la flash-détente"
+        ],
+        [
+          "Enzyme du botrytis qui détruit la couleur, supprimée par la chaleur",
+          "la laccase"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi dit-on que la thermovinification est plus délicate que la flash-détente ? »",
+      "a": "Selon le Handbook of Enology, la couleur du moût thermovinifié peut s'effondrer en cours de fermentation, et le vin peut garder de l'amertume."
+    },
+    "cave": "Demande à ton domaine de Gigondas (Château de Montmirail), à la prochaine commande, s'il traite sa vendange par chauffage ou par flash-détente."
+  }
+}

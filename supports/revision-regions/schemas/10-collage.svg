@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#a8843a"/></marker></defs>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="10" y="10" width="150" height="58" rx="4"/><rect x="205" y="10" width="150" height="58" rx="4"/><rect x="400" y="10" width="150" height="58" rx="4"/></g>
+  <g font-weight="700" fill="#5b1a24"><text x="20" y="28">Colle ajoutée</text><text x="215" y="28">Elle floconne</text><text x="410" y="28">Elle se dépose</text></g>
+  <g font-size="10"><text x="20" y="44">le plus souvent</text><text x="20" y="58">une protéine</text>
+  <text x="215" y="44">et capte particules</text><text x="215" y="58">et tanins</text>
+  <text x="410" y="44">le vin est clarifié</text><text x="410" y="58">et stabilisé</text></g>
+  <g stroke="#a8843a" stroke-width="1.5" marker-end="url(#a)"><path d="M163 39 H200"/><path d="M358 39 H395"/></g>
+  <text x="280" y="92" text-anchor="middle" font-size="10" fill="#5c7a4f" font-weight="700">sur un rouge : les tanins les plus réactifs partent d'abord</text>
+  <text x="280" y="109" text-anchor="middle" font-size="10" fill="#5b1a24">excès : de la protéine reste en solution et peut troubler plus tard</text>
+</svg>

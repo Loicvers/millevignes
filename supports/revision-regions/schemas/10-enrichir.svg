@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#a8843a"/></marker></defs>
+  <g fill="#faf3e0" stroke="#d8d0c2">
+    <rect x="10" y="6" width="250" height="36" rx="4"/><rect x="10" y="48" width="250" height="36" rx="4"/><rect x="10" y="90" width="250" height="36" rx="4"/>
+    <rect x="370" y="40" width="180" height="52" rx="4"/>
+  </g>
+  <g font-weight="700" fill="#5b1a24"><text x="20" y="22">Ajouter du saccharose</text><text x="20" y="64">Ajouter du moût concentré rectifié</text><text x="20" y="106">Retirer de l'eau du moût</text></g>
+  <g fill="#625a4e" font-size="10"><text x="20" y="36">chaptalisation</text><text x="20" y="78">mélange glucose + fructose purifié</text><text x="20" y="120">osmose inverse ou évaporation sous vide</text></g>
+  <g stroke="#a8843a" stroke-width="1.5" fill="none" marker-end="url(#a)"><path d="M264 24 L364 58"/><path d="M264 66 L364 66"/><path d="M264 108 L364 74"/></g>
+  <text x="460" y="62" text-anchor="middle" font-weight="700">degré potentiel</text><text x="460" y="78" text-anchor="middle" fill="#5c7a4f" font-weight="700">en hausse</text>
+  <text x="280" y="144" text-anchor="middle" font-size="10" fill="#625a4e">seule la 3e voie concentre aussi acides, tannins et défauts</text>
+</svg>

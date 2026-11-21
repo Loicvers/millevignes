@@ -1,0 +1,176 @@
+{
+  "121": {
+    "ouverture": "Le vin « nature » est-il une invention récente ? Devine, puis lis.",
+    "schema": {
+      "titre": "Une histoire du vin nature : je complète",
+      "lignes": [
+        [
+          "Qui rencontre Chauvet en 1981 ?",
+          "Marcel Lapierre"
+        ],
+        [
+          "Les années 1980 : contre quoi ?",
+          "contre les vins technologiques"
+        ],
+        [
+          "Révolte du Midi (1907) : contre quoi ?",
+          "les vins de sucre et trafiqués"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le vin nature, il y a une loi qui le définit ? »",
+      "a": "Non : il n’existe pas de définition légale. Des chartes privées fixent aujourd’hui des règles (notion suivante)."
+    },
+    "cave": "Au Château de Monternot (Morgon), demande au vigneron s’il se réclame d’une charte de vin nature. Note sa réponse telle quelle."
+  },
+  "122": {
+    "ouverture": "Si la loi ne définit pas le vin nature, qui fixe les règles ? Devine.",
+    "illus": [
+      {
+        "svg": "13-methode-nature.svg",
+        "legende": "Vin Méthode Nature : le SO2 n'est permis qu'après la fermentation, sous un seuil, avec un contrôle externe."
+      }
+    ],
+    "schema": {
+      "titre": "Les chartes : je complète",
+      "lignes": [
+        [
+          "Charte présentée comme la première ?",
+          "l'AVN (Association des vins naturels)"
+        ],
+        [
+          "Charte la plus récente ?",
+          "Vin Méthode Nature"
+        ],
+        [
+          "SO2 autorisé à quel moment ?",
+          "seulement après la fermentation"
+        ],
+        [
+          "Qui a validé la charte ?",
+          "la DGCCRF"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce vin est sans sulfite, c'est donc un Vin Méthode Nature, non ? »",
+      "a": "Pas forcément. S.A.I.N.S. est une autre charte, sans aucun intrant ni sulfite. Vin Méthode Nature tolère un SO2 inférieur à 30 mg/l (les sources divergent : SO2 total ou sulfites ajoutés) et propose une seconde mention pour les vins sans sulfite ajouté. Il faut lire quelle charte est citée."
+    },
+    "cave": "Prends deux bouteilles de ta cave, par exemple un Régnié du Domaine Coste-Lapalus et un Gigondas du Château de Montmirail. Cherche sur l'étiquette un logo ou le nom d'une charte, et note ce que la bouteille affirme vraiment, et ce qu'elle ne dit pas."
+  },
+  "232": {
+    "ouverture": "Deux régions, ou le sol, l'écorce et le fruit d'une même vigne : où la flore de champignons diffère-t-elle le plus ? Devine.",
+    "illus": [
+      {
+        "svg": "13-habitat-region.svg",
+        "legende": "Selon une thèse d'Auckland (un seul résumé lu), la flore fongique varie plus selon l'habitat (sol, écorce, fruit) que selon la région."
+      }
+    ],
+    "schema": {
+      "titre": "Terroir microbien : je complète",
+      "lignes": [
+        [
+          "Espèce de levure étudiée par Knight ?",
+          "Saccharomyces cerevisiae"
+        ],
+        [
+          "Pourquoi corrélation n’est pas preuve ?",
+          "relier deux faits n'établit pas que l'un cause l'autre"
+        ],
+        [
+          "Thèse d’Auckland : combien de communautés ?",
+          "106, dans six régions"
+        ],
+        [
+          "Conclusion du traité bordelais (2006) ?",
+          "aucune souche n'est propre à un vignoble"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les levures de ce vignoble, c'est ce qui donne le goût de son terroir, non ? »",
+      "a": "C'est une piste de recherche, pas un fait établi. Des populations de levures différentes d'une région à l'autre ont été reliées à des différences de composition des vins, mais corrélation n'est pas preuve. Selon une thèse d'Auckland (un seul résumé lu), l'habitat pèse même plus que la région."
+    },
+    "cave": "Sur la fiche technique du Château Fonsalade (Saint-Chinian), cherche si les levures sont indigènes ou sélectionnées. Demande au vigneron pourquoi ce choix."
+  },
+  "339": {
+    "ouverture": "Un négociant, un vigneron, un sommelier, un bistrotier et un chef : quel point commun leur trouves-tu ? Devine.",
+    "schema": {
+      "titre": "Le vin vivant selon Lepeltier : je complète",
+      "lignes": [
+        [
+          "Décennie d’apparition du vin vivant ?",
+          "les années 1980"
+        ],
+        [
+          "Le scientifique-négociant ?",
+          "Jules Chauvet"
+        ],
+        [
+          "Questions nées du goût recherché ?",
+          "les levures, les sols, l'impact de la viticulture chimique"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le vin nature, c'est une mode d'écolos, non ? »",
+      "a": "Pour Lepeltier, tout part du plaisir de boire ensemble un vin qui se boit. En cherchant ce goût, les pionniers ont questionné levures, sols et chimie : ce n'est pas d'abord l'écologie qui les a poussés, mais la joie du boire ensemble."
+    },
+    "cave": "Fais goûter à deux amis un vin de ta cave, sans l'introduire. Chacun note s'il a envie d'un deuxième verre ; comparez, puis relis la page de gauche."
+  },
+  "340": {
+    "ouverture": "La limite d'une appellation s'arrête-t-elle au bord de la parcelle, ou englobe-t-elle ce qui y vit ? Devine.",
+    "schema": {
+      "titre": "Nature, culture et terroir : je complète",
+      "lignes": [
+        [
+          "Grand partage contesté ?",
+          "celui entre la nature et l'homme (la culture)"
+        ],
+        [
+          "Version plus « civilisée » du mouvement ?",
+          "les vins de terroir"
+        ],
+        [
+          "Démarches qui font de la vigne un écosystème ?",
+          "bio, biodynamie, permaculture, agriculture régénérative"
+        ],
+        [
+          "Selon Lepeltier, que devrait inclure le territoire ?",
+          "toutes les communautés vivantes, visibles et invisibles"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Quel rapport entre nature et culture et mon verre de vin ? »",
+      "a": "Lepeltier s'appuie sur Descola : séparer la nature de l'homme n'est pas une évidence universelle, et les vignerons « nature » contestent ce partage. Ils voient la vigne comme un écosystème avec lequel cohabiter, et cela les pousse à repenser le territoire d'une appellation."
+    },
+    "cave": "Pour un domaine de ta gamme en appellation (par exemple le Domaine de Boisseyt en Saint-Joseph), relève sur sa fiche technique ou son site les pratiques qu'il annonce (bio, biodynamie, autre). Note ce qui est écrit, et ce qui ne l'est pas, sans le déduire."
+  },
+  "584": {
+    "ouverture": "Un vin « sans alcool » est-il un vin qui n'a jamais fermenté ? Devine.",
+    "schema": {
+      "titre": "Désalcoolisation : je complète",
+      "lignes": [
+        [
+          "Fermenter ou retirer l’alcool d’abord ?",
+          "fermenter, puis retirer l'éthanol"
+        ],
+        [
+          "Mention d’une AOP ou IGP (2021) ?",
+          "seulement « partiellement désalcoolisée »"
+        ],
+        [
+          "Entrée en application des règles de 2026 ?",
+          "du 19 septembre 2027"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client lit « 0,0 % » : « Vraiment zéro alcool ? »",
+      "a": "Le règlement 2021/2117 réserve « désalcoolisé » aux vins d'au plus 0,5 % vol. Le règlement 2026/471 autorisera « 0,0 % » jusqu'à 0,05 % vol., à partir du 19 septembre 2027."
+    },
+    "cave": "Goûte côte à côte deux vins de ta cave aux degrés très éloignés : qu’apporte l’alcool au corps ?"
+  }
+}

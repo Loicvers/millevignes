@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="150" y="6" width="260" height="30" rx="4" fill="#faf3e0" stroke="#a8843a"/>
+  <text x="280" y="19" text-anchor="middle" font-weight="700" fill="#a8843a">carbonate de calcium</text>
+  <text x="280" y="31" text-anchor="middle" font-size="10" fill="#625a4e">ou bicarbonate de potassium</text>
+  <g stroke="#a8843a" stroke-width="1.5" fill="none"><path d="M230 36 L130 62"/><path d="M330 36 L430 62"/></g>
+  <g fill="#faf3e0" stroke="#d8d0c2"><rect x="10" y="62" width="250" height="56" rx="4"/><rect x="300" y="62" width="250" height="56" rx="4"/></g>
+  <text x="20" y="80" font-weight="700" fill="#456e8a">Acide tartrique</text>
+  <text x="20" y="96" font-size="10">neutralisé : le tartrate précipite</text>
+  <text x="20" y="110" font-size="10" fill="#5c7a4f" font-weight="700">l'acidité baisse</text>
+  <text x="310" y="80" font-weight="700" fill="#5b1a24">Acide malique</text>
+  <text x="310" y="96" font-size="10">ses sels restent solubles</text>
+  <text x="310" y="110" font-size="10" fill="#5b1a24" font-weight="700">il n’est pas touché (sauf double sel)</text>
+  <text x="280" y="135" text-anchor="middle" font-size="10" fill="#625a4e">trop de tartrique retiré : le pH monte</text>
+</svg>

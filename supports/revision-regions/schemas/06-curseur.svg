@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 110" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L7 4 L0 8 Z" fill="#a8843a"/></marker></defs>
+  <path d="M40 50 H520" stroke="#a8843a" stroke-width="2" marker-end="url(#b)"/>
+  <g fill="#5b1a24"><circle cx="70" cy="50" r="6"/><circle cx="280" cy="50" r="6"/><circle cx="490" cy="50" r="6"/></g>
+  <g text-anchor="middle">
+    <text x="70" y="22" font-weight="700" fill="#5b1a24">Grappes entières</text><text x="70" y="36" font-size="10" fill="#625a4e">cuvaison courte</text>
+    <text x="70" y="74">fruité, souple</text><text x="70" y="88" font-size="10" fill="#625a4e">à boire jeune</text>
+    <text x="280" y="22" font-weight="700" fill="#5b1a24">Grappes entières</text><text x="280" y="36" font-size="10" fill="#625a4e">cuvaison longue</text>
+    <text x="280" y="74">plus de structure</text><text x="280" y="88" font-size="10" fill="#625a4e">cru</text>
+    <text x="490" y="22" font-weight="700" fill="#5b1a24">Égrappé, foulé, fût</text><text x="490" y="36" font-size="10" fill="#625a4e">« à la bourguignonne »</text>
+    <text x="490" y="74">coloré, corsé, tannique</text>
+  </g>
+</svg>
