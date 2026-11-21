@@ -323,6 +323,9 @@ html{font-size:10.4pt}
 .cah .revu{margin-top:5pt;font-size:8.6pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4pt}
 .cah .suivi td,.cah .suivi th{font-size:9pt;padding:3pt 4pt}.cah .suivi td.c{text-align:center;width:14mm}
 .cah .mode li{margin:0 0 5pt}
+.cah .ouv{border:1px dashed var(--gold);padding:4pt 7pt;margin:2pt 0 7pt;font-size:.95em}
+.cah table.sch{width:100%;border-collapse:collapse;margin:2pt 0 8pt}.cah table.sch td{border:1px solid var(--line);padding:5pt 6pt;height:7mm;font-size:.92em;vertical-align:top}.cah table.sch td:first-child{width:45%;background:#f6f1e7}
+.cah .cavebox{border-left:3px solid var(--wine,#7a2335);background:#f6f1e7;padding:5pt 8pt;margin:6pt 0;font-size:.95em;break-inside:avoid}
 .cah .srcs h3{font-size:11pt;margin:6pt 0 2pt}
 .cah .corr ol{columns:2;column-gap:8mm;column-rule:1px solid var(--line);font-size:.9rem}`;
 
@@ -334,21 +337,27 @@ function cahierHTML(def, notesAvant) {
     if (f.flash?.q) items.push([`${e(f.flash.q)}${lignes(2)}`, `<b>${e(f.flash.a)}</b>`]);
     if (f.qcm?.q) items.push([`${e(f.qcm.q)}${opts(f.qcm.opts)}`, `<b>${L[f.qcm.good]}. ${e(f.qcm.opts[f.qcm.good])}</b>${expl(f.qcm.expl)}`]);
     (f.exos || []).forEach((x, j) => { const r = exoPapier(x, +f.id * 31 + j); if (r) items.push(r); });
-    corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3><ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>`);
+    const P = def.pedago?.[f.id] || {}; // volet pédagogique du cahier : avant de lire, schéma à compléter, cas pratique, dans ma cave
+    corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.schema ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
+      <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}`);
     srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       <p class="src">Fiche : ${e(f.src)}</p>${f.cours?.src ? `<p class="src">Cours : ${e(f.cours.src)}</p>` : ''}`);
     const tete = `Notion ${k + 1} sur ${N} · ${e(f.niveau)}${f.page ? ` · Mille Vignes p. ${e(f.page)}` : ''} · fiche n° ${e(f.id)}`;
     return `${notesAvant.has(k) ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}
     <section class="lire" data-notion="${k + 1}"><div class="bandeau">${tete} · Je lis</div><h2>${e(f.titre)}</h2>
+      ${P.ouverture ? `<div class="ouv"><b>Avant de lire</b> ${e(P.ouverture)}${lignes(1)}</div>` : ''}
       <p class="synth">${e(f.synth)}</p>${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
       ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}</figcaption></figure>` : ''}
       ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null }) : ''}
       ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       ${f.selon_livre?.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
     <section class="ex"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
+      ${P.schema ? `<p><b class="lbl">Je complète.</b> ${e(P.schema.titre)}</p><table class="sch">${P.schema.lignes.map(([q]) => `<tr><td>${e(q)}</td><td></td></tr>`).join('')}</table>` : ''}
       <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>
-      <p><b class="lbl">Avec mes mots.</b> Résume la notion en deux phrases, comme à un client.</p>${lignes(3)}
-      <p class="muted" style="margin-top:6pt">Mes notes</p><div class="zone"></div>
+      ${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.q)}</p>${lignes(2)}` : ''}
+      ${P.cave ? `<div class="cavebox"><b>Dans ma cave</b> ${e(P.cave)}${lignes(2)}</div>` : ''}
+      <p><b class="lbl">Avec mes mots.</b> Résume la notion en deux phrases, comme à un client.</p>${lignes(def.pedago ? 2 : 3)}
+      ${def.pedago ? '<div class="zone" style="min-height:0"></div>' : `<p class="muted" style="margin-top:6pt">Mes notes</p><div class="zone"></div>`}
       <p class="revu">Corrigé en fin de cahier · Revu le ……… ☐ Je sais ☐ À revoir</p></section>`;
   };
   const corps = fiches.map(notion).join('');
@@ -363,7 +372,9 @@ function cahierHTML(def, notesAvant) {
       <p>Contenu reformulé à partir des sources citées sous chaque notion ; les n° renvoient aux fiches du site.</p></div></section>
   <section class="page mode"><h2>Mode d'emploi</h2><ol>
     <li><b>Une notion = une double page.</b> À gauche, je lis, crayon en main : je souligne, j'annote dans les marges.</li>
-    <li><b>À droite, je m'entraîne</b> sans regarder la page de gauche, puis je résume la notion en deux phrases.</li>
+    ${def.pedago ? `<li><b>Avant de lire</b>, je réponds à la question d'ouverture, même au hasard : on retient mieux ce qu'on a d'abord tenté de deviner.</li>` : ''}
+    <li><b>À droite, je m'entraîne</b> sans regarder la page de gauche${def.pedago ? ` : je complète le schéma, je fais les exercices et le cas pratique` : ''}, puis je résume la notion en deux phrases.</li>
+    ${def.pedago ? `<li><b>Dans ma cave</b> : une petite mission avec mes bouteilles ou mes partenaires, pour relier la notion au verre.</li>` : ''}
     <li><b>Je corrige</b> avec le corrigé en fin de cahier et je note mes erreurs dans « Mes notes ».</li>
     <li><b>Je coche</b> le tableau de suivi de la couverture, et je reviens plus tard sur les notions « À revoir ».</li>
     <li><b>L'application prend le relais</b> : les mêmes fiches (n° en tête de page) reviennent en séance, en répétition espacée.</li></ol>
@@ -439,13 +450,13 @@ for (const def of CAHIER ? CAHIERS : []) {
     await page.goto('file://' + tmp, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
     await page.evaluate(fit);
-    // Une page « Je lis » tient sur une page : on réduit sa police (jusqu'à 9 pt) tant qu'elle déborde ; sinon elle passe sur deux pages.
-    const serrees = await page.evaluate(() => [...document.querySelectorAll('section.lire')].filter(sec => {
+    // Une page « Je lis » (ou « Je m'entraîne ») tient sur une page : on réduit sa police (jusqu'à 9 pt) tant qu'elle déborde ; sinon elle passe sur deux pages.
+    const serrees = await page.evaluate(() => [...document.querySelectorAll('section.lire, section.ex')].filter(sec => {
       const H = 262 * 96 / 25.4;
       for (let pt = 10.4; pt >= 9 && sec.scrollHeight > H; pt -= 0.2) sec.style.fontSize = pt + 'pt';
       if (sec.scrollHeight <= H) return false;
       sec.style.fontSize = ''; return true; }).map(sec => sec.dataset.notion)); // trop longue : sur deux pages, à taille normale
-    if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${serrees.join(', ')} lue(s) sur deux pages`);
+    if (serrees.length && passe === 0) bilanNotes.push(`${def.nom} : notion(s) ${serrees.join(', ')} sur deux pages (lecture ou exercices)`);
     const casse = await page.evaluate(() => document.body.innerText.match(/\b(undefined|NaN|null)\b|\[object/)?.[0]);
     if (casse) avert.push(`${def.nom} : texte cassé « ${casse} »`);
     await page.pdf({ path: fichier, format: 'A4', printBackground: true, displayHeaderFooter: true, headerTemplate: '<span></span>',

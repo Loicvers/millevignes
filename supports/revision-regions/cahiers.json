@@ -4,13 +4,172 @@
     "titre": "Les fermentations (1) : du sucre à l'alcool",
     "serie": "Vinification · fascicule 1",
     "recit": "Du raisin au vin, une écologie microbienne",
-    "fiches": [223, 224, 228, 229, 342]
+    "fiches": [
+      223,
+      224,
+      228,
+      229,
+      342
+    ],
+    "pedago": {
+      "223": {
+        "ouverture": "Pourquoi presque tout le vin du monde vient-il du raisin, et pas d'autres fruits ? Écris ton idée avant de lire.",
+        "schema": {
+          "titre": "Le « kit complet » du raisin : à quoi sert chaque composant ?",
+          "lignes": [
+            [
+              "Le sucre",
+              "produire assez d'alcool, qui protège le vin"
+            ],
+            [
+              "L'acidité",
+              "freiner la plupart des microbes (avec l'alcool)"
+            ],
+            [
+              "Les polyphénols",
+              "antioxydants ; certains freinent les bactéries"
+            ],
+            [
+              "L'eau",
+              "fournir le liquide"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Une cliente revient des États-Unis avec un « vin de framboise ». Elle demande pourquoi on n'en trouve pas en France sous le nom de vin.",
+          "a": "Pour l'OIV, le vin vient uniquement de la fermentation de raisins frais ou de moût, avec au moins 8,5 % vol. d'alcool acquis. Selon Lepeltier, la plupart des autres fruits n'ont pas le « kit complet » (sucre, acidité, eau) : il faut les corriger, ce que la réglementation américaine des vins de fruits autorise."
+        },
+        "cave": "Prends trois bouteilles de ta cave et relève leur degré sur l'étiquette. Classe-les du moins au plus alcoolisé. Ton Bugey-Cerdon (Le Cellier Lingot-Martin) est-il au-dessus ou en dessous des 8,5 % vol. de la définition OIV ? Note la question s'il est en dessous : on la creusera ensemble."
+      },
+      "224": {
+        "ouverture": "À ton avis, combien de sucre par litre de moût faut-il pour obtenir 1 % vol. d'alcool : 1 g, 17 g ou 100 g ?",
+        "schema": {
+          "titre": "Je convertis avec la règle des 17 g/l (vin fermenté à sec)",
+          "lignes": [
+            [
+              "Moût à 170 g/l de sucres",
+              "environ 10 % vol."
+            ],
+            [
+              "Moût à 204 g/l",
+              "environ 12 % vol."
+            ],
+            [
+              "Moût à 238 g/l",
+              "environ 14 % vol."
+            ],
+            [
+              "Vin sec à 13 % vol. : sucre de départ ?",
+              "environ 221 g/l (13 × 17)"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client : « Ce vin fait 14,5 %, il doit être plus sucré que l'autre. » Que lui réponds-tu ?",
+          "a": "Pas forcément : l'alcool vient du sucre que les levures ont transformé. Un vin à 14,5 % vient d'un moût plus riche en sucre au départ (environ 14,5 × 17 ≈ 247 g/l), mais s'il a fermenté à sec, ce sucre est devenu de l'alcool et du CO2."
+        },
+        "cave": "Prends ton Châteauneuf-du-Pape (Château de Manissy) et ton Chablis (Château de Fleys). Lis leur degré et multiplie-le par 17 : c'est, à peu près, le sucre de leur moût de départ s'ils ont fermenté à sec. Écris les deux résultats et l'écart entre eux."
+      },
+      "228": {
+        "ouverture": "D'où vient la levure qui fait le vin : de la peau du raisin, de l'air du chai, ou des deux ? Parie avant de lire.",
+        "schema": {
+          "titre": "La course à élimination, dans l'ordre",
+          "lignes": [
+            [
+              "Après le débourbage, démarrent d'abord…",
+              "des levures apiculées, peu alcoogènes"
+            ],
+            [
+              "Puis prend le relais…",
+              "Saccharomyces cerevisiae"
+            ],
+            [
+              "À la fin, combien de souches dominent ?",
+              "une à trois"
+            ],
+            [
+              "Les quatre « filtres » du milieu",
+              "manque d'oxygène, richesse en sucre, montée de l'alcool, sulfitage"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un visiteur te dit : « Les levures du vin, elles viennent de la peau du raisin, non ? »",
+          "a": "En partie seulement : sur le raisin vivent surtout des levures peu fermentaires, et Saccharomyces cerevisiae, la levure du vin, y est très rare. L'air du chai en est en revanche chargé, et des reines de guêpes et de frelons l'hébergent d'un automne au printemps."
+        },
+        "cave": "À ta prochaine visite chez un partenaire, par exemple au Château de Montmirail ou au Domaine Pernot, demande au vigneron s'il laisse partir la fermentation seule ou s'il ajoute des levures, et note sa réponse ici. Tu t'en serviras au fascicule 2 (levures indigènes ou sélectionnées)."
+      },
+      "229": {
+        "ouverture": "Une bouteille ouverte depuis une semaine sent le vinaigre. À ton avis, qui est responsable, et de quoi a-t-il eu besoin ?",
+        "schema": {
+          "titre": "Je remplis la grille des trois fermentations",
+          "lignes": [
+            [
+              "Alcoolique : qui ? quoi devient quoi ?",
+              "levures (surtout S. cerevisiae) ; sucres → éthanol + gaz carbonique"
+            ],
+            [
+              "Malolactique : qui ? quoi devient quoi ?",
+              "Oenococcus oeni ; acide malique → acide lactique (acidité en baisse)"
+            ],
+            [
+              "Acétique : qui ? quoi devient quoi ?",
+              "Acetobacter ; éthanol → acide acétique"
+            ],
+            [
+              "Laquelle exige de l'air ?",
+              "l'acétique"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Une cliente trouve un chardonnay « beurré » et rond, et demande d'où ça vient.",
+          "a": "Souvent de la malolactique : Oenococcus oeni transforme l'acide malique en acide lactique, plus doux, et peut ajouter de la complexité aromatique. En blanc, c'est un choix du vigneron ; la fiche note que la co-inoculation levures-bactéries réduit ces notes beurrées."
+        },
+        "cave": "Ouvre côte à côte ton Chablis (Château de Fleys) et ton Meursault (Domaine Manuel Olivier). Lequel te paraît le plus vif, lequel le plus rond ? Note ton impression, puis cherche sur la fiche technique de chaque domaine si la malolactique a été faite."
+      },
+      "342": {
+        "ouverture": "La levure transforme-t-elle tout le sucre en alcool et en CO2 ? Devine la part qui part ailleurs : 1 %, 8 % ou 30 % ?",
+        "schema": {
+          "titre": "Ce que la levure fabrique à côté de l'alcool",
+          "lignes": [
+            [
+              "Glycérol : quelle part du sucre ? combien dans le vin ?",
+              "environ 8 % ; 5 à 8 g/l"
+            ],
+            [
+              "Acétaldéhyde : quelle odeur quand il domine ?",
+              "pomme (blette) et xérès"
+            ],
+            [
+              "Acide acétique : quel défaut ?",
+              "l'acidité volatile, d'origine levurienne"
+            ],
+            [
+              "Moût au-delà de 300 g/l : qu'est-ce qui monte ?",
+              "le glycérol et l'acide acétique"
+            ]
+          ]
+        },
+        "cas": {
+          "q": "Un client sent dans un vin blanc ouvert une odeur de pomme blette, presque de xérès. Quelle molécule soupçonner, et d'où vient-elle ?",
+          "a": "L'acétaldéhyde : la levure le forme pendant la fermentation ; il se lie au SO2 et, quand il domine, évoque la pomme et le xérès (descripteurs de l'AWRI, repris par le WSET)."
+        },
+        "cave": "Les liquoreux partent de moûts très sucrés ; au-delà de 300 g/l, la levure fabrique plus de glycérol et d'acide acétique. Goûte ton Bonnezeaux ou ton Coteaux du Layon (Tony Rousseau) : note la texture en bouche, puis cherche une pointe de vinaigre dans le nez, une trace d'acidité volatile."
+      }
+    }
   },
   {
     "nom": "cahier-vinification-02-fermentations-conduite",
     "titre": "Les fermentations (2) : conduire la fermentation",
     "serie": "Vinification · fascicule 2",
     "recit": "Du raisin au vin, une écologie microbienne",
-    "fiches": [230, 585, 344, 231, 343]
+    "fiches": [
+      230,
+      585,
+      344,
+      231,
+      343
+    ]
   }
 ]
