@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 const { chromium } = createRequire(import.meta.url)('playwright');
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
@@ -323,12 +324,18 @@ html{font-size:10.4pt}
 .cah .revu{margin-top:5pt;font-size:8.6pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4pt}
 .cah .suivi td,.cah .suivi th{font-size:9pt;padding:3pt 4pt}.cah .suivi td.c{text-align:center;width:14mm}
 .cah .mode li{margin:0 0 5pt}
+.cah figure.ill{margin:4pt 0 6pt;break-inside:avoid}.cah figure.ill svg{width:100%;max-width:none;height:auto;max-height:56mm}.cah figure.ill figcaption,.cah figure.ph figcaption{font-size:7.4pt;color:var(--muted)}
+.cah figure.ph{float:right;width:52mm;margin:2pt 0 4pt 8pt}.cah figure.ph img{width:100%;display:block}
 .cah .ouv{border:1px dashed var(--gold);padding:4pt 7pt;margin:2pt 0 7pt;font-size:.95em}
 .cah table.sch{width:100%;border-collapse:collapse;margin:2pt 0 8pt}.cah table.sch td{border:1px solid var(--line);padding:5pt 6pt;height:7mm;font-size:.92em;vertical-align:top}.cah table.sch td:first-child{width:45%;background:#f6f1e7}
 .cah .cavebox{border-left:3px solid var(--wine,#7a2335);background:#f6f1e7;padding:5pt 8pt;margin:6pt 0;font-size:.95em;break-inside:avoid}
 .cah .srcs h3{font-size:11pt;margin:6pt 0 2pt}
 .cah .corr ol{columns:2;column-gap:8mm;column-rule:1px solid var(--line);font-size:.9rem}`;
 
+// Illustrations du volet pédagogique : schéma SVG de schemas/ (href="img:x.jpg" → illustration du support d'initiation) ou photo (flottante, crédit imprimé).
+const illus = x => x.svg
+  ? `<figure class="ill">${fs.readFileSync(path.join(dir, 'schemas', x.svg), 'utf8').replace(/href="img:([\w.-]+)"/g, (_, n) => `href="${pathToFileURL(path.join(dir, '..', 'initiation-oenologie', 'img', n)).href}"`)}<figcaption>${e(x.legende)}</figcaption></figure>`
+  : `<figure class="ph"><img src="${pathToFileURL(path.join(dir, x.photo)).href}" alt=""><figcaption>${e(x.legende)} <i>${e(x.credit)}</i></figcaption></figure>`;
 function cahierHTML(def, notesAvant) {
   const fiches = def.fiches.map(id => FICHES.find(f => +f.id === id) || (avert.push(`${def.nom} : fiche ${id} introuvable`), null)).filter(Boolean);
   const R = RECIT.get(def.recit), N = fiches.length, corr = [], srcs = [];
@@ -339,16 +346,18 @@ function cahierHTML(def, notesAvant) {
     (f.exos || []).forEach((x, j) => { const r = exoPapier(x, +f.id * 31 + j); if (r) items.push(r); });
     const P = def.pedago?.[f.id] || {}; // volet pédagogique du cahier : avant de lire, schéma à compléter, cas pratique, dans ma cave
     corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.schema ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
-      <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}`);
+      <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}
+      ${def.pedago && f.cours?.synthese?.length ? `<p><b class="lbl">Avec mes mots : ce qu'il fallait retenir.</b> ${f.cours.synthese.map(b => e(b.txt)).join(' · ')}</p>` : ''}`);
     srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       <p class="src">Fiche : ${e(f.src)}</p>${f.cours?.src ? `<p class="src">Cours : ${e(f.cours.src)}</p>` : ''}`);
     const tete = `Notion ${k + 1} sur ${N} · ${e(f.niveau)}${f.page ? ` · Mille Vignes p. ${e(f.page)}` : ''} · fiche n° ${e(f.id)}`;
     return `${notesAvant.has(k) ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}
     <section class="lire" data-notion="${k + 1}"><div class="bandeau">${tete} · Je lis</div><h2>${e(f.titre)}</h2>
       ${P.ouverture ? `<div class="ouv"><b>Avant de lire</b> ${e(P.ouverture)}${lignes(1)}</div>` : ''}
-      <p class="synth">${e(f.synth)}</p>${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
+      ${f.cours?.sections?.length && P.illus ? '' : `<p class="synth">${e(f.synth)}</p>`}${f.mnemo ? `<div class="astuce"><b>Astuce</b> ${e(f.mnemo)}</div>` : ''}
       ${f.schema ? `<figure>${f.schema.svg}<figcaption>${e(f.schema.legende)}</figcaption></figure>` : ''}
-      ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null }) : ''}
+      ${(P.illus || []).map(illus).join('')}
+      ${f.cours ? coursHTML({ ...f.cours, lede: null, essentiel: null, src: null, synthese: def.pedago ? null : f.cours.synthese }) : ''}
       ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       ${f.selon_livre?.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
     <section class="ex"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
@@ -356,7 +365,7 @@ function cahierHTML(def, notesAvant) {
       <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>
       ${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.q)}</p>${lignes(2)}` : ''}
       ${P.cave ? `<div class="cavebox"><b>Dans ma cave</b> ${e(P.cave)}${lignes(2)}</div>` : ''}
-      <p><b class="lbl">Avec mes mots.</b> Résume la notion en deux phrases, comme à un client.</p>${lignes(def.pedago ? 2 : 3)}
+      <p><b class="lbl">Avec mes mots.</b> Résume la notion en deux phrases, comme à un client${def.pedago ? ', puis compare avec « ce qu’il fallait retenir » au corrigé' : ''}.</p>${lignes(def.pedago ? 2 : 3)}
       ${def.pedago ? '<div class="zone" style="min-height:0"></div>' : `<p class="muted" style="margin-top:6pt">Mes notes</p><div class="zone"></div>`}
       <p class="revu">Corrigé en fin de cahier · Revu le ……… ☐ Je sais ☐ À revoir</p></section>`;
   };

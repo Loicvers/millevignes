@@ -37,38 +37,51 @@
         },
         "cas": {
           "q": "Une cliente revient des États-Unis avec un « vin de framboise ». Elle demande pourquoi on n'en trouve pas en France sous le nom de vin.",
-          "a": "Pour l'OIV, le vin vient uniquement de la fermentation de raisins frais ou de moût, avec au moins 8,5 % vol. d'alcool acquis. Selon Lepeltier, la plupart des autres fruits n'ont pas le « kit complet » (sucre, acidité, eau) : il faut les corriger, ce que la réglementation américaine des vins de fruits autorise."
+          "a": "Pour l'OIV, le vin vient uniquement de la fermentation de raisins frais ou de moût, avec au moins 8,5 % vol. d'alcool acquis. Selon Lepeltier, la plupart des autres fruits n'ont pas le « kit complet » (sucre, acidité, eau) : il faut les corriger, ce que la réglementation américaine des vins de fruits autorise."
         },
-        "cave": "Prends trois bouteilles de ta cave et relève leur degré sur l'étiquette. Classe-les du moins au plus alcoolisé. Ton Bugey-Cerdon (Le Cellier Lingot-Martin) est-il au-dessus ou en dessous des 8,5 % vol. de la définition OIV ? Note la question s'il est en dessous : on la creusera ensemble."
+        "cave": "Prends trois bouteilles de ta cave et relève leur degré sur l'étiquette. Classe-les du moins au plus alcoolisé. Ton Bugey-Cerdon (Le Cellier Lingot-Martin) est-il au-dessus ou en dessous des 8,5 % vol. de la définition OIV ? Note la question s'il est en dessous : on la creusera ensemble.",
+        "illus": [
+          {
+            "photo": "../initiation-oenologie/img/baie.jpg",
+            "legende": "Le raisin, un « kit complet » : sucre, acidité, polyphénols et eau.",
+            "credit": "Illustration : support d'initiation de la cave"
+          }
+        ]
       },
       "224": {
-        "ouverture": "À ton avis, combien de sucre par litre de moût faut-il pour obtenir 1 % vol. d'alcool : 1 g, 17 g ou 100 g ?",
+        "ouverture": "À ton avis, combien de sucre par litre de moût faut-il pour obtenir 1 % vol. d'alcool : 1 g, 17 g ou 100 g ?",
         "schema": {
-          "titre": "Je convertis avec la règle des 17 g/l (vin fermenté à sec)",
+          "titre": "Je convertis avec la règle des 17 g/l (vin fermenté à sec)",
           "lignes": [
             [
-              "Moût à 170 g/l de sucres",
-              "environ 10 % vol."
+              "Moût à 170 g/l de sucres",
+              "environ 10 % vol."
             ],
             [
-              "Moût à 204 g/l",
-              "environ 12 % vol."
+              "Moût à 204 g/l",
+              "environ 12 % vol."
             ],
             [
-              "Moût à 238 g/l",
-              "environ 14 % vol."
+              "Moût à 238 g/l",
+              "environ 14 % vol."
             ],
             [
-              "Vin sec à 13 % vol. : sucre de départ ?",
-              "environ 221 g/l (13 × 17)"
+              "Vin sec à 13 % vol. : sucre de départ ?",
+              "environ 221 g/l (13 × 17)"
             ]
           ]
         },
         "cas": {
-          "q": "Un client : « Ce vin fait 14,5 %, il doit être plus sucré que l'autre. » Que lui réponds-tu ?",
-          "a": "Pas forcément : l'alcool vient du sucre que les levures ont transformé. Un vin à 14,5 % vient d'un moût plus riche en sucre au départ (environ 14,5 × 17 ≈ 247 g/l), mais s'il a fermenté à sec, ce sucre est devenu de l'alcool et du CO2."
+          "q": "Un client : « Ce vin fait 14,5 %, il doit être plus sucré que l'autre. » Que lui réponds-tu ?",
+          "a": "Pas forcément : l'alcool vient du sucre que les levures ont transformé. Un vin à 14,5 % vient d'un moût plus riche en sucre au départ (environ 14,5 × 17 ≈ 247 g/l), mais s'il a fermenté à sec, ce sucre est devenu de l'alcool et du CO2."
         },
-        "cave": "Prends ton Châteauneuf-du-Pape (Château de Manissy) et ton Chablis (Château de Fleys). Lis leur degré et multiplie-le par 17 : c'est, à peu près, le sucre de leur moût de départ s'ils ont fermenté à sec. Écris les deux résultats et l'écart entre eux."
+        "cave": "Prends ton Châteauneuf-du-Pape (Château de Manissy) et ton Chablis (Château de Fleys). Lis leur degré et multiplie-le par 17 : c'est, à peu près, le sucre de leur moût de départ s'ils ont fermenté à sec. Écris les deux résultats et l'écart entre eux.",
+        "illus": [
+          {
+            "svg": "sucre-alcool.svg",
+            "legende": "Dans la cuve, les levures changent le sucre du moût en éthanol et en CO2 : environ 17 g/l de sucres par degré."
+          }
+        ]
       },
       "228": {
         "ouverture": "D'où vient la levure qui fait le vin : de la peau du raisin, de l'air du chai, ou des deux ? Parie avant de lire.",
@@ -97,7 +110,13 @@
           "q": "Un visiteur te dit : « Les levures du vin, elles viennent de la peau du raisin, non ? »",
           "a": "En partie seulement : sur le raisin vivent surtout des levures peu fermentaires, et Saccharomyces cerevisiae, la levure du vin, y est très rare. L'air du chai en est en revanche chargé, et des reines de guêpes et de frelons l'hébergent d'un automne au printemps."
         },
-        "cave": "À ta prochaine visite chez un partenaire, par exemple au Château de Montmirail ou au Domaine Pernot, demande au vigneron s'il laisse partir la fermentation seule ou s'il ajoute des levures, et note sa réponse ici. Tu t'en serviras au fascicule 2 (levures indigènes ou sélectionnées)."
+        "cave": "À ta prochaine visite chez un partenaire, par exemple au Château de Montmirail ou au Domaine Pernot, demande au vigneron s'il laisse partir la fermentation seule ou s'il ajoute des levures, et note sa réponse ici. Tu t'en serviras au fascicule 2 (levures indigènes ou sélectionnées).",
+        "illus": [
+          {
+            "svg": "course-levures.svg",
+            "legende": "La course à élimination : de la foule de levures du raisin et du chai aux une à trois souches qui finissent la fermentation."
+          }
+        ]
       },
       "229": {
         "ouverture": "Une bouteille ouverte depuis une semaine sent le vinaigre. À ton avis, qui est responsable, et de quoi a-t-il eu besoin ?",
@@ -129,13 +148,13 @@
         "cave": "Ouvre côte à côte ton Chablis (Château de Fleys) et ton Meursault (Domaine Manuel Olivier). Lequel te paraît le plus vif, lequel le plus rond ? Note ton impression, puis cherche sur la fiche technique de chaque domaine si la malolactique a été faite."
       },
       "342": {
-        "ouverture": "La levure transforme-t-elle tout le sucre en alcool et en CO2 ? Devine la part qui part ailleurs : 1 %, 8 % ou 30 % ?",
+        "ouverture": "La levure transforme-t-elle tout le sucre en alcool et en CO2 ? Devine la part qui part ailleurs : 1 %, 8 % ou 30 % ?",
         "schema": {
           "titre": "Ce que la levure fabrique à côté de l'alcool",
           "lignes": [
             [
               "Glycérol : quelle part du sucre ? combien dans le vin ?",
-              "environ 8 % ; 5 à 8 g/l"
+              "environ 8 % ; 5 à 8 g/l"
             ],
             [
               "Acétaldéhyde : quelle odeur quand il domine ?",
@@ -146,7 +165,7 @@
               "l'acidité volatile, d'origine levurienne"
             ],
             [
-              "Moût au-delà de 300 g/l : qu'est-ce qui monte ?",
+              "Moût au-delà de 300 g/l : qu'est-ce qui monte ?",
               "le glycérol et l'acide acétique"
             ]
           ]
@@ -155,7 +174,18 @@
           "q": "Un client sent dans un vin blanc ouvert une odeur de pomme blette, presque de xérès. Quelle molécule soupçonner, et d'où vient-elle ?",
           "a": "L'acétaldéhyde : la levure le forme pendant la fermentation ; il se lie au SO2 et, quand il domine, évoque la pomme et le xérès (descripteurs de l'AWRI, repris par le WSET)."
         },
-        "cave": "Les liquoreux partent de moûts très sucrés ; au-delà de 300 g/l, la levure fabrique plus de glycérol et d'acide acétique. Goûte ton Bonnezeaux ou ton Coteaux du Layon (Tony Rousseau) : note la texture en bouche, puis cherche une pointe de vinaigre dans le nez, une trace d'acidité volatile."
+        "cave": "Les liquoreux partent de moûts très sucrés ; au-delà de 300 g/l, la levure fabrique plus de glycérol et d'acide acétique. Goûte ton Bonnezeaux ou ton Coteaux du Layon (Tony Rousseau) : note la texture en bouche, puis cherche une pointe de vinaigre dans le nez, une trace d'acidité volatile.",
+        "illus": [
+          {
+            "svg": "partage-sucre.svg",
+            "legende": "Le partage du sucre : l'essentiel devient éthanol et CO2, environ 8 % partent en glycérol."
+          },
+          {
+            "photo": "photos/voile-de-levures-flor.jpg",
+            "legende": "Voile de flor à la surface d'un fût de xérès. L'acétaldéhyde marque le caractère du fino et des vins sous voile (Oxford Companion).",
+            "credit": "Photo : El Pantera, CC BY-SA 3.0, Wikimedia Commons"
+          }
+        ]
       }
     }
   },
