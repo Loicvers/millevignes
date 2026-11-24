@@ -151,13 +151,22 @@ function pointsAttendus(r) {
 // flash.keys (facultatif) : points attendus, chacun avec ses variantes acceptées, ex. [["Asie","asiatique"],["40"]] ;
 // seuls ces points comptent, ce qui évite d'exiger des détails que la question ne demande pas.
 const MOTS_VIDES = new Set("dans avec pour sont elle elles mais plus leur leurs entre comme cette tout tous toute toutes sans sous vers chez dont donc aussi tres etre avoir fait peut selon alors ainsi encore autre autres celui celle ceux quand depuis notamment environ souvent toujours jamais surtout ou qui que quoi les des une est par sur aux deux trois le la de du et en un au a l d".split(" "));
+// Verbes de comptoir interchangeables (racines, sans accents) : « développer les arômes » = « ouvre les arômes », « arrondir » = « assouplit » (24/11).
+const SYNONYMES = [
+  ["ouvr", "devel", "liber", "revel", "epanou", "exprim", "reveil"],
+  ["assoupl", "arrond", "adouc", "polir", "polis", "fondr", "fondu", "soupl", "attendr", "lisse"],
+  ["gard", "conserv", "preserv", "mainten", "protege", "proteg"],
+  ["augment", "accroi", "hausse", "monte", "renforc"],
+  ["dimin", "baiss", "redui", "limit", "attenu"],
+];
+const synonymes = (k, m) => SYNONYMES.some(g => g.some(r => k.startsWith(r)) && g.some(r => m.startsWith(r)));
 function flashKeys(answer, mine, groups) {
   const toks = s => chiffres(s).replace(/(\d)([a-z])/g, "$1 $2").replace(/([a-z])(\d)/g, "$1 $2").split(" ").filter(w => w && !MOTS_VIDES.has(w)); // « 9gevrey » = « 9 gevrey »
   const words = s => toks(s).filter(w => /^\d+$/.test(w) || w.length >= 4);
   const stem = w => w.slice(0, Math.min(5, w.length - 1));
   const mineT = toks(mine);
   // Nombres et mots courts (ADN, non, cep) : égalité stricte ; sinon racines comparées par préfixe.
-  const match = (k, m) => /^\d+$/.test(k) || k.length <= 3 ? m === k : m.length >= 4 && (stem(m).startsWith(stem(k)) || stem(k).startsWith(stem(m)));
+  const match = (k, m) => /^\d+$/.test(k) || k.length <= 3 ? m === k : m.length >= 4 && (stem(m).startsWith(stem(k)) || stem(k).startsWith(stem(m)) || synonymes(k, m));
   const has = k => mineT.some(m => match(k, m));
   if (groups) {
     // Variante de plusieurs mots : mots consécutifs et dans l'ordre (« sucre monte » ≠ « sucre baisse… monte »).

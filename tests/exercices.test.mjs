@@ -156,6 +156,14 @@ test("ma cave : réponse en liste et fiche d'appellation retrouvée par le nom (
   assert.equal(ctx.fk(p.payload.answer, "Pour garder la fraîcheur et l'acidité", p.payload.keys).ok, true, "une phrase n'est pas une liste");
 });
 
+test("flashcard écrite : verbes synonymes (Clan Fabre, 24/11)", () => {
+  vm.runInNewContext("this.fk=flashKeys;this.pa=pointsAttendus", ctx);
+  const r = "L'air ouvre les arômes et assouplit les tanins.";
+  assert.equal(ctx.fk(r, "Pour developper les aromes et arrondir les tanins", ctx.pa(r)).ok, true);
+  assert.equal(ctx.fk(r, "Pour refroidir le vin", ctx.pa(r)).ok, false);
+  assert.equal(ctx.fk("Le sucre baisse.", "le sucre monte", [["sucre"], ["baisse"]]).ok, false, "contraires non confondus");
+});
+
 test("flashcard écrite : correction par mots-clés", () => {
   vm.runInNewContext("this.fk=flashKeys", ctx);
   const a = "Le baco blanc (baco 22 A), dans l’AOC Armagnac.";
