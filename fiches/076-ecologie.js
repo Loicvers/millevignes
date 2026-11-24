@@ -101,7 +101,7 @@ FICHES.push(
     qcm: { q: "Quel groupe domine la biomasse mondiale d’après Bar-On, Phillips et Milo (2018) ?", opts: ["Les bactéries", "Les champignons", "Les plantes", "Les animaux"], good: 2, expl: "Le livre avance 90 % de microbes, mais Bar-On, Phillips et Milo (PNAS, 2018) estiment environ 80 % de la biomasse pour les plantes et 15 % pour les bactéries. Les plantes dominent donc, les microbes étant les ouvriers invisibles." },
     exos: [
       { type: "true_false", prompt: "Vrai ou faux ?", payload: { statement: "Selon Bar-On et al. (2018), les microbes représentent 90 % de la biomasse terrestre.", answer: false }, explanation: "Ils pèsent environ 16 % (bactéries ~15 %, archées, champignons) ; les plantes font environ 80 %. Environ 90 % de la biomasse bactérienne se trouve en sous-sol profond, d’où peut-être la confusion." },
-      { type: "flashcard", prompt: "Pourquoi l’affirmation « 90 % de la biomasse terrestre = microbes » est-elle écartée ?", payload: { answer: "Bar-On et al. (2018) comptent environ 80 % de plantes et 15 % de bactéries ; ~90 % de la biomasse bactérienne est en sous-sol profond." } }
+      { type: "flashcard", prompt: "Pourquoi l’affirmation « 90 % de la biomasse terrestre = microbes » est-elle écartée ?", payload: { answer: "Bar-On et al. (2018) comptent environ 80 % de plantes et 15 % de bactéries ; ~90 % de la biomasse bactérienne est en sous-sol profond.", keys: [["plantes","végétaux","végétal","arbres","80"],["bactéries","15"]] } }
     ],
     status: "verified",
     to_check: [],

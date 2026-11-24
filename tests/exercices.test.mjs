@@ -140,6 +140,22 @@ test("ma cave : questions du vin en flashcards, rattachées à la fiche d'appell
   assert.equal(ctx.fk(q.payload.answer, "Rive gauche", q.payload.keys).ok, false);
 });
 
+test("ma cave : réponse en liste et fiche d'appellation retrouvée par le nom (retours de l'iPhone, 24/11)", () => {
+  vm.runInNewContext("this.cq=caveQuestions;this.fk=flashKeys", ctx);
+  const F = [{ id: 1, titre: "Pépinières" }, { id: 2, titre: "Sancerre", geo: { appel: "Sancerre" } }, { id: 3, titre: "Sauvignon" }];
+  const v = (cuvee, r) => ({ cuvee, dom: "D", liens: { 1: { k: "notion" }, 3: { k: "cepage" } }, questions: [{ q: "?", r }] });
+  const [s] = ctx.cq([v("Sancerre Le Paradis blanc", "Caillottes (calcaire), Terres Blanches (marnes kimméridgiennes) et Silex (argilo-siliceux).")], F);
+  assert.equal(s.fiche.id, 2, "pas la fiche des pépinières");
+  assert.equal(ctx.fk(s.payload.answer, "Argilo silicieux, calcaire et marne kimmeridgienne", s.payload.keys).ok, true, "le sol entre parenthèses vaut le lieu-dit");
+  assert.equal(ctx.fk(s.payload.answer, "Caillottes", s.payload.keys).ok, false);
+  const [g] = ctx.cq([v("Gigondas", "Grenache, syrah et mourvèdre.")], F);
+  assert.equal(g.fiche.id, 3, "sans fiche d'appellation : le cépage avant la notion");
+  assert.equal(ctx.fk(g.payload.answer, "Grenache, cinsault clairette", g.payload.keys).ok, false, "un seul cépage sur trois");
+  assert.equal(ctx.fk(g.payload.answer, "grenache syrah mourvedre", g.payload.keys).ok, true);
+  const [p] = ctx.cq([v("X", "Pour garder l'acidité et la fraîcheur du vin.")], F);
+  assert.equal(ctx.fk(p.payload.answer, "Pour garder la fraîcheur et l'acidité", p.payload.keys).ok, true, "une phrase n'est pas une liste");
+});
+
 test("flashcard écrite : correction par mots-clés", () => {
   vm.runInNewContext("this.fk=flashKeys", ctx);
   const a = "Le baco blanc (baco 22 A), dans l’AOC Armagnac.";

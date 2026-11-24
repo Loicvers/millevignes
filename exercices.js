@@ -109,7 +109,7 @@ function caveExercises(vins, fiches) {
     if (leurres.length < 3) return [];
     const options = shuffle([f.titre, ...leurres]);
     return [{ id: "cv-" + f.id, type: "mcq_single", prompt: "Dans ta cave, « " + v.cuvee + " », de " + v.dom + ", illustre quelle notion ?",
-      payload: { options, answer: options.indexOf(f.titre) }, explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + l.d, fiche: f }];
+      payload: { options, answer: options.indexOf(f.titre) }, ...(l.d && { explanation: (l.s === "ok" ? "✅ " : "⚠️ ") + l.d }), fiche: f }];
   });
 }
 // Questions de révision écrites pour chaque vin (champ questions) : flashcards rattachées à la fiche de l'appellation (sinon à la première fiche liée).
@@ -117,10 +117,16 @@ function caveExercises(vins, fiches) {
 function caveQuestions(vins, fiches) {
   const byId = Object.fromEntries(fiches.map(f => [f.id, f]));
   return vins.flatMap(v => {
-    const ids = Object.keys(v.liens || {}), f = byId[ids.find(id => v.liens[id].k === "appel")] || byId[ids.find(id => byId[id])];
+    // Fiche d'appellation retrouvée d'après le nom de la cuvée (fichier de cave importé avant la fiche), puis lien « appel », puis cépage ;
+    // une notion seulement en dernier recours (sinon « Sancerre Le Paradis » tombait sur la fiche des pépinières, 24/11).
+    const nom = normalize(String(v.cuvee).replace(/^\s*(aoc|aop|igp|vdp)\s*[-–]?\s*/i, ""));
+    const appel = fiches.filter(x => x.geo && x.geo.appel && (y => nom === y || (nom.startsWith(y + " ") && !/^(de|du|des|d) /.test(nom.slice(y.length + 1))))(normalize(x.geo.appel)))
+      .sort((a, b) => b.geo.appel.length - a.geo.appel.length)[0];
+    const ids = Object.keys(v.liens || {}), lien = k => byId[ids.find(id => byId[id] && v.liens[id].k === k)];
+    const f = appel || lien("appel") || lien("cepage") || byId[ids.find(id => byId[id])];
     if (!f) return [];
     const base = "cv-q-" + normalize(v.dom + " " + v.cuvee).replace(/ /g, "-");
-    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " », de " + v.dom + " : " + q.q, payload: { answer: q.r, keys: q.keys || pointPrincipal(q.r) }, fiche: f }));
+    return (v.questions || []).map((q, i) => ({ id: base + "-" + i, type: "flashcard", prompt: "Ta bouteille « " + v.cuvee + " », de " + v.dom + " : " + q.q, payload: { answer: q.r, keys: q.keys || pointsAttendus(q.r) }, fiche: f }));
   });
 }
 
@@ -129,6 +135,16 @@ function caveQuestions(vins, fiches) {
 function pointPrincipal(r) {
   const g = chiffres(String(r).split(/[,;:(—]/)[0]).split(" ").filter(w => w && !MOTS_VIDES.has(w) && (/^\d+$/.test(w) || w.length >= 4)).map(w => [w]);
   return g.length ? g : undefined;
+}
+// Réponse en liste (« Grenache, syrah et mourvèdre » ; « Caillottes (calcaire), Terres Blanches (marnes) et Silex ») : chaque élément est exigé,
+// sinon le premier seul comptait (grenache suffisait, ou « caillottes » seul était demandé, 24/11). Ce qui est entre parenthèses vaut variante
+// (« calcaire » pour Caillottes). Pas une liste (éléments longs : « La rive droite, en coteaux… ») → pointPrincipal.
+function pointsAttendus(r) {
+  const tete = String(r).split(/[;:—]/)[0], parts = tete.replace(/\.\s*$/, "").split(/,|\s+et\s+/).map(x => x.trim()).filter(Boolean);
+  const nom = x => x.replace(/\([^)]*\)/g, " ").trim(), mots = x => chiffres(x).split(" ").filter(w => w && !MOTS_VIDES.has(w));
+  const brut = x => chiffres(nom(x)).split(" ").filter(Boolean); // élément de liste = un nom (« Terres Blanches »), pas un bout de phrase (« Pour garder l'acidité »)
+  if (parts.length < 2 || parts.some(x => !brut(x).length || brut(x).length > 3 || MOTS_VIDES.has(brut(x)[0]) || !mots(nom(x)).length)) return pointPrincipal(r);
+  return parts.map(x => [nom(x), ...[...x.matchAll(/\(([^)]*)\)/g)].flatMap(m => mots(m[1]).filter(w => w.length >= 4))]);
 }
 // Flashcard écrite : mots-clés de la réponse attendue (4 lettres et plus, ou nombres) retrouvés dans la tienne.
 // Racines comparées par préfixe (« asie » ~ « asiatique », pluriels, accords). null si trop peu de mots-clés.
