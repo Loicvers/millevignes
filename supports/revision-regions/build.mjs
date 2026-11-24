@@ -328,6 +328,7 @@ html{font-size:10.4pt}
 .cah .mode li{margin:0 0 5pt}
 .cah figure.ill{margin:4pt 0 6pt;break-inside:avoid}.cah figure.ill svg{width:100%;max-width:none;height:auto;max-height:56mm}.cah figure.ill figcaption,.cah figure.ph figcaption{font-size:7.4pt;color:var(--muted)}
 .cah figure.ph{float:right;width:52mm;margin:2pt 0 4pt 8pt}.cah figure.ph img{width:100%;display:block}
+.cah figure.ill.pl svg{max-height:238mm}
 .cah .ouv{border:1px dashed var(--gold);padding:4pt 7pt;margin:2pt 0 7pt;font-size:.95em}
 .cah table.sch{width:100%;border-collapse:collapse;margin:2pt 0 8pt}.cah table.sch td{border:1px solid var(--line);padding:5pt 6pt;height:7mm;font-size:.92em;vertical-align:top}.cah table.sch td:first-child{width:45%;background:#f6f1e7}
 .cah .cavebox{border-left:3px solid var(--wine,#7a2335);background:#f6f1e7;padding:5pt 8pt;margin:6pt 0;font-size:.95em;break-inside:avoid}
@@ -397,6 +398,7 @@ function cahierHTML(def, notesAvant) {
     <p class="muted">Rythme conseillé : une ou deux notions par jour, le cahier en une semaine.</p></section>
   <section class="page">${recitHTML(R)}${R?.filRouge ? `<p><b class="lbl">Avant de commencer.</b> Réponds en une phrase, puis relis-toi à la fin du cahier : ${e(R.filRouge)}</p>${lignes(4)}` : ''}</section>
   ${corps}
+  ${(def.planches || []).map(pl => `<section class="page planche"><h2>${e(pl.titre)}</h2>${illus({ svg: pl.svg, legende: pl.legende }).replace('class="ill"', 'class="ill pl"')}</section>`).join('')}
   <section class="corr"><h2>Corrigé</h2>${corr.join('')}</section>
   <section class="page srcs"><h2>Sources</h2><p class="muted">Ce que dit chaque source, ses limites et les divergences tranchées, notion par notion.</p>${srcs.join('')}</section>
   </body></html>` };

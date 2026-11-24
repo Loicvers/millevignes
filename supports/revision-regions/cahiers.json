@@ -718,6 +718,13 @@
       10,
       12,
       11
+    ],
+    "planches": [
+      {
+        "titre": "Planche : la grande famille de la vigne",
+        "svg": "dom01-planche-famille.svg",
+        "legende": "De la famille des Vitacées aux cépages, aux porte-greffes et aux hybrides du froid. Établie d'après les fiches 6, 7, 11, 20, 21, 40, 47, 78 et 79 du site."
+      }
     ]
   },
   {
