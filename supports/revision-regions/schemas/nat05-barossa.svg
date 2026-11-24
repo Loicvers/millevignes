@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="12" y="18" font-weight="700" fill="#5b1a24">Charte des vieilles vignes de Barossa (2009) : âge minimal du cep</text>
+  <g fill="#a8843a"><rect x="20" y="64" width="112" height="14"/><rect x="150" y="50" width="112" height="28" fill="#8f6f2e"/><rect x="280" y="36" width="112" height="42" fill="#7a5a22"/><rect x="410" y="24" width="124" height="54" fill="#5b1a24"/></g>
+  <g text-anchor="middle">
+    <text x="76" y="96" font-weight="700">35 ans</text><text x="76" y="110" fill="#625a4e">old vines</text>
+    <text x="206" y="96" font-weight="700">70 ans</text><text x="206" y="110" fill="#625a4e">survivors</text>
+    <text x="336" y="96" font-weight="700">100 ans</text><text x="336" y="110" fill="#625a4e">centenarians</text>
+    <text x="472" y="96" font-weight="700">125 ans</text><text x="472" y="110" fill="#625a4e">ancestors</text>
+  </g>
+</svg>

@@ -1,0 +1,239 @@
+{
+  "634": {
+    "ouverture": "Une vigne de 80 ans et une vigne de 10 ans : laquelle donne le meilleur vin, à ton avis ?",
+    "illus": [
+      {
+        "svg": "nat09-age-vigne.svg",
+        "legende": "Les âges repères des fiches, chacun selon sa source : les sources ne mesurent pas la même chose (rendement, durée de vie moyenne, remplacement)."
+      }
+    ],
+    "schema": {
+      "titre": "Repères sur l’âge des vignes",
+      "lignes": [
+        [
+          "Première vraie récolte",
+          "vers la troisième année"
+        ],
+        [
+          "Réputation des vieilles vignes",
+          "raisins plus concentrés, en moindre quantité : une réputation, pas une règle"
+        ],
+        [
+          "Remplacement de la plupart des vignes (WSET L3)",
+          "entre 30 et 50 ans, puis trois ans ou plus de jachère"
+        ],
+        [
+          "Mention « vieilles vignes » en France",
+          "non réglementée ; le producteur doit pouvoir la justifier"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client te montre une bouteille « vieilles vignes » et te demande quel âge ont les ceps. Tu ne le sais pas : que fais-tu ?",
+      "a": "Je lui explique que la mention n’est pas réglementée en France, mais que le producteur doit pouvoir la justifier. Je note la question et je demande l’âge de la parcelle au vigneron, plutôt que d’inventer un chiffre."
+    },
+    "cave": "Dans ta cave, cherche un vin qui porte la mention « vieilles vignes » (ou note qu’aucun ne la porte). Sur la fiche technique du domaine, repère l’âge de la parcelle ; s’il n’y est pas, pose la question au vigneron à la prochaine commande."
+  },
+  "93": {
+    "ouverture": "Au XIXe siècle, des maladies jamais vues arrivent sur la vigne européenne. D’où viennent-elles, à ton avis, et pourquoi la vigne s’en défend-elle mal ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les fléaux américains",
+      "lignes": [
+        [
+          "Pourquoi V. vinifera est-elle démunie ?",
+          "elle n’avait aucune défense contre ces parasites américains"
+        ],
+        [
+          "Le mildiou arrive en…",
+          "1878 ; la bouillie bordelaise (cuivre) est mise au point en 1885"
+        ],
+        [
+          "Le black rot arrive en…",
+          "1885-1886 (1886 à Montpellier selon INRAE)"
+        ],
+        [
+          "Maladie souvent rangée avec eux, mais d’origine européenne",
+          "l’anthracnose"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire demande : « Pourquoi la vigne européenne a-t-elle été si démunie face à ces maladies ? »",
+      "a": "Vitis vinifera n’avait aucune défense contre les parasites américains introduits au XIXe siècle. Ils sont arrivés l’un après l’autre : oïdium, phylloxéra, mildiou, puis black rot. L’oïdium s’est combattu au soufre, le mildiou à la bouillie bordelaise."
+    },
+    "cave": "À la prochaine commande, demande au vigneron d’un domaine partenaire, par exemple Château Haut-Maurac (Médoc) : de l’oïdium ou du mildiou, lequel lui donne le plus de souci, et comment s’en protège-t-il ? Note sa réponse."
+  },
+  "520": {
+    "ouverture": "Pourquoi le vigneron en bio redoute-t-il particulièrement le mildiou, à ton avis ?",
+    "illus": [
+      {
+        "photo": "photos/mildiou.jpg",
+        "legende": "Taches de mildiou sur le dessus d’une feuille.",
+        "credit": "Photo : Jerzy Opioła, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Le mildiou en un coup d’œil",
+      "lignes": [
+        [
+          "Ce dont il a besoin pour contaminer",
+          "de l’eau libre sur les jeunes organes : pluie, rosée ou brouillard"
+        ],
+        [
+          "Sur la feuille : dessus et revers",
+          "tache jaunâtre en « tache d’huile » dessus ; duvet blanc au revers"
+        ],
+        [
+          "Sur la grappe",
+          "duvet blanc (rot gris), puis baies brun-rouge (rot brun)"
+        ],
+        [
+          "Ce qui pose problème avec le cuivre",
+          "il ne se dégrade pas et s’accumule dans les sols"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client te demande : « Pourquoi parle-t-on de limiter le cuivre dans les vignes ? »",
+      "a": "Le cuivre, notamment la bouillie bordelaise, est la lutte classique contre le mildiou. Mais il ne se dégrade pas et s’accumule dans les sols, d’où des plafonds européens. Les alternatives (extraits de plantes, biocontrôle) restent d’une efficacité partielle, ce qui pèse surtout en bio."
+    },
+    "cave": "Prends un vin de ta cave et regarde si l’étiquette mentionne le bio. À la prochaine commande, demande à un vigneron partenaire, par exemple Mas Amiel (Maury), comment il s’organise face au mildiou quand le printemps est pluvieux."
+  },
+  "521": {
+    "ouverture": "Un été chaud, sans une goutte de pluie : le vigneron peut-il dormir tranquille côté maladies ? Pourquoi, à ton avis ?",
+    "illus": [
+      {
+        "photo": "photos/oidium.jpg",
+        "legende": "Oïdium : feutrage poudreux blanc grisâtre, ici sur une grappe.",
+        "credit": "Photo : Olivier Lemoine, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Mildiou ou oïdium ?",
+      "lignes": [
+        [
+          "Tache d’huile sur le dessus de la feuille",
+          "mildiou"
+        ],
+        [
+          "Feutrage poudreux blanc grisâtre",
+          "oïdium"
+        ],
+        [
+          "Traitement classique du mildiou, de l’oïdium",
+          "cuivre, soufre"
+        ],
+        [
+          "Temps favorable à l’oïdium",
+          "doux (20 à 27 °C), air humide, feuillage dense et ombragé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire te demande comment distinguer, au vignoble, le mildiou de l’oïdium.",
+      "a": "Deux repères suffisent. Tache d’huile et eau libre : c’est le mildiou, qui se traite au cuivre. Poussière blanche et temps chaud sans pluie : c’est l’oïdium, qui se traite au soufre."
+    },
+    "cave": "À la prochaine commande, demande au vigneron d’un domaine partenaire, par exemple Château Fonsalade (Saint-Chinian), si l’oïdium le préoccupe lors des étés chauds sans pluie. Note sa réponse et compare-la avec la fiche."
+  },
+  "94": {
+    "ouverture": "Si tu coupes un sarment de vigne et le plantes en terre, que se passe-t-il, à ton avis ? Et si tu coupais la patte d’un chien ?",
+    "illus": [
+      {
+        "svg": "nat09-plante-colonie.svg",
+        "legende": "Animal et plante selon Francis Hallé : schéma de principe."
+      }
+    ],
+    "schema": {
+      "titre": "Hallé en quatre repères",
+      "lignes": [
+        [
+          "Qui est Francis Hallé ?",
+          "botaniste, spécialiste des forêts tropicales, cofondateur du Radeau des cimes (1986)"
+        ],
+        [
+          "Le livre dont il est question",
+          "Éloge de la plante (1999 ; Lepeltier cite 2014)"
+        ],
+        [
+          "Ce que la plante n’a pas",
+          "d’organes vitaux centralisés"
+        ],
+        [
+          "Ses cellules peuvent…",
+          "régénérer une plante entière (totipotence)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Une vigne atteinte d’esca, au bois mort, porte encore des grappes. Comment est-ce possible ? »",
+      "a": "Lepeltier en fait un exemple de la plante-colonie de Hallé : sans organe vital centralisé, le cep peut avoir du bois mort et porter encore des fruits. La plante est moins un individu qu’une colonie."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire, par exemple Domaine Deprade Jorda (Côtes du Roussillon), ce qu’il pense de l’idée d’une vigne qui serait une colonie plutôt qu’un individu. Note sa réponse."
+  },
+  "95": {
+    "ouverture": "Qu’ont en commun un pétale, une étamine et une feuille, à ton avis ?",
+    "illus": [
+      {
+        "svg": "nat09-feuille-organes.svg",
+        "legende": "Goethe : six organes vus comme des variations d’un même organe de base. Schéma de principe."
+      }
+    ],
+    "schema": {
+      "titre": "Goethe et la plante",
+      "lignes": [
+        [
+          "Linné décompose en catégories ; Goethe voit la plante comme…",
+          "un tout en mouvement"
+        ],
+        [
+          "L’organe de base dont les autres sont des variations",
+          "la feuille"
+        ],
+        [
+          "Le mouvement propre à cet organe",
+          "il alterne expansion et contraction"
+        ],
+        [
+          "Idée évoquée dès le voyage en Italie (1787)",
+          "l’Urpflanze, plante archétypale commune à toutes les plantes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire demande : « Pour Goethe, une fleur et une feuille, c’est la même chose ? »",
+      "a": "Pas tout à fait la même chose : ce sont des variations d’un même organe de base, la feuille, qui alterne expansion et contraction. Goethe cherche l’unité sous la diversité."
+    },
+    "cave": "Lors d’une visite de vignoble, ou sur les photos d’un domaine partenaire comme Domaine des Amandiers (Saumur-Champigny), observe de près une feuille et une grappe, à la manière de Goethe. Note trois ressemblances ou trois différences de forme."
+  },
+  "96": {
+    "ouverture": "Un vigneron taille et rogne sa vigne chaque année. Pourquoi, à ton avis, faut-il « canaliser » une vigne ?",
+    "illus": [],
+    "schema": {
+      "titre": "De Goethe au vigneron",
+      "lignes": [
+        [
+          "Qui édite les écrits scientifiques de Goethe dès les années 1880 ?",
+          "Rudolf Steiner"
+        ],
+        [
+          "Fondement de la biodynamie",
+          "le Cours aux agriculteurs : huit conférences à Koberwitz (Silésie), en juin 1924"
+        ],
+        [
+          "Pour Florin, la vigne est…",
+          "une plante très végétative, qui pousse dans toutes les directions"
+        ],
+        [
+          "Gestes qui la canalisent",
+          "la taille et le rognage"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Quel rapport entre Goethe et la biodynamie ? »",
+      "a": "Rudolf Steiner a édité les écrits scientifiques de Goethe à partir des années 1880 et en a tiré sa propre théorie de la connaissance. En juin 1924, il donne le Cours aux agriculteurs, fondement de la biodynamie."
+    },
+    "cave": "Prends un vin de ta cave et regarde son étiquette : mentionne-t-elle le bio ou la biodynamie ? Note ce que cette mention t’apprend, et ce qu’elle ne t’apprend pas, sans en déduire de qualité."
+  }
+}

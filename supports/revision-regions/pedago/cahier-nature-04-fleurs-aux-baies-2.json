@@ -1,0 +1,143 @@
+{
+  "68": {
+    "ouverture": "Un raisin blanc n'est pas un raisin « sans couleur » par hasard : à ton avis, que lui manque-t-il dans la pellicule ?",
+    "illus": [
+      {
+        "svg": "nat04-interrupteurs.svg",
+        "legende": "Deux gènes voisins commandent la couleur de la pellicule ; schéma de principe, sans chiffres."
+      }
+    ],
+    "schema": {
+      "titre": "Forme et couleur des baies",
+      "lignes": [
+        [
+          "Les deux gènes de couleur",
+          "VvMybA1 et VvMybA2"
+        ],
+        [
+          "Ce qu'ils commandent, dans la pellicule",
+          "la synthèse des anthocyanes"
+        ],
+        [
+          "Cépage blanc : état des deux gènes",
+          "inactivés (un rétrotransposon, Gret1, bloque VvMybA1)"
+        ],
+        [
+          "Cépage teinturier : particularité",
+          "la pulpe est colorée aussi"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le pinot existe en blanc, en gris et en noir : c'est bien le même cépage ? »",
+      "a": "Oui : le pinot est très instable et existe en blanc, gris, noir ou teinturier. La couleur dépend de deux gènes voisins qui commandent les anthocyanes de la pellicule ; gris et roses résultent de mutations partielles."
+    },
+    "cave": "Prends un vin blanc et un vin rouge de ta cave et lis l'étiquette : relève le cépage de chacun. Pour le blanc, explique à voix haute pourquoi sa pellicule n'a pas d'anthocyanes."
+  },
+  "65": {
+    "ouverture": "Dans une même grappe, des baies de tailles très différentes : défaut ou chance pour le vin, à ton avis ?",
+    "illus": [
+      {
+        "photo": "photos/millerandage.jpg",
+        "legende": "Grappe millerandée : grosses baies et petites baies mal fécondées mêlées.",
+        "credit": "Photo : Olivier Lemoine (Photo-Terroir.fr), CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Le millerandage",
+      "lignes": [
+        [
+          "Ce que mêle une grappe millerandée",
+          "de grosses baies et de petites baies sans pépins, mal fécondées"
+        ],
+        [
+          "Surnom anglais",
+          "« hen and chicks »"
+        ],
+        [
+          "Pourquoi les petites baies peuvent aider la qualité",
+          "peau épaisse, peu juteuses : elles concentrent couleur et sucre"
+        ],
+        [
+          "Qui y voyait un atout pour le pinot noir",
+          "Henri Jayer"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ma grappe a des baies minuscules à côté de grosses : le vigneron a raté sa récolte ? »",
+      "a": "Pas forcément. Ce sont des baies mal fécondées, petites et sans pépins : on parle de millerandage. À peau épaisse et peu juteuses, elles concentrent couleur et sucre, ce qui peut aider la qualité."
+    },
+    "cave": "Pose une question à l'un de tes vignerons (par exemple Château de Fleys, Chablis) à ta prochaine commande : observe-t-il du millerandage dans ses vignes, et le considère-t-il comme un défaut ou un atout ?"
+  },
+  "69": {
+    "ouverture": "Quand tu croques un raisin, la peau, la chair et le pépin n'ont pas le même goût : qu'apporte chacun, selon toi ?",
+    "illus": [
+      {
+        "svg": "nat04-baie-couches.svg",
+        "legende": "Coupe d'une baie : la pellicule, la pulpe, le pépin ; schéma de principe, sans échelle."
+      }
+    ],
+    "schema": {
+      "titre": "Ce que chaque couche apporte",
+      "lignes": [
+        [
+          "Pellicule",
+          "arômes, précurseurs, tanins et pigments"
+        ],
+        [
+          "Pulpe",
+          "eau, sucres et acides"
+        ],
+        [
+          "Pépin",
+          "des tanins, parfois astringents"
+        ],
+        [
+          "Ce qui recouvre la pellicule et porte levures et bactéries",
+          "la pruine cireuse"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi un rouge doit-il macérer, alors que le jus du raisin est presque incolore ? »",
+      "a": "Parce que les pigments, les tanins et une grande part des arômes se trouvent dans la pellicule, pas dans la pulpe, qui est surtout du jus. D'où l'importance de la macération pour les extraire."
+    },
+    "cave": "À la prochaine vendange ou avec un raisin de table à pépins, goûte la peau, la pulpe et un pépin séparément : note chaque sensation, puis relie-la au rôle de la couche."
+  },
+  "70": {
+    "ouverture": "Une fois les baies mangées, que reste-t-il de la grappe, et à quoi cela servait-il ?",
+    "illus": [
+      {
+        "svg": "nat04-grappe.svg",
+        "legende": "La grappe se dresse en fleur puis pend une fois nouée ; schéma de principe."
+      }
+    ],
+    "schema": {
+      "titre": "La grappe et sa rafle",
+      "lignes": [
+        [
+          "La rafle",
+          "la charpente de la grappe, qui nourrit les baies"
+        ],
+        [
+          "Ce qu'elle contient",
+          "des fibres et des tanins"
+        ],
+        [
+          "Deux repères de grappe pour l'ampélographe",
+          "la forme et la compacité"
+        ],
+        [
+          "Danger d'une grappe serrée",
+          "plus exposée à la pourriture"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi certains vignerons gardent les rafles dans la cuve alors qu'on les écartait autrefois ? »",
+      "a": "La rafle, charpente de fibres et de tanins, longtemps écartée, est aujourd'hui réutilisée en vinification : c'est la vendange entière."
+    },
+    "cave": "Demande au vigneron d'un domaine partenaire, à ta prochaine commande, s'il pratique la vendange entière sur l'un de ses rouges, et note sa réponse."
+  }
+}

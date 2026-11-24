@@ -1,0 +1,175 @@
+{
+  "88": {
+    "ouverture": "Qu’est-ce qui, selon toi, a poussé l’État à contrôler la santé des plants de vigne au XXe siècle ?",
+    "schema": {
+      "titre": "Les contrôles d’un clone",
+      "lignes": [
+        [
+          "Test où la souche est greffée sur une variété qui révèle les virus",
+          "l’indexage"
+        ],
+        [
+          "Tests complémentaires sur la souche",
+          "ELISA ou PCR"
+        ],
+        [
+          "Vérification de l’identité",
+          "marqueurs ADN"
+        ],
+        [
+          "Durée minimale du suivi au vignoble, puis des vinifications",
+          "au moins 5 ans, dont au moins 3 ans de vinifications"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vin issu de plants clonés, c’est un vin standardisé, non ? »",
+      "a": "Pas forcément : un clone agréé est d’abord une garantie sanitaire. La souche a été testée contre les virus, suivie au vignoble au moins cinq ans et vinifiée au moins trois ans avant son agrément. Le vrai débat porte sur la diversité des plants diffusés et leur longévité."
+    },
+    "cave": "Au prochain échange avec le Château de Fleys (Chablis), demande si ses plantations récentes viennent de clones agréés, de sélection massale ou des deux. Note la réponse et la raison donnée."
+  },
+  "89": {
+    "ouverture": "Quand tu achètes un plant de vigne, comment peux-tu savoir qu’il est sain ? Qu’est-ce qui l’atteste ?",
+    "illus": [
+      {
+        "svg": "nat08-categories.svg",
+        "legende": "Du matériel initial au matériel certifié : le grand-père, le père, le fils."
+      }
+    ],
+    "schema": {
+      "titre": "Étiquettes et santé des plants",
+      "lignes": [
+        [
+          "Catégorie qui est la tête de clone conservée",
+          "le matériel initial"
+        ],
+        [
+          "Ce que vaut l’étiquette des plants",
+          "un passeport phytosanitaire européen"
+        ],
+        [
+          "Organisme qui contrôle ce passeport",
+          "FranceAgriMer"
+        ],
+        [
+          "Traitement des bois et plants contre le phytoplasme de la flavescence dorée",
+          "un bain d’eau chaude, 45 minutes à 50 °C"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un jeune vigneron : « À quoi sert l’étiquette collée sur mes bottes de plants ? »",
+      "a": "Elle vaut passeport phytosanitaire européen, contrôlé par FranceAgriMer. Sa couleur indique la catégorie : bleue pour le matériel certifié, jaune pour la catégorie standard."
+    },
+    "cave": "À la prochaine commande au Domaine des Amandiers (Saumur-Champigny), demande au vigneron, quand il replante, s’il achète des plants certifiés (étiquette bleue), standard (étiquette jaune) ou s’il multiplie lui-même, et pourquoi."
+  },
+  "90": {
+    "ouverture": "Pour replanter, vaut-il mieux copier le meilleur cep ou prélever sur beaucoup de ceps ? Qu’y gagne-t-on, qu’y perd-on ?",
+    "illus": [
+      {
+        "svg": "nat08-clonale-massale.svg",
+        "legende": "Un individu copié, ou une population de ceps : même multiplication végétative, point de départ différent."
+      }
+    ],
+    "schema": {
+      "titre": "Clonale ou massale ?",
+      "lignes": [
+        [
+          "Point de départ de la sélection clonale",
+          "un individu unique, assaini et évalué"
+        ],
+        [
+          "Point de départ de la sélection massale",
+          "de nombreux ceps de vieilles vignes"
+        ],
+        [
+          "Ce que cherche la massale",
+          "conserver la diversité génétique et l’adaptation au lieu"
+        ],
+        [
+          "Limite de la diversité finale",
+          "la variabilité réelle du cépage : un cépage peu répandu reste pauvre"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Si mon vigneron fait de la massale, ses vignes sont forcément très diverses ? »",
+      "a": "Pas forcément. La diversité finale dépend de la variabilité réelle du cépage : s’il est peu répandu, il reste génétiquement pauvre, même en massale."
+    },
+    "cave": "Au prochain échange avec le Domaine Taluau et Foltzenlogel (Saint-Nicolas-de-Bourgueil), demande si une de ses parcelles vient d’une sélection massale ou clonale, et ce qui a motivé ce choix. Ne présume pas de la réponse."
+  },
+  "91": {
+    "ouverture": "Sur 100 greffes faites en pépinière, combien donnent un plant repris, à ton avis ?",
+    "illus": [
+      {
+        "svg": "nat08-reprise.svg",
+        "legende": "Taux de reprise moyen des greffés-soudés selon deux sources : FranceAgriMer (2016, 2017, pépinière traditionnelle) et Vitisphere (année normale)."
+      }
+    ],
+    "schema": {
+      "titre": "Du greffon au plant",
+      "lignes": [
+        [
+          "Saison du prélèvement des bois",
+          "l’hiver"
+        ],
+        [
+          "Conditions de la stratification",
+          "au chaud et à l’humidité, vers 28 °C"
+        ],
+        [
+          "Tissu qui doit se former à la soudure",
+          "un cal"
+        ],
+        [
+          "Test de qualité au tri",
+          "la soudure doit résister à la pression du pouce"
+        ],
+        [
+          "Taux de reprise moyen (FranceAgriMer, 2016 puis 2017)",
+          "65 % puis 69 %"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Tous les greffés d’une pépinière donnent-ils un plant vendable ? »",
+      "a": "Non. FranceAgriMer estime le taux de reprise moyen en pépinière traditionnelle à 65 % en 2016 et 69 % en 2017 ; Vitisphere situe une année normale entre 60 et 65 %. Tous ne passent donc pas le tri."
+    },
+    "cave": "Calcule : pour obtenir 650 plants repris avec un taux de reprise de 65 %, combien de greffes faut-il lancer ? Puis demande à ton vigneron (par exemple au Domaine de Boisseyt, Saint-Joseph) d’où viennent ses plants."
+  },
+  "92": {
+    "ouverture": "Une vigne devrait vivre longtemps. Pourquoi arrache-t-on pourtant de plus en plus de vignes de moins de trente ans ?",
+    "illus": [
+      {
+        "svg": "nat08-ceps-sicavac.svg",
+        "legende": "Une réponse en Centre-Loire : la marque Ceps Sicavac associe clones agréés et sélections massales."
+      }
+    ],
+    "schema": {
+      "titre": "Les pépinières en question",
+      "lignes": [
+        [
+          "Ce qui frappe les vignes arrachées jeunes",
+          "l’esca et le dépérissement"
+        ],
+        [
+          "Cause avancée par Lepeltier",
+          "une production de plants pensée en matériel végétal, au moindre coût"
+        ],
+        [
+          "Voie choisie par le pépiniériste Lilian Bérillon",
+          "la sélection massale et la diversité des porte-greffes"
+        ],
+        [
+          "Ce qu’associe la marque Ceps Sicavac",
+          "des clones agréés (108, 159, 376, 906) et des sélections massales"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi arrache-t-on des vignes de vingt-cinq ans ? »",
+      "a": "On arrache de plus en plus de vignes de moins de trente ans, frappées par l’esca et le dépérissement. Selon Lepeltier, c’est l’effet d’une production de plants pensée en matériel végétal, au moindre coût. C’est son analyse, à présenter comme telle."
+    },
+    "cave": "Au prochain échange avec le Domaine La Villaudière (Sancerre), demande si le domaine a déjà planté des plants de la marque Ceps Sicavac, et ce qu’il attend d’un plant de qualité. Note la réponse."
+  }
+}

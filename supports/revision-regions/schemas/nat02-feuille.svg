@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 132" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="12" font-weight="700" fill="#5b1a24">Coupe d'une feuille</text><text x="560" y="12" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <text x="0" y="40" font-size="10" font-weight="700" fill="#625a4e">Dessus</text><text x="0" y="118" font-size="10" font-weight="700" fill="#625a4e">Dessous</text>
+  <rect x="190" y="28" width="180" height="12" fill="#625a4e"/>
+  <rect x="190" y="40" width="180" height="30" fill="#c9d8bf"/>
+  <g fill="#5c7a4f"><rect x="196" y="42" width="10" height="26" rx="4"/><rect x="212" y="42" width="10" height="26" rx="4"/><rect x="228" y="42" width="10" height="26" rx="4"/><rect x="244" y="42" width="10" height="26" rx="4"/><rect x="260" y="42" width="10" height="26" rx="4"/><rect x="276" y="42" width="10" height="26" rx="4"/><rect x="292" y="42" width="10" height="26" rx="4"/><rect x="308" y="42" width="10" height="26" rx="4"/><rect x="324" y="42" width="10" height="26" rx="4"/><rect x="340" y="42" width="10" height="26" rx="4"/><rect x="356" y="42" width="10" height="26" rx="4"/></g>
+  <rect x="190" y="70" width="180" height="32" fill="#eef2e6"/>
+  <g fill="#faf3e0" stroke="#5c7a4f" stroke-width="1"><ellipse cx="215" cy="85" rx="12" ry="7"/><ellipse cx="250" cy="90" rx="12" ry="7"/><ellipse cx="285" cy="82" rx="12" ry="7"/><ellipse cx="320" cy="90" rx="12" ry="7"/><ellipse cx="352" cy="84" rx="10" ry="7"/></g>
+  <rect x="190" y="102" width="180" height="8" fill="#625a4e"/>
+  <g fill="#faf3e0" stroke="#a8843a" stroke-width="1.5"><rect x="228" y="101" width="14" height="10" rx="3"/><rect x="288" y="101" width="14" height="10" rx="3"/><rect x="338" y="101" width="14" height="10" rx="3"/></g>
+  <g font-size="10" text-anchor="end"><text x="183" y="38">Épiderme supérieur</text><text x="183" y="59" font-weight="700" fill="#5c7a4f">Parenchyme palissadique</text><text x="183" y="89" font-weight="700" fill="#5c7a4f">Parenchyme lacuneux</text><text x="183" y="108">Épiderme inférieur</text></g>
+  <g font-size="10"><text x="380" y="38">épaissi : limite l'évaporation</text><text x="380" y="59">dense, riche en chlorophylle</text><text x="380" y="89">aéré</text></g>
+  <text x="280" y="127" text-anchor="middle" font-size="10" font-weight="700" fill="#a8843a">stomates (cadres dorés) : échanges gazeux</text>
+</svg>

@@ -1,0 +1,238 @@
+{
+  "71": {
+    "ouverture": "La greffe de la vigne existe-t-elle avant le phylloxéra, ou est-elle née pour le combattre ? Devine.",
+    "illus": [
+      {
+        "svg": "nat05-frise-greffe.svg",
+        "legende": "La greffe, bien avant 1863 : des Grecs aux Andalous, puis le phylloxéra."
+      }
+    ],
+    "schema": {
+      "titre": "La greffe avant le phylloxéra",
+      "lignes": [
+        [
+          "Le Grec qui note que la greffe réussit entre plantes proches",
+          "Théophraste"
+        ],
+        [
+          "Les agronomes romains qui en traitent",
+          "Columelle, Pline l’Ancien, puis Palladius"
+        ],
+        [
+          "L’agronome andalou de Séville, auteur du Livre de l’agriculture",
+          "Ibn al-’Awwâm"
+        ],
+        [
+          "Pourquoi greffait-on avant 1863 ?",
+          "surtout pour rajeunir une vigne ou changer de cépage"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « La greffe, c’est une invention du XIXe siècle pour sauver la vigne, non ? »",
+      "a": "Non : la greffe est bien plus ancienne. Les Grecs, puis les agronomes romains, traitent de la greffe (sans recette précise pour la vigne dans les sources lues), et Ibn al-’Awwâm la compile au Moyen Âge. Avant 1863, on greffait surtout pour rajeunir une vigne ou changer de cépage."
+    },
+    "cave": "Entraîne-toi à raconter à un client, en une minute, que la greffe est bien plus ancienne que 1863 : les auteurs antiques, Ibn al-’Awwâm, puis le phylloxéra. Note ce qui t’a manqué."
+  },
+  "72": {
+    "ouverture": "Quand on soude deux plantes, qu’est-ce qui doit se toucher pour que la greffe prenne ?",
+    "illus": [
+      {
+        "photo": "photos/greffe.jpg",
+        "legende": "Coupe d’un point de greffe : greffon et porte-greffe soudés par le bourrelet (cal).",
+        "credit": "Photo : Epop, domaine public, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Le point de greffe",
+      "lignes": [
+        [
+          "Les tissus qui doivent se mettre en contact",
+          "les tissus conducteurs (cambium)"
+        ],
+        [
+          "La zone de soudure formée au point de greffe",
+          "le cal, ou bourrelet de soudure"
+        ],
+        [
+          "Ce que le bourrelet fait de la sève",
+          "il la freine et la filtre"
+        ],
+        [
+          "Plantes éloignées : la greffe est…",
+          "difficile (Vitis sur Muscadinia réussit mal)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi dit-on que la vigne greffée est une chimère ? »",
+      "a": "Parce que c’est un être nouveau, fait de deux plantes soudées. Lepeltier emploie les mots « chimère » et « plante artificielle », en les attribuant à Jean Branas et Nathalie Ollat (attribution non retrouvée hors du livre). Le bourrelet de soudure freine et filtre la sève, et le porte-greffe peut faire varier fortement la vigueur d’un même greffon."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave quel porte-greffe il a choisi, et pourquoi."
+  },
+  "73": {
+    "ouverture": "En 1868, trois savants trouvent le coupable des vignes mourantes. Sur quelle partie de la vigne le cherchent-ils : feuilles, grappes ou racines ?",
+    "illus": [
+      {
+        "svg": "nat05-noms.svg",
+        "legende": "Les noms successifs du phylloxéra : un même insecte, décrit par Fitch en 1855, puis nommé par Planchon en 1868."
+      }
+    ],
+    "schema": {
+      "titre": "La découverte de 1868",
+      "lignes": [
+        [
+          "Les trois découvreurs, le 15 juillet 1868",
+          "Planchon, Bazille et Sahut"
+        ],
+        [
+          "Le lieu de la découverte",
+          "le domaine de Lagoy, à Saint-Martin-de-Crau"
+        ],
+        [
+          "L’Américain qui avait décrit l’insecte en 1855",
+          "Asa Fitch (Pemphigus vitifoliae)"
+        ],
+        [
+          "Nom valide aujourd’hui",
+          "Daktulosphaira vitifoliae"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Phylloxera vastatrix, c’est bien le nom officiel du puceron ? »",
+      "a": "C’est le nom donné par Planchon en 1868, mais il n’est plus le nom valide. L’insecte est celui décrit par Fitch en 1855 ; son nom valide est aujourd’hui Daktulosphaira vitifoliae."
+    },
+    "cave": "Prends un vin de ta cave et regarde son millésime. Calcule combien d’années séparent ce millésime de la découverte du phylloxéra en 1868."
+  },
+  "74": {
+    "ouverture": "Un même insecte attaque les feuilles et les racines. Selon toi, laquelle de ces deux attaques peut tuer la vigne européenne ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les lésions du phylloxéra",
+      "lignes": [
+        [
+          "Piqûres sur les jeunes feuilles",
+          "galles (forme gallicole)"
+        ],
+        [
+          "Piqûres sur les radicelles",
+          "nodosités"
+        ],
+        [
+          "Piqûres sur les racines plus âgées",
+          "tubérosités, mortelles pour V. vinifera"
+        ],
+        [
+          "Mode de reproduction sans fécondation",
+          "la parthénogenèse"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi les vignes américaines survivent-elles au phylloxéra, et pas les nôtres ? »",
+      "a": "Les vignes américaines souffrent surtout des galles sur les feuilles, bien moins grave. Chez V. vinifera, les tubérosités des racines se nécrosent et s’infectent, et le cep dépérit."
+    },
+    "cave": "Les sols sableux freinent le puceron. À ta prochaine commande, demande à un vigneron de ta cave si certaines de ses parcelles sont sur sable, et si elles sont greffées."
+  },
+  "75": {
+    "ouverture": "Si la plupart des vignes sont greffées, comment une vigne a-t-elle pu rester non greffée ?",
+    "illus": [
+      {
+        "svg": "nat05-barossa.svg",
+        "legende": "Les quatre paliers d’âge de la charte de Barossa (2009). Lepeltier écrit 60 ans pour les survivors."
+      }
+    ],
+    "schema": {
+      "titre": "Les vignes épargnées",
+      "lignes": [
+        [
+          "Un pays dont une grande partie du vignoble est épargnée",
+          "le Chili"
+        ],
+        [
+          "Une région d’Australie-Méridionale aux vieilles vignes",
+          "la Barossa"
+        ],
+        [
+          "Une île épargnée par ses sols",
+          "Santorin"
+        ],
+        [
+          "Par où le phylloxéra peut voyager jusqu’à une vigne saine",
+          "la terre collée aux chaussures"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente : « Vieilles vignes, ça veut dire quoi, au juste ? »",
+      "a": "Un exemple précis : en Barossa, la charte de 2009 fixe des paliers d’âge : old vines à partir de 35 ans, survivors 70, centenarians 100, ancestors 125."
+    },
+    "cave": "Cherche dans ta cave un vin dont l’étiquette ou la fiche technique parle de « vieilles vignes ». Relève l’âge indiqué, s’il y en a un, et compare-le aux paliers de la Barossa."
+  },
+  "76": {
+    "ouverture": "Pour sauver les vignes, on a essayé d’inonder les champs, de les planter dans le sable, de les empoisonner… ou de les greffer. Laquelle a gagné, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "Des remèdes essayés",
+      "lignes": [
+        [
+          "Remède d’hiver qui consiste à inonder les vignes",
+          "la submersion"
+        ],
+        [
+          "Produit injecté au pal",
+          "le sulfure de carbone (ou le sulfocarbonate de potassium)"
+        ],
+        [
+          "Partisans de la greffe, école de Montpellier",
+          "les américanistes"
+        ],
+        [
+          "Leurs adversaires, attachés aux vignes franches de pied",
+          "les sulfuristes (chimistes)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi n’a-t-on pas simplement traité les vignes avec du sulfure de carbone ? »",
+      "a": "Les remèdes comme la submersion, le sable ou le sulfure de carbone étaient efficaces localement, mais coûteux. La greffe sur porte-greffes américains les a supplantés."
+    },
+    "cave": "Prends deux domaines de ta cave et pose-leur la question à ta prochaine commande : leurs vignes sont-elles greffées, et sur quels porte-greffes ? Compare les réponses."
+  },
+  "77": {
+    "ouverture": "Deux parcelles voisines, même cépage, l’une greffée et l’autre non. Penses-tu que le vin sera pareil ?",
+    "illus": [
+      {
+        "svg": "nat05-comparaison.svg",
+        "legende": "La comparaison de Chidaine aux Bournais, d’après Lepeltier."
+      }
+    ],
+    "schema": {
+      "titre": "L’expérience Chidaine",
+      "lignes": [
+        [
+          "Domaine et appellation",
+          "François Chidaine, Montlouis-sur-Loire"
+        ],
+        [
+          "Parcelle et part en franc de pied",
+          "les Bournais (3,99 ha), environ un demi-hectare"
+        ],
+        [
+          "Selon Lepeltier, les francs de pied donnent des vins…",
+          "plus tendus, moins alcooleux"
+        ],
+        [
+          "Selon Lepeltier, le porte-greffe…",
+          "lisse l’effet millésime et augmente le rendement"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vin de vigne franche de pied est-il forcément meilleur ? »",
+      "a": "On ne peut pas le dire. Selon Lepeltier, chez Chidaine, les francs de pied sont moins vigoureux, produisent moins et donnent des vins plus tendus. Ce sont des vins différents, pas forcément meilleurs."
+    },
+    "cave": "Goûte un chenin de la Loire de ta cave, en pensant à la comparaison de Chidaine. Note la tension du vin, puis demande au vigneron si certaines vignes sont franches de pied."
+  }
+}

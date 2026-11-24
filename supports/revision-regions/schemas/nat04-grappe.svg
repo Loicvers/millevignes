@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">La grappe : de la fleur à la baie (schéma de principe)</text>
+  <g stroke="#5c7a4f" stroke-width="3" fill="none" stroke-linecap="round"><path d="M90 100 L90 40"/><path d="M90 78 L72 62"/><path d="M90 66 L108 52"/></g>
+  <g fill="#a8843a"><circle cx="72" cy="58" r="4"/><circle cx="108" cy="48" r="4"/><circle cx="90" cy="36" r="4"/></g>
+  <text x="90" y="118" text-anchor="middle" font-size="10" fill="#625a4e">en fleur : dressée</text>
+  <path d="M230 62 L330 62" stroke="#625a4e" stroke-width="1.2" fill="none"/><path d="M324 57 L332 62 L324 67" stroke="#625a4e" fill="none"/>
+  <g stroke="#5c7a4f" stroke-width="3" fill="none" stroke-linecap="round"><path d="M430 30 L430 74"/><path d="M430 44 L414 56"/><path d="M430 44 L446 56"/><path d="M430 60 L418 72"/><path d="M430 60 L442 72"/></g>
+  <g fill="#5b1a24"><circle cx="412" cy="60" r="6"/><circle cx="448" cy="60" r="6"/><circle cx="416" cy="77" r="6"/><circle cx="444" cy="77" r="6"/><circle cx="430" cy="84" r="6"/></g>
+  <text x="430" y="118" text-anchor="middle" font-size="10" fill="#625a4e">nouée : pendante</text>
+  <text x="280" y="52" text-anchor="middle" font-size="10" fill="#625a4e">après la fleur</text>
+  <text x="510" y="62" font-size="10" fill="#5c7a4f" font-weight="700">rafle</text>
+  <path d="M476 60 L440 52" stroke="#5c7a4f" stroke-width="0.8" fill="none"/>
+</svg>

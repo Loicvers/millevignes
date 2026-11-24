@@ -1,0 +1,202 @@
+{
+  "54": {
+    "ouverture": "Les racines de la vigne ont des poils très fins, invisibles de loin. À ton avis, à quoi servent-ils ?",
+    "illus": [
+      {
+        "svg": "nat01-deux-seves.svg",
+        "legende": "Deux circuits dans la plante : le xylème monte la sève brute, le phloème descend la sève élaborée."
+      }
+    ],
+    "schema": {
+      "titre": "Lire une racine",
+      "lignes": [
+        [
+          "Ce qui protège la pointe",
+          "la coiffe"
+        ],
+        [
+          "Ce qui multiplie la surface d'échange",
+          "les poils de la zone pilifère"
+        ],
+        [
+          "Ce qui monte l'eau et les minéraux",
+          "le xylème (sève brute)"
+        ],
+        [
+          "Ce qui descend les sucres de la photosynthèse",
+          "le phloème (sève élaborée)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Les sucres fabriqués par les feuilles, ils vont où ? Et l'eau, par où monte-t-elle ? »",
+      "a": "Les sucres de la photosynthèse circulent dans la sève élaborée, que le phloème descend vers les racines. L'eau et les minéraux, eux, montent par le xylème (sève brute) vers les rameaux."
+    },
+    "cave": "Devant un verre de ton Condrieu (Domaine Martin Clerc), explique en trente secondes à un proche le trajet de l'eau et celui du sucre dans la vigne. Si tu hésites entre xylème et phloème, relis ton aide-mémoire."
+  },
+  "55": {
+    "ouverture": "Un puceron pique une racine : chez une vigne américaine résistante, la plaie guérit ; chez la vigne européenne, elle s'infecte. Que peut bien faire la racine américaine pour s'en sortir ?",
+    "illus": [
+      {
+        "svg": "nat01-piqure.svg",
+        "legende": "Une même piqûre de phylloxéra, deux issues selon la racine."
+      }
+    ],
+    "schema": {
+      "titre": "Deux racines, deux issues",
+      "lignes": [
+        [
+          "Tissu qui épaissit la racine avec l'âge",
+          "le cambium"
+        ],
+        [
+          "Tissu qui produit le liège",
+          "le phellogène"
+        ],
+        [
+          "Piqûre sur une Vitis américaine résistante",
+          "un périderme de cicatrisation isole la zone attaquée"
+        ],
+        [
+          "Piqûre sur V. vinifera",
+          "les lésions nécrosent et s'infectent, la racine finit par pourrir"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi les racines américaines survivent-elles au phylloxéra, et pas celles de la vigne européenne ? »",
+      "a": "Chez les Vitis américaines résistantes, entre autres mécanismes, la piqûre déclenche un périderme de cicatrisation qui isole la zone attaquée. Chez V. vinifera, les lésions nécrosent et s'infectent jusqu'aux tissus conducteurs, et la racine pourrit."
+    },
+    "cave": "À ta prochaine commande, demande au Château Haut-Maurac (Médoc) si ses vignes sont greffées et sur quel porte-greffe. Note la réponse sur ta fiche de domaine."
+  },
+  "56": {
+    "ouverture": "À ton avis, jusqu'où descendent les racines d'une vigne ? Et pourquoi ne vont-elles pas toutes tout en bas, ni toutes à fleur de sol ?",
+    "illus": [
+      {
+        "svg": "nat01-profondeur.svg",
+        "legende": "Trois étages pour les racines, de la surface à la profondeur."
+      }
+    ],
+    "schema": {
+      "titre": "Les étages du sol",
+      "lignes": [
+        [
+          "En surface",
+          "sécheresse, gel, labour, herbicides"
+        ],
+        [
+          "Entre 15 et 60 cm environ",
+          "l'essentiel des racines, dans un sol aéré"
+        ],
+        [
+          "En profondeur",
+          "manque d'oxygène"
+        ],
+        [
+          "Origine du pied, selon Lepeltier",
+          "semis : racine pivotante ; bouture : racines plus traçantes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi les racines ne se mettent-elles pas toutes à fleur de sol, ou au contraire tout en bas ? »",
+      "a": "En surface, elles subissent la sécheresse, le gel, le labour et les herbicides. En profondeur, elles manquent d'oxygène. L'essentiel se loge donc dans un sol aéré, entre 15 et 60 cm environ."
+    },
+    "cave": "À ta prochaine commande, demande au Domaine de Poulvarel (Costières de Nîmes) si ses sols sont labourés ou enherbés. Relie la réponse à la zone de surface des racines, la plus exposée."
+  },
+  "57": {
+    "ouverture": "En hiver, que garde le vigneron sur chaque bras de la souche : du vieux bois, ou du bois né l'an dernier ? Devine.",
+    "illus": [],
+    "schema": {
+      "titre": "Le cep en quatre mots",
+      "lignes": [
+        [
+          "Pousse verte de l'année",
+          "le rameau"
+        ],
+        [
+          "Rameau devenu brun et lignifié",
+          "le sarment (il s'est aoûté)"
+        ],
+        [
+          "Pousse née du vieux bois, à supprimer",
+          "le gourmand"
+        ],
+        [
+          "Rôle du tronc et des bras",
+          "former la charpente, qui porte le bois de taille"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire voit un vigneron supprimer des pousses sur le tronc et au pied de la souche. Pourquoi ?",
+      "a": "Une pousse née du vieux bois est un gourmand, une pousse née du porte-greffe un drageon : dans les deux cas, on les supprime."
+    },
+    "cave": "À ta prochaine commande, demande au Domaine Coste-Lapalus (Régnié) une photo d'un cep en hiver. Nomme dessus le tronc, les bras, et les coursons ou baguettes."
+  },
+  "515": {
+    "ouverture": "Un cahier des charges d'AOC limite-t-il seulement ce qu'on récolte, ou aussi la façon de planter la vigne ?",
+    "illus": [
+      {
+        "svg": "nat01-butoir.svg",
+        "legende": "Le rendement fixé et le rendement butoir, d'après l'exemple de Côte-Rôtie."
+      }
+    ],
+    "schema": {
+      "titre": "Rendement et densité",
+      "lignes": [
+        [
+          "Le rendement d'une AOC",
+          "volume maximal de raisins, de moût ou de vin revendiquable par hectare"
+        ],
+        [
+          "Le rendement butoir",
+          "plafond de toute hausse décidée pour une récolte donnée"
+        ],
+        [
+          "Sol fertile et bien arrosé : planter dense",
+          "les racines se font concurrence, la vigueur est freinée"
+        ],
+        [
+          "Site sec : faible densité",
+          "plus de sol à explorer par pied, mais un rendement à l'hectare moindre"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vin à 40 hl/ha est forcément meilleur qu'un vin à 60 hl/ha, non ? »",
+      "a": "Pas forcément : le lien direct entre faible rendement et qualité reste débattu. Le rendement est d'abord un volume maximal revendiquable par hectare, fixé par le cahier des charges."
+    },
+    "cave": "Imagine 2,5 ha de Côte-Rôtie, l'appellation de ton Domaine Martin Clerc. Calcule le volume maximal revendiquable au rendement de 40 hl/ha, puis avec une hausse jusqu'au butoir de 46 hl/ha."
+  },
+  "516": {
+    "ouverture": "Un cahier des charges d'AOC peut-il dire au vigneron comment tailler ? Que pourrait-il encadrer d'autre, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "Quelle taille, quelle règle ?",
+      "lignes": [
+        [
+          "Tête de bras courts à coursons, sans fil",
+          "le gobelet"
+        ],
+        [
+          "Bras horizontal permanent à coursons",
+          "le cordon de Royat"
+        ],
+        [
+          "Taille longue à baguette de remplacement",
+          "le Guyot"
+        ],
+        [
+          "Plafond d'yeux par pied à Côte-Rôtie",
+          "10"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vigneron de Côte-Rôtie taille-t-il comme il veut ? »",
+      "a": "Non : le cahier des charges admet le gobelet (cinq coursons au plus), le cordon de Royat à un ou deux bras et le Guyot en simple, avec 10 yeux au plus par pied."
+    },
+    "cave": "Demande à Champagne Petit-Triolet quelle taille il pratique, parmi celles du cahier des charges."
+  }
+}

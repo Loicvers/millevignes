@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="nat01f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <rect x="0" y="6" width="272" height="100" rx="6" fill="#faf3e0" stroke="#5c7a4f"/>
+  <text x="136" y="26" text-anchor="middle" font-weight="700" font-size="12" fill="#5c7a4f">Vitis américaine résistante</text>
+  <g text-anchor="middle">
+    <rect x="16" y="40" width="68" height="28" rx="5" fill="#fff" stroke="#625a4e"/><text x="50" y="58">piqûre</text>
+    <rect x="102" y="40" width="152" height="28" rx="5" fill="#fff" stroke="#5c7a4f"/><text x="178" y="58" fill="#5c7a4f" font-weight="700">périderme de cicatrisation</text>
+    <text x="136" y="90" fill="#625a4e">la zone attaquée est isolée</text>
+  </g>
+  <path d="M86 54 H100" stroke="#5b1a24" stroke-width="1.6" marker-end="url(#nat01f)"/>
+  <rect x="288" y="6" width="272" height="100" rx="6" fill="#faf3e0" stroke="#5b1a24"/>
+  <text x="424" y="26" text-anchor="middle" font-weight="700" font-size="12" fill="#5b1a24">V. vinifera</text>
+  <g text-anchor="middle">
+    <rect x="304" y="40" width="68" height="28" rx="5" fill="#fff" stroke="#625a4e"/><text x="338" y="58">piqûre</text>
+    <rect x="390" y="40" width="152" height="28" rx="5" fill="#fff" stroke="#5b1a24"/><text x="466" y="58" fill="#5b1a24" font-weight="700">nécrose, infection</text>
+    <text x="424" y="90" fill="#625a4e">jusqu'aux tissus conducteurs</text>
+  </g>
+  <path d="M374 54 H388" stroke="#5b1a24" stroke-width="1.6" marker-end="url(#nat01f)"/>
+  <text x="280" y="128" text-anchor="middle" font-size="10" fill="#625a4e">Schéma de principe, sans échelle.</text>
+</svg>

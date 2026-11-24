@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="10" y="8" width="150" height="104" fill="#faf3e0" stroke="#d8d0c2"/>
+  <rect x="10" y="8" width="150" height="26" fill="#e9dfc6" stroke="#d8d0c2"/>
+  <rect x="10" y="34" width="150" height="46" fill="#e4d3a0" stroke="#a8843a"/>
+  <rect x="10" y="80" width="150" height="32" fill="#faf3e0" stroke="#d8d0c2"/>
+  <text x="85" y="25" text-anchor="middle" font-size="10" fill="#625a4e">surface</text>
+  <text x="85" y="61" text-anchor="middle" font-weight="700" fill="#5b1a24">l'essentiel</text>
+  <text x="85" y="99" text-anchor="middle" font-size="10" fill="#625a4e">en profondeur</text>
+  <text x="172" y="25" fill="#625a4e">en surface : sécheresse, gel, labour, herbicides</text>
+  <text x="172" y="58" font-weight="700" fill="#5b1a24">de 15 à 60 cm environ</text>
+  <text x="172" y="72" fill="#625a4e">sol aéré : là se loge l'essentiel des racines</text>
+  <text x="172" y="99" fill="#625a4e">plus bas : manque d'oxygène</text>
+  <text x="172" y="112" fill="#625a4e">(environ 6 m documentés, parfois davantage)</text>
+  <text x="280" y="138" text-anchor="middle" font-size="10" fill="#625a4e">Schéma de principe, hors échelle.</text>
+</svg>

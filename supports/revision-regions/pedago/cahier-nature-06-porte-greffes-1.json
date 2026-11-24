@@ -1,0 +1,203 @@
+{
+  "78": {
+    "ouverture": "Une vigne américaine, venue d’un sol plutôt acide, est plantée sur un sol calcaire. À ton avis, qu’arrive-t-il à ses feuilles ?",
+    "illus": [
+      {
+        "svg": "nat06-calcaire.svg",
+        "legende": "Du problème au remède : les premiers porte-greffes jaunissent sur calcaire ; on se tourne vers une vigne texane des sols calcaires, difficile à greffer, qu’on croise."
+      }
+    ],
+    "schema": {
+      "titre": "Du calcaire au 41 B",
+      "lignes": [
+        [
+          "Sol d’origine de riparia et rupestris purs",
+          "sols nord-américains plutôt acides"
+        ],
+        [
+          "Effet sur les calcaires de Champagne, Bourgogne, Charentes",
+          "chlorose ferrique : mauvaise absorption du fer, feuilles jaunes"
+        ],
+        [
+          "Vigne texane des sols calcaires, mais difficile à greffer",
+          "V. berlandieri"
+        ],
+        [
+          "Où le 41 B couvre encore plus de 80 % du vignoble",
+          "la Champagne"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon vigneron plante du 41 B parce que son sol est calcaire. Quel rapport ? »",
+      "a": "Sur calcaire, des racines américaines comme riparia et rupestris purs absorbent mal le fer et leurs feuilles jaunissent (chlorose ferrique). Le 41 B descend de V. berlandieri, vigne texane des sols calcaires, croisée avec le chasselas."
+    },
+    "cave": "À ta prochaine commande chez Champagne Petit-Triolet, demande si les vignes sont sur 41 B, le porte-greffe qui couvre encore plus de 80 % du vignoble champenois. Note la réponse."
+  },
+  "79": {
+    "ouverture": "Presque tous les porte-greffes descendent de quelques espèces de vigne seulement. Combien, et d’où viennent-elles, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "Je retrouve les parents",
+      "lignes": [
+        [
+          "101-14",
+          "riparia × rupestris"
+        ],
+        [
+          "161-49 C",
+          "berlandieri × riparia"
+        ],
+        [
+          "1103 P",
+          "berlandieri × rupestris"
+        ],
+        [
+          "Les deux créations récentes de l’INRA",
+          "le fercal (1959) et le gravesac (1962)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un vigneron plante du 110 R, un autre du 3309 C. C’est le goût qui change ? »",
+      "a": "Pas vraiment : parler de porte-greffe, c’est parler de vigueur, de calcaire et de sécheresse, pas de goût. Ici, le 110 R (berlandieri × rupestris) tolère 17 % de calcaire actif, très bien la sécheresse, et donne une forte vigueur. Le 3309 C (riparia × rupestris) tolère 11 % de calcaire, est sensible à la sécheresse et de vigueur faible à moyenne."
+    },
+    "cave": "Sur la fiche technique d’un vin de ta cave (par exemple Château Jean Faure, Saint-Émilion grand cru classé), cherche si le porte-greffe est indiqué. Si oui, retrouve ses parents dans le tableau ; sinon, pose la question au vigneron."
+  },
+  "80": {
+    "ouverture": "Si presque toutes les vignes reposent sur les mêmes quelques porte-greffes, quel risque cela crée-t-il à ton avis ?",
+    "illus": [
+      {
+        "svg": "nat06-pool.svg",
+        "legende": "Dans l’analyse ADN de 36 porte-greffes (Riaz et al., 2019), trois pieds seulement fournissent une part importante du fonds génétique (Lepeltier avance 99 % : divergence)."
+      }
+    ],
+    "schema": {
+      "titre": "Un pool étroit",
+      "lignes": [
+        [
+          "Les trois pieds dominants",
+          "Rességuier 2 (berlandieri), du Lot (rupestris), Gloire de Montpellier (riparia)"
+        ],
+        [
+          "Nombre de porte-greffes commerciaux dont Rességuier 2 est la mère",
+          "14 (dont 9 avec Gloire de Montpellier pour père)"
+        ],
+        [
+          "Ce qui arrive à l’AxR1 en 1983",
+          "un nouveau biotype de phylloxéra, dit B, l’attaque"
+        ],
+        [
+          "Contraintes visées par les nouveaux porte-greffes",
+          "sécheresse, nématodes, sel"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le phylloxéra, on a trouvé la parade il y a plus d’un siècle, non ? »",
+      "a": "Pas tout à fait : une base génétique étroite expose tout le vignoble aux mêmes parasites. L’AxR1, en partie vinifera, portait environ 70 % des vignes de Napa et Sonoma à la fin des années 1970. Un biotype B l’a attaqué dès 1983, et l’Université de Californie a recommandé son abandon en 1989."
+    },
+    "cave": "Pose la question au vigneron d’un domaine de ta cave (par exemple Domaine Deprade Jorda, Côtes du Roussillon) : sur quels porte-greffes sont ses vignes, et pourquoi ce choix ? Retrouve leurs parents dans la fiche 79."
+  },
+  "81": {
+    "ouverture": "Un vigneron veut changer de cépage sur une vigne adulte, sans l’arracher. Comment peut-il s’y prendre, à ton avis ?",
+    "illus": [
+      {
+        "svg": "nat06-operations.svg",
+        "legende": "Les trois opérations côte à côte : le point de greffe sépare le porte-greffe, en bas, du greffon, en haut."
+      }
+    ],
+    "schema": {
+      "titre": "Trois opérations, deux lieux",
+      "lignes": [
+        [
+          "Greffe en place : sur quoi ?",
+          "un porte-greffe déjà enraciné, au vignoble"
+        ],
+        [
+          "Greffe sur table : où, et quel produit ?",
+          "en pépinière, des greffés-soudés prêts à planter"
+        ],
+        [
+          "Le regreffage repart d’où ?",
+          "de sous le point de greffe, sur le porte-greffe"
+        ],
+        [
+          "Main-d’œuvre de la greffe en place",
+          "qualifiée, peu mécanisable"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un jeune vigneron : « Mes plants arrivent de pépinière : la greffe est faite au champ ou à l’atelier ? »",
+      "a": "Le plus souvent sur table, en pépinière : on obtient des greffés-soudés prêts à planter, l’écrasante majorité des plantations actuelles. La greffe en place, au vignoble, demande une main-d’œuvre qualifiée et se mécanise peu."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine Burghart-Spettel, Alsace) s’il a déjà surgreffé ou regreffé une parcelle. Note ce qu’il répond, et pourquoi."
+  },
+  "82": {
+    "ouverture": "Pour souder un greffon à son porte-greffe en pépinière, une machine ou une main fait-elle la coupe la plus courante ? Devine.",
+    "illus": [],
+    "schema": {
+      "titre": "Quatre familles de coupes",
+      "lignes": [
+        [
+          "Manuelle, en place ou sur table",
+          "la fente"
+        ],
+        [
+          "Deux coupes biseautées de même diamètre",
+          "l’anglaise"
+        ],
+        [
+          "Mécanique, environ 95 % des greffés-soudés (IFV)",
+          "l’oméga"
+        ],
+        [
+          "Un seul œil, peu nécrosante, sert au surgreffage",
+          "l’écusson (chip-bud, T-bud)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « On m’a dit que la greffe oméga abîmait les vignes. C’est vrai ? »",
+      "a": "C’est une critique : ses détracteurs lui reprochent de couper les vaisseaux en travers des fibres, d’où des nécroses. Une étude de 2017 trouve moins de symptômes d’esca avec la fente, mais les parcelles en oméga étaient plus jeunes : le lien reste à confirmer."
+    },
+    "cave": "Lors de ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny) quelle technique de greffe a servi à ses plantiers, ou s’il ne le sait pas. Note la réponse."
+  },
+  "83": {
+    "ouverture": "Un cep paraît sain, puis se dessèche d’un coup en pleine chaleur. Que peut-il s’être passé à l’intérieur du tronc, à ton avis ?",
+    "illus": [
+      {
+        "photo": "photos/esca.jpg",
+        "legende": "Feuille « tigrée », signe de la forme lente de l’esca (dessèchement progressif sur plusieurs années).",
+        "credit": "Photo : Tsui, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "L’esca en bref",
+      "lignes": [
+        [
+          "Forme lente",
+          "feuilles tigrées, dessèchement progressif sur plusieurs années"
+        ],
+        [
+          "Forme apoplectique",
+          "le cep se dessèche brutalement en pleine chaleur"
+        ],
+        [
+          "Champignons pionniers des nécroses brunes",
+          "Phaeomoniella chlamydospora, Phaeoacremonium"
+        ],
+        [
+          "Seul traitement efficace, interdit depuis novembre 2001",
+          "l’arsénite de sodium (toxicité)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi un cep qui avait l’air en forme meurt-il d’un coup en plein été ? »",
+      "a": "Ce peut être l’esca, dans sa forme apoplectique : le cep se dessèche brutalement en pleine chaleur. Dans le tronc, des champignons ont d’abord causé des nécroses brunes, puis Fomitiporia mediterranea a transformé le bois en amadou."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple Château de Monternot, Morgon) s’il rencontre l’esca dans ses vignes et comment il gère les ceps atteints. Note ce qu’il répond."
+  }
+}

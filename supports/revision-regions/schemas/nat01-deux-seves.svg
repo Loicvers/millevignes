@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 136" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs>
+    <marker id="nat01a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#456e8a"/></marker>
+    <marker id="nat01b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a8843a"/></marker>
+  </defs>
+  <rect x="0" y="6" width="560" height="102" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  <rect x="215" y="16" width="130" height="30" rx="5" fill="#fff" stroke="#5c7a4f"/>
+  <text x="280" y="35" text-anchor="middle" font-weight="700" fill="#5c7a4f">feuilles, rameaux</text>
+  <rect x="215" y="76" width="130" height="30" rx="5" fill="#fff" stroke="#5b1a24"/>
+  <text x="280" y="95" text-anchor="middle" font-weight="700" fill="#5b1a24">racines</text>
+  <path d="M240 74 V46" stroke="#456e8a" stroke-width="1.6" marker-end="url(#nat01a)"/>
+  <path d="M320 46 V74" stroke="#a8843a" stroke-width="1.6" marker-end="url(#nat01b)"/>
+  <text x="222" y="56" text-anchor="end" fill="#456e8a" font-weight="700">xylème</text>
+  <text x="222" y="70" text-anchor="end" fill="#625a4e" font-size="10">sève brute vers le haut</text>
+  <text x="342" y="56" fill="#a8843a" font-weight="700">phloème</text>
+  <text x="342" y="70" fill="#625a4e" font-size="10">sève élaborée vers le bas</text>
+  <text x="280" y="128" text-anchor="middle" font-size="10" fill="#625a4e">Schéma de principe : deux circuits, deux sens.</text>
+</svg>

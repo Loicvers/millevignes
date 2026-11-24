@@ -1,0 +1,174 @@
+{
+  "4": {
+    "ouverture": "Quand une baie change de couleur, que devient son contenu : plus de sucre, moins d'acidité, les deux, aucun des deux ?",
+    "illus": [
+      {
+        "photo": "photos/veraison.jpg",
+        "legende": "Grappe en cours de véraison : les baies changent de couleur.",
+        "credit": "Photo : Olivier Lemoine, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "La véraison en quatre lignes",
+      "lignes": [
+        [
+          "Ce qu'on voit sur la baie",
+          "elle change de couleur (translucide chez les blancs) et s'assouplit"
+        ],
+        [
+          "Comment la baie se comporte avant la véraison",
+          "en organe vert"
+        ],
+        [
+          "Ce qui se passe ensuite dans la baie",
+          "elle stocke des sucres, l'acidité baisse, pigments, tanins et arômes s'élaborent"
+        ],
+        [
+          "Ce que la véraison déclenche pour le vigneron",
+          "le compte à rebours avant les vendanges"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Sur le site d'un domaine, je lis « la véraison a commencé ». Qu'est-ce que ça veut dire ?",
+      "a": "C'est le moment où la baie change de couleur (elle devient translucide chez les blancs) et s'assouplit. Elle cesse alors de se comporter en organe vert : elle stocke des sucres, son acidité baisse, et pigments, tanins et arômes s'élaborent. Le compte à rebours avant les vendanges commence."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron partenaire (par exemple Château Haut-Maurac, Médoc) à quelle date la véraison a eu lieu cette année, puis à quelle date il a vendangé. Note les deux dates et calcule le temps écoulé : c'est ton compte à rebours."
+  },
+  "63": {
+    "ouverture": "Après le débourrement, la vigne fleurit. Combien de semaines plus tard, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "Anatomie de la fleur de vigne",
+      "lignes": [
+        [
+          "Le calice",
+          "cinq sépales"
+        ],
+        [
+          "Le capuchon, qui doit tomber pour que la fleur s'ouvre",
+          "les pétales soudés"
+        ],
+        [
+          "Les étamines",
+          "elles portent le pollen"
+        ],
+        [
+          "Le pistil",
+          "son ovaire contient quatre ovules"
+        ],
+        [
+          "Délai entre débourrement et floraison",
+          "6 à 8 semaines selon UC Davis, 8 à 10 selon Lepeltier"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Je passe dans les vignes et je ne vois que de petites boules vertes, aucune vraie fleur. La vigne fleurit-elle ?",
+      "a": "Oui, mais sa fleur est discrète et verdâtre : elle n'a pas besoin d'attirer les pollinisateurs. Pour qu'elle s'ouvre, le capuchon formé des pétales soudés doit tomber, et la floraison d'une parcelle s'étale sur une quinzaine de jours."
+    },
+    "cave": "Demande à un vigneron partenaire (par exemple Domaine des Amandiers, Saumur-Champigny) de te montrer une photo de ses vignes en fleurs. Retrouve le capuchon, les étamines et le pistil, et note combien de temps il dit que la floraison dure chez lui."
+  },
+  "64": {
+    "ouverture": "Il pleut et il fait froid pendant la floraison. Qu'arrive-t-il à la récolte, à ton avis ?",
+    "illus": [
+      {
+        "photo": "photos/coulure.jpg",
+        "legende": "Grappe atteinte de coulure : beaucoup de fleurs sont tombées, la grappe est clairsemée.",
+        "credit": "Photo : Hvczech, CC0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "De la fleur au jeune fruit",
+      "lignes": [
+        [
+          "Ce qui doit tomber pour que la fleur s'ouvre",
+          "le capuchon (chaleur, soleil, poussée des étamines)"
+        ],
+        [
+          "Passage de la fleur fécondée au jeune fruit",
+          "la nouaison"
+        ],
+        [
+          "Chute des fleurs ou jeunes baies non fécondées",
+          "la coulure"
+        ],
+        [
+          "Deux facteurs qui l'aggravent",
+          "cépage sensible (Lepeltier cite grenache, merlot) ; porte-greffe trop vigoureux"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un vigneron parle de coulure après un printemps pluvieux : de quoi s'agit-il ?",
+      "a": "Pendant la floraison, pluie, vent ou froid compromettent la récolte : des fleurs ou de jeunes baies non fécondées tombent, et la grappe reste clairsemée. Un cépage sensible ou un porte-greffe trop vigoureux peuvent aggraver le phénomène."
+    },
+    "cave": "Demande à un vigneron (ex. Domaine Deprade Jorda) comment s'est passée sa floraison."
+  },
+  "66": {
+    "ouverture": "Un raisin de table sans pépins existe. À ton avis, comment la vigne peut-elle former un fruit sans graines ?",
+    "illus": [
+      {
+        "photo": "photos/millerandage.jpg",
+        "legende": "Grappe millerandée : des baies de tailles inégales sur une même grappe.",
+        "credit": "Photo : Olivier Lemoine (Photo-Terroir.fr), CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Deux chemins vers la baie sans pépins",
+      "lignes": [
+        [
+          "Nom d'une baie sans pépins",
+          "apyrène"
+        ],
+        [
+          "Fécondation, puis avortement des graines",
+          "la sténospermocarpie (type sultanine)"
+        ],
+        [
+          "Fruit formé sans fécondation, baie petite",
+          "la parthénocarpie (type corinthe noir)"
+        ],
+        [
+          "La baie millerandée",
+          "un accident de fécondation, à ne pas confondre avec ces deux mécanismes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Millerandage et parthénocarpie, c'est la même chose ? »",
+      "a": "Non. Le millerandage est un accident de fécondation : des baies de tailles inégales, certaines petites et sans pépins, côtoient des baies normales. La parthénocarpie est un mécanisme d'apyrénie : le fruit se forme sans fécondation et sans pépins (type corinthe noir)."
+    },
+    "cave": "En saison, demande à un vigneron partenaire (par exemple Château Moulin Caresse, Bergerac) la permission de goûter quelques grains. Compte les pépins de dix baies et compare avec les « deux à quatre » d'une baie complète."
+  },
+  "67": {
+    "ouverture": "Un raisin vert est très acide, un raisin mûr est sucré. À quel moment la baie change-t-elle de régime ?",
+    "illus": [],
+    "schema": {
+      "titre": "Les trois phases de la baie",
+      "lignes": [
+        [
+          "De la nouaison à la véraison",
+          "croissance herbacée : baies dures et vertes, photosynthèse, acides (malique, tartrique) accumulés"
+        ],
+        [
+          "De la véraison à la maturité",
+          "maturation : elles grossissent, s'assouplissent, se colorent ; sucres, pigments et tanins s'élaborent"
+        ],
+        [
+          "Laissée sur pied après la maturité",
+          "surmaturité : concentration (passerillage ou pourriture noble)"
+        ],
+        [
+          "Découpage des manuels d'œnologie",
+          "croissance herbacée, courte pause où survient la véraison, puis maturation"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi un raisin est-il si acide et si peu sucré avant de changer de couleur ? »",
+      "a": "Avant la véraison, la baie est dure et verte : elle fait de la photosynthèse et accumule des acides (malique, tartrique). À la véraison, elle s'assouplit, se colore et se met à stocker des sucres, tandis que l'acide malique décroît."
+    },
+    "cave": "Demande à un vigneron partenaire (par exemple Château Les Pâques, Blaye Côtes de Bordeaux) s'il laisse parfois des raisins sur pied après la maturité. Note sa réponse et classe-la dans la phase 3 du découpage de Lepeltier (maturité puis surmaturité)."
+  }
+}

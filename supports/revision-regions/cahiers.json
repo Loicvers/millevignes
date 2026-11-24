@@ -850,5 +850,129 @@
       970,
       53
     ]
+  },
+  {
+    "nom": "cahier-nature-01-racines-aux-feuilles-1",
+    "titre": "Des racines aux feuilles (1)",
+    "serie": "Nature · fascicule 1",
+    "recit": "La vigne : des racines aux feuilles",
+    "fiches": [
+      54,
+      55,
+      56,
+      57,
+      515,
+      516
+    ]
+  },
+  {
+    "nom": "cahier-nature-02-racines-aux-feuilles-2",
+    "titre": "Des racines aux feuilles (2)",
+    "serie": "Nature · fascicule 2",
+    "recit": "La vigne : des racines aux feuilles",
+    "fiches": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      517
+    ]
+  },
+  {
+    "nom": "cahier-nature-03-fleurs-aux-baies-1",
+    "titre": "Des fleurs aux baies (1)",
+    "serie": "Nature · fascicule 3",
+    "recit": "La vigne : des fleurs aux baies",
+    "fiches": [
+      4,
+      63,
+      64,
+      66,
+      67
+    ]
+  },
+  {
+    "nom": "cahier-nature-04-fleurs-aux-baies-2",
+    "titre": "Des fleurs aux baies (2)",
+    "serie": "Nature · fascicule 4",
+    "recit": "La vigne : des fleurs aux baies",
+    "fiches": [
+      68,
+      65,
+      69,
+      70
+    ]
+  },
+  {
+    "nom": "cahier-nature-05-vigne-greffee",
+    "titre": "La vigne greffée",
+    "serie": "Nature · fascicule 5",
+    "recit": "La vigne greffée, une « plante artificielle » ?",
+    "fiches": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ]
+  },
+  {
+    "nom": "cahier-nature-06-porte-greffes-1",
+    "titre": "Porte-greffes et nouveaux paysages (1)",
+    "serie": "Nature · fascicule 6",
+    "recit": "Porte-greffes et nouveaux paysages viticoles",
+    "fiches": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ]
+  },
+  {
+    "nom": "cahier-nature-07-porte-greffes-2",
+    "titre": "Porte-greffes et nouveaux paysages (2)",
+    "serie": "Nature · fascicule 7",
+    "recit": "Porte-greffes et nouveaux paysages viticoles",
+    "fiches": [
+      84,
+      85,
+      86,
+      87,
+      518,
+      519
+    ]
+  },
+  {
+    "nom": "cahier-nature-08-quelle-vitis-planter",
+    "titre": "Quelle Vitis planter ?",
+    "serie": "Nature · fascicule 8",
+    "recit": "Quelle Vitis planter ?",
+    "fiches": [
+      88,
+      89,
+      90,
+      91,
+      92
+    ]
+  },
+  {
+    "nom": "cahier-nature-09-planter-et-penser-autrement",
+    "titre": "Planter et penser la vigne autrement",
+    "serie": "Nature · fascicule 9",
+    "recit": "Quelle Vitis planter ?",
+    "fiches": [
+      634,
+      93,
+      520,
+      521,
+      94,
+      95,
+      96
+    ]
   }
 ]

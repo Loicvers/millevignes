@@ -336,8 +336,10 @@ html{font-size:10.4pt}
 .cah .corr ol{columns:2;column-gap:8mm;column-rule:1px solid var(--line);font-size:.9rem}`;
 
 // Illustrations du volet pédagogique : schéma SVG de schemas/ (href="img:x.jpg" → illustration du support d'initiation) ou photo (flottante, crédit imprimé).
+// Les id d'un SVG (marqueurs, dégradés) sont préfixés par le nom du fichier : plusieurs SVG en ligne dans une même page ne se volent pas leurs définitions.
+const svgUnique = (txt, nom) => { const p = nom.replace(/\W/g, '') + '-'; return txt.replace(/\bid="([^"]+)"/g, `id="${p}$1"`).replace(/url\(#([^)]+)\)/g, `url(#${p}$1)`).replace(/href="#([^"]+)"/g, `href="#${p}$1"`); };
 const illus = x => x.svg
-  ? `<figure class="ill">${fs.readFileSync(path.join(dir, 'schemas', x.svg), 'utf8').replace(/href="img:([\w.-]+)"/g, (_, n) => `href="${pathToFileURL(path.join(dir, '..', 'initiation-oenologie', 'img', n)).href}"`)}<figcaption>${e(x.legende)}</figcaption></figure>`
+  ? `<figure class="ill">${svgUnique(fs.readFileSync(path.join(dir, 'schemas', x.svg), 'utf8'), x.svg).replace(/href="img:([\w.-]+)"/g, (_, n) => `href="${pathToFileURL(path.join(dir, '..', 'initiation-oenologie', 'img', n)).href}"`)}<figcaption>${e(x.legende)}</figcaption></figure>`
   : `<figure class="ph"><img src="${pathToFileURL(path.join(dir, x.photo)).href}" alt=""><figcaption>${e(x.legende)} <i>${e(x.credit)}</i></figcaption></figure>`;
 function cahierHTML(def, notesAvant) {
   const fiches = def.fiches.map(id => FICHES.find(f => +f.id === id) || (avert.push(`${def.nom} : fiche ${id} introuvable`), null)).filter(Boolean);

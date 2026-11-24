@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Coupe d’une baie : pellicule, pulpe et pépin, trois apports (schéma de principe)</text>
+  <circle cx="90" cy="88" r="52" fill="#5b1a24"/>
+  <circle cx="90" cy="88" r="44" fill="#a8843a"/>
+  <circle cx="90" cy="88" r="36" fill="#faf3e0" stroke="#625a4e" stroke-width="1"/>
+  <ellipse cx="90" cy="88" rx="7" ry="11" fill="#625a4e"/>
+  <g stroke="#625a4e" stroke-width="0.8"><line x1="142" y1="70" x2="215" y2="42"/><line x1="130" y1="100" x2="215" y2="86"/><line x1="97" y1="88" x2="215" y2="130"/></g>
+  <g font-size="11">
+    <text x="222" y="40" font-weight="700" fill="#5b1a24">Pellicule</text><text x="300" y="40" font-size="10" fill="#625a4e">arômes, pigments, tanins ; pruine à l’extérieur</text>
+    <text x="222" y="90" font-weight="700" fill="#a8843a">Pulpe</text><text x="300" y="90" font-size="10" fill="#625a4e">eau, sucres, acides</text>
+    <text x="222" y="134" font-weight="700" fill="#1a1612">Pépin</text><text x="300" y="134" font-size="10" fill="#625a4e">tanins, albumen huileux</text>
+  </g>
+</svg>

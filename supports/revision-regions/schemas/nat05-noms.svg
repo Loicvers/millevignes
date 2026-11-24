@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <g fill="#faf3e0" stroke="#d8d0c2">
+    <rect x="8" y="30" width="122" height="52" rx="6"/><rect x="146" y="30" width="122" height="52" rx="6"/><rect x="284" y="30" width="122" height="52" rx="6"/>
+  </g>
+  <rect x="422" y="30" width="130" height="52" rx="6" fill="#faf3e0" stroke="#5b1a24" stroke-width="1.5"/>
+  <g stroke="#a8843a" stroke-width="1.5"><path d="M131 56 H145"/><path d="M269 56 H283"/><path d="M407 56 H421"/></g>
+  <g text-anchor="middle">
+    <text x="69" y="22" font-weight="700" fill="#5b1a24">1855</text><text x="69" y="50" font-style="italic">Pemphigus</text><text x="69" y="64" font-style="italic">vitifoliae</text><text x="69" y="77" font-size="10" fill="#625a4e">Fitch</text>
+    <text x="207" y="22" font-weight="700" fill="#5b1a24">1868 (découverte en juillet)</text><text x="207" y="50" font-style="italic">Rhizaphis</text><text x="207" y="64" font-style="italic">vastatrix</text><text x="207" y="77" font-size="10" fill="#625a4e">Planchon</text>
+    <text x="345" y="22" font-weight="700" fill="#5b1a24">août 1868</text><text x="345" y="50" font-style="italic">Phylloxera</text><text x="345" y="64" font-style="italic">vastatrix</text><text x="345" y="77" font-size="10" fill="#625a4e">forme ailée vue</text>
+    <text x="487" y="22" font-weight="700" fill="#5b1a24">aujourd’hui</text><text x="487" y="50" font-style="italic">Daktulosphaira</text><text x="487" y="64" font-style="italic">vitifoliae</text><text x="487" y="77" font-size="10" fill="#625a4e">nom valide</text>
+  </g>
+  <text x="8" y="108" font-size="10" fill="#625a4e">Un seul insecte, quatre noms au fil du temps. Schéma de principe.</text>
+</svg>

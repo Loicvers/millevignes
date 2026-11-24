@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#a8843a"/></marker></defs>
+  <g fill="#faf3e0" stroke="#a8843a" stroke-width="1.3"><rect x="10" y="14" width="150" height="62" rx="6"/><rect x="205" y="14" width="150" height="62" rx="6"/><rect x="400" y="14" width="150" height="62" rx="6"/></g>
+  <g stroke="#a8843a" stroke-width="1.5" marker-end="url(#a)"><path d="M162 45 H200"/><path d="M357 45 H395"/></g>
+  <g text-anchor="middle">
+    <text x="85" y="36" font-weight="700" fill="#5b1a24">Matériel initial</text><text x="85" y="54">la tête de clone</text><text x="85" y="67">conservée</text>
+    <text x="280" y="36" font-weight="700" fill="#5b1a24">Matériel de base</text><text x="280" y="54">sert à la</text><text x="280" y="67">prémultiplication</text>
+    <text x="475" y="36" font-weight="700" fill="#5b1a24">Matériel certifié</text><text x="475" y="54">vendu aux</text><text x="475" y="67">viticulteurs</text>
+  </g>
+  <rect x="440" y="90" width="70" height="20" rx="3" fill="#3f6fb0"/><text x="475" y="104" text-anchor="middle" fill="#ffffff" font-weight="700">bleue</text>
+  <rect x="190" y="90" width="70" height="20" rx="3" fill="#e0b92b"/><text x="225" y="104" text-anchor="middle" font-weight="700">jaune</text>
+  <text x="268" y="104">autre catégorie, hors de cette chaîne : standard</text>
+  <text x="475" y="124" text-anchor="middle" fill="#625a4e" font-size="10.5">étiquette du certifié</text>
+  <text x="280" y="136" text-anchor="middle" fill="#625a4e" font-size="10.5" dy="10">l’étiquette vaut passeport phytosanitaire européen</text>
+</svg>

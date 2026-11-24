@@ -1,0 +1,207 @@
+{
+  "84": {
+    "ouverture": "Quand on coupe un sarment, que devient le bois juste sous la coupe, et pourquoi cela peut-il poser problème à long terme ?",
+    "illus": [
+      {
+        "svg": "nat07-cone.svg",
+        "legende": "Deux plaies de taille : l'une près du tronc, l'autre petite et éloignée. Dessin de principe, sans échelle."
+      }
+    ],
+    "schema": {
+      "titre": "Je retiens la taille douce",
+      "lignes": [
+        [
+          "Plaies à privilégier",
+          "petites, éloignées du tronc, toujours du même côté"
+        ],
+        [
+          "Date de la description de la méthode Poussard, par René Lafon",
+          "1921"
+        ],
+        [
+          "Remise à l'honneur par",
+          "François Dal (Sicavac) et les maîtres tailleurs frioulans Simonit & Sirch"
+        ],
+        [
+          "Efficacité à long terme du curetage",
+          "incertaine, même si les essais récents lui sont favorables"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi s'intéresser à la façon de tailler, si on coupe de toute façon ? »",
+      "a": "Chaque plaie dessèche une partie du bois et ouvre une porte aux spores. Tailler en respectant les flux de sève, avec des plaies petites et éloignées du tronc, limite ce risque pour les maladies du bois."
+    },
+    "cave": "À ta prochaine commande, demande au Château Haut-Maurac (Médoc) s'il adapte sa façon de tailler pour limiter les maladies du bois, et note sa réponse."
+  },
+  "85": {
+    "ouverture": "Greffe en fente, en anglaise ou en oméga : à ton avis, laquelle exposerait le moins aux symptômes d'esca ? Devine, puis vérifie.",
+    "illus": [
+      {
+        "svg": "nat07-greffes.svg",
+        "legende": "Résultat de l'étude de 2017 (OENO One), avec son biais. Les longueurs sont indicatives."
+      }
+    ],
+    "schema": {
+      "titre": "L'étude de 2017 en un coup d'œil",
+      "lignes": [
+        [
+          "Revue où elle est publiée",
+          "OENO One"
+        ],
+        [
+          "Équipe",
+          "ISVV de Bordeaux, avec le greffeur Marc Birebent"
+        ],
+        [
+          "Types de greffe comparés",
+          "fente, anglaise et oméga"
+        ],
+        [
+          "Résultat sur les symptômes foliaires d'esca",
+          "les greffes en fente en montrent nettement moins que l'anglaise et l'oméga"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Alors la greffe oméga, c'est mauvais pour l'esca ? »",
+      "a": "Pas si vite. Dans cette étude, les greffes en fente montraient moins de symptômes foliaires, mais les auteurs signalent que les parcelles en oméga étaient plus jeunes : la comparaison peut être biaisée. C'est un indice, pas une preuve."
+    },
+    "cave": "Demande au Château Jean Faure (Saint-Émilion) quel type de greffe il choisit quand il replante, et pourquoi. Note la réponse et compare-la à l'étude."
+  },
+  "86": {
+    "ouverture": "Pourquoi un cépage qui « noue mal » pourrait-il tirer profit d'un greffage ? Propose une explication, même hasardeuse.",
+    "illus": [
+      {
+        "svg": "nat07-hypothese.svg",
+        "legende": "L'hypothèse rapportée par Lepeltier, présentée comme telle : aucune source indépendante n'a été trouvée."
+      }
+    ],
+    "schema": {
+      "titre": "L'hypothèse du bourrelet (non confirmée)",
+      "lignes": [
+        [
+          "Ce que retiendrait le bourrelet de greffe, dans la partie aérienne",
+          "une plus grande part des sucres de la sève élaborée"
+        ],
+        [
+          "Cépage qui aurait progressé, car il nouait mal",
+          "le merlot"
+        ],
+        [
+          "Cépage qui aurait reculé, sujet à la coulure par excès de vigueur",
+          "le malbec"
+        ],
+        [
+          "Statut de cette idée",
+          "une hypothèse : aucune source indépendante trouvée"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « C'est vrai que la greffe a fait le succès du merlot à Bordeaux ? »",
+      "a": "C'est une hypothèse rapportée par Lepeltier : le bourrelet de greffe retiendrait plus de sucres en haut du cep, ce qui aurait aidé le merlot à mieux fructifier. Aucune source indépendante n'a été trouvée : on la présente comme une hypothèse."
+    },
+    "cave": "Prends un vin de ta cave du Bordelais, lis sa fiche technique ou son étiquette et repère la place du merlot dans l'assemblage. Goûte-le et note ce que le merlot t'apporte."
+  },
+  "87": {
+    "ouverture": "Le cycle de la vigne se note avec des lettres. Par quelle lettre commence-t-il, à ton avis, et que voit-on alors ?",
+    "illus": [],
+    "schema": {
+      "titre": "Je retrouve les stades",
+      "lignes": [
+        [
+          "Stade G",
+          "grappes séparées"
+        ],
+        [
+          "Stade L",
+          "fermeture de la grappe"
+        ],
+        [
+          "Stade N",
+          "maturité (sans définition précise selon INRAE)"
+        ],
+        [
+          "Code BBCH de la pointe verte (C)",
+          "07"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire lit dans une note de millésime : « floraison en I, véraison en M ». Il ne comprend pas.",
+      "a": "Ce sont des lettres de l'échelle de Baggiolini (1952), qui note le cycle de A à P. I désigne la floraison, M la véraison. L'échelle internationale BBCH leur donne des codes chiffrés (65 et 85)."
+    },
+    "cave": "Demande au Château de Montmirail (Gigondas) à quelles dates ses vignes ont atteint la floraison (I) et la véraison (M) lors du dernier millésime, puis place-les sur l'échelle."
+  },
+  "518": {
+    "ouverture": "Cite deux gestes que le vigneron fait sur la vigne entre le printemps et l'été, quand les feuilles sont sorties.",
+    "illus": [
+      {
+        "svg": "nat07-gestes.svg",
+        "legende": "Quatre des travaux en vert de la fiche, et ce sur quoi chacun agit (la vendange en vert, à part, réduit le rendement)."
+      }
+    ],
+    "schema": {
+      "titre": "Travaux en vert : repères",
+      "lignes": [
+        [
+          "Date limite de l'ébourgeonnage imposée par Côte-Rôtie, l'année de formation",
+          "au plus tard le 1er juillet"
+        ],
+        [
+          "Effet recherché de l'effeuillage",
+          "aérer les grappes et limiter la pourriture grise"
+        ],
+        [
+          "Rapport de l'effeuillage avec les traitements",
+          "il les complète plus qu'il ne les remplace"
+        ],
+        [
+          "Risque d'une vendange en vert mal calée",
+          "les baies restantes grossissent et le jus est dilué"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Si on retire les feuilles autour des grappes, on n'a plus besoin de traiter contre la pourriture ? »",
+      "a": "Non. L'effeuillage aère la zone des grappes et limite la pourriture grise, surtout fait à la nouaison. Mais il complète les traitements plus qu'il ne les remplace."
+    },
+    "cave": "Demande au Domaine Martin Clerc (Côte-Rôtie) quels travaux en vert il pratique et à quelle période, puis classe ses réponses parmi les cinq gestes de la fiche."
+  },
+  "519": {
+    "ouverture": "À ton avis, les vendanges ouvrent-elles ou ferment-elles l'année du vigneron ? Justifie en une phrase.",
+    "illus": [
+      {
+        "svg": "nat07-calendrier.svg",
+        "legende": "L'ordre des travaux de la taille aux vendanges. Les durées ne sont pas à l'échelle."
+      }
+    ],
+    "schema": {
+      "titre": "Dates et durées à retenir",
+      "lignes": [
+        [
+          "Date limite de taille à Montlouis",
+          "avant le 1er mai"
+        ],
+        [
+          "Date limite de taille en Beaujolais",
+          "15 mai"
+        ],
+        [
+          "Période de taille en Savoie",
+          "de mi-janvier à fin mars"
+        ],
+        [
+          "Durée des vendanges en Champagne",
+          "deux à trois semaines"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client passe en mars et s'étonne : « Ils taillent encore ? »",
+      "a": "Oui, c'est possible : la taille se fait généralement du 15 novembre au 15 mars, et de mi-janvier à fin mars en Savoie. Certains cahiers des charges fixent même une date limite, comme le 1er mai à Montlouis."
+    },
+    "cave": "Cherche la date limite de taille dans le cahier des charges de l'AOC Beaujolais, puis demande au Domaine Coste-Lapalus quand sa taille s'achève en général."
+  }
+}

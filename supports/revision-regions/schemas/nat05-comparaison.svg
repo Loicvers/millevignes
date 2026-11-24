@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="8" y="8" width="268" height="98" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  <rect x="284" y="8" width="268" height="98" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  <text x="142" y="28" text-anchor="middle" font-weight="700" fill="#5b1a24">Chenin franc de pied</text>
+  <text x="418" y="28" text-anchor="middle" font-weight="700" fill="#5b1a24">Chenin greffé</text>
+  <g text-anchor="middle" fill="#625a4e" font-size="10"><text x="142" y="43">aux Bournais, Montlouis-sur-Loire</text><text x="418" y="43">aux Bournais, Montlouis-sur-Loire</text></g>
+  <g>
+    <text x="22" y="64">moins vigoureux, moins de rendement</text><text x="22" y="82">petites baies</text><text x="22" y="100">vins plus tendus</text>
+    <text x="298" y="64">le porte-greffe augmente le rendement</text><text x="298" y="82">lisse l’effet millésime</text>
+  </g>
+  <text x="280" y="122" text-anchor="middle" font-size="10" fill="#625a4e">D’après Lepeltier, sur la comparaison de François Chidaine.</text>
+</svg>

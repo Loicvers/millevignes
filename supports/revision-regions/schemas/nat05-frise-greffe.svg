@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <line x1="30" y1="55" x2="530" y2="55" stroke="#d8d0c2" stroke-width="3"/>
+  <g fill="#a8843a"><circle cx="85" cy="55" r="6"/><circle cx="215" cy="55" r="6"/><circle cx="350" cy="55" r="6"/></g>
+  <circle cx="470" cy="55" r="6" fill="#5b1a24"/>
+  <g text-anchor="middle">
+    <text x="85" y="30" font-weight="700" fill="#5b1a24">Les Grecs</text><text x="85" y="80">Théophraste</text><text x="85" y="94" fill="#625a4e">greffe entre proches</text>
+    <text x="215" y="30" font-weight="700" fill="#5b1a24">Les Romains</text><text x="215" y="80">Columelle, Pline,</text><text x="215" y="94">puis Palladius</text>
+    <text x="350" y="30" font-weight="700" fill="#5b1a24">Séville</text><text x="350" y="80">Ibn al-’Awwâm</text><text x="350" y="94" fill="#625a4e">fin du XIIe siècle</text>
+    <text x="470" y="30" font-weight="700" fill="#5b1a24">1863 – 1868</text><text x="470" y="80">le phylloxéra</text><text x="470" y="94" fill="#625a4e">la greffe change de rôle</text>
+  </g>
+  <text x="30" y="114" font-size="10" fill="#625a4e">Schéma de principe : les espacements ne sont pas à l’échelle.</text>
+</svg>
