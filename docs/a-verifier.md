@@ -1,7 +1,7 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-968 fiches : 958 vérifiées, 10 à vérifier (12 points).
+970 fiches : 960 vérifiées, 10 à vérifier (12 points).
 Hors dette : 2454 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 399** (p.?) — Côte chalonnaise : cinq villages sans grand cru, deux dénominations du Bourgogne et le crémant
