@@ -1,0 +1,216 @@
+{
+  "241": {
+    "ouverture": "Au fond d'une cuve ou d'un fût, il reste un dépôt de levures mortes. À ton avis, vaut-il mieux s'en débarrasser vite ou le garder un temps ?",
+    "illus": [
+      {
+        "svg": "vin15-lies.svg",
+        "legende": "Des lies tassées au fond d'une grande cuve tournent à la réduction ; remises en suspension par le bâtonnage, elles s'autolysent plus vite."
+      }
+    ],
+    "schema": {
+      "titre": "Les lies fines : je complète",
+      "lignes": [
+        [
+          "Que sont les lies fines ?",
+          "des levures mortes, en dépôt floconneux au fond des cuves et des fûts"
+        ],
+        [
+          "Que libère leur autolyse ?",
+          "des polysaccharides et des mannoprotéines, qui stabilisent le vin (protéines, tartre)"
+        ],
+        [
+          "Que fait le bâtonnage ?",
+          "il remet les lies en suspension et accélère l'autolyse"
+        ],
+        [
+          "Lies mal conduites, tassées dans une grande cuve ?",
+          "des odeurs de réduction"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les lies, c'est du dépôt : pourquoi ne pas tout enlever tout de suite ? »",
+      "a": "Bien conduites, les lies libèrent en s'autolysant des composés qui stabilisent le vin ; selon Lepeltier, elles lui donnent aussi du gras et de la longueur, un effet que les mesures peinent à isoler. Mal suivies, elles donnent au contraire des odeurs de réduction."
+    },
+    "cave": "Cherche dans ta cave un blanc dont l'étiquette ou la fiche technique mentionne « sur lie ». Goûte-le et note si tu perçois du gras. Rappelle-toi que c'est l'avis de Lepeltier, que les mesures peinent à isoler. À la prochaine commande, demande au vigneron combien de temps le vin reste sur ses lies."
+  },
+  "590": {
+    "ouverture": "Soutirer, ouiller : lequel de ces deux gestes apporte de l'air au vin, et lequel cherche à l'en protéger ? Devine.",
+    "illus": [
+      {
+        "svg": "vin15-fut.svg",
+        "legende": "Fût ouillé, fût non plein et soutirage : l'air entre dans le vide, le soutirage sépare le vin de ses lies."
+      }
+    ],
+    "schema": {
+      "titre": "Soutirer ou ouiller ? Je complète",
+      "lignes": [
+        [
+          "Sépare le vin de ses lies et dépôts",
+          "le soutirage"
+        ],
+        [
+          "Remplace ce que le bois laisse partir, avec un vin de même qualité",
+          "l'ouillage"
+        ],
+        [
+          "Fût non plein : qu'est-ce qui entre ?",
+          "l'air : oxydation, bactéries acétiques, voile possible"
+        ],
+        [
+          "Aération au soutirage : sur quels vins ?",
+          "les rouges de garde ; les blancs en circuit fermé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Après un soutirage, pourquoi remesurer et réajuster le SO2 ? »",
+      "a": "Le soutirage aère le vin et l'oxygène profite aussi aux bactéries acétiques : c'est le moment de réajuster le SO2. Une chute rapide du SO2 libre trahit ensuite un apport d'oxygène."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave, par exemple Château Jean Faure (Saint-Émilion grand cru classé), s'il élève en fût et, si oui, comment il les suit : ouillage, SO2 libre. Compare sa réponse à la fiche."
+  },
+  "242": {
+    "ouverture": "Un vigneron veut élever son vin sans acheter de fût neuf. Quels contenants lui viennent à l'esprit ?",
+    "illus": [
+      {
+        "svg": "vin15-contenants.svg",
+        "legende": "Cinq alternatives au fût neuf : le foudre, l'inox, le béton, l'argile et les copeaux de chêne."
+      }
+    ],
+    "schema": {
+      "titre": "Les alternatives au fût neuf",
+      "lignes": [
+        [
+          "Grand fût de 1 000 l ou plus, qui marque peu le vin",
+          "le foudre (taille selon le livre ; typiquement 1 000 l pour un Fuder selon l'Oxford)"
+        ],
+        [
+          "Contenants plus neutres : l'un est inerte, l'autre doit être revêtu",
+          "l'inox ; le béton (l'acidité du vin l'attaque)"
+        ],
+        [
+          "Contenant de terre qui revient en vogue",
+          "l'argile : jarres et amphores"
+        ],
+        [
+          "Apportent l'arôme du chêne sans fût, encadrés dans l'UE",
+          "les copeaux ; règlement (CE) n° 1507/2006 d'octobre 2006"
+        ],
+        [
+          "Condition de taille des morceaux de chêne",
+          "au moins 95 % (en poids) retenus par un tamis de 2 mm"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Ce vin est élevé avec des copeaux de chêne : c'est la même chose qu'un élevage en fût ? »",
+      "a": "Non : les copeaux apportent l'arôme du chêne sans le fût, et leur emploi est encadré dans l'Union européenne par le règlement (CE) n° 1507/2006. Ce règlement impose d'indiquer l'origine et la chauffe des morceaux de chêne et écarte les mentions de type « fût » : le consommateur ne doit pas croire à un élevage en barrique."
+    },
+    "cave": "Prends un vin de ta cave et cherche sur sa fiche technique le contenant d'élevage : fût, foudre, inox, béton ou jarre. S'il est précisé, devine avant de goûter si le vin sera plus ou moins marqué par le bois, puis goûte et note ton impression."
+  },
+  "234": {
+    "ouverture": "Depuis quand brûle-t-on du soufre dans les fûts, à ton avis ? Donne un siècle, puis lis.",
+    "illus": [
+      {
+        "svg": "vin15-soufre.svg",
+        "legende": "Trois dates, trois degrés de certitude (frise non à l'échelle)."
+      }
+    ],
+    "schema": {
+      "titre": "Le soufre : dates et étiquette",
+      "lignes": [
+        [
+          "Première mention souvent citée (texte allemand sur des copeaux soufrés)",
+          "1487, date débattue"
+        ],
+        [
+          "La mèche hollandaise est attestée dès…",
+          "le XVIIe siècle ; le livre dit 1765, date non retrouvée"
+        ],
+        [
+          "Règlement européen qui impose la mention « Contient des sulfites »",
+          "le règlement 1169/2011 (annexe II)"
+        ],
+        [
+          "Au-delà de quelle teneur ?",
+          "10 mg/l de SO2 total"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le soufrage des fûts date bien de 1487, non ? »",
+      "a": "1487, c'est la première mention souvent citée (un texte allemand sur des copeaux soufrés), mais la date est débattue et aucune source de haut niveau ne la confirme. La mèche hollandaise est attestée dès le XVIIe siècle ; le livre dit 1765, date non retrouvée dans les sources lues."
+    },
+    "cave": "Regarde la contre-étiquette de trois vins de ta cave et repère « Contient des sulfites ». Sur la fiche technique d'un vin de Château de Fleys (Chablis), cherche s'il indique le SO2 total, et compare la valeur au seuil de 10 mg/l."
+  },
+  "227": {
+    "ouverture": "La fermentation alcoolique : simple réaction chimique, ou travail d'un être vivant ? Note ton avis avant de lire.",
+    "illus": [
+      {
+        "svg": "vin15-fermentation.svg",
+        "legende": "De la chimie à la biologie en quatre étapes ; le bilan de Lavoisier et l'année 1789 reposent sur une seule source."
+      }
+    ],
+    "schema": {
+      "titre": "Compter, voir, prouver",
+      "lignes": [
+        [
+          "Qui a décrit la levure comme un être vivant qui se multiplie, et quand ?",
+          "Cagniard-Latour, en 1837"
+        ],
+        [
+          "Qu'établit Pasteur en 1857 ?",
+          "la fermentation alcoolique est l'activité de la levure"
+        ],
+        [
+          "Que rattache Pasteur à un ferment particulier dans ses Études sur le vin (1866) ?",
+          "chaque maladie du vin"
+        ],
+        [
+          "Quel chauffage recommande-t-il ?",
+          "55-60 °C, ancêtre de la pasteurisation"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Quel rapport entre Pasteur et le vin qui tourne au vinaigre ? »",
+      "a": "Une commande de Napoléon III sur le vin qui tourne au vinaigre a donné les Études sur le vin (1866). Pasteur y rattache chaque maladie à un ferment particulier et recommande de chauffer le vin à 55-60 °C, ancêtre de la pasteurisation."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Domaine Burghart-Spettel, en Alsace) comment il se protège aujourd'hui des maladies du vin. Note sa réponse et rapproche-la de l'idée de Pasteur : chaque maladie a son ferment."
+  },
+  "244": {
+    "ouverture": "Vaut-il mieux soigner un vin malade ou l'empêcher de tomber malade ? Lequel de ces deux gestes a, selon toi, fait progresser les vins ?",
+    "illus": [
+      {
+        "svg": "vin15-cure-prevention.svg",
+        "legende": "Avec Ribéreau-Gayon et Peynaud, l'école de Bordeaux passe de la cure à la prévention."
+      }
+    ],
+    "schema": {
+      "titre": "De l'art empirique à la prévention",
+      "lignes": [
+        [
+          "Jusqu'au XIXe siècle, faire du vin, c'est…",
+          "un art de recettes : on sait quoi faire, sans comprendre pourquoi le vin tourne"
+        ],
+        [
+          "Virage de l'école de Bordeaux",
+          "de la cure (soigner) à la prévention (éviter)"
+        ],
+        [
+          "Trois gestes de prévention",
+          "malolactique maîtrisée, hygiène des chais, raisins mûrs"
+        ],
+        [
+          "Que crée la loi du 19 mars 1955 ?",
+          "le diplôme national d'œnologue, dont elle réserve le titre à ses titulaires"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Qu'est-ce que la « peynaudisation » ? »",
+      "a": "Le mot vient d'Émile Peynaud : c'est le reproche, attesté par la presse (Decanter), d'avoir standardisé les vins. Pourtant, d'après le livre, il prônait d'intervenir peu et de gagner la qualité au vignoble, et la préface du Handbook of Enology conteste ce nivellement de la qualité."
+    },
+    "cave": "À ta prochaine commande, demande au vigneron d'un Bordeaux de ta cave (par exemple Vignobles Borderie, Lalande-de-Pomerol) ce qui, selon lui, se joue au vignoble et ce qui se joue au chai. Compare sa réponse à l'idée de Peynaud : peu d'interventions, qualité gagnée au vignoble."
+  }
+}

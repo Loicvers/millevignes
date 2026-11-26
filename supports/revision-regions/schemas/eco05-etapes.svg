@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 130">
+  <g stroke-width="1.2">
+    <rect x="2" y="22" width="124" height="86" rx="6" fill="#f0ece4" stroke="#d8d0c2"/>
+    <rect x="146" y="22" width="124" height="86" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+    <rect x="290" y="22" width="124" height="86" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+    <rect x="434" y="22" width="124" height="86" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="64" y="42" font-weight="700" fill="#625a4e">Conventionnelle</text>
+    <text x="64" y="62">produits</text><text x="64" y="76">de synthèse</text>
+    <text x="208" y="42" font-weight="700" fill="#5b1a24">Raisonnée</text>
+    <text x="208" y="62">traitements informés</text><text x="208" y="76">et contrôlés</text><text x="208" y="90">décret de 2002</text>
+    <text x="352" y="42" font-weight="700" fill="#5b1a24">Intégrée, durable</text>
+    <text x="352" y="62">management</text><text x="352" y="76">environnemental</text><text x="352" y="90">et social</text>
+    <text x="496" y="42" font-weight="700" fill="#5b1a24">HVE</text>
+    <text x="496" y="62">issue du Grenelle</text><text x="496" y="76">de l'environnement</text><text x="496" y="90">(2010-2011)</text>
+  </g>
+  <g stroke="#a8843a" stroke-width="1.6" fill="none"><path d="M128 65 H141"/><path d="M272 65 H285"/><path d="M416 65 H429"/></g>
+  <g fill="#a8843a"><path d="M141 60 L146 65 L141 70 Z"/><path d="M285 60 L290 65 L285 70 Z"/><path d="M429 60 L434 65 L429 70 Z"/></g>
+  <text x="280" y="12" text-anchor="middle" font-size="10" fill="#625a4e">les démarches entre conventionnel et bio (schéma de principe)</text>
+  <text x="280" y="124" text-anchor="middle" font-size="10" fill="#625a4e">Aucune n'est une appellation d'origine.</text>
+</svg>

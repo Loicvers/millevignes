@@ -974,5 +974,134 @@
       95,
       96
     ]
+  },
+  {
+    "nom": "cahier-vinification-14-elevage-1",
+    "titre": "Élevage (1) : oxygène et chêne",
+    "serie": "Vinification · fascicule 14",
+    "recit": "L’alchimie de l’élevage",
+    "fiches": [
+      238,
+      358,
+      239,
+      240
+    ]
+  },
+  {
+    "nom": "cahier-vinification-15-elevage-2-et-histoire",
+    "titre": "Élevage (2) et histoire de l'œnologie",
+    "serie": "Vinification · fascicule 15",
+    "recit": "L’alchimie de l’élevage",
+    "fiches": [
+      241,
+      590,
+      242,
+      234,
+      227,
+      244
+    ]
+  },
+  {
+    "nom": "cahier-vinification-16-defauts-1",
+    "titre": "Défaut ou caractère ? (1)",
+    "serie": "Vinification · fascicule 16",
+    "recit": "Défaut ou caractère du vin ?",
+    "fiches": [
+      248,
+      249,
+      250,
+      251,
+      252
+    ]
+  },
+  {
+    "nom": "cahier-vinification-17-defauts-2",
+    "titre": "Défaut ou caractère ? (2)",
+    "serie": "Vinification · fascicule 17",
+    "recit": "Défaut ou caractère du vin ?",
+    "fiches": [
+      355,
+      356,
+      363,
+      364
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-01-monde-souterrain-1",
+    "titre": "La vigne et son monde souterrain (1)",
+    "serie": "Écologie · fascicule 1",
+    "recit": "La vigne et son monde souterrain",
+    "fiches": [
+      97,
+      98,
+      99,
+      100,
+      101
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-02-monde-souterrain-2",
+    "titre": "La vigne et son monde souterrain (2)",
+    "serie": "Écologie · fascicule 2",
+    "recit": "La vigne et son monde souterrain",
+    "fiches": [
+      102,
+      103,
+      104,
+      106,
+      105
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-03-monde-aerien-1",
+    "titre": "La vigne et son monde aérien (1)",
+    "serie": "Écologie · fascicule 3",
+    "recit": "La vigne et son monde aérien",
+    "fiches": [
+      107,
+      108,
+      109,
+      110,
+      111
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-04-monde-aerien-2",
+    "titre": "La vigne et son monde aérien (2)",
+    "serie": "Écologie · fascicule 4",
+    "recit": "La vigne et son monde aérien",
+    "fiches": [
+      112,
+      113,
+      115,
+      114
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-05-viticulture-de-demain",
+    "titre": "Penser la viticulture de demain",
+    "serie": "Écologie · fascicule 5",
+    "recit": "Penser la viticulture de demain",
+    "fiches": [
+      116,
+      117,
+      118,
+      119,
+      120,
+      522
+    ]
+  },
+  {
+    "nom": "cahier-ecologie-06-cohabiter",
+    "titre": "Cohabiter avec la vigne",
+    "serie": "Écologie · fascicule 6",
+    "recit": "Cohabiter avec la vigne",
+    "fiches": [
+      123,
+      124,
+      125,
+      126,
+      127
+    ]
   }
 ]

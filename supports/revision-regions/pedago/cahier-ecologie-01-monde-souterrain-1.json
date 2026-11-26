@@ -1,0 +1,171 @@
+{
+  "97": {
+    "ouverture": "Sous un cep, quelle différence fais-tu entre « roche mère », « terre » et « sol » ? Note ta définition avant de lire.",
+    "illus": [],
+    "schema": {
+      "titre": "Du ciel à la roche",
+      "lignes": [
+        [
+          "Le sol est l'interface entre…",
+          "l'atmosphère et la roche (lithosphère)"
+        ],
+        [
+          "D'après le livre (p. 76), matière organique libre et grossière, en surface",
+          "la litière"
+        ],
+        [
+          "Matière organique fine, juste en dessous",
+          "la matière organique fraîche"
+        ],
+        [
+          "Matière transformée, stable, liée aux minéraux",
+          "l'humus"
+        ],
+        [
+          "Les trois défauts du sol selon Selosse (simplifiés par Lepeltier)",
+          "trop petit, trop sale, trop opaque"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi connaît-on si mal le sol ? »",
+      "a": "Selosse le résume par trois défauts, que Lepeltier simplifie : trop petit, trop sale, trop opaque. Selon le livre, sa fraction organique n'est étudiée que depuis la fin des années 1970."
+    },
+    "cave": "Prends la fiche technique d'un domaine partenaire, par exemple Domaine Martin Clerc (Condrieu). Si elle parle du sol, note si les mots « roche mère », « terre » et « sol » y sont employés au bon sens."
+  },
+  "98": {
+    "ouverture": "Une feuille morte tombe sous le cep. Que lui arrive-t-il, et qui s'en charge ?",
+    "illus": [
+      {
+        "svg": "eco01-voies.svg",
+        "legende": "Deux destins pour la matière organique : la voie rapide et la voie lente, après le même début."
+      }
+    ],
+    "schema": {
+      "titre": "De la litière à l'humus",
+      "lignes": [
+        [
+          "Qui fragmente d'abord la matière ?",
+          "la faune détritivore (insectes, acariens)"
+        ],
+        [
+          "Ce que champignons et bactéries attaquent",
+          "la lignine et la cellulose"
+        ],
+        [
+          "Libéré par la minéralisation primaire",
+          "eau, CO2 et sels minéraux (lessivables)"
+        ],
+        [
+          "Garde-manger d'azote et de phosphore",
+          "l'humus (humine, acides humiques et fulviques)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi dit-on de l'humus qu'il est un garde-manger ? »",
+      "a": "Il naît d'une humification lente, et sa minéralisation secondaire relâche l'azote et le phosphore peu à peu. Les sels libérés vite par la voie rapide, eux, sont lessivables."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron comme celui du Château Haut-Maurac (Médoc) ce que deviennent feuilles, herbes et sarments sur ses parcelles. Classe sa réponse : fragmentation, voie rapide ou voie lente ?"
+  },
+  "99": {
+    "ouverture": "Deux particules de même charge électrique se repoussent. Qu'est-ce qui pourrait les faire tenir ensemble dans un sol ?",
+    "illus": [],
+    "schema": {
+      "titre": "Le complexe argilo-humique",
+      "lignes": [
+        [
+          "Charge des argiles et de l'humus",
+          "négative (ce sont des colloïdes)"
+        ],
+        [
+          "Ce qui peut les relier",
+          "des colles biologiques ou des ponts cationiques (calcium, magnésium, hydroxydes de fer selon le livre)"
+        ],
+        [
+          "Ce que retient le complexe ; sa capacité s'appelle…",
+          "des cations (K+, NH4+) ; la CEC"
+        ],
+        [
+          "Colle que le livre attribue aux vers de terre",
+          "la glomaline, décrite chez les champignons mycorhiziens à arbuscules (Wright, USDA, 1996) ; molécule exacte encore discutée"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Que mesure la CEC ? »",
+      "a": "La capacité du complexe argilo-humique à retenir des cations comme K+ et NH4+. Ce complexe donne aussi au sol une texture grumeleuse."
+    },
+    "cave": "Sur la fiche technique de Château Jean Faure (Saint-Émilion), cherche si la nature du sol est indiquée (argile, calcaire…). Note-la, puis écris en une phrase ce que l'argile seule ne peut pas faire sans pont ni colle."
+  },
+  "100": {
+    "ouverture": "Un ver de terre vit-il toujours à la même profondeur ? Imagine comment on pourrait les classer.",
+    "illus": [
+      {
+        "svg": "eco01-vers.svg",
+        "legende": "Les trois catégories de vers de terre, selon leur position dans le sol."
+      }
+    ],
+    "schema": {
+      "titre": "La vie d'un gramme de sol",
+      "lignes": [
+        [
+          "Bactéries dans un gramme de sol, selon Ranjard (INRA Dijon)",
+          "environ un milliard, pour un million d'espèces"
+        ],
+        [
+          "Les champignons, par rapport aux bactéries",
+          "environ dix fois moins nombreux"
+        ],
+        [
+          "Éditeurs de l'Atlas français des bactéries du sol (décembre 2018)",
+          "le Muséum et Biotope"
+        ],
+        [
+          "Les trois catégories de vers de terre",
+          "épigés, endogés, anéciques"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les sols viticoles français sont-ils vraiment pauvres ? »",
+      "a": "Le livre les juge appauvris, mais sa valeur moyenne de matière organique n'a pas été retrouvée dans les sources. La faible biomasse microbienne citée repose sur une seule source journalistique : mieux vaut le présenter comme un avis du livre."
+    },
+    "cave": "À la prochaine commande, demande au Domaine Deprade Jorda (Côtes du Roussillon) s'il observe des vers de terre dans ses parcelles et lesquels (surface, profondeur ou va-et-vient). Note la réponse."
+  },
+  "101": {
+    "ouverture": "Quand on dit « microbe », on pense d'abord à la maladie. Que peut-on reprocher à cette image ?",
+    "illus": [
+      {
+        "svg": "eco01-biomasse.svg",
+        "legende": "Un bilan de biomasse n'est pas une extrapolation : le livre avance 90 % de microbes, les estimations de Bar-On et al. diffèrent."
+      }
+    ],
+    "schema": {
+      "titre": "Les microbes, jamais seuls",
+      "lignes": [
+        [
+          "Auteur de Jamais seul",
+          "Marc-André Selosse"
+        ],
+        [
+          "Son idée, en contrepoint de l'héritage pasteurien",
+          "les microbes construisent plantes, animaux et civilisations"
+        ],
+        [
+          "Biomasse terrestre selon Bar-On, Phillips et Milo (2018)",
+          "environ 80 % de plantes, 15 % de bactéries"
+        ],
+        [
+          "Nombre d'espèces microbiennes (ordre de 10^12)",
+          "une extrapolation par modèle (Locey et Lennon, 2016)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Combien y a-t-il d'espèces de microbes sur Terre ? »",
+      "a": "Le livre avance un ordre de 10^12, mais ce n'est pas un décompte : c'est une extrapolation par modèle (Locey et Lennon, 2016), jugée risquée par ses auteurs."
+    },
+    "cave": "Devant une bouteille de ta cave, entraîne-toi à dire en deux phrases à un client que les microbes ne sont pas que des pathogènes (idée de Selosse), sans donner de chiffre de biomasse."
+  }
+}

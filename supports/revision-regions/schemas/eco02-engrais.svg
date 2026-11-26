@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 110" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="0" y="14" font-weight="700" fill="#5b1a24">Le piège des engrais</text><text x="560" y="14" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <g stroke="#d8d0c2" fill="#faf3e0">
+    <rect x="0" y="36" width="150" height="46" rx="6"/><rect x="205" y="36" width="150" height="46" rx="6"/><rect x="410" y="36" width="150" height="46" rx="6"/>
+  </g>
+  <g text-anchor="middle" font-size="11">
+    <text x="75" y="56" font-weight="700">Engrais N, P, K</text><text x="75" y="71" font-size="10" fill="#625a4e">apportés au sol</text>
+    <text x="280" y="56" font-weight="700">Champignons</text><text x="280" y="71" font-size="10" fill="#625a4e">moins nourris par la vigne</text>
+    <text x="485" y="56" font-weight="700">Services perdus</text><text x="485" y="71" font-size="10" fill="#625a4e">les quatre de la fiche</text>
+  </g>
+  <g stroke="#a8843a" stroke-width="2" fill="#a8843a"><path d="M154 59 H196"/><path d="M196 54 L204 59 L196 64 Z"/><path d="M359 59 H401"/><path d="M401 54 L409 59 L401 64 Z"/></g>
+  <text x="280" y="102" text-anchor="middle" font-size="10" fill="#625a4e">la vigne n'a plus « besoin » de ses partenaires : ils régressent</text>
+</svg>

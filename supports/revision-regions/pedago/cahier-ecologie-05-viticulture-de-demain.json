@@ -1,0 +1,206 @@
+{
+  "116": {
+    "ouverture": "Après la guerre, les campagnes se vident de leurs bras. À ton avis, qu'est-ce que cela change dans la façon de cultiver la vigne ?",
+    "illus": [
+      {
+        "svg": "eco05-bouleversements.svg",
+        "legende": "De l'exode rural à la viticulture « conventionnelle » : trois temps, de 1945 au début des années 1990."
+      }
+    ],
+    "schema": {
+      "titre": "Après 1945, je remets dans l'ordre",
+      "lignes": [
+        [
+          "Ce qui pousse à restructurer le vignoble",
+          "l'exode rural et le manque de main-d'œuvre"
+        ],
+        [
+          "Ce que devient la polyculture",
+          "elle laisse la place à la monoculture"
+        ],
+        [
+          "Ce que généralise la révolution agricole (1950 – début des années 1990)",
+          "les produits de synthèse : herbicides, pesticides, fongicides, engrais"
+        ],
+        [
+          "L'ouvrage de Rachel Carson qui en alerte les effets",
+          "Printemps silencieux (1962)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Sur ce site, on parle de viticulture conventionnelle. Ça veut dire quoi, au juste ? »",
+      "a": "C'est la viticulture issue de la révolution agricole d'après 1945. Elle s'appuie sur une vigne remembrée, en monoculture et mécanisée, et, de 1950 au début des années 1990, sur la généralisation des produits de synthèse : herbicides, pesticides, fongicides et engrais."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Château Les Pâques, en Blaye Côtes de Bordeaux) comment il protège et désherbe ses vignes. Note sa réponse, puis cherche s'il parle plutôt de conventionnel, de raisonné ou de bio."
+  },
+  "117": {
+    "ouverture": "Entre la viticulture conventionnelle et le bio, y a-t-il des étapes intermédiaires ? Lesquelles imagines-tu ?",
+    "illus": [
+      {
+        "svg": "eco05-etapes.svg",
+        "legende": "Raisonnée, intégrée et durable, HVE : des démarches intermédiaires, qui ne sont pas des appellations."
+      }
+    ],
+    "schema": {
+      "titre": "Les demi-mesures en quatre repères",
+      "lignes": [
+        [
+          "La viticulture raisonnée : des traitements…",
+          "informés et contrôlés"
+        ],
+        [
+          "Le texte de 2002 sur la qualification en agriculture raisonnée",
+          "décret n° 2002-631 du 25 avril 2002"
+        ],
+        [
+          "La HVE est issue de…",
+          "le Grenelle de l'environnement (loi Grenelle II de 2010, décret de 2011)"
+        ],
+        [
+          "Le frein vu par Lepeltier et Sylvaine Boulanger-Fassier",
+          "les mentalités : le temps d'observation passe pour du temps perdu"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un vigneron te dit : « Moi, je fais du raisonné. » Que comprends-tu ?",
+      "a": "Que ses traitements sont informés et contrôlés, sans que la logique des produits de synthèse change. En France, le décret du 25 avril 2002 organise la qualification en agriculture raisonnée : elle est délivrée via des organismes certificateurs agréés et valable cinq ans."
+    },
+    "cave": "Sur le site ou la fiche technique d'un domaine de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny), cherche si une démarche est affichée : AB, HVE, autre. Note le mot exact utilisé et dis s'il relève du bio (notion 6) ou d'une des démarches intermédiaires du schéma."
+  },
+  "118": {
+    "ouverture": "Pour toi, nature et culture sont-elles deux mondes séparés ? Et crois-tu que toutes les sociétés le voient ainsi ?",
+    "illus": [
+      {
+        "svg": "eco05-ontologies.svg",
+        "legende": "Les quatre ontologies de Descola : la séparation nature/culture ne caractérise que le naturalisme."
+      }
+    ],
+    "schema": {
+      "titre": "Descola, Latour, Gaïa",
+      "lignes": [
+        [
+          "Le livre de Descola (Gallimard, 2005)",
+          "Par-delà nature et culture"
+        ],
+        [
+          "L'ontologie qui sépare nature et culture",
+          "le naturalisme"
+        ],
+        [
+          "Le livre de Latour (1991)",
+          "Nous n'avons jamais été modernes"
+        ],
+        [
+          "L'hypothèse Gaïa voit la Terre comme…",
+          "un système autorégulé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi le livre remet-il en cause l'idée de nature ? On a toujours séparé la nature de la culture, non ? »",
+      "a": "Pour Philippe Descola, cette séparation n'est pas universelle : elle est propre au naturalisme, l'une de quatre ontologies avec le totémisme, l'animisme et l'analogisme. Bruno Latour, de son côté, remet en cause cette séparation moderne."
+    },
+    "cave": "Choisis une bouteille de ta cave. En deux phrases, écris comment tu parlerais à un client du rapport entre le vigneron et sa vigne : une nature qu'on gère, ou un vivant avec lequel on compose ? Il n'y a pas de bonne réponse : le livre invite simplement à se poser la question."
+  },
+  "119": {
+    "ouverture": "Peut-on « négocier » avec le vivant, comme on le ferait avec un voisin ? À quoi ressemblerait une diplomatie avec une vigne ?",
+    "illus": [
+      {
+        "svg": "eco05-trois-voix.svg",
+        "legende": "Trois auteurs cités par le livre : une cohabitation, un usage de la nature, une recherche sur les plantes."
+      }
+    ],
+    "schema": {
+      "titre": "Qui dit quoi ?",
+      "lignes": [
+        [
+          "Plaide pour une cohabitation « diplomatique » avec le vivant",
+          "Baptiste Morizot"
+        ],
+        [
+          "Du bon usage de la nature (Aubier, 1997 ; le livre dit 1998)",
+          "Catherine et Raphaël Larrère"
+        ],
+        [
+          "Le rendez-vous en ligne de décembre 2021 où intervient Paco Calvo",
+          "Raw Wine Alive!, organisé par Isabelle Legeron MW"
+        ],
+        [
+          "Le thème de travail de Paco Calvo à l'université de Murcie",
+          "l'intelligence des plantes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les plantes seraient intelligentes ? C'est sérieux, ça ? »",
+      "a": "C'est un sujet de recherche : Paco Calvo dirige le Minimal Intelligence Lab (MINT Lab) de l'université de Murcie et travaille sur l'intelligence des plantes, notamment en filmant leur croissance. Le livre le cite à propos de Raw Wine Alive!, rendez-vous en ligne de décembre 2021."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave combien de temps il passe à observer ses vignes avant d'intervenir. Compare sa réponse au frein relevé par Lepeltier avec Sylvaine Boulanger-Fassier (notion 2) : dans les mentalités, le temps d'observation passe pour du temps perdu."
+  },
+  "120": {
+    "ouverture": "Sur 100 hectares de vigne en France en 2020, combien étaient cultivés en bio (certifiés ou en conversion), à ton avis ?",
+    "illus": [
+      {
+        "svg": "eco05-echelles.svg",
+        "legende": "Bio et biodynamie en France : deux échelles différentes (bio France 2020 : Agence Bio, via Réussir ; biodynamie : L'Info Durable fin 2019 pour la France, carte du livre p. 95 pour l'Alsace et le Jura)."
+      }
+    ],
+    "schema": {
+      "titre": "Le bio viticole français en chiffres",
+      "lignes": [
+        [
+          "Vigne bio en 2020, en surface",
+          "environ 137 400 ha"
+        ],
+        [
+          "Part du vignoble français",
+          "près de 17 %"
+        ],
+        [
+          "La biodynamie en France, fin 2019",
+          "environ 1,4 % du vignoble"
+        ],
+        [
+          "Pourquoi les sources divergent",
+          "les périmètres varient d'une source à l'autre"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Près de 30 % pour PACA dans un article, 43,9 % pour la Provence dans le livre : lequel est faux ? »",
+      "a": "Probablement aucun des deux : les périmètres retenus ne sont pas les mêmes d'une source à l'autre. Le livre donne 43,9 % sur sa carte ; Réussir (Agence Bio 2020) donne près de 30 % pour PACA. On cite le chiffre avec sa source."
+    },
+    "cave": "Tu as des domaines en Alsace (Domaine Burghart-Spettel) et en Champagne (Champagne Petit-Triolet). Sur la carte du livre, laquelle de ces deux régions a la plus forte part de bio, et avec quel écart en points ? Vérifie p. 95."
+  },
+  "522": {
+    "ouverture": "AB, Demeter, Biodyvin : à ton avis, lesquelles de ces trois mentions sont encadrées par un règlement public, et lesquelles par un organisme privé ?",
+    "schema": {
+      "titre": "Ce que chaque mention garantit",
+      "lignes": [
+        [
+          "Le bio (AB, feuille européenne) : raisins cultivés sans…",
+          "pesticides ni engrais de synthèse, sans OGM"
+        ],
+        [
+          "Depuis 2012, la vinification bio est…",
+          "encadrée par le règlement européen"
+        ],
+        [
+          "Les préparations imposées par le cahier des charges Demeter",
+          "500 et 501 (bouse et silice de corne)"
+        ],
+        [
+          "Qui contrôle le vignoble et la vinification Biodyvin",
+          "Ecocert"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client te montre une bouteille « HVE » et demande : « C'est la même chose que le bio ? »",
+      "a": "Non. Le bio est défini par un règlement européen : raisins sans pesticides ni engrais de synthèse, contrôle au moins annuel. La HVE est une certification issue du Grenelle de l'environnement (décret de 2011), qui porte sur quatre thèmes : biodiversité, stratégie phytosanitaire, fertilisation, irrigation. Le livre la range parmi les demi-mesures, qui réduisent les traitements sans en changer la logique (notion 2)."
+    },
+    "cave": "Prends trois bouteilles de ta cave et lis leurs étiquettes : note si tu y trouves le logo AB, la feuille européenne, Demeter ou Biodyvin. Pour celles qui n'en portent aucune, ne conclus rien : demande au vigneron ce qu'il en est."
+  }
+}

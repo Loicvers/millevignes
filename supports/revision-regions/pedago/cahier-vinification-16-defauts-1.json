@@ -1,0 +1,192 @@
+{
+  "248": {
+    "ouverture": "Un vin à l'acidité volatile élevée et au sucre résiduel peut-il être légendaire ? Donne ton avis avant de lire.",
+    "illus": [
+      {
+        "svg": "vin16-leviers-jugement.svg",
+        "legende": "Trois leviers font basculer le jugement : la dose, le style du vin et le dégustateur, dont les seuils de perception varient beaucoup d'une personne à l'autre."
+      }
+    ],
+    "schema": {
+      "titre": "Défaut ou caractère : je complète",
+      "lignes": [
+        [
+          "Ce que l'on reprocherait aujourd'hui à Cheval Blanc 1947",
+          "une acidité volatile élevée et, selon Decanter, environ 3,5 g/l de sucres résiduels"
+        ],
+        [
+          "Comment le moût a été refroidi (selon Decanter)",
+          "avec de la glace"
+        ],
+        [
+          "Les trois paramètres qui font basculer le jugement",
+          "la dose, le style du vin, le dégustateur"
+        ],
+        [
+          "Ce qui varie énormément d'une personne à l'autre",
+          "les seuils de perception"
+        ],
+        [
+          "Ce qui modifie aussi le jugement, selon le livre",
+          "l'habitude, la culture et l'expérience (désensibilisation à certains composés)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Cheval Blanc 1947 est une légende, pourtant on dit qu'il serait jugé fautif aujourd'hui. On m'a menti ? »",
+      "a": "Non, les deux sont vrais. C'est un grand vin de Saint-Émilion, né d'un été caniculaire, avec une acidité volatile élevée et, selon Decanter, un moût refroidi à la glace et environ 3,5 g/l de sucres résiduels. Ce profil serait jugé fautif aujourd'hui : la frontière entre défaut et caractère se déplace."
+    },
+    "cave": "Ouvre un Saint-Émilion de ta cave (Château Jean Faure ou Clos de la Cure, par exemple) et fais-le goûter à deux personnes sans rien dire. Chacune note ce qui lui plaît et ce qui la gêne. Compare : vos réponses se ressemblent-elles ?"
+  },
+  "249": {
+    "ouverture": "Le mot « volat' » est un raccourci de dégustateur. Quelles odeurs t'attends-tu à trouver derrière ce mot ?",
+    "illus": [
+      {
+        "svg": "vin16-volat-dose.svg",
+        "legende": "La dose décide (schéma de principe) : un peu de relief possible selon Lepeltier, le traité bordelais étant plus sévère ; en excès, le vin est piqué."
+      }
+    ],
+    "schema": {
+      "titre": "La « volat' » : je complète",
+      "lignes": [
+        [
+          "La molécule qui domine l'acidité volatile",
+          "l'acide acétique"
+        ],
+        [
+          "Sa note",
+          "aigre, vinaigre"
+        ],
+        [
+          "La molécule qui l'accompagne, au nez de vernis à ongles",
+          "l'acétate d'éthyle"
+        ],
+        [
+          "Ce que le livre ajoute à la note de vernis",
+          "la colle"
+        ],
+        [
+          "Le vin qui en contient en excès est dit…",
+          "piqué"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon vin sent le vernis à ongles. C'est le goût de bouchon ? »",
+      "a": "Pas forcément : le vernis à ongles est la note de l'acétate d'éthyle, qui accompagne l'acide acétique dans la « volat' ». Le goût de bouchon relève d'autres molécules, les anisoles (TCA, TeCA, TBA). Si le nez est aussi aigre, vinaigre, la volat' est probablement en cause ; en excès, le vin est piqué."
+    },
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (Château Haut-Maurac, Médoc, par exemple) s'il fait doser l'acidité volatile avant la mise et ce qu'il en pense. Note sa réponse et compare avec les plafonds de la fiche 246 (18 meq/l pour les blancs et rosés, 20 pour les rouges)."
+  },
+  "250": {
+    "ouverture": "Entre l'écurie, la terre retournée et la cage de souris, un seul de ces défauts ne se sent pas au nez. Lequel, à ton avis ?",
+    "illus": [
+      {
+        "svg": "vin16-nez-bouche.svg",
+        "legende": "Où se révèle chaque défaut : la Brett et la géosmine au nez, la souris seulement en fin de bouche, avec la salive."
+      }
+    ],
+    "schema": {
+      "titre": "Brett, souris, géosmine : je complète",
+      "lignes": [
+        [
+          "Les vins surtout touchés par Brettanomyces",
+          "les rouges élevés en barrique"
+        ],
+        [
+          "Ce qui la favorise, notamment pendant une malolactique lente",
+          "un soufre insuffisant"
+        ],
+        [
+          "Les molécules du goût de souris",
+          "des tétrahydropyridines (ATHP, ETHP) et une pyrroline (APY)"
+        ],
+        [
+          "Qui les produit ?",
+          "des bactéries lactiques et certaines Brett"
+        ],
+        [
+          "Les moisissures de la géosmine",
+          "des Penicillium (dont P. expansum), sur raisins déjà attaqués par Botrytis cinerea"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Ce vin sent bon, mais il finit sur un goût de cage de souris. C'est du bouchon ? »",
+      "a": "Non, c'est le goût de souris, pas le goût de bouchon (qui relève des anisoles). Ces molécules ne se libèrent qu'au pH élevé de la salive : on ne les sent pas au nez, elles apparaissent en fin de bouche. Les vins très peu sulfités y sont plus exposés."
+    },
+    "cave": "Ouvre un vin de ta cave et goûte-le en deux temps : d'abord le nez seul, puis la fin de bouche, après l'avoir avalé ou recraché. Note ce que tu perçois à chaque étape. Tu t'entraînes à séparer ce qui vient du nez de ce qui n'arrive qu'en bouche."
+  },
+  "251": {
+    "ouverture": "Une odeur d'œuf pourri et une odeur de truffe peuvent-elles venir de la même famille de molécules ? Devine.",
+    "illus": [
+      {
+        "svg": "vin16-premox-pistes.svg",
+        "legende": "Prémox : plusieurs pistes ont été évoquées, aucune cause unique n'est établie."
+      }
+    ],
+    "schema": {
+      "titre": "Soufre et oxygène : je complète",
+      "lignes": [
+        [
+          "Deux facteurs favorisant la réduction",
+          "des levures carencées en azote ; du soufre élémentaire resté sur les raisins"
+        ],
+        [
+          "L'odeur de l'éthanal (acétaldéhyde)",
+          "la pomme fraîchement coupée"
+        ],
+        [
+          "Où l'éthanal est-il recherché ?",
+          "dans les vins de voile"
+        ],
+        [
+          "Les deux composés du goût de lumière",
+          "le méthanethiol et le disulfure de diméthyle (chou, oignon)"
+        ],
+        [
+          "Y a-t-il une cause unique établie pour la prémox ?",
+          "non"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon vin, en bouteille de verre clair, sent l'oignon et le chou. Que lui répondre ? »",
+      "a": "Ce peut être le goût de lumière, mais une réduction (méthanethiol, éthanethiol) donne les mêmes notes ; le verre clair oriente vers la lumière. Sous la lumière, la riboflavine dégrade les acides aminés soufrés en méthanethiol et en disulfure de diméthyle, qui sentent le chou et l'oignon. Le verre clair y est particulièrement sensible."
+    },
+    "cave": "Fais le tour de ta cave et note quelles bouteilles sont en verre clair et lesquelles en verre teinté. Regarde aussi où elles sont exposées à la lumière."
+  },
+  "252": {
+    "ouverture": "Pour qu'un vin sente le bouchon, faut-il beaucoup de molécules ou très peu ? Essaie d'imaginer l'ordre de grandeur.",
+    "illus": [],
+    "schema": {
+      "titre": "Goût de bouchon : je complète",
+      "lignes": [
+        [
+          "La famille chimique du TCA, du TeCA et du TBA",
+          "les anisoles"
+        ],
+        [
+          "Qui les forme à partir d'un phénol chloré ou bromé ?",
+          "des moisissures"
+        ],
+        [
+          "D'où viennent ces phénols ?",
+          "de pesticides ou de traitements du bois"
+        ],
+        [
+          "La source principale, mais pas la seule",
+          "le liège"
+        ],
+        [
+          "Seuil du TCA dans un rouge",
+          "environ 1,4 ng/l (0,3 ng/l dans l'eau)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon vin sent le bouchon, mais la bouteille était fermée par une capsule à vis. C'est possible ? »",
+      "a": "Oui. Le liège est la source principale, mais pas la seule : charpente et bois du chai, barriques peuvent aussi contaminer. Le TBA se fixe aussi sur les plastiques (bouchons synthétiques selon Virginia Tech) ; le Globe and Mail le signale même sur le film des joints de capsule à vis."
+    },
+    "cave": "Pose à un vigneron de ta cave (Château de Fleys, Chablis, par exemple) la question : quel bouchage utilise-t-il, et comment se protège-t-il du goût de bouchon (bouchons, bois du chai, barriques) ? Note sa réponse et compare avec les sources possibles de contamination de la fiche."
+  }
+}

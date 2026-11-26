@@ -1,0 +1,142 @@
+{
+  "112": {
+    "ouverture": "Faut-il laisser l'herbe pousser entre les rangs de vigne ? Qu'est-ce que cela peut apporter, et qu'est-ce que cela peut coûter ?",
+    "illus": [
+      {
+        "svg": "eco04-engrais-verts.svg",
+        "legende": "Les trois familles d'engrais verts citées dans le livre et ce qu'elles font au sol."
+      }
+    ],
+    "schema": {
+      "titre": "L'herbe dans la vigne",
+      "lignes": [
+        [
+          "Ce que l'herbe prend à la vigne",
+          "l'eau et l'azote (concurrence)"
+        ],
+        [
+          "Le risque d'une humidité accrue",
+          "le gel et la pourriture"
+        ],
+        [
+          "Appellation citée dont le cahier des charges impose un couvert des tournières et de l'inter-rang",
+          "Saumur-Champigny (tournières, et inter-rang maîtrisé)"
+        ],
+        [
+          "Les adventices vues comme des bio-indicatrices, selon",
+          "Gérard Ducerf"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi certains vignerons laissent-ils l'herbe pousser, et d'autres pas ? »",
+      "a": "L'herbe fait concurrence à la vigne pour l'eau et l'azote, et peut accroître l'humidité, donc le risque de gel ou de pourriture. Mais le livre présente aussi les engrais verts comme utiles : certains décompactent le sol, d'autres fixent l'azote. Certains cahiers des charges imposent un couvert, d'autres n'en imposent pas explicitement."
+    },
+    "cave": "Saumur-Champigny, dont le cahier des charges impose un couvert des tournières et un couvert maîtrisé de l'inter-rang : à ta prochaine commande au Domaine des Amandiers, demande au vigneron comment il gère l'herbe entre ses rangs, et pourquoi."
+  },
+  "113": {
+    "ouverture": "Quels insectes s'attaquent à la grappe de raisin, et comment s'en défendre sans insecticide ?",
+    "illus": [
+      {
+        "svg": "eco04-agrosysteme.svg",
+        "legende": "À gauche les ravageurs que le livre cite, à droite les moyens associés dans le projet Agrolife."
+      }
+    ],
+    "schema": {
+      "titre": "Ravageurs et auxiliaires",
+      "lignes": [
+        [
+          "Pourquoi la vigne est-elle fragile ?",
+          "en monoculture, elle forme un agrosystème fragile"
+        ],
+        [
+          "Trois ravageurs cités en plus des tordeuses",
+          "cicadelles, acariens, cochenilles"
+        ],
+        [
+          "Les trois moyens associés dans Agrolife",
+          "confusion sexuelle, haies, fleurs indigènes"
+        ],
+        [
+          "Où et quand a eu lieu Agrolife ?",
+          "à Lánia (Chypre), de 2014 à 2017"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « La vigne est une plante robuste, non ? Pourquoi parle-t-on de ravageurs à son sujet ? »",
+      "a": "En monoculture, la vigne forme un agrosystème fragile. Le livre y cite les tordeuses de la grappe (eudémis, cochylis, eulia, pyrale de la vigne), mais aussi cicadelles, acariens et cochenilles. Pour attirer les auxiliaires, le projet Agrolife a associé confusion sexuelle, haies et fleurs indigènes."
+    },
+    "cave": "Prends un vin de ta cave et pose cette question à son vigneron à la prochaine commande : quels insectes surveille-t-il dans ses vignes, et quels moyens utilise-t-il pour s'en protéger ?"
+  },
+  "115": {
+    "ouverture": "Si l'on te parle de permaculture dans une vigne, quels êtres vivants imagines-tu, à part la vigne elle-même ?",
+    "illus": [
+      {
+        "svg": "eco04-echelle.svg",
+        "legende": "L'échelle en dix niveaux présentée dans le livre, attribuée à Alain Malard : une proposition citée par Lepeltier, non retrouvée dans les autres sources lues."
+      }
+    ],
+    "schema": {
+      "titre": "Permaculture et animaux",
+      "lignes": [
+        [
+          "Auteur auquel le livre attribue l'échelle en dix niveaux",
+          "Alain Malard"
+        ],
+        [
+          "Premier et dernier niveau de l'échelle",
+          "la monoculture, puis l'énergie"
+        ],
+        [
+          "Animaux ou travaux évoqués au vignoble",
+          "moutons, chèvres, poules, labour à cheval"
+        ],
+        [
+          "Les deux plantes de l'emblème portant la devise « Non solus »",
+          "l'orme et la vigne"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Des moutons ou des poules dans les vignes, c'est du folklore ? »",
+      "a": "Lepeltier évoque bien des moutons, des chèvres, des poules et même le labour à cheval au vignoble. Dans l'échelle de permaculture qu'elle présente, attribuée à Alain Malard, les animaux (vaches, poules, cochons) viennent après les haies et les arbres. C'est une proposition citée par le livre, que les autres sources lues n'ont pas retrouvée."
+    },
+    "cave": "Prends un vin de ta cave et demande à son vigneron, à la prochaine commande, s'il y a des haies, des arbres ou des animaux près de ses vignes. Où se placerait-il sur l'échelle de permaculture du livre ?"
+  },
+  "114": {
+    "ouverture": "Un arbre planté au milieu des vignes : bonne ou mauvaise idée ? Qu'est-ce qu'il pourrait leur apporter ?",
+    "illus": [
+      {
+        "svg": "eco04-arbre-roles.svg",
+        "legende": "Les rôles que le livre prête aux arbres en général, pas seulement à ceux de Restinclières."
+      }
+    ],
+    "schema": {
+      "titre": "Restinclières",
+      "lignes": [
+        [
+          "Dans quel département, et où ?",
+          "l'Hérault, au nord de Montpellier"
+        ],
+        [
+          "Propriétaire depuis 1990",
+          "le Département de l'Hérault"
+        ],
+        [
+          "Surface",
+          "environ 50 ha selon les sources (53 ha selon le livre)"
+        ],
+        [
+          "Le mot pour l'association d'arbres et de cultures",
+          "agroforesterie"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le livre dit que l'INRA travaille à Restinclières depuis 1990. C'est bien cela ? »",
+      "a": "1990 est l'année où le Département de l'Hérault est devenu propriétaire du domaine. Selon les sources, l'INRA y mène des essais à partir de 1995-1996, pas dès 1990. Sur ce point, le livre et les sources ne concordent donc pas."
+    },
+    "cave": "Château Fonsalade (Saint-Chinian) et Mas du Novi (Languedoc Grès de Montpellier) sont du Languedoc, comme Restinclières. À ta prochaine commande, demande à l'un des deux vignerons s'il y a des arbres ou des haies près de ses parcelles, et à quoi ils servent selon lui."
+  }
+}

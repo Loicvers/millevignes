@@ -1,0 +1,137 @@
+{
+  "355": {
+    "ouverture": "Un vin sent le vinaigre. À ton avis, de quoi se nourrissent les microbes responsables de cette odeur ?",
+    "illus": [
+      {
+        "svg": "vin17-substrats.svg",
+        "legende": "Les quatre maladies décrites par Pasteur : chacune s'attaque à une substance différente du vin."
+      }
+    ],
+    "schema": {
+      "titre": "Quatre maladies, quatre substrats",
+      "lignes": [
+        [
+          "Piqûre lactique : que devient le sucre résiduel ?",
+          "il est transformé en acide acétique (nez de vinaigre)"
+        ],
+        [
+          "Tourne : quelle substance est détruite ?",
+          "l'acide tartrique (acidité fixe en chute, volatile en hausse)"
+        ],
+        [
+          "Graisse : que fabriquent les bactéries à partir du glucose résiduel ?",
+          "un glucane, qui rend le vin visqueux et filant"
+        ],
+        [
+          "Amertume : quelle substance est dégradée ?",
+          "le glycérol, en précurseur d'acroléine qui se combine aux tanins"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Un vin qui sent le vinaigre, c'est la tourne, non ? »",
+      "a": "Pas forcément. Une odeur de vinaigre évoque d'abord la piqûre lactique, la plus courante : des bactéries transforment le sucre résiduel en acide acétique, surtout si elles démarrent avant la fin de la fermentation alcoolique. La tourne, rare, détruit l'acide tartrique : l'acidité fixe chute, et l'acidité volatile monte aussi."
+    },
+    "cave": "À ta prochaine commande, demande au vigneron d'un domaine de ta cave (par exemple Domaine Deprade Jorda, Côtes du Roussillon) comment il surveille les sucres résiduels et la malolactique. Note sa réponse et indique quelle maladie de S-T-G-G cette surveillance aide à prévenir (sucres résiduels → piqûre lactique)."
+  },
+  "356": {
+    "ouverture": "Une bactérie « retire » un petit morceau d'un acide aminé du vin. Que peut-il rester dans le verre, et pourquoi cela intéresse-t-il les personnes sensibles ?",
+    "illus": [
+      {
+        "svg": "vin17-amines.svg",
+        "legende": "Le principe de la décarboxylation : un acide aminé perd un CO₂ et devient une amine biogène."
+      }
+    ],
+    "schema": {
+      "titre": "Les amines biogènes",
+      "lignes": [
+        [
+          "Réaction à l'origine des amines biogènes",
+          "la décarboxylation d'un acide aminé par des bactéries"
+        ],
+        [
+          "Facteurs de risque cités par l'OIV",
+          "pH de moût élevé, raisins abîmés, élevage sur lies"
+        ],
+        [
+          "Parades recommandées",
+          "hygiène, bactéries sélectionnées sans activité décarboxylase, malolactique rapide"
+        ],
+        [
+          "Limite chiffrée fixée par l'OIV ?",
+          "aucune"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Une cliente qui réagit à certains vins : « Est-ce l'histamine ? Les blancs sont-ils plus sûrs ? »",
+      "a": "L'histamine et la tyramine peuvent déclencher des réactions chez les personnes sensibles, mais on ne peut pas affirmer que c'est la cause chez elle. Les rouges, plus souvent passés en malolactique, en contiennent en général davantage : c'est une tendance, pas une règle."
+    },
+    "cave": "Choisis un vin rouge de ta cave et un blanc. Pose à un vigneron, à la prochaine commande, deux questions : la malolactique est-elle faite, et comment est-elle conduite (rapide ? bactéries sélectionnées ?). Note les réponses face aux parades de l'OIV."
+  },
+  "363": {
+    "ouverture": "Un vin limpide à la mise se trouble plus tard. À ton avis, quels métaux du vin peuvent le troubler, et à quelle occasion (air ou absence d'air) ?",
+    "illus": [],
+    "schema": {
+      "titre": "Fer et cuivre",
+      "lignes": [
+        [
+          "Casse qui suit une aération",
+          "la casse ferrique"
+        ],
+        [
+          "Casse propre aux blancs en bouteille, à l'abri de l'air",
+          "la casse cuivrique"
+        ],
+        [
+          "Le fer dans un vin rouge",
+          "se lie aux phénols : teinte plus sombre, reflet noirâtre, puis dépôt"
+        ],
+        [
+          "Qui protège, qui retire les protéines ?",
+          "acide citrique et gomme arabique protègent ; la bentonite retire les protéines"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Pourquoi parle-t-on surtout de casse ferrique pour les blancs ? En rouge, le fer ne gêne pas ? »",
+      "a": "Parce qu'en blanc, le fer ferrique forme avec le phosphate un colloïde que les protéines font floculer : un trouble blanc. En rouge, il se lie plutôt aux phénols : la teinte fonce, avec un reflet noirâtre, puis un dépôt."
+    },
+    "cave": "À la prochaine commande, demande au vigneron du Domaine Martin Clerc (Condrieu) ou du Château de Fleys (Chablis) si ses blancs sont traités à la bentonite avant la mise. Note la réponse et rattache-la au mécanisme des protéines."
+  },
+  "364": {
+    "ouverture": "Un blanc embouteillé est bu quelques mois plus tard : le fruit frais a disparu et on sent de la cire. Est-ce plutôt une question de région, de cépage ou de défaut ?",
+    "illus": [
+      {
+        "svg": "vin17-ata.svg",
+        "legende": "Vieillissement atypique : ce qui préserve le fruité, ce qui aggrave. Le lien avec le stress de la vigne reste débattu."
+      }
+    ],
+    "schema": {
+      "titre": "Le vieillissement atypique (ATA)",
+      "lignes": [
+        [
+          "Odeurs d'un blanc touché",
+          "naphtaline, fleur d'acacia, cire, vernis ou miel, fruité perdu"
+        ],
+        [
+          "Marqueur principal",
+          "la 2-aminoacétophénone, avec le sotolon"
+        ],
+        [
+          "Vigne associée au défaut (lien débattu)",
+          "vigne stressée (azote ou eau en défaut), raisins pauvres en glutathion"
+        ],
+        [
+          "Élevage qui protège ; élevage qui aggrave",
+          "protège : lies totales, fûts usagés ; aggrave : bois neuf sans lies"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Si l'analyse ne trouve pas de 2-aminoacétophénone, le vin n'a donc pas le défaut ? »",
+      "a": "Pas forcément. La 2-aminoacétophénone est le marqueur principal, mais certains vins défectueux n'en contiennent pas : elle n'explique pas tout. Le nez (fruité perdu, naphtaline, acacia, cire, vernis, miel) reste le meilleur indice."
+    },
+    "cave": "Ouvre un blanc jeune (un ou deux ans) de ta cave. Note d'abord le fruité (frais, mûr, absent ?), puis cherche naphtaline, cire ou miel. Si tu en trouves, ne conclus ni à la région ni au cépage : compare avec la fiche et demande-toi si le fruit jeune a disparu."
+  }
+}

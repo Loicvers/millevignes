@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <line x1="215" y1="124" x2="345" y2="124" stroke="#a8843a" stroke-width="1.5"/>
+  <rect x="274" y="90" width="12" height="34" fill="#a8843a"/>
+  <circle cx="280" cy="58" r="38" fill="#faf3e0" stroke="#5c7a4f" stroke-width="1.5"/>
+  <g stroke="#d8d0c2" stroke-width="1">
+    <path d="M198 30 L248 44"/><path d="M198 70 L243 62"/><path d="M198 112 L274 118"/>
+    <path d="M362 45 L318 52"/><path d="M362 95 L318 72"/>
+  </g>
+  <g text-anchor="end"><text x="194" y="33">Abri pour les auxiliaires</text><text x="194" y="73">Ombrage</text><text x="194" y="115">Maintien du sol</text></g>
+  <g><text x="366" y="48">Brise-vent</text><text x="366" y="98">Pare-feu</text></g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 170" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M60 150 V30" stroke="#625a4e" stroke-width="6"/>
+  <path d="M60 60 C30 50 20 35 30 22 M60 45 C90 35 100 25 92 14 M60 90 C35 80 25 70 32 60" stroke="#5c7a4f" stroke-width="3" fill="none"/>
+  <path d="M60 140 C90 120 30 100 56 80 C80 62 40 50 60 30" stroke="#5b1a24" stroke-width="2.5" fill="none"/>
+  <path d="M20 150 H110" stroke="#625a4e"/>
+  <text x="125" y="40" font-weight="700" fill="#5b1a24">Depuis l'Antiquité</text>
+  <text x="125" y="56" font-size="10">asprinio d'Aversa sur peupliers,</text>
+  <text x="125" y="70" font-size="10">au-delà de 10 m</text>
+  <text x="125" y="90" font-size="10">répandu en Italie centrale jusqu'aux années 1960</text>
+  <text x="125" y="108" font-size="10" fill="#625a4e">visible en Géorgie, en Bolivie (Cinti),</text>
+  <text x="125" y="122" font-size="10" fill="#625a4e">au Chili (Colchagua)</text>
+  <rect x="380" y="20" width="170" height="100" rx="6" fill="#faf3e0" stroke="#5c7a4f"/>
+  <text x="465" y="40" text-anchor="middle" font-weight="700" fill="#5c7a4f">Vitiforesterie moderne</text>
+  <text x="465" y="56" text-anchor="middle" font-size="10">(une trentaine d'années)</text>
+  <text x="465" y="76" text-anchor="middle" font-size="10">arbres interplantés</text>
+  <text x="465" y="90" text-anchor="middle" font-size="10">ou en bordure de vigne</text>
+  <text x="465" y="108" text-anchor="middle" font-size="10" fill="#625a4e">sol · biomasse · microclimat · gel</text>
+  <text x="10" y="165" font-size="10" fill="#625a4e">Schéma de principe : hauteurs et proportions non respectées.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="0" y="4" width="270" height="130" rx="6" fill="#faf3e0" stroke="#a8843a"/>
+  <text x="135" y="23" text-anchor="middle" font-weight="700" fill="#5b1a24">Californie · Martha's Vineyard</text>
+  <text x="135" y="48" text-anchor="middle" font-style="italic">l'eucalyptus voisin</text>
+  <path d="M135 56 V74" stroke="#a8843a" stroke-width="1.4"/><path d="M130 70 L135 77 L140 70" fill="none" stroke="#a8843a" stroke-width="1.4"/>
+  <text x="135" y="94" text-anchor="middle">note mentholée du cabernet</text>
+  <text x="135" y="116" text-anchor="middle" font-size="10" font-style="italic" fill="#625a4e">explication du livre, mise en doute par Heitz</text>
+  <rect x="290" y="4" width="270" height="130" rx="6" fill="#faf3e0" stroke="#456e8a"/>
+  <text x="425" y="23" text-anchor="middle" font-weight="700" fill="#5b1a24">Bordeaux · ISVV, 2017</text>
+  <text x="425" y="48" text-anchor="middle" font-style="italic">l'armoise de Verlot</text>
+  <path d="M425 56 V74" stroke="#456e8a" stroke-width="1.4"/><path d="M420 70 L425 77 L430 70" fill="none" stroke="#456e8a" stroke-width="1.4"/>
+  <text x="425" y="94" text-anchor="middle" font-size="10.5">plus de 1,8-cinéole dans certains rouges</text>
+  <text x="425" y="116" text-anchor="middle" font-size="10" font-style="italic" fill="#625a4e">lien relevé par les chercheurs</text>
+</svg>

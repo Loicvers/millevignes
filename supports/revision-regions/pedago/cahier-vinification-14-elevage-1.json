@@ -1,0 +1,127 @@
+{
+  "238": {
+    "ouverture": "Le bois d’un fût laisse passer un peu d’air. À ton avis, est-ce un défaut du fût ou un avantage pour le vin ?",
+    "illus": [],
+    "schema": {
+      "titre": "Doser l’air",
+      "lignes": [
+        [
+          "Élevage qui limite l’air (cuve fermée)",
+          "réducteur"
+        ],
+        [
+          "Arômes fragiles qu’il protège (exemple du livre)",
+          "les thiols du sauvignon"
+        ],
+        [
+          "Ce que fait un peu d’air sur les tanins et la couleur",
+          "il assouplit les tanins et stabilise la couleur"
+        ],
+        [
+          "Outil qui reproduit cet apport d’air en cuve",
+          "la micro-oxygénation"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « J’ai lu qu’une barrique neuve laisse entrer 0,4 mg/l d’oxygène par an, surtout par la bonde. C’est exact ? »",
+      "a": "C’est ce qu’avance le livre, mais les mesures publiées sont plutôt de l’ordre de 10 à 45 mg/l par an. Selon l’étude de Vivas (1997), reprise par le Handbook of Enology, la bonde ne compte que pour environ 21 % de l’entrée, contre 63 % par les joints entre douelles."
+    },
+    "cave": "À ta prochaine commande, demande au Château Moulin Caresse (Montravel) s’il élève ses vins en cuve fermée ou en fût, et ce qu’il en attend : protéger les arômes ou assouplir les tanins. Note sa réponse ici."
+  },
+  "358": {
+    "ouverture": "Un vieux rouge est souvent plus brique que mauve. À ton avis, sa couleur a-t-elle disparu ou changé de forme ?",
+    "illus": [],
+    "schema": {
+      "titre": "La couleur en élevage",
+      "lignes": [
+        [
+          "Pigments de départ, qui s’effacent",
+          "les anthocyanes libres"
+        ],
+        [
+          "Ce que l’oxygène ménagé fait de l’éthanol",
+          "il l’oxyde en éthanal"
+        ],
+        [
+          "Rôle de l’éthanal",
+          "pont entre anthocyanes et tanins"
+        ],
+        [
+          "Évolution de la teinte des pigments formés",
+          "du mauve vers des formes orangées plus stables"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Mon rouge de dix ans a le bord du verre tuilé. Il est fatigué, non ? »",
+      "a": "Pas forcément. Au fil des ans, les anthocyanes libres s’effacent mais la couleur reste : elle passe dans des pigments liés aux tanins. Ceux-ci évoluent du mauve vers des formes orangées, et en bouteille, sans air, la teinte glisse vers le brique."
+    },
+    "cave": "Choisis deux millésimes d’un même rouge de ta cave (par exemple le Médoc du Château Haut-Maurac). Penche chaque verre sur fond blanc et note la couleur du bord : mauve, rubis, brique ? Relie ce que tu vois à la fiche."
+  },
+  "239": {
+    "ouverture": "Deux chênes d’espèces voisines : à ton avis, qu’est-ce qui peut changer dans ce que leur bois donne au vin ?",
+    "illus": [
+      {
+        "svg": "vin14-glands.svg",
+        "legende": "Moyen mnémotechnique : sessile, glands « assis » ; pédonculé, glands sur une tige."
+      }
+    ],
+    "schema": {
+      "titre": "Trois chênes",
+      "lignes": [
+        [
+          "Quercus petraea",
+          "le chêne sessile (rouvre)"
+        ],
+        [
+          "Quercus robur",
+          "le chêne pédonculé"
+        ],
+        [
+          "Quercus alba",
+          "le chêne blanc américain"
+        ],
+        [
+          "Chêne pauvre en whisky-lactones",
+          "le pédonculé"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Pourquoi dit-on que le fût américain sent la noix de coco ? »",
+      "a": "Le chêne blanc américain est riche en lactones, et ce sont elles qui évoquent la noix de coco : cette richesse est confirmée par les dosages (Handbook of Enology, IFV). Le clou de girofle que Lepeltier y perçoit est plus discutable, car son eugénol n’est pas plus abondant que celui du sessile."
+    },
+    "cave": "Sur la fiche technique d’un vin du Domaine Pernot Père & Fils (Gevrey-Chambertin), cherche si l’origine du bois (forêt, espèce) est indiquée. Sinon, pose la question au vigneron : la fiche rappelle que la forêt pèse comme un terroir, mais que l’origine seule ne suffit pas à classer un fût."
+  },
+  "240": {
+    "ouverture": "Pour fabriquer un fût, on chauffe le bois. À ton avis, qu’est-ce que cette chaleur change aux arômes que le fût donnera ?",
+    "illus": [],
+    "schema": {
+      "titre": "Du bois au fût",
+      "lignes": [
+        [
+          "Nom de la chauffe des douelles",
+          "le bousinage"
+        ],
+        [
+          "Molécule fumée qui monte avec l’intensité de la chauffe",
+          "le gaïacol"
+        ],
+        [
+          "Plus un fût est ………, plus il marque le vin",
+          "petit et neuf"
+        ],
+        [
+          "Ce qui s’épuise avec l’usage",
+          "le bois"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Le vigneron me dit que son fût a cinq ans. Il donne encore du goût de bois ? »",
+      "a": "Peu : avec l’usage le bois s’épuise, et l’IFV compte environ cinq ans d’emploi utile. Un vieux fût devient plus neutre, mais jamais tout à fait. Virginia Tech signale aussi que de vieux fûts peuvent porter des défauts (éthylphénols)."
+    },
+    "cave": "Sur la fiche technique d’un vin du Château Jean Faure (Saint-Émilion grand cru classé), relève ce qui est indiqué sur le fût : part de bois neuf, taille, chauffe. Si rien n’est précisé, note-le comme question pour ta prochaine commande."
+  }
+}

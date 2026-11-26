@@ -278,12 +278,12 @@ const RECITS = [
  "question": "La vigne peut-elle vivre seule ?",
  "fil": [
   "Non : comme toute plante, c’est un holobionte, un organisme et l’ensemble des micro-organismes qu’il héberge. Ses chloroplastes descendent eux-mêmes de bactéries. Ce peuple microbien est fragile, et les fongicides peu sélectifs l’atteignent aussi.",
-  "<b>Les ennemis.</b> L’oïdium et le mildiou, venus d’Amérique au XIXe siècle, concentrent presque tous les traitements fongicides. On reconnaît aujourd’hui que leur maîtrise passe par la prévention et l’équilibre de l’écosystème. Le biocontrôle par des microbes est étudié, sans résultats encore convaincants. L’idée de « terroirs microbiens », des levures et bactéries propres à chaque lieu, reste débattue.",
-  "<b>Les arbres.</b> À l’état sauvage, la vigne grimpe aux arbres. Les Étrusques la « marient à l’arbre », et jusqu’au XIXe siècle les joualles associent vigne, arbres fruitiers et cultures. Remembrement et monoculture chassent les arbres ; l’agroforesterie viticole les fait revenir (Restinclières). Les plantes voisines peuvent même marquer le vin : l’eucalyptol des eucalyptus se retrouve dans certains vins.",
+  "<b>Les ennemis.</b> L’oïdium et le mildiou, venus d’Amérique au XIXe siècle, concentrent presque tous les traitements fongicides. On reconnaît aujourd’hui que leur maîtrise passe par la prévention et l’équilibre de l’écosystème. Le biocontrôle par des microbes progresse : certains produits sont déjà homologués. L’idée de « terroirs microbiens », des levures et bactéries propres à chaque lieu, reste débattue.",
+  "<b>Les arbres.</b> À l’état sauvage, la vigne grimpe aux arbres. Selon le livre, les Étrusques la « marient à l’arbre » ; longtemps, les joualles associent vigne, arbres fruitiers et cultures, avant d’être condamnées par les agronomes puis par le remembrement du XXe siècle. La monoculture chasse les arbres ; l’agroforesterie viticole les fait revenir (Restinclières). Les plantes voisines peuvent même marquer le vin : l’eucalyptol se retrouve dans certains vins, surtout par les débris de feuilles récoltés avec le raisin.",
   "<b>L’herbe et les bêtes.</b> L’herbe, longtemps ennemie (concurrence pour l’eau, gel, pourriture), revient sous forme de couverts végétaux et de plantes bio-indicatrices. Ravageurs et auxiliaires se régulent mutuellement si le milieu leur offre gîte et couvert ; moutons, poules ou chevaux retrouvent leur place dans certaines vignes."
  ],
  "defend": "La monoculture a isolé une liane faite pour vivre en compagnie. La comprendre, c’est savoir avec qui elle vit en permanence.",
- "client": "« Les notes mentholées du cabernet sauvignon Martha’s Vineyard de Heitz Cellar viennent des eucalyptus qui bordent la vigne : leur eucalyptol se dépose sur les raisins. »",
+ "client": "« Les notes mentholées du Martha’s Vineyard de Heitz Cellar ? Le livre les attribue aux eucalyptus voisins, mais Joe Heitz pensait plutôt au clone, et l’AWRI relie l’eucalyptol surtout aux débris de feuilles récoltés avec le raisin. »",
  "filRouge": "Qu’est-ce qu’un holobionte, et pourquoi la vigne en est-elle un ?",
  "prudence": [
   "Arrivée du mildiou : 1878 (le livre dit 1879 dans ce chapitre).",
@@ -645,8 +645,8 @@ const RECITS = [
  "fil": [
   "Longtemps, le vin vieilli était plutôt un vin abîmé ; la recherche d’un élevage de qualité ne date vraiment que des années 1980.",
   "<b>Jouer avec l’oxygène.</b> L’élevage réducteur protège le vin de l’air pour garder des arômes fragiles (les thiols du sauvignon) ; mal mené, il donne des odeurs soufrées. L’élevage oxydatif apporte un peu d’oxygène pour assouplir les tanins et stabiliser la couleur ; la micro-oxygénation reproduit ce principe en cuve.",
-  "<b>Le chêne.</b> Le bois a remplacé l’amphore. Parmi les chênes, quelques espèces servent à la tonnellerie ; le chêne sessile français, au grain fin, est le plus prisé pour les vins. Les forêts (Tronçais, Bertranges…) et le savoir-faire des tonneliers comptent comme un terroir. La chauffe du fût (légère, moyenne, forte) oriente les arômes : vanille, épices, torréfaction. Plus le fût est petit et neuf, plus il marque le vin ; un vieux fût n’est jamais tout à fait neutre.",
-  "<b>Les lies fines</b>, levures mortes, nourrissent le vin et lui donnent gras et fraîcheur.",
+  "<b>Le chêne.</b> Le bois a remplacé l’amphore. Parmi les chênes, quelques espèces servent à la tonnellerie ; le chêne sessile français, réputé au grain fin selon le livre, est le plus prisé pour les vins. Les forêts (Tronçais, Bertranges…) et le savoir-faire des tonneliers comptent comme un terroir. La chauffe du fût (légère, moyenne, forte) oriente les arômes : vanille, épices, torréfaction. Plus le fût est petit et neuf, plus il marque le vin ; un vieux fût n’est jamais tout à fait neutre.",
+  "<b>Les lies fines</b>, levures mortes, stabilisent le vin ; selon Lepeltier, elles lui donnent aussi du gras.",
   "<b>Les alternatives.</b> Copeaux, béton, inox, et le retour des jarres d’argile, inspiré de la Géorgie."
  ],
  "defend": "L’élevage, science, art et artisanat, est devenu l’un des champs d’expérimentation les plus actifs des vignerons, tant il pèse sur la qualité et la capacité de garde.",

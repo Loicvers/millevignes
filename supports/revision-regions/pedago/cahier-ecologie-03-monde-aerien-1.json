@@ -1,0 +1,176 @@
+{
+  "107": {
+    "ouverture": "Une feuille de vigne est-elle « vide » à sa surface, ou habitée ? Par quoi, à ton avis ?",
+    "illus": [],
+    "schema": {
+      "titre": "La vigne, une plante habitée",
+      "lignes": [
+        [
+          "Le mot pour un hôte et son microbiote",
+          "holobionte"
+        ],
+        [
+          "Le microbiote couvre quel éventail ?",
+          "des mutualistes aux parasites"
+        ],
+        [
+          "Origine supposée des chloroplastes",
+          "des cyanobactéries intégrées à la cellule (théorie endosymbiotique)"
+        ],
+        [
+          "Question que pose la vigne « supraorganisme »",
+          "celle des fongicides peu sélectifs"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Un fongicide ne vise que le champignon de la maladie, non ? Pourquoi Lepeltier s'interroge-t-elle sur ces produits ? »",
+      "a": "Parce que la vigne est un holobionte : elle vit avec un microbiote où se côtoient mutualistes et parasites. Un fongicide peu sélectif peut toucher d'autres micro-organismes que l'agent visé ; c'est la question que pose le livre."
+    },
+    "cave": "À ta prochaine commande, demande au vigneron du Domaine des Amandiers (Saumur-Champigny) comment il protège sa vigne des maladies, et note si son vocabulaire parle de produits ciblés ou de produits larges."
+  },
+  "108": {
+    "ouverture": "Une maladie de la vigne peut-elle être causée par autre chose qu'un champignon ? Cite ce que tu imagines.",
+    "illus": [
+      {
+        "svg": "eco03-agents.svg",
+        "legende": "Des micro-organismes servent d'alliés, d'autres sont des agents de maladies."
+      }
+    ],
+    "schema": {
+      "titre": "Alliés et pathogènes : je complète",
+      "lignes": [
+        [
+          "Nature de l'agent de la maladie de Pierce",
+          "une bactérie (Xylella fastidiosa)"
+        ],
+        [
+          "Bactérie citée contre l'oïdium",
+          "Bacillus pumilus"
+        ],
+        [
+          "Levure citée contre la pourriture grise",
+          "Metschnikowia fructicola"
+        ],
+        [
+          "Amibe dont le lysat est approuvé dans l'UE en 2025",
+          "Willaertia magna (cible non précisée)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Mon vigneron parle de Trichoderma contre l'esca. C'est un produit de synthèse ? »",
+      "a": "Non : Trichoderma est un champignon, utilisé en biocontrôle, c'est-à-dire en luttant par un organisme vivant. Le livre le cite contre les maladies du bois : esca, black dead arm et eutypiose."
+    },
+    "cave": "Demande au vigneron du Mas du Novi (Languedoc Grès de Montpellier) s'il utilise du biocontrôle contre l'oïdium ou les maladies du bois, et lequel. Note sa réponse et compare-la à la liste du cours."
+  },
+  "109": {
+    "ouverture": "Deux vignobles éloignés portent-ils les mêmes levures et bactéries sur leurs raisins ? Devine, puis relis après.",
+    "illus": [
+      {
+        "svg": "eco03-terroir-microbien.svg",
+        "legende": "Les communautés microbiennes varient avec plusieurs facteurs ; leur effet sur le goût du vin n'est pas démontré."
+      }
+    ],
+    "schema": {
+      "titre": "Terroir microbien : ce qui est établi, ce qui ne l'est pas",
+      "lignes": [
+        [
+          "Nombre de moûts de l'étude californienne",
+          "273 (chardonnay, zinfandel, cabernet-sauvignon)"
+        ],
+        [
+          "Différence entre régions",
+          "nette mais faible"
+        ],
+        [
+          "Autres facteurs dont dépendent les communautés",
+          "le cépage et le millésime (corrélation aussi avec certains traits du climat)"
+        ],
+        [
+          "Ce que l'étude établit",
+          "des corrélations, sans démontrer de causalité"
+        ],
+        [
+          "Effet sur le goût du vin",
+          "à démontrer"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « On m'a dit que les levures du lieu font le terroir. C'est prouvé ? »",
+      "a": "Non. Les séquençages montrent que les communautés de levures et de bactéries varient selon les lieux, mais ce sont des corrélations : leur effet sur le goût reste à démontrer, et Lepeltier signale que ces résultats sont contestés."
+    },
+    "cave": "À la prochaine commande, demande au vigneron du Château de Montmirail (Gigondas) s'il fait fermenter avec des levures indigènes ou sélectionnées. Sa réponse ne prouve rien sur un terroir microbien : note-la simplement."
+  },
+  "110": {
+    "ouverture": "Avant les échalas et les fils de fer, à quoi pouvait bien servir un arbre vivant au milieu d'une vigne ? Devine.",
+    "illus": [
+      {
+        "svg": "eco03-complantation.svg",
+        "legende": "Une parcelle complantée : la vigne partage le terrain avec d'autres plantes."
+      }
+    ],
+    "schema": {
+      "titre": "La vigne et l'arbre",
+      "lignes": [
+        [
+          "Origine de la conduite haute, selon Lepeltier",
+          "les Étrusques"
+        ],
+        [
+          "La complantation (joala, joualle)",
+          "des rangs de vigne séparés par des bandes d'autres cultures"
+        ],
+        [
+          "Ce qui a condamné la pratique",
+          "les agronomes, puis le remembrement du XXe siècle"
+        ],
+        [
+          "Renaissance à Saint-Émilion",
+          "Les Joualles de Cormeil-Figeac (arbres plantés depuis 2020)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client montre une gravure de vignes grimpant dans des arbres : « Un caprice d'artiste ? »",
+      "a": "Non, c'est la vite maritata, la vigne arborescente : sur le modèle de la liane forestière, la vigne a longtemps grimpé sur des arbres vivants. Selon Lepeltier, la pratique vient des Étrusques. Condamnée par les agronomes puis par le remembrement du XXe siècle, elle a presque disparu, mais des domaines la font renaître."
+    },
+    "cave": "Demande au vigneron d'un domaine de Saint-Émilion de ta cave (Château Jean Faure, par exemple) s'il y a des arbres, des haies ou d'autres cultures près de ses vignes. Note la réponse."
+  },
+  "111": {
+    "ouverture": "Un vin peut-il sentir la menthe parce qu'un arbre ou une herbe pousse près de la vigne ? Qu'en penses-tu ?",
+    "illus": [
+      {
+        "svg": "eco03-eucalyptus-armoise.svg",
+        "legende": "Deux plantes voisines, deux pistes pour une note mentholée ; la première est contestée, la seconde est un lien relevé par une équipe de recherche."
+      }
+    ],
+    "schema": {
+      "titre": "Plantes voisines et note mentholée",
+      "lignes": [
+        [
+          "Cave californienne dont le cabernet est cité",
+          "Heitz Cellar (Martha's Vineyard)"
+        ],
+        [
+          "Ce que Joe Heitz invoquait plutôt que l'eucalyptus",
+          "le clone"
+        ],
+        [
+          "Autre nom du 1,8-cinéole",
+          "l'eucalyptol"
+        ],
+        [
+          "D'où vient surtout le 1,8-cinéole, selon l'AWRI ?",
+          "des débris d'eucalyptus récoltés avec le raisin, plutôt que d'un dépôt aérien"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « L'eucalyptus au bord de la vigne donne-t-il vraiment du menthol au vin ? »",
+      "a": "Le livre l'avance pour le cabernet de Martha's Vineyard, mais Joe Heitz en doutait lui-même et pensait au clone. L'AWRI relie le 1,8-cinéole surtout aux débris d'eucalyptus récoltés avec le raisin, plutôt qu'à un dépôt aérien. L'explication reste donc discutée."
+    },
+    "cave": "Goûte un rouge de Médoc de ta cave (Château Haut-Maurac) en cherchant une nuance mentholée, et note si tu la trouves. Le cours dit seulement que l'armoise de Verlot a été reliée à plus de 1,8-cinéole dans certains rouges bordelais : rien n'est affirmé sur ce vin."
+  }
+}

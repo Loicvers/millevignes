@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 130">
+  <text x="280" y="14" text-anchor="middle" font-weight="700" fill="#5b1a24">Descola : quatre ontologies</text>
+  <g stroke-width="1.2">
+    <rect x="8" y="26" width="126" height="46" rx="6" fill="#faf3e0" stroke="#5b1a24" stroke-width="2"/>
+    <rect x="154" y="26" width="126" height="46" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="300" y="26" width="126" height="46" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="446" y="26" width="106" height="46" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="71" y="45" font-weight="700" fill="#5b1a24">Naturalisme</text>
+    <text x="71" y="60" font-size="10" fill="#625a4e">sépare nature et culture</text>
+    <text x="217" y="53" font-weight="700" fill="#625a4e">Animisme</text>
+    <text x="363" y="53" font-weight="700" fill="#625a4e">Totémisme</text>
+    <text x="499" y="53" font-weight="700" fill="#625a4e">Analogisme</text>
+  </g>
+  <rect x="8" y="88" width="544" height="32" rx="6" fill="#f0ece4" stroke="#d8d0c2"/>
+  <text x="280" y="108" text-anchor="middle" fill="#456e8a">Latour s'appuie sur l'hypothèse Gaïa : la Terre vue comme un système autorégulé</text>
+</svg>

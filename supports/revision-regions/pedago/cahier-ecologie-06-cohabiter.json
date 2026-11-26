@@ -1,0 +1,177 @@
+{
+  "123": {
+    "ouverture": "Face à un problème de vigne, on peut vouloir intervenir de force ou accompagner la plante. Laquelle de ces deux attitudes Haudricourt appelle-t-il « action directe positive » ?",
+    "illus": [
+      {
+        "svg": "eco06-deux-actions.svg",
+        "legende": "Les deux actions de Haudricourt, que Lepeltier met en regard du réflexe « un problème, une molécule » et d'une conduite qui accompagne la vigne."
+      }
+    ],
+    "schema": {
+      "titre": "Haudricourt et Fukuoka",
+      "lignes": [
+        [
+          "Modèle de l'action directe positive, dans l'article de 1962",
+          "l'élevage du mouton"
+        ],
+        [
+          "Modèle de l'action indirecte négative",
+          "l'igname"
+        ],
+        [
+          "Le réflexe que Lepeltier met en cause",
+          "« à un problème, une molécule »"
+        ],
+        [
+          "Fukuoka cultive à Shikoku sans…",
+          "machine, pesticide, engrais ni labour"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Haudricourt parlait-il de Fukuoka ? »",
+      "a": "Non : dans son article de 1962, Haudricourt ne parle pas de Fukuoka. Le rapprochement avec l'agriculture naturelle japonaise est celui de Lepeltier. Haudricourt oppose une action directe positive à une action indirecte négative, et refuse d'y voir un déterminisme géographique."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire (par exemple au Domaine Deprade Jorda, en Côtes du Roussillon) comment il réagit face à un problème de vigne. Note sa réponse et classe-la : plutôt « un problème, une molécule », ou plutôt une conduite multifactorielle ?"
+  },
+  "124": {
+    "ouverture": "Labourer le sol d'une vigne : geste anodin ou perturbation ? Qu'en pense Lepeltier, à ton avis ?",
+    "illus": [
+      {
+        "svg": "eco06-frise.svg",
+        "legende": "Trois repères datés, et une date discutée : celle de l'expression « agriculture régénérative »."
+      }
+    ],
+    "schema": {
+      "titre": "Permaculture, régénératif, sol non labouré",
+      "lignes": [
+        [
+          "Les deux auteurs de Permaculture One (1978)",
+          "Bill Mollison et David Holmgren"
+        ],
+        [
+          "Qui forge et popularise l'agriculture « régénérative » ?",
+          "Robert Rodale (1930-1990)"
+        ],
+        [
+          "Pour Lepeltier, le labour est…",
+          "une bioturbation humaine, intensifiée par la mécanisation du début du XXe siècle"
+        ],
+        [
+          "Domaine de l'Oregon qui n'a jamais labouré depuis sa création",
+          "Eyrie Vineyards (David Lett, 1965)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Depuis quand parle-t-on d'agriculture régénérative ? »",
+      "a": "On ne le sait pas avec certitude : l'expression est datée du début des années 1980 par le livre, mais dès les années 1970, au Rodale Institute, selon d'autres sources (TABLE). Les sources s'accordent seulement sur le fait que Robert Rodale l'a forgée et popularisée."
+    },
+    "cave": "Sur la fiche technique d'un domaine partenaire (par exemple le Domaine Burghart-Spettel, en Alsace), cherche comment le sol des vignes est entretenu. Si l'information manque, pose la question au vigneron à la prochaine commande, puis compare sa réponse à l'exemple d'Eyrie."
+  },
+  "125": {
+    "ouverture": "À ton avis, que peut apporter un arbre planté dans une vigne ou à sa lisière ?",
+    "illus": [
+      {
+        "svg": "eco06-vigne-arbre.svg",
+        "legende": "De la vigne sur arbres d'autrefois à la vitiforesterie moderne (schéma de principe)."
+      }
+    ],
+    "schema": {
+      "titre": "La vitiforesterie",
+      "lignes": [
+        [
+          "Âge de la vitiforesterie moderne",
+          "une trentaine d'années"
+        ],
+        [
+          "Ce que les arbres sont censés apporter",
+          "sol, biomasse, microclimat, protection contre le gel"
+        ],
+        [
+          "Exemple cité par Lepeltier à Charnay (Éric Texier)",
+          "Vignenvie"
+        ],
+        [
+          "Exemple du Saumurois",
+          "Château de Fosse-Sèche"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les arbres dans les vignes, c'est une mode récente ? »",
+      "a": "Pas tout à fait. Lepeltier rappelle que la vigne associée aux arbres est connue depuis l'Antiquité, comme l'asprinio d'Aversa sur ses peupliers. Seule la vitiforesterie moderne, qui interplante ou borde la vigne d'arbres, a une trentaine d'années."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire (par exemple au Domaine des Amandiers, en Saumur-Champigny) s'il y a des arbres ou des haies dans ou autour de ses parcelles, et ce qu'ils y apportent selon lui. Compare sa réponse à la liste : sol, biomasse, microclimat, gel."
+  },
+  "126": {
+    "ouverture": "À ton avis, que peut faire un mouton dans une vigne en hiver ?",
+    "illus": [
+      {
+        "svg": "eco06-balance-mouton.svg",
+        "legende": "Le bilan de l'étude de 2018 : les avantages dépassent les inconvénients."
+      }
+    ],
+    "schema": {
+      "titre": "Des animaux dans la vigne",
+      "lignes": [
+        [
+          "Pâturage à demeure ou de passage, souvent…",
+          "l'hiver"
+        ],
+        [
+          "Étude de Niles, Garrett et Walsh (2018)",
+          "Marlborough, 15 viticulteurs"
+        ],
+        [
+          "Avantages cités",
+          "tonte, herbicides, azote, fioul, effeuillage"
+        ],
+        [
+          "Inconvénient cité",
+          "dégâts sur fils et tuyaux"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Le domaine Léon Barral est-il le pionnier des animaux dans la vigne ? »",
+      "a": "Lepeltier le cite comme pionnier de l'intégration animale. Mais les sources lues y décrivent seulement un troupeau d'environ 60 vaches : ce rôle de pionnier n'y est pas attesté."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire (par exemple au Château de Montmirail, à Gigondas) si des animaux passent dans ses vignes, à quelle saison et lesquels. Note ce que tu apprends sur les avantages et les inconvénients."
+  },
+  "127": {
+    "ouverture": "Le mot « agroécologie » est-il plutôt d'avant-guerre, des années 1970 ou de l'an 2000 ? Devine.",
+    "illus": [
+      {
+        "svg": "eco06-origine-mot.svg",
+        "legende": "Origine du mot agroécologie : deux attributions, dont une seule est celle de Lepeltier ; l'attribution n'est pas tranchée."
+      }
+    ],
+    "schema": {
+      "titre": "Qui a inventé le mot ? (débat non tranché)",
+      "lignes": [
+        [
+          "Auteur et année selon Lepeltier",
+          "Basil Bensin, 1928"
+        ],
+        [
+          "Autre attribution, selon d'autres auteurs",
+          "Friederichs, 1930"
+        ],
+        [
+          "Selon un document INRAE (BASC), Bensin…",
+          "n'emploie pas le mot dans ses travaux de 1928 et 1935"
+        ],
+        [
+          "Miguel Altieri, cité par Lepeltier",
+          "ouvrage de base scientifique sur une agriculture alternative (1983, réédité en 1987)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Alors, qui a inventé le mot agroécologie ? »",
+      "a": "L'attribution n'est pas tranchée. Lepeltier cite Basil Bensin en 1928, d'autres auteurs Friederichs en 1930. Un document INRAE affirme que Bensin n'emploie pas le mot en 1928 ni en 1935, et la fondation Micheletti présente l'article de Bensin d'août 1930 comme l'un des premiers à l'employer."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire (par exemple au Mas du Novi, en Languedoc Grès de Montpellier) ce que l'agroécologie signifie pour lui. Note sa réponse et compare-la à l'idée de lire le champ cultivé comme un écosystème."
+  }
+}

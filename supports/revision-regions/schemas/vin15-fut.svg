@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 100" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <text x="560" y="10" text-anchor="end" font-size="9.5" font-style="italic" fill="#625a4e">schéma de principe</text>
+  <rect x="5" y="4" width="110" height="50" rx="14" fill="#5b1a24" fill-opacity="0.8" stroke="#1a1612"/><rect x="20" y="46" width="80" height="7" fill="#a8843a"/><text x="60" y="34" text-anchor="middle" fill="#faf3e0">vin</text>
+  <text x="125" y="26" font-size="10.5" font-weight="700">Fût ouillé</text><text x="125" y="40" font-size="10">vide comblé, vin protégé</text>
+  <rect x="5" y="58" width="110" height="38" rx="12" fill="#faf3e0" stroke="#1a1612"/><path d="M6 76 H114 V84 Q114 95 102 95 H18 Q6 95 6 84 Z" fill="#5b1a24" fill-opacity="0.8"/><text x="60" y="71" text-anchor="middle" fill="#625a4e" font-size="10">air</text>
+  <text x="125" y="72" font-size="10.5" font-weight="700">Fût non plein</text><text x="125" y="86" font-size="10">air : oxydation, bactéries acétiques, voile</text>
+  <rect x="400" y="14" width="46" height="40" rx="9" fill="#5b1a24" fill-opacity="0.8" stroke="#1a1612"/><rect x="408" y="47" width="30" height="6" fill="#a8843a"/>
+  <rect x="490" y="14" width="46" height="40" rx="9" fill="#5b1a24" fill-opacity="0.8" stroke="#1a1612"/>
+  <path d="M450 34 H486" stroke="#625a4e" stroke-width="1.5"/><path d="M482 30 L487 34 L482 38" fill="none" stroke="#625a4e" stroke-width="1.5"/>
+  <text x="468" y="72" text-anchor="middle" font-size="10.5" font-weight="700">Soutirage</text><text x="468" y="86" text-anchor="middle" font-size="10">sépare des lies, aère</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <rect x="10" y="30" width="540" height="100" fill="#faf3e0" stroke="#d8d0c2"/>
+  <path d="M10 30 H550" stroke="#5c7a4f" stroke-width="2"/>
+  <text x="10" y="20" font-weight="700" fill="#5c7a4f">Surface</text>
+  <text x="550" y="146" text-anchor="end" font-size="10" fill="#625a4e">Schéma de principe : profondeurs indicatives</text>
+  <path d="M60 40 q15 -10 30 0 q15 10 30 0" stroke="#5b1a24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="90" y="64" text-anchor="middle" font-weight="700" fill="#5b1a24">Épigé</text>
+  <path d="M260 34 V120" stroke="#a8843a" stroke-width="4" stroke-linecap="round"/><path d="M254 48 l6 -8 l6 8 M254 106 l6 8 l6 -8" stroke="#a8843a" fill="none" stroke-width="1.5"/>
+  <text x="280" y="82" font-weight="700" fill="#a8843a">Anécique</text>
+  <path d="M410 100 q20 -12 40 0 q20 12 40 0" stroke="#456e8a" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="450" y="124" text-anchor="middle" font-weight="700" fill="#456e8a">Endogé</text>
+</svg>

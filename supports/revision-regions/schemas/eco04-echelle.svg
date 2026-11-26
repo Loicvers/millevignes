@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 164" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <rect x="0" y="139" width="138" height="13" rx="3" fill="#faf3e0" stroke="#625a4e"/><text x="7" y="149">1. Monoculture</text>
+  <rect x="0" y="124" width="176" height="13" rx="3" fill="#faf3e0" stroke="#5c7a4f"/><text x="7" y="134">2. Sol couvert</text>
+  <rect x="0" y="109" width="214" height="13" rx="3" fill="#faf3e0" stroke="#5c7a4f"/><text x="7" y="119">3. Paillages</text>
+  <rect x="0" y="94" width="252" height="13" rx="3" fill="#faf3e0" stroke="#5c7a4f"/><text x="7" y="104">4. Haies</text>
+  <rect x="0" y="79" width="290" height="13" rx="3" fill="#faf3e0" stroke="#5c7a4f"/><text x="7" y="89">5. Arbres</text>
+  <rect x="0" y="64" width="328" height="13" rx="3" fill="#faf3e0" stroke="#a8843a"/><text x="7" y="74">6. Vaches</text>
+  <rect x="0" y="49" width="366" height="13" rx="3" fill="#faf3e0" stroke="#a8843a"/><text x="7" y="59">7. Poules</text>
+  <rect x="0" y="34" width="404" height="13" rx="3" fill="#faf3e0" stroke="#a8843a"/><text x="7" y="44">8. Cochons</text>
+  <rect x="0" y="19" width="442" height="13" rx="3" fill="#faf3e0" stroke="#456e8a"/><text x="7" y="29">9. Paysages</text>
+  <rect x="0" y="4" width="480" height="13" rx="3" fill="#faf3e0" stroke="#456e8a"/><text x="7" y="14">10. Énergie</text>
+</svg>

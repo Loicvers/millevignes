@@ -1,0 +1,174 @@
+{
+  "102": {
+    "ouverture": "Une racine et un champignon vivent collés l'un à l'autre. Qui, à ton avis, donne quoi à l'autre ?",
+    "illus": [],
+    "schema": {
+      "titre": "L'alliance racine-champignon",
+      "lignes": [
+        [
+          "Ce que la plante donne au champignon",
+          "des sucres"
+        ],
+        [
+          "Ce que le champignon apporte à la plante",
+          "de l'eau et des sels minéraux (azote, phosphore)"
+        ],
+        [
+          "Le type de mycorhize de la vigne",
+          "une endomycorhize à arbuscules"
+        ],
+        [
+          "Le type de mycorhize des chênes truffiers",
+          "une ectomycorhize (manteau fongique)"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « Si la vigne nourrit un champignon avec ses propres sucres, elle n'y perd pas ? »",
+      "a": "C'est un échange : la plante cède des sucres, le champignon lui rend de l'eau et des sels minéraux comme l'azote et le phosphore. Il rend aussi d'autres services, comme une protection contre des pathogènes ou une meilleure structure du sol."
+    },
+    "cave": "Prends un vin de ta cave et cherche sur l'étiquette ou la fiche technique du domaine si le mode de culture du vignoble est indiqué. À la prochaine commande, demande à un vigneron partenaire, par exemple Mas Amiel (Maury), s'il observe la vie du sol dans ses vignes."
+  },
+  "103": {
+    "ouverture": "Si l'on apporte à la vigne tous les nutriments dont elle a besoin, ses champignons deviennent-ils plus utiles ou moins utiles pour elle ? Pourquoi ?",
+    "illus": [
+      {
+        "svg": "eco02-engrais.svg",
+        "legende": "Le piège des engrais : une chaîne d'effets, présentée en principe."
+      }
+    ],
+    "schema": {
+      "titre": "Quatre services, un piège",
+      "lignes": [
+        [
+          "Service n° 1 : ce que la plante reçoit",
+          "la nutrition (eau, azote, phosphore)"
+        ],
+        [
+          "Service n° 2 : face aux pathogènes",
+          "la protection (compétition, antibiotiques, défenses induites)"
+        ],
+        [
+          "Service n° 3 : face aux stress",
+          "l'atténuation (hydrique, polluants, métaux lourds)"
+        ],
+        [
+          "Service n° 4 : côté sol",
+          "l'agrégation du complexe argilo-humique"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Les mycorhizes protègent la vigne : elles la mettent donc à l'abri du mildiou ? »",
+      "a": "Pas démontré. Chez la vigne, la résistance induite par la mycorhize (RIM) est documentée surtout pour les maladies racinaires ; contre le mildiou ou le botrytis, l'effet n'est pas démontré au champ."
+    },
+    "cave": "Lis la fiche technique d'un domaine partenaire, par exemple Château Haut-Maurac (Médoc), et regarde si elle parle de fertilisation du sol. Sinon, pose la question au vigneron à la prochaine commande, sans présumer de la réponse."
+  },
+  "104": {
+    "ouverture": "Un animal minuscule, le nématode, vit dans le sol, au contact des racines. Est-il, à ton avis, plutôt un ennemi de la vigne ou un habitant ordinaire du sol ?",
+    "illus": [
+      {
+        "photo": "photos/nematode.jpg",
+        "legende": "Un nématode du genre Xiphinema, vu au microscope.",
+        "credit": "Photo : Wperazap, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "Nématodes et court-noué",
+      "lignes": [
+        [
+          "Les nématodes du sol dans leur majorité",
+          "non pathogènes selon le livre (prédateurs, décomposeurs)"
+        ],
+        [
+          "Le nématode qui pèse lourd en vigne",
+          "Xiphinema index"
+        ],
+        [
+          "Ce qu'il transmet à la racine",
+          "le virus GFLV, agent du court-noué"
+        ],
+        [
+          "Les effets de la maladie sur les ceps",
+          "moins de rendement, moins de longévité"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « J'ai lu que les nématodes ravageaient les vignes. Il faut s'en débarrasser ? »",
+      "a": "Pas tous : selon le livre, la plupart ne sont pas pathogènes (l'Oxford dit « beaucoup ») ; beaucoup sont prédateurs ou décomposeurs. Le problème vient surtout de Xiphinema index, qui transmet le virus du court-noué (GFLV)."
+    },
+    "cave": "Sur la carte de ta cave, repère une appellation où tu aimerais savoir si le court-noué est un souci. À la prochaine commande, demande au vigneron, par exemple Château Les Pâques (Blaye Côtes de Bordeaux), comment il surveille l'état sanitaire de ses ceps."
+  },
+  "106": {
+    "ouverture": "Quel lien peut-il y avoir entre une truffe et une vigne ? Pense à ce qui se passe sous terre.",
+    "illus": [
+      {
+        "svg": "eco02-plants-mycorhizes.svg",
+        "legende": "Plant de vigne mycorhizé : l'avantage de départ s'estompe, plus ou moins vite selon la source."
+      }
+    ],
+    "schema": {
+      "titre": "Truffes et plants mycorhizés",
+      "lignes": [
+        [
+          "La truffe, c'est…",
+          "la partie visible d'un champignon ectomycorhizien associé aux chênes"
+        ],
+        [
+          "Selon Paolocci et al. (2004), T. uncinatum et T. aestivum sont…",
+          "une seule espèce, distinguée surtout par la saison de récolte"
+        ],
+        [
+          "Le gain de croissance d'un plant mycorhizé…",
+          "s'estompe vite"
+        ],
+        [
+          "La question que pose le livre sur les souches",
+          "importées contre indigènes"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « On m'a vendu des plants de vigne mycorhizés : c'est un investissement durable ? »",
+      "a": "Le gain de croissance du début s'estompe vite : après un ou deux ans selon Sicavac, trois ou quatre selon Réussir Vigne. Le livre pose aussi la question des souches de champignon importées ou indigènes."
+    },
+    "cave": "À la prochaine commande, demande à un vigneron partenaire, par exemple Domaine Deprade Jorda (Côtes du Roussillon), s'il a déjà entendu parler de plants de vigne mycorhizés ou essayé d'en planter. Note sa réponse telle quelle."
+  },
+  "105": {
+    "ouverture": "Une maladie partie d'Angleterre en 1845 atteint, selon la carte du livre, les Canaries en 1854. Comment, à ton avis, a-t-elle pu voyager ?",
+    "illus": [
+      {
+        "photo": "photos/oidium.jpg",
+        "legende": "Oïdium sur une grappe.",
+        "credit": "Photo : Olivier Lemoine, CC BY-SA 4.0, Wikimedia Commons"
+      }
+    ],
+    "schema": {
+      "titre": "L'oïdium en Europe",
+      "lignes": [
+        [
+          "Période suivie par la carte du livre",
+          "de 1845 à 1854"
+        ],
+        [
+          "Premier foyer selon la carte",
+          "Londres (les sources citent Margate, dans le Kent, chez William Tucker)"
+        ],
+        [
+          "Arrivée en France selon l'Académie d'agriculture",
+          "vers 1847 dans des serres près de Paris"
+        ],
+        [
+          "Dates régionales de la carte",
+          "parfois décalées d'un an ou plus par rapport aux sources"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un stagiaire : « La date de 1851 pour Bordeaux, c'est sûr ? »",
+      "a": "Pas tout à fait : la carte du livre donne 1851 pour Bordeaux, l'Académie d'agriculture 1850. Les dates régionales de la carte divergent parfois d'un an ou plus des sources, donc on les cite avec prudence."
+    },
+    "cave": "Prends une bouteille de Bordeaux de ta cave, par exemple du Médoc (Château Haut-Maurac), et calcule depuis combien d'années l'oïdium est arrivé dans le Bordelais, d'après la date de ton choix (1850 ou 1851), en notant l'écart entre les deux."
+  }
+}

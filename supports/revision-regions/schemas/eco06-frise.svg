@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M30 70 H540" stroke="#625a4e" stroke-width="2"/>
+  <circle cx="90" cy="70" r="5" fill="#5b1a24"/>
+  <circle cx="270" cy="70" r="5" fill="#5c7a4f"/>
+  <circle cx="490" cy="70" r="5" fill="#456e8a"/>
+  <rect x="160" y="63" width="200" height="14" rx="4" fill="#a8843a" opacity="0.35"/>
+  <text x="300" y="20" text-anchor="middle" font-size="10" fill="#a8843a" font-weight="700">années 1970 ou début 1980</text>
+  <text x="300" y="34" text-anchor="middle" font-size="10" fill="#625a4e">Rodale : date discutée</text>
+  <text x="90" y="52" text-anchor="middle" font-weight="700" fill="#5b1a24">1965</text>
+  <text x="90" y="92" text-anchor="middle" font-size="10">Eyrie : pinot noir,</text>
+  <text x="90" y="106" text-anchor="middle" font-size="10">Willamette Valley</text>
+  <text x="270" y="52" text-anchor="middle" font-weight="700" fill="#5c7a4f">1978</text>
+  <text x="270" y="92" text-anchor="middle" font-size="10">Permaculture One</text>
+  <text x="490" y="52" text-anchor="middle" font-weight="700" fill="#456e8a">2022</text>
+  <text x="550" y="92" text-anchor="end" font-size="10">Regenerative Viticulture</text>
+  <text x="550" y="106" text-anchor="end" font-size="10">Foundation (ONG britannique)</text>
+  <text x="10" y="140" font-size="10" fill="#625a4e">Frise de principe : l'échelle des dates n'est pas respectée.</text>
+</svg>

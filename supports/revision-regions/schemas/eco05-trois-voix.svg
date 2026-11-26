@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 110">
+  <g stroke-width="1.2">
+    <rect x="4" y="8" width="174" height="92" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="193" y="8" width="174" height="92" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="382" y="8" width="174" height="92" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="91" y="30" font-weight="700" fill="#5b1a24">Baptiste Morizot</text>
+    <text x="91" y="52">cohabitation</text><text x="91" y="66">« diplomatique »</text><text x="91" y="80">avec le vivant</text>
+    <text x="280" y="30" font-weight="700" fill="#5b1a24">C. et R. Larrère</text>
+    <text x="280" y="52">usage « écocentré »</text><text x="280" y="66">de la nature</text>
+    <text x="469" y="30" font-weight="700" fill="#5b1a24">Paco Calvo</text>
+    <text x="469" y="52">intelligence des plantes</text><text x="469" y="66">MINT Lab, université</text><text x="469" y="80">de Murcie</text>
+  </g>
+</svg>

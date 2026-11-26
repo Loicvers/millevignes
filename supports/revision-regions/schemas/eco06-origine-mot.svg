@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" font-family="Inter, sans-serif" font-size="11" fill="#1a1612">
+  <path d="M30 70 H540" stroke="#625a4e" stroke-width="2"/>
+  <circle cx="90" cy="70" r="5" fill="#5b1a24"/>
+  <circle cx="190" cy="70" r="5" fill="#a8843a"/>
+  <rect x="300" y="63" width="100" height="14" rx="4" fill="#5c7a4f" opacity="0.35"/>
+  <circle cx="480" cy="70" r="5" fill="#456e8a"/>
+  <text x="90" y="52" text-anchor="middle" font-weight="700" fill="#5b1a24">1928</text>
+  <text x="90" y="92" text-anchor="middle" font-size="10">Bensin</text>
+  <text x="90" y="106" text-anchor="middle" font-size="10">selon Lepeltier</text>
+  <text x="190" y="52" text-anchor="middle" font-weight="700" fill="#a8843a">1930</text>
+  <text x="190" y="92" text-anchor="middle" font-size="10">Friederichs</text>
+  <text x="190" y="106" text-anchor="middle" font-size="10">selon d'autres auteurs</text>
+  <text x="350" y="52" text-anchor="middle" font-weight="700" fill="#5c7a4f">années 1970</text>
+  <text x="350" y="92" text-anchor="middle" font-size="10">essor du courant</text>
+  <text x="480" y="52" text-anchor="middle" font-weight="700" fill="#456e8a">1983</text>
+  <text x="480" y="92" text-anchor="middle" font-size="10">Altieri (Berkeley),</text>
+  <text x="480" y="106" text-anchor="middle" font-size="10">réédité en 1987</text>
+  <text x="10" y="138" font-size="10" fill="#625a4e">Origine du mot : attribution non tranchée. Frise de principe, échelle non respectée.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 150">
+  <text x="8" y="16" font-weight="700" fill="#5b1a24">Vigne bio, 2020 (échelle 0 à 50 %)</text>
+  <g stroke="#625a4e" stroke-width="1.2"><path d="M60 50 H520"/><path d="M60 45 V55"/><path d="M290 45 V55"/><path d="M520 45 V55"/></g>
+  <g font-size="10" fill="#625a4e" text-anchor="middle"><text x="60" y="68">0</text><text x="290" y="68">25</text><text x="520" y="68">50 %</text></g>
+  <circle cx="216" cy="50" r="5" fill="#5b1a24"/>
+  <text x="216" y="36" text-anchor="middle" font-size="10.5" fill="#5b1a24">France : près de 17 %</text>
+  <text x="8" y="94" font-weight="700" fill="#5b1a24">Vigne en biodynamie (échelle 0 à 10 %)</text>
+  <g stroke="#625a4e" stroke-width="1.2"><path d="M60 126 H520"/><path d="M60 121 V131"/><path d="M290 121 V131"/><path d="M520 121 V131"/></g>
+  <g font-size="10" fill="#625a4e" text-anchor="middle"><text x="60" y="144">0</text><text x="290" y="144">5</text><text x="520" y="144">10 %</text></g>
+  <g fill="#a8843a"><circle cx="124" cy="126" r="5"/><circle cx="327" cy="126" r="5"/><circle cx="437" cy="126" r="5"/></g>
+  <g font-size="10.5" fill="#1a1612" text-anchor="middle">
+    <text x="124" y="112">France, fin 2019 : 1,4 %</text><text x="327" y="112">Alsace : 5,8 %</text><text x="437" y="112">Jura : 8,2 %</text>
+  </g>
+</svg>

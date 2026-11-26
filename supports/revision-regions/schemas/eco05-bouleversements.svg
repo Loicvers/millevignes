@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#1a1612" viewBox="0 0 560 125">
+  <g stroke-width="1.2">
+    <rect x="8" y="8" width="164" height="76" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="198" y="8" width="164" height="76" rx="6" fill="#faf3e0" stroke="#d8d0c2"/>
+    <rect x="388" y="8" width="164" height="76" rx="6" fill="#faf3e0" stroke="#5b1a24"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="90" y="28" font-weight="700" fill="#5b1a24">Après 1945</text>
+    <text x="90" y="46">exode rural,</text><text x="90" y="60">manque de main-d'œuvre</text>
+    <text x="280" y="28" font-weight="700" fill="#5b1a24">Restructuration</text>
+    <text x="280" y="46">remembrement, monoculture,</text><text x="280" y="60">mécanisation</text>
+    <text x="470" y="28" font-weight="700" fill="#5b1a24">Révolution agricole</text>
+    <text x="470" y="46">produits de synthèse :</text><text x="470" y="60">« conventionnelle »</text>
+  </g>
+  <g stroke="#a8843a" stroke-width="1.6" fill="none"><path d="M175 46 H193"/><path d="M365 46 H383"/></g>
+  <g fill="#a8843a"><path d="M193 41 L199 46 L193 51 Z"/><path d="M383 41 L389 46 L383 51 Z"/></g>
+  <text x="470" y="76" text-anchor="middle" font-size="10" fill="#625a4e">1950 – début des années 1990</text>
+  <text x="280" y="112" text-anchor="middle" font-size="10.5" fill="#a8843a">1962 : Rachel Carson publie Printemps silencieux</text>
+</svg>

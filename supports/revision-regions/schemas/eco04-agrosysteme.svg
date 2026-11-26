@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 124" font-family="Inter, sans-serif" font-size="10.5" fill="#1a1612">
+  <defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5b1a24"/></marker></defs>
+  <rect x="0" y="8" width="250" height="100" rx="6" fill="#faf3e0" stroke="#5b1a24"/>
+  <text x="125" y="28" text-anchor="middle" font-weight="700" font-size="12" fill="#5b1a24">Ravageurs cités</text>
+  <text x="14" y="48">Tordeuses de la grappe : eudémis,</text>
+  <text x="14" y="62">cochylis, eulia, pyrale de la vigne</text>
+  <text x="14" y="84">Et aussi : cicadelles, acariens,</text>
+  <text x="14" y="98">cochenilles</text>
+  <path d="M254 58 H306" stroke="#5b1a24" stroke-width="1.6" marker-end="url(#f)"/>
+  <rect x="310" y="8" width="250" height="100" rx="6" fill="#faf3e0" stroke="#5c7a4f"/>
+  <text x="435" y="28" text-anchor="middle" font-weight="700" font-size="12" fill="#5c7a4f">Projet Agrolife</text>
+  <text x="435" y="44" text-anchor="middle" font-size="9.5" fill="#625a4e">Lánia, Chypre, 2014-2017</text>
+  <text x="324" y="68">Confusion sexuelle</text>
+  <text x="324" y="82">+ haies</text>
+  <text x="324" y="96">+ fleurs indigènes</text>
+</svg>

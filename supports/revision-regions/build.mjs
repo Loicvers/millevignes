@@ -346,7 +346,10 @@ function cahierHTML(def, notesAvant) {
   const R = RECIT.get(def.recit), N = fiches.length, corr = [], srcs = [];
   const notion = (f, k) => {
     const items = [];
-    if (f.flash?.q) items.push([`${e(f.flash.q)}${lignes(2)}`, `<b>${e(f.flash.a)}</b>`]);
+    const nrm = t => String(t || '').toLowerCase().replace(/[^a-zà-ÿ0-9]/g, '');
+    const bon = nrm(f.qcm?.opts?.[f.qcm?.good]), fa = nrm(f.flash?.a);
+    const doublon = f.qcm?.q && fa && bon && (bon.includes(fa) || fa.includes(bon)); // carte flash = QCM : on ne pose pas deux fois la question
+    if (f.flash?.q && !doublon) items.push([`${e(f.flash.q)}${lignes(2)}`, `<b>${e(f.flash.a)}</b>`]);
     if (f.qcm?.q) items.push([`${e(f.qcm.q)}${opts(f.qcm.opts)}`, `<b>${L[f.qcm.good]}. ${e(f.qcm.opts[f.qcm.good])}</b>${expl(f.qcm.expl)}`]);
     (f.exos || []).forEach((x, j) => { const r = exoPapier(x, +f.id * 31 + j); if (r) items.push(r); });
     const P = def.pedago?.[f.id] || {}; // volet pédagogique du cahier : avant de lire, schéma à compléter, cas pratique, dans ma cave
@@ -356,7 +359,7 @@ function cahierHTML(def, notesAvant) {
     const notesSrc = (f.cours?.sections || []).filter(x => def.pedago && NOTE_SOURCES.test(x.h));
     corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.schema ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
       <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}
-      ${def.pedago && f.cours?.synthese?.length ? `<p><b class="lbl">Avec mes mots : ce qu'il fallait retenir.</b> ${f.cours.synthese.map(b => e(b.txt)).join(' · ')}</p>` : ''}`);
+      ${def.pedago ? `<p><b class="lbl">Avec mes mots : ce qu'il fallait retenir.</b> ${f.cours?.synthese?.length ? f.cours.synthese.map(b => e(b.txt)).join(' · ') : e(f.synth)}</p>` : ''}`);
     srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       ${notesSrc.map(x => `<p class="src"><b>${e(x.h)}.</b> ${x.blocs.map(b => e(b.txt)).join(' ')}</p>`).join('')}
       <p class="src">Fiche : ${e(f.src)}</p>${f.cours?.src ? `<p class="src">Cours : ${e(f.cours.src)}</p>` : ''}`);
@@ -401,7 +404,7 @@ function cahierHTML(def, notesAvant) {
   <section class="page">${recitHTML(R)}${R?.filRouge ? `<p><b class="lbl">Avant de commencer.</b> Réponds en une phrase, puis relis-toi à la fin du cahier : ${e(R.filRouge)}</p>${lignes(4)}` : ''}</section>
   ${corps}
   ${(def.planches || []).map(pl => `<section class="page planche"><h2>${e(pl.titre)}</h2>${illus({ svg: pl.svg, legende: pl.legende }).replace('class="ill"', 'class="ill pl"')}</section>`).join('')}
-  <section class="corr"><h2>Corrigé</h2>${corr.join('')}</section>
+  ${notesAvant.has('corr') ? `<section class="notes"><h3 class="rubr">Notes</h3><div class="zone"></div></section>` : ''}<section class="corr"><h2>Corrigé</h2>${corr.join('')}</section>
   <section class="page srcs"><h2>Sources</h2><p class="muted">Ce que dit chaque source, ses limites et les divergences tranchées, notion par notion.</p>${srcs.join('')}</section>
   </body></html>` };
 }
@@ -489,6 +492,9 @@ for (const def of CAHIER ? CAHIERS : []) {
       const p = pages.findIndex(t => { t = t.replace(/\s/g, '').toUpperCase(); return t.includes(`NOTION${k + 1}SUR${N}`) && t.includes('JELIS'); }) + 1;
       if (p % 2 === 1 && !notesAvant.has(k)) { notesAvant.add(k); ok = false; break; }
     }
+    // Le corrigé commence page de gauche : jamais en regard des derniers exercices.
+    const pc = pages.findIndex(t => /^\s*Corrigé\s*$/m.test(t)) + 1;
+    if (ok && pc && pc % 2 === 1 && !notesAvant.has('corr')) { notesAvant.add('corr'); ok = false; }
   }
   if (!ok) avert.push(`${def.nom} : alignement des doubles pages non atteint`);
   fs.unlinkSync(tmp);
