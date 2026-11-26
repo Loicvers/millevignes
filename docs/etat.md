@@ -2,23 +2,23 @@
 
 Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'est la seule source des chiffres.
 
-- Fiches : 974 (dernier id : 976) · exercices : 5165
-- Vérifiées : 964 · à vérifier : 10 (12 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2455
-- Niveaux : Fondamental 259 · Intermédiaire 512 · Pointu 203
+- Fiches : 981 (dernier id : 983) · exercices : 5199
+- Vérifiées : 971 · à vérifier : 10 (12 points, détail dans `docs/a-verifier.md`) · détails « selon le livre » : 2456
+- Niveaux : Fondamental 261 · Intermédiaire 516 · Pointu 204
 - Cours (Approfondir) : 221 · schémas : 430
 - Lexique : 86 termes · récits de chapitre : 107
 
 | Fichier | Fiches | Ids | Pages | Vérifiées | Cours | Schémas |
 |---|---|---|---|---|---|---|
 | 016-domestication.js | 57 | 1–970 | 16–38 | 57 | 9 | 11 |
-| 040-nature.js | 52 | 4–634 | 40–73 | 52 | 7 | 16 |
+| 040-nature.js | 53 | 4–983 | 40–73 | 53 | 7 | 16 |
 | 076-ecologie.js | 33 | 97–976 | 76–101 | 33 | 5 | 3 |
 | 104-climat.js | 31 | 128–524 | 104–123 | 31 | 5 | 6 |
 | 124-geologie.js | 33 | 157–969 | 124–149 | 33 | 7 | 6 |
 | 150-terroir.js | 37 | 3–596 | 150–199 | 37 | 5 | 5 |
 | 203-vinification.js | 72 | 223–975 | 204–242 | 72 | 71 | 14 |
 | 244-degustation.js | 54 | 253–974 | 245–285 | 54 | 7 | 6 |
-| 288-service.js | 82 | 293–973 | 288–329 | 79 | 13 | 9 |
+| 288-service.js | 84 | 293–978 | 288–329 | 81 | 13 | 9 |
 | 331-conclusion.js | 5 | 337–341 | 331–333 | 5 | 0 | 0 |
 | cepages.js | 76 | 372–666 | hors livre | 76 | 76 | 76 |
 | fr-alsace-appellations.js | 10 | 467–867 | hors livre | 9 | 2 | 2 |
@@ -52,16 +52,16 @@ Généré par `tools/etat.mjs` depuis le dépôt : ne pas éditer à la main. C'
 | fr-sud-ouest-appellations.js | 20 | 484–951 | hors livre | 20 | 0 | 17 |
 | fr-sud-ouest.js | 3 | 414–844 | hors livre | 2 | 1 | 1 |
 | monde-afrique-du-sud.js | 2 | 564–565 | hors livre | 2 | 0 | 1 |
-| monde-allemagne.js | 4 | 532–535 | hors livre | 4 | 0 | 1 |
+| monde-allemagne.js | 5 | 532–981 | hors livre | 5 | 0 | 1 |
 | monde-argentine.js | 1 | 558–558 | hors livre | 1 | 0 | 1 |
 | monde-australie.js | 3 | 560–562 | hors livre | 3 | 0 | 2 |
 | monde-autriche.js | 2 | 536–537 | hors livre | 2 | 0 | 1 |
 | monde-canada.js | 1 | 556–556 | hors livre | 1 | 0 | 1 |
 | monde-chili.js | 1 | 557–557 | hors livre | 1 | 0 | 1 |
-| monde-espagne.js | 7 | 529–549 | hors livre | 7 | 0 | 1 |
+| monde-espagne.js | 8 | 529–980 | hors livre | 8 | 0 | 1 |
 | monde-etats-unis.js | 3 | 553–555 | hors livre | 3 | 0 | 2 |
 | monde-grece.js | 1 | 552–552 | hors livre | 1 | 0 | 1 |
 | monde-hongrie.js | 1 | 538–538 | hors livre | 1 | 0 | 1 |
-| monde-italie.js | 7 | 539–593 | hors livre | 7 | 0 | 1 |
+| monde-italie.js | 9 | 539–982 | hors livre | 9 | 0 | 1 |
 | monde-nouvelle-zelande.js | 1 | 563–563 | hors livre | 1 | 0 | 1 |
 | monde-portugal.js | 6 | 526–551 | hors livre | 6 | 0 | 2 |

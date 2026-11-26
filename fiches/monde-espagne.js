@@ -146,5 +146,30 @@ FICHES.push(
     to_check: [],
     selon_livre: ["Cava Reserva : le WSET D4 (2020) donne 15 mois sur lies, règle antérieure à la réforme ; 18 mois depuis janvier 2022 (cahier des charges, Consejo Regulador).","Zones du Penedès (Marítim, Central, Superior) : source unique, non recoupé (WSET) ; non reprises dans la fiche."],
     src: "DOQ Priorat, Dossier de presse (2019) ; WSET, D3 Wines of the World (août 2024), chapitre Spain, Catalunya ; Cellar Tours, How Priorat’s new wine classification system elevates terroir ; MAPA, Pliego de condiciones DOP Cava ; DO Cava, Categories & types ; DO Cava, communiqué sur la réglementation parue au BOE (15.06.2021) ; WSET, D4 Sparkling Wines (2020), chapitre Cava ; DO Cava, Resumen normas Segmentación y Zonificación ; Interempresas, D.O. Penedès, 50 años en la élite del vino ; MAPA, Informe DOPs 2023-2024"
+  },
+  {
+    id: 980,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Espagne","region":null,"appel":null},
+    source: "france",
+    chapitre: "Espagne : régions",
+    titre: "L’Espagne des bons prix : Navarre, Aragon, Valence et Murcie",
+    synth: "Navarre. Juste au nord-est de la Rioja, la DO Navarra s’étend sur environ 10 200 ha et compte cinq sous-régions. Au nord, Baja Montaña, Valdizarbe et Tierra Estella sont plus fraîches et plus humides ; au sud, Ribera Alta et Ribera Baja sont plus chaudes et plus sèches. Il y a une quarantaine d’années, le grenache (garnacha) dominait, surtout en rosés foncés. Un programme public des années 1970 a ensuite poussé le tempranillo, aujourd’hui le plus planté, et des cépages internationaux. Les rosés de la DO doivent être faits par courte macération (3-4 h pour les pâles, 6-12 h pour les foncés), jamais par pressurage direct. Les prix vont du bon marché au milieu de gamme.\n\nAragon. Cariñena, Campo de Borja et Calatayud, près de Saragosse, sont des DO à climat continental chaud, avec 450 à 500 mm de pluie par an. Leurs vignes sont en altitude (350 à 900 m) et rafraîchies par un vent du nord, le cierzo. On y trouve beaucoup de vieux grenaches en gobelet, et les coopératives dominent. Somontano, au pied des Pyrénées, cultive surtout cabernet sauvignon et chardonnay ; son plus grand producteur, Viñas del Vero, appartient depuis 2008 à González Byass.\n\nValence et Murcie. Les étés y sont chauds et les pluies faibles, et beaucoup de vin bon marché y est vendu en vrac, même si la qualité progresse (WSET D3, 2024). Utiel-Requena (33 000 ha, 750 m d’altitude moyenne) est le pays du bobal, 70 % des plantations, souvent de vieilles vignes. Ce cépage tolère la sécheresse, garde son acidité et apporte beaucoup de couleur. Dans la DO Valencia, les coopératives font 85 % du vin, fruité et à boire jeune ; on y fait aussi le Moscatel de Valencia, un vin doux. Plus au sud, Alicante (rouges d’au moins 80 % de monastrell) et Jumilla en Murcie (environ 25 000 ha, monastrell à 70 %) font des rouges puissants, riches en alcool. Le phylloxéra a frappé Jumilla en 1989 ; la replantation avec des plants sains et de meilleurs clones a fait monter la qualité. Alicante protège aussi le fondillón, un vieux rouge de monastrell vendangé tard, sans mutage, élevé au moins 10 ans en fût.",
+    mnemo: "Trois paysages, trois cépages de base : la Navarre au tempranillo et au rosé de saignée, l’Aragon au vieux grenache, le Levant au bobal et au monastrell.",
+    flash: {"q":"Quel cépage couvre environ 70 % du vignoble d’Utiel-Requena ?","a":"Le bobal, souvent en vieilles vignes : il tolère la sécheresse, garde son acidité et donne beaucoup de couleur.","keys":[["bobal"]]},
+    qcm: {"q":"Quel est le cépage dominant d’Alicante et de Jumilla ?","opts":["Le monastrell","Le bobal","Le tempranillo","Le grenache tintorera"],"good":0,"expl":"Le monastrell (mourvèdre) mûrit tard, garde son acidité et supporte la chaleur sèche : il fait au moins 80 % des rouges de la DO Alicante et environ 70 % des plantations de Jumilla."},
+    exos: [
+      {"type":"matching","prompt":"Relie chaque DO espagnole à son trait principal.","payload":{"pairs":[["Navarra","Rosés de courte macération, tempranillo devenu majoritaire"],["Calatayud","Vieux grenaches en altitude, rafraîchis par le cierzo"],["Utiel-Requena","Bobal, souvent en vieilles vignes"],["Jumilla","Monastrell, replanté après le phylloxéra de 1989"]]},"explanation":"Chaque DO s’appuie sur un cépage adapté à son climat chaud : grenache sur les plateaux aragonais, bobal en altitude près de Valence, monastrell sur les sols secs de Murcie."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Les rosés de la DO Navarra peuvent être faits par pressurage direct, comme en Provence.","answer":false},"explanation":"La DO impose une courte macération sur les peaux (3 à 4 heures pour les pâles, 6 à 12 heures pour les foncés), d’où des rosés plus colorés et plus fruités."},
+      {"type":"cloze","prompt":"Le fondillón, vin historique d’Alicante, a une particularité.","payload":{"text":"Il est fait de {{monastrell|mourvèdre}} vendangé tard, sans mutage, et élevé au moins {{10|dix}} ans en fût."},"explanation":"Son degré (au moins 16 %) vient du seul raisin, ce que permet l’automne très sec d’Alicante ; l’élevage, souvent en solera, lui donne un caractère oxydatif."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: [],
+    src: "WSET Level 4 Diploma, D3 Wines of the World (2024), §20.4 Navarra, §20.5 Aragon et §20.7 Valencia and Murcia, p. 349-362 (chiffres de 2019 à 2022)"
   }
 );

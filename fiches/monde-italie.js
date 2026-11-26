@@ -146,5 +146,55 @@ FICHES.push(
     to_check: [],
     selon_livre: ["Divergence expliquée : nature du sous-sol de Tufo — ISPRA (feuille 432 Benevento) : grès, pélites et conglomérats du Messinien ; Oxford et JancisRobinson.com : calcaire tendre ; Sarah Marsh MW (2026) : argiles et marnes ; Alex Maltman (2022) : tuf volcanique, sans étude de terrain ; l’étude de Magliulo et al. (Geoheritage, 2020) décrit la géologie de l’aire (résumé lu, texte intégral non lu)"],
     src: "Disciplinare Greco di Tufo DOCG (DM 13.10.2020, GU n. 266 du 26.10.2020), copie Federvini, et proposition de modification GU n. 222 du 07.09.2020 ; ISPRA, Carta Geologica d’Italia 1:50 000, feuille 432 Benevento (CARG, 2007) ; Oxford Companion to Wine, 5e éd. (2023), entrées Greco et Campania ; Sarah Marsh MW, Greco di Tufo: Intrigue and caprice in Campania, World of Fine Wine (30.03.2026) ; Université du Sannio (IRIS), notice de Magliulo et al., Geoheritage (2020), résumé lu",
+  },
+  {
+    id: 979,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Italie","region":null,"appel":null},
+    source: "france",
+    chapitre: "Italie : nord",
+    titre: "Trentin, Haut-Adige et Frioul : les blancs alpins du nord-est de l’Italie",
+    synth: "Le Trentin et le Haut-Adige (Südtirol, en majorité germanophone) forment une région administrative mais deux vignobles. Ils ont un héritage autrichien et sont italiens depuis 1919. Les vignes poussent sur les basses pentes des Alpes, le fond des vallées étant réservé aux vergers de pommiers. Les vins sont surtout monocépages.\n\nLe Trentin fait surtout des blancs frais, sans bois : pinot grigio et chardonnay (environ la moitié des surfaces à eux deux), müller-thurgau. Il fait aussi des rouges de teroldego, de merlot et de marzemino. Les coopératives y font 70 % du vin, et la plus grande, Cavit, 60 % de la production de la province (WSET D3, 2024). Le meilleur teroldego vient du Teroldego Rotaliano DOC, sur sols sableux et graveleux. Les rendements autorisés du Trentino DOC sont élevés, si bien que des producteurs de pointe s’en passent (Foradori, par exemple). Le Trentin produit aussi le Trentodoc, un effervescent de méthode traditionnelle.\n\nLe Haut-Adige cultive la vigne entre 300 et 700 m, sous un climat alpin doux, avec près de 300 jours de soleil par an et de fortes différences entre le jour et la nuit, qui gardent l’acidité. On y trouve pinot grigio, gewurztraminer (le village de Tramin est dans la province), chardonnay, pinot blanc, pinot noir, sauvignon, le lagrein (rouge profond, aussi en rosé) et la schiava (Vernatsch), un rouge pâle aux arômes de violette et de fraise. 98 % des vins sont en DOC, et les coopératives (Kaltern, Tramin) font 70 % de la production.\n\nLe Frioul (Friuli-Venezia Giulia), à la frontière de l’Autriche et de la Slovénie, est surtout connu pour ses blancs, qui font 76 % de sa production. La plaine alluviale donne des vins de volume (Friuli DOC, Grave del Friuli, Prosecco, pinot grigio des Delle Venezie). Les coteaux du Collio et des Friuli Colli Orientali, sur une marne compacte appelée ponca, donnent les vins de qualité. Les cépages locaux sont le friulano (ex-tocai, renommé quand le nom Tokaj a été réservé à la Hongrie), la ribolla gialla et le refosco. Le style des blancs nets, en cuve inox et à température contrôlée, est né à la fin des années 1960 avec Mario Schiopetto. Oslavia, dans le Collio, est avec Brda en Slovénie un foyer des vins orange : macérations de 8 jours à 8 mois, puis longs élevages, chez Gravner (qui a aussi introduit l’amphore), Radikon ou Prinčič.",
+    mnemo: "Trois balcons sur les Alpes : le Trentin pour les coopératives et le teroldego, le Haut-Adige pour l’altitude et le gewurztraminer de Tramin, le Frioul pour la ponca et les vins orange.",
+    flash: {"q":"Dans quel petit secteur du Collio, au Frioul, s’est concentrée la renaissance des vins orange italiens ?","a":"Oslavia, avec Gravner, Radikon et Prinčič ; Brda, juste de l’autre côté de la frontière slovène, en est l’autre foyer.","keys":[["oslavia"]]},
+    qcm: {"q":"Pourquoi le friulano a-t-il perdu son ancien nom de tocai friulano ?","opts":["L’Union européenne a réservé le nom Tokaj aux vins de Hongrie","Le cépage s’est révélé identique au furmint hongrois","Le nom tocai désignait un vin doux, alors que le friulano est sec","Les producteurs ont voulu un nom plus facile à exporter"],"good":0,"expl":"Ce n’est pas une question de cépage : le friulano est le sauvignonasse (sauvignon vert), sans lien avec le furmint de Tokaj."},
+    exos: [
+      {"type":"matching","prompt":"Relie chaque cépage du nord-est de l’Italie à sa description.","payload":{"pairs":[["Teroldego","Rouge le plus planté du Trentin, au mieux dans le Teroldego Rotaliano"],["Schiava (Vernatsch)","Rouge pâle du Haut-Adige, violette et fraise"],["Ribolla gialla","Blanc des coteaux du Frioul, souvent en vin orange"],["Friulano","Blanc frioulan, ancien tocai, floral et pomme"]]},"explanation":"Les rouges locaux de la région sont colorés (teroldego, lagrein) ou pâles (schiava), et les blancs locaux frioulans se travaillent aussi en macération."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Dans le Trentin comme dans le Haut-Adige, les coopératives produisent environ 70 % du vin.","answer":true},"explanation":"Les exploitations y sont minuscules (1,7 ha en moyenne au Trentin, environ 1 ha au Haut-Adige) : les vignerons apportent leurs raisins à des caves coopératives, dont certaines font de très bons vins."},
+      {"type":"mcq_single","prompt":"Comment s’appelle la marne compacte des coteaux du Collio et des Friuli Colli Orientali ?","payload":{"options":["La ponca","Le porphyre","La llicorella","Le tuffeau"],"answer":0},"explanation":"La ponca draine bien et donne, sur des coteaux de 200 à 300 m, des rendements plus faibles que la plaine alluviale ; la llicorella est l’ardoise du Priorat."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: [],
+    src: "WSET Level 4 Diploma, D3 Wines of the World (2024), §16.1 Trentino-Alto Adige et §16.2 Friuli-Venezia Giulia, p. 229-242 (chiffres de 2019 à 2022)"
+  },
+  {
+    id: 982,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Italie","region":null,"appel":null},
+    source: "france",
+    chapitre: "Italie : sud et îles",
+    titre: "Les Pouilles : primitivo, negroamaro et nero di Troia au talon de la botte",
+    synth: "Les Pouilles (Puglia), le talon de la botte, sont bordées de mer sur trois côtés. Leur climat méditerranéen chaud, la faible pluie (qui limite les maladies), des sols fertiles et l’irrigation autorisée en font une terre de vins de volume (WSET D3, 2024). On y a longtemps produit du vin pour donner de l’alcool et du corps à ceux des régions plus fraîches ; aujourd’hui, les vignerons cherchent à monter en qualité et en prix. Trois rouges sont typiques de la région.\n\nLe primitivo, le zinfandel des Californiens, débourre tôt et craint le gel de printemps et la sécheresse. Il mûrit de façon inégale et accumule vite le sucre, d’où des vins très alcoolisés, au fruit mûr voire confituré (cerise, fraise), et un tri sévère pour les meilleurs vins. On le vendange souvent en août, avant les pluies d’automne. Le Primitivo di Manduria DOC exige au moins 85 % de primitivo ; le Gioia del Colle DOC, sur des collines plus fraîches (250-500 m), 100 %. Les deux donnent en Riserva des vins à 14 % vol. au moins.\n\nLe negroamaro domine l’est de la péninsule du Salento. Il est productif, résistant aux maladies et à la sécheresse, et garde son acidité. Sa DOC principale est le Salice Salentino : au moins 75 % de negroamaro, ou 90 % si le cépage est nommé. Il donne des rouges de prune et de cerise noire, et un rosé (rosato) rose orangé très bu l’été.\n\nLe nero di Troia (uva di Troia), au centre de la région, mûrit tard et demande une longue saison pour sa couleur et ses tanins. Il est sensible au mildiou et aux pluies d’automne.",
+    mnemo: "Le talon de la botte a trois rouges : le primitivo qui court (précoce, alcoolisé), le negroamaro qui résiste (sécheresse, rosé d’été), le nero di Troia qui prend son temps (tardif).",
+    flash: {"q":"Sous quel nom le primitivo des Pouilles est-il connu en Californie ?","a":"Zinfandel (les deux sont un même cépage d’origine croate, le tribidrag).","keys":[["zinfandel"]]},
+    qcm: {"q":"Quel cépage est le pilier de la DOC Salice Salentino ?","opts":["Le negroamaro","Le primitivo","Le nero di Troia","L’aglianico"],"good":0,"expl":"La DOC exige au moins 75 % de negroamaro, cépage de l’est du Salento qui supporte la sécheresse et garde son acidité."},
+    exos: [
+      {"type":"matching","prompt":"Relie chaque cépage des Pouilles à son trait principal.","payload":{"pairs":[["Primitivo","Précoce, très sucré, souvent vendangé en août"],["Negroamaro","Résistant à la sécheresse, aussi en rosé d’été"],["Nero di Troia","Tardif, sensible aux pluies d’automne"]]},"explanation":"Les trois cépages répondent différemment à la chaleur : l’un se dépêche, l’un résiste, le dernier a besoin de temps."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Le Gioia del Colle DOC Primitivo exige 100 % de primitivo, alors que le Primitivo di Manduria en exige au moins 85 %.","answer":true},"explanation":"Gioia del Colle est aussi sur des collines plus fraîches, à 250-500 m ; les deux DOC donnent pourtant des Riserva puissantes, d’au moins 14 % vol."},
+      {"type":"mcq_single","prompt":"Pourquoi le primitivo des Pouilles demande-t-il un tri sévère pour faire un vin de qualité ?","payload":{"options":["Ses grappes portent à la fois des baies mûres et des baies pas encore mûres","Il est très sensible à la pourriture noble","Ses peaux épaisses donnent trop de tanins","Il est presque toujours récolté à la machine la nuit"],"answer":0},"explanation":"Une maturité inégale mêle baies vertes et baies flétries, très sucrées : trier coûte cher mais évite les goûts verts ou confits."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: [],
+    src: "WSET Level 4 Diploma, D3 Wines of the World (2024), §19.3 Puglia, p. 306-309"
   }
 );

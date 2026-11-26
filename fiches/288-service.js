@@ -1795,5 +1795,53 @@ FICHES.push(
     selon_livre: [],
     src: "WSET Level 4 Diploma, D2 Wine Business (2023), §5.1 à 5.6, p. PDF 59-64 (sources de 2018 à 2021) ; OIV, State of the World Wine Sector in 2025 et communiqué du 12 mai 2026 ; OIV, State of the World Vine and Wine Sector in 2024 (avril 2025) et conférence de presse du 15 avril 2025 (prix +30 % depuis 2019-2020, premiumisation, rapportés par Decanter et l’AFP)",
     page: 297
+  },
+  {
+    id: 977,
+    theme: "Service",
+    sous: ["Commerce"],
+    niveau: "Fondamental",
+    geo: null,
+    titre: "Second vin : ce que c’est, ce qu’il vaut",
+    synth: "Un second vin est fait, dans un domaine, avec les lots de vin ou les parcelles jugés pas assez bons pour le vin principal, le « grand vin » (Oxford Companion). Il contient souvent le vin des jeunes vignes et les lots les moins réussis.\n\nL’usage est né à Bordeaux au XVIIIe siècle et Château Lafite l’a relancé au début du XXe siècle. Il ne s’est vraiment développé dans le commerce qu’à partir des années 1980, quand la concurrence a poussé les châteaux à trier plus sévèrement au moment de l’assemblage. Exemples connus : Les Forts de Latour, issu de vignes réservées à cet usage, et le Pavillon Rouge de Château Margaux. Ces deux premiers crus vendent aussi un troisième vin. La marque Mouton Cadet a commencé comme second vin de Château Mouton Rothschild, qui a créé depuis Le Petit Mouton.\n\nDans une année très difficile, certains domaines ne font pas de grand vin du tout : le second vin est alors le seul de l’année.\n\nCe qu’il vaut dépend de l’année et du producteur. Selon l’Oxford, un second vin d’une année médiocre, où le grand vin a quand même été mis en bouteille, est rarement passionnant. Mais celui d’un producteur exigeant dans une bonne année peut être une très bonne affaire, et il se boit en général plus tôt que le grand vin.",
+    mnemo: "Le second vin, c’est l’équipe réserve d’un grand club : même maillot, même entraîneur, des joueurs plus jeunes, et souvent prêts à jouer plus tôt.",
+    flash: {"q":"Avec quoi fait-on le second vin d’un château ?","a":"Avec les lots de vin ou les parcelles jugés pas assez bons pour le grand vin, souvent ceux des jeunes vignes.","keys":[["lot","parcelle","cuve","jeunes vignes"],["grand vin","vin principal","premier vin"]]},
+    qcm: {"q":"Un client hésite entre le grand vin d’un château dans une année faible et son second vin dans une grande année. Que dit l’Oxford Companion des seconds vins ?","opts":["Celui d’un producteur exigeant dans une bonne année peut être une très bonne affaire et se boit plus tôt","Un second vin est toujours un assemblage de plusieurs châteaux","Un second vin se garde plus longtemps que le grand vin","Le second vin n’existe que dans les années où le grand vin n’est pas produit"],"good":0,"expl":"Le second vin profite du tri sévère et de la qualité de l’année ; dans une année faible, il est rarement passionnant."},
+    exos: [
+      {"type":"matching","prompt":"Relie chaque château bordelais à son second vin.","payload":{"pairs":[["Château Latour","Les Forts de Latour"],["Château Margaux","Pavillon Rouge"],["Château Mouton Rothschild","Le Petit Mouton"]]},"explanation":"Mouton Cadet, longtemps présenté comme le second vin de Mouton, est devenu une marque à part entière ; le second vin actuel est Le Petit Mouton."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Selon l’Oxford Companion, les seconds vins ne se sont vraiment développés dans le commerce qu’à partir des années 1980.","answer":true},"explanation":"La concurrence a poussé les châteaux à trier plus durement à l’assemblage, d’où plus de vin écarté du grand vin, à vendre sous un autre nom."},
+      {"type":"explain_client","prompt":"Un client demande : « Un second vin, c’est du vin raté ? » Que lui répondez-vous ?","payload":{"model":"Non : c’est le vin du même domaine que le château n’a pas retenu pour son grand vin, souvent celui des jeunes vignes ou des lots un peu moins concentrés. Il est fait par la même équipe, avec le même soin. Dans une bonne année et chez un producteur exigeant, c’est souvent une très bonne affaire, et il se boit plus tôt que le grand vin. Dans une année faible, en revanche, il est rarement passionnant.","criteria":["Ce sont les lots ou parcelles écartés du grand vin, souvent les jeunes vignes","Sa valeur dépend de l’année et du producteur ; il se boit plus tôt","Mots simples, pas de jargon sans explication"]},"explanation":"Le mot « second » fait peur : on explique le tri, puis on donne la vraie règle, l’année et le producteur."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: [],
+    src: "Oxford Companion to Wine, 5e éd. (2023), entrées « second wines » et « grand vin »",
+    page: 297
+  },
+  {
+    id: 978,
+    theme: "Service",
+    sous: ["Contenants"],
+    niveau: "Fondamental",
+    geo: null,
+    titre: "Demi-bouteille, magnum, jéroboam : les formats et la garde",
+    synth: "La bouteille de 75 cl est le format de référence presque partout. Le magnum (1,5 l) en vaut deux. Selon l’Oxford Companion, il passe pour le format idéal pour faire vieillir un grand vin : assez grand pour ralentir l’évolution, sans être encombrant ni hors de prix. Les magnums se vendent d’ailleurs plus cher. Les collectionneurs bordelais recherchent aussi les grands formats, jusqu’à l’impériale, pour leur vieillissement lent et fin.\n\nLa demi-bouteille (37,5 cl) passe au contraire pour accélérer le vieillissement. Elle a le même goulot et le même espace d’air sous le bouchon qu’une bouteille, donc plus d’oxygène par centilitre de vin. Les restaurants la demandent beaucoup.\n\nLes noms des grands formats changent selon la région. Le jéroboam fait 3 l (quatre bouteilles) en Champagne et en Bourgogne, mais 5 l à Bordeaux, où il faisait 4,5 l (six bouteilles) avant 1978. Le réhoboam fait 4,5 l en Champagne, où l’on trouve ensuite le mathusalem (6 l), le salmanazar (9 l), le balthazar (12 l) et le nabuchodonosor (15 l). À Bordeaux, l’impériale fait 6 l, la marie-jeanne 2,25 l et le double magnum 3 l.\n\nLes contenances autorisées dans l’Union européenne sont un autre sujet : voir la fiche sur le 75 cl et les contenances légales.",
+    mnemo: "Plus la bouteille est grande, plus le vin y vieillit lentement : la demi-bouteille court, la bouteille marche, le magnum flâne.",
+    flash: {"q":"Pourquoi le magnum passe-t-il pour le format idéal pour faire vieillir un grand vin ?","a":"Il est assez grand pour ralentir l’évolution du vin (moins d’oxygène par centilitre), sans être encombrant ni hors de prix.","keys":[["lent","ralent","moins vite","doucement"]]},
+    qcm: {"q":"Combien contient un jéroboam de Champagne ?","opts":["3 litres, soit quatre bouteilles","4,5 litres, soit six bouteilles","1,5 litre, soit deux bouteilles","6 litres, soit huit bouteilles"],"good":0,"expl":"Le même nom désigne 5 litres à Bordeaux : il faut toujours préciser la région quand on parle de grands formats."},
+    exos: [
+      {"type":"ordering","prompt":"Classe ces formats de Champagne du plus petit au plus grand.","payload":{"items":["Magnum","Jéroboam","Réhoboam","Mathusalem","Salmanazar","Balthazar","Nabuchodonosor"]},"explanation":"De 1,5 à 15 litres : chaque grand format champenois porte le nom d’un personnage biblique."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"Une demi-bouteille de 37,5 cl fait vieillir le vin plus lentement qu’une bouteille de 75 cl.","answer":false},"explanation":"C’est l’inverse : même goulot, même espace d’air, pour deux fois moins de vin ; il y a donc plus d’oxygène par centilitre, ce qui accélère l’évolution."},
+      {"type":"matching","prompt":"Relie chaque grand format à sa contenance à Bordeaux.","payload":{"pairs":[["Marie-jeanne","2,25 litres"],["Double magnum","3 litres"],["Jéroboam","5 litres"],["Impériale","6 litres"]]},"explanation":"À Bordeaux, le jéroboam fait 5 litres et non 3 comme en Champagne : la même étiquette ne dit pas la même contenance."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: ["Cours de dégustation (École du Vin de France, p. PDF 6) : tableau des formats de Champagne jusqu’au melchior (18 l) et au melchisédech (30 l) ; l’Oxford signale ces formats comme connus « en théorie » et ne les recommande pas comme repères"],
+    src: "Oxford Companion to Wine, 5e éd. (2023), entrées « bottle sizes » (tableau des formats de Bordeaux, Champagne et Bourgogne) et « magnum » ; École du Vin de France (Hachette), Cours de dégustation, « Des formats originaux », p. PDF 6",
+    page: 297
   }
 );

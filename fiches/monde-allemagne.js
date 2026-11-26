@@ -83,5 +83,30 @@ FICHES.push(
     to_check: [],
     selon_livre: ["Rheingau : abrité par le Taunus, Rhin large qui tempère et favorise le botrytis : source unique, non recoupé (WSET).","Pfalz : sec et abrité par le Haardt, prolongement des Vosges : source unique, non recoupé (WSET).","Franken : région la plus continentale d’Allemagne, gelées de printemps : source unique, non recoupé (WSET)."],
     src: "Deutsches Weininstitut, Die 13 deutschen Weinbaugebiete im Profil (04.07.2024), Anbaugebiet Mosel, Seminarhandbuch Deutsche Weine ; DLR Rheinland-Pfalz, Steillagenkonzept Moseltal, Terroir ; LWG Bayern, Silvaner, der fränkische Klassiker ; Pfalzwein e.V., pfalz.de (surface de riesling) ; WSET, D3 Wines of the World (août 2024), chapitre Germany"
+  },
+  {
+    id: 981,
+    theme: "Géographie viticole",
+    sous: ["Régions"],
+    niveau: "Intermédiaire",
+    geo: {"pays":"Allemagne","region":null,"appel":null},
+    source: "france",
+    chapitre: "Allemagne : régions",
+    titre: "La Moselle allemande : ardoise, pentes raides et rieslings légers",
+    synth: "La Mosel, l’une des régions les plus septentrionales d’Allemagne, est célèbre pour certains des plus grands rieslings du monde. Les blancs y font 91 % des plantations et le riesling 62 % (WSET D3, 2024).\n\nLe choix du site décide de la maturité. Les meilleures vignes sont sur les pentes raides exposées au sud, au-dessus de la rivière : elles reçoivent le plus de soleil, et un peu de lumière renvoyée par l’eau. L’ardoise sombre joue aussi un rôle ; elle est grise, bleue, brune ou rouge, et les producteurs s’intéressent de plus en plus à ce que chaque couleur change dans le vin.\n\nLa région se divise en trois : haute, moyenne et basse Moselle. La moyenne Moselle est la plus grande et réunit la plupart des grands vignobles : Bernkasteler Doctor, Wehlener Sonnenuhr, Piesporter Goldtröpfchen, Graacher Himmelreich, Ürziger Würzgarten, Erdener Treppchen, Brauneberger Juffer. Elle couvre aussi les vallées de la Sarre et de la Ruwer, un peu plus hautes et plus fraîches, aux vins encore plus acides ; le plus célèbre vignoble y est le Scharzhofberg, dans la Sarre.\n\nLes rieslings de Moselle sont plus pâles, plus légers, moins alcoolisés et plus acides que ceux des autres régions, avec des arômes floraux et de fruits verts. Leur équilibre leur donne un grand potentiel de garde. Les vins secs progressent, mais la région reste réputée pour ses Kabinett, Spätlese et Auslese, et pour ses liquoreux ; l’hiver y est presque toujours assez froid pour l’Eiswein.\n\nLes pentes raides rendent le travail cher, et les rendements très bas des BA et TBA aussi : les vins de Moselle sont parmi les plus chers d’Allemagne. Les sites plats, autour de Piesport par exemple, donnent des vins simples, souvent de müller-thurgau. La coopérative Moselland fait environ 20 % du vin de la région, ce qui en fait le plus grand producteur de riesling au monde.",
+    mnemo: "Ardoise, pente et rivière : la Moselle chauffe ses raisins comme on chauffe ses mains, en les tournant vers le soleil au-dessus de l’eau.",
+    flash: {"q":"Quel sol caractérise les grands vignobles de la Moselle allemande ?","a":"L’ardoise (schiste ardoisier), sombre, sur des pentes raides exposées au sud au-dessus de la rivière.","keys":[["ardoise","schiste","slate"]]},
+    qcm: {"q":"Comment se distingue un riesling de Moselle d’un riesling d’une autre région allemande, selon le WSET ?","opts":["Plus pâle, plus léger, moins alcoolisé et plus acide","Plus coloré, plus riche et plus alcoolisé","Toujours sec, sans sucre résiduel","Plus tannique, car il fermente avec ses peaux"],"good":0,"expl":"La fraîcheur de la région et l’équilibre entre acidité et intensité de saveur donnent des vins légers mais de grande garde."},
+    exos: [
+      {"type":"mcq_single","prompt":"Lequel de ces vignobles célèbres se trouve dans la Sarre, affluent de la Moselle ?","payload":{"options":["Scharzhofberg","Wehlener Sonnenuhr","Bernkasteler Doctor","Piesporter Goldtröpfchen"],"answer":0},"explanation":"Les trois autres sont en moyenne Moselle ; la Sarre, un peu plus haute et plus fraîche, donne des vins encore plus acides."},
+      {"type":"true_false","prompt":"Vrai ou faux ?","payload":{"statement":"La coopérative Moselland, à Bernkastel, est présentée par le WSET comme le plus grand producteur de riesling au monde.","answer":true},"explanation":"Elle produit environ 20 % du vin de la région, à côté de petits domaines réputés comme Egon Müller ou Markus Molitor."},
+      {"type":"explain_client","prompt":"Un client s’étonne : « Pourquoi ce riesling de Moselle coûte-t-il plus cher qu’un riesling allemand de supermarché ? » Que lui répondez-vous ?","payload":{"model":"Les grands vignobles de Moselle sont sur des pentes très raides au-dessus de la rivière, où presque tout se fait à la main : le travail coûte cher. Les vins les plus sucrés demandent en plus des rendements très bas. Ces pentes d’ardoise bien exposées donnent des rieslings légers, acides et aromatiques, qui vieillissent longtemps. Les vins bon marché viennent plutôt des sites plats.","criteria":["Les pentes raides rendent le travail manuel et coûteux","Les sites plats donnent des vins plus simples et moins chers","Mots simples, pas de jargon sans explication"]},"explanation":"Le prix s’explique d’abord par le coût de la pente, puis par la qualité du site."}
+    ],
+    schema: null,
+    cours: null,
+    status: "verified",
+    to_check: [],
+    selon_livre: [],
+    src: "WSET Level 4 Diploma, D3 Wines of the World (2024), §11.4 Principal Wine Regions, Mosel, p. 178-179"
   }
 );
