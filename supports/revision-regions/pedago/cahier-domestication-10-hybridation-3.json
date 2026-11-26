@@ -32,7 +32,16 @@
       "q": "Un client : « Pourquoi parle-t-on de PiWi et plus d'hybrides ? »",
       "a": "Le mot « hybride » a mauvaise presse. On parle aujourd'hui de variétés résistantes, ou de PiWi, abréviation allemande de « résistant aux champignons »."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron partenaire ce qu'il pense des cépages résistants : en a-t-il déjà goûté ? Note sa réponse, et rappelle-lui que solaris, muscaris et souvignier gris sont classés en France depuis 2017."
+    "cave": "À ta prochaine commande, demande à un vigneron partenaire ce qu'il pense des cépages résistants : en a-t-il déjà goûté ? Note sa réponse, et rappelle-lui que solaris, muscaris et souvignier gris sont classés en France depuis 2017.",
+    "muet": {
+      "source": "dom10-piwi.svg",
+      "cacher": [
+        "Pilz",
+        "widerstandsfähig",
+        "PiWi"
+      ],
+      "consigne": "Retrouve les deux mots allemands et le sigle qu'ils forment."
+    }
   },
   "51": {
     "ouverture": "Ajouter un gène venu d'un autre être vivant, ou corriger un gène que la vigne a déjà : est-ce, selon toi, le même geste ?",
@@ -67,7 +76,17 @@
       "q": "Un client : « La France interdit toute culture d'OGM, donc la question ne se pose pas pour la vigne ? »",
       "a": "Lepeltier écrit que la France interdit toute culture d'OGM, mais la loi de 2014 vise le maïs. Pour la vigne, l'essai de porte-greffes transgéniques de Colmar a été arraché en 2010, et la vigne à anticorps de camélidé est restée un travail de recherche."
     },
-    "cave": "Prends un vin bio de ta cave. En deux phrases, explique à un client imaginaire la différence entre transgenèse et CRISPR, puis ajoute ce que le règlement NGT dit du bio."
+    "cave": "Prends un vin bio de ta cave. En deux phrases, explique à un client imaginaire la différence entre transgenèse et CRISPR, puis ajoute ce que le règlement NGT dit du bio.",
+    "muet": {
+      "source": "dom10-transgenese-crispr.svg",
+      "cacher": [
+        "Transgenèse",
+        "Édition (CRISPR)",
+        "on ajoute",
+        "on corrige sur place"
+      ],
+      "consigne": "Retrouve les deux gestes de laboratoire et leur principe."
+    }
   },
   "52": {
     "ouverture": "Si tous les ceps d'un vignoble sont des boutures de la même vigne, que risque-t-il de manquer face aux maladies, selon certains vignerons ?",
@@ -102,7 +121,17 @@
       "q": "Un stagiaire : « Pourquoi risquer des semis, alors qu'on tient un bon clone ? »",
       "a": "Certains vignerons attribuent une part des maladies actuelles à l'appauvrissement génétique dû à la bouture. Ils veulent de la diversité plutôt qu'un clone champion. À Cirò, une étude de 2015 a trouvé quelques sélections qui combinent meilleure qualité et adaptation locale."
     },
-    "cave": "Demande à un vigneron de ta cave comment il renouvelle ses vieilles vignes (sélection massale, clones, autre) et ce qu'il en pense. Note sa réponse et compare-la à la démarche de Foradori."
+    "cave": "Demande à un vigneron de ta cave comment il renouvelle ses vieilles vignes (sélection massale, clones, autre) et ce qu'il en pense. Note sa réponse et compare-la à la démarche de Foradori.",
+    "muet": {
+      "source": "dom10-bouture-pepin.svg",
+      "cacher": [
+        "Bouture",
+        "Pépin",
+        "clones : la photocopie",
+        "plants tous différents : diversité"
+      ],
+      "consigne": "Retrouve ce que donne chaque mode de multiplication."
+    }
   },
   "970": {
     "ouverture": "Hybride, PiWi, VIFA, CRISPR : si tu devais ranger ces mots dans des tiroirs, selon quelles questions les trierais-tu ?",
@@ -137,7 +166,17 @@
       "q": "Un client : « Une VIFA, c'est un cépage résistant, non ? »",
       "a": "Non : c'est un statut, pas un type de cépage. Il autorise l'essai d'un cépage dans une AOC. Ce cépage peut être résistant, comme le voltis en Champagne, ou seulement adapté au climat, comme le marselan à Bordeaux."
     },
-    "cave": "Une VIFA ne figure pas sur l'étiquette. Demande à un vigneron bordelais de ta cave si son appellation admet des cépages d'adaptation au climat, et s'il en a déjà planté."
+    "cave": "Une VIFA ne figure pas sur l'étiquette. Demande à un vigneron bordelais de ta cave si son appellation admet des cépages d'adaptation au climat, et s'il en a déjà planté.",
+    "muet": {
+      "source": "dom10-champ-papier-labo.svg",
+      "cacher": [
+        "Le champ",
+        "Le papier",
+        "Le labo",
+        "Touche-t-on à l'ADN ?"
+      ],
+      "consigne": "Retrouve les trois tiroirs et la question du labo."
+    }
   },
   "53": {
     "ouverture": "Le nebbiolo et la barbera sont piémontais. Que peut apprendre une analyse ADN sur un cépage ancien, au-delà de son nom ?",

@@ -32,7 +32,16 @@
       "q": "Un client : « Le vigneron met dans son vin ce qu'il veut, non ? »",
       "a": "Non : la liste européenne des pratiques et composés autorisés est fermée, et ce qui n'y figure pas est interdit. Elle distingue l'additif, qui reste dans le vin fini, de l'auxiliaire technologique, dont il ne peut rester que des résidus non voulus."
     },
-    "cave": "À ta prochaine commande au Château de Fleys (Chablis), demande au domaine s'il emploie un produit de la liste, et lequel. Classe-le ensuite toi-même : additif ou auxiliaire technologique ?"
+    "cave": "À ta prochaine commande au Château de Fleys (Chablis), demande au domaine s'il emploie un produit de la liste, et lequel. Classe-le ensuite toi-même : additif ou auxiliaire technologique ?",
+    "muet": {
+      "source": "09-liste-fermee.svg",
+      "cacher": [
+        "OIV",
+        "Règlement délégué",
+        "Liste fermée"
+      ],
+      "consigne": "Retrouve qui recommande, quel texte européen tranche et le nom de la liste des pratiques autorisées."
+    }
   },
   "246": {
     "ouverture": "Un vin bio a-t-il droit à plus ou à moins de soufre qu'un vin conventionnel ? Et un vin nature ?",
@@ -67,7 +76,16 @@
       "q": "Un client : « Ce vin est bio, donc il contient moins de soufre que l'autre ? »",
       "a": "Le plafond du bio est plus bas que celui du conventionnel, mais c'est un plafond, pas une teneur : un vin peut rester bien en dessous. Seule l'analyse du vin dit combien il en contient."
     },
-    "cave": "Demande la fiche technique d'un rouge du Château Jean Faure (Saint-Émilion) et d'un blanc du Château de Fleys (Chablis). Note leur SO2 total et compare-le à 150 mg/l pour un rouge sec, 200 mg/l pour un blanc sec conventionnel. Quelle marge reste-t-il ?"
+    "cave": "Demande la fiche technique d'un rouge du Château Jean Faure (Saint-Émilion) et d'un blanc du Château de Fleys (Chablis). Note leur SO2 total et compare-le à 150 mg/l pour un rouge sec, 200 mg/l pour un blanc sec conventionnel. Quelle marge reste-t-il ?",
+    "muet": {
+      "source": "09-plafonds.svg",
+      "cacher": [
+        "Bio",
+        "Demeter",
+        "Vin méthode nature"
+      ],
+      "consigne": "Classe les modes de production du plafond de SO2 le plus haut au plus bas : retrouve les trois effacés."
+    }
   },
   "345": {
     "ouverture": "Un vin contient « 100 mg/l de SO2 ». Tout ce soufre protège-t-il le vin de la même façon ? Devine.",
@@ -97,7 +115,17 @@
       "q": "Un client : « Mon liquoreux botrytisé affiche plus de soufre que ton blanc sec : il est donc mieux protégé ? »",
       "a": "Pas forcément. Les raisins botrytisés sont riches en éthanal et en cétoacides, qui fixent beaucoup de SO2 : il en faut davantage pour la même protection. Ce qui compte, c'est le SO2 libre, et surtout sa part moléculaire."
     },
-    "cave": "Demande les fiches techniques d'un Bonnezeaux (Vignoble Tony Rousseau) et d'un Chablis (Château de Fleys). Si elles donnent SO2 libre et total, calcule le combiné (total moins libre) pour chacun et compare. Sinon, pose la question au domaine."
+    "cave": "Demande les fiches techniques d'un Bonnezeaux (Vignoble Tony Rousseau) et d'un Chablis (Château de Fleys). Si elles donnent SO2 libre et total, calcule le combiné (total moins libre) pour chacun et compare. Sinon, pose la question au domaine.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "SO2 libre",
+        "SO2 combiné",
+        "éthanal",
+        "moléculaire"
+      ],
+      "consigne": "Retrouve les deux parts du SO2 total, la molécule qui fixe le combiné et la part vraiment antiseptique."
+    }
   },
   "354": {
     "ouverture": "Le SO2 joue deux rôles à la fois dans un vin. Lesquels, à ton avis, et un seul autre produit peut-il les assurer ?",
@@ -132,7 +160,17 @@
       "q": "Un client : « Pourquoi ne pas remplacer le soufre par du lysozyme et du sorbate ? »",
       "a": "Parce que chacun ne couvre qu'une partie de la tâche : le lysozyme vise les bactéries lactiques, le sorbate les levures de refermentation des vins avec sucres. Le SO2, lui, est à la fois antioxydant et antimicrobien, et aucune alternative n'en fait autant."
     },
-    "cave": "Repère, sur la contre-étiquette d'un Muscat de Rivesaltes du Domaine Deprade Jorda, ce qui est indiqué sur les additifs. À la prochaine commande, demande au vigneron comment il protège ses vins qui gardent des sucres."
+    "cave": "Repère, sur la contre-étiquette d'un Muscat de Rivesaltes du Domaine Deprade Jorda, ce qui est indiqué sur les additifs. À la prochaine commande, demande au vigneron comment il protège ses vins qui gardent des sucres.",
+    "muet": {
+      "source": "09-outils-so2.svg",
+      "cacher": [
+        "Lysozyme",
+        "Sorbate",
+        "Acide ascorbique",
+        "Gaz inertes"
+      ],
+      "consigne": "Remets chaque outil au-dessus de sa cible : bactéries lactiques, levures de refermentation, oxygène, air."
+    }
   },
   "591": {
     "ouverture": "Une levure doit se multiplier pour faire fermenter un moût. De quoi peut-elle avoir besoin, à ton avis, en plus du sucre ?",

@@ -103,7 +103,16 @@
       "q": "Un client : « Pourquoi un rouge doit-il macérer, alors que le jus du raisin est presque incolore ? »",
       "a": "Parce que les pigments, les tanins et une grande part des arômes se trouvent dans la pellicule, pas dans la pulpe, qui est surtout du jus. D'où l'importance de la macération pour les extraire."
     },
-    "cave": "À la prochaine vendange ou avec un raisin de table à pépins, goûte la peau, la pulpe et un pépin séparément : note chaque sensation, puis relie-la au rôle de la couche."
+    "cave": "À la prochaine vendange ou avec un raisin de table à pépins, goûte la peau, la pulpe et un pépin séparément : note chaque sensation, puis relie-la au rôle de la couche.",
+    "muet": {
+      "source": "nat04-baie-couches.svg",
+      "cacher": [
+        "Pellicule",
+        "Pulpe",
+        "Pépin"
+      ],
+      "consigne": "Sur la coupe de baie, retrouve les trois parties."
+    }
   },
   "70": {
     "ouverture": "Une fois les baies mangées, que reste-t-il de la grappe, et à quoi cela servait-il ?",
@@ -138,6 +147,15 @@
       "q": "Un stagiaire : « Pourquoi certains vignerons gardent les rafles dans la cuve alors qu'on les écartait autrefois ? »",
       "a": "La rafle, charpente de fibres et de tanins, longtemps écartée, est aujourd'hui réutilisée en vinification : c'est la vendange entière."
     },
-    "cave": "Demande au vigneron d'un domaine partenaire, à ta prochaine commande, s'il pratique la vendange entière sur l'un de ses rouges, et note sa réponse."
+    "cave": "Demande au vigneron d'un domaine partenaire, à ta prochaine commande, s'il pratique la vendange entière sur l'un de ses rouges, et note sa réponse.",
+    "muet": {
+      "source": "nat04-grappe.svg",
+      "cacher": [
+        "rafle",
+        "en fleur : dressée",
+        "nouée : pendante"
+      ],
+      "consigne": "Retrouve la partie qui porte les baies et les deux états de la grappe."
+    }
   }
 }

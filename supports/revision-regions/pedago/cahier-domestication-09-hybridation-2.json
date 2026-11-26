@@ -32,7 +32,17 @@
       "q": "Un client t'assure que les hybrides ont tous disparu des appellations. Il s'étonne que tu lui parles de baco blanc dans l'Armagnac.",
       "a": "Le baco blanc (ou baco 22 A, folle blanche × noah) figure toujours dans l'encépagement de l'AOC Armagnac. Selon Wine Grapes, c'est le seul hybride admis en AOC. Son parent, le noah, fait pourtant partie des six hybrides interdits en 1934."
     },
-    "cave": "Prends un vin AOC de ta cave, par exemple le Chablis du Château de Fleys. Cherche le cahier des charges de l'appellation sur le site de l'INAO et relève la liste des cépages : y a-t-il un hybride ? Compare avec l'Armagnac, où le baco blanc reste admis."
+    "cave": "Prends un vin AOC de ta cave, par exemple le Chablis du Château de Fleys. Cherche le cahier des charges de l'appellation sur le site de l'INAO et relève la liste des cépages : y a-t-il un hybride ? Compare avec l'Armagnac, où le baco blanc reste admis.",
+    "muet": {
+      "source": "dom09-hybrideurs.svg",
+      "cacher": [
+        "baco blanc",
+        "maréchal foch",
+        "chambourcin (commercialisé)",
+        "1898"
+      ],
+      "consigne": "Retrouve les hybrides de la frise et la date du plus ancien."
+    }
   },
   "45": {
     "ouverture": "Une vigne greffée est faite de deux parties soudées. À ton avis, laquelle donne les racines et laquelle donne le raisin ?",
@@ -129,7 +139,17 @@
       "q": "Un stagiaire a lu Lepeltier (p. 36) : « Run1 protège du mildiou, Rpv1 de l'oïdium. » Qui a raison, le livre ou la fiche ?",
       "a": "La fiche. Run1 protège de l'oïdium et Rpv1 du mildiou. Le texte du livre est inversé, mais la légende de son propre schéma (p. 37) est juste. Astuce : RUN renvoie à Uncinula, l'ancien nom du champignon de l'oïdium ; RPV à Plasmopara viticola, l'agent du mildiou."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Domaine Burghart-Spettel, en Alsace) s'il a déjà goûté ou planté une variété résistante aux maladies, et pourquoi. Note sa réponse et dis si elle parle d'un seul gène ou de plusieurs."
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Domaine Burghart-Spettel, en Alsace) s'il a déjà goûté ou planté une variété résistante aux maladies, et pourquoi. Note sa réponse et dis si elle parle d'un seul gène ou de plusieurs.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "50 %",
+        "25 %",
+        "12,5 %",
+        "6,25 %"
+      ],
+      "consigne": "Retrouve la part de Muscadinia à chaque génération de rétrocroisement."
+    }
   },
   "48": {
     "ouverture": "Que veut dire « ResDur », à ton avis ? Et qu'est-ce qui doit être « durable » dans la résistance ?",
@@ -164,7 +184,17 @@
       "q": "Un client : « Une variété ResDur donne-t-elle un vin sans aucun traitement ? »",
       "a": "Pas tout à fait. Ces variétés cumulent deux gènes contre le mildiou et deux contre l'oïdium. OSCAR mesure environ 80 à 90 % de traitements fongicides en moins, mais un ou deux restent conseillés, notamment contre le black-rot et pour préserver les gènes."
     },
-    "cave": "Demande à un vigneron de ta cave (Domaine des Amandiers, par exemple) s'il a déjà essayé voltis ou artaban. Note sa réponse."
+    "cave": "Demande à un vigneron de ta cave (Domaine des Amandiers, par exemple) s'il a déjà essayé voltis ou artaban. Note sa réponse.",
+    "muet": {
+      "source": "dom09-resdur.svg",
+      "cacher": [
+        "artaban",
+        "vidoc",
+        "floreal",
+        "voltis"
+      ],
+      "consigne": "Retrouve des variétés ResDur de la première vague."
+    }
   },
   "49": {
     "ouverture": "Une AOC fixe la liste de ses cépages. Peut-elle tester un nouveau cépage face au changement climatique ? À quelles conditions, imagines-tu ?",
@@ -199,6 +229,15 @@
       "q": "Un client demande : « Une appellation peut donc planter n'importe quel nouveau cépage, du moment qu'il résiste au climat ? »",
       "a": "Non. Depuis la directive INAO de 2018 (révisée en 2021), une AOC ne peut accueillir une VIFA qu'à titre expérimental. Elle est plafonnée à 5 % de l'encépagement de l'exploitation et 10 % de l'assemblage, elle n'est pas nommée sur l'étiquette, et l'essai se fait par convention de dix ans."
     },
-    "cave": "Cherche dans le cahier des charges de l'AOC Champagne (Champagne Petit-Triolet) la mention du voltis, puis dans celui d'une appellation bordelaise de ta cave (par exemple le Médoc de Château Haut-Maurac) vérifie s'il comprend ou non les variétés d'adaptation admises à Bordeaux en 2021. Note ce que tu trouves."
+    "cave": "Cherche dans le cahier des charges de l'AOC Champagne (Champagne Petit-Triolet) la mention du voltis, puis dans celui d'une appellation bordelaise de ta cave (par exemple le Médoc de Château Haut-Maurac) vérifie s'il comprend ou non les variétés d'adaptation admises à Bordeaux en 2021. Note ce que tu trouves.",
+    "muet": {
+      "source": "dom09-voltis.svg",
+      "cacher": [
+        "2022",
+        "2025",
+        "2033"
+      ],
+      "consigne": "Retrouve les trois années de l'essai du voltis en Champagne."
+    }
   }
 }

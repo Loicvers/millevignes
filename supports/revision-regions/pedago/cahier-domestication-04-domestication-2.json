@@ -32,7 +32,17 @@
       "q": "Un client : « A-t-on vraiment su que le vin de Toutânkhamon était rouge ? »",
       "a": "Pour un résidu de la tombe, oui : Maria Rosa Guasch-Jané y a identifié de l’acide syringique en 2004, signature des pigments du raisin noir. Pour les autres amphores, en 2006, la conclusion « blanc » repose sur l’absence de ce marqueur : c’est une inférence, et la méthode reste discutée."
     },
-    "cave": "Verse un rouge de ta cave et un blanc dans deux verres. Note leurs couleurs, puis explique à voix haute à un proche comment un chimiste lirait cette même différence au fond d’une jarre antique."
+    "cave": "Verse un rouge de ta cave et un blanc dans deux verres. Note leurs couleurs, puis explique à voix haute à un proche comment un chimiste lirait cette même différence au fond d’une jarre antique.",
+    "muet": {
+      "source": "dom04-syringique.svg",
+      "cacher": [
+        "Raisin noir",
+        "malvidine (anthocyane)",
+        "Acide syringique",
+        "Dégradation"
+      ],
+      "consigne": "Retrouve le chemin du raisin noir à la trace qui trahit un vin rouge."
+    }
   },
   "18": {
     "ouverture": "Un cépage cultivé aujourd’hui peut-il être identique à celui que cultivaient les vignerons du Moyen Âge ? Comment ?",
@@ -209,6 +219,16 @@
       "q": "Un client : « Un raisin blanc, c’est un raisin rouge qui a perdu sa couleur ? »",
       "a": "En quelque sorte : chez les cépages blancs, les gènes VvMYBA1 et VvMYBA2 sont inactivés, donc la peau ne fabrique plus d’anthocyanes. Ce caractère se transmet : il faut hériter de deux copies inactives pour obtenir un raisin blanc."
     },
-    "cave": "Choisis un vin blanc de ta cave dont la fiche technique indique un cépage blanc, et un rouge. Explique en deux phrases à un proche pourquoi la peau des raisins du premier ne fabrique pas d’anthocyanes."
+    "cave": "Choisis un vin blanc de ta cave dont la fiche technique indique un cépage blanc, et un rouge. Explique en deux phrases à un proche pourquoi la peau des raisins du premier ne fabrique pas d’anthocyanes.",
+    "muet": {
+      "source": "dom04-couleur.svg",
+      "cacher": [
+        "VvMYBA1",
+        "VvMYBA2",
+        "Peau colorée",
+        "Peau blanche"
+      ],
+      "consigne": "Retrouve les deux gènes et les deux peaux effacés."
+    }
   }
 }

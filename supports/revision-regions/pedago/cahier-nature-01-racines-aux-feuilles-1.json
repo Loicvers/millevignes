@@ -32,7 +32,17 @@
       "q": "Un stagiaire : « Les sucres fabriqués par les feuilles, ils vont où ? Et l'eau, par où monte-t-elle ? »",
       "a": "Les sucres de la photosynthèse circulent dans la sève élaborée, que le phloème descend vers les racines. L'eau et les minéraux, eux, montent par le xylème (sève brute) vers les rameaux."
     },
-    "cave": "Devant un verre de ton Condrieu (Domaine Martin Clerc), explique en trente secondes à un proche le trajet de l'eau et celui du sucre dans la vigne. Si tu hésites entre xylème et phloème, relis ton aide-mémoire."
+    "cave": "Devant un verre de ton Condrieu (Domaine Martin Clerc), explique en trente secondes à un proche le trajet de l'eau et celui du sucre dans la vigne. Si tu hésites entre xylème et phloème, relis ton aide-mémoire.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "zone pilifère",
+        "coiffe",
+        "xylème",
+        "phloème"
+      ],
+      "consigne": "Sur la coupe de racine, retrouve la zone qui absorbe, la pointe protégée et les deux circuits de sève."
+    }
   },
   "55": {
     "ouverture": "Un puceron pique une racine : chez une vigne américaine résistante, la plaie guérit ; chez la vigne européenne, elle s'infecte. Que peut bien faire la racine américaine pour s'en sortir ?",
@@ -67,7 +77,16 @@
       "q": "Un client : « Pourquoi les racines américaines survivent-elles au phylloxéra, et pas celles de la vigne européenne ? »",
       "a": "Chez les Vitis américaines résistantes, entre autres mécanismes, la piqûre déclenche un périderme de cicatrisation qui isole la zone attaquée. Chez V. vinifera, les lésions nécrosent et s'infectent jusqu'aux tissus conducteurs, et la racine pourrit."
     },
-    "cave": "À ta prochaine commande, demande au Château Haut-Maurac (Médoc) si ses vignes sont greffées et sur quel porte-greffe. Note la réponse sur ta fiche de domaine."
+    "cave": "À ta prochaine commande, demande au Château Haut-Maurac (Médoc) si ses vignes sont greffées et sur quel porte-greffe. Note la réponse sur ta fiche de domaine.",
+    "muet": {
+      "source": "nat01-piqure.svg",
+      "cacher": [
+        "Vitis américaine résistante",
+        "périderme de cicatrisation",
+        "nécrose, infection"
+      ],
+      "consigne": "Retrouve la racine qui résiste, la barrière qu'elle fabrique et ce qui arrive à la vigne européenne."
+    }
   },
   "56": {
     "ouverture": "À ton avis, jusqu'où descendent les racines d'une vigne ? Et pourquoi ne vont-elles pas toutes tout en bas, ni toutes à fleur de sol ?",
@@ -132,7 +151,17 @@
       "q": "Un stagiaire voit un vigneron supprimer des pousses sur le tronc et au pied de la souche. Pourquoi ?",
       "a": "Une pousse née du vieux bois est un gourmand, une pousse née du porte-greffe un drageon : dans les deux cas, on les supprime."
     },
-    "cave": "À ta prochaine commande, demande au Domaine Coste-Lapalus (Régnié) une photo d'un cep en hiver. Nomme dessus le tronc, les bras, et les coursons ou baguettes."
+    "cave": "À ta prochaine commande, demande au Domaine Coste-Lapalus (Régnié) une photo d'un cep en hiver. Nomme dessus le tronc, les bras, et les coursons ou baguettes.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "baguette",
+        "courson",
+        "gourmand",
+        "drageon"
+      ],
+      "consigne": "Sur la souche, retrouve les deux types de taille et les deux rejets indésirables."
+    }
   },
   "515": {
     "ouverture": "Un cahier des charges d'AOC limite-t-il seulement ce qu'on récolte, ou aussi la façon de planter la vigne ?",
@@ -167,7 +196,15 @@
       "q": "Un client : « Un vin à 40 hl/ha est forcément meilleur qu'un vin à 60 hl/ha, non ? »",
       "a": "Pas forcément : le lien direct entre faible rendement et qualité reste débattu. Le rendement est d'abord un volume maximal revendiquable par hectare, fixé par le cahier des charges."
     },
-    "cave": "Imagine 2,5 ha de Côte-Rôtie, l'appellation de ton Domaine Martin Clerc. Calcule le volume maximal revendiquable au rendement de 40 hl/ha, puis avec une hausse jusqu'au butoir de 46 hl/ha."
+    "cave": "Imagine 2,5 ha de Côte-Rôtie, l'appellation de ton Domaine Martin Clerc. Calcule le volume maximal revendiquable au rendement de 40 hl/ha, puis avec une hausse jusqu'au butoir de 46 hl/ha.",
+    "muet": {
+      "source": "nat01-butoir.svg",
+      "cacher": [
+        "rendement fixé : 40 hl/ha",
+        "butoir : 46 hl/ha"
+      ],
+      "consigne": "Retrouve les deux plafonds de rendement de l'exemple de Côte-Rôtie."
+    }
   },
   "516": {
     "ouverture": "Un cahier des charges d'AOC peut-il dire au vigneron comment tailler ? Que pourrait-il encadrer d'autre, à ton avis ?",

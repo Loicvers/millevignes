@@ -67,7 +67,17 @@
       "q": "Je passe dans les vignes et je ne vois que de petites boules vertes, aucune vraie fleur. La vigne fleurit-elle ?",
       "a": "Oui, mais sa fleur est discrète et verdâtre : elle n'a pas besoin d'attirer les pollinisateurs. Pour qu'elle s'ouvre, le capuchon formé des pétales soudés doit tomber, et la floraison d'une parcelle s'étale sur une quinzaine de jours."
     },
-    "cave": "Demande à un vigneron partenaire (par exemple Domaine des Amandiers, Saumur-Champigny) de te montrer une photo de ses vignes en fleurs. Retrouve le capuchon, les étamines et le pistil, et note combien de temps il dit que la floraison dure chez lui."
+    "cave": "Demande à un vigneron partenaire (par exemple Domaine des Amandiers, Saumur-Champigny) de te montrer une photo de ses vignes en fleurs. Retrouve le capuchon, les étamines et le pistil, et note combien de temps il dit que la floraison dure chez lui.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "capuchon",
+        "étamines (pollen)",
+        "pistil : ovaire",
+        "calice (5 sépales minuscules)"
+      ],
+      "consigne": "Sur la fleur, retrouve les quatre parties."
+    }
   },
   "64": {
     "ouverture": "Il pleut et il fait froid pendant la floraison. Qu'arrive-t-il à la récolte, à ton avis ?",
@@ -103,7 +113,16 @@
       "q": "Un vigneron parle de coulure après un printemps pluvieux : de quoi s'agit-il ?",
       "a": "Pendant la floraison, pluie, vent ou froid compromettent la récolte : des fleurs ou de jeunes baies non fécondées tombent, et la grappe reste clairsemée. Un cépage sensible ou un porte-greffe trop vigoureux peuvent aggraver le phénomène."
     },
-    "cave": "Demande à un vigneron (ex. Domaine Deprade Jorda) comment s'est passée sa floraison."
+    "cave": "Demande à un vigneron (ex. Domaine Deprade Jorda) comment s'est passée sa floraison.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Nouaison réussie",
+        "Coulure",
+        "Millerandage"
+      ],
+      "consigne": "Retrouve le nom des trois grappes."
+    }
   },
   "66": {
     "ouverture": "Un raisin de table sans pépins existe. À ton avis, comment la vigne peut-elle former un fruit sans graines ?",
@@ -139,7 +158,17 @@
       "q": "Un stagiaire : « Millerandage et parthénocarpie, c'est la même chose ? »",
       "a": "Non. Le millerandage est un accident de fécondation : des baies de tailles inégales, certaines petites et sans pépins, côtoient des baies normales. La parthénocarpie est un mécanisme d'apyrénie : le fruit se forme sans fécondation et sans pépins (type corinthe noir)."
     },
-    "cave": "En saison, demande à un vigneron partenaire (par exemple Château Moulin Caresse, Bergerac) la permission de goûter quelques grains. Compte les pépins de dix baies et compare avec les « deux à quatre » d'une baie complète."
+    "cave": "En saison, demande à un vigneron partenaire (par exemple Château Moulin Caresse, Bergerac) la permission de goûter quelques grains. Compte les pépins de dix baies et compare avec les « deux à quatre » d'une baie complète.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Sténospermocarpie",
+        "Parthénocarpie",
+        "ex. sultanine",
+        "ex. corinthe noir"
+      ],
+      "consigne": "Retrouve les deux mécanismes de raisins sans pépins et un exemple de chacun."
+    }
   },
   "67": {
     "ouverture": "Un raisin vert est très acide, un raisin mûr est sucré. À quel moment la baie change-t-elle de régime ?",
@@ -169,6 +198,16 @@
       "q": "Un client : « Pourquoi un raisin est-il si acide et si peu sucré avant de changer de couleur ? »",
       "a": "Avant la véraison, la baie est dure et verte : elle fait de la photosynthèse et accumule des acides (malique, tartrique). À la véraison, elle s'assouplit, se colore et se met à stocker des sucres, tandis que l'acide malique décroît."
     },
-    "cave": "Demande à un vigneron partenaire (par exemple Château Les Pâques, Blaye Côtes de Bordeaux) s'il laisse parfois des raisins sur pied après la maturité. Note sa réponse et classe-la dans la phase 3 du découpage de Lepeltier (maturité puis surmaturité)."
+    "cave": "Demande à un vigneron partenaire (par exemple Château Les Pâques, Blaye Côtes de Bordeaux) s'il laisse parfois des raisins sur pied après la maturité. Note sa réponse et classe-la dans la phase 3 du découpage de Lepeltier (maturité puis surmaturité).",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "phase herbacée",
+        "nouaison",
+        "véraison",
+        "maturité"
+      ],
+      "consigne": "Sur la courbe de l'année, retrouve les repères de la croissance de la baie."
+    }
   }
 }

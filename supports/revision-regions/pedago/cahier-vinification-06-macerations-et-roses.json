@@ -152,7 +152,17 @@
       "q": "Un client : « Ce rosé est plus foncé que l'autre, il est moins bon ? »",
       "a": "Non, c'est une question de méthode. Plus le jus reste au contact des peaux, plus le rosé est coloré et vineux. Un rosé pâle vient plutôt d'un pressurage direct, léger, à boire jeune."
     },
-    "cave": "Goûte côte à côte un Tavel (Château de Manissy) et un Rosé de Loire (Vignoble Tony Rousseau). Compare les robes et la structure, puis demande à chaque vigneron : pressurage direct ou saignée ?"
+    "cave": "Goûte côte à côte un Tavel (Château de Manissy) et un Rosé de Loire (Vignoble Tony Rousseau). Compare les robes et la structure, puis demande à chaque vigneron : pressurage direct ou saignée ?",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Pressurage direct",
+        "Saignée",
+        "Rosé pâle",
+        "Soutirage"
+      ],
+      "consigne": "Retrouve les deux voies du rosé et le geste de la saignée."
+    }
   },
   "464": {
     "ouverture": "Sur une étiquette de champagne, « blanc de noirs » : de quelle couleur sont les raisins, et de quelle couleur est le jus ?",
@@ -182,6 +192,17 @@
       "q": "Un client : « Ce champagne rosé, c'est forcément de la saignée ? »",
       "a": "Non. Le cahier des charges admet trois voies, dont l'assemblage de blanc et de rouge avant le tirage. D'après la presse spécialisée, la plupart des rosés sont des assemblages, la saignée donnant plutôt une robe plus soutenue."
     },
-    "cave": "Lis l'étiquette d'un Champagne Petit-Triolet : y a-t-il une mention « blanc de blancs », « blanc de noirs » ou « rosé » ? Pour un rosé, demande quelle voie a été suivie."
+    "cave": "Lis l'étiquette d'un Champagne Petit-Triolet : y a-t-il une mention « blanc de blancs », « blanc de noirs » ou « rosé » ? Pour un rosé, demande quelle voie a été suivie.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Blanc de blancs",
+        "Blanc de noirs",
+        "Pressurage direct",
+        "Macération ou saignée",
+        "Assemblage"
+      ],
+      "consigne": "Retrouve les mentions et les trois voies admises pour le rosé."
+    }
   }
 }

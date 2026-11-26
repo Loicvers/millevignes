@@ -36,7 +36,16 @@
       "q": "Un client : « Cheval Blanc 1947 est une légende, pourtant on dit qu'il serait jugé fautif aujourd'hui. On m'a menti ? »",
       "a": "Non, les deux sont vrais. C'est un grand vin de Saint-Émilion, né d'un été caniculaire, avec une acidité volatile élevée et, selon Decanter, un moût refroidi à la glace et environ 3,5 g/l de sucres résiduels. Ce profil serait jugé fautif aujourd'hui : la frontière entre défaut et caractère se déplace."
     },
-    "cave": "Ouvre un Saint-Émilion de ta cave (Château Jean Faure ou Clos de la Cure, par exemple) et fais-le goûter à deux personnes sans rien dire. Chacune note ce qui lui plaît et ce qui la gêne. Compare : vos réponses se ressemblent-elles ?"
+    "cave": "Ouvre un Saint-Émilion de ta cave (Château Jean Faure ou Clos de la Cure, par exemple) et fais-le goûter à deux personnes sans rien dire. Chacune note ce qui lui plaît et ce qui la gêne. Compare : vos réponses se ressemblent-elles ?",
+    "muet": {
+      "source": "vin16-leviers-jugement.svg",
+      "cacher": [
+        "La dose",
+        "Le style du vin",
+        "Le dégustateur et ses seuils"
+      ],
+      "consigne": "Retrouve les trois leviers qui font basculer le jugement entre défaut et caractère."
+    }
   },
   "249": {
     "ouverture": "Le mot « volat' » est un raccourci de dégustateur. Quelles odeurs t'attends-tu à trouver derrière ce mot ?",
@@ -75,7 +84,16 @@
       "q": "Un client : « Mon vin sent le vernis à ongles. C'est le goût de bouchon ? »",
       "a": "Pas forcément : le vernis à ongles est la note de l'acétate d'éthyle, qui accompagne l'acide acétique dans la « volat' ». Le goût de bouchon relève d'autres molécules, les anisoles (TCA, TeCA, TBA). Si le nez est aussi aigre, vinaigre, la volat' est probablement en cause ; en excès, le vin est piqué."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (Château Haut-Maurac, Médoc, par exemple) s'il fait doser l'acidité volatile avant la mise et ce qu'il en pense. Note sa réponse et compare avec les plafonds de la fiche 246 (18 meq/l pour les blancs et rosés, 20 pour les rouges)."
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (Château Haut-Maurac, Médoc, par exemple) s'il fait doser l'acidité volatile avant la mise et ce qu'il en pense. Note sa réponse et compare avec les plafonds de la fiche 246 (18 meq/l pour les blancs et rosés, 20 pour les rouges).",
+    "muet": {
+      "source": "vin16-volat-dose.svg",
+      "cacher": [
+        "Dose d'acidité volatile",
+        "excès",
+        "Le vin est piqué"
+      ],
+      "consigne": "Retrouve l'axe, le côté où la dose devient trop forte et le nom du vin qui en résulte."
+    }
   },
   "250": {
     "ouverture": "Entre l'écurie, la terre retournée et la cage de souris, un seul de ces défauts ne se sent pas au nez. Lequel, à ton avis ?",
@@ -114,7 +132,17 @@
       "q": "Un stagiaire : « Ce vin sent bon, mais il finit sur un goût de cage de souris. C'est du bouchon ? »",
       "a": "Non, c'est le goût de souris, pas le goût de bouchon (qui relève des anisoles). Ces molécules ne se libèrent qu'au pH élevé de la salive : on ne les sent pas au nez, elles apparaissent en fin de bouche. Les vins très peu sulfités y sont plus exposés."
     },
-    "cave": "Ouvre un vin de ta cave et goûte-le en deux temps : d'abord le nez seul, puis la fin de bouche, après l'avoir avalé ou recraché. Note ce que tu perçois à chaque étape. Tu t'entraînes à séparer ce qui vient du nez de ce qui n'arrive qu'en bouche."
+    "cave": "Ouvre un vin de ta cave et goûte-le en deux temps : d'abord le nez seul, puis la fin de bouche, après l'avoir avalé ou recraché. Note ce que tu perçois à chaque étape. Tu t'entraînes à séparer ce qui vient du nez de ce qui n'arrive qu'en bouche.",
+    "muet": {
+      "source": "vin16-nez-bouche.svg",
+      "cacher": [
+        "Brettanomyces",
+        "Géosmine",
+        "Goût de souris",
+        "En fin de bouche"
+      ],
+      "consigne": "Retrouve où se révèle chaque défaut : deux au nez, un seulement en fin de bouche."
+    }
   },
   "251": {
     "ouverture": "Une odeur d'œuf pourri et une odeur de truffe peuvent-elles venir de la même famille de molécules ? Devine.",
@@ -187,6 +215,16 @@
       "q": "Un client : « Mon vin sent le bouchon, mais la bouteille était fermée par une capsule à vis. C'est possible ? »",
       "a": "Oui. Le liège est la source principale, mais pas la seule : charpente et bois du chai, barriques peuvent aussi contaminer. Le TBA se fixe aussi sur les plastiques (bouchons synthétiques selon Virginia Tech) ; le Globe and Mail le signale même sur le film des joints de capsule à vis."
     },
-    "cave": "Pose à un vigneron de ta cave (Château de Fleys, Chablis, par exemple) la question : quel bouchage utilise-t-il, et comment se protège-t-il du goût de bouchon (bouchons, bois du chai, barriques) ? Note sa réponse et compare avec les sources possibles de contamination de la fiche."
+    "cave": "Pose à un vigneron de ta cave (Château de Fleys, Chablis, par exemple) la question : quel bouchage utilise-t-il, et comment se protège-t-il du goût de bouchon (bouchons, bois du chai, barriques) ? Note sa réponse et compare avec les sources possibles de contamination de la fiche.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "phénol chloré",
+        "moisissures",
+        "anisole",
+        "TCA, TeCA, TBA"
+      ],
+      "consigne": "Suis le trajet du goût de bouchon : de la molécule de départ à celles qui contaminent le vin."
+    }
   }
 }

@@ -32,7 +32,17 @@
       "q": "Un client lit « 47 clones de pinot noir agréés en France » et s'étonne : « Ça fait 47 cépages ? »",
       "a": "Non. Un clone est une copie d'un même pied, à de rares mutations près : ce sont 47 clones agréés d'un seul cépage, le pinot noir."
     },
-    "cave": "Sur la fiche technique d'un de tes vins de Bourgogne (par exemple chez Pernot Père & Fils ou Decelle & Fils), repère le cépage, et le clone s'il est indiqué. Puis explique à voix haute, en une phrase, ce qu'est une mutation de couleur."
+    "cave": "Sur la fiche technique d'un de tes vins de Bourgogne (par exemple chez Pernot Père & Fils ou Decelle & Fils), repère le cépage, et le clone s'il est indiqué. Puis explique à voix haute, en une phrase, ce qu'est une mutation de couleur.",
+    "muet": {
+      "source": "dom07-pinot.svg",
+      "cacher": [
+        "Pinot gris",
+        "Pinot blanc",
+        "Meunier",
+        "même profil ADN"
+      ],
+      "consigne": "Retrouve les mutations du pinot et ce que révèle l'ADN."
+    }
   },
   "34": {
     "ouverture": "Qu'est-ce qui sépare un pépin d'une bouture, pour la plante qui en naîtra ?",
@@ -62,7 +72,17 @@
       "q": "Un stagiaire : « Pourquoi plante-t-on des boutures plutôt que des pépins ? »",
       "a": "La bouture copie le pied choisi : on sait ce qu'on obtient, et vite. Le pépin est une loterie, lente et incertaine. Le semis revient pourtant aujourd'hui pour créer des variétés résistantes."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron partenaire d'où viennent ses plants, et comment il les renouvelle. Note sa réponse et compare-la à ce que tu viens d'apprendre."
+    "cave": "À ta prochaine commande, demande à un vigneron partenaire d'où viennent ses plants, et comment il les renouvelle. Note sa réponse et compare-la à ce que tu viens d'apprendre.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Reproduction sexuée",
+        "Multiplication végétative",
+        "pépin",
+        "bouture"
+      ],
+      "consigne": "Retrouve les deux modes de reproduction et leur outil."
+    }
   },
   "35": {
     "ouverture": "Avant le phylloxéra, comment pouvait-on renouveler une vigne sans acheter de plants ?",
@@ -97,7 +117,16 @@
       "q": "Un client : « Pourquoi couchait-on des sarments plutôt que d'acheter des plants ? »",
       "a": "C'était peu coûteux, cela donnait de fortes densités de pieds et cela permettait de garder les meilleurs pieds de vignes alors complantées de nombreux cépages."
     },
-    "cave": "À la prochaine commande, demande à un vigneron partenaire s'il connaît l'âge de ses vignes et comment elles ont été renouvelées. Note si le mot marcotte ou provin revient."
+    "cave": "À la prochaine commande, demande à un vigneron partenaire s'il connaît l'âge de ses vignes et comment elles ont été renouvelées. Note si le mot marcotte ou provin revient.",
+    "muet": {
+      "source": "dom07-marcotte-provin.svg",
+      "cacher": [
+        "Marcotte : un sarment",
+        "Provin : la souche entière",
+        "souche entière couchée"
+      ],
+      "consigne": "Retrouve les deux techniques de multiplication et ce que couche chacune."
+    }
   },
   "36": {
     "ouverture": "Combien de cépages existent, à ton avis ? Et combien en faut-il pour couvrir l'essentiel du vignoble français ?",

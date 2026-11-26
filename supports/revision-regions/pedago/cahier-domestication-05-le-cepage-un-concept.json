@@ -32,7 +32,17 @@
       "q": "Un client : « Cépage, c'est un très vieux mot, non ? Les Romains l'employaient déjà ? »",
       "a": "Les agronomes antiques distinguaient déjà les vignes (Pline en cite une cinquantaine), mais le mot « cépage » n'apparaît que chez Baïf, en 1573, au sens de branchage de vigne. Selon une étude historique, il reste rare et flou jusqu'au XIXe siècle."
     },
-    "cave": "Prends trois bouteilles de ta cave et relève sur l'étiquette ou la fiche technique si un cépage est nommé. Le mot « cépage » y figure-t-il, ou seulement le nom du cépage ? Note aussi si le nom te paraît renvoyer à un lieu : la fiche rappelle qu'un nom de lieu ne prouve pas l'origine."
+    "cave": "Prends trois bouteilles de ta cave et relève sur l'étiquette ou la fiche technique si un cépage est nommé. Le mot « cépage » y figure-t-il, ou seulement le nom du cépage ? Note aussi si le nom te paraît renvoyer à un lieu : la fiche rappelle qu'un nom de lieu ne prouve pas l'origine.",
+    "muet": {
+      "source": "dom05-mot-cepage.svg",
+      "cacher": [
+        "Baïf",
+        "Sachs",
+        "Linné",
+        "Odart"
+      ],
+      "consigne": "Retrouve les noms propres de l'histoire du mot et de la science des cépages."
+    }
   },
   "23": {
     "ouverture": "Pinot, pinot noir, pinot noir 115 : lequel de ces trois noms est le plus large, lequel le plus précis ? Devine, puis lis.",
@@ -67,7 +77,17 @@
       "q": "Un client : « J'ai lu « pinot noir 115 » sur une fiche technique. C'est un autre cépage que le pinot noir ? »",
       "a": "Non : 115 est le numéro d'un clone, la descendance végétative d'un pied de pinot noir sélectionné. Le pinot noir est une variété du cépage pinot, et le clone 115 reste un pinot noir."
     },
-    "cave": "À ta prochaine commande, demande à l'un de tes vignerons partenaires s'il sait quels clones, repérés par un numéro, sont plantés dans ses parcelles. Note sa réponse : sait-il distinguer cépage, variété et clone dans sa façon de les nommer ?"
+    "cave": "À ta prochaine commande, demande à l'un de tes vignerons partenaires s'il sait quels clones, repérés par un numéro, sont plantés dans ses parcelles. Note sa réponse : sait-il distinguer cépage, variété et clone dans sa façon de les nommer ?",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "1. Espèce · Vitis vinifera",
+        "6. Variété · pinot noir",
+        "7. Clone · pinot noir 115",
+        "Bouture"
+      ],
+      "consigne": "Retrouve les échelons effacés de l'espèce au clone, et la voie qui copie fidèlement."
+    }
   },
   "24": {
     "ouverture": "Un même cépage peut-il porter quatre noms différents selon les pays ? Comment prouver que deux noms désignent le même cépage ?",
@@ -172,7 +192,16 @@
       "q": "Un client : « Sur une carte je lis zinfandel, sur une autre primitivo, ailleurs tribidrag. Lequel est le vrai nom ? »",
       "a": "C'est le même cépage. Il n'existe pas de nomenclature unique : pour Wine Grapes, le nom de référence est le nom le plus courant dans le pays d'origine, ici tribidrag, même si l'on continue de dire zinfandel dans le monde."
     },
-    "cave": "Prends un vin de ta cave et regarde le nom de cépage inscrit sur l'étiquette ou la fiche technique. Cherche dans le catalogue français quelle est sa dénomination principale et s'il a des synonymes. Le nom lu est-il le même ?"
+    "cave": "Prends un vin de ta cave et regarde le nom de cépage inscrit sur l'étiquette ou la fiche technique. Cherche dans le catalogue français quelle est sa dénomination principale et s'il a des synonymes. Le nom lu est-il le même ?",
+    "muet": {
+      "source": "dom05-prime-name.svg",
+      "cacher": [
+        "Liste de l'OIV",
+        "Catalogue français",
+        "Wine Grapes (2012)"
+      ],
+      "consigne": "Retrouve les trois façons de choisir un nom de cépage."
+    }
   },
   "26": {
     "ouverture": "Pour reconnaître un cépage, regarderais-tu plutôt la grappe, la baie ou la feuille ? Devine pourquoi, puis lis.",

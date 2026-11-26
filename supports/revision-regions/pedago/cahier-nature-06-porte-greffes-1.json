@@ -32,7 +32,16 @@
       "q": "Un client : « Mon vigneron plante du 41 B parce que son sol est calcaire. Quel rapport ? »",
       "a": "Sur calcaire, des racines américaines comme riparia et rupestris purs absorbent mal le fer et leurs feuilles jaunissent (chlorose ferrique). Le 41 B descend de V. berlandieri, vigne texane des sols calcaires, croisée avec le chasselas."
     },
-    "cave": "À ta prochaine commande chez Champagne Petit-Triolet, demande si les vignes sont sur 41 B, le porte-greffe qui couvre encore plus de 80 % du vignoble champenois. Note la réponse."
+    "cave": "À ta prochaine commande chez Champagne Petit-Triolet, demande si les vignes sont sur 41 B, le porte-greffe qui couvre encore plus de 80 % du vignoble champenois. Note la réponse.",
+    "muet": {
+      "source": "nat06-calcaire.svg",
+      "cacher": [
+        "chlorose ferrique :",
+        "V. berlandieri",
+        "41 B"
+      ],
+      "consigne": "Retrouve le problème du calcaire, la vigne qui le tolère et le porte-greffe obtenu."
+    }
   },
   "79": {
     "ouverture": "Presque tous les porte-greffes descendent de quelques espèces de vigne seulement. Combien, et d’où viennent-elles, à ton avis ?",
@@ -62,7 +71,17 @@
       "q": "Un client : « Un vigneron plante du 110 R, un autre du 3309 C. C’est le goût qui change ? »",
       "a": "Pas vraiment : parler de porte-greffe, c’est parler de vigueur, de calcaire et de sécheresse, pas de goût. Ici, le 110 R (berlandieri × rupestris) tolère 17 % de calcaire actif, très bien la sécheresse, et donne une forte vigueur. Le 3309 C (riparia × rupestris) tolère 11 % de calcaire, est sensible à la sécheresse et de vigueur faible à moyenne."
     },
-    "cave": "Sur la fiche technique d’un vin de ta cave (par exemple Château Jean Faure, Saint-Émilion grand cru classé), cherche si le porte-greffe est indiqué. Si oui, retrouve ses parents dans le tableau ; sinon, pose la question au vigneron."
+    "cave": "Sur la fiche technique d’un vin de ta cave (par exemple Château Jean Faure, Saint-Émilion grand cru classé), cherche si le porte-greffe est indiqué. Si oui, retrouve ses parents dans le tableau ; sinon, pose la question au vigneron.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "V. riparia",
+        "V. rupestris",
+        "V. berlandieri",
+        "41 B"
+      ],
+      "consigne": "Sur le triangle des porte-greffes, retrouve trois espèces parentes et un porte-greffe."
+    }
   },
   "80": {
     "ouverture": "Si presque toutes les vignes reposent sur les mêmes quelques porte-greffes, quel risque cela crée-t-il à ton avis ?",
@@ -132,7 +151,17 @@
       "q": "Un jeune vigneron : « Mes plants arrivent de pépinière : la greffe est faite au champ ou à l’atelier ? »",
       "a": "Le plus souvent sur table, en pépinière : on obtient des greffés-soudés prêts à planter, l’écrasante majorité des plantations actuelles. La greffe en place, au vignoble, demande une main-d’œuvre qualifiée et se mécanise peu."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine Burghart-Spettel, Alsace) s’il a déjà surgreffé ou regreffé une parcelle. Note ce qu’il répond, et pourquoi."
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine Burghart-Spettel, Alsace) s’il a déjà surgreffé ou regreffé une parcelle. Note ce qu’il répond, et pourquoi.",
+    "muet": {
+      "source": "nat06-operations.svg",
+      "cacher": [
+        "Greffage",
+        "Surgreffage",
+        "Regreffage",
+        "point de greffe"
+      ],
+      "consigne": "Retrouve les trois opérations et le repère qui sépare porte-greffe et greffon."
+    }
   },
   "82": {
     "ouverture": "Pour souder un greffon à son porte-greffe en pépinière, une machine ou une main fait-elle la coupe la plus courante ? Devine.",
@@ -162,7 +191,17 @@
       "q": "Un client : « On m’a dit que la greffe oméga abîmait les vignes. C’est vrai ? »",
       "a": "C’est une critique : ses détracteurs lui reprochent de couper les vaisseaux en travers des fibres, d’où des nécroses. Une étude de 2017 trouve moins de symptômes d’esca avec la fente, mais les parcelles en oméga étaient plus jeunes : le lien reste à confirmer."
     },
-    "cave": "Lors de ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny) quelle technique de greffe a servi à ses plantiers, ou s’il ne le sait pas. Note la réponse."
+    "cave": "Lors de ta prochaine commande, demande à un vigneron de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny) quelle technique de greffe a servi à ses plantiers, ou s’il ne le sait pas. Note la réponse.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Fente",
+        "Anglaise",
+        "Oméga",
+        "Écusson"
+      ],
+      "consigne": "Retrouve le nom des quatre types de greffe."
+    }
   },
   "83": {
     "ouverture": "Un cep paraît sain, puis se dessèche d’un coup en pleine chaleur. Que peut-il s’être passé à l’intérieur du tronc, à ton avis ?",

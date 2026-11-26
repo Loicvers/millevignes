@@ -31,7 +31,17 @@
       "q": "Un stagiaire : « Pourquoi connaît-on si mal le sol ? »",
       "a": "Selosse le résume par trois défauts, que Lepeltier simplifie : trop petit, trop sale, trop opaque. Selon le livre, sa fraction organique n'est étudiée que depuis la fin des années 1970."
     },
-    "cave": "Prends la fiche technique d'un domaine partenaire, par exemple Domaine Martin Clerc (Condrieu). Si elle parle du sol, note si les mots « roche mère », « terre » et « sol » y sont employés au bon sens."
+    "cave": "Prends la fiche technique d'un domaine partenaire, par exemple Domaine Martin Clerc (Condrieu). Si elle parle du sol, note si les mots « roche mère », « terre » et « sol » y sont employés au bon sens.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "litière",
+        "humus",
+        "sol minéral",
+        "roche mère"
+      ],
+      "consigne": "Sur la coupe du sol, retrouve les quatre couches."
+    }
   },
   "98": {
     "ouverture": "Une feuille morte tombe sous le cep. Que lui arrive-t-il, et qui s'en charge ?",
@@ -66,7 +76,17 @@
       "q": "Un stagiaire : « Pourquoi dit-on de l'humus qu'il est un garde-manger ? »",
       "a": "Il naît d'une humification lente, et sa minéralisation secondaire relâche l'azote et le phosphore peu à peu. Les sels libérés vite par la voie rapide, eux, sont lessivables."
     },
-    "cave": "À la prochaine commande, demande à un vigneron comme celui du Château Haut-Maurac (Médoc) ce que deviennent feuilles, herbes et sarments sur ses parcelles. Classe sa réponse : fragmentation, voie rapide ou voie lente ?"
+    "cave": "À la prochaine commande, demande à un vigneron comme celui du Château Haut-Maurac (Médoc) ce que deviennent feuilles, herbes et sarments sur ses parcelles. Classe sa réponse : fragmentation, voie rapide ou voie lente ?",
+    "muet": {
+      "source": "eco01-voies.svg",
+      "cacher": [
+        "1. Faune détritivore",
+        "Voie rapide",
+        "Voie lente",
+        "humification, puis humus ;"
+      ],
+      "consigne": "Retrouve les deux voies de la matière organique et ce qui sépare la lente de la rapide."
+    }
   },
   "99": {
     "ouverture": "Deux particules de même charge électrique se repoussent. Qu'est-ce qui pourrait les faire tenir ensemble dans un sol ?",
@@ -96,7 +116,16 @@
       "q": "Un stagiaire : « Que mesure la CEC ? »",
       "a": "La capacité du complexe argilo-humique à retenir des cations comme K+ et NH4+. Ce complexe donne aussi au sol une texture grumeleuse."
     },
-    "cave": "Sur la fiche technique de Château Jean Faure (Saint-Émilion), cherche si la nature du sol est indiquée (argile, calcaire…). Note-la, puis écris en une phrase ce que l'argile seule ne peut pas faire sans pont ni colle."
+    "cave": "Sur la fiche technique de Château Jean Faure (Saint-Émilion), cherche si la nature du sol est indiquée (argile, calcaire…). Note-la, puis écris en une phrase ce que l'argile seule ne peut pas faire sans pont ni colle.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "complexe argilo-humique",
+        "Ca²⁺",
+        "capacité d’échange cationique"
+      ],
+      "consigne": "Retrouve le complexe, le pont qui le tient et le sens de CEC."
+    }
   },
   "100": {
     "ouverture": "Un ver de terre vit-il toujours à la même profondeur ? Imagine comment on pourrait les classer.",
@@ -131,7 +160,16 @@
       "q": "Un client : « Les sols viticoles français sont-ils vraiment pauvres ? »",
       "a": "Le livre les juge appauvris, mais sa valeur moyenne de matière organique n'a pas été retrouvée dans les sources. La faible biomasse microbienne citée repose sur une seule source journalistique : mieux vaut le présenter comme un avis du livre."
     },
-    "cave": "À la prochaine commande, demande au Domaine Deprade Jorda (Côtes du Roussillon) s'il observe des vers de terre dans ses parcelles et lesquels (surface, profondeur ou va-et-vient). Note la réponse."
+    "cave": "À la prochaine commande, demande au Domaine Deprade Jorda (Côtes du Roussillon) s'il observe des vers de terre dans ses parcelles et lesquels (surface, profondeur ou va-et-vient). Note la réponse.",
+    "muet": {
+      "source": "eco01-vers.svg",
+      "cacher": [
+        "Épigé",
+        "Anécique",
+        "Endogé"
+      ],
+      "consigne": "Retrouve le nom des trois catégories de vers de terre."
+    }
   },
   "101": {
     "ouverture": "Quand on dit « microbe », on pense d'abord à la maladie. Que peut-on reprocher à cette image ?",

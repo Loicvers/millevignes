@@ -57,7 +57,17 @@
       "q": "Un client : « Ce vin est sans sulfite, c'est donc un Vin Méthode Nature, non ? »",
       "a": "Pas forcément. S.A.I.N.S. est une autre charte, sans aucun intrant ni sulfite. Vin Méthode Nature tolère un SO2 inférieur à 30 mg/l (les sources divergent : SO2 total ou sulfites ajoutés) et propose une seconde mention pour les vins sans sulfite ajouté. Il faut lire quelle charte est citée."
     },
-    "cave": "Prends deux bouteilles de ta cave, par exemple un Régnié du Domaine Coste-Lapalus et un Gigondas du Château de Montmirail. Cherche sur l'étiquette un logo ou le nom d'une charte, et note ce que la bouteille affirme vraiment, et ce qu'elle ne dit pas."
+    "cave": "Prends deux bouteilles de ta cave, par exemple un Régnié du Domaine Coste-Lapalus et un Gigondas du Château de Montmirail. Cherche sur l'étiquette un logo ou le nom d'une charte, et note ce que la bouteille affirme vraiment, et ce qu'elle ne dit pas.",
+    "muet": {
+      "source": "13-methode-nature.svg",
+      "cacher": [
+        "Vendange",
+        "Fermentation",
+        "Après la fermentation",
+        "moins de 30 mg/l *"
+      ],
+      "consigne": "Retrouve les trois temps de la vinification du Vin Méthode Nature et le seuil de SO2."
+    }
   },
   "232": {
     "ouverture": "Deux régions, ou le sol, l'écorce et le fruit d'une même vigne : où la flore de champignons diffère-t-elle le plus ? Devine.",

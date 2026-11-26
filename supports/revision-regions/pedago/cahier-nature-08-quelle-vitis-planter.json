@@ -26,7 +26,17 @@
       "q": "Un client : « Un vin issu de plants clonés, c’est un vin standardisé, non ? »",
       "a": "Pas forcément : un clone agréé est d’abord une garantie sanitaire. La souche a été testée contre les virus, suivie au vignoble au moins cinq ans et vinifiée au moins trois ans avant son agrément. Le vrai débat porte sur la diversité des plants diffusés et leur longévité."
     },
-    "cave": "Au prochain échange avec le Château de Fleys (Chablis), demande si ses plantations récentes viennent de clones agréés, de sélection massale ou des deux. Note la réponse et la raison donnée."
+    "cave": "Au prochain échange avec le Château de Fleys (Chablis), demande si ses plantations récentes viennent de clones agréés, de sélection massale ou des deux. Note la réponse et la raison donnée.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "2. Tests sanitaires",
+        "4. Agrément (avis du CTPS)",
+        "5. Matériel initial",
+        "7. Plants certifiés"
+      ],
+      "consigne": "Sur le parcours d'un clone, retrouve quatre des sept étapes."
+    }
   },
   "89": {
     "ouverture": "Quand tu achètes un plant de vigne, comment peux-tu savoir qu’il est sain ? Qu’est-ce qui l’atteste ?",
@@ -61,7 +71,17 @@
       "q": "Un jeune vigneron : « À quoi sert l’étiquette collée sur mes bottes de plants ? »",
       "a": "Elle vaut passeport phytosanitaire européen, contrôlé par FranceAgriMer. Sa couleur indique la catégorie : bleue pour le matériel certifié, jaune pour la catégorie standard."
     },
-    "cave": "À la prochaine commande au Domaine des Amandiers (Saumur-Champigny), demande au vigneron, quand il replante, s’il achète des plants certifiés (étiquette bleue), standard (étiquette jaune) ou s’il multiplie lui-même, et pourquoi."
+    "cave": "À la prochaine commande au Domaine des Amandiers (Saumur-Champigny), demande au vigneron, quand il replante, s’il achète des plants certifiés (étiquette bleue), standard (étiquette jaune) ou s’il multiplie lui-même, et pourquoi.",
+    "muet": {
+      "source": "nat08-categories.svg",
+      "cacher": [
+        "Matériel initial",
+        "Matériel de base",
+        "Matériel certifié",
+        "bleue"
+      ],
+      "consigne": "Retrouve les trois catégories de matériel et la couleur de l'étiquette du certifié."
+    }
   },
   "90": {
     "ouverture": "Pour replanter, vaut-il mieux copier le meilleur cep ou prélever sur beaucoup de ceps ? Qu’y gagne-t-on, qu’y perd-on ?",

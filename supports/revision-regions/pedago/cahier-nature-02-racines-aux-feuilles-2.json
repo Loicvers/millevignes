@@ -33,7 +33,17 @@
       "q": "Un stagiaire : « Pourquoi y a-t-il une vrille là où je m'attendais à une grappe ? »",
       "a": "La vrille est un rameau transformé ; elle occupe la même place que l'inflorescence : chaque nœud porte, d'un côté, l'une ou l'autre. La vrille, elle, sert à accrocher la plante à son support."
     },
-    "cave": "À ta prochaine commande, demande à un de tes domaines partenaires (par exemple Château de Fleys, à Chablis) s'il écime ou rogne ses vignes, et à quelle période. Note sa réponse, puis explique-toi pourquoi la date compte pour les ressources de la vigne."
+    "cave": "À ta prochaine commande, demande à un de tes domaines partenaires (par exemple Château de Fleys, à Chablis) s'il écime ou rogne ses vignes, et à quelle période. Note sa réponse, puis explique-toi pourquoi la date compte pour les ressources de la vigne.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "nœud",
+        "entre-nœud",
+        "inflorescence",
+        "vrille"
+      ],
+      "consigne": "Sur le rameau, retrouve les deux parties de la tige et les deux organes qui se font face aux feuilles."
+    }
   },
   "59": {
     "ouverture": "Une grappe récoltée cette année est-elle née au printemps, ou se préparait-elle déjà plus tôt ? Devine.",
@@ -82,7 +92,17 @@
       "q": "Un client qui visite une vigne : « Les feuilles ont une couleur bizarre en plein été. Faut-il s'inquiéter ? »",
       "a": "La couleur de la feuille évolue du vert tendre à l'automne flamboyant, mais elle renseigne aussi sur l'état de la plante. Une teinte inhabituelle peut signaler une carence ou une maladie : mieux vaut donc regarder la vigne de près."
     },
-    "cave": "Si tu passes dans un vignoble (par exemple celui du Domaine Burghart-Spettel, en Alsace), prends une feuille, compare ses deux faces et dessine sa découpe : combien de lobes comptes-tu ? Les dents sont-elles marquées ?"
+    "cave": "Si tu passes dans un vignoble (par exemple celui du Domaine Burghart-Spettel, en Alsace), prends une feuille, compare ses deux faces et dessine sa découpe : combien de lobes comptes-tu ? Les dents sont-elles marquées ?",
+    "muet": {
+      "source": "nat02-feuille.svg",
+      "cacher": [
+        "Épiderme supérieur",
+        "Parenchyme palissadique",
+        "Parenchyme lacuneux",
+        "Épiderme inférieur"
+      ],
+      "consigne": "Sur la coupe de feuille, retrouve les quatre couches, de haut en bas."
+    }
   },
   "61": {
     "ouverture": "Une feuille de vigne « respire » un peu comme toi. Brûle-t-elle des sucres, ou en fabrique-t-elle seulement ? Devine.",
@@ -117,7 +137,16 @@
       "q": "Un client curieux : « Une feuille peut-elle influencer ce que je retrouve dans mon verre ? »",
       "a": "Oui : par la photosynthèse, la feuille fabrique les sucres, mais aussi des composés secondaires comme les polyphénols, les anthocyanes et les arômes. Selon Lepeltier, la sève élaborée les distribue ensuite, après la véraison, aux grappes et aux réserves."
     },
-    "cave": "Choisis un vin de ta cave et note sa couleur et deux arômes. Rappelle-toi que polyphénols, anthocyanes et arômes font partie des composés secondaires fabriqués grâce à la photosynthèse de la feuille."
+    "cave": "Choisis un vin de ta cave et note sa couleur et deux arômes. Rappelle-toi que polyphénols, anthocyanes et arômes font partie des composés secondaires fabriqués grâce à la photosynthèse de la feuille.",
+    "muet": {
+      "source": "nat02-trois-fonctions.svg",
+      "cacher": [
+        "Photosynthèse",
+        "Respiration",
+        "Transpiration"
+      ],
+      "consigne": "Retrouve les trois fonctions de la feuille."
+    }
   },
   "62": {
     "ouverture": "Sur une île presque sans pluie, comment cacherais-tu des grappes du vent et du soleil ? Imagine une forme de vigne.",
@@ -152,7 +181,17 @@
       "q": "Un client : « Pourquoi dit-on que les vignes de Santorin sont très vieilles ? »",
       "a": "Le phylloxéra ne prospère pas dans ces sols volcaniques : les ceps sont francs de pied et très vieux. Et quand un pied faiblit, on recrée la souche sur les mêmes racines."
     },
-    "cave": "Sur la fiche technique d'un vin de ta cave (par exemple Château de Montmirail, à Gigondas), cherche le mode de conduite de la vigne. Note ce qui est indiqué, puis compare avec la kouloura de Santorin."
+    "cave": "Sur la fiche technique d'un vin de ta cave (par exemple Château de Montmirail, à Gigondas), cherche le mode de conduite de la vigne. Note ce qui est indiqué, puis compare avec la kouloura de Santorin.",
+    "muet": {
+      "source": "nat02-kouloura.svg",
+      "cacher": [
+        "sol volcanique",
+        "vent",
+        "soleil",
+        "humidité nocturne"
+      ],
+      "consigne": "Autour de la kouloura, retrouve le sol et les trois éléments du climat qu'elle gère."
+    }
   },
   "517": {
     "ouverture": "Si l'on veut vendanger à la machine, vaut-il mieux une vigne palissée sur des fils ou une vigne en gobelet ? Devine.",
@@ -187,6 +226,16 @@
       "q": "Un client : « Pourquoi attacher les rameaux entre des fils plutôt que de les laisser pousser librement ? »",
       "a": "Le palissage vertical garde la canopée étroite, ouverte et aérée, ce qui aide la maturation et limite les maladies. Il ouvre aussi la porte à la vendange mécanique."
     },
-    "cave": "Le cahier des charges de Côte-Rôtie admet l'échalas comme le plan relevé. À ta prochaine commande, demande au Domaine Martin Clerc lequel des deux il utilise, et note sa réponse."
+    "cave": "Le cahier des charges de Côte-Rôtie admet l'échalas comme le plan relevé. À ta prochaine commande, demande au Domaine Martin Clerc lequel des deux il utilise, et note sa réponse.",
+    "muet": {
+      "source": "nat02-systemes.svg",
+      "cacher": [
+        "Plan relevé (VSP)",
+        "Échalas",
+        "Lyre",
+        "Vigne haute"
+      ],
+      "consigne": "Retrouve le nom des quatre systèmes de conduite."
+    }
   }
 }

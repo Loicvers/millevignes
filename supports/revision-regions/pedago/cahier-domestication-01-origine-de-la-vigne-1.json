@@ -154,6 +154,16 @@
       "q": "Un client : « Mes vins viennent-ils de plusieurs espèces de vigne ? »",
       "a": "Les cépages classiques sont tous issus d'une seule espèce, V. vinifera, la seule d'Europe et du Proche-Orient. Les espèces américaines servent surtout de racines résistantes au phylloxéra, les asiatiques de source de tenue au froid."
     },
-    "cave": "Prends deux bouteilles de ta cave et relève le cépage sur chaque étiquette. Écris la phrase que tu diras à un client curieux pour expliquer l'espèce de vigne dont ils viennent."
+    "cave": "Prends deux bouteilles de ta cave et relève le cépage sur chaque étiquette. Écris la phrase que tu diras à un client curieux pour expliquer l'espèce de vigne dont ils viennent.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "→ les résistances",
+        "→ le froid",
+        "→ le vin",
+        "1 seule espèce"
+      ],
+      "consigne": "Retrouve ce que chaque bassin apporte à la vigne et l'espèce unique d'Europe."
+    }
   }
 }

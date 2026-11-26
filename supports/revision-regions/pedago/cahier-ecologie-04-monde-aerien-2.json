@@ -32,7 +32,17 @@
       "q": "Un client : « Pourquoi certains vignerons laissent-ils l'herbe pousser, et d'autres pas ? »",
       "a": "L'herbe fait concurrence à la vigne pour l'eau et l'azote, et peut accroître l'humidité, donc le risque de gel ou de pourriture. Mais le livre présente aussi les engrais verts comme utiles : certains décompactent le sol, d'autres fixent l'azote. Certains cahiers des charges imposent un couvert, d'autres n'en imposent pas explicitement."
     },
-    "cave": "Saumur-Champigny, dont le cahier des charges impose un couvert des tournières et un couvert maîtrisé de l'inter-rang : à ta prochaine commande au Domaine des Amandiers, demande au vigneron comment il gère l'herbe entre ses rangs, et pourquoi."
+    "cave": "Saumur-Champigny, dont le cahier des charges impose un couvert des tournières et un couvert maîtrisé de l'inter-rang : à ta prochaine commande au Domaine des Amandiers, demande au vigneron comment il gère l'herbe entre ses rangs, et pourquoi.",
+    "muet": {
+      "source": "eco04-engrais-verts.svg",
+      "cacher": [
+        "Brassicacées",
+        "Poacées",
+        "Fabacées",
+        "fixent l'azote"
+      ],
+      "consigne": "Retrouve les trois familles d'engrais verts et celle qui fixe l'azote."
+    }
   },
   "113": {
     "ouverture": "Quels insectes s'attaquent à la grappe de raisin, et comment s'en défendre sans insecticide ?",
@@ -67,7 +77,16 @@
       "q": "Un stagiaire : « La vigne est une plante robuste, non ? Pourquoi parle-t-on de ravageurs à son sujet ? »",
       "a": "En monoculture, la vigne forme un agrosystème fragile. Le livre y cite les tordeuses de la grappe (eudémis, cochylis, eulia, pyrale de la vigne), mais aussi cicadelles, acariens et cochenilles. Pour attirer les auxiliaires, le projet Agrolife a associé confusion sexuelle, haies et fleurs indigènes."
     },
-    "cave": "Prends un vin de ta cave et pose cette question à son vigneron à la prochaine commande : quels insectes surveille-t-il dans ses vignes, et quels moyens utilise-t-il pour s'en protéger ?"
+    "cave": "Prends un vin de ta cave et pose cette question à son vigneron à la prochaine commande : quels insectes surveille-t-il dans ses vignes, et quels moyens utilise-t-il pour s'en protéger ?",
+    "muet": {
+      "source": "eco04-agrosysteme.svg",
+      "cacher": [
+        "Confusion sexuelle",
+        "+ haies",
+        "+ fleurs indigènes"
+      ],
+      "consigne": "Retrouve les trois moyens associés dans le projet Agrolife."
+    }
   },
   "115": {
     "ouverture": "Si l'on te parle de permaculture dans une vigne, quels êtres vivants imagines-tu, à part la vigne elle-même ?",

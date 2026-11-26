@@ -32,7 +32,16 @@
       "q": "Un stagiaire : « Pourquoi certains vignerons laissent-ils tremper les peaux dans le jus d'un blanc ? »",
       "a": "Pour gagner en arômes et en corps. Mais c'est un pari : on ne le tente que sur des raisins sains et mûrs, au froid et à l'abri de l'oxygène. Les durées varient selon les sources, il n'y a pas de recette unique."
     },
-    "cave": "Ouvre la fiche technique d'un blanc de ta cave (Chablis du Château de Fleys, Sancerre du Domaine La Villaudière…) et cherche comment le raisin a été pressé. Rien n'est indiqué ? Note la question à poser au vigneron à la prochaine commande."
+    "cave": "Ouvre la fiche technique d'un blanc de ta cave (Chablis du Château de Fleys, Sancerre du Domaine La Villaudière…) et cherche comment le raisin a été pressé. Rien n'est indiqué ? Note la question à poser au vigneron à la prochaine commande.",
+    "muet": {
+      "source": "04-avant-fermentation.svg",
+      "cacher": [
+        "Pressurage lent,",
+        "Débourbage, puis",
+        "Contre l'oxydation, tout du long : sulfitage + froid + gaz inerte"
+      ],
+      "consigne": "Retrouve les trois étapes ou moyens qui font un jus de blanc protégé et propre."
+    }
   },
   "586": {
     "ouverture": "Faut-il toujours protéger un jus de raisin blanc de l'oxygène ? Réponds en une phrase, même au hasard.",
@@ -67,7 +76,17 @@
       "q": "Un client : « Un vigneron m'a dit qu'il oxyde volontairement son jus de blanc. Il n'abîme pas son vin ? »",
       "a": "Non, c'est de l'hyperoxydation : on apporte beaucoup d'oxygène avant le débourbage. Les phénols oxydables brunissent, précipitent et sont éliminés avec les bourbes, ce qui rend le vin plus stable à l'oxydation ensuite. L'autre école, la protection, écarte l'oxygène pour garder le fruit."
     },
-    "cave": "À la prochaine commande, demande au vigneron d'un de tes blancs (Château Moulin Caresse en Montravel, Domaine La Villaudière en Sancerre…) s'il protège son moût de l'oxygène ou s'il l'hyperoxyde avant le débourbage. Note sa réponse à côté de tes impressions de dégustation."
+    "cave": "À la prochaine commande, demande au vigneron d'un de tes blancs (Château Moulin Caresse en Montravel, Domaine La Villaudière en Sancerre…) s'il protège son moût de l'oxygène ou s'il l'hyperoxyde avant le débourbage. Note sa réponse à côté de tes impressions de dégustation.",
+    "muet": {
+      "source": "04-deux-voies.svg",
+      "cacher": [
+        "Protection",
+        "Hyperoxydation",
+        "SO2, froid, gaz inerte sur le jus",
+        "phénols bruns, précipités, éliminés"
+      ],
+      "consigne": "Retrouve le nom des deux voies face à l'oxygène et leur méthode."
+    }
   },
   "579": {
     "ouverture": "On presse un marc de raisin. Le jus de la fin ressemble-t-il à celui du début ? Qu'est-ce qui, selon toi, change ?",
@@ -102,7 +121,16 @@
       "q": "Un stagiaire : « Comment fonctionne un pressoir pneumatique, et que veut dire pressurage doux ? »",
       "a": "Une membrane se gonfle dans un cylindre perforé et la pression monte progressivement. Le pressurage doux vaut pour les deux types de pressoir : remplissage par gravité, peu de rebêches."
     },
-    "cave": "À la prochaine commande, demande au vigneron d'un de tes rouges (Château Haut-Maurac en Médoc, Château Jean Faure en Saint-Émilion grand cru classé…) s'il ajoute du vin de presse au vin de goutte, et comment il en décide. Note aussi le type de pressoir."
+    "cave": "À la prochaine commande, demande au vigneron d'un de tes rouges (Château Haut-Maurac en Médoc, Château Jean Faure en Saint-Émilion grand cru classé…) s'il ajoute du vin de presse au vin de goutte, et comment il en décide. Note aussi le type de pressoir.",
+    "muet": {
+      "source": "04-goutte-presse.svg",
+      "cacher": [
+        "Vin de goutte",
+        "Vin de presse",
+        "s'écoule sans pression"
+      ],
+      "consigne": "Retrouve les deux fractions du pressurage et ce qui caractérise la première."
+    }
   },
   "581": {
     "ouverture": "Un blanc sec « de fût » et un blanc sec « d'inox » : qu'est-ce qui change d'abord en bouche, avant même les arômes ?",

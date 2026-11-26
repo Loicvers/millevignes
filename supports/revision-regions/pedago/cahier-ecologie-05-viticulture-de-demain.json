@@ -32,7 +32,16 @@
       "q": "Un client : « Sur ce site, on parle de viticulture conventionnelle. Ça veut dire quoi, au juste ? »",
       "a": "C'est la viticulture issue de la révolution agricole d'après 1945. Elle s'appuie sur une vigne remembrée, en monoculture et mécanisée, et, de 1950 au début des années 1990, sur la généralisation des produits de synthèse : herbicides, pesticides, fongicides et engrais."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Château Les Pâques, en Blaye Côtes de Bordeaux) comment il protège et désherbe ses vignes. Note sa réponse, puis cherche s'il parle plutôt de conventionnel, de raisonné ou de bio."
+    "cave": "À ta prochaine commande, demande à un vigneron de ta cave (par exemple au Château Les Pâques, en Blaye Côtes de Bordeaux) comment il protège et désherbe ses vignes. Note sa réponse, puis cherche s'il parle plutôt de conventionnel, de raisonné ou de bio.",
+    "muet": {
+      "source": "eco05-bouleversements.svg",
+      "cacher": [
+        "Après 1945",
+        "Restructuration",
+        "Révolution agricole"
+      ],
+      "consigne": "Retrouve les trois temps qui mènent à la viticulture conventionnelle."
+    }
   },
   "117": {
     "ouverture": "Entre la viticulture conventionnelle et le bio, y a-t-il des étapes intermédiaires ? Lesquelles imagines-tu ?",
@@ -67,7 +76,16 @@
       "q": "Un vigneron te dit : « Moi, je fais du raisonné. » Que comprends-tu ?",
       "a": "Que ses traitements sont informés et contrôlés, sans que la logique des produits de synthèse change. En France, le décret du 25 avril 2002 organise la qualification en agriculture raisonnée : elle est délivrée via des organismes certificateurs agréés et valable cinq ans."
     },
-    "cave": "Sur le site ou la fiche technique d'un domaine de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny), cherche si une démarche est affichée : AB, HVE, autre. Note le mot exact utilisé et dis s'il relève du bio (notion 6) ou d'une des démarches intermédiaires du schéma."
+    "cave": "Sur le site ou la fiche technique d'un domaine de ta cave (par exemple Domaine des Amandiers, Saumur-Champigny), cherche si une démarche est affichée : AB, HVE, autre. Note le mot exact utilisé et dis s'il relève du bio (notion 6) ou d'une des démarches intermédiaires du schéma.",
+    "muet": {
+      "source": "eco05-etapes.svg",
+      "cacher": [
+        "Raisonnée",
+        "Intégrée, durable",
+        "HVE"
+      ],
+      "consigne": "Retrouve les trois démarches entre le conventionnel et le bio."
+    }
   },
   "118": {
     "ouverture": "Pour toi, nature et culture sont-elles deux mondes séparés ? Et crois-tu que toutes les sociétés le voient ainsi ?",
@@ -102,7 +120,17 @@
       "q": "Un stagiaire : « Pourquoi le livre remet-il en cause l'idée de nature ? On a toujours séparé la nature de la culture, non ? »",
       "a": "Pour Philippe Descola, cette séparation n'est pas universelle : elle est propre au naturalisme, l'une de quatre ontologies avec le totémisme, l'animisme et l'analogisme. Bruno Latour, de son côté, remet en cause cette séparation moderne."
     },
-    "cave": "Choisis une bouteille de ta cave. En deux phrases, écris comment tu parlerais à un client du rapport entre le vigneron et sa vigne : une nature qu'on gère, ou un vivant avec lequel on compose ? Il n'y a pas de bonne réponse : le livre invite simplement à se poser la question."
+    "cave": "Choisis une bouteille de ta cave. En deux phrases, écris comment tu parlerais à un client du rapport entre le vigneron et sa vigne : une nature qu'on gère, ou un vivant avec lequel on compose ? Il n'y a pas de bonne réponse : le livre invite simplement à se poser la question.",
+    "muet": {
+      "source": "eco05-ontologies.svg",
+      "cacher": [
+        "Naturalisme",
+        "Animisme",
+        "Totémisme",
+        "Analogisme"
+      ],
+      "consigne": "Retrouve les quatre ontologies de Descola."
+    }
   },
   "119": {
     "ouverture": "Peut-on « négocier » avec le vivant, comme on le ferait avec un voisin ? À quoi ressemblerait une diplomatie avec une vigne ?",

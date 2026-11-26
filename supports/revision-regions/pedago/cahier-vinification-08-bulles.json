@@ -32,7 +32,18 @@
       "q": "Un client : « Le crémant et le prosecco, c'est la même chose avec une autre étiquette ? »",
       "a": "Même gaz carbonique, mais pas le même lieu : un crémant fait sa seconde fermentation en bouteille, un prosecco en grande cuve fermée (cuve close). Selon le livre, la cuve close est plus rapide et moins coûteuse, et donne des notes plus fermentaires (poire)."
     },
-    "cave": "Lis la contre-étiquette de ton Crémant de Loire (Domaine du Haut Fresne) et de ton Champagne (Petit-Triolet) : note la mention de méthode, puis compare la finesse des bulles."
+    "cave": "Lis la contre-étiquette de ton Crémant de Loire (Domaine du Haut Fresne) et de ton Champagne (Petit-Triolet) : note la mention de méthode, puis compare la finesse des bulles.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "tirage",
+        "prise de mousse",
+        "remuage",
+        "dégorgement",
+        "dosage"
+      ],
+      "consigne": "Retrouve les cinq étapes de la méthode traditionnelle."
+    }
   },
   "583": {
     "ouverture": "Après la seconde fermentation, la bouteille contient un dépôt de levures mortes. Comment l'enlever sans perdre les bulles, à ton avis ?",
@@ -67,7 +78,17 @@
       "q": "Un client : « Mon vin à bulles est un peu trouble, et mon champagne est limpide. Il y a un défaut ? »",
       "a": "Pas forcément. En méthode traditionnelle, remuage puis dégorgement expulsent les lies : le vin est limpide. L'ancestrale n'a qu'une fermentation, achevée en bouteille, et peut garder un dépôt."
     },
-    "cave": "Goûte ton Champagne (Petit-Triolet) en cherchant pain, biscuit ou toast. À ta prochaine commande, demande au vigneron la durée sur lies et le dosage de la cuvée."
+    "cave": "Goûte ton Champagne (Petit-Triolet) en cherchant pain, biscuit ou toast. À ta prochaine commande, demande au vigneron la durée sur lies et le dosage de la cuvée.",
+    "muet": {
+      "source": "08-remuage.svg",
+      "cacher": [
+        "Sur lattes",
+        "Remuage",
+        "Dégorgement",
+        "lies rassemblées au goulot"
+      ],
+      "consigne": "Retrouve le trajet du dépôt jusqu'au goulot."
+    }
   },
   "636": {
     "ouverture": "Deux bouteilles de bulles : l'une dit « méthode traditionnelle », l'autre seulement « fermenté en bouteille ». Qu'est-ce qui peut différer entre elles, à ton avis ?",
@@ -138,7 +159,17 @@
       "q": "Un stagiaire : « Le marc, c'est ce qui reste dans le pressoir, non ? »",
       "a": "En Champagne, le mot désigne d'abord l'unité de pressurage : une charge de 4 000 kg de raisins, pressés en grappes entières. Le cahier des charges en tire au plus 2 550 litres, partagés entre cuvée et taille, vinifiées à part."
     },
-    "cave": "Demande à Petit-Triolet les dates de tirage et de dégorgement de la cuvée : de combien l'écart dépasse-t-il le minimum de 12 mois imposé par le cahier des charges ?"
+    "cave": "Demande à Petit-Triolet les dates de tirage et de dégorgement de la cuvée : de combien l'écart dépasse-t-il le minimum de 12 mois imposé par le cahier des charges ?",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Cuvée (cœur de pressée)",
+        "Taille",
+        "2 050 L",
+        "Liqueur d’expédition"
+      ],
+      "consigne": "Retrouve les deux lots d'un marc et la liqueur qui règle le dosage."
+    }
   },
   "471": {
     "ouverture": "Un crémant est un effervescent d'appellation. À ton avis, sa vendange se fait-elle à la machine ou à la main ?",

@@ -27,7 +27,16 @@
       "q": "Un stagiaire : « Si la vigne nourrit un champignon avec ses propres sucres, elle n'y perd pas ? »",
       "a": "C'est un échange : la plante cède des sucres, le champignon lui rend de l'eau et des sels minéraux comme l'azote et le phosphore. Il rend aussi d'autres services, comme une protection contre des pathogènes ou une meilleure structure du sol."
     },
-    "cave": "Prends un vin de ta cave et cherche sur l'étiquette ou la fiche technique du domaine si le mode de culture du vignoble est indiqué. À la prochaine commande, demande à un vigneron partenaire, par exemple Mas Amiel (Maury), s'il observe la vie du sol dans ses vignes."
+    "cave": "Prends un vin de ta cave et cherche sur l'étiquette ou la fiche technique du domaine si le mode de culture du vignoble est indiqué. À la prochaine commande, demande à un vigneron partenaire, par exemple Mas Amiel (Maury), s'il observe la vie du sol dans ses vignes.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Endomycorhize",
+        "Ectomycorhize",
+        "arbuscule"
+      ],
+      "consigne": "Retrouve les deux types de mycorhizes et la structure d'échange de la vigne."
+    }
   },
   "103": {
     "ouverture": "Si l'on apporte à la vigne tous les nutriments dont elle a besoin, ses champignons deviennent-ils plus utiles ou moins utiles pour elle ? Pourquoi ?",

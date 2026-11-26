@@ -27,7 +27,17 @@
       "q": "Un client : « Une variété résistante aux maladies, c'est un OGM ou un hybride américain ? »",
       "a": "Ni l'un ni l'autre. Une variété ResDur est un vinifera presque pur (plus de 95 % du génome), croisé puis trié par rétrocroisements pour garder des gènes de résistance, et plusieurs à la fois."
     },
-    "cave": "Champagne Petit-Triolet est en appellation Champagne, où l'on essaie le voltis (première récolte en 2025, décision attendue en 2033). À ta prochaine commande, demande au domaine ce qu'il pense des variétés résistantes."
+    "cave": "Champagne Petit-Triolet est en appellation Champagne, où l'on essaie le voltis (première récolte en 2025, décision attendue en 2033). À ta prochaine commande, demande au domaine ce qu'il pense des variétés résistantes.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Croisement",
+        "Hybridation",
+        "Introgression",
+        "rétrocroisements"
+      ],
+      "consigne": "Retrouve les trois termes effacés et la méthode de l'introgression."
+    }
   },
   "39": {
     "ouverture": "Pour que la fleur de vigne reçoive le pollen du père choisi, et celui-là seulement, que faut-il lui faire avant et après ? Devine.",
@@ -62,7 +72,16 @@
       "q": "Un stagiaire : « Pourquoi ne goûte-t-on pas tout de suite le résultat d'un croisement ? »",
       "a": "Une baie contient au plus quatre pépins et seuls ceux qui ont un embryon germent. Il faut ensuite plusieurs années de culture avant de juger les plants, et chaque pépin donne un résultat imprévisible."
     },
-    "cave": "À ta prochaine dégustation de raisin de table, ou lors d'une vendange chez un vigneron partenaire, ouvre une baie et compte ses pépins. Tu ne devrais jamais en trouver plus de quatre."
+    "cave": "À ta prochaine dégustation de raisin de table, ou lors d'une vendange chez un vigneron partenaire, ouvre une baie et compte ses pépins. Tu ne devrais jamais en trouver plus de quatre.",
+    "muet": {
+      "source": "dom08-trois-c.svg",
+      "cacher": [
+        "1. Castrer",
+        "2. Coller le pollen",
+        "3. Coiffer"
+      ],
+      "consigne": "Retrouve les trois gestes de l'hybridation à la main."
+    }
   },
   "40": {
     "ouverture": "Au XIXe siècle, les vignes européennes plantées aux États-Unis dépérissent, alors que les vignes locales survivent. Quelle idée cela peut-il donner à un viticulteur ?",
@@ -97,7 +116,16 @@
       "q": "Un client : « Le concord, c'est bien un cépage purement américain ? »",
       "a": "On l'a longtemps cru labrusca pur, mais la génétique y trouve environ un quart à un tiers de vinifera : c'est un hybride. Le delaware, lui aussi pris pour une vigne indigène, aurait une ascendance en partie vinifera (part non chiffrée)."
     },
-    "cave": "Passe en revue quelques étiquettes de ta cave : y vois-tu un hybride américain, comme le concord ou le delaware ? Note ce que tu trouves."
+    "cave": "Passe en revue quelques étiquettes de ta cave : y vois-tu un hybride américain, comme le concord ou le delaware ? Note ce que tu trouves.",
+    "muet": {
+      "source": "dom08-concord.svg",
+      "cacher": [
+        "Vitis labrusca « pur »",
+        "labrusca",
+        "vinifera"
+      ],
+      "consigne": "Retrouve ce qu'on croyait du concord et les deux espèces que la génétique révèle."
+    }
   },
   "41": {
     "ouverture": "Louis Bouschet croise l'aramon avec un teinturier. Qu'est-ce qu'un teinturier, à ton avis ?",
@@ -127,7 +155,17 @@
       "q": "Un client : « L'alicante bouschet, c'est un hybride américain, non ? »",
       "a": "Non : ses parents sont deux vinifera, c'est un croisement à l'intérieur de l'espèce. Henri Bouschet l'a obtenu en croisant le petit bouschet (aramon noir × teinturier du Cher) avec le grenache noir. Sa date varie selon les sources."
     },
-    "cave": "Louis Bouschet a créé le petit bouschet à Mauguio (Hérault), selon Wine Grapes. À ta prochaine commande au Château Fonsalade (Saint-Chinian), demande si l'alicante bouschet ou un autre teinturier a sa place dans la région."
+    "cave": "Louis Bouschet a créé le petit bouschet à Mauguio (Hérault), selon Wine Grapes. À ta prochaine commande au Château Fonsalade (Saint-Chinian), demande si l'alicante bouschet ou un autre teinturier a sa place dans la région.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "aramon noir",
+        "teinturier du Cher",
+        "alicante bouschet",
+        "grenache noir"
+      ],
+      "consigne": "Retrouve les cépages effacés de la lignée des teinturiers."
+    }
   },
   "42": {
     "ouverture": "Le phylloxéra tue les vinifera franches de pied, mais pas les vignes américaines. Quelles solutions imagines-tu ?",
@@ -198,6 +236,15 @@
       "q": "Un stagiaire : « Lepeltier date l'interdiction de 1935, ma fiche dit 1934. Qui a raison ? »",
       "a": "Les deux datent un acte différent : la loi est du 24 décembre 1934, et un décret d'application suit en 1935."
     },
-    "cave": "Parcours la liste des cépages de ta cave et cherche les six noms interdits. Prépare une phrase pour expliquer à un client pourquoi on n'en trouve pas sur les étiquettes."
+    "cave": "Parcours la liste des cépages de ta cave et cherche les six noms interdits. Prépare une phrase pour expliquer à un client pourquoi on n'en trouve pas sur les étiquettes.",
+    "muet": {
+      "source": "dom08-six-interdits.svg",
+      "cacher": [
+        "24 déc. 1934",
+        "1987",
+        "toujours en vigueur"
+      ],
+      "consigne": "Retrouve les dates et l'état de l'interdiction."
+    }
   }
 }

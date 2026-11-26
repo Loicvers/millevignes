@@ -1,4 +1,48 @@
 {
+  "247": {
+    "ouverture": "Où s'attend-on à trouver la liste des ingrédients d'un vin récent : sur l'étiquette, ou ailleurs ?",
+    "illus": [
+      {
+        "svg": "11-etiquette.svg",
+        "legende": "Une étiquette à deux étages : l'énergie sur la bouteille, le reste derrière un QR code ; les allergènes ont déjà leur mention."
+      }
+    ],
+    "schema": {
+      "titre": "Étiqueter ce qu'il y a dans le vin",
+      "lignes": [
+        [
+          "Règlement qui change la règle",
+          "(UE) 2021/2117"
+        ],
+        [
+          "Vins concernés",
+          "ceux produits à partir du 8 décembre 2023"
+        ],
+        [
+          "Seuil de mention des sulfites",
+          "au-delà de 10 mg/l"
+        ],
+        [
+          "Œuf et lait sont mentionnés si…",
+          "des résidus de collage sont détectables dans le vin fini"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Cette bouteille ne porte aucune liste d'ingrédients. Le fabricant est-il en infraction ? »",
+      "a": "Pas forcément. La règle vise les vins produits à partir du 8 décembre 2023, et la liste des ingrédients peut passer par un QR code. Parmi ces nouvelles informations, seule la valeur énergétique doit figurer sur l'étiquette elle-même ; les allergènes (sulfites au-delà de 10 mg/l…) ont déjà leur mention propre."
+    },
+    "cave": "Cherche l'énergie et un QR code sur une bouteille de Château Les Pâques.",
+    "muet": {
+      "source": "11-etiquette.svg",
+      "cacher": [
+        "la valeur énergétique",
+        "Les allergènes",
+        "À l'étage : par voie électronique (QR code)"
+      ],
+      "consigne": "Retrouve ce qui doit figurer sur l'étiquette, le moyen de renvoyer le reste et la mention qui existe déjà."
+    }
+  },
   "580": {
     "ouverture": "Si tu mélanges deux vins, qu'en attends-tu ? Et à quoi un assemblage ne doit-il surtout jamais servir ?",
     "illus": [
@@ -32,43 +76,17 @@
       "q": "Un client : « Assembler, c'est cacher les défauts ? »",
       "a": "Non. Selon l'OIV, on assemble pour exprimer au mieux une origine ou atteindre un profil voulu, jamais pour masquer une altération. On mêle des cépages, des parcelles, des cuves ou des fûts pour obtenir un vin plus équilibré ou plus régulier que chacun d'eux."
     },
-    "cave": "Relève les cépages cités sur la fiche technique d'un vin de Château Jean Faure."
-  },
-  "681": {
-    "ouverture": "Dans un grand château, tous les lots de cuve finissent-ils dans l'étiquette principale ? Qu'en fait-on, selon toi ?",
-    "illus": [
-      {
-        "photo": "../initiation-oenologie/img/fut.jpg",
-        "legende": "La barrique, contenant de l'élevage des grands bordeaux.",
-        "credit": "Illustration : support d'initiation de la cave."
-      }
-    ],
-    "schema": {
-      "titre": "Du cuvier au chai",
-      "lignes": [
-        [
-          "Contenance de la barrique bordelaise",
-          "225 litres"
-        ],
-        [
-          "Durée d'élevage d'un grand vin",
-          "environ un an et demi à deux ans"
-        ],
-        [
-          "Moment habituel de l'assemblage",
-          "dans l'hiver qui suit les vendanges"
-        ],
-        [
-          "Destin des lots écartés",
-          "second vin, voire vente en vrac"
-        ]
-      ]
-    },
-    "cas": {
-      "q": "Un client : « C'est quoi, le second vin d'un château ? »",
-      "a": "Au moment de l'assemblage, le château choisit les lots du grand vin et écarte les autres. Le second vin est fait avec ces lots non retenus, et vendu sous une autre étiquette."
-    },
-    "cave": "Demande à Château Haut-Maurac (Médoc) s'il produit un second vin."
+    "cave": "Relève les cépages cités sur la fiche technique d'un vin de Château Jean Faure.",
+    "muet": {
+      "source": "11-assemblage.svg",
+      "cacher": [
+        "cépages",
+        "parcelles",
+        "fractions de presse",
+        "millésimes"
+      ],
+      "consigne": "Retrouve quatre choses que l'on peut assembler."
+    }
   },
   "589": {
     "ouverture": "Pourquoi l'oxygène dissous au remplissage pose-t-il problème, alors que le vin a été soufré ?",
@@ -133,41 +151,51 @@
       "q": "Un client : « Étiquette 13 %, analyse 13,4 % : est-ce légal ? »",
       "a": "Oui, en général : dans l'UE (règlement 2019/33), le degré étiqueté peut s'écarter de l'analyse de 0,5 % vol. au plus, ici 0,4. La marge passe à 0,8 % vol. pour certaines catégories (AOP et IGP gardées plus de trois ans en bouteille, effervescents, vins de liqueur, raisins surmûris)."
     },
-    "cave": "Si la fiche technique de ton Gigondas (Montmirail) donne un degré analysé, compare-le au degré de l'étiquette et calcule l'écart."
+    "cave": "Si la fiche technique de ton Gigondas (Montmirail) donne un degré analysé, compare-le au degré de l'étiquette et calcule l'écart.",
+    "muet": {
+      "source": "11-acidite-volatile.svg",
+      "cacher": [
+        "distillation",
+        "titrage",
+        "meq/l"
+      ],
+      "consigne": "Retrouve les deux méthodes de dosage de l'acidité volatile et l'unité du résultat."
+    }
   },
-  "247": {
-    "ouverture": "Où s'attend-on à trouver la liste des ingrédients d'un vin récent : sur l'étiquette, ou ailleurs ?",
+  "681": {
+    "ouverture": "Dans un grand château, tous les lots de cuve finissent-ils dans l'étiquette principale ? Qu'en fait-on, selon toi ?",
     "illus": [
       {
-        "svg": "11-etiquette.svg",
-        "legende": "Une étiquette à deux étages : l'énergie sur la bouteille, le reste derrière un QR code ; les allergènes ont déjà leur mention."
+        "photo": "../initiation-oenologie/img/fut.jpg",
+        "legende": "La barrique, contenant de l'élevage des grands bordeaux.",
+        "credit": "Illustration : support d'initiation de la cave."
       }
     ],
     "schema": {
-      "titre": "Étiqueter ce qu'il y a dans le vin",
+      "titre": "Du cuvier au chai",
       "lignes": [
         [
-          "Règlement qui change la règle",
-          "(UE) 2021/2117"
+          "Contenance de la barrique bordelaise",
+          "225 litres"
         ],
         [
-          "Vins concernés",
-          "ceux produits à partir du 8 décembre 2023"
+          "Durée d'élevage d'un grand vin",
+          "environ un an et demi à deux ans"
         ],
         [
-          "Seuil de mention des sulfites",
-          "au-delà de 10 mg/l"
+          "Moment habituel de l'assemblage",
+          "dans l'hiver qui suit les vendanges"
         ],
         [
-          "Œuf et lait sont mentionnés si…",
-          "des résidus de collage sont détectables dans le vin fini"
+          "Destin des lots écartés",
+          "second vin, voire vente en vrac"
         ]
       ]
     },
     "cas": {
-      "q": "Un client : « Cette bouteille ne porte aucune liste d'ingrédients. Le fabricant est-il en infraction ? »",
-      "a": "Pas forcément. La règle vise les vins produits à partir du 8 décembre 2023, et la liste des ingrédients peut passer par un QR code. Parmi ces nouvelles informations, seule la valeur énergétique doit figurer sur l'étiquette elle-même ; les allergènes (sulfites au-delà de 10 mg/l…) ont déjà leur mention propre."
+      "q": "Un client : « C'est quoi, le second vin d'un château ? »",
+      "a": "Au moment de l'assemblage, le château choisit les lots du grand vin et écarte les autres. Le second vin est fait avec ces lots non retenus, et vendu sous une autre étiquette."
     },
-    "cave": "Cherche l'énergie et un QR code sur une bouteille de Château Les Pâques."
+    "cave": "Demande à Château Haut-Maurac (Médoc) s'il produit un second vin."
   }
 }

@@ -1,4 +1,48 @@
 {
+  "233": {
+    "ouverture": "Qu'est-ce qui pousse sur un vin quand on laisse un peu d'air dans le fût, et à quoi ça sert ?",
+    "illus": [
+      {
+        "svg": "12-alcool-voile.svg",
+        "legende": "Plus le vin est alcoolisé, moins le voile se forme : c'est ce qui sépare le fino de l'oloroso."
+      }
+    ],
+    "schema": {
+      "titre": "Sous voile ou au contact de l'air",
+      "lignes": [
+        [
+          "Le voile (flor)",
+          "couche de levures qui isole le vin de l'air et lui donne des arômes propres"
+        ],
+        [
+          "Vin jaune : élevage et format",
+          "plus de six ans en fût non complètement rempli, clavelin de 62 cl"
+        ],
+        [
+          "Jeune vin du fino : fortification",
+          "vers 15-15,5 % vol."
+        ],
+        [
+          "Oloroso",
+          "fortifié vers 17,5-18 %, vieilli sans voile"
+        ]
+      ]
+    },
+    "cas": {
+      "q": "Un client : « Fino et oloroso, c'est le même xérès, non ? »",
+      "a": "Non : le fino vieillit sous voile, protégé de l'air par la flor, après une fortification modérée vers 15-15,5 % vol. L'oloroso est fortifié plus haut, vers 17,5-18 %, ce qui empêche le voile : il vieillit au contact de l'air."
+    },
+    "cave": "Relis la fiche technique de ton Maury (Mas Amiel) et note son degré d'alcool. Compare-le aux repères du schéma : le fino (15-15,5 %) et l'oloroso (17,5-18 %).",
+    "muet": {
+      "source": "12-alcool-voile.svg",
+      "cacher": [
+        "voile possible (fino)",
+        "plus de voile (oloroso)",
+        "difficile"
+      ],
+      "consigne": "Retrouve ce qui devient possible, difficile puis impossible quand le degré d'alcool monte."
+    }
+  },
   "675": {
     "ouverture": "Un domaine de Bourgogne élève son vin en « pièces » : à ton avis, combien de litres contient une pièce bourguignonne ?",
     "illus": [],
@@ -62,7 +106,16 @@
       "q": "Un client : « Mon Gigondas a-t-il vieilli en fût de chêne ? »",
       "a": "Ça dépend du cépage : dans le Rhône, le grenache reste plutôt en béton ou en inox, alors que la syrah et le mourvèdre passent davantage en petits fûts, où le bois neuf reste en général minoritaire. Pour une cuvée précise, la fiche technique du domaine tranche."
     },
-    "cave": "Ton Gigondas du Château de Montmirail, ton Gigondas de la Bastide Saint-Vincent et ton Saint-Joseph du Domaine de Boisseyt : relis leurs fiches techniques et note, pour chacun, le contenant d'élevage et les cépages ; vérifie si la tendance « grenache en cuve, syrah en bois » s'y retrouve."
+    "cave": "Ton Gigondas du Château de Montmirail, ton Gigondas de la Bastide Saint-Vincent et ton Saint-Joseph du Domaine de Boisseyt : relis leurs fiches techniques et note, pour chacun, le contenant d'élevage et les cépages ; vérifie si la tendance « grenache en cuve, syrah en bois » s'y retrouve.",
+    "muet": {
+      "source": "12-contenants-rhone.svg",
+      "cacher": [
+        "Cuve béton",
+        "Foudre",
+        "Petit fût"
+      ],
+      "consigne": "Retrouve les trois contenants du Rhône, du plus répandu au moins répandu."
+    }
   },
   "693": {
     "ouverture": "Un seul vignoble peut-il donner des bulles, un liquoreux et un rouge de garde ? Cite le vin qui t'étonnerait le plus.",
@@ -97,7 +150,17 @@
       "q": "Un client : « Je cherche un vin de Loire doux, mais pas lourd. Par où commencer ? »",
       "a": "Les liquoreux du Layon et de Vouvray naissent de raisins surmûris, parfois botrytisés, cueillis par tries successives."
     },
-    "cave": "Tony Rousseau propose en Loire des appellations très différentes : Anjou, Coteaux du Layon Saint-Lambert-du-Lattay, Bonnezeaux, Cabernet d'Anjou, Crémant de Loire. Goûte-en trois et classe-les du plus sec au plus doux, puis du plus léger au plus concentré."
+    "cave": "Tony Rousseau propose en Loire des appellations très différentes : Anjou, Coteaux du Layon Saint-Lambert-du-Lattay, Bonnezeaux, Cabernet d'Anjou, Crémant de Loire. Goûte-en trois et classe-les du plus sec au plus doux, puis du plus léger au plus concentré.",
+    "muet": {
+      "source": "12-styles-loire.svg",
+      "cacher": [
+        "Blanc sec",
+        "Liquoreux",
+        "Effervescent",
+        "Rosé"
+      ],
+      "consigne": "Retrouve quatre des cinq familles de vins de la Loire."
+    }
   },
   "816": {
     "ouverture": "Deux fûts de blanc dans le même chai : l'un est rempli à ras bord, l'autre non. Que va-t-il se passer à la surface du second ?",
@@ -132,41 +195,15 @@
       "q": "Un client : « Ce blanc du Jura a un goût oxydatif : il est abîmé ? »",
       "a": "Pas forcément : un blanc jurassien élevé en fût non rempli peut développer un voile et un style oxydatif, qui peut expliquer ces arômes. C'est un style, à distinguer du vin jaune, qui suit des règles précises."
     },
-    "cave": "Aucun domaine partenaire n'est dans le Jura : choisis chez ton fournisseur un blanc du Jura ouillé et un blanc sous voile, ou demande à un caviste d'en ouvrir un de chaque ; goûte-les côte à côte et note ce qui change (fraîcheur, fruit, notes oxydatives)."
-  },
-  "233": {
-    "ouverture": "Qu'est-ce qui pousse sur un vin quand on laisse un peu d'air dans le fût, et à quoi ça sert ?",
-    "illus": [
-      {
-        "svg": "12-alcool-voile.svg",
-        "legende": "Plus le vin est alcoolisé, moins le voile se forme : c'est ce qui sépare le fino de l'oloroso."
-      }
-    ],
-    "schema": {
-      "titre": "Sous voile ou au contact de l'air",
-      "lignes": [
-        [
-          "Le voile (flor)",
-          "couche de levures qui isole le vin de l'air et lui donne des arômes propres"
-        ],
-        [
-          "Vin jaune : élevage et format",
-          "plus de six ans en fût non complètement rempli, clavelin de 62 cl"
-        ],
-        [
-          "Jeune vin du fino : fortification",
-          "vers 15-15,5 % vol."
-        ],
-        [
-          "Oloroso",
-          "fortifié vers 17,5-18 %, vieilli sans voile"
-        ]
-      ]
-    },
-    "cas": {
-      "q": "Un client : « Fino et oloroso, c'est le même xérès, non ? »",
-      "a": "Non : le fino vieillit sous voile, protégé de l'air par la flor, après une fortification modérée vers 15-15,5 % vol. L'oloroso est fortifié plus haut, vers 17,5-18 %, ce qui empêche le voile : il vieillit au contact de l'air."
-    },
-    "cave": "Relis la fiche technique de ton Maury (Mas Amiel) et note son degré d'alcool. Compare-le aux repères du schéma : le fino (15-15,5 %) et l'oloroso (17,5-18 %)."
+    "cave": "Aucun domaine partenaire n'est dans le Jura : choisis chez ton fournisseur un blanc du Jura ouillé et un blanc sous voile, ou demande à un caviste d'en ouvrir un de chaque ; goûte-les côte à côte et note ce qui change (fraîcheur, fruit, notes oxydatives).",
+    "muet": {
+      "source": "12-ouille-voile.svg",
+      "cacher": [
+        "Fût plein, ouillé",
+        "Fût non rempli",
+        "voile de levures"
+      ],
+      "consigne": "Retrouve les deux logiques de chai et ce qui se forme à la surface quand le fût n'est pas plein."
+    }
   }
 }

@@ -62,7 +62,16 @@
       "q": "Un client : « Alors, le vin est né en Géorgie ? »",
       "a": "Les plus anciennes traces chimiques de vin connues viennent de jarres de Géorgie, vers 6000 av. J.-C. Mais la plus ancienne preuve n’est pas forcément le premier vin : d’autres sites restent à fouiller, et les chercheurs débattent encore du ou des foyers de domestication."
     },
-    "cave": "Choisis un vin de ta cave. En moins d’une minute, raconte à voix haute l’origine de la vigne à un client imaginaire, sans jargon, en disant honnêtement que les chercheurs ne sont pas tous d’accord."
+    "cave": "Choisis un vin de ta cave. En moins d’une minute, raconte à voix haute l’origine de la vigne à un client imaginaire, sans jargon, en disant honnêtement que les chercheurs ne sont pas tous d’accord.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Lambrusque",
+        "liane sauvage",
+        "Vigne cultivée"
+      ],
+      "consigne": "Retrouve la vigne sauvage et la vigne cultivée de l'histoire de la domestication."
+    }
   },
   "20": {
     "ouverture": "Pour planter de la vigne dans un pays très froid, quelle qualité chercherais-tu chez une espèce sauvage ? Devine, puis lis.",
@@ -97,7 +106,17 @@
       "q": "Un client : « Ce solaris résiste à −40 °C, c’est ça ? »",
       "a": "Non. Le solaris descend d’un croisement avec V. amurensis, l’espèce la plus résistante au froid (de l’ordre de −40 °C selon plusieurs articles, −45 °C pour le livre, un seul essai mesuré trouvant environ −31 °C). Mais la tenue au froid d’un cépage n’est pas celle de l’espèce : pour le cabernet severny, par exemple, Wine Grapes parle d’environ −25 °C."
     },
-    "cave": "Parcours les fiches techniques de quelques-uns de tes domaines partenaires : y trouves-tu du solaris, du rondo ou du cabernet severny ? Note ce que tu vois, même si la réponse est « aucun »."
+    "cave": "Parcours les fiches techniques de quelques-uns de tes domaines partenaires : y trouves-tu du solaris, du rondo ou du cabernet severny ? Note ce que tu vois, même si la réponse est « aucun ».",
+    "muet": {
+      "source": "dom02-amurensis.svg",
+      "cacher": [
+        "V. amurensis",
+        "Rondo",
+        "Solaris",
+        "Cabernet severny"
+      ],
+      "consigne": "Retrouve l'espèce de départ et les cépages du froid qui en descendent."
+    }
   },
   "21": {
     "ouverture": "Un virus de la vigne voyage-t-il tout seul dans le sol ? Qui, à ton avis, le transporte ?",
@@ -132,6 +151,16 @@
       "q": "Un vigneron te dit : « Mon porte-greffe vient de la muscadine, je suis tranquille pour le court-noué ? »",
       "a": "Pas complètement. Les porte-greffes issus de la muscadine, comme le O39-16, sont tolérants : ils résistent au nématode qui pique les racines et limitent les pertes de nouaison, mais ils n’empêchent pas à coup sûr le virus de passer."
     },
-    "cave": "À ta prochaine commande, demande à un vigneron de ta liste (par exemple au Clos de Garaud, en Ventoux) quel porte-greffe il a choisi et pourquoi. Note si le court-noué fait partie de sa réponse."
+    "cave": "À ta prochaine commande, demande à un vigneron de ta liste (par exemple au Clos de Garaud, en Ventoux) quel porte-greffe il a choisi et pourquoi. Note si le court-noué fait partie de sa réponse.",
+    "muet": {
+      "source": "dom02-muscadine.svg",
+      "cacher": [
+        "Nématode",
+        "Xiphinema index",
+        "GFLV",
+        "Muscadinia rotundifolia"
+      ],
+      "consigne": "Retrouve le nématode, le virus et la vigne qui lui résiste."
+    }
   }
 }

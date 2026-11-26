@@ -32,7 +32,17 @@
       "q": "Un client voit deux cépages aux noms différents sur deux étiquettes et demande s'il peut s'agir du même.",
       "a": "Oui, c'est possible : il n'existe pas de nomenclature mondiale unique, et certains noms trompent (l'auxerrois de Cahors est le côt). L'ADN est ce qui le prouve, car il établit l'identité du plant sans imposer de nom."
     },
-    "cave": "Choisis un vin de ta cave dont l'étiquette cite un cépage. Note le nom exact, puis cherche si sa fiche technique ou une autre source l'appelle autrement. Tu vérifies par toi-même qu'un cépage peut porter plusieurs noms."
+    "cave": "Choisis un vin de ta cave dont l'étiquette cite un cépage. Note le nom exact, puis cherche si sa fiche technique ou une autre source l'appelle autrement. Tu vérifies par toi-même qu'un cépage peut porter plusieurs noms.",
+    "muet": {
+      "source": "dom06-identifier.svg",
+      "cacher": [
+        "Décrire",
+        "Mesurer",
+        "Lire l'ADN",
+        "microsatellites"
+      ],
+      "consigne": "Retrouve les trois étapes pour reconnaître un cépage."
+    }
   },
   "29": {
     "ouverture": "Un pépiniériste te vend un « clone agréé ». Qu'est-ce qui est garanti en premier, à ton avis : le goût du vin ou la santé du plant ?",
@@ -67,7 +77,16 @@
       "q": "Un client : « 47 clones de pinot noir agréés : la diversité doit être énorme ! »",
       "a": "Pas forcément. Le livre en compte 47 (48 en 2026), mais c'est une sélection menée d'abord pour la santé du plant. Lepeltier s'inquiète d'une diversité intra-variétale ainsi rétrécie."
     },
-    "cave": "À ta prochaine commande, pose cette question au Domaine Pernot Père & Fils (Gevrey-Chambertin) : « Vos plants de pinot noir sont-ils des clones agréés ? » Note sa réponse."
+    "cave": "À ta prochaine commande, pose cette question au Domaine Pernot Père & Fils (Gevrey-Chambertin) : « Vos plants de pinot noir sont-ils des clones agréés ? » Note sa réponse.",
+    "muet": {
+      "source": "dom06-clone.svg",
+      "cacher": [
+        "Catalogue officiel",
+        "Un numéro d'agrément",
+        "Un certificat de santé"
+      ],
+      "consigne": "Retrouve les trois éléments de la carte d'identité d'un clone."
+    }
   },
   "1": {
     "ouverture": "À volume de jus égal, une petite baie ou une grosse baie donne-t-elle le plus de couleur au vin ? Pourquoi ?",
@@ -202,7 +221,17 @@
       "q": "Un stagiaire : « Un proles, c'est une région ou un cépage ? »",
       "a": "Ni l'un ni l'autre : c'est un grand groupe écologique et géographique de cépages, défini par Negrul en 1946. Il sert à situer l'origine géographique d'un cépage."
     },
-    "cave": "Prends ton Alsace (Domaine Burghart-Spettel) et lis le cépage sur l'étiquette. S'il s'agit d'un riesling ou d'un pinot, tu as un occidentalis dans le verre : note ce que « baies juteuses, cépage de cuve » t'évoque en bouche."
+    "cave": "Prends ton Alsace (Domaine Burghart-Spettel) et lis le cépage sur l'étiquette. S'il s'agit d'un riesling ou d'un pinot, tu as un occidentalis dans le verre : note ce que « baies juteuses, cépage de cuve » t'évoque en bouche.",
+    "muet": {
+      "source": "dom06-proles.svg",
+      "cacher": [
+        "Occidentalis",
+        "Pontica",
+        "Orientalis",
+        "Europe de l'Ouest"
+      ],
+      "consigne": "Retrouve les trois proles de Negrul, d'ouest en est."
+    }
   },
   "32": {
     "ouverture": "« Noiriens », « carmenets », « sérines » : ce sont des familles de cépages. À ton avis, d'où viennent ces noms ?",
@@ -237,6 +266,16 @@
       "q": "Un client : « Les carmenets, c'est une appellation ? »",
       "a": "Non : c'est un des 16 groupes de cépages français proposés par Bisson, nommé d'après son cépage le plus représentatif, le cabernet franc. Un groupe réunit des cépages apparentés, nés dans un même milieu."
     },
-    "cave": "Prends trois vins de ta cave. Pour chacun, note le cépage lu sur l'étiquette ou la fiche technique et cherche s'il est le chef d'un groupe (pinot, syrah, cabernet franc, savagnin, petit manseng)."
+    "cave": "Prends trois vins de ta cave. Pour chacun, note le cépage lu sur l'étiquette ou la fiche technique et cherche s'il est le chef d'un groupe (pinot, syrah, cabernet franc, savagnin, petit manseng).",
+    "muet": {
+      "source": "dom06-familles.svg",
+      "cacher": [
+        "1946, Negrul",
+        "1948, Levadoux",
+        "1999, Bisson",
+        "16 groupes"
+      ],
+      "consigne": "Retrouve les auteurs et le résultat de la classification."
+    }
   }
 }

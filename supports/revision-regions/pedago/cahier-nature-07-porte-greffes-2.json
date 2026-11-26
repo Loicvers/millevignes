@@ -132,7 +132,17 @@
       "q": "Un stagiaire lit dans une note de millésime : « floraison en I, véraison en M ». Il ne comprend pas.",
       "a": "Ce sont des lettres de l'échelle de Baggiolini (1952), qui note le cycle de A à P. I désigne la floraison, M la véraison. L'échelle internationale BBCH leur donne des codes chiffrés (65 et 85)."
     },
-    "cave": "Demande au Château de Montmirail (Gigondas) à quelles dates ses vignes ont atteint la floraison (I) et la véraison (M) lors du dernier millésime, puis place-les sur l'échelle."
+    "cave": "Demande au Château de Montmirail (Gigondas) à quelles dates ses vignes ont atteint la floraison (I) et la véraison (M) lors du dernier millésime, puis place-les sur l'échelle.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "A–C débourrement",
+        "F–H inflorescences",
+        "I–L floraison → grappe",
+        "M–N maturation"
+      ],
+      "consigne": "Retrouve les quatre grandes étapes du cycle de Baggiolini."
+    }
   },
   "518": {
     "ouverture": "Cite deux gestes que le vigneron fait sur la vigne entre le printemps et l'été, quand les feuilles sont sorties.",
@@ -202,6 +212,16 @@
       "q": "Un client passe en mars et s'étonne : « Ils taillent encore ? »",
       "a": "Oui, c'est possible : la taille se fait généralement du 15 novembre au 15 mars, et de mi-janvier à fin mars en Savoie. Certains cahiers des charges fixent même une date limite, comme le 1er mai à Montlouis."
     },
-    "cave": "Cherche la date limite de taille dans le cahier des charges de l'AOC Beaujolais, puis demande au Domaine Coste-Lapalus quand sa taille s'achève en général."
+    "cave": "Cherche la date limite de taille dans le cahier des charges de l'AOC Beaujolais, puis demande au Domaine Coste-Lapalus quand sa taille s'achève en général.",
+    "muet": {
+      "source": "nat07-calendrier.svg",
+      "cacher": [
+        "taille",
+        "ébourgeonnage",
+        "rognage",
+        "vendanges"
+      ],
+      "consigne": "Dans l'année du vigneron, retrouve le premier travail, le dernier et deux gestes de la saison."
+    }
   }
 }

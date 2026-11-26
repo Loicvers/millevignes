@@ -27,7 +27,17 @@
       "q": "Un client : « Donc le vin a été inventé en Géorgie ? »",
       "a": "Pas forcément. La Géorgie livre la plus ancienne preuve chimique connue, vers 6000-5800 av. J.-C. Mais Patrick McGovern lui-même juge impossible de désigner la région pionnière : d'autres sites restent à fouiller."
     },
-    "cave": "Sur les fiches techniques de trois vins de ta cave, regarde dans quel contenant le vin est élevé (cuve, fût, autre). Si l'information manque, note la question à poser au vigneron à la prochaine commande."
+    "cave": "Sur les fiches techniques de trois vins de ta cave, regarde dans quel contenant le vin est élevé (cuve, fût, autre). Si l'information manque, note la question à poser au vigneron à la prochaine commande.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Géorgie",
+        "Hajji Firuz Tepe",
+        "Areni-1",
+        "Iran, v. 5400"
+      ],
+      "consigne": "Place sur la frise les sites des plus anciennes traces de vin."
+    }
   },
   "14": {
     "ouverture": "Qui est venu en premier : le vigneron qui cultive la vigne, ou l'homme qui goûte un raisin fermenté tout seul ? Donne ton avis.",
@@ -98,7 +108,16 @@
       "q": "Un client : « Pourquoi ne plante-t-on pas des pépins pour faire une vigne ? »",
       "a": "Un pépin brasse les gènes : il ne reproduit pas le pied mère. Une bouture ou une marcotte donne au contraire un clone, ce qui permet de garder à l'identique un bon pied, par exemple un hermaphrodite."
     },
-    "cave": "Prends un vin de ta cave dont l'étiquette nomme le cépage. Prépare deux phrases pour expliquer à un client pourquoi ce cépage peut traverser les siècles à peu près inchangé."
+    "cave": "Prends un vin de ta cave dont l'étiquette nomme le cépage. Prépare deux phrases pour expliquer à un client pourquoi ce cépage peut traverser les siècles à peu près inchangé.",
+    "muet": {
+      "source": "dom03-sexes.svg",
+      "cacher": [
+        "Vigne cultivée",
+        "pied mâle",
+        "pied femelle"
+      ],
+      "consigne": "Retrouve la vigne cultivée et les deux sexes de la vigne sauvage."
+    }
   },
   "16": {
     "ouverture": "Les cépages de la Méditerranée sont-ils nés sur place ou venus d'ailleurs ? Devine, et dis ce qui a pu les diversifier.",

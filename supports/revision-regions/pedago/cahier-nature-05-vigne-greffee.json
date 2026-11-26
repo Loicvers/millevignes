@@ -103,7 +103,17 @@
       "q": "Un client : « Phylloxera vastatrix, c’est bien le nom officiel du puceron ? »",
       "a": "C’est le nom donné par Planchon en 1868, mais il n’est plus le nom valide. L’insecte est celui décrit par Fitch en 1855 ; son nom valide est aujourd’hui Daktulosphaira vitifoliae."
     },
-    "cave": "Prends un vin de ta cave et regarde son millésime. Calcule combien d’années séparent ce millésime de la découverte du phylloxéra en 1868."
+    "cave": "Prends un vin de ta cave et regarde son millésime. Calcule combien d’années séparent ce millésime de la découverte du phylloxéra en 1868.",
+    "muet": {
+      "source": "nat05-noms.svg",
+      "cacher": [
+        "1855",
+        "Fitch",
+        "Rhizaphis",
+        "Planchon"
+      ],
+      "consigne": "Retrouve la date, l'auteur et les noms successifs de l'insecte."
+    }
   },
   "74": {
     "ouverture": "Un même insecte attaque les feuilles et les racines. Selon toi, laquelle de ces deux attaques peut tuer la vigne européenne ?",
@@ -133,7 +143,17 @@
       "q": "Un client : « Pourquoi les vignes américaines survivent-elles au phylloxéra, et pas les nôtres ? »",
       "a": "Les vignes américaines souffrent surtout des galles sur les feuilles, bien moins grave. Chez V. vinifera, les tubérosités des racines se nécrosent et s’infectent, et le cep dépérit."
     },
-    "cave": "Les sols sableux freinent le puceron. À ta prochaine commande, demande à un vigneron de ta cave si certaines de ses parcelles sont sur sable, et si elles sont greffées."
+    "cave": "Les sols sableux freinent le puceron. À ta prochaine commande, demande à un vigneron de ta cave si certaines de ses parcelles sont sur sable, et si elles sont greffées.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Œuf d’hiver",
+        "Femelle : galles",
+        "Formes radicicoles :",
+        "nodosités (radicelles)"
+      ],
+      "consigne": "Sur le cycle, retrouve la forme d'hiver, la forme des feuilles et celles des racines."
+    }
   },
   "75": {
     "ouverture": "Si la plupart des vignes sont greffées, comment une vigne a-t-elle pu rester non greffée ?",
@@ -168,7 +188,17 @@
       "q": "Une cliente : « Vieilles vignes, ça veut dire quoi, au juste ? »",
       "a": "Un exemple précis : en Barossa, la charte de 2009 fixe des paliers d’âge : old vines à partir de 35 ans, survivors 70, centenarians 100, ancestors 125."
     },
-    "cave": "Cherche dans ta cave un vin dont l’étiquette ou la fiche technique parle de « vieilles vignes ». Relève l’âge indiqué, s’il y en a un, et compare-le aux paliers de la Barossa."
+    "cave": "Cherche dans ta cave un vin dont l’étiquette ou la fiche technique parle de « vieilles vignes ». Relève l’âge indiqué, s’il y en a un, et compare-le aux paliers de la Barossa.",
+    "muet": {
+      "source": "nat05-barossa.svg",
+      "cacher": [
+        "old vines",
+        "survivors",
+        "centenarians",
+        "ancestors"
+      ],
+      "consigne": "Retrouve le nom des quatre paliers d'âge de la charte."
+    }
   },
   "76": {
     "ouverture": "Pour sauver les vignes, on a essayé d’inonder les champs, de les planter dans le sable, de les empoisonner… ou de les greffer. Laquelle a gagné, à ton avis ?",

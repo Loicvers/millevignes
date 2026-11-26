@@ -62,7 +62,17 @@
       "q": "Un stagiaire : « Mon vigneron parle de Trichoderma contre l'esca. C'est un produit de synthèse ? »",
       "a": "Non : Trichoderma est un champignon, utilisé en biocontrôle, c'est-à-dire en luttant par un organisme vivant. Le livre le cite contre les maladies du bois : esca, black dead arm et eutypiose."
     },
-    "cave": "Demande au vigneron du Mas du Novi (Languedoc Grès de Montpellier) s'il utilise du biocontrôle contre l'oïdium ou les maladies du bois, et lequel. Note sa réponse et compare-la à la liste du cours."
+    "cave": "Demande au vigneron du Mas du Novi (Languedoc Grès de Montpellier) s'il utilise du biocontrôle contre l'oïdium ou les maladies du bois, et lequel. Note sa réponse et compare-la à la liste du cours.",
+    "muet": {
+      "source": "eco03-agents.svg",
+      "cacher": [
+        "Trichoderma",
+        "Bacillus pumilus",
+        "Willaertia magna",
+        "Xylella fastidiosa → maladie de Pierce"
+      ],
+      "consigne": "Retrouve trois alliés cités et l'agent de la maladie de Pierce."
+    }
   },
   "109": {
     "ouverture": "Deux vignobles éloignés portent-ils les mêmes levures et bactéries sur leurs raisins ? Devine, puis relis après.",
