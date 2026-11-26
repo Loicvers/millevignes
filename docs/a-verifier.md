@@ -1,8 +1,8 @@
 # Faits à vérifier (⚠️)
 
 Généré par `tools/a-verifier.mjs` depuis les champs `to_check` : ne pas éditer à la main.
-970 fiches : 960 vérifiées, 10 à vérifier (12 points).
-Hors dette : 2454 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
+974 fiches : 964 vérifiées, 10 à vérifier (12 points).
+Hors dette : 2455 détails laissés « selon le livre » (champ `selon_livre`, non listés ici).
 
 **Fiche 399** (p.?) — Côte chalonnaise : cinq villages sans grand cru, deux dénominations du Bourgogne et le crémant
 - [ ] Couchois blanc ⚠️ : texte signé le 29 octobre 2026 (presse, Syndicat des Bourgognes) ; numéro et publication au JORF/BO-agri pas encore vus au 10 novembre 2026
