@@ -330,7 +330,7 @@ html{font-size:10.4pt}
 .cah figure.ph{float:right;width:52mm;margin:2pt 0 4pt 8pt}.cah figure.ph img{width:100%;display:block}
 .cah figure.ill.pl svg{max-height:238mm}
 .cah .ouv{border:1px dashed var(--gold);padding:4pt 7pt;margin:2pt 0 7pt;font-size:.95em}
-.cah table.sch{width:100%;border-collapse:collapse;margin:2pt 0 8pt}.cah table.sch td{border:1px solid var(--line);padding:5pt 6pt;height:7mm;font-size:.92em;vertical-align:top}.cah table.sch td:first-child{width:45%;background:#f6f1e7}
+.cah figure.muet{margin:2pt 0}.cah figure.muet svg{max-height:36mm;width:auto;max-width:100%;display:block;margin:0 auto}.cah ol.muet{columns:2;list-style-position:inside;padding-left:0;margin:2pt 0 6pt;font-size:.92em}.cah ol.muet li{margin:3pt 0}.cah table.sch{width:100%;border-collapse:collapse;margin:2pt 0 8pt}.cah table.sch td{border:1px solid var(--line);padding:5pt 6pt;height:7mm;font-size:.92em;vertical-align:top}.cah table.sch td:first-child{width:45%;background:#f6f1e7}
 .cah .cavebox{border-left:3px solid var(--wine,#7a2335);background:#f6f1e7;padding:5pt 8pt;margin:6pt 0;font-size:.95em;break-inside:avoid}
 .cah .srcs h3{font-size:11pt;margin:6pt 0 2pt}
 .cah .corr ol{columns:2;column-gap:8mm;column-rule:1px solid var(--line);font-size:.9rem}`;
@@ -341,6 +341,12 @@ const svgUnique = (txt, nom) => { const p = nom.replace(/\W/g, '') + '-'; return
 const illus = x => x.svg
   ? `<figure class="ill">${svgUnique(fs.readFileSync(path.join(dir, 'schemas', x.svg), 'utf8'), x.svg).replace(/href="img:([\w.-]+)"/g, (_, n) => `href="${pathToFileURL(path.join(dir, '..', 'initiation-oenologie', 'img', n)).href}"`)}<figcaption>${e(x.legende)}</figcaption></figure>`
   : `<figure class="ph"><img src="${pathToFileURL(path.join(dir, x.photo)).href}" alt=""><figcaption>${e(x.legende)} <i>${e(x.credit)}</i></figcaption></figure>`;
+// Schéma muet : le schéma de la fiche (ou un SVG du cahier) dont les étiquettes listées sont remplacées par des numéros, à compléter.
+const muetSVG = (svg, cacher, nom) => { let n = 0; const rep = [];
+  const out = svgUnique(svg, nom).replace(/<text([^>]*)>([\s\S]*?)<\/text>/g, (m, at, inner) => {
+    const t = inner.replace(/<[^>]+>/g, '').trim(); const k = cacher.indexOf(t);
+    if (k < 0) return m; rep.push([k, t]); return `<text${at}><tspan font-weight="700" font-size="150%" fill="#5b1a24">(${k + 1})</tspan></text>`; });
+  return { svg: out, manque: cacher.filter(c => !rep.some(([, t]) => t === c)) }; };
 function cahierHTML(def, notesAvant) {
   const fiches = def.fiches.map(id => FICHES.find(f => +f.id === id) || (avert.push(`${def.nom} : fiche ${id} introuvable`), null)).filter(Boolean);
   const R = RECIT.get(def.recit), N = fiches.length, corr = [], srcs = [];
@@ -357,7 +363,7 @@ function cahierHTML(def, notesAvant) {
     const NOTE_SOURCES = /nuancer|réserves|divergen|seuils indicatifs|ce que dit le livre/i;
     const secs = (f.cours?.sections || []).filter(x => !(def.pedago && NOTE_SOURCES.test(x.h)));
     const notesSrc = (f.cours?.sections || []).filter(x => def.pedago && NOTE_SOURCES.test(x.h));
-    corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.schema ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
+    corr.push(`<h3>Notion ${k + 1} · ${e(f.titre)}</h3>${P.muet ? `<p><b class="lbl">Schéma muet.</b> ${P.muet.cacher.map((c, i) => `(${i + 1}) <b>${e(c)}</b>`).join(' · ')}</p>` : ''}${P.schema && !P.muet ? `<p><b class="lbl">Je complète.</b> ${P.schema.lignes.map(([q, a]) => `${e(q)} → <b>${e(a)}</b>`).join(' · ')}</p>` : ''}
       <ol>${items.map(([, a]) => `<li>${a}</li>`).join('')}</ol>${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.a)}</p>` : ''}
       ${def.pedago ? `<p><b class="lbl">Avec mes mots : ce qu'il fallait retenir.</b> ${f.cours?.synthese?.length ? f.cours.synthese.map(b => e(b.txt)).join(' · ') : e(f.synth)}</p>` : ''}`);
     srcs.push(`<h3>Notion ${k + 1} · fiche n° ${e(f.id)}</h3>${f.selon_livre?.length ? `<div class="warn soft"><b>Source unique ou divergence expliquée</b><ul>${f.selon_livre.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
@@ -374,7 +380,10 @@ function cahierHTML(def, notesAvant) {
       ${f.to_check?.length ? `<div class="warn"><b>⚠️ À vérifier</b><ul>${f.to_check.map(t => `<li>${e(t)}</li>`).join('')}</ul></div>` : ''}
       ${f.selon_livre?.length || notesSrc.length ? `<p class="src">Nuances de sources : voir « Sources » en fin de cahier.</p>` : ''}</section>
     <section class="ex" data-notion="${k + 1}"><div class="bandeau">${tete} · Je m'entraîne</div><h3 class="rubr">Sans regarder la page de gauche</h3>
-      ${P.schema ? `<p><b class="lbl">Je complète.</b> ${e(P.schema.titre)}</p><table class="sch">${P.schema.lignes.map(([q]) => `<tr><td>${e(q)}</td><td></td></tr>`).join('')}</table>` : ''}
+      ${P.muet ? (() => { const src = P.muet.source === 'fiche' ? f.schema?.svg : fs.readFileSync(path.join(dir, 'schemas', P.muet.source), 'utf8');
+        const { svg, manque } = muetSVG(src || '', P.muet.cacher, 'muet' + f.id); if (manque.length) avert.push(`${def.nom} : fiche ${f.id}, étiquette(s) muette(s) introuvable(s) : ${manque.join(', ')}`);
+        return `<p><b class="lbl">Schéma muet.</b> ${e(P.muet.consigne || 'Retrouve les étiquettes effacées.')}</p><figure class="ill muet">${svg}</figure><ol class="muet">${P.muet.cacher.map(() => '<li>…………………………………………</li>').join('')}</ol>`; })() : ''}
+      ${P.schema && !P.muet ? `<p><b class="lbl">Je complète.</b> ${e(P.schema.titre)}</p><table class="sch">${P.schema.lignes.map(([q]) => `<tr><td>${e(q)}</td><td></td></tr>`).join('')}</table>` : ''}
       <ol class="qs">${items.map(([q]) => `<li>${q}</li>`).join('')}</ol>
       ${P.cas ? `<p><b class="lbl">Cas pratique.</b> ${e(P.cas.q)}</p>${lignes(2)}` : ''}
       ${P.cave ? `<div class="cavebox"><b>Dans ma cave</b> ${e(P.cave)}${lignes(2)}</div>` : ''}

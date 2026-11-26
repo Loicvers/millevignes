@@ -27,7 +27,17 @@
       "q": "Un client : « J’ai lu qu’une barrique neuve laisse entrer 0,4 mg/l d’oxygène par an, surtout par la bonde. C’est exact ? »",
       "a": "C’est ce qu’avance le livre, mais les mesures publiées sont plutôt de l’ordre de 10 à 45 mg/l par an. Selon l’étude de Vivas (1997), reprise par le Handbook of Enology, la bonde ne compte que pour environ 21 % de l’entrée, contre 63 % par les joints entre douelles."
     },
-    "cave": "À ta prochaine commande, demande au Château Moulin Caresse (Montravel) s’il élève ses vins en cuve fermée ou en fût, et ce qu’il en attend : protéger les arômes ou assouplir les tanins. Note sa réponse ici."
+    "cave": "À ta prochaine commande, demande au Château Moulin Caresse (Montravel) s’il élève ses vins en cuve fermée ou en fût, et ce qu’il en attend : protéger les arômes ou assouplir les tanins. Note sa réponse ici.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "Réducteur",
+        "Oxydatif",
+        "fût",
+        "micro-oxygénation"
+      ],
+      "consigne": "Sur l'axe de l'oxygène, retrouve les deux pôles, le contenant et la technique effacés."
+    }
   },
   "358": {
     "ouverture": "Un vieux rouge est souvent plus brique que mauve. À ton avis, sa couleur a-t-elle disparu ou changé de forme ?",
@@ -57,7 +67,18 @@
       "q": "Un client : « Mon rouge de dix ans a le bord du verre tuilé. Il est fatigué, non ? »",
       "a": "Pas forcément. Au fil des ans, les anthocyanes libres s’effacent mais la couleur reste : elle passe dans des pigments liés aux tanins. Ceux-ci évoluent du mauve vers des formes orangées, et en bouteille, sans air, la teinte glisse vers le brique."
     },
-    "cave": "Choisis deux millésimes d’un même rouge de ta cave (par exemple le Médoc du Château Haut-Maurac). Penche chaque verre sur fond blanc et note la couleur du bord : mauve, rubis, brique ? Relie ce que tu vois à la fiche."
+    "cave": "Choisis deux millésimes d’un même rouge de ta cave (par exemple le Médoc du Château Haut-Maurac). Penche chaque verre sur fond blanc et note la couleur du bord : mauve, rubis, brique ? Relie ce que tu vois à la fiche.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "éthanal",
+        "Pigments combinés",
+        "Pigments orangés",
+        "mauve",
+        "brique"
+      ],
+      "consigne": "Retrouve la molécule qui fait le pont, les deux familles de pigments et les deux teintes."
+    }
   },
   "239": {
     "ouverture": "Deux chênes d’espèces voisines : à ton avis, qu’est-ce qui peut changer dans ce que leur bois donne au vin ?",
@@ -92,7 +113,15 @@
       "q": "Un client : « Pourquoi dit-on que le fût américain sent la noix de coco ? »",
       "a": "Le chêne blanc américain est riche en lactones, et ce sont elles qui évoquent la noix de coco : cette richesse est confirmée par les dosages (Handbook of Enology, IFV). Le clou de girofle que Lepeltier y perçoit est plus discutable, car son eugénol n’est pas plus abondant que celui du sessile."
     },
-    "cave": "Sur la fiche technique d’un vin du Domaine Pernot Père & Fils (Gevrey-Chambertin), cherche si l’origine du bois (forêt, espèce) est indiquée. Sinon, pose la question au vigneron : la fiche rappelle que la forêt pèse comme un terroir, mais que l’origine seule ne suffit pas à classer un fût."
+    "cave": "Sur la fiche technique d’un vin du Domaine Pernot Père & Fils (Gevrey-Chambertin), cherche si l’origine du bois (forêt, espèce) est indiquée. Sinon, pose la question au vigneron : la fiche rappelle que la forêt pèse comme un terroir, mais que l’origine seule ne suffit pas à classer un fût.",
+    "muet": {
+      "source": "vin14-glands.svg",
+      "cacher": [
+        "Sessile (Quercus petraea)",
+        "Pédonculé (Quercus robur)"
+      ],
+      "consigne": "Quel chêne pour quels glands ? Donne le nom français et le nom latin."
+    }
   },
   "240": {
     "ouverture": "Pour fabriquer un fût, on chauffe le bois. À ton avis, qu’est-ce que cette chaleur change aux arômes que le fût donnera ?",
@@ -122,6 +151,17 @@
       "q": "Un client : « Le vigneron me dit que son fût a cinq ans. Il donne encore du goût de bois ? »",
       "a": "Peu : avec l’usage le bois s’épuise, et l’IFV compte environ cinq ans d’emploi utile. Un vieux fût devient plus neutre, mais jamais tout à fait. Virginia Tech signale aussi que de vieux fûts peuvent porter des défauts (éthylphénols)."
     },
-    "cave": "Sur la fiche technique d’un vin du Château Jean Faure (Saint-Émilion grand cru classé), relève ce qui est indiqué sur le fût : part de bois neuf, taille, chauffe. Si rien n’est précisé, note-le comme question pour ta prochaine commande."
+    "cave": "Sur la fiche technique d’un vin du Château Jean Faure (Saint-Émilion grand cru classé), relève ce qui est indiqué sur le fût : part de bois neuf, taille, chauffe. Si rien n’est précisé, note-le comme question pour ta prochaine commande.",
+    "muet": {
+      "source": "fiche",
+      "cacher": [
+        "douelle",
+        "chauffe",
+        "barrique 225 l",
+        "pièce 228 l",
+        "gaïacol"
+      ],
+      "consigne": "Retrouve les parties du fût, les deux formats (avec leur volume) et le composé né de la chauffe forte."
+    }
   }
 }
